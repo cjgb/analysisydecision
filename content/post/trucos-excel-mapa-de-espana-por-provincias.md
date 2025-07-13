@@ -1,0 +1,43 @@
+---
+author: rvaquerizo
+categories:
+- Business Intelligence
+- Excel
+- Formación
+- Trucos
+date: '2010-11-15T11:06:40-05:00'
+slug: trucos-excel-mapa-de-espana-por-provincias
+tags:
+- mapas
+- mapas excel
+title: Trucos Excel. Mapa de España por provincias
+url: /trucos-excel-mapa-de-espana-por-provincias/
+---
+
+Pongo a vuestra disposición un archivo Excel que nos permite la realización del siguiente gráfico:
+
+![mapa-espana-provincias-excel.PNG](/images/2010/11/mapa-espana-provincias-excel.PNG)
+
+[En este link podéis descargaros el archivo](/images/2010/11/provincias.xls "provincias.xls"). He elegido formato Excel 2003 para el archivo, de este modo lo podréis utilizar muchos de vosotros. Si alguien desea el formato 2007 que lo diga. De momento es una primera versión a la que iré añadiendo un mayor número de funcionalidades. Se trata de un gráfico en el que podemos variar el color de cada una de las provincias mediante la siguiente macro:
+
+```r
+Sub prov()
+
+For i = 4 To 53
+```
+
+```r
+ca = Cells(i, 12)
+
+colorin = Cells(i, 13)
+
+ActiveSheet.Shapes(ca).Select
+
+  Selection.ShapeRange.Fill.ForeColor.SchemeColor = colorin
+
+Next i
+
+End Sub
+```
+
+Cada objeto tiene un nombre que tenéis en las celdas ocultas, tenéis visibles los nombres de las provincias y el color que le vincula a cada objeto. De momento es lo más simple, los colores tenéis que especificarlos vosotros y no hay leyenda. Hay que añadir una paleta de colores, crear rangos de valores y la leyenda. En sucesivas entregas iremos mejorando este gráfico. Espero que os ayude en vuestro trabajo diario. Saludos.

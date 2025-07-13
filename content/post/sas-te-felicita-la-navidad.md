@@ -1,0 +1,53 @@
+---
+author: rvaquerizo
+categories:
+- Formación
+date: '2012-12-20T10:55:47-05:00'
+slug: sas-te-felicita-la-navidad
+tags: []
+title: SAS te felicita la Navidad
+url: /sas-te-felicita-la-navidad/
+---
+
+Mirad para que sirve call sound:
+
+```r
+data _null_;
+call sound(659,100);
+call sound(659,100);
+call sound(659,200);
+call sound(659,100);
+
+call sound(659,100);
+call sound(659,200);
+
+call sound(659,100);
+call sound(784,100);
+call sound(523,100);
+call sound(587,100);
+call sound(659,400);
+
+call sound(698,100);
+call sound(698,100);
+call sound(698,150);
+call sound(698,50);
+
+call sound(698,100);
+call sound(698,100);
+call sound(659,100);
+call sound(659,50);
+call sound(659,50);
+
+call sound(659,100);
+call sound(587,100);
+call sound(587,100);
+call sound(659,100);
+
+call sound(587,200);
+call sound(784,200);
+
+run;
+```
+ 
+
+Felices Fiestas.

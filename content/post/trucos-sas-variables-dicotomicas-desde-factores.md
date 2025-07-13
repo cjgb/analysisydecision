@@ -1,0 +1,62 @@
+---
+author: rvaquerizo
+categories:
+- Formación
+date: '2011-01-31T14:02:43-05:00'
+slug: trucos-sas-variables-dicotomicas-desde-factores
+tags: []
+title: Trucos SAS. Variables dicotómicas desde factores
+url: /trucos-sas-variables-dicotomicas-desde-factores/
+---
+
+El verbo **dumificar** es una invención propia y consiste en la acción de transformar una variable en una o n **variables dicotómicas** y eso es lo que os planteo en esta entrada, dumificar variables cualitativas con SAS. Partimos de una variable discreta o **factor** y hemos de transformarla en n variables, tantas como valores tome el factor, que toman valores 1 o 0 en función del grupo al valor que toma. Gráficamente:
+
+[![dummys-desde-factores.png](/images/2011/01/dummys-desde-factores.png)](/images/2011/01/dummys-desde-factores.png "dummys-desde-factores.png")
+
+Seguro que se os ocurren mil aplicaciones y seguro que pensáis que eso ya lo hace SAS en determinados modelos, pero tened este código bien guardado porque en ocasiones puede serviros. El método empleado para realizar este proceso es uno que ya habéis podido ver en esta web y consiste en crear instrucciones con SAS desde conjuntos de datos. La macro que he creado distingue entre números y caracteres a través de la función VTYPEX que tendrá una entrada propia en el blog. Aquí tenéis el código:
+
+``
+
+Realizamos una tabla de frecuencias para recoger los valores, si hay perdidos no se genera variable y necesita un trabajo previo. Creamos dos campos instrucción debido a que en unos casos podemos tener variables numéricas y en otro alfanuméricas. Ese tema lo controlamos con el data _null_ siguiente que nos genera una macro variable local que toma valor 1 si trabajamos con variables numéricas. Después metemos la instrucción en una macro variable instr que se ejecuta en el posterior paso data. Finalizamos borrando la tabla de frecuencias. Es muy importante emplear la macro validar caracteres, nos evita factores con caracteres extraños. Por supuesto podéis ejecutar los siguientes ejemplos para analizar su funcionamiento:  
+
+```r
+data uno;
+
+do i = 1 to 3000;
+
+grp=min(ranpoi(1,2),4);
+
+output;
+
+end;
+
+run;
+
+*****************************;
+
+%dumifica(in=uno,out=uno,varib=grp);
+
+*****************************;
+
+data uno;
+
+do i=1 to 20000;
+
+if ranuni(8)<=0.3 then grp="uno 1 ";
+
+else if ranuni(3) <= 0.7 then grp="dos 2";
+
+else grp="tres 3";
+
+output;
+
+end;
+
+run;
+
+******************************;
+
+%dumifica(in=uno,out=uno,varib=grp);
+```
+
+Creo que el funcionamiento es muy sencillo y el proceso no tiene demasiado talento (de momento). Pero estoy seguro de que os será de utilidad. En algún momento sacaré tiempo para colocar muchas de estas macros ya compiladas en la web para que las podáis utilizar. Allí pondría versiones definitivas.

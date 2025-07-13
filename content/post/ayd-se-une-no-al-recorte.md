@@ -1,0 +1,16 @@
+---
+author: rvaquerizo
+categories:
+- Sin catergoría
+date: '2009-10-10T10:57:12-05:00'
+slug: ayd-se-une-no-al-recorte
+tags: []
+title: AyD se une. No al recorte
+url: /ayd-se-une-no-al-recorte/
+---
+
+El siguiente capítulo del manual de R espero dedicárselo al [«No a las tijeras»](http://aldea-irreductible.blogspot.com/2009/10/la-ciencia-en-espana-no-necesita.html)
+
+![No al recorte](https://farm3.static.flickr.com/2488/3973473121_e76fde787c_o.jpg)
+
+Por cierto, me uno tarde pero me uno.

@@ -1,0 +1,103 @@
+library(CASdatasets)
+library(tidyverse)
+data("norauto")
+
+sum(norauto$ClaimAmount)
+sum(norauto$Expo)
+
+sum(norauto$ClaimAmount)/sum(norauto$Expo)
+norauto %>% group_by(GeoRegion) %>% summarise(media = sum(ClaimAmount)/sum(Expo))
+
+norauto$ClaimAmount2 <- ifelse(norauto$ClaimAmount>=50000, 50000, norauto$ClaimAmount)
+factor_elevacion = sum(norauto$ClaimAmount)/sum(norauto$ClaimAmount2)
+norauto$ClaimAmount2 = norauto$ClaimAmount2 * factor_elevacion
+
+norauto$prima_pura = norauto$ClaimAmount / norauto$Expo
+
+
+norauto$log_exposure <- log(norauto$Expo)
+norauto2 <- norauto %>% sample_frac(0.1)
+
+predictoras <- c('Male','Young','DistLimit','GeoRegion')
+respuesta <- "ClaimAmount2"
+offset_var <- "log_exposure"
+
+library(h2o)
+h2o.init()
+#h2o.shutdown()
+
+norauto.hex <- as.h2o(norauto2)
+
+auto.splits <- h2o.splitFrame(data = norauto.hex, ratios = .6)
+train <- auto.splits[[1]]
+valid <- auto.splits[[2]]
+
+parametro_tweedie <- list( tweedie_variance_power = c(1.5,1.6,1.7,1.8,1.9,2,2.2,2.5))
+
+grid <- h2o.grid(seed=10,
+                 x = predictoras, y = respuesta, training_frame = train, validation_frame = valid,
+                 family = 'tweedie', algorithm = "glm", grid_id = "auto_grid",
+                 hyper_params = parametro_tweedie, 
+                 search_criteria = list(strategy = "Cartesian"))
+
+busqueda_ordenada <- h2o.getGrid("auto_grid", sort_by = "mse", decreasing = F)
+
+vp = as.numeric(busqueda_ordenada@summary_table[1,1])
+print(vp)
+
+ntrees_opts = c(500)       
+max_depth_opts = seq(5,7)
+min_rows_opts = c(50,100)
+learn_rate_opts = c(0.01)
+sample_rate_opts = seq(0.5,0.75)
+col_sample_rate_opts = seq(0.5,0.8)
+col_sample_rate_per_tree_opts = seq(0.5,1)
+nbins_cats_opts = seq(100,500) 
+
+hyper_params = list( ntrees = ntrees_opts,
+                     max_depth = max_depth_opts,
+                     min_rows = min_rows_opts,
+                     learn_rate = learn_rate_opts,
+                     sample_rate = sample_rate_opts,
+                     col_sample_rate = col_sample_rate_opts,
+                     col_sample_rate_per_tree = col_sample_rate_per_tree_opts,
+                     nbins_cats = nbins_cats_opts)
+
+search_criteria = list(strategy = "RandomDiscrete",
+                       max_runtime_secs = 600,
+                       max_models = 100,
+                       stopping_metric = "AUTO",
+                       stopping_tolerance = 0.00001,
+                       stopping_rounds = 5,
+                       seed = 123456)
+
+
+gbm_grid <- h2o.grid("gbm",
+                     grid_id = "mygrid",
+                     x = predictoras,
+                     y = respuesta,
+                     tweedie_power=vp,
+                     offset_column=offset_var,
+                     training_frame = train,
+                     validation_frame = valid,
+                     nfolds = 0,
+                     distribution="tweedie",
+                     stopping_rounds = 2,
+                     stopping_tolerance = 1e-3,
+                     stopping_metric = "MSE",
+                     score_tree_interval = 100,
+                     seed = 123456,
+                     hyper_params = hyper_params,
+                     search_criteria = search_criteria)
+
+sorted_grid <- h2o.getGrid(grid_id = "mygrid", sort_by = "mse")
+
+modelo_final <- h2o.getModel(sorted_grid@model_ids[[1]])
+
+norauto.hex.total <- as.h2o(norauto)
+estimaciones <- as.data.frame(predict(modelo_final,norauto.hex.total))
+names(estimaciones) <- "prima_estimada"
+
+norauto <- cbind.data.frame(norauto,estimaciones)
+
+sum(norauto$ClaimAmount)/sum(norauto$prima_estimada)-1

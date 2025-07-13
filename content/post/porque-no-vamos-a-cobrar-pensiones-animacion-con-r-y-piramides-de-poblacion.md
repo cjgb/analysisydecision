@@ -1,0 +1,29 @@
+---
+author: rvaquerizo
+categories:
+- Formación
+- Opinión
+- R
+date: '2018-12-09T15:53:20-05:00'
+slug: porque-no-vamos-a-cobrar-pensiones-animacion-con-r-y-piramides-de-poblacion
+tags:
+- plotrix
+- pyramid.plot
+title: Porque no vamos a cobrar pensiones. Animación con R y pirámides de población
+url: /porque-no-vamos-a-cobrar-pensiones-animacion-con-r-y-piramides-de-poblacion/
+---
+
+Estoy creando material para un módulo de un máster que voy a impartir y escribiendo sobre seguros de ahorro he llegado a crear esta animación: 
+
+[![](/images/2018/12/piramide-poblacion-España-animada.gif)](/images/2018/12/piramide-poblacion-España-animada.gif)
+
+Se trata de una animación con las pirámides de población de España desde 1975 hasta 2018 de 5 en 5 años. El sistema de pensiones español se basa en 5 principios:  
+1\. principio de proporcionalidad  
+2\. principio de universalidad  
+3\. principio de gestión pública  
+4\. principio de suficiencia  
+5\. principio de reparto
+
+La animación va directa contra el principio de reparto. **En el sistema español nadie ha cotizado para garantizarse su pensión** , los actuales trabajadores pagan las prestaciones de aquellos trabajadores jubilados. Si tras leer estas dos frases y mirar la animación sigues recelando de la migración de personas a España espero que tengas un buen plan de ahorro privado. 
+
+Esta animación está hecha con R, los datos están [descargados del INE](https://www.ine.es/jaxiT3/Tabla.htm?t=10256) pero están ligeramente cocinados (no al estilo Tezanos). En <https://github.com/analisisydecision/wordpress> tenéis este Excel con el formato adecuado, el código empleado para realizar la animación está en [https://github.com/analisisydecision/wordpress/blob/master/Piramide_poblacional.R ](https://github.com/analisisydecision/wordpress/blob/master/Piramide_poblacional.R) Es un buen ejemplo de uso de plotrix y pyramid.plot espero que el código no tenga algún gazapo…
