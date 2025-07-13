@@ -4,6 +4,13 @@ categories:
 - Formación
 - R
 date: '2008-02-20T09:20:53-05:00'
+lastmod: '2025-07-13T16:01:40.084785'
+related:
+- manual-curso-introducion-de-r-capitulo-1-que-es-r.md
+- intro-rcommander-1-que-es-rcommander.md
+- estadistica-para-cientificos-de-datos-con-r-introduccion.md
+- jornadas-de-r-gratuitas-en-galicia.md
+- determinar-la-distribucion-de-un-vector-de-datos-con-r.md
 slug: manual-introduccion-a-r-s-plus
 tags: []
 title: Manual. Curso de introducción a R (S-Plus)

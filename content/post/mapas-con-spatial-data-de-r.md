@@ -5,6 +5,13 @@ categories:
 - Monográficos
 - R
 date: '2010-10-09T11:50:32-05:00'
+lastmod: '2025-07-13T16:02:01.820361'
+related:
+- mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel.md
+- mapas-estaticos-de-peru-con-r-y-python-a-nivel-de-distrito.md
+- mapas-estaticos-municipales-para-estados-de-mexico-con-r-y-con-excel.md
+- mapa-de-argentina-con-r.md
+- mapa-estatico-de-espana-con-python.md
 slug: mapas-con-spatial-data-de-r
 tags:
 - ''

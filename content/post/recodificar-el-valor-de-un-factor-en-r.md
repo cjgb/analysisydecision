@@ -5,6 +5,13 @@ categories:
 - R
 - Trucos
 date: '2010-12-07T12:21:00-05:00'
+lastmod: '2025-07-13T16:05:11.611239'
+related:
+- trabajando-con-factores-en-r-attach-frente-a-within.md
+- truco-r-eval-parse-y-paste-para-automatizar-codigo.md
+- trucos-simples-para-rstats.md
+- graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
+- informes-con-r-en-html-comienzo-con-r2html-i.md
 slug: recodificar-el-valor-de-un-factor-en-r
 tags:
 - as.item

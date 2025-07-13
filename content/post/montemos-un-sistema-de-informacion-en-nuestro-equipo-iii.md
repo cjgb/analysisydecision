@@ -5,6 +5,13 @@ categories:
 - Monográficos
 - R
 date: '2010-12-18T16:16:07-05:00'
+lastmod: '2025-07-13T16:03:01.175139'
+related:
+- montemos-un-sistema-de-informacion-en-nuestro-equipo-i.md
+- montemos-un-sistema-de-informacion-en-nuestro-equipo-ii.md
+- manual-curso-introduccion-de-r-capitulo-5-lectura-avanzada-de-datos.md
+- parametros-en-nuestra-consulta-sql-server-desde-r-truco-r.md
+- manual-curso-introduccion-de-r-capitulo-4-contribuciones-a-r-paquetes.md
 slug: montemos-un-sistema-de-informacion-en-nuestro-equipo-iii
 tags:
 - pentaho

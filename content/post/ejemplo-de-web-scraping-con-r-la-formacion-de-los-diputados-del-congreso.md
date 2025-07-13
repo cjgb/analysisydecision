@@ -6,6 +6,13 @@ categories:
 - Monográficos
 - R
 date: '2017-01-25T07:08:32-05:00'
+lastmod: '2025-07-13T15:56:41.275604'
+related:
+- analisis-de-textos-con-r.md
+- el-debate-politico-o-como-analizar-textos-con-wps.md
+- comparamos-los-programas-electorales-de-pp-y-psoe-con-r.md
+- beatifulsoup-web-scraping-con-python-o-como-las-redes-sociales-estan-cambiando-mi-forma-de-escribir.md
+- los-principales-problemas-de-los-espanoles-animaciones-con-r-y-gganimate.md
 slug: ejemplo-de-web-scraping-con-r-la-formacion-de-los-diputados-del-congreso
 tags:
 - text mining

@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Seguros
 date: '2010-12-15T13:09:24-05:00'
+lastmod: '2025-07-13T16:03:26.542915'
+related:
+- el-seguro-directo-de-zurich.md
+- los-objetivos-del-primer-ano-de-vida-de-zurich-connect.md
+- los-enemigos-del-canal-tradicional-de-venta-de-seguros.md
+- nace-pelayonex-la-directa-de-pelayo.md
+- mutua-madrilena-compra-el-50-de-adeslas-seguros-generales.md
 slug: nace-verti-la-directa-de-mapfre
 tags:
 - ''

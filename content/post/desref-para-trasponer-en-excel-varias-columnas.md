@@ -4,6 +4,13 @@ categories:
 - Excel
 - Trucos
 date: '2016-03-08T09:25:03-05:00'
+lastmod: '2025-07-13T15:56:20.974862'
+related:
+- truco-excel-transponer-una-fila-en-varias-columnas-con-desref.md
+- trucos-excel-transponer-con-la-funcion-desref.md
+- trucos-excel-repetir-filas-o-columnas-con-la-funcion-desref.md
+- trucos-excel-repetir-filas-con-desref.md
+- trucos-excel-trasponer-con-la-funcion-indirecto.md
 slug: desref-para-trasponer-en-excel-varias-columnas
 tags:
 - DESREF

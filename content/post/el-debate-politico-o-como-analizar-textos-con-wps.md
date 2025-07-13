@@ -8,6 +8,13 @@ categories:
 - SAS
 - WPS
 date: '2011-02-04T17:02:20-05:00'
+lastmod: '2025-07-13T15:56:49.408442'
+related:
+- analisis-de-textos-con-r.md
+- analisis-del-programa-electoral-del-partido-popular-antes-de-las-elecciones-en-espana.md
+- comparamos-los-programas-electorales-de-pp-y-psoe-con-r.md
+- ejemplo-de-web-scraping-con-r-la-formacion-de-los-diputados-del-congreso.md
+- curso-de-lenguaje-sas-con-wps-funciones-en-wps.md
 slug: el-debate-politico-o-como-analizar-textos-con-wps
 tags:
 - analisis de textos

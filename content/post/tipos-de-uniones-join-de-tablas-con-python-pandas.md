@@ -5,6 +5,13 @@ categories:
 - Monográficos
 - Python
 date: '2020-05-16T11:59:26-05:00'
+lastmod: '2025-07-13T16:06:37.253853'
+related:
+- capitulo-4-uniones-de-tablas-con-r.md
+- proc-sql-merge-set.md
+- data-management-basico-con-pandas.md
+- monografico-paquete-sqldf-si-sabes-sql-sabes-r.md
+- creando-archivos-excel-desde-python-con-pandas-y-excelwriter.md
 slug: tipos-de-uniones-join-de-tablas-con-python-pandas
 tags:
 - join

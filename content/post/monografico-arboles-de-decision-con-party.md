@@ -6,6 +6,13 @@ categories:
 - Modelos
 - R
 date: '2010-01-09T05:13:59-05:00'
+lastmod: '2025-07-13T16:02:45.682154'
+related:
+- monografico-arboles-de-clasificacion-con-rpart.md
+- trucos-r-llevar-a-sas-las-reglas-de-un-arbol-de-decision.md
+- arboles-de-decision-con-sas-base-con-r-por-supuesto.md
+- monografico-un-poco-de-proc-logistic.md
+- el-sobremuestreo-mejora-mi-estimacion.md
 slug: monografico-arboles-de-decision-con-party
 tags:
 - ''

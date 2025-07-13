@@ -4,6 +4,13 @@ categories:
 - Formación
 - SAS
 date: '2011-08-27T17:01:43-05:00'
+lastmod: '2025-07-13T16:03:57.114058'
+related:
+- trucos-sas-muestras-aleatorias-con-y-sin-reemplazamiento.md
+- parametro-asociado-a-una-poisson-con-sas.md
+- trucos-sas-lista-de-datasets-en-macro-variable.md
+- test-de-bondad-de-ajuste-con-sas.md
+- trucos-sas-muestreo-con-proc-surveyselect.md
 slug: numeros-aleatorios-con-sas
 tags:
 - números aleatorios

@@ -3,6 +3,13 @@ author: danifernandez
 categories:
 - Formación
 date: '2010-05-20T11:58:44-05:00'
+lastmod: '2025-07-13T16:05:07.027670'
+related:
+- stadistical-data-warehouse-del-european-central-bank-con-r-y-los-depositos-a-perdidas.md
+- series-temporales-animadas-con-r-y-gganimate-comparando-cotizaciones.md
+- leer-y-representar-datos-de-google-trends-con-r.md
+- graficos-de-calendarios-con-series-temporales.md
+- informes-con-r-en-html-comienzo-con-r2html-i.md
 slug: random-walk-se-escribe-con-r
 tags:
 - bolsa

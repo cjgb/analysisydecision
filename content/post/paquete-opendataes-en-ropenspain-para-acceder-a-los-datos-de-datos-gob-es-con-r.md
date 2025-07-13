@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - R
 date: '2019-08-29T08:18:52-05:00'
+lastmod: '2025-07-13T16:04:07.506518'
+related:
+- twitter-con-r-el-hashtag-rstats.md
+- estadistica-para-cientificos-de-datos-con-r-introduccion.md
+- seguir-los-datos-del-coronavirus-en-espana-con-rstats.md
+- mapa-de-mexico-rapido-y-sucio-y-estatico-con-rstats.md
+- el-paquete-de-r-weatherdata-para-la-obtencion-de-datos-meteorologicos-en-espana.md
 slug: paquete-opendataes-en-ropenspain-para-acceder-a-los-datos-de-datos-gob-es-con-r
 tags:
 - rOpenSpain

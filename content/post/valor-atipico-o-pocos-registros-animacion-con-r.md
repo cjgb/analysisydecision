@@ -5,6 +5,13 @@ categories:
 - Modelos
 - R
 date: '2016-04-24T11:54:58-05:00'
+lastmod: '2025-07-13T16:11:10.257550'
+related:
+- juego-de-modelos-de-regresion-con-r.md
+- manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
+- resolucion-del-juego-de-modelos-con-r.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-15-modelos-glm-regresion-logistica-y-regresion-de-poisson.md
+- primeros-pasos-con-regresion-no-lineal-nls-con-r.md
 slug: valor-atipico-o-pocos-registros-animacion-con-r
 tags:
 - Animaciones

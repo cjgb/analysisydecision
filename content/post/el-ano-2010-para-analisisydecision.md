@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Sin catergoría
 date: '2011-01-06T17:24:05-05:00'
+lastmod: '2025-07-13T15:56:45.335967'
+related:
+- 1500-visitas-mensuales.md
+- el-ano-2009-para-analisis-y-decision.md
+- ayd-2300-visitas-mensuales.md
+- contenidos-para-octubre-de-ayd.md
+- contenidos-web-analisis-informacion.md
 slug: el-ano-2010-para-analisisydecision
 tags: []
 title: El año 2010 para analisisydecision

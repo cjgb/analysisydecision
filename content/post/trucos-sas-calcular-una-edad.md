@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2014-05-14T10:12:07-05:00'
+lastmod: '2025-07-13T16:09:49.173614'
+related:
+- monografico-funciones-intnx-e-intck-para-fechas-en-sas.md
+- bucle-de-fechas-con-sas-para-tablas-particionadas.md
+- trabajo-con-fechas-sas-funciones-fecha.md
+- macros-faciles-de-sas-dias-de-un-mes-en-una-fecha.md
+- curso-de-lenguaje-sas-con-wps-funciones-fecha.md
 slug: trucos-sas-calcular-una-edad
 tags:
 - YRDIF

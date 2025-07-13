@@ -5,6 +5,13 @@ categories:
 - Trucos
 - WPS
 date: '2013-01-17T10:43:37-05:00'
+lastmod: '2025-07-13T15:54:23.608093'
+related:
+- curso-de-lenguaje-sas-con-wps-lectura-de-ficheros-de-texto.md
+- importar-a-sas-desde-otras-aplicaciones.md
+- truco-sas-limpiar-un-fichero-de-texto-con-sas.md
+- truco-sas-macro-buscar-y-reemplazar-en-texto.md
+- curso-de-lenguaje-sas-con-wps-que-hace-el-paso-data.md
 slug: ayudadme-importar-a-sas-texto-con-comillas
 tags:
 - INFILE

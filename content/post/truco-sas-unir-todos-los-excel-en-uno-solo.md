@@ -4,6 +4,13 @@ categories:
 - SAS
 - Trucos
 date: '2008-04-23T03:13:18-05:00'
+lastmod: '2025-07-13T16:08:45.207764'
+related:
+- trucos-excel-unir-varios-excel-en-uno.md
+- truco-sas-unir-todas-las-hojas-de-un-excel-en-una.md
+- truco-excel-unir-todos-los-libros-en-una-hoja.md
+- truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
+- trucos-excel-unir-todos-los-excel-en-uno-version-muy-mejorada.md
 slug: truco-sas-unir-todos-los-excel-en-uno-solo
 tags: []
 title: Truco SAS. Unir todos los Excel en uno sólo

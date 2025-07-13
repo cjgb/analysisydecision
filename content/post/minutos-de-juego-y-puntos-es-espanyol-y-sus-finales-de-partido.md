@@ -6,6 +6,13 @@ categories:
 - Opinión
 - R
 date: '2024-04-01T03:15:44-05:00'
+lastmod: '2025-07-13T16:02:37.003706'
+related:
+- los-porteros-del-espanyol-y-la-regresion-binomial-negativa.md
+- resultados-de-la-liga-con-rstats-estudiando-graficamente-rachas.md
+- alineaciones-de-equipos-de-futbol-con-worldfootballr-de-rstats.md
+- pintando-campos-de-futbol-con-rstats-y-entendiendo-funciones-de-densidad.md
+- datos-de-eventing-gratuitos-en-statsbomb.md
 slug: minutos-de-juego-y-puntos-es-espanyol-y-sus-finales-de-partido
 tags: []
 title: Minutos de juego y puntos. El Espanyol, sus finales de partido y mis enfados
@@ -92,31 +99,35 @@ resultados <- resultados %>% left_join(goles_equipo) %>% left_join(goles_rival) 
 
 Como se aprecia en el código también se han eliminado valores perdidos en los campos de gol para facilitar la realización de una suma acumulada que se va a realizar con la función de base _ave_ , un homenaje a R base que cada vez parece usarse menos.
 
-«`{r}  
-resultadosgoles_equipo <\- ave(resultadosgol_equipo, resultadosDate, FUN=cumsum)  
-resultadosgoles_rival <\- ave(resultadosgol_rival, resultadosDate, FUN=cumsum)
+```r
+resultadosgoles_equipo <- ave(resultadosgol_equipo, resultadosDate, FUN=cumsum)  
+resultadosgoles_rival <- ave(resultadosgol_rival, resultadosDate, FUN=cumsum)
+```
 
-<pre><code class="line-numbers">Sumando goles ya tenemos un marcador y si tenemos un marcador podemos tener unos puntos del equipo en estudio a lo largo del partido. 
+Sumando goles ya tenemos un marcador y si tenemos un marcador podemos tener unos puntos del equipo en estudio a lo largo del partido. 
 
-«`{r}  
-resultados <\- resultados %>% mutate(puntos = case_when(  
+```r  
+resultados <- resultados %>% mutate(puntos = case_when(  
 goles_equipo == goles_rival ~ 1,  
 goles_equipo > goles_rival ~ 3,  
 goles_equipo < goles_rival ~ 0))  
+```
 
 El equipo en estudio o empata o gana o pierde a lo largo de los 90 minutos de juego y se obtiene una puntuación media por minuto.
 
-«`{r}  
-resumen <\- resultados %>% group_by(minuto) %>%  
+```r  
+resumen <- resultados %>% group_by(minuto) %>%  
 summarise(puntos_medios = mean(puntos))
+```
 
-<pre><code class="line-numbers">En este punto se está en disposición de graficar esos puntos medios a lo largo del partido. SE añade una barra vertical en los 75 minutos para ver si esa impresión de pérdida de puntos al final del partido se sustenta en datos. 
+En este punto se está en disposición de graficar esos puntos medios a lo largo del partido. SE añade una barra vertical en los 75 minutos para ver si esa impresión de pérdida de puntos al final del partido se sustenta en datos. 
 
-«`{r}  
+```r  
 resumen %>% ggplot(aes(x=minuto, y=puntos_medios, group=1)) +  
 geom_line()+  
 geom_point() +  
 geom_vline(xintercept = 75, color=’Red’)  
+```
 
 [![](/images/2024/04/wp_editor_md_23267e4368cfcfcfdd1003b888f13a97.jpg)](/images/2024/04/wp_editor_md_23267e4368cfcfcfdd1003b888f13a97.jpg)
 

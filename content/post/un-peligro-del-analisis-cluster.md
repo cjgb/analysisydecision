@@ -5,6 +5,13 @@ categories:
 - Formación
 - R
 date: '2012-07-16T02:08:32-05:00'
+lastmod: '2025-07-13T16:11:04.370707'
+related:
+- analisis-cluster-con-sas-la-importancia-de-las-semillas-en-las-k-medias.md
+- cluster-svm.md
+- knn-con-sas-mejorando-k-means.md
+- manual-curso-introduccion-de-r-capitulo-17-analisis-cluster-con-r-y-iii.md
+- manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-ii.md
 slug: un-peligro-del-analisis-cluster
 tags:
 - ''

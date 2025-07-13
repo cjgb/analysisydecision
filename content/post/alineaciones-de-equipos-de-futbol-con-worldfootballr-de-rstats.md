@@ -6,6 +6,13 @@ categories:
 - Gráficos
 - R
 date: '2023-09-13T09:30:47-05:00'
+lastmod: '2025-07-13T15:53:50.242806'
+related:
+- resultados-de-la-liga-con-rstats-estudiando-graficamente-rachas.md
+- minutos-de-juego-y-puntos-es-espanyol-y-sus-finales-de-partido.md
+- los-porteros-del-espanyol-y-la-regresion-binomial-negativa.md
+- datos-de-eventing-gratuitos-en-statsbomb.md
+- pintando-campos-de-futbol-con-rstats-y-entendiendo-funciones-de-densidad.md
 slug: alineaciones-de-equipos-de-futbol-con-worldfootballr-de-rstats
 tags: []
 title: Alineaciones de equipos de fútbol con worldfootballR de Rstats

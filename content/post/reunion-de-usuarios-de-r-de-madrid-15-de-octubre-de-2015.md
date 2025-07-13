@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Formación
 date: '2015-10-09T07:32:48-05:00'
+lastmod: '2025-07-13T16:05:33.903341'
+related:
+- reunion-del-grupo-de-usuarios-de-r-de-madrid-12-de-noviembre.md
+- reunion-usuarios-de-r-en-madrid-26-de-noviembre-de-2014.md
+- reunion-del-grupo-de-usuarios-de-r-de-madrid-12052016.md
+- reunion-del-grupo-de-usuarios-de-r-de-madrid-14042016.md
+- martes-25-de-abril-nueva-reunion-del-grupo-de-usuarios-de-r-y-python.md
 slug: reunion-de-usuarios-de-r-de-madrid-15-de-octubre-de-2015
 tags:
 - Grupo de usuarios de R de Madrid

@@ -4,6 +4,13 @@ categories:
 - Formación
 - R
 date: '2019-02-13T09:10:04-05:00'
+lastmod: '2025-07-13T15:58:05.423286'
+related:
+- graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
+- grafico-de-barras-y-lineas-con-python.md
+- capitulo-5-representacion-basica-con-ggplot.md
+- descubriendo-ggplot2-421.md
+- un-acercamiento-a-graph-primeros-graficos-con-sas.md
 slug: grafico-con-eje-secundario-en-ggplot2
 tags:
 - ggplot2

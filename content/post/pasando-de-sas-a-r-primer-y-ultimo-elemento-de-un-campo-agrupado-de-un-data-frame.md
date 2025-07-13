@@ -6,6 +6,13 @@ categories:
 - SAS
 - Trucos
 date: '2017-10-19T03:51:18-05:00'
+lastmod: '2025-07-13T16:04:18.050667'
+related:
+- monografico-datos-agrupados-en-sas.md
+- datos-agrupados-en-r-con-dplyr.md
+- monografico-first-y-last-ejemplos-en-data.md
+- creacion-de-ranking-con-r.md
+- data-management-con-dplyr.md
 slug: pasando-de-sas-a-r-primer-y-ultimo-elemento-de-un-campo-agrupado-de-un-data-frame
 tags:
 - dplyr

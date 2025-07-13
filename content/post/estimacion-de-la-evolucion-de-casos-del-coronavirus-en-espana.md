@@ -4,6 +4,13 @@ categories:
 - Opinión
 - R
 date: '2020-03-11T02:33:33-05:00'
+lastmod: '2025-07-13T15:57:34.223278'
+related:
+- seguir-los-datos-del-coronavirus-en-espana-con-rstats.md
+- mi-breve-seguimiento-del-coronavirus-con-r.md
+- evolucion-del-numero-de-casos-de-coronavirus.md
+- los-pilares-de-mi-simulacion-de-la-extension-del-covid19.md
+- no-estamos-igual-que-en-la-primera-ola-de-covid.md
 slug: estimacion-de-la-evolucion-de-casos-del-coronavirus-en-espana
 tags: []
 title: Estimación de la evolución de casos del coronavirus en España

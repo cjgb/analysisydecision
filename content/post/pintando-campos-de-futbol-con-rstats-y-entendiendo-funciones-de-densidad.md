@@ -6,6 +6,13 @@ categories:
 - Gráficos
 - R
 date: '2023-08-28T09:09:44-05:00'
+lastmod: '2025-07-13T16:04:22.309390'
+related:
+- datos-de-eventing-gratuitos-en-statsbomb.md
+- resultados-de-la-liga-con-rstats-estudiando-graficamente-rachas.md
+- los-porteros-del-espanyol-y-la-regresion-binomial-negativa.md
+- minutos-de-juego-y-puntos-es-espanyol-y-sus-finales-de-partido.md
+- incluir-subplot-en-mapa-con-ggplot.md
 slug: pintando-campos-de-futbol-con-rstats-y-entendiendo-funciones-de-densidad
 tags: []
 title: 'Pintando campos de fútbol con #rstats y entendiendo funciones de densidad'

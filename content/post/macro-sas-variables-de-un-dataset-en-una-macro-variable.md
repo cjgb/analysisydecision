@@ -6,6 +6,13 @@ categories:
 - SAS
 - Trucos
 date: '2012-09-06T01:25:06-05:00'
+lastmod: '2025-07-13T16:00:44.535096'
+related:
+- trucos-sas-lista-de-datasets-en-macro-variable.md
+- macros-faciles-de-sas-determinar-si-existe-una-variable-en-un-dataset.md
+- trucos-sas-eliminar-etiquetas-en-los-conjunto-de-datos-sas.md
+- macros-sas-ordenar-alfabeticamente-las-variables-de-un-dataset.md
+- trucos-sas-macrovariable-a-dataset.md
 slug: macro-sas-variables-de-un-dataset-en-una-macro-variable
 tags: []
 title: Macro SAS. Variables de un dataset en una macro variable

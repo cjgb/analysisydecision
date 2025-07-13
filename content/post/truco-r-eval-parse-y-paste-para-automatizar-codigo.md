@@ -5,6 +5,13 @@ categories:
 - R
 - Trucos
 date: '2011-01-07T09:10:29-05:00'
+lastmod: '2025-07-13T16:07:54.668628'
+related:
+- recodificar-el-valor-de-un-factor-en-r.md
+- trucos-simples-para-rstats.md
+- trabajando-con-factores-en-r-attach-frente-a-within.md
+- truco-malo-de-r-leer-datos-desde-excel.md
+- analisis-de-textos-con-r.md
 slug: truco-r-eval-parse-y-paste-para-automatizar-codigo
 tags:
 - automatizar código

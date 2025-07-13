@@ -4,6 +4,13 @@ categories:
 - Formación
 - Sin catergoría
 date: '2009-09-26T10:57:48-05:00'
+lastmod: '2025-07-13T16:00:18.682255'
+related:
+- r-cayendo-en-la-lista-tiobe.md
+- que-nos-pasa-con-r-de-nuevo.md
+- el-ano-2010-para-analisisydecision.md
+- como-medir-la-presencia-de-r-en-el-mercado-del-analisis-de-datos.md
+- 1500-visitas-mensuales.md
 slug: lista-de-los-lengajes-de-programacion-mas-populares
 tags:
 - lenguajes de programación

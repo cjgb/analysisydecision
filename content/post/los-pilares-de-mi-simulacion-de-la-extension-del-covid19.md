@@ -5,6 +5,13 @@ categories:
 - Opinión
 - R
 date: '2020-03-23T09:48:20-05:00'
+lastmod: '2025-07-13T16:00:30.963528'
+related:
+- mapa-del-covid-19-por-comunidades-autonomas-con-r-mas-rstats.md
+- mi-breve-seguimiento-del-coronavirus-con-r.md
+- mover-parte-de-un-shapefile-con-r-mapa-de-la-tasa-de-casos-de-coronavirus-por-habitante-en-espana.md
+- mapa-de-rstats-animado-con-el-porcentaje-de-vacunacion-en-espana.md
+- libreria-mapspain-en-rstats-mapas-estaticos-de-espana.md
 slug: los-pilares-de-mi-simulacion-de-la-extension-del-covid19
 tags: []
 title: Los pilares de mi simulación de la extensión del COVID19

@@ -4,6 +4,13 @@ categories:
 - Consultoría
 - Seguros
 date: '2008-12-16T09:04:45-05:00'
+lastmod: '2025-07-13T15:57:12.532528'
+related:
+- detalles-tecnicos-del-seguro-de-credito-el-factor-de-uso-del-importe-concedido.md
+- el-seguro-de-salud-suma-y-sigue.md
+- el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v.md
+- consultor-particular-de-seguros.md
+- el-seguro-de-salud-la-futura-guerra.md
 slug: el-seguro-de-credito-interesante-reto-tecnico
 tags:
 - seguro de crédito

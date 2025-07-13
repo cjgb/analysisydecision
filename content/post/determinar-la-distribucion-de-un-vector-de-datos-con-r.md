@@ -6,6 +6,13 @@ categories:
 - R
 - Trucos
 date: '2014-05-22T10:22:35-05:00'
+lastmod: '2025-07-13T15:56:25.051896'
+related:
+- manual-curso-introduccion-de-r-capitulo-6-funciones-de-estadistica-descriptiva.md
+- manual-introduccion-a-r-s-plus.md
+- sobremuestreo-y-pesos-a-las-observaciones-ahora-con-r.md
+- la-distribucion-tweedie.md
+- numeros-aleatorios-con-sas.md
 slug: determinar-la-distribucion-de-un-vector-de-datos-con-r
 tags:
 - rriskDistributions

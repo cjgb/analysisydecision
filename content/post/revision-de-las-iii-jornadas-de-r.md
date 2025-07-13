@@ -4,6 +4,13 @@ categories:
 - R
 - Sin catergoría
 date: '2011-11-21T13:14:22-05:00'
+lastmod: '2025-07-13T16:05:36.808239'
+related:
+- comienza-la-cuenta-atras-iii-jornadas-de-usuarios-de-r.md
+- noticias-del-congreso-de-usuarios-de-r.md
+- i-jornadas-de-usuarios-de-r-en-espana.md
+- vi-jornadas-de-usuarios-de-r-ya-estan-en-marcha.md
+- i-concurso-de-analisis-de-datos-con-r.md
 slug: revision-de-las-iii-jornadas-de-r
 tags: []
 title: Revisión de las III Jornadas de R

@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Formación
 date: '2010-05-11T02:14:47-05:00'
+lastmod: '2025-07-13T15:59:43.247495'
+related:
+- lecciones-de-economia-de-un-ignorante-la-crisis-ha-tocado-fondo-luego-escarbara.md
+- lecciones-de-economia-de-un-ignorante-poniendo-fecha-a-la-intervencion-de-espana.md
+- lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
+- lecciones-de-economia-de-un-ignorante-los-bancos-pierden-dinero-para-favorecer-a-unos-y-luego-los-salvamos-todos.md
+- lecciones-de-economia-de-un-ignorante-por-que-no-hablo-de-la-batalla-de-los-depositos.md
 slug: lecciones-de-economia-de-un-ignorante-el-club-bilberberg-en-espana
 tags: []
 title: Lecciones de economía de un ignorante. El Club Bilderberg en España

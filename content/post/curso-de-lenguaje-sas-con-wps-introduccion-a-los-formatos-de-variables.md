@@ -5,6 +5,13 @@ categories:
 - Monográficos
 - WPS
 date: '2011-01-14T14:12:31-05:00'
+lastmod: '2025-07-13T15:55:49.612146'
+related:
+- curso-de-lenguaje-sas-con-wps-variables.md
+- trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados.md
+- trucos-sas-pasar-fecha-a-caracter-en-sas.md
+- trabajo-con-fechas-sas-introduccion.md
+- curso-de-lenguaje-sas-con-wps-funciones-fecha.md
 slug: curso-de-lenguaje-sas-con-wps-introduccion-a-los-formatos-de-variables
 tags:
 - format

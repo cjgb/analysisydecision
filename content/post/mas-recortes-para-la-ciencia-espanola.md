@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Sin catergoría
 date: '2011-02-20T13:49:15-05:00'
+lastmod: '2025-07-13T16:02:15.382118'
+related:
+- los-recortes-en-educacion-implican-peor-calidad-del-sistema-educativo.md
+- el-ano-2010-para-analisisydecision.md
+- tendre-que-decir-algo-sobre-la-reduccion-de-la-velocidad-maxima-en-espana.md
+- lecciones-de-economia-de-un-ignorante-poniendo-fecha-a-la-intervencion-de-espana.md
+- bajar-los-tipos-a-la-japonesa-al-0.md
 slug: mas-recortes-para-la-ciencia-espanola
 tags:
 - debate

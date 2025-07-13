@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Formación
 date: '2015-11-10T08:19:00-05:00'
+lastmod: '2025-07-13T16:08:15.792441'
+related:
+- trucos-sas-pasar-fecha-a-caracter-en-sas.md
+- bucle-de-fechas-con-sas-para-tablas-particionadas.md
+- trucos-sas-numero-de-dias-de-un-mes.md
+- macros-faciles-de-sas-dias-de-un-mes-en-una-fecha.md
+- trabajo-con-fechas-sas-introduccion.md
 slug: truco-sas-identificar-el-lunes-de-cada-semana-para-clasificar-por-semanas
 tags: []
 title: Truco SAS. Identificar el lunes de cada semana para clasificar por semanas

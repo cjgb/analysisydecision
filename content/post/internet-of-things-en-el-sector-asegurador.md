@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Seguros
 date: '2016-02-20T14:24:39-05:00'
+lastmod: '2025-07-13T15:58:43.424980'
+related:
+- el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v.md
+- con-los-vehiculos-autonomos-me-quedo-sin-trabajo-o-no.md
+- consultor-particular-de-seguros.md
+- el-modelo-multivariante-en-el-sector-asegurador-introduccion-i.md
+- modelos-tweedie-con-h2o-mutualizar-siniestralidad-en-base-a-factores-de-riesgo.md
 slug: internet-of-things-en-el-sector-asegurador
 tags: []
 title: Internet of things en el sector asegurador

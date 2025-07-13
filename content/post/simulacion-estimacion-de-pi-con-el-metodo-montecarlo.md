@@ -5,6 +5,13 @@ categories:
 - Monográficos
 - R
 date: '2009-10-12T09:51:08-05:00'
+lastmod: '2025-07-13T16:06:16.645559'
+related:
+- trucos-excel-area-bajo-la-curva-roc.md
+- el-sobremuestreo-mejora-mi-estimacion.md
+- como-salva-la-linealidad-una-red-neuronal.md
+- el-parametro-gamma-el-coste-la-complejidad-de-un-svm.md
+- atentos-a-los-intervalos-de-confianza.md
 slug: simulacion-estimacion-de-pi-con-el-metodo-montecarlo
 tags:
 - Método Montecarlo

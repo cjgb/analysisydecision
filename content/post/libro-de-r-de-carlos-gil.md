@@ -4,6 +4,13 @@ categories:
 - Formación
 - R
 date: '2018-04-10T11:04:48-05:00'
+lastmod: '2025-07-13T16:00:15.957836'
+related:
+- agregador-de-noticias-de-r-en-espanol.md
+- curso-de-iniciacion-a-r-en-kschool-de-carlos-gil.md
+- nuevo-curso-de-estadistica-con-r.md
+- estadistica-para-cientificos-de-datos-con-r-introduccion.md
+- nueva-edicion-del-curso-basico-de-r.md
 slug: libro-de-r-de-carlos-gil
 tags: []
 title: Libro de R de Carlos Gil

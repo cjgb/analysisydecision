@@ -4,6 +4,13 @@ categories:
 - Formación
 - R
 date: '2012-03-04T14:48:35-05:00'
+lastmod: '2025-07-13T16:02:00.469873'
+related:
+- mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel.md
+- mapa-de-espana-por-provincias-en-html.md
+- cartografia-digitalizada-de-espana-por-seccion-censal.md
+- mapa-de-catalunya-en-excel-por-comarcas.md
+- mapa-de-calunya-en-excel-por-comarcas.md
 slug: mapas-con-r-en-omnia-sunt-communia
 tags:
 - mapas

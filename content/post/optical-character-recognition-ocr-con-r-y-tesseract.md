@@ -5,6 +5,13 @@ categories:
 - Inteligencia Artificial
 - R
 date: '2020-06-15T10:07:23-05:00'
+lastmod: '2025-07-13T16:04:04.490114'
+related:
+- r-python-reticulate.md
+- analisis-de-textos-con-r.md
+- tipos-de-uniones-join-de-tablas-con-python-pandas.md
+- leer-fichero-de-texto-de-ancho-fijo-con-python-pandas.md
+- capitulo-4-uniones-de-tablas-con-r.md
 slug: optical-character-recognition-ocr-con-r-y-tesseract
 tags:
 - OCR

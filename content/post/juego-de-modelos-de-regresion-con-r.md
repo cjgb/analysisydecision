@@ -6,6 +6,13 @@ categories:
 - Modelos
 - R
 date: '2015-06-28T15:44:25-05:00'
+lastmod: '2025-07-13T15:59:09.209009'
+related:
+- resolucion-del-juego-de-modelos-con-r.md
+- manual-curso-introduccion-de-r-capitulo-10-funciones-graficas-en-regresion-lineal.md
+- manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
+- regresion-con-redes-neuronales-en-r.md
+- machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algoritmos-de-clasificacion.md
 slug: juego-de-modelos-de-regresion-con-r
 tags:
 - knn

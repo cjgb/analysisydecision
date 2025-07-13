@@ -5,6 +5,13 @@ categories:
 - R
 - Trucos
 date: '2009-06-04T17:49:40-05:00'
+lastmod: '2025-07-13T16:03:17.310168'
+related:
+- trucos-sas-muestreo-con-proc-surveyselect.md
+- sobremuestreo-y-pesos-a-las-observaciones-ahora-con-r.md
+- trucos-sas-muestras-aleatorias-con-y-sin-reemplazamiento.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-12-muestreo-e-inferencia-estadistica.md
+- truco-sas-categorizar-variables-continuas.md
 slug: muestreo-de-datos-con-r
 tags: []
 title: Muestreo de datos con R

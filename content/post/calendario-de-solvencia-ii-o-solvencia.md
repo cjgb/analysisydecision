@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Formación
 date: '2013-12-16T10:36:14-05:00'
+lastmod: '2025-07-13T15:54:37.794870'
+related:
+- lecciones-de-economia-de-un-ignorante-llegamos-a-solvencia-ii.md
+- video-resumen-del-iii-encuentro-del-sector-seguros.md
+- participaciones-preferentes-de-las-cajas-de-ahorro.md
+- comienza-la-cuenta-atras-iii-jornadas-de-usuarios-de-r.md
+- segundo-dia-en-las-iii-jornadas-de-r.md
 slug: calendario-de-solvencia-ii-o-solvencia
 tags:
 - Solvencia II

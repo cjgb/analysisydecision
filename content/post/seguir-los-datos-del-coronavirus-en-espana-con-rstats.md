@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Formación
 date: '2020-03-10T07:00:18-05:00'
+lastmod: '2025-07-13T16:05:56.805338'
+related:
+- estimacion-de-la-evolucion-de-casos-del-coronavirus-en-espana.md
+- mi-breve-seguimiento-del-coronavirus-con-r.md
+- evolucion-del-numero-de-casos-de-coronavirus.md
+- mapa-del-covid-19-por-comunidades-autonomas-con-r-mas-rstats.md
+- mapa-de-rstats-animado-con-el-porcentaje-de-vacunacion-en-espana.md
 slug: seguir-los-datos-del-coronavirus-en-espana-con-rstats
 tags: []
 title: Seguir los datos del coronavirus en España con Rstats

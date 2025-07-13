@@ -6,6 +6,13 @@ categories:
 - SAS
 - WPS
 date: '2010-07-30T02:07:53-05:00'
+lastmod: '2025-07-13T15:56:12.787111'
+related:
+- sentencia-del-tribunal-de-justicia-de-la-ue-sobre-el-caso-wps-y-sas.md
+- acercamiento-a-wps-migrando-desde-sas.md
+- wps-en-el-mercado-espanol.md
+- traducir-codigo-sas-a-java.md
+- curso-de-lenguaje-sas-con-wps-introduccion.md
 slug: david-gana-a-goliat-la-sentencia-del-caso-sas-frente-a-wps
 tags: []
 title: David gana a Goliat. La sentencia del caso SAS frente a WPS

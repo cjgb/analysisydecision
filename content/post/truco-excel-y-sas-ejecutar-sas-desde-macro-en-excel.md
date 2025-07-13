@@ -6,6 +6,13 @@ categories:
 - SAS
 - Trucos
 date: '2011-12-12T10:07:23-05:00'
+lastmod: '2025-07-13T16:07:36.083179'
+related:
+- truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
+- truco-sas-sas-y-dde-aliados-de-excel.md
+- trucos-sas-macrovariable-a-dataset.md
+- macros-sas-informe-de-un-dataset-en-excel.md
+- trucos-sas-ejecutar-un-codigo-si-existe-una-tabla-o-un-fichero.md
 slug: truco-excel-y-sas-ejecutar-sas-desde-macro-en-excel
 tags:
 - initstmt

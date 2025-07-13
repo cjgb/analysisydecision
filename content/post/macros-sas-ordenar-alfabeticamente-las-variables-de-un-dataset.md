@@ -4,6 +4,13 @@ categories:
 - SAS
 - Trucos
 date: '2008-11-06T06:55:12-05:00'
+lastmod: '2025-07-13T16:01:07.627686'
+related:
+- macro-sas-variables-de-un-dataset-en-una-macro-variable.md
+- trucos-sas-lista-de-datasets-en-macro-variable.md
+- trucos-sas-macrovariable-a-dataset.md
+- trucos-sas-eliminar-etiquetas-en-los-conjunto-de-datos-sas.md
+- truco-sas-tablas-de-una-libreria-en-una-macro-variable.md
 slug: macros-sas-ordenar-alfabeticamente-las-variables-de-un-dataset
 tags: []
 title: Macros SAS. Ordenar alfabéticamente las variables de un dataset

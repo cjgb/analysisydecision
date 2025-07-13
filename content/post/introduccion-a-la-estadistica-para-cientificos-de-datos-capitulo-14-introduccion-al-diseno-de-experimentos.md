@@ -5,6 +5,13 @@ categories:
 - Libro Estadística
 - R
 date: '2023-03-15T12:25:17-05:00'
+lastmod: '2025-07-13T15:58:52.893964'
+related:
+- manual-curso-introduccion-de-r-capitulo-11-introduccion-al-analisis-de-la-varianza-anova.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-10-probabilidad-y-distribuciones.md
+- monografico-analisis-de-factores-con-r-una-introduccion.md
+- manual-curso-introduccion-de-r-capitulo-13-analisis-de-la-varianza-disenos-anidados.md
+- manual-curso-introduccion-de-r-capitulo-12-analisis-de-la-varianza-disenos-bifactoriales.md
 slug: introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-14-introduccion-al-diseno-de-experimentos
 tags: []
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 14. Introducción

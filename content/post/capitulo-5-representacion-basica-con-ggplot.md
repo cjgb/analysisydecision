@@ -6,6 +6,13 @@ categories:
 - Libro Estadística
 - R
 date: '2022-01-27T09:06:57-05:00'
+lastmod: '2025-07-13T15:54:43.583208'
+related:
+- graficos-descriptivos-basicos-con-seaborn-python.md
+- graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
+- graficos-basicos-con-julia.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-7-descripcion-grafica-de-variables.md
+- descubriendo-ggplot2-421.md
 slug: capitulo-5-representacion-basica-con-ggplot
 tags: []
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 5. Representación

@@ -4,6 +4,13 @@ categories:
 - SAS
 - Trucos
 date: '2008-09-02T03:23:38-05:00'
+lastmod: '2025-07-13T16:08:23.791364'
+related:
+- macros-sas-pasar-de-texto-a-numerico.md
+- transformar-variables-en-sas-caracter-a-numerico.md
+- importar-a-sas-desde-otras-aplicaciones.md
+- trucos-sas-macrovariable-a-dataset.md
+- truco-sas-limpiar-un-fichero-de-texto-con-sas.md
 slug: truco-sas-macro-buscar-y-reemplazar-en-texto
 tags:
 - configuracion regional

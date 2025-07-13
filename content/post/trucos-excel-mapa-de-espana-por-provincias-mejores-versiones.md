@@ -6,6 +6,13 @@ categories:
 - Monográficos
 - Trucos
 date: '2011-07-03T15:25:11-05:00'
+lastmod: '2025-07-13T16:09:07.378678'
+related:
+- trucos-excel-mapa-de-espana-por-provincias-mejorado.md
+- trucos-excel-mapa-de-espana-por-provincias.md
+- nuevo-y-muy-mejorado-mapa-de-espana-por-provincias-con-excel.md
+- trucos-excel-nuevo-y-mejorado-mapa-de-espana-por-provincias-con-excel.md
+- mapa-excel-de-europa.md
 slug: trucos-excel-mapa-de-espana-por-provincias-mejores-versiones
 tags:
 - macro

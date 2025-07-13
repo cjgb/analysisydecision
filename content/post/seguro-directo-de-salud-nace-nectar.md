@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Seguros
 date: '2009-02-05T07:09:33-05:00'
+lastmod: '2025-07-13T16:06:01.368623'
+related:
+- el-seguro-de-salud-suma-y-sigue.md
+- nace-pelayonex-la-directa-de-pelayo.md
+- mutua-madrilena-compra-el-50-de-adeslas-seguros-generales.md
+- nace-verti-la-directa-de-mapfre.md
+- consultor-particular-de-seguros.md
 slug: seguro-directo-de-salud-nace-nectar
 tags: []
 title: Seguro directo de salud. Nace ‘Nectar’

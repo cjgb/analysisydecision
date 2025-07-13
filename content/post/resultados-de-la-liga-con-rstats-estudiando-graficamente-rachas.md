@@ -9,6 +9,13 @@ categories:
 - R
 - Trucos
 date: '2023-03-01T13:00:26-05:00'
+lastmod: '2025-07-13T16:05:23.559296'
+related:
+- alineaciones-de-equipos-de-futbol-con-worldfootballr-de-rstats.md
+- minutos-de-juego-y-puntos-es-espanyol-y-sus-finales-de-partido.md
+- los-porteros-del-espanyol-y-la-regresion-binomial-negativa.md
+- pintando-campos-de-futbol-con-rstats-y-entendiendo-funciones-de-densidad.md
+- mi-breve-seguimiento-del-coronavirus-con-r.md
 slug: resultados-de-la-liga-con-rstats-estudiando-graficamente-rachas
 tags: []
 title: Resultados de La Liga con rstats. Estudiando gráficamente rachas

@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Formación
 date: '2008-07-24T05:31:53-05:00'
+lastmod: '2025-07-13T16:02:12.678619'
+related:
+- a-mi-me-preocupa-el-pequeno-ahorrador.md
+- la-confianza-en-el-sector-financiero.md
+- la-batalla-de-las-nominas-seguimos-buscando-el-dinero-nuevo.md
+- lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
+- lecciones-de-economia-de-un-ignorante-los-bancos-pierden-dinero-para-favorecer-a-unos-y-luego-los-salvamos-todos.md
 slug: margenes-nulos-en-los-nuevos-depositos-bancarios
 tags:
 - ''

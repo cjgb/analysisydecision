@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2010-11-08T10:49:24-05:00'
+lastmod: '2025-07-13T16:00:51.333199'
+related:
+- macros-sas-limpiar-una-cadena-de-caracteres.md
+- macros-sas-pasar-de-texto-a-numerico.md
+- truco-sas-limpieza-de-tabuladores-con-expresiones-regulares.md
+- trucos-sas-eliminacion-de-espacios-en-blanco.md
+- truco-sas-macro-buscar-y-reemplazar-en-texto.md
 slug: macros-faciles-de-sas-normaliza-un-texto-rapido
 tags:
 - CALL PRXCHANGE

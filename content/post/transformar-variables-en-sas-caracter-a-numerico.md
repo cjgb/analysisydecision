@@ -5,6 +5,13 @@ categories:
 - Monográficos
 - SAS
 date: '2008-12-03T10:57:10-05:00'
+lastmod: '2025-07-13T16:06:53.584118'
+related:
+- macros-sas-pasar-de-texto-a-numerico.md
+- trucos-sas-pasar-de-caracter-a-numerico-y-viceversa.md
+- truco-sas-macro-buscar-y-reemplazar-en-texto.md
+- trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados.md
+- importar-a-sas-desde-otras-aplicaciones.md
 slug: transformar-variables-en-sas-caracter-a-numerico
 tags: []
 title: Transformar variables en SAS. Carácter a numérico

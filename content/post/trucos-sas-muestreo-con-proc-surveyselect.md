@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2009-06-15T07:38:56-05:00'
+lastmod: '2025-07-13T16:10:19.017333'
+related:
+- muestreo-de-datos-con-r.md
+- trucos-sas-muestras-aleatorias-con-y-sin-reemplazamiento.md
+- truco-sas-categorizar-variables-continuas.md
+- trucos-sas-variables-dummy-de-una-variable-continua.md
+- las-cuentas-claras.md
 slug: trucos-sas-muestreo-con-proc-surveyselect
 tags:
 - muestreo con sas

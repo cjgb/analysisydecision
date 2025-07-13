@@ -6,6 +6,13 @@ categories:
 - Trucos
 - WPS
 date: '2015-12-02T08:19:45-05:00'
+lastmod: '2025-07-13T16:00:41.815936'
+related:
+- trucos-sas-variables-dummy-de-una-variable-continua.md
+- trucos-sas-variables-dicotomicas-desde-factores.md
+- macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
+- truco-sas-categorizar-variables-continuas.md
+- macro-sas-variables-de-un-dataset-en-una-macro-variable.md
 slug: macro-sas-crear-variables-dummy-desde-una-variable-categorica
 tags: []
 title: Macro SAS. Crear variables dummy desde una variable categórica

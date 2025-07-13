@@ -4,6 +4,13 @@ categories:
 - SAS
 - Trucos
 date: '2010-05-05T09:26:04-05:00'
+lastmod: '2025-07-13T16:07:37.613131'
+related:
+- lectura-de-ficheros-sas7bdat-de-sas-directamente-con-r.md
+- sigo-migrando-de-sas-a-wps.md
+- crear-archivo-csv-desde-python.md
+- importar-a-sas-desde-otras-aplicaciones.md
+- acercamiento-a-wps-migrando-desde-sas.md
 slug: '%c2%bftruco-leer-sas7bdat-sin-sas'
 tags: []
 title: ¿Truco? Leer .sas7bdat sin SAS

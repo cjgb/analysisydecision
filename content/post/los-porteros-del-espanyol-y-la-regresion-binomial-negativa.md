@@ -8,6 +8,13 @@ categories:
 - Opinión
 - R
 date: '2023-12-08T17:40:48-05:00'
+lastmod: '2025-07-13T16:00:32.320851'
+related:
+- minutos-de-juego-y-puntos-es-espanyol-y-sus-finales-de-partido.md
+- resultados-de-la-liga-con-rstats-estudiando-graficamente-rachas.md
+- pintando-campos-de-futbol-con-rstats-y-entendiendo-funciones-de-densidad.md
+- alineaciones-de-equipos-de-futbol-con-worldfootballr-de-rstats.md
+- datos-libres-de-statsbomb-independencia-estadistica-y-tandas-de-penaltis.md
 slug: los-porteros-del-espanyol-y-la-regresion-binomial-negativa
 tags: []
 title: Los porteros del Espanyol y la regresión binomial negativa

@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - R
 date: '2016-01-12T02:15:53-05:00'
+lastmod: '2025-07-13T16:05:29.645229'
+related:
+- reunion-del-grupo-de-usuarios-de-r-de-madrid-14042016.md
+- reunion-usuarios-de-r-en-madrid-26-de-noviembre-de-2014.md
+- reunion-del-grupo-de-usuarios-de-r-en-madrid-el-28-de-enero.md
+- reunion-de-usuarios-de-r-de-madrid-15-de-octubre-de-2015.md
+- martes-25-de-abril-nueva-reunion-del-grupo-de-usuarios-de-r-y-python.md
 slug: reunion-del-grupo-de-usuarios-de-r-de-madrid-14-de-enero-de-2016
 tags: []
 title: Reunión del Grupo de Usuarios de R de Madrid. 14 de enero de 2016

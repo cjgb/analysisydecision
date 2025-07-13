@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Banca
 date: '2010-02-01T04:00:43-05:00'
+lastmod: '2025-07-13T15:59:45.981458'
+related:
+- lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
+- lecciones-de-economia-de-un-ignorante-la-privatizacion-de-las-cajas-sera-una-chapuza.md
+- me-preocupa-el-pequeno-ahorrador-ii.md
+- lecciones-de-economia-de-un-ignorante-de-donde-sacan-margen-los-bancos.md
+- lecciones-de-economia-de-un-ignorante-por-que-no-hablo-de-la-batalla-de-los-depositos.md
 slug: lecciones-de-economia-de-un-ignorante-la-caixa-a-colocar-preferentes
 tags: []
 title: Lecciones de economía de un ignorante. «la Caixa» a colocar preferentes

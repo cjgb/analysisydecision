@@ -5,6 +5,13 @@ categories:
 - Monográficos
 - Seguros
 date: '2010-08-31T07:07:47-05:00'
+lastmod: '2025-07-13T15:56:22.329354'
+related:
+- el-seguro-de-credito-interesante-reto-tecnico.md
+- el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v.md
+- el-modelo-multivariante-en-el-sector-asegurador-la-variable-dependiente-iii.md
+- lecciones-de-economia-de-un-ignorante-llegamos-a-solvencia-ii.md
+- modelos-tweedie-con-h2o-mutualizar-siniestralidad-en-base-a-factores-de-riesgo.md
 slug: detalles-tecnicos-del-seguro-de-credito-el-factor-de-uso-del-importe-concedido
 tags:
 - ''

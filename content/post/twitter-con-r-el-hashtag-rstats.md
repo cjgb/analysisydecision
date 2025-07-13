@@ -5,6 +5,13 @@ categories:
 - Monográficos
 - R
 date: '2016-01-06T14:35:06-05:00'
+lastmod: '2025-07-13T16:10:43.422661'
+related:
+- puede-la-informacion-de-twitter-servir-para-tarificar-seguros.md
+- paquete-opendataes-en-ropenspain-para-acceder-a-los-datos-de-datos-gob-es-con-r.md
+- comienza-la-publicacion-del-ensayo-introduccion-a-la-estadistica-para-cientificos-de-datos.md
+- leer-y-representar-datos-de-google-trends-con-r.md
+- trucos-simples-para-rstats.md
 slug: twitter-con-r-el-hashtag-rstats
 tags:
 - twitter

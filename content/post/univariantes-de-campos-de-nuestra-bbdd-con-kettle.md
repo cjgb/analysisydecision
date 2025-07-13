@@ -6,6 +6,13 @@ categories:
 - Formación
 - Monográficos
 date: '2011-09-12T03:11:00-05:00'
+lastmod: '2025-07-13T16:11:01.367205'
+related:
+- montemos-un-sistema-de-informacion-en-nuestro-equipo-ii.md
+- montemos-un-sistema-de-informacion-en-nuestro-equipo-iii.md
+- las-cuentas-claras.md
+- montemos-un-sistema-de-informacion-en-nuestro-equipo-i.md
+- trucos-sas-trasponer-con-sql-para-torpes.md
 slug: univariantes-de-campos-de-nuestra-bbdd-con-kettle
 tags: []
 title: Univariantes de campos de nuestra BBDD con kettle

@@ -5,6 +5,13 @@ categories:
 - Modelos
 - R
 date: '2013-04-25T03:17:08-05:00'
+lastmod: '2025-07-13T16:00:02.376670'
+related:
+- da-comienzo-la-lectura-de-the-elements-of-statistical-learning.md
+- nuevo-curso-de-estadistica-con-r.md
+- jornadas-de-r-gratuitas-en-galicia.md
+- nueva-edicion-del-curso-basico-de-r.md
+- curso-de-iniciacion-a-r-en-kschool-de-carlos-gil.md
 slug: lectura-conjunta-de-analyzing-linguistic-data
 tags: []
 title: Lectura conjunta de “Analyzing Linguistic Data”

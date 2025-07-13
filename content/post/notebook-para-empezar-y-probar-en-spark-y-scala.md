@@ -4,6 +4,13 @@ categories:
 - Big Data
 - Machine Learning
 date: '2018-03-11T06:02:57-05:00'
+lastmod: '2025-07-13T16:03:32.875730'
+related:
+- aprende-pyspark-sin-complicaciones.md
+- r-python-reticulate.md
+- montemos-un-sistema-de-informacion-en-nuestro-equipo-i.md
+- univariantes-de-campos-de-nuestra-bbdd-con-kettle.md
+- probando-r-sobre-el-ec2-de-amazon.md
 slug: notebook-para-empezar-y-probar-en-spark-y-scala
 tags:
 - notebook

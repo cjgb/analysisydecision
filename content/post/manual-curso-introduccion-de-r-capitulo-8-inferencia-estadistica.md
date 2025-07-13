@@ -4,6 +4,13 @@ categories:
 - Formación
 - R
 date: '2008-06-23T07:56:56-05:00'
+lastmod: '2025-07-13T16:01:36.037851'
+related:
+- capitulo-5-representacion-basica-con-ggplot.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-10-probabilidad-y-distribuciones.md
+- manual-curso-introduccion-de-r-capitulo-11-introduccion-al-analisis-de-la-varianza-anova.md
+- manual-curso-introduccion-de-r-capitulo-13-analisis-de-la-varianza-disenos-anidados.md
+- manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
 slug: manual-curso-introduccion-de-r-capitulo-8-inferencia-estadistica
 tags: []
 title: 'Manual. Curso introducción de R. Capítulo 8: Inferencia estadística'

@@ -7,6 +7,13 @@ categories:
 - Monográficos
 - R
 date: '2014-09-09T09:13:05-05:00'
+lastmod: '2025-07-13T16:05:19.111643'
+related:
+- regresion-con-redes-neuronales-en-r.md
+- resolucion-del-juego-de-modelos-con-r.md
+- monografico-paquete-de-r-nnet-para-modelos-de-redes-neuronales.md
+- juego-de-modelos-de-regresion-con-r.md
+- como-salva-la-linealidad-una-red-neuronal.md
 slug: representacion-de-redes-neuronales-con-r
 tags:
 - plot.nnet

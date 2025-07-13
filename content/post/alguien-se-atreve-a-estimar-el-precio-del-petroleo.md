@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Energía
 date: '2008-09-05T02:29:51-05:00'
+lastmod: '2025-07-13T15:53:47.410946'
+related:
+- experimento-un-prestamo-personal-para-invertir-en-bolsa.md
+- i-concurso-de-analisis-de-datos-con-r.md
+- tendre-que-decir-algo-sobre-la-reduccion-de-la-velocidad-maxima-en-espana.md
+- puede-la-informacion-de-twitter-servir-para-tarificar-seguros.md
+- nuevo-entorno-para-la-gestion-de-la-informacion.md
 slug: '%c2%bfalguien-se-atreve-a-estimar-el-precio-del-petroleo'
 tags:
 - estimar

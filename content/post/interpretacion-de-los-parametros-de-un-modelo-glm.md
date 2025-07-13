@@ -5,6 +5,13 @@ categories:
 - Modelos
 - SAS
 date: '2016-03-21T06:07:50-05:00'
+lastmod: '2025-07-13T15:58:44.769881'
+related:
+- modelos-gam-dejando-satisfechos-a-los-equipos-de-negocio.md
+- obteniendo-los-parametros-de-mi-modelo-gam.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-15-modelos-glm-regresion-logistica-y-regresion-de-poisson.md
+- los-parametros-del-modelo-glm-como-relatividades-como-recargos-o-descuentos.md
+- manual-curso-introduccion-de-r-capitulo-18-modelos-de-regresion-de-poisson.md
 slug: interpretacion-de-los-parametros-de-un-modelo-glm
 tags:
 - GENMOD

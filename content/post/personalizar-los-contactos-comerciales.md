@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Consultoría
 date: '2009-01-20T09:57:53-05:00'
+lastmod: '2025-07-13T16:04:19.464030'
+related:
+- crm-me-rio-de-los-topicos.md
+- contenidos-web-analisis-informacion.md
+- ayd-2300-visitas-mensuales.md
+- contenidos-para-octubre-de-ayd.md
+- de-estadistico-a-minero-de-datos-a-cientifico-de-datos.md
 slug: personalizar-los-contactos-comerciales
 tags: []
 title: Personalizar los contactos comerciales

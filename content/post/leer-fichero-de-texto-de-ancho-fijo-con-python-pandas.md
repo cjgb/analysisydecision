@@ -4,6 +4,13 @@ categories:
 - Formación
 - Python
 date: '2020-09-17T03:24:54-05:00'
+lastmod: '2025-07-13T16:00:10.526305'
+related:
+- manual-curso-introduccion-de-r-capitulo-3-lectura-de-datos.md
+- lectura-de-archivos-csv-con-python-y-pandas.md
+- analisis-de-textos-con-r.md
+- leer-archivos-excel-con-python.md
+- data-management-basico-con-pandas.md
 slug: leer-fichero-de-texto-de-ancho-fijo-con-python-pandas
 tags: []
 title: Leer fichero de texto de ancho fijo con Python Pandas

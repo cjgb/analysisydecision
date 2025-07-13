@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2009-04-06T07:56:40-05:00'
+lastmod: '2025-07-13T16:10:40.491580'
+related:
+- macro-sas-crear-variables-dummy-desde-una-variable-categorica.md
+- trucos-sas-variables-dicotomicas-desde-factores.md
+- macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
+- truco-sas-categorizar-variables-continuas.md
+- macros-sas-agrupando-variables-categoricas.md
 slug: trucos-sas-variables-dummy-de-una-variable-continua
 tags:
 - Dummy

@@ -6,6 +6,13 @@ categories:
 - Excel
 - Formación
 date: '2011-12-26T13:33:23-05:00'
+lastmod: '2025-07-13T15:54:29.320774'
+related:
+- graficos-de-velocimetros-con-excel-hechos-con-begraphic.md
+- chart-tools-un-add-in-imprescindible-para-excel.md
+- mapa-de-calunya-en-excel-por-comarcas.md
+- mapa-de-catalunya-en-excel-por-comarcas.md
+- mapas-de-la-provincia-de-madrid-con-bdt.md
 slug: begraphic-un-add-in-para-excel-muy-interesante
 tags: []
 title: Begraphic un add in para Excel muy interesante

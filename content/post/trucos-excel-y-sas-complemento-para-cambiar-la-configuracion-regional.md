@@ -6,6 +6,13 @@ categories:
 - SAS
 - Trucos
 date: '2011-11-25T17:29:45-05:00'
+lastmod: '2025-07-13T16:09:28.899899'
+related:
+- trucos-excel-modificar-la-configuracion-regional-con-visual-basic.md
+- truco-sas-sas-y-dde-aliados-de-excel.md
+- truco-sas-leer-datos-de-excel-con-sas-con-dde.md
+- truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
+- importar-a-sas-desde-otras-aplicaciones.md
 slug: trucos-excel-y-sas-complemento-para-cambiar-la-configuracion-regional
 tags:
 - Complementos de Excel

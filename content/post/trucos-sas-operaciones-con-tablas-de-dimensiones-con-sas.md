@@ -6,6 +6,13 @@ categories:
 - SAS
 - Trucos
 date: '2011-10-25T01:38:24-05:00'
+lastmod: '2025-07-13T16:10:22.126572'
+related:
+- trucos-sas-variables-dummy-de-una-variable-continua.md
+- truco-sas-categorizar-variables-continuas.md
+- trucos-sas-trasponer-con-sql-para-torpes.md
+- macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
+- macros-sas-agrupando-variables-categoricas.md
 slug: trucos-sas-operaciones-con-tablas-de-dimensiones-con-sas
 tags:
 - array

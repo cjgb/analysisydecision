@@ -6,6 +6,13 @@ categories:
 - Formación
 - SAS
 date: '2011-04-23T16:24:31-05:00'
+lastmod: '2025-07-13T16:00:22.765922'
+related:
+- importar-a-sas-desde-otras-aplicaciones.md
+- curso-de-lenguaje-sas-con-wps-lectura-de-ficheros-de-texto.md
+- trucos-sas-mejor-que-hash-in-para-cruzar-tablas.md
+- en-merge-mejor-if-o-where.md
+- ayudadme-importar-a-sas-texto-con-comillas.md
 slug: los-10-errores-y-warnings-mas-habituales-en-sas
 tags:
 - DATA

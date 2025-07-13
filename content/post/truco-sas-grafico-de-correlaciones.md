@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2014-05-12T09:36:21-05:00'
+lastmod: '2025-07-13T16:08:14.178636'
+related:
+- grafico-de-correlaciones-entre-variables.md
+- un-acercamiento-a-graph-primeros-graficos-con-sas.md
+- un-acercamiento-a-graph-ods-graphs-proc-sgplot.md
+- truco-sas-proc-contents.md
+- macros-sas-informe-de-un-dataset-en-excel.md
 slug: truco-sas-grafico-de-correlaciones
 tags:
 - matriz de correlaciones

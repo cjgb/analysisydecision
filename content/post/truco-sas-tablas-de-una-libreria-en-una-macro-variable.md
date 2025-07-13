@@ -6,6 +6,13 @@ categories:
 - Trucos
 - WPS
 date: '2017-01-24T06:00:16-05:00'
+lastmod: '2025-07-13T16:08:36.195948'
+related:
+- trucos-sas-lista-de-datasets-en-macro-variable.md
+- truco-sas-proc-contents.md
+- macros-sas-informe-de-un-dataset-en-excel.md
+- macro-sas-variables-de-un-dataset-en-una-macro-variable.md
+- trucos-sas-eliminar-etiquetas-en-los-conjunto-de-datos-sas.md
 slug: truco-sas-tablas-de-una-libreria-en-una-macro-variable
 tags:
 - proc datasets

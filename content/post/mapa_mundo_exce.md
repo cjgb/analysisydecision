@@ -5,6 +5,13 @@ categories:
 - Excel
 - Formación
 date: '2014-09-30T14:39:40-05:00'
+lastmod: '2025-07-13T16:01:59.041714'
+related:
+- mapa-excel-de-europa.md
+- trucos-excel-mapa-de-mexico-por-estados.md
+- trucos-excel-mapa-de-espana-por-provincias.md
+- nuevo-y-muy-mejorado-mapa-de-espana-por-provincias-con-excel.md
+- trucos-excel-mapa-de-espana-por-comunidades-autonomas.md
 slug: mapa_mundo_exce
 tags:
 - mapas excel

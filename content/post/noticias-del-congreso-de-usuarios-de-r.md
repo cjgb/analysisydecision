@@ -4,6 +4,13 @@ categories:
 - Formación
 - R
 date: '2009-11-29T12:58:34-05:00'
+lastmod: '2025-07-13T16:03:37.633541'
+related:
+- revision-de-las-iii-jornadas-de-r.md
+- comienza-la-cuenta-atras-iii-jornadas-de-usuarios-de-r.md
+- porque-me-gusta-r.md
+- el-futuro-del-analisis-de-datos-pasa-por-r.md
+- estadistica-para-cientificos-de-datos-con-r-introduccion.md
 slug: noticias-del-congreso-de-usuarios-de-r
 tags:
 - jornadas de usuarios de R

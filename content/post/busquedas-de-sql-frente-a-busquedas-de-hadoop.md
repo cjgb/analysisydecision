@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Big Data
 date: '2013-04-30T08:58:29-05:00'
+lastmod: '2025-07-13T15:54:34.967114'
+related:
+- sql-vs-hadoop-mas-que-una-tendencia.md
+- nos-hemos-terminado-de-reinventar-acabamos-con-el-data-mining-y-empezamos-con-el-big-data.md
+- data-mining-vs-bigdata-de-momento-con-google-trends.md
+- data-mining-business-intelligence-yo-la-nube.md
+- proyectos-de-nosql-en-espana.md
 slug: busquedas-de-sql-frente-a-busquedas-de-hadoop
 tags: []
 title: Búsquedas de SQL frente a búsquedas de Hadoop

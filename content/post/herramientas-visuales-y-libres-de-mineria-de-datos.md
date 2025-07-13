@@ -3,6 +3,13 @@ author: cgbellosta
 categories:
 - Data Mining
 date: '2009-06-05T09:01:49-05:00'
+lastmod: '2025-07-13T15:58:25.802404'
+related:
+- porque-me-gusta-r.md
+- noticias-del-congreso-de-usuarios-de-r.md
+- contenidos-web-analisis-informacion.md
+- proyecto-text-mining-con-excel-i.md
+- machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algoritmos-de-clasificacion.md
 slug: herramientas-visuales-y-libres-de-mineria-de-datos
 tags: []
 title: Herramientas visuales y libres de minería de datos

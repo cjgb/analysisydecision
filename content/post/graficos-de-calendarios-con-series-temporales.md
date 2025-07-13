@@ -7,6 +7,13 @@ categories:
 - Monográficos
 - R
 date: '2020-01-11T14:29:21-05:00'
+lastmod: '2025-07-13T15:58:14.921043'
+related:
+- un-repaso-a-los-paquetes-de-r-solar-chron-directlabels-y-graficos-de-densidades-con-lattice.md
+- mi-breve-seguimiento-del-coronavirus-con-r.md
+- stadistical-data-warehouse-del-european-central-bank-con-r-y-los-depositos-a-perdidas.md
+- incluir-subplot-en-mapa-con-ggplot.md
+- graficos-de-burbuja-con-r.md
 slug: graficos-de-calendarios-con-series-temporales
 tags: []
 title: Gráficos de calendarios con series temporales

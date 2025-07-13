@@ -5,6 +5,13 @@ categories:
 - Formación
 - R
 date: '2011-03-20T09:29:49-05:00'
+lastmod: '2025-07-13T16:09:37.572549'
+related:
+- truco-r-paletas-de-colores-en-r.md
+- graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
+- trucos-r-el-paquete-classint-para-clasificar-variables-continuas.md
+- graficos-dinamicos-en-r-con-la-funcion-text.md
+- graficos-de-burbuja-con-r.md
 slug: trucos-r-graficos-de-velocimetro-con-r
 tags:
 - ''

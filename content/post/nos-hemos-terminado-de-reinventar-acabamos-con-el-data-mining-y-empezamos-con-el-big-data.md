@@ -4,6 +4,13 @@ categories:
 - Big Data
 - Monográficos
 date: '2013-02-23T12:32:52-05:00'
+lastmod: '2025-07-13T16:03:31.393007'
+related:
+- cuando-tenemos-big-data.md
+- data-mining-vs-bigdata-de-momento-con-google-trends.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-con-r-capitulo-2-datos.md
+- el-futuro-de-la-profesion.md
+- busquedas-de-sql-frente-a-busquedas-de-hadoop.md
 slug: nos-hemos-terminado-de-reinventar-acabamos-con-el-data-mining-y-empezamos-con-el-big-data
 tags: []
 title: Nos hemos terminado de reinventar. Acabamos con el Data Mining y empezamos

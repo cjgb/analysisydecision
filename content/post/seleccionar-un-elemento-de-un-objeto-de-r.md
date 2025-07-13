@@ -4,6 +4,13 @@ categories:
 - Formación
 - R
 date: '2013-12-23T07:21:34-05:00'
+lastmod: '2025-07-13T16:06:05.429981'
+related:
+- cuidado-con-el-p-valor-en-los-estudios-de-independencia.md
+- trucos-r-llevar-a-sas-las-reglas-de-un-arbol-de-decision.md
+- analisis-de-textos-con-r.md
+- manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
+- obteniendo-los-parametros-de-mi-modelo-gam.md
 slug: seleccionar-un-elemento-de-un-objeto-de-r
 tags:
 - STR

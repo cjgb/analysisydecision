@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Sin catergoría
 date: '2010-03-07T06:08:24-05:00'
+lastmod: '2025-07-13T15:58:01.344412'
+related:
+- contenidos-web-analisis-informacion.md
+- el-ano-2009-para-analisis-y-decision.md
+- de-estadistico-a-minero-de-datos-a-cientifico-de-datos.md
+- nos-hemos-terminado-de-reinventar-acabamos-con-el-data-mining-y-empezamos-con-el-big-data.md
+- proyecto-text-mining-con-excel-pasa-a-ser-google-mining.md
 slug: '%c2%bfgoogle-enemigo-del-open-source'
 tags:
 - Google

@@ -4,6 +4,13 @@ categories:
 - Formación
 - SAS
 date: '2009-08-12T02:57:08-05:00'
+lastmod: '2025-07-13T16:04:43.614641'
+related:
+- capitulo-4-uniones-de-tablas-con-r.md
+- tipos-de-uniones-join-de-tablas-con-python-pandas.md
+- truco-sas-transponer-tablas-con-proc-transpose-data-o-proc-sql.md
+- truco-sas-cruce-con-formatos.md
+- en-merge-mejor-if-o-where.md
 slug: proc-sql-merge-set
 tags: []
 title: Equivalencias entre PROC SQL y DATA en las uniones de tablas SAS

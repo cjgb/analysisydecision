@@ -6,6 +6,13 @@ categories:
 - Formación
 - Trucos
 date: '2012-08-06T02:16:22-05:00'
+lastmod: '2025-07-13T16:09:00.053981'
+related:
+- trucos-excel-poner-etiquetas-en-graficos-de-dispersion.md
+- chart-tools-un-add-in-imprescindible-para-excel.md
+- truco-excel-grafico-de-puntos-con-colores.md
+- truco-excel-graficos-de-dispersion-que-identifican-los-puntos.md
+- nuevo-y-muy-mejorado-mapa-de-espana-por-provincias-con-excel.md
 slug: trucos-excel-graficos-dot-plot-representando-un-ranking-graficamente
 tags:
 - Dot plot

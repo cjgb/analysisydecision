@@ -5,6 +5,13 @@ categories:
 - Formación
 - Trucos
 date: '2015-07-24T06:56:23-05:00'
+lastmod: '2025-07-13T16:07:04.178330'
+related:
+- truco-excel-actualizar-el-filtro-de-todas-las-tablas-dinamicas-de-mi-libro.md
+- trucos-excel-eliminar-referencias-del-tipo-importardatosdinamicos.md
+- trucos-excel-multiples-campos-calculados-en-una-tabla-dinamica.md
+- trucos-excel-tranformar-un-caracter-a-fecha.md
+- truco-excel-unir-todos-los-libros-en-una-hoja.md
 slug: truco-excel-actualizar-los-filtros-de-una-tabla-dinamica-con-visual-basic
 tags: []
 title: Truco Excel. Actualizar los filtros de una tabla dinámica con Visual basic

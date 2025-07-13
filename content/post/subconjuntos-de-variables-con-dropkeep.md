@@ -4,6 +4,13 @@ categories:
 - Formación
 - SAS
 date: '2009-07-02T08:38:20-05:00'
+lastmod: '2025-07-13T16:06:26.030599'
+related:
+- curso-de-lenguaje-sas-con-wps-subconjuntos-de-variables-con-drop-y-keep.md
+- trucos-sas-ordenar-las-variables-de-un-dataset.md
+- trucos-sas-eliminar-etiquetas-en-los-conjunto-de-datos-sas.md
+- truco-sas-tablas-de-una-libreria-en-una-macro-variable.md
+- trucos-sas-variables-dummy-de-una-variable-continua.md
 slug: subconjuntos-de-variables-con-dropkeep
 tags:
 - drop keep

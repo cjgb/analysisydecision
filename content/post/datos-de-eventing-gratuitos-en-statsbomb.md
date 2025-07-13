@@ -6,6 +6,13 @@ categories:
 - Formación
 - R
 date: '2023-08-23T03:03:21-05:00'
+lastmod: '2025-07-13T15:56:10.072150'
+related:
+- pintando-campos-de-futbol-con-rstats-y-entendiendo-funciones-de-densidad.md
+- datos-libres-de-statsbomb-independencia-estadistica-y-tandas-de-penaltis.md
+- alineaciones-de-equipos-de-futbol-con-worldfootballr-de-rstats.md
+- minutos-de-juego-y-puntos-es-espanyol-y-sus-finales-de-partido.md
+- resultados-de-la-liga-con-rstats-estudiando-graficamente-rachas.md
 slug: datos-de-eventing-gratuitos-en-statsbomb
 tags: []
 title: Datos de eventing gratuitos en Statsbomb

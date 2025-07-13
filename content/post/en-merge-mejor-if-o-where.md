@@ -4,6 +4,13 @@ categories:
 - Formación
 - SAS
 date: '2009-08-11T02:48:57-05:00'
+lastmod: '2025-07-13T15:57:23.389308'
+related:
+- laboratorio-de-codigo-sas-comparativa-entre-if-y-where.md
+- proc-sql-merge-set.md
+- truco-sas-cruce-con-formatos.md
+- trucos-sas-porque-hay-que-usar-objetos-hash.md
+- curso-de-lenguaje-sas-con-wps-sentencias-condicionales-if-then.md
 slug: en-merge-%c2%bfmejor-if-o-where
 tags: []
 title: En MERGE, ¿mejor IF o WHERE?

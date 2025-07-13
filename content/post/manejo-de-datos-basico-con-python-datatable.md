@@ -5,6 +5,13 @@ categories:
 - Machine Learning
 - Python
 date: '2020-10-08T05:31:22-05:00'
+lastmod: '2025-07-13T16:01:14.395388'
+related:
+- data-management-basico-con-pandas.md
+- data-management-con-dplyr.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-3-manejo-de-datos-con-r.md
+- leer-fichero-de-texto-de-ancho-fijo-con-python-pandas.md
+- truco-python-seleccionar-o-eliminar-variables-de-un-data-frame-en-base-a-un-prefijo-sufijo-o-si-contienen-un-caracter.md
 slug: manejo-de-datos-basico-con-python-datatable
 tags:
 - datatable

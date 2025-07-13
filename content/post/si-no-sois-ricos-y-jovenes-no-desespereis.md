@@ -4,6 +4,13 @@ categories:
 - Monográficos
 - Sin catergoría
 date: '2013-03-05T11:28:01-05:00'
+lastmod: '2025-07-13T16:06:18.335358'
+related:
+- el-power-point-nos-vuelve-tontos.md
+- participaciones-preferentes-de-las-cajas-de-ahorro.md
+- el-ano-2010-para-analisisydecision.md
+- r-cayendo-en-la-lista-tiobe.md
+- un-homenaje-a-malthus-con-r.md
 slug: si-no-sois-ricos-y-jovenes-no-desespereis
 tags: []
 title: Si sóis jóvenes pero no sóis ricos no desesperéis

@@ -4,6 +4,13 @@ categories:
 - Gráficos
 - R
 date: '2020-12-02T02:29:16-05:00'
+lastmod: '2025-07-13T16:03:29.875269'
+related:
+- estimacion-de-la-evolucion-de-casos-del-coronavirus-en-espana.md
+- los-pilares-de-mi-simulacion-de-la-extension-del-covid19.md
+- seguir-los-datos-del-coronavirus-en-espana-con-rstats.md
+- mi-breve-seguimiento-del-coronavirus-con-r.md
+- etiquetas-en-scatter-plot-muertes-covid-por-millon-de-habitantes-vs-gasto-en-salud.md
 slug: no-estamos-igual-que-en-la-primera-ola-de-covid
 tags: []
 title: No estamos igual que en la primera ola de COVID

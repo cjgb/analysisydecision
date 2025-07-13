@@ -4,6 +4,13 @@ categories:
 - Big Data
 - Formación
 date: '2018-09-07T15:50:41-05:00'
+lastmod: '2025-07-13T15:54:08.555341'
+related:
+- notebook-para-empezar-y-probar-en-spark-y-scala.md
+- lectura-de-archivos-csv-con-python-y-pandas.md
+- montemos-un-sistema-de-informacion-en-nuestro-equipo-ii.md
+- r-python-reticulate.md
+- de-sql-server-a-python-pandas-dataframe.md
 slug: aprende-pyspark-sin-complicaciones
 tags:
 - pyspark

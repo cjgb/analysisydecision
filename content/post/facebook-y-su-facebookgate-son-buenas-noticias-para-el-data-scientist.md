@@ -4,6 +4,13 @@ categories:
 - Opinión
 - Sin catergoría
 date: '2018-03-21T12:26:45-05:00'
+lastmod: '2025-07-13T15:57:47.757921'
+related:
+- puede-la-informacion-de-twitter-servir-para-tarificar-seguros.md
+- de-estadistico-a-minero-de-datos-a-cientifico-de-datos.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-con-r-capitulo-2-datos.md
+- google-enemigo-del-open-source.md
+- el-debate-politico-o-como-analizar-textos-con-wps.md
 slug: facebook-y-su-facebookgate-son-buenas-noticias-para-el-data-scientist
 tags:
 - Facebook

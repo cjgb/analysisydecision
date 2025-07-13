@@ -5,6 +5,13 @@ categories:
 - R
 - Trucos
 date: '2010-04-19T11:41:43-05:00'
+lastmod: '2025-07-13T16:09:36.094862'
+related:
+- monografico-paquete-sqldf-si-sabes-sql-sabes-r.md
+- data-management-con-dplyr.md
+- calcular-porcentajes-por-grupos-con-dplyr.md
+- datos-agrupados-en-r-con-dplyr.md
+- informes-con-r-en-html-comienzo-con-r2html-i.md
 slug: trucos-r-funcion-ddply-del-paquete-plyr
 tags:
 - agregar

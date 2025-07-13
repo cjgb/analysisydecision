@@ -5,6 +5,13 @@ categories:
 - Formación
 - SAS
 date: '2010-06-29T09:21:11-05:00'
+lastmod: '2025-07-13T15:58:16.279269'
+related:
+- un-acercamiento-a-graph-ods-graphs-proc-sgplot.md
+- un-acercamiento-a-graph-primeros-graficos-con-sas.md
+- graficos-descriptivos-basicos-con-seaborn-python.md
+- un-acercamiento-a-graph-sentencias-graficas.md
+- capitulo-5-representacion-basica-con-ggplot.md
 slug: graficos-de-densidades-con-sas-y-el-proc-kde
 tags: []
 title: Gráficos de densidades con SAS y el PROC KDE

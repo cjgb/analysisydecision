@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2009-06-03T01:46:25-05:00'
+lastmod: '2025-07-13T16:10:28.693292'
+related:
+- truco-sas-transformar-variable-caracter-a-fecha.md
+- trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados.md
+- transformar-variables-en-sas-caracter-a-numerico.md
+- trucos-sas-pasar-fecha-a-caracter-en-sas.md
+- macros-sas-transformar-un-numerico-a-fecha.md
 slug: trucos-sas-pasar-de-caracter-a-numerico-y-viceversa
 tags: []
 title: Trucos SAS. Pasar de caracter a numérico y viceversa

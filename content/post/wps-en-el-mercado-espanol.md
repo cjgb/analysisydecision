@@ -4,6 +4,13 @@ categories:
 - Business Intelligence
 - Consultoría
 date: '2010-04-13T12:08:05-05:00'
+lastmod: '2025-07-13T16:11:22.029475'
+related:
+- acercamiento-a-wps-migrando-desde-sas.md
+- nuevo-entorno-para-la-gestion-de-la-informacion.md
+- en-breve-revision-de-wps-clonico-de-sas.md
+- comparativa-de-precio-wps-vs-sas.md
+- sigo-migrando-de-sas-a-wps.md
 slug: wps-en-el-mercado-espanol
 tags:
 - ''

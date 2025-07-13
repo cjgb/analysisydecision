@@ -6,6 +6,13 @@ categories:
 - SAS
 - Trucos
 date: '2010-09-28T10:50:55-05:00'
+lastmod: '2025-07-13T16:00:59.471017'
+related:
+- comunicar-sas-con-r-creando-ejecutables-windows.md
+- truco-sas-crear-ficheros-excel-sin-proc-export-i.md
+- macros-sas-informe-de-un-dataset-en-excel.md
+- truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
+- truco-sas-sas-y-dde-aliados-de-excel.md
 slug: macros-sas-dataset-a-data-frame-r
 tags:
 - BATCH

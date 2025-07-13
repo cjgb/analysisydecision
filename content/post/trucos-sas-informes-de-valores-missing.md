@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2009-03-16T08:13:17-05:00'
+lastmod: '2025-07-13T16:10:02.459135'
+related:
+- macros-sas-hacer-0-los-valores-missing-de-un-dataset.md
+- macros-sas-agrupando-variables-categoricas.md
+- trucos-sas-lista-de-variables-missing.md
+- trucos-sas-lista-de-datasets-en-macro-variable.md
+- macros-sas-informe-de-un-dataset-en-excel.md
 slug: trucos-sas-informes-de-valores-missing
 tags:
 - automatizar código

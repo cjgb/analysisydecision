@@ -5,6 +5,13 @@ categories:
 - Libro Estadística
 - R
 date: '2022-01-18T13:48:01-05:00'
+lastmod: '2025-07-13T15:54:42.155873'
+related:
+- tipos-de-uniones-join-de-tablas-con-python-pandas.md
+- proc-sql-merge-set.md
+- monografico-paquete-sqldf-si-sabes-sql-sabes-r.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-3-manejo-de-datos-con-r.md
+- data-management-con-dplyr.md
 slug: capitulo-4-uniones-de-tablas-con-r
 tags: []
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 4. Uniones

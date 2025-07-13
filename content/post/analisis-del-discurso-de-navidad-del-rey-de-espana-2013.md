@@ -4,6 +4,13 @@ categories:
 - R
 - Trucos
 date: '2013-12-26T03:45:40-05:00'
+lastmod: '2025-07-13T15:53:57.533870'
+related:
+- cloud-words-con-r-trabajar-con-la-api-del-europe-pmc-con-r.md
+- analisis-de-textos-con-r.md
+- comparamos-los-programas-electorales-de-pp-y-psoe-con-r.md
+- puede-la-informacion-de-twitter-servir-para-tarificar-seguros.md
+- analisisydecision-es-os-desea-felices-fiestas.md
 slug: analisis-del-discurso-de-navidad-del-rey-de-espana-2013
 tags:
 - RColorBrewer

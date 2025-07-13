@@ -5,6 +5,13 @@ categories:
 - Gráficos
 - Mapas
 date: '2021-01-20T09:18:08-05:00'
+lastmod: '2025-07-13T16:01:52.236100'
+related:
+- animacion-de-un-mapa-con-python-porcentaje-de-vacunas-administradas.md
+- mover-parte-de-un-shapefile-con-r-mapa-de-la-tasa-de-casos-de-coronavirus-por-habitante-en-espana.md
+- incluir-subplot-en-mapa-con-ggplot.md
+- mapa-del-covid-19-por-comunidades-autonomas-con-r-mas-rstats.md
+- libreria-mapspain-en-rstats-mapas-estaticos-de-espana.md
 slug: mapa-de-rstats-animado-con-el-porcentaje-de-vacunacion-en-espana
 tags:
 - Animaciones

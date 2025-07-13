@@ -4,6 +4,13 @@ categories:
 - Formación
 - R
 date: '2014-02-27T10:03:39-05:00'
+lastmod: '2025-07-13T15:55:40.068868'
+related:
+- estadistica-para-cientificos-de-datos-con-r-introduccion.md
+- analisisydecision-se-une-a-scout-analyst-primer-curso-de-estadistica-para-analistas.md
+- nuevo-curso-de-estadistica-con-r.md
+- lectura-conjunta-de-analyzing-linguistic-data.md
+- manual-introduccion-a-r-s-plus.md
 slug: curso-de-analisis-estadistico-de-datos-omicos-con-r
 tags: []
 title: CURSO DE ANÁLISIS ESTADÍSTICO DE DATOS ‘ÓMICOS’ CON R

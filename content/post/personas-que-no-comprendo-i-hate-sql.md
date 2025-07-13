@@ -4,6 +4,13 @@ categories:
 - Formación
 - Sin catergoría
 date: '2010-09-11T15:42:26-05:00'
+lastmod: '2025-07-13T16:04:20.878763'
+related:
+- proc-sql-merge-set.md
+- acercamiento-a-wps-migrando-desde-sas.md
+- el-ano-2010-para-analisisydecision.md
+- trucos-sas-porque-hay-que-usar-objetos-hash.md
+- trucos-sas-identificar-registros-duplicados.md
 slug: personas-que-no-comprendo-i-hate-sql
 tags:
 - ''

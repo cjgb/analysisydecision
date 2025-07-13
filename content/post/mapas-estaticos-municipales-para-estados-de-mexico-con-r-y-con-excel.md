@@ -6,6 +6,13 @@ categories:
 - R
 - Trucos
 date: '2015-03-20T10:21:57-05:00'
+lastmod: '2025-07-13T16:02:07.242017'
+related:
+- mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel.md
+- mapas-con-spatial-data-de-r.md
+- mapas-municipales-de-espana-con-excel-y-qgis.md
+- mapas-estaticos-de-peru-con-r-y-python-a-nivel-de-distrito.md
+- mapa-estatico-de-espana-con-python.md
 slug: mapas-estaticos-municipales-para-estados-de-mexico-con-r-y-con-excel
 tags:
 - Mapa

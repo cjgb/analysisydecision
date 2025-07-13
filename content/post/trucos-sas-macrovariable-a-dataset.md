@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2010-04-01T03:36:24-05:00'
+lastmod: '2025-07-13T16:10:08.295960'
+related:
+- macro-sas-variables-de-un-dataset-en-una-macro-variable.md
+- trucos-sas-lista-de-datasets-en-macro-variable.md
+- macros-sas-ordenar-alfabeticamente-las-variables-de-un-dataset.md
+- truco-sas-tablas-de-una-libreria-en-una-macro-variable.md
+- truco-sas-proc-contents.md
 slug: trucos-sas-macrovariable-a-dataset
 tags:
 - filename temp

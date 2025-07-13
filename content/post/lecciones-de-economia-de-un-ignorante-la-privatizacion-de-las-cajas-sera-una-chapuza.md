@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Formación
 date: '2010-08-02T03:41:31-05:00'
+lastmod: '2025-07-13T15:59:50.060110'
+related:
+- lecciones-de-economia-de-un-ignorante-las-cajas-seran-bancos.md
+- lecciones-de-economia-de-un-ignorante-la-caixa-a-colocar-preferentes.md
+- lecciones-de-economia-de-un-ignorante-por-que-no-hablo-de-la-batalla-de-los-depositos.md
+- lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
+- participaciones-preferentes-de-las-cajas-de-ahorro.md
 slug: lecciones-de-economia-de-un-ignorante-la-privatizacion-de-las-cajas-sera-una-chapuza
 tags:
 - frob

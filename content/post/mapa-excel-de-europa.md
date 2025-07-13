@@ -6,6 +6,13 @@ categories:
 - Formación
 - Monográficos
 date: '2015-04-24T06:02:53-05:00'
+lastmod: '2025-07-13T16:01:56.296441'
+related:
+- trucos-excel-mapa-de-mexico-por-estados.md
+- trucos-excel-mapa-de-espana-por-provincias.md
+- nuevo-y-muy-mejorado-mapa-de-espana-por-provincias-con-excel.md
+- trucos-excel-mapa-de-espana-por-comunidades-autonomas.md
+- mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel.md
 slug: mapa-excel-de-europa
 tags:
 - Mapa

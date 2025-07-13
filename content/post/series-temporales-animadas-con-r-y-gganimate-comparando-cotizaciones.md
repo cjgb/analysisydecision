@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Formación
 date: '2021-02-01T07:11:17-05:00'
+lastmod: '2025-07-13T16:06:11.571471'
+related:
+- random-walk-se-escribe-con-r.md
+- graficos-de-calendarios-con-series-temporales.md
+- mi-breve-seguimiento-del-coronavirus-con-r.md
+- stadistical-data-warehouse-del-european-central-bank-con-r-y-los-depositos-a-perdidas.md
+- grafico-con-eje-secundario-en-ggplot2.md
 slug: series-temporales-animadas-con-r-y-gganimate-comparando-cotizaciones
 tags: []
 title: Series temporales animadas con R y gganimate, comparando cotizaciones

@@ -6,6 +6,13 @@ categories:
 - Monográficos
 - SAS
 date: '2013-12-17T05:16:28-05:00'
+lastmod: '2025-07-13T15:55:37.372898'
+related:
+- seleccionar-un-elemento-de-un-objeto-de-r.md
+- que-pasa-si-uso-una-regresion-de-poisson-en-vez-de-una-regresion-logistica.md
+- en-la-regresion-logistica-el-sobremuestreo-es-lo-mismo-que-asignar-pesos-a-las-observaciones.md
+- trucos-sas-medir-la-importancia-de-las-variables-en-nuestro-modelo-de-regresion-logistica.md
+- manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
 slug: cuidado-con-el-p-valor-en-los-estudios-de-independencia
 tags:
 - odds ratio

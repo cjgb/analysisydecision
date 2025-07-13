@@ -5,6 +5,13 @@ categories:
 - R
 - Trucos
 date: '2011-01-30T10:02:04-05:00'
+lastmod: '2025-07-13T16:07:57.709922'
+related:
+- trucos-r-graficos-de-velocimetro-con-r.md
+- graficos-de-burbuja-con-r.md
+- graficos-dinamicos-en-r-con-la-funcion-text.md
+- grafico-de-correlaciones-entre-variables.md
+- truco-r-insertar-imagen-en-un-grafico.md
 slug: truco-r-paletas-de-colores-en-r
 tags:
 - graphics

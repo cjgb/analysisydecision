@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2011-02-25T16:00:07-05:00'
+lastmod: '2025-07-13T16:00:47.232378'
+related:
+- macro-sas-variables-de-un-dataset-en-una-macro-variable.md
+- macros-sas-informe-de-un-dataset-en-excel.md
+- macro-sas-numero-de-observaciones-de-un-dataset-en-una-macro.md
+- macros-faciles-de-sas-busca-duplicados.md
+- trucos-sas-ejecutar-un-codigo-si-existe-una-tabla-o-un-fichero.md
 slug: macros-faciles-de-sas-determinar-si-existe-una-variable-en-un-dataset
 tags:
 - '%upcase'

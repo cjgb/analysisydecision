@@ -5,6 +5,13 @@ categories:
 - Formación
 - Trucos
 date: '2010-08-13T06:32:51-05:00'
+lastmod: '2025-07-13T16:08:58.590794'
+related:
+- truco-excel-repetir-celdas-en-funcion-de-los-valores-de-otra-celda.md
+- truco-excel-repetir-un-campo-a-partir-de-otro-que-define-el-numero-de-repeticiones.md
+- trucos-excel-graficos-dot-plot-representando-un-ranking-graficamente.md
+- trucos-excel-poner-etiquetas-en-graficos-de-dispersion.md
+- trucos-excel-eliminar-referencias-del-tipo-importardatosdinamicos.md
 slug: trucos-excel-graficos-con-caracteres
 tags: []
 title: Trucos Excel. Gráficos con caracteres

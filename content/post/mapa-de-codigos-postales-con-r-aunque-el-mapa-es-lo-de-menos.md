@@ -6,6 +6,13 @@ categories:
 - Monográficos
 - R
 date: '2019-08-12T07:56:40-05:00'
+lastmod: '2025-07-13T16:01:46.837307'
+related:
+- mapas-municipales-de-espana-con-excel-y-qgis.md
+- mapas-estaticos-de-peru-con-r-y-python-a-nivel-de-distrito.md
+- libreria-mapspain-en-rstats-mapas-estaticos-de-espana.md
+- mapas-con-spatial-data-de-r.md
+- mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel.md
 slug: mapa-de-codigos-postales-con-r-aunque-el-mapa-es-lo-de-menos
 tags:
 - codigos postales

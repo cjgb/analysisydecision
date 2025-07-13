@@ -7,6 +7,13 @@ categories:
 - Monográficos
 - R
 date: '2011-11-06T11:43:36-05:00'
+lastmod: '2025-07-13T15:57:17.941788'
+related:
+- sobremuestreo-y-pesos-a-las-observaciones-ahora-con-r.md
+- en-la-regresion-logistica-el-sobremuestreo-es-lo-mismo-que-asignar-pesos-a-las-observaciones.md
+- resolucion-del-juego-de-modelos-con-r.md
+- monografico-un-poco-de-proc-logistic.md
+- monografico-regresion-logistica-con-r.md
 slug: el-sobremuestreo-%c2%bfmejora-mi-estimacion
 tags:
 - árboles de decisión

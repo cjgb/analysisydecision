@@ -5,6 +5,13 @@ categories:
 - Python
 - Trucos
 date: '2018-04-10T11:27:19-05:00'
+lastmod: '2025-07-13T16:07:50.300363'
+related:
+- trucos-sas-operar-con-fechas-yyyymm-tipicas-de-particiones-oracle.md
+- macros-sas-transformar-un-numerico-a-fecha.md
+- bucle-de-fechas-con-sas-para-tablas-particionadas.md
+- truco-excel-pasar-de-numero-con-formato-aaaammdd-a-fecha-con-formulas.md
+- macros-faciles-de-sas-dias-de-un-mes-en-una-fecha.md
 slug: truco-python-restar-meses-con-formato-yyyymm
 tags: []
 title: Truco Python. Restar meses con formato YYYYMM

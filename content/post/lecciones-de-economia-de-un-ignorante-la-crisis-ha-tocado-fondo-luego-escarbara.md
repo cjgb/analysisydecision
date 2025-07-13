@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Sin catergoría
 date: '2009-08-13T06:50:36-05:00'
+lastmod: '2025-07-13T15:59:47.333424'
+related:
+- la-nueva-burbuja-de-los-bancos.md
+- bajar-los-tipos-a-la-japonesa-al-0.md
+- lecciones-de-economia-de-un-ignorante-poniendo-fecha-a-la-intervencion-de-espana.md
+- lecciones-de-economia-de-un-ignorante-solucion-trabajar-mas-y-cobrar-menos.md
+- lecciones-de-economia-de-un-ignorante-los-bancos-pierden-dinero-para-favorecer-a-unos-y-luego-los-salvamos-todos.md
 slug: lecciones-de-economia-de-un-ignorante-la-crisis-ha-tocado-fondo-luego-escarbara
 tags: []
 title: Lecciones de Economía de un ignorante. La crisis ha tocado fondo, luego escarbará

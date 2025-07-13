@@ -4,6 +4,13 @@ categories:
 - Formación
 - R
 date: '2008-10-01T05:45:35-05:00'
+lastmod: '2025-07-13T15:55:00.632770'
+related:
+- truco-excel-nuestra-propia-funcion-excel.md
+- ajuste-de-splines-con-r.md
+- determinar-el-mimino-tamano-muestral-para-detectar-un-cambio-en-la-fraccion-no-conforme.md
+- trucos-r-la-funcion-mod-para-r.md
+- truco-sas-proc-format-vs-formato-percent.md
 slug: como-influyen-los-numeros-maquina-en-nuestros-programas
 tags:
 - números maquina

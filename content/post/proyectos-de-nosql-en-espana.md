@@ -4,6 +4,13 @@ categories:
 - Business Intelligence
 - Sin catergoría
 date: '2010-11-16T15:50:11-05:00'
+lastmod: '2025-07-13T16:04:46.418993'
+related:
+- nos-hemos-terminado-de-reinventar-acabamos-con-el-data-mining-y-empezamos-con-el-big-data.md
+- personas-que-no-comprendo-i-hate-sql.md
+- busquedas-de-sql-frente-a-busquedas-de-hadoop.md
+- data-mining-business-intelligence-yo-la-nube.md
+- cuando-tenemos-big-data.md
 slug: '%c2%bfproyectos-de-nosql-en-espana'
 tags:
 - nosql

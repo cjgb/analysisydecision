@@ -5,6 +5,13 @@ categories:
 - Monográficos
 - SAS
 date: '2008-11-10T10:35:10-05:00'
+lastmod: '2025-07-13T16:06:44.414081'
+related:
+- trucos-sas-pasar-fecha-a-caracter-en-sas.md
+- trabajo-con-fechas-sas-introduccion.md
+- trabajo-con-fechas-sas-funciones-fecha.md
+- macros-sas-transformar-un-numerico-a-fecha.md
+- curso-de-lenguaje-sas-con-wps-variables.md
 slug: trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados
 tags:
 - fechas sas

@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Seguros
 date: '2013-05-15T12:37:58-05:00'
+lastmod: '2025-07-13T16:11:16.140732'
+related:
+- lecciones-de-economia-de-un-ignorante-llegamos-a-solvencia-ii.md
+- informe-2011-de-la-direccion-de-seguros-y-fondos-de-pensiones.md
+- el-seguro-de-salud-suma-y-sigue.md
+- participaciones-preferentes-de-las-cajas-de-ahorro.md
+- el-modelo-multivariante-en-el-sector-asegurador-las-variables-independientes-iv.md
 slug: video-resumen-del-iii-encuentro-del-sector-seguros
 tags: []
 title: Video resumen del III Encuentro del Sector Seguros

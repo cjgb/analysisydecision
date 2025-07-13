@@ -5,6 +5,13 @@ categories:
 - Monográficos
 - SAS
 date: '2009-02-16T09:29:25-05:00'
+lastmod: '2025-07-13T16:02:57.895866'
+related:
+- macros-faciles-de-sas-eliminar-outliers-en-una-variable.md
+- truco-sas-observaciones-de-un-dataset-en-una-macro-variable.md
+- trucos-sas-variables-dummy-de-una-variable-continua.md
+- macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
+- trucos-sas-lista-de-datasets-en-macro-variable.md
 slug: monograficos-call-symput-imprescindible
 tags: []
 title: Monográficos. CALL SYMPUT imprescindible

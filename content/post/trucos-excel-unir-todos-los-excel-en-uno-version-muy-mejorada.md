@@ -4,6 +4,13 @@ categories:
 - Excel
 - Trucos
 date: '2012-09-25T09:35:43-05:00'
+lastmod: '2025-07-13T16:09:25.968298'
+related:
+- trucos-excel-unir-varios-excel-en-uno.md
+- truco-sas-unir-todos-los-excel-en-uno-solo.md
+- truco-sas-unir-todas-las-hojas-de-un-excel-en-una.md
+- truco-excel-abrir-multiples-libros-de-excel-en-distintas-hojas-de-un-nuevo-libro.md
+- truco-excel-unir-todos-los-libros-en-una-hoja.md
 slug: trucos-excel-unir-todos-los-excel-en-uno-version-muy-mejorada
 tags: []
 title: Trucos Excel. Unir todos los excel en uno, versión muy mejorada

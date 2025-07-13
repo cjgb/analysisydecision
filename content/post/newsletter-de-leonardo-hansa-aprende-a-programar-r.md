@@ -5,6 +5,13 @@ categories:
 - Formación
 - R
 date: '2022-03-04T07:11:54-05:00'
+lastmod: '2025-07-13T16:03:28.381592'
+related:
+- evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso.md
+- estadistica-para-cientificos-de-datos-con-r-introduccion.md
+- nuevo-curso-de-estadistica-con-r.md
+- curso-de-iniciacion-a-r-en-kschool-de-carlos-gil.md
+- nueva-edicion-del-curso-basico-de-r.md
 slug: newsletter-de-leonardo-hansa-aprende-a-programar-r
 tags: []
 title: Newsletter de Leonardo Hansa. Aprende a programar R

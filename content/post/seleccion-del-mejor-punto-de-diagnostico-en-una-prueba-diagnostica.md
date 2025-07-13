@@ -6,6 +6,13 @@ categories:
 - Monográficos
 - R
 date: '2014-02-05T11:32:27-05:00'
+lastmod: '2025-07-13T16:06:07.045863'
+related:
+- trucos-excel-area-bajo-la-curva-roc.md
+- el-parametro-gamma-el-coste-la-complejidad-de-un-svm.md
+- regresion-ridge-o-contraida-con-r.md
+- resolucion-del-juego-de-modelos-con-r.md
+- el-sobremuestreo-mejora-mi-estimacion.md
 slug: seleccion-del-mejor-punto-de-diagnostico-en-una-prueba-diagnostica
 tags:
 - ggplot2

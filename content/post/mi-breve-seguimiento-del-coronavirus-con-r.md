@@ -5,6 +5,13 @@ categories:
 - Monográficos
 - R
 date: '2020-04-20T08:56:49-05:00'
+lastmod: '2025-07-13T16:02:26.920875'
+related:
+- evolucion-del-numero-de-casos-de-coronavirus.md
+- incluir-subplot-en-mapa-con-ggplot.md
+- estimacion-de-la-evolucion-de-casos-del-coronavirus-en-espana.md
+- seguir-los-datos-del-coronavirus-en-espana-con-rstats.md
+- mapa-del-covid-19-por-comunidades-autonomas-con-r-mas-rstats.md
 slug: mi-breve-seguimiento-del-coronavirus-con-r
 tags:
 - coronavirus

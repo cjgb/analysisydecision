@@ -3,6 +3,13 @@ author: apadrones
 categories:
 - R
 date: '2008-03-05T04:51:47-05:00'
+lastmod: '2025-07-13T15:55:06.094378'
+related:
+- trucos-r-de-string-a-dataframe-de-palabras.md
+- los-mejores-y-mas-utiles-trucos-de-r.md
+- data-management-con-dplyr.md
+- trucos-r-leer-de-excel-via-rodbc.md
+- manual-curso-introduccion-de-r-capitulo-2-interfaz-y-primeras-sentencias.md
 slug: como-ordenar-un-data-frame-en-r
 tags: []
 title: Cómo ordenar un data frame en R

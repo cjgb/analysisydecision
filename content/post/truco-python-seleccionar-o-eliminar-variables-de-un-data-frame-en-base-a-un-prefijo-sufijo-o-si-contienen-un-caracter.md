@@ -6,6 +6,13 @@ categories:
 - Python
 - Trucos
 date: '2018-05-22T09:47:28-05:00'
+lastmod: '2025-07-13T16:07:51.760291'
+related:
+- data-management-basico-con-pandas.md
+- manejo-de-datos-basico-con-python-datatable.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-3-manejo-de-datos-con-r.md
+- curso-de-lenguaje-sas-con-wps-subconjuntos-de-variables-con-drop-y-keep.md
+- truco-python-reemplazar-una-cadena-de-caracteres-en-los-nombres-de-las-columnas-de-un-data-frame.md
 slug: truco-python-seleccionar-o-eliminar-variables-de-un-data-frame-en-base-a-un-prefijo-sufijo-o-si-contienen-un-caracter
 tags: []
 title: Truco Python. Seleccionar o eliminar variables de un data frame en base a un

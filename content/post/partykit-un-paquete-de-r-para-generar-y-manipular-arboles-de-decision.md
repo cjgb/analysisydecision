@@ -4,6 +4,13 @@ categories:
 - Data Mining
 - R
 date: '2009-06-09T12:44:39-05:00'
+lastmod: '2025-07-13T16:04:16.629739'
+related:
+- trucos-r-llevar-a-sas-las-reglas-de-un-arbol-de-decision.md
+- monografico-arboles-de-decision-con-party.md
+- sobre-la-historia-de-cart-y-rpart.md
+- noticias-del-congreso-de-usuarios-de-r.md
+- reunion-del-grupo-de-usuarios-de-r-en-madrid-el-28-de-enero.md
 slug: partykit-un-paquete-de-r-para-generar-y-manipular-arboles-de-decision
 tags: []
 title: 'partykit: un paquete de R para generar y manipular árboles de decisión'

@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2012-04-19T09:39:45-05:00'
+lastmod: '2025-07-13T16:09:58.131206'
+related:
+- truco-sas-ver-el-contenido-de-un-formato.md
+- trucos-sas-eliminar-etiquetas-en-los-conjunto-de-datos-sas.md
+- truco-sas-limpieza-de-tabuladores-con-expresiones-regulares.md
+- truco-sas-limpiar-un-fichero-de-texto-con-sas.md
+- truco-sas-elminar-retornos-de-carro-o-saltos-de-linea-engorrosos.md
 slug: trucos-sas-errores-y-formatos
 tags:
 - ''

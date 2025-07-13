@@ -4,6 +4,13 @@ categories:
 - Formación
 - SAS
 date: '2014-12-18T10:11:13-05:00'
+lastmod: '2025-07-13T15:56:23.690224'
+related:
+- macros-faciles-de-sas-eliminar-outliers-en-una-variable.md
+- macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
+- trucos-sas-calcular-percentiles-como-excel-o-r.md
+- monograficos-call-symput-imprescindible.md
+- test-de-bondad-de-ajuste-con-sas.md
 slug: determinar-el-mimino-tamano-muestral-para-detectar-un-cambio-en-la-fraccion-no-conforme
 tags: []
 title: Determinar el mímino tamaño muestral para detectar un cambio en la fracción

@@ -6,6 +6,13 @@ categories:
 - Formación
 - Mapas
 date: '2016-06-08T10:22:02-05:00'
+lastmod: '2025-07-13T16:03:55.687033'
+related:
+- trucos-excel-mapa-de-espana-por-provincias.md
+- nuevo-mapa-por-provincias-en-excel-de-espana-actualiza-los-colores-en-rgb.md
+- mapa-excel-de-europa.md
+- trucos-excel-mapa-de-espana-por-provincias-mejorado.md
+- mapas-municipales-de-espana-con-excel-y-qgis.md
 slug: nuevo-y-muy-mejorado-mapa-de-espana-por-provincias-con-excel
 tags:
 - mapa Excel

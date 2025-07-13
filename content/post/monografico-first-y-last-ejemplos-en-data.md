@@ -5,6 +5,13 @@ categories:
 - Monográficos
 - SAS
 date: '2009-12-02T10:57:26-05:00'
+lastmod: '2025-07-13T16:02:50.032786'
+related:
+- monografico-datos-agrupados-en-sas.md
+- trucos-sas-primer-y-ultimo-elemento-de-un-array.md
+- pasando-de-sas-a-r-primer-y-ultimo-elemento-de-un-campo-agrupado-de-un-data-frame.md
+- trucos-sas-variables-dummy-de-una-variable-continua.md
+- macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
 slug: monografico-first-y-last-ejemplos-en-data
 tags: []
 title: Monográfico. FIRST. y LAST. ejemplos en DATA

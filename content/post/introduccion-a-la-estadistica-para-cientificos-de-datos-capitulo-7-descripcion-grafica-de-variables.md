@@ -5,6 +5,13 @@ categories:
 - Libro Estadística
 - R
 date: '2022-06-24T05:15:31-05:00'
+lastmod: '2025-07-13T15:59:01.059848'
+related:
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-8-problemas-con-los-datos.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-9-analisis-exploratorio-de-datos-eda.md
+- capitulo-5-representacion-basica-con-ggplot.md
+- graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
+- graficos-descriptivos-basicos-con-seaborn-python.md
 slug: introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-7-descripcion-grafica-de-variables
 tags: []
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 7. Descripción

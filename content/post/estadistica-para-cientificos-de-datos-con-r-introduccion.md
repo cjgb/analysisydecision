@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Formación
 date: '2022-01-01T14:12:02-05:00'
+lastmod: '2025-07-13T15:57:32.867163'
+related:
+- comienza-la-publicacion-del-ensayo-introduccion-a-la-estadistica-para-cientificos-de-datos.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-9-analisis-exploratorio-de-datos-eda.md
+- analisisydecision-se-une-a-scout-analyst-primer-curso-de-estadistica-para-analistas.md
+- evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso.md
+- nuevo-curso-de-estadistica-con-r.md
 slug: estadistica-para-cientificos-de-datos-con-r-introduccion
 tags: []
 title: Introducción a la Estadística para Científicos de Datos con R. Capítulo 1.

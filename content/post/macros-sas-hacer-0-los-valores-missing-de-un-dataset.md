@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2008-11-27T08:01:37-05:00'
+lastmod: '2025-07-13T16:01:02.245806'
+related:
+- truco-sas-transformaciones-de-variables-con-arrays.md
+- trucos-sas-informes-de-valores-missing.md
+- trucos-sas-lista-de-variables-missing.md
+- macro-sas-crear-variables-dummy-desde-una-variable-categorica.md
+- macros-faciles-de-sas-determinar-si-existe-una-variable-en-un-dataset.md
 slug: macros-sas-hacer-0-los-valores-missing-de-un-dataset
 tags: []
 title: Macros SAS. Hacer 0 los valores missing de un dataset

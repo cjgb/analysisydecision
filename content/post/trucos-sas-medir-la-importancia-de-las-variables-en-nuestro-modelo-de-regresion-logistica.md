@@ -8,6 +8,13 @@ categories:
 - Monográficos
 - SAS
 date: '2013-02-27T10:18:04-05:00'
+lastmod: '2025-07-13T16:10:12.826348'
+related:
+- macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
+- en-la-regresion-logistica-el-sobremuestreo-es-lo-mismo-que-asignar-pesos-a-las-observaciones.md
+- medir-la-importancia-de-las-variables-con-random-forest.md
+- macros-faciles-de-sas-eliminar-outliers-en-una-variable.md
+- manual-curso-introduccion-de-r-capitulo-10-funciones-graficas-en-regresion-lineal.md
 slug: trucos-sas-medir-la-importancia-de-las-variables-en-nuestro-modelo-de-regresion-logistica
 tags:
 - PROC LOGISTIC

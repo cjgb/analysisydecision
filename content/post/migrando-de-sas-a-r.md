@@ -3,6 +3,13 @@ author: cgbellosta
 categories:
 - Formación
 date: '2009-12-08T10:26:45-05:00'
+lastmod: '2025-07-13T16:02:29.762378'
+related:
+- integracion-de-r-con-sas-spss-y-otros.md
+- acercamiento-a-wps-migrando-desde-sas.md
+- sigo-migrando-de-sas-a-wps.md
+- wps-en-el-mercado-espanol.md
+- macros-sas-dataset-a-data-frame-r.md
 slug: migrando-de-sas-a-r
 tags:
 - migración

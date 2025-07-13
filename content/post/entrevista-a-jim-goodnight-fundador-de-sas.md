@@ -5,6 +5,13 @@ categories:
 - SAS
 - Sin catergoría
 date: '2009-04-14T16:31:35-05:00'
+lastmod: '2025-07-13T15:57:27.471374'
+related:
+- sas-investiga-la-tecnologia-de-r.md
+- sas-no-se-vende.md
+- sas-comienza-a-fijarse-en-r.md
+- sas-global-forum-2009.md
+- what-about-newer-competition-from-free-open-source-alternatives-like-r.md
 slug: entrevista-a-jim-goodnight-fundador-de-sas
 tags:
 - noticias sas

@@ -5,6 +5,13 @@ categories:
 - R
 - SAS
 date: '2009-05-28T13:37:05-05:00'
+lastmod: '2025-07-13T16:05:45.482472'
+related:
+- integracion-de-r-con-sas-spss-y-otros.md
+- el-futuro-del-analisis-de-datos-pasa-por-r.md
+- sas-investiga-la-tecnologia-de-r.md
+- porque-me-gusta-r.md
+- migrando-de-sas-a-r.md
 slug: sas-comienza-a-fijarse-en-r
 tags:
 - noticias

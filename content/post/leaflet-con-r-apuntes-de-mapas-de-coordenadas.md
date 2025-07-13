@@ -5,6 +5,13 @@ categories:
 - Mapas
 - R
 date: '2021-06-10T08:19:22-05:00'
+lastmod: '2025-07-13T15:59:36.492449'
+related:
+- rstats-shiny-leaftlet-mapas-interactivos.md
+- anadiendo-graficos-de-tarta-a-nuestros-mapas-de-ggplot-con-scatterpie.md
+- incluir-subplot-en-mapa-con-ggplot.md
+- libreria-mapspain-en-rstats-mapas-estaticos-de-espana.md
+- mapas-estaticos-de-peru-con-r-y-python-a-nivel-de-distrito.md
 slug: leaflet-con-r-apuntes-de-mapas-de-coordenadas
 tags:
 - leaflet

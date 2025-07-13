@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Formación
 date: '2012-04-24T16:09:36-05:00'
+lastmod: '2025-07-13T16:05:41.062684'
+related:
+- manual-introduccion-a-r-s-plus.md
+- intro-rcommander-1-que-es-rcommander.md
+- nueva-edicion-del-curso-basico-de-r.md
+- como-ordenar-un-data-frame-en-r.md
+- noticias-del-congreso-de-usuarios-de-r.md
 slug: r-portable-para-windows
 tags: []
 title: R portable para Windows

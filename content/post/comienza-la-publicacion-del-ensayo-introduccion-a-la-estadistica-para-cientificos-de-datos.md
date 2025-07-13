@@ -5,6 +5,13 @@ categories:
 - Libro Estadística
 - R
 date: '2022-01-01T13:39:39-05:00'
+lastmod: '2025-07-13T15:54:55.134606'
+related:
+- estadistica-para-cientificos-de-datos-con-r-introduccion.md
+- video-introduccion-a-bookdown.md
+- mi-curriculum-con-rmarkdown-y-pagedown.md
+- evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso.md
+- el-ano-2010-para-analisisydecision.md
 slug: comienza-la-publicacion-del-ensayo-introduccion-a-la-estadistica-para-cientificos-de-datos
 tags: []
 title: Comienza la publicación del ensayo Introducción a la Estadística para Científicos

@@ -3,6 +3,13 @@ author: danifernandez
 categories:
 - Formación
 date: '2010-06-16T15:58:42-05:00'
+lastmod: '2025-07-13T16:11:23.485976'
+related:
+- truco-excel-y-sas-ejecutar-sas-desde-macro-en-excel.md
+- comunicar-sas-con-r-creando-ejecutables-windows.md
+- 1500-visitas-mensuales.md
+- macros-sas-dataset-a-data-frame-r.md
+- macros-faciles-de-sas-normaliza-un-texto-rapido.md
 slug: x-command-ms-dos-prompt-desde-sas
 tags: []
 title: X command (MS-DOS prompt) desde SAS.

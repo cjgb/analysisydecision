@@ -7,6 +7,13 @@ categories:
 - Monográficos
 - Trucos
 date: '2012-04-07T13:53:22-05:00'
+lastmod: '2025-07-13T16:09:09.094354'
+related:
+- mapa-excel-de-europa.md
+- trucos-excel-mapa-de-espana-por-provincias.md
+- trucos-excel-mapa-de-espana-por-comunidades-autonomas.md
+- nuevo-y-muy-mejorado-mapa-de-espana-por-provincias-con-excel.md
+- trucos-excel-mapa-de-colombia-por-departamentos.md
 slug: trucos-excel-mapa-de-mexico-por-estados
 tags:
 - macros de Excel

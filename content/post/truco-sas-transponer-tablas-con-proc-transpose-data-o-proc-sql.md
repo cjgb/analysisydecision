@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2009-08-27T07:32:24-05:00'
+lastmod: '2025-07-13T16:08:41.971760'
+related:
+- trucos-sas-trasponer-con-sql-para-torpes.md
+- truco-sas-cruce-con-formatos.md
+- laboratorio-de-codigo-sas-vistas-proc-means-vs-proc-sql.md
+- proc-sql-merge-set.md
+- trucos-sas-operaciones-con-tablas-de-dimensiones-con-sas.md
 slug: truco-sas-transponer-tablas-con-proc-transpose-data-o-proc-sql
 tags: []
 title: Truco SAS. Transponer tablas con PROC TRANSPOSE, DATA o PROC SQL

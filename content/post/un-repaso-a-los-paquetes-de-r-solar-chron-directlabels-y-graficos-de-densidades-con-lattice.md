@@ -5,6 +5,13 @@ categories:
 - Monográficos
 - R
 date: '2011-05-22T10:49:46-05:00'
+lastmod: '2025-07-13T16:11:07.322659'
+related:
+- graficos-de-calendarios-con-series-temporales.md
+- mi-breve-seguimiento-del-coronavirus-con-r.md
+- leer-y-representar-datos-de-google-trends-con-r.md
+- stadistical-data-warehouse-del-european-central-bank-con-r-y-los-depositos-a-perdidas.md
+- libreria-mapspain-en-rstats-mapas-estaticos-de-espana.md
 slug: un-repaso-a-los-paquetes-de-r-solar-chron-directlabels-y-graficos-de-densidades-con-lattice
 tags:
 - as.yearmon

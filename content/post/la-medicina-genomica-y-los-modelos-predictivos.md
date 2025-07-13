@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Sin catergoría
 date: '2009-04-16T02:50:54-05:00'
+lastmod: '2025-07-13T15:59:27.010863'
+related:
+- nuevo-blog-sobre-medicina-genomica.md
+- dos-vecinos-muy-proximos-de-la-blogosfera.md
+- muchas-variables-no-implican-una-mejor-prediccion.md
+- obteniendo-los-parametros-de-mi-modelo-gam.md
+- curso-de-analisis-estadistico-de-datos-omicos-con-r.md
 slug: la-medicina-genomica-y-los-modelos-predictivos
 tags:
 - medicina genómica

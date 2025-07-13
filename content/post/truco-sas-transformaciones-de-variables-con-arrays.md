@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2008-09-18T08:24:33-05:00'
+lastmod: '2025-07-13T16:08:39.062986'
+related:
+- macros-sas-hacer-0-los-valores-missing-de-un-dataset.md
+- trucos-sas-lista-de-variables-missing.md
+- trucos-sas-informes-de-valores-missing.md
+- truco-sas-crear-ficheros-excel-sin-proc-export-i.md
+- maximo-por-registro-de-una-serie-de-variables-caracter-en-sas.md
 slug: truco-sas-transformaciones-de-variables-con-arrays
 tags: []
 title: Truco SAS. Transformaciones de variables con arrays

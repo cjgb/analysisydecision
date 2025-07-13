@@ -6,6 +6,13 @@ categories:
 - Mapas
 - SAS
 date: '2015-10-29T02:37:07-05:00'
+lastmod: '2025-07-13T16:02:11.313951'
+related:
+- como-obtener-los-centroides-de-municipios-con-sas-mapas-con-sgplot.md
+- mapas-estaticos-de-peru-con-r-y-python-a-nivel-de-distrito.md
+- mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel.md
+- mapas-municipales-de-espana-con-excel-y-qgis.md
+- mapa-estatico-de-espana-con-python.md
 slug: mapas-sas-a-partir-de-shapefile
 tags:
 - proc gmap

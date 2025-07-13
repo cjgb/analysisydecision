@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2015-02-16T06:24:34-05:00'
+lastmod: '2025-07-13T16:09:47.729491'
+related:
+- macros-faciles-de-sas-eliminar-outliers-en-una-variable.md
+- truco-sas-crear-ficheros-excel-sin-proc-export-i.md
+- las-cuentas-claras.md
+- truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
+- monograficos-call-symput-imprescindible.md
 slug: trucos-sas-calcular-percentiles-como-excel-o-r
 tags: []
 title: Trucos SAS. Calcular percentiles como Excel o R

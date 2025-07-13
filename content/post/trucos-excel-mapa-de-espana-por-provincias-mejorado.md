@@ -5,6 +5,13 @@ categories:
 - Formación
 - Trucos
 date: '2011-06-09T14:36:29-05:00'
+lastmod: '2025-07-13T16:09:05.938224'
+related:
+- trucos-excel-mapa-de-espana-por-provincias-mejores-versiones.md
+- trucos-excel-mapa-de-espana-por-provincias.md
+- nuevo-mapa-por-provincias-en-excel-de-espana-actualiza-los-colores-en-rgb.md
+- nuevo-y-muy-mejorado-mapa-de-espana-por-provincias-con-excel.md
+- trucos-excel-nuevo-y-mejorado-mapa-de-espana-por-provincias-con-excel.md
 slug: trucos-excel-mapa-de-espana-por-provincias-mejorado
 tags:
 - macro

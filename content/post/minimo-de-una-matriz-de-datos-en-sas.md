@@ -4,6 +4,13 @@ categories:
 - Formación
 - SAS
 date: '2015-04-27T02:29:43-05:00'
+lastmod: '2025-07-13T16:02:35.573539'
+related:
+- trucos-sas-operaciones-con-tablas-de-dimensiones-con-sas.md
+- trucos-sas-matrices-de-adyacencia-con-sas.md
+- monograficos-call-symput-imprescindible.md
+- maximo-por-registro-de-una-serie-de-variables-caracter-en-sas.md
+- macros-sas-agrupando-variables-categoricas.md
 slug: minimo-de-una-matriz-de-datos-en-sas
 tags: []
 title: Mínimo de una matriz de datos en SAS

@@ -5,6 +5,13 @@ categories:
 - Monográficos
 - Python
 date: '2017-12-25T17:10:42-05:00'
+lastmod: '2025-07-13T15:54:27.920460'
+related:
+- ejemplo-de-web-scraping-con-r-la-formacion-de-los-diputados-del-congreso.md
+- los-principales-problemas-de-los-espanoles-animaciones-con-r-y-gganimate.md
+- leer-y-representar-datos-de-google-trends-con-r.md
+- analisis-de-textos-con-r.md
+- el-ano-2010-para-analisisydecision.md
 slug: beatifulsoup-web-scraping-con-python-o-como-las-redes-sociales-estan-cambiando-mi-forma-de-escribir
 tags:
 - Beatifulsoup

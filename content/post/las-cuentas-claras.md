@@ -6,6 +6,13 @@ categories:
 - Monográficos
 - SAS
 date: '2010-05-22T04:59:34-05:00'
+lastmod: '2025-07-13T15:59:32.412774'
+related:
+- macros-sas-agrupando-variables-categoricas.md
+- trucos-sas-informes-de-valores-missing.md
+- trucos-sas-muestreo-con-proc-surveyselect.md
+- truco-sas-cruce-con-formatos.md
+- trucos-sas-trasponer-con-sql-para-torpes.md
 slug: las-cuentas-claras
 tags: []
 title: Las cuentas claras.

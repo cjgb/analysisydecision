@@ -4,6 +4,13 @@ categories:
 - Consultoría
 - Data Mining
 date: '2008-03-11T12:57:37-05:00'
+lastmod: '2025-07-13T16:02:34.158364'
+related:
+- el-data-mining-no-es-la-caja-negra-que-selecciona-clientes.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-con-r-capitulo-2-datos.md
+- de-estadistico-a-minero-de-datos-a-cientifico-de-datos.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-16-modelizacion-estadistica-conociendo-los-datos.md
+- contenidos-web-analisis-informacion.md
 slug: mineria-de-datos-una-herramienta-clave-en-consultoria
 tags: []
 title: Minería de datos, una herramienta clave en consultoría

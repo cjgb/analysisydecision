@@ -4,6 +4,13 @@ categories:
 - SAS
 - Trucos
 date: '2011-02-01T14:59:42-05:00'
+lastmod: '2025-07-13T16:09:46.235196'
+related:
+- trucos-sas-eliminacion-de-espacios-en-blanco.md
+- espacios-en-sas.md
+- truco-sas-limpieza-de-tabuladores-con-expresiones-regulares.md
+- macros-sas-limpiar-una-cadena-de-caracteres.md
+- trucos-sas-eliminar-etiquetas-en-los-conjunto-de-datos-sas.md
 slug: trucos-sas-borrando-blancos-innecesarios-con-compbl
 tags:
 - COMPBL

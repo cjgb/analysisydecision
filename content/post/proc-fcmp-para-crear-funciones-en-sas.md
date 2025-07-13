@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2014-10-28T05:45:37-05:00'
+lastmod: '2025-07-13T16:04:42.213999'
+related:
+- macros-faciles-de-sas-dias-de-un-mes-en-una-fecha.md
+- trucos-sas-operar-con-fechas-yyyymm-tipicas-de-particiones-oracle.md
+- macros-sas-transformar-un-numerico-a-fecha.md
+- trucos-sas-numero-de-dias-de-un-mes.md
+- trabajo-con-fechas-sas-funciones-fecha.md
 slug: proc-fcmp-para-crear-funciones-en-sas
 tags:
 - PROC FCMP

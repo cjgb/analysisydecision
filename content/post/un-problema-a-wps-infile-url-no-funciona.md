@@ -4,6 +4,13 @@ categories:
 - Consultoría
 - SAS
 date: '2010-02-07T13:24:59-05:00'
+lastmod: '2025-07-13T16:11:05.827747'
+related:
+- curso-de-lenguaje-sas-con-wps-lectura-de-ficheros-de-texto.md
+- acercamiento-a-wps-migrando-desde-sas.md
+- ayudadme-importar-a-sas-texto-con-comillas.md
+- como-abrir-proyectos-de-enterprise-guide-corruptos-o-de-una-version-anterior.md
+- truco-leer-sas7bdat-sin-sas.md
 slug: un-problema-a-wps-infile-url-no-funciona
 tags: []
 title: Un problema a WPS. Infile url no funciona

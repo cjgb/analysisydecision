@@ -4,6 +4,13 @@ categories:
 - SAS
 - Trucos
 date: '2008-04-02T08:29:11-05:00'
+lastmod: '2025-07-13T16:08:05.137343'
+related:
+- truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
+- el-ods-de-sas-ii-dataset-desde-output.md
+- el-ods-de-sas-i-elementos-del-output.md
+- el-ods-de-sas-iii-documentos-html-y-pdf-desde-sas.md
+- importar-a-sas-desde-otras-aplicaciones.md
 slug: truco-sas-crear-ficheros-excel-sin-proc-export-i
 tags: []
 title: Truco SAS. Crear ficheros Excel sin PROC EXPORT (I)

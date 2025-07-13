@@ -8,6 +8,13 @@ categories:
 - Monográficos
 - SAS
 date: '2010-06-24T09:24:38-05:00'
+lastmod: '2025-07-13T16:02:59.493639'
+related:
+- arboles-de-decision-con-sas-base-con-r-por-supuesto.md
+- monografico-regresion-logistica-con-r.md
+- monografico-arboles-de-clasificacion-con-rpart.md
+- macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
+- monografico-paquete-de-r-nnet-para-modelos-de-redes-neuronales.md
 slug: monografico-un-poco-de-proc-logistic
 tags:
 - ''

@@ -5,6 +5,13 @@ categories:
 - Monográficos
 - R
 date: '2012-09-18T14:36:37-05:00'
+lastmod: '2025-07-13T15:55:36.000728'
+related:
+- monografico-arboles-de-clasificacion-con-rpart.md
+- informes-con-r-en-html-comienzo-con-r2html-i.md
+- evaluando-la-capacidad-predictiva-de-mi-modelo-tweedie.md
+- sobremuestreo-y-pesos-a-las-observaciones-ahora-con-r.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-10-probabilidad-y-distribuciones.md
 slug: cuanto-dinero-pierdo-jugando-a-la-loteria-una-simulacion-poco-seria-con-r
 tags:
 - simulación

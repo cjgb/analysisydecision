@@ -6,6 +6,13 @@ categories:
 - Opinión
 - R
 date: '2020-05-27T04:58:52-05:00'
+lastmod: '2025-07-13T15:59:35.140003'
+related:
+- el-debate-politico-o-como-analizar-textos-con-wps.md
+- noticias-del-congreso-de-usuarios-de-r.md
+- de-actuario-a-cientifico-de-datos.md
+- analisis-de-textos-con-r.md
+- el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v.md
 slug: latent-semantic-analysis-y-la-importancia-de-las-matematicas
 tags:
 - Latent semantic analysis

@@ -4,6 +4,13 @@ categories:
 - SAS
 - Trucos
 date: '2010-06-16T03:57:29-05:00'
+lastmod: '2025-07-13T16:10:15.882135'
+related:
+- trucos-sas-eliminar-etiquetas-en-los-conjunto-de-datos-sas.md
+- truco-sas-proc-contents.md
+- trucos-sas-union-de-multiples-tablas-sas-con-un-nombre-parecido.md
+- trucos-sas-ordenar-las-variables-de-un-dataset.md
+- trucos-sas-lista-de-datasets-en-macro-variable.md
 slug: trucos-sas-modificar-el-nombre-de-una-tabla-con-codigo
 tags:
 - CHANGE

@@ -4,6 +4,13 @@ categories:
 - Formación
 - SAS
 date: '2014-09-24T02:32:47-05:00'
+lastmod: '2025-07-13T15:58:24.450268'
+related:
+- macro-sas-variables-de-un-dataset-en-una-macro-variable.md
+- trucos-sas-lista-de-datasets-en-macro-variable.md
+- macros-sas-informe-de-un-dataset-en-excel.md
+- trucos-sas-macrovariable-a-dataset.md
+- trucos-sas-operaciones-con-tablas-de-dimensiones-con-sas.md
 slug: haciendo-ventanas-con-window-en-sas
 tags:
 - '%window'

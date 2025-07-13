@@ -7,6 +7,13 @@ categories:
 - Monográficos
 - SAS
 date: '2012-03-26T08:34:18-05:00'
+lastmod: '2025-07-13T15:57:22.034811'
+related:
+- sobremuestreo-y-pesos-a-las-observaciones-ahora-con-r.md
+- que-pasa-si-uso-una-regresion-de-poisson-en-vez-de-una-regresion-logistica.md
+- el-sobremuestreo-mejora-mi-estimacion.md
+- trucos-sas-medir-la-importancia-de-las-variables-en-nuestro-modelo-de-regresion-logistica.md
+- monografico-un-poco-de-proc-logistic.md
 slug: en-la-regresion-logistica-%c2%bfel-sobremuestreo-es-lo-mismo-que-asignar-pesos-a-las-observaciones
 tags:
 - OFFSET

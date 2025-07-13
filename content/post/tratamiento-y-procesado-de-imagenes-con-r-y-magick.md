@@ -5,6 +5,13 @@ categories:
 - Monográficos
 - R
 date: '2020-09-01T02:56:06-05:00'
+lastmod: '2025-07-13T16:06:56.718798'
+related:
+- computer-vision-con-r-opencv-de-andar-por-casa.md
+- truco-r-anadir-una-marca-de-agua-a-nuestro-grafico-con-ggplot2.md
+- inteligencia-arficial-frente-a-un-juego-de-ninos-la-particula-tonta-de-nicolas.md
+- analisis-del-discurso-de-navidad-del-rey-de-espana-2013.md
+- los-principales-problemas-de-los-espanoles-animaciones-con-r-y-gganimate.md
 slug: tratamiento-y-procesado-de-imagenes-con-r-y-magick
 tags:
 - magick

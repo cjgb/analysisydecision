@@ -5,6 +5,13 @@ categories:
 - Gráficos
 - Julia
 date: '2021-08-21T11:40:54-05:00'
+lastmod: '2025-07-13T15:58:10.847160'
+related:
+- capitulo-5-representacion-basica-con-ggplot.md
+- graficos-descriptivos-basicos-con-seaborn-python.md
+- graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
+- descubriendo-ggplot2-421.md
+- grafico-de-barras-y-lineas-con-python.md
 slug: graficos-basicos-con-julia
 tags: []
 title: Gráficos Básicos con Julia

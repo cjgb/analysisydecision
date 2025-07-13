@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2013-05-30T05:48:16-05:00'
+lastmod: '2025-07-13T16:10:25.513427'
+related:
+- subconjuntos-de-variables-con-dropkeep.md
+- macros-sas-ordenar-alfabeticamente-las-variables-de-un-dataset.md
+- truco-sas-proc-contents.md
+- curso-de-lenguaje-sas-con-wps-subconjuntos-de-variables-con-drop-y-keep.md
+- trucos-sas-modificar-el-nombre-de-una-tabla-con-codigo.md
 slug: trucos-sas-ordenar-las-variables-de-un-dataset
 tags:
 - retain

@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2008-08-26T11:29:55-05:00'
+lastmod: '2025-07-13T16:08:28.465364'
+related:
+- truco-sas-tablas-de-una-libreria-en-una-macro-variable.md
+- el-ods-de-sas-ii-dataset-desde-output.md
+- trucos-sas-macrovariable-a-dataset.md
+- trucos-sas-lista-de-datasets-en-macro-variable.md
+- macros-sas-informe-de-un-dataset-en-excel.md
 slug: truco-sas-proc-contents
 tags:
 - ods

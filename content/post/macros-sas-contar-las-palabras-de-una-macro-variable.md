@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2012-12-11T07:42:37-05:00'
+lastmod: '2025-07-13T16:00:58.125171'
+related:
+- truco-sas-funcion-para-contar-caracteres.md
+- macros-sas-calular-la-longitud-de-un-numero.md
+- macros-sas-limpiar-una-cadena-de-caracteres.md
+- macro-sas-numero-de-observaciones-de-un-dataset-en-una-macro.md
+- macro-facil-de-sas-longitud-de-la-parte-decimal-de-un-numero.md
 slug: macros-sas-contar-las-palabras-de-una-macro-variable
 tags: []
 title: Macros SAS. Contar las palabras de una macro variable

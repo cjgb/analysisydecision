@@ -4,6 +4,13 @@ categories:
 - R
 - Trucos
 date: '2010-06-22T03:28:50-05:00'
+lastmod: '2025-07-13T16:09:30.320268'
+related:
+- comunicar-sas-con-r-creando-ejecutables-windows.md
+- intro-rcommander-1-que-es-rcommander.md
+- trial-version-del-bridge-to-r.md
+- ejecutar-un-codigo-al-iniciar-la-sesion-de-r.md
+- conectar-r-a-una-base-de-datos.md
 slug: trucos-r-conectar-a-internet-por-el-puerto-8080
 tags: []
 title: Trucos R. Conectar a internet por el puerto 8080

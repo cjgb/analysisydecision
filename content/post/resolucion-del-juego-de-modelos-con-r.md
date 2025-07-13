@@ -6,6 +6,13 @@ categories:
 - Monográficos
 - R
 date: '2016-05-11T15:33:57-05:00'
+lastmod: '2025-07-13T16:05:22.073984'
+related:
+- juego-de-modelos-de-regresion-con-r.md
+- machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algoritmos-de-clasificacion.md
+- regresion-con-redes-neuronales-en-r.md
+- el-parametro-gamma-el-coste-la-complejidad-de-un-svm.md
+- como-salva-la-linealidad-una-red-neuronal.md
 slug: resolucion-del-juego-de-modelos-con-r
 tags:
 - arboles de regresion

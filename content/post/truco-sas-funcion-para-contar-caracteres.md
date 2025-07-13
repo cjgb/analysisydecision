@@ -4,6 +4,13 @@ categories:
 - SAS
 - Trucos
 date: '2008-10-27T08:46:15-05:00'
+lastmod: '2025-07-13T16:08:12.605726'
+related:
+- macros-sas-contar-las-palabras-de-una-macro-variable.md
+- macros-sas-limpiar-una-cadena-de-caracteres.md
+- macros-sas-calular-la-longitud-de-un-numero.md
+- curso-de-lenguaje-sas-con-wps-funciones-en-wps.md
+- dividir-en-palabras-un-texto-con-sas.md
 slug: truco-sas-funcion-para-contar-caracteres
 tags:
 - contar caracteres

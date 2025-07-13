@@ -5,6 +5,13 @@ categories:
 - Libro Estadística
 - R
 date: '2022-08-16T03:04:34-05:00'
+lastmod: '2025-07-13T15:59:02.414088'
+related:
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-9-analisis-exploratorio-de-datos-eda.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-7-descripcion-grafica-de-variables.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-6-descripcion-numerica-de-variables.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-16-modelizacion-estadistica-conociendo-los-datos.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
 slug: introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-8-problemas-con-los-datos
 tags: []
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 8. Problemas

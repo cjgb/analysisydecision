@@ -6,6 +6,13 @@ categories:
 - Trucos
 - video
 date: '2021-07-29T08:49:44-05:00'
+lastmod: '2025-07-13T16:02:19.718530'
+related:
+- trabajar-con-los-datos-de-power-bi-desde-r-para-hacer-un-modelo-de-regresion-lineal.md
+- trucos-sas-operaciones-con-tablas-de-dimensiones-con-sas.md
+- transformaciones-de-variables-cuantitativas-en-modelos-binomiales.md
+- inteligencia-arficial-frente-a-un-juego-de-ninos-la-particula-tonta-de-nicolas.md
+- truco-excel-graficos-de-dispersion-que-identifican-los-puntos.md
 slug: medidas-dinamicas-con-power-bi
 tags: []
 title: Medidas dinámicas con Power BI

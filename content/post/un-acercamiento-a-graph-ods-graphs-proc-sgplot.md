@@ -5,6 +5,13 @@ categories:
 - Monográficos
 - SAS
 date: '2010-05-28T07:38:01-05:00'
+lastmod: '2025-07-13T16:10:47.766721'
+related:
+- un-acercamiento-a-graph-sentencias-graficas.md
+- un-acercamiento-a-graph-primeros-graficos-con-sas.md
+- un-acercamiento-a-graph-proc-gchart.md
+- graficos-de-densidades-con-sas-y-el-proc-kde.md
+- capitulo-5-representacion-basica-con-ggplot.md
 slug: un-acercamiento-a-graph-ods-graphs-proc-sgplot
 tags:
 - ''

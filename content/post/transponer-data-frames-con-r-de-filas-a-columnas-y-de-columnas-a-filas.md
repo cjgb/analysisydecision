@@ -4,6 +4,13 @@ categories:
 - R
 - Trucos
 date: '2021-05-19T10:49:28-05:00'
+lastmod: '2025-07-13T16:06:55.078373'
+related:
+- data-management-con-dplyr.md
+- trucos-simples-para-rstats.md
+- leer-fichero-de-texto-de-ancho-fijo-con-python-pandas.md
+- expandir-un-data-frame-de-r-con-tidyr.md
+- truco-sas-transponer-tablas-con-proc-transpose-data-o-proc-sql.md
 slug: transponer-data-frames-con-r-de-filas-a-columnas-y-de-columnas-a-filas
 tags:
 - tidyr

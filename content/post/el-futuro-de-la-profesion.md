@@ -4,6 +4,13 @@ categories:
 - Consultoría
 - Data Mining
 date: '2010-01-15T14:42:04-05:00'
+lastmod: '2025-07-13T15:56:53.473899'
+related:
+- nos-hemos-terminado-de-reinventar-acabamos-con-el-data-mining-y-empezamos-con-el-big-data.md
+- cuando-tenemos-big-data.md
+- de-actuario-a-cientifico-de-datos.md
+- de-estadistico-a-minero-de-datos-a-cientifico-de-datos.md
+- data-mining-business-intelligence-yo-la-nube.md
 slug: el-futuro-de-la-profesion
 tags:
 - Consultoría

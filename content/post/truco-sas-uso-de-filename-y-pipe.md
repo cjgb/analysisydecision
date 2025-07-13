@@ -4,6 +4,13 @@ categories:
 - SAS
 - Trucos
 date: '2008-07-17T08:37:41-05:00'
+lastmod: '2025-07-13T16:08:48.203956'
+related:
+- trucos-sas-mas-usos-de-infile-y-pipe-directorios-en-tablas-sas.md
+- truco-sas-dataset-con-los-ficheros-y-carpetas-de-un-directorio.md
+- trucos-sas-ejecutar-un-codigo-si-existe-una-tabla-o-un-fichero.md
+- comunicar-sas-con-r-creando-ejecutables-windows.md
+- trucos-sas-macrovariable-a-dataset.md
 slug: truco-sas-uso-de-filename-y-pipe
 tags: []
 title: Truco SAS. Uso de filename y pipe

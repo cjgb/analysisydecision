@@ -6,6 +6,13 @@ categories:
 - Monográficos
 - Trucos
 date: '2011-04-11T05:47:32-05:00'
+lastmod: '2025-07-13T16:09:16.948038'
+related:
+- truco-excel-grafico-de-puntos-con-colores.md
+- truco-excel-graficos-de-dispersion-que-identifican-los-puntos.md
+- trucos-excel-graficos-dot-plot-representando-un-ranking-graficamente.md
+- chart-tools-un-add-in-imprescindible-para-excel.md
+- trucos-excel-mapa-de-espana-por-provincias.md
 slug: trucos-excel-poner-etiquetas-en-graficos-de-dispersion
 tags:
 - ''

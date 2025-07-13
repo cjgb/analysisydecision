@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - R
 date: '2010-03-18T17:12:13-05:00'
+lastmod: '2025-07-13T15:56:16.894313'
+related:
+- agregador-de-noticias-de-r-en-espanol.md
+- el-ano-2010-para-analisisydecision.md
+- algunos-temas-de-interes-sobre-r.md
+- el-ano-2009-para-analisis-y-decision.md
+- revision-de-las-iii-jornadas-de-r.md
 slug: desarrollo-de-ide-para-r
 tags:
 - eclipse

@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2010-09-06T08:00:21-05:00'
+lastmod: '2025-07-13T16:10:14.282527'
+related:
+- trucos-sas-porque-hay-que-usar-objetos-hash.md
+- truco-sas-cruce-con-formatos.md
+- truco-sas-tablas-de-una-libreria-en-una-macro-variable.md
+- trucos-sas-lista-de-datasets-en-macro-variable.md
+- trucos-sas-macrovariable-a-dataset.md
 slug: trucos-sas-mejor-que-hash-in-para-cruzar-tablas
 tags: []
 title: Trucos SAS. Mejor que hash IN para cruzar tablas

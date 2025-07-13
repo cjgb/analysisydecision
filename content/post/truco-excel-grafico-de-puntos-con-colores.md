@@ -5,6 +5,13 @@ categories:
 - Formación
 - Trucos
 date: '2015-01-21T10:40:29-05:00'
+lastmod: '2025-07-13T16:07:14.830927'
+related:
+- truco-excel-graficos-de-dispersion-que-identifican-los-puntos.md
+- trucos-excel-poner-etiquetas-en-graficos-de-dispersion.md
+- truco-excel-formatos-condicionales-para-crear-rango-de-colores.md
+- truco-excel-identificar-el-color-de-una-celda.md
+- trucos-excel-mapa-de-espana-por-provincias.md
 slug: truco-excel-grafico-de-puntos-con-colores
 tags: []
 title: Truco Excel. Gráfico de puntos con colores

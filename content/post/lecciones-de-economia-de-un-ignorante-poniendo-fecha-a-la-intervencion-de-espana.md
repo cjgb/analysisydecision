@@ -5,6 +5,13 @@ categories:
 - Monográficos
 - Sin catergoría
 date: '2011-04-21T16:34:19-05:00'
+lastmod: '2025-07-13T15:59:56.901744'
+related:
+- lecciones-de-economia-de-un-ignorante-espana-esta-salvando-a-alemania-pero-alemania-no-esta-salvando-europa.md
+- lecciones-de-economia-de-un-ignorante-solucion-trabajar-mas-y-cobrar-menos.md
+- lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
+- lecciones-de-economia-de-un-ignorante-una-cerveza-100-pesetas.md
+- lecciones-de-economia-de-un-ignorante-la-prima-de-riesgo-y-la-madre-que-la-pario.md
 slug: lecciones-de-economia-de-un-ignorante-poniendo-fecha-a-la-intervencion-de-espana
 tags:
 - crisis económica

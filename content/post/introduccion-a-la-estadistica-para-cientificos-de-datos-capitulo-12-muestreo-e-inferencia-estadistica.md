@@ -6,6 +6,13 @@ categories:
 - Monográficos
 - R
 date: '2023-01-29T12:17:04-05:00'
+lastmod: '2025-07-13T15:58:50.168046'
+related:
+- el-sobremuestreo-mejora-mi-estimacion.md
+- trucos-sas-muestreo-con-proc-surveyselect.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-16-modelizacion-estadistica-conociendo-los-datos.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-10-probabilidad-y-distribuciones.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
 slug: introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-12-muestreo-e-inferencia-estadistica
 tags: []
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 12. Muestreo

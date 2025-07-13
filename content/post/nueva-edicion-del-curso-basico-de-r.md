@@ -4,6 +4,13 @@ categories:
 - Formación
 - R
 date: '2013-02-05T10:05:08-05:00'
+lastmod: '2025-07-13T16:03:42.246064'
+related:
+- nuevo-curso-de-estadistica-con-r.md
+- curso-basico-de-r.md
+- jornadas-de-r-gratuitas-en-galicia.md
+- curso-de-iniciacion-a-r-en-kschool-de-carlos-gil.md
+- lectura-conjunta-de-analyzing-linguistic-data.md
 slug: nueva-edicion-del-curso-basico-de-r
 tags: []
 title: Nueva edición del Curso Básico de R

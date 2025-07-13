@@ -5,6 +5,13 @@ categories:
 - Formación
 - Trucos
 date: '2012-03-13T09:33:00-05:00'
+lastmod: '2025-07-13T16:01:48.178251'
+related:
+- trucos-excel-mapa-de-espana-por-provincias.md
+- nuevo-y-muy-mejorado-mapa-de-espana-por-provincias-con-excel.md
+- mapa-estatico-de-espana-con-python.md
+- creando-un-mapa-en-excel-con-archivos-svg.md
+- cartografia-digitalizada-de-espana-por-seccion-censal.md
 slug: mapa-de-espana-por-provincias-en-html
 tags:
 - html

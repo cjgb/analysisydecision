@@ -6,6 +6,13 @@ categories:
 - SAS
 - Trucos
 date: '2011-04-06T14:46:15-05:00'
+lastmod: '2025-07-13T16:10:37.590767'
+related:
+- trucos-sas-ejecutar-un-codigo-si-existe-una-tabla-o-un-fichero.md
+- trucos-sas-informes-de-valores-missing.md
+- curso-de-lenguaje-sas-con-wps-ejecuciones.md
+- trucos-sas-mejor-que-hash-in-para-cruzar-tablas.md
+- laboratorio-de-codigo-sas-comparativa-entre-if-y-where.md
 slug: trucos-sas-validacion-de-consultas-con-proc-sql
 tags:
 - noexec

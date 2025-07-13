@@ -5,6 +5,13 @@ categories:
 - Formación
 - Trucos
 date: '2019-04-14T14:01:16-05:00'
+lastmod: '2025-07-13T16:07:27.604415'
+related:
+- truco-excel-repetir-celdas-en-funcion-de-los-valores-de-otra-celda.md
+- trucos-excel-multiples-campos-calculados-en-una-tabla-dinamica.md
+- truco-excel-unir-todos-los-libros-en-una-hoja.md
+- truco-excel-repetir-un-campo-a-partir-de-otro-que-define-el-numero-de-repeticiones.md
+- truco-excel-pasar-un-rango-de-varias-columnas-a-una.md
 slug: truco-excel-producto-cartesiano-de-dos-campos
 tags: []
 title: Truco Excel. Producto cartesiano de dos campos

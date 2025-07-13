@@ -4,6 +4,13 @@ categories:
 - Banca
 - Consultoría
 date: '2009-03-02T09:56:00-05:00'
+lastmod: '2025-07-13T15:59:13.316388'
+related:
+- margenes-nulos-en-los-nuevos-depositos-bancarios.md
+- a-mi-me-preocupa-el-pequeno-ahorrador.md
+- busca-la-relacion-deuda-subordinada-y-cajas-catalanas.md
+- lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
+- participaciones-preferentes-de-las-cajas-de-ahorro.md
 slug: la-batalla-de-las-nominas-seguimos-buscando-el-dinero-nuevo
 tags: []
 title: La Batalla de las nóminas. Seguimos buscando el dinero nuevo

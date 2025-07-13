@@ -4,6 +4,13 @@ categories:
 - Banca
 - Sin catergoría
 date: '2009-03-23T17:06:24-05:00'
+lastmod: '2025-07-13T15:54:26.471987'
+related:
+- tantarantan-que-te-han-visto-pepe-tantarantan-que-te-han-visto-juan.md
+- lecciones-de-economia-de-un-ignorante-la-crisis-ha-tocado-fondo-luego-escarbara.md
+- lecciones-de-economia-de-un-ignorante-solucion-trabajar-mas-y-cobrar-menos.md
+- amanece-que-no-es-poco.md
+- a-mi-me-preocupa-el-pequeno-ahorrador.md
 slug: bajar-los-tipos-a-la-japonesa-al-0
 tags:
 - bajar impuestos

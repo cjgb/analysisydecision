@@ -6,6 +6,13 @@ categories:
 - Trucos
 - WPS
 date: '2012-05-21T01:35:06-05:00'
+lastmod: '2025-07-13T16:10:33.158712'
+related:
+- monografico-first-y-last-ejemplos-en-data.md
+- monografico-datos-agrupados-en-sas.md
+- pasando-de-sas-a-r-primer-y-ultimo-elemento-de-un-campo-agrupado-de-un-data-frame.md
+- trucos-sas-operaciones-con-tablas-de-dimensiones-con-sas.md
+- bucle-de-fechas-con-sas-para-tablas-particionadas.md
 slug: trucos-sas-primer-y-ultimo-elemento-de-un-array
 tags:
 - ''

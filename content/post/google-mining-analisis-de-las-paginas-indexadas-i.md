@@ -4,6 +4,13 @@ categories:
 - Consultoría
 - Data Mining
 date: '2008-06-12T08:36:19-05:00'
+lastmod: '2025-07-13T15:58:02.693262'
+related:
+- proyecto-text-mining-con-excel-iii.md
+- proyecto-text-mining-con-excel-iv.md
+- proyecto-text-mining-con-excel-ii.md
+- proyecto-text-mining-con-excel-pasa-a-ser-google-mining.md
+- proyecto-text-mining-con-excel-i.md
 slug: google-mining-analisis-de-las-paginas-indexadas-i
 tags: []
 title: Google Mining. Análisis de las páginas indexadas (I)
@@ -43,6 +50,7 @@ Sub Limpieza()
 Dim pal As String
 ```
 
+```
 'Palabras en diccionario  
 Sheets("diccionario").Select  
 para = 0  
@@ -60,5 +68,6 @@ pal = " " & Cells(j, 2) & " "Sheets("Hoja2").SelectColumns("A:A").Select
 Selection.Replace What:=pal, Replacement:=" "  
 Next j  
 End Sub
+```
 
 En la segunda columna de una hoja Excel que denominamos diccionario colocamos todas las palabras que vamos a eliminar y nuestro bucle primero encuentra cuantas son para posteriormente eliminarlas de la Hoja2, hoja en la que se ha ubicado la tabla de datos. Todo el proceso está en desarrollo. Evidentemente se puede mejorar el código (se aceptan sugerencias y colaboraciones) de todos modos si encontráis problemas, tenéis dudas o incluso queréis desarrollar esta herramienta dentro de vuestra organizacion: [rvaquerizo@analisisydecision.es](mailto:rvaquerizo@analisisydecision.es) En la siguiente entrega comenzaremos a hacer informes de palabras.

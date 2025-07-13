@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2013-03-04T10:27:42-05:00'
+lastmod: '2025-07-13T16:08:20.542217'
+related:
+- truco-sas-elminar-retornos-de-carro-o-saltos-de-linea-engorrosos.md
+- macros-sas-limpiar-una-cadena-de-caracteres.md
+- truco-sas-macro-buscar-y-reemplazar-en-texto.md
+- ayudadme-importar-a-sas-texto-con-comillas.md
+- importar-a-sas-desde-otras-aplicaciones.md
 slug: truco-sas-limpiar-un-fichero-de-texto-con-sas
 tags: []
 title: Truco SAS. Limpiar un fichero de texto con SAS

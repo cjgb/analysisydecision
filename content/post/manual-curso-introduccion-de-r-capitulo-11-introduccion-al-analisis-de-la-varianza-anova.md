@@ -5,6 +5,13 @@ categories:
 - Modelos
 - R
 date: '2008-10-03T15:04:43-05:00'
+lastmod: '2025-07-13T16:01:17.114446'
+related:
+- manual-curso-introduccion-de-r-capitulo-13-analisis-de-la-varianza-disenos-anidados.md
+- manual-curso-introduccion-de-r-capitulo-12-analisis-de-la-varianza-disenos-bifactoriales.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-14-introduccion-al-diseno-de-experimentos.md
+- monografico-analisis-de-factores-con-r-una-introduccion.md
+- manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
 slug: manual-curso-introduccion-de-r-capitulo-11-introduccion-al-analisis-de-la-varianza-anova
 tags: []
 title: 'Manual. Curso introducción de R. Capítulo 11: Introducción al análisis de

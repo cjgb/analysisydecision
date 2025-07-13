@@ -7,6 +7,13 @@ categories:
 - Monográficos
 - R
 date: '2009-08-31T10:13:13-05:00'
+lastmod: '2025-07-13T16:02:44.282800'
+related:
+- monografico-arboles-de-decision-con-party.md
+- trucos-r-llevar-a-sas-las-reglas-de-un-arbol-de-decision.md
+- arboles-de-decision-con-sas-base-con-r-por-supuesto.md
+- monografico-paquete-de-r-nnet-para-modelos-de-redes-neuronales.md
+- monografico-un-poco-de-proc-logistic.md
 slug: monografico-arboles-de-clasificacion-con-rpart
 tags:
 - árbol decisión

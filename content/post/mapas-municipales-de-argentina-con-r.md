@@ -5,6 +5,13 @@ categories:
 - Mapas
 - R
 date: '2016-09-05T03:00:16-05:00'
+lastmod: '2025-07-13T16:02:08.588280'
+related:
+- mapa-de-argentina-con-r.md
+- mapas-estaticos-de-peru-con-r-y-python-a-nivel-de-distrito.md
+- mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel.md
+- mapas-con-spatial-data-de-r.md
+- mapas-estaticos-municipales-para-estados-de-mexico-con-r-y-con-excel.md
 slug: mapas-municipales-de-argentina-con-r
 tags:
 - RColorBrewer

@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - R
 date: '2010-06-07T15:34:53-05:00'
+lastmod: '2025-07-13T15:53:43.196659'
+related:
+- los-recursos-mas-destacados-de-r-en-la-web.md
+- agregador-de-noticias-de-sas.md
+- el-ano-2009-para-analisis-y-decision.md
+- nace-datanalyticswordpresscom.md
+- un-nuevo-blog-sobre-sas-en-espanol.md
 slug: agregador-de-noticias-de-r-en-espanol
 tags:
 - agregador de noticias de R

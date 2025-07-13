@@ -6,6 +6,13 @@ categories:
 - Monográficos
 - Trucos
 date: '2016-03-17T10:59:03-05:00'
+lastmod: '2025-07-13T16:07:01.241764'
+related:
+- trucos-excel-unir-varios-excel-en-uno.md
+- truco-excel-unir-todos-los-libros-en-una-hoja.md
+- truco-excel-application-getopenfilename-el-explorador-de-archivos-sencillo-en-macro.md
+- truco-sas-unir-todas-las-hojas-de-un-excel-en-una.md
+- truco-sas-unir-todos-los-excel-en-uno-solo.md
 slug: truco-excel-abrir-multiples-libros-de-excel-en-distintas-hojas-de-un-nuevo-libro
 tags:
 - GetOpenFilename

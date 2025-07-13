@@ -4,6 +4,13 @@ categories:
 - Banca
 - Sin catergoría
 date: '2009-03-06T04:01:32-05:00'
+lastmod: '2025-07-13T15:59:29.707544'
+related:
+- lecciones-de-economia-de-un-ignorante-la-crisis-ha-tocado-fondo-luego-escarbara.md
+- lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
+- amanece-que-no-es-poco.md
+- lecciones-de-economia-de-un-ignorante-los-bancos-pierden-dinero-para-favorecer-a-unos-y-luego-los-salvamos-todos.md
+- margenes-nulos-en-los-nuevos-depositos-bancarios.md
 slug: la-nueva-burbuja-de-los-bancos
 tags:
 - bancos

@@ -4,7 +4,14 @@ categories:
 - Formación
 - R
 date: '2010-10-02T14:02:35-05:00'
-slug: 'descubriendo-ggplot2'
+lastmod: '2025-07-13T15:56:18.257903'
+related:
+- haciendo-graficos-con-r-cuales-son-vuestras-preferencias.md
+- capitulo-5-representacion-basica-con-ggplot.md
+- grafico-con-eje-secundario-en-ggplot2.md
+- graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
+- un-acercamiento-a-graph-ods-graphs-proc-sgplot.md
+slug: descubriendo-ggplot2
 tags:
 - geom_boxplot
 - geom_histogram

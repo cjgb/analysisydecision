@@ -5,6 +5,13 @@ categories:
 - Formación
 - Trucos
 date: '2008-11-21T08:53:14-05:00'
+lastmod: '2025-07-13T16:07:20.808569'
+related:
+- medias-ponderadas-en-excel-crear-tu-propia-funcion.md
+- trucos-sas-calcular-percentiles-como-excel-o-r.md
+- truco-excel-repetir-celdas-en-funcion-de-los-valores-de-otra-celda.md
+- trucos-excel-convertir-texto-en-un-resultado-o-formula.md
+- trucos-excel-repetir-filas-o-columnas-con-la-funcion-desref.md
 slug: truco-excel-nuestra-propia-funcion-excel
 tags: []
 title: Truco Excel. Nuestra propia función redondear en Excel

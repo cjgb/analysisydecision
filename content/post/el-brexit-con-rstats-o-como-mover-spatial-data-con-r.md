@@ -5,6 +5,13 @@ categories:
 - Mapas
 - R
 date: '2016-08-10T15:13:26-05:00'
+lastmod: '2025-07-13T15:56:46.698507'
+related:
+- mover-parte-de-un-shapefile-con-r-mapa-de-la-tasa-de-casos-de-coronavirus-por-habitante-en-espana.md
+- mover-elementos-de-un-mapa-con-qgis-ejemplo-mover-canarias.md
+- animacion-de-un-mapa-con-python-porcentaje-de-vacunas-administradas.md
+- identificar-los-municipios-costeros-y-limitrofes-de-espana-con-r.md
+- mapa-de-rstats-animado-con-el-porcentaje-de-vacunacion-en-espana.md
 slug: el-brexit-con-rstats-o-como-mover-spatial-data-con-r
 tags:
 - Animaciones

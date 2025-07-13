@@ -4,6 +4,13 @@ categories:
 - R
 - Trucos
 date: '2010-01-31T15:10:52-05:00'
+lastmod: '2025-07-13T16:07:59.157291'
+related:
+- macros-sas-hacer-0-los-valores-missing-de-un-dataset.md
+- truco-sas-transformaciones-de-variables-con-arrays.md
+- trucos-sas-lista-de-variables-missing.md
+- trucos-simples-para-rstats.md
+- trucos-sas-informes-de-valores-missing.md
 slug: truco-r-valores-perdidos-a-0-ejemplo-de-uso-de-sapply
 tags:
 - missing

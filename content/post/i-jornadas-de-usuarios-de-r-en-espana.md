@@ -3,6 +3,13 @@ author: cgbellosta
 categories:
 - R
 date: '2009-07-13T17:19:14-05:00'
+lastmod: '2025-07-13T15:58:32.584601'
+related:
+- primeras-jornadas-de-usuarios-de-r-en-espana-ya-es-oficial.md
+- comienza-la-cuenta-atras-iii-jornadas-de-usuarios-de-r.md
+- lista-oficial-de-ayuda-de-r-en-espanol.md
+- revision-de-las-iii-jornadas-de-r.md
+- reunion-de-usuarios-de-r-de-madrid-15-de-octubre-de-2015.md
 slug: i-jornadas-de-usuarios-de-r-en-espana
 tags:
 - Jornadas de R

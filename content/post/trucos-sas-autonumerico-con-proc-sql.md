@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2009-11-06T11:41:05-05:00'
+lastmod: '2025-07-13T16:09:44.792836'
+related:
+- truco-sas-duplicar-registros-si-cumplen-una-condicion.md
+- trucos-sas-muestras-aleatorias-con-y-sin-reemplazamiento.md
+- trucos-sas-identificar-registros-duplicados.md
+- truco-sas-observaciones-de-un-dataset-en-una-macro-variable.md
+- macro-facil-de-sas-longitud-de-la-parte-decimal-de-un-numero.md
 slug: trucos-sas-autonumerico-con-proc-sql
 tags: []
 title: Trucos sas. Autonumérico con PROC SQL

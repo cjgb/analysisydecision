@@ -5,6 +5,13 @@ categories:
 - Monográficos
 - R
 date: '2015-12-20T12:48:34-05:00'
+lastmod: '2025-07-13T15:55:22.432648'
+related:
+- datos-agrupados-en-r-con-dplyr.md
+- data-management-con-dplyr.md
+- pasando-de-sas-a-r-primer-y-ultimo-elemento-de-un-campo-agrupado-de-un-data-frame.md
+- monografico-datos-agrupados-en-sas.md
+- truco-python-agrupar-variable-en-funcion-de-la-frecuencia.md
 slug: creacion-de-ranking-con-r
 tags:
 - plyr

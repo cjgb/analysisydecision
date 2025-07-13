@@ -1,5 +1,7 @@
 public/
 backups/
 
+content/post/.embeddings.pkl
+
 .hugo_build.lock
 

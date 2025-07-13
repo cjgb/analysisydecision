@@ -4,6 +4,13 @@ categories:
 - Banca
 - Formación
 date: '2009-02-09T08:12:29-05:00'
+lastmod: '2025-07-13T15:57:46.407255'
+related:
+- me-preocupa-el-pequeno-ahorrador-ii.md
+- lecciones-de-economia-de-un-ignorante-la-caixa-a-colocar-preferentes.md
+- lecciones-de-economia-de-un-ignorante-la-prima-de-riesgo-y-la-madre-que-la-pario.md
+- lecciones-de-economia-de-un-ignorante-no-me-dan-hipoteca.md
+- a-mi-me-preocupa-el-pequeno-ahorrador.md
 slug: experimento-un-prestamo-personal-para-invertir-en-bolsa
 tags:
 - ''

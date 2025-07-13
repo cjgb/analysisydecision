@@ -4,6 +4,13 @@ categories:
 - Fútbol
 - Formación
 date: '2024-01-02T05:09:28-05:00'
+lastmod: '2025-07-13T15:56:11.434525'
+related:
+- datos-de-eventing-gratuitos-en-statsbomb.md
+- minutos-de-juego-y-puntos-es-espanyol-y-sus-finales-de-partido.md
+- los-porteros-del-espanyol-y-la-regresion-binomial-negativa.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-10-probabilidad-y-distribuciones.md
+- pintando-campos-de-futbol-con-rstats-y-entendiendo-funciones-de-densidad.md
 slug: datos-libres-de-statsbomb-independencia-estadistica-y-tandas-de-penaltis
 tags: []
 title: Datos libres de StatsBomb. Independencia estadística y tandas de penaltis

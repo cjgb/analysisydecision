@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Sin catergoría
 date: '2010-11-27T13:43:32-05:00'
+lastmod: '2025-07-13T15:56:33.176324'
+related:
+- esto-si-es-un-grafico-interactivo.md
+- cartografia-digitalizada-de-espana-por-seccion-censal.md
+- graficos-de-calendarios-con-series-temporales.md
+- contenidos-para-octubre-de-ayd.md
+- reunion-del-grupo-de-usuarios-de-r-de-madrid-12052016.md
 slug: dos-siglos-de-graficos-estadisticos-1750-1950-en-el-ine
 tags:
 - INE

@@ -4,6 +4,13 @@ categories:
 - Consultoría
 - Seguros
 date: '2009-12-05T14:18:49-05:00'
+lastmod: '2025-07-13T16:00:25.510176'
+related:
+- nace-verti-la-directa-de-mapfre.md
+- consultor-particular-de-seguros.md
+- el-seguro-directo-de-zurich.md
+- el-seguro-de-salud-suma-y-sigue.md
+- el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v.md
 slug: los-enemigos-del-canal-tradicional-de-venta-de-seguros
 tags:
 - enemigos de agentes y corredores

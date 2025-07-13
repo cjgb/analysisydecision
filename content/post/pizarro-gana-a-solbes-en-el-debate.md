@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Sin catergoría
 date: '2009-05-14T05:35:59-05:00'
+lastmod: '2025-07-13T16:04:23.744824'
+related:
+- lecciones-de-economia-de-un-ignorante-solucion-trabajar-mas-y-cobrar-menos.md
+- lecciones-de-economia-de-un-ignorante-poniendo-fecha-a-la-intervencion-de-espana.md
+- tantarantan-que-te-han-visto-pepe-tantarantan-que-te-han-visto-juan.md
+- la-confianza-en-el-sector-financiero.md
+- lecciones-de-economia-de-un-ignorante-los-bancos-pierden-dinero-para-favorecer-a-unos-y-luego-los-salvamos-todos.md
 slug: pizarro-gana-a-solbes-en-el-debate
 tags:
 - crisis

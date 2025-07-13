@@ -5,6 +5,13 @@ categories:
 - Modelos
 - R
 date: '2011-01-30T16:16:07-05:00'
+lastmod: '2025-07-13T16:03:13.605780'
+related:
+- el-problema-de-la-multicolinealidad-intuirlo-y-detectarlo.md
+- entrenamiento-validacion-y-test.md
+- monografico-regresion-logistica-con-r.md
+- obteniendo-los-parametros-de-mi-modelo-gam.md
+- manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
 slug: muchas-variables-no-implican-una-mejor-prediccion
 tags:
 - azar

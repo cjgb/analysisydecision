@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Sin catergoría
 date: '2009-08-20T07:35:43-05:00'
+lastmod: '2025-07-13T16:00:01.024975'
+related:
+- lecciones-de-economia-de-un-ignorante-poniendo-fecha-a-la-intervencion-de-espana.md
+- lecciones-de-economia-de-un-ignorante-solucion-trabajar-mas-y-cobrar-menos.md
+- lecciones-de-economia-de-un-ignorante-arreglo-el-deficit-en-un-pis-pas.md
+- lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
+- lecciones-de-economia-de-un-ignorante-espana-esta-salvando-a-alemania-pero-alemania-no-esta-salvando-europa.md
 slug: lecciones-de-economia-de-un-ignorante-una-cerveza-100-pesetas
 tags: []
 title: Lecciones de economía de un ignorante. Una cerveza 100 pesetas

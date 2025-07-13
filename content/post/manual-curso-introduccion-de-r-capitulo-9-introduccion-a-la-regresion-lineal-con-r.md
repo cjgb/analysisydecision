@@ -4,6 +4,13 @@ categories:
 - Formación
 - R
 date: '2008-07-03T05:23:49-05:00'
+lastmod: '2025-07-13T16:01:37.384360'
+related:
+- manual-curso-introduccion-de-r-capitulo-10-funciones-graficas-en-regresion-lineal.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-15-modelos-glm-regresion-logistica-y-regresion-de-poisson.md
+- el-problema-de-la-multicolinealidad-intuirlo-y-detectarlo.md
+- resolucion-del-juego-de-modelos-con-r.md
+- manual-curso-introduccion-de-r-capitulo-13-analisis-de-la-varianza-disenos-anidados.md
 slug: manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r
 tags:
 - Estadistica

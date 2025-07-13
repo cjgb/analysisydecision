@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Business Intelligence
 date: '2009-03-24T06:06:00-05:00'
+lastmod: '2025-07-13T15:54:25.038970'
+related:
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-13-regresion-lineal.md
+- bajar-los-tipos-a-la-japonesa-al-0.md
+- lecciones-de-economia-de-un-ignorante-solucion-trabajar-mas-y-cobrar-menos.md
+- a-mi-me-preocupa-el-pequeno-ahorrador.md
+- amanece-que-no-es-poco.md
 slug: bajada-del-precio-de-la-vivienda-en-eeuu
 tags:
 - dimension geografica

@@ -6,6 +6,13 @@ categories:
 - Monográficos
 - R
 date: '2014-09-07T05:42:00-05:00'
+lastmod: '2025-07-13T16:02:39.848628'
+related:
+- manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-15-modelos-glm-regresion-logistica-y-regresion-de-poisson.md
+- manual-curso-introduccion-de-r-capitulo-10-funciones-graficas-en-regresion-lineal.md
+- interpretacion-de-los-parametros-de-un-modelo-glm.md
+- modelos-gam-dejando-satisfechos-a-los-equipos-de-negocio.md
 slug: modelos-lineales-dinamicos-dlm-con-r
 tags:
 - dlm

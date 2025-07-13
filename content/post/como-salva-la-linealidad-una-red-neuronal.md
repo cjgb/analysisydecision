@@ -8,6 +8,13 @@ categories:
 - Monográficos
 - Seguros
 date: '2016-09-27T01:55:31-05:00'
+lastmod: '2025-07-13T15:55:07.474852'
+related:
+- resolucion-del-juego-de-modelos-con-r.md
+- regresion-con-redes-neuronales-en-r.md
+- monografico-paquete-de-r-nnet-para-modelos-de-redes-neuronales.md
+- representacion-de-redes-neuronales-con-r.md
+- el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v.md
 slug: como-salva-la-linealidad-una-red-neuronal
 tags:
 - redes neuronales

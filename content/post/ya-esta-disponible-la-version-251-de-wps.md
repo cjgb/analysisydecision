@@ -5,6 +5,13 @@ categories:
 - Consultoría
 - WPS
 date: '2011-02-17T15:50:37-05:00'
+lastmod: '2025-07-13T16:11:24.967156'
+related:
+- en-breve-revision-de-wps-clonico-de-sas.md
+- sas-vs-wps-diferencias-de-precio.md
+- acercamiento-a-wps-migrando-desde-sas.md
+- wps-en-el-mercado-espanol.md
+- comparativa-de-precio-wps-vs-sas.md
 slug: ya-esta-disponible-la-version-251-de-wps
 tags: []
 title: Ya está disponible la versión 2.5.1 de WPS

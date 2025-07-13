@@ -4,6 +4,13 @@ categories:
 - Formación
 - SAS
 date: '2012-12-21T06:02:27-05:00'
+lastmod: '2025-07-13T15:58:46.128766'
+related:
+- truco-sas-proc-format-vs-formato-percent.md
+- curso-de-lenguaje-sas-con-wps-variables.md
+- macros-sas-agrupando-variables-categoricas.md
+- macros-faciles-de-sas-eliminar-outliers-en-una-variable.md
+- trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados.md
 slug: intervalos-en-sas-con-proc-format
 tags:
 - PROC FORMAT

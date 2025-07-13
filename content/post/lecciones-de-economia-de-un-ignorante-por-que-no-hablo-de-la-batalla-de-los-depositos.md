@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Formación
 date: '2010-05-04T02:23:54-05:00'
+lastmod: '2025-07-13T15:59:58.269731'
+related:
+- lecciones-de-economia-de-un-ignorante-arreglo-el-deficit-en-un-pis-pas.md
+- lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
+- lecciones-de-economia-de-un-ignorante-la-caixa-a-colocar-preferentes.md
+- lecciones-de-economia-de-un-ignorante-la-privatizacion-de-las-cajas-sera-una-chapuza.md
+- lecciones-de-economia-de-un-ignorante-poniendo-fecha-a-la-intervencion-de-espana.md
 slug: lecciones-de-economia-de-un-ignorante-%c2%bfpor-que-no-hablo-de-la-batalla-de-los-depositos
 tags: []
 title: Lecciones de economía de un ignorante. ¿Por qué no hablo de la batalla de los

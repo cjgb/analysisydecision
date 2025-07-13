@@ -5,6 +5,13 @@ categories:
 - Formación
 - Trucos
 date: '2013-06-09T10:12:01-05:00'
+lastmod: '2025-07-13T16:01:57.662519'
+related:
+- mapa-de-catalunya-en-excel-por-comarcas.md
+- mapa-de-calunya-en-excel-por-comarcas.md
+- manual-para-realizar-mapas-en-excel-con-archivos-svg.md
+- trucos-excel-mapa-de-espana-por-provincias-mejorado.md
+- trucos-excel-nuevo-y-mejorado-mapa-de-espana-por-provincias-con-excel.md
 slug: mapa-excel-por-distritos-de-barcelona
 tags:
 - Mapa

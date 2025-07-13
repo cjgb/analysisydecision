@@ -7,6 +7,13 @@ categories:
 - Monográficos
 - R
 date: '2020-04-23T13:31:57-05:00'
+lastmod: '2025-07-13T16:03:10.631382'
+related:
+- animacion-de-un-mapa-con-python-porcentaje-de-vacunas-administradas.md
+- mapa-del-covid-19-por-comunidades-autonomas-con-r-mas-rstats.md
+- mapa-estatico-de-espana-con-python.md
+- libreria-mapspain-en-rstats-mapas-estaticos-de-espana.md
+- mapa-de-rstats-animado-con-el-porcentaje-de-vacunacion-en-espana.md
 slug: mover-parte-de-un-shapefile-con-r-mapa-de-la-tasa-de-casos-de-coronavirus-por-habitante-en-espana
 tags:
 - elide

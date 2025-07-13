@@ -4,6 +4,13 @@ categories:
 - Formación
 - Machine Learning
 date: '2020-10-02T03:15:21-05:00'
+lastmod: '2025-07-13T16:06:50.525211'
+related:
+- macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
+- monografico-un-poco-de-proc-logistic.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
+- grafico-de-barras-y-lineas-con-python.md
+- el-analisis-de-supervivencia-para-segmentar-el-churn.md
 slug: transformaciones-de-variables-cuantitativas-en-modelos-binomiales
 tags: []
 title: Transformaciones de variables cuantitativas en modelos binomiales

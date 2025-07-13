@@ -5,6 +5,13 @@ categories:
 - Modelos
 - R
 date: '2009-10-23T15:51:12-05:00'
+lastmod: '2025-07-13T16:01:26.554375'
+related:
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-15-modelos-glm-regresion-logistica-y-regresion-de-poisson.md
+- interpretacion-de-los-parametros-de-un-modelo-glm.md
+- que-pasa-si-uso-una-regresion-de-poisson-en-vez-de-una-regresion-logistica.md
+- monografico-regresion-logistica-con-r.md
+- manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
 slug: manual-curso-introduccion-de-r-capitulo-18-modelos-de-regresion-de-poisson
 tags: []
 title: 'Manual. Curso introducción de R. Capítulo 18: Modelos de regresión de Poisson'

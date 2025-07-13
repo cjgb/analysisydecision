@@ -5,6 +5,13 @@ categories:
 - Monográficos
 - R
 date: '2010-01-12T16:35:10-05:00'
+lastmod: '2025-07-13T16:02:54.818869'
+related:
+- trucos-r-funcion-ddply-del-paquete-plyr.md
+- proc-sql-merge-set.md
+- capitulo-4-uniones-de-tablas-con-r.md
+- tres-fracasos-y-medio-con-r.md
+- data-management-con-dplyr.md
 slug: monografico-paquete-sqldf-si-sabes-sql-sabes-r
 tags:
 - merge

@@ -6,6 +6,13 @@ categories:
 - Monográficos
 - R
 date: '2022-10-16T07:31:01-05:00'
+lastmod: '2025-07-13T15:58:47.476997'
+related:
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-15-modelos-glm-regresion-logistica-y-regresion-de-poisson.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-14-introduccion-al-diseno-de-experimentos.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-12-muestreo-e-inferencia-estadistica.md
+- manual-curso-introduccion-de-r-capitulo-8-inferencia-estadistica.md
+- manual-curso-introduccion-de-r-capitulo-11-introduccion-al-analisis-de-la-varianza-anova.md
 slug: introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-10-probabilidad-y-distribuciones
 tags: []
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 10. Probabilidad

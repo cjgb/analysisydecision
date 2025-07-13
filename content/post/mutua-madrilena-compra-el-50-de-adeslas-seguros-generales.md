@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Seguros
 date: '2011-01-17T15:50:06-05:00'
+lastmod: '2025-07-13T16:03:19.255451'
+related:
+- el-seguro-de-salud-suma-y-sigue.md
+- el-seguro-de-salud-la-futura-guerra.md
+- seguro-directo-de-salud-nace-nectar.md
+- nace-verti-la-directa-de-mapfre.md
+- el-seguro-directo-de-zurich.md
 slug: mutua-madrilena-compra-el-50-de-adeslas-seguros-generales
 tags: []
 title: Mutua Madrileña compra el 50% de Adeslas Seguros Generales

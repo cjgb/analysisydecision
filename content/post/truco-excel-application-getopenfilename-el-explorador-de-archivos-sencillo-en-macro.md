@@ -5,6 +5,13 @@ categories:
 - Formación
 - Trucos
 date: '2012-02-26T14:15:30-05:00'
+lastmod: '2025-07-13T16:07:07.245141'
+related:
+- truco-excel-abrir-multiples-libros-de-excel-en-distintas-hojas-de-un-nuevo-libro.md
+- trucos-excel-archivos-de-un-directorio-con-una-macro.md
+- trucos-excel-unir-varios-excel-en-uno.md
+- proyecto-text-mining-con-excel-iv.md
+- trucos-excel-crear-un-borrador-de-correo-con-excel.md
 slug: truco-excel-application-getopenfilename-el-explorador-de-archivos-sencillo-en-macro
 tags:
 - Application

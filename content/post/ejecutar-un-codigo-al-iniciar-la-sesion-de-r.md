@@ -4,6 +4,13 @@ categories:
 - R
 - Trucos
 date: '2019-07-30T08:28:25-05:00'
+lastmod: '2025-07-13T15:56:37.226125'
+related:
+- comunicar-sas-con-r-creando-ejecutables-windows.md
+- macros-sas-dataset-a-data-frame-r.md
+- truco-r-eval-parse-y-paste-para-automatizar-codigo.md
+- truco-excel-y-sas-ejecutar-sas-desde-macro-en-excel.md
+- intro-rcommander-1-que-es-rcommander.md
 slug: ejecutar-un-codigo-al-iniciar-la-sesion-de-r
 tags: []
 title: Ejecutar un código al iniciar la sesión de R

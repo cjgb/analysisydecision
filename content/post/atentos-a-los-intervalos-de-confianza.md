@@ -6,6 +6,13 @@ categories:
 - SAS
 - WPS
 date: '2013-07-26T04:01:28-05:00'
+lastmod: '2025-07-13T15:54:19.240224'
+related:
+- manual-curso-introduccion-de-r-capitulo-10-funciones-graficas-en-regresion-lineal.md
+- primeros-pasos-con-regresion-no-lineal-nls-con-r.md
+- parametro-asociado-a-una-poisson-con-sas.md
+- en-la-regresion-logistica-el-sobremuestreo-es-lo-mismo-que-asignar-pesos-a-las-observaciones.md
+- manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
 slug: atentos-a-los-intervalos-de-confianza
 tags: []
 title: Atentos a los intervalos de confianza

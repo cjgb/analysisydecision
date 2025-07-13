@@ -6,6 +6,13 @@ categories:
 - SAS
 - Trucos
 date: '2016-06-22T08:34:58-05:00'
+lastmod: '2025-07-13T16:08:02.107563'
+related:
+- macros-sas-dataset-a-data-frame-r.md
+- truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
+- curso-de-lenguaje-sas-con-wps-lectura-de-ficheros-de-texto.md
+- comunicar-sas-con-r-creando-ejecutables-windows.md
+- truco-sas-macro-buscar-y-reemplazar-en-texto.md
 slug: truco-sas-como-leer-pc-axis-con-sas
 tags:
 - PC Axis

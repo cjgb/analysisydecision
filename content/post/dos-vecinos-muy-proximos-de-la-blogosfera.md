@@ -4,6 +4,13 @@ categories:
 - Formación
 - R
 date: '2009-12-01T18:37:26-05:00'
+lastmod: '2025-07-13T15:56:34.528703'
+related:
+- ayd-2300-visitas-mensuales.md
+- el-ano-2010-para-analisisydecision.md
+- agregador-de-noticias-de-r-en-espanol.md
+- el-ano-2009-para-analisis-y-decision.md
+- que-ando-leyendo-hoy.md
 slug: dos-vecinos-muy-proximos-de-la-blogosfera
 tags:
 - blogs

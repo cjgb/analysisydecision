@@ -5,6 +5,13 @@ categories:
 - Modelos
 - R
 date: '2008-10-04T05:45:18-05:00'
+lastmod: '2025-07-13T16:01:18.450253'
+related:
+- manual-curso-introduccion-de-r-capitulo-11-introduccion-al-analisis-de-la-varianza-anova.md
+- manual-curso-introduccion-de-r-capitulo-13-analisis-de-la-varianza-disenos-anidados.md
+- manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
+- manual-curso-introduccion-de-r-capitulo-10-funciones-graficas-en-regresion-lineal.md
+- monografico-analisis-de-factores-con-r-una-introduccion.md
 slug: manual-curso-introduccion-de-r-capitulo-12-analisis-de-la-varianza-disenos-bifactoriales
 tags:
 - anova

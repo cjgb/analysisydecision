@@ -5,6 +5,13 @@ categories:
 - R
 - Trucos
 date: '2011-08-09T04:52:46-05:00'
+lastmod: '2025-07-13T16:09:31.764113'
+related:
+- analisis-de-textos-con-r.md
+- dividir-en-palabras-un-texto-con-sas.md
+- truco-r-eval-parse-y-paste-para-automatizar-codigo.md
+- comparamos-los-programas-electorales-de-pp-y-psoe-con-r.md
+- como-ordenar-un-data-frame-en-r.md
 slug: trucos-r-de-string-a-dataframe-de-palabras
 tags:
 - strsplit

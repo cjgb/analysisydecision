@@ -6,6 +6,13 @@ categories:
 - R
 - Seguros
 date: '2017-01-26T11:28:09-05:00'
+lastmod: '2025-07-13T15:53:46.007020'
+related:
+- resolucion-del-juego-de-modelos-con-r.md
+- modelos-gam-dejando-satisfechos-a-los-equipos-de-negocio.md
+- manual-curso-introduccion-de-r-capitulo-10-funciones-graficas-en-regresion-lineal.md
+- primeros-pasos-con-regresion-no-lineal-nls-con-r.md
+- manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
 slug: ajuste-de-splines-con-r
 tags:
 - spline

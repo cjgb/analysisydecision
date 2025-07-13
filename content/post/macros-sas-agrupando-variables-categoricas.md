@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2010-06-14T11:45:02-05:00'
+lastmod: '2025-07-13T16:00:54.038547'
+related:
+- las-cuentas-claras.md
+- truco-sas-categorizar-variables-continuas.md
+- trucos-sas-informes-de-valores-missing.md
+- trucos-sas-variables-dummy-de-una-variable-continua.md
+- macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
 slug: macros-sas-agrupando-variables-categoricas
 tags:
 - agrupar valores discretos

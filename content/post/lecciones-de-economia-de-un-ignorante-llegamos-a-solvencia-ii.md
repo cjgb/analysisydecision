@@ -4,6 +4,13 @@ categories:
 - Monográficos
 - Seguros
 date: '2011-12-29T15:15:28-05:00'
+lastmod: '2025-07-13T15:59:52.808409'
+related:
+- lecciones-de-economia-de-un-ignorante-la-prima-de-riesgo-y-la-madre-que-la-pario.md
+- la-confianza-en-el-sector-financiero.md
+- el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v.md
+- lecciones-de-economia-de-un-ignorante-la-caixa-a-colocar-preferentes.md
+- el-seguro-de-salud-suma-y-sigue.md
 slug: lecciones-de-economia-de-un-ignorante-%c2%bfllegamos-a-solvencia-ii
 tags:
 - solvencia

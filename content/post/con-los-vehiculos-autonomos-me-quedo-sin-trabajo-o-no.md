@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Formación
 date: '2016-08-12T06:50:55-05:00'
+lastmod: '2025-07-13T15:55:15.633683'
+related:
+- internet-of-things-en-el-sector-asegurador.md
+- el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v.md
+- de-estadistico-a-minero-de-datos-a-cientifico-de-datos.md
+- tendre-que-decir-algo-sobre-la-reduccion-de-la-velocidad-maxima-en-espana.md
+- el-seguro-de-salud-suma-y-sigue.md
 slug: con-los-vehiculos-autonomos-me-quedo-sin-trabajo-o-no
 tags:
 - vehículo autónomo

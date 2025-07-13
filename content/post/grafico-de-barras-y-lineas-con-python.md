@@ -4,6 +4,13 @@ categories:
 - Formación
 - Python
 date: '2017-07-09T12:04:35-05:00'
+lastmod: '2025-07-13T15:58:06.785969'
+related:
+- grafico-con-eje-secundario-en-ggplot2.md
+- graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
+- graficos-basicos-con-julia.md
+- capitulo-5-representacion-basica-con-ggplot.md
+- graficos-descriptivos-basicos-con-seaborn-python.md
 slug: grafico-de-barras-y-lineas-con-python
 tags: []
 title: Gráfico de barras y líneas con Python

@@ -6,6 +6,13 @@ categories:
 - Modelos
 - R
 date: '2012-01-10T14:01:32-05:00'
+lastmod: '2025-07-13T15:56:01.881074'
+related:
+- lectura-conjunta-de-analyzing-linguistic-data.md
+- curso-basico-de-r.md
+- nuevo-curso-de-estadistica-con-r.md
+- estadistica-para-cientificos-de-datos-con-r-introduccion.md
+- nueva-edicion-del-curso-basico-de-r.md
 slug: da-comienzo-la-lectura-de-%e2%80%9cthe-elements-of-statistical-learning%e2%80%9d
 tags:
 - The Elements of Statistical Learning

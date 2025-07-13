@@ -5,6 +5,13 @@ categories:
 - R
 - Trucos
 date: '2019-02-11T06:32:07-05:00'
+lastmod: '2025-07-13T16:10:41.932964'
+related:
+- evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso.md
+- analisis-de-textos-con-r.md
+- los-principales-problemas-de-los-espanoles-animaciones-con-r-y-gganimate.md
+- truco-r-eval-parse-y-paste-para-automatizar-codigo.md
+- tablas-elegantes-en-rstats-y-formattable.md
 slug: trucos-simples-para-rstats
 tags: []
 title: 'Trucos simples para #rstats'

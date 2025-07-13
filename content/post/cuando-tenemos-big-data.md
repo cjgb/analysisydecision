@@ -4,6 +4,13 @@ categories:
 - Big Data
 - Monográficos
 date: '2013-04-03T09:06:56-05:00'
+lastmod: '2025-07-13T15:55:33.284379'
+related:
+- nos-hemos-terminado-de-reinventar-acabamos-con-el-data-mining-y-empezamos-con-el-big-data.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-con-r-capitulo-2-datos.md
+- el-futuro-de-la-profesion.md
+- quiero-aprender-big-data.md
+- de-estadistico-a-minero-de-datos-a-cientifico-de-datos.md
 slug: cuando-tenemos-big-data
 tags: []
 title: ¿Cuándo tenemos BIG DATA?

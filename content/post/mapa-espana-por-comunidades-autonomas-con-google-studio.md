@@ -6,6 +6,13 @@ categories:
 - Mapas
 - Trucos
 date: '2020-09-24T04:39:21-05:00'
+lastmod: '2025-07-13T16:01:53.577376'
+related:
+- mapas-municipales-de-espana-con-excel-y-qgis.md
+- trucos-excel-mapa-de-espana-por-comunidades-autonomas.md
+- mapa-estatico-de-espana-con-python.md
+- mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel.md
+- mapas-estaticos-municipales-para-estados-de-mexico-con-r-y-con-excel.md
 slug: mapa-espana-por-comunidades-autonomas-con-google-studio
 tags:
 - Data Studio

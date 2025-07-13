@@ -4,6 +4,13 @@ categories:
 - Formación
 - R
 date: '2012-10-23T09:09:03-05:00'
+lastmod: '2025-07-13T16:03:50.208678'
+related:
+- curso-basico-de-r.md
+- nueva-edicion-del-curso-basico-de-r.md
+- jornadas-de-r-gratuitas-en-galicia.md
+- lectura-conjunta-de-analyzing-linguistic-data.md
+- estadistica-para-cientificos-de-datos-con-r-introduccion.md
 slug: nuevo-curso-de-estadistica-con-r
 tags: []
 title: Nuevo curso de estadística con R

@@ -8,6 +8,13 @@ categories:
 - Modelos
 - R
 date: '2009-12-12T19:23:23-05:00'
+lastmod: '2025-07-13T16:10:55.265045'
+related:
+- amanece-que-no-es-poco.md
+- la-confianza-en-el-sector-financiero.md
+- lecciones-de-economia-de-un-ignorante-la-caixa-a-colocar-preferentes.md
+- lecciones-de-economia-de-un-ignorante-no-me-dan-hipoteca.md
+- participaciones-preferentes-de-las-cajas-de-ahorro.md
 slug: una-fabulilla-sobre-prim-con-multiples-moralejas
 tags:
 - marketing

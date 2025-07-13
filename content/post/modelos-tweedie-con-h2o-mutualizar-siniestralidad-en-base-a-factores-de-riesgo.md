@@ -7,6 +7,13 @@ categories:
 - R
 - Seguros
 date: '2020-12-01T07:32:13-05:00'
+lastmod: '2025-07-13T16:02:41.427758'
+related:
+- evaluando-la-capacidad-predictiva-de-mi-modelo-tweedie.md
+- el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
+- la-distribucion-tweedie.md
+- el-modelo-multivariante-en-el-sector-asegurador-la-variable-dependiente-iii.md
 slug: modelos-tweedie-con-h2o-mutualizar-siniestralidad-en-base-a-factores-de-riesgo
 tags:
 - H2O

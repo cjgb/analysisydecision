@@ -6,6 +6,13 @@ categories:
 - SAS
 - Trucos
 date: '2013-09-20T05:04:26-05:00'
+lastmod: '2025-07-13T16:08:43.559821'
+related:
+- truco-sas-unir-todos-los-excel-en-uno-solo.md
+- trucos-excel-unir-varios-excel-en-uno.md
+- truco-excel-unir-todos-los-libros-en-una-hoja.md
+- truco-excel-abrir-multiples-libros-de-excel-en-distintas-hojas-de-un-nuevo-libro.md
+- trucos-sas-union-de-multiples-tablas-sas-con-un-nombre-parecido.md
 slug: truco-sas-unir-todas-las-hojas-de-un-excel-en-una
 tags:
 - dictionary

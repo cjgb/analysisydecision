@@ -5,6 +5,13 @@ categories:
 - R
 - Trucos
 date: '2010-09-08T04:41:47-05:00'
+lastmod: '2025-07-13T16:09:40.455164'
+related:
+- stadistical-data-warehouse-del-european-central-bank-con-r-y-los-depositos-a-perdidas.md
+- los-principales-problemas-de-los-espanoles-animaciones-con-r-y-gganimate.md
+- trucos-simples-para-rstats.md
+- analisis-de-textos-con-r.md
+- leer-fichero-de-texto-de-ancho-fijo-con-python-pandas.md
 slug: trucos-r-leer-archivos-xml-con-r
 tags:
 - Encoding

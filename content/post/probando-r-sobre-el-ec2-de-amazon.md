@@ -3,6 +3,13 @@ author: cgbellosta
 categories:
 - Formación
 date: '2009-12-08T19:44:27-05:00'
+lastmod: '2025-07-13T16:04:39.362808'
+related:
+- arboles-de-decision-con-sas-base-con-r-por-supuesto.md
+- aprende-pyspark-sin-complicaciones.md
+- cloud-words-con-r-trabajar-con-la-api-del-europe-pmc-con-r.md
+- porque-me-gusta-r.md
+- manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-i.md
 slug: probando-r-sobre-el-ec2-de-amazon
 tags:
 - Amazon

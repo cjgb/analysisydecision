@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2008-03-11T09:50:18-05:00'
+lastmod: '2025-07-13T16:08:30.365336'
+related:
+- truco-sas-crear-ficheros-excel-sin-proc-export-i.md
+- intervalos-en-sas-con-proc-format.md
+- trucos-sas-calcular-percentiles-como-excel-o-r.md
+- macros-sas-pasar-de-texto-a-numerico.md
+- transformar-variables-en-sas-caracter-a-numerico.md
 slug: truco-sas-proc-format-vs-formato-percent
 tags: []
 title: Truco SAS. Proc format VS formato percent

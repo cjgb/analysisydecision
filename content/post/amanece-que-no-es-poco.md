@@ -4,6 +4,13 @@ categories:
 - Banca
 - Consultoría
 date: '2008-12-23T09:56:51-05:00'
+lastmod: '2025-07-13T15:53:51.667874'
+related:
+- a-mi-me-preocupa-el-pequeno-ahorrador.md
+- lecciones-de-economia-de-un-ignorante-no-me-dan-hipoteca.md
+- una-fabulilla-sobre-prim-con-multiples-moralejas.md
+- la-confianza-en-el-sector-financiero.md
+- lecciones-de-economia-de-un-ignorante-solucion-trabajar-mas-y-cobrar-menos.md
 slug: amanece-que-no-es-poco
 tags: []
 title: Amanece que no es poco

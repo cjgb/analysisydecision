@@ -4,6 +4,13 @@ categories:
 - Formación
 - R
 date: '2008-02-26T09:14:33-05:00'
+lastmod: '2025-07-13T16:01:27.911758'
+related:
+- manual-curso-introduccion-de-r-capitulo-3-lectura-de-datos.md
+- manual-curso-introduccion-de-r-capitulo-7-funciones-graficas-basicas-en-r.md
+- manual-curso-introduccion-de-r-capitulo-6-funciones-de-estadistica-descriptiva.md
+- truco-r-eval-parse-y-paste-para-automatizar-codigo.md
+- manual-curso-introduccion-de-r-capitulo-5-lectura-avanzada-de-datos.md
 slug: manual-curso-introduccion-de-r-capitulo-2-interfaz-y-primeras-sentencias
 tags: []
 title: 'Manual. Curso introducción de R. Capítulo 2: Interfaz y primeras sentencias'

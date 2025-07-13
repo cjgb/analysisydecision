@@ -6,6 +6,13 @@ categories:
 - Formación
 - R
 date: '2019-11-07T14:07:07-05:00'
+lastmod: '2025-07-13T16:00:29.585322'
+related:
+- obteniendo-los-parametros-de-mi-modelo-gam.md
+- modelos-gam-dejando-satisfechos-a-los-equipos-de-negocio.md
+- interpretacion-de-los-parametros-de-un-modelo-glm.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-15-modelos-glm-regresion-logistica-y-regresion-de-poisson.md
+- manual-curso-introduccion-de-r-capitulo-18-modelos-de-regresion-de-poisson.md
 slug: los-parametros-del-modelo-glm-como-relatividades-como-recargos-o-descuentos
 tags: []
 title: Los parámetros del modelo GLM como relatividades, como recargos o descuentos

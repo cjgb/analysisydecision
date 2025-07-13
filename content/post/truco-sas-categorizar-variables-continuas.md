@@ -4,6 +4,13 @@ categories:
 - SAS
 - Trucos
 date: '2008-06-05T07:24:18-05:00'
+lastmod: '2025-07-13T16:08:00.614591'
+related:
+- trucos-sas-variables-dummy-de-una-variable-continua.md
+- macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
+- macros-sas-agrupando-variables-categoricas.md
+- trucos-sas-variables-dicotomicas-desde-factores.md
+- trucos-sas-operaciones-con-tablas-de-dimensiones-con-sas.md
 slug: truco-sas-categorizar-variables-continuas
 tags: []
 title: Truco SAS. Categorizar variables continuas

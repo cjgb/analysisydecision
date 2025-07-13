@@ -4,6 +4,13 @@ categories:
 - Formación
 - R
 date: '2014-10-08T11:00:48-05:00'
+lastmod: '2025-07-13T16:11:13.183504'
+related:
+- grafico-de-correlaciones-entre-factores-grafico-de-la-v-de-cramer.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-11-analisis-bivariable.md
+- monografico-analisis-de-factores-con-r-una-introduccion.md
+- el-problema-de-la-multicolinealidad-intuirlo-y-detectarlo.md
+- manual-curso-introduccion-de-r-capitulo-14-introduccion-al-calculo-matricial-con-analisis-de-componentes-principales.md
 slug: v-de-cramer-con-r-analizar-la-correlacion-de-factores
 tags:
 - vcd

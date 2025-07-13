@@ -4,6 +4,13 @@ categories:
 - Formación
 - R
 date: '2008-04-16T08:59:34-05:00'
+lastmod: '2025-07-13T16:01:34.671019'
+related:
+- manual-curso-introduccion-de-r-capitulo-6-funciones-de-estadistica-descriptiva.md
+- graficos-de-burbuja-con-r.md
+- graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
+- manual-curso-introduccion-de-r-capitulo-2-interfaz-y-primeras-sentencias.md
+- trucos-r-graficos-de-velocimetro-con-r.md
 slug: manual-curso-introduccion-de-r-capitulo-7-funciones-graficas-basicas-en-r
 tags: []
 title: 'Manual. Curso introducción de R. Capítulo 7: Funciones gráficas básicas en

@@ -4,6 +4,13 @@ categories:
 - SAS
 - Trucos
 date: '2012-08-20T04:09:56-05:00'
+lastmod: '2025-07-13T16:08:46.645003'
+related:
+- truco-sas-dataset-con-los-ficheros-y-carpetas-de-un-directorio.md
+- trucos-sas-macrovariable-a-dataset.md
+- truco-sas-limpiar-un-fichero-de-texto-con-sas.md
+- trucos-sas-mas-usos-de-infile-y-pipe-directorios-en-tablas-sas.md
+- truco-sas-elminar-retornos-de-carro-o-saltos-de-linea-engorrosos.md
 slug: truco-sas-un-vistazo-a-ficheros-planos-muy-grandes
 tags:
 - PROC FSLIST

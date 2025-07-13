@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2008-12-23T08:45:35-05:00'
+lastmod: '2025-07-13T16:01:10.338856'
+related:
+- trucos-sas-numero-de-dias-de-un-mes.md
+- bucle-de-fechas-con-sas-para-tablas-particionadas.md
+- monografico-funciones-intnx-e-intck-para-fechas-en-sas.md
+- trabajo-con-fechas-sas-funciones-fecha.md
+- trucos-sas-operar-con-fechas-yyyymm-tipicas-de-particiones-oracle.md
 slug: macros-sas-primer-y-ultimo-dia-del-mes-de-una-fecha-sas
 tags:
 - último día del mes

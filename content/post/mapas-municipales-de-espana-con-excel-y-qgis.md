@@ -6,6 +6,13 @@ categories:
 - Mapas
 - Monográficos
 date: '2017-03-23T02:46:50-05:00'
+lastmod: '2025-07-13T16:02:09.947370'
+related:
+- mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel.md
+- trucos-excel-mapa-de-espana-por-comunidades-autonomas.md
+- mapa-estatico-de-espana-con-python.md
+- mapas-estaticos-municipales-para-estados-de-mexico-con-r-y-con-excel.md
+- creando-un-mapa-en-excel-con-archivos-svg.md
 slug: mapas-municipales-de-espana-con-excel-y-qgis
 tags:
 - QGIS

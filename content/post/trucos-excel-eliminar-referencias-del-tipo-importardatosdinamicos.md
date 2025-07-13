@@ -5,6 +5,13 @@ categories:
 - Formación
 - Trucos
 date: '2009-05-21T07:39:55-05:00'
+lastmod: '2025-07-13T16:08:57.172317'
+related:
+- truco-excel-actualizar-los-filtros-de-una-tabla-dinamica-con-visual-basic.md
+- truco-excel-actualizar-el-filtro-de-todas-las-tablas-dinamicas-de-mi-libro.md
+- trucos-excel-transponer-con-la-funcion-desref.md
+- truco-excel-unir-todos-los-libros-en-una-hoja.md
+- trucos-excel-trasponer-con-la-funcion-indirecto.md
 slug: trucos-excel-eliminar-referencias-del-tipo-importardatosdinamicos
 tags: []
 title: Trucos Excel. Eliminar referencias del tipo IMPORTARDATOSDINAMICOS

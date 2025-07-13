@@ -4,6 +4,13 @@ categories:
 - Formación
 - SAS
 date: '2008-05-08T07:21:48-05:00'
+lastmod: '2025-07-13T15:57:03.044558'
+related:
+- el-ods-de-sas-ii-dataset-desde-output.md
+- el-ods-de-sas-iii-documentos-html-y-pdf-desde-sas.md
+- truco-sas-crear-ficheros-excel-sin-proc-export-i.md
+- truco-sas-proc-contents.md
+- macros-sas-informe-de-un-dataset-en-excel.md
 slug: el-ods-de-sas-i-elementos-del-output
 tags: []
 title: El ODS de SAS (I). Elementos del OUTPUT

@@ -7,6 +7,13 @@ categories:
 - Monográficos
 - R
 date: '2011-11-28T04:42:48-05:00'
+lastmod: '2025-07-13T15:58:39.376707'
+related:
+- graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
+- stadistical-data-warehouse-del-european-central-bank-con-r-y-los-depositos-a-perdidas.md
+- monografico-arboles-de-clasificacion-con-rpart.md
+- arboles-de-decision-con-sas-base-con-r-por-supuesto.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
 slug: informes-con-r-en-html-comienzo-con-r2html-i
 tags:
 - ''

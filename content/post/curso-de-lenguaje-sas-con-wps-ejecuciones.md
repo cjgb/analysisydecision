@@ -4,6 +4,13 @@ categories:
 - Consultoría
 - Formación
 date: '2010-06-09T16:38:34-05:00'
+lastmod: '2025-07-13T15:55:42.775906'
+related:
+- curso-de-lenguaje-sas-con-wps-el-paso-data.md
+- curso-de-lenguaje-sas-con-wps-que-hace-el-paso-data.md
+- curso-de-lenguaje-sas-con-wps-subconjuntos-de-variables-con-drop-y-keep.md
+- curso-de-lenguaje-sas-con-wps-lectura-de-ficheros-de-texto.md
+- curso-de-lenguaje-sas-con-wps-librerias-en-wps.md
 slug: curso-de-lenguaje-sas-con-wps-ejecuciones
 tags: []
 title: Curso de lenguaje SAS con WPS. Ejecuciones

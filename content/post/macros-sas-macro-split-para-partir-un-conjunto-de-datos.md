@@ -5,6 +5,13 @@ categories:
 - SAS
 - WPS
 date: '2013-01-22T04:36:14-05:00'
+lastmod: '2025-07-13T16:01:06.286153'
+related:
+- trucos-sas-particionar-y-exportar-a-texto-un-dataset.md
+- truco-sas-categorizar-variables-continuas.md
+- macros-faciles-de-sas-numero-de-obsevaciones-de-un-dataset.md
+- dividir-en-palabras-un-texto-con-sas.md
+- truco-sas-observaciones-de-un-dataset-en-una-macro-variable.md
 slug: macros-sas-macro-split-para-partir-un-conjunto-de-datos
 tags: []
 title: Macros SAS. Macro split para partir un conjunto de datos

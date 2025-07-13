@@ -5,6 +5,13 @@ categories:
 - SAS
 - Sin catergoría
 date: '2010-07-19T04:00:26-05:00'
+lastmod: '2025-07-13T15:59:17.499236'
+related:
+- laboratorio-de-codigo-sas-comparativa-entre-if-y-where.md
+- truco-sas-transponer-tablas-con-proc-transpose-data-o-proc-sql.md
+- truco-sas-cruce-con-formatos.md
+- trucos-sas-porque-hay-que-usar-objetos-hash.md
+- trucos-sas-operaciones-con-tablas-de-dimensiones-con-sas.md
 slug: laboratorio-de-codigo-sas-vistas-proc-means-vs-proc-sql
 tags:
 - Vistas SAS

@@ -5,6 +5,13 @@ categories:
 - Modelos
 - video
 date: '2020-09-07T04:34:03-05:00'
+lastmod: '2025-07-13T16:04:37.932098'
+related:
+- la-importancia-del-valor-predictivo-positivo-en-las-pruebas-diagnosticas.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-10-probabilidad-y-distribuciones.md
+- manual-curso-introduccion-de-r-capitulo-14-introduccion-al-calculo-matricial-con-analisis-de-componentes-principales.md
+- entrenamiento-validacion-y-test.md
+- analisisydecision-se-une-a-scout-analyst-primer-curso-de-estadistica-para-analistas.md
 slug: principales-elementos-en-las-pruebas-diagnosticas
 tags: []
 title: Principales elementos en las pruebas diagnósticas

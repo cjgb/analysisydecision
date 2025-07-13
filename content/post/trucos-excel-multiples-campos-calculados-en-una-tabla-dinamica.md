@@ -5,6 +5,13 @@ categories:
 - Formación
 - Trucos
 date: '2011-05-12T14:43:57-05:00'
+lastmod: '2025-07-13T16:09:12.188942'
+related:
+- truco-excel-actualizar-el-filtro-de-todas-las-tablas-dinamicas-de-mi-libro.md
+- truco-excel-producto-cartesiano-de-dos-campos.md
+- truco-excel-agrupar-valores-en-un-campo-de-una-tabla-dinamica.md
+- truco-excel-actualizar-los-filtros-de-una-tabla-dinamica-con-visual-basic.md
+- truco-excel-repetir-un-campo-a-partir-de-otro-que-define-el-numero-de-repeticiones.md
 slug: trucos-excel-multiples-campos-calculados-en-una-tabla-dinamica
 tags:
 - macro excel

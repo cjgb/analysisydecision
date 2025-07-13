@@ -4,6 +4,13 @@ categories:
 - R
 - SAS
 date: '2009-06-03T07:03:44-05:00'
+lastmod: '2025-07-13T15:58:40.721446'
+related:
+- sas-comienza-a-fijarse-en-r.md
+- migrando-de-sas-a-r.md
+- paquete-sas7bdat-de-r-me-pongo-con-ello.md
+- el-futuro-del-analisis-de-datos-pasa-por-r.md
+- sas-investiga-la-tecnologia-de-r.md
 slug: integracion-de-r-con-sas-spss-y-otros
 tags: []
 title: Integración de R con SAS, SPSS y otros

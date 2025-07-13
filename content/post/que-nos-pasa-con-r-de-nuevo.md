@@ -6,6 +6,13 @@ categories:
 - Opinión
 - R
 date: '2019-03-09T04:15:51-05:00'
+lastmod: '2025-07-13T16:05:01.225691'
+related:
+- r-cayendo-en-la-lista-tiobe.md
+- lista-de-los-lengajes-de-programacion-mas-populares.md
+- como-medir-la-presencia-de-r-en-el-mercado-del-analisis-de-datos.md
+- la-mejor-posicion-de-r-en-tiobe.md
+- cuando-paralelizar-procesos-con-r-era-otra-cosa.md
 slug: que-nos-pasa-con-r-de-nuevo
 tags: []
 title: ¿Qué nos pasa con R? (de nuevo)

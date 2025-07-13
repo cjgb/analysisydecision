@@ -5,6 +5,13 @@ categories:
 - Formación
 - SAS
 date: '2009-06-12T07:49:49-05:00'
+lastmod: '2025-07-13T16:04:05.896321'
+related:
+- curso-de-lenguaje-sas-con-wps-ejecuciones.md
+- trucos-sas-porque-hay-que-usar-objetos-hash.md
+- trucos-sas-trasponer-con-sql-para-torpes.md
+- proc-sql-merge-set.md
+- curso-de-lenguaje-sas-con-wps-librerias-en-wps.md
 slug: oracle-y-sas-via-sql-pass-trough
 tags:
 - ''

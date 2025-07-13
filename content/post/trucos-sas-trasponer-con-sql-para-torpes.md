@@ -6,6 +6,13 @@ categories:
 - Trucos
 - WPS
 date: '2011-11-21T13:25:51-05:00'
+lastmod: '2025-07-13T16:10:34.677823'
+related:
+- truco-sas-transponer-tablas-con-proc-transpose-data-o-proc-sql.md
+- trucos-sas-operaciones-con-tablas-de-dimensiones-con-sas.md
+- las-cuentas-claras.md
+- truco-sas-cruce-con-formatos.md
+- trucos-sas-variables-dummy-de-una-variable-continua.md
 slug: trucos-sas-trasponer-con-sql-para-torpes
 tags:
 - ''

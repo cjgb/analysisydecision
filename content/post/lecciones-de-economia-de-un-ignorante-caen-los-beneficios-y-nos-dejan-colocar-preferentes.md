@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Banca
 date: '2009-11-18T11:22:27-05:00'
+lastmod: '2025-07-13T15:59:39.192886'
+related:
+- lecciones-de-economia-de-un-ignorante-los-bancos-pierden-dinero-para-favorecer-a-unos-y-luego-los-salvamos-todos.md
+- lecciones-de-economia-de-un-ignorante-la-caixa-a-colocar-preferentes.md
+- lecciones-de-economia-de-un-ignorante-de-donde-sacan-margen-los-bancos.md
+- lecciones-de-economia-de-un-ignorante-poniendo-fecha-a-la-intervencion-de-espana.md
+- a-mi-me-preocupa-el-pequeno-ahorrador.md
 slug: lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes
 tags: []
 title: Lecciones de economía de un ignorante. Caen los beneficios y nos dejan colocar

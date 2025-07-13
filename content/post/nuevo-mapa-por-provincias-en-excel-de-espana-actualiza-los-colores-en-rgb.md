@@ -6,6 +6,13 @@ categories:
 - Mapas
 - Trucos
 date: '2017-03-09T02:41:17-05:00'
+lastmod: '2025-07-13T16:03:54.217165'
+related:
+- nuevo-y-muy-mejorado-mapa-de-espana-por-provincias-con-excel.md
+- trucos-excel-mapa-de-espana-por-provincias-mejorado.md
+- trucos-excel-mapa-de-espana-por-provincias.md
+- trucos-excel-nuevo-y-mejorado-mapa-de-espana-por-provincias-con-excel.md
+- mapa-excel-de-europa.md
 slug: nuevo-mapa-por-provincias-en-excel-de-espana-actualiza-los-colores-en-rgb
 tags: []
 title: Nuevo mapa por provincias en Excel de España. Actualiza los colores en RGB

@@ -5,6 +5,13 @@ categories:
 - Formación
 - Trucos
 date: '2013-05-17T13:05:46-05:00'
+lastmod: '2025-07-13T16:01:41.423225'
+related:
+- mapa-de-catalunya-en-excel-por-comarcas.md
+- mapa-de-calunya-en-excel-por-comarcas.md
+- mapa-excel-por-distritos-de-barcelona.md
+- creando-un-mapa-en-excel-con-archivos-svg.md
+- trucos-excel-mapa-de-espana-por-provincias-mejorado.md
 slug: manual-para-realizar-mapas-en-excel-con-archivos-svg
 tags:
 - mapas excel

@@ -5,6 +5,13 @@ categories:
 - Formación
 - Trucos
 date: '2017-03-14T02:18:56-05:00'
+lastmod: '2025-07-13T16:07:34.503247'
+related:
+- trucos-excel-unir-varios-excel-en-uno.md
+- truco-excel-abrir-multiples-libros-de-excel-en-distintas-hojas-de-un-nuevo-libro.md
+- truco-sas-unir-todos-los-excel-en-uno-solo.md
+- truco-sas-unir-todas-las-hojas-de-un-excel-en-una.md
+- truco-excel-pasar-un-rango-de-varias-columnas-a-una.md
 slug: truco-excel-unir-todos-los-libros-en-una-hoja
 tags:
 - visual basic

@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - R
 date: '2014-05-07T08:19:09-05:00'
+lastmod: '2025-07-13T16:11:17.621913'
+related:
+- ya-estan-en-marcha-las-v-jornadas-de-r.md
+- comienza-la-cuenta-atras-iii-jornadas-de-usuarios-de-r.md
+- primeras-jornadas-de-usuarios-de-r-en-espana-ya-es-oficial.md
+- i-jornadas-de-usuarios-de-r-en-espana.md
+- ya-estan-en-marcha-las-iv-jornadas-de-usuarios-de-r-en-espana.md
 slug: vi-jornadas-de-usuarios-de-r-ya-estan-en-marcha
 tags: []
 title: VI Jornadas de usuarios de R. Ya están en marcha

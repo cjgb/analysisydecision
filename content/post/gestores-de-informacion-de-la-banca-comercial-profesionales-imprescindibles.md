@@ -5,6 +5,13 @@ categories:
 - Consultoría
 - Formación
 date: '2008-09-29T08:10:33-05:00'
+lastmod: '2025-07-13T15:57:59.954436'
+related:
+- me-rindo-es-necesario-trabajar-en-agile.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-con-r-capitulo-2-datos.md
+- el-seguro-de-credito-interesante-reto-tecnico.md
+- una-fabulilla-sobre-prim-con-multiples-moralejas.md
+- mineria-de-datos-una-herramienta-clave-en-consultoria.md
 slug: gestores-de-informacion-de-la-banca-comercial-profesionales-imprescindibles
 tags:
 - Analistas

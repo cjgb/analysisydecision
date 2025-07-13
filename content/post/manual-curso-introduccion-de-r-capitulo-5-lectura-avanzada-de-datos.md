@@ -4,6 +4,13 @@ categories:
 - Formación
 - R
 date: '2008-03-10T09:39:46-05:00'
+lastmod: '2025-07-13T16:01:31.964497'
+related:
+- manual-curso-introduccion-de-r-capitulo-3-lectura-de-datos.md
+- manual-curso-introduccion-de-r-capitulo-4-contribuciones-a-r-paquetes.md
+- montemos-un-sistema-de-informacion-en-nuestro-equipo-iii.md
+- parametros-en-nuestra-consulta-sql-server-desde-r-truco-r.md
+- tres-fracasos-y-medio-con-r.md
 slug: manual-curso-introduccion-de-r-capitulo-5-lectura-avanzada-de-datos
 tags: []
 title: 'Manual. Curso introducción de R. Capítulo 5: Lectura avanzada de datos'

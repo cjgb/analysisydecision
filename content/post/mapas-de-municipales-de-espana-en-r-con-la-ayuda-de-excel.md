@@ -8,6 +8,13 @@ categories:
 - R
 - Trucos
 date: '2015-02-20T10:37:37-05:00'
+lastmod: '2025-07-13T16:02:04.548741'
+related:
+- mapas-estaticos-municipales-para-estados-de-mexico-con-r-y-con-excel.md
+- mapas-municipales-de-espana-con-excel-y-qgis.md
+- identificar-los-municipios-costeros-y-limitrofes-de-espana-con-r.md
+- mapa-estatico-de-espana-con-python.md
+- mapas-con-spatial-data-de-r.md
 slug: mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel
 tags:
 - Mapa

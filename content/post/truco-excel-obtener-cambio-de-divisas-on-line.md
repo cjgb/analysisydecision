@@ -4,6 +4,13 @@ categories:
 - Excel
 - Trucos
 date: '2008-07-17T09:39:37-05:00'
+lastmod: '2025-07-13T16:07:22.324961'
+related:
+- trucos-excel-modificar-la-configuracion-regional-con-visual-basic.md
+- trucos-excel-pasar-de-caracter-a-numerico-con-formulas.md
+- truco-sas-sas-y-dde-aliados-de-excel.md
+- truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
+- trucos-excel-y-sas-complemento-para-cambiar-la-configuracion-regional.md
 slug: truco-excel-obtener-cambio-de-divisas-on-line
 tags: []
 title: Truco Excel. Obtener cambio de divisas on-line

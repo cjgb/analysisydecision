@@ -4,6 +4,13 @@ categories:
 - Business Intelligence
 - Python
 date: '2019-10-18T09:05:40-05:00'
+lastmod: '2025-07-13T15:56:19.623575'
+related:
+- parametros-en-nuestra-consulta-sql-server-desde-r-truco-r.md
+- montemos-un-sistema-de-informacion-en-nuestro-equipo-iii.md
+- leer-archivos-excel-con-python.md
+- aprende-pyspark-sin-complicaciones.md
+- manual-curso-introduccion-de-r-capitulo-5-lectura-avanzada-de-datos.md
 slug: de-sql-server-a-python-pandas-dataframe
 tags:
 - SQL SERVER

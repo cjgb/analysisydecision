@@ -5,6 +5,13 @@ categories:
 - Modelos
 - R
 date: '2008-10-03T12:02:35-05:00'
+lastmod: '2025-07-13T16:01:15.763111'
+related:
+- manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
+- el-problema-de-la-multicolinealidad-intuirlo-y-detectarlo.md
+- primeros-pasos-con-regresion-no-lineal-nls-con-r.md
+- regresion-ridge-o-contraida-con-r.md
+- trucos-sas-medir-la-importancia-de-las-variables-en-nuestro-modelo-de-regresion-logistica.md
 slug: manual-curso-introduccion-de-r-capitulo-10-funciones-graficas-en-regresion-lineal
 tags:
 - modelo

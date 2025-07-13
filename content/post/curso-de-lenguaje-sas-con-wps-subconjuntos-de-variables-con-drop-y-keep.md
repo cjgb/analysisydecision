@@ -5,6 +5,13 @@ categories:
 - Monográficos
 - WPS
 date: '2011-01-27T13:46:05-05:00'
+lastmod: '2025-07-13T15:55:59.113357'
+related:
+- subconjuntos-de-variables-con-dropkeep.md
+- curso-de-lenguaje-sas-con-wps-sentencias-condicionales-if-then.md
+- curso-de-lenguaje-sas-con-wps-el-paso-data.md
+- curso-de-lenguaje-sas-con-wps-que-hace-el-paso-data.md
+- curso-de-lenguaje-sas-con-wps-ejecuciones.md
 slug: curso-de-lenguaje-sas-con-wps-subconjuntos-de-variables-con-drop-y-keep
 tags:
 - drop

@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2010-06-11T06:14:22-05:00'
+lastmod: '2025-07-13T16:08:09.613728'
+related:
+- trucos-sas-identificar-registros-duplicados.md
+- truco-sas-proc-contents.md
+- macros-faciles-de-sas-busca-duplicados.md
+- macros-sas-macro-split-para-partir-un-conjunto-de-datos.md
+- trucos-sas-ejecutar-un-codigo-si-existe-una-tabla-o-un-fichero.md
 slug: truco-sas-duplicar-registros-si-cumplen-una-condicion
 tags:
 - output

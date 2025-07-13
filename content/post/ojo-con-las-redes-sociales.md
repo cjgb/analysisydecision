@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Sin catergoría
 date: '2010-03-30T04:33:37-05:00'
+lastmod: '2025-07-13T16:04:03.053247'
+related:
+- puede-la-informacion-de-twitter-servir-para-tarificar-seguros.md
+- facebook-y-su-facebookgate-son-buenas-noticias-para-el-data-scientist.md
+- un-detalle-puede-hacer-que-no-te-tomen-en-serio.md
+- crm-me-rio-de-los-topicos.md
+- personas-que-no-comprendo-i-hate-sql.md
 slug: ojo-con-las-redes-sociales
 tags:
 - Redes sociales

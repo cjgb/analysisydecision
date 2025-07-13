@@ -4,6 +4,13 @@ categories:
 - Big Data
 - Opinión
 date: '2019-03-22T10:19:15-05:00'
+lastmod: '2025-07-13T15:56:50.764557'
+related:
+- nos-hemos-terminado-de-reinventar-acabamos-con-el-data-mining-y-empezamos-con-el-big-data.md
+- quiero-aprender-big-data.md
+- cuando-tenemos-big-data.md
+- inteligencia-arficial-frente-a-un-juego-de-ninos-la-particula-tonta-de-nicolas.md
+- de-actuario-a-cientifico-de-datos.md
 slug: el-desarrollo-de-la-inteligencia-artificial-un-paralelismo-con-el-desarrollo-de-la-aviacion
 tags: []
 title: El desarrollo de la Inteligencia Artificial, un paralelismo con el desarrollo

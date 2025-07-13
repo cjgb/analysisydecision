@@ -5,6 +5,13 @@ categories:
 - Modelos
 - R
 date: '2009-01-17T04:50:15-05:00'
+lastmod: '2025-07-13T16:01:21.170898'
+related:
+- regresion-pls-con-r.md
+- monografico-analisis-de-factores-con-r-una-introduccion.md
+- el-problema-de-la-multicolinealidad-intuirlo-y-detectarlo.md
+- manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-11-analisis-bivariable.md
 slug: manual-curso-introduccion-de-r-capitulo-14-introduccion-al-calculo-matricial-con-analisis-de-componentes-principales
 tags:
 - calculo matricial

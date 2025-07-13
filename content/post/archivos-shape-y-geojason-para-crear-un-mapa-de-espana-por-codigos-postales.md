@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Formación
 date: '2017-08-17T10:15:28-05:00'
+lastmod: '2025-07-13T15:54:17.732286'
+related:
+- como-hacer-un-mapa-de-espana-por-codigos-postales-con-qgis.md
+- mapa-de-codigos-postales-con-r-aunque-el-mapa-es-lo-de-menos.md
+- mapas-municipales-de-espana-con-excel-y-qgis.md
+- mapa-de-espana-por-provincias-en-html.md
+- cartografia-digitalizada-de-espana-por-seccion-censal.md
 slug: archivos-shape-y-geojason-para-crear-un-mapa-de-espana-por-codigos-postales
 tags: []
 title: Archivos shape y geojason para crear un mapa de España por códigos postales

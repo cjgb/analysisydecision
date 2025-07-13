@@ -4,6 +4,13 @@ categories:
 - SAS
 - Trucos
 date: '2008-04-07T07:36:34-05:00'
+lastmod: '2025-07-13T16:08:03.604613'
+related:
+- truco-sas-sas-y-dde-aliados-de-excel.md
+- truco-sas-crear-ficheros-excel-sin-proc-export-i.md
+- macros-sas-informe-de-un-dataset-en-excel.md
+- truco-sas-unir-todos-los-excel-en-uno-solo.md
+- truco-sas-leer-datos-de-excel-con-sas-con-dde.md
 slug: truco-sas-crear-ficheros-excel-sin-proc-export-ii
 tags: []
 title: Truco SAS. Crear ficheros Excel sin PROC EXPORT (II)

@@ -6,6 +6,13 @@ categories:
 - R
 - Trucos
 date: '2011-02-10T14:34:04-05:00'
+lastmod: '2025-07-13T16:03:39.134086'
+related:
+- curso-de-lenguaje-sas-con-wps-funciones-en-wps.md
+- analisis-de-textos-con-r.md
+- truco-r-valores-perdidos-a-0-ejemplo-de-uso-de-sapply.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-3-manejo-de-datos-con-r.md
+- truco-r-eval-parse-y-paste-para-automatizar-codigo.md
 slug: nuestras-funciones-de-r-en-menus-con-rpanel-y-svwidgets
 tags:
 - eval

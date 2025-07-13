@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Business Intelligence
 date: '2009-05-25T11:54:47-05:00'
+lastmod: '2025-07-13T15:53:29.324809'
+related:
+- ayd-2300-visitas-mensuales.md
+- contenidos-para-octubre-de-ayd.md
+- contenidos-web-analisis-informacion.md
+- el-ano-2010-para-analisisydecision.md
+- el-ano-2009-para-analisis-y-decision.md
 slug: 1500-visitas-mensuales
 tags: []
 title: 1.500 visitas mensuales

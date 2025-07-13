@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Business Intelligence
 date: '2010-04-07T16:03:36-05:00'
+lastmod: '2025-07-13T16:10:59.901847'
+related:
+- wps-en-el-mercado-espanol.md
+- porque-me-gusta-r.md
+- comparativa-de-precio-wps-vs-sas.md
+- acercamiento-a-wps-migrando-desde-sas.md
+- en-breve-revision-de-wps-clonico-de-sas.md
 slug: un-homenaje-a-mis-companeros
 tags: []
 title: Un homenaje a mis compañeros

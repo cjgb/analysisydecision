@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - R
 date: '2015-01-23T15:13:51-05:00'
+lastmod: '2025-07-13T16:03:35.981851'
+related:
+- revolution-computing-ahora-es-revolution-analytics.md
+- revolution-computing-ficha-al-fundador-de-spss.md
+- integracion-de-r-con-sas-spss-y-otros.md
+- ibm-compra-spss.md
+- revision-de-las-iii-jornadas-de-r.md
 slug: noticia-microsoft-compra-revolution-analytics
 tags: []
 title: 'NOTICIA: Microsoft compra Revolution Analytics'

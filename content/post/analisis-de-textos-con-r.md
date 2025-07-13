@@ -5,6 +5,13 @@ categories:
 - Monográficos
 - R
 date: '2011-09-05T12:34:27-05:00'
+lastmod: '2025-07-13T15:54:00.583654'
+related:
+- el-debate-politico-o-como-analizar-textos-con-wps.md
+- comparamos-los-programas-electorales-de-pp-y-psoe-con-r.md
+- ejemplo-de-web-scraping-con-r-la-formacion-de-los-diputados-del-congreso.md
+- analisis-del-programa-electoral-del-partido-popular-antes-de-las-elecciones-en-espana.md
+- trucos-r-de-string-a-dataframe-de-palabras.md
 slug: analisis-de-textos-con-r
 tags:
 - nchar

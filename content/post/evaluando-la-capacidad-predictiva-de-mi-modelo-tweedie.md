@@ -7,6 +7,13 @@ categories:
 - R
 - Seguros
 date: '2020-12-17T05:04:52-05:00'
+lastmod: '2025-07-13T15:57:39.652262'
+related:
+- modelos-tweedie-con-h2o-mutualizar-siniestralidad-en-base-a-factores-de-riesgo.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
+- la-distribucion-tweedie.md
+- variables-categoricas-en-cajas-treemap-con-r.md
+- el-sobremuestreo-mejora-mi-estimacion.md
 slug: evaluando-la-capacidad-predictiva-de-mi-modelo-tweedie
 tags:
 - tweedie

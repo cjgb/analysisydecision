@@ -5,6 +5,13 @@ categories:
 - Python
 - Trucos
 date: '2017-10-24T06:27:20-05:00'
+lastmod: '2025-07-13T16:04:32.283729'
+related:
+- leer-fichero-de-texto-de-ancho-fijo-con-python-pandas.md
+- truco-python-reemplazar-una-cadena-de-caracteres-en-los-nombres-de-las-columnas-de-un-data-frame.md
+- transformar-todos-los-factores-a-caracter-de-mi-data-frame-de-r.md
+- trucos-r-de-string-a-dataframe-de-palabras.md
+- analisis-de-textos-con-r.md
 slug: preparar-nuestros-datos-para-sklearn-pasar-de-string-a-numero
 tags:
 - sklearn

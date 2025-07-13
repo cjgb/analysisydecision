@@ -3,6 +3,13 @@ author: Paco Gárate
 categories:
 - Python
 date: '2022-02-08T11:47:41-05:00'
+lastmod: '2025-07-13T15:53:38.873569'
+related:
+- longitud-de-las-frases-del-quijote-con-rstats.md
+- el-debate-politico-o-como-analizar-textos-con-wps.md
+- analisis-de-textos-con-r.md
+- resolucion-del-juego-de-modelos-con-r.md
+- cuanto-dinero-pierdo-jugando-a-la-loteria-una-simulacion-poco-seria-con-r.md
 slug: actor-senil-wordle-castellano
 tags: []
 title: 'Actor senil: Las mejores palabras para iniciar en Wordle en castellano'

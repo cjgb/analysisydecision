@@ -5,6 +5,13 @@ categories:
 - Monográficos
 - R
 date: '2011-09-26T02:17:41-05:00'
+lastmod: '2025-07-13T15:58:12.210614'
+related:
+- grafico-con-eje-secundario-en-ggplot2.md
+- capitulo-5-representacion-basica-con-ggplot.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-7-descripcion-grafica-de-variables.md
+- informes-con-r-en-html-comienzo-con-r2html-i.md
+- trucos-r-graficos-de-velocimetro-con-r.md
 slug: graficos-de-barras-y-lineas-en-dos-ejes-con-r
 tags:
 - axis

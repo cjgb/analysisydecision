@@ -6,6 +6,13 @@ categories:
 - Monográficos
 - R
 date: '2010-01-26T16:31:15-05:00'
+lastmod: '2025-07-13T16:02:53.215035'
+related:
+- regresion-con-redes-neuronales-en-r.md
+- monografico-arboles-de-clasificacion-con-rpart.md
+- monografico-un-poco-de-proc-logistic.md
+- como-salva-la-linealidad-una-red-neuronal.md
+- representacion-de-redes-neuronales-con-r.md
 slug: monografico-paquete-de-r-nnet-para-modelos-de-redes-neuronales
 tags:
 - nnet

@@ -6,6 +6,13 @@ categories:
 - Trucos
 - WPS
 date: '2016-01-22T04:13:44-05:00'
+lastmod: '2025-07-13T16:00:43.177752'
+related:
+- macros-faciles-de-sas-numero-de-obsevaciones-de-un-dataset.md
+- macro-sas-variables-de-un-dataset-en-una-macro-variable.md
+- truco-sas-observaciones-de-un-dataset-en-una-macro-variable.md
+- macros-sas-informe-de-un-dataset-en-excel.md
+- macros-faciles-de-sas-determinar-si-existe-una-variable-en-un-dataset.md
 slug: macro-sas-numero-de-observaciones-de-un-dataset-en-una-macro
 tags:
 - ATTRN

@@ -7,6 +7,13 @@ categories:
 - R
 - Trucos
 date: '2020-04-27T14:04:05-05:00'
+lastmod: '2025-07-13T15:58:31.232146'
+related:
+- mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel.md
+- mover-parte-de-un-shapefile-con-r-mapa-de-la-tasa-de-casos-de-coronavirus-por-habitante-en-espana.md
+- mapa-estatico-de-espana-con-python.md
+- adyacencia-de-poligonos-con-el-paquete-spdep-de-r.md
+- mapas-estaticos-de-peru-con-r-y-python-a-nivel-de-distrito.md
 slug: identificar-los-municipios-costeros-y-limitrofes-de-espana-con-r
 tags:
 - maps

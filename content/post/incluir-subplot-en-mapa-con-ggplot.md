@@ -8,6 +8,13 @@ categories:
 - R
 - Trucos
 date: '2021-02-08T07:40:22-05:00'
+lastmod: '2025-07-13T15:58:36.643076'
+related:
+- libreria-mapspain-en-rstats-mapas-estaticos-de-espana.md
+- mi-breve-seguimiento-del-coronavirus-con-r.md
+- anadiendo-graficos-de-tarta-a-nuestros-mapas-de-ggplot-con-scatterpie.md
+- mapa-de-rstats-animado-con-el-porcentaje-de-vacunacion-en-espana.md
+- mover-parte-de-un-shapefile-con-r-mapa-de-la-tasa-de-casos-de-coronavirus-por-habitante-en-espana.md
 slug: incluir-subplot-en-mapa-con-ggplot
 tags: []
 title: Incluir subplot en mapa con ggplot

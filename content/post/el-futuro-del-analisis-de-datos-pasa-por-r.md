@@ -4,6 +4,13 @@ categories:
 - R
 - Sin catergoría
 date: '2009-01-19T09:40:32-05:00'
+lastmod: '2025-07-13T15:56:52.122817'
+related:
+- sas-comienza-a-fijarse-en-r.md
+- porque-me-gusta-r.md
+- noticias-del-congreso-de-usuarios-de-r.md
+- integracion-de-r-con-sas-spss-y-otros.md
+- sas-investiga-la-tecnologia-de-r.md
 slug: el-futuro-del-analisis-de-datos-pasa-por-r
 tags:
 - noticias

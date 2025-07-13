@@ -7,6 +7,13 @@ categories:
 - Monográficos
 - R
 date: '2010-01-29T08:47:34-05:00'
+lastmod: '2025-07-13T16:02:56.418141'
+related:
+- monografico-analisis-de-factores-con-r-una-introduccion.md
+- monografico-un-poco-de-proc-logistic.md
+- monografico-arboles-de-clasificacion-con-rpart.md
+- interpretacion-de-los-parametros-de-un-modelo-glm.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-15-modelos-glm-regresion-logistica-y-regresion-de-poisson.md
 slug: monografico-regresion-logistica-con-r
 tags:
 - data management

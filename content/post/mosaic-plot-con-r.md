@@ -5,6 +5,13 @@ categories:
 - R
 - Trucos
 date: '2013-04-23T10:55:06-05:00'
+lastmod: '2025-07-13T16:03:07.718491'
+related:
+- mosaic-plot-con-python.md
+- grafico-de-correlaciones-entre-variables.md
+- un-acercamiento-a-graph-primeros-graficos-con-sas.md
+- descubriendo-ggplot2-421.md
+- informes-con-r-en-html-comienzo-con-r2html-i.md
 slug: mosaic-plot-con-r
 tags: []
 title: Mosaic plot con R

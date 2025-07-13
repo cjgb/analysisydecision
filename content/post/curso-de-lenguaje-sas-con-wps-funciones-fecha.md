@@ -5,6 +5,13 @@ categories:
 - Monográficos
 - WPS
 date: '2011-01-23T08:59:27-05:00'
+lastmod: '2025-07-13T15:55:46.885252'
+related:
+- trabajo-con-fechas-sas-funciones-fecha.md
+- monografico-funciones-intnx-e-intck-para-fechas-en-sas.md
+- trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados.md
+- trabajo-con-fechas-sas-introduccion.md
+- trucos-sas-numero-de-dias-de-un-mes.md
 slug: curso-de-lenguaje-sas-con-wps-funciones-fecha
 tags:
 - ''

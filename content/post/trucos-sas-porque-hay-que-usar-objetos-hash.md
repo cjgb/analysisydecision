@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2010-09-01T15:59:38-05:00'
+lastmod: '2025-07-13T16:10:31.672432'
+related:
+- truco-sas-cruce-con-formatos.md
+- objetos-hash-para-ordenar-tablas-sas.md
+- laboratorio-de-codigo-sas-ordenaciones-con-hash-vs-proc-sort.md
+- laboratorio-de-codigo-sas-vistas-proc-means-vs-proc-sql.md
+- trucos-sas-mejor-que-hash-in-para-cruzar-tablas.md
 slug: trucos-sas-porque-hay-que-usar-objetos-hash
 tags:
 - cruce de tablas SAS

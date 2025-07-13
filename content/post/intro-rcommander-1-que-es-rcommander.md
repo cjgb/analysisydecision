@@ -4,6 +4,13 @@ categories:
 - Formación
 - R
 date: '2009-11-15T06:40:39-05:00'
+lastmod: '2025-07-13T15:59:06.492361'
+related:
+- manual-introduccion-a-r-s-plus.md
+- manual-curso-introducion-de-r-capitulo-1-que-es-r.md
+- manual-curso-introduccion-de-r-capitulo-4-contribuciones-a-r-paquetes.md
+- manual-curso-introduccion-de-r-capitulo-2-interfaz-y-primeras-sentencias.md
+- manual-curso-introduccion-de-r-capitulo-5-lectura-avanzada-de-datos.md
 slug: intro-rcommander-1-que-es-rcommander
 tags:
 - Introduccion RCommander

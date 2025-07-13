@@ -5,6 +5,13 @@ categories:
 - R
 - Trucos
 date: '2016-08-03T06:47:39-05:00'
+lastmod: '2025-07-13T15:57:07.137264'
+related:
+- paquete-opendataes-en-ropenspain-para-acceder-a-los-datos-de-datos-gob-es-con-r.md
+- un-repaso-a-los-paquetes-de-r-solar-chron-directlabels-y-graficos-de-densidades-con-lattice.md
+- libreria-mapspain-en-rstats-mapas-estaticos-de-espana.md
+- mapas-municipales-de-argentina-con-r.md
+- manual-curso-introduccion-de-r-capitulo-4-contribuciones-a-r-paquetes.md
 slug: el-paquete-de-r-weatherdata-para-la-obtencion-de-datos-meteorologicos-en-espana
 tags:
 - weatherData

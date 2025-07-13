@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - R
 date: '2010-06-07T15:45:36-05:00'
+lastmod: '2025-07-13T16:00:36.405671'
+related:
+- agregador-de-noticias-de-r-en-espanol.md
+- dos-paginas-con-recursos-para-introducirse-en-r.md
+- que-ando-leyendo-hoy.md
+- what-is-r-interesantes-videos-de-revolution-computing.md
+- el-ano-2009-para-analisis-y-decision.md
 slug: los-recursos-mas-destacados-de-r-en-la-web
 tags: []
 title: Los recursos más destacados de R en la web

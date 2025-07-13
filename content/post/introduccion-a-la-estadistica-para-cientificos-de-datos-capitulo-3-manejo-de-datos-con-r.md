@@ -5,6 +5,13 @@ categories:
 - Libro Estadística
 - R
 date: '2022-01-07T13:54:16-05:00'
+lastmod: '2025-07-13T15:58:58.287612'
+related:
+- data-management-con-dplyr.md
+- data-management-basico-con-pandas.md
+- manejo-de-datos-basico-con-python-datatable.md
+- capitulo-4-uniones-de-tablas-con-r.md
+- primeros-pasos-con-julia-importar-un-csv-y-basicos-con-un-data-frame.md
 slug: introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-3-manejo-de-datos-con-r
 tags: []
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 3. Manejo

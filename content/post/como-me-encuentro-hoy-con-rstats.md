@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - R
 date: '2017-03-28T08:54:56-05:00'
+lastmod: '2025-07-13T15:55:03.348917'
+related:
+- trucos-r-graficos-de-velocimetro-con-r.md
+- analisisydecision-es-os-desea-felices-fiestas.md
+- graficos-dinamicos-en-r-con-la-funcion-text.md
+- descubriendo-ggplot2-421.md
+- truco-r-paletas-de-colores-en-r.md
 slug: como-me-encuentro-hoy-con-rstats
 tags: []
 title: 'Como me encuentro hoy, con #rstats'

@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Big Data
 date: '2014-09-21T05:34:21-05:00'
+lastmod: '2025-07-13T15:56:07.322077'
+related:
+- nos-hemos-terminado-de-reinventar-acabamos-con-el-data-mining-y-empezamos-con-el-big-data.md
+- sql-vs-hadoop-mas-que-una-tendencia.md
+- busquedas-de-sql-frente-a-busquedas-de-hadoop.md
+- data-mining-business-intelligence-yo-la-nube.md
+- cuando-tenemos-big-data.md
 slug: data-mining-vs-bigdata-de-momento-con-google-trends
 tags: []
 title: Data mining vs Bigdata. De momento con Google Trends

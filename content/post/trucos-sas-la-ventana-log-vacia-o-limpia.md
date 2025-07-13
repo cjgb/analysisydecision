@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2011-06-28T09:34:54-05:00'
+lastmod: '2025-07-13T16:10:03.904522'
+related:
+- trucos-sas-borrando-blancos-innecesarios-con-compbl.md
+- trucos-sas-eliminacion-de-espacios-en-blanco.md
+- curso-de-lenguaje-sas-con-wps-ejecuciones.md
+- truco-sas-elminar-retornos-de-carro-o-saltos-de-linea-engorrosos.md
+- truco-sas-duplicar-registros-si-cumplen-una-condicion.md
 slug: trucos-sas-la-ventana-log-vacia-o-limpia
 tags:
 - log

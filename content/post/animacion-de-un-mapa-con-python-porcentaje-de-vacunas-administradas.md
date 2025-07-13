@@ -6,6 +6,13 @@ categories:
 - Monográficos
 - Python
 date: '2021-03-22T02:17:18-05:00'
+lastmod: '2025-07-13T15:54:05.344132'
+related:
+- mapa-de-rstats-animado-con-el-porcentaje-de-vacunacion-en-espana.md
+- mapa-estatico-de-espana-con-python.md
+- mover-parte-de-un-shapefile-con-r-mapa-de-la-tasa-de-casos-de-coronavirus-por-habitante-en-espana.md
+- incluir-subplot-en-mapa-con-ggplot.md
+- anadiendo-graficos-de-tarta-a-nuestros-mapas-de-ggplot-con-scatterpie.md
 slug: animacion-de-un-mapa-con-python-porcentaje-de-vacunas-administradas
 tags: []
 title: Animación de un mapa con Python. Porcentaje de vacunas administradas

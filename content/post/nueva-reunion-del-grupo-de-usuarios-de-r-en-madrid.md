@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - R
 date: '2015-05-11T05:01:53-05:00'
+lastmod: '2025-07-13T16:03:45.964831'
+related:
+- reunion-de-usuarios-de-r-de-madrid-15-de-octubre-de-2015.md
+- reunion-usuarios-de-r-en-madrid-26-de-noviembre-de-2014.md
+- reunion-del-grupo-de-usuarios-de-r-de-madrid-14042016.md
+- reunion-del-grupo-de-usuarios-de-r-de-madrid-12-de-noviembre.md
+- reunion-del-grupo-de-usuarios-de-r-de-madrid-12052016.md
 slug: nueva-reunion-del-grupo-de-usuarios-de-r-en-madrid
 tags: []
 title: Nueva reunión del grupo de usuarios de R en Madrid

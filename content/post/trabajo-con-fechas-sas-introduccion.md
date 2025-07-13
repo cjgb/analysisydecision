@@ -4,6 +4,13 @@ categories:
 - Monográficos
 - SAS
 date: '2008-11-07T08:13:59-05:00'
+lastmod: '2025-07-13T16:06:47.502652'
+related:
+- trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados.md
+- trabajo-con-fechas-sas-funciones-fecha.md
+- curso-de-lenguaje-sas-con-wps-funciones-fecha.md
+- curso-de-lenguaje-sas-con-wps-variables.md
+- trucos-sas-pasar-fecha-a-caracter-en-sas.md
 slug: trabajo-con-fechas-sas-introduccion
 tags: []
 title: Trabajo con fechas SAS. Introducción

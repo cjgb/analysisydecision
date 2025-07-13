@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2016-12-20T03:06:02-05:00'
+lastmod: '2025-07-13T15:54:32.137898'
+related:
+- trucos-sas-operar-con-fechas-yyyymm-tipicas-de-particiones-oracle.md
+- macros-sas-primer-y-ultimo-dia-del-mes-de-una-fecha-sas.md
+- trucos-sas-numero-de-dias-de-un-mes.md
+- macros-sas-transformar-un-numerico-a-fecha.md
+- trabajo-con-fechas-sas-funciones-fecha.md
 slug: bucle-de-fechas-con-sas-para-tablas-particionadas
 tags:
 - fechas sas

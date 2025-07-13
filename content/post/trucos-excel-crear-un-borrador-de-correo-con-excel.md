@@ -4,6 +4,13 @@ categories:
 - Excel
 - Trucos
 date: '2008-07-07T05:13:47-05:00'
+lastmod: '2025-07-13T16:08:55.710509'
+related:
+- trucos-sas-envio-de-email-con-data.md
+- enviar-correos-electronicos-con-rstats-libreria-emayili.md
+- truco-excel-abrir-multiples-libros-de-excel-en-distintas-hojas-de-un-nuevo-libro.md
+- trucos-excel-archivos-de-un-directorio-con-una-macro.md
+- truco-excel-insertar-imagenes-con-visual-basic.md
 slug: trucos-excel-crear-un-borrador-de-correo-con-excel
 tags: []
 title: Trucos Excel. Crear un borrador de correo con Excel

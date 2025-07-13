@@ -4,6 +4,13 @@ categories:
 - Monográficos
 - Seguros
 date: '2013-04-18T10:59:07-05:00'
+lastmod: '2025-07-13T15:57:15.236499'
+related:
+- el-seguro-de-salud-la-futura-guerra.md
+- el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v.md
+- el-seguro-de-credito-interesante-reto-tecnico.md
+- consultor-particular-de-seguros.md
+- mutua-madrilena-compra-el-50-de-adeslas-seguros-generales.md
 slug: el-seguro-de-salud-suma-y-sigue
 tags:
 - seguro de salud

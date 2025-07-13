@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Formación
 date: '2020-05-11T11:50:23-05:00'
+lastmod: '2025-07-13T16:01:54.929070'
+related:
+- animacion-de-un-mapa-con-python-porcentaje-de-vacunas-administradas.md
+- mover-parte-de-un-shapefile-con-r-mapa-de-la-tasa-de-casos-de-coronavirus-por-habitante-en-espana.md
+- mapas-estaticos-de-peru-con-r-y-python-a-nivel-de-distrito.md
+- mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel.md
+- mapas-municipales-de-espana-con-excel-y-qgis.md
 slug: mapa-estatico-de-espana-con-python
 tags: []
 title: Mapa estático de España con Python

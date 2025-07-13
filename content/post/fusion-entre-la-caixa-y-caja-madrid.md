@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Banca
 date: '2009-12-17T07:30:58-05:00'
+lastmod: '2025-07-13T15:57:57.248316'
+related:
+- lecciones-de-economia-de-un-ignorante-la-caixa-a-colocar-preferentes.md
+- busca-la-relacion-deuda-subordinada-y-cajas-catalanas.md
+- lecciones-de-economia-de-un-ignorante-las-cajas-seran-bancos.md
+- lecciones-de-economia-de-un-ignorante-la-privatizacion-de-las-cajas-sera-una-chapuza.md
+- participaciones-preferentes-de-las-cajas-de-ahorro.md
 slug: '%c2%bffusion-entre-la-caixa-y-caja-madrid'
 tags:
 - ''

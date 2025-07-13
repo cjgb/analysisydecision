@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Seguros
 date: '2014-02-07T06:42:14-05:00'
+lastmod: '2025-07-13T15:55:17.003904'
+related:
+- el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v.md
+- los-enemigos-del-canal-tradicional-de-venta-de-seguros.md
+- el-seguro-de-salud-suma-y-sigue.md
+- internet-of-things-en-el-sector-asegurador.md
+- el-seguro-de-credito-interesante-reto-tecnico.md
 slug: consultor-particular-de-seguros
 tags: []
 title: Consultor particular de seguros

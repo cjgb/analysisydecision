@@ -3,6 +3,13 @@ author: cgbellosta
 categories:
 - Data Mining
 date: '2009-12-17T14:07:51-05:00'
+lastmod: '2025-07-13T15:58:27.151513'
+related:
+- introduccion-a-la-estadistica-para-cientificos-de-datos-con-r-capitulo-2-datos.md
+- noticias-del-congreso-de-usuarios-de-r.md
+- manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-i.md
+- entender-una-blockchain-con-r.md
+- computer-vision-con-r-opencv-de-andar-por-casa.md
 slug: ibercivis-una-plataforma-de-computacion-ciudadana
 tags:
 - computación distribuida

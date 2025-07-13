@@ -5,6 +5,13 @@ categories:
 - R
 - Trucos
 date: '2009-12-29T13:02:01-05:00'
+lastmod: '2025-07-13T16:00:26.879546'
+related:
+- trucos-r-de-string-a-dataframe-de-palabras.md
+- como-ordenar-un-data-frame-en-r.md
+- trucos-simples-para-rstats.md
+- leer-y-representar-datos-de-google-trends-con-r.md
+- truco-malo-de-r-leer-datos-desde-excel.md
 slug: los-mejores-y-mas-utiles-trucos-de-r
 tags:
 - R

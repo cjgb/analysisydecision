@@ -4,6 +4,13 @@ categories:
 - Consultoría
 - Data Mining
 date: '2008-08-29T08:03:57-05:00'
+lastmod: '2025-07-13T15:56:48.059677'
+related:
+- mineria-de-datos-una-herramienta-clave-en-consultoria.md
+- de-estadistico-a-minero-de-datos-a-cientifico-de-datos.md
+- crm-me-rio-de-los-topicos.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-con-r-capitulo-2-datos.md
+- entrenamiento-validacion-y-test.md
 slug: el-data-mining-no-es-la-caja-negra-que-selecciona-clientes
 tags:
 - ''

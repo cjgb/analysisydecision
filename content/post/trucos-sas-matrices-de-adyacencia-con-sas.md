@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2010-08-05T06:49:04-05:00'
+lastmod: '2025-07-13T16:10:11.324359'
+related:
+- minimo-de-una-matriz-de-datos-en-sas.md
+- trucos-sas-operaciones-con-tablas-de-dimensiones-con-sas.md
+- trucos-sas-trasponer-con-sql-para-torpes.md
+- truco-sas-cruce-con-formatos.md
+- proc-sql-merge-set.md
 slug: trucos-sas-matrices-de-adyacencia-con-sas
 tags:
 - matrices

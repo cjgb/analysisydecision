@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Formación
 date: '2012-06-28T08:01:02-05:00'
+lastmod: '2025-07-13T15:59:59.616705'
+related:
+- lecciones-de-economia-de-un-ignorante-poniendo-fecha-a-la-intervencion-de-espana.md
+- lecciones-de-economia-de-un-ignorante-una-cerveza-100-pesetas.md
+- bajar-los-tipos-a-la-japonesa-al-0.md
+- lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
+- lecciones-de-economia-de-un-ignorante-los-bancos-pierden-dinero-para-favorecer-a-unos-y-luego-los-salvamos-todos.md
 slug: lecciones-de-economia-de-un-ignorante-solucion-%c2%a1trabajar-mas-y-cobrar-menos
 tags:
 - ''

@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Formación
 date: '2019-01-31T15:31:51-05:00'
+lastmod: '2025-07-13T16:01:50.883126'
+related:
+- mapas-estaticos-municipales-para-estados-de-mexico-con-r-y-con-excel.md
+- mapas-estaticos-de-peru-con-r-y-python-a-nivel-de-distrito.md
+- mapa-de-argentina-con-r.md
+- mapas-municipales-de-argentina-con-r.md
+- mapas-con-spatial-data-de-r.md
 slug: mapa-de-mexico-rapido-y-sucio-y-estatico-con-rstats
 tags: []
 title: 'Mapa de México rápido (y sucio) y estático con #rstats'

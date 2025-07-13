@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Banca
 date: '2010-04-06T07:44:22-05:00'
+lastmod: '2025-07-13T15:54:53.734435'
+related:
+- a-mi-me-preocupa-el-pequeno-ahorrador.md
+- busca-la-relacion-deuda-subordinada-y-cajas-catalanas.md
+- lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
+- participaciones-preferentes-de-las-cajas-de-ahorro.md
+- lecciones-de-economia-de-un-ignorante-de-donde-sacan-margen-los-bancos.md
 slug: comienza-la-cuenta-atras
 tags: []
 title: Comienza la cuenta atrás

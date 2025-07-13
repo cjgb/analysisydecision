@@ -5,6 +5,13 @@ categories:
 - Monográficos
 - SAS
 date: '2009-11-06T09:18:58-05:00'
+lastmod: '2025-07-13T16:02:48.586505'
+related:
+- monografico-first-y-last-ejemplos-en-data.md
+- macros-sas-agrupando-variables-categoricas.md
+- pasando-de-sas-a-r-primer-y-ultimo-elemento-de-un-campo-agrupado-de-un-data-frame.md
+- macros-sas-ordenar-alfabeticamente-las-variables-de-un-dataset.md
+- las-cuentas-claras.md
 slug: monografico-datos-agrupados-en-sas
 tags:
 - by

@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Sin catergoría
 date: '2009-10-10T10:57:12-05:00'
+lastmod: '2025-07-13T15:54:22.214414'
+related:
+- ya-estan-en-marcha-las-iv-jornadas-de-usuarios-de-r-en-espana.md
+- el-power-point-nos-vuelve-tontos.md
+- mi-intervencion-en-el-grupo-de-usuarios-de-r-de-madrid.md
+- programa-de-la-i-conferencia-hispana-de-r-project.md
+- mas-recortes-para-la-ciencia-espanola.md
 slug: ayd-se-une-no-al-recorte
 tags: []
 title: AyD se une. No al recorte

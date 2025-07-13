@@ -5,6 +5,13 @@ categories:
 - Modelos
 - Seguros
 date: '2010-04-14T06:28:26-05:00'
+lastmod: '2025-07-13T15:56:56.211000'
+related:
+- el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v.md
+- el-modelo-multivariante-en-el-sector-asegurador-univariante-vs-multivariante-ii.md
+- el-modelo-multivariante-en-el-sector-asegurador-la-variable-dependiente-iii.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-16-modelizacion-estadistica-conociendo-los-datos.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
 slug: el-modelo-multivariante-en-el-sector-asegurador-introduccion-i
 tags:
 - GLM

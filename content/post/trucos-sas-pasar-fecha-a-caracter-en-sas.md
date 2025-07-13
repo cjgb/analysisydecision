@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2012-04-11T11:12:05-05:00'
+lastmod: '2025-07-13T16:10:30.231421'
+related:
+- trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados.md
+- trabajo-con-fechas-sas-funciones-fecha.md
+- trabajo-con-fechas-sas-introduccion.md
+- curso-de-lenguaje-sas-con-wps-funciones-fecha.md
+- macros-sas-transformar-un-numerico-a-fecha.md
 slug: trucos-sas-pasar-fecha-a-caracter-en-sas
 tags:
 - fechas sas

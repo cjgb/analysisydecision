@@ -6,6 +6,13 @@ categories:
 - Modelos
 - R
 date: '2019-12-24T06:27:01-05:00'
+lastmod: '2025-07-13T15:56:42.627430'
+related:
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
+- entrenamiento-validacion-y-test.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-9-analisis-exploratorio-de-datos-eda.md
+- monografico-arboles-de-clasificacion-con-rpart.md
+- monografico-un-poco-de-proc-logistic.md
 slug: el-analisis-de-supervivencia-para-segmentar-el-churn
 tags:
 - análisis de supervivencia

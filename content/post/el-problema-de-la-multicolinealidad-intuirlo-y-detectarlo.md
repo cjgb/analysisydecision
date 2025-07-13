@@ -5,6 +5,13 @@ categories:
 - Modelos
 - R
 date: '2014-03-19T04:57:50-05:00'
+lastmod: '2025-07-13T15:57:11.174657'
+related:
+- manual-curso-introduccion-de-r-capitulo-10-funciones-graficas-en-regresion-lineal.md
+- manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
+- manual-curso-introduccion-de-r-capitulo-14-introduccion-al-calculo-matricial-con-analisis-de-componentes-principales.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-11-analisis-bivariable.md
+- regresion-pls-con-r.md
 slug: el-problema-de-la-multicolinealidad-intuirlo-y-detectarlo
 tags:
 - car

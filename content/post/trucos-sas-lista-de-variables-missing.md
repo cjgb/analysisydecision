@@ -6,6 +6,13 @@ categories:
 - Trucos
 - WPS
 date: '2013-03-08T02:48:28-05:00'
+lastmod: '2025-07-13T16:10:06.808058'
+related:
+- trucos-sas-informes-de-valores-missing.md
+- truco-sas-transformaciones-de-variables-con-arrays.md
+- macros-sas-hacer-0-los-valores-missing-de-un-dataset.md
+- macros-faciles-de-sas-determinar-si-existe-una-variable-en-un-dataset.md
+- trucos-sas-macrovariable-a-dataset.md
 slug: trucos-sas-lista-de-variables-missing
 tags:
 - array

@@ -4,6 +4,13 @@ categories:
 - Mapas
 - R
 date: '2021-09-06T07:09:03-05:00'
+lastmod: '2025-07-13T16:03:59.959816'
+related:
+- funcion-de-r-para-geolocalizar-ip.md
+- paquete-opendataes-en-ropenspain-para-acceder-a-los-datos-de-datos-gob-es-con-r.md
+- identificar-los-municipios-costeros-y-limitrofes-de-espana-con-r.md
+- archivos-shape-y-geojason-para-crear-un-mapa-de-espana-por-codigos-postales.md
+- libreria-mapspain-en-rstats-mapas-estaticos-de-espana.md
 slug: obtener-las-coordenadas-de-una-direccion-con-r-y-la-api-de-google-earth
 tags: []
 title: Obtener las coordenadas de una dirección con R y la API de Google Earth

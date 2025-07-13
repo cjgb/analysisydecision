@@ -4,6 +4,13 @@ categories:
 - Big Data
 - R
 date: '2015-01-27T10:28:57-05:00'
+lastmod: '2025-07-13T15:55:31.921704'
+related:
+- noticias-del-congreso-de-usuarios-de-r.md
+- porque-me-gusta-r.md
+- algunos-temas-de-interes-sobre-r.md
+- revision-de-las-iii-jornadas-de-r.md
+- conectar-r-a-una-base-de-datos.md
 slug: cuando-paralelizar-procesos-con-r-era-otra-cosa
 tags: []
 title: Cuando paralelizar procesos con R era otra cosa

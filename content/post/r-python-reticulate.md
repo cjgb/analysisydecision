@@ -7,6 +7,13 @@ categories:
 - Python
 - R
 date: '2020-11-26T08:42:40-05:00'
+lastmod: '2025-07-13T16:05:42.490387'
+related:
+- trabajando-con-r-y-julia-desde-rstudio.md
+- mapas-estaticos-de-peru-con-r-y-python-a-nivel-de-distrito.md
+- evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso.md
+- leer-fichero-de-texto-de-ancho-fijo-con-python-pandas.md
+- analisis-de-textos-con-r.md
 slug: r-python-reticulate
 tags: []
 title: R + Python = reticulate

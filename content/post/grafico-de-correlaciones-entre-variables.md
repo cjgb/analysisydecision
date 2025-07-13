@@ -4,6 +4,13 @@ categories:
 - Formación
 - R
 date: '2013-02-20T10:03:02-05:00'
+lastmod: '2025-07-13T15:58:09.483629'
+related:
+- grafico-de-correlaciones-entre-factores-grafico-de-la-v-de-cramer.md
+- truco-sas-grafico-de-correlaciones.md
+- graficos-de-burbuja-con-r.md
+- graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
+- anadiendo-graficos-de-tarta-a-nuestros-mapas-de-ggplot-con-scatterpie.md
 slug: grafico-de-correlaciones-entre-variables
 tags:
 - ggplot2

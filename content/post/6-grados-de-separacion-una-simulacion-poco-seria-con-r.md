@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - R
 date: '2014-09-26T16:15:35-05:00'
+lastmod: '2025-07-13T15:53:32.415495'
+related:
+- monografico-paquete-de-r-nnet-para-modelos-de-redes-neuronales.md
+- monografico-arboles-de-clasificacion-con-rpart.md
+- monografico-un-poco-de-proc-logistic.md
+- los-pilares-de-mi-simulacion-de-la-extension-del-covid19.md
+- arboles-de-decision-con-sas-base-con-r-por-supuesto.md
 slug: 6-grados-de-separacion-una-simulacion-poco-seria-con-r
 tags:
 - simulación

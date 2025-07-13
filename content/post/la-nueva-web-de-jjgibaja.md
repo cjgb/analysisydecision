@@ -4,6 +4,13 @@ categories:
 - Formación
 - Modelos
 date: '2012-05-27T02:49:01-05:00'
+lastmod: '2025-07-13T15:59:31.062470'
+related:
+- curso-basico-de-r.md
+- nuevo-curso-de-estadistica-con-r.md
+- da-comienzo-la-lectura-de-the-elements-of-statistical-learning.md
+- muestrear-no-es-pecado.md
+- nueva-edicion-del-curso-basico-de-r.md
 slug: la-nueva-web-de-jjgibaja
 tags: []
 title: La nueva web de @jjgibaja

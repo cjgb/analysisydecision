@@ -6,6 +6,13 @@ categories:
 - Formación
 - Trucos
 date: '2015-07-28T06:48:42-05:00'
+lastmod: '2025-07-13T16:07:16.324086'
+related:
+- truco-excel-grafico-de-puntos-con-colores.md
+- trucos-excel-poner-etiquetas-en-graficos-de-dispersion.md
+- truco-excel-formatos-condicionales-para-crear-rango-de-colores.md
+- truco-excel-identificar-el-color-de-una-celda.md
+- trucos-excel-mapa-de-mexico-por-estados.md
 slug: truco-excel-graficos-de-dispersion-que-identifican-los-puntos
 tags: []
 title: Truco Excel. Gráficos de dispersión que identifican los puntos

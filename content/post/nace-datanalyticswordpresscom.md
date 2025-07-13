@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Consultoría
 date: '2010-01-27T03:39:40-05:00'
+lastmod: '2025-07-13T16:03:22.889843'
+related:
+- el-ano-2010-para-analisisydecision.md
+- agregador-de-noticias-de-r-en-espanol.md
+- el-ano-2009-para-analisis-y-decision.md
+- ayd-2300-visitas-mensuales.md
+- proyecto-text-mining-con-excel-pasa-a-ser-google-mining.md
 slug: nace-datanalyticswordpresscom
 tags:
 - ''

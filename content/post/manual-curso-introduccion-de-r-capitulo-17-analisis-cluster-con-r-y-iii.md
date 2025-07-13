@@ -5,6 +5,13 @@ categories:
 - Modelos
 - R
 date: '2009-06-08T04:28:08-05:00'
+lastmod: '2025-07-13T16:01:25.211444'
+related:
+- un-peligro-del-analisis-cluster.md
+- manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-ii.md
+- manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-i.md
+- analisis-cluster-con-sas-la-importancia-de-las-semillas-en-las-k-medias.md
+- knn-con-sas-mejorando-k-means.md
 slug: manual-curso-introduccion-de-r-capitulo-17-analisis-cluster-con-r-y-iii
 tags: []
 title: 'Manual. Curso introducción de R. Capítulo 17: Análisis Cluster con R (y III)'

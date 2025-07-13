@@ -7,6 +7,13 @@ categories:
 - Monográficos
 - R
 date: '2010-09-29T09:01:41-05:00'
+lastmod: '2025-07-13T16:06:24.549594'
+related:
+- leer-y-representar-datos-de-google-trends-con-r.md
+- informes-con-r-en-html-comienzo-con-r2html-i.md
+- los-principales-problemas-de-los-espanoles-animaciones-con-r-y-gganimate.md
+- trucos-r-leer-archivos-xml-con-r.md
+- random-walk-se-escribe-con-r.md
 slug: stadistical-data-warehouse-del-european-central-bank-con-r-y-los-depositos-a-perdidas
 tags:
 - axis

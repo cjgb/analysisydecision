@@ -7,6 +7,13 @@ categories:
 - Monográficos
 - R
 date: '2010-06-15T11:32:08-05:00'
+lastmod: '2025-07-13T16:02:47.107859'
+related:
+- cluster-svm.md
+- machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algoritmos-de-clasificacion.md
+- el-parametro-gamma-el-coste-la-complejidad-de-un-svm.md
+- resolucion-del-juego-de-modelos-con-r.md
+- un-peligro-del-analisis-cluster.md
 slug: monografico-clasificacion-con-svm-en-r
 tags:
 - Cluster

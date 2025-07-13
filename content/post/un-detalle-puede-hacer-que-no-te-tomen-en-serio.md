@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Sin catergoría
 date: '2008-10-20T08:14:01-05:00'
+lastmod: '2025-07-13T16:10:56.805229'
+related:
+- lecciones-de-economia-de-un-ignorante-la-caixa-a-colocar-preferentes.md
+- una-fabulilla-sobre-prim-con-multiples-moralejas.md
+- lecciones-de-economia-de-un-ignorante-llegamos-a-solvencia-ii.md
+- la-confianza-en-el-sector-financiero.md
+- ojo-con-las-redes-sociales.md
 slug: un-detalle-puede-hacer-que-no-te-tomen-en-serio
 tags: []
 title: Un detalle puede hacer que no te tomen en serio

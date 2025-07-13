@@ -4,6 +4,13 @@ categories:
 - Formación
 - SAS
 date: '2010-08-03T07:06:19-05:00'
+lastmod: '2025-07-13T15:54:30.712117'
+related:
+- trucos-sas-muestreo-con-proc-surveyselect.md
+- un-acercamiento-a-graph-ods-graphs-proc-sgplot.md
+- las-cuentas-claras.md
+- macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
+- sobremuestreo-y-pesos-a-las-observaciones-ahora-con-r.md
 slug: bootstrap-con-sas-sin-complicaciones
 tags:
 - Bootstrap

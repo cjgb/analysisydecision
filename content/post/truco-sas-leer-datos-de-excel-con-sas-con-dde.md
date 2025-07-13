@@ -4,6 +4,13 @@ categories:
 - SAS
 - Trucos
 date: '2008-04-09T08:34:04-05:00'
+lastmod: '2025-07-13T16:08:18.865701'
+related:
+- truco-sas-sas-y-dde-aliados-de-excel.md
+- importar-a-sas-desde-otras-aplicaciones.md
+- truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
+- truco-sas-crear-ficheros-excel-sin-proc-export-i.md
+- trucos-excel-y-sas-complemento-para-cambiar-la-configuracion-regional.md
 slug: truco-sas-leer-datos-de-excel-con-sas-con-dde
 tags: []
 title: Truco SAS. Leer datos de Excel con SAS vía DDE

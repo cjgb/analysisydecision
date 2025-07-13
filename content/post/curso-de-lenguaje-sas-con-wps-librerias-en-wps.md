@@ -6,6 +6,13 @@ categories:
 - SAS
 - WPS
 date: '2011-03-04T16:12:39-05:00'
+lastmod: '2025-07-13T15:55:55.035970'
+related:
+- curso-de-lenguaje-sas-con-wps-lenguaje-sas.md
+- curso-de-lenguaje-sas-con-wps-ejecuciones.md
+- curso-de-lenguaje-sas-con-wps-el-paso-data.md
+- truco-sas-tablas-de-una-libreria-en-una-macro-variable.md
+- sigo-migrando-de-sas-a-wps.md
 slug: curso-de-lenguaje-sas-con-wps-librerias-en-wps
 tags:
 - engine

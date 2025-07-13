@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - R
 date: '2014-11-21T05:15:27-05:00'
+lastmod: '2025-07-13T15:58:21.721484'
+related:
+- martes-25-de-abril-nueva-reunion-del-grupo-de-usuarios-de-r-y-python.md
+- reunion-de-usuarios-de-r-de-madrid-15-de-octubre-de-2015.md
+- reunion-usuarios-de-r-en-madrid-26-de-noviembre-de-2014.md
+- reunion-del-grupo-de-usuarios-de-r-de-madrid-12-de-noviembre.md
+- reunion-del-grupo-de-usuarios-de-r-de-madrid-14042016.md
 slug: grupo-de-interes-local-de-usuarios-de-r-en-madrid
 tags: []
 title: Grupo de interés local de usuarios de R en Madrid

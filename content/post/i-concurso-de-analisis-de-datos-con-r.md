@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Sin catergoría
 date: '2011-07-19T10:42:46-05:00'
+lastmod: '2025-07-13T15:58:29.861869'
+related:
+- revision-de-las-iii-jornadas-de-r.md
+- comienza-la-cuenta-atras-iii-jornadas-de-usuarios-de-r.md
+- noticias-del-congreso-de-usuarios-de-r.md
+- dos-vecinos-muy-proximos-de-la-blogosfera.md
+- el-ano-2010-para-analisisydecision.md
 slug: i-concurso-de-analisis-de-datos-con-r
 tags: []
 title: I concurso de análisis de datos con R

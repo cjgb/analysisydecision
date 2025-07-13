@@ -4,6 +4,13 @@ categories:
 - Formación
 - R
 date: '2020-12-27T10:26:33-05:00'
+lastmod: '2025-07-13T15:55:21.070376'
+related:
+- como-ordenar-un-data-frame-en-r.md
+- optical-character-recognition-ocr-con-r-y-tesseract.md
+- analisis-de-textos-con-r.md
+- ejecutar-un-codigo-al-iniciar-la-sesion-de-r.md
+- r-python-reticulate.md
 slug: correccion-ortografica-en-rstudio
 tags: []
 title: Corrección ortográfica en RStudio

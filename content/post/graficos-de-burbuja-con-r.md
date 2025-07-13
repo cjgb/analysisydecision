@@ -4,6 +4,13 @@ categories:
 - Formación
 - R
 date: '2010-12-05T16:02:03-05:00'
+lastmod: '2025-07-13T15:58:13.567215'
+related:
+- truco-r-paletas-de-colores-en-r.md
+- trucos-r-graficos-de-velocimetro-con-r.md
+- grafico-de-correlaciones-entre-variables.md
+- descubriendo-ggplot2-421.md
+- manual-curso-introduccion-de-r-capitulo-7-funciones-graficas-basicas-en-r.md
 slug: graficos-de-burbuja-con-r
 tags:
 - ''

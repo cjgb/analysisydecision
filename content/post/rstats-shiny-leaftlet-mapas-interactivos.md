@@ -5,6 +5,13 @@ categories:
 - Mapas
 - R
 date: '2021-09-29T09:10:45-05:00'
+lastmod: '2025-07-13T16:05:43.922926'
+related:
+- mapas-estaticos-de-peru-con-r-y-python-a-nivel-de-distrito.md
+- anadiendo-graficos-de-tarta-a-nuestros-mapas-de-ggplot-con-scatterpie.md
+- leaflet-con-r-apuntes-de-mapas-de-coordenadas.md
+- mover-parte-de-un-shapefile-con-r-mapa-de-la-tasa-de-casos-de-coronavirus-por-habitante-en-espana.md
+- mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel.md
 slug: rstats-shiny-leaftlet-mapas-interactivos
 tags:
 - leaflet

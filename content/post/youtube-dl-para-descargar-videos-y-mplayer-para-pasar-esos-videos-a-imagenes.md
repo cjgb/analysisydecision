@@ -6,6 +6,13 @@ categories:
 - Formación
 - Monográficos
 date: '2021-01-11T12:57:51-05:00'
+lastmod: '2025-07-13T16:11:30.835913'
+related:
+- leer-fichero-de-texto-de-ancho-fijo-con-python-pandas.md
+- lectura-de-archivos-csv-con-python-y-pandas.md
+- mapa-de-codigos-postales-con-r-aunque-el-mapa-es-lo-de-menos.md
+- beatifulsoup-web-scraping-con-python-o-como-las-redes-sociales-estan-cambiando-mi-forma-de-escribir.md
+- mapa-estatico-de-espana-con-python.md
 slug: youtube-dl-para-descargar-videos-y-mplayer-para-pasar-esos-videos-a-imagenes
 tags: []
 title: youtube-dl para descargar videos y mplayer para pasar esos vídeos a imágenes

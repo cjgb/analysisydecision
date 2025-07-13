@@ -4,6 +4,13 @@ categories:
 - Formación
 - SAS
 date: '2009-11-22T09:19:29-05:00'
+lastmod: '2025-07-13T15:57:55.891543'
+related:
+- la-funcion-lag-de-sas.md
+- laboratorio-de-codigo-sas-vistas-proc-means-vs-proc-sql.md
+- curso-de-lenguaje-sas-con-wps-ejecuciones.md
+- trucos-sas-trasponer-con-sql-para-torpes.md
+- proc-sql-merge-set.md
 slug: funciones-de-ventana-sas-y-bases-de-datos
 tags:
 - funciones de ventana

@@ -7,6 +7,13 @@ categories:
 - Monográficos
 - Seguros
 date: '2010-12-27T14:17:35-05:00'
+lastmod: '2025-07-13T15:57:00.329331'
+related:
+- el-modelo-multivariante-en-el-sector-asegurador-introduccion-i.md
+- el-modelo-multivariante-en-el-sector-asegurador-la-variable-dependiente-iii.md
+- el-modelo-multivariante-en-el-sector-asegurador-univariante-vs-multivariante-ii.md
+- internet-of-things-en-el-sector-asegurador.md
+- modelos-tweedie-con-h2o-mutualizar-siniestralidad-en-base-a-factores-de-riesgo.md
 slug: el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v
 tags: []
 title: El modelo multivariante en el sector asegurador. Los modelos por coberturas

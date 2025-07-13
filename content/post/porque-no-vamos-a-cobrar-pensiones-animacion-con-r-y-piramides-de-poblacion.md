@@ -5,6 +5,13 @@ categories:
 - Opinión
 - R
 date: '2018-12-09T15:53:20-05:00'
+lastmod: '2025-07-13T16:04:29.475870'
+related:
+- mapa-de-rstats-animado-con-el-porcentaje-de-vacunacion-en-espana.md
+- monografico-arboles-de-clasificacion-con-rpart.md
+- los-pilares-de-mi-simulacion-de-la-extension-del-covid19.md
+- informes-con-r-en-html-comienzo-con-r2html-i.md
+- animacion-de-un-mapa-con-python-porcentaje-de-vacunas-administradas.md
 slug: porque-no-vamos-a-cobrar-pensiones-animacion-con-r-y-piramides-de-poblacion
 tags:
 - plotrix

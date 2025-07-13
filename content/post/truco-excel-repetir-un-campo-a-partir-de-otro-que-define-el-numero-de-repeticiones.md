@@ -5,6 +5,13 @@ categories:
 - Formación
 - Trucos
 date: '2016-12-17T16:43:13-05:00'
+lastmod: '2025-07-13T16:07:31.246083'
+related:
+- truco-excel-repetir-celdas-en-funcion-de-los-valores-de-otra-celda.md
+- truco-excel-pasar-un-rango-de-varias-columnas-a-una.md
+- trucos-excel-repetir-filas-con-desref.md
+- trucos-excel-repetir-filas-o-columnas-con-la-funcion-desref.md
+- trucos-excel-transponer-con-la-funcion-desref.md
 slug: truco-excel-repetir-un-campo-a-partir-de-otro-que-define-el-numero-de-repeticiones
 tags: []
 title: Truco Excel. Repetir un campo a partir de otro que define el número de repeticiones

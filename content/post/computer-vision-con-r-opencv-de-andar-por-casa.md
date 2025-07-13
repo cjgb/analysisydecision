@@ -7,6 +7,13 @@ categories:
 - Monográficos
 - R
 date: '2020-11-27T05:47:45-05:00'
+lastmod: '2025-07-13T15:55:11.525489'
+related:
+- tratamiento-y-procesado-de-imagenes-con-r-y-magick.md
+- inteligencia-arficial-frente-a-un-juego-de-ninos-la-particula-tonta-de-nicolas.md
+- resolucion-del-juego-de-modelos-con-r.md
+- truco-r-insertar-imagen-en-un-grafico.md
+- machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algoritmos-de-clasificacion.md
 slug: computer-vision-con-r-opencv-de-andar-por-casa
 tags:
 - openCV

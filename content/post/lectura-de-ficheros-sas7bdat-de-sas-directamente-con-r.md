@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2011-04-19T04:29:12-05:00'
+lastmod: '2025-07-13T16:00:05.104815'
+related:
+- truco-leer-sas7bdat-sin-sas.md
+- crear-archivo-csv-desde-python.md
+- paquete-sas7bdat-de-r-me-pongo-con-ello.md
+- comunicar-sas-con-r-creando-ejecutables-windows.md
+- truco-sas-como-leer-pc-axis-con-sas.md
 slug: lectura-de-ficheros-sas7bdat-de-sas-directamente-con-r
 tags: []
 title: Lectura de ficheros SAS7BDAT de SAS directamente con R

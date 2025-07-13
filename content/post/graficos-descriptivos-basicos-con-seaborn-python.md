@@ -5,6 +5,13 @@ categories:
 - Gráficos
 - Python
 date: '2021-08-09T04:40:04-05:00'
+lastmod: '2025-07-13T15:58:17.645261'
+related:
+- capitulo-5-representacion-basica-con-ggplot.md
+- graficos-basicos-con-julia.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-7-descripcion-grafica-de-variables.md
+- un-acercamiento-a-graph-ods-graphs-proc-sgplot.md
+- graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
 slug: graficos-descriptivos-basicos-con-seaborn-python
 tags: []
 title: Gráficos descriptivos básicos con Seaborn Python

@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2009-01-13T08:54:54-05:00'
+lastmod: '2025-07-13T16:00:55.402365'
+related:
+- macro-sas-variables-de-un-dataset-en-una-macro-variable.md
+- trucos-sas-lista-de-datasets-en-macro-variable.md
+- trucos-sas-eliminar-etiquetas-en-los-conjunto-de-datos-sas.md
+- macros-sas-informe-de-un-dataset-en-excel.md
+- trucos-sas-macrovariable-a-dataset.md
 slug: macros-sas-asignar-permisos-en-unix
 tags: []
 title: Macros SAS. Asignar permisos en Unix

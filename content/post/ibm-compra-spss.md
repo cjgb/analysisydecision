@@ -4,6 +4,13 @@ categories:
 - Business Intelligence
 - Data Mining
 date: '2009-07-28T10:41:05-05:00'
+lastmod: '2025-07-13T15:58:28.501311'
+related:
+- ranking-idc-de-business-analytics-market.md
+- sas-no-se-vende.md
+- integracion-de-r-con-sas-spss-y-otros.md
+- sas-comienza-a-fijarse-en-r.md
+- sas-investiga-la-tecnologia-de-r.md
 slug: ibm-compra-spss
 tags:
 - SPSS

@@ -4,6 +4,13 @@ categories:
 - Formación
 - R
 date: '2015-02-13T17:28:19-05:00'
+lastmod: '2025-07-13T15:54:13.322294'
+related:
+- aprendiendo-shiny-server-r-ui-r.md
+- aprendiendo-shiny-con-vosotros.md
+- rstats-shiny-leaftlet-mapas-interactivos.md
+- manual-curso-introduccion-de-r-capitulo-2-interfaz-y-primeras-sentencias.md
+- nuestras-funciones-de-r-en-menus-con-rpanel-y-svwidgets.md
 slug: aprendiendo-shiny-la-funcion-shinyui-seguida-de-fluidpage-o-fluidrow
 tags:
 - shiny

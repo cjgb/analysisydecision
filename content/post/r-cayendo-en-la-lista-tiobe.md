@@ -4,6 +4,13 @@ categories:
 - R
 - Sin catergoría
 date: '2012-04-16T09:13:09-05:00'
+lastmod: '2025-07-13T16:05:10.097524'
+related:
+- que-nos-pasa-con-r-de-nuevo.md
+- lista-de-los-lengajes-de-programacion-mas-populares.md
+- como-medir-la-presencia-de-r-en-el-mercado-del-analisis-de-datos.md
+- la-mejor-posicion-de-r-en-tiobe.md
+- integracion-de-r-con-sas-spss-y-otros.md
 slug: r-cayendo-en-la-lista-tiobe
 tags:
 - TIOBE

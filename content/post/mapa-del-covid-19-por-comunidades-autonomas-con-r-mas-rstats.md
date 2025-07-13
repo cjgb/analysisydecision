@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Formación
 date: '2020-03-18T03:19:34-05:00'
+lastmod: '2025-07-13T16:01:49.528131'
+related:
+- libreria-mapspain-en-rstats-mapas-estaticos-de-espana.md
+- mover-parte-de-un-shapefile-con-r-mapa-de-la-tasa-de-casos-de-coronavirus-por-habitante-en-espana.md
+- mapa-de-rstats-animado-con-el-porcentaje-de-vacunacion-en-espana.md
+- mi-breve-seguimiento-del-coronavirus-con-r.md
+- mapa-estatico-de-espana-con-python.md
 slug: mapa-del-covid-19-por-comunidades-autonomas-con-r-mas-rstats
 tags: []
 title: 'Mapa del COVID-19 por Comunidades Autónomas con R (más #rstats)'

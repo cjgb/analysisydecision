@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2014-01-14T10:16:02-05:00'
+lastmod: '2025-07-13T15:57:31.515744'
+related:
+- trucos-sas-eliminacion-de-espacios-en-blanco.md
+- trucos-sas-borrando-blancos-innecesarios-con-compbl.md
+- macros-sas-limpiar-una-cadena-de-caracteres.md
+- truco-sas-limpieza-de-tabuladores-con-expresiones-regulares.md
+- curso-de-lenguaje-sas-con-wps-funciones-en-wps.md
 slug: espacios-en-sas
 tags:
 - COMPBL

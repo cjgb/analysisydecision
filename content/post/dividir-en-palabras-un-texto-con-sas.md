@@ -5,6 +5,13 @@ categories:
 - SAS
 - WPS
 date: '2013-09-12T01:09:44-05:00'
+lastmod: '2025-07-13T15:56:30.453054'
+related:
+- macros-sas-macro-split-para-partir-un-conjunto-de-datos.md
+- trucos-r-de-string-a-dataframe-de-palabras.md
+- trucos-sas-particionar-y-exportar-a-texto-un-dataset.md
+- macros-sas-limpiar-una-cadena-de-caracteres.md
+- truco-sas-funcion-para-contar-caracteres.md
 slug: dividir-en-palabras-un-texto-con-sas
 tags: []
 title: Dividir en palabras un texto con SAS

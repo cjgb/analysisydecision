@@ -6,6 +6,13 @@ categories:
 - SAS
 - Trucos
 date: '2010-04-10T09:12:53-05:00'
+lastmod: '2025-07-13T15:54:50.934067'
+related:
+- trucos-sas-variables-dummy-de-una-variable-continua.md
+- trucos-sas-lista-de-datasets-en-macro-variable.md
+- la-macro-iterlist-para-automatizar-codigo-sas.md
+- minimo-de-una-matriz-de-datos-en-sas.md
+- trucos-sas-macrovariable-a-dataset.md
 slug: combinaciones-de-k-elementos-tomados-de-n-en-n-con-sas-y-con-r
 tags:
 - ''

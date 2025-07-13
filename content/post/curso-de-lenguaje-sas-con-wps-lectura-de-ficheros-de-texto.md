@@ -4,6 +4,13 @@ categories:
 - Consultoría
 - Formación
 date: '2010-06-03T04:02:17-05:00'
+lastmod: '2025-07-13T15:55:52.314863'
+related:
+- curso-de-lenguaje-sas-con-wps-que-hace-el-paso-data.md
+- importar-a-sas-desde-otras-aplicaciones.md
+- curso-de-lenguaje-sas-con-wps-el-paso-data.md
+- ayudadme-importar-a-sas-texto-con-comillas.md
+- curso-de-lenguaje-sas-con-wps-ejecuciones.md
 slug: curso-de-lenguaje-sas-con-wps-lectura-de-ficheros-de-texto
 tags:
 - DATA

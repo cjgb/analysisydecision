@@ -5,6 +5,13 @@ categories:
 - Monográficos
 - R
 date: '2014-12-17T12:44:07-05:00'
+lastmod: '2025-07-13T16:07:53.203842'
+related:
+- truco-r-insertar-imagen-en-un-grafico.md
+- incluir-subplot-en-mapa-con-ggplot.md
+- trucos-r-graficos-de-velocimetro-con-r.md
+- descubriendo-ggplot2-421.md
+- graficos-de-burbuja-con-r.md
 slug: truco-r-anadir-una-marca-de-agua-a-nuestro-grafico-con-ggplot2
 tags:
 - ggplot2

@@ -7,6 +7,13 @@ categories:
 - Modelos
 - Monográficos
 date: '2011-01-13T16:11:29-05:00'
+lastmod: '2025-07-13T16:08:52.782154'
+related:
+- seleccion-del-mejor-punto-de-diagnostico-en-una-prueba-diagnostica.md
+- simulacion-estimacion-de-pi-con-el-metodo-montecarlo.md
+- el-sobremuestreo-mejora-mi-estimacion.md
+- trucos-sas-calcular-percentiles-como-excel-o-r.md
+- en-la-regresion-logistica-el-sobremuestreo-es-lo-mismo-que-asignar-pesos-a-las-observaciones.md
 slug: trucos-excel-area-bajo-la-curva-roc
 tags:
 - curva ROC

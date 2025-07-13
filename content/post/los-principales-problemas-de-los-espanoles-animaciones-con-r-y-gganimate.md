@@ -6,6 +6,13 @@ categories:
 - Opinión
 - R
 date: '2019-08-26T10:47:45-05:00'
+lastmod: '2025-07-13T16:00:33.674980'
+related:
+- stadistical-data-warehouse-del-european-central-bank-con-r-y-los-depositos-a-perdidas.md
+- leer-y-representar-datos-de-google-trends-con-r.md
+- evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso.md
+- analisis-de-textos-con-r.md
+- beatifulsoup-web-scraping-con-python-o-como-las-redes-sociales-estan-cambiando-mi-forma-de-escribir.md
 slug: los-principales-problemas-de-los-espanoles-animaciones-con-r-y-gganimate
 tags:
 - gganimate

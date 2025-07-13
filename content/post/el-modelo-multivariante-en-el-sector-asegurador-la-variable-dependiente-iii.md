@@ -4,6 +4,13 @@ categories:
 - Formación
 - Seguros
 date: '2010-04-20T15:44:11-05:00'
+lastmod: '2025-07-13T15:56:58.902419'
+related:
+- el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v.md
+- el-modelo-multivariante-en-el-sector-asegurador-introduccion-i.md
+- modelos-tweedie-con-h2o-mutualizar-siniestralidad-en-base-a-factores-de-riesgo.md
+- el-modelo-multivariante-en-el-sector-asegurador-univariante-vs-multivariante-ii.md
+- los-parametros-del-modelo-glm-como-relatividades-como-recargos-o-descuentos.md
 slug: el-modelo-multivariante-en-el-sector-asegurador-la-variable-dependiente-iii
 tags: []
 title: El modelo multivariante en el sector asegurador. La variable dependiente (III)

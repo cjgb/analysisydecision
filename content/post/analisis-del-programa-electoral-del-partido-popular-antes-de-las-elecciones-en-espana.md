@@ -5,6 +5,13 @@ categories:
 - Consultoría
 - R
 date: '2011-11-01T14:57:14-05:00'
+lastmod: '2025-07-13T15:53:59.039765'
+related:
+- comparamos-los-programas-electorales-de-pp-y-psoe-con-r.md
+- el-debate-politico-o-como-analizar-textos-con-wps.md
+- analisis-de-textos-con-r.md
+- ejemplo-de-web-scraping-con-r-la-formacion-de-los-diputados-del-congreso.md
+- manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-ii.md
 slug: analisis-del-programa-electoral-del-partido-popular-antes-de-las-elecciones-en-espana
 tags:
 - ''

@@ -5,6 +5,13 @@ categories:
 - Formación
 - Python
 date: '2021-10-18T04:44:19-05:00'
+lastmod: '2025-07-13T15:55:23.787996'
+related:
+- leer-archivos-excel-con-python.md
+- truco-excel-unir-todos-los-libros-en-una-hoja.md
+- leer-fichero-de-texto-de-ancho-fijo-con-python-pandas.md
+- truco-excel-abrir-multiples-libros-de-excel-en-distintas-hojas-de-un-nuevo-libro.md
+- proyecto-text-mining-con-excel-iv.md
 slug: creando-archivos-excel-desde-python-con-pandas-y-excelwriter
 tags: []
 title: Creando archivos Excel desde Python con Pandas y ExcelWriter

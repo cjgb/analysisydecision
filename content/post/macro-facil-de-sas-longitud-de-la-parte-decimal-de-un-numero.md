@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2012-08-23T16:19:42-05:00'
+lastmod: '2025-07-13T16:00:40.469806'
+related:
+- macros-sas-calular-la-longitud-de-un-numero.md
+- duda-de-sas-longitud-de-la-parte-decimal-de-un-numero.md
+- macros-sas-pasar-de-texto-a-numerico.md
+- macros-sas-contar-las-palabras-de-una-macro-variable.md
+- macros-sas-limpiar-una-cadena-de-caracteres.md
 slug: macro-facil-de-sas-longitud-de-la-parte-decimal-de-un-numero
 tags: []
 title: Macro (fácil) de SAS. Longitud de la parte decimal de un número

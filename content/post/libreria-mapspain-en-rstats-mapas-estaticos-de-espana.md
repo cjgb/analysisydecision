@@ -6,6 +6,13 @@ categories:
 - Mapas
 - R
 date: '2020-12-10T07:37:54-05:00'
+lastmod: '2025-07-13T16:00:14.595441'
+related:
+- mapa-del-covid-19-por-comunidades-autonomas-con-r-mas-rstats.md
+- incluir-subplot-en-mapa-con-ggplot.md
+- mover-parte-de-un-shapefile-con-r-mapa-de-la-tasa-de-casos-de-coronavirus-por-habitante-en-espana.md
+- mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel.md
+- mapa-estatico-de-espana-con-python.md
 slug: libreria-mapspain-en-rstats-mapas-estaticos-de-espana
 tags: []
 title: Librería mapSpain en RStats. Mapas estáticos de España

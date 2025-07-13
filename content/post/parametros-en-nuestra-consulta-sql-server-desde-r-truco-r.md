@@ -4,6 +4,13 @@ categories:
 - Formación
 - R
 date: '2019-10-14T11:19:56-05:00'
+lastmod: '2025-07-13T16:04:13.690368'
+related:
+- de-sql-server-a-python-pandas-dataframe.md
+- manual-curso-introduccion-de-r-capitulo-5-lectura-avanzada-de-datos.md
+- montemos-un-sistema-de-informacion-en-nuestro-equipo-iii.md
+- manual-curso-introduccion-de-r-capitulo-4-contribuciones-a-r-paquetes.md
+- monografico-paquete-sqldf-si-sabes-sql-sabes-r.md
 slug: parametros-en-nuestra-consulta-sql-server-desde-r-truco-r
 tags:
 - SQL SERVER

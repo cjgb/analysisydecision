@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2008-11-20T06:17:54-05:00'
+lastmod: '2025-07-13T16:01:13.029230'
+related:
+- trucos-sas-numero-de-dias-de-un-mes.md
+- macros-faciles-de-sas-dias-de-un-mes-en-una-fecha.md
+- trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados.md
+- trucos-sas-operar-con-fechas-yyyymm-tipicas-de-particiones-oracle.md
+- bucle-de-fechas-con-sas-para-tablas-particionadas.md
 slug: macros-sas-transformar-un-numerico-a-fecha
 tags:
 - fechas sas

@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Formación
 date: '2017-10-29T15:57:03-05:00'
+lastmod: '2025-07-13T16:00:24.155224'
+related:
+- una-fabulilla-sobre-prim-con-multiples-moralejas.md
+- la-confianza-en-el-sector-financiero.md
+- margenes-nulos-en-los-nuevos-depositos-bancarios.md
+- participaciones-preferentes-de-las-cajas-de-ahorro.md
+- amanece-que-no-es-poco.md
 slug: los-bancos-lo-llaman-transformacion-digital-yo-lo-llamo-me-da-miedo-facebook
 tags: []
 title: Los bancos lo llaman Transformación Digital yo lo llamo me da miedo Facebook

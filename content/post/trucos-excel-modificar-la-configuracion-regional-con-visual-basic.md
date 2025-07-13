@@ -4,6 +4,13 @@ categories:
 - Excel
 - Trucos
 date: '2010-02-21T09:59:46-05:00'
+lastmod: '2025-07-13T16:09:10.702197'
+related:
+- truco-sas-sas-y-dde-aliados-de-excel.md
+- trucos-excel-y-sas-complemento-para-cambiar-la-configuracion-regional.md
+- truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
+- trucos-excel-pasar-de-caracter-a-numerico-con-formulas.md
+- macros-sas-pasar-de-texto-a-numerico.md
 slug: trucos-excel-modificar-la-configuracion-regional-con-visual-basic
 tags:
 - Application

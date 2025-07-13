@@ -5,6 +5,13 @@ categories:
 - Formación
 - Monográficos
 date: '2010-11-27T12:16:23-05:00'
+lastmod: '2025-07-13T16:03:04.563828'
+related:
+- montemos-un-sistema-de-informacion-en-nuestro-equipo-iii.md
+- montemos-un-sistema-de-informacion-en-nuestro-equipo-ii.md
+- evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso.md
+- conectar-r-a-una-base-de-datos.md
+- estadistica-para-cientificos-de-datos-con-r-introduccion.md
 slug: montemos-un-sistema-de-informacion-en-nuestro-equipo-i
 tags:
 - pentaho

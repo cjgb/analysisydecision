@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2010-10-07T11:37:31-05:00'
+lastmod: '2025-07-13T16:00:45.884153'
+related:
+- trucos-sas-identificar-registros-duplicados.md
+- macros-faciles-de-sas-determinar-si-existe-una-variable-en-un-dataset.md
+- macro-sas-variables-de-un-dataset-en-una-macro-variable.md
+- macros-sas-macro-split-para-partir-un-conjunto-de-datos.md
+- trucos-sas-union-de-multiples-tablas-sas-con-un-nombre-parecido.md
 slug: macros-faciles-de-sas-busca-duplicados
 tags:
 - macros SAS

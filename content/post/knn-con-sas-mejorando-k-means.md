@@ -5,6 +5,13 @@ categories:
 - Modelos
 - SAS
 date: '2016-04-29T06:55:21-05:00'
+lastmod: '2025-07-13T15:59:11.903747'
+related:
+- analisis-cluster-con-sas-la-importancia-de-las-semillas-en-las-k-medias.md
+- un-peligro-del-analisis-cluster.md
+- cluster-svm.md
+- machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algoritmos-de-clasificacion.md
+- monografico-clasificacion-con-svm-en-r.md
 slug: knn-con-sas-mejorando-k-means
 tags:
 - knn

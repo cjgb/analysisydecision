@@ -4,6 +4,13 @@ categories:
 - Formación
 - SAS
 date: '2009-07-15T08:12:33-05:00'
+lastmod: '2025-07-13T16:08:37.622614'
+related:
+- truco-sas-macro-buscar-y-reemplazar-en-texto.md
+- truco-sas-leer-datos-de-excel-con-sas-con-dde.md
+- trucos-sas-mas-usos-de-infile-y-pipe-directorios-en-tablas-sas.md
+- importar-a-sas-desde-otras-aplicaciones.md
+- curso-de-lenguaje-sas-con-wps-lectura-de-ficheros-de-texto.md
 slug: truco-sas-transformacion-ebcdic-mainframe-ascii-pc-o-unix
 tags: []
 title: Truco SAS. Transformación EBCDIC (Mainframe)

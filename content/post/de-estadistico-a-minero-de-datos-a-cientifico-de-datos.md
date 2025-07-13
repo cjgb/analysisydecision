@@ -7,6 +7,13 @@ categories:
 - Formación
 - Monográficos
 date: '2016-11-03T12:54:27-05:00'
+lastmod: '2025-07-13T15:56:15.525491'
+related:
+- puede-la-informacion-de-twitter-servir-para-tarificar-seguros.md
+- porque-me-gusta-r.md
+- de-actuario-a-cientifico-de-datos.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-con-r-capitulo-2-datos.md
+- el-ano-2010-para-analisisydecision.md
 slug: de-estadistico-a-minero-de-datos-a-cientifico-de-datos
 tags: []
 title: De estadístico a minero de datos a científico de datos…

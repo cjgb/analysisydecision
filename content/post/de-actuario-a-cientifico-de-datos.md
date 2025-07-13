@@ -4,6 +4,13 @@ categories:
 - Opinión
 - Seguros
 date: '2018-01-07T11:11:14-05:00'
+lastmod: '2025-07-13T15:56:14.142126'
+related:
+- de-estadistico-a-minero-de-datos-a-cientifico-de-datos.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-con-r-capitulo-2-datos.md
+- me-rindo-es-necesario-trabajar-en-agile.md
+- el-futuro-de-la-profesion.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-16-modelizacion-estadistica-conociendo-los-datos.md
 slug: de-actuario-a-cientifico-de-datos
 tags: []
 title: De actuario a científico de datos

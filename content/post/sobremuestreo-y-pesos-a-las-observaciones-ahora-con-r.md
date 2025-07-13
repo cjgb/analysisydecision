@@ -6,6 +6,13 @@ categories:
 - Monográficos
 - R
 date: '2012-03-27T08:39:55-05:00'
+lastmod: '2025-07-13T16:06:21.506679'
+related:
+- en-la-regresion-logistica-el-sobremuestreo-es-lo-mismo-que-asignar-pesos-a-las-observaciones.md
+- el-sobremuestreo-mejora-mi-estimacion.md
+- que-pasa-si-uso-una-regresion-de-poisson-en-vez-de-una-regresion-logistica.md
+- trucos-sas-muestreo-con-proc-surveyselect.md
+- muestreo-de-datos-con-r.md
 slug: sobremuestreo-y-pesos-a-las-observaciones-ahora-con-r
 tags:
 - regresión logística

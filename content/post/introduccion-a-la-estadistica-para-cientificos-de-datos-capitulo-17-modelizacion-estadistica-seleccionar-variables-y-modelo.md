@@ -7,6 +7,13 @@ categories:
 - Monográficos
 - R
 date: '2023-08-21T12:18:47-05:00'
+lastmod: '2025-07-13T15:58:56.925144'
+related:
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-16-modelizacion-estadistica-conociendo-los-datos.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-9-analisis-exploratorio-de-datos-eda.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-6-descripcion-numerica-de-variables.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-8-problemas-con-los-datos.md
+- monografico-arboles-de-clasificacion-con-rpart.md
 slug: introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo
 tags: []
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 17. Modelización
@@ -206,7 +213,7 @@ modelo.1 <- glm(data = entrenamiento, formula = formula_modelo, family='binomial
 ```
  
 
-Recordar que `glm` requiere un data frame, una fórmula y especificar la familia de la función de enlace que permite modelizar ese tipo de datos. Para evitar escribir todas las variables presentes en la fórmula se emplea otra de las posibilidades que ofrece emplear un método de identificación de variables. El `summary` del modelo permite estudiar el test \beta_i=0 asociado a cada parámetro del modelo.
+Recordar que `glm` requiere un data frame, una fórmula y especificar la familia de la función de enlace que permite modelizar ese tipo de datos. Para evitar escribir todas las variables presentes en la fórmula se emplea otra de las posibilidades que ofrece emplear un método de identificación de variables. El `summary` del modelo permite estudiar el test $\beta_i=0$ asociado a cada parámetro del modelo.
 
 ```r
 summary(modelo.1)
@@ -224,7 +231,7 @@ summary(modelo.2)
 ```
  
 
-En este caso el test \beta_i=0 se rechaza en todos los niveles de los factores seleccionados. Esto lo ha facilitado el trabajo previo en los factores. Este `modelo.2` sería el modelo final, en cualquier caso, se podrían emplear técnicas de selección de variables vistas en capítulos anteriores para contrastar si este trabajo manual tiene el mismo resultado. En el caso de tener cientos de variables este proceso sería más complicado y optar por métodos de selección automáticos puede ahorrar mucho tiempo y esfuerzo.
+En este caso el test $\beta_i=0$ se rechaza en todos los niveles de los factores seleccionados. Esto lo ha facilitado el trabajo previo en los factores. Este `modelo.2` sería el modelo final, en cualquier caso, se podrían emplear técnicas de selección de variables vistas en capítulos anteriores para contrastar si este trabajo manual tiene el mismo resultado. En el caso de tener cientos de variables este proceso sería más complicado y optar por métodos de selección automáticos puede ahorrar mucho tiempo y esfuerzo.
 
 ## Selección del modelo
 
@@ -335,7 +342,7 @@ porcen_mas_interesados;porcen_interesados
 
 Ordenadas las observaciones por la probabilidad que asigna el modelo se puede obtener el % de interesados y representar gráficamente una curva de ganancia con respecto al azar.
 
-«`r  
+```r
 grupos = 10  
 test <\- test %>% arrange(desc(probabilidad_modelo.3)) %>%  
 mutate(percentil_modelo = as.factor(ceiling((row_number()/n()) * grupos)))
@@ -347,6 +354,7 @@ mutate(ganancia = percentil_interesados/porcen_interesados)
 
 ganancia %>% ggplot(aes(x=percentil_modelo,y=ganancia, group=1)) +  
 geom_line(color=»red») + geom_hline(yintercept = 1, color=’blue’)  
+```
 
 Se aprecia como los percentiles con mayor probabilidad están ganando al azar, pero en el mejor percentil se llega a mejorar en 2 veces a una selección de clientes sin emplear el modelo. Otra forma de ver esta ganancia se consigue acumulando el número de respuestas positivas en función del percentil de probabilidad del modelo.
 
@@ -384,7 +392,7 @@ nrow(test)/nrow(train2)
 
 En ese gráfico se echa en falta el punto (0,0) que se puede añadir.
 
-«`{r}  
+```r
 gananciapercentil_modelo = as.numeric(gananciapercentil_modelo)*10
 
 rbind.data.frame(ganancia,  
@@ -393,8 +401,7 @@ pct_acumulado_interesados=0, pct_esperado_interesados=0) ) %>%
 ggplot(aes(x=percentil_modelo,group=1)) +  
 geom_line(aes(y=pct_acumulado_interesados), color='blue') +  
 geom_line(aes(y=pct_esperado_interesados), color='red')
-
-«`
+```
 
 [![](/images/2023/08/wp_editor_md_b49bf5b274349e8e19dbabe4d24a2a1f.jpg)](/images/2023/08/wp_editor_md_b49bf5b274349e8e19dbabe4d24a2a1f.jpg)  
 Este gráfico puede ser familiar para el científico de datos porque se asemeja a la curva ROC pero no tiene nada que ver puesto que la curva ROC lo que mide es la relación entre los aciertos del modelo y los errores a la hora de asignar a las observaciones un resultado positivo siendo éste negativo. En este ensayo no se entra a valorar este método de medición de la precisión del modelo y se ilustra la ganancia. Hay literatura y buenos ejemplos de este método como por ejemplo:

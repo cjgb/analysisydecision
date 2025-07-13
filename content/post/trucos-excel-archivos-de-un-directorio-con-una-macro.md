@@ -5,6 +5,13 @@ categories:
 - Formación
 - Trucos
 date: '2010-11-02T06:39:53-05:00'
+lastmod: '2025-07-13T16:08:51.351767'
+related:
+- truco-excel-application-getopenfilename-el-explorador-de-archivos-sencillo-en-macro.md
+- truco-sas-dataset-con-los-ficheros-y-carpetas-de-un-directorio.md
+- trucos-excel-unir-varios-excel-en-uno.md
+- truco-excel-abrir-multiples-libros-de-excel-en-distintas-hojas-de-un-nuevo-libro.md
+- trucos-sas-mas-usos-de-infile-y-pipe-directorios-en-tablas-sas.md
 slug: trucos-excel-archivos-de-un-directorio-con-una-macro
 tags: []
 title: Trucos Excel. Archivos de un directorio con una macro

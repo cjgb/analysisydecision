@@ -4,6 +4,13 @@ categories:
 - Formación
 - R
 date: '2020-03-12T09:31:02-05:00'
+lastmod: '2025-07-13T15:57:42.336575'
+related:
+- mi-breve-seguimiento-del-coronavirus-con-r.md
+- estimacion-de-la-evolucion-de-casos-del-coronavirus-en-espana.md
+- seguir-los-datos-del-coronavirus-en-espana-con-rstats.md
+- tablas-elegantes-en-rstats-y-formattable.md
+- etiquetas-en-scatter-plot-muertes-covid-por-millon-de-habitantes-vs-gasto-en-salud.md
 slug: evolucion-del-numero-de-casos-de-coronavirus
 tags: []
 title: Evolución del número de casos de coronavirus

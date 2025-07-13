@@ -6,6 +6,13 @@ categories:
 - Monográficos
 - R
 date: '2014-07-09T02:10:40-05:00'
+lastmod: '2025-07-13T16:05:17.696554'
+related:
+- regresion-pls-con-r.md
+- manual-curso-introduccion-de-r-capitulo-10-funciones-graficas-en-regresion-lineal.md
+- primeros-pasos-con-regresion-no-lineal-nls-con-r.md
+- manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
+- resolucion-del-juego-de-modelos-con-r.md
 slug: regresion-ridge-o-contraida-con-r
 tags: []
 title: Regresión ridge o regresión contraída con R

@@ -5,6 +5,13 @@ categories:
 - Formación
 - Trucos
 date: '2017-05-18T10:54:36-05:00'
+lastmod: '2025-07-13T16:04:12.257554'
+related:
+- bucle-de-fechas-con-sas-para-tablas-particionadas.md
+- trucos-sas-operar-con-fechas-yyyymm-tipicas-de-particiones-oracle.md
+- truco-python-restar-meses-con-formato-yyyymm.md
+- truco-sas-transformar-variable-caracter-a-fecha.md
+- trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados.md
 slug: parametros-en-las-consultas-de-hive-ejemplo-con-fechas
 tags:
 - Hive

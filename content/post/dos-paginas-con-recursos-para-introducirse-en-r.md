@@ -3,6 +3,13 @@ author: cgbellosta
 categories:
 - R
 date: '2009-12-13T09:13:48-05:00'
+lastmod: '2025-07-13T15:56:31.807601'
+related:
+- jornadas-de-r-gratuitas-en-galicia.md
+- los-recursos-mas-destacados-de-r-en-la-web.md
+- lista-oficial-de-ayuda-de-r-en-espanol.md
+- manual-introduccion-a-r-s-plus.md
+- nueva-edicion-del-curso-basico-de-r.md
 slug: dos-paginas-con-recursos-para-introducirse-en-r
 tags:
 - R

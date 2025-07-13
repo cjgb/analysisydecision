@@ -7,6 +7,13 @@ categories:
 - Monográficos
 - Python
 date: '2017-05-03T04:03:46-05:00'
+lastmod: '2025-07-13T16:00:37.765427'
+related:
+- resolucion-del-juego-de-modelos-con-r.md
+- monografico-clasificacion-con-svm-en-r.md
+- cluster-svm.md
+- knn-con-sas-mejorando-k-means.md
+- machine-learning-elegir-el-mejor-gradient-boost-de-forma-iterativa-con-gridseacrchcv.md
 slug: machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algoritmos-de-clasificacion
 tags:
 - arboles de clasificacion

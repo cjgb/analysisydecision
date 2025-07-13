@@ -5,6 +5,13 @@ categories:
 - Excel
 - Formación
 date: '2015-02-16T16:24:19-05:00'
+lastmod: '2025-07-13T16:02:03.187762'
+related:
+- mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel.md
+- mapas-municipales-de-espana-con-excel-y-qgis.md
+- mapa-espana-por-comunidades-autonomas-con-google-studio.md
+- mapas-estaticos-municipales-para-estados-de-mexico-con-r-y-con-excel.md
+- nuevo-y-muy-mejorado-mapa-de-espana-por-provincias-con-excel.md
 slug: mapas-de-la-provincia-de-madrid-con-bdt
 tags:
 - mapas

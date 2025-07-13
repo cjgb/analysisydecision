@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - R
 date: '2014-11-12T10:02:05-05:00'
+lastmod: '2025-07-13T15:59:28.357304'
+related:
+- r-cayendo-en-la-lista-tiobe.md
+- que-nos-pasa-con-r-de-nuevo.md
+- algunos-temas-de-interes-sobre-r.md
+- como-medir-la-presencia-de-r-en-el-mercado-del-analisis-de-datos.md
+- trucos-excel-graficos-dot-plot-representando-un-ranking-graficamente.md
 slug: la-mejor-posicion-de-r-en-tiobe
 tags: []
 title: La mejor posición de R en tiobe

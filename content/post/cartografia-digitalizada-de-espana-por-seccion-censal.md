@@ -5,6 +5,13 @@ categories:
 - Mapas
 - R
 date: '2016-06-15T15:31:46-05:00'
+lastmod: '2025-07-13T15:54:45.169618'
+related:
+- libreria-mapspain-en-rstats-mapas-estaticos-de-espana.md
+- mapas-municipales-de-argentina-con-r.md
+- mapas-municipales-de-espana-con-excel-y-qgis.md
+- mapa-de-espana-por-provincias-en-html.md
+- mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel.md
 slug: cartografia-digitalizada-de-espana-por-seccion-censal
 tags:
 - mapa españa

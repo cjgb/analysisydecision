@@ -5,6 +5,13 @@ categories:
 - Formación
 - Trucos
 date: '2013-11-05T11:09:09-05:00'
+lastmod: '2025-07-13T16:07:05.692082'
+related:
+- truco-excel-repetir-un-campo-a-partir-de-otro-que-define-el-numero-de-repeticiones.md
+- trucos-excel-multiples-campos-calculados-en-una-tabla-dinamica.md
+- macros-sas-agrupando-variables-categoricas.md
+- trucos-sas-operaciones-con-tablas-de-dimensiones-con-sas.md
+- truco-excel-dividir-una-variable-cuantitativa-en-tramos.md
 slug: truco-excel-agrupar-valores-en-un-campo-de-una-tabla-dinamica
 tags:
 - tabla dinamica

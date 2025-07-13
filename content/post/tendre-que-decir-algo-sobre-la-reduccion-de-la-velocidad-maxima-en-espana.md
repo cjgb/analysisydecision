@@ -4,6 +4,13 @@ categories:
 - Monográficos
 - Sin catergoría
 date: '2011-02-28T14:49:28-05:00'
+lastmod: '2025-07-13T16:06:30.432000'
+related:
+- bajar-los-tipos-a-la-japonesa-al-0.md
+- internet-of-things-en-el-sector-asegurador.md
+- con-los-vehiculos-autonomos-me-quedo-sin-trabajo-o-no.md
+- tantarantan-que-te-han-visto-pepe-tantarantan-que-te-han-visto-juan.md
+- mas-recortes-para-la-ciencia-espanola.md
 slug: tendre-que-decir-algo-sobre-la-reduccion-de-la-velocidad-maxima-en-espana
 tags: []
 title: Tendré que decir algo sobre la reducción de la velocidad máxima en España

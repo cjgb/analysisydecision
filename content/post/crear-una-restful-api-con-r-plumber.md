@@ -5,6 +5,13 @@ categories:
 - Monográficos
 - R
 date: '2018-11-07T16:59:31-05:00'
+lastmod: '2025-07-13T15:55:27.835316'
+related:
+- juego-de-modelos-de-regresion-con-r.md
+- manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
+- arboles-de-decision-con-sas-base-con-r-por-supuesto.md
+- resolucion-del-juego-de-modelos-con-r.md
+- trucos-r-llevar-a-sas-las-reglas-de-un-arbol-de-decision.md
 slug: crear-una-restful-api-con-r-plumber
 tags:
 - plumber

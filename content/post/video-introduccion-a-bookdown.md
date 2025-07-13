@@ -4,6 +4,13 @@ categories:
 - R
 - video
 date: '2021-12-27T12:38:22-05:00'
+lastmod: '2025-07-13T16:11:14.682811'
+related:
+- comienza-la-publicacion-del-ensayo-introduccion-a-la-estadistica-para-cientificos-de-datos.md
+- estadistica-para-cientificos-de-datos-con-r-introduccion.md
+- manual-introduccion-a-r-s-plus.md
+- mineria-de-datos-con-r-un-pequeno-paseo.md
+- analisisydecision-se-une-a-scout-analyst-primer-curso-de-estadistica-para-analistas.md
 slug: video-introduccion-a-bookdown
 tags:
 - bookdown

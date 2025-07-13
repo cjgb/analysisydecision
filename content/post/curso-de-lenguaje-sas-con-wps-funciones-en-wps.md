@@ -5,6 +5,13 @@ categories:
 - SAS
 - WPS
 date: '2011-01-15T17:41:17-05:00'
+lastmod: '2025-07-13T15:55:45.509376'
+related:
+- macros-sas-limpiar-una-cadena-de-caracteres.md
+- curso-de-lenguaje-sas-con-wps-variables.md
+- curso-de-lenguaje-sas-con-wps-lectura-de-ficheros-de-texto.md
+- trucos-sas-eliminacion-de-espacios-en-blanco.md
+- truco-sas-funcion-para-contar-caracteres.md
 slug: curso-de-lenguaje-sas-con-wps-funciones-en-wps
 tags: []
 title: Curso de lenguaje SAS con WPS. Funciones en WPS

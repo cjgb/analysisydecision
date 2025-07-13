@@ -5,6 +5,13 @@ categories:
 - Formación
 - Monográficos
 date: '2011-10-28T16:39:05-05:00'
+lastmod: '2025-07-13T15:54:46.747586'
+related:
+- trucos-excel-graficos-dot-plot-representando-un-ranking-graficamente.md
+- trucos-excel-poner-etiquetas-en-graficos-de-dispersion.md
+- begraphic-un-add-in-para-excel-muy-interesante.md
+- graficos-de-velocimetros-con-excel-hechos-con-begraphic.md
+- trucos-excel-graficos-con-caracteres.md
 slug: chart-tools-un-add-in-imprescindible-para-excel
 tags:
 - etiquetas

@@ -4,6 +4,13 @@ categories:
 - Modelos
 - SAS
 date: '2012-11-15T08:55:47-05:00'
+lastmod: '2025-07-13T16:04:10.790113'
+related:
+- que-pasa-si-uso-una-regresion-de-poisson-en-vez-de-una-regresion-logistica.md
+- interpretacion-de-los-parametros-de-un-modelo-glm.md
+- manual-curso-introduccion-de-r-capitulo-18-modelos-de-regresion-de-poisson.md
+- numeros-aleatorios-con-sas.md
+- atentos-a-los-intervalos-de-confianza.md
 slug: parametro-asociado-a-una-poisson-con-sas
 tags: []
 title: Parámetro asociado a una Poisson con SAS

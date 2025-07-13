@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Formación
 date: '2025-02-06T07:10:45-05:00'
+lastmod: '2025-07-13T15:57:53.183564'
+related:
+- el-ano-2010-para-analisisydecision.md
+- nace-datanalyticswordpresscom.md
+- el-ano-2009-para-analisis-y-decision.md
+- contenidos-para-octubre-de-ayd.md
+- nace-analisisydecision.md
 slug: fin
 tags: []
 title: Fin

@@ -4,6 +4,13 @@ categories:
 - Business Intelligence
 - Formación
 date: '2010-12-03T17:42:03-05:00'
+lastmod: '2025-07-13T16:03:02.865380'
+related:
+- montemos-un-sistema-de-informacion-en-nuestro-equipo-iii.md
+- montemos-un-sistema-de-informacion-en-nuestro-equipo-i.md
+- univariantes-de-campos-de-nuestra-bbdd-con-kettle.md
+- manual-curso-introduccion-de-r-capitulo-5-lectura-avanzada-de-datos.md
+- curso-de-lenguaje-sas-con-wps-que-hace-el-paso-data.md
 slug: montemos-un-sistema-de-informacion-en-nuestro-equipo-ii
 tags:
 - importar csv

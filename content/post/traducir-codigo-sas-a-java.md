@@ -4,6 +4,13 @@ categories:
 - Data Mining
 - SAS
 date: '2009-11-14T09:29:18-05:00'
+lastmod: '2025-07-13T16:06:49.007918'
+related:
+- en-breve-revision-de-wps-clonico-de-sas.md
+- acercamiento-a-wps-migrando-desde-sas.md
+- nuevo-entorno-para-la-gestion-de-la-informacion.md
+- sigo-migrando-de-sas-a-wps.md
+- wps-en-el-mercado-espanol.md
 slug: traducir-codigo-sas-a-java
 tags:
 - SAS Java WPS

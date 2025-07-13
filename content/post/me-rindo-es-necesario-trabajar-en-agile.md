@@ -5,6 +5,13 @@ categories:
 - Monográficos
 - Opinión
 date: '2019-12-23T10:44:10-05:00'
+lastmod: '2025-07-13T16:02:25.487005'
+related:
+- de-actuario-a-cientifico-de-datos.md
+- gestores-de-informacion-de-la-banca-comercial-profesionales-imprescindibles.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-con-r-capitulo-2-datos.md
+- de-estadistico-a-minero-de-datos-a-cientifico-de-datos.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-16-modelizacion-estadistica-conociendo-los-datos.md
 slug: me-rindo-es-necesario-trabajar-en-agile
 tags: []
 title: Me rindo, es necesario trabajar en Agile

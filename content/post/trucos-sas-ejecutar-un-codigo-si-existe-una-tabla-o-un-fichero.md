@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2010-11-10T12:04:37-05:00'
+lastmod: '2025-07-13T16:09:50.603290'
+related:
+- macros-faciles-de-sas-determinar-si-existe-una-variable-en-un-dataset.md
+- trucos-sas-macrovariable-a-dataset.md
+- macros-sas-informe-de-un-dataset-en-excel.md
+- truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
+- macros-sas-dataset-a-data-frame-r.md
 slug: trucos-sas-ejecutar-un-codigo-si-existe-una-tabla-o-un-fichero
 tags: []
 title: Trucos SAS. Ejecutar un código si existe una tabla o un fichero

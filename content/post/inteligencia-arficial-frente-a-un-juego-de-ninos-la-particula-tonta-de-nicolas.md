@@ -7,6 +7,13 @@ categories:
 - Monográficos
 - R
 date: '2019-07-16T06:28:01-05:00'
+lastmod: '2025-07-13T15:58:42.067902'
+related:
+- resolucion-del-juego-de-modelos-con-r.md
+- computer-vision-con-r-opencv-de-andar-por-casa.md
+- juego-de-modelos-de-regresion-con-r.md
+- machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algoritmos-de-clasificacion.md
+- trucos-r-llevar-a-sas-las-reglas-de-un-arbol-de-decision.md
 slug: inteligencia-arficial-frente-a-un-juego-de-ninos-la-particula-tonta-de-nicolas
 tags: []
 title: Inteligencia Arficial frente a un juego de niños. La partícula tonta de Nicolás

@@ -4,6 +4,13 @@ categories:
 - Data Mining
 - Sin catergoría
 date: '2009-09-16T09:23:56-05:00'
+lastmod: '2025-07-13T16:04:59.770775'
+related:
+- entrenamiento-validacion-y-test.md
+- macros-sas-hacer-0-los-valores-missing-de-un-dataset.md
+- trucos-sas-informes-de-valores-missing.md
+- truco-sas-transformaciones-de-variables-con-arrays.md
+- trucos-sas-lista-de-variables-missing.md
 slug: '%c2%bfque-hacer-con-los-valores-perdidos-de-nuestras-variables'
 tags:
 - missing

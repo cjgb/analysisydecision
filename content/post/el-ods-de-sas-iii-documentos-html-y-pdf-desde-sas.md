@@ -4,6 +4,13 @@ categories:
 - Formación
 - SAS
 date: '2008-06-19T09:10:11-05:00'
+lastmod: '2025-07-13T15:57:05.751214'
+related:
+- el-ods-de-sas-ii-dataset-desde-output.md
+- el-ods-de-sas-i-elementos-del-output.md
+- truco-sas-crear-ficheros-excel-sin-proc-export-i.md
+- truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
+- macros-sas-informe-de-un-dataset-en-excel.md
 slug: el-ods-de-sas-iii-documentos-html-y-pdf-desde-sas
 tags: []
 title: El ODS de SAS (III). Documentos HTML y PDF desde SAS

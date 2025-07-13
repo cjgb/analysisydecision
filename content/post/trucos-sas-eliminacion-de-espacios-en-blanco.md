@@ -6,6 +6,13 @@ categories:
 - Trucos
 - WPS
 date: '2012-01-10T11:05:34-05:00'
+lastmod: '2025-07-13T16:09:52.069453'
+related:
+- espacios-en-sas.md
+- trucos-sas-borrando-blancos-innecesarios-con-compbl.md
+- macros-sas-limpiar-una-cadena-de-caracteres.md
+- truco-sas-limpieza-de-tabuladores-con-expresiones-regulares.md
+- macros-faciles-de-sas-normaliza-un-texto-rapido.md
 slug: trucos-sas-eliminacion-de-espacios-en-blanco
 tags:
 - ''

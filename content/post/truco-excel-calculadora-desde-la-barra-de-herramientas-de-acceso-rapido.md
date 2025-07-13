@@ -4,6 +4,13 @@ categories:
 - Excel
 - Trucos
 date: '2020-03-09T10:56:08-05:00'
+lastmod: '2025-07-13T16:07:08.726782'
+related:
+- trucos-excel-eliminar-referencias-del-tipo-importardatosdinamicos.md
+- trucos-excel-convertir-texto-en-un-resultado-o-formula.md
+- trucos-excel-multiples-campos-calculados-en-una-tabla-dinamica.md
+- truco-excel-unir-todos-los-libros-en-una-hoja.md
+- truco-excel-application-getopenfilename-el-explorador-de-archivos-sencillo-en-macro.md
 slug: truco-excel-calculadora-desde-la-barra-de-herramientas-de-acceso-rapido
 tags: []
 title: Truco Excel. Calculadora desde la barra de herramientas de acceso rápido

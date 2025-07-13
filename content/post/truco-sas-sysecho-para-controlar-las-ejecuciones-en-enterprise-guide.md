@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2013-09-11T01:16:07-05:00'
+lastmod: '2025-07-13T16:08:34.744252'
+related:
+- trucos-sas-ejecutar-un-codigo-si-existe-una-tabla-o-un-fichero.md
+- truco-sas-identificar-el-proceso-en-unix-con-sysjobid.md
+- monograficos-call-symput-imprescindible.md
+- abreviar-codigo-en-enterprise-guide.md
+- truco-excel-y-sas-ejecutar-sas-desde-macro-en-excel.md
 slug: truco-sas-sysecho-para-controlar-las-ejecuciones-en-enterprise-guide
 tags:
 - Enterprise Guide

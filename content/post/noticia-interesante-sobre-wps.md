@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Sin catergoría
 date: '2010-01-14T09:57:52-05:00'
+lastmod: '2025-07-13T16:03:34.370072'
+related:
+- sentencia-del-tribunal-de-justicia-de-la-ue-sobre-el-caso-wps-y-sas.md
+- en-breve-revision-de-wps-clonico-de-sas.md
+- comparativa-de-precio-wps-vs-sas.md
+- sas-vs-wps-diferencias-de-precio.md
+- wps-en-el-mercado-espanol.md
 slug: noticia-interesante-sobre-wps
 tags:
 - SAS

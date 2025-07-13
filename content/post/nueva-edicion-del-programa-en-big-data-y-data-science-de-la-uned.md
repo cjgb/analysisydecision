@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Formación
 date: '2020-09-29T01:31:13-05:00'
+lastmod: '2025-07-13T16:03:43.878701'
+related:
+- nueva-convocatoria-del-programa-master-en-big-data-y-data-science-de-la-uned.md
+- abierto-el-plazo-para-la-matricula-en-el-master-en-big-data-y-data-science-de-la-uned.md
+- quiero-aprender-big-data.md
+- nuevo-curso-de-estadistica-con-r.md
+- nos-hemos-terminado-de-reinventar-acabamos-con-el-data-mining-y-empezamos-con-el-big-data.md
 slug: nueva-edicion-del-programa-en-big-data-y-data-science-de-la-uned
 tags: []
 title: Nueva edición del Programa en Big Data y Data Science de la UNED

@@ -4,6 +4,13 @@ categories:
 - Banca
 - Monográficos
 date: '2009-03-22T15:43:13-05:00'
+lastmod: '2025-07-13T16:02:24.041797'
+related:
+- a-mi-me-preocupa-el-pequeno-ahorrador.md
+- lecciones-de-economia-de-un-ignorante-no-me-dan-hipoteca.md
+- lecciones-de-economia-de-un-ignorante-la-caixa-a-colocar-preferentes.md
+- experimento-un-prestamo-personal-para-invertir-en-bolsa.md
+- la-confianza-en-el-sector-financiero.md
 slug: me-preocupa-el-pequeno-ahorrador-ii
 tags:
 - ahorradores

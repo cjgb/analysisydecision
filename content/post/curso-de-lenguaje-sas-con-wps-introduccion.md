@@ -5,6 +5,13 @@ categories:
 - Formación
 - SAS
 date: '2010-05-21T18:38:59-05:00'
+lastmod: '2025-07-13T15:55:50.970985'
+related:
+- wps-en-el-mercado-espanol.md
+- acercamiento-a-wps-migrando-desde-sas.md
+- en-breve-revision-de-wps-clonico-de-sas.md
+- curso-de-lenguaje-sas-con-wps-introduccion-2.md
+- porque-me-gusta-r.md
 slug: curso-de-lenguaje-sas-con-wps-introduccion
 tags: []
 title: Curso de lenguaje SAS con WPS

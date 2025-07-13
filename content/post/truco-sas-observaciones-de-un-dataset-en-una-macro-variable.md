@@ -4,6 +4,13 @@ categories:
 - SAS
 - Trucos
 date: '2008-06-04T07:58:33-05:00'
+lastmod: '2025-07-13T16:08:26.869986'
+related:
+- macros-faciles-de-sas-numero-de-obsevaciones-de-un-dataset.md
+- macro-sas-numero-de-observaciones-de-un-dataset-en-una-macro.md
+- macros-sas-informe-de-un-dataset-en-excel.md
+- trucos-sas-macrovariable-a-dataset.md
+- truco-sas-proc-contents.md
 slug: truco-sas-observaciones-de-un-dataset-en-una-macro-variable
 tags: []
 title: Truco SAS. Observaciones de un dataset en una macro variable

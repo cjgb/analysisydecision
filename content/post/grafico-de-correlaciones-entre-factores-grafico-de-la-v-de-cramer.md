@@ -5,6 +5,13 @@ categories:
 - Modelos
 - R
 date: '2019-07-16T03:59:09-05:00'
+lastmod: '2025-07-13T15:58:08.137579'
+related:
+- v-de-cramer-con-r-analizar-la-correlacion-de-factores.md
+- grafico-de-correlaciones-entre-variables.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-11-analisis-bivariable.md
+- graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
+- monografico-analisis-de-factores-con-r-una-introduccion.md
 slug: grafico-de-correlaciones-entre-factores-grafico-de-la-v-de-cramer
 tags: []
 title: Gráfico de correlaciones entre factores. Gráfico de la V de Cramer

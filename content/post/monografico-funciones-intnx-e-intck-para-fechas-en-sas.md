@@ -5,6 +5,13 @@ categories:
 - Monográficos
 - SAS
 date: '2010-07-06T05:45:19-05:00'
+lastmod: '2025-07-13T16:02:51.532552'
+related:
+- trabajo-con-fechas-sas-funciones-fecha.md
+- curso-de-lenguaje-sas-con-wps-funciones-fecha.md
+- trucos-sas-numero-de-dias-de-un-mes.md
+- macros-sas-primer-y-ultimo-dia-del-mes-de-una-fecha-sas.md
+- trucos-sas-operar-con-fechas-yyyymm-tipicas-de-particiones-oracle.md
 slug: monografico-funciones-intnx-e-intck-para-fechas-en-sas
 tags:
 - funciones fecha en SAS

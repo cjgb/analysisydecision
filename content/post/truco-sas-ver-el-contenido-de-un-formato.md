@@ -6,6 +6,13 @@ categories:
 - Trucos
 - WPS
 date: '2013-02-06T09:17:26-05:00'
+lastmod: '2025-07-13T16:08:49.828261'
+related:
+- truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
+- trucos-sas-errores-y-formatos.md
+- truco-muy-facil-de-sas-leer-un-rango-de-una-hoja-excel.md
+- trucos-sas-macrovariable-a-dataset.md
+- truco-sas-proc-format-vs-formato-percent.md
 slug: truco-sas-ver-el-contenido-de-un-formato
 tags: []
 title: Truco SAS. Ver el contenido de un formato

@@ -5,6 +5,13 @@ categories:
 - Formación
 - Trucos
 date: '2019-07-12T10:18:11-05:00'
+lastmod: '2025-07-13T16:02:18.171630'
+related:
+- truco-excel-nuestra-propia-funcion-excel.md
+- truco-excel-repetir-celdas-en-funcion-de-los-valores-de-otra-celda.md
+- truco-excel-producto-cartesiano-de-dos-campos.md
+- trucos-excel-convertir-texto-en-un-resultado-o-formula.md
+- trucos-sas-calcular-percentiles-como-excel-o-r.md
 slug: medias-ponderadas-en-excel-crear-tu-propia-funcion
 tags: []
 title: Medias ponderadas en Excel. Crear tu propia función

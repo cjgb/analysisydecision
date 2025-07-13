@@ -7,6 +7,13 @@ categories:
 - R
 - Seguros
 date: '2016-05-29T13:42:45-05:00'
+lastmod: '2025-07-13T15:53:41.700577'
+related:
+- como-obtener-los-centroides-de-municipios-con-sas-mapas-con-sgplot.md
+- identificar-los-municipios-costeros-y-limitrofes-de-espana-con-r.md
+- mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel.md
+- representar-poligonos-de-voronoi-dentro-de-un-poligono.md
+- libreria-mapspain-en-rstats-mapas-estaticos-de-espana.md
 slug: adyacencia-de-poligonos-con-el-paquete-spdep-de-r
 tags:
 - geolocalizacion

@@ -5,6 +5,13 @@ categories:
 - Modelos
 - SAS
 date: '2012-05-07T08:36:46-05:00'
+lastmod: '2025-07-13T16:06:34.031708'
+related:
+- test-de-bondad-de-ajuste-con-sas.md
+- macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
+- truco-sas-categorizar-variables-continuas.md
+- trucos-sas-variables-dummy-de-una-variable-continua.md
+- determinar-el-mimino-tamano-muestral-para-detectar-un-cambio-en-la-fraccion-no-conforme.md
 slug: test-de-levene-con-sas
 tags:
 - ''

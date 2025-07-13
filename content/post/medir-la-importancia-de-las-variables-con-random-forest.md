@@ -6,6 +6,13 @@ categories:
 - Modelos
 - R
 date: '2011-01-08T16:46:55-05:00'
+lastmod: '2025-07-13T16:02:21.152679'
+related:
+- trucos-sas-medir-la-importancia-de-las-variables-en-nuestro-modelo-de-regresion-logistica.md
+- variables-categoricas-en-cajas-treemap-con-r.md
+- macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
+- medir-la-importancia-de-las-variables-en-una-red-neuronal-con-r.md
+- monografico-arboles-de-decision-con-party.md
 slug: medir-la-importancia-de-las-variables-con-random-forest
 tags:
 - clasificacion

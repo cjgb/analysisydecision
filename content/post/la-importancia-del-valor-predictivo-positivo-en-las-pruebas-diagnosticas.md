@@ -5,6 +5,13 @@ categories:
 - Modelos
 - video
 date: '2020-09-09T05:58:05-05:00'
+lastmod: '2025-07-13T15:59:24.275327'
+related:
+- evaluando-la-capacidad-predictiva-de-mi-modelo-tweedie.md
+- que-hacer-con-los-valores-perdidos-de-nuestras-variables.md
+- entrenamiento-validacion-y-test.md
+- principales-elementos-en-las-pruebas-diagnosticas.md
+- el-sobremuestreo-mejora-mi-estimacion.md
 slug: la-importancia-del-valor-predictivo-positivo-en-las-pruebas-diagnosticas
 tags: []
 title: La importancia del valor predictivo positivo en las pruebas diagnósticas

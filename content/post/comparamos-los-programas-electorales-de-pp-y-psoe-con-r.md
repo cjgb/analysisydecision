@@ -5,6 +5,13 @@ categories:
 - Monográficos
 - R
 date: '2011-11-03T15:56:40-05:00'
+lastmod: '2025-07-13T15:55:08.824784'
+related:
+- analisis-del-programa-electoral-del-partido-popular-antes-de-las-elecciones-en-espana.md
+- analisis-de-textos-con-r.md
+- el-debate-politico-o-como-analizar-textos-con-wps.md
+- ejemplo-de-web-scraping-con-r-la-formacion-de-los-diputados-del-congreso.md
+- longitud-de-las-frases-del-quijote-con-rstats.md
 slug: comparamos-los-programas-electorales-de-pp-y-psoe-con-r
 tags:
 - cloud

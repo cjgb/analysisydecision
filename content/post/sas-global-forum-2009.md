@@ -5,6 +5,13 @@ categories:
 - SAS
 - Sin catergoría
 date: '2009-04-12T12:52:16-05:00'
+lastmod: '2025-07-13T16:05:46.934441'
+related:
+- sas-investiga-la-tecnologia-de-r.md
+- un-nuevo-blog-sobre-sas-en-espanol.md
+- sas-no-se-vende.md
+- sas-comienza-a-fijarse-en-r.md
+- que-compania-esta-entre-las-12-companies-to-watch-in-2010.md
 slug: sas-global-forum-2009
 tags: []
 title: SAS Global Forum 2009

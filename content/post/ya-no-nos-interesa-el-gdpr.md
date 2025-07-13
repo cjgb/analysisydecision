@@ -4,6 +4,13 @@ categories:
 - Opinión
 - Sin catergoría
 date: '2019-02-20T05:24:28-05:00'
+lastmod: '2025-07-13T16:11:29.340148'
+related:
+- proyectos-de-nosql-en-espana.md
+- facebook-y-su-facebookgate-son-buenas-noticias-para-el-data-scientist.md
+- de-estadistico-a-minero-de-datos-a-cientifico-de-datos.md
+- tantarantan-que-te-han-visto-pepe-tantarantan-que-te-han-visto-juan.md
+- data-mining-vs-bigdata-de-momento-con-google-trends.md
 slug: ya-no-nos-interesa-el-gdpr
 tags: []
 title: Ya no nos interesa el GDPR

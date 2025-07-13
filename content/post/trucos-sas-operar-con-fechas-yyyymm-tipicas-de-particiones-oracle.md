@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2008-10-01T03:21:13-05:00'
+lastmod: '2025-07-13T16:10:23.691485'
+related:
+- bucle-de-fechas-con-sas-para-tablas-particionadas.md
+- trucos-sas-numero-de-dias-de-un-mes.md
+- trabajo-con-fechas-sas-funciones-fecha.md
+- macros-sas-primer-y-ultimo-dia-del-mes-de-una-fecha-sas.md
+- trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados.md
 slug: trucos-sas-operar-con-fechas-yyyymm-tipicas-de-particiones-oracle
 tags: []
 title: Trucos SAS. Operar con fechas YYYYMM típicas de particiones Oracle

@@ -4,6 +4,13 @@ categories:
 - Formación
 - R
 date: '2020-10-26T10:35:18-05:00'
+lastmod: '2025-07-13T15:54:36.376349'
+related:
+- trucos-r-funcion-ddply-del-paquete-plyr.md
+- data-management-con-dplyr.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-3-manejo-de-datos-con-r.md
+- trucos-sas-trasponer-con-sql-para-torpes.md
+- truco-sas-categorizar-variables-continuas.md
 slug: calcular-porcentajes-por-grupos-con-dplyr
 tags:
 - dplyr

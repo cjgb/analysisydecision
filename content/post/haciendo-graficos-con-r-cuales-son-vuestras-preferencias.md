@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - R
 date: '2010-11-14T11:05:56-05:00'
+lastmod: '2025-07-13T15:58:23.081411'
+related:
+- descubriendo-ggplot2-421.md
+- graficos-de-burbuja-con-r.md
+- truco-r-paletas-de-colores-en-r.md
+- manual-curso-introduccion-de-r-capitulo-7-funciones-graficas-basicas-en-r.md
+- grafico-con-eje-secundario-en-ggplot2.md
 slug: haciendo-graficos-con-r-%c2%bfcuales-son-vuestras-preferencias
 tags:
 - ggplot2

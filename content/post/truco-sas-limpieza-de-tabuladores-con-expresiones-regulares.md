@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Formación
 date: '2016-11-03T03:53:10-05:00'
+lastmod: '2025-07-13T16:08:22.192499'
+related:
+- trucos-sas-eliminar-etiquetas-en-los-conjunto-de-datos-sas.md
+- macros-sas-limpiar-una-cadena-de-caracteres.md
+- macros-faciles-de-sas-normaliza-un-texto-rapido.md
+- trucos-sas-eliminacion-de-espacios-en-blanco.md
+- truco-sas-limpiar-un-fichero-de-texto-con-sas.md
 slug: truco-sas-limpieza-de-tabuladores-con-expresiones-regulares
 tags: []
 title: Truco SAS. Limpieza de tabuladores con expresiones regulares

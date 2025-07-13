@@ -5,6 +5,13 @@ categories:
 - Consultoría
 - R
 date: '2020-04-09T11:55:59-05:00'
+lastmod: '2025-07-13T15:57:24.735166'
+related:
+- objetos-hash-para-ordenar-tablas-sas.md
+- laboratorio-de-codigo-sas-ordenaciones-con-hash-vs-proc-sort.md
+- trucos-sas-porque-hay-que-usar-objetos-hash.md
+- analisis-de-textos-con-r.md
+- trucos-r-llevar-a-sas-las-reglas-de-un-arbol-de-decision.md
 slug: entender-una-blockchain-con-r
 tags:
 - digest

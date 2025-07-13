@@ -4,6 +4,13 @@ categories:
 - Formación
 - SAS
 date: '2010-04-07T15:40:40-05:00'
+lastmod: '2025-07-13T16:10:50.709366'
+related:
+- un-acercamiento-a-graph-annotate-macros.md
+- un-acercamiento-a-graph-sentencias-graficas.md
+- un-acercamiento-a-graph-primeros-graficos-con-sas.md
+- un-acercamiento-a-graph-proc-gchart.md
+- un-acercamiento-a-graph-ods-graphs-proc-sgplot.md
 slug: un-acercamiento-a-graph-proc-ganno
 tags:
 - ''

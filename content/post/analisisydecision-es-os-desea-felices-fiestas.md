@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Formación
 date: '2020-12-22T02:00:25-05:00'
+lastmod: '2025-07-13T15:54:02.127781'
+related:
+- graficos-dinamicos-en-r-con-la-funcion-text.md
+- analisis-del-discurso-de-navidad-del-rey-de-espana-2013.md
+- sas-te-felicita-la-navidad.md
+- como-me-encuentro-hoy-con-rstats.md
+- truco-r-paletas-de-colores-en-r.md
 slug: analisisydecision-es-os-desea-felices-fiestas
 tags: []
 title: Analisisydecision.es os desea felices fiestas

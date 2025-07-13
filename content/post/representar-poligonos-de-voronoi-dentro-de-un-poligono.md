@@ -6,6 +6,13 @@ categories:
 - Mapas
 - R
 date: '2021-11-29T08:11:27-05:00'
+lastmod: '2025-07-13T16:05:20.541593'
+related:
+- incluir-subplot-en-mapa-con-ggplot.md
+- diagramas-de-voronoi-con-spatial-de-python.md
+- como-obtener-los-centroides-de-municipios-con-sas-mapas-con-sgplot.md
+- identificar-los-municipios-costeros-y-limitrofes-de-espana-con-r.md
+- adyacencia-de-poligonos-con-el-paquete-spdep-de-r.md
 slug: representar-poligonos-de-voronoi-dentro-de-un-poligono
 tags: []
 title: Representar polígonos de Voronoi dentro de un polígono

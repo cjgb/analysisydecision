@@ -6,6 +6,13 @@ categories:
 - Python
 - Seguros
 date: '2019-07-01T11:53:55-05:00'
+lastmod: '2025-07-13T15:54:39.271434'
+related:
+- graficos-de-calendarios-con-series-temporales.md
+- trabajo-con-fechas-sas-funciones-fecha.md
+- curso-de-lenguaje-sas-con-wps-funciones-fecha.md
+- trucos-sas-operar-con-fechas-yyyymm-tipicas-de-particiones-oracle.md
+- bucle-de-fechas-con-sas-para-tablas-particionadas.md
 slug: calendario-dias-laborales-pandas
 tags: []
 title: Calendario de días laborales con Pandas

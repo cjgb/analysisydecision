@@ -7,6 +7,13 @@ categories:
 - R
 - Trucos
 date: '2020-09-14T04:21:43-05:00'
+lastmod: '2025-07-13T16:00:11.884213'
+related:
+- truco-malo-de-r-leer-datos-desde-excel.md
+- trucos-r-leer-de-excel-via-rodbc.md
+- seguimiento-del-coronavirus-en-espana-por-comunidad-autonoma-extraer-informacion-de-un-pdf-con-r.md
+- evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso.md
+- truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
 slug: leer-una-tabla-en-pdf-con-excel-a-traves-de-r
 tags: []
 title: Leer una tabla en PDF con Excel (a través de R)

@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2009-02-05T12:56:55-05:00'
+lastmod: '2025-07-13T16:10:05.349428'
+related:
+- macro-sas-variables-de-un-dataset-en-una-macro-variable.md
+- trucos-sas-union-de-multiples-tablas-sas-con-un-nombre-parecido.md
+- trucos-sas-eliminar-etiquetas-en-los-conjunto-de-datos-sas.md
+- trucos-sas-macrovariable-a-dataset.md
+- truco-sas-tablas-de-una-libreria-en-una-macro-variable.md
 slug: trucos-sas-lista-de-datasets-en-macro-variable
 tags: []
 title: Trucos SAS. Lista de datasets en macro variable

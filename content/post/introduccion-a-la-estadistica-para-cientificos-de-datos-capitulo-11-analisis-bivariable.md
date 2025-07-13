@@ -8,6 +8,13 @@ categories:
 - Monográficos
 - R
 date: '2022-12-08T13:02:59-05:00'
+lastmod: '2025-07-13T15:58:48.818021'
+related:
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-6-descripcion-numerica-de-variables.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-15-modelos-glm-regresion-logistica-y-regresion-de-poisson.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
+- monografico-analisis-de-factores-con-r-una-introduccion.md
+- monografico-regresion-logistica-con-r.md
 slug: introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-11-analisis-bivariable
 tags: []
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 11. Análisis

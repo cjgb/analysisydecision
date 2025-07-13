@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Formación
 date: '2009-05-26T08:02:06-05:00'
+lastmod: '2025-07-13T16:04:15.133569'
+related:
+- lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
+- lecciones-de-economia-de-un-ignorante-la-caixa-a-colocar-preferentes.md
+- una-fabulilla-sobre-prim-con-multiples-moralejas.md
+- a-mi-me-preocupa-el-pequeno-ahorrador.md
+- busca-la-relacion-deuda-subordinada-y-cajas-catalanas.md
 slug: participaciones-preferentes-de-las-cajas-de-ahorro
 tags: []
 title: Participaciones Preferentes de las Cajas de Ahorro

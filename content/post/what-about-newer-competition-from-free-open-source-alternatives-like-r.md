@@ -6,6 +6,13 @@ categories:
 - SAS
 - Sin catergoría
 date: '2011-07-16T06:36:14-05:00'
+lastmod: '2025-07-13T16:11:19.112459'
+related:
+- porque-me-gusta-r.md
+- el-futuro-del-analisis-de-datos-pasa-por-r.md
+- que-nos-pasa-con-r-de-nuevo.md
+- cuando-paralelizar-procesos-con-r-era-otra-cosa.md
+- r-cayendo-en-la-lista-tiobe.md
 slug: what-about-newer-competition-from-free-open-source-alternatives-like-r
 tags: []
 title: What about newer competition from free, open-source alternatives like R?

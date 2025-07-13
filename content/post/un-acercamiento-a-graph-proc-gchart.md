@@ -4,6 +4,13 @@ categories:
 - Formación
 - SAS
 date: '2010-04-05T13:52:21-05:00'
+lastmod: '2025-07-13T16:10:52.327393'
+related:
+- un-acercamiento-a-graph-sentencias-graficas.md
+- un-acercamiento-a-graph-primeros-graficos-con-sas.md
+- un-acercamiento-a-graph-ods-graphs-proc-sgplot.md
+- un-acercamiento-a-graph-proc-ganno.md
+- graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
 slug: un-acercamiento-a-graph-proc-gchart
 tags:
 - GRAPH

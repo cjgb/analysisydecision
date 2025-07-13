@@ -5,6 +5,13 @@ categories:
 - Formación
 - Trucos
 date: '2010-06-05T05:03:38-05:00'
+lastmod: '2025-07-13T16:09:02.962601'
+related:
+- creando-un-mapa-en-excel-con-archivos-svg.md
+- mapas-municipales-de-espana-con-excel-y-qgis.md
+- mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel.md
+- trucos-excel-mapa-de-espana-por-provincias.md
+- trucos-excel-mapa-de-mexico-por-estados.md
 slug: trucos-excel-mapa-de-espana-por-comunidades-autonomas
 tags:
 - Inkscape

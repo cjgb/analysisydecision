@@ -5,6 +5,13 @@ categories:
 - Formación
 - R
 date: '2022-03-15T10:44:49-05:00'
+lastmod: '2025-07-13T15:54:03.650654'
+related:
+- estadistica-para-cientificos-de-datos-con-r-introduccion.md
+- nuevo-curso-de-estadistica-con-r.md
+- curso-de-analisis-estadistico-de-datos-omicos-con-r.md
+- manual-introduccion-a-r-s-plus.md
+- curso-de-lenguaje-sas-con-wps-introduccion.md
 slug: analisisydecision-se-une-a-scout-analyst-primer-curso-de-estadistica-para-analistas
 tags: []
 title: analisisydecision se une a Scout Analyst. Primer curso de Estadística para

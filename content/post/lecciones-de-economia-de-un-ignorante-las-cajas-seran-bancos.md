@@ -4,6 +4,13 @@ categories:
 - Banca
 - Sin catergoría
 date: '2009-12-30T09:00:41-05:00'
+lastmod: '2025-07-13T15:59:51.428646'
+related:
+- lecciones-de-economia-de-un-ignorante-la-privatizacion-de-las-cajas-sera-una-chapuza.md
+- lecciones-de-economia-de-un-ignorante-la-caixa-a-colocar-preferentes.md
+- lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
+- lecciones-de-economia-de-un-ignorante-por-que-no-hablo-de-la-batalla-de-los-depositos.md
+- participaciones-preferentes-de-las-cajas-de-ahorro.md
 slug: lecciones-de-economia-de-un-ignorante-las-cajas-seran-bancos
 tags:
 - bancos

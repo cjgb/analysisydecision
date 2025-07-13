@@ -5,6 +5,13 @@ categories:
 - Monográficos
 - R
 date: '2019-02-27T08:12:44-05:00'
+lastmod: '2025-07-13T16:00:21.403594'
+related:
+- analisis-de-textos-con-r.md
+- beatifulsoup-web-scraping-con-python-o-como-las-redes-sociales-estan-cambiando-mi-forma-de-escribir.md
+- comparamos-los-programas-electorales-de-pp-y-psoe-con-r.md
+- descubriendo-ggplot2-421.md
+- ejemplo-de-web-scraping-con-r-la-formacion-de-los-diputados-del-congreso.md
 slug: longitud-de-las-frases-del-quijote-con-rstats
 tags: []
 title: 'Longitud de las frases del Quijote con #rstats'

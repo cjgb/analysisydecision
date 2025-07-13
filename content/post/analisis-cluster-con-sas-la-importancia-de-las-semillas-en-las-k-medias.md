@@ -9,6 +9,13 @@ categories:
 - Trucos
 - WPS
 date: '2013-04-15T10:00:29-05:00'
+lastmod: '2025-07-13T15:53:55.986896'
+related:
+- knn-con-sas-mejorando-k-means.md
+- un-peligro-del-analisis-cluster.md
+- cluster-svm.md
+- macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
+- manual-curso-introduccion-de-r-capitulo-17-analisis-cluster-con-r-y-iii.md
 slug: analisis-cluster-con-sas-la-importancia-de-las-semillas-en-las-k-medias
 tags:
 - k-medias

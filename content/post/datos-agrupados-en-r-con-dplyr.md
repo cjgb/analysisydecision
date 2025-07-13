@@ -5,6 +5,13 @@ categories:
 - R
 - Trucos
 date: '2020-03-26T11:33:57-05:00'
+lastmod: '2025-07-13T15:56:08.695434'
+related:
+- trucos-r-funcion-ddply-del-paquete-plyr.md
+- pasando-de-sas-a-r-primer-y-ultimo-elemento-de-un-campo-agrupado-de-un-data-frame.md
+- creacion-de-ranking-con-r.md
+- trucos-simples-para-rstats.md
+- calcular-porcentajes-por-grupos-con-dplyr.md
 slug: datos-agrupados-en-r-con-dplyr
 tags:
 - dplyr

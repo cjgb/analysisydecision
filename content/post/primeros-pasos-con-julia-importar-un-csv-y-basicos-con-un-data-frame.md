@@ -5,6 +5,13 @@ categories:
 - Julia
 - Monográficos
 date: '2021-08-12T15:00:56-05:00'
+lastmod: '2025-07-13T16:04:35.098113'
+related:
+- data-management-basico-con-pandas.md
+- data-management-con-dplyr.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-3-manejo-de-datos-con-r.md
+- trabajando-con-r-y-julia-desde-rstudio.md
+- manejo-de-datos-basico-con-python-datatable.md
 slug: primeros-pasos-con-julia-importar-un-csv-y-basicos-con-un-data-frame
 tags:
 - Julia

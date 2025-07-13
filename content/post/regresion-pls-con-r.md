@@ -5,6 +5,13 @@ categories:
 - Modelos
 - R
 date: '2014-08-18T02:09:05-05:00'
+lastmod: '2025-07-13T16:05:16.176374'
+related:
+- regresion-ridge-o-contraida-con-r.md
+- manual-curso-introduccion-de-r-capitulo-14-introduccion-al-calculo-matricial-con-analisis-de-componentes-principales.md
+- manual-curso-introduccion-de-r-capitulo-10-funciones-graficas-en-regresion-lineal.md
+- manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
+- primeros-pasos-con-regresion-no-lineal-nls-con-r.md
 slug: regresion-pls-con-r
 tags: []
 title: Regresión PLS con R

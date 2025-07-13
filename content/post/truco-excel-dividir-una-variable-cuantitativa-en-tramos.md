@@ -5,6 +5,13 @@ categories:
 - Formación
 - Trucos
 date: '2012-11-20T11:14:21-05:00'
+lastmod: '2025-07-13T16:07:10.235216'
+related:
+- truco-excel-transponer-una-fila-en-varias-columnas-con-desref.md
+- truco-excel-repetir-celdas-en-funcion-de-los-valores-de-otra-celda.md
+- truco-excel-agrupar-valores-en-un-campo-de-una-tabla-dinamica.md
+- desref-para-trasponer-en-excel-varias-columnas.md
+- truco-excel-repetir-un-campo-a-partir-de-otro-que-define-el-numero-de-repeticiones.md
 slug: truco-excel-dividir-una-variable-cuantitativa-en-tramos
 tags:
 - contar

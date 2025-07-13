@@ -4,6 +4,13 @@ categories:
 - Monográficos
 - R
 date: '2019-09-18T12:48:13-05:00'
+lastmod: '2025-07-13T15:57:58.601395'
+related:
+- trucos-r-graficos-de-velocimetro-con-r.md
+- representar-poligonos-de-voronoi-dentro-de-un-poligono.md
+- graficos-dinamicos-en-r-con-la-funcion-text.md
+- descubriendo-ggplot2-421.md
+- manual-curso-introduccion-de-r-capitulo-7-funciones-graficas-basicas-en-r.md
 slug: geometria-basica-con-r-triangulos-circunferencias-estrellas-distancias-angulos
 tags:
 - learnGeom

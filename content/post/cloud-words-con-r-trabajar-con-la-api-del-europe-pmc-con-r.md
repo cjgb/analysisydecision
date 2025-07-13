@@ -6,6 +6,13 @@ categories:
 - Opinión
 - R
 date: '2020-01-19T15:48:28-05:00'
+lastmod: '2025-07-13T15:54:48.141840'
+related:
+- analisis-del-discurso-de-navidad-del-rey-de-espana-2013.md
+- puede-la-informacion-de-twitter-servir-para-tarificar-seguros.md
+- analisis-de-textos-con-r.md
+- manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-i.md
+- libreria-mapspain-en-rstats-mapas-estaticos-de-espana.md
 slug: cloud-words-con-r-trabajar-con-la-api-del-europe-pmc-con-r
 tags:
 - wordcloud

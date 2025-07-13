@@ -5,6 +5,13 @@ categories:
 - R
 - SAS
 date: '2010-04-01T17:36:22-05:00'
+lastmod: '2025-07-13T15:55:12.902139'
+related:
+- macros-sas-dataset-a-data-frame-r.md
+- trucos-sas-envio-de-email-con-data.md
+- curso-de-lenguaje-sas-con-wps-ejecuciones.md
+- truco-sas-como-leer-pc-axis-con-sas.md
+- lectura-de-ficheros-sas7bdat-de-sas-directamente-con-r.md
 slug: comunicar-sas-con-r-creando-ejecutables-windows
 tags:
 - ''

@@ -4,6 +4,13 @@ categories:
 - Formación
 - Python
 date: '2017-05-27T12:33:54-05:00'
+lastmod: '2025-07-13T16:03:06.190018'
+related:
+- mosaic-plot-con-r.md
+- grafico-de-barras-y-lineas-con-python.md
+- leer-fichero-de-texto-de-ancho-fijo-con-python-pandas.md
+- grafico-de-correlaciones-entre-variables.md
+- truco-r-paletas-de-colores-en-r.md
 slug: mosaic-plot-con-python
 tags: []
 title: Mosaic plot con python

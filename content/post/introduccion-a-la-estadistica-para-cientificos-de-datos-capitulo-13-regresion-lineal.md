@@ -5,6 +5,13 @@ categories:
 - Libro Estadística
 - R
 date: '2023-02-19T15:16:18-05:00'
+lastmod: '2025-07-13T15:58:51.531552'
+related:
+- primeros-pasos-con-regresion-no-lineal-nls-con-r.md
+- manual-curso-introduccion-de-r-capitulo-14-introduccion-al-calculo-matricial-con-analisis-de-componentes-principales.md
+- los-parametros-del-modelo-glm-como-relatividades-como-recargos-o-descuentos.md
+- regresion-con-redes-neuronales-en-r.md
+- manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
 slug: introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-13-regresion-lineal
 tags: []
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 13. Regresión

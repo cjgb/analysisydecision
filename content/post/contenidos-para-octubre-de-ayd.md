@@ -4,6 +4,13 @@ categories:
 - Business Intelligence
 - Sin catergoría
 date: '2008-09-21T15:41:46-05:00'
+lastmod: '2025-07-13T15:55:18.357458'
+related:
+- contenidos-web-analisis-informacion.md
+- ayd-2300-visitas-mensuales.md
+- 1500-visitas-mensuales.md
+- el-ano-2009-para-analisis-y-decision.md
+- el-ano-2010-para-analisisydecision.md
 slug: contenidos-para-octubre-de-ayd
 tags:
 - Google Analytics

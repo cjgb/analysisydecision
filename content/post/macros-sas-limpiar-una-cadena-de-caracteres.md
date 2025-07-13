@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2010-04-29T10:33:32-05:00'
+lastmod: '2025-07-13T16:01:04.943263'
+related:
+- macros-faciles-de-sas-normaliza-un-texto-rapido.md
+- trucos-sas-eliminacion-de-espacios-en-blanco.md
+- truco-sas-funcion-para-contar-caracteres.md
+- macros-sas-contar-las-palabras-de-una-macro-variable.md
+- curso-de-lenguaje-sas-con-wps-funciones-en-wps.md
 slug: macros-sas-limpiar-una-cadena-de-caracteres
 tags:
 - compress

@@ -6,6 +6,13 @@ categories:
 - SAS
 - Trucos
 date: '2011-05-16T15:16:24-05:00'
+lastmod: '2025-07-13T16:00:49.968527'
+related:
+- macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
+- monograficos-call-symput-imprescindible.md
+- trucos-sas-calcular-percentiles-como-excel-o-r.md
+- trucos-sas-variables-dummy-de-una-variable-continua.md
+- trucos-sas-medir-la-importancia-de-las-variables-en-nuestro-modelo-de-regresion-logistica.md
 slug: macros-faciles-de-sas-eliminar-outliers-en-una-variable
 tags:
 - outliers

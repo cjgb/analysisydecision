@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Formación
 date: '2013-12-19T07:39:45-05:00'
+lastmod: '2025-07-13T15:56:54.832910'
+related:
+- estadistica-para-cientificos-de-datos-con-r-introduccion.md
+- muestrear-no-es-pecado.md
+- nuevo-curso-de-estadistica-con-r.md
+- recopilacion-data-science-cheat-sheet.md
+- analisis-del-discurso-de-navidad-del-rey-de-espana-2013.md
 slug: el-mejor-gestor-de-datos-del-mundo-es-de-cadiz
 tags: []
 title: El mejor gestor de datos del mundo es de Cádiz

@@ -4,6 +4,13 @@ categories:
 - Formación
 - SAS
 date: '2010-01-13T08:31:01-05:00'
+lastmod: '2025-07-13T16:11:08.780676'
+related:
+- las-cuentas-claras.md
+- trucos-sas-trasponer-con-sql-para-torpes.md
+- proc-sql-merge-set.md
+- macros-sas-agrupando-variables-categoricas.md
+- trucos-sas-variables-dummy-de-una-variable-continua.md
 slug: uso-de-case-en-proc-sql
 tags:
 - ''

@@ -4,6 +4,13 @@ categories:
 - Julia
 - R
 date: '2021-09-23T06:15:18-05:00'
+lastmod: '2025-07-13T16:06:40.607090'
+related:
+- r-python-reticulate.md
+- primeros-pasos-con-julia-importar-un-csv-y-basicos-con-un-data-frame.md
+- graficos-basicos-con-julia.md
+- estadistica-para-cientificos-de-datos-con-r-introduccion.md
+- evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso.md
 slug: trabajando-con-r-y-julia-desde-rstudio
 tags: []
 title: Trabajando con R y Julia desde RStudio

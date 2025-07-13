@@ -4,6 +4,13 @@ categories:
 - Consultoría
 - Sin catergoría
 date: '2008-09-18T09:14:36-05:00'
+lastmod: '2025-07-13T15:55:29.189112'
+related:
+- los-enemigos-del-canal-tradicional-de-venta-de-seguros.md
+- internet-of-things-en-el-sector-asegurador.md
+- tendre-que-decir-algo-sobre-la-reduccion-de-la-velocidad-maxima-en-espana.md
+- informe-2011-de-la-direccion-de-seguros-y-fondos-de-pensiones.md
+- consultor-particular-de-seguros.md
 slug: crecimiento-del-comercio-electronico-pero-del-comercio-electronico-de-siempre
 tags:
 - compra on-line

@@ -9,6 +9,13 @@ categories:
 - SAS
 - WPS
 date: '2011-07-12T11:17:20-05:00'
+lastmod: '2025-07-13T15:54:16.326620'
+related:
+- trucos-r-llevar-a-sas-las-reglas-de-un-arbol-de-decision.md
+- monografico-un-poco-de-proc-logistic.md
+- monografico-arboles-de-clasificacion-con-rpart.md
+- monografico-arboles-de-decision-con-party.md
+- monografico-paquete-de-r-nnet-para-modelos-de-redes-neuronales.md
 slug: arboles-de-decision-con-sas-base-con-r-por-supuesto
 tags:
 - ''

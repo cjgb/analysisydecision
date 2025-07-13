@@ -4,6 +4,13 @@ categories:
 - SAS
 - Trucos
 date: '2009-08-26T08:55:03-05:00'
+lastmod: '2025-07-13T16:08:17.256082'
+related:
+- truco-sas-sysecho-para-controlar-las-ejecuciones-en-enterprise-guide.md
+- trucos-sas-ejecutar-un-codigo-si-existe-una-tabla-o-un-fichero.md
+- truco-sas-observaciones-de-un-dataset-en-una-macro-variable.md
+- macros-faciles-de-sas-numero-de-obsevaciones-de-un-dataset.md
+- macros-faciles-de-sas-busca-duplicados.md
 slug: truco-sas-identificar-el-proceso-en-unix-con-sysjobid
 tags:
 - ''

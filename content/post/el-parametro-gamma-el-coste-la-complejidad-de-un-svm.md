@@ -9,6 +9,13 @@ categories:
 - Monográficos
 - R
 date: '2016-10-13T08:25:33-05:00'
+lastmod: '2025-07-13T15:57:08.491091'
+related:
+- monografico-clasificacion-con-svm-en-r.md
+- resolucion-del-juego-de-modelos-con-r.md
+- cluster-svm.md
+- machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algoritmos-de-clasificacion.md
+- obteniendo-los-parametros-de-mi-modelo-gam.md
 slug: el-parametro-gamma-el-coste-la-complejidad-de-un-svm
 tags:
 - SVM

@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Formación
 date: '2020-03-21T06:08:05-05:00'
+lastmod: '2025-07-13T16:06:52.073874'
+related:
+- trabajando-con-factores-en-r-attach-frente-a-within.md
+- recodificar-el-valor-de-un-factor-en-r.md
+- trucos-simples-para-rstats.md
+- trucos-r-de-string-a-dataframe-de-palabras.md
+- truco-r-eval-parse-y-paste-para-automatizar-codigo.md
 slug: transformar-todos-los-factores-a-caracter-de-mi-data-frame-de-r
 tags: []
 title: Transformar todos los factores a carácter de mi data frame de R

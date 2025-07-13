@@ -5,6 +5,13 @@ categories:
 - Python
 - Trucos
 date: '2018-08-25T09:22:01-05:00'
+lastmod: '2025-07-13T15:55:26.500038'
+related:
+- lectura-de-ficheros-sas7bdat-de-sas-directamente-con-r.md
+- trucos-sas-particionar-y-exportar-a-texto-un-dataset.md
+- truco-leer-sas7bdat-sin-sas.md
+- truco-sas-como-leer-pc-axis-con-sas.md
+- truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
 slug: crear-archivo-csv-desde-python
 tags:
 - sas7bdat

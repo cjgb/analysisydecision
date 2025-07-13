@@ -4,6 +4,13 @@ categories:
 - Business Intelligence
 - Consultoría
 date: '2008-06-24T08:10:24-05:00'
+lastmod: '2025-07-13T15:55:19.705137'
+related:
+- contenidos-para-octubre-de-ayd.md
+- ayd-2300-visitas-mensuales.md
+- 1500-visitas-mensuales.md
+- el-ano-2009-para-analisis-y-decision.md
+- el-ano-2010-para-analisisydecision.md
 slug: contenidos-web-analisis-informacion
 tags: []
 title: Análisis con Google Analytics

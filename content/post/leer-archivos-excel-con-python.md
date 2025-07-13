@@ -4,6 +4,13 @@ categories:
 - Monográficos
 - Python
 date: '2020-04-01T16:19:46-05:00'
+lastmod: '2025-07-13T16:00:09.165233'
+related:
+- creando-archivos-excel-desde-python-con-pandas-y-excelwriter.md
+- leer-fichero-de-texto-de-ancho-fijo-con-python-pandas.md
+- lectura-de-archivos-csv-con-python-y-pandas.md
+- proyecto-text-mining-con-excel-iv.md
+- truco-excel-abrir-multiples-libros-de-excel-en-distintas-hojas-de-un-nuevo-libro.md
 slug: leer-archivos-excel-con-python
 tags:
 - Pandas

@@ -5,6 +5,13 @@ categories:
 - Modelos
 - R
 date: '2009-04-23T15:44:07-05:00'
+lastmod: '2025-07-13T16:01:23.873711'
+related:
+- manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-ii.md
+- manual-curso-introduccion-de-r-capitulo-17-analisis-cluster-con-r-y-iii.md
+- mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel.md
+- arboles-de-decision-con-sas-base-con-r-por-supuesto.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-9-analisis-exploratorio-de-datos-eda.md
 slug: manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-i
 tags: []
 title: 'Manual. Curso introducción de R. Capítulo 15: Análisis Cluster con R (I)'

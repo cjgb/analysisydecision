@@ -5,6 +5,13 @@ categories:
 - Formación
 - R
 date: '2020-10-09T06:10:39-05:00'
+lastmod: '2025-07-13T15:57:40.990333'
+related:
+- trucos-simples-para-rstats.md
+- los-principales-problemas-de-los-espanoles-animaciones-con-r-y-gganimate.md
+- porque-me-gusta-r.md
+- macros-sas-dataset-a-data-frame-r.md
+- estadistica-para-cientificos-de-datos-con-r-introduccion.md
 slug: evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso
 tags: []
 title: Evita problemas con Excel desde R. De tocar el dato a un proceso

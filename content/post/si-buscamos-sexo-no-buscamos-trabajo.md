@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Formación
 date: '2009-01-27T08:46:34-05:00'
+lastmod: '2025-07-13T16:06:13.182247'
+related:
+- personalizar-los-contactos-comerciales.md
+- data-mining-vs-bigdata-de-momento-con-google-trends.md
+- contenidos-web-analisis-informacion.md
+- ayd-2300-visitas-mensuales.md
+- contenidos-para-octubre-de-ayd.md
 slug: si-buscamos-sexo-no-buscamos-trabajo
 tags: []
 title: Si buscamos sexo no buscamos trabajo

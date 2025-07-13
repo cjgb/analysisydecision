@@ -5,6 +5,13 @@ categories:
 - Formación
 - R
 date: '2020-10-20T11:28:21-05:00'
+lastmod: '2025-07-13T16:06:27.472983'
+related:
+- mi-breve-seguimiento-del-coronavirus-con-r.md
+- evolucion-del-numero-de-casos-de-coronavirus.md
+- informes-con-r-en-html-comienzo-con-r2html-i.md
+- evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso.md
+- trucos-simples-para-rstats.md
 slug: tablas-elegantes-en-rstats-y-formattable
 tags: []
 title: 'Tablas elegantes en #rstats y formattable'

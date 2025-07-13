@@ -4,6 +4,13 @@ categories:
 - SAS
 - Trucos
 date: '2008-03-04T06:18:48-05:00'
+lastmod: '2025-07-13T16:08:06.698077'
+related:
+- trucos-sas-porque-hay-que-usar-objetos-hash.md
+- laboratorio-de-codigo-sas-comparativa-entre-if-y-where.md
+- laboratorio-de-codigo-sas-ordenaciones-con-hash-vs-proc-sort.md
+- truco-sas-transponer-tablas-con-proc-transpose-data-o-proc-sql.md
+- laboratorio-de-codigo-sas-vistas-proc-means-vs-proc-sql.md
 slug: truco-sas-cruce-con-formatos
 tags: []
 title: Truco SAS. Cruce con proc format

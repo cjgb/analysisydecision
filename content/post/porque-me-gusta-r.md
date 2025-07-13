@@ -5,6 +5,13 @@ categories:
 - Data Mining
 - R
 date: '2010-03-29T06:34:30-05:00'
+lastmod: '2025-07-13T16:04:26.574029'
+related:
+- wps-en-el-mercado-espanol.md
+- el-futuro-del-analisis-de-datos-pasa-por-r.md
+- evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso.md
+- de-estadistico-a-minero-de-datos-a-cientifico-de-datos.md
+- noticias-del-congreso-de-usuarios-de-r.md
 slug: porque-me-gusta-r
 tags:
 - ''

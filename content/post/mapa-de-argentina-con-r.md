@@ -5,6 +5,13 @@ categories:
 - R
 - Trucos
 date: '2015-07-09T07:36:56-05:00'
+lastmod: '2025-07-13T16:01:42.769033'
+related:
+- mapas-municipales-de-argentina-con-r.md
+- mapas-estaticos-de-peru-con-r-y-python-a-nivel-de-distrito.md
+- mapas-con-spatial-data-de-r.md
+- mapa-de-mexico-rapido-y-sucio-y-estatico-con-rstats.md
+- mapas-estaticos-municipales-para-estados-de-mexico-con-r-y-con-excel.md
 slug: mapa-de-argentina-con-r
 tags:
 - mapas

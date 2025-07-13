@@ -4,6 +4,13 @@ categories:
 - Formación
 - R
 date: '2008-02-28T09:22:37-05:00'
+lastmod: '2025-07-13T16:01:30.622007'
+related:
+- manual-curso-introduccion-de-r-capitulo-5-lectura-avanzada-de-datos.md
+- manual-curso-introducion-de-r-capitulo-1-que-es-r.md
+- montemos-un-sistema-de-informacion-en-nuestro-equipo-iii.md
+- intro-rcommander-1-que-es-rcommander.md
+- manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-i.md
 slug: manual-curso-introduccion-de-r-capitulo-4-contribuciones-a-r-paquetes
 tags: []
 title: 'Manual. Curso introducción de R. Capítulo 4: Contribuciones a R (paquetes)'

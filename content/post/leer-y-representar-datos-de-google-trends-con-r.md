@@ -5,6 +5,13 @@ categories:
 - Monográficos
 - R
 date: '2011-03-11T14:13:28-05:00'
+lastmod: '2025-07-13T16:00:13.244112'
+related:
+- stadistical-data-warehouse-del-european-central-bank-con-r-y-los-depositos-a-perdidas.md
+- los-principales-problemas-de-los-espanoles-animaciones-con-r-y-gganimate.md
+- contenidos-web-analisis-informacion.md
+- contenidos-para-octubre-de-ayd.md
+- ayd-2300-visitas-mensuales.md
 slug: leer-y-representar-datos-de-google-trends-con-r
 tags:
 - Google Trends

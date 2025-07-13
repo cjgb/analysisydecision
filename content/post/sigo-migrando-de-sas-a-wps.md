@@ -4,6 +4,13 @@ categories:
 - Business Intelligence
 - SAS
 date: '2010-01-20T17:02:57-05:00'
+lastmod: '2025-07-13T16:06:15.170632'
+related:
+- acercamiento-a-wps-migrando-desde-sas.md
+- wps-en-el-mercado-espanol.md
+- truco-leer-sas7bdat-sin-sas.md
+- en-breve-revision-de-wps-clonico-de-sas.md
+- curso-de-lenguaje-sas-con-wps-librerias-en-wps.md
 slug: sigo-migrando-de-sas-a-wps
 tags:
 - migración

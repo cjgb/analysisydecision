@@ -5,6 +5,13 @@ categories:
 - Monográficos
 - SAS
 date: '2010-11-15T05:47:21-05:00'
+lastmod: '2025-07-13T15:59:16.143113'
+related:
+- objetos-hash-para-ordenar-tablas-sas.md
+- la-importancia-del-parametro-hashexp.md
+- trucos-sas-porque-hay-que-usar-objetos-hash.md
+- truco-sas-cruce-con-formatos.md
+- laboratorio-de-codigo-sas-comparativa-entre-if-y-where.md
 slug: laboratorio-de-codigo-sas-ordenaciones-con-hash-vs-proc-sort
 tags:
 - Objetos HASH

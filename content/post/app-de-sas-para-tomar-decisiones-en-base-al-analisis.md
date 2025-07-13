@@ -4,6 +4,13 @@ categories:
 - Business Intelligence
 - SAS
 date: '2013-01-11T07:50:50-05:00'
+lastmod: '2025-07-13T15:54:06.912366'
+related:
+- nos-hemos-terminado-de-reinventar-acabamos-con-el-data-mining-y-empezamos-con-el-big-data.md
+- quiero-aprender-big-data.md
+- cuando-tenemos-big-data.md
+- sas-global-forum-2009.md
+- un-nuevo-blog-sobre-sas-en-espanol.md
 slug: app-de-sas-para-tomar-decisiones-en-base-al-analisis
 tags:
 - App

@@ -4,6 +4,13 @@ categories:
 - Business Intelligence
 - Sin catergoría
 date: '2009-09-07T02:20:13-05:00'
+lastmod: '2025-07-13T16:05:49.755943'
+related:
+- ibm-compra-spss.md
+- ranking-idc-de-business-analytics-market.md
+- sas-investiga-la-tecnologia-de-r.md
+- entrevista-a-jim-goodnight-fundador-de-sas.md
+- integracion-de-r-con-sas-spss-y-otros.md
 slug: sas-no-se-vende
 tags: []
 title: SAS no se vende

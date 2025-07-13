@@ -5,6 +5,13 @@ categories:
 - Formación
 - R
 date: '2013-01-14T10:06:21-05:00'
+lastmod: '2025-07-13T15:55:01.989921'
+related:
+- r-cayendo-en-la-lista-tiobe.md
+- integracion-de-r-con-sas-spss-y-otros.md
+- que-nos-pasa-con-r-de-nuevo.md
+- el-futuro-del-analisis-de-datos-pasa-por-r.md
+- 1500-visitas-mensuales.md
 slug: como-medir-la-presencia-de-r-en-el-mercado-del-analisis-de-datos
 tags: []
 title: ¿Cómo medir la presencia de R en el mercado del análisis de datos?

@@ -5,6 +5,13 @@ categories:
 - Monográficos
 - R
 date: '2010-06-13T16:05:12-05:00'
+lastmod: '2025-07-13T16:10:58.415591'
+related:
+- los-pilares-de-mi-simulacion-de-la-extension-del-covid19.md
+- etiquetas-en-scatter-plot-muertes-covid-por-millon-de-habitantes-vs-gasto-en-salud.md
+- manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-ii.md
+- informes-con-r-en-html-comienzo-con-r2html-i.md
+- monografico-regresion-logistica-con-r.md
 slug: un-homenaje-a-malthus-con-r
 tags:
 - gsub

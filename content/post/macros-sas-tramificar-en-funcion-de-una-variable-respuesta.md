@@ -6,6 +6,13 @@ categories:
 - Modelos
 - SAS
 date: '2009-04-08T05:22:13-05:00'
+lastmod: '2025-07-13T16:01:11.684894'
+related:
+- trucos-sas-variables-dummy-de-una-variable-continua.md
+- truco-sas-categorizar-variables-continuas.md
+- macros-faciles-de-sas-eliminar-outliers-en-una-variable.md
+- macro-sas-crear-variables-dummy-desde-una-variable-categorica.md
+- trucos-sas-variables-dicotomicas-desde-factores.md
 slug: macros-sas-tramificar-en-funcion-de-una-variable-respuesta
 tags:
 - macro

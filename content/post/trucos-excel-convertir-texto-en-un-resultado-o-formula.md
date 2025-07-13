@@ -4,6 +4,13 @@ categories:
 - Excel
 - Trucos
 date: '2020-09-10T01:53:18-05:00'
+lastmod: '2025-07-13T16:08:54.213124'
+related:
+- trucos-excel-pasar-de-caracter-a-numerico-con-formulas.md
+- trucos-excel-unir-todos-los-excel-en-uno-version-muy-mejorada.md
+- truco-excel-funcion-para-identificar-el-color-de-una-celda.md
+- truco-excel-repetir-celdas-en-funcion-de-los-valores-de-otra-celda.md
+- medias-ponderadas-en-excel-crear-tu-propia-funcion.md
 slug: trucos-excel-convertir-texto-en-un-resultado-o-formula
 tags: []
 title: Trucos Excel. Convertir texto en un resultado o fórmula

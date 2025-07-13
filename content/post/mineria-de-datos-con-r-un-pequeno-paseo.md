@@ -5,6 +5,13 @@ categories:
 - Monográficos
 - R
 date: '2009-12-03T18:07:54-05:00'
+lastmod: '2025-07-13T16:02:32.735861'
+related:
+- noticias-del-congreso-de-usuarios-de-r.md
+- estadistica-para-cientificos-de-datos-con-r-introduccion.md
+- proyecto-text-mining-con-excel-iv.md
+- comparamos-los-programas-electorales-de-pp-y-psoe-con-r.md
+- algunos-temas-de-interes-sobre-r.md
 slug: mineria-de-datos-con-r-un-pequeno-paseo
 tags:
 - minería de datos

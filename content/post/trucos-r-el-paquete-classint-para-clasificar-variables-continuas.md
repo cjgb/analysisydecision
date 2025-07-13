@@ -6,6 +6,13 @@ categories:
 - R
 - Trucos
 date: '2015-07-02T01:47:57-05:00'
+lastmod: '2025-07-13T16:09:33.224315'
+related:
+- trucos-r-graficos-de-velocimetro-con-r.md
+- truco-r-paletas-de-colores-en-r.md
+- capitulo-5-representacion-basica-con-ggplot.md
+- graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
+- informes-con-r-en-html-comienzo-con-r2html-i.md
 slug: trucos-r-el-paquete-classint-para-clasificar-variables-continuas
 tags:
 - classInt

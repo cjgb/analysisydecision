@@ -4,6 +4,13 @@ categories:
 - Formación
 - R
 date: '2015-04-24T06:23:29-05:00'
+lastmod: '2025-07-13T15:55:41.416270'
+related:
+- curso-basico-de-r.md
+- jornadas-de-r-gratuitas-en-galicia.md
+- nuevo-curso-de-estadistica-con-r.md
+- nueva-edicion-del-curso-basico-de-r.md
+- lectura-conjunta-de-analyzing-linguistic-data.md
 slug: curso-de-iniciacion-a-r-en-kschool-de-carlos-gil
 tags: []
 title: Curso de iniciación a R en Kschool de Carlos Gil

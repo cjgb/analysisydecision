@@ -4,6 +4,13 @@ categories:
 - Formación
 - SAS
 date: '2008-07-28T07:54:22-05:00'
+lastmod: '2025-07-13T15:58:35.285085'
+related:
+- curso-de-lenguaje-sas-con-wps-lectura-de-ficheros-de-texto.md
+- truco-sas-leer-datos-de-excel-con-sas-con-dde.md
+- ayudadme-importar-a-sas-texto-con-comillas.md
+- truco-sas-macro-buscar-y-reemplazar-en-texto.md
+- truco-sas-crear-ficheros-excel-sin-proc-export-i.md
 slug: importar-a-sas-desde-otras-aplicaciones
 tags:
 - Access

@@ -4,6 +4,13 @@ categories:
 - Consultoría
 - Formación
 date: '2010-05-25T16:14:04-05:00'
+lastmod: '2025-07-13T15:55:53.673298'
+related:
+- curso-de-lenguaje-sas-con-wps-librerias-en-wps.md
+- curso-de-lenguaje-sas-con-wps-el-paso-data.md
+- curso-de-lenguaje-sas-con-wps-ejecuciones.md
+- acercamiento-a-wps-migrando-desde-sas.md
+- curso-de-lenguaje-sas-con-wps-introduccion-2.md
 slug: curso-de-lenguaje-sas-con-wps-lenguaje-sas
 tags:
 - libname

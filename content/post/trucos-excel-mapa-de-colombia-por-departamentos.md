@@ -8,6 +8,13 @@ categories:
 - Mapas
 - Monográficos
 date: '2016-09-28T01:50:16-05:00'
+lastmod: '2025-07-13T16:09:01.498959'
+related:
+- trucos-excel-mapa-de-espana-por-provincias.md
+- trucos-excel-mapa-de-mexico-por-estados.md
+- nuevo-y-muy-mejorado-mapa-de-espana-por-provincias-con-excel.md
+- trucos-excel-mapa-de-espana-por-comunidades-autonomas.md
+- creando-un-mapa-en-excel-con-archivos-svg.md
 slug: trucos-excel-mapa-de-colombia-por-departamentos
 tags:
 - Mapa Colombia

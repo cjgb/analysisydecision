@@ -4,6 +4,13 @@ categories:
 - Formación
 - R
 date: '2008-02-25T09:23:32-05:00'
+lastmod: '2025-07-13T16:01:38.736906'
+related:
+- manual-introduccion-a-r-s-plus.md
+- manual-curso-introduccion-de-r-capitulo-4-contribuciones-a-r-paquetes.md
+- intro-rcommander-1-que-es-rcommander.md
+- manual-curso-introduccion-de-r-capitulo-2-interfaz-y-primeras-sentencias.md
+- estadistica-para-cientificos-de-datos-con-r-introduccion.md
 slug: manual-curso-introducion-de-r-capitulo-1-%c2%bfque-es-r
 tags: []
 title: 'Manual. Curso introducción de R. Capítulo 1: ¿Qué es R?'

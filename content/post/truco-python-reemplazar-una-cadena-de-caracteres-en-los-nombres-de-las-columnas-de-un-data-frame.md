@@ -4,6 +4,13 @@ categories:
 - Python
 - Trucos
 date: '2017-07-22T15:51:01-05:00'
+lastmod: '2025-07-13T16:07:48.837578'
+related:
+- leer-fichero-de-texto-de-ancho-fijo-con-python-pandas.md
+- transponer-data-frames-con-r-de-filas-a-columnas-y-de-columnas-a-filas.md
+- data-management-basico-con-pandas.md
+- manejo-de-datos-basico-con-python-datatable.md
+- truco-python-seleccionar-o-eliminar-variables-de-un-data-frame-en-base-a-un-prefijo-sufijo-o-si-contienen-un-caracter.md
 slug: truco-python-reemplazar-una-cadena-de-caracteres-en-los-nombres-de-las-columnas-de-un-data-frame
 tags:
 - Pandas

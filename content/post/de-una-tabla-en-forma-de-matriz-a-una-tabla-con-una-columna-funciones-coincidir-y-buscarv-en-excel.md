@@ -5,6 +5,13 @@ categories:
 - Formación
 - Trucos
 date: '2023-01-18T09:09:20-05:00'
+lastmod: '2025-07-13T15:56:26.402680'
+related:
+- truco-excel-repetir-celdas-en-funcion-de-los-valores-de-otra-celda.md
+- truco-excel-pasar-un-rango-de-varias-columnas-a-una.md
+- truco-excel-transponer-una-fila-en-varias-columnas-con-desref.md
+- trucos-excel-trasponer-con-la-funcion-indirecto.md
+- desref-para-trasponer-en-excel-varias-columnas.md
 slug: de-una-tabla-en-forma-de-matriz-a-una-tabla-con-una-columna-funciones-coincidir-y-buscarv-en-excel
 tags: []
 title: De una tabla en forma de matriz a una tabla con una columna. Funciones COINCIDIR

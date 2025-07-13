@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Banca
 date: '2009-02-18T06:50:46-05:00'
+lastmod: '2025-07-13T15:54:33.567138'
+related:
+- lecciones-de-economia-de-un-ignorante-la-caixa-a-colocar-preferentes.md
+- participaciones-preferentes-de-las-cajas-de-ahorro.md
+- lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
+- a-mi-me-preocupa-el-pequeno-ahorrador.md
+- la-nueva-burbuja-de-los-bancos.md
 slug: busca-la-relacion-deuda-subordinada-y-cajas-catalanas
 tags:
 - batalla pasivo

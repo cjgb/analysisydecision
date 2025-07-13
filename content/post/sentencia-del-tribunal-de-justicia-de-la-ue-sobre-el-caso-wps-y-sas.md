@@ -5,6 +5,13 @@ categories:
 - SAS
 - WPS
 date: '2012-05-02T15:28:47-05:00'
+lastmod: '2025-07-13T16:06:08.618494'
+related:
+- david-gana-a-goliat-la-sentencia-del-caso-sas-frente-a-wps.md
+- noticia-interesante-sobre-wps.md
+- wps-en-el-mercado-espanol.md
+- acercamiento-a-wps-migrando-desde-sas.md
+- comparativa-de-precio-wps-vs-sas.md
 slug: sentencia-del-tribunal-de-justicia-de-la-ue-sobre-el-caso-wps-y-sas
 tags: []
 title: Sentencia del Tribunal de Justicia de la UE sobre el caso WPS y SAS

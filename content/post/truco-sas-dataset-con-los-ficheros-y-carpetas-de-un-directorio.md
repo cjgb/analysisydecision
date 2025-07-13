@@ -4,6 +4,13 @@ categories:
 - SAS
 - Trucos
 date: '2008-03-03T09:06:44-05:00'
+lastmod: '2025-07-13T16:08:08.152298'
+related:
+- trucos-excel-archivos-de-un-directorio-con-una-macro.md
+- trucos-sas-mas-usos-de-infile-y-pipe-directorios-en-tablas-sas.md
+- trucos-sas-lista-de-datasets-en-macro-variable.md
+- macros-sas-informe-de-un-dataset-en-excel.md
+- truco-sas-un-vistazo-a-ficheros-planos-muy-grandes.md
 slug: truco-sas-dataset-con-los-ficheros-y-carpetas-de-un-directorio
 tags: []
 title: 'Truco SAS: Dataset con los ficheros y carpetas de un directorio.'

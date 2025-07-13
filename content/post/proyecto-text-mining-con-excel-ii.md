@@ -5,6 +5,13 @@ categories:
 - Consultoría
 - Data Mining
 date: '2008-04-28T08:30:51-05:00'
+lastmod: '2025-07-13T16:04:49.264043'
+related:
+- proyecto-text-mining-con-excel-iii.md
+- proyecto-text-mining-con-excel-iv.md
+- proyecto-text-mining-con-excel-i.md
+- google-mining-analisis-de-las-paginas-indexadas-i.md
+- proyecto-text-mining-con-excel-pasa-a-ser-google-mining.md
 slug: proyecto-text-mining-con-excel-ii
 tags: []
 title: Proyecto. Text mining con Excel (II)

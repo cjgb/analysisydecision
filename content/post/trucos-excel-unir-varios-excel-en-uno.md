@@ -6,6 +6,13 @@ categories:
 - Monográficos
 - Trucos
 date: '2011-09-21T14:03:15-05:00'
+lastmod: '2025-07-13T16:09:27.441031'
+related:
+- truco-excel-unir-todos-los-libros-en-una-hoja.md
+- truco-sas-unir-todos-los-excel-en-uno-solo.md
+- truco-excel-abrir-multiples-libros-de-excel-en-distintas-hojas-de-un-nuevo-libro.md
+- truco-sas-unir-todas-las-hojas-de-un-excel-en-una.md
+- trucos-excel-unir-todos-los-excel-en-uno-version-muy-mejorada.md
 slug: trucos-excel-unir-varios-excel-en-uno
 tags:
 - ''

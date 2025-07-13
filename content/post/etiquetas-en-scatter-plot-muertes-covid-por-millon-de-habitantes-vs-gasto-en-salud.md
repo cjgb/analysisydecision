@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Formación
 date: '2020-04-07T04:21:18-05:00'
+lastmod: '2025-07-13T15:57:38.298652'
+related:
+- mi-breve-seguimiento-del-coronavirus-con-r.md
+- mapa-del-covid-19-por-comunidades-autonomas-con-r-mas-rstats.md
+- evolucion-del-numero-de-casos-de-coronavirus.md
+- los-pilares-de-mi-simulacion-de-la-extension-del-covid19.md
+- incluir-subplot-en-mapa-con-ggplot.md
 slug: etiquetas-en-scatter-plot-muertes-covid-por-millon-de-habitantes-vs-gasto-en-salud
 tags: []
 title: Etiquetas en scatter plot. Muertes covid por millón de habitantes vs gasto

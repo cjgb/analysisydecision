@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - R
 date: '2010-11-08T16:56:09-05:00'
+lastmod: '2025-07-13T15:53:48.816902'
+related:
+- revision-de-las-iii-jornadas-de-r.md
+- noticias-del-congreso-de-usuarios-de-r.md
+- cuando-paralelizar-procesos-con-r-era-otra-cosa.md
+- vi-jornadas-de-usuarios-de-r-ya-estan-en-marcha.md
+- reunion-del-grupo-de-usuarios-de-r-de-madrid-12052016.md
 slug: algunos-temas-de-interes-sobre-r
 tags: []
 title: Algunos temas de interés sobre R

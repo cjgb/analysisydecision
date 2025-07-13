@@ -4,6 +4,13 @@ categories:
 - Formación
 - R
 date: '2008-03-31T09:25:17-05:00'
+lastmod: '2025-07-13T16:01:33.319829'
+related:
+- manual-curso-introduccion-de-r-capitulo-7-funciones-graficas-basicas-en-r.md
+- determinar-la-distribucion-de-un-vector-de-datos-con-r.md
+- trucos-sas-calcular-percentiles-como-excel-o-r.md
+- manual-curso-introduccion-de-r-capitulo-2-interfaz-y-primeras-sentencias.md
+- manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
 slug: manual-curso-introduccion-de-r-capitulo-6-funciones-de-estadistica-descriptiva
 tags: []
 title: 'Manual. Curso introducción de R. Capítulo 6: Funciones de estadística descriptiva'

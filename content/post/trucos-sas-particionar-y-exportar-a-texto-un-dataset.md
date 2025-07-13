@@ -5,6 +5,13 @@ categories:
 - SAS
 - WPS
 date: '2012-06-05T05:14:52-05:00'
+lastmod: '2025-07-13T16:10:27.169537'
+related:
+- macros-sas-macro-split-para-partir-un-conjunto-de-datos.md
+- truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
+- truco-sas-crear-ficheros-excel-sin-proc-export-i.md
+- macros-sas-informe-de-un-dataset-en-excel.md
+- truco-sas-proc-contents.md
 slug: trucos-sas-particionar-y-exportar-a-texto-un-dataset
 tags:
 - csv

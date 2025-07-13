@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Formación
 date: '2010-08-03T02:19:32-05:00'
+lastmod: '2025-07-13T15:59:40.550512'
+related:
+- lecciones-de-economia-de-un-ignorante-los-bancos-pierden-dinero-para-favorecer-a-unos-y-luego-los-salvamos-todos.md
+- lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
+- lecciones-de-economia-de-un-ignorante-la-caixa-a-colocar-preferentes.md
+- lecciones-de-economia-de-un-ignorante-la-prima-de-riesgo-y-la-madre-que-la-pario.md
+- la-nueva-burbuja-de-los-bancos.md
 slug: lecciones-de-economia-de-un-ignorante-cosas-que-no-comprendo
 tags: []
 title: Lecciones de economía de un ignorante. Cosas que no comprendo

@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Seguros
 date: '2010-06-05T14:22:10-05:00'
+lastmod: '2025-07-13T16:03:24.688329'
+related:
+- nace-verti-la-directa-de-mapfre.md
+- seguro-directo-de-salud-nace-nectar.md
+- consultor-particular-de-seguros.md
+- el-seguro-de-credito-interesante-reto-tecnico.md
+- el-seguro-de-salud-suma-y-sigue.md
 slug: nace-pelayonex-la-directa-de-pelayo
 tags:
 - ''

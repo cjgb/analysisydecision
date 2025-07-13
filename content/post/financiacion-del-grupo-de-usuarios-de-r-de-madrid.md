@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Formación
 date: '2016-11-15T10:52:57-05:00'
+lastmod: '2025-07-13T15:57:51.813913'
+related:
+- reunion-usuarios-de-r-en-madrid-26-de-noviembre-de-2014.md
+- aprende-rstats-de-forma-presencial-por-muy-poco.md
+- reunion-del-grupo-de-usuarios-de-r-en-madrid-el-28-de-enero.md
+- reunion-de-usuarios-de-r-de-madrid-15-de-octubre-de-2015.md
+- reunion-del-grupo-de-usuarios-de-r-de-madrid-12-de-noviembre.md
 slug: financiacion-del-grupo-de-usuarios-de-r-de-madrid
 tags: []
 title: Financiación del Grupo de Usuarios de R de Madrid

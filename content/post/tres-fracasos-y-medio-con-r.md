@@ -4,6 +4,13 @@ categories:
 - Data Mining
 - R
 date: '2009-12-15T18:43:46-05:00'
+lastmod: '2025-07-13T16:06:58.222806'
+related:
+- conectar-r-a-una-base-de-datos.md
+- manual-curso-introduccion-de-r-capitulo-5-lectura-avanzada-de-datos.md
+- monografico-paquete-sqldf-si-sabes-sql-sabes-r.md
+- analisis-de-textos-con-r.md
+- lectura-de-archivos-csv-con-python-y-pandas.md
 slug: tres-fracasos-y-medio-con-r
 tags:
 - ficheros grandes

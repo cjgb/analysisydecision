@@ -5,6 +5,13 @@ categories:
 - Consultoría
 - Python
 date: '2017-12-08T15:01:19-05:00'
+lastmod: '2025-07-13T15:56:27.755869'
+related:
+- representar-poligonos-de-voronoi-dentro-de-un-poligono.md
+- identificar-los-municipios-costeros-y-limitrofes-de-espana-con-r.md
+- machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algoritmos-de-clasificacion.md
+- adyacencia-de-poligonos-con-el-paquete-spdep-de-r.md
+- un-peligro-del-analisis-cluster.md
 slug: diagramas-de-voronoi-con-spatial-de-python
 tags:
 - cDKTree

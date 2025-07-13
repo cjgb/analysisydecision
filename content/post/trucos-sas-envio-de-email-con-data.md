@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2010-06-28T10:12:43-05:00'
+lastmod: '2025-07-13T16:09:56.658482'
+related:
+- trucos-excel-crear-un-borrador-de-correo-con-excel.md
+- enviar-correos-electronicos-con-rstats-libreria-emayili.md
+- comunicar-sas-con-r-creando-ejecutables-windows.md
+- trucos-sas-macrovariable-a-dataset.md
+- truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
 slug: trucos-sas-envio-de-email-con-data
 tags:
 - email

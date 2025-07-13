@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Banca
 date: '2008-11-24T09:35:00-05:00'
+lastmod: '2025-07-13T15:59:18.850611'
+related:
+- margenes-nulos-en-los-nuevos-depositos-bancarios.md
+- amanece-que-no-es-poco.md
+- lecciones-de-economia-de-un-ignorante-llegamos-a-solvencia-ii.md
+- a-mi-me-preocupa-el-pequeno-ahorrador.md
+- una-fabulilla-sobre-prim-con-multiples-moralejas.md
 slug: la-confianza-en-el-sector-financiero
 tags: []
 title: La confianza en el sector financiero

@@ -4,6 +4,13 @@ categories:
 - Formación
 - SAS
 date: '2010-11-24T12:45:03-05:00'
+lastmod: '2025-07-13T16:00:52.680514'
+related:
+- truco-sas-observaciones-de-un-dataset-en-una-macro-variable.md
+- macro-sas-numero-de-observaciones-de-un-dataset-en-una-macro.md
+- macros-sas-informe-de-un-dataset-en-excel.md
+- macros-sas-macro-split-para-partir-un-conjunto-de-datos.md
+- truco-sas-proc-contents.md
 slug: macros-faciles-de-sas-numero-de-obsevaciones-de-un-dataset
 tags:
 - ATTRN

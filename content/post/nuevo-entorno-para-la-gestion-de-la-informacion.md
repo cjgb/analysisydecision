@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Consultoría
 date: '2009-11-19T10:09:47-05:00'
+lastmod: '2025-07-13T16:03:52.421015'
+related:
+- en-breve-revision-de-wps-clonico-de-sas.md
+- comparativa-de-precio-wps-vs-sas.md
+- wps-en-el-mercado-espanol.md
+- acercamiento-a-wps-migrando-desde-sas.md
+- sas-vs-wps-diferencias-de-precio.md
 slug: nuevo-entorno-para-la-gestion-de-la-informacion
 tags:
 - SAS es muy caro

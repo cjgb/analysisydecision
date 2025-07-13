@@ -5,6 +5,13 @@ categories:
 - Formación
 - SAS
 date: '2010-01-17T13:25:37-05:00'
+lastmod: '2025-07-13T15:53:37.410659'
+related:
+- sigo-migrando-de-sas-a-wps.md
+- wps-en-el-mercado-espanol.md
+- en-breve-revision-de-wps-clonico-de-sas.md
+- curso-de-lenguaje-sas-con-wps-introduccion-2.md
+- curso-de-lenguaje-sas-con-wps-introduccion.md
 slug: acercamiento-a-wps-migrando-desde-sas
 tags:
 - migración

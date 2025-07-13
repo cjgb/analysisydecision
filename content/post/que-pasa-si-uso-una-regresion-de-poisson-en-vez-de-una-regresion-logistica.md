@@ -6,6 +6,13 @@ categories:
 - Monográficos
 - SAS
 date: '2016-09-19T02:08:06-05:00'
+lastmod: '2025-07-13T16:05:02.648561'
+related:
+- en-la-regresion-logistica-el-sobremuestreo-es-lo-mismo-que-asignar-pesos-a-las-observaciones.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-15-modelos-glm-regresion-logistica-y-regresion-de-poisson.md
+- sobremuestreo-y-pesos-a-las-observaciones-ahora-con-r.md
+- monografico-un-poco-de-proc-logistic.md
+- manual-curso-introduccion-de-r-capitulo-18-modelos-de-regresion-de-poisson.md
 slug: que-pasa-si-uso-una-regresion-de-poisson-en-vez-de-una-regresion-logistica
 tags:
 - proc genmod

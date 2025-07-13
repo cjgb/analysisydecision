@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2010-11-11T06:00:46-05:00'
+lastmod: '2025-07-13T15:53:35.719504'
+related:
+- acercamiento-a-wps-migrando-desde-sas.md
+- truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
+- trucos-sas-eliminar-etiquetas-en-los-conjunto-de-datos-sas.md
+- truco-sas-sysecho-para-controlar-las-ejecuciones-en-enterprise-guide.md
+- truco-sas-limpieza-de-tabuladores-con-expresiones-regulares.md
 slug: abreviar-codigo-en-enterprise-guide
 tags: []
 title: Abreviar código en Enterprise Guide

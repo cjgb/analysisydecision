@@ -6,6 +6,13 @@ categories:
 - Power BI
 - R
 date: '2021-10-04T01:28:17-05:00'
+lastmod: '2025-07-13T16:06:42.470295'
+related:
+- arboles-de-decision-con-sas-base-con-r-por-supuesto.md
+- manual-curso-introduccion-de-r-capitulo-18-modelos-de-regresion-de-poisson.md
+- evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso.md
+- manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
+- sobremuestreo-y-pesos-a-las-observaciones-ahora-con-r.md
 slug: trabajar-con-los-datos-de-power-bi-desde-r-para-hacer-un-modelo-de-regresion-lineal
 tags: []
 title: Trabajar con los datos de Power BI desde R para hacer un modelo de regresión

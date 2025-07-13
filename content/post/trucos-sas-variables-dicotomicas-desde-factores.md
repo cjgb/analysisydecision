@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Formación
 date: '2011-01-31T14:02:43-05:00'
+lastmod: '2025-07-13T16:10:39.043683'
+related:
+- macro-sas-crear-variables-dummy-desde-una-variable-categorica.md
+- trucos-sas-variables-dummy-de-una-variable-continua.md
+- macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
+- truco-sas-categorizar-variables-continuas.md
+- macros-sas-agrupando-variables-categoricas.md
 slug: trucos-sas-variables-dicotomicas-desde-factores
 tags: []
 title: Trucos SAS. Variables dicotómicas desde factores

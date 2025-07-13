@@ -5,6 +5,13 @@ categories:
 - SAS
 - Trucos
 date: '2009-05-11T11:01:29-05:00'
+lastmod: '2025-07-13T16:10:17.454549'
+related:
+- numeros-aleatorios-con-sas.md
+- trucos-sas-muestreo-con-proc-surveyselect.md
+- trucos-sas-variables-dummy-de-una-variable-continua.md
+- trucos-sas-lista-de-datasets-en-macro-variable.md
+- trucos-sas-informes-de-valores-missing.md
 slug: trucos-sas-muestras-aleatorias-con-y-sin-reemplazamiento
 tags:
 - aleatorios

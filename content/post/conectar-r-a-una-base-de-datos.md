@@ -3,6 +3,13 @@ author: apadrones
 categories:
 - Formación
 date: '2008-07-22T11:09:55-05:00'
+lastmod: '2025-07-13T15:55:14.264089'
+related:
+- tres-fracasos-y-medio-con-r.md
+- porque-me-gusta-r.md
+- noticias-del-congreso-de-usuarios-de-r.md
+- el-futuro-del-analisis-de-datos-pasa-por-r.md
+- evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso.md
 slug: conectar-r-a-una-base-de-datos
 tags: []
 title: Conectar R a una base de datos

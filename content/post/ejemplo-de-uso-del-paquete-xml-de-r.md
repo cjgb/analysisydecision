@@ -5,6 +5,13 @@ categories:
 - R
 - Trucos
 date: '2010-06-08T17:32:21-05:00'
+lastmod: '2025-07-13T15:56:38.571526'
+related:
+- resultados-de-la-liga-con-rstats-estudiando-graficamente-rachas.md
+- alineaciones-de-equipos-de-futbol-con-worldfootballr-de-rstats.md
+- truco-r-insertar-imagen-en-un-grafico.md
+- trucos-r-leer-archivos-xml-con-r.md
+- los-principales-problemas-de-los-espanoles-animaciones-con-r-y-gganimate.md
 slug: ejemplo-de-uso-del-paquete-xml-de-r
 tags:
 - plotrix

@@ -6,6 +6,13 @@ categories:
 - Modelos
 - R
 date: '2019-11-10T14:14:18-05:00'
+lastmod: '2025-07-13T16:02:38.406921'
+related:
+- obteniendo-los-parametros-de-mi-modelo-gam.md
+- interpretacion-de-los-parametros-de-un-modelo-glm.md
+- los-parametros-del-modelo-glm-como-relatividades-como-recargos-o-descuentos.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-15-modelos-glm-regresion-logistica-y-regresion-de-poisson.md
+- ajuste-de-splines-con-r.md
 slug: modelos-gam-dejando-satisfechos-a-los-equipos-de-negocio
 tags:
 - GAM

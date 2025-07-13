@@ -4,6 +4,13 @@ categories:
 - Business Intelligence
 - R
 date: '2010-02-18T10:35:08-05:00'
+lastmod: '2025-07-13T16:04:58.346938'
+related:
+- el-ano-2010-para-analisisydecision.md
+- como-medir-la-presencia-de-r-en-el-mercado-del-analisis-de-datos.md
+- sas-global-forum-2009.md
+- revolution-computing-ahora-es-revolution-analytics.md
+- el-ano-2009-para-analisis-y-decision.md
 slug: '%c2%bfque-compania-esta-entre-las-12-companies-to-watch-in-2010'
 tags: []
 title: ¿Qué compañía está entre las 12 ‘Companies to Watch’ in 2010?

@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Business Intelligence
 date: '2009-08-26T03:21:46-05:00'
+lastmod: '2025-07-13T16:05:08.580274'
+related:
+- ibm-compra-spss.md
+- sas-no-se-vende.md
+- como-medir-la-presencia-de-r-en-el-mercado-del-analisis-de-datos.md
+- integracion-de-r-con-sas-spss-y-otros.md
+- sas-comienza-a-fijarse-en-r.md
 slug: ranking-idc-de-business-analytics-market
 tags: []
 title: Ranking IDC de Business Analytics Market

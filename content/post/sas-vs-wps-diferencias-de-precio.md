@@ -4,6 +4,13 @@ categories:
 - Business Intelligence
 - WPS
 date: '2013-05-17T13:22:02-05:00'
+lastmod: '2025-07-13T16:05:52.690480'
+related:
+- comparativa-de-precio-wps-vs-sas.md
+- en-breve-revision-de-wps-clonico-de-sas.md
+- wps-en-el-mercado-espanol.md
+- nuevo-entorno-para-la-gestion-de-la-informacion.md
+- acercamiento-a-wps-migrando-desde-sas.md
 slug: sas-vs-wps-diferencias-de-precio
 tags: []
 title: SAS vs WPS. Diferencias de precio

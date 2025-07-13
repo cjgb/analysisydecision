@@ -5,6 +5,13 @@ categories:
 - Formación
 - Trucos
 date: '2014-02-25T11:14:30-05:00'
+lastmod: '2025-07-13T16:07:24.135884'
+related:
+- trucos-excel-tranformar-un-caracter-a-fecha.md
+- macros-sas-transformar-un-numerico-a-fecha.md
+- truco-python-restar-meses-con-formato-yyyymm.md
+- trucos-sas-pasar-fecha-a-caracter-en-sas.md
+- trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados.md
 slug: truco-excel-pasar-de-numero-con-formato-aaaammdd-a-fecha-con-formulas
 tags:
 - ENTERO

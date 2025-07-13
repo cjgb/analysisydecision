@@ -5,6 +5,13 @@ categories:
 - Formación
 - Mapas
 date: '2016-12-22T08:57:14-05:00'
+lastmod: '2025-07-13T16:03:09.227430'
+related:
+- mover-parte-de-un-shapefile-con-r-mapa-de-la-tasa-de-casos-de-coronavirus-por-habitante-en-espana.md
+- mapas-municipales-de-espana-con-excel-y-qgis.md
+- mapas-sas-a-partir-de-shapefile.md
+- animacion-de-un-mapa-con-python-porcentaje-de-vacunas-administradas.md
+- creando-un-mapa-en-excel-con-archivos-svg.md
 slug: mover-elementos-de-un-mapa-con-qgis-ejemplo-mover-canarias
 tags:
 - QGIS

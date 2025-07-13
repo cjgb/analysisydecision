@@ -4,6 +4,13 @@ categories:
 - R
 - Sin catergoría
 date: '2012-02-04T18:19:27-05:00'
+lastmod: '2025-07-13T16:05:04.052284'
+related:
+- resultados-de-la-liga-con-rstats-estudiando-graficamente-rachas.md
+- minutos-de-juego-y-puntos-es-espanyol-y-sus-finales-de-partido.md
+- los-porteros-del-espanyol-y-la-regresion-binomial-negativa.md
+- alineaciones-de-equipos-de-futbol-con-worldfootballr-de-rstats.md
+- cuanto-dinero-pierdo-jugando-a-la-loteria-una-simulacion-poco-seria-con-r.md
 slug: '%c2%bfquien-ganara-la-liga-espanola-una-simulacion-poco-seria-con-r'
 tags:
 - ''

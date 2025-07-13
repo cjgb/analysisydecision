@@ -6,6 +6,13 @@ categories:
 - SAS
 - Trucos
 date: '2010-11-12T04:17:18-05:00'
+lastmod: '2025-07-13T16:03:58.540932'
+related:
+- laboratorio-de-codigo-sas-ordenaciones-con-hash-vs-proc-sort.md
+- la-importancia-del-parametro-hashexp.md
+- trucos-sas-porque-hay-que-usar-objetos-hash.md
+- truco-sas-cruce-con-formatos.md
+- trucos-sas-operaciones-con-tablas-de-dimensiones-con-sas.md
 slug: objetos-hash-para-ordenar-tablas-sas
 tags:
 - ''

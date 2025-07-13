@@ -5,6 +5,13 @@ categories:
 - Monográficos
 - Python
 date: '2019-04-30T10:21:21-05:00'
+lastmod: '2025-07-13T16:00:03.744686'
+related:
+- leer-fichero-de-texto-de-ancho-fijo-con-python-pandas.md
+- tres-fracasos-y-medio-con-r.md
+- leer-archivos-excel-con-python.md
+- data-management-basico-con-pandas.md
+- manejo-de-datos-basico-con-python-datatable.md
 slug: lectura-de-archivos-csv-con-python-y-pandas
 tags:
 - csv

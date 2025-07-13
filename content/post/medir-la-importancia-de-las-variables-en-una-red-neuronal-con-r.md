@@ -7,6 +7,13 @@ categories:
 - R
 - Trucos
 date: '2014-09-29T10:28:44-05:00'
+lastmod: '2025-07-13T16:02:22.590703'
+related:
+- regresion-con-redes-neuronales-en-r.md
+- representacion-de-redes-neuronales-con-r.md
+- medir-la-importancia-de-las-variables-con-random-forest.md
+- como-salva-la-linealidad-una-red-neuronal.md
+- monografico-paquete-de-r-nnet-para-modelos-de-redes-neuronales.md
 slug: medir-la-importancia-de-las-variables-en-una-red-neuronal-con-r
 tags:
 - nnet

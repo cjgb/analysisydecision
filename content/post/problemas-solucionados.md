@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Sin catergoría
 date: '2009-10-06T14:19:37-05:00'
+lastmod: '2025-07-13T16:04:40.780251'
+related:
+- personalizar-los-contactos-comerciales.md
+- contenidos-para-octubre-de-ayd.md
+- el-ano-2009-para-analisis-y-decision.md
+- contenidos-web-analisis-informacion.md
+- ayd-2300-visitas-mensuales.md
 slug: problemas-solucionados
 tags: []
 title: Problemas solucionados

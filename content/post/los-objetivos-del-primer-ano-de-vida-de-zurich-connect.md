@@ -4,6 +4,13 @@ categories:
 - Consultoría
 - Seguros
 date: '2009-08-13T07:22:46-05:00'
+lastmod: '2025-07-13T16:00:28.230637'
+related:
+- el-seguro-directo-de-zurich.md
+- nace-verti-la-directa-de-mapfre.md
+- mutua-madrilena-compra-el-50-de-adeslas-seguros-generales.md
+- la-confianza-en-el-sector-financiero.md
+- los-enemigos-del-canal-tradicional-de-venta-de-seguros.md
 slug: los-objetivos-del-primer-ano-de-vida-de-zurich-connect
 tags: []
 title: Los objetivos del primer año de vida de Zurich Connect

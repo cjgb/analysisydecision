@@ -5,6 +5,13 @@ categories:
 - R
 - Trucos
 date: '2010-06-22T11:07:19-05:00'
+lastmod: '2025-07-13T16:07:56.239262'
+related:
+- truco-r-anadir-una-marca-de-agua-a-nuestro-grafico-con-ggplot2.md
+- mapa-de-argentina-con-r.md
+- mapas-con-spatial-data-de-r.md
+- trucos-r-graficos-de-velocimetro-con-r.md
+- truco-r-paletas-de-colores-en-r.md
 slug: truco-r-insertar-imagen-en-un-grafico
 tags:
 - rimage

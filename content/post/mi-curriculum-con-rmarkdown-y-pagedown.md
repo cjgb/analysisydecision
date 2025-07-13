@@ -5,6 +5,13 @@ categories:
 - Formación
 - R
 date: '2020-12-21T03:30:26-05:00'
+lastmod: '2025-07-13T16:02:28.336457'
+related:
+- comienza-la-publicacion-del-ensayo-introduccion-a-la-estadistica-para-cientificos-de-datos.md
+- estadistica-para-cientificos-de-datos-con-r-introduccion.md
+- ejemplo-de-web-scraping-con-r-la-formacion-de-los-diputados-del-congreso.md
+- evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso.md
+- de-estadistico-a-minero-de-datos-a-cientifico-de-datos.md
 slug: mi-curriculum-con-rmarkdown-y-pagedown
 tags:
 - markdown

@@ -6,7 +6,14 @@ categories:
 - Monográficos
 - R
 date: '2012-08-01T03:10:19-05:00'
-slug: 'cluster-svm'
+lastmod: '2025-07-13T15:54:49.522815'
+related:
+- monografico-clasificacion-con-svm-en-r.md
+- un-peligro-del-analisis-cluster.md
+- machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algoritmos-de-clasificacion.md
+- knn-con-sas-mejorando-k-means.md
+- analisis-cluster-con-sas-la-importancia-de-las-semillas-en-las-k-medias.md
+slug: cluster-svm
 tags:
 - análisis cluster
 - SVM

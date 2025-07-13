@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Banca
 date: '2009-12-04T06:26:10-05:00'
+lastmod: '2025-07-13T15:59:41.898950'
+related:
+- lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
+- lecciones-de-economia-de-un-ignorante-los-bancos-pierden-dinero-para-favorecer-a-unos-y-luego-los-salvamos-todos.md
+- lecciones-de-economia-de-un-ignorante-la-caixa-a-colocar-preferentes.md
+- a-mi-me-preocupa-el-pequeno-ahorrador.md
+- lecciones-de-economia-de-un-ignorante-arreglo-el-deficit-en-un-pis-pas.md
 slug: lecciones-de-economia-de-un-ignorante-%c2%bfde-donde-sacan-margen-los-bancos
 tags:
 - ''

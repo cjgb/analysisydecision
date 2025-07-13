@@ -6,6 +6,13 @@ categories:
 - Monográficos
 - Trucos
 date: '2010-09-30T09:38:33-05:00'
+lastmod: '2025-07-13T15:55:25.147710'
+related:
+- trucos-excel-mapa-de-espana-por-comunidades-autonomas.md
+- trucos-excel-mapa-de-espana-por-provincias.md
+- mapas-municipales-de-espana-con-excel-y-qgis.md
+- mapa-excel-de-europa.md
+- trucos-excel-mapa-de-colombia-por-departamentos.md
 slug: creando-un-mapa-en-excel-con-archivos-svg
 tags:
 - ''

@@ -4,6 +4,13 @@ categories:
 - Opinión
 - Python
 date: '2019-02-03T17:30:33-05:00'
+lastmod: '2025-07-13T15:59:33.788559'
+related:
+- monografico-regresion-logistica-con-r.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-7-descripcion-grafica-de-variables.md
+- los-pilares-de-mi-simulacion-de-la-extension-del-covid19.md
+- un-acercamiento-a-graph-ods-graphs-proc-sgplot.md
+- el-modelo-multivariante-en-el-sector-asegurador-univariante-vs-multivariante-ii.md
 slug: las-mujeres-son-mas-inteligentes-pero-no-estan-en-puestos-directivos
 tags:
 - kdeplot

@@ -3,6 +3,13 @@ author: rvaquerizo
 categories:
 - Formación
 date: '2012-10-31T10:02:42-05:00'
+lastmod: '2025-07-13T16:09:15.423328'
+related:
+- trucos-excel-modificar-la-configuracion-regional-con-visual-basic.md
+- macros-sas-pasar-de-texto-a-numerico.md
+- transformar-variables-en-sas-caracter-a-numerico.md
+- trucos-excel-y-sas-complemento-para-cambiar-la-configuracion-regional.md
+- trucos-excel-tranformar-un-caracter-a-fecha.md
 slug: trucos-excel-pasar-de-caracter-a-numerico-con-formulas
 tags: []
 title: Trucos Excel. Pasar de caracter a numérico con fórmulas

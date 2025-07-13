@@ -5,6 +5,13 @@ categories:
 - SAS
 - WPS
 date: '2011-07-26T15:47:02-05:00'
+lastmod: '2025-07-13T16:04:09.094318'
+related:
+- integracion-de-r-con-sas-spss-y-otros.md
+- lectura-de-ficheros-sas7bdat-de-sas-directamente-con-r.md
+- en-breve-revision-de-wps-clonico-de-sas.md
+- acercamiento-a-wps-migrando-desde-sas.md
+- truco-leer-sas7bdat-sin-sas.md
 slug: paquete-sas7bdat-de-r-me-pongo-con-ello
 tags:
 - ''

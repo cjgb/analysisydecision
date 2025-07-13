@@ -8,6 +8,13 @@ categories:
 - SAS
 - Trucos
 date: '2011-06-10T12:09:09-05:00'
+lastmod: '2025-07-13T16:09:43.353288'
+related:
+- arboles-de-decision-con-sas-base-con-r-por-supuesto.md
+- monografico-arboles-de-clasificacion-con-rpart.md
+- monografico-arboles-de-decision-con-party.md
+- monografico-un-poco-de-proc-logistic.md
+- resolucion-del-juego-de-modelos-con-r.md
 slug: trucos-r-llevar-a-sas-las-reglas-de-un-arbol-de-decision
 tags:
 - ''

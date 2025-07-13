@@ -6,6 +6,13 @@ categories:
 - Monográficos
 - Python
 date: '2017-06-19T01:32:43-05:00'
+lastmod: '2025-07-13T16:00:39.125833'
+related:
+- machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algoritmos-de-clasificacion.md
+- el-parametro-gamma-el-coste-la-complejidad-de-un-svm.md
+- resolucion-del-juego-de-modelos-con-r.md
+- monografico-clasificacion-con-svm-en-r.md
+- juego-de-modelos-de-regresion-con-r.md
 slug: machine-learning-elegir-el-mejor-gradient-boost-de-forma-iterativa-con-gridseacrchcv
 tags:
 - GradientBoostingClassifier

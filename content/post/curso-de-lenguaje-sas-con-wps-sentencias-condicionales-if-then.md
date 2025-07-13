@@ -5,6 +5,13 @@ categories:
 - Monográficos
 - WPS
 date: '2011-02-16T15:42:13-05:00'
+lastmod: '2025-07-13T15:55:57.753656'
+related:
+- curso-de-lenguaje-sas-con-wps-subconjuntos-de-variables-con-drop-y-keep.md
+- laboratorio-de-codigo-sas-comparativa-entre-if-y-where.md
+- curso-de-lenguaje-sas-con-wps-el-paso-data.md
+- curso-de-lenguaje-sas-con-wps-ejecuciones.md
+- en-merge-mejor-if-o-where.md
 slug: curso-de-lenguaje-sas-con-wps-sentencias-condicionales-if-then
 tags:
 - ''

@@ -6,6 +6,13 @@ categories:
 - Monográficos
 - R
 date: '2012-04-23T09:34:30-05:00'
+lastmod: '2025-07-13T15:59:20.215089'
+related:
+- evaluando-la-capacidad-predictiva-de-mi-modelo-tweedie.md
+- modelos-tweedie-con-h2o-mutualizar-siniestralidad-en-base-a-factores-de-riesgo.md
+- determinar-la-distribucion-de-un-vector-de-datos-con-r.md
+- manual-curso-introduccion-de-r-capitulo-8-inferencia-estadistica.md
+- capitulo-5-representacion-basica-con-ggplot.md
 slug: la-distribucion-tweedie
 tags:
 - modelo de riesgo

@@ -7,6 +7,13 @@ categories:
 - Monográficos
 - SAS
 date: '2016-11-09T15:03:33-05:00'
+lastmod: '2025-07-13T15:55:04.717411'
+related:
+- mapas-sas-a-partir-de-shapefile.md
+- adyacencia-de-poligonos-con-el-paquete-spdep-de-r.md
+- representar-poligonos-de-voronoi-dentro-de-un-poligono.md
+- incluir-subplot-en-mapa-con-ggplot.md
+- identificar-los-municipios-costeros-y-limitrofes-de-espana-con-r.md
 slug: como-obtener-los-centroides-de-municipios-con-sas-mapas-con-sgplot
 tags:
 - MAPA SAS

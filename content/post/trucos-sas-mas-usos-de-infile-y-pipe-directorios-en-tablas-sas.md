@@ -6,6 +6,13 @@ categories:
 - Trucos
 - WPS
 date: '2011-07-15T10:47:18-05:00'
+lastmod: '2025-07-13T16:10:09.782744'
+related:
+- truco-sas-uso-de-filename-y-pipe.md
+- truco-sas-dataset-con-los-ficheros-y-carpetas-de-un-directorio.md
+- curso-de-lenguaje-sas-con-wps-lectura-de-ficheros-de-texto.md
+- trucos-sas-macrovariable-a-dataset.md
+- importar-a-sas-desde-otras-aplicaciones.md
 slug: trucos-sas-mas-usos-de-infile-y-pipe-directorios-en-tablas-sas
 tags:
 - ''

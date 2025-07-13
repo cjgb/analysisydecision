@@ -4,6 +4,13 @@ categories:
 - Business Intelligence
 - SAS
 date: '2014-05-01T10:27:45-05:00'
+lastmod: '2025-07-13T16:11:02.838405'
+related:
+- agregador-de-noticias-de-sas.md
+- 1500-visitas-mensuales.md
+- agregador-de-noticias-de-r-en-espanol.md
+- sas-global-forum-2009.md
+- el-ano-2010-para-analisisydecision.md
 slug: un-nuevo-blog-sobre-sas-en-espanol
 tags: []
 title: Un nuevo blog sobre SAS en español

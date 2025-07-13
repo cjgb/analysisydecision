@@ -4,6 +4,13 @@ categories:
 - Banca
 - Consultoría
 date: '2009-02-19T03:18:44-05:00'
+lastmod: '2025-07-13T15:53:53.116559'
+related:
+- me-preocupa-el-pequeno-ahorrador-ii.md
+- margenes-nulos-en-los-nuevos-depositos-bancarios.md
+- lecciones-de-economia-de-un-ignorante-no-me-dan-hipoteca.md
+- lecciones-de-economia-de-un-ignorante-los-bancos-pierden-dinero-para-favorecer-a-unos-y-luego-los-salvamos-todos.md
+- amanece-que-no-es-poco.md
 slug: a-mi-me-preocupa-el-pequeno-ahorrador
 tags:
 - depósitos bancarios

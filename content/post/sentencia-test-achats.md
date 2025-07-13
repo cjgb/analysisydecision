@@ -4,6 +4,13 @@ categories:
 - Consultoría
 - Seguros
 date: '2012-07-06T06:46:27-05:00'
+lastmod: '2025-07-13T16:06:10.082279'
+related:
+- el-modelo-multivariante-en-el-sector-asegurador-univariante-vs-multivariante-ii.md
+- el-modelo-multivariante-en-el-sector-asegurador-introduccion-i.md
+- internet-of-things-en-el-sector-asegurador.md
+- personalizar-los-contactos-comerciales.md
+- el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v.md
 slug: sentencia-test-achats
 tags:
 - Sentencia Test-Achats

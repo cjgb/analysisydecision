@@ -4,6 +4,13 @@ categories:
 - Monográficos
 - SAS
 date: '2008-11-17T09:58:16-05:00'
+lastmod: '2025-07-13T16:06:45.978061'
+related:
+- curso-de-lenguaje-sas-con-wps-funciones-fecha.md
+- monografico-funciones-intnx-e-intck-para-fechas-en-sas.md
+- trabajo-con-fechas-sas-introduccion.md
+- trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados.md
+- trucos-sas-numero-de-dias-de-un-mes.md
 slug: trabajo-con-fechas-sas-funciones-fecha
 tags:
 - fechas sas

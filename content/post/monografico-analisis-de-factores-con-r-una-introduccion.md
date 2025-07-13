@@ -6,6 +6,13 @@ categories:
 - Monográficos
 - R
 date: '2010-02-11T13:07:36-05:00'
+lastmod: '2025-07-13T16:02:42.875396'
+related:
+- monografico-regresion-logistica-con-r.md
+- manual-curso-introduccion-de-r-capitulo-13-analisis-de-la-varianza-disenos-anidados.md
+- manual-curso-introduccion-de-r-capitulo-11-introduccion-al-analisis-de-la-varianza-anova.md
+- manual-curso-introduccion-de-r-capitulo-14-introduccion-al-calculo-matricial-con-analisis-de-componentes-principales.md
+- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-7-descripcion-grafica-de-variables.md
 slug: monografico-analisis-de-factores-con-r-una-introduccion
 tags: []
 title: Monográfico. Análisis de Factores con R (una introducción)

@@ -5,6 +5,13 @@ categories:
 - Monográficos
 - SAS
 date: '2009-11-03T08:57:27-05:00'
+lastmod: '2025-07-13T15:59:14.734327'
+related:
+- en-merge-mejor-if-o-where.md
+- laboratorio-de-codigo-sas-vistas-proc-means-vs-proc-sql.md
+- truco-sas-cruce-con-formatos.md
+- laboratorio-de-codigo-sas-ordenaciones-con-hash-vs-proc-sort.md
+- curso-de-lenguaje-sas-con-wps-sentencias-condicionales-if-then.md
 slug: laboratorio-de-codigo-sas-comparativa-entre-if-y-where
 tags: []
 title: Laboratorio de código SAS. Comparativa entre IF y WHERE
