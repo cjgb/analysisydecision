@@ -16,7 +16,7 @@ slug: mapa_mundo_exce
 tags:
 - mapas excel
 title: Mapa del mundo en Excel
-url: /mapa_mundo_exce/
+url: /blog/mapa_mundo_exce/
 ---
 
 [![](/images/2014/09/mapa_mundo_excel-300x200.png)](/images/2014/09/mapa_mundo_excel.png)
@@ -27,17 +27,17 @@ Un**mapa del mundo en Excel** preparado para poner datos de la Base de Datos de 
 
 Para actualizar los colores tenéis que ejecutar esta simple macro:
 
-Sub cambia_color()  
-Dim pais As String  
-Dim i As Integer  
-Dim color As Long  
-Dim myShape As Shape  
-For i = 2 To 190  
-pais = Cells(i, 26)  
-color = Cells(i, 30)  
-Set myShape = Sheets(1).Shapes(pais)  
-myShape.Fill.ForeColor.RGB = color  
-Next i  
+Sub cambia_color()
+Dim pais As String
+Dim i As Integer
+Dim color As Long
+Dim myShape As Shape
+For i = 2 To 190
+pais = Cells(i, 26)
+color = Cells(i, 30)
+Set myShape = Sheets(1).Shapes(pais)
+myShape.Fill.ForeColor.RGB = color
+Next i
 End Sub
 
 En cuanto a los datos que se representan en el mapa. Tasa de mortalidad infantil en el mundo. Los países más oscuros o bien no disponen de datos o bien no han cruzado con los datos de la UNESCO. Se podrá mejorar el resultado. Algo más subjetivo, no sé como consentimos este rojo predominante en África. Será que sin ese rojo yo no podría escribir cosas como esta… Saludos.

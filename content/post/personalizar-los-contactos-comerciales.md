@@ -13,7 +13,7 @@ related:
 slug: personalizar-los-contactos-comerciales
 tags: []
 title: Personalizar los contactos comerciales
-url: /personalizar-los-contactos-comerciales/
+url: /blog/personalizar-los-contactos-comerciales/
 ---
 
 La herramienta de Google para la inserción de anuncios el [Adwords](https://analisisydecision.es/wp-admin/www.AdWords.Google.es) nos permite descubrir en la red uno de los métodos de personalización de contactos comerciales con mayor futuro. En función del contenido de la página web que se carge Adwords selecciona el anuncio para que llegue a un público objetivo. Veamos por elemplo la edición del diario [El Mundo](http://www.elmundo.es/) para el día 20/01/2009. Entre las noticias de portada tenemos el ERE de Seat y su correspondiente publicidad de Adwords:

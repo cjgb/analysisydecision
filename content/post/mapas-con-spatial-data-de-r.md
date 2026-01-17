@@ -19,7 +19,7 @@ tags:
 - sp
 - spatial data
 title: Mapas con spatial data de R
-url: /mapas-con-spatial-data-de-r/
+url: /blog/mapas-con-spatial-data-de-r/
 ---
 
 [](/images/2010/10/colombia13.jpg "colombia13.jpg")
@@ -180,5 +180,5 @@ text(getSpPPolygonsLabptSlots(mapa),
 labels=as.character(mapa$valores), cex=0.3)
 ```
 
-Efectivamente sólo ha representado un valor para Canarias. Tenemos que tener mucho cuidado con el uso de este objeto. Además la representación no es muy buena ya que sería más elegante recuadrar las islas y disponer de un mapa con una escala mayor.  
+Efectivamente sólo ha representado un valor para Canarias. Tenemos que tener mucho cuidado con el uso de este objeto. Además la representación no es muy buena ya que sería más elegante recuadrar las islas y disponer de un mapa con una escala mayor.
 En fin, empezamos a aproximarnos al uso de objetos spatial data para la representación de mapas con R. Poco a poco iré introduciendo estas representaciones en los distintos mapas que realizamos. Por cierto, si alguien quiere seguir la labor y crear ejemplos de uso para Colombia y México que me lo comunique y creamos un link. Saludos.

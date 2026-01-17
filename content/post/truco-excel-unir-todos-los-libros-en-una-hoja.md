@@ -16,13 +16,13 @@ slug: truco-excel-unir-todos-los-libros-en-una-hoja
 tags:
 - visual basic
 title: Truco Excel. Unir todos los libros en una hoja
-url: /truco-excel-unir-todos-los-libros-en-una-hoja/
+url: /blog/truco-excel-unir-todos-los-libros-en-una-hoja/
 ---
 
 ![unir_excel1](/images/2017/03/unir_excel1.png)
 
-Los trucos Excel referentes a la unión de varios libros en uno tienen mucho éxito en esta web, además era necesario crear una versión que uniera de forma horizontal. No es una unión como la pueda hacer **Power Query** de anexar tablas con cierto sentido teniendo en cuenta el nombre de las columnas y demás, se trata [  
-](/images/2017/03/unir_excel1.png)de unir todas las celdas de un conjunto de libros de forma horizontal en otro libro resultante como ilustra la figura de arriba. Se unirán todos los campos unos encima de otros independientemente de si se llaman igual o no, si queremos anexar tablas es recomendable usar herramientas más específicas. El funcionamiento es muy sencillo pero [  
+Los trucos Excel referentes a la unión de varios libros en uno tienen mucho éxito en esta web, además era necesario crear una versión que uniera de forma horizontal. No es una unión como la pueda hacer **Power Query** de anexar tablas con cierto sentido teniendo en cuenta el nombre de las columnas y demás, se trata [
+](/images/2017/03/unir_excel1.png)de unir todas las celdas de un conjunto de libros de forma horizontal en otro libro resultante como ilustra la figura de arriba. Se unirán todos los campos unos encima de otros independientemente de si se llaman igual o no, si queremos anexar tablas es recomendable usar herramientas más específicas. El funcionamiento es muy sencillo pero [
 ](/images/2017/03/unir_excel2.png)lo vamos a ilustrar con imágenes, el primer paso es pulsar directamente el botón y seleccionar los archivos a unir:
 
 ![unir_excel2](/images/2017/03/unir_excel21.png)
@@ -83,13 +83,13 @@ ThisWorkbook.Save
     Application.ScreenUpdating = True
 End Sub
 ```
- 
+
 
 Abrimos un array de libros de Excel y seleccionamos donde guardamos, bajo mi punto de vista la parte más interesante del código es esta:
 
-_With Range(celda)_  
-_.Resize(Cells(Rows.Count, «A»).End(xlUp).Row – (.Row – 1), __  
-_Cells(5, Columns.Count).End(xlToLeft).Column – (.Column – 1)).Copy_  
+_With Range(celda)_
+_.Resize(Cells(Rows.Count, «A»).End(xlUp).Row – (.Row – 1), __
+_Cells(5, Columns.Count).End(xlToLeft).Column – (.Column – 1)).Copy_
 _End With_
 
 Nos permite seleccionar el rango a copiar aunque haya registros sin datos o celdas en blanco, el método que usaba habitualmente tenía este problema. El último paso del proceso lo que hace es situar la celda seleccionada en el último registro y lo hace midiendo la longitud del rango seleccionado con _largo = Cells(Rows.Count, 1).End(xlUp).Row_ la primera celda sin datos será el largo más uno y ahí pegará los datos copiados del siguiente libro y de este modo realiza el proceso iterativo. Al final de todo se guarda el resultado y ya tenemos nuestros datos anexados. Para descargaros directamente el Excel que realiza la tarea pulsad en el siguiente link:

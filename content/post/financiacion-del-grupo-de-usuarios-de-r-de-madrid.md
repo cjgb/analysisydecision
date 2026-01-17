@@ -13,7 +13,7 @@ related:
 slug: financiacion-del-grupo-de-usuarios-de-r-de-madrid
 tags: []
 title: Financiación del Grupo de Usuarios de R de Madrid
-url: /financiacion-del-grupo-de-usuarios-de-r-de-madrid/
+url: /blog/financiacion-del-grupo-de-usuarios-de-r-de-madrid/
 ---
 
 El Grupo de Usuarios de R de Madrid no ha renovado el patrocinio con Revolution Analytics y para la financiación de los gastos que genera se ha lanzado una edición de tazas con el logo del grupo. Las tazas cuestan 9,99€ y se han hecho una tirada de 100 tazas, del precio de estas tazas la mitad iría para dicha financiación.

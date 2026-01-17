@@ -15,22 +15,22 @@ related:
 slug: truco-excel-repetir-un-campo-a-partir-de-otro-que-define-el-numero-de-repeticiones
 tags: []
 title: Truco Excel. Repetir un campo a partir de otro que define el número de repeticiones
-url: /truco-excel-repetir-un-campo-a-partir-de-otro-que-define-el-numero-de-repeticiones/
+url: /blog/truco-excel-repetir-un-campo-a-partir-de-otro-que-define-el-numero-de-repeticiones/
 ---
 
 En realidad necesitamos repetir filas, pero el número de repeticiones está parametrizado por otro campo. Partimos de un rango donde la primera columna es un valor que necesita ser repetido el número de filas que nos indica la segunda columna. Es una duda que planteaba un lector del blog:
 
-_Hola, a ver si me podeis ayudar,_  
-_quiero repetir cada fila el número de veces que hay en cada celda que le corresponde._  
-_Es decir tengo una variable Nombre (Columna A) y otra Frecuencia (Columna B)_  
-_Nombre Frecuencia_  
-_A 5_  
-_B 8_  
-_C 25_  
-_D 12_  
+_Hola, a ver si me podeis ayudar,_
+_quiero repetir cada fila el número de veces que hay en cada celda que le corresponde._
+_Es decir tengo una variable Nombre (Columna A) y otra Frecuencia (Columna B)_
+_Nombre Frecuencia_
+_A 5_
+_B 8_
+_C 25_
+_D 12_
 _… …._
 
-_La idea es repetir la la Fila A, 5 veces, la fila B, 8 veces y así sucesivamente._  
+_La idea es repetir la la Fila A, 5 veces, la fila B, 8 veces y así sucesivamente._
 _En realidad es lo inverso a crear una tabla de frecuencias desde una matriz de datos._
 
 Tenía en la nevera un truco de Excel que puede hacer esta tarea y que también subiré al blog en los próximos días, en realidad esta entrada y la siguiente son modificaciones de un [anterior truco Excel que subí al blog](https://analisisydecision.es/truco-excel-pasar-un-rango-de-varias-columnas-a-una/). En esta imagen podéis ver lo que hace:
@@ -63,7 +63,7 @@ Next
 
 End Sub
 ```
- 
+
 
 Se ejecutan 2 cuadros con el método Application.InputBox, en el primero seleccionamos el rango de datos **sin cabeceras** y en el segundo indicamos donde queremos que salgan los datos. Se trata de recorrer el rango y pararse a repetir las primera columna del rango tantas veces como lo indica la segunda columna. Un proceso sencillo con Visual Basic pero que sería interesante replicar con funciones de Excel, en este caso creo que INDIRECTO sería la más adecuada. En el siguiente enlace podéis descargar el ejemplo:
 

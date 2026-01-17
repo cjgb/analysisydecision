@@ -13,7 +13,7 @@ related:
 slug: algunos-temas-de-interes-sobre-r
 tags: []
 title: Algunos temas de interés sobre R
-url: /algunos-temas-de-interes-sobre-r/
+url: /blog/algunos-temas-de-interes-sobre-r/
 ---
 
 No había escrito nada sobre ello porque muchos de mis lectores sé que están al corriente de la realización de las [II jornadas de R en castellano](http://epm.uniovi.es/actividades/-/asset_publisher/0012/content/ii-jornadas-de-usuarios-de-r-en-castellano?redirect=/inicio). Este año se organizan en la Escuela Politécnica de Mieres y tienen un par de talleres muy interesantes. A ver que tal funciona la experiencia de los talleres, particularmente si me parece buena opción. Desgraciadamente no contarán con mi presencia, el más ferviente defensor de R en los foros de ~~dinosaurios~~ gestores de la información. Mis deberes familiares (cada vez más numerosos) y un nuevo cambio en el rumbo de mi trayectoria profesional me impiden acudir. La siguiente edición.

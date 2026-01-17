@@ -16,7 +16,7 @@ slug: preparar-nuestros-datos-para-sklearn-pasar-de-string-a-numero
 tags:
 - sklearn
 title: Preparar nuestros datos para sklearn. Pasar de string a número
-url: /preparar-nuestros-datos-para-sklearn-pasar-de-string-a-numero/
+url: /blog/preparar-nuestros-datos-para-sklearn-pasar-de-string-a-numero/
 ---
 
 Cuando trabajamos con python y sklearn necesitamos que todos los datos que vamos a modelizar sean númericos, si tenemos variables carácter necesitamos previamente transformarlas a números. La forma más rápida para realizar esta tarea es emplear preprocesing de sklearn:
@@ -27,7 +27,7 @@ dias = {'dia': ['lunes','martes','viernes','miercoles','jueves','martes','mierco
 dias = pd.DataFrame(dias)
 dias
 ```
- 
+
 
 Creamos un data frame a partir de una diccionario que se compone de los días de la semana ahora vamos a codificar las etiquetas con el LabelEncoder de sklearn:
 
@@ -36,14 +36,14 @@ from sklearn import preprocessing
 le = preprocessing.LabelEncoder()
 le.fit(dias['dia'])
 ```
- 
+
 
 Podemos listar las clases:
 
 ```r
 list(le.classes_)
 ```
- 
+
 
 Me gustaría destacar que hay que tener especial cuidado con el orden de las codificaciones porque es un orden léxico-gráfico, no va por orden de aparición:
 
@@ -51,6 +51,6 @@ Me gustaría destacar que hay que tener especial cuidado con el orden de las cod
 dias = le.transform(dias['dia'])
 dias
 ```
- 
+
 
 Ahora ya estamos en disposición de poder emplear sklearn para entrenar nuestro modelo.

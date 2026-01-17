@@ -14,7 +14,7 @@ slug: mas-recortes-para-la-ciencia-espanola
 tags:
 - debate
 title: Más recortes para la ciencia española
-url: /mas-recortes-para-la-ciencia-espanola/
+url: /blog/mas-recortes-para-la-ciencia-espanola/
 ---
 
 ![](https://farm3.static.flickr.com/2488/3973473121_e76fde787c_o.jpg)

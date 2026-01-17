@@ -20,7 +20,7 @@ tags:
 - memisc
 - recode
 title: Recodificar el valor de un factor en R
-url: /recodificar-el-valor-de-un-factor-en-r/
+url: /blog/recodificar-el-valor-de-un-factor-en-r/
 ---
 
 Tras leer una duda planteada en la [lista de R-Help en español](https://stat.ethz.ch/mailman/listinfo/r-help-es) me he animado a crear una entrada acerca de la recodificación de factores en R. Así dejo recogido algún **código/truco** que puede serviros en vuestro trabajo con R y que este pequeño problema no afecte a vuestra productividad. Además os acerco a la función _recode_ del paquete _car_. Pero en primer lugar os planteo como recodificar factores empleando IF/ELSE:

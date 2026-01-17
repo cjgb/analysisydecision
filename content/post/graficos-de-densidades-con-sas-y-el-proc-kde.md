@@ -15,10 +15,10 @@ related:
 slug: graficos-de-densidades-con-sas-y-el-proc-kde
 tags: []
 title: Gráficos de densidades con SAS y el PROC KDE
-url: /graficos-de-densidades-con-sas-y-el-proc-kde/
+url: /blog/graficos-de-densidades-con-sas-y-el-proc-kde/
 ---
 
-[](/images/2010/06/histogram1.png "histogram1.png")El PROC KDE de SAS está incluido en el módulo SAS/STAT. Es un procedimiento que nos permite estudiar gráficamente las distribuciones de variables continuas. Lo que nos produce son gráficos de densidades. Para seguir el ejemplo nos vamos a ir a [Yahoo Finance ](http://es.finance.yahoo.com/q/hp?s=%5EIBEX)y descargarnos un evolutivo del IBEX de los últimos 3 meses (yo realizo este proceso con Excel), una vez tengamos el dataset creado, para el análisis de la densidad univariante podemos hacer:  
+[](/images/2010/06/histogram1.png "histogram1.png")El PROC KDE de SAS está incluido en el módulo SAS/STAT. Es un procedimiento que nos permite estudiar gráficamente las distribuciones de variables continuas. Lo que nos produce son gráficos de densidades. Para seguir el ejemplo nos vamos a ir a [Yahoo Finance ](http://es.finance.yahoo.com/q/hp?s=%5EIBEX)y descargarnos un evolutivo del IBEX de los últimos 3 meses (yo realizo este proceso con Excel), una vez tengamos el dataset creado, para el análisis de la densidad univariante podemos hacer:
 
 ```r
 ods graphics on;

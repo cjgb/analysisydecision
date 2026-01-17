@@ -33,7 +33,7 @@ mes = ['', 'Enero', 'Febrero', 'Marzo',
         'Julio', 'Agosto', 'Septiembre',
         'Octubre', 'Noviembre', 'Diciembre']
 
-headers = [get_header(f) for f in all_posts]
+headers = [get_header(f) for f in all_posts if f.endswith(".md")]
 headers = [h for h in headers]
 headers.sort(key = lambda x: x['date'], reverse = True)
 

@@ -14,7 +14,7 @@ related:
 slug: la-nueva-web-de-jjgibaja
 tags: []
 title: La nueva web de @jjgibaja
-url: /la-nueva-web-de-jjgibaja/
+url: /blog/la-nueva-web-de-jjgibaja/
 ---
 
 Estaba preparando una entrada con el recopilatorio de los videos de Gibaja pero es mucho mejor lo que ha hecho su autor:

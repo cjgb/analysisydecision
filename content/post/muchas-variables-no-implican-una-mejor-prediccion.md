@@ -17,7 +17,7 @@ tags:
 - azar
 - importancia variables
 title: Muchas variables no implican una mejor predicción
-url: /muchas-variables-no-implican-una-mejor-prediccion/
+url: /blog/muchas-variables-no-implican-una-mejor-prediccion/
 ---
 
 ![](https://2.bp.blogspot.com/_zFAmaVE4u-U/Sj61p51qOUI/AAAAAAAAANA/ogdK03jx7o4/s320/127brosavientos.jpg)

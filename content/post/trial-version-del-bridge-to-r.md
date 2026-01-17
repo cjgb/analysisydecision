@@ -13,7 +13,7 @@ related:
 slug: trial-version-del-bridge-to-r
 tags: []
 title: Trial version del Bridge to R
-url: /trial-version-del-bridge-to-r/
+url: /blog/trial-version-del-bridge-to-r/
 ---
 
 Si pincháis este[ link ](http://minequest.com/WordPress/?p=518)podéis probrar el brige to R 60 días.

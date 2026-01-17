@@ -17,7 +17,7 @@ tags:
 - ''
 - SAS es muy caro
 title: Porque me gusta R
-url: /porque-me-gusta-r/
+url: /blog/porque-me-gusta-r/
 ---
 
 En los últimos tiempos he hablado mucho y mal de R en los «ambientes». El problema de siempre puede terminar con la paciencia de cualquiera, la manipulación de datos con R cuando superamos un GB puede acabar con la paciencia de este viejo dinosaurio. Viejo por usado no por mi edad, y dinosaurio por anticuado, aunque me gustaría recordar que los dinosaurios fueron capaces de sobrevivir 65 millones de años. En realidad soy un _mainframe,_ usado, superviviente e imprescindible y **me gusta R.** Desde el año 2001 sé que el futuro de la gestión de la información pasa por él. Por este mismo motivo soy uno de los tipos que más ha luchado por divulgar las bondades y, sobre todo, las posibilidades que nos ofrece. Pero de verdad me gusta R porque, bajo mi punto de vista, el principal objetivo de todos aquellos que gestionamos datos tiene que ser la rentabilidad. ¡Chimpún!

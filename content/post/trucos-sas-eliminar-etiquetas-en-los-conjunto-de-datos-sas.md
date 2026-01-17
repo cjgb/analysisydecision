@@ -15,10 +15,10 @@ related:
 slug: trucos-sas-eliminar-etiquetas-en-los-conjunto-de-datos-sas
 tags: []
 title: Trucos SAS. Eliminar etiquetas en los conjunto de datos SAS
-url: /trucos-sas-eliminar-etiquetas-en-los-conjunto-de-datos-sas/
+url: /blog/trucos-sas-eliminar-etiquetas-en-los-conjunto-de-datos-sas/
 ---
 
-Hoy planteo un ejemplo de uso de las vistas de SASHELP con los nombres de las columnas de una tabla SAS. Además sirve para conocer mejor el PROC DATASETS y la creación de macro variables con el PROC SQL. Una macro que no es de mucha utilidad pero con la que podemos empezar a aproximarnos al lenguage macro de SAS:  
+Hoy planteo un ejemplo de uso de las vistas de SASHELP con los nombres de las columnas de una tabla SAS. Además sirve para conocer mejor el PROC DATASETS y la creación de macro variables con el PROC SQL. Una macro que no es de mucha utilidad pero con la que podemos empezar a aproximarnos al lenguage macro de SAS:
 
 ```r
 %macro sinetiquetas(conj);

@@ -17,7 +17,7 @@ tags:
 - REvolution Computing
 - what is R
 title: What is R? Interesantes videos de REvolution Computing
-url: /what-is-r-interesantes-videos-de-revolution-computing/
+url: /blog/what-is-r-interesantes-videos-de-revolution-computing/
 ---
 
 Serie de 4 videos de REvolution que aconsejo ver:

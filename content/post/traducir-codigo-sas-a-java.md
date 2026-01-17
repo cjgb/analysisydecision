@@ -15,7 +15,7 @@ slug: traducir-codigo-sas-a-java
 tags:
 - SAS Java WPS
 title: Traducir código SAS a Java
-url: /traducir-codigo-sas-a-java/
+url: /blog/traducir-codigo-sas-a-java/
 ---
 
 Hacía tiempo que no escribía en este blog pero creo que la noticia bien amerita un hiato en mi contumaz incuria.

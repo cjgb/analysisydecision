@@ -16,7 +16,7 @@ tags:
 - CHANGE
 - proc datasets
 title: Trucos SAS. Modificar el nombre de una tabla con código
-url: /trucos-sas-modificar-el-nombre-de-una-tabla-con-codigo/
+url: /blog/trucos-sas-modificar-el-nombre-de-una-tabla-con-codigo/
 ---
 
 Dando un repaso a las entradas de Google me he encontrado repetida la frase: «cambiar el nobre de un dataset SAS». Imagino que desearán cambiar el nombre de un dataset con código sin realizar un paso DATA. Para hacer esta labor hemos de emplear el PROC DATASETS y la sentencia CHANGE. Veamos un código de ejemplo muy sencillo:

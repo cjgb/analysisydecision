@@ -14,10 +14,10 @@ related:
 slug: transformaciones-de-variables-cuantitativas-en-modelos-binomiales
 tags: []
 title: Transformaciones de variables cuantitativas en modelos binomiales
-url: /transformaciones-de-variables-cuantitativas-en-modelos-binomiales/
+url: /blog/transformaciones-de-variables-cuantitativas-en-modelos-binomiales/
 ---
 
-Para mejorar la capacidad predictiva de nuestros modelos binomiales es recomendable transformar las variables independientes. Existen técnicas que lo hacen de modo automático pero hoy os quería mostrar en un video un método «casero» para agrupar una variable cuantitativa con respecto a una variable respuesta, todo muy orientado a que la transformación tenga un sentido de negocio. 
+Para mejorar la capacidad predictiva de nuestros modelos binomiales es recomendable transformar las variables independientes. Existen técnicas que lo hacen de modo automático pero hoy os quería mostrar en un video un método «casero» para agrupar una variable cuantitativa con respecto a una variable respuesta, todo muy orientado a que la transformación tenga un sentido de negocio.
 
 El código empleado para hacer el video es el siguiente:
 

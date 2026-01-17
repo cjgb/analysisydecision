@@ -16,7 +16,7 @@ related:
 slug: atentos-a-los-intervalos-de-confianza
 tags: []
 title: Atentos a los intervalos de confianza
-url: /atentos-a-los-intervalos-de-confianza/
+url: /blog/atentos-a-los-intervalos-de-confianza/
 ---
 
 [![](/images/2013/07/cali.png)](/images/2013/07/cali.png)
@@ -36,7 +36,7 @@ y = ranuni(8);
 dist = sqrt((y-x/100)**2);
 if dist
 ```
- 
+
 
 [![](/images/2013/07/intervalo_confianza_sas_1.png)](/images/2013/07/intervalo_confianza_sas_1.png)
 
@@ -48,7 +48,7 @@ model y = x/spec;
 plot y*x/conf;
 run;quit;
 ```
- 
+
 
 Podemos observar que el intervalo se estrecha en la zona central de nuestra recta de regresión, es decir, es más estrecho en el punto (media_y,media_x) por donde pasan todas las rectas de regresión, sin embargo casi todos los puntos están fuera de ese intervalo en esa zona y a la izquierda, donde el intervalo es ligeramente más ancho, casi todos los puntos caen dentro. No es un modelo que presenta homocedasticidad algo que comprobamos con la opción spec. Es evidente que los datos tienen poco de aleatorios, están forzados para que salga lo que tiene que salir, pero se trata de alertaros sobre medias y desviaciones típicas. Y pediros, también, que veáis **gráficos de residuos** cuando modelicéis:
 
@@ -59,7 +59,7 @@ plot y*x/conf;
 plot residual.*x;
 run;quit;
 ```
- 
+
 
 [![](/images/2013/07/intervalo_confianza_sas_2.png)](/images/2013/07/intervalo_confianza_sas_2.png)
 

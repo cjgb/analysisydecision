@@ -15,10 +15,10 @@ related:
 slug: proyecto-text-mining-con-excel-ii
 tags: []
 title: Proyecto. Text mining con Excel (II)
-url: /proyecto-text-mining-con-excel-ii/
+url: /blog/proyecto-text-mining-con-excel-ii/
 ---
 
-Sin una tabla no hay Text mining. Hay que idear la forma de tabular las búsquedas que realice en Google. Desde Excel puedo abrir cualquier web. En este caso abriré la búsqueda [«formación business intelligence»](http://www.google.es/search?hl=es&q=formacion+business+intelligence&meta=) con Excel y veré exactamente lo mismo que puedo ver con un explorador web pero en una hoja de cálculo y con una estructura determinada. Hay que aprender a leer esta estructura para tabular la información. 
+Sin una tabla no hay Text mining. Hay que idear la forma de tabular las búsquedas que realice en Google. Desde Excel puedo abrir cualquier web. En este caso abriré la búsqueda [«formación business intelligence»](http://www.google.es/search?hl=es&q=formacion+business+intelligence&meta=) con Excel y veré exactamente lo mismo que puedo ver con un explorador web pero en una hoja de cálculo y con una estructura determinada. Hay que aprender a leer esta estructura para tabular la información.
 
 Abrimos nuestra búsqueda de Google con Excel y tenemos algo parecido a esto:
 

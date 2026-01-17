@@ -14,7 +14,7 @@ related:
 slug: si-no-sois-ricos-y-jovenes-no-desespereis
 tags: []
 title: Si sóis jóvenes pero no sóis ricos no desesperéis
-url: /si-no-sois-ricos-y-jovenes-no-desespereis/
+url: /blog/si-no-sois-ricos-y-jovenes-no-desespereis/
 ---
 
 ![Edad de los 100 primeros en la lista Forbes](/images/2013/03/Edad-de-los-mas-ricos.png)

@@ -15,7 +15,7 @@ related:
 slug: truco-excel-pasar-un-rango-de-varias-columnas-a-una
 tags: []
 title: Truco Excel. Pasar un rango de varias columnas a una
-url: /truco-excel-pasar-un-rango-de-varias-columnas-a-una/
+url: /blog/truco-excel-pasar-un-rango-de-varias-columnas-a-una/
 ---
 
 Macro de Excel que nos permite pasar de varias columnas a una sola. De momento no es una función, es un código que sorprende por su sencillez:
@@ -43,7 +43,7 @@ Next
 
 End Sub
 ```
- 
+
 
 Este código lo ponéis tal cual en vuestro Excel y os ilustro a continuación sobre su funcionamiento. Lo primero es seleccionar el rango de columnas que deseamos transponer:
 

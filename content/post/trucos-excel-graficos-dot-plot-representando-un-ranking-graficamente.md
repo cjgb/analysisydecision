@@ -17,7 +17,7 @@ slug: trucos-excel-graficos-dot-plot-representando-un-ranking-graficamente
 tags:
 - Dot plot
 title: Trucos Excel. Gráficos dot plot, representando un ranking gráficamente
-url: /trucos-excel-graficos-dot-plot-representando-un-ranking-graficamente/
+url: /blog/trucos-excel-graficos-dot-plot-representando-un-ranking-graficamente/
 ---
 
 Los gráficos de puntos son muy prácticos para representar de una forma visual rankings (por ejemplo). En Excel su realización no es inmediata como con otras herramientas (R por ejemplo). Para ilustrar el ejemplo se van a presentar los 20 primeros puestos de la [lista TIOBE ](http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html)de mayo de 2012 (la entrada estaba en la nevera). Entramos en la lista y sin más copiamos y pegamos los datos de tabla HTML a tabla Excel:
@@ -44,11 +44,11 @@ Ahora tenemos que etiquetar esos datos, para ello podemos emplear [JWalk Chart T
 
 Hecha esta labor comenzamos a jugar con el formato del gráfico:
 
-• Etiquetas de datos a la izquierda en la serie con los nombres  
-• Eliminar marcadores  
-• Ninguna etiqueta en el eje Y cuando demos formato  
-• Ajustar la longitud del eje Y  
-• Etiquetas de Y en la serie de los puntos  
+• Etiquetas de datos a la izquierda en la serie con los nombres
+• Eliminar marcadores
+• Ninguna etiqueta en el eje Y cuando demos formato
+• Ajustar la longitud del eje Y
+• Etiquetas de Y en la serie de los puntos
 • …
 
 Esta parte es más sencilla y más al gusto de la persona que está realizando el gráfico. Y el resultado queda:

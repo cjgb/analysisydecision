@@ -15,7 +15,7 @@ tags:
 - ''
 - Seguro Directo
 title: Nace Pelayonex, la directa de Pelayo
-url: /nace-pelayonex-la-directa-de-pelayo/
+url: /blog/nace-pelayonex-la-directa-de-pelayo/
 ---
 
 ![](https://www.pelayonex.com/MFTP/Images/promos/v1sup001v2.gif)

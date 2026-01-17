@@ -15,7 +15,7 @@ related:
 slug: sentencia-del-tribunal-de-justicia-de-la-ue-sobre-el-caso-wps-y-sas
 tags: []
 title: Sentencia del Tribunal de Justicia de la UE sobre el caso WPS y SAS
-url: /sentencia-del-tribunal-de-justicia-de-la-ue-sobre-el-caso-wps-y-sas/
+url: /blog/sentencia-del-tribunal-de-justicia-de-la-ue-sobre-el-caso-wps-y-sas/
 ---
 
 [El caso de WPS y SAS por fin tiene un final](http://curia.europa.eu/juris/document/document.jsf?text=SAS%2BInstitute&docid=122362&pageIndex=0&doclang=ES&mode=req&dir=&occ=first&part=1&cid=148988#ctx1). World Programing Software ha vencido (por fin) al todo poderoso SAS Institute Inc. La sentencia establece que:

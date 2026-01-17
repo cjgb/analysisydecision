@@ -19,7 +19,7 @@ tags:
 - macro sas
 - numerico a fecha
 title: Macros SAS. Transformar un numérico a fecha
-url: /macros-sas-transformar-un-numerico-a-fecha/
+url: /blog/macros-sas-transformar-un-numerico-a-fecha/
 ---
 
 A continuación vamos a plantear una macro de SAS bastante sencilla que nos permitirá transformar valores numéricos del tipo 20080607, fechas en formato AAAAMMDD pero que son numéricas, a valores fecha en SAS que nos permitirán realizar operaciones. Siguiendo el sistema de todos los mensajes de AyD trabajaremos con ejemplos para estudiar su utilidad.

@@ -13,7 +13,7 @@ related:
 slug: reunion-del-grupo-de-usuarios-de-r-de-madrid-14042016
 tags: []
 title: Reunión del Grupo de Usuarios de R de Madrid 14/04/2016
-url: /reunion-del-grupo-de-usuarios-de-r-de-madrid-14042016/
+url: /blog/reunion-del-grupo-de-usuarios-de-r-de-madrid-14042016/
 ---
 
 ![](https://i0.wp.com/madrid.r-es.org/wp-content/uploads/2016/04/Reunion-Grupo-Usuarios-de-R-de-Madrid-2016-Abr-14-V1.jpg?w=720)

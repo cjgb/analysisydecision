@@ -17,7 +17,7 @@ tags:
 - knn
 - PROC DISCRIM
 title: KNN con SAS. Mejorando K-Means
-url: /knn-con-sas-mejorando-k-means/
+url: /blog/knn-con-sas-mejorando-k-means/
 ---
 
 [![Imagen de previsualización de YouTube](https://img.youtube.com/vi/UqYde-LULfs/0.jpg)](http://www.youtube.com/watch?v=UqYde-LULfs)
@@ -61,7 +61,7 @@ proc gplot data=datos;
 	plot y * x = grupo;
 run;quit;
 ```
- 
+
 
 [![KNN_SAS1](/images/2016/04/KNN_SAS1.png)](/images/2016/04/KNN_SAS1.png)
 
@@ -76,7 +76,7 @@ proc gplot data=datos2;
 	plot y * x = cluster;
 run;quit;
 ```
- 
+
 
 [![KNN_SAS2](/images/2016/04/KNN_SAS2.png)](/images/2016/04/KNN_SAS2.png)
 
@@ -100,7 +100,7 @@ proc gplot data=puntuacion;
 	plot y * x = _into_;
 run;quit;
 ```
- 
+
 
 [![KNN_SAS3](/images/2016/04/KNN_SAS3.png)](/images/2016/04/KNN_SAS3.png)
 
@@ -120,7 +120,7 @@ proc gplot data=datos3;
 	plot y * x = cluster;
 run;quit;
 ```
- 
+
 
 [![KNN_SAS4](/images/2016/04/KNN_SAS4.png)](/images/2016/04/KNN_SAS4.png)
 

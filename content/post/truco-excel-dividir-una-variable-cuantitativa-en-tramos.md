@@ -18,7 +18,7 @@ tags:
 - jerarquia
 - redondear.mas
 title: Truco Excel. Dividir una variable cuantitativa en tramos
-url: /truco-excel-dividir-una-variable-cuantitativa-en-tramos/
+url: /blog/truco-excel-dividir-una-variable-cuantitativa-en-tramos/
 ---
 
 Un truco Excel que implica la utilización de la función **JERARQUIA** para la creación de un ranking y que la complementamos con la tramificación de ese ranking, de este modo creamos tramos de una variable numérica con Excel sin necesidad de ordenación previa. La situación sería:

@@ -13,10 +13,10 @@ related:
 slug: muestrear-no-es-pecado
 tags: []
 title: Muestrear no es pecado
-url: /muestrear-no-es-pecado/
+url: /blog/muestrear-no-es-pecado/
 ---
 
-Hace unos días que nació la web de [Jose Luis Cañadas](https://twitter.com/joscani) y ya está añadida a los enlaces de AyD, desde aquí nos hacemos eco de esta nueva bitácora: 
+Hace unos días que nació la web de [Jose Luis Cañadas](https://twitter.com/joscani) y ya está añadida a los enlaces de AyD, desde aquí nos hacemos eco de esta nueva bitácora:
 
 <https://muestrear-no-es-pecado.netlify.com/>
 

@@ -13,7 +13,7 @@ related:
 slug: mapa-de-mexico-rapido-y-sucio-y-estatico-con-rstats
 tags: []
 title: 'Mapa de México rápido (y sucio) y estático con #rstats'
-url: /mapa-de-mexico-rapido-y-sucio-y-estatico-con-rstats/
+url: /blog/mapa-de-mexico-rapido-y-sucio-y-estatico-con-rstats/
 ---
 
 [![](/images/2019/01/mexico_quick_rstats.png)](/images/2019/01/mexico_quick_rstats.png)
@@ -44,6 +44,6 @@ ggplot(data = mex, aes(x = long, y = lat, group = group)) +
   labs(title = "Quick and dirty") +
   theme_void()
 ```
- 
+
 
 Ahí lo tenéis getData se conecta a GADM donde vía ISO 3 le decimos que mapa queremos y el nivel que queremos y pintamos un mapa de México con ggplot2 en un pis pas. Comentad si no entendéis algo, hay miles de entradas que hacen lo mismo de forma más detallada pero en menos líneas ninguna. Saludos.

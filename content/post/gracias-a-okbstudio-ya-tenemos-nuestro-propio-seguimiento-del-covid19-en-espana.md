@@ -14,7 +14,7 @@ slug: gracias-a-okbstudio-ya-tenemos-nuestro-propio-seguimiento-del-covid19-en-e
 tags: []
 title: 'Gracias a okbstudio ya tenemos nuestro propio seguimiento del #COVID19 en
   España'
-url: /gracias-a-okbstudio-ya-tenemos-nuestro-propio-seguimiento-del-covid19-en-espana/
+url: /blog/gracias-a-okbstudio-ya-tenemos-nuestro-propio-seguimiento-del-covid19-en-espana/
 ---
 
 El equipo de okbstudio gracias a los datos de datadista (y a un servidor) ha creado este espectacular seguimiento de los datos del COVID19 en España:

@@ -18,7 +18,7 @@ tags:
 - hashexp
 - Objetos HASH
 title: La importancia del parámetro HASHEXP
-url: /la-importancia-del-parametro-hashexp/
+url: /blog/la-importancia-del-parametro-hashexp/
 ---
 
 La última entrada (de momento) sobre objetos HASH en SAS. Quiero analizar la importancia que tiene el parámetro _hashexp_ a la hora de crear el objeto _hash_ cuando deseamos ordenar un conjunto de datos. Para ello he realizado un experimento con SAS cuyo código podéis descargaros .[aquí](/images/2010/11/pruebas-hash-exponente.sas "pruebas-hash-exponente.sas"). Es un código de calidad muy baja pero que da como resultado el siguiente gráfico:

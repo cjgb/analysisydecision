@@ -15,7 +15,7 @@ tags:
 - ggplot2
 - lattice
 title: Haciendo gráficos con R ¿cuáles son vuestras preferencias?
-url: /haciendo-graficos-con-r-c2bfcuales-son-vuestras-preferencias/
+url: /blog/haciendo-graficos-con-r-c2bfcuales-son-vuestras-preferencias/
 ---
 
 ¿Cúal de estos gráficos de cajas os gusta más?

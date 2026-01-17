@@ -14,7 +14,7 @@ related:
 slug: manual-curso-introduccion-de-r-capitulo-4-contribuciones-a-r-paquetes
 tags: []
 title: 'Manual. Curso introducción de R. Capítulo 4: Contribuciones a R (paquetes)'
-url: /manual-curso-introduccion-de-r-capitulo-4-contribuciones-a-r-paquetes/
+url: /blog/manual-curso-introduccion-de-r-capitulo-4-contribuciones-a-r-paquetes/
 ---
 
 En esta nueva entrega del manual introducctorio a la programación en R comenzaremos a familiarizarnos con las contribuciones que se realizan en el mundo a esta herramienta. La intención es cargar un **paquete** que contenga una funcionalidad en R que nos permita leer orígenes de datos ODBC para que, en sucesivas entregas, podamos leer datos de Access, Excel,…

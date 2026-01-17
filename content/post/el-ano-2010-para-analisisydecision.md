@@ -13,7 +13,7 @@ related:
 slug: el-ano-2010-para-analisisydecision
 tags: []
 title: El año 2010 para analisisydecision
-url: /el-ano-2010-para-analisisydecision/
+url: /blog/el-ano-2010-para-analisisydecision/
 ---
 
 El año 2010 para analisisydecision.es se despió con los objetivos casi cumplidos. Me planteé finalizar con 50.000 visitas. En octubre tenía claro que no llegaba, sin embargo el mes de noviembre supuso un revulsivo. Más de 7.000 visitas hacían que al final se quedara en 49.400 visitas. Por otro lado la web se sigue en las compañías más importantes de España. Hay lectores habituales en 16 empresas del IBEX35 por lo que se está posicionando como un referente en SAS dentro de estas empresas. En cuanto a América del Sur destaca el peso que están tomando las visitas de Colombia, México no tuvo el despegue deseado. El tiempo de permanencia en la página es de 2 minutos, muy por encima del minuto y 30 segundos que me había fijado como objetivo para este año.

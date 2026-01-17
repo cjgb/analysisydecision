@@ -15,16 +15,16 @@ slug: data-management-con-dplyr
 tags:
 - dplyr
 title: Data management con dplyr
-url: /data-management-con-dplyr/
+url: /blog/data-management-con-dplyr/
 ---
 
 Dos años con pandas y sckitlearn y ahora vuelvo a R. Y en mi regreso me propuse comenzar a trabajar con dplyr y mi productividad se está incrementando exponencialmente, creo que dplyr es LA HERRAMIENTA para el manejo de data frame con R, ni me imagino como puede funcionar sparlyr… Para aquellos que estéis iniciando vuestra andadura con R o para los que no estéis acostumbrados a dplyr he hecho una recopilación de las tareas más habituales que hago con esta librería. Se pueden resumir:
 
-• Seleccionar columnas  
-• Seleccionar registros  
-• Crear nuevas variables  
-• Sumarizar datos  
-• Ordenar datos  
+• Seleccionar columnas
+• Seleccionar registros
+• Crear nuevas variables
+• Sumarizar datos
+• Ordenar datos
 • Uniones de datos
 
 Como es habitual trabajamos con ejemplos data(iris); library(dplyr):
@@ -39,7 +39,7 @@ columns = c(“Sepal.Length”,”Sepal.Width”)
 two.columns <- iris %>%
 select(columns)
 ```
- 
+
 
 Seleccionar registros filter():
 
@@ -52,7 +52,7 @@ species <- iris %>%
 filter(Species %in% species_to_select)
 table(species$Species)
 ```
- 
+
 
 Crear nuevas variables mutate():
 
@@ -61,7 +61,7 @@ iris2 <- iris %>%
 mutate(Sepal.Length.6 = ifelse(Sepal.Length >=6, “GE 6”, “LT 6”)) %>%
 mutate(Sepal.Length.rela = Sepal.Length/mean(Sepal.Length))
 ```
- 
+
 
 Sumarizar group_by() summarize():
 
@@ -71,7 +71,7 @@ summarize(mean.Sepal.Length = mean(Sepal.Length),
 sd.Sepal.Length = sd(Sepal.Length),
 rows = n())
 ```
- 
+
 
 Ordenar datos arrange():
 
@@ -88,7 +88,7 @@ sd.Sepal.Length = sd(Sepal.Length),
 rows = n()) %>%
 arrange(mean.Sepal.Length)
 ```
- 
+
 
 Uniones de datos:
 
@@ -106,20 +106,20 @@ select(id,Sepal.Length.6,Sepal.Length.rela)
 
 iris4 <- iris2 %>% inner_join(iris3, by=c(“id”))
 ```
- 
+
 
 Left_join():
 
 ```r
 iris5 <- iris2 %>% left_join(iris3, by=c(“id”))
 ```
- 
+
 
 anti_join():
 
 ```r
 iris6 <- iris2 %>% anti_join(iris3)
 ```
- 
+
 
 Aquí tenéis una muestra de las posibilidades de dplyr y como se pueden combinar entre ellas. Creo que la sintaxis es bastante sencilla y se aprende con facilidad, si a mi no me esta costando mucho…

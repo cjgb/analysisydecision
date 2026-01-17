@@ -19,7 +19,7 @@ tags:
 - codigos postales
 - QGIS
 title: Como hacer un mapa de España por códigos postales con QGIS
-url: /como-hacer-un-mapa-de-espana-por-codigos-postales-con-qgis/
+url: /blog/como-hacer-un-mapa-de-espana-por-codigos-postales-con-qgis/
 ---
 
 ## Editado 2022:
@@ -45,18 +45,18 @@ Los cruces los realizáis en QGIS a través del campo COD_POSTAL. También podé
 Tenía pendiente hablar de **QGIS** y de la creación de un **mapa de España por códigos postales gratuito y libre**. Pero no sé como enfocar esta entrada porque el mapa, siendo gratuito y de difusión libre, no se puede usar con fines comerciales y me temo que un gran número de lectores del blog tienen tales fines. Así que he pensado en hablaros de [CartoCiudad](http://www.cartociudad.es/portal/) y de los mapas que contiene este interesante proyecto. En CartoCiudad colaboran algunos ministerios y entidades estatales, entre ellas **Correos** y podéis descargar provincia a provincia los archivos que componen el proyecto. Emplear los mapas de CartoCiudad implica aceptar las siguientes condiciones:
 
 > 1\. La licencia de uso solicitada ampara exclusivamente **el uso no comercial de la información geográfica** , entendiendo como tal el uso que no conlleva aprovechamiento económico directo, indirecto o diferido. Cualquier uso distinto al descrito, incluida la publicación, requerirá la suscripción de una autorización o contrato específico con el Centro Nacional de Información Geográfica (CNIG), devengando, en su caso, la contraprestación económica correspondiente. En caso de duda deberá establecerse contacto con el CNIG (consulta@cnig.es).
-> 
+>
 > 2.**El usuario titular de la licencia se compromete a citar al Instituto Geográfico Nacional (IGN) mediante la fórmula:** «© Instituto Geográfico Nacional de España» como origen y propietario de la información geográfica suministrada ante cualquier exhibición o difusión de ella, o de parte de ella o de cualquier producto que, aún siendo de forma parcial, la incorpore o derive de ella.
-> 
-> – Si se tratara de Ortofoto o MDT5 (PNOA®), la mención se sustituirá por: «PNOA cedido por © Instituto Geográfico Nacional de España».  
->  – Tratándose de datos LiDAR, la mención se sustituirá por: «LiDAR-PNOA cedido por © Instituto Geográfico Nacional de España».  
->  – En caso de datos SIOSE®, la mención se sustituirá por: «SIOSE cedido por © Instituto Geográfico Nacional de España».  
+>
+> – Si se tratara de Ortofoto o MDT5 (PNOA®), la mención se sustituirá por: «PNOA cedido por © Instituto Geográfico Nacional de España».
+>  – Tratándose de datos LiDAR, la mención se sustituirá por: «LiDAR-PNOA cedido por © Instituto Geográfico Nacional de España».
+>  – En caso de datos SIOSE®, la mención se sustituirá por: «SIOSE cedido por © Instituto Geográfico Nacional de España».
 >  – Tratándose de CartoCiudad®, la mención se sustituirá por: «CartoCiudad cedido por © Instituto Geográfico Nacional de España».
-> 
+>
 > 3\. En caso de CartoCiudad®, los nuevos productos o servicios que puedan generarse basados en CartoCiudad®, no incluirán ninguna referencia a la información catastral, ni suplantarán explícitamente o mediante productos o servicios que puedan dar lugar a confusión a los ofrecidos por la Dirección General del Catastro, del Ministerio de Economía y Hacienda, o a los ofrecidos por la Sociedad Estatal Correos y Telégrafos S.A., a quienes corresponde en exclusiva la competencia para la difusión de la información catastral y postal respectivamente, así como el ejercicio de los derechos de propiedad intelectual inherentes a la información y a las bases de datos catastrales y postales.
-> 
+>
 > 4\. La cesión de la información digital licenciada, de otra que la incorpore o de cualquier producto derivado de ella, a otra persona física o jurídica, requerirá la concesión por el CNIG de nueva licencia al nuevo usuario, o que el cedente comunique expresamente por escrito al nuevo usuario las condiciones originales de licenciamiento establecidas por el CNIG, y que el nuevo usuario acepte expresamente dichas condiciones. Esta comunicación puede llevarse a término mediante el documento estándar descargable desde www.ign.es, o bien a través de un documento definido por el cedente y aprobado previamente por el CNIG.
-> 
+>
 > 5\. Esta licencia de uso no comercial, no supone la concesión de ningún tipo de exclusividad, aval o patrocinio, ni responsabilidad alguna del IGN sobre el uso derivado de los datos geográficos.
 
 Si os habéis leído la licencia de uso entendréis porque tengo algunas dudas sobre la conveniencia de escribir esta entrada. Así que se me ha ocurrido que, os voy a decir como podéis hacer el mapa de códigos postales, os voy a advertir que el mapa que hagáis no puede tener fines comerciales y que si queréis un mapa comercial hay empresas que os pueden vender estos mapas. Yo en mi puesto de trabajo tengo uno de estos mapas comerciales y no ha sido necesario hacer todo lo que a continuación os voy a relatar.

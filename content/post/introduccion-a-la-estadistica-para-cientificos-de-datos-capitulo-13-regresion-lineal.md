@@ -16,7 +16,7 @@ slug: introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-13-regres
 tags: []
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 13. Regresión
   lineal
-url: /introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-13-regresion-lineal/
+url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-13-regresion-lineal/
 ---
 
 En el capítulo 11 dedicado al análisis bivariable se indicó que el inicio de la relación entre dos variables era la correlación, pues la regresión lineal es el principio de la modelización estadística. Evidentemente no es lo mismo pero establecer una analogía entre ambos conceptos permite entender los objetivos de la regresión lineal:
@@ -29,7 +29,7 @@ En el capítulo 11 dedicado al análisis bivariable se indicó que el inicio de 
 
 La variación de una variable afecta a otra según una función lineal por lo que será necesario crear esa función, calcular los parámetros más adecuados para esa función, decidir si esos parámetros se adecuan o no y medir si el modelo es correcto. Es decir, para plantear un modelo de regresión lineal simple es necesario seguir los siguientes pasos:
 
-  * Escribir el modelo matemático 
+  * Escribir el modelo matemático
   * Estimación de los parámetros del modelo
 
   * Inferencia sobre los parámetros del modelo
@@ -47,7 +47,7 @@ cost_living <- read.csv("./data/Cost_of_living_index.csv")
 
 skim(cost_living)
 ```
- 
+
 
 [![](/images/2023/02/wp_editor_md_0383e3977c3493ac8f49dfe25abe2765.jpg)](/images/2023/02/wp_editor_md_0383e3977c3493ac8f49dfe25abe2765.jpg)
 
@@ -70,7 +70,7 @@ Este modelo matemático implica que la variable dependiente se modifica en funci
 ```r
 cost_living %>% ggplot(aes(x = Cost.of.Living.Index)) + geom_density()
 ```
- 
+
 
 [![](/images/2023/02/wp_editor_md_cf9b737a96ad6bbad035db4d22a77272.jpg)](/images/2023/02/wp_editor_md_cf9b737a96ad6bbad035db4d22a77272.jpg)
 
@@ -80,7 +80,7 @@ No se distribuye normalmente y para corroborarlo se disponen de gráficos QQ que
 qqnorm(cost_livingCost.of.Living.Index)
 qqline(cost_livingCost.of.Living.Index)
 ```
- 
+
 
 [![](/images/2023/02/wp_editor_md_5c66b2d879a47a99fb581d72af04e846.jpg)](/images/2023/02/wp_editor_md_5c66b2d879a47a99fb581d72af04e846.jpg)
 
@@ -89,7 +89,7 @@ Más que evidente que no se distribuye normalmente ya que los muchos puntos de l
 ```r
 cor(cost_livingCost.of.Living.Index, cost_livingRent.Index)
 ```
- 
+
 
 ¿Con un coeficiente de correlación lineal superior a 0.8 no va a ser posible crear un modelo de regresión lineal? **Si es posible** , porque el científico de datos busca separar el azar de lo estadísticamente significativo, en su trabajo diario no va a realizar modelos teóricos ideales.
 
@@ -99,7 +99,7 @@ Estimación de los parámetros del modelo. Los parámetros son esos elementos \b
 cost_living %>% ggplot(aes(x = Rent.Index, y = Cost.of.Living.Index)) +
   geom_point()
 ```
- 
+
 
 [![](/images/2023/02/wp_editor_md_76170b5018700fbb15a99a43f1fa0d96.jpg)](/images/2023/02/wp_editor_md_76170b5018700fbb15a99a43f1fa0d96.jpg)
 
@@ -108,14 +108,14 @@ El método de mínimos cuadrados traza una función lineal que minimiza la dista
 ```r
 modelo.1 <- lm(data = cost_living, formula = Cost.of.Living.Index ~ Rent.Index)
 ```
- 
+
 
 Esta función es importante para conocer como se realizan los modelos en R. Evidentemente es necesario indicar los datos de entrada pero también es necesario indicar la fórmula, de ahí la importancia de conocer como será el modelo matemático. Las fórmulas siempre son de la forma variable dependiente ~ variable/s independientes, en este caso es el modelo más sencillo posible `Cost.of.Living.Index ~ Rent.Index` pero se puede complicar y permitir crear modelos más complejos. Para describir el modelo se emplea la función summary sobre el objeto `modelo.1` creado con la función `lm`
 
 ```r
 summary(modelo.1)
 ```
- 
+
 
 Esta salida es relevante. Contiene información sobre la fórmula, los residuos y los coeficientes del modelo generado, en este caso, los parámetros estimados crear una función de regresión:
 
@@ -135,7 +135,7 @@ estimacion.modelo.1 <- data.frame(prediccion_Cost.of.Living = estimacion.modelo.
 estimacion.modelo.1Rent.Index = cost_living$Rent.Index
 head(estimacion.modelo.1)
 ```
- 
+
 
 Esta tarea de generar los datos estimados por la función matemática es **escorear unos datos** , es decir, escorear es obtener las estimaciones del modelo para unos datos. En el ejmeplo es aplicar la función Y = 32.28 + 0.99·Rent.Index a una serie de datos que permita crear un _scoring_ o una variable predicha. En este caso se han escoreado los propios datos participantes en el modelo y permiten visualizar la recta de regresión en los gráficos de dispersión.
 
@@ -146,13 +146,13 @@ cost_living %>% ggplot(aes(x = Rent.Index, y = Cost.of.Living.Index)) +
             aes(x=Rent.Index, y=prediccion_Cost.of.Living), color="red") +
   ggtitle("Estudio de la linealidad")
 ```
- 
+
 
 [![](/images/2023/02/wp_editor_md_76853c33cc19ab714608c10c0c693ed6.jpg)](/images/2023/02/wp_editor_md_76853c33cc19ab714608c10c0c693ed6.jpg)
 
 ¿Una recta describe esta nube de puntos? No lo parece, será necesario buscar una manera de salvar esa «no linealidad». Con una sola variable independiente es sencillo comprobar la linealidad, si se tienen más variables no será tan sencillo y por eso son fundamentales los dos siguientes supuestos que se basan en los **residuos del modelo de regresión**. Los residuos son la distancia entre esa recta de regresión y el dato real, son la diferencia entre lo obtenido por el modelo y lo observado. Si esa distancia no es normal y si no hay independencia entre los residuos es que el modelo lineal no está describiendo el comportamiento. Por lo que los otros supuestos a tener en cuenta son:
 
-  * Homocedasticidad. La varianza de los residuos ha de ser 0. 
+  * Homocedasticidad. La varianza de los residuos ha de ser 0.
   * Normalidad de residuos. Los residuos producidos por el modelo se distribuyen normalmente, nada afecta en mayor medida a un residuo.
 
   * Independencia de residuos. No existe correlación entre los residuos producidos por el modelo.
@@ -163,7 +163,7 @@ Para diagnosticar los residuos se tienen los gráficos de diagnóstico de los re
 par(mfrow = c(2, 2))
 plot(modelo.1)
 ```
- 
+
 
 [![](/images/2023/02/wp_editor_md_bfb0e6fac8ef4e919d40880b6c4c59aa.jpg)](/images/2023/02/wp_editor_md_bfb0e6fac8ef4e919d40880b6c4c59aa.jpg)
 
@@ -180,7 +180,7 @@ El siguiente código está sacado del [blog de Carlos Gil, riguroso divulgador d
 ```r
 cost_living %>% ggplot(aes(x = Cost.of.Living.Index)) + geom_density()
 ```
-0 
+0
 
 [![](/images/2023/02/wp_editor_md_27aa7088505c0be990f2e6626c2821e4.jpg)](/images/2023/02/wp_editor_md_27aa7088505c0be990f2e6626c2821e4.jpg)
 
@@ -197,7 +197,7 @@ Una variable se puede transformar para mejorar un modelo de regresión lineal, s
 ```r
 cost_living %>% ggplot(aes(x = Cost.of.Living.Index)) + geom_density()
 ```
-1 
+1
 
 [![](/images/2023/02/wp_editor_md_c0c4f292f83dea53ba01f262f820d139.jpg)](/images/2023/02/wp_editor_md_c0c4f292f83dea53ba01f262f820d139.jpg)
 
@@ -206,14 +206,14 @@ Un dato lineal, si se transforma ya no es lineal, el científico de datos debe s
 ```r
 cost_living %>% ggplot(aes(x = Cost.of.Living.Index)) + geom_density()
 ```
-2 
+2
 
 La prueba F indica que hay modelo, el R^2 ahora se sitúa en 0.74 mejorando el dato anterior y ambos parámetros son significativos. Se realiza el _scoring_ para pintar la recta en la nube de puntos.
 
 ```r
 cost_living %>% ggplot(aes(x = Cost.of.Living.Index)) + geom_density()
 ```
-3 
+3
 
 [![](/images/2023/02/wp_editor_md_8f97959fc46ba93ceb4017a2a0b7b074.jpg)](/images/2023/02/wp_editor_md_8f97959fc46ba93ceb4017a2a0b7b074.jpg)
 
@@ -222,7 +222,7 @@ Se aprecia que la transformación recoge ese comportamiento sin linealidad, ¿lo
 ```r
 cost_living %>% ggplot(aes(x = Cost.of.Living.Index)) + geom_density()
 ```
-4 
+4
 
 [![](/images/2023/02/wp_editor_md_bfb0e6fac8ef4e919d40880b6c4c59aa.jpg)](/images/2023/02/wp_editor_md_bfb0e6fac8ef4e919d40880b6c4c59aa.jpg)
 
@@ -231,7 +231,7 @@ El primer gráfico recoge los residuos frente al ajuste, en estimaciones superio
 ```r
 cost_living %>% ggplot(aes(x = Cost.of.Living.Index)) + geom_density()
 ```
-5 
+5
 
 La propia Nueva York y San Francisco con un precio disparatado de los alquileres están afectando al modelo. Teóricamente el modelo no sirve porque no se cumplen las hipótesis, pero no es un mal modelo, el problema es que hay ciertas situaciones que no recoge. **Pero el modelo no se puede descartar** da igual lo que diga la teoría, el científico de datos tiene que separar la señal del ruido y es evidente que una simple función matemática está aislando el funcionamiento de la variable en estudio.
 
@@ -242,14 +242,14 @@ Además de transformar una variable también es posible tramificarla para recoge
 ```r
 cost_living %>% ggplot(aes(x = Cost.of.Living.Index)) + geom_density()
 ```
-6 
+6
 
 De un modo muy rápido se ha trameado la variable respuesta en 5 tramos y el modelo ha generado 4 parámetros más el término independiente con un R^2 de 0.68 que mejora incluso al que se obtenía con el modelo inicial. Se realiza el scoring de modelo para ver como es el modelo resultante sobre la nube de puntos.
 
 ```r
 cost_living %>% ggplot(aes(x = Cost.of.Living.Index)) + geom_density()
 ```
-7 
+7
 
 [![](/images/2023/02/wp_editor_md_2ac5c719b375e997873d0843df022a08.jpg)](/images/2023/02/wp_editor_md_2ac5c719b375e997873d0843df022a08.jpg)
 
@@ -264,7 +264,7 @@ Donde cada X_i es una variable que toma valores 0 y 1 en función del nivel del 
 ```r
 cost_living %>% ggplot(aes(x = Cost.of.Living.Index)) + geom_density()
 ```
-8 
+8
 
 ¿Dónde está el nivel `fr_Rent.Index1. <=15`? En realidad no hace falta, porque los modelos lineales que incluyen variables divididas en categorías crean variables «dummy», es decir, si la observación pertenece a esa categoría toma un 1 en caso contrario 0. De ese modo, si la ciudad del conjunto de datos tiene un Rent.Index de 18 estaría en la categoría «2. 16-30» y el scoring (la predicción) para ese valor sería Y=36+24.77*1=60.77 porque pertenece a la categoría 2 luego se multiplica por su parámetro, si pertence a la categoría 1 `fr_Rent.Index1. <=15` que no tiene parámetro entonces se le aplica el término independiente 36 (como aparece en el gráfico anterior).
 
@@ -277,7 +277,7 @@ Este apartado es análogo a lo anteriormente tratado, pero se insiste en ello pa
 ```r
 cost_living %>% ggplot(aes(x = Cost.of.Living.Index)) + geom_density()
 ```
-9 
+9
 
 [![](/images/2023/02/wp_editor_md_67852b2a62c748b1d04c1b91a6bbcb35.jpg)](/images/2023/02/wp_editor_md_67852b2a62c748b1d04c1b91a6bbcb35.jpg)
 
@@ -287,7 +287,7 @@ Se crea la variable empleando la función `grepl` que pertenece a las funciones 
 qqnorm(cost_livingCost.of.Living.Index)
 qqline(cost_livingCost.of.Living.Index)
 ```
-0 
+0
 
 [![](/images/2023/02/wp_editor_md_43f5d22fc40191f192c8efe42cd3aeeb.jpg)](/images/2023/02/wp_editor_md_43f5d22fc40191f192c8efe42cd3aeeb.jpg)
 
@@ -297,7 +297,7 @@ Con los datos disponibles, ¿son distintas las medias? ¿A qué recuerda esta cu
 qqnorm(cost_livingCost.of.Living.Index)
 qqline(cost_livingCost.of.Living.Index)
 ```
-1 
+1
 
 Como se observa el término independiente es exactamente la media del índice para España, la primera en el orden lexicográfico, si a ese término independiente se le resta 1.89 se tiene la media del Resto del mundo y si a la media de España se le suma 15.42 se tiene la media del índice para los EEUU. Eso es un parámetro de la regresión lineal para el nivel de un factor y el test permite determinar si es significativo en el modelo, es decir, si esas medias son diferentes.
 
@@ -305,7 +305,7 @@ Como se observa el término independiente es exactamente la media del índice pa
 qqnorm(cost_livingCost.of.Living.Index)
 qqline(cost_livingCost.of.Living.Index)
 ```
-2 
+2
 
 [![](/images/2023/02/wp_editor_md_148dc4613a87ce9fce31ec5a37fa29b4.jpg)](/images/2023/02/wp_editor_md_148dc4613a87ce9fce31ec5a37fa29b4.jpg)
 
@@ -315,7 +315,7 @@ Como se intuía la agrupación de paises del Resto del mundo no es un parámetro
 
 Ya se vio en el capítulo anterior que el modelo de regresión lineal múltiple es Y = \beta_0 + X_1\beta_0 + X_2\beta_2 + … + X_i\beta_i + \epsilon con las mismas consideraciones teóricas que tiene el modelo de regresión simple:
 
-  * Escribir el modelo matemático 
+  * Escribir el modelo matemático
   * Estimación de los parámetros del modelo
 
   * Inferencia sobre los parámetros del modelo
@@ -330,7 +330,7 @@ Continuando con el ejemplo anterior se plantea el mismo modelo de regresión lin
 qqnorm(cost_livingCost.of.Living.Index)
 qqline(cost_livingCost.of.Living.Index)
 ```
-3 
+3
 
 [![](/images/2023/02/wp_editor_md_22c68d30af266820d41484d473be61ce.jpg)](/images/2023/02/wp_editor_md_22c68d30af266820d41484d473be61ce.jpg)
 
@@ -340,7 +340,7 @@ Estos gráficos ya anticipan problemas. El índice está muy relacionado con tod
 qqnorm(cost_livingCost.of.Living.Index)
 qqline(cost_livingCost.of.Living.Index)
 ```
-4 
+4
 
 [![](/images/2023/02/wp_editor_md_c1de7aa2fda5e8006b28ec9597b9b41a.jpg)](/images/2023/02/wp_editor_md_c1de7aa2fda5e8006b28ec9597b9b41a.jpg)
 
@@ -350,7 +350,7 @@ Este gráfico se obtiene con la librería `corrplot` y sólo es necesario crear 
 qqnorm(cost_livingCost.of.Living.Index)
 qqline(cost_livingCost.of.Living.Index)
 ```
-5 
+5
 
 Se dispone de un modelo con un excepcional R^2 donde la variable `Rent.Index` es la única que no supera el test de \beta_i=0 algo que lo indica el propio valor del parámetro, muy próximo a 0. El resto de variables si superan el test. Con estas cosideraciones es necesario replantear el modelo:
 
@@ -358,7 +358,7 @@ Se dispone de un modelo con un excepcional R^2 donde la variable `Rent.Index` es
 qqnorm(cost_livingCost.of.Living.Index)
 qqline(cost_livingCost.of.Living.Index)
 ```
-6 
+6
 
 Ya se dispone de un modelo con todos los parámetros significativos, aunque `Local.Purchasing.Power.Index` no sería significativa si se fija un umbral más bajo de 0.002 ya que quedaría fuera de la región de aceptación. Con el primer modelo y teniendo en cuenta el anterior estudio de la correlación se torna necesario analizar la posible presencia de multicolinealidad. Hay diversos métodos para realizar esta tarea y se opta por ilustrar el ejemplo con el método VIF (Variance Inflation Factor). Si hay multicolinealidad [X^tX]=0 está «hinflando» la varianza, ¿cuánto hinfla la varianza una variable dentro del modelo? Para determinar como está afectando se va a utilizar la librería de R `car`
 
@@ -366,7 +366,7 @@ Ya se dispone de un modelo con todos los parámetros significativos, aunque `Loc
 qqnorm(cost_livingCost.of.Living.Index)
 qqline(cost_livingCost.of.Living.Index)
 ```
-7 
+7
 
 La función `vif` calcula cuanto está hinflando la varianza del modelo cada variable, valores por encima de 8 indican un problema, valores por encima de 4 indican la necesidad de analizar las variables en el modelo. En este modelo sólo `Restaurant.Price.Index` está causando problemas, está en manos del científico de datos eliminar la variable del modelo o transformarla para evitar problemas pero, como siempre, tiene que argumentar su eliminación. En este caso se opta por dejar el `modelo.5` como modelo definitivo y por último es necesario estudiar el comportamiento de los residuos.
 
@@ -374,7 +374,7 @@ La función `vif` calcula cuanto está hinflando la varianza del modelo cada var
 qqnorm(cost_livingCost.of.Living.Index)
 qqline(cost_livingCost.of.Living.Index)
 ```
-8 
+8
 
 [![](/images/2023/02/wp_editor_md_32d2183e23632c5098177565e3d21408.jpg)](/images/2023/02/wp_editor_md_32d2183e23632c5098177565e3d21408.jpg)
 
@@ -384,7 +384,7 @@ Desde el punto de vista teórico se dispone de un modelo aceptable, **hay lineal
 qqnorm(cost_livingCost.of.Living.Index)
 qqline(cost_livingCost.of.Living.Index)
 ```
-9 
+9
 
 Muchas ciudades suizas están causando problemas en el modelo, parece que la estimación siempre está por encima probablemente debido al alto coste de la alimentación. En este caso el análisis de los residuos está ofreciendo un comportamiento interesante en los datos y por este motivo el científico de datos debe estudiar esta diferencia entre lo estimado y lo real porque las observaciones que no ajustan correctamente también pueden ofrecer información al análisis.
 
@@ -401,28 +401,28 @@ Se parte del modelo más sencillo posible y a éste se le irán introduciendo va
 ```r
 cor(cost_livingCost.of.Living.Index, cost_livingRent.Index)
 ```
-0 
+0
 
 La fórmula del modelo más completo posible será:
 
 ```r
 cor(cost_livingCost.of.Living.Index, cost_livingRent.Index)
 ```
-1 
+1
 
 Partiendo del inicio paso a paso se llegará al modelo seleccionado mediante la dirección `fordward`. Para realizar esta tarea se emplea la librería `MASS`.
 
 ```r
 cor(cost_livingCost.of.Living.Index, cost_livingRent.Index)
 ```
-2 
+2
 
 Con `trace = T` se indica que se puedan ver los pasos seguidos en el proceso, inicialmente entra la variable `Groceries.Index`, seguida de `Restaurant.Price.Index` que reduce lo suficiente el AIC y por último `Local.Purchasing.Power.Index` con una reducción del AIC mucho menor que la anterior pero el modelo cada vez era más completo. El modelo resultante es análogo al planteado de forma manual con anterioridad.
 
 ```r
 cor(cost_livingCost.of.Living.Index, cost_livingRent.Index)
 ```
-3 
+3
 
 ### Método backward
 
@@ -431,7 +431,7 @@ El sentido contrario al método fordward, se parte del modelo completo y se dete
 ```r
 cor(cost_livingCost.of.Living.Index, cost_livingRent.Index)
 ```
-4 
+4
 
 Se aprecia que el AIC sin la variable `Rent.Index` se queda en 1189.3 por lo que es candidata a ser eliminada. En el segundo paso ninguna variable es candidata a salir por lo que se paran las iteraciones y se crea un modelo final igual a los obtenidos con anterioridad.
 
@@ -442,7 +442,7 @@ Este método de selección de variables es una combinación de los dos anteriore
 ```r
 cor(cost_livingCost.of.Living.Index, cost_livingRent.Index)
 ```
-5 
+5
 
 El primer paso es igual al empleado en el modelo backward saliendo `Rent.Index` pero no hay más candidatas a salir o a entrar por lo que se llega al mismo resultado.
 
@@ -455,6 +455,6 @@ El principio de parsimonia en los modelos de regresión consiste en buscar model
 ```r
 cor(cost_livingCost.of.Living.Index, cost_livingRent.Index)
 ```
-6 
+6
 
 Partiendo de datos completamente aleatorios el test F está muy próximo a 0.05 por lo que existe modelo y por si fuera poco hay variables significativas, esto sucede porque hay un gran número de parámetros y la regresión lineal no maneja bien esta situación, por este motivo, no se recomienda realizar modelos de regresión lineal con más de 10 variables independientes ya que pueden aparecer relaciones debidas al puro azar.

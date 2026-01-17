@@ -14,7 +14,7 @@ related:
 slug: proyecto-text-mining-con-excel-iv
 tags: []
 title: Proyecto. Text Mining con Excel (IV)
-url: /proyecto-text-mining-con-excel-iv/
+url: /blog/proyecto-text-mining-con-excel-iv/
 ---
 
 [](/images/2008/05/pyt_3_entradas.JPG "pyt_3_entradas.JPG")En la anterior entrega del seguimiento de mi proyecto de minería de textos con Excel creé un proceso que leía búsquedas de Google y las almacenaba en un fichero excel que denominaba base. El problema que me encontré es que generaba un excel con una gran cantidad de hojas y posteriormente tenía que leerlas y extraer la información de cada una. Esta metodología no me parece eficiente, es mejor leer una búsqueda, extraer la información relevante de ella e introducirla en mi tablón de datos.
@@ -27,9 +27,9 @@ Parece que todas las entradas relevantes aparecen en la columna A, tienen 3 fila
 
 Los pasos a seguir en mi proceso serían:
 
-1\. Abrir la búsqueda correspondiente  
-2\. Buscar la primera entrada relevante en la columna A  
-3\. Copiar las celdas con información  
+1\. Abrir la búsqueda correspondiente
+2\. Buscar la primera entrada relevante en la columna A
+3\. Copiar las celdas con información
 4\. Trasponer y pegar las celdas copiadas para crear una tabla de datos
 
 Para abrir las búsquedas ya creamos en su momento macros con Excel que las abrían. Buscar la primera entrada relevante requiere que diseñemos un nuevo proceso, con ayuda del asistente creamos la macro _busca1_ que nos identifica la fila con el primer registro que consideramos relevante:

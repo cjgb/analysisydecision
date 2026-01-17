@@ -14,7 +14,7 @@ related:
 slug: trucos-excel-crear-un-borrador-de-correo-con-excel
 tags: []
 title: Trucos Excel. Crear un borrador de correo con Excel
-url: /trucos-excel-crear-un-borrador-de-correo-con-excel/
+url: /blog/trucos-excel-crear-un-borrador-de-correo-con-excel/
 ---
 
 Inicio una serie de mensajes con trucos de Excel que considero pueden ser de utilidad para realizar tareas habituales en nuestro trabajo diario. Este primer truco Excel consiste en una macro que nos permite crear en borradores correos electrónicos. También nos permitiría enviarlos directamente, pero en ese caso habríamos de tener permisos para que otras aplicaciones accedieran a Outlook. Veamos el código que emplea:
@@ -37,13 +37,13 @@ Set myItem = ol.CreateItem(olMailItem)
 
 adjunto = "C:\temp\fichero.xls"
 
-With myItem  
-.Subject = "Titulo del correo"  
-.Body = "Cuerpo del mensaje"  
-.To = "rvaquerizo@analisisydecision.es"  
-.Attachments.Add adjunto, 1, 500  
-.Close (olSave)  
-'.send (ol) 'Si tenemos permisos para enviar correos  
+With myItem
+.Subject = "Titulo del correo"
+.Body = "Cuerpo del mensaje"
+.To = "rvaquerizo@analisisydecision.es"
+.Attachments.Add adjunto, 1, 500
+.Close (olSave)
+'.send (ol) 'Si tenemos permisos para enviar correos
 End With
 
 Set ol = Nothing

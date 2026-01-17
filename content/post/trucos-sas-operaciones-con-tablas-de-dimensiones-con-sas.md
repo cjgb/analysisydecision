@@ -18,7 +18,7 @@ tags:
 - array
 - data warehouse
 title: Trucos SAS. Operaciones con tablas de dimensiones con SAS
-url: /trucos-sas-operaciones-con-tablas-de-dimensiones-con-sas/
+url: /blog/trucos-sas-operaciones-con-tablas-de-dimensiones-con-sas/
 ---
 
 Algunos llaman a las tablas de dimensiones tablas de lookup, yo me niego. Con SAS ya hemos visto como crear cruces de tablas de dimensiones con tablas de hechos a través de formatos, bajo mi punto de vista el método más eficiente. Pero hoy quería traeros un ejemplo de cruce de tabla pequeña con tabla grande a través de arrays multidimensionales con SAS. Se trata de guardar los valores de la tabla “pequeña” en un array temporal multidimensional cuando leemos la tabla grande. Para ilustrar esta tarea he preparado un ejemplo:

@@ -14,7 +14,7 @@ related:
 slug: manual-curso-introduccion-de-r-capitulo-5-lectura-avanzada-de-datos
 tags: []
 title: 'Manual. Curso introducción de R. Capítulo 5: Lectura avanzada de datos'
-url: /manual-curso-introduccion-de-r-capitulo-5-lectura-avanzada-de-datos/
+url: /blog/manual-curso-introduccion-de-r-capitulo-5-lectura-avanzada-de-datos/
 ---
 
 En esta nueva entrega aprenderemos a importar datos a R desde otras fuentes. Habitualmente no introduciremos manualmente los datos, emplearemos las posibilidades de lectura que nos ofrece R. En este capítulo leeremos ficheros de texto y ficheros Access, para ello necesitaremos el paquete de R [RODBC](http://cran.cict.fr/bin/windows/contrib/2.3/RODBC_1.1-7.zip).
@@ -83,15 +83,15 @@ Empleamos la función names para dar nombres a las variables del _data.frame_ ar
 
 Otra fuente de datos muy habitual puede ser Access. Para leer bases de datos necesitaremos tener instalado el paquete [RODBC](http://cran.cict.fr/bin/windows/contrib/2.3/RODBC_1.1-7.zip). En el capítulo anterior se indicó como descargar e intalar este módulo de R. Para este ejemplo partimos de una BBDD Access _bd1_ almacenada en C:/WINDOWS/temp que contiene la siguiente tabla:
 
-**POBLACION** |  **RECLAM** |  **TAM_COCHE****** |  **GRUPO_EDAD******  
----|---|---|---  
-500 |  42 | small |  1  
-1200 |  37 | medium |  1  
-100 |  1 | large |  1  
-400 |  101 | small |  2  
-500 |  73 | medium |  2  
-300 |  14 | large |  2  
-  
+**POBLACION** |  **RECLAM** |  **TAM_COCHE****** |  **GRUPO_EDAD******
+---|---|---|---
+500 |  42 | small |  1
+1200 |  37 | medium |  1
+100 |  1 | large |  1
+400 |  101 | small |  2
+500 |  73 | medium |  2
+300 |  14 | large |  2
+
 Podéis crear la BBDD en la ubicación C:/WINDOWS/temp copiar y pegar el ejemplo para estudiar como funciona el código. Comencemos a analizar las sentencias en R:
 
 ```r

@@ -15,7 +15,7 @@ related:
 slug: evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso
 tags: []
 title: Evita problemas con Excel desde R. De tocar el dato a un proceso
-url: /evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso/
+url: /blog/evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso/
 ---
 
 En estos días hemos vivido una situación con Excel y los datos de COVID de UK peculiar. Hemos aparecido todos en las redes sociales para reírnos de Excel y de los que usan Excel. De nuevo partidarios de Matlab, R, Python,… ¡a la gresca! [Mi opinión la podéis leer en Twitter](https://twitter.com/r_vaquerizo) y creo que sobre este tema puedo opinar. En mi vida profesional me he especializado en cambiar equipos de negocio, por ese motivo tanto ir y venir de compañía. Uno de esos cambios consiste en transformar super usuarios de Excel a usuarios de herramientas más apropiadas para la gestión de la información.
@@ -55,7 +55,7 @@ dataAltas.nuevas <- c( NA, diff(dataAltas))
 dataFallecimientos.nuevos <- c( NA, diff(datafallecimientos))
 dataUCI.nuevos <- c(NA, diff(dataingresos_uci))
 ```
- 
+
 
 Un ejemplo claro, por algún motivo en Windows el nombre de la variable fecha contiene algún carácter extraño, modifico el nombre con colnames, esta acción queda reflejada en un proceso. Si se producen cambios en los campos de la tabla quedan recogidos en un código que puede ser reproducible por cualquier persona de la organización, podemos (es conveniente) llevar un control de versiones del código por si se produjeran cambios. Las fórmulas empleadas no distan de las que usamos en Excel y si se desconoce que fórmula usar R tiene una comunidad de usuarios por detrás que estarán dispuestos a ayudar, eso no pasa con SAS (por ejemplo).
 
@@ -74,7 +74,7 @@ p3 <- ggplot(data,aes(x=fecha,y=UCI.nuevos),na.rm = TRUE) + geom_line() +
 
 p <- grid.arrange(p1, p2, p3, ncol=2)
 ```
- 
+
 
 Este paso puede ser más duro, hacer gráficos en R ya no es seleccionar datos y tipo de gráfico pero en dos líneas hemos hecho un gráfico, es el mismo para las tres variables que deseamos analizar y deseamos unir todos los gráficos de ggplot en uno lo hacemos con una función que se llama grid.arrange. Esto lo haces una vez, no lo repites siempre y si lo intentas hacer con Visual Basic lo conseguirás pero otro compañero no podrá abrir las macros, a otro no le funciona,… -¿esto quién lo hizo? -¡pero si ya está jubilado!
 
@@ -93,7 +93,7 @@ insertPlot(excel, sheet = "DatosCOVID", startRow = 2, startCol = length(data) + 
 saveWorkbook(excel, "C:/temp/datos_covid.xlsx")
 remove(excel)
 ```
- 
+
 
 [![](/images/2020/10/ejemplo_excel_R.png)](/images/2020/10/ejemplo_excel_R.png)
 

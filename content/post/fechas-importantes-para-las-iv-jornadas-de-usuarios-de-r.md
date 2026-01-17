@@ -12,9 +12,9 @@ related:
 - comienza-la-cuenta-atras-iii-jornadas-de-usuarios-de-r.md
 slug: fechas-importantes-para-las-iv-jornadas-de-usuarios-de-r
 tags:
-- IV jornadas de usuarios de R
+- Jornadas de R
 title: Fechas importantes para las IV Jornadas de Usuarios de R
-url: /fechas-importantes-para-las-iv-jornadas-de-usuarios-de-r/
+url: /blog/fechas-importantes-para-las-iv-jornadas-de-usuarios-de-r/
 ---
 
 Hay que tener en cuenta las siguientes fechas para todos aquellos que deseéis participar:

@@ -17,7 +17,7 @@ tags:
 - minería de datos
 - R
 title: 'Minería de datos con R: un pequeño paseo'
-url: /mineria-de-datos-con-r-un-pequeno-paseo/
+url: /blog/mineria-de-datos-con-r-un-pequeno-paseo/
 ---
 
 Éste es mi primer _monográfico_. Como soy más perezoso que Raúl y peor estudiante que nadie, en lugar de hacerlo yo, lo copio. Y en lugar de desarrollarlo en su totalidad, dejo más de la mitad como deberes.

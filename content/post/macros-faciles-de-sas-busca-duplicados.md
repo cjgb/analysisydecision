@@ -16,7 +16,7 @@ slug: macros-faciles-de-sas-busca-duplicados
 tags:
 - macros SAS
 title: Macros (fáciles) de SAS. Busca duplicados
-url: /macros-faciles-de-sas-busca-duplicados/
+url: /blog/macros-faciles-de-sas-busca-duplicados/
 ---
 
 Una macro muy sencilla que ha aparecido en un programa de funcionalidades y que busca registros duplicados en tablas SAS. Es muy sencilla y a alguien puede serle útil y para eso estamos, para compartir conocimientos aunque sean sencillos. Pocos somos los que compartimos nuestro conocimiento y encima poniendo nuestro dinero, en fin, que me distraigo del tema.

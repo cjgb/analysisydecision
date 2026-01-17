@@ -14,7 +14,7 @@ related:
 slug: truco-sas-categorizar-variables-continuas
 tags: []
 title: Truco SAS. Categorizar variables continuas
-url: /truco-sas-categorizar-variables-continuas/
+url: /blog/truco-sas-categorizar-variables-continuas/
 ---
 
 Si necesitamos crear grupos a partir de una variable continua podemos emplear una metodología muy sencilla para crear muestras proporcionales o muestras de un tamaño predeterminado a partir de un conjunto de datos SAS. El método de cálculo es bien sencillo. Si deseamos crear N grupos dividimos la observación entre el total y multiplicamos por los N grupos redondeando al entero más alto. Si deseamos grupos de tamaño M dividimos la observación entre M redondeando al entero más alto. En código SAS:
@@ -61,8 +61,8 @@ run;
 
 proc freq data=uno; tables rango:; quit;
 ```
- 
 
-Muy sencillo y más páctico. En el futuro crearé un proceso que divida las variables continuas en función de una variable dependiente. 
+
+Muy sencillo y más páctico. En el futuro crearé un proceso que divida las variables continuas en función de una variable dependiente.
 
 Para dudas o sugerencias rvaquerizo@analisisydecision.es

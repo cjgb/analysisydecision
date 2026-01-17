@@ -13,7 +13,7 @@ related:
 slug: trucos-sas-variables-dicotomicas-desde-factores
 tags: []
 title: Trucos SAS. Variables dicotómicas desde factores
-url: /trucos-sas-variables-dicotomicas-desde-factores/
+url: /blog/trucos-sas-variables-dicotomicas-desde-factores/
 ---
 
 El verbo **dumificar** es una invención propia y consiste en la acción de transformar una variable en una o n **variables dicotómicas** y eso es lo que os planteo en esta entrada, dumificar variables cualitativas con SAS. Partimos de una variable discreta o **factor** y hemos de transformarla en n variables, tantas como valores tome el factor, que toman valores 1 o 0 en función del grupo al valor que toma. Gráficamente:
@@ -24,7 +24,7 @@ Seguro que se os ocurren mil aplicaciones y seguro que pensáis que eso ya lo ha
 
 ``
 
-Realizamos una tabla de frecuencias para recoger los valores, si hay perdidos no se genera variable y necesita un trabajo previo. Creamos dos campos instrucción debido a que en unos casos podemos tener variables numéricas y en otro alfanuméricas. Ese tema lo controlamos con el data _null_ siguiente que nos genera una macro variable local que toma valor 1 si trabajamos con variables numéricas. Después metemos la instrucción en una macro variable instr que se ejecuta en el posterior paso data. Finalizamos borrando la tabla de frecuencias. Es muy importante emplear la macro validar caracteres, nos evita factores con caracteres extraños. Por supuesto podéis ejecutar los siguientes ejemplos para analizar su funcionamiento:  
+Realizamos una tabla de frecuencias para recoger los valores, si hay perdidos no se genera variable y necesita un trabajo previo. Creamos dos campos instrucción debido a que en unos casos podemos tener variables numéricas y en otro alfanuméricas. Ese tema lo controlamos con el data _null_ siguiente que nos genera una macro variable local que toma valor 1 si trabajamos con variables numéricas. Después metemos la instrucción en una macro variable instr que se ejecuta en el posterior paso data. Finalizamos borrando la tabla de frecuencias. Es muy importante emplear la macro validar caracteres, nos evita factores con caracteres extraños. Por supuesto podéis ejecutar los siguientes ejemplos para analizar su funcionamiento:
 
 ```r
 data uno;

@@ -20,7 +20,7 @@ tags:
 - macro
 title: Truco Excel. Application GetOpenFilename el explorador de archivos sencillo
   en macro
-url: /truco-excel-application-getopenfilename-el-explorador-de-archivos-sencillo-en-macro/
+url: /blog/truco-excel-application-getopenfilename-el-explorador-de-archivos-sencillo-en-macro/
 ---
 
 Application.GetOpenFilename y como parámetros el texto y el tipo de archivo. Un truco excel para meter en una macro el explorador de archivos más sencillo. Por ejemplo para obtener los archivos de Word de un directorio podremos hacer:

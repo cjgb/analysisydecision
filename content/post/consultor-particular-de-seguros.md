@@ -13,7 +13,7 @@ related:
 slug: consultor-particular-de-seguros
 tags: []
 title: Consultor particular de seguros
-url: /consultor-particular-de-seguros/
+url: /blog/consultor-particular-de-seguros/
 ---
 
 En España cada vez hay más emprendedores. Como no hay trabajo es necesario buscarse la vida para generar ingresos. No es una buena noticia, podemos crear algo parecido a “la burbuja de los emprendedores”. Espero equivocarme, esto da para otra entrada. El caso es que me gustaría ayudar a aquellas personas que deseen emprender. Mi idea ya tendrá precedentes y pondrá en pie de guerra a mediadores, corredores y muchos profesionales del seguro. ¿Por qué no crear un consultor particular de seguros?

@@ -18,7 +18,7 @@ tags:
 - engine
 - libname
 title: Curso de lenguaje SAS con WPS. Librerías en WPS
-url: /curso-de-lenguaje-sas-con-wps-librerias-en-wps/
+url: /blog/curso-de-lenguaje-sas-con-wps-librerias-en-wps/
 ---
 
 Sobre el trabajo con librerías en SAS se pueden escribir libros. Todas las personas que han aprendido SAS conmigo a lo largo de los años han oído el mismo duscurso. «Hay que tener mucho cuidado con las librerías en SAS. Tenemos que tener muy claro que tablas son temporales, cuales han de ser permanentes. El problema del trabajo con SAS reside en el espacio en disco». Ya son decenas las personas que ahora hacen lo que pueden con SAS que han escuchado estas palabras y que siguen llenando discos y más discos incluso de los servidores con SAS más potentes de España.

@@ -13,10 +13,10 @@ related:
 - estadistica-para-cientificos-de-datos-con-r-introduccion.md
 slug: noticias-del-congreso-de-usuarios-de-r
 tags:
-- jornadas de usuarios de R
+- Jornadas de R
 - R
 title: Noticias del congreso de usuarios de R
-url: /noticias-del-congreso-de-usuarios-de-r/
+url: /blog/noticias-del-congreso-de-usuarios-de-r/
 ---
 
 Hoy he regresado de las primeras jornadas de usuarios de R. Han sido dos días largos y densos, pero también productivos. Tenemos que estar muy agradecidos a [José Antonio Palazón](http://fobos.bio.um.es/palazon/index/ "J.A. Palazón"), de la Universidad de Murcia y coordinador del comité organizador, y a Manuel Muñoz Márquez, coordinador del comité científico y responsable del proyecto [R UCA](http://knuth.uca.es/R/doku.php "R UCA"), por su extraordinario trabajo.

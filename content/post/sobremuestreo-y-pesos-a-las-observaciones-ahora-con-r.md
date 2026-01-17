@@ -18,7 +18,7 @@ tags:
 - regresión logística
 - sampling
 title: Sobremuestreo y pesos a las observaciones. Ahora con R
-url: /sobremuestreo-y-pesos-a-las-observaciones-ahora-con-r/
+url: /blog/sobremuestreo-y-pesos-a-las-observaciones-ahora-con-r/
 ---
 
 De nuevo volvemos a la entrada de ayer para replicar el código SAS utilizado en R. Se trata de realizar 3 modelos de regresión logística con R para estudiar como influyen en los parámetros el uso de un conjunto de datos con sobremuestreo o el uso de un conjunto de datos donde asignamos pesos a las observaciones. El programa es sencillo pero tiene un uso interesante de la librería de R sampling. Aquí tenéis el código:

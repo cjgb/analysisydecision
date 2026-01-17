@@ -17,7 +17,7 @@ slug: ajuste-de-splines-con-r
 tags:
 - spline
 title: Ajuste de splines con R
-url: /ajuste-de-splines-con-r/
+url: /blog/ajuste-de-splines-con-r/
 ---
 
 [![spline_R1](/images/2017/01/spline_R1.png)](/images/2017/01/spline_R1.png)
@@ -49,7 +49,7 @@ lines(suavizado.datos$y,col="red")
 plot(rep(0,nrow(datos)),col="red",type="l")
 lines(residuals(suavizado.datos),col="blue")
 ```
- 
+
 
 [![spline_R2](/images/2017/01/spline_R2.png)](/images/2017/01/spline_R2.png)
 
@@ -67,7 +67,7 @@ lines(suavizado.datosy,col="red")
 plot(rep(0,nrow(datos)),col="red",type="l")
 lines(residuals(suavizado.datos),col="blue")
 ```
- 
+
 
 [![spline_R3](/images/2017/01/spline_R3.png)](/images/2017/01/spline_R3.png)
 

@@ -13,7 +13,7 @@ related:
 slug: participaciones-preferentes-de-las-cajas-de-ahorro
 tags: []
 title: Participaciones Preferentes de las Cajas de Ahorro
-url: /participaciones-preferentes-de-las-cajas-de-ahorro/
+url: /blog/participaciones-preferentes-de-las-cajas-de-ahorro/
 ---
 
 Iba a escribir un mensaje alertando de las nuevas emisiones de Participaciones Preferentes de las Cajas de Ahorro pero me he encontrado con este[ foro en elConfidencial.com ](http://foro.cotizalia.com/foro/foro.asp?id=38434&sec=93)Atentos a los comentarios de _jrwwpu17_ , simplemente una lección magistral de conocimiento de la red comercial de un banco. Merece la pena leer todos sus comentarios y aprender. Así empieza:

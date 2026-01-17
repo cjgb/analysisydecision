@@ -22,10 +22,10 @@ tags:
 - party
 - RPART
 title: Trucos R. Llevar a SAS las reglas de un árbol de decisión
-url: /trucos-r-llevar-a-sas-las-reglas-de-un-arbol-de-decision/
+url: /blog/trucos-r-llevar-a-sas-las-reglas-de-un-arbol-de-decision/
 ---
 
-Vuelvo hoy con el uso de **rpart** para la creación de **árboles de decisión con R**. Pero hoy, además de realizar un modelo de árbol con R quiero presentaros una función que nos permite guardar las reglas generadas con nuestro modelo en un fichero de texto para su posterior utilización con SAS. Retomamos un [ejemplo visto con anterioridad en la bitácora](https://analisisydecision.es/monografico-arboles-de-clasificacion-con-rpart/) con ligeras modificaciones:  
+Vuelvo hoy con el uso de **rpart** para la creación de **árboles de decisión con R**. Pero hoy, además de realizar un modelo de árbol con R quiero presentaros una función que nos permite guardar las reglas generadas con nuestro modelo en un fichero de texto para su posterior utilización con SAS. Retomamos un [ejemplo visto con anterioridad en la bitácora](https://analisisydecision.es/monografico-arboles-de-clasificacion-con-rpart/) con ligeras modificaciones:
 
 ```r
 #Inventamos un objeto para realizar el modelo

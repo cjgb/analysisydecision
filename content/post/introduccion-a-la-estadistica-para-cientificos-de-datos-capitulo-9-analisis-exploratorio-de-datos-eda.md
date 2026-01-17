@@ -16,7 +16,7 @@ slug: introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-9-analisi
 tags: []
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 9. Análisis
   exploratorio de datos. EDA
-url: /introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-9-analisis-exploratorio-de-datos-eda/
+url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-9-analisis-exploratorio-de-datos-eda/
 ---
 
 Los capítulos 7 y 8 se resumen en éste mediante visualizaciones trabajadas en el capítulo 5. El **análisis EDA** (**E** xploratory **D** ata **A** nalysis) es el primer paso que ha de seguir un científico de datos y articula los temas tratados en el capítulo 2 ya que convertir datos en información implica que el científico de datos ha de preocuparse en saber como pueden estar estructurados sus datos, que tipo de variables los componen, el nivel al que se encuentran los registros, que problemas pueden presentar o como resumir información. Además, es necesario conocer los capítulos 3 y 4 para el manejo de variables y cruces de tablas y por este motivo el análisis EDA es la base, pero lo visto anteriormente son los cimientos.
@@ -27,7 +27,7 @@ Para realizar este tipo de análisis R dispone de distintas librerías, algunas 
   * [dataMaid](https://github.com/ekstroem/dataMaid)
   * DataExplorer
 
-> Se sugiere que sea el propio científico de datos quien debería tener sus propias herramientas descriptivas. 
+> Se sugiere que sea el propio científico de datos quien debería tener sus propias herramientas descriptivas.
 
 En este capítulo del ensayo se empleará la libería **DataExplorer** por rapidez de realización, sencillez de uso y fácil interpretación de la salida que ofrece. En la línea habitual se trabaja con el caso práctico de la campaña de venta cruzada de una empresa aseguradora.
 
@@ -37,7 +37,7 @@ library(tidyverse)
 train <- read.csv("./data/train.csv")
 head(train,5)
 ```
- 
+
 
 En el capítulo anterior ya aparecieron posibles problemas, no sólo de datos, también cuestiones de negocio a las que llegamos tras un análisis estadístico sencillo, por ese motivo se insiste en la idea de dar importancia al problema de negocio que se está abordando. El primer paso es conocer el número de observaciones y como son las variables del conjunto de datos, esto nos permite saber si es posible prescindir de algunas (observaciones y/o variables). Con DataExplorer se comenzará con la función `introduce`.
 
@@ -45,14 +45,14 @@ En el capítulo anterior ya aparecieron posibles problemas, no sólo de datos, t
 library(DataExplorer)
 introduce(train)
 ```
- 
+
 
 Este análisis se puede acompañar de una visión gráfica.
 
 ```r
 plot_intro(train)
 ```
- 
+
 
 [![](/images/2022/09/wp_editor_md_4a31eeb5defb93766f0ce87affffbfe4.jpg)](/images/2022/09/wp_editor_md_4a31eeb5defb93766f0ce87affffbfe4.jpg)
 
@@ -61,14 +61,14 @@ Disponemos de 381109 observaciones y 12 variables donde un 25% son factores fren
 ```r
 plot_str(train)
 ```
- 
+
 
 Se observa que hay variables como `Previously_Insured`, `Region_Code` o `Policy_Sales_Channel` que son numéricas y serían susceptibles de ser factores. Los propios nombres de variables y sus descripciones tienen que ser de ayuda en estos primeros acercamientos. El siguiente paso es describir las variables en función del tipo. Si la variable es numérica se recomendaba la realización de histogramas, con `plot_histogram` se automatiza esta labor.
 
 ```r
 plot_histogram(train, ncol = 3)
 ```
- 
+
 
 [![](/images/2022/09/wp_editor_md_ba9a3c26dc97cdbce445f56ef384b4b8.jpg)](/images/2022/09/wp_editor_md_ba9a3c26dc97cdbce445f56ef384b4b8.jpg)
 
@@ -88,22 +88,22 @@ train <- train %>%
   mutate(Policy_Sales_Channel = as.character(Policy_Sales_Channel),
          Region_Code = as.character(Region_Code))
 ```
- 
+
 
 Las siguientes variables a analizar serán los factores, en el capítulo 7 se sugirió el uso de gráficos de barras, en DataExplorer se emplea la función `plot_bar`.
 
 ```r
 plot_bar(train)
 ```
- 
+
 
 [![](/images/2022/09/wp_editor_md_01ca9131af8d981d66888d2140a1e6fb.jpg)](/images/2022/09/wp_editor_md_01ca9131af8d981d66888d2140a1e6fb.jpg)
 
 En este caso DataExplorer nos arroja un warning que da una pista sobre un problema que tiene nuestro conjunto de datos de trabajo:
 
-> 2 columns ignored with more than 50 categories.  
->  Region_Code: 53 categories  
->  Policy_Sales_Channel: 155 categories 
+> 2 columns ignored with more than 50 categories.
+>  Region_Code: 53 categories
+>  Policy_Sales_Channel: 155 categories
 
 Hay dos columnas que se considera innecesario representar, justo los factores que se acaban de crear. Estas variables son susceptibles de ser agrupadas pero no han de ser tratadas como numéricas. En cuanto al resto de variables:
 
@@ -121,7 +121,7 @@ table(trainVehicle_Age)
 train <- train %>% mutate(Vehicle_Age=factor(Vehicle_Age, c('< 1 Year','1-2 Year','> 2 Years')))
 table(trainVehicle_Age)
 ```
- 
+
 
 Sin embargo, en este punto se plantea una recomendación. Cuando se trabaja con datos en bruto y estos datos son analizados y clasificados es bueno crear una nueva variable y jugar con prefijos para determinar si esa variable está trabajada o no. En este caso, tratándose de un factor, se emplea el prefijo `fr_` de factor reclasificado, en el ejemplo que se está trabajando:
 
@@ -130,7 +130,7 @@ train <- train %>% mutate(fr_vehicle_age = factor(Vehicle_Age, c('< 1 Year','1-2
 train %>% group_by(fr_vehicle_age) %>% summarise(conteo=n()) %>%
   ggplot(aes(x=fr_vehicle_age, y=conteo)) + geom_bar(stat = 'identity')
 ```
- 
+
 
 [![](/images/2022/09/wp_editor_md_77a3530c633a05f322a523423b7e21dc.jpg)](/images/2022/09/wp_editor_md_77a3530c633a05f322a523423b7e21dc.jpg)
 
@@ -142,7 +142,7 @@ train <- train %>% rename(
   fr_vehicle_damage = Vehicle_Damage,
   fr_previouly_insured = Previously_Insured)
 ```
- 
+
 
 Quedan pendientes los dos factores con un gran número de niveles. En el caso de `Region_Code` se sabe que los datos provienen de una aseguradora española y se tienen 52 códigos, es evidente que hace mención a las provincias españolas:
 
@@ -150,7 +150,7 @@ Quedan pendientes los dos factores con un gran número de niveles. En el caso de
 library(DataExplorer)
 introduce(train)
 ```
-0 
+0
 
 [![](/images/2022/09/wp_editor_md_127a33281de8f80da90e279ed93ab9a6.jpg)](/images/2022/09/wp_editor_md_127a33281de8f80da90e279ed93ab9a6.jpg)
 
@@ -160,7 +160,7 @@ Se observa que los niveles 28 y 8 son los que más encuestados tienen, en el cas
 library(DataExplorer)
 introduce(train)
 ```
-1 
+1
 
 Otra posible agrupación tendría ese _sentido de negocio provincial_
 
@@ -168,7 +168,7 @@ Otra posible agrupación tendría ese _sentido de negocio provincial_
 library(DataExplorer)
 introduce(train)
 ```
-2 
+2
 
 Sin embargo, la mejor agrupación será aquella que una provincias con similar comportamiento ante un problema o ante la respuesta de un problema. En la misma situación está la variable `Policy_Sales_Channel` donde no tenemos ese conocimiento de negocio necesario para proponer una agrupación de niveles del factor. En capítulos posteriores se retomará este problema y se propondrá una solución.
 

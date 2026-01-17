@@ -15,7 +15,7 @@ related:
 slug: trucos-excel-archivos-de-un-directorio-con-una-macro
 tags: []
 title: Trucos Excel. Archivos de un directorio con una macro
-url: /trucos-excel-archivos-de-un-directorio-con-una-macro/
+url: /blog/trucos-excel-archivos-de-un-directorio-con-una-macro/
 ---
 
 Puede resultarnos útil tener todos los archivos de un directorio en una tabla de excel. Si estamos documentando un proceso, si nos dan un gran número de ficheros y tenemos que realizar procesos repetitivos sobre ellos, si queremos tener inventariados nuestros programas,… Para esto os planteo una macro bien sencilla que recorre un directorio y nos escribe los elementos que encuentra en él. El código visual basic para la macro en Excel no puede ser más sencillo:

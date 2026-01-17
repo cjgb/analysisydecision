@@ -17,7 +17,7 @@ tags:
 - R
 - Trucos
 title: Los mejores y más útiles trucos de R
-url: /los-mejores-y-mas-utiles-trucos-de-r/
+url: /blog/los-mejores-y-mas-utiles-trucos-de-r/
 ---
 
 Como estamos medio de fiesta y da pareza poner en funcionamiento los engranajes del cerebro para producir ideas originales, me limitaré a apuntar un enlace en el que los usuarios han propuesto y votado sus [mejores trucos de R](http://stackoverflow.com/questions/1295955/what-is-the-most-useful-r-trick "Los mejores trucos de R").

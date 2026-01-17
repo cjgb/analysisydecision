@@ -15,54 +15,54 @@ slug: felicitacion-navidena-con-sas
 tags:
 - Se me va
 title: Felicitación navideña con SAS
-url: /felicitacion-navidena-con-sas/
+url: /blog/felicitacion-navidena-con-sas/
 ---
 
 Ejecutad el siguiente código en SAS local:
 
 ```data _null_;`
 
-/*  
-LA 440  
-SI 494  
-DO 523  
-RE 587  
-MI 659  
-FA 698  
-SOL 784  
-LA 880  
+/*
+LA 440
+SI 494
+DO 523
+RE 587
+MI 659
+FA 698
+SOL 784
+LA 880
 */
 
-call sound(659,100);  
-call sound(659,100);  
-call sound(659,200);  
-call sound(659,100);  
-call sound(659,100);  
+call sound(659,100);
+call sound(659,100);
+call sound(659,200);
+call sound(659,100);
+call sound(659,100);
 call sound(659,200);
 
-call sound(659,100);  
-call sound(784,100);  
-call sound(523,100);  
-call sound(587,100);  
+call sound(659,100);
+call sound(784,100);
+call sound(523,100);
+call sound(587,100);
 call sound(659,400);
 
-call sound(698,100);  
-call sound(698,100);  
-call sound(698,150);  
+call sound(698,100);
+call sound(698,100);
+call sound(698,150);
 call sound(698,50);
 
-call sound(698,100);  
-call sound(698,100);  
-call sound(659,100);  
-call sound(659,50);  
+call sound(698,100);
+call sound(698,100);
+call sound(659,100);
+call sound(659,50);
 call sound(659,50);
 
-call sound(659,100);  
-call sound(587,100);  
-call sound(587,100);  
+call sound(659,100);
+call sound(587,100);
+call sound(587,100);
 call sound(659,100);
 
-call sound(587,200);  
+call sound(587,200);
 call sound(784,200);
 
 run;

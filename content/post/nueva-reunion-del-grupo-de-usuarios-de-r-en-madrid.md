@@ -13,7 +13,7 @@ related:
 slug: nueva-reunion-del-grupo-de-usuarios-de-r-en-madrid
 tags: []
 title: Nueva reunión del grupo de usuarios de R en Madrid
-url: /nueva-reunion-del-grupo-de-usuarios-de-r-en-madrid/
+url: /blog/nueva-reunion-del-grupo-de-usuarios-de-r-en-madrid/
 ---
 
 [![](https://i0.wp.com/madrid.r-es.org/wp-content/uploads/2015/05/Reunion-Grupo-Usuarios-de-R-de-Madrid-12-Mayo-V21.png)](http://i0.wp.com/madrid.r-es.org/wp-content/uploads/2015/05/Reunion-Grupo-Usuarios-de-R-de-Madrid-12-Mayo-V21.png)

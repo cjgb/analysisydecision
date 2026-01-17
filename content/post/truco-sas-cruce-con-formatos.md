@@ -14,17 +14,17 @@ related:
 slug: truco-sas-cruce-con-formatos
 tags: []
 title: Truco SAS. Cruce con proc format
-url: /truco-sas-cruce-con-formatos/
+url: /blog/truco-sas-cruce-con-formatos/
 ---
 
-Veremos un ejemplo de ahorro de tiempo haciendo un cruce con formatos.  
-Parece curioso que los formatos ahorren tiempo frente al sort/merge y sql, ya que basicamente no están hecho para esa finalidad, pero realmente podemos ahorrarnos más del 50% del tiempo.  
-Además lo más costoso de este método es la carga del formato, pero una vez que lo tenemos cargado podemos hacer las selecciones de todos los grandes volumenes de datos que necesitemos, con el sort/merge, tendríamos que ordenar el conjunto de datos sas ‘grande’ otra vez si no lo teniamos ordenado.  
+Veremos un ejemplo de ahorro de tiempo haciendo un cruce con formatos.
+Parece curioso que los formatos ahorren tiempo frente al sort/merge y sql, ya que basicamente no están hecho para esa finalidad, pero realmente podemos ahorrarnos más del 50% del tiempo.
+Además lo más costoso de este método es la carga del formato, pero una vez que lo tenemos cargado podemos hacer las selecciones de todos los grandes volumenes de datos que necesitemos, con el sort/merge, tendríamos que ordenar el conjunto de datos sas ‘grande’ otra vez si no lo teniamos ordenado.
 Este método es realmente efectivo al cruzar tablas grandes frente a pequeñas.
 
 Ejemplo:
 
-Nuestro conjunto SAS de ejemplo es una base de datos de los clientes de una compañía, que contiene el número de contrato y gasto que han tenido en un periodo.  
+Nuestro conjunto SAS de ejemplo es una base de datos de los clientes de una compañía, que contiene el número de contrato y gasto que han tenido en un periodo.
 Tenemos otro conjunto de datos SAS con 100.000 contratos, queremos seleccionar el gasto que han tenido estos contratos.
 
 Para ello tenemos que cruzar nuestra «SUPER TABLA» con nuestra «TABLA PEQUEÑA».
@@ -41,14 +41,14 @@ end;
 drop i;
 run;
 ```
- 
+
 ```r
 data conjunto_SMALL;
 set conjunto_LARGE (keep=contrato);
 if _n_<=100000;
 run;
 ```
- 
+
 
 Procedimiento 1. SORT / MERGE.
 
@@ -59,7 +59,7 @@ PROC SORT DATA=conjunto_LARGE;
 BY CONTRATO;
 RUN;
 ```
- 
+
 ```r
 NOTA: Se han leído 10000000 observaciones del conj. datos WORK.CONJUNTO_LARGE.
 NOTA: El conj. datos WORK.CONJUNTO_LARGE tiene 10000000 observaciones
@@ -67,13 +67,13 @@ NOTA: PROCEDIMIENTO SORT utilizado (Tiempo de proceso total):
 tiempo real 35.82 segundos
 tiempo de cpu 13.07 segundos
 ```
- 
+
 ```r
 PROC SORT DATA=conjunto_SMALL;
 BY CONTRATO;
 RUN;
 ```
- 
+
 ```r
 NOTA: Se han leído 100000 observaciones del conj. datos WORK.CONJUNTO_SMALL.
 NOTA: El conj. datos WORK.CONJUNTO_SMALL tiene 100000 observaciones .
@@ -81,7 +81,7 @@ NOTA: PROCEDIMIENTO SORT utilizado (Tiempo de proceso total):
 tiempo real 0.25 segundos
 tiempo de cpu 0.06 segundos
 ```
- 
+
 ```r
 DATA SELECCION;
 MERGE CONJUNTO_LARGE CONJUNTO_SMALL (IN=B);
@@ -96,12 +96,12 @@ tiempo real 11.06 segundos
 tiempo de cpu 10.07 segundos
 Total del proceso:
 ```
- 
 
-Ordenar conjunto grande: 35.82 segundos  
-Ordenar conjunto pequeño: 0.25 segundos  
-Merge: 11.06 segundos  
-Total: 47.13  
+
+Ordenar conjunto grande: 35.82 segundos
+Ordenar conjunto pequeño: 0.25 segundos
+Merge: 11.06 segundos
+Total: 47.13
 Con Formatos
 
 1\. En primer lugar tengo que cargar los contratos de mi conjunto de datos pequeños a un formato.
@@ -119,11 +119,11 @@ NOTA: Sentencia DATA utilizado (Tiempo de proceso total):
 tiempo real 0.17 segundos
 tiempo de cpu 0.04 segundos
 ```
- 
+
 ```r
 
 ```
- 
+
 
 La variable clave con la que vamos a cruzar la tenemos
 
@@ -144,7 +144,7 @@ NOTA: PROCEDIMIENTO SORT utilizado (Tiempo de proceso total):
 tiempo real 0.06 segundos
 tiempo de cpu 0.09 segundos
 ```
- 
+
 
 Por último cargamos el conjunto de datos.
 
@@ -154,40 +154,40 @@ set conjunto_LARGE (keep=contrato);
 if _n_<=100000;
 run;
 ```
-0 
+0
 ```r
 data conjunto_SMALL;
 set conjunto_LARGE (keep=contrato);
 if _n_<=100000;
 run;
 ```
-1 
+1
 ```r
 data conjunto_SMALL;
 set conjunto_LARGE (keep=contrato);
 if _n_<=100000;
 run;
 ```
-2 
+2
 ```r
 data conjunto_SMALL;
 set conjunto_LARGE (keep=contrato);
 if _n_<=100000;
 run;
 ```
-3 
+3
 ```r
 data conjunto_SMALL;
 set conjunto_LARGE (keep=contrato);
 if _n_<=100000;
 run;
 ```
-4 
+4
 
-Carga del formato:  
-0.26 segundos  
-Cruce con formato:  
-8.53 segundos  
+Carga del formato:
+0.26 segundos
+Cruce con formato:
+8.53 segundos
 TOTAL PROCESO:
 
 8.79 SEGUNDOS

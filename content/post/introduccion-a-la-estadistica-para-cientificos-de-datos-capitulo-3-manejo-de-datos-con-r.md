@@ -16,7 +16,7 @@ slug: introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-3-manejo-
 tags: []
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 3. Manejo
   de datos con R
-url: /introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-3-manejo-de-datos-con-r/
+url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-3-manejo-de-datos-con-r/
 ---
 
 ## Universo tidyverse
@@ -54,7 +54,7 @@ library(tidyverse)
 data(iris)
 head(iris, 5)
 ```
- 
+
 
 `library(tidyverse)` permite disponer de las librerías del universo tidyverse, los ejemplos se van a realziar con el conjunto de datos iris al que se accede con `data`, `head` nos permite ver los 5 primeros registros del data frame.
 
@@ -67,7 +67,7 @@ setosa <- iris %>%
   filter(Species=="setosa")
 head(setosa, 5)
 ```
- 
+
 
 Puede ser útil emplear una lista para una condición. En ese caso se ha de realizar.
 
@@ -78,7 +78,7 @@ species <- iris %>%
 
 table(species$Species)
 ```
- 
+
 
 La función `table` realizar tablas de frecuencia (cuenta registros), en este caso se tienen los tres posibles valores que toma la variable `Species` con el número de registros que tiene cada elemento de la variable, el número de registros que tiene cada nivel del factor, hay un factor que no tiene registros, no desaparece el nivel, simplemente aparece con 0 observaciones.
 
@@ -100,7 +100,7 @@ two.columns <- iris %>%
   select(Sepal.Length,Sepal.Width)
 datatable(two.columns)
 ```
- 
+
 
 En el ejemplo anterior se introduce el uso de la librería `DT` para mejorar la visualización del data frame resultante de la selección. Del mismo modo que ocurría con las observaciones es posible realizar una selección mediante lista de variables:
 
@@ -110,7 +110,7 @@ columns = c('Sepal.Length','Sepal.Width')
 two.columns <- iris %>%
   dplyr::select(columns)
 ```
- 
+
 
 ## Creación o actualización de variables
 
@@ -121,7 +121,7 @@ iris2 <- iris %>%
   mutate(Sepal.Length.6 = ifelse(Sepal.Length >=6, 'GE 6', 'LT 6')) %>%
   mutate(Sepal.Length.rela = Sepal.Length/mean(Sepal.Length))
 ```
- 
+
 
 Se crea una variable cualitativa mediante una condición con la función `ifelse`, también se ilustra el ejemplo con la creación de una variable numérica que es la operación matemática de dividir `Sepal.Lentgh` por su propia media.
 
@@ -136,7 +136,7 @@ iris2 <- iris %>%
 
 table(iris2$Sepal.Length.agrupado)
 ```
- 
+
 
 Las condiciones son excluyentes en función del orden y se recomienda especificar la condición final _«y si no»_ mediante `TRUE`, facilita el control de errores. A lo largo de todo el ensayo será una función que aparezca de forma recurrente.
 
@@ -148,7 +148,7 @@ Las ordenaciones requieren siempre de `arrange`. Ordenación ascendente:
 order1 <- iris %>%
   arrange(Sepal.Length)
 ```
- 
+
 
 Ordenación descendente:
 
@@ -156,7 +156,7 @@ Ordenación descendente:
 order2 <- iris %>%
   arrange(desc(Sepal.Length))
 ```
- 
+
 
 Separando por `,` es posible poner más de una variable en la ordenación.
 
@@ -170,7 +170,7 @@ iris %>% group_by(Species) %>%
             sd.Sepal.Length = sd(Sepal.Length),
             rows = n())
 ```
- 
+
 
 Las posibles agregaciones a realizar con summarise son amplias, se disponen de funciones de agrupación, rango o dispersión.
 
@@ -183,7 +183,7 @@ setosa <- iris %>%
   filter(Species=="setosa")
 head(setosa, 5)
 ```
-0 
+0
 
 Siempre se respeta el orden de ejecución por lo que variables creadas o acciones utilizadas en un paso anterior pueden ser empleadas en un paso posterior.
 

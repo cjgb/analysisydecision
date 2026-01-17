@@ -15,10 +15,10 @@ related:
 slug: truco-sas-macro-numero-de-dias-de-un-ano
 tags: []
 title: Truco SAS. Macro número de días de un año
-url: /truco-sas-macro-numero-de-dias-de-un-ano/
+url: /blog/truco-sas-macro-numero-de-dias-de-un-ano/
 ---
 
-Macro de SAS que te dice el número de días que tiene un año. 
+Macro de SAS que te dice el número de días que tiene un año.
 
 ```r
 %macro dias_anio(anio);

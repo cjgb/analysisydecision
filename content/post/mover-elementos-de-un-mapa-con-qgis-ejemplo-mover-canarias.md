@@ -16,7 +16,7 @@ slug: mover-elementos-de-un-mapa-con-qgis-ejemplo-mover-canarias
 tags:
 - QGIS
 title: Mover elementos de un mapa con QGIS. Ejemplo mover Canarias
-url: /mover-elementos-de-un-mapa-con-qgis-ejemplo-mover-canarias/
+url: /blog/mover-elementos-de-un-mapa-con-qgis-ejemplo-mover-canarias/
 ---
 
 Para modificar shapefile estaba acostumbrado a usar R, sin embargo, poco a poco estoy usando más QGIS para este tipo de tareas. Lo primero que tengo que comentaros es que no sé QGIS, no tengo ni idea, lo uso sólo para visualizar mapas porque es más cómodo que R pero poco a poco me estoy acostumbrando a usarlo. Hoy quería mostraros como he realizado una tarea muy habitual cuando hacemos mapas de España, mover las Islas Canarias para que queden más cerca de la Península. El proceso lo he presentado para torpes con QGIS (como yo mismo). Lo primero es abrir el shapefile con QGIS y nos encontraremos con algo parecido a esto:

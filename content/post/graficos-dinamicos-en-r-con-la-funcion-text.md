@@ -16,10 +16,10 @@ slug: graficos-dinamicos-en-r-con-la-funcion-text
 tags:
 - text
 title: Gráficos dinámicos en R con la función text
-url: /graficos-dinamicos-en-r-con-la-funcion-text/
+url: /blog/graficos-dinamicos-en-r-con-la-funcion-text/
 ---
 
-En graphics tenemos la función **text** y hoy nos vamos a divertir con esta función. Simplemente lo que hace es poner un texto en un gráfico. Lo más sencillo:  
+En graphics tenemos la función **text** y hoy nos vamos a divertir con esta función. Simplemente lo que hace es poner un texto en un gráfico. Lo más sencillo:
 
 ```r
 #Gráfico sin nada

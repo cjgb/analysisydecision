@@ -18,10 +18,10 @@ tags:
 - macros SAS
 - proc freq
 title: Macros SAS. Agrupando variables categóricas
-url: /macros-sas-agrupando-variables-categoricas/
+url: /blog/macros-sas-agrupando-variables-categoricas/
 ---
 
-Agrupar variables con SAS es una de las tareas más habituales. Las variables continuas las agrupamos según un criterio y las discretas, en principio, ya vienen agrupadas. El problema con las variables discretas es que pueden tomar muchos valores, muchos de ellos con poco valor que habitualmente agrupamos en un rango “OTROS”. Pues bien, hoy quería mostraros una macro muy sencilla que utilizo para crear ese cajón desastre. El código tiene algún aspecto muy interesante, es el que os pongo a continuación:  
+Agrupar variables con SAS es una de las tareas más habituales. Las variables continuas las agrupamos según un criterio y las discretas, en principio, ya vienen agrupadas. El problema con las variables discretas es que pueden tomar muchos valores, muchos de ellos con poco valor que habitualmente agrupamos en un rango “OTROS”. Pues bien, hoy quería mostraros una macro muy sencilla que utilizo para crear ese cajón desastre. El código tiene algún aspecto muy interesante, es el que os pongo a continuación:
 
 ```r
 %macro agrupa_frecuencias(entrada=,/*DS DE ENTRADA*/
@@ -71,8 +71,8 @@ quit;
 %mend;
 ```
 
-Breve explicación del mismo, es un código de ejecución muy rápida y no tiene una calidad de producción como casi todo lo que hacemos los que trabajamos sólo con BASE. Necesitamos más parámetros que código. Un DS de entrada, el nombre de la variable discreta que queremos agrupar, el nombre de la variable de conteo, el número de grupos total que deseamos, el nombre de la categoría resto aquí es importante destacar que la variable final siempre será alfanumérica, si deseáis que sea numérica es muy sencillo de modificar, el último parámetros es el DS de salida con la tabla de frecuencias.  
-La macro comienza con un PROC FREQ que genera una tabla con todos los valores de la variable y su conteo, ordenamos descendientemente por ese conteo y después hacemos un paso DATA que lee la tabla y si está por encima del número de categorías fijado lo etiquetamos con un resto. Al final tenemos que agregar los datos de esta tabla.  
+Breve explicación del mismo, es un código de ejecución muy rápida y no tiene una calidad de producción como casi todo lo que hacemos los que trabajamos sólo con BASE. Necesitamos más parámetros que código. Un DS de entrada, el nombre de la variable discreta que queremos agrupar, el nombre de la variable de conteo, el número de grupos total que deseamos, el nombre de la categoría resto aquí es importante destacar que la variable final siempre será alfanumérica, si deseáis que sea numérica es muy sencillo de modificar, el último parámetros es el DS de salida con la tabla de frecuencias.
+La macro comienza con un PROC FREQ que genera una tabla con todos los valores de la variable y su conteo, ordenamos descendientemente por ese conteo y después hacemos un paso DATA que lee la tabla y si está por encima del número de categorías fijado lo etiquetamos con un resto. Al final tenemos que agregar los datos de esta tabla.
 Como es habitual, ejemplo de uso:
 
 ```r

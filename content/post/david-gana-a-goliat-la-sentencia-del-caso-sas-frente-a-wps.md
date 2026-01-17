@@ -16,7 +16,7 @@ related:
 slug: david-gana-a-goliat-la-sentencia-del-caso-sas-frente-a-wps
 tags: []
 title: David gana a Goliat. La sentencia del caso SAS frente a WPS
-url: /david-gana-a-goliat-la-sentencia-del-caso-sas-frente-a-wps/
+url: /blog/david-gana-a-goliat-la-sentencia-del-caso-sas-frente-a-wps/
 ---
 
 Estaba esperando que saliera la sentencia. ~~Además cabía la posibilidad de pertenecer a Goliat y tenía la boca cerrada~~. Y resulta que tenemos una de las sentencias más interesantes en cuanto a software se refiere:

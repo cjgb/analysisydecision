@@ -15,7 +15,7 @@ tags:
 - hadoop
 - SQL
 title: SQL vs Hadoop. Más que una tendencia
-url: /sql-vs-hadoop-mas-que-una-tendencia/
+url: /blog/sql-vs-hadoop-mas-que-una-tendencia/
 ---
 
 [![](/images/2014/03/sql_vs_hadoop.png)](/images/2014/03/sql_vs_hadoop.png)

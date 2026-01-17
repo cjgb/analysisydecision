@@ -16,7 +16,7 @@ tags:
 - crisis
 - hipotecas
 title: Lecciones de economía de un ignorante. No me dan hipoteca
-url: /lecciones-de-economia-de-un-ignorante-no-me-dan-hipoteca/
+url: /blog/lecciones-de-economia-de-un-ignorante-no-me-dan-hipoteca/
 ---
 
 En una boda, en el aperitivo de entrada un amigo me pregunta:

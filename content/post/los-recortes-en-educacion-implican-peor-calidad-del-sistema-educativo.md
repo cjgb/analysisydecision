@@ -16,7 +16,7 @@ tags:
 - crisis
 - recortes
 title: Los recortes en educación, ¿implican peor calidad del sistema educativo?
-url: /los-recortes-en-educacion-c2bfimplican-peor-calidad-del-sistema-educativo/
+url: /blog/los-recortes-en-educacion-c2bfimplican-peor-calidad-del-sistema-educativo/
 ---
 
 Mucho se está hablando de los recortes en educación que va a llevar a cabo el Gobierno español. Es evidente que la educación en España no funciona muy bien. No lo digo yo, lo dice el informe PISA:

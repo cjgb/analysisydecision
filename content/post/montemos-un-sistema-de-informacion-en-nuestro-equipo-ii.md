@@ -17,7 +17,7 @@ tags:
 - pentaho
 - postgres
 title: Montemos un sistema de información en nuestro equipo (II)
-url: /montemos-un-sistema-de-informacion-en-nuestro-equipo-ii/
+url: /blog/montemos-un-sistema-de-informacion-en-nuestro-equipo-ii/
 ---
 
 Vamos a empezar a subir archivos a la BBDD. Evidentemente lo primero que tenemos que hacer es crearnos una BBDD en Postgres. Con el _PGAdmin_ creamos una nueva base de datos, disponemos de varias opciones, en nuestro caso no modificamos ninguna y creamos BD. Ya tenemos una BBDD funcionando y a la hora de conectarnos a ella tendremos que asignarle las propiedades necesarias para su correcto funcionamiento:

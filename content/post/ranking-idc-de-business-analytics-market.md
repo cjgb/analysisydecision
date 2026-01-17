@@ -13,7 +13,7 @@ related:
 slug: ranking-idc-de-business-analytics-market
 tags: []
 title: Ranking IDC de Business Analytics Market
-url: /ranking-idc-de-business-analytics-market/
+url: /blog/ranking-idc-de-business-analytics-market/
 ---
 
 [Interesante noticia de Intelligence Enterprise](http://www.intelligententerprise.com/channels/business_intelligence/showArticle.jhtml;jsessionid=3NH1OJLOEPO5XQE1GHRSKHWATMY32JVN?articleID=219401120)

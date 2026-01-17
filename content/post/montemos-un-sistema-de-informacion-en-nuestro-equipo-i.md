@@ -18,7 +18,7 @@ tags:
 - postgres
 - R
 title: Montemos un sistema de información en nuestro equipo (I)
-url: /montemos-un-sistema-de-informacion-en-nuestro-equipo-i/
+url: /blog/montemos-un-sistema-de-informacion-en-nuestro-equipo-i/
 ---
 
 Un poco de bricolaje. Se trata de crear un sistema de información sin coste y que nos permita almacenar nuestros datos con orden y coherencia, crear informes y realizar modelos matemáticos bajo Windows. Es perfectamente replicable para Linux. También estoy abierto a sugerencias ya que tampoco soy ningún experto en el tema y podemos crear un debate interesante. El sistema que planteo se va a sustentar en 3 pilares fundamentales que os podéis descargar de forma gratuita en los link creados:

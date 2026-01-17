@@ -21,7 +21,7 @@ tags:
 - spdep
 - zonificacion
 title: Adyacencia de polígonos con el paquete spdep de R
-url: /adyacencia-de-poligonos-con-el-paquete-spdep-de-r/
+url: /blog/adyacencia-de-poligonos-con-el-paquete-spdep-de-r/
 ---
 
 Cuando trabajamos con **zonificación** o **geolocalización** la adyacencia entre los elementos del estudio es relevante. En este caso quería trabajar con la adyacencia entre los polígonos que componen un archivo de datos espaciales shapefile y para entender mejor como podemos obtener la adyancecia entre polígonos creo que lo mejor es hacer un ejemplo con un mapa, en este caso un mapa de municipios de Barcelona. El primer paso es disponer del objeto con los datos espaciales, [de esto ya he escrito mucho en el blog](https://analisisydecision.es/mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel/) y por eso no me detengo mucho:
@@ -36,7 +36,7 @@ plot(barcelona)
 #Marcamos el centro de cada poligono
 points(coordinates(barcelona))
 ```
- 
+
 
 [![adyacencia poligonos con R 1](/images/2016/05/adyacencia-poligonos-con-R-1.png)](/images/2016/05/adyacencia-poligonos-con-R-1.png)
 
@@ -50,7 +50,7 @@ library(spdep)
 centros = coordinates(barcelona)
 mas_proxima = knn2nb(knearneigh(centros))
 ```
- 
+
 
 El primer paso es buscar el centroide más cercano para cada uno de los elementos con los que trabajo y a partir de ese momento necesito buscar una referencia para establecer la adyacencia. En un primer paso fijo esa referencia en el percentil 99 y puedo graficarla:
 
@@ -60,7 +60,7 @@ proximos = dnearneigh(centros, 0, referencia)
 plot(barcelona)
 plot(proximos, centros, add=TRUE,col="red")
 ```
- 
+
 
 [![adyacencia polígonos con R 2](/images/2016/05/adyacencia-polígonos-con-R-21.png)](/images/2016/05/adyacencia-polígonos-con-R-21.png)
 
@@ -84,7 +84,7 @@ List of 313
  - attr(*, "bounds")= chr [1:2] "GT" "LE"
  - attr(*, "sym")= logi TRUE
 ```
- 
+
 
 El objeto barcelona se compone de 313 polígonos (municipios) y para cada uno de los correspondientes polígonos los adyacentes están en la lista. Si queremos que todos los municipios tengan su adyacente la distancia referencia habría de ser la máxima posible:
 
@@ -94,7 +94,7 @@ proximos = dnearneigh(centros, 0, referencia)
 plot(barcelona)
 plot(proximos, centros, add=TRUE,col="red")
 ```
- 
+
 
 [![adyacencia polígonos con R 3](/images/2016/05/adyacencia-polígonos-con-R-3.png)](/images/2016/05/adyacencia-polígonos-con-R-3.png)
 
@@ -105,7 +105,7 @@ proximos_k3 = knn2nb(knearneigh(centros, k=4, longlat=TRUE))
 plot(barcelona)
 plot(proximos_k3, centros, add=TRUE,col="red")
 ```
- 
+
 
 [![adyacencia polígonos con R 4](/images/2016/05/adyacencia-polígonos-con-R-4.png)](/images/2016/05/adyacencia-polígonos-con-R-4.png)
 

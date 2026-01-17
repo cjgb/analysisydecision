@@ -17,5 +17,5 @@ tags:
 - fastclus
 - k means
 title: Trucos SAS. Eliminación de outliers
-url: /trucos-sas-eliminacion-de-outliers-2/
+url: /blog/trucos-sas-eliminacion-de-outliers-2/
 ---

@@ -15,10 +15,10 @@ related:
 slug: dividir-en-palabras-un-texto-con-sas
 tags: []
 title: Dividir en palabras un texto con SAS
-url: /dividir-en-palabras-un-texto-con-sas/
+url: /blog/dividir-en-palabras-un-texto-con-sas/
 ---
 
-Una duda que planteó una lectora del blog acerca de separar una cadena de caracteres separados por comas y crear observaciones en otra variable:  
+Una duda que planteó una lectora del blog acerca de separar una cadena de caracteres separados por comas y crear observaciones en otra variable:
 Hola! he buscado por toda la página, necesito ayuda urgente. Mi problema es el siguiente.
 
 Necesito separar una cadena de texto en una fila en varias filas, por ejemplo
@@ -27,8 +27,8 @@ cadena1,cadena2,cadena3
 
 en
 
-cadena1  
-cadena2  
+cadena1
+cadena2
 cadena3
 
 para encontrar la ‘ , ‘ utilizo scan, aunque podría ocupar anypunct para que encuentre la primera ‘ , ‘ luego la segunda ‘ , ‘ etc y cortar con substr, longth … pero bueno, ya que tengo un metodo de separar el texto de la fila como hago para que cada palabra este en una nueva fila? ojala me hayan entendido y me den una idea de como hacer eso en un proc sql, con una macro o como sea, solo una pequeña orientación me serviria mucho, gracias!!!!!
@@ -59,6 +59,6 @@ end;end;
 if fin then output;
 run;
 ```
- 
+
 
 Se trata de ir caracter a caracter y volcarlo a una nueva variable en el momento que encuentra la coma y realizar un output en ese momento. Saludos.

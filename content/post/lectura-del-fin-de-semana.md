@@ -15,7 +15,7 @@ related:
 slug: lectura-del-fin-de-semana
 tags: []
 title: Lectura del fin de semana
-url: /lectura-del-fin-de-semana/
+url: /blog/lectura-del-fin-de-semana/
 ---
 
 [Buena lectura de fin de semana.](http://www.liaad.up.pt/~ltorgo/DataMiningWithR/)

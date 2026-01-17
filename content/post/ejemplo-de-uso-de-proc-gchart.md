@@ -12,7 +12,7 @@ related:
 slug: ejemplodeusodeprocgchart
 tags: []
 title: Ejemplo de uso de PROC GCHART
-url: /ejemplodeusodeprocgchart/
+url: /blog/ejemplodeusodeprocgchart/
 ---
 
 [Siguiente →](https://analisisydecision.es/un-acercamiento-a-graph-proc-gchart/ejemplo-de-uso-de-proc-gchart-2/)

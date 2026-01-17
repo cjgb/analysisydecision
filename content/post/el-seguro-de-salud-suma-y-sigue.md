@@ -15,7 +15,7 @@ slug: el-seguro-de-salud-suma-y-sigue
 tags:
 - seguro de salud
 title: El seguro de Salud suma y sigue
-url: /el-seguro-de-salud-suma-y-sigue/
+url: /blog/el-seguro-de-salud-suma-y-sigue/
 ---
 
 [![](/images/2013/04/seguro-de-salud-1.png)](/images/2013/04/seguro-de-salud-1.png)

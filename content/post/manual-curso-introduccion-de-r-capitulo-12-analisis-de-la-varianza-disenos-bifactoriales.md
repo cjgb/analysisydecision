@@ -19,7 +19,7 @@ tags:
 - Modelos
 title: 'Manual. Curso introducción de R. Capítulo 12: Análisis de la varianza. Diseños
   bifactoriales'
-url: /manual-curso-introduccion-de-r-capitulo-12-analisis-de-la-varianza-disenos-bifactoriales/
+url: /blog/manual-curso-introduccion-de-r-capitulo-12-analisis-de-la-varianza-disenos-bifactoriales/
 ---
 
 En esta nueva entrega del manual de R vamos a ver un modelo ANOVA que analiza dos fuentes de variación. Si recordamos en el capítulo 11 estudiamos la diferencia entre los tratamientos que seguían determinados pacientes teníamos una variable respuesta en función de una variable factor, el diseño factorial aleatorizado. En este caso vamos a tener la variable respuesta en función de dos factores y podrá existir una interacción entre ambos. Con lo que la tabla ANOVA será del siguiente modo:
@@ -76,7 +76,7 @@ broca:taladradora 1 1.210e-27 1.210e-27 6.693e-29 1.0000
 Residuals 44 795.72 18.08
 ```
 
-A la vista de la tabla resultante concluimos que no existen diferencias en la capacidad de penetración de las brocas y las taladradoras participantes en el estudio. Podemos ver las medias por factor con la función PRINT:  
+A la vista de la tabla resultante concluimos que no existen diferencias en la capacidad de penetración de las brocas y las taladradoras participantes en el estudio. Podemos ver las medias por factor con la función PRINT:
 
 ```r
 > print(model.tables(anova.12.1,"means"),digits=3)
@@ -86,28 +86,28 @@ Tables of means
 Grand mean
 ```
 
-71.14854 
+71.14854
 
-broca  
-broca  
-1 2 3  
-72.3 71.1 70.0 
+broca
+broca
+1 2 3
+72.3 71.1 70.0
 
-taladradora  
-taladradora  
-1 2 3 4  
-68.8 70.4 71.9 73.5 
+taladradora
+taladradora
+1 2 3 4
+68.8 70.4 71.9 73.5
 
-broca:taladradora  
-taladradora  
-broca 1 2 3 4  
-1 69.6 71.4 73.2 75.1  
-2 68.8 70.4 71.9 73.5  
-3 68.0 69.3 70.6 71.9  
-Warning messages:  
-1: In replications(paste("~", xx), data = mf) : non-factors ignored: broca  
-2: In replications(paste("~", xx), data = mf) :  
-non-factors ignored: taladradora  
-3: In replications(paste("~", xx), data = mf) :  
-non-factors ignored: broca, taladradora  
+broca:taladradora
+taladradora
+broca 1 2 3 4
+1 69.6 71.4 73.2 75.1
+2 68.8 70.4 71.9 73.5
+3 68.0 69.3 70.6 71.9
+Warning messages:
+1: In replications(paste("~", xx), data = mf) : non-factors ignored: broca
+2: In replications(paste("~", xx), data = mf) :
+non-factors ignored: taladradora
+3: In replications(paste("~", xx), data = mf) :
+non-factors ignored: broca, taladradora
 ``

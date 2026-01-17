@@ -14,7 +14,7 @@ related:
 slug: proc-sql-merge-set
 tags: []
 title: Equivalencias entre PROC SQL y DATA en las uniones de tablas SAS
-url: /proc-sql-merge-set/
+url: /blog/proc-sql-merge-set/
 ---
 
 Muchos de los que llegan a programar con SAS son grandes expertos en SQL. Cuando dominas perfectamente un lenguaje es difícil acostumbrarse a otro. Por ello quiero plantear un artículo que estudie los tipos de uniones mediante pasos DATA y su análogo con el PROC SQL. Con ello espero que los profesionales que manejan el lenguaje SQL entiendan mejor el paso DATA. En mi línea habitual creo dos dataset y manejo ejemplos.
@@ -63,7 +63,7 @@ Las formas de unir conjuntos de datos SAS son:
 
 **Uniones verticales:**
 
-_Concatenación:_  
+_Concatenación:_
 
 ```r
 data tresA;
@@ -85,7 +85,7 @@ select * from dos;
 quit;
 ```
 
-_Intercalación:_  
+_Intercalación:_
 
 ```r
 data cuatroA;
@@ -113,7 +113,7 @@ quit;
 
 **Uniones horizontales:**
 
-_Total:  
+_Total:
 _
 ```r
 data cincoA;
@@ -145,7 +145,7 @@ quit;
 
 _Excluyentes:_
 
-Están en ambas tablas:  
+Están en ambas tablas:
 
 ```r
 data seisA;
@@ -183,7 +183,7 @@ on a.anio = b.anio;
 quit;
 ```
 
-Están en la tabla de la izquierda:  
+Están en la tabla de la izquierda:
 
 ```r
 data sieteA;

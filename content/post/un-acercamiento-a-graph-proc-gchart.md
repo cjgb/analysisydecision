@@ -18,7 +18,7 @@ tags:
 - PATTERN
 - PROC GCHART
 title: Un acercamiento a GRAPH. PROC GCHART
-url: /un-acercamiento-a-graph-proc-gchart/
+url: /blog/un-acercamiento-a-graph-proc-gchart/
 ---
 
 Uno de los procedimientos más importantes a la hora de graficar con SAS es el PROC GCHART. Además nos va a servir para trabajar con PATTERN y LEGEND sentencias que nos dejamos en el anterior capítulo. GCHART nos permite realizar gráficos de barras, de esos que siempre hacemos en Excel porque es mas sencillo y mas rápido. Sin embargo en muchas ocasiones necesitamos automatizar informes y estudios, para ello es recomendable emplear SAS en vez del habitual Excel por eso estas líneas que estáis leyendo. Para GCHART podemos emplear las sentencias habituales de GRAPH pero PATTERN es especialmente importante porque SAS nos deja cada barra del mismo color. Para ilustrar el capitulo simulo la cartera de una compañía de seguros, durante 2009, mensualmente, las pólizas de esta compañía pueden ser anuladas, renovadas (nuestra cartera) o nueva producción:

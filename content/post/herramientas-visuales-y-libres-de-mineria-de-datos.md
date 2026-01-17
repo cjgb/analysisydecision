@@ -13,7 +13,7 @@ related:
 slug: herramientas-visuales-y-libres-de-mineria-de-datos
 tags: []
 title: Herramientas visuales y libres de minería de datos
-url: /herramientas-visuales-y-libres-de-mineria-de-datos/
+url: /blog/herramientas-visuales-y-libres-de-mineria-de-datos/
 ---
 
 El otro día me preguntó una amiga estadística qué herramienta visual de minería de datos _libre_ —imagino que también quería decir gratuita— le recomendaba. Pensaba que la respuesta a la pregunta era sobradamente conocida de los que nos movemos en nuestro estrecho mundillo. La constatación —sobre una muestra que he ampliado a todo un récord de dos individuos— de que lo cierto es lo contrario me ha empujado a redactar esta entrada en el _blog_.

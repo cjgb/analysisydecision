@@ -13,7 +13,7 @@ related:
 slug: la-confianza-en-el-sector-financiero
 tags: []
 title: La confianza en el sector financiero
-url: /la-confianza-en-el-sector-financiero/
+url: /blog/la-confianza-en-el-sector-financiero/
 ---
 
 La primera subasta del **Fondo de Liquidez** del gobierno Español ha sido un fracaso, esto no es una opinión, no llegar ni al 50% subastado es un fracaso. Una de las medidas estrellas contra la crisis financiera está teniendo muy poca aceptación en la Banca española. Sólo han acudido unas pocas entidades y algunas de ellas podemos considerar que su cúpula directiva es afín al gobierno que ha puesto en marcha esta medida. Entonces se plantean dos cuestiones fundamentales:

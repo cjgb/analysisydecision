@@ -15,7 +15,7 @@ slug: numeros-aleatorios-con-sas
 tags:
 - números aleatorios
 title: Números aleatorios con SAS
-url: /numeros-aleatorios-con-sas/
+url: /blog/numeros-aleatorios-con-sas/
 ---
 
 En un sólo paso DATA quiero mostraros las funciones más habituales para generar números aleatorios con SAS. Una entrada para que os copiéis el código y lo analicéis con SAS. Quiero que sirva de guía para que recordéis las funciones más empleadas, además será muy útil para los que se estén iniciando en el uso de SAS:

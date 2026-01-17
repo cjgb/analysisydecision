@@ -13,7 +13,7 @@ related:
 slug: sas-te-felicita-la-navidad
 tags: []
 title: SAS te felicita la Navidad
-url: /sas-te-felicita-la-navidad/
+url: /blog/sas-te-felicita-la-navidad/
 ---
 
 Mirad para que sirve call sound:
@@ -55,6 +55,6 @@ call sound(784,200);
 
 run;
 ```
- 
+
 
 Felices Fiestas.

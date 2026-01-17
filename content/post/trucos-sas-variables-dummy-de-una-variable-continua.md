@@ -17,7 +17,7 @@ tags:
 - Dummy
 - variables de entrada
 title: Trucos SAS. Variables dummy de una variable continua
-url: /trucos-sas-variables-dummy-de-una-variable-continua/
+url: /blog/trucos-sas-variables-dummy-de-una-variable-continua/
 ---
 
 Dumificar es crear variables dummy. Un verbo completamente inventado pero que todos los que os habéis enfrentado a la creación de una tabla de entrada para realizar modelos estadísticos vais a entender perfectamente en que consiste. Dumificar es transformar una variable continua en N variables dicotómicas. Lo entenderemos mejor con un ejemplo gráfico:

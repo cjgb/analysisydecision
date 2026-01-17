@@ -18,7 +18,7 @@ tags:
 - oracle y sas
 - pass thru
 title: Oracle y SAS vía SQL pass trough
-url: /oracle-y-sas-via-sql-pass-trough/
+url: /blog/oracle-y-sas-via-sql-pass-trough/
 ---
 
 Para trabajar directamente con el motor de BBDD SAS cuenta con «Pass trougth». SAS crea una conexión al gestor de BBDD y desde ese momento podemos ejecutar sentencias de SQL directamente. Para seguir con la línea de trabajo habitual emplearemos ejemplos para conocer su funcionamiento. Los ejemplos que vamos a emplear serán sobre una BBDD Oracle ya que es muy común trabajar en entornos SAS con acceso a algún datamart de Oracle. Evidentemente la utilidad pass trough o pas thru convive perfectamente con

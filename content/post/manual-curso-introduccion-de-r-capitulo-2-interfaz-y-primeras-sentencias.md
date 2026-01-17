@@ -14,14 +14,14 @@ related:
 slug: manual-curso-introduccion-de-r-capitulo-2-interfaz-y-primeras-sentencias
 tags: []
 title: 'Manual. Curso introducción de R. Capítulo 2: Interfaz y primeras sentencias'
-url: /manual-curso-introduccion-de-r-capitulo-2-interfaz-y-primeras-sentencias/
+url: /blog/manual-curso-introduccion-de-r-capitulo-2-interfaz-y-primeras-sentencias/
 ---
 
 En esta nueva entrega del curso comenzamos a trabajar con R. Ya nos hemos descargado e instalado la herramienta y es momento de conocer a grandes rasgos como funciona R. Si abrimos una sesión nos encontramos con la siguiente pantalla:
 
 ![](/images/2008/02/interfaz_r.JPG)
 
-El interfaz de R no es visual, trabajamos sobre una línea de comandos, no hay ventanas, sólo código y una gran comunidad de programadores que crean sus funciones y sus paquetes de utilidades. Para empezar a manejar R lo principal es conocer sus elementos principales **objetos y funciones** :  
+El interfaz de R no es visual, trabajamos sobre una línea de comandos, no hay ventanas, sólo código y una gran comunidad de programadores que crean sus funciones y sus paquetes de utilidades. Para empezar a manejar R lo principal es conocer sus elementos principales **objetos y funciones** :
 
 ```r
 > objeto <- c(2,3,4) # creamos un objeto vector

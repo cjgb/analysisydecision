@@ -17,7 +17,7 @@ tags:
 - R
 - RCommander Windows
 title: 'Intro RCommander: 1. Qué es RCommander'
-url: /intro-rcommander-1-que-es-rcommander/
+url: /blog/intro-rcommander-1-que-es-rcommander/
 ---
 
 RCommander es un interfaz gráfico de usuario de R (siglas GUI en inglés) y nos permite acceder a múltiples capacidades gráficas y estadísticas de R a través de menús, sin olvidarnos de sus posibilidades de acceso a distintos entornos de datos. Yo lo defino como un «AutoR» pero es otro paquete de R. Por ello es gratuito y muy fácil de instalar. Tan fácil como instalar R y buscar en CRAN RComdr. Descargamos el paquete, lo guardamos en _library_ y ya disponemos de la más potente herramienta para la estadística y no hemos tenido que utilizar en ningún momento el número de nuestra VISA. RCommander requiere de múltiples paquetes de R por ello cuando en R ejecutemos _library(Rcmdr)_ o carguemos el paquete mediante el menú podemos tener un mensaje como este:

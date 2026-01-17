@@ -16,7 +16,7 @@ tags:
 - seguro de crédito
 - técnicos de seguros
 title: El seguro de crédito interesante reto técnico
-url: /el-seguro-de-credito-interesante-reto-tecnico/
+url: /blog/el-seguro-de-credito-interesante-reto-tecnico/
 ---
 
 [](/images/2008/12/seguro-de-credito.JPG "seguro-de-credito.JPG")Dando un paseo por [www.icea.es](http://www.icea.es/) he visitado los ranking de seguros no vida de 2007 y 2008. Me ha impactado un valor. Entre las 25 entidades más potentes de 2008 hay una que hay dos que han crecido por encima del resto con respecto al año 2007:

@@ -16,7 +16,7 @@ tags:
 - crisis económica
 - trabajo fuera de España
 title: Estudiad idiomas
-url: /estudiad-idiomas/
+url: /blog/estudiad-idiomas/
 ---
 
 Análisisydecisión nació como un blog dedicado a la formación de profesionales en el mundo de la inteligencia de negocio y la minería de datos. Poco a poco se ha ido transformando y junto con las secciones dedicadas a la formación sobre aplicaciones estadísticas y metodologías hay breves artículos de opinión. Bueno pues este mensaje es ambas cosas, un artículo de opinión y una sugerencia sobre el futuro de los buenos gestores de información:

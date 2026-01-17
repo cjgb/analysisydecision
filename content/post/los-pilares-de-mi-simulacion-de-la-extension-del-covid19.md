@@ -15,7 +15,7 @@ related:
 slug: los-pilares-de-mi-simulacion-de-la-extension-del-covid19
 tags: []
 title: Los pilares de mi simulación de la extensión del COVID19
-url: /los-pilares-de-mi-simulacion-de-la-extension-del-covid19/
+url: /blog/los-pilares-de-mi-simulacion-de-la-extension-del-covid19/
 ---
 
 No debería publicar esta simulación de la extensión del CODVID10 o coronavirus porque puede disparar alarmas, provocar insultos, levantar ampollas,… el caso es que yo llevo 7 días de aislamiento más que el resto de España porque sólo había que ver los datos de Italia para saber lo que iba a pasar y no avisé a nadie para no disparar alarmas, provocar insultos, levantar ampollas… Y AL FINAL YO TENÍA RAZÓN. Así que os voy a exponer el motivo por el cual estoy muy asustado, bueno, hoy quiero mostraros el inicio de una simulación mala y sin fundamento que estoy realizando sobre la extensión en España del COVID19. Para hacerla vamos a emplear la siguiente información:
@@ -23,7 +23,7 @@ No debería publicar esta simulación de la extensión del CODVID10 o coronaviru
   * [Datos del padrón municipal](https://www.ine.es/censos2011_datos/cen11_datos_resultados_seccen.htm)
   * [Datos de la cartografía digital por sección censal](https://analisisydecision.es/cartografia-digitalizada-de-espana-por-seccion-censal/)
 
-Y allá voy a comentaros que estoy montando. Se trata de poner a los 47 millones de españoles en una tabla, situarlos en unas coordenadas y dadas 5 personas iniciales ver como se propaga el virus municipio a municipio y, en 98 días, determinar cuantas personas pueden estar contagiadas, cuantas enfermas, cuantas sanas o cuantas desgraciadamente muertas. Esto no es que tenga lagunas, es que está inventado, pero no os creáis que las cifras oficiales son más fiables. Evidentemente, lo voy a hacer con R y dplyr. No lo subo a git porque el equipo que uso tiene un usuario de github que no es el adecuado, pero ya sabéis que el código está a vuestra disposición. 
+Y allá voy a comentaros que estoy montando. Se trata de poner a los 47 millones de españoles en una tabla, situarlos en unas coordenadas y dadas 5 personas iniciales ver como se propaga el virus municipio a municipio y, en 98 días, determinar cuantas personas pueden estar contagiadas, cuantas enfermas, cuantas sanas o cuantas desgraciadamente muertas. Esto no es que tenga lagunas, es que está inventado, pero no os creáis que las cifras oficiales son más fiables. Evidentemente, lo voy a hacer con R y dplyr. No lo subo a git porque el equipo que uso tiene un usuario de github que no es el adecuado, pero ya sabéis que el código está a vuestra disposición.
 
 ### Creación de la tabla de personas edad
 
@@ -51,7 +51,7 @@ muestra <- muestra %>% group_by(seccion,rango_edad) %>% summarise(habitantes=sum
 
 espania <- muestra %>% group_by(seccion,rango_edad) %>% expand(count = seq(1:habitantes)) %>% as_tibble()
 ```
- 
+
 
 _Nota: si no funciona la creación de la muestra hacéis detach de dplyr_
 
@@ -87,14 +87,14 @@ distancias <- sqldf(" select a.municipio, b.municipio as municipio2,
 
 distancias <- distancias %>% mutate(distancia=sqrt((centro_long - centro_long2)**2 + (centro_lat-centro_lat2)**2))
 ```
- 
 
-Os habéis desgarcado el shapefile con las secciones censales de España y con ella calculamos el centroide de cada municipio, también he calculado una matriz de distancias porque, como veréis más adelante, la distancia de desplazamiento puede ser interesante para determinar como se mueve y como se expande el virus. En este punto está mi otra de mis reclamaciones, las compañías de telefonía podían ofrecer datos de movilidad para ayudarnos y controlar el movimiento de personas. 
 
-> Aquellas personas cuyo teléfono móvil haya estado conectando con la antena próxima a su hogar y en el estado de alarma haya empezado a posicionar cerca de su segunda vivienda MULTA. 
-> 
+Os habéis desgarcado el shapefile con las secciones censales de España y con ella calculamos el centroide de cada municipio, también he calculado una matriz de distancias porque, como veréis más adelante, la distancia de desplazamiento puede ser interesante para determinar como se mueve y como se expande el virus. En este punto está mi otra de mis reclamaciones, las compañías de telefonía podían ofrecer datos de movilidad para ayudarnos y controlar el movimiento de personas.
+
+> Aquellas personas cuyo teléfono móvil haya estado conectando con la antena próxima a su hogar y en el estado de alarma haya empezado a posicionar cerca de su segunda vivienda MULTA.
+>
 > Yo los inflaba a ostias pero la multa será más práctica
-> 
+>
 > — Raul Vaquerizo (@r_vaquerizo) [March 21, 2020](https://twitter.com/r_vaquerizo/status/1241478062300172288?ref_src=twsrc%5Etfw)
 
 En fin, si cruzáis ambas tablas empieza la simulación (de mierda):
@@ -123,6 +123,6 @@ sanos <- sanos %>% filter(id_persona %notin% lista_contagiados)
 
 max_distancia =max(distancias$distancia,na.rm = T)
 ```
- 
+
 
 Tenemos una tabla con la población española por edad y ubicación, son 5 personas al azar de Igualada y Madrid las que empiezan todo… Veré si me atrevo a seguir contando porque lo que sigue me lo he inventado completamente.

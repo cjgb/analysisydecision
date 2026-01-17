@@ -17,7 +17,7 @@ tags:
 - plotrix
 - XML
 title: Ejemplo de uso del paquete XML de R
-url: /ejemplo-de-uso-del-paquete-xml-de-r/
+url: /blog/ejemplo-de-uso-del-paquete-xml-de-r/
 ---
 
 Quería poneros unos apuntes sobre el paquete XML de R. El caso es que entre todos los fregados en los que ando metidos he retomado el tema de leer páginas web con R. Y con esto he llegado a la sentencia _install.packages(«XML»)_ y con la fiebre mundialista estoy en lo siguiente:

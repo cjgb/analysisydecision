@@ -15,7 +15,7 @@ slug: r-cayendo-en-la-lista-tiobe
 tags:
 - TIOBE
 title: R cayendo en la lista TIOBE
-url: /r-cayendo-en-la-lista-tiobe/
+url: /blog/r-cayendo-en-la-lista-tiobe/
 ---
 
 No me ha gustado esta sorpresa en la **lista TIOBE de abril de 2012** :

@@ -15,7 +15,7 @@ related:
 slug: trucos-sas-mejor-que-hash-in-para-cruzar-tablas
 tags: []
 title: Trucos SAS. Mejor que hash IN para cruzar tablas
-url: /trucos-sas-mejor-que-hash-in-para-cruzar-tablas/
+url: /blog/trucos-sas-mejor-que-hash-in-para-cruzar-tablas/
 ---
 
 El otro día Fernando comentó que los cruces de tablas más rápidos entre tablas grandes y tablas pequeñas son las sentencias condicionales sobre listas. Tiene razón. Es una práctica muy habitual en SAS cuando leemos tablas de Oracle la ralización de listas, esto derivará en otro truco SAS en breves días. El caso es que me gustaría que probárais este código:

@@ -15,7 +15,7 @@ related:
 slug: truco-python-agrupar-variable-en-funcion-de-la-frecuencia
 tags: []
 title: Truco Python. Agrupar variable en función de la frecuencia
-url: /truco-python-agrupar-variable-en-funcion-de-la-frecuencia/
+url: /blog/truco-python-agrupar-variable-en-funcion-de-la-frecuencia/
 ---
 
 Me ha surgido la necesidad de crear una nueva variable en un data frame a partir de la frecuencia de otra, es decir, quedarme con los valores más frecuentes y aplicar una categoría resto para aquellos valores que no estén en los más frecuentes. Para realizar esto se me ha ocurrido la siguiente función en Python:
@@ -26,7 +26,7 @@ df_grp= df[var_origen].value_counts()
 list_grp = list(df_grp.iloc[0:grupos,].index)
 df[var_destino] = df[var_origen].map(lambda x: x if x in list_grp else valor_otros, na_action='ignore')
 ```
- 
+
 
 Es una función con más parámetros que líneas, pero necesitamos una variable de origen, una variable de destino que será la que calcularemos, el data frame sobre el que realizamos la tarea, el número de grupos más otro que será el «resto» y dar un valor a ese «resto». La función lo que hace es una tabla de frecuencias ordenada descendentemente con .value_counts() y creamos una lista con el número de grupos que deseamos. Por último mediante lambdas si la variable origen está en la lista generada anteriormente le asignamos el mismo valor, en caso contrario asignamos el valor «resto». Es una programación sencilla, seguramente haya una función específica en sckitlearn para agrupar variables en base a la frecuencia, pero no la he encontrado y he tardado más en buscarla que en hacerla.
 
@@ -43,7 +43,7 @@ del df['clave']
 df.columns = ['grupo', 'valor']
 df['grupo'].value_counts()
 ```
- 
+
 
 Vemos que grupo crea muchos valores y vamos a agrupar la variable del data frame de forma que los 10 más frecuentes toman su valor y los demás serán un resto:
 
@@ -51,6 +51,6 @@ Vemos que grupo crea muchos valores y vamos a agrupar la variable del data frame
 agrupa_frecuencia('grupo', 'grupo_nuevo', df, 10, 99)
 df['grupo_nuevo'].value_counts()
 ```
- 
+
 
 Parece que funciona, si mejoráis, actualizáis o encontráis pegas…

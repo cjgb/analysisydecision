@@ -13,7 +13,7 @@ related:
 slug: que-ando-leyendo-hoy
 tags: []
 title: Que ando leyendo hoy
-url: /que-ando-leyendo-hoy/
+url: /blog/que-ando-leyendo-hoy/
 ---
 
 Páginas muy interesantes de R:

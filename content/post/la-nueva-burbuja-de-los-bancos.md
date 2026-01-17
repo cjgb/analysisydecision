@@ -18,7 +18,7 @@ tags:
 - crisis
 - deuda
 title: La nueva burbuja de los bancos
-url: /la-nueva-burbuja-de-los-bancos/
+url: /blog/la-nueva-burbuja-de-los-bancos/
 ---
 
 Si vemos que nos estalla una burbuja creamos otra.

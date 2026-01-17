@@ -17,10 +17,10 @@ tags:
 - funciones sas
 - lag
 title: La función LAG de SAS
-url: /la-funcion-lag-de-sas/
+url: /blog/la-funcion-lag-de-sas/
 ---
 
-La función LAG de SAS nos devuelve el valor de la observación _n_-n de la variable indicada. Me explico con un ejemplo:  
+La función LAG de SAS nos devuelve el valor de la observación _n_-n de la variable indicada. Me explico con un ejemplo:
 
 ```r
 data lagn;
@@ -46,7 +46,7 @@ run;
 
 Esto produce:
 
-[![lag.PNG](/images/2010/10/lag.thumbnail.PNG)](/images/2010/10/lag.PNG "lag.PNG")  
+[![lag.PNG](/images/2010/10/lag.thumbnail.PNG)](/images/2010/10/lag.PNG "lag.PNG")
 LAG(i) nos da el valor de i para la observación anterior, LAG2(i) nos da el valor de las 2 observaciones anteriores,… En el caso de encontrarnos en las primeras observaciones el valor que devuelve es el missing. Con ella podemos evitar trabajar con RETAIN a la hora de hacer sumas acumuladas:
 
 ```r

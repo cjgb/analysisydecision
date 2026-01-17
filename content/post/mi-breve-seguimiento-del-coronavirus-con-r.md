@@ -17,7 +17,7 @@ tags:
 - coronavirus
 - COVID
 title: Mi breve seguimiento del coronavirus con R
-url: /mi-breve-seguimiento-del-coronavirus-con-r/
+url: /blog/mi-breve-seguimiento-del-coronavirus-con-r/
 ---
 
 Ya comentaré con más detenimiento el código, pero es la unión de muchos de los códigos R de días anteriores, es un buen ejemplo de uso de la librería gridExtra para poner múltiples gráficos en una sola salida:
@@ -68,7 +68,7 @@ total = grafica('Total')
 
 grid.arrange(madrid, cat, mancha, leon, pvasco, valencia, andalucia, aragon, resto, total, nrow=5,ncol=2)
 ```
- 
+
 
 [![](/images/2020/04/coronavirus16.png)](/images/2020/04/coronavirus16.png)
 
@@ -115,7 +115,7 @@ total = grafica('Total')
 
 grid.arrange(madrid, cat, mancha, leon, pvasco, valencia, andalucia, galicia, resto, total, nrow=5,ncol=2)
 ```
- 
+
 
 [![](/images/2020/04/coronavirus17.png)](/images/2020/04/coronavirus17.png)
 

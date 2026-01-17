@@ -15,7 +15,7 @@ slug: grafico-con-eje-secundario-en-ggplot2
 tags:
 - ggplot2
 title: Gráfico con eje secundario en ggplot2
-url: /grafico-con-eje-secundario-en-ggplot2/
+url: /blog/grafico-con-eje-secundario-en-ggplot2/
 ---
 
 ![](/images/2019/02/ggplot2_eje_secundario.png)
@@ -39,7 +39,7 @@ g2 <- ggplot(resumen,aes(x = period)) +
 
 g2
 ```
- 
+
 
 Así el gráfico no puede representar las líneas porque hay una clara diferencia de escala, eso lo solventamos con scale_y_continuous y sec.axis quedando el código:
 
@@ -53,7 +53,7 @@ g2 <- ggplot(resumen,aes(x = period)) +
 
 g2
 ```
- 
+
 
 Estamos en la misma situación porque es necesario ajustar la escala para que ambos ejes cuadren, hay que buscar una relación entre un dato que ronda los 40000 y otro que ronda los 0.15 para ajustarse habría que multiplicar por 250000 aproximadamente, en este caso multiplicamos por 500000 y así la línea de frecuencia queda por encima de las barras de exposición:
 
@@ -67,6 +67,6 @@ g2 <- ggplot(resumen,aes(x = period)) +
 
 g2
 ```
- 
+
 
 No es muy elegante pero los resultados son espectaculares, la propia definición de ggplot2.

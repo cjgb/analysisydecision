@@ -17,7 +17,7 @@ related:
 slug: graficos-de-calendarios-con-series-temporales
 tags: []
 title: Gráficos de calendarios con series temporales
-url: /graficos-de-calendarios-con-series-temporales/
+url: /blog/graficos-de-calendarios-con-series-temporales/
 ---
 
 Cuando se realizan gráficos de series temporales se emplean gráficos de líneas donde el eje X contiene la fecha y el eje Y contiene el valor a representar. Hoy quiero traer al blog otra forma de representar series temporales, los gráficos de calendario y su realización con R. Para ilustrar el ejemplo vamos a emplear las cotizaciones históricas del índice bursatil IBEX35:
@@ -35,7 +35,7 @@ getSymbols('^IBEX', from = '2010-01-01')
 # data frame de trabajo
 df<-data.frame(date=index(IBEX),IBEX)
 ```
- 
+
 
 Mediante quantmod extraemos las cotizaciones del IBEX desde 2010 y creamos un data frame de trabajo que llamamos df. Vamos a realizar dos tipos de gráficos, un mapa de calor por años, meses, semanas y días y un calendario de un año puntual.
 
@@ -52,7 +52,7 @@ df <- df %>% mutate(año=year(date),
                           labels=rev(c("L","M","X","J","V","S","D"))),
                     semanames=ceiling(day(date) / 7))
 ```
- 
+
 
 Ahora sólo queda representar el gráfico mediante ggplot2 donde los paneles de facet_grid serán los años en eje X y los meses en eje Y:
 
@@ -64,7 +64,7 @@ calendario1<- ggplot(df, aes(semanames, dia, fill = IBEX.Adjusted)) +
   labs(title="Cierre histórico del IBEX", x ="Semana del mes", y = "")
 calendario1
 ```
- 
+
 
 [![](/images/2020/01/Mapa_calor_calendario.png)](/images/2020/01/Mapa_calor_calendario.png)
 
@@ -78,7 +78,7 @@ Si deseamos representar un calendario de un año concreto tenemos la función ca
 library(openair)
 calendarPlot(df, pollutant = "IBEX.Adjusted", year = 2019, cols = "Greens")
 ```
- 
+
 
 [![](/images/2020/01/Grafico_calendario_anual.png)](/images/2020/01/Grafico_calendario_anual.png)
 

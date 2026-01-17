@@ -15,7 +15,7 @@ related:
 slug: transformar-variables-en-sas-caracter-a-numerico
 tags: []
 title: Transformar variables en SAS. Carácter a numérico
-url: /transformar-variables-en-sas-caracter-a-numerico/
+url: /blog/transformar-variables-en-sas-caracter-a-numerico/
 ---
 
 Muchas visitas a este sitio son búsquedas de Google que plantean la problemática que surge al transformar variables caracter a numéricas y viceversa con SAS. Las palabras habituales son «transformar texto a número SAS», «como paso de variable string a numerica en sas», «pasar de caracter a fecha en SAS», «sas transformar fecha numerica en texto», son todas búsquedas que han generado mucho tiempo de estancia en el sitio a pesar de que no existe un mensaje específico. En el siguiente monográfico vamos a tratar estas conversiones. De esta forma se crearán una serie de dos post que pueden ser un interesante material de consulta para profesionales y estudiantes que trabajen con SAS.

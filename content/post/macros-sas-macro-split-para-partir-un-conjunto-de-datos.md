@@ -15,7 +15,7 @@ related:
 slug: macros-sas-macro-split-para-partir-un-conjunto-de-datos
 tags: []
 title: Macros SAS. Macro split para partir un conjunto de datos
-url: /macros-sas-macro-split-para-partir-un-conjunto-de-datos/
+url: /blog/macros-sas-macro-split-para-partir-un-conjunto-de-datos/
 ---
 
 Debido a problemas con un servidor hace años descubrí [la macro Split](http://www2.sas.com/proceedings/sugi27/p083-27.pdf). Básicamente lo que hace es **partir un conjunto de datos SAS en múltiples conjuntos de datos SAS** con el mismo número de observaciones, además lo hace en un solo paso data. La forma de particionar el conjunto de datos es muy simple, si alguien tiene dudas con el código que lo comente y lo analizamos mejor. La macro (mejorada) es:
@@ -39,7 +39,7 @@ then output &out.&i.;
 run;
 %mend split;
 ```
- 
+
 
 Un bucle que en función de un contador mete las observaciones donde correspondan, en mi opinión no es un código muy complejo. Como siempre un ejemplo de uso:
 
@@ -52,6 +52,6 @@ run;
 
 %split(in=uno, out=partido, ndsn=4);
 ```
- 
+
 
 Espero que os sea de utilidad, un saludo.

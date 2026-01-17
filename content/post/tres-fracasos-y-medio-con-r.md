@@ -17,7 +17,7 @@ tags:
 - memoria
 - R
 title: Tres fracasos y medio con R
-url: /tres-fracasos-y-medio-con-r/
+url: /blog/tres-fracasos-y-medio-con-r/
 ---
 
 Hoy, mientras Raúl departía en el cuarto de al lado —él os dirá por qué y para qué— y hacía tiempo para saludarlo, me he entretenido fracasando tres veces y media en lo que abajo desarrollo. No pensaba publicarlo hasta que, reflexionando, he considerado que, a veces, más útil es una buena pregunta que algunas certezas. Inconcluso —o fracasado— puede no significar inútil o imperfecto.

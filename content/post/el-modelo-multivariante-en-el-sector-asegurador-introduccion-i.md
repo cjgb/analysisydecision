@@ -18,7 +18,7 @@ tags:
 - modelo multivariante
 - tarificación
 title: El modelo multivariante en el sector asegurador. Introducción (I)
-url: /el-modelo-multivariante-en-el-sector-asegurador-introduccion-i/
+url: /blog/el-modelo-multivariante-en-el-sector-asegurador-introduccion-i/
 ---
 
 Con ese artículo comienza una serie que nos permitirá aproximarnos a los métodos estadísticos multivariantes empleados para la obtención de la **estructura óptima de la tarifa** en un el sector asegurador. No es un método novedoso. La práctica totalidad de las compañías aseguradoras cuentan con estos procesos en su operativa diaria. Desde el punto de vista de muchos expertos el sector asegurador tiene 4 escalones para adaptarse técnicamente a la realidad del mercado:
@@ -37,7 +37,7 @@ Para nuestro ejemplo vamos a emplear fundamentalmente los siguientes riesgos:
 **Datos del vehículo:**
 
   * Potencia
-  * Combustible 
+  * Combustible
   * Peso
   * Uso del vehículo (kilómetros y tipo)
   * Antigüedad del vehículo

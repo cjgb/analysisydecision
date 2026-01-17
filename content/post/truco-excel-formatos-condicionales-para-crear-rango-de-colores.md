@@ -15,7 +15,7 @@ related:
 slug: truco-excel-formatos-condicionales-para-crear-rango-de-colores
 tags: []
 title: Truco Excel. Formatos condicionales para crear rango de colores
-url: /truco-excel-formatos-condicionales-para-crear-rango-de-colores/
+url: /blog/truco-excel-formatos-condicionales-para-crear-rango-de-colores/
 ---
 
 Un truco de Excel poco ortodoxo. Aprovechar los colores que nos ofrece un formato condicional sin necesidad de emplear el formato condicional para crear un rango de colores. Parece un trabalenguas pero puede ser muy útil cuando trabajamos con Visual Basic. En mi caso particular es muy útil disponer de estas paletas de colores para hacer mapas mucho más vistosos. El truco es muy sencillo empezamos por escribir números del 1 hasta el número de colores que deseamos y elegimos el formato condicional a aplicar:

@@ -18,7 +18,7 @@ tags:
 - outliers
 - proc univariate
 title: Macros (fáciles) de SAS. Eliminar outliers en una variable
-url: /macros-faciles-de-sas-eliminar-outliers-en-una-variable/
+url: /blog/macros-faciles-de-sas-eliminar-outliers-en-una-variable/
 ---
 
 Hace tiempo ya os propuse una[ chapuza para eliminar outliers de forma multivariante](https://analisisydecision.es/trucos-sas-eliminacion-de-outliers-2/). Por supuesto quedaba**eliminar outliers en una variable**. Recortar los valores extremos en aquellas variables cuantitativas que deseemos. Para ello os propongo una macro que no considero muy compleja y que os analizaré con mayor detalle, pero lo primero la macro al completo:

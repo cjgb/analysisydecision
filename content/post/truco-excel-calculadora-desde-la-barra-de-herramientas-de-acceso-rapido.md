@@ -14,7 +14,7 @@ related:
 slug: truco-excel-calculadora-desde-la-barra-de-herramientas-de-acceso-rapido
 tags: []
 title: Truco Excel. Calculadora desde la barra de herramientas de acceso rápido
-url: /truco-excel-calculadora-desde-la-barra-de-herramientas-de-acceso-rapido/
+url: /blog/truco-excel-calculadora-desde-la-barra-de-herramientas-de-acceso-rapido/
 ---
 
 Hace tiempo que no ponía trucos de Excel y el de hoy es muy sencillo pero que a mi me ha sido de especial utilidad, un acceso a la calculadora para esos cálculos rápidos que siempre he hecho con la calculadora de sobre mesa. Se trata de añadir un acceso a la Calculadora de Windows desde la barra de herramientas de acceso rápido. Vamos a personalizar la barra:

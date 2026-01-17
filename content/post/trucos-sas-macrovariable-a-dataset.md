@@ -18,7 +18,7 @@ tags:
 - macrovariables sas
 - w/source2
 title: Trucos SAS. Macrovariable a dataset
-url: /trucos-sas-macrovariable-a-dataset/
+url: /blog/trucos-sas-macrovariable-a-dataset/
 ---
 
 En alguna ocasión he necesitado pasar el contenido de una macrovariable a un dataset SAS. Con el tiempo he ido refinando el código empleado para hacer esta tarea y, como es habitual, lo comparto con vosotros para que os ayude en vuestro trabajo diario en grandes bancos, aseguradoras, compañías energéticas y de telecomunicaciones en las que seguro que podéis encontrar un hueco para que podamos desarrollar proyectos de calidad (¡ejem!). Tras la publicidad veamos el ejemplo:

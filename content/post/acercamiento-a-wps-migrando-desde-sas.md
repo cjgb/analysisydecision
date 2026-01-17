@@ -18,7 +18,7 @@ tags:
 - SAS
 - WPS
 title: Acercamiento a WPS. Migrando desde SAS
-url: /acercamiento-a-wps-migrando-desde-sas/
+url: /blog/acercamiento-a-wps-migrando-desde-sas/
 ---
 
 Poco a poco comienzo a trabajar con el clónico de SAS WPS. Estoy trabajando con la versión 2.3.5. De momento las impresiones no pueden ser mejores. El interfaz me recuerda a Enterprise Guide, trabajamos con proyectos que pueden estar compuestos de scripts (códigos de SAS) o ficheros. En cuanto al interfaz tenemos un navegador de proyectos para explorar los elementos que añadimos. Acompaña a este explorador una ventana de propiedades del proyecto. En la parte central podemos ver los scripts o los ficheros que añadimos. Me ha gustado el poder linkar los ficheros añadidos al proyecto a la aplicación del sistema asociada al fichero, me explico, si añades una hoja de cálculo ésta se abre en el proyecto de WPS con el programa asociado a ella. Otra de las ventanas está organizada en pestañas, una de ellas dispone del log y los resultados, otra un «server explorer» similar al explorador de SAS Base y una pestaña de progreso. Por último disponemos de otro navegador de procedimientos, resultados o log de ejecuciones al que particularmente no le encuentro mucho interés.

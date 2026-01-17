@@ -17,7 +17,7 @@ slug: latent-semantic-analysis-y-la-importancia-de-las-matematicas
 tags:
 - Latent semantic analysis
 title: Latent semantic analysis y la importancia de las matemáticas
-url: /latent-semantic-analysis-y-la-importancia-de-las-matematicas/
+url: /blog/latent-semantic-analysis-y-la-importancia-de-las-matematicas/
 ---
 
 Vivimos “días extraños”, tan extraños que en España se están planteando prescindir de la asignatura de matemáticas en la enseñanza obligatoria. Es evidente que las personas que gobiernan hoy (25/05/2020) España habrían suspendido matemáticas. Sin embargo, es curioso que haya pocos matemáticos ejerciendo cargos políticos, ¿puede ser que los matemáticos no tengan esa vocación por mejorar la vida de los demás? En fin, esta crítica a la ignorancia numérica y al egoísmo matemático me sirve de “extraña introducción” al Latent semantic analysis (LSA) como siempre los [aspectos teóricos los podéis encontrar en otros sitios](https://www.sciencedirect.com/topics/computer-science/latent-semantic-analysis). Y todo este conjunto de frases inconexas hilan con la entrada en el blog de mi amigo [J.L. Cañadas](https://twitter.com/joscani) en [muestrear no es pecado](https://muestrear-no-es-pecado.netlify.app/2020/05/24/factoriales/) porque, reducción de dimensionalidad, el lenguaje y la importancia de las matemáticas es en realidad el Latent Semantic Analysis.
@@ -36,7 +36,7 @@ texto = read.table (ubicacion, sep="\r", encoding = 'UTF-8')
 texto = toupper(texto)
 genericSummary(texto, k=1, language="spanish", breakdown=T)
 ```
- 
+
 
 ```r
 [1] "    en particular  el ministro de sanidad ha aprobado tres ordenes para fortalecer nuestro sistema nacional de salud tanto desde el punto de vista de los medios humanos como de los recursos disponibles en unas circunstancias tan extraordinarias como las actuales  y  en concreto  ha ordenado las siguientes materias  se ha aprobado la prorroga de la contratacion de los medicos residentes en el ultimo ano de formacion de algunas especialidades medicas  y de enfermeria tambien  especialmente criticas en la lucha contra el covid     tales como la geriatria  la medicina intensiva  la microbiologia y la parasitologia  se han suspendido las rotaciones de los medicos residentes  para que estos puedan prestar servicios en aquellas unidades en las que se precise un refuerzo del personal  se podra trasladar a medicos residentes de una comunidad autonoma a otra que tenga mayores necesidades asistenciales para la redistribucion de la asistencia en todo el territorio  y se podra contratar de modo extraordinario y en algunos casos a personas con un grado o licenciatura en medicina aunque carezcan del titulo de especialista  podra reincorporarse a profesionales sanitarios jubilados  medicos y medicas  enfermeros y enfermeras menores de setenta anos  personal emerito y personal con dispensa absoluta para funciones sindicales  todo ello para contar con el mayor numero de profesionales sanitarios en esta crisis en caso de que las circunstancias asi lo requirieran  tambien se podra contratar de modo extraordinario a estudiantes de los grados de medicina y de enfermeria en su ultimo ano de formacion con el fin de realizar labores de apoyo y auxilio sanitario bajo la supervision de otros profesionales"

@@ -17,7 +17,7 @@ tags:
 - muestreo con sas
 - proc surveyselect
 title: Trucos SAS. Muestreo con PROC SURVEYSELECT
-url: /trucos-sas-muestreo-con-proc-surveyselect/
+url: /blog/trucos-sas-muestreo-con-proc-surveyselect/
 ---
 
 Hace varios días planteamos algún truco SAS para la realización de muestras aleatorias. Hoy planteo otro truco para lo mismo pero empleando el procedimiento de SAS SURVEYSELECT. Este procedimiento lo tenemos en el módulo STAT y tiene una sintaxis muy sencilla. Además nos permite realizar [muestreos estratificados ](http://www.bioestadistica.uma.es/libro/node89.htm)de forma muy sencilla, mediante pasos data el muestreo estratificado se complica. Como es habitual vemos varios ejemplos partiendo de una tabla SAS aleatoria:

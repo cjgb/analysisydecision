@@ -17,7 +17,7 @@ tags:
 - DESREF
 - funciones excel
 title: Trucos Excel. Repetir filas o columnas con la función DESREF
-url: /trucos-excel-repetir-filas-o-columnas-con-la-funcion-desref/
+url: /blog/trucos-excel-repetir-filas-o-columnas-con-la-funcion-desref/
 ---
 
 La **función DESREF** va a ser la protagonista de 2 trucos de Excel. Vamos a **repetir filas o columnas** con esta función. En nuestro caso la función va a devolver el valor de una celda referenciada del modo _DESREF( <Celda inicial anclada>;<Filas por debajo de la referenciada>;<Columnas a la derecha de la fila referenciada>)_. Para nuestro caso el funcionamiento de la función DESREF será:

@@ -25,7 +25,7 @@ tags:
 - R2HTML
 - recode
 title: Informes con R en HTML. Comienzo con R2HTML (I)
-url: /informes-con-r-en-html-comienzo-con-r2html-i/
+url: /blog/informes-con-r-en-html-comienzo-con-r2html-i/
 ---
 
 En las III jornadas de R tuve el placer de asistir al[ taller de Gregorio Serrano sobre informes con R](http://demo.usar.org.es/Taller+4). Me abrió los ojos. Siempre he pensado que R no es una herramienta que sirva para hacer informes _[modo consultor = ON]_ R no servía para realizar reporting _[modo consultor = OFF]_. Pero R tiene un poderoso motor gráfico y dispone del paquete **R2HTML** para poder realizar tablas en HTML y si trabajamos con libros CSS de estilos podemos obtener resultados muy atractivos. Así que la otra tarde me puse manos a la obra y creo que puede salir una trilogía interesante. Bueno, depende del interés que despierte esta entrada del blog haré más entregas, pero de momento tengo en mente llegar a 3.
@@ -210,6 +210,6 @@ HTML("</div>")
 
 HTMLEndFile()
 ```
- 
+
 
 El objeto _salida_ es una página estática HTML que llama a una hoja de estilos, con esto podemos realizar tablas más bonitas y espectaculares. Esta página se crea con la función **HTMLInitFile** , con la función HTML ya introducimos código HTML a _salida_ hasta que encontramos **HTMLEndFile.** Yo no soy ningún experto en HTML, creo que sería mejor decir que no tengo ni idea pero con Google y R2HTML vamos a crear informes [tan bonitos como este](/images/2011/11/informes/salida.html).

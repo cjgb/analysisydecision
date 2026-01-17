@@ -14,7 +14,7 @@ related:
 slug: tendre-que-decir-algo-sobre-la-reduccion-de-la-velocidad-maxima-en-espana
 tags: []
 title: Tendré que decir algo sobre la reducción de la velocidad máxima en España
-url: /tendre-que-decir-algo-sobre-la-reduccion-de-la-velocidad-maxima-en-espana/
+url: /blog/tendre-que-decir-algo-sobre-la-reduccion-de-la-velocidad-maxima-en-espana/
 ---
 
 [modo=»demagogia» on]

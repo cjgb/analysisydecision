@@ -18,7 +18,7 @@ tags:
 - GRAPH
 - PROC GANNO
 title: Un acercamiento a GRAPH. PROC GANNO
-url: /un-acercamiento-a-graph-proc-ganno/
+url: /blog/un-acercamiento-a-graph-proc-ganno/
 ---
 
 Uso del PROC GANNO de SAS:
@@ -157,7 +157,7 @@ proc ganno anno=dibujo;
 run;quit;
 ```
 
-Observamos que las líneas se solapan con los textos, deberíamos mover los textos o lo que es lo mismo añadir de nuevo otra instrucción con la función move. Pero tendríamos un programa con mucho código. Podemos ahorrar código empleando las macrovariables de SAS/GRAPH para los ANNOTATE:  
+Observamos que las líneas se solapan con los textos, deberíamos mover los textos o lo que es lo mismo añadir de nuevo otra instrucción con la función move. Pero tendríamos un programa con mucho código. Podemos ahorrar código empleando las macrovariables de SAS/GRAPH para los ANNOTATE:
 
 ```r
 %annomac;

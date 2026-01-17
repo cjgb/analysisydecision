@@ -16,15 +16,15 @@ related:
 slug: calendario-dias-laborales-pandas
 tags: []
 title: Calendario de días laborales con Pandas
-url: /calendario-dias-laborales-pandas/
+url: /blog/calendario-dias-laborales-pandas/
 ---
 
-Es habitual escuchar que un científico de datos es un estadístico que trabaja con Python. En parte, tiene razón. Sin embargo, quien ha trabajado dentro del mundo académico sabe que para un estadístico las [vacas son esféricas](https://es.wikipedia.org/wiki/Vaca_esférica) y los meses tienen 365,25/12 días. En cambio, en el mundo real, ni hay dos vacas iguales ni un mes igual a otro.  
+Es habitual escuchar que un científico de datos es un estadístico que trabaja con Python. En parte, tiene razón. Sin embargo, quien ha trabajado dentro del mundo académico sabe que para un estadístico las [vacas son esféricas](https://es.wikipedia.org/wiki/Vaca_esférica) y los meses tienen 365,25/12 días. En cambio, en el mundo real, ni hay dos vacas iguales ni un mes igual a otro.
 Sirva esta entrada para poner en valor todo aquel trabajo adicional y tiempo dedicado por aquellos que trabajan con datos y huyen de simplificaciones estadísticas, ya se denominen científicos de datos o cómo quieran llamarse.
 
 ## Series temporales con Pandas
 
-Pandas, como se ha visto aquí, es la librería por excelencia para el [manejo de datos](https://analisisydecision.es/data-management-basico-con-pandas/) ya que permite trabajar fácilmente con tablas numéricas y series temporales.  
+Pandas, como se ha visto aquí, es la librería por excelencia para el [manejo de datos](https://analisisydecision.es/data-management-basico-con-pandas/) ya que permite trabajar fácilmente con tablas numéricas y series temporales.
 Una utilidad disponible en Pandas en relación a las series temporales es crear directamente rangos de fechas con la función `pd.date_range()`, la cual utiliza los siguientes parámetros (no todos obligatorios):
 
   * **start** : Inicio del rango. Límite izquierdo para generar fechas.
@@ -45,7 +45,7 @@ s = pd.date_range(start='2019-01-01', periods=12, freq='M')
 df = pd.DataFrame(s, columns=['Fecha'])
 print(df)
 ```
- 
+
 ```r
 Fecha
 0  2019-01-31
@@ -61,11 +61,11 @@ Fecha
 10 2019-11-30
 11 2019-12-31
 ```
- 
+
 
 ## Crear una serie temporal con los últimos días laborales de cada mes
 
-En determinados ámbitos, principalmente financiero y actuarial, resulta especialmente útil manejar rangos de fechas en donde los días de la serie correspondan al primer o último día laboral del mes (por ejemplo, cuando proyectamos pagos de cupones o rentas).  
+En determinados ámbitos, principalmente financiero y actuarial, resulta especialmente útil manejar rangos de fechas en donde los días de la serie correspondan al primer o último día laboral del mes (por ejemplo, cuando proyectamos pagos de cupones o rentas).
 Para ello, la función `pd.date_range()` dispone de diferentes valores para el parámetro frecuencia. En el siguiente ejemplo, ‘BM’ corresponde con BusinessMonthEnd (último día laboral del mes):
 
 ```r
@@ -74,7 +74,7 @@ s = pd.date_range('2019-01-01', periods=12, freq='BM')
 df = pd.DataFrame(s, columns=['Fecha'])
 print(df)
 ```
- 
+
 ```r
 Fecha
 0  2019-01-31
@@ -90,7 +90,7 @@ Fecha
 10 2019-11-29
 11 2019-12-31
 ```
- 
+
 
 Aunque si queremos mayor exactitud, debemos tener en cuenta los días festivos (por ejemplo, si calculamos costes que dependan de los días exactamente transcurridos entre cupón y cupón, un 1 día entre 20 representa un 5% de error). Conocer los días festivos dentro de un periodo de tiempo es especialmente útil cuando estimamos usos y comportamientos humanos (transporte público, asistencias médicas, cargas en servidores informáticos…). En el sector asegurador, dichos patrones pueden afectar directamente en las reservas contables, por ejemplo, a la hora de calcular los costes incurridos pero no declarados (IBNR). De hecho, en algunas compañías aseguradoras es habitual que se incrementen ligeramente los ratios de siniestralidad los años bisiestos simplemente por disponer de un día natural más que el resto.
 
@@ -105,7 +105,7 @@ df = pd.DataFrame(s, columns=['Fecha'])
 df['n_dias'] = df['Fecha'].diff().dt.days.fillna(0)
 print(df)
 ```
- 
+
 ```r
 Fecha  n_dias
 0  2019-01-31     0.0
@@ -121,7 +121,7 @@ Fecha  n_dias
 10 2019-11-29    29.0
 11 2019-12-31    32.0
 ```
- 
+
 
 _(Como puede observarse, el 28-2 y 31-5 no aparecen en el calendario de pagos)_
 
@@ -154,7 +154,7 @@ s = pd.date_range('2019-12-01', end='2019-12-31', freq=es_BD)
 df = pd.DataFrame(s, columns=['Fecha'])
 print(df)
 ```
- 
+
 ```r
 Fecha
 0  2019-12-02
@@ -177,24 +177,24 @@ Fecha
 17 2019-12-30
 18 2019-12-31
 ```
- 
 
-_(Se aprecia como el domingo 8 de diciembre es reemplazado por el lunes 9)_  
-  
+
+_(Se aprecia como el domingo 8 de diciembre es reemplazado por el lunes 9)_
+
 Así, una vez creado nuestro calendario de fiestas nacionales, podemos utilizarlo para conocer las fiestas de próximos años, por ejemplo para el año 2020:
 
 ```r
 calendar = EsBusinessCalendar()
 print(calendar.holidays(start='2020-01-01', end='2020-12-31'))
 ```
- 
+
 ```r
 DatetimeIndex(['2020-01-01', '2020-01-06', '2020-04-10', '2020-05-01',
                '2020-08-15', '2020-10-12', '2020-11-02', '2020-12-07',
                '2020-12-08', '2020-12-25'],
               dtype='datetime64[ns]', freq=None)
 ```
- 
+
 
 Las fiestas regionales o locales pueden ser incluidas de la misma manera, aunque hay que tener en cuenta que en ciertas comunidades es costumbre trasladar ciertas fiestas al 19 de marzo o el jueves del Corpus en vez de al siguiente lunes (en ese caso habría que crear una nueva función basada en la función de Pandas `sunday_to_monday`).
 

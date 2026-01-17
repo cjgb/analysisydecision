@@ -18,10 +18,10 @@ tags:
 - Funciones SAS I/O
 - OPEN
 title: Macros (fáciles) de SAS. Número de obsevaciones de un dataset
-url: /macros-faciles-de-sas-numero-de-obsevaciones-de-un-dataset/
+url: /blog/macros-faciles-de-sas-numero-de-obsevaciones-de-un-dataset/
 ---
 
-Con esta macro podréis identificar el número de observaciones de UN CONJUNTO DE DATOS SAS. No funciona con tablas Oracle, Informix, DB2,… me gustaría dejarlo claro. Al emplear la función de**I/O** OPEN junto con ATTRN y CLOSE no realizamos un conteo de observaciones. Al final el proceso crea una macro variable que se llama _NOBS_ y que podremos usar en nuestra sesión SAS.  
+Con esta macro podréis identificar el número de observaciones de UN CONJUNTO DE DATOS SAS. No funciona con tablas Oracle, Informix, DB2,… me gustaría dejarlo claro. Al emplear la función de**I/O** OPEN junto con ATTRN y CLOSE no realizamos un conteo de observaciones. Al final el proceso crea una macro variable que se llama _NOBS_ y que podremos usar en nuestra sesión SAS.
 
 ```r
 %macro observaciones(datos);
@@ -46,5 +46,5 @@ Con esta macro podréis identificar el número de observaciones de UN CONJUNTO D
 
 %mend ;
 ```
-  
+
 Fácil y rápida. Si alguien tiene problemas con su uso que lo comunique en el blog. Seguro que es de gran utilidad. Saludos.

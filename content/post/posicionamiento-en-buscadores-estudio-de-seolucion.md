@@ -16,7 +16,7 @@ tags:
 - buscadores
 - Posicionamiento web
 title: Posicionamiento en buscadores. Estudio de Seolución
-url: /posicionamiento-en-buscadores-estudio-de-seolucion/
+url: /blog/posicionamiento-en-buscadores-estudio-de-seolucion/
 ---
 
 He estado en la web de [Seolución ](http://www.seolucion.com/)del grupo [ADESIS ](http://www.adesis.com/) y me he parado en los estudios e informes de posicionamiento en buscadores por sectores. Seolución ofrece una comparativa entre compañías por sector. Independientemente de los resultados del estudio que se pueden interpretar desde distintos puntos de vista, me parece especialmente interesante y útil la información que nos ofrecen sus informes. Me gusta especialmente el criterio elegido para el estudio del posicionamiento en buscadores, además, trabaja con múltiples indicadores e incluso podemos encontrarnos un cruce entre posicionamiento y popularidad que me parece muy revelador.

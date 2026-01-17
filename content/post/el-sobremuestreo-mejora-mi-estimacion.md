@@ -23,7 +23,7 @@ tags:
 - ROCR
 - sample
 title: El sobremuestreo ¿mejora mi estimación?
-url: /el-sobremuestreo-c2bfmejora-mi-estimacion/
+url: /blog/el-sobremuestreo-c2bfmejora-mi-estimacion/
 ---
 
 El **sobremuestreo**(oversampling) es una técnica de muestreo que se emplea habitualmente cuando tenemos una baja proporción de casos positivos en clasificaciones binomiales. Los modelos pueden “despreciar” los casos positivos por ser muy pocos y nuestro modelo no funcionaría. Para **incrementar el número de casos positivos** se emplea el sobremuestreo. Ejemplos habituales pueden ser los modelos de fraude, un 99% de las compras son correctas, un 1% son fraudulentas. Si realizo un modelo puedo estar seguro al 99% de que todas mis compras son correctas, en este caso hemos de realizar un sobremuestreo para incrementar nuestros casos de fraude y poder detectar los patrones.
@@ -54,7 +54,7 @@ datos_ini = subset(datos_ini, select = -c(potencial))
 #Realizamos una tabla de frecuencias
 table(datos_ini$pvi)
 ```
- 
+
 
 Sólo encontramos un 2% de casos positivos de los 20.000 clientes analizados. Para nuestro pequeño estudio vamos a emplear **regresión logística y árboles de decisión** , pero lo primero que vamos a hacer es seleccionar una parte de las observaciones para validar los modelos realizados:
 
@@ -62,7 +62,7 @@ Sólo encontramos un 2% de casos positivos de los 20.000 clientes analizados. Pa
 #Subconjunto de validacion
 validacion <- sample(1:clientes,5000)
 ```
- 
+
 
 Estos 5.000 clientes no entrenarán ningún modelo sólo validarán los modelos, con y sin sobremuestreo, que realicemos. Vamos a generar la muestra con un porcentaje del 50% de casos positivos mediante la librería de R _sample_ :
 
@@ -73,7 +73,7 @@ library( sampling )
 selec1 <- strata( datos_ini[-validacion,], stratanames = c("pvi"),
 size = c(5000,5000), method = "srswr" )
 ```
- 
+
 
 Con _strata_ realizamos el muestreo estratificado, el estrato es nuestra variable dependiente y así lo indicamos en _stratanames_ , como tenemos 2 estratos en _size_ indicamos 5000 observaciones para cada uno de ellos y el método _srswr señala_ que es muestreo con reemplazamiento (with replacement).
 
@@ -90,7 +90,7 @@ selec1 <- selec1$ID_unit
 modelo.2 = glm(pvi~.,data=datos_ini[selec1,],family=binomial)
 summary(modelo.2)
 ```
- 
+
 
 Ambos modelos convergen, tienen parámetros similares y las inferencias sobre ellos son iguales. ¿Qué modelo funciona mejor? La librería ROCR nos permite realizar curvas ROC muy empleadas para medir el comportamiento de los modelos realizados. No entramos en detalle sobre el código para no alargar esta entrada:
 
@@ -118,7 +118,7 @@ lwd=2, ann=FALSE)
 par(new=TRUE)
 plot(perf.1,colorize = TRUE)
 ```
- 
+
 
 ![roc-logistica-sobremuestreo.png](/images/2011/11/roc-logistica-sobremuestreo.png)
 
@@ -157,7 +157,7 @@ lwd=2,ann=FALSE)
 par(new=TRUE)
 plot(perf.1,colorize = TRUE)
 ```
- 
+
 
 Analizamos el gráfico resultante:
 

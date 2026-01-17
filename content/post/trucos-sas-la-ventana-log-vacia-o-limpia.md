@@ -17,7 +17,7 @@ tags:
 - log
 - proc printto
 title: Trucos SAS. La ventana LOG vacía o limpia
-url: /trucos-sas-la-ventana-log-vacia-o-limpia/
+url: /blog/trucos-sas-la-ventana-log-vacia-o-limpia/
 ---
 
 Duda que me trasmitieron hace tiempo. Necesito que no se genere salida en el _log_ porque se llena y mi proceso da problemas. Con el **PROC PRINTTO** podemos hacer que nuestros procesos no generen salida en la ventana _log_. Para ello sólo tenemos que utilizar el siguiente código:

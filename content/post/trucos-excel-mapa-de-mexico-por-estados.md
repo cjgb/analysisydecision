@@ -20,7 +20,7 @@ tags:
 - mapas
 - mexico
 title: Trucos Excel. Mapa de México por Estados
-url: /trucos-excel-mapa-de-mexico-por-estados/
+url: /blog/trucos-excel-mapa-de-mexico-por-estados/
 ---
 
 ![mapa_excel_mexico1.png](/images/2012/04/mapa_excel_mexico1.png)

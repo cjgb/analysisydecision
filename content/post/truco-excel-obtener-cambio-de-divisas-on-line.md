@@ -14,14 +14,14 @@ related:
 slug: truco-excel-obtener-cambio-de-divisas-on-line
 tags: []
 title: Truco Excel. Obtener cambio de divisas on-line
-url: /truco-excel-obtener-cambio-de-divisas-on-line/
+url: /blog/truco-excel-obtener-cambio-de-divisas-on-line/
 ---
 
 El siguiente truco Excel es muy sencillo. Se trata de una consulta web que nos permite obtener el cambio de divisas a Euro casi practicamente on-line. La consulta se realiza sobre la web [www.finanzas.com](http://www.finanzas.com/) sitio que además quiero recomendar, desde él sigo la imparable caida de mis valores…
 
 La consulta es la siguiente:
 
-  
+
 
 ```r
 Sub cambio_divisas()

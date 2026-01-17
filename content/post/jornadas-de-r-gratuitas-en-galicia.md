@@ -14,7 +14,7 @@ related:
 slug: jornadas-de-r-gratuitas-en-galicia
 tags: []
 title: Jornadas de R gratuitas en Galicia
-url: /jornadas-de-r-gratuitas-en-galicia/
+url: /blog/jornadas-de-r-gratuitas-en-galicia/
 ---
 
 Buena iniciativa en la que seguro que algún lector está interesado:

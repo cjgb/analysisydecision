@@ -15,7 +15,7 @@ related:
 slug: truco-excel-identificar-el-color-de-una-celda
 tags: []
 title: Truco Excel. Identificar el color de una celda
-url: /truco-excel-identificar-el-color-de-una-celda/
+url: /blog/truco-excel-identificar-el-color-de-una-celda/
 ---
 
 [![](/images/2013/11/color_celda_excel.png)](/images/2013/11/color_celda_excel.png)
@@ -33,6 +33,6 @@ Next i
 
 End Sub
 ```
- 
+
 
 No funciona con formatos condicionales, si deseáis utilizar los colores de los formatos condicionales habréis de idear cómo hacerlo o bien esperar a que tenga tiempo a redactar como lo hago yo, pero que nadie se espere un programa en VB brillante, que no fui capaz de hacerlo. Saludos.

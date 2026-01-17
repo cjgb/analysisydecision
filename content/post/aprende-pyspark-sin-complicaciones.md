@@ -15,7 +15,7 @@ slug: aprende-pyspark-sin-complicaciones
 tags:
 - pyspark
 title: Aprende Pyspark sin complicaciones
-url: /aprende-pyspark-sin-complicaciones/
+url: /blog/aprende-pyspark-sin-complicaciones/
 ---
 
 Hace tiempo un gran data engineer me preparó una máquina virtual para hacer «pinitos» con pyspark y llevaba tiempo pensando en como poder publicar trucos y ejemplos con pyspark sin necesidad de máquinas virtuales y empleando notebooks. Ya he encontrado la mejor manera, los contenedores de docker. Cuanto más profundizo en docker más me gusta trabajar con contenedores y con esta entrada me váis a entender perfectamente.
@@ -53,14 +53,14 @@ hasattr(rdd, "toDF")
 
 rdd.toDF().show()
 ```
- 
+
 
 Podemos importar archivos csv con sitaxis sencilla:
 
 ```r
 df = spark.read.csv("bank.csv", header=True, mode="DROPMALFORMED",sep=";")
 ```
- 
+
 
 El csv bank lo podéis encontrar en el repositorio UCI. Otro aspecto interesante es poder crear tablas Hive:
 
@@ -83,6 +83,6 @@ df.write.saveAsTable('prueba')
 df_load = sparkSession.sql('SELECT * FROM example')
 df_load.show()
 ```
- 
+
 
 Aspecto importante, no sé como hacerlo, pero pierdo los notebook, así que me los suelo descargar y ya los subo cada vez que hago algo. Ahora tengo que ir contando algún truco, saludos.

@@ -15,7 +15,7 @@ slug: crecimiento-del-comercio-electronico-pero-del-comercio-electronico-de-siem
 tags:
 - compra on-line
 title: Crecimiento del comercio electrónico, pero del comercio electrónico de siempre
-url: /crecimiento-del-comercio-electronico-pero-del-comercio-electronico-de-siempre/
+url: /blog/crecimiento-del-comercio-electronico-pero-del-comercio-electronico-de-siempre/
 ---
 
 Planteándome un artículo sobre el escaso futuro a medio plazo de la prensa escrita he llegado al siguiente dato que nos ofrece la Comisión del Mercado de las Telecomunicaciones (CMT): «**El comercio electrónico crece un 52% en España en 2007** » El volumen de compra está muy cerca de los 4.000 millones de euros y son las empresas españolas las que han generado más volumen. Parece que está cerca un cambio en el comportamiento de los consumidores cada vez usamos más el comercio electrónico. Pero sólo lo parece porque al final las compras a través de la red se centran en búsquedas de viajes, juegos de azar y compra de entradas, las compras de siempre.

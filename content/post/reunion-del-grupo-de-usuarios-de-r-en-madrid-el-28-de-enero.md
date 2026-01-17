@@ -13,7 +13,7 @@ related:
 slug: reunion-del-grupo-de-usuarios-de-r-en-madrid-el-28-de-enero
 tags: []
 title: Reunión del grupo de usuarios de R en Madrid el 28 de enero
-url: /reunion-del-grupo-de-usuarios-de-r-en-madrid-el-28-de-enero/
+url: /blog/reunion-del-grupo-de-usuarios-de-r-en-madrid-el-28-de-enero/
 ---
 
 Aquí tenéis toda la información acerca de la siguiente reunión del grupo de usuarios de R en Madrid:

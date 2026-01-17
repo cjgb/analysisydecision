@@ -13,7 +13,7 @@ related:
 slug: comienza-la-cuenta-atras
 tags: []
 title: Comienza la cuenta atrás
-url: /comienza-la-cuenta-atras/
+url: /blog/comienza-la-cuenta-atras/
 ---
 
 ¿De dónde sacamos la pasta?

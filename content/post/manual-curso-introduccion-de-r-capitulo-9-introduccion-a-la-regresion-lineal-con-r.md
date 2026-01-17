@@ -17,44 +17,44 @@ tags:
 - regresión lineal
 title: 'Manual. Curso introducción de R. Capítulo 9: Introducción a la regresión lineal
   con R'
-url: /manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r/
+url: /blog/manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r/
 ---
 
-En este capítulo del curso de R vamos a comenza a estudiar el análisis de regresión lineal. Los modelos de regresión lineal son modelos probabilísticos basados en una función lineal, nuestro objetivo es expresar una variable dependiente en función otro conjunto de variables. Los pasos básicos a seguir en el estudio de un modelo lineal son:  
+En este capítulo del curso de R vamos a comenza a estudiar el análisis de regresión lineal. Los modelos de regresión lineal son modelos probabilísticos basados en una función lineal, nuestro objetivo es expresar una variable dependiente en función otro conjunto de variables. Los pasos básicos a seguir en el estudio de un modelo lineal son:
 1\. Escribir el modelo matemático con todas sus hipótesis.
 
-  
-2\. Estimación de los parámetros del modelo.  
-3\. Inferencias sobre los parámetros.  
-4\. Diagnóstico del modelo.  
-No nos vamos a detener en todos los pasos puesto que si lo hiciéramos el capítulo quedaría demasiado extenso. Vamos a analizar las posibilidades que tenemos con R y para que nos pueden servir los modelos lineales.  
-La función que realiza los modelos lineales en R es lm «lineal model». Pero esta función no nos ofrece ninguna salida por pantalla si no que nos crea un objeto, o mejor dicho, nosotros creamos un objeto que va a ser un modelo de regresión lineal. Este objeto puede ser referenciado por cualquier función para realizar un análisis de la varianza, un modelo autoregresivo,… La función lm tiene la siguiente sintaxis:  
+
+2\. Estimación de los parámetros del modelo.
+3\. Inferencias sobre los parámetros.
+4\. Diagnóstico del modelo.
+No nos vamos a detener en todos los pasos puesto que si lo hiciéramos el capítulo quedaría demasiado extenso. Vamos a analizar las posibilidades que tenemos con R y para que nos pueden servir los modelos lineales.
+La función que realiza los modelos lineales en R es lm «lineal model». Pero esta función no nos ofrece ninguna salida por pantalla si no que nos crea un objeto, o mejor dicho, nosotros creamos un objeto que va a ser un modelo de regresión lineal. Este objeto puede ser referenciado por cualquier función para realizar un análisis de la varianza, un modelo autoregresivo,… La función lm tiene la siguiente sintaxis:
 `lm(formula, data, subset, weights, method = "qr", model = TRUE, x = FALSE, y = FALSE, qr = TRUE, contrasts = NULL, ...)`
 
-En formula ponemos el modelo expresado: y ~ x1+x2+…+xn  
-En data especificamos el data frame que contiene las variables del modelo en el caso de que trabajemos con un data frame.  
-En subset especificamos un subconjunto de observaciones para validar posteriormente el modelo.  
-En weights especificamos los pesos, útil si hacemos mínimos cuadrados ponderados.  
-Con method especificamos el método. No entramos puesto que con el módulo base sólo es posible obtener el modelo por mínimos cuadrados.  
-En model con TRUE decimos a R que ha de guardarse en el objeto, la matriz del modelo, la frame,…  
-En contrast podemos especificar objetos con los que realizar contrastes sobre los parámetros.  
+En formula ponemos el modelo expresado: y ~ x1+x2+…+xn
+En data especificamos el data frame que contiene las variables del modelo en el caso de que trabajemos con un data frame.
+En subset especificamos un subconjunto de observaciones para validar posteriormente el modelo.
+En weights especificamos los pesos, útil si hacemos mínimos cuadrados ponderados.
+Con method especificamos el método. No entramos puesto que con el módulo base sólo es posible obtener el modelo por mínimos cuadrados.
+En model con TRUE decimos a R que ha de guardarse en el objeto, la matriz del modelo, la frame,…
+En contrast podemos especificar objetos con los que realizar contrastes sobre los parámetros.
 Tiene múltiples opciones, para ver cuales son empleamos la ayuda (?lm) y vemos la documentación R sobre el procedimiento lm. En este caso para conocer mejor su funcionamiento comenzamos a trabajar con ejemplos:
 
 Ejemplo 9.1:
 
 El tiempo que tarda un sistema informático en red en ejecutar una instrucción depende del número de usuarios conectados a él. Si no hay usuarios el tiempo es 0. Tenemos los siguientes datos:
 
-**Nº usuarios** | **Tiempo de ejecución**  
----|---  
-10 | 1  
-15 | 1.2  
-20 | 2  
-20 | 2.1  
-25 | 2.2  
-30 | 2  
-30 | 1.9  
-  
-Se pretende ajustar un modelo lineal sin término independiente, construir la tabla ANOVA y comparar el modelo con el de término independiente. Veamos las intrucciones en R:  
+**Nº usuarios** | **Tiempo de ejecución**
+---|---
+10 | 1
+15 | 1.2
+20 | 2
+20 | 2.1
+25 | 2.2
+30 | 2
+30 | 1.9
+
+Se pretende ajustar un modelo lineal sin término independiente, construir la tabla ANOVA y comparar el modelo con el de término independiente. Veamos las intrucciones en R:
 
 ```r
 > tiempo<-c(1,1.2,2,2.1,2.2,2,1.9)
@@ -118,7 +118,7 @@ Nos han enviado por correo electrónico un archivo de texto que contiene las not
 
 ![tabla92.JPG](/images/2008/07/tabla92.JPG)
 
-El primer paso que debemos dar es leer el fichero de texto para transformarlo en un objeto de R para ello empleamos la función read.table:  
+El primer paso que debemos dar es leer el fichero de texto para transformarlo en un objeto de R para ello empleamos la función read.table:
 
 ```r
 > #Si deseamos leer los datos directamente de la web:
@@ -291,18 +291,18 @@ Creamos un modelo en el que la nota final será nuestra variable dependiente y l
 ```
 2
 
-Coefficients:  
-Estimate Std. Error t value Pr(>|t|)  
-(Intercept) -17.8277 50.2996 -0.354 0.72471  
-test 0.8606 0.7650 1.125 0.26672  
-exam1 0.6709 0.2413 2.781 0.00795 **  
-exam2 0.4316 0.3667 1.177 0.24547  
-labo 0.2924 0.6182 0.473 0.63855  
-\---  
+Coefficients:
+Estimate Std. Error t value Pr(>|t|)
+(Intercept) -17.8277 50.2996 -0.354 0.72471
+test 0.8606 0.7650 1.125 0.26672
+exam1 0.6709 0.2413 2.781 0.00795 **
+exam2 0.4316 0.3667 1.177 0.24547
+labo 0.2924 0.6182 0.473 0.63855
+\---
 Signif. codes: 0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-Residual standard error: 21.06 on 44 degrees of freedom  
-Multiple R-squared: 0.4716, Adjusted R-squared: 0.4236  
+Residual standard error: 21.06 on 44 degrees of freedom
+Multiple R-squared: 0.4716, Adjusted R-squared: 0.4236
 F-statistic: 9.818 on 4 and 44 DF, p-value: 9.142e-06
 
 Vemos que sólo se rechaza la hipótesis de nulidad del parámetro para la variable exam1. Es la única que debería formar parte de nuestro modelo. Es evidente que ha de haber una alta correlación entre las variables regresoras, tenemos un problema de multicolinealidad. Para analizarlo vemos la matriz de correlaciones:

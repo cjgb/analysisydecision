@@ -17,7 +17,7 @@ tags:
 - text mining
 - wordcloud
 title: Análisis del discurso de navidad del Rey de España 2013
-url: /analisis-del-discurso-de-navidad-del-rey-de-espana-2013/
+url: /blog/analisis-del-discurso-de-navidad-del-rey-de-espana-2013/
 ---
 
 [![](/images/2013/12/Discurso-del-rey-españa-2013.png)](/images/2013/12/Discurso-del-rey-españa-2013.png)
@@ -65,7 +65,7 @@ max.words=Inf, random.order=FALSE,colors=pal,rot.per=.15)
 
 dev.off()
 ```
- 
+
 
 Interesante el uso de la librería _RColorBrewer_. Particularmente me gusta mucho el resultado que nos da _wordcloud_ para la realización de las nubes de palabras con una sintaxis sencilla. Considero imprescindible el uso de ramdom.order=FALSE. Espero que os sea de utilidad.
 

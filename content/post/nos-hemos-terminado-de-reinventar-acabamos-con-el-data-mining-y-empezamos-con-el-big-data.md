@@ -15,7 +15,7 @@ slug: nos-hemos-terminado-de-reinventar-acabamos-con-el-data-mining-y-empezamos-
 tags: []
 title: Nos hemos terminado de reinventar. Acabamos con el Data Mining y empezamos
   con el Big Data
-url: /nos-hemos-terminado-de-reinventar-acabamos-con-el-data-mining-y-empezamos-con-el-big-data/
+url: /blog/nos-hemos-terminado-de-reinventar-acabamos-con-el-data-mining-y-empezamos-con-el-big-data/
 ---
 
 [![](/images/2013/02/Big-data-vs-Data-Mining-300x96.png)](/images/2013/02/Big-data-vs-Data-Mining.png)Google Trends y buscamos los términos Big Data y Data Mining y obtenemos la figura de arriba. Ya convergen las búsquedas. Muchos opinamos que estamos trabajando con Big Data desde hace muchos años sin embargo es ahora cuando este trabajo parece que se está dando a conocer. [Y las escuelas de negocio son conscientes de ello](http://www.smartplanet.com/blog/bulletin/-8216big-data-now-a-big-deal-at-business-schools/13538). El sector de las tecnologías de la información tiene que estar continuamente renovándose. A lo largo de los años han habido mas revoluciones conceptuales que verdaderamente tecnológicas, sin embargo este nuevo concepto de Big Data si trae consigo una nueva visión de acceso a la información.

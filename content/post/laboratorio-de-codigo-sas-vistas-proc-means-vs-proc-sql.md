@@ -16,7 +16,7 @@ slug: laboratorio-de-codigo-sas-vistas-proc-means-vs-proc-sql
 tags:
 - Vistas SAS
 title: Laboratorio de código SAS. Vistas + PROC MEANS vs. PROC SQL
-url: /laboratorio-de-codigo-sas-vistas-proc-means-vs-proc-sql/
+url: /blog/laboratorio-de-codigo-sas-vistas-proc-means-vs-proc-sql/
 ---
 
 Las vistas son muy importantes cuando trabajamos con SAS. El problema del espacio en disco se acentúa cuando trabajamos con SAS. Este problema podemos minimizarlo empleando vistas. También hay otras situaciones en las que se recomienda usar vistas, cuando realizamos agregaciones sobre campos de una tabla y a la vez realizamos una operación sobre estos campos es muy habitual emplear el PROC SQL. Ejemplo de lo que cuento:

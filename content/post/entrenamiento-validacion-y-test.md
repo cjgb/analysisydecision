@@ -15,7 +15,7 @@ related:
 slug: entrenamiento-validacion-y-test
 tags: []
 title: Entrenamiento, validación y test
-url: /entrenamiento-validacion-y-test/
+url: /blog/entrenamiento-validacion-y-test/
 ---
 
 Cuando realizamos modelos hay 3 conjuntos de datos fundamentales:

@@ -18,7 +18,7 @@ tags:
 - read.csv
 - RGoogleTrends
 title: Leer y representar datos de Google Trends con R
-url: /leer-y-representar-datos-de-google-trends-con-r/
+url: /blog/leer-y-representar-datos-de-google-trends-con-r/
 ---
 
 En el [blog del profesor Serrano tomé contacto con el paquete RGoogleTrends](http://www.grserrano.es/wp/2010/12/ejemplo-r-explotacion-de-google-trends-1/) para leer datosde [Google Trends](http://www.google.es/trends). Tras diversos intentos y analizando bien el paquete RGoogleTrends no he sido capaz de hacerlo funcionar. Sin embargo sólo hay que leer un csv, por esto podemos emplear _read.csv_ para descargarnos los datos de Google Trends y analizarlos con R. Además el objeto resultante nos será mucho más familiar que el generado por RGoogleTrends. Para realizar esta lectura necesitamos lo siguiente:

@@ -15,7 +15,7 @@ related:
 slug: trucos-r-establecer-la-configuracion-local-de-una-fecha
 tags: []
 title: Trucos R. Establecer la configuración local de una fecha
-url: /trucos-r-establecer-la-configuracion-local-de-una-fecha/
+url: /blog/trucos-r-establecer-la-configuracion-local-de-una-fecha/
 ---
 
 Cuando manejamos datos las fechas nos producen muchos quebraderos de cabeza, por ejemplo cuando tenemos que **transformar un caracter a fecha**. En mi opinión R es una de las herramientas las flexibles y rápidas para trabajar con fechas, claro que acostumbrado a SAS cualquier otra herramienta me parece perfecta. A lo que vamos, imaginemos la siguiente situación :

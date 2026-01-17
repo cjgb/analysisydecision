@@ -16,13 +16,13 @@ related:
 slug: monografico-analisis-de-factores-con-r-una-introduccion
 tags: []
 title: Monográfico. Análisis de Factores con R (una introducción)
-url: /monografico-analisis-de-factores-con-r-una-introduccion/
+url: /blog/monografico-analisis-de-factores-con-r-una-introduccion/
 ---
 
 El análisis de factores es una técnica de reducción de datos: menor dimensión mayor portentaje de varianza. Distinguimos el análisis factorial exploratorio del análisis factorial confirmatorio en función del conocimiento del número de factores a obtener. Este análisis está muy relacionado con el análisis de componentes principales pero no buscamos explicar el mayor porcentaje de varianza a partir de combinaciones lineales de variables, buscamos conjuntos de variables comunes entre si. Este análisis supone que hay un factor intrínseco a las variables a combinar. El proceso a seguir para este tipo de análisis sería:
 
-1\. Estudio de la matriz de correlaciones  
-2\. Análisis factorial y representación de los factores  
+1\. Estudio de la matriz de correlaciones
+2\. Análisis factorial y representación de los factores
 3\. Factores por individuo
 
 En [este enlace](http://www.psico.uniovi.es/Dpto_Psicologia/metodos/tutor.1/indice.html) tenemos una detallada descripción de esta metodología.

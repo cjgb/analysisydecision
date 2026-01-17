@@ -17,7 +17,7 @@ tags:
 - car
 - vif
 title: El problema de la multicolinealidad, intuirlo y detectarlo
-url: /el-problema-de-la-multicolinealidad-intuirlo-y-detectarlo/
+url: /blog/el-problema-de-la-multicolinealidad-intuirlo-y-detectarlo/
 ---
 
 El **modelo líneal** se puede escribir de forma matricial como Y = X • Beta + Error. Donde Y es el vector con nuestra variable dependiente, X la matriz con las variables regresoras, Beta el vector de parámetros y el error esa parte aleatoria que tiene que tener todo modelo. La matriz con nuestras variables regresoras X ha de tener rango completo es decir, todas sus columnas tienen que ser linealmente independientes. Eso nos garantiza que a la hora de estimar por mínimos cuadrados ordinarios X’ X es invertible. Si no es invertible la estimación por mínimos cuadrados ordinarios “se vuelve inestable” ya que X’X =0 y 1/ X’X será muy complicado de calcular ya que los Beta son inversa(X’ X) •X’Y; por ello los resultados que arroja el modelo tienen una alta variabilidad. Cuando esto nos pasa tenemos colinealidad.
@@ -40,7 +40,7 @@ head(mtcars)
 #Matriz de correlaciones
 cor(mtcars[,-1])
 ```
- 
+
 
 Un clásico, el data mtcars, no hace falta presentación. Ya con la matriz de correlaciones podemos pensar que habrá problemas:
 
@@ -64,14 +64,14 @@ drat  0.71271113  0.6996101 -0.09078980
 wt   -0.69249526 -0.5832870  0.42760594
 qsec -0.22986086 -0.2126822 -0.65624923
 ```
- 
+
 
 Hay mucha correlación entre algunas variables presentes en el conjunto de datos. Realizamos el modelo:
 
 ```r
 modelo
 ```
- 
+
 ```r
 Call:
 lm(formula = mpg ~ wt + hp + disp + qsec + drat + cyl + carb,
@@ -98,7 +98,7 @@ Residual standard error: 2.61 on 24 degrees of freedom
 Multiple R-squared: 0.8549,	Adjusted R-squared: 0.8125
 F-statistic: 20.19 on 7 and 24 DF,  p-value: 1.284e-08
 ```
- 
+
 
 Un gran modelo con un R cuadrado de 0.8125 donde sólo tenemos una variable significativa si fijamos un nivel de 0.05, eso es un contrasentido. Otro síntoma claro de la existencia de multicolinealidad. Pero es necesario comprobar esta primera impresión y para ello vamos a utilizar la función _vif_ del paquete _car_ :
 
@@ -107,6 +107,6 @@ vif(modelo)
        wt        hp      disp      qsec      drat       cyl      carb
 14.224688  8.996796 21.277170  5.295516  3.234394 10.061251  6.373673
 ```
- 
+
 
 Es evidente que hay multicolinealidad, tenemos factores que hinflan mucho la variabilidad en nuestro modelo. ¿Fijar un valor para el VIF? Yo entiendo que a partir de 4 merece la pena pararse a ver que pasa, he leído por ahí que a partir de 5 hay que disparar las alarmas. Un valor de 14 o 10 es para asustarse. ¿Cómo solucionamos esto? Directamente os digo, no debemos eliminar variables, nuestro modelo es muy bueno. Se trata de que le demos estabilidad a los parámetros resultantes. Podemos introducirles un sesgo para hacerlos más pequeños y que tengan más estabilidad… En otra entrada. Saludos.

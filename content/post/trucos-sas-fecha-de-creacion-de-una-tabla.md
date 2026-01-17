@@ -16,5 +16,5 @@ tags:
 - dictionary
 - tables
 title: Trucos SAS. Fecha de creación de una tabla
-url: /trucos-sas-fecha-de-creacion-de-una-tabla/
+url: /blog/trucos-sas-fecha-de-creacion-de-una-tabla/
 ---

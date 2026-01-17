@@ -21,7 +21,7 @@ tags:
 - SOBREMUESTREO
 title: En la regresión logística ¿el sobremuestreo es lo mismo que asignar pesos a
   las observaciones?
-url: /en-la-regresion-logistica-c2bfel-sobremuestreo-es-lo-mismo-que-asignar-pesos-a-las-observaciones/
+url: /blog/en-la-regresion-logistica-c2bfel-sobremuestreo-es-lo-mismo-que-asignar-pesos-a-las-observaciones/
 ---
 
 Hoy vamos a volver sobre el tema del **sobremuestreo**. Respondemos a un lector, Roberto, que hace mucho tiempo planteó una duda al respecto. La duda se puede resumir: En un modelo logístico, ¿equivale entrenar un modelo con las observaciones sobremuestreadas a entrenar el modelo poniendo un peso a cada observación? Esta cuestión nunca me la había planteado. Siempre había realizado un sobremuestreo de las observaciones adecuando la población de casos negativos a la población de casos positivos. Si estás habituado a trabajar con **Enterprise Miner de SAS** es habitual asignar pesos a las observaciones para realizar el proceso de sobremuestreo. ¿Obtendremos distintos resultados?

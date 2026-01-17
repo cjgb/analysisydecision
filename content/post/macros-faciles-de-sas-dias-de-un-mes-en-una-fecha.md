@@ -15,7 +15,7 @@ related:
 slug: macros-faciles-de-sas-dias-de-un-mes-en-una-fecha
 tags: []
 title: Macros (fáciles) de SAS. Días de un mes en una fecha
-url: /macros-faciles-de-sas-dias-de-un-mes-en-una-fecha/
+url: /blog/macros-faciles-de-sas-dias-de-un-mes-en-una-fecha/
 ---
 
 Macro de SAS fácil y rápida que nos permite saber **el número de días que tiene el mes de una fecha de SAS**. La tenía para la automatización de un código que con una media y daba guerra cuando se trataba de un año bisiesto. 3 líneas de código:

@@ -18,7 +18,7 @@ tags:
 - text mining
 - web scraping
 title: Ejemplo de web scraping con R. La formación de los diputados del Congreso
-url: /ejemplo-de-web-scraping-con-r-la-formacion-de-los-diputados-del-congreso/
+url: /blog/ejemplo-de-web-scraping-con-r-la-formacion-de-los-diputados-del-congreso/
 ---
 
 ![](https://www.congreso.es/wc/htdocs/web/img/logo.gif)
@@ -28,7 +28,7 @@ No sabía si realizar esta entrada sobre web scraping con R o con python. He obt
 El procedimiento para el web scraping será el siguiente:
 
   1. Identificar en la web del Congreso como funciona el formulario para cambiar de diputado, es sencillo basta con ver el link y tenemos **fichaDiputado?idDiputado=171 &idLegislatura=12″** es evidente que vamos a crear un bucle con el idDiputado.
-  2. Que parte corresponde con el curriculum de cada personaje, esta parte también es sencilla, véis el código fuente y hay un bloque de contenido identificado como  
+  2. Que parte corresponde con el curriculum de cada personaje, esta parte también es sencilla, véis el código fuente y hay un bloque de contenido identificado como
 **div id=»curriculum»** esta es la parte que nos interesa.
   3. Tenemos que limpiar con alguna función de R el HTML y el texto que estamos «escrapeando».
   4. Lo ponemos todo en un data frame por si queremos analizarlo.
@@ -59,7 +59,7 @@ curriculos <- rbind(curriculos,linea)}
 
 curriculos <- data.frame(curriculos[-1])
 ```
- 
+
 
 Ya podéis ver que la elegancia programando brilla por su ausencia pero queda todo muy claro. Particularidades, para identificar la formación dentro del texto libre he seleccionado aquellas líneas que están debajo de la palabra legislaturas, no he encontrado mejor forma y soy consciente de que falla, es suceptible de mejora. La función read_html de rvest es la que lee la web, el contenido que nos interesa lo seleccionamos con html_node pero es necesario que sea un texto y por eso aparece html_text y por último particionamos el texto en función de los /n. Con el texto más o menos formateado pasamos la función TRIMWS que se cepilla los espacios en blanco, tabuladores y saltos de línea. Tenía que meter esta función con calzador porque me parece útil para limipar textos con R y este ejemplo ilustra el funcionamiento. Para finalizar eliminamos las líneas vacías del texto con Which. Acumulamos las líneas con la formación de cada diputado y creamos el data frame curriculos que contiene lo que ellos han escrito como su formación.
 
@@ -80,6 +80,6 @@ library(plyr)
 conteo = data.frame(ddply(palabras, "V1",summarise, cuenta=length(V1) ))
 conteo = conteo[order(-conteo$cuenta),]
 ```
- 
+
 
 Aproximadamente el 28% de los diputados son licenciados en derecho, no veo ingenierías por ningún sitio y muchos casados y ayuntamientos… No voy a valorar lo poco que he explorado pero es evidente que nos representan personas con una experiencia profesional muy acotada en las instituciones públicas (que forma más bonita de decir personas poco productivas). Seguiré escrapeando esta web os lo prometo.

@@ -16,7 +16,7 @@ related:
 slug: comienza-la-cuenta-atras-iii-jornadas-de-usuarios-de-r
 tags: []
 title: COMIENZA LA CUENTA ATRAS. III JORNADAS DE USUARIOS DE R
-url: /comienza-la-cuenta-atras-iii-jornadas-de-usuarios-de-r/
+url: /blog/comienza-la-cuenta-atras-iii-jornadas-de-usuarios-de-r/
 ---
 
 Por fin están en marcha las **III Jornadas de Usuarios de R de España**. [En este enlace](http://www.usar.org.es/) tenéis toda la información disponible. Para esta tercera edición hay que destacar:

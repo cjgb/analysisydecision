@@ -18,7 +18,7 @@ tags:
 - Mapa
 - mapa Excel
 title: Mapa Excel de Europa
-url: /mapa-excel-de-europa/
+url: /blog/mapa-excel-de-europa/
 ---
 
 [![mapa_excel_europa1](/images/2015/04/mapa_excel_europa1.png)](/images/2015/04/mapa_excel_europa1.png)
@@ -27,7 +27,7 @@ Un lector me había pedido disponer en Excel de un mapa de Europa y dicho y hech
 
 [![mapa_excel_europa2](/images/2015/04/mapa_excel_europa2-169x300.png)](/images/2015/04/mapa_excel_europa2.png)
 
-El Dato es lo que vamos a pintar. Evidentemente tenéis que cruzar los datos con los nombres de los 37 países que se pintan en el mapa. Disponéis del nombre en inglés y del código de país para poder hacer este cruce previo. Pero quedaros con lo siguiente, lo único que podéis modificar es el nombre en inglés, por si preferís hacer vuestro VLookp o BUSCARV por nombre en español. Lo que vais a pintar está en la columna Dato pero en este caso se añade la selección de la paleta de colores que podéis emplear de las 4 que propongo. Si sois lectores del blog y un poco espabilados podréis crear vuestras propias paletas de colores, tampoco os lo puedo poner tan fácil. Las paletas que pongo a vuestra disposición son:  
+El Dato es lo que vamos a pintar. Evidentemente tenéis que cruzar los datos con los nombres de los 37 países que se pintan en el mapa. Disponéis del nombre en inglés y del código de país para poder hacer este cruce previo. Pero quedaros con lo siguiente, lo único que podéis modificar es el nombre en inglés, por si preferís hacer vuestro VLookp o BUSCARV por nombre en español. Lo que vais a pintar está en la columna Dato pero en este caso se añade la selección de la paleta de colores que podéis emplear de las 4 que propongo. Si sois lectores del blog y un poco espabilados podréis crear vuestras propias paletas de colores, tampoco os lo puedo poner tan fácil. Las paletas que pongo a vuestra disposición son:
 [![mapa_excel_europa3](/images/2015/04/mapa_excel_europa3.png)](/images/2015/04/mapa_excel_europa3.png)
 
 Estas 4 paletas pintan rangos de 5, 10 y los 37 países. La seleccionáis en la celda P2 y automáticamente se dividen en el número necesario de rangos y si pulsáis el botón colores podéis ver como quedarían esos colores. No podéis cambiar los colores directamente en la paleta, no saldrá, necesitáis crearla.
@@ -36,8 +36,8 @@ En cuanto al Visual Basic empleado es el mismo de todos los mapas Excel que ten�
 
 Sub colorpais()
 
-Dim pais As String  
-Dim i As Integer  
+Dim pais As String
+Dim i As Integer
 Dim rngPais As Range
 
 Set rngPais = Range(ThisWorkbook.Names(«pais»).RefersTo)
@@ -46,14 +46,14 @@ actualiza_colores
 
 Sheets(«mapa»).Select
 
-‘ESTA PARTE PONE LOS COLORES DE LAS FORMAS  
-For i = 1 To rngPais.Rows.Count  
+‘ESTA PARTE PONE LOS COLORES DE LAS FORMAS
+For i = 1 To rngPais.Rows.Count
 pais = «S_» & rngPais.Cells(i, 2)
 
-ActiveSheet.Shapes(pais).Select  
-ActiveSheet.Shapes(pais).Fill.ForeColor.RGB = rngPais.Cells(i, 3).Interior.Color  
-ActiveSheet.Shapes(pais).Line.ForeColor.RGB = rngPais.Cells(i, 3).Interior.Color  
-‘ActiveSheet.Shapes(pais).Line.Weight = 0.25  
+ActiveSheet.Shapes(pais).Select
+ActiveSheet.Shapes(pais).Fill.ForeColor.RGB = rngPais.Cells(i, 3).Interior.Color
+ActiveSheet.Shapes(pais).Line.ForeColor.RGB = rngPais.Cells(i, 3).Interior.Color
+‘ActiveSheet.Shapes(pais).Line.Weight = 0.25
 Next i
 
 Cells(1, 1).Select
@@ -62,17 +62,17 @@ End Sub
 
 Sub actualiza_colores()
 
-Sheets(«mapa»).Select  
-Dim rngColor As Range  
-Dim i As Integer  
+Sheets(«mapa»).Select
+Dim rngColor As Range
+Dim i As Integer
 Dim colorin As Long
 
 Set rngColor = Range(ThisWorkbook.Names(«pintar»).RefersTo)
 
-For i = 1 To rngColor.Rows.Count  
-colorin = rngColor.Cells(i, 3)  
-rngColor.Cells(i, 1).Interior.Color = colorin  
-rngColor.Cells(i, 2).Interior.Color = colorin  
+For i = 1 To rngColor.Rows.Count
+colorin = rngColor.Cells(i, 3)
+rngColor.Cells(i, 1).Interior.Color = colorin
+rngColor.Cells(i, 2).Interior.Color = colorin
 Next i
 
 End Sub

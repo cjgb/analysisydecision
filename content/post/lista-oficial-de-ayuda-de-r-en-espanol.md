@@ -14,7 +14,7 @@ slug: lista-oficial-de-ayuda-de-r-en-espanol
 tags:
 - R
 title: Lista oficial de ayuda de R en español
-url: /lista-oficial-de-ayuda-de-r-en-espanol/
+url: /blog/lista-oficial-de-ayuda-de-r-en-espanol/
 ---
 
 Desde hace apenas unas semanas existe una lista de correo de ayuda en español para R. Está gestionada desde los servidores de CRAN.

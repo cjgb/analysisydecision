@@ -14,7 +14,7 @@ related:
 slug: contenidos-web-analisis-informacion
 tags: []
 title: Análisis con Google Analytics
-url: /contenidos-web-analisis-informacion/
+url: /blog/contenidos-web-analisis-informacion/
 ---
 
 Google Analytics es la herramienta que dirige los contenidos de AyD. De momento los contenidos se centran en el manejo de software para el análisis y el reporte de la información. Fundamentalmente SAS, R y Excel. Pero estos contenidos se van adaptando en función del número de visitas y del tiempo de estancia en la página. Es decir, los contenidos se adaptan en función del interés que despierten. Con Google Analytics estudio esta información y me planteo una serie de mensajes a lo largo del mes.
@@ -23,13 +23,13 @@ A continuación os expongo como preparo los contenidos del mes que viene.
 
 El rango de fechas en estudio abarca desde 24/05/2008 a 23/06/2008. Mi sitio tiene un 15% de madurez, este es un indicador que se crea con el Google Mining en función de determinadas búsquedas, ya veremos su funcionamiento. Con un grado de madurez tan bajo no procede un análisis global y temporal del número de visitas, nos centraremos en dimensiones de estudio más concretas como son:
 
-Contenido  
-Palabras clave  
+Contenido
+Palabras clave
 Ubicación física y de red
 
 Los indicadores a medir:
 
-Número de visitas  
+Número de visitas
 Duración de las visitas
 
 Estudio por contenido:

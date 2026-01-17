@@ -16,7 +16,7 @@ tags:
 - Cajas Catalanas
 - crisis
 title: 'Busca la relación: Deuda Subordinada y Cajas catalanas'
-url: /busca-la-relacion-deuda-subordinada-y-cajas-catalanas/
+url: /blog/busca-la-relacion-deuda-subordinada-y-cajas-catalanas/
 ---
 
 No tengo tiempo de comentarlas pero no es muy necesario….

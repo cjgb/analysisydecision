@@ -15,7 +15,7 @@ tags:
 - analisis visitas
 - Google Analytics
 title: El año 2009 para Análisis y Decisión
-url: /el-ano-2009-para-analisis-y-decision/
+url: /blog/el-ano-2009-para-analisis-y-decision/
 ---
 
 Es tiempo de hacer balance. El 2009 se despide con unos resultados para este blog que ni yo mismo podía haber imaginado. La incorporación de Carlos J. Gil, más de 18.500 visitas muchas de ellas fidelizadas, 140 mensajes y un posicionamiento en Google que permite que el número de visitas aumente todos los días. Linkad el gráfico siguiente:

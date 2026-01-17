@@ -13,7 +13,7 @@ related:
 slug: un-detalle-puede-hacer-que-no-te-tomen-en-serio
 tags: []
 title: Un detalle puede hacer que no te tomen en serio
-url: /un-detalle-puede-hacer-que-no-te-tomen-en-serio/
+url: /blog/un-detalle-puede-hacer-que-no-te-tomen-en-serio/
 ---
 
 Preocupado por la caida en bolsa de ING y sobre todo de Société Générale esta mañana he dado un paseo por la prensa nacional. De momento parece que ninguna entidad española va a tener los mismos problemas que otros gigantes europeos, muy a pesar de lo que diga Merrill Lynch. Navegando por otras noticias me he encontrado esta fotografia en [El País](http://www.elpais.com/articulo/espana/fiscal/cree/protegidas/victimas/Ley/Memoria/elpepuesp/20081020elpepunac_9/Tes):

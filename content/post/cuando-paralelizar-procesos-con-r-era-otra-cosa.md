@@ -14,7 +14,7 @@ related:
 slug: cuando-paralelizar-procesos-con-r-era-otra-cosa
 tags: []
 title: Cuando paralelizar procesos con R era otra cosa
-url: /cuando-paralelizar-procesos-con-r-era-otra-cosa/
+url: /blog/cuando-paralelizar-procesos-con-r-era-otra-cosa/
 ---
 
 Allá en noviembre de 2011 en las III jornadas de usuarios de R en España [José Ramón Díaz Uriarte](http://ligarto.org/rdiaz/) nos habló de paralelizar procesos con R, los principios de ese concepto que han denominado Big Data:

@@ -19,10 +19,10 @@ tags:
 - elide
 - maptools
 - raster
-- shapelfile
+- shapefile
 title: Mover parte de un shapefile con R. Mapa con tasa de casos de coronavirus por
   habitante en España
-url: /mover-parte-de-un-shapefile-con-r-mapa-de-la-tasa-de-casos-de-coronavirus-por-habitante-en-espana/
+url: /blog/mover-parte-de-un-shapefile-con-r-mapa-de-la-tasa-de-casos-de-coronavirus-por-habitante-en-espana/
 ---
 
 [![](/images/2020/04/coronavirus21.png)](/images/2020/04/coronavirus21.png)
@@ -59,7 +59,7 @@ poblacion <- poblacion [,c(1,5)] %>% mutate(region=case_when(
   region == "Islas Baleares" ~ "Baleares",
   TRUE ~ region  ))
 ```
- 
+
 
 Nada innovador, si queréis entender mejor que hace id a la primera de las páginas antes mencionadas.
 
@@ -78,7 +78,7 @@ tabla_ccaa <- read.csv2(datadista, sep=',',encoding = 'UTF-8', check.names=FALSE
 Espania <- getData('GADM', country='Spain', level=1)
 Espanianame = EspaniaNAME_1
 ```
- 
+
 
 Situación similar al anterior código, pero siempre es necesario mencionar y rendir homenaje a Datadista y su trabajo.
 
@@ -93,7 +93,7 @@ ccaa1 <- map_data(Espania_sin_canarias)
 ccaa2 <- map_data(Canarias)
 ccaa <- rbind(ccaa1,ccaa2)
 ```
- 
+
 
 En este caso si es necesario pararse brevemente
 
@@ -119,7 +119,7 @@ ccaa <- ccaa %>% mutate(region=case_when(
   TRUE ~ region))
 ccaa <- left_join(ccaa,pinta)
 ```
- 
+
 
 Que poco me gustan las uniones por descripciones… Ya estamos en disposición de pintar el mapa:
 
@@ -134,7 +134,7 @@ mapa <- ggplot() +
         panel.grid.minor = element_blank())
 mapa
 ```
- 
+
 
 Pero lo importante no es pintar datos absolutos, lo importante es pintar datos relativos, recordad siempre esto y por ello representamos el número de casos de COVID / habitantes para relativizar los datos:
 
@@ -152,7 +152,7 @@ mapa <- ggplot() +
         panel.grid.major = element_blank(),
         panel.grid.minor = element_blank())
 ```
- 
+
 
 ### Añadir un rectángulo a nuestro mapa con geom_rectangle
 
@@ -165,7 +165,7 @@ mapa + geom_rect(data=rectangulo,aes( xmin=xmin, xmax=xmax, ymin=ymin, ymax=ymax
         axis.title.x=element_blank(),
         axis.title.y=element_blank())
 ```
- 
+
 
 Añadimos más elementos al mapa, un rectángulo sobre las Islas Canarias y para eso empleamos el propio shapefile que tenía las Canarias y calculamos máximos, para crear un recuadro sobre las islas. Puede quedarnos más vistoso, pero eso os lo dejo a vosotros. El resultado es:
 

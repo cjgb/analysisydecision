@@ -14,14 +14,14 @@ related:
 slug: manual-curso-introduccion-de-r-capitulo-6-funciones-de-estadistica-descriptiva
 tags: []
 title: 'Manual. Curso introducción de R. Capítulo 6: Funciones de estadística descriptiva'
-url: /manual-curso-introduccion-de-r-capitulo-6-funciones-de-estadistica-descriptiva/
+url: /blog/manual-curso-introduccion-de-r-capitulo-6-funciones-de-estadistica-descriptiva/
 ---
 
 En R trabajaremos con objetos y funciones. En capítulos anteriores hemos empezado a crear objetos, fundamentalmente vectores y matrices. En la presente entrega vamos a estudiar las funciones básicas de estadística descriptiva.
 
 Como funciones de medida de tendencia y localización tendremos:
 
-  
+
 
 ```r
 > alturas<- scan() #creamos el objeto alturas con 11 observaciones

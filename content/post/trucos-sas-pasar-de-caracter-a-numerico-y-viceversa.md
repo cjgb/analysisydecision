@@ -15,7 +15,7 @@ related:
 slug: trucos-sas-pasar-de-caracter-a-numerico-y-viceversa
 tags: []
 title: Trucos SAS. Pasar de caracter a numérico y viceversa
-url: /trucos-sas-pasar-de-caracter-a-numerico-y-viceversa/
+url: /blog/trucos-sas-pasar-de-caracter-a-numerico-y-viceversa/
 ---
 
 Llega un gran número de visitas a AyD buscando como transformar en SAS variables caracter a numéricas y viceversa. Pero estas visitas están muy poco tiempo y me he planteado que los mensajes que hay dedicados al uso de PUT e INPUT no son claros. Por este motivo planteo un truco SAS de transformación de variables muy corto y concreto. Como es habitual lo vemos con ejemplos:

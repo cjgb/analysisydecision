@@ -18,7 +18,7 @@ tags:
 - FECHA
 - RESIDUO
 title: Truco Excel. Pasar de número con formato AAAAMMDD a fecha con fórmulas
-url: /truco-excel-pasar-de-numero-con-formato-aaaammdd-a-fecha-con-formulas/
+url: /blog/truco-excel-pasar-de-numero-con-formato-aaaammdd-a-fecha-con-formulas/
 ---
 
 ![](/images/2014/02/transformar_fecha_excel.png)

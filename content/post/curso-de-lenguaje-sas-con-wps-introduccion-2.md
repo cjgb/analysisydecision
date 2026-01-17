@@ -14,7 +14,7 @@ related:
 slug: curso-de-lenguaje-sas-con-wps-introduccion-2
 tags: []
 title: Curso de lenguaje SAS con WPS. Introducción
-url: /curso-de-lenguaje-sas-con-wps-introduccion-2/
+url: /blog/curso-de-lenguaje-sas-con-wps-introduccion-2/
 ---
 
 Hoy me gustaría mostraros el interfaz de WPS y cuales son las características principales de WPS y cuales son comunes entre SAS y WPS. Si pincháis [este link](http://teamwpc.co.uk/tryorbuy) podréis descargaros una demo de WPS y seguir este curso. Cuando lo hagáis y abráis WPS os encontraréis con esto:

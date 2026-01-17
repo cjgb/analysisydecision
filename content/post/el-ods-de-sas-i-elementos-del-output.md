@@ -14,15 +14,15 @@ related:
 slug: el-ods-de-sas-i-elementos-del-output
 tags: []
 title: El ODS de SAS (I). Elementos del OUTPUT
-url: /el-ods-de-sas-i-elementos-del-output/
+url: /blog/el-ods-de-sas-i-elementos-del-output/
 ---
 
-Hoy comenzaré una serie de mensajes dedicados al ODS (Output Delivery System) de SAS. Este mecanismo de SAS nos permite un uso más eficiente del OUTPUT de nuestros pasos PROC además podemos crear excel (como ya vimos), crear dataset, no generar salidas,… Antes SAS nos ofrecia un texto plano en la ventana OUTPUT, ahora generamos documentos sofisticados. En tres entregas veremos:  
-*Trazar el OUTPUT de SAS  
-*Datasets de salidas de SAS  
-*Documentos con nuestras salidas de SAS:  
--HTML  
--PDF  
+Hoy comenzaré una serie de mensajes dedicados al ODS (Output Delivery System) de SAS. Este mecanismo de SAS nos permite un uso más eficiente del OUTPUT de nuestros pasos PROC además podemos crear excel (como ya vimos), crear dataset, no generar salidas,… Antes SAS nos ofrecia un texto plano en la ventana OUTPUT, ahora generamos documentos sofisticados. En tres entregas veremos:
+*Trazar el OUTPUT de SAS
+*Datasets de salidas de SAS
+*Documentos con nuestras salidas de SAS:
+-HTML
+-PDF
 Como complemento a estas entregas es posible que redacte un mensaje con algunos ejemplos de uso del PROC TEMPLATE. En esta primera capítulo dedicado al ODS estudiaremos algunas salidas SAS y con ellas, sabremos identificar la estructura del OUTPUT.
 
 Si ejecutamos en SAS el siguiente código:
@@ -47,19 +47,19 @@ tables num_productos*num_cargos/chisq;
 
 quit;
 ```
- 
+
 
 Generamos un dataset aleatorio de muestra sobre el que hacemos un univariante y una tabla de frecuencias de doble entrada con un test de independencia de la Ji-Cuadrado. En total las tablas de resultados que obtenemos son:
 
-*PROC UNIVARIATE:  
--Moments  
--Basic Statistical Measures  
--Tests for Location: Mu0=0  
--Quantiles (Definition 5)  
+*PROC UNIVARIATE:
+-Moments
+-Basic Statistical Measures
+-Tests for Location: Mu0=0
+-Quantiles (Definition 5)
 -Extreme Observations
 
-*PROC FREQ:  
-*Table of num_productos by num_cargos  
+*PROC FREQ:
+*Table of num_productos by num_cargos
 *Statistics for Table of num_productos by num_cargos
 
 En total tenemos 7 OUTPUT. Bien, cada OUTPUT tiene una «definición interna» de SAS, para conocerla emplearemos el ODS TRACE:
@@ -74,7 +74,7 @@ quit;
 
 ods trace off;
 ```
- 
+
 
 Si ejecutamos este código y vemos el log tendremos:
 
@@ -212,10 +212,10 @@ ods trace off;
 ```
 0
 
-\-------------  
-NOTE: There were 20000 observations read from the data set WORK.UNO.  
-NOTE: PROCEDURE FREQ used (Total process time):  
-real time 0.02 seconds  
+\-------------
+NOTE: There were 20000 observations read from the data set WORK.UNO.
+NOTE: PROCEDURE FREQ used (Total process time):
+real time 0.02 seconds
 cpu time 0.02 seconds
 
 33 ods trace off;

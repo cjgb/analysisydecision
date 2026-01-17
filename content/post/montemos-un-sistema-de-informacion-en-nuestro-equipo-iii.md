@@ -18,7 +18,7 @@ tags:
 - postgres
 - R
 title: Montemos un sistema de información en nuestro equipo (III)
-url: /montemos-un-sistema-de-informacion-en-nuestro-equipo-iii/
+url: /blog/montemos-un-sistema-de-informacion-en-nuestro-equipo-iii/
 ---
 
 Vamos a conectar**R** a nuestra BBDD **postgres**. Lo vamos a hacer vía **ODBC** con el paquete de R**RODBC** [inciso] recordad que todo el trabajo lo estamos realizando bajo Win. Además trabajar con ODBC nos permitirá conectar nuestro postgres con Access o Excel. Aunque para este tipo de tarea recomiendo el uso del Data Integration de Pentaho. El primer paso será descargarnos de[ esta dirección ](http://www.postgresql.org/ftp/odbc/versions/msi/)los controladores ODBC para Postgres que se adecúen con nuestro S.O. y nuestra versión de postgres. Tras instalarlos ya podemos ir a las Herramientas Administrativas Orígenes de Datos ODBC e introducimos un nuevo DSN de sistema y de usuario:

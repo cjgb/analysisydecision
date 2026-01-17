@@ -17,7 +17,7 @@ tags:
 - formatos sas
 - funciones sas
 title: Trabajo con fechas SAS. Funciones fecha
-url: /trabajo-con-fechas-sas-funciones-fecha/
+url: /blog/trabajo-con-fechas-sas-funciones-fecha/
 ---
 
 En las entregas anteriores del monográfico sobre fechas SAS hemos estudiado como almacena internamente las fechas el sistema y los formatos más prácticos que disponemos para visualizarlas. En esta última entrega veremos algunas de las funciones de fecha hora de las que dispone SAS. Las funciones las vamos a dividir en 4 grupos:
@@ -115,14 +115,14 @@ run;
 
 La función MDY genera variables fecha y le pasamos como parámetros Mes Día y Year. Para DHMS que nos genera varaibles fecha/hora los parámetros son fecha (en un valor que puede leer SAS) Hora Minuto y Segundo. Por último HMS recibe Hora Minuto y Segundo. Las funciones de **duración** son DATDIF y YRDIF:
 
-data _null_;  
-x=»01JAN1960″D;  
-y=today();  
-z=datdif(x,y,»ACT/ACT»); put z=;  
-m=datdif(x,y,»30/360″); put m=;  
-n=y-x; put n=;  
-o=yrdif(x,y,»ACT/ACT»); put o=;  
-p=yrdif(x,y,»30/360″); put p=;  
+data _null_;
+x=»01JAN1960″D;
+y=today();
+z=datdif(x,y,»ACT/ACT»); put z=;
+m=datdif(x,y,»30/360″); put m=;
+n=y-x; put n=;
+o=yrdif(x,y,»ACT/ACT»); put o=;
+p=yrdif(x,y,»30/360″); put p=;
 run;
 
 Observamos que estas funciones reciben 3 parámetros, fecha inicial, fecha final y la base. La Base nos define en que forma deseamos calcular la diferencia, en años de 365-366 días o en años con meses de 30 días de duración. Si empleamos como base «ACTUALLY/ACTUALLY» la diferencia equivale a la resta de ambas fechas. Las bases las podemos combinar de forma «ACT/360» o «360/ACT».Las funciones de **intervalo** que vamos a estudiar serán INTCK e INTNX. La primera de ellas nos determina el intervalo entre dos fechas en función de una base, la segunda determina una fecha en función de un intervalo y una base, es decir, con INTCK obtenemos un número (ej: número de meses entre 01/02/2008 y 05/02/2008) y con INTNX obtenemos una fecha (ej: 01/01/2007 más 30 meses). En un ejemplo se comprenderá mejor:

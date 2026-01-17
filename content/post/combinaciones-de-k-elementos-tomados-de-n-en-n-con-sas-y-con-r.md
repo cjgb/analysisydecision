@@ -18,7 +18,7 @@ tags:
 - ''
 - combinaciones
 title: Combinaciones de k elementos tomados de n en n. Con SAS y con R
-url: /combinaciones-de-k-elementos-tomados-de-n-en-n-con-sas-y-con-r/
+url: /blog/combinaciones-de-k-elementos-tomados-de-n-en-n-con-sas-y-con-r/
 ---
 
 Me gustaría plantearos un problema que me ha ocurrido recientemente con SAS. Necesitaba todas las posibles combinaciones de 9 elementos tomados de n en n. Tenia que crear un dataset con todas estas combinaciones. Antes de ponerme a programar toca buscar en Google « _sas combinations_ » y tras un rato buscando encuentro el [siguiente link](http://www2.sas.com/proceedings/sugi23/Posters/p177.pdf). Este link contiene una macro de SAS que nos permite crear todas las combinaciones de k elementos tomados de n en n:

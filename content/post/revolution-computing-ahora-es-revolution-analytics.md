@@ -16,7 +16,7 @@ related:
 slug: revolution-computing-ahora-es-revolution-analytics
 tags: []
 title: Revolution Computing ahora es Revolution Analytics
-url: /revolution-computing-ahora-es-revolution-analytics/
+url: /blog/revolution-computing-ahora-es-revolution-analytics/
 ---
 
 Sigue adelante este interesante proyecto:

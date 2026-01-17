@@ -14,10 +14,10 @@ related:
 slug: crm-%c2%a1me-rio-de-los-topicos
 tags: []
 title: CRM. ¡Me río de los tópicos!
-url: /crm-c2a1me-rio-de-los-topicos/
+url: /blog/crm-c2a1me-rio-de-los-topicos/
 ---
 
-Hay mucho escrito sobre CRM « _Customer Relationship Management_ » basta con introducir esas siglas en Google y ¡aparecen 61.000.000 de resultados! Y que puedo contar yo que en 61.000.000 de resultados de Google no se haya contado ya. Lo primero será escribir un artículo sobre CRM sin emplear las palabras: 
+Hay mucho escrito sobre CRM « _Customer Relationship Management_ » basta con introducir esas siglas en Google y ¡aparecen 61.000.000 de resultados! Y que puedo contar yo que en 61.000.000 de resultados de Google no se haya contado ya. Lo primero será escribir un artículo sobre CRM sin emplear las palabras:
 
   * Cliente
   * Gestión

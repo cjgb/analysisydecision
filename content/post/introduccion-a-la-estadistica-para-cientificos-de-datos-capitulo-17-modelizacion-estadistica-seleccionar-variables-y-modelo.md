@@ -18,7 +18,7 @@ slug: introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modeli
 tags: []
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 17. Modelización
   estadística. Seleccionar variables y modelo
-url: /introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo/
+url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo/
 ---
 
 El capítulo anterior comenzó con esta imagen.
@@ -93,7 +93,7 @@ mutate(fr_antiguedad = as.factor(ceiling((row_number()/n()) * grupos)))
 
 datatable(head(train2))
 ```
- 
+
 
 Se replica de nuevo el filtrado de datos eliminando a los clientes que no han estado asegurados cuya respuesta siempre es 0 y no tienen interés en comunicaciones comerciales y por el mismo motivo se eliminan a los clientes con garantía de daños creando el objeto `train2`. Se aplica el código inicial de la reclasificación de factores a la que se llegó de forma univariable. A continuación, se crean los conjuntos de datos de entrenamiento y de test, en este caso no se balanceará la muestra debido a que se dispone de un 21.5% de respuestas positivas y por ese motivo no es necesario disponer de un conjunto de validación.
 
@@ -109,11 +109,11 @@ test <- train2[-indices,]
 # % de observaciones en test
 nrow(test)/nrow(train2)
 ```
- 
+
 
 El % de observaciones seleccionadas difiere con los planteado en el capítulo anterior debido a que se seleccionan un 70% de observaciones para entrenar el modelo y el 30% para testear, en la fase previa, de cara a agilizar los procesos, se seleccionaba un 50% de las observaciones.
 
-> Para comenzar a conocer los datos y la reclasificación de factores se recomienda trabajar con subconjuntos de datos de menor tamaño debido a la continua interacción con los datos que requiere esa fase. 
+> Para comenzar a conocer los datos y la reclasificación de factores se recomienda trabajar con subconjuntos de datos de menor tamaño debido a la continua interacción con los datos que requiere esa fase.
 
 Conocidos los factores a emplear y con los conjuntos de datos preparados ya se está en disposición de realizar el primer modelo. Y lo primero es tener claro el objetivo de ese modelo, se pretende **identificar y caracterizar** que clientes de la cartera de salud pueden estar interesados en un seguro de automóviles. El problema de negocio lo describe la variable `Response` que toma valores 1 – está interesado, 0 – no está interesado; es un problema de **clasificación binomial**. En el capítulo 15 se presentaron los modelos GLM y entre ellos estaba la **regresión logística** que será la técnica elegida para realizar el modelo ya que permite asignar una probabilidad de estar interesado en el seguro de automóviles cliente a cliente en base a unas características y permite describir como son esos clientes a través de los parámetros que ofrece el modelo. Este tipo de modelos se conocen como modelos de propensión a la compra.
 
@@ -133,7 +133,7 @@ library(corrplot) #Representación gráfica de gráficos de correlación
 predictoras <- colnames(entrenamiento)
 predictoras <- predictoras[substr(predictoras,1,3)=="fr_"]
 ```
- 
+
 
 De nuevo, retiterar la importancia que tiene que las variables participantes en la modelización tengan una característica común para automatizar código, en este caso todas comienzan con el prefijo fr_. A continuación se presenta un bucle [obtenido en stackoverflow que permite crear la matriz de correlaciones](https://stackoverflow.com/questions/44070853/association-matrix-in-r).
 
@@ -163,7 +163,7 @@ remove(correlaciones)
 #Ya se está en disposición de hacer el gráfico
 corrplot(cor_matrix, addCoef.col = 'black')
 ```
- 
+
 
 [![](/images/2023/08/wp_editor_md_2b6cd22115a4f5ec2463508d66ed31b5.jpg)](/images/2023/08/wp_editor_md_2b6cd22115a4f5ec2463508d66ed31b5.jpg)
 
@@ -176,7 +176,7 @@ datatable(entrenamiento %>% group_by(fr_edad, fr_canal) %>%
   summarise(conteo=n()) %>%
   pivot_wider(names_from = fr_canal, values_from = conteo), options = list(dom = 't'))
 ```
- 
+
 
 Se pone de manifiesto la necesidad de agrupar canales con algún sentido de negocio, la agrupación en niveles de interés está provocando la correlación.
 
@@ -187,7 +187,7 @@ datatable(entrenamiento %>% group_by(fr_antiguedad_vehiculo, fr_canal) %>%
   summarise(conteo=n()) %>%
   pivot_wider(names_from = fr_canal, values_from = conteo), options = list(dom = 't'))
 ```
- 
+
 
 El bajo interés que tiene el seguro de automóviles entre los clientes con vehículo nuevo está provocando esta situación.
 
@@ -198,7 +198,7 @@ datatable(entrenamiento %>% group_by(fr_edad, fr_antiguedad_vehiculo) %>%
   summarise(conteo=n()) %>%
   pivot_wider(names_from = fr_antiguedad_vehiculo, values_from = conteo), options = list(dom = 't'))
 ```
- 
+
 
 Son los encuestados jóvenes los que concentran los vehículos nuevos, los encuestados con vehículos nuevos son los que se concentran en los canales con menor interés. Parece existir sesgo con la selección de clientes a los que se realiza el cuestionario y por ese motivo se opta por mantener las variables esperando que el propio modelo elimine alguna de ellas. Pero se reitera la importancia que tiene la comunicación con el equipo que ha generado los datos y con los usuarios finales de los modelos ya que se toman decisiones que han de estar consensuadas y el modelo está adoleciendo de problemas.
 
@@ -211,14 +211,14 @@ predictoras <- predictoras[substr(predictoras,1,3)=="fr_"]
 formula_modelo = as.formula(paste0('Response ~', paste(predictoras,collapse = '+')))
 modelo.1 <- glm(data = entrenamiento, formula = formula_modelo, family='binomial')
 ```
- 
+
 
 Recordar que `glm` requiere un data frame, una fórmula y especificar la familia de la función de enlace que permite modelizar ese tipo de datos. Para evitar escribir todas las variables presentes en la fórmula se emplea otra de las posibilidades que ofrece emplear un método de identificación de variables. El `summary` del modelo permite estudiar el test $\beta_i=0$ asociado a cada parámetro del modelo.
 
 ```r
 summary(modelo.1)
 ```
- 
+
 
 El trabajo previo en las variables ha permitido que el modelo arroje unos resultados esperados. La única variable que no está aportando al modelo es la antigüedad como cliente, solo un nivel y con un p-valor asociado por encima del 0.05 parece ofrecer un parámetro capaz de discriminar a los clientes interesados. Este hecho ya se intuía en los análisis univariables previos debido a su comportamiento completamente azaroso. Con tantas observaciones y un efecto tan pequeño se puede eliminar esa variable.
 
@@ -229,7 +229,7 @@ formula_modelo = as.formula(paste0('Response ~', paste(predictoras,collapse = '+
 modelo.2 <- glm(data = entrenamiento, formula = formula_modelo, family='binomial')
 summary(modelo.2)
 ```
- 
+
 
 En este caso el test $\beta_i=0$ se rechaza en todos los niveles de los factores seleccionados. Esto lo ha facilitado el trabajo previo en los factores. Este `modelo.2` sería el modelo final, en cualquier caso, se podrían emplear técnicas de selección de variables vistas en capítulos anteriores para contrastar si este trabajo manual tiene el mismo resultado. En el caso de tener cientos de variables este proceso sería más complicado y optar por métodos de selección automáticos puede ahorrar mucho tiempo y esfuerzo.
 
@@ -251,7 +251,7 @@ test <- train2[-indices,]
 # % de observaciones en test
 nrow(test)/nrow(train2)
 ```
-0 
+0
 
 Qué sucede si durante el proceso de modelización se vuelve a reclasificar un factor. Que será necesario incluirlo en el código de creación de los niveles de los factores.
 
@@ -267,7 +267,7 @@ test <- train2[-indices,]
 # % de observaciones en test
 nrow(test)/nrow(train2)
 ```
-1 
+1
 
 Y por supuesto sería necesario volver a ejecutar entrenamiento y test. Sin embargo, en este caso se opta por ejecutar la reclasificación sobre el conjunto de datos de entrenamiento. Pero estas situaciones se deben manejar con cuidado porque el código y el proceso de generación de los datos para la tabla de modelización final **son parte de la documentación** que el científico de datos tiene que entregar cuando realice un modelo.
 
@@ -283,7 +283,7 @@ test <- train2[-indices,]
 # % de observaciones en test
 nrow(test)/nrow(train2)
 ```
-2 
+2
 
 El llamado `modelo.3` será un candidato a ser el modelo final, para seleccionar el modelo que habría de ser puesto en producción además del comportamiento de los parámetros y del código necesario para _productivizarlo_ es evidente que es necesario estudiar su capacidad predictiva.
 
@@ -305,7 +305,7 @@ test <- train2[-indices,]
 # % de observaciones en test
 nrow(test)/nrow(train2)
 ```
-3 
+3
 
 El % es análogo porque es una selección al azar del 10% de las observaciones, ya que a todos los clientes les da la misma probabilidad independientemente de si están interesados en el seguro de automóviles o no. Pero el científico de datos ha creado una estructura matemática que permite establecer una probabilidad de ese interés en el seguro de autos en base a unas características de los clientes. De esta manera el primer paso es añadir esa probabilidad a los datos de test del modelo candidato a ser el final.
 
@@ -321,39 +321,39 @@ test <- train2[-indices,]
 # % de observaciones en test
 nrow(test)/nrow(train2)
 ```
-4 
+4
 
 Este proceso de emplear la estructura matemática de un modelo a un conjunto de datos es lo que se denomina **escorear un modelo** y permite obtener un _output_ registro a registro con el resultado del modelo, en este caso la probabilidad de mostrar interés en el seguro de automóviles. Ahora, ordenando el conjunto de datos por esa probabilidad de mayor a menor, si el modelo tiene un correcto funcionamiento, al seleccionar el 10% de las primeras observaciones el % de interesados hace superar a ese 21% de partida.
 
-«`{r message=FALSE, warning=FALSE}  
-test <\- test %>% arrange(desc(probabilidad_modelo.3)) 
+«`{r message=FALSE, warning=FALSE}
+test <\- test %>% arrange(desc(probabilidad_modelo.3))
 
-porcen_mas_interesados=test %>% filter(row_number()<=round(nrow(test)<em>0.1,0)) %>%  
-summarise(porcen_interesados=sum(Response)/round(nrow(test)</em>0.1,0))  
+porcen_mas_interesados=test %>% filter(row_number()<=round(nrow(test)<em>0.1,0)) %>%
+summarise(porcen_interesados=sum(Response)/round(nrow(test)</em>0.1,0))
 porcen_mas_interesados = as.numeric(round(porcen_mas_interesados,4))
 
-porcen_interesados=test %>%  
-summarise(porcen_interesados=sum(Response)/round(nrow(test),0))  
+porcen_interesados=test %>%
+summarise(porcen_interesados=sum(Response)/round(nrow(test),0))
 porcen_interesados = as.numeric(round(porcen_interesados,4))
 
 porcen_mas_interesados;porcen_interesados
 
-<pre><code class="line-numbers">Se observa que el modelo estaría seleccionando un 36% de interesados frente al 21.5% global por lo que el 10% de las observaciones están mejorando aproximadamente un 1.75 veces a una selección al azar, a ese dato se le va a denominar **ganancia** y se va a considerar un buen modelo si el 10% de las observaciones que el modelo identifica con mayor probabilidad supera en 2.5 veces al azar. En la situación que se está trabajando no es el caso, 1.75 está lejos del 2.5 exigido. Pero en este caso superar en 2.5 veces al azar implicaría seleccionar un 66% de interesados en el 10% de observaciones, es decir, el modelo sería excelente, demasiado bueno, y si esto se produce el científico de datos debe desconfiar en ese resultado ya que puede existir alguna variable esté distorsionando resultados. 
+<pre><code class="line-numbers">Se observa que el modelo estaría seleccionando un 36% de interesados frente al 21.5% global por lo que el 10% de las observaciones están mejorando aproximadamente un 1.75 veces a una selección al azar, a ese dato se le va a denominar **ganancia** y se va a considerar un buen modelo si el 10% de las observaciones que el modelo identifica con mayor probabilidad supera en 2.5 veces al azar. En la situación que se está trabajando no es el caso, 1.75 está lejos del 2.5 exigido. Pero en este caso superar en 2.5 veces al azar implicaría seleccionar un 66% de interesados en el 10% de observaciones, es decir, el modelo sería excelente, demasiado bueno, y si esto se produce el científico de datos debe desconfiar en ese resultado ya que puede existir alguna variable esté distorsionando resultados.
 
 Ordenadas las observaciones por la probabilidad que asigna el modelo se puede obtener el % de interesados y representar gráficamente una curva de ganancia con respecto al azar.
 
 ```r
-grupos = 10  
-test <\- test %>% arrange(desc(probabilidad_modelo.3)) %>%  
+grupos = 10
+test <\- test %>% arrange(desc(probabilidad_modelo.3)) %>%
 mutate(percentil_modelo = as.factor(ceiling((row_number()/n()) * grupos)))
 
-ganancia <\- test %>% group_by(percentil_modelo) %>%  
-summarise(percentil_interesados = sum(Response)/n()) %>%  
-as_tibble() %>%  
+ganancia <\- test %>% group_by(percentil_modelo) %>%
+summarise(percentil_interesados = sum(Response)/n()) %>%
+as_tibble() %>%
 mutate(ganancia = percentil_interesados/porcen_interesados)
 
-ganancia %>% ggplot(aes(x=percentil_modelo,y=ganancia, group=1)) +  
-geom_line(color=»red») + geom_hline(yintercept = 1, color=’blue’)  
+ganancia %>% ggplot(aes(x=percentil_modelo,y=ganancia, group=1)) +
+geom_line(color=»red») + geom_hline(yintercept = 1, color=’blue’)
 ```
 
 Se aprecia como los percentiles con mayor probabilidad están ganando al azar, pero en el mejor percentil se llega a mejorar en 2 veces a una selección de clientes sin emplear el modelo. Otra forma de ver esta ganancia se consigue acumulando el número de respuestas positivas en función del percentil de probabilidad del modelo.
@@ -370,7 +370,7 @@ test <- train2[-indices,]
 # % de observaciones en test
 nrow(test)/nrow(train2)
 ```
-5 
+5
 
 Antes de realizar el gráfico se describe la tabla generada. Se contabilizan las respuestas positivas, éstas suponen un % sobre el total que se va acumulando hasta llegar al 100%. Por otro lado, en una selección al azar, donde todas las observaciones tienen la misma probabilidad de ser seleccionadas se esperaría seleccionar el 10% de las observaciones en el primer percentil, el 20% de las observaciones en el segundo percentil y así hasta llegar al 100%, este campo se denomina `pct_esperado_interesados` y se crea artificialmente. Estos datos se representan gráficamente:
 
@@ -386,7 +386,7 @@ test <- train2[-indices,]
 # % de observaciones en test
 nrow(test)/nrow(train2)
 ```
-6 
+6
 
 [![](/images/2023/08/wp_editor_md_f7381e40765a37a5a32ae50bae76d468.jpg)](/images/2023/08/wp_editor_md_f7381e40765a37a5a32ae50bae76d468.jpg)
 
@@ -395,15 +395,15 @@ En ese gráfico se echa en falta el punto (0,0) que se puede añadir.
 ```r
 gananciapercentil_modelo = as.numeric(gananciapercentil_modelo)*10
 
-rbind.data.frame(ganancia,  
-data.frame(percentil_modelo=0,numero_interesados=0,acumulado_interesados=0,  
-pct_acumulado_interesados=0, pct_esperado_interesados=0) ) %>%  
-ggplot(aes(x=percentil_modelo,group=1)) +  
-geom_line(aes(y=pct_acumulado_interesados), color='blue') +  
+rbind.data.frame(ganancia,
+data.frame(percentil_modelo=0,numero_interesados=0,acumulado_interesados=0,
+pct_acumulado_interesados=0, pct_esperado_interesados=0) ) %>%
+ggplot(aes(x=percentil_modelo,group=1)) +
+geom_line(aes(y=pct_acumulado_interesados), color='blue') +
 geom_line(aes(y=pct_esperado_interesados), color='red')
 ```
 
-[![](/images/2023/08/wp_editor_md_b49bf5b274349e8e19dbabe4d24a2a1f.jpg)](/images/2023/08/wp_editor_md_b49bf5b274349e8e19dbabe4d24a2a1f.jpg)  
+[![](/images/2023/08/wp_editor_md_b49bf5b274349e8e19dbabe4d24a2a1f.jpg)](/images/2023/08/wp_editor_md_b49bf5b274349e8e19dbabe4d24a2a1f.jpg)
 Este gráfico puede ser familiar para el científico de datos porque se asemeja a la curva ROC pero no tiene nada que ver puesto que la curva ROC lo que mide es la relación entre los aciertos del modelo y los errores a la hora de asignar a las observaciones un resultado positivo siendo éste negativo. En este ensayo no se entra a valorar este método de medición de la precisión del modelo y se ilustra la ganancia. Hay literatura y buenos ejemplos de este método como por ejemplo:
 
   * [ R for statistical learning](https://daviddalpiaz.github.io/r4sl/logistic-regression.html#roc-curves)
@@ -417,7 +417,7 @@ Los modelos que realice el científico de datos han de contar una historia acerc
 
 El proceso de modelización no acaba con la realización del modelo, como se ha indicado, es necesario documentar y presentar los resultados finales para facilitar la puesta en producción del modelo. Este proceso no es obtener unos parámetros y describirlos, este proceso tiene que ayudar a otro equipo a mejorar una operativa, testear el resultado de un medicamento o mejorar una acción comercial como es el caso que está sirviendo de hilo conductor al ensayo. La documentación y el código para la puesta en producción del modelo habrá de incluir:
 
-  * Descriptivo de los datos. Origen y tratamiento inicial de los datos además de la aproximación univariable con los principales estadísticos 
+  * Descriptivo de los datos. Origen y tratamiento inicial de los datos además de la aproximación univariable con los principales estadísticos
   * Depuración inicial de los datos. En el ejemplo de trabajo se está trabajando con pocas variables pero es posible que se trabajen con miles de ellas y se realizan aproximaciones iniciales para incluir y descartar. En el ejemplo ha aparecido algún caso donde variables no aportaban nada o directamente aportaban ruido y han sido descartadas. Los criterios de inclusión y descarte pueden ser tanto estadísticos como de puro negocio, el número de empleados de una empresa no parece una variable relevante si se trabaja con personas físicas (por ejemplo)
 
   * Selección de parámetros/variables incluidas en el modelo. Una vez determinadas que variables pasan al proceso de modelización ese proceso iterativo ya determina que variables son candidatas a formar parte del modelo. Para ello se pueden emplear tácticas univariables como multivariables con métodos automáticos de selección. Si el científico de datos va a emplear técnicas de modelización lineales puede ser interesante analizar las posibles interacciones entre las variables

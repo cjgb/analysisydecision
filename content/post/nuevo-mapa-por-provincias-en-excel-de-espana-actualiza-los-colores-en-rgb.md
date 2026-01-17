@@ -16,7 +16,7 @@ related:
 slug: nuevo-mapa-por-provincias-en-excel-de-espana-actualiza-los-colores-en-rgb
 tags: []
 title: Nuevo mapa por provincias en Excel de España. Actualiza los colores en RGB
-url: /nuevo-mapa-por-provincias-en-excel-de-espana-actualiza-los-colores-en-rgb/
+url: /blog/nuevo-mapa-por-provincias-en-excel-de-espana-actualiza-los-colores-en-rgb/
 ---
 
 [![Mapa_excel_provincias_españa_nuevo](/images/2017/03/Mapa_excel_provincias_españa_nuevo.png)](/images/2017/03/Mapa_excel_provincias_españa_nuevo.png)

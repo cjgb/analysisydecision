@@ -19,7 +19,7 @@ tags:
 - ODS GRAPHS
 - SGPLOT
 title: Un acercamiento a GRAPH. ODS GRAPHS PROC SGPLOT
-url: /un-acercamiento-a-graph-ods-graphs-proc-sgplot/
+url: /blog/un-acercamiento-a-graph-ods-graphs-proc-sgplot/
 ---
 
 [](/images/2010/05/sgplot18.png "BOXPLOT SGPLOT")[![BOXPLOT SGPLOT](/images/2010/05/sgplot22.thumbnail.png)](/images/2010/05/sgplot22.png "BOXPLOT SGPLOT") [![HISTOGRAMAS SGPLOT](/images/2010/05/sgplot34.thumbnail.png)](/images/2010/05/sgplot34.png "HISTOGRAMAS SGPLOT")[![BARRAS CON GRUPOS SGPLOT](/images/2010/05/sgplot46.thumbnail.png)](/images/2010/05/sgplot46.png "BARRAS CON GRUPOS SGPLOT")

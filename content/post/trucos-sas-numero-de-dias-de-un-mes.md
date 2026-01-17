@@ -17,7 +17,7 @@ tags:
 - fechas sas
 - INTNX
 title: Trucos SAS. Número de días de un mes
-url: /trucos-sas-numero-de-dias-de-un-mes/
+url: /blog/trucos-sas-numero-de-dias-de-un-mes/
 ---
 
 Están entrando muchas visitas con las palabras «número de días de un mes en SAS». Y hoy vamos a dar respuesta a estas entradas con una macro y un truco de SAS. Si tenemos una fecha en formato AAAAMM numérica, típica de las particiones de Oracle, disponemos de la siguiente macro:

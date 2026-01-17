@@ -16,7 +16,7 @@ tags:
 - COMPBL
 - funciones SAS caracter
 title: Trucos SAS. Borrando blancos innecesarios con COMPBL
-url: /trucos-sas-borrando-blancos-innecesarios-con-compbl/
+url: /blog/trucos-sas-borrando-blancos-innecesarios-con-compbl/
 ---
 
 Me ha llegado hoy una duda interesante. El problema era eliminar espacios en blanco innecesarios mediante alguna función de SAS. Más concretamente teníamos algo parecido a:

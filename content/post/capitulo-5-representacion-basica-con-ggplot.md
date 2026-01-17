@@ -17,7 +17,7 @@ slug: capitulo-5-representacion-basica-con-ggplot
 tags: []
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 5. Representación
   gráfica básica con ggplot
-url: /capitulo-5-representacion-basica-con-ggplot/
+url: /blog/capitulo-5-representacion-basica-con-ggplot/
 ---
 
 Además del manejo de datos es necesario tener conocimientos de representación de datos. En este trabajo se va a emplear la librería de R `ggplot` y se trabajarán las **representaciones gráficas básicas** que ha de manejar un científico de datos. Se pueden explorar las múltiples posibilidades que ofrece esta librería [en la web Statistical tools for high-throughput data analysis](http://www.sthda.com/english/) que dispone de un gran número de recursos para R entre los que destaca el [uso del paquete ggplot](http://www.sthda.com/english/wiki/ggplot2-essentials).
@@ -28,7 +28,7 @@ Iniciamos el proceso cargando la librería `tidyverse` donde podemos encontrar `
 library(tidyverse)
 data(iris)
 ```
- 
+
 
 Ya está disponible esta librería gráfica, se puede observar en el mensaje `Attaching packages`. A modo introductorio, cuando se emplea `ggplot` siempre se requiere:
 
@@ -61,7 +61,7 @@ Es una representación gráfica para variables numéricas en forma de barras don
 ```r
 ggplot(data = iris, aes(x=Sepal.Length)) + geom_histogram()
 ```
- 
+
 
 [![](/images/2022/01/wp_editor_md_98bb52778fa474f16ce14dbe92e595f6.jpg)](/images/2022/01/wp_editor_md_98bb52778fa474f16ce14dbe92e595f6.jpg)
 
@@ -72,7 +72,7 @@ Se puede establecer el número de tramos que por defecto está establecido en 30
 ```r
 ggplot(data = iris, aes(x=Sepal.Length)) + geom_histogram(bins = 10)
 ```
- 
+
 
 [![](/images/2022/01/wp_editor_md_669f03e80ae66abcdd3d3fb2c492ddb8.jpg)](/images/2022/01/wp_editor_md_669f03e80ae66abcdd3d3fb2c492ddb8.jpg)
 
@@ -85,7 +85,7 @@ Es una variación del histograma que permite ver la distribución de una variabl
 ```r
 ggplot(iris, aes(x=Sepal.Length)) + geom_density()
 ```
- 
+
 
 [![](/images/2022/01/wp_editor_md_5a8ae91a45c8a683a2b105fdbdd62297.jpg)](/images/2022/01/wp_editor_md_5a8ae91a45c8a683a2b105fdbdd62297.jpg)
 
@@ -98,7 +98,7 @@ Gráfico que recoge información relevante sobre la distribución, las medidas d
 ```r
 ggplot(iris,aes(y=Sepal.Length)) + geom_boxplot()
 ```
- 
+
 
 [![](/images/2022/01/wp_editor_md_11a6ccd73d59645c54aca642656fe1d1.jpg)](/images/2022/01/wp_editor_md_11a6ccd73d59645c54aca642656fe1d1.jpg)
 
@@ -107,7 +107,7 @@ Este análisis permite recoger mucha información sobre la que volveremos poster
 ```r
 ggplot(iris,aes(x=Species, y=Sepal.Length)) + geom_boxplot()
 ```
- 
+
 
 [![](/images/2022/01/wp_editor_md_ed72400fd005d984d44e9db79f7f020e.jpg)](/images/2022/01/wp_editor_md_ed72400fd005d984d44e9db79f7f020e.jpg)
 
@@ -123,7 +123,7 @@ resumen <- iris %>% group_by(Species) %>% summarise(conteo=n())
 ggplot(resumen, aes(x='', y=conteo, fill=Species)) + geom_bar(stat="identity", width=1) +
   coord_polar("y", start=0)
 ```
- 
+
 
 [![](/images/2022/01/wp_editor_md_3c43120299a936b3b6b52f5b1d729f29.jpg)](/images/2022/01/wp_editor_md_3c43120299a936b3b6b52f5b1d729f29.jpg)
 
@@ -136,7 +136,7 @@ Gráfico empleado para representar frecuencias de **variables categóricas (fact
 ```r
 ggplot(iris, aes(x=Species, y=Sepal.Width)) + geom_bar(stat="identity")
 ```
- 
+
 
 [![](/images/2022/01/wp_editor_md_0053c2c49c28a8a5b2f8452492296e53.jpg)](/images/2022/01/wp_editor_md_0053c2c49c28a8a5b2f8452492296e53.jpg)
 
@@ -147,7 +147,7 @@ iris <- iris %>% mutate(Sepal.Length.factor = case_when(
   Sepal.Length>=5 ~ 'Mayor 5 mm',
   TRUE ~ 'Menor de 5 mm'))
 ```
- 
+
 
 Se emplea la función `case_when` para crear ese factor, cada condición tiene un valor y por último con `TRUE` tenemos los restantes registros. Vamos a representar 3 barras, una por especie, y dentro de cada una de ellas vemos el número de registros separada por ese factor que se ha creado con anterioridad.
 
@@ -156,7 +156,7 @@ resumen <- iris %>% group_by(Species, Sepal.Length.factor) %>%
   summarise(registros = n())
 ggplot(resumen, aes(x=Species, y=registros, fill=Sepal.Length.factor, color=Sepal.Length.factor)) + geom_bar(stat="identity")
 ```
- 
+
 
 [![](/images/2022/01/wp_editor_md_655f4d44a347603e7c4a8aab4fb34360.jpg)](/images/2022/01/wp_editor_md_655f4d44a347603e7c4a8aab4fb34360.jpg)
 
@@ -165,7 +165,7 @@ Se puede ver como este gráfico de barras distingue el número de registros por 
 ```r
 ggplot(data = iris, aes(x=Sepal.Length)) + geom_histogram()
 ```
-0 
+0
 
 [![](/images/2022/01/wp_editor_md_e4ecfc907af7bf21619e57ae2b415b07.jpg)](/images/2022/01/wp_editor_md_e4ecfc907af7bf21619e57ae2b415b07.jpg)
 
@@ -178,7 +178,7 @@ Esta representación gráfica muestra dos variables como una secuencia de datos 
 ```r
 ggplot(data = iris, aes(x=Sepal.Length)) + geom_histogram()
 ```
-1 
+1
 
 [![](/images/2022/01/wp_editor_md_8470508983f9a830eebe476b1ddb00a7.jpg)](/images/2022/01/wp_editor_md_8470508983f9a830eebe476b1ddb00a7.jpg)
 
@@ -191,7 +191,7 @@ Gráfico empleado para visualizar en 2 ejes variables numéricas, muy útil para
 ```r
 ggplot(data = iris, aes(x=Sepal.Length)) + geom_histogram()
 ```
-2 
+2
 
 [![](/images/2022/01/wp_editor_md_cd3a6174f4848f47c1bfc33354a600b3.jpg)](/images/2022/01/wp_editor_md_cd3a6174f4848f47c1bfc33354a600b3.jpg)
 

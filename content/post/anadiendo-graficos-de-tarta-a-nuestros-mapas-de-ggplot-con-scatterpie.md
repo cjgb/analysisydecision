@@ -17,12 +17,12 @@ slug: anadiendo-graficos-de-tarta-a-nuestros-mapas-de-ggplot-con-scatterpie
 tags:
 - geom_scatterpie
 title: Añadiendo gráficos de tarta a nuestros mapas de ggplot con scatterpie
-url: /anadiendo-graficos-de-tarta-a-nuestros-mapas-de-ggplot-con-scatterpie/
+url: /blog/anadiendo-graficos-de-tarta-a-nuestros-mapas-de-ggplot-con-scatterpie/
 ---
 
 [![](/images/2020/11/piechart_mapa1.png)](/images/2020/11/piechart_mapa1.png)
 
-Los gráficos de tarta o pie charts [tienen algunos peligros](https://www.data-to-viz.com/caveat/pie.html) y el ahora escribiente no es muy partidario de su uso, sin embargo la librería scatterpie facilita mucho su realización en R y quería traer al blog un método más o menos sencillo para entender como hacer el gráfico y como disponer los datos. 
+Los gráficos de tarta o pie charts [tienen algunos peligros](https://www.data-to-viz.com/caveat/pie.html) y el ahora escribiente no es muy partidario de su uso, sin embargo la librería scatterpie facilita mucho su realización en R y quería traer al blog un método más o menos sencillo para entender como hacer el gráfico y como disponer los datos.
 
 ## Obtención del shp con el mapa
 
@@ -38,9 +38,9 @@ Espanianame = EspaniaNAME_1
 
 mapa.comunidades <- map_data(Espania)
 ```
- 
 
-Se obtiene el shp con el mapa por Comunidades de GADM, el nivel de Comunidad Autónoma es el 1, para crear un data frame que emplear en ggplot necesitamos un campo name que la función map_data transformará en region, en este paso recomiendo usar como name el campo que más sencillo sea de cruzar, habitualmente códigos porque los nombres de las Comunidades Autónomas son un follón. En este caso si se emplea el nombre para entender mejor los datos necesarios para crear los gráficos de bolas y que el código sea reproducible (con las cositas del wordpress). 
+
+Se obtiene el shp con el mapa por Comunidades de GADM, el nivel de Comunidad Autónoma es el 1, para crear un data frame que emplear en ggplot necesitamos un campo name que la función map_data transformará en region, en este paso recomiendo usar como name el campo que más sencillo sea de cruzar, habitualmente códigos porque los nombres de las Comunidades Autónomas son un follón. En este caso si se emplea el nombre para entender mejor los datos necesarios para crear los gráficos de bolas y que el código sea reproducible (con las cositas del wordpress).
 
 ## Pintar un mapa sin nada
 
@@ -67,11 +67,11 @@ mapa <- ggplot(data = mapa.comunidades, aes(x = long, y = lat)) +
         axis.ticks.y=element_blank())
 mapa
 ```
- 
+
 
 [![](/images/2020/11/piechart_mapa2.png)](/images/2020/11/piechart_mapa2.png)
 
-Como sabéis ggplot es perfectamente modulable y podéis elegir colores de fondo, colores de línea, ubicación de títulos,… muchas veces tantas posibilidades pueden provocar que nos perdamos. Si recomiendo en estos gráficos eliminar los ejes y los textos de los ejes. 
+Como sabéis ggplot es perfectamente modulable y podéis elegir colores de fondo, colores de línea, ubicación de títulos,… muchas veces tantas posibilidades pueden provocar que nos perdamos. Si recomiendo en estos gráficos eliminar los ejes y los textos de los ejes.
 
 ## Datos para los piechart
 
@@ -86,7 +86,7 @@ comunidadesproporcion_2 <- 1 - comunidadesproporcion_1
 #Nos inventamos una escala para el tamaño de la bola
 comunidades$escala <- rpois(nrow(comunidades), 2) + 1
 ```
- 
+
 
 Cada comunidad autónoma tiene 2 proporciones y se crea un campo escala para definir el radio del gráfico de tarta, los datos tienen que tener disposición de columna. Ahora se ha de ubicar cada piechart dentro del mapa y para ello se opta por una solución sencilla, ubicarla en el punto medio por Comunidad Autónoma:
 
@@ -96,7 +96,7 @@ ubicacion <- mapa.comunidades %>% group_by(region) %>% summarise(lat=mean(lat), 
 
 comunidades <- left_join(comunidades, ubicacion)
 ```
- 
+
 
 Ahora el data frame comunidades tiene una latitud y una longitud para ubicar cada piechart. Ahora sólo es necesario realizar el mapa.
 
@@ -112,6 +112,6 @@ mappie <- mapa + labs(title = "No uséis bolas") +
 
 mappie
 ```
- 
+
 
 geom_scatterpie necesita los datos, la posición y la region, el tamaño, el radio del gráfico lo especificamos con r y siempre irá multiplicado por 6 (por temas de escala). En cols es necesario especificar las variables a representar, en este caso solo tenemos 2 proporciones, son pocos parámetros complejos y la solución no es mala si no fuera por que se tratan de gráficos de tarta. Saludos.

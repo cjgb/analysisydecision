@@ -15,7 +15,7 @@ related:
 slug: truco-sas-transponer-tablas-con-proc-transpose-data-o-proc-sql
 tags: []
 title: Truco SAS. Transponer tablas con PROC TRANSPOSE, DATA o PROC SQL
-url: /truco-sas-transponer-tablas-con-proc-transpose-data-o-proc-sql/
+url: /blog/truco-sas-transponer-tablas-con-proc-transpose-data-o-proc-sql/
 ---
 
 Para transponer datasets disponemos en SAS del PROC TRANSPOSE. El ahora escribiente no es muy partidario de emplearlo. Prefiero otras metodologías para transponer conjuntos de datos SAS. Voy a trabajar con un ejemplo que os servirá para aproximaros al TRANSPOSE y para entender mejor las opciones de lectura de un PASO DATA y el funcionamiento del PROC SQL. La idea es, partiendo de una tabla de hechos por meses, transponer un campo importe. Vamos a simular una tabla con esa estructura:

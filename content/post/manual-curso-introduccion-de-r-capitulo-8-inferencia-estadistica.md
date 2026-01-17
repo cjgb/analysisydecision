@@ -14,7 +14,7 @@ related:
 slug: manual-curso-introduccion-de-r-capitulo-8-inferencia-estadistica
 tags: []
 title: 'Manual. Curso introducción de R. Capítulo 8: Inferencia estadística'
-url: /manual-curso-introduccion-de-r-capitulo-8-inferencia-estadistica/
+url: /blog/manual-curso-introduccion-de-r-capitulo-8-inferencia-estadistica/
 ---
 
 En esta nueva entrega del curso de R vamos a trabajar con algunos conceptos básicos de inferencia estadística. En primer lugar hacemos inferencia a partir de unas observaciones obtenidas a partir de la **población** a las que vamos a extraer unas propiedades que se denominan **estadísticos muestrales**. Además vamos a conocer la distribución de dichos estadísticos (generalmente distribución normal) por lo que hacemos **inferencia paramétrica**.
@@ -40,34 +40,34 @@ La**t de Student** se crea a partir de una normal (0,1) y una chi-cuadrado con n
 ```r
 Z1, Z2 ,Z3 ,Z4  variables aleatorias independientes
 ```
- 
+
 ```r
 idénticamente distribuidas bajo una N(0,1)
 ```
- 
+
 ```r
 Z1 / [(Z2+Z3+Z4)/3]^1/2   esto se distribuye según
 ```
- 
+
 ```r
 una t de Student de 3 grados de libertad
 ```
- 
+
 
 La **F de Snedecor** se crea a partir de dos chi-cuadrado independientes dividivas por sus respectivos grados de libertad, así la F de Snedecor tiene dos parámetros que indican sus grados de libertad:
 
 ```r
 X se distribuye como chi-cuadrado con m grados de libertad ==>
 ```
- 
+
 ```r
 F=(X/m)/(Y/m) es F de snedecor con m,n grados de libertad
 ```
- 
+
 ```r
 Y se distribuye como chi-cuadrado   con n grados de libertad
 ```
- 
+
 
 Me dejo en el tintero muchos aspectos como las distribuciones de los estadísticos o los métodos de construcción de contrastes e intervalos pero me podría extender mucho, y me extenderé pero hasta aquí os cuento de momento. Aun así recomendaros una bibliografía básica por si queréis profundizar más en el tema. También estoy a expensas de poder publicar archivos LaTeX para que los aspectos matemáticos queden mejor resueltos pero de momento conformaros con los ejemplos de más abajo.
 
@@ -153,14 +153,14 @@ El p-valor la probabilidad de aceptar la hipótesis nula, en este caso es 0,7602
 
 El director de una sucursal de una compañía de seguros espera que dos de sus mejores agentes consigan formalizar por término medio el mismo número de pólizas mensuales. Los datos de la tabla adjunta indican las pólizas formalizadas en los últimos cinco meses por ambos agentes.
 
-**Agente A** |  **Agente B**  
----|---  
-12 |  14  
-11 |  18  
-18 |  18  
-16 |  17  
-13 |  16  
-  
+**Agente A** |  **Agente B**
+---|---
+12 |  14
+11 |  18
+18 |  18
+16 |  17
+13 |  16
+
 Admitiendo que el número de pólizas contratadas mensualmente por los dos trabajadores son variables aleatorias independientes y distribuidas normalmente: ¿Tiene igual varianza? ¿Se puede aceptar la hipótesis del director de la sucursal en función de los resultados de la tabla y a un nivel de confianza del 99%?
 
 Primero comprobamos si los datos tienen igual varianza:

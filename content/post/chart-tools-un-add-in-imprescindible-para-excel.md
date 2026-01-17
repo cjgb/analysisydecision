@@ -17,7 +17,7 @@ tags:
 - etiquetas
 - gráficos Excel
 title: Chart Tools un add in imprescindible para Excel
-url: /chart-tools-un-add-in-imprescindible-para-excel/
+url: /blog/chart-tools-un-add-in-imprescindible-para-excel/
 ---
 
 El add-in jk-chart tools de excel que os podéis [descargar aquí](http://spreadsheetpage.com/index.php/file/j_walk_chart_tools_add_in/) nos ofrece una serie de funcionalidades que pueden ayudarnos a trabajar con gráficos en Excel. Una vez descargado y activado el add-in al seleccionar un gráfico podemos emplear este complemento. En la primera pestaña podemos añadir etiquetas personalizadas a nuestros gráficos de Excel, algo que [ya realizamos con macros](https://analisisydecision.es/trucos-excel-poner-etiquetas-en-graficos-de-dispersion/):

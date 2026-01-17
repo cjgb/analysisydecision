@@ -17,7 +17,7 @@ tags:
 - corruptos
 - Enterprise Guide
 title: Como abrir proyectos de Enterprise Guide corruptos o de una versión anterior
-url: /como-abrir-proyectos-de-enterprise-guide-corruptos-o-de-una-version-anterior/
+url: /blog/como-abrir-proyectos-de-enterprise-guide-corruptos-o-de-una-version-anterior/
 ---
 
 Muchos hemos sufrido este error trabajando con Enterprise Guide de SAS:

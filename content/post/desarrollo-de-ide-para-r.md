@@ -17,7 +17,7 @@ tags:
 - Java
 - R
 title: Desarrollo de IDE para R
-url: /desarrollo-de-ide-para-r/
+url: /blog/desarrollo-de-ide-para-r/
 ---
 
 Sigo añadiendo pocos mensajes al blog por falta de tiempo. Corren malos tiempos para el ahora escribiente. A este paso el blog no llegara nunca a las 4.000 visitas mensuales objetivo muy ambicioso para este 2010. Pero en este mensaje quería enlazar el blog de un ex compañero:

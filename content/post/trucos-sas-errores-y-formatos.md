@@ -19,7 +19,7 @@ tags:
 - FMTERR
 - formatos
 title: Trucos SAS. Errores y formatos
-url: /trucos-sas-errores-y-formatos/
+url: /blog/trucos-sas-errores-y-formatos/
 ---
 
 Un truco SAS que puede ayudar a todos aquellos que estén empezando a programar en SAS. Hay ocasiones que trabajamos con datasets que tienen formatos y nos encontramos con el error: « _formato FMT no se ha encontrado o no se ha podido cargar»._ ¿Qué hacer? Lo primero es jugar con la opción FMTERR:

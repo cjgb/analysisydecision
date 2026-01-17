@@ -4,6 +4,7 @@ languageCode = "es"
 DefaultContentLanguage = "es"
 theme = "mainroad"
 
+
 [Author]
   name = "bgjc"
   bio = ""
@@ -11,6 +12,13 @@ theme = "mainroad"
 
 [pagination]
   pagerSize = "13"
+
+[outputs]
+  home = ['html', 'rss']
+  section = ['html']
+  taxonomy = ['html']
+  term = ['html']
+
 
 [Params]
   description = 'El antiguo y legendario blog "Análisis y Decisión" de Raúl Vaquerizo, rescatado del olvido por Carlos J. Gil Bellosta.'
@@ -25,6 +33,7 @@ theme = "mainroad"
   mathjax = true # Enable MathJax
   mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js" # Specify MathJax path
   mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
+  mainSections = ["post"]
 
 [Params.logo]
   subtitle = 'El antiguo y legendario blog "Análisis y Decisión" de Raúl Vaquerizo'

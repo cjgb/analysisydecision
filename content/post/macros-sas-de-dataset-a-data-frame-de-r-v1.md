@@ -15,5 +15,5 @@ related:
 slug: macros-sas-de-dataset-a-data-frame-de-r-v1
 tags: []
 title: Macros SAS. De dataset a data frame de R V1
-url: /macros-sas-de-dataset-a-data-frame-de-r-v1/
+url: /blog/macros-sas-de-dataset-a-data-frame-de-r-v1/
 ---

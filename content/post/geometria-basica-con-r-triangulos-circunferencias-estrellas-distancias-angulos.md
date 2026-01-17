@@ -16,7 +16,7 @@ tags:
 - learnGeom
 title: Geometría básica con R. Triángulos, circunferencias, estrellas, distancias,
   ángulos,…
-url: /geometria-basica-con-r-triangulos-circunferencias-estrellas-distancias-angulos/
+url: /blog/geometria-basica-con-r-triangulos-circunferencias-estrellas-distancias-angulos/
 ---
 
 Trabajar con triángulos y R es bien sencillo con el paquete learnGeom. La entrada viene a cuento por una duda en [lista de correo de ayuda en R](https://stat.ethz.ch/mailman/listinfo/r-help-es) que no pude ayudar a resolver por no disponer de un equipo informático en ese momento. Es un paquete que nos permite visualizar los aspectos básicos de la geometría que todos tenemos olvidada. Un ejemplo de uso sería:
@@ -38,7 +38,7 @@ triangulo <- CreatePolygon(A, B, C)
 Draw(triangulo, "grey")
 PolygonAngles(triangulo)
 ```
- 
+
 
 Fijamos un plano, en este caso de 0 a 100 en ambos ejes y sobre ese plano pintamos un polígono indicando los vértices y como resultado obtenemos un triángulo rectángulo, podemos ver los ángulos que forman los vértices también y hay otras funciones interesantes como distancias entre puntos que nos sirven para recordar a Pitágoras;
 
@@ -46,7 +46,7 @@ Fijamos un plano, en este caso de 0 a 100 en ambos ejes y sobre ese plano pintam
 DistancePoints(A,B)
 sqrt(20^2+20^2)
 ```
- 
+
 
 Llegué a este paquete por lo sencillo que resultaba obtener los ángulos entre los puntos y poderlos graficar:
 
@@ -55,7 +55,7 @@ angle <- Angle(A, B, C, label = TRUE)
 angle <- Angle(A, C, B, label = TRUE)
 angle <- Angle(B, A, C, label = TRUE)
 ```
- 
+
 
 [![](/images/2019/09/geometria-con-R-1.png)](/images/2019/09/geometria-con-R-1.png)
 
@@ -70,7 +70,7 @@ fin = 45
 Arc2 <- CreateArcAngles(A, 20, inicio, fin, direction)
 Draw(Arc2, "red")
 ```
- 
+
 
 [![](/images/2019/09/geometria-con-R-2.png)](/images/2019/09/geometria-con-R-2.png)
 
@@ -80,7 +80,7 @@ Por algún motivo que desconozco mi cabeza sólo puede trabajar con la direcció
 CoordinatePlane(x_min, x_max, y_min, y_max)
 Star(A, 180, 10, color= "blue")
 ```
- 
+
 
 [![](/images/2019/09/geometria-con-R-3.png)](/images/2019/09/geometria-con-R-3.png)
 

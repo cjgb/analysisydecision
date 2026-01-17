@@ -24,7 +24,7 @@ tags:
 - SVM
 title: Machine learnig. Análisis gráfico del funcionamiento de algunos algoritmos
   de clasificacion
-url: /machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algoritmos-de-clasificacion/
+url: /blog/machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algoritmos-de-clasificacion/
 ---
 
 [![Letra_O](/images/2017/05/Letra_O.png)](/images/2017/05/Letra_O.png)
@@ -47,7 +47,7 @@ dependiente = dependiente1 - dependiente2
 plt.scatter(df.X, df.Y,c=dependiente,marker=".")
 show()
 ```
- 
+
 
 Se crea un data frame con 10.000 registros y dos variables aleatorias con valores entre 0 y 100 X e Y. Soy consciente de la forma en la que se obtiene la variable dependiente, no entiendo como funciona **np.where** con condiciones múltiples y por ello toman valor 1 aquellas observaciones del plano que están entre las dos eclipses que pinto dentro del plano. Con todo esto tenemos unos datos como ilustran el scatter plot con el que se inicia esta entrada. El siguiente paso será dividir los datos en validación y test mediante train_test_split:
 
@@ -57,7 +57,7 @@ from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(df,dependiente,stratify=dependiente,
 test_size = 0.5, random_state=123)
 ```
- 
+
 
 Ahora vamos a estudiar gráficamente como se comportan algunos algoritmos de machine learning para clasificar la letra O en el espacio. Empezamos por los árboles de decisión:
 
@@ -70,7 +70,7 @@ predichos = arbol_1.predict(X_test)
 plt.scatter(X_test.X, X_test.Y,c=predichos,marker=".",cmap=plt.cm.Blues)
 show()
 ```
- 
+
 
 [![arbol_clasificacion_python](/images/2017/05/arbol_clasificacion_python.png)](/images/2017/05/arbol_clasificacion_python.png)
 
@@ -85,7 +85,7 @@ predichos = bosque_1.predict(X_test)
 plt.scatter(X_test.X, X_test.Y,c=predichos,marker=".",cmap=plt.cm.Blues)
 show()
 ```
- 
+
 
 [![random_forest_clasificacion](/images/2017/05/random_forest_clasificacion.png)](/images/2017/05/random_forest_clasificacion.png)
 
@@ -98,7 +98,7 @@ predichos = vecinos_1.predict(X_test)
 plt.scatter(X_test.X, X_test.Y,c=predichos,marker=".",cmap=plt.cm.Blues)
 show()
 ```
- 
+
 
 [![knn_clasificacion_python](/images/2017/05/knn_clasificacion_python.png)](/images/2017/05/knn_clasificacion_python.png)
 
@@ -112,7 +112,7 @@ predichos = svm_1.predict(X_test)
 plt.scatter(X_test.X, X_test.Y,c=predichos,marker=".",cmap=plt.cm.Blues)
 show()
 ```
- 
+
 
 [![svm_clasificacion_python](/images/2017/05/svm_clasificacion_python.png)](/images/2017/05/svm_clasificacion_python.png)
 
@@ -127,7 +127,7 @@ predichos = mlp_1.predict(X_test)
 plt.scatter(X_test.X, X_test.Y,c=predichos,marker=".",cmap=plt.cm.Blues)
 show()
 ```
- 
+
 
 [![perceptron_python](/images/2017/05/perceptron_python.png)](/images/2017/05/perceptron_python.png)
 
@@ -143,16 +143,16 @@ plt.scatter(X_test.X, X_test.Y,c=proba, cmap=plt.cm.Blues)
 plt.colorbar()
 plt.show()
 ```
- 
+
 
 [![perceptron_probabilidades_python](/images/2017/05/perceptron_probabilidades_python.png)](/images/2017/05/perceptron_probabilidades_python.png)
 
 El resultado es interesante puesto que las probabilidades que arroja la predicción son muy conservadoras a excepción de aquellos lugares en el plano donde tiene una alta certeza de encontrar un 1. Hasta aquí no os he contado nada que no se pueda encontrar navegando un poco por la red, sin embargo en una sola entrada tenemos un pequeño manual de sklearn donde analizamos:
 
-DecisionTreeClassifier  
-RandomForestClassifier  
-KNeighborsClassifier  
-SVC  
+DecisionTreeClassifier
+RandomForestClassifier
+KNeighborsClassifier
+SVC
 MLPClassifier
 
 Espero que os pueda ser de utilidad. Saludos.

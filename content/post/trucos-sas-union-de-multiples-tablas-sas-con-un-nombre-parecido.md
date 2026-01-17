@@ -20,12 +20,12 @@ tags:
 - separated by
 - union datasets
 title: Trucos SAS. Unión de múltiples tablas SAS con un nombre parecido
-url: /trucos-sas-union-de-multiples-tablas-sas-con-un-nombre-parecido/
+url: /blog/trucos-sas-union-de-multiples-tablas-sas-con-un-nombre-parecido/
 ---
 
 Ha llegado una búsqueda y ponemos el truco. Creo que ya lo puse pero no está mal de recordarlo.
 
-1\. Creamos 20 datasets aleatorios con 10 observaciones cada uno:  
+1\. Creamos 20 datasets aleatorios con 10 observaciones cada uno:
 
 ```r
 %macro doit;

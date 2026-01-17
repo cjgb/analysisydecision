@@ -14,7 +14,7 @@ related:
 slug: proyecto-text-mining-con-excel-pasa-a-ser-google-mining
 tags: []
 title: Proyecto. Text Mining con Excel pasa a ser Google Mining
-url: /proyecto-text-mining-con-excel-pasa-a-ser-google-mining/
+url: /blog/proyecto-text-mining-con-excel-pasa-a-ser-google-mining/
 ---
 
 El término **Google Mining** ya está acuñado, no soy ningún pionero ni he tenido una idea brillante. Pero al preparar la herramienta de Text Mining con Excel me he dado cuenta que estoy contruyendo (sin querer) una potente herramienta para la creación de BBDD de páginas web, una herramienta que puede entrar en Google y tabularme la información que me interese. El proyecto se inició para atraer visitas a [www.analisisydecision.es](https://www.analisisydecision.es/) con el uso de macros de Visual Basic. Atraer entradas que buscaran programas en Visual Basic. Sin embargo, cuanto más investigo, más creo en que esto puede ser algo serío e incluso un proyecto que se puede implantar en cualquier organización para medir la calidad de la atención al cliente, para la búsqueda de profesionales,…

@@ -15,7 +15,7 @@ slug: video-introduccion-a-bookdown
 tags:
 - bookdown
 title: Vídeo introducción a bookdown
-url: /video-introduccion-a-bookdown/
+url: /blog/video-introduccion-a-bookdown/
 ---
 
 Una introducción a bookdown con R y RStudio para la creación de libros y contenido web. Esta entrada sienta las bases de un proyecto que estoy llevando a cabo, la creación de mi propio libro de introducción a la estadística.

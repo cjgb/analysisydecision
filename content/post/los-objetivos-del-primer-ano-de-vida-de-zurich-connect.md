@@ -14,7 +14,7 @@ related:
 slug: los-objetivos-del-primer-ano-de-vida-de-zurich-connect
 tags: []
 title: Los objetivos del primer año de vida de Zurich Connect
-url: /los-objetivos-del-primer-ano-de-vida-de-zurich-connect/
+url: /blog/los-objetivos-del-primer-ano-de-vida-de-zurich-connect/
 ---
 
 [Hace cosa de un año hice mención al nacimiento de Zurich Connect](https://analisisydecision.es/el-seguro-directo-de-zurich/). Su Director General tenía claros los objetivos de esta nueva compañía: 80.000 pólizas en un año, ¡con un par! Buena campaña de comunicación, «call center» muy profesional y un buen equipo directivo. Pero, ¡¿80.000 pólizas?! Un poco demasiado optimista sobre todo en un mercado donde tenemos a Clickseguros, Balumba, Línea Directa Aseguradora, Génesis, Direct,… En fin, desconozco los resultados «reales» de Zurich Connect en este primer año pero me he pasado por ICEA y me he descargado los datos del ramo de no vida de enero a junio de 2008 y enero a junio de 2009. El total de Zurich ha pasado de 777 mill en primas a 734. Con esto ya os digo que no han hecho 80.000 pólizas.

@@ -17,7 +17,7 @@ tags:
 - cruce de tablas SAS
 - hash
 title: Trucos SAS. Porque hay que usar objetos hash
-url: /trucos-sas-porque-hay-que-usar-objetos-hash/
+url: /blog/trucos-sas-porque-hay-que-usar-objetos-hash/
 ---
 
 Quiero trabajar un poco con objetos hash en SAS. Pero antes quería demostraros con una comparativa de código muy sencilla y muy rápida la necesidad de trabajar con estos objetos en SAS. La problemática es muy habitual en nuestro trabajo diario. Tenemos una tabla SAS muy grande, con millones de registros y tenemos que cruzarla con otra tabla SAS muy pequeña para quedarnos sólo con los registros que aparezcan en la tabla pequeña. Tenemos unos clientes que han recibido un contacto comercial y hemos de quedarnos con sus saldos históricos en determinados productos. Veamos los distintos métodos que planteo para machear registros, conjuntos de datos de partida:

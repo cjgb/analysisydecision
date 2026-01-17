@@ -14,7 +14,7 @@ related:
 slug: curso-de-lenguaje-sas-con-wps-que-hace-el-paso-data
 tags: []
 title: Curso de lenguaje SAS con WPS. Que hace el paso DATA
-url: /curso-de-lenguaje-sas-con-wps-que-hace-el-paso-data/
+url: /blog/curso-de-lenguaje-sas-con-wps-que-hace-el-paso-data/
 ---
 
 El elemento principal del lenguaje SAS es el paso DATA. Este elemento crea, modifica y transforma conjunto de datos SAS (datasets). El paso DATA se compone de 2 fases, la fase de compilación y la fase de ejecución. En la fase de compilación DATA crea una estructura de memoria, conocida como program data vector (PDV), con la estructura que **SAS considera más adecuada** para el conjunto de datos, paralelamente crea toda una descripción de la información del dataset. Una vez creada la estructura de la tabla SAS se pasa a la fase de ejecución en la que SAS itera con cada registro haciendo “output” en el dataset cuando SAS llega a la sentencia RUN. La iteración se lleva a cabo hasta que SAS detecta el final del archivo.

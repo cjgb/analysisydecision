@@ -15,7 +15,7 @@ slug: '%c2%bfproyectos-de-nosql-en-espana'
 tags:
 - nosql
 title: ¿Proyectos de NOSQL en España?
-url: /c2bfproyectos-de-nosql-en-espana/
+url: /blog/c2bfproyectos-de-nosql-en-espana/
 ---
 
 Quería aprovechar que esta bitácora se lee en muchas empresas y universidades para buscar algún proyecto en NOSQL en España. Hace tiempo que estoy intererado en bases de datos no relacionales. La verdad es que no concivo una base de datos que no sea relacional, por ese mismo motivo me interesa tanto el tema. Si el paradigma del dinosaurio (yo) no es capaz de entender que aporta el NOSQL entonces es una tecnología muy a tener en cuenta.

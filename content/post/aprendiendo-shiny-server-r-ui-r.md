@@ -15,7 +15,7 @@ slug: aprendiendo-shiny-server-r-ui-r
 tags:
 - shiny
 title: Aprendiendo shiny. server.R ui.R
-url: /aprendiendo-shiny-server-r-ui-r/
+url: /blog/aprendiendo-shiny-server-r-ui-r/
 ---
 
 Sigo con shiny y RStudio aver que cosas soy capaz de hacer. Hay dos elementos básicos a la hora de crear aplicaciones con shiny:
@@ -27,46 +27,46 @@ El elemento fundamental de server.R es shinyServer(función) en los ejemplos que
 
 Sobre la misma app prueba que creamos en la anterior entrega podemos hacer:
 
-# Define UI for slider demo application  
+# Define UI for slider demo application
 shinyUI(fluidPage(
 
-# Application title  
+# Application title
 titlePanel(«Ejemplo de uso de Sliders»),
 
-# Sidebar with sliders that demonstrate various available  
-# options  
-sidebarLayout(  
-sidebarPanel(  
-# Simple integer interval  
-sliderInput(«integer», «Entero:»,  
+# Sidebar with sliders that demonstrate various available
+# options
+sidebarLayout(
+sidebarPanel(
+# Simple integer interval
+sliderInput(«integer», «Entero:»,
 min=0, max=1000, value=500),
 
-# Decimal interval with step value  
-sliderInput(«decimal», «Decimal:»,  
+# Decimal interval with step value
+sliderInput(«decimal», «Decimal:»,
 min = 0, max = 1, value = 0.5, step= 0.1),
 
-# Specification of range within an interval  
-sliderInput(«range», «Rangos:»,  
+# Specification of range within an interval
+sliderInput(«range», «Rangos:»,
 min = 1, max = 1000, value = c(200,500)),
 
-# Provide a custom currency format for value display,  
-# with basic animation  
-sliderInput(«format», «Formato personalizado:»,  
-min = 0, max = 10000, value = 0, step = 2500,  
+# Provide a custom currency format for value display,
+# with basic animation
+sliderInput(«format», «Formato personalizado:»,
+min = 0, max = 10000, value = 0, step = 2500,
 format=»$#,##0″, locale=»us», animate=TRUE),
 
-# Animation with custom interval (in ms) to control speed,  
-# plus looping  
-sliderInput(«animation», «Bucle animado:», 1, 2000, 1,  
-step = 10, animate=  
-animationOptions(interval=300, loop=TRUE))  
+# Animation with custom interval (in ms) to control speed,
+# plus looping
+sliderInput(«animation», «Bucle animado:», 1, 2000, 1,
+step = 10, animate=
+animationOptions(interval=300, loop=TRUE))
 ),
 
-# Show a table summarizing the values entered  
-mainPanel(  
-tableOutput(«values»)  
-)  
-)  
+# Show a table summarizing the values entered
+mainPanel(
+tableOutput(«values»)
+)
+)
 ))
 
 El mismo ejemplo poniendo los títulos en español. Lo más simple. Seguiré contando las cosas que voy aprendiendo con shiny. Saludos.

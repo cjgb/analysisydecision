@@ -18,7 +18,7 @@ tags:
 - SAS
 - SQL
 title: Funciones de ventana, SAS y bases de datos
-url: /funciones-de-ventana-sas-y-bases-de-datos/
+url: /blog/funciones-de-ventana-sas-y-bases-de-datos/
 ---
 
 Hace unos meses padecí (eso sí, brevemente) un proyecto que consistía en la migración de cierto código en SAS (¡nos lo pasaron como un documento de 20 hojas de Word!) a otro lenguaje de programación.

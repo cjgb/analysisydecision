@@ -16,19 +16,19 @@ slug: comienza-la-publicacion-del-ensayo-introduccion-a-la-estadistica-para-cien
 tags: []
 title: Comienza la publicación del ensayo Introducción a la Estadística para Científicos
   de Datos con R
-url: /comienza-la-publicacion-del-ensayo-introduccion-a-la-estadistica-para-cientificos-de-datos/
+url: /blog/comienza-la-publicacion-del-ensayo-introduccion-a-la-estadistica-para-cientificos-de-datos/
 ---
 
 En Twitter ya hice mención a la creación de un libro/ensayo de introducción a la Estadística para Científicos de Datos. Me preocupaba como compartir el libro y como podría ser útil a alguien que se está introduciendo en la ciencia de datos.
 
-> Estoy escribiendo un libro: Estadística para científicos de datos con R. 
-> 
-> ¿Lo subo a git?  
-> ¿Lo acabo y hago la web?   
+> Estoy escribiendo un libro: Estadística para científicos de datos con R.
+>
+> ¿Lo subo a git?
+> ¿Lo acabo y hago la web?
 > ¿Lo pongo en el blog por entregas?
-> 
+>
 > 🤔
-> 
+>
 > — Raúl Vaquerizo (@r_vaquerizo) [December 13, 2021](https://twitter.com/r_vaquerizo/status/1470387760976510981?ref_src=twsrc%5Etfw)
 
 En realidad este trabajo es una ordenación de apuntes, presentaciones y cursos que he ido impartiendo durante mucho tiempo donde R es el protagonista. De hecho, sigo en ese proceso y he decidido ir compartiendo ese trabajo a la vez que se está completando. Como se indicaba en [mi cuenta de Twitter](https://twitter.com/r_vaquerizo) tenía dudas acerca de como realizar las entregas y al final el ensayo se publicará en git, tendrá su web correspondiente y se publicará en el blog.

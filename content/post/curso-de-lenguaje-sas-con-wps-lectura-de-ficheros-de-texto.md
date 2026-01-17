@@ -17,7 +17,7 @@ tags:
 - INFILE
 - INPUT
 title: Curso de lenguaje SAS con WPS. Lectura de ficheros de texto
-url: /curso-de-lenguaje-sas-con-wps-lectura-de-ficheros-de-texto/
+url: /blog/curso-de-lenguaje-sas-con-wps-lectura-de-ficheros-de-texto/
 ---
 
 Leer ficheros de texto con lenguaje SAS no es sencillo debido a la escasa flexibilidad de SAS. La cosa se complica cuando leemos texto con WPS.[ Empleando el asistente de SAS y haciendo recall podemos leer ficheros con bastante comodidad](https://analisisydecision.es/importar-a-sas-desde-otras-aplicaciones/). **Eso no lo podemos hacer con WPS porque no dispone de asistente ni nada parecido al EFI de SAS**. Así que tenemos que tantear con INPUT hasta conseguir leer el fichero correctamente. Pero esta entrada nos permite conocer mejor como funciona el paso DATA. Más adelante veremos como hacerlo con el PROC IMPORT. El primer ejemplo importa un fichero de texto de este tipo:

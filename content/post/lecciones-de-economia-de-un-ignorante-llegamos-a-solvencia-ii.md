@@ -15,7 +15,7 @@ slug: lecciones-de-economia-de-un-ignorante-%c2%bfllegamos-a-solvencia-ii
 tags:
 - solvencia
 title: Lecciones de economía de un ignorante. ¿Llegamos a Solvencia II?
-url: /lecciones-de-economia-de-un-ignorante-c2bfllegamos-a-solvencia-ii/
+url: /blog/lecciones-de-economia-de-un-ignorante-c2bfllegamos-a-solvencia-ii/
 ---
 
 ![](https://www.alertadigital.com/wp-content/uploads/2011/06/prima-de-riesgo.jpg)

@@ -16,7 +16,7 @@ tags:
 - Pizarro
 - Solbes
 title: Pizarro gana a Solbes en el debate
-url: /pizarro-gana-a-solbes-en-el-debate/
+url: /blog/pizarro-gana-a-solbes-en-el-debate/
 ---
 
 Hace algo más de un año el ex ministro de economía Pedro Solbes se enfrentó en un debate televisivo a Manuel Pizarro. En aquel momento todos los medios dieron como claro vencedor del debate a Solbes. La posición catastrofista de Pizarro se consideró exagerada, hoy [leemos esto](http://www.expansion.com/2009/05/14/economia-politica/1242284548.html).

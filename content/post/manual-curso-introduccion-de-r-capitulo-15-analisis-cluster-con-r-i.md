@@ -15,21 +15,21 @@ related:
 slug: manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-i
 tags: []
 title: 'Manual. Curso introducción de R. Capítulo 15: Análisis Cluster con R (I)'
-url: /manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-i/
+url: /blog/manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-i/
 ---
 
 El proposito del análisis de conglomerados (cluster en terminología inglesa) es el agrupar las observaciones de forma que los datos sean muy homogéneos dentro de los grupos (mínima varianza) y que estos grupos sean lo más heterogéneos posible entre ellos (máxima varianza). De este modo obtenemos una clasificación de los datos multivariante con la que podemos comprender mejor los mismos y la población de la que proceden. Podemos realizar análisis cluster de casos, un análisis cluster de variables o un análisis cluster por bloques si agrupamos variables y casos. El análisis cluster se puede utilizar para:
 
-• La taxonomía, agrupar especies naturales.  
-• Para el marketing, clasificar consumidores tipo.  
-• Medicina, clasificar seres vivos con los mismos síntomas y características patológicas.  
-• Técnicas de reconocimiento de patrones.  
-• Formar grupos de pixels en imágenes digitalizadas enviadas por un satélite desde un planeta para identificar los terrenos.  
-• …  
-Como siempre la metodología del análisis y la programación con R la vamos a estudiar mediante un ejemplo.  
-  
-Ejemplo Cluster.1:  
-Partimos de los precios de las viviendas en España desde el último trimestre de 2007 al último trimestre de 2008 por provincia y municipio, trataremos de agrupar ciudades. Los datos los tenemos en formato Excel y han sido descargados del [Ministerio de la Vivienda](http://www.mviv.es/es/index.php?option=com_content&task=blogsection&id=9&Itemid=35), por ello necesitamos leer los datos con el paquete RODBC (que no tenemos instalado):  
+• La taxonomía, agrupar especies naturales.
+• Para el marketing, clasificar consumidores tipo.
+• Medicina, clasificar seres vivos con los mismos síntomas y características patológicas.
+• Técnicas de reconocimiento de patrones.
+• Formar grupos de pixels en imágenes digitalizadas enviadas por un satélite desde un planeta para identificar los terrenos.
+• …
+Como siempre la metodología del análisis y la programación con R la vamos a estudiar mediante un ejemplo.
+
+Ejemplo Cluster.1:
+Partimos de los precios de las viviendas en España desde el último trimestre de 2007 al último trimestre de 2008 por provincia y municipio, trataremos de agrupar ciudades. Los datos los tenemos en formato Excel y han sido descargados del [Ministerio de la Vivienda](http://www.mviv.es/es/index.php?option=com_content&task=blogsection&id=9&Itemid=35), por ello necesitamos leer los datos con el paquete RODBC (que no tenemos instalado):
 
 ```r
 install.packages("ROdBC")  #instalamos el paquete si no lo tenemos
@@ -50,7 +50,7 @@ URL abierta
 
 downloaded 190 Kb
 ```
-  
+
 
 ```r
 package 'RODBC' successfully unpacked and MD5 sums checked
@@ -74,31 +74,31 @@ datos<-sqlFetch(tabla,"Hoja1")  #objeto que contiene los datos de la Hoja1
 odbcClose(tabla)   #cerramos la conexión con el libro Excel
 ```
 
-Un buen ejemplo para conocer como instalar paquetes en R con la función INSTALLL. Y un buen ejemplo para importar datos desde Excel a R. Con estos pasos ya tenemos un conjunto de datos con las siguientes variables:  
-• Provincia  
-• Municipio  
-• Viv_2anios2007_1  
-• Viv_mas2anios2007_1  
-• Tas_2anios2007_1  
-• Tas_mas2anios2007_1  
-• Viv_2anios2008_1  
-• Viv_mas2anios2008_1  
-• Tas_2anios2008_1  
-• Tas_mas2anios2008_1  
-• Viv_2anios2008_2  
-• Viv_mas2anios2008_2  
-• Tas_2anios2008_2  
-• Tas_mas2anios2008_2  
-• Viv_2anios2008_3  
-• Viv_mas2anios2008_3  
-• Tas_2anios2008_3  
-• Tas_mas2anios2008_3  
-• Viv_2anios2008_4  
-• Viv_mas2anios2008_4  
-• Tas_2anios2008_4  
+Un buen ejemplo para conocer como instalar paquetes en R con la función INSTALLL. Y un buen ejemplo para importar datos desde Excel a R. Con estos pasos ya tenemos un conjunto de datos con las siguientes variables:
+• Provincia
+• Municipio
+• Viv_2anios2007_1
+• Viv_mas2anios2007_1
+• Tas_2anios2007_1
+• Tas_mas2anios2007_1
+• Viv_2anios2008_1
+• Viv_mas2anios2008_1
+• Tas_2anios2008_1
+• Tas_mas2anios2008_1
+• Viv_2anios2008_2
+• Viv_mas2anios2008_2
+• Tas_2anios2008_2
+• Tas_mas2anios2008_2
+• Viv_2anios2008_3
+• Viv_mas2anios2008_3
+• Tas_2anios2008_3
+• Tas_mas2anios2008_3
+• Viv_2anios2008_4
+• Viv_mas2anios2008_4
+• Tas_2anios2008_4
 • Tas_mas2anios2008_4
 
-Disponemos de la provincia, el municipio (municipios con más de 25.000 habitantes) y variables VIV que hacen referencia al precio de la vivienda en €/m2 y variables TAS que hacen referencia al número de tasaciones. Estas variables a su vez pueden ser 2ANIOS si tienen menos de 2 años (vivienda nueva) o MAS2ANIOS si son viviendas antiguas. No tiene mucho sentido agrupar por variables que miden un importe o un número, es más interesante realizar el análisis cluster sobre variaciones entre trimestres. Por esto el conjunto de datos requiere un tratamiento previo para calcular el % de diferencia de precio y del número de tasaciones:  
+Disponemos de la provincia, el municipio (municipios con más de 25.000 habitantes) y variables VIV que hacen referencia al precio de la vivienda en €/m2 y variables TAS que hacen referencia al número de tasaciones. Estas variables a su vez pueden ser 2ANIOS si tienen menos de 2 años (vivienda nueva) o MAS2ANIOS si son viviendas antiguas. No tiene mucho sentido agrupar por variables que miden un importe o un número, es más interesante realizar el análisis cluster sobre variaciones entre trimestres. Por esto el conjunto de datos requiere un tratamiento previo para calcular el % de diferencia de precio y del número de tasaciones:
 
 ```r
 attach(datos) #Creamos un objeto para cada diferencia y posteriormente unimos
@@ -238,7 +238,7 @@ Vemos que a la función DIST le introducimos valores carácter y tenemos el warn
 
 ![cluster1.JPG](/images/2009/04/cluster1.thumbnail.JPG)
 
-  
+
 He marcado manualmente el gráfico resultante y considero que 6 grupos son los adecuados. Aunque parece que 2 grupos son muy numerosos y el resto mucho menos, el corte queda sujeto a la interpretación del analísta. Ya podemos realizar un análisis no jerárquico para asignar a cada observación un cluster:
 
 ```r
@@ -246,8 +246,8 @@ cluster.1.nojerar<-kmeans(distancias,6)
 
 asignacion<-data.frame(cluster.1.nojerar$cluster)
 ```
-  
-Hemos creados el objeto _asignacion_ que asigna a cada observación el cluster resultante del análisis no jerárquico. Este objeto le unimos con analsis.ok y podemos analizar como se ha comportado el agrupamiento:  
+
+Hemos creados el objeto _asignacion_ que asigna a cada observación el cluster resultante del análisis no jerárquico. Este objeto le unimos con analsis.ok y podemos analizar como se ha comportado el agrupamiento:
 
 ```r
 analisis.ok<-cbind(analisis.ok,asignacion)
@@ -262,8 +262,8 @@ colnames(analisis.ok)
 
 [16] "dif_Tas_mas2anios_2"       "dif_Tas_mas2anios_3"       "dif_Tas_mas2anios_4"       "cluster.1.nojerar.cluster"
 ```
-  
-Vemos que por defecto el nombre que le asigna a la variable es CLUSTER.1.NOJERAR.CLUSTER, largo y que puede ser difícil de manejar. Veamos unas instrucciones de R para renombrar variables en un _data.frame_ :  
+
+Vemos que por defecto el nombre que le asigna a la variable es CLUSTER.1.NOJERAR.CLUSTER, largo y que puede ser difícil de manejar. Veamos unas instrucciones de R para renombrar variables en un _data.frame_ :
 
 ```r
 > length(colnames(analisis.ok))
@@ -282,43 +282,43 @@ Vemos que por defecto el nombre que le asigna a la variable es CLUSTER.1.NOJERAR
 
 [16] "dif_Tas_mas2anios_2"       "dif_Tas_mas2anios_3"       "dif_Tas_mas2anios_4"       "cluster"
 ```
-  
-Ahora trabajaremos con la variable cluster del objeto _analisis.ok_. Hemos cambiado con NAMES el elemento 19 del vector de nombres del _data.frame análisis.ok_. Y procede estudiar una a una las variables con las que se ha realizado el agrupamiento no jerárquico. Pero lo principal es el tamaños de los grupos:  
+
+Ahora trabajaremos con la variable cluster del objeto _analisis.ok_. Hemos cambiado con NAMES el elemento 19 del vector de nombres del _data.frame análisis.ok_. Y procede estudiar una a una las variables con las que se ha realizado el agrupamiento no jerárquico. Pero lo principal es el tamaños de los grupos:
 
 ```r
 package 'RODBC' successfully unpacked and MD5 sums checked
 ```
-0  
-Empleamos la función TAPPLY con _length_. Es el grupo 2 el más numeroso en contraposición del 4 y el 3 que aglutinan muy pocas ciudades.Veamos las medias de las variables en estudio por cluster:  
+0
+Empleamos la función TAPPLY con _length_. Es el grupo 2 el más numeroso en contraposición del 4 y el 3 que aglutinan muy pocas ciudades.Veamos las medias de las variables en estudio por cluster:
 
 ```r
 package 'RODBC' successfully unpacked and MD5 sums checked
 ```
-1  
-Vemos que los municipios del grupo 2 han seguido un precio al alza de la vivienda de la vivienda con menos de 2 años durante 2008. Destacar del grupo 3 el fuerte alza de los precios del metro cuadrado en el último trimestre de 2008. Continuemos con el resto:  
+1
+Vemos que los municipios del grupo 2 han seguido un precio al alza de la vivienda de la vivienda con menos de 2 años durante 2008. Destacar del grupo 3 el fuerte alza de los precios del metro cuadrado en el último trimestre de 2008. Continuemos con el resto:
 
 ```r
 package 'RODBC' successfully unpacked and MD5 sums checked
 ```
-2  
-Variaciones mucho menores para la vivienda antigua. Destacan las subidas del T4 de 2008 de los grupos 3 y 6. No parece ser el precio de la vivienda antigua una variable que agrupe los municipios. Comencemos con las tasaciones, altamente correlacionadas con el número de hipotecas concedidas:  
+2
+Variaciones mucho menores para la vivienda antigua. Destacan las subidas del T4 de 2008 de los grupos 3 y 6. No parece ser el precio de la vivienda antigua una variable que agrupe los municipios. Comencemos con las tasaciones, altamente correlacionadas con el número de hipotecas concedidas:
 
 ```r
 package 'RODBC' successfully unpacked and MD5 sums checked
 ```
-3  
-El grupo 3 se diferencia por el increíble aumento en el número de las tasaciones ¿problemas de promotoras? Los grupos 4 y 6 hacen lo mismo pero en el último trimestre, siendo el grupo 4 el que tiene un aumento del 1300%. El grupo 1 el aumento lo sufre en T3 y el 5 aunque también tiene un pico en T3 permanece más lineal. Veamos las viviendas de segunda mano:  
+3
+El grupo 3 se diferencia por el increíble aumento en el número de las tasaciones ¿problemas de promotoras? Los grupos 4 y 6 hacen lo mismo pero en el último trimestre, siendo el grupo 4 el que tiene un aumento del 1300%. El grupo 1 el aumento lo sufre en T3 y el 5 aunque también tiene un pico en T3 permanece más lineal. Veamos las viviendas de segunda mano:
 
 ```r
 package 'RODBC' successfully unpacked and MD5 sums checked
 ```
-4  
-Fuerte aumento en T3 y T4 para todos, destaca el grupo 4 muy por encima del resto y que además ya sufrió subidas en T2 ¿embargos?  
-Con estos resultados podemos describir los 6 grupos formados:  
-_Cluster 1:_ Municipios muy estables pero con alguna promoción en apuros.  
-_Cluster2:_ El grupo más numeroso, es muy estable también pero no sufren un aumento espectacular de las tasaciones de vivienda nueva que pueden ser propias de promotores incapaces de hacer frente a la crisis.  
-_Cluster 3:_ Un grupo de 8 municipios donde sigue en aumento el precio de la vivienda y también tienen un aumento exponencial de las tasaciones de vivienda nueva, donde menos ha afectado la crisis.  
-_Cluster 4:_ El más pequeño de todos. Tiene un descomunal aumento de las tasaciones de vivienda antigua y bajaron sus precios en T4. Puede ser donde más daño hace la crisis.  
-_Cluster 5:_ Un grupo numeroso con un precio estable pero donde bajaron las tasaciones de viviendas nuevas. Son zonas donde el boom del ladrillo no fue tan intenso.  
-_Cluster 6:_ El grupo que comenzó 2008 con subidas de precios en viviendas nuevas y bajada en antiguas. Tuvo muchas tasaciones de antiguas en T3 pero las nuevas bajaron. Zona de fuerte parón en la construcción pero sin parón económico.  
+4
+Fuerte aumento en T3 y T4 para todos, destaca el grupo 4 muy por encima del resto y que además ya sufrió subidas en T2 ¿embargos?
+Con estos resultados podemos describir los 6 grupos formados:
+_Cluster 1:_ Municipios muy estables pero con alguna promoción en apuros.
+_Cluster2:_ El grupo más numeroso, es muy estable también pero no sufren un aumento espectacular de las tasaciones de vivienda nueva que pueden ser propias de promotores incapaces de hacer frente a la crisis.
+_Cluster 3:_ Un grupo de 8 municipios donde sigue en aumento el precio de la vivienda y también tienen un aumento exponencial de las tasaciones de vivienda nueva, donde menos ha afectado la crisis.
+_Cluster 4:_ El más pequeño de todos. Tiene un descomunal aumento de las tasaciones de vivienda antigua y bajaron sus precios en T4. Puede ser donde más daño hace la crisis.
+_Cluster 5:_ Un grupo numeroso con un precio estable pero donde bajaron las tasaciones de viviendas nuevas. Son zonas donde el boom del ladrillo no fue tan intenso.
+_Cluster 6:_ El grupo que comenzó 2008 con subidas de precios en viviendas nuevas y bajada en antiguas. Tuvo muchas tasaciones de antiguas en T3 pero las nuevas bajaron. Zona de fuerte parón en la construcción pero sin parón económico.
 Con ejemplos podríamos estudiar las conclusiones. Hasta aquí este post que no va en la línea de post cortos de AyD pero que sirve de introducción al análisis cluster con R. Vamos a trabajar al menos 3 ejemplos más porque este tipo de trabajos engloba muchos usos de funciones imprescindibles de conocer y manejar en R. Como siempre para dudas o sugerencias… rvaquerizo@analisisydecision.es

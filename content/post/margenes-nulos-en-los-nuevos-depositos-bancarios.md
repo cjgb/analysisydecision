@@ -16,7 +16,7 @@ tags:
 - Banca
 - crisis
 title: Márgenes nulos en los nuevos depósitos bancarios
-url: /margenes-nulos-en-los-nuevos-depositos-bancarios/
+url: /blog/margenes-nulos-en-los-nuevos-depositos-bancarios/
 ---
 
 «Muchas entidades han tirado la casa por la ventana y han ofrecido tipos de interés tan elevados que difícilmente podrán recuperar esa inversión”. Cita sacada de [aquí](http://www.cotizalia.com/cache/2008/07/24/4_preocupacion_banco_espana_altos_intereses_banca.html). La batalla por el pasivo ha comenzado en el mercado bancario nacional. La exposición del entorno bancario al cemento y el ladrillo hacen temer una falta de liquidez, las entidades financieras necesitan pasivo para evitar un posible «[corralito](http://es.wikipedia.org/wiki/Corralito)«. ¿Alquien piensa que la gran banca no ha provisionado los problemas de esta exposición? ¿Alguien piensa que  la banca va a tener problemas de liquidez? Por muy vertiginosa que sea la caida el sistema financiero español está preparado.

@@ -13,7 +13,7 @@ related:
 slug: el-seguro-de-salud-la-futura-guerra
 tags: []
 title: 'El seguro de salud: la futura guerra'
-url: /el-seguro-de-salud-la-futura-guerra/
+url: /blog/el-seguro-de-salud-la-futura-guerra/
 ---
 
 Acabo de darme una vuelta por ICEA y me encuentro el siguiente cuadro:

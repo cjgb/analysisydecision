@@ -13,7 +13,7 @@ related:
 slug: actor-senil-wordle-castellano
 tags: []
 title: 'Actor senil: Las mejores palabras para iniciar en Wordle en castellano'
-url: /actor-senil-wordle-castellano/
+url: /blog/actor-senil-wordle-castellano/
 ---
 
 Creo que cualquier persona con conocimientos de estadística cada vez que juega a un juego de probabilidades (_¿el 99.9% de los juegos existentes?_) lo primero que piensa, por deformación profesional, es en cómo inferir un **patrón ganador** para optimizar sus movimientos.
@@ -30,7 +30,7 @@ Por lo tanto, como además de actuario de profesión soy hacker de afición, me 
 
 La idea es encontrar las letras que, al igual que las casillas del _Colonos de Catán_ , maximen mi probabilidad de éxito. Para ello, importo las librerías que voy a utilizar y el diccionario de palabras de la RAE (646.616 palabras). A continuación, selecciono aquellas palabras con longitud igual a 5 y quito las palabras duplicadas ya que al eliminar las tildes se duplicaban palabras (9.458 palabras). Creo la gráfica de frecuencia de letras usando mi diccionario de palabras válidas:
 
-[![](/images/2022/02/grafica_rae-1024x511.png)](/images/2022/02/grafica_rae.png)  
+[![](/images/2022/02/grafica_rae-1024x511.png)](/images/2022/02/grafica_rae.png)
 Por tanto, mi orden de vocales será: A-E-O-I-U y de consonantes: R-N-S-L-C-T-D-P-M-B-G-F-J-H-V-Z-Y-X-Q-K-W.
 
 Con el dataframe de palabras válidas, creo otro de palabras válidas con letras únicas que no se repitan dentro de la palabra (5.456 palabras) para definir una función (_crea_wordle()_) que cree con 2 vocales y 3 consonantes la combinación de letras que se formen, sin reemplazamiento, mis dos palabras iniciales: ACTOR y SENIL.
@@ -47,7 +47,7 @@ Una vez llegamos a este punto, pongamos a prueba nuestro script. El funcionamien
 
 ### Ejemplo 1
 
-[![](/images/2022/02/actor_senil_pre-300x122.png)](/images/2022/02/actor_senil_pre.png)  
+[![](/images/2022/02/actor_senil_pre-300x122.png)](/images/2022/02/actor_senil_pre.png)
 Este caso es demasiado fácil ya que, con la información recibida, las posibles palabras dentro de la RAE se limita a una:
 
 ```r
@@ -56,7 +56,7 @@ ganadora = list(filter(lambda x:(x[:2]=='se'), posibles.Palabras_de_5))
 ganadora = list(filter(lambda x:('a' and 'c' and 't' in x), ganadora))
 print(ganadora)
 ```
- 
+
 
 **[‘secta’]**
 
@@ -64,7 +64,7 @@ print(ganadora)
 
 ### Ejemplo 2
 
-[![](/images/2022/02/actor_senil_2_pre-300x122.png)](/images/2022/02/actor_senil_2_pre.png)  
+[![](/images/2022/02/actor_senil_2_pre-300x122.png)](/images/2022/02/actor_senil_2_pre.png)
 Aquí, tengo que hacer uso del resto de letras dentro de mi función _crea_wordle()_ para obtener las siguientes palabras candidatas:
 
 ```r
@@ -74,7 +74,7 @@ ganadora = list(filter(lambda x:(x[4]=='r'), ganadora))
 ganadora = list(filter(lambda x:('a' in x), ganadora))
 print(ganadora)
 ```
- 
+
 
 **[‘aunar’, ‘banar’, ‘danar’, ‘dunar’, ‘fanar’, ‘funar’, ‘ganar’, ‘manar’, ‘punar’, ‘runar’]**
 
@@ -87,8 +87,8 @@ ganadora = list(filter(lambda x:(x[4]=='r'), ganadora))
 ganadora = list(filter(lambda x:('a' in x), ganadora))
 print(ganadora)
 ```
- 
 
-**[‘ganar’]**  
-[![](/images/2022/02/actor_senil_2-250x300.png)](/images/2022/02/actor_senil_2.png)  
+
+**[‘ganar’]**
+[![](/images/2022/02/actor_senil_2-250x300.png)](/images/2022/02/actor_senil_2.png)
 En conclusión, y a la espera de verificar como influiría el posicionamiento, podemos decir que **ACTOR y SENIL** serían las mejores palabras para comenzar en el Wordle. **LICOR y ANTES** si hubiésemos nacido en el siglo XVII.

@@ -14,7 +14,7 @@ related:
 slug: '%c2%bftruco-leer-sas7bdat-sin-sas'
 tags: []
 title: ¿Truco? Leer .sas7bdat sin SAS
-url: /c2bftruco-leer-sas7bdat-sin-sas/
+url: /blog/c2bftruco-leer-sas7bdat-sin-sas/
 ---
 
 Me han pasado una tabla SAS y no sé como llevármela a SPSS. Este problema es habitual y ha traído de cabeza a más de uno. Es lo que tienen estas herramientas tan propietarias, si en tu organización tienen WPS (bueno bonito y barato) esto no pasa. En fin, me ha llegado esta cuestión y voy a plantearos una posible forma de resolverla. Podríamos usar los formatos XPORT, la persona que me pasa la tabla emplea el libname xport y me envía un fichero .xpt, sin embargo esto no pasa. Casi siempre nos mandan el .sas7bdat y tenemos un problema.

@@ -20,7 +20,7 @@ tags:
 - plot.nnet
 - redes neuronales
 title: Medir la importancia de las variables en una red neuronal con R
-url: /medir-la-importancia-de-las-variables-en-una-red-neuronal-con-r/
+url: /blog/medir-la-importancia-de-las-variables-en-una-red-neuronal-con-r/
 ---
 
 [![](/images/2014/09/importancia_variables-300x236.png)](/images/2014/09/importancia_variables.png)
@@ -35,12 +35,12 @@ source(url(‘https://gist.githubusercontent.com/fawda123/6206737/raw/d6f365c283
 
 Por cierto, qué manía tienen algunos con usar devtools. Haciendo sólo:
 
-#Dejamos los nombres de los coeficientes de una forma más adecuada  
-tr=nnet.fitcoefnames  
-tr=substr(tr,16,30)  
+#Dejamos los nombres de los coeficientes de una forma más adecuada
+tr=nnet.fitcoefnames
+tr=substr(tr,16,30)
 nnet.fitcoefnames=tr
 
-#Pintamos la importancia de las variables  
+#Pintamos la importancia de las variables
 gar.fun(‘medv’,nnet.fit)
 
 Obtenemos el gráfico con el que comienza esta entrada al blog. Ni se os ocurra comenzar a tocar este gráfico con los temas de ggplot2, somos gente productiva. Vemos como a la izquierda del gráfico se sitúan las variables con mayor peso negativo y a la derecha las variables con mayor peso positivo. Podemos eliminar algunas variables y seguramente el comportamiento predictivo del modelo no empeoraría.

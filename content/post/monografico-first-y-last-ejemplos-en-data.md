@@ -15,7 +15,7 @@ related:
 slug: monografico-first-y-last-ejemplos-en-data
 tags: []
 title: Monográfico. FIRST. y LAST. ejemplos en DATA
-url: /monografico-first-y-last-ejemplos-en-data/
+url: /blog/monografico-first-y-last-ejemplos-en-data/
 ---
 
 [Ya trabajamos en un monográfico anterior con datos agrupados en SAS](https://analisisydecision.es/monografico-datos-agrupados-en-sas/). Cuando empleamos BY tenemos dos variables dentro del paso data con las que trabajaremos habitualmente FIRST. y LAST. A continuación vamos a plantear un ejemplo de uso para entender mejor su funcionamiento. Partimos de una simulación de una catera de una CIA asguradora que tiene 1.000 pólizas y está a nivel de póliza, renovación y suplemento. Para la realización de diversos análisis necesitamos marcar las pólizas de nueva producción, marcar la anualidad, determinar la prima en el momento anterior a la renovación y la prima que tienen a día de hoy.

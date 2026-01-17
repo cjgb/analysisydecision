@@ -17,7 +17,7 @@ tags:
 - ''
 - sas7bdat
 title: Paquete sas7bdat de R. Me pongo con ello
-url: /paquete-sas7bdat-de-r-me-pongo-con-ello/
+url: /blog/paquete-sas7bdat-de-r-me-pongo-con-ello/
 ---
 
 [En su día en esta bitácora se habló de la función sas7bdat de R](https://analisisydecision.es/lectura-de-ficheros-sas7bdat-de-sas-directamente-con-r/). Ahora [han realizado un paquete de R a partir de esa base](http://sas-and-r.blogspot.com/2011/07/really-useful-r-package-sas7bdat.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+SASandR+%28SAS+and+R%29). Lo tenéis en el [blog SAS and R](http://sas-and-r.blogspot.com/). De momento es [experimental en el CRAN](http://cran.r-project.org/web/packages/sas7bdat/index.html).

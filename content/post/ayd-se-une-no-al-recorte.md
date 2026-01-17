@@ -13,7 +13,7 @@ related:
 slug: ayd-se-une-no-al-recorte
 tags: []
 title: AyD se une. No al recorte
-url: /ayd-se-une-no-al-recorte/
+url: /blog/ayd-se-une-no-al-recorte/
 ---
 
 El siguiente capítulo del manual de R espero dedicárselo al [«No a las tijeras»](http://aldea-irreductible.blogspot.com/2009/10/la-ciencia-en-espana-no-necesita.html)

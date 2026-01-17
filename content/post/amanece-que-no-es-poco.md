@@ -14,7 +14,7 @@ related:
 slug: amanece-que-no-es-poco
 tags: []
 title: Amanece que no es poco
-url: /amanece-que-no-es-poco/
+url: /blog/amanece-que-no-es-poco/
 ---
 
 Hace 20 años que se rodó una película subabsurda y fantástica llamada: Amanece que no es poco. No me corresponde escribir sobre cine pero esta genial película tiene uno de los mejores diálogos de la historia (sacado de <http://es.wikipedia.org/wiki/Amanece,_que_no_es_poco>): «Se te está muriendo divinamente, te lo juro! Tenía ganas de que vinieras para poder decírtelo. Puedes estar orgulloso, ¡de verdad!, de los años que llevo de médico nunca había visto a nadie morirse tan bien como se está muriendo tu padre. Qué irse, qué apagarse, con qué parsimonia. Estoy disfrutando que no te lo puedes ni imaginar… — ¿Y él sufre? — Por fuerza, seguro que sí, ¿no ves que se le está yendo la vida?»

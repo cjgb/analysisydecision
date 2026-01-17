@@ -19,7 +19,7 @@ tags:
 - ranuni
 - while
 title: Trucos SAS. Muestras aleatorias con y sin reemplazamiento
-url: /trucos-sas-muestras-aleatorias-con-y-sin-reemplazamiento/
+url: /blog/trucos-sas-muestras-aleatorias-con-y-sin-reemplazamiento/
 ---
 
 Un ejemplo típico de SAS pero que creo que puede ayudar a conocer algunas funciones de SAS. Los ejemplos que planteo a continuación crean un dataset con 10.000 observaciones y sobre él vamos a crear dos subconjuntos de datos, dos muestras aleatorias del dataset de partida, una muestra sin reemplazamiento y otra muestra con reemplazamiento. Son dos ejemplos muy sencillos. Como siempre creo un dataset de forma aleatoria que me sirve de base para plantearos el truco:
@@ -47,17 +47,17 @@ El dataset de partida tiene 10.000 observaciones y dos variables una de ellas cr
 %let tamanio=300;
 ```
 
-data aleat1;  
-set ejemplo;  
-aleat=rand("uniform");  
+data aleat1;
+set ejemplo;
+aleat=rand("uniform");
 run;
 
 proc sort data=aleat1; by aleat; run;
 
-data aleat1;  
-set aleat1;  
-if _n_>&tamanio. then stop;  
-drop aleat;  
+data aleat1;
+set aleat1;
+if _n_>&tamanio. then stop;
+drop aleat;
 run;
 
 Creamos una variable aleatoria con la función _rand_ que no necesita raiz para generar números aleatorios en este caso uniform (0,1), ordenamos por ella y seleccionamos una muestra que nos define la macrovariable _tamanio_. Ahora la muestra aleatoria será con reemplazamiento:
@@ -76,34 +76,34 @@ data aleat2;
 run;
 ```
 
-*NUMERO DE OBSERVACIONES DEL DATASET DE PARTIDA  
-LONGITUD DEL NUMERO;  
-proc sql noprint;  
-select compress(put(count(*),best32.)) into:num_obs  
-from ejemplo;  
+*NUMERO DE OBSERVACIONES DEL DATASET DE PARTIDA
+LONGITUD DEL NUMERO;
+proc sql noprint;
+select compress(put(count(*),best32.)) into:num_obs
+from ejemplo;
 quit;
 
-data select;  
-retain para;  
-select=0;  
-para=0;  
-do while (para<&tamanio.);  
-select=ceil(rand("uniform")*10**length(compress("&num_obs"))-1);  
-if 1<=select<=&num_obs. then do;  
-para=para+1;  
-output;  
-end;  
-end;  
-drop para;  
+data select;
+retain para;
+select=0;
+para=0;
+do while (para<&tamanio.);
+select=ceil(rand("uniform")*10**length(compress("&num_obs"))-1);
+if 1<=select<=&num_obs. then do;
+para=para+1;
+output;
+end;
+end;
+drop para;
 run;
 
 proc sort data=select; by select; run;
 
-data aleat2;  
-merge aleat2 select (in=a);  
-by select;  
-if a;  
-drop select;  
+data aleat2;
+merge aleat2 select (in=a);
+by select;
+if a;
+drop select;
 run;
 
 Vemos que la metodología es distinta. En este caso creamos una tabla con 300 registros que contiene 300 números aleatorios entre 1 y el número de observaciones del dataset de partida que calculamos mediante un _proc sql_. Puede resultar interesante como se emplea la función _length_ para identificar las cifras de un número. Como este número aleatorio puede repetirse obtenemos el reemplazamiento deseado posteriormente hacemos el cruce con _merge_ y ya tenemos nuestra muestra aleatoria. El ejemplo es sencillo pero a los menos expertos puede ayudarles a conocer los bucles con _while_

@@ -16,7 +16,7 @@ tags:
 - tutorial
 - weminars
 title: Dos páginas con recursos para introducirse en R
-url: /dos-paginas-con-recursos-para-introducirse-en-r/
+url: /blog/dos-paginas-con-recursos-para-introducirse-en-r/
 ---
 
 En la lista de ayuda de R se han anunciado recientemente dos páginas más con recursos para aprender R. Específicamente, se trata de páginas que contienen _webminars_. Aunque también tratan otros asuntos de manera menos peliculera.

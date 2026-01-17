@@ -19,7 +19,7 @@ tags:
 - Begraphic
 - gráfico de velocímetro
 title: Gráficos de velocímetros con Excel hechos con Begraphic
-url: /graficos-de-velocimetros-con-excel-hechos-con-begraphic/
+url: /blog/graficos-de-velocimetros-con-excel-hechos-con-begraphic/
 ---
 
 [En el blog ya hemos hablado de Begraphic](https://analisisydecision.es/begraphic-un-add-in-para-excel-muy-interesante/). Ahora vamos a descubrir algunas de sus posibilidades. En concreto vamos a realizar gráficos del tipo velocímetro con Excel de una forma muy sencilla. Tan sencilla que vamos a partir de tener instalado Begraphic y de estos datos:

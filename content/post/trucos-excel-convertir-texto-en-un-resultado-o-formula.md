@@ -14,7 +14,7 @@ related:
 slug: trucos-excel-convertir-texto-en-un-resultado-o-formula
 tags: []
 title: Trucos Excel. Convertir texto en un resultado o fórmula
-url: /trucos-excel-convertir-texto-en-un-resultado-o-formula/
+url: /blog/trucos-excel-convertir-texto-en-un-resultado-o-formula/
 ---
 
 [![](/images/2020/09/truco_excel_texto_a_formula.png)](/images/2020/09/truco_excel_texto_a_formula.png)
@@ -29,6 +29,6 @@ Application.Volatile
 Eval = Evaluate(Ref)
 End Function
 ```
- 
+
 
 Tiene muchos años pero podéis comprobar que funciona perfectamente. Esta solución me parece más elegante que otras, aunque es probable que MS haya optado por incluir una función que haga esta labor, lo desconozco. Saludos.

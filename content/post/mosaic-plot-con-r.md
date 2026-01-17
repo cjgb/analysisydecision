@@ -15,7 +15,7 @@ related:
 slug: mosaic-plot-con-r
 tags: []
 title: Mosaic plot con R
-url: /mosaic-plot-con-r/
+url: /blog/mosaic-plot-con-r/
 ---
 
 ![](/images/2013/04/mosaic-plot-R.png)

@@ -14,7 +14,7 @@ related:
 slug: revision-de-las-iii-jornadas-de-r
 tags: []
 title: Revisión de las III Jornadas de R
-url: /revision-de-las-iii-jornadas-de-r/
+url: /blog/revision-de-las-iii-jornadas-de-r/
 ---
 
 El día 18 de noviembre finalizaron las **III jornadas de R** y mis impresiones no pueden ser más positivas. A nivel organizativo todo funcionó a la perfección, algo muy meritorio teniendo en cuenta que los organizadores no son expertos en el tema y es muy difícil organizar un evento con 200 personas inscritas. En cuanto a la participación destacaría el gran número de asistentes y sus distintos ámbitos de procedencia. El contenido lejos de parecer abrumador, muchas presentaciones de 10 minutos, al final se hacía muy ameno aunque algunos ponentes eran considerablemente más aburridos que otros, en fin, no estábamos para divertirnos pero algunos se limitaban a contar fórmulas. Los talleres han sido un éxito. También quería agradecer a la EOI las aulas que pusieron a disposición del evento. Creo que el pilar del éxito de las Jornadas ha sido la EOI por instalaciones, ubicación y disposición.

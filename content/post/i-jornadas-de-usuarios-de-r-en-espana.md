@@ -15,7 +15,7 @@ tags:
 - Jornadas de R
 - R
 title: I Jornadas de usuarios de R en España
-url: /i-jornadas-de-usuarios-de-r-en-espana/
+url: /blog/i-jornadas-de-usuarios-de-r-en-espana/
 ---
 
 Me es grato anunciar que van a realizarse las primeras jornadas de usuarios de R en España. Van a tener lugar los días 26 y 27 de noviembre en la Universidad de Murcia.

@@ -14,7 +14,7 @@ related:
 slug: truco-sas-leer-datos-de-excel-con-sas-con-dde
 tags: []
 title: Truco SAS. Leer datos de Excel con SAS vía DDE
-url: /truco-sas-leer-datos-de-excel-con-sas-con-dde/
+url: /blog/truco-sas-leer-datos-de-excel-con-sas-con-dde/
 ---
 
 Si no disponemos del módulo Access to PC Files de SAS no podremos importar a SAS datos de Excel sin emplear el DDE. En un [truco anterior ](https://analisisydecision.es/truco-sas-sas-y-dde-aliados-de-excel/)vimos como vía DDE exportábamos ficheros de SAS a Excel. Empleando esta misma vía vamos a importar datos. La metodología es análoga a la empleada con la exportación. Asignamos un _filename_ dinámico a un rango de datos de Excel,  y nuestro paso data lee de ese _filename_ para crear una tabla SAS. Partimos del una tabla ejemplo con estos datos:
@@ -49,7 +49,7 @@ file sis;
 put "[File.Close()]";
 run;
 ```
- 
+
 
 Con este sistema podremos leer de tablas Excel y volcar su contenido a SAS.
 

@@ -16,7 +16,7 @@ slug: truco-r-anadir-una-marca-de-agua-a-nuestro-grafico-con-ggplot2
 tags:
 - ggplot2
 title: Truco R. Añadir una marca de agua a nuestro gráfico con ggplot2
-url: /truco-r-anadir-una-marca-de-agua-a-nuestro-grafico-con-ggplot2/
+url: /blog/truco-r-anadir-una-marca-de-agua-a-nuestro-grafico-con-ggplot2/
 ---
 
 [![](/images/2014/12/marca_agua_R.png)](/images/2014/12/marca_agua_R.png)
@@ -35,7 +35,7 @@ visitas=c(213,376, 398, 481,416, 505, 771, 883,686, 712 ,
 13869,11740,14887,17021,16827)
 serie <- ts(visitas, start=c(2008, 4), end=c(2014, 11), frequency=12)
 ```
- 
+
 
 Hemos creado un objeto serie temporal del tipo ts y aprovecho esta entrada para contaros como transformar un objeto ts en un data frame. Recordamos que ggplot2 no puede graficar objetos ts (por lo menos hasta donde yo sé). Para la transformación del objeto emplearemos la función index del paquete zoo y mi querida función melt de reshape2:
 
@@ -46,7 +46,7 @@ library(zoo)
 serie.nueva <- data.frame( anio = index(serie),
                            visitas = melt(serie)$value)
 ```
- 
+
 
 Ahora disponemos de un data frame con el que podemos pintar la serie:
 
@@ -57,12 +57,12 @@ graf <- ggplot(data=serie.nueva,aes(anio,visitas))  + geom_line() +
   labs(list(title = "Visitas a www.analsisisydecision.es",
         x = "Mes de la visita", y = "Número de visitas"))
 ```
- 
+
 ```r
 graf + annotate("text", x = Inf, y = -Inf, label = "www.analisisydecision.es",
                 hjust=1, vjust=-0.30, col="blue", cex=7, alpha = 0.3)
 ```
- 
+
 
 Para pintar la marca de agua empleamos annotate y añadimos un texto:
 
@@ -70,7 +70,7 @@ Para pintar la marca de agua empleamos annotate y añadimos un texto:
 graf + annotate("text", x = Inf, y = -Inf, label = "www.analisisydecision.es",
 hjust=1, vjust=-0.30, col="blue", cex=7, alpha = 0.3)
 ```
- 
+
 
 Buscamos una correcta colocación y por supuesto ponemos una marca transparente (alpha). El resultado el que tenéis arriba. En el caso de que deseemos poner una imagen como marca de agua:
 
@@ -78,13 +78,13 @@ Buscamos una correcta colocación y por supuesto ponemos una marca transparente 
 library(grid)
 library(png)
 ```
- 
+
 ```r
 img <- readPNG("C:\\Documents and Settings\\varaul\\Mis documentos\\Mis imágenes\\raul.PNG", FALSE)
 marca <- rasterGrob(img, interpolate=F,height=unit(3, "cm"),hjust=-1.55, vjust=2.4)
 graf + annotation_custom(marca,xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)
 ```
- 
+
 
 [![](/images/2014/12/marca_agua_R2.png)](/images/2014/12/marca_agua_R2.png)
 

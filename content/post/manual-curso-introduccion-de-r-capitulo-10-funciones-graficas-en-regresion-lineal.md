@@ -14,12 +14,12 @@ related:
 - trucos-sas-medir-la-importancia-de-las-variables-en-nuestro-modelo-de-regresion-logistica.md
 slug: manual-curso-introduccion-de-r-capitulo-10-funciones-graficas-en-regresion-lineal
 tags:
-- modelo
+- Modelos
 - R
 - regresión lineal
 title: 'Manual. Curso introducción de R. Capítulo 10: Funciones gráficas en regresión
   lineal'
-url: /manual-curso-introduccion-de-r-capitulo-10-funciones-graficas-en-regresion-lineal/
+url: /blog/manual-curso-introduccion-de-r-capitulo-10-funciones-graficas-en-regresion-lineal/
 ---
 
 En esta nueva entrega del manual de R vamos a trabajar con más ejemplos de regresión lineal haciendo especial mención a las posibilidades gráficas de R. El ejemplo de partida será el mismo empleado en el capítulo 9.
@@ -66,35 +66,35 @@ Start:  AIC=303.37
 final ~ test + exam1 + exam2 + labo
 ```
 
-Df Sum of Sq RSS AIC  
-– labo 1 99.2 19612.9 301.6  
-– test 1 561.2 20074.9 302.8  
-– exam2 1 614.5 20128.2 302.9  
-none> 19513.7 303.4  
+Df Sum of Sq RSS AIC
+– labo 1 99.2 19612.9 301.6
+– test 1 561.2 20074.9 302.8
+– exam2 1 614.5 20128.2 302.9
+none> 19513.7 303.4
 – exam1 1 3429.8 22943.5 309.3
 
-Step: AIC=301.61  
+Step: AIC=301.61
 final ~ test + exam1 + exam2
 
-Df Sum of Sq RSS AIC  
-– exam2 1 661.8 20274.7 301.2  
-none> 19612.9 301.6  
-– test 1 1645.0 21258.0 303.6  
+Df Sum of Sq RSS AIC
+– exam2 1 661.8 20274.7 301.2
+none> 19612.9 301.6
+– test 1 1645.0 21258.0 303.6
 – exam1 1 3601.0 23213.9 307.9
 
-Step: AIC=301.24  
+Step: AIC=301.24
 final ~ test + exam1
 
-Df Sum of Sq RSS AIC  
-none > 20274.7 301.2  
-– test 1 2511.8 22786.5 305.0  
+Df Sum of Sq RSS AIC
+none > 20274.7 301.2
+– test 1 2511.8 22786.5 305.0
 – exam1 1 5469.7 25744.4 310.9
 
-Call:  
+Call:
 lm(formula = final ~ test + exam1, data = datos)
 
-Coefficients:  
-(Intercept) test exam1  
+Coefficients:
+(Intercept) test exam1
 25.9520 1.3026 0.7172
 
 Con el método backward partimos del total de las variables y en función del AIC determinamos que variables deben abandonar el modelo, el proceso finaliza cuanto el AIC de referencia es menor que el AIC de las variables regresoras del modelo. Ejecutado el proceso el modelo final sería: final = 25.95 + 1.3*test + 0.71*exam1:
@@ -105,28 +105,28 @@ Con el método backward partimos del total de las variables y en función del AI
 > summary(modelo.FINAL,cor=T)   #incluimos cor=T para ver la correlación de los coeficientes
 ```
 
-Call:  
+Call:
 lm(formula = final ~ test + exam1, data = datos)
 
-Residuals:  
-Min 1Q Median 3Q Max  
+Residuals:
+Min 1Q Median 3Q Max
 -72.627 -12.149 2.902 16.257 34.708
 
-Coefficients:  
-Estimate Std. Error t value Pr(>|t|)  
-(Intercept) 25.9520 20.3937 1.273 0.209573  
-test 1.3026 0.5457 2.387 0.021143 *  
-exam1 0.7172 0.2036 3.523 0.000977 ***  
-—  
+Coefficients:
+Estimate Std. Error t value Pr(>|t|)
+(Intercept) 25.9520 20.3937 1.273 0.209573
+test 1.3026 0.5457 2.387 0.021143 *
+exam1 0.7172 0.2036 3.523 0.000977 ***
+—
 Signif. codes: 0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-Residual standard error: 20.99 on 46 degrees of freedom  
-Multiple R-squared: 0.451, Adjusted R-squared: 0.4271  
+Residual standard error: 20.99 on 46 degrees of freedom
+Multiple R-squared: 0.451, Adjusted R-squared: 0.4271
 F-statistic: 18.89 on 2 and 46 DF, p-value: 1.024e-06
 
-Correlation of Coefficients:  
-(Intercept) test  
-test -0.72  
+Correlation of Coefficients:
+(Intercept) test
+test -0.72
 exam1 -0.19 -0.53
 
 En este punto es necesario comprobar si el modelo cumple las hipótesis de media del error 0, homocedasticidad, incorrelación, distribución normal del error. Para ello vamos a emplear la función gráfica plot en 4 gráficos en la misma ventana, veamos las instrucciones:
@@ -173,7 +173,7 @@ Ninguna observación supera el valor referencia 1, ninguna observación es poten
 > identify(potenciales) #identificamos sobre el gráfico el nº de la observación
 ```
 
-[  
+[
 ](/images/2008/10/c102.jpeg "Figura 10.2")
 
 Sobre el mismo gráfico hemos identificado las observaciones potencialmente más influyentes (figura 10.2). Esas son las observaciones con unos potenciales más altos, nos [![Figura 10.2](/images/2008/10/c102.thumbnail.jpeg)](/images/2008/10/c102.jpeg "Figura 10.2")interesa que las observaciones tengan un potencial similar de aproximadamente el cociente de las variables regresoras (más uno por la columna de unos de X) entre el número de observaciones. Si se dobla esta cantidad estaríamos ante casos que hay que estudiar con detalle. Si además miramos el gráfico de las distancias de Cook (Figura 10.1) vemos que las observaciones problemáticas son la número 45 y 36. Estos casos podían influir en nuestro modelo y distorsionar su correcto funcionamiento. En sucesivas entregas del manual analizaremos más ejemplos de regresión lineal. Ahora ya disponemos de más herramientas para comenzar a realizar modelos más complejos.

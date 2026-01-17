@@ -14,7 +14,7 @@ related:
 slug: un-nuevo-blog-sobre-sas-en-espanol
 tags: []
 title: Un nuevo blog sobre SAS en español
-url: /un-nuevo-blog-sobre-sas-en-espanol/
+url: /blog/un-nuevo-blog-sobre-sas-en-espanol/
 ---
 
 Buenas noticias. Tenemos un nuevo blog sobre SAS en español:

@@ -17,7 +17,7 @@ tags:
 - tratamiento
 - Valores perdidos
 title: ¿Qué hacer con los valores perdidos de nuestras variables?
-url: /c2bfque-hacer-con-los-valores-perdidos-de-nuestras-variables/
+url: /blog/c2bfque-hacer-con-los-valores-perdidos-de-nuestras-variables/
 ---
 
 Creo que casi todos los que han hecho modelos matemáticos alguna vez en su vida se han encontrado con la pregunta que titula este breve artículo. Aunque más que artículo es una reflexión y sobre todo espero que al final sea un pequeño foro de ideas y de métodos con los que hacer frente a este problema.

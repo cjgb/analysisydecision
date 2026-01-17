@@ -13,7 +13,7 @@ related:
 slug: busquedas-de-sql-frente-a-busquedas-de-hadoop
 tags: []
 title: Búsquedas de SQL frente a búsquedas de Hadoop
-url: /busquedas-de-sql-frente-a-busquedas-de-hadoop/
+url: /blog/busquedas-de-sql-frente-a-busquedas-de-hadoop/
 ---
 
 [![](/images/2013/04/busqueda-sql-hadoop-300x90.png)](/images/2013/04/busqueda-sql-hadoop.png)

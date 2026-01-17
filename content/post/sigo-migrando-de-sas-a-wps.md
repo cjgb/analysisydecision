@@ -17,7 +17,7 @@ tags:
 - SAS
 - WPS
 title: Sigo migrando de SAS a WPS
-url: /sigo-migrando-de-sas-a-wps/
+url: /blog/sigo-migrando-de-sas-a-wps/
 ---
 
 Sigo con una hipotética migración de SAS a WPS. Fundamental, ¿qué sucede cuando leo tablas SAS? ¿Puedo leerlas, al fin y al cabo son propietarias? Ningún problema, podemos leer perfectamente tablas SAS. Si trabajamos en una librería con tablas SAS los ficheros generados serán .sas7bdat sin embargo si trabajamos en una librería sin tablas SAS los archivos generados serán .wpd; esto nos facilita trabajar conjuntamente con WPS y SAS, esto nos facilita una hipotética migración de aplicaciones. Curiosamente una tabla .wpd es ligeramente más pequeña. Por supuesto _compress=yes_ no es problema y WPS nos permite comprimir tablas.

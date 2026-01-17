@@ -17,7 +17,7 @@ tags:
 - Julia
 title: Primeros pasos con Julia. Importar un csv y data management básico con un data
   frame
-url: /primeros-pasos-con-julia-importar-un-csv-y-basicos-con-un-data-frame/
+url: /blog/primeros-pasos-con-julia-importar-un-csv-y-basicos-con-un-data-frame/
 ---
 
 Empiezo a trabajar con el lenguaje Julia ante la insistencia de [JL Cañadas](https://muestrear-no-es-pecado.netlify.app/). Lo primero es comentar que este trabajo está hecho en Julia 1.6.2 con una máquina Ubuntu 18, para instalar Julia en Ubuntu:
@@ -40,7 +40,7 @@ Pkg.add("DataFrames")
 using CSV
 using DataFrames
 ```
- 
+
 
 ## Importando un csv a un data frame con Julia
 
@@ -53,7 +53,7 @@ url="https://raw.githubusercontent.com/uiuc-cse/data-fa14/gh-pages/data/iris.csv
 res = HTTP.get(url)
 iris = DataFrame(CSV.File(res.body))
 ```
- 
+
 
 HTTP parece lo más adecuado para leer un csv desde una URL, hay otras alternativas a explorar. Obtenemos el csv y al obtenerlo lo guardamos en un data frame leyendo con CSV.File y transformando a data frame con DataFrame. Ya disponemos de un conjunto de datos de trabajo. Para hacer el típico head al data frame podemos hacer first(iris, 3) y veremos las 3 primeras filas. Si deseamos hacer lo más sencillo, una media de una columna del data frame:
 
@@ -61,7 +61,7 @@ HTTP parece lo más adecuado para leer un csv desde una URL, hay otras alternati
 using Statistics
 mean(iris.sepal_length)
 ```
- 
+
 
 ## Data management básico con Julia
 
@@ -81,7 +81,7 @@ Como en otras entradas del blog veremos:
 columnas = ["sepal_length", "sepal_width"]
 iris2 = iris[:,columnas]
 ```
- 
+
 
 Si deseamos eliminar:
 
@@ -90,7 +90,7 @@ columnas = ["sepal_length", "sepal_width"]
 iris3 = iris[:,Not(columnas)]
 size(iris3)
 ```
- 
+
 
 ### Seleccionar registros en data frames con Julia
 
@@ -102,7 +102,7 @@ iris4=iris
 @linq iris4 |> where(:sepal_length .> 5)
 first(iris4,3)
 ```
- 
+
 
 Estas líneas son importantes porque son la introducción a DataFramesMeta y la aparición del pipe para construirnos nuestros procesos, en este caso se crea otro data frame y sobre él realizamos la consulta. Y si combinamos DataFramesMeta con Query tenemos un código interesante:
 
@@ -117,9 +117,9 @@ iris5 = @from i in iris begin
        end
 first(iris5,4)
 ```
- 
 
-Ojo este código. Como se aprecia tenemos cláusula where y select donde hemos aprovechado para renombrar una variable de la tabla iris a la que hemos «asignado el álias» i. Al final con collect indicamos el tipo de data set de salida. 
+
+Ojo este código. Como se aprecia tenemos cláusula where y select donde hemos aprovechado para renombrar una variable de la tabla iris a la que hemos «asignado el álias» i. Al final con collect indicamos el tipo de data set de salida.
 
 ## Crear nuevas variables en data frames con Julia
 
@@ -134,7 +134,7 @@ iris6 = @from i in iris begin
        end
 first(iris6,4)
 ```
- 
+
 
 Emplear pipes para realizar un proceso:
 
@@ -142,14 +142,14 @@ Emplear pipes para realizar un proceso:
 iris7 = iris |> @mutate(dist_media = _.sepal_length/media) |> DataFrame
 first(iris7, 3)
 ```
- 
+
 
 O de forma «atómica», no sé bien como denominar:
 
 ```r
 iris7.nueva = iris[:,"Sepal.Length"] / mean(iris[:, "Sepal.Width"])
 ```
- 
+
 
 Se aprecian distintas formas de manipular data frames con Julia.
 
@@ -164,7 +164,7 @@ url="https://raw.githubusercontent.com/uiuc-cse/data-fa14/gh-pages/data/iris.csv
 res = HTTP.get(url)
 iris = DataFrame(CSV.File(res.body))
 ```
-0 
+0
 
 Otro medio de realizar este trabajo es el uso de trasnform:
 
@@ -175,9 +175,9 @@ url="https://raw.githubusercontent.com/uiuc-cse/data-fa14/gh-pages/data/iris.csv
 res = HTTP.get(url)
 iris = DataFrame(CSV.File(res.body))
 ```
-1 
+1
 
-Estoy buscando otros medios de hacer esta tarea, no me gusta esta sintaxis. 
+Estoy buscando otros medios de hacer esta tarea, no me gusta esta sintaxis.
 
 ### Ordenar registros en data frames con Julia
 
@@ -188,7 +188,7 @@ url="https://raw.githubusercontent.com/uiuc-cse/data-fa14/gh-pages/data/iris.csv
 res = HTTP.get(url)
 iris = DataFrame(CSV.File(res.body))
 ```
-2 
+2
 
 ### Renombrar variables en data frames con Julia
 
@@ -199,6 +199,6 @@ url="https://raw.githubusercontent.com/uiuc-cse/data-fa14/gh-pages/data/iris.csv
 res = HTTP.get(url)
 iris = DataFrame(CSV.File(res.body))
 ```
-3 
+3
 
 Como siempre, se trata de recoger en pocas líneas el 60% de las tareas que haremos con Julia. Espero que sirva de referencia.

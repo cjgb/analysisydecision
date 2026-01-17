@@ -17,10 +17,10 @@ slug: trabajar-con-los-datos-de-power-bi-desde-r-para-hacer-un-modelo-de-regresi
 tags: []
 title: Trabajar con los datos de Power BI desde R para hacer un modelo de regresión
   lineal
-url: /trabajar-con-los-datos-de-power-bi-desde-r-para-hacer-un-modelo-de-regresion-lineal/
+url: /blog/trabajar-con-los-datos-de-power-bi-desde-r-para-hacer-un-modelo-de-regresion-lineal/
 ---
 
-Vídeo dedicado al uso de la librería de R pbix. Responde a una duda planteada por un lector que deseaba realizar un modelo de regresión lineal con Power BI. Imagino que se podrá programar en DAX, pero es mejor llevar los datos, las tablas necesarias, de Power BI a un software específico para poder realizar el modelo como es Python o R en este caso. 
+Vídeo dedicado al uso de la librería de R pbix. Responde a una duda planteada por un lector que deseaba realizar un modelo de regresión lineal con Power BI. Imagino que se podrá programar en DAX, pero es mejor llevar los datos, las tablas necesarias, de Power BI a un software específico para poder realizar el modelo como es Python o R en este caso.
 
 Desde Power BI podemos realizar scripts de R pero recomiendo este primer paso para crear y validar el modelo, posteriormente podemos poner el programa de R con nuestra regresión lineal directamente en Power BI. El código empleado es:
 

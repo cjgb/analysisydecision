@@ -21,10 +21,10 @@ tags:
 - PROC LOGISTIC
 - regresión logística
 title: Monográfico. Un poco de PROC LOGISTIC
-url: /monografico-un-poco-de-proc-logistic/
+url: /blog/monografico-un-poco-de-proc-logistic/
 ---
 
-El **PROC LOGISTIC** es un procedimiento de SAS que nos ha dado muchas satisfacciones a los dinosaurios como el ahora escribiente. La [regresión logística ](http://es.wikipedia.org/wiki/Regresi%C3%B3n_log%C3%ADstica)es uno de los modelos de regresión más utilizados y es bien conocido por todos mis lectores (bastante más inteligentes que yo). El problema es muy sencillo hemos de clasificar una población dividida en dos partes a partir de unas variables independientes. Su aplicación es muy extensa: patrones de fuga, propensiones a compra, salud, fraude,… Con este monográfico pretendo acercaros en 3 minutos a las sentencias básicas en **SAS** para crear un modelo de regresión logística y proponer gráficos y validaciones. En la línea habitual del blog partimos de una simulación y analizamos la sintaxis, evitamos poner las salidas para no “cargar” la entrada con tablas de poca utilidad. El ejemplo es el que sigue:  
+El **PROC LOGISTIC** es un procedimiento de SAS que nos ha dado muchas satisfacciones a los dinosaurios como el ahora escribiente. La [regresión logística ](http://es.wikipedia.org/wiki/Regresi%C3%B3n_log%C3%ADstica)es uno de los modelos de regresión más utilizados y es bien conocido por todos mis lectores (bastante más inteligentes que yo). El problema es muy sencillo hemos de clasificar una población dividida en dos partes a partir de unas variables independientes. Su aplicación es muy extensa: patrones de fuga, propensiones a compra, salud, fraude,… Con este monográfico pretendo acercaros en 3 minutos a las sentencias básicas en **SAS** para crear un modelo de regresión logística y proponer gráficos y validaciones. En la línea habitual del blog partimos de una simulación y analizamos la sintaxis, evitamos poner las salidas para no “cargar” la entrada con tablas de poca utilidad. El ejemplo es el que sigue:
 
 ```r
 data datos;
@@ -49,8 +49,8 @@ end;
 
 run;
 ```
-  
-Conjunto de datos SAS con 20000 clientes de **Banca Personal** de una entidad bancaria que están en proceso de desvinculación. Otra entidad se ha puesto en contacto con rvaquerizo@analisisydecision.es y le han realizado un modelo de potencial de pasivo, un modelo de **Share of Wallet** de clientes que está funcionando a las mil maravillas y detectan que esta entidad les está provocando una reducción de pasivo y desvinculación de algunos de sus clientes. Lo detectan gracias al mecanismo de alarmas que diseñó rvaquerizo@analisisydecision.es (un poco de publicidad que todo esto sale de mi tiempo y mi bolsillo). El equipo comercial se pone en marcha y es necesario determinar aquellos clientes que tienen una mayor probabilidad de contratar un depósito a plazo que contrareste esta fuga de pasivo. Para ello hemos de “inventarnos” qué clientes tienen un alto potencial de contratación:  
+
+Conjunto de datos SAS con 20000 clientes de **Banca Personal** de una entidad bancaria que están en proceso de desvinculación. Otra entidad se ha puesto en contacto con rvaquerizo@analisisydecision.es y le han realizado un modelo de potencial de pasivo, un modelo de **Share of Wallet** de clientes que está funcionando a las mil maravillas y detectan que esta entidad les está provocando una reducción de pasivo y desvinculación de algunos de sus clientes. Lo detectan gracias al mecanismo de alarmas que diseñó rvaquerizo@analisisydecision.es (un poco de publicidad que todo esto sale de mi tiempo y mi bolsillo). El equipo comercial se pone en marcha y es necesario determinar aquellos clientes que tienen una mayor probabilidad de contratar un depósito a plazo que contrareste esta fuga de pasivo. Para ello hemos de “inventarnos” qué clientes tienen un alto potencial de contratación:
 
 ```r
 *CREAMOS EL POTENCIAL DE COMPRA;
@@ -130,7 +130,7 @@ else contrata=0;
 run;
 ```
 
-Ahí los tenemos. _Contrata=1_ determina el cliente que adquiere ese producto. Luego determina nuestro **target**. Hemos de realizar un modelo que nos clasifique a los clientes en función de su propensión a la compra del producto. El primer paso es crear un conjunto de datos de entrenamiento y otro de validación:  
+Ahí los tenemos. _Contrata=1_ determina el cliente que adquiere ese producto. Luego determina nuestro **target**. Hemos de realizar un modelo que nos clasifique a los clientes en función de su propensión a la compra del producto. El primer paso es crear un conjunto de datos de entrenamiento y otro de validación:
 
 ```r
 *MUESTRA ALEATORIA;
@@ -160,7 +160,7 @@ SELECTION=FORWARD ctable ;
 quit;
 ```
 
-Esta puede ser la sintaxis más sencilla. Especificamos que variable(s) son grupos con CLASS, en nuestro caso la provincia, SAS automáticamente genera variables artificiales. Para hacer el modelo siempre hemos de emplear la sentencia MODEL var. Dependiente = var. Independientes, separado por / ponemos las opciones, en este caso selección hacia delante y CTABLE para ver la tabla de **sensibilidad** y **especificidad** en función del score. Con OUTMODEL creamos un conjunto de datos SAS que nos permite scorear otros datasets. En el caso que nos ocupa veamos las probabilidades asignadas al conjunto de datos de validación:  
+Esta puede ser la sintaxis más sencilla. Especificamos que variable(s) son grupos con CLASS, en nuestro caso la provincia, SAS automáticamente genera variables artificiales. Para hacer el modelo siempre hemos de emplear la sentencia MODEL var. Dependiente = var. Independientes, separado por / ponemos las opciones, en este caso selección hacia delante y CTABLE para ver la tabla de **sensibilidad** y **especificidad** en función del score. Con OUTMODEL creamos un conjunto de datos SAS que nos permite scorear otros datasets. En el caso que nos ocupa veamos las probabilidades asignadas al conjunto de datos de validación:
 
 ```r
 proc logistic inmodel=pepin ;

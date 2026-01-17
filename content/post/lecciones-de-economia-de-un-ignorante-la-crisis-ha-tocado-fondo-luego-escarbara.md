@@ -13,7 +13,7 @@ related:
 slug: lecciones-de-economia-de-un-ignorante-la-crisis-ha-tocado-fondo-luego-escarbara
 tags: []
 title: Lecciones de Economía de un ignorante. La crisis ha tocado fondo, luego escarbará
-url: /lecciones-de-economia-de-un-ignorante-la-crisis-ha-tocado-fondo-luego-escarbara/
+url: /blog/lecciones-de-economia-de-un-ignorante-la-crisis-ha-tocado-fondo-luego-escarbara/
 ---
 
 Inicio hoy una serie de de pensamientos económicos de «botellín y amigos en la barra de un bar». Desde el punto de vista de un ignorante todo parece más fácil.

@@ -16,7 +16,7 @@ tags:
 - ahorradores
 - productos de ahorro
 title: Me preocupa el pequeño ahorrador (II)
-url: /me-preocupa-el-pequeno-ahorrador-ii/
+url: /blog/me-preocupa-el-pequeno-ahorrador-ii/
 ---
 
 ¿Dónde meto mi dinero? Esa es la pregunta que se hacen todos los ahorradores. Los productos financieros en los que invertir los podemos dividir en:

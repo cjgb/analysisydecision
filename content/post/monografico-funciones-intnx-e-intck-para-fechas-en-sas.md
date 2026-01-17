@@ -18,7 +18,7 @@ tags:
 - INTCK
 - INTNX
 title: Monográfico. Funciones INTNX e INTCK para fechas en SAS
-url: /monografico-funciones-intnx-e-intck-para-fechas-en-sas/
+url: /blog/monografico-funciones-intnx-e-intck-para-fechas-en-sas/
 ---
 
 Las funciones **INTNX e INTCK de SAS** atraen muchas visitas a esta web. Aunque ya hay algún mensaje en el que muestro como funcionan creo que algunos trabajadores me agradecerán este monográfico. INTNX e INTCK son funciones para trabajar con fechas en SAS. INTNX sirve para trabajar con periodos luego el resultado que ofrece será una fecha e INTCK sirve para trabajar con intervalos, luego el resultado que nos ofrece será un número entero. Esta es la premisa fundamental. Entonces:
@@ -38,7 +38,7 @@ format f2 ddmmyy10.;
 put f2 ;
 run;
 ```
- 
+
 
 **IMPORTANTE** : INTNX en este caso no ha funcionado como cabía esperar. El resultado es 01/01/2007, inicia a 1 de enero siempre. Siempre me gusta empezar con este ejemplo, motivo, para justificar que, en la medida de lo posible, no utilicemos esta función. ¡¡Pues vaya castaña de monográfico!! al contrario, porque os alerto y os justifico los peligros que entraña utilizar estas funciones sin controlarlas bien, cuando se trata de programar en SAS sumar días no es «poco profesional». De todos modos, la sintaxis tipo de INTNX es INTNX(«BASE»,fecha,valor) donde BASE puede ser DAY, WEEK, DTWEEK, MONTH y YEAR:
 

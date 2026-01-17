@@ -16,7 +16,7 @@ related:
 slug: begraphic-un-add-in-para-excel-muy-interesante
 tags: []
 title: Begraphic un add in para Excel muy interesante
-url: /begraphic-un-add-in-para-excel-muy-interesante/
+url: /blog/begraphic-un-add-in-para-excel-muy-interesante/
 ---
 
 ![](https://www.begraphic.com/sites/default/files/resize/When_Presentation_Matter-276x322.png)

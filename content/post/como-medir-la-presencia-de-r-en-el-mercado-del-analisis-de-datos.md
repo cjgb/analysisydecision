@@ -15,7 +15,7 @@ related:
 slug: como-medir-la-presencia-de-r-en-el-mercado-del-analisis-de-datos
 tags: []
 title: ¿Cómo medir la presencia de R en el mercado del análisis de datos?
-url: /como-medir-la-presencia-de-r-en-el-mercado-del-analisis-de-datos/
+url: /blog/como-medir-la-presencia-de-r-en-el-mercado-del-analisis-de-datos/
 ---
 
 Mientras comía hoy he estado leyendo el [The Forrester Wave™: Big Data Predictive Analytics Solutions, Q1 2013](http://www.forrester.com/pimages/rws/reprints/document/85601/oid/1-KWYFVB) un informe sobre las herramientas de análisis predictivo con mayor presencia en el mercado. Las herramientas de SAS e IBM son las mejor paradas en el estudio:

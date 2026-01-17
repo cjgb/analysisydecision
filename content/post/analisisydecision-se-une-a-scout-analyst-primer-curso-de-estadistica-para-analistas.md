@@ -16,7 +16,7 @@ slug: analisisydecision-se-une-a-scout-analyst-primer-curso-de-estadistica-para-
 tags: []
 title: analisisydecision se une a Scout Analyst. Primer curso de Estadística para
   analistas
-url: /analisisydecision-se-une-a-scout-analyst-primer-curso-de-estadistica-para-analistas/
+url: /blog/analisisydecision-se-une-a-scout-analyst-primer-curso-de-estadistica-para-analistas/
 ---
 
 Me uno al equipo de Scout Analyst poniendo en marcha el primer curso de estadística para analistas. Si deseas recibir información acerca del curso visita la siguiente página:

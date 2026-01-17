@@ -16,7 +16,7 @@ related:
 slug: macro-sas-variables-de-un-dataset-en-una-macro-variable
 tags: []
 title: Macro SAS. Variables de un dataset en una macro variable
-url: /macro-sas-variables-de-un-dataset-en-una-macro-variable/
+url: /blog/macro-sas-variables-de-un-dataset-en-una-macro-variable/
 ---
 
 Hoy os presento una macro de SAS que nos permite recoger en una macro variable las variables de un conjunto de datos SAS. Tiene como particularidad que nos sirve para seleccionar aquellas variables que tienen un determinado patrón, del tipo consumo2010, consumo2011,… Es un código un poco más complejo de lo habitual pero tiene aspectos interesantes:
@@ -45,7 +45,7 @@ where libname=upcase("&libreria.") and memname=upcase("&tabla.") and
 	quit;
 %mend;
 ```
- 
+
 
 El elemento principal de esta macro es una consulta a una de las tablas DICTIONARY de SAS. O mejor dicho, a una de las vistas que tenemos en SASHELP. Siempre he prefererido consultar las vistas de SASHELP. La vista consultada es VCOLUMN de donde extraemos la columna NAME y como condicionantes pasamos la librería en LIBNAME y el nombre de la tabla de la que deseamos obtener las variables en MEMNAME. Como particularidad podemos aplicar patrones.
 
@@ -69,6 +69,6 @@ run;
 *;
 %put _user_;
 ```
- 
+
 
 Creo que esta macro es muy práctica y puede automatizaros mucho código. Saludos.

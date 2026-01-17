@@ -13,7 +13,7 @@ related:
 slug: informe-2011-de-la-direccion-de-seguros-y-fondos-de-pensiones
 tags: []
 title: Informe 2011 de la Dirección de Seguros y Fondos de Pensiones
-url: /informe-2011-de-la-direccion-de-seguros-y-fondos-de-pensiones/
+url: /blog/informe-2011-de-la-direccion-de-seguros-y-fondos-de-pensiones/
 ---
 
 Ya tenéis disponible el informe del 2011 de la DGS:

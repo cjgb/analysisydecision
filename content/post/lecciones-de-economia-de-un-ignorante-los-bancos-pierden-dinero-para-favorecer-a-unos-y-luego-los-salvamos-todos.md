@@ -16,7 +16,7 @@ tags:
 - intervencion
 title: Lecciones de economía de un ignorante. Los bancos pierden dinero para favorecer
   a unos y luego los salvamos todos
-url: /lecciones-de-economia-de-un-ignorante-los-bancos-pierden-dinero-para-favorecer-a-unos-y-luego-los-salvamos-todos/
+url: /blog/lecciones-de-economia-de-un-ignorante-los-bancos-pierden-dinero-para-favorecer-a-unos-y-luego-los-salvamos-todos/
 ---
 
 Si pintamos con Excel una línea con el **Euribor a 6 meses** y otra línea con el **interés medio a un año de los depósitos bancarios**. Tenemos:

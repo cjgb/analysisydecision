@@ -13,7 +13,7 @@ related:
 slug: martes-25-de-abril-nueva-reunion-del-grupo-de-usuarios-de-r-y-python
 tags: []
 title: Martes 25 de abril nueva reunión del grupo de usuarios de R y Python
-url: /martes-25-de-abril-nueva-reunion-del-grupo-de-usuarios-de-r-y-python/
+url: /blog/martes-25-de-abril-nueva-reunion-del-grupo-de-usuarios-de-r-y-python/
 ---
 
 Interesante reunión del grupo de usuarios de R de Madrid a la que debo asistir:

@@ -15,7 +15,7 @@ related:
 slug: lectura-de-ficheros-sas7bdat-de-sas-directamente-con-r
 tags: []
 title: Lectura de ficheros SAS7BDAT de SAS directamente con R
-url: /lectura-de-ficheros-sas7bdat-de-sas-directamente-con-r/
+url: /blog/lectura-de-ficheros-sas7bdat-de-sas-directamente-con-r/
 ---
 
 Un post de **BIOSTATMATT** que nos conduce a un código en R que nos permite leer datasets de SAS directamente con R sin necesidad de tener SAS. Un problema recurrente que abordaré con más detenimiento otro día [ahora me voy a pescar]. Aquí tenéis el enlace:

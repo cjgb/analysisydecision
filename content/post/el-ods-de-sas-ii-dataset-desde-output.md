@@ -14,33 +14,33 @@ related:
 slug: el-ods-de-sas-ii-dataset-desde-output
 tags: []
 title: El ODS de SAS (II). Dataset desde OUTPUT
-url: /el-ods-de-sas-ii-dataset-desde-output/
+url: /blog/el-ods-de-sas-ii-dataset-desde-output/
 ---
 
 Ya vimos el funcionamiento de ODS TRACE ON/OFF. Ahora crearemos datasets a partir del OUTPUT que genera un paso PROC de SAS con ODS. Lo principal es conocer como se denomina cada parte del OUTPUT, esto lo conseguimos con TRACE y analizando el LOG. Una vez conocemos la salida empleamos ODS OUTPUT <nombre de la salida> = libreria.dataset. En el ejemplo que teníamos:
 
 ```
-_*DATASET ALEATORIO DE 200000 OBSERVACIONES;_  
-_data uno;_  
-_do i=1 to 20000;_  
-_importe=round(rand(«normal»)*1000,.1);_  
-_num_productos=min(max(1,rand(«pois»,4)),8);_  
-_num_cargos=max(0,rand(«pois»,10)-int(rand(«uniform»)*10));_  
-_output ;_  
-_end;_  
+_*DATASET ALEATORIO DE 200000 OBSERVACIONES;_
+_data uno;_
+_do i=1 to 20000;_
+_importe=round(rand(«normal»)*1000,.1);_
+_num_productos=min(max(1,rand(«pois»,4)),8);_
+_num_cargos=max(0,rand(«pois»,10)-int(rand(«uniform»)*10));_
+_output ;_
+_end;_
 _run;_
 
-_ods noresults;_  
-_ods output Quantiles=cuant;_  
-_proc univariate data=uno;_  
-_var importe;_  
+_ods noresults;_
+_ods output Quantiles=cuant;_
+_proc univariate data=uno;_
+_var importe;_
 _quit;_
 
-_ods output Chisq=testchi;_  
-_proc freq data=uno;_  
-_tables num_productos*num_cargos/chisq;_  
-_quit;_  
-_ods results;_  
+_ods output Chisq=testchi;_
+_proc freq data=uno;_
+_tables num_productos*num_cargos/chisq;_
+_quit;_
+_ods results;_
 ```
 
 Para evitar la salida en la ventana output o en formato HTML se emplea ODS NORESULTS. Con ODS OUTPUT hemos creado dos datasets. Veamos el log:
@@ -124,6 +124,6 @@ proc contents data=uno; quit;
 
 ods results;
 ```
- 
+
 
 Como ejercicio recomendaría probar el ODS OUTPUT con muchos procedimientos para recordar bien esta metodología. Esto puede permitirnos ahorrar mucho tiempo y automatizar mucho código. Por supuesto para cualquier duda estoy a vuestra disposición.

@@ -15,7 +15,7 @@ related:
 slug: medias-ponderadas-en-excel-crear-tu-propia-funcion
 tags: []
 title: Medias ponderadas en Excel. Crear tu propia función
-url: /medias-ponderadas-en-excel-crear-tu-propia-funcion/
+url: /blog/medias-ponderadas-en-excel-crear-tu-propia-funcion/
 ---
 
 Hace años conocí a una persona que no sabía hacer medias ponderadas con Excel, hoy esa persona es una referencia dentro de este ecosistema de Inteligencia Artificial, Big Data, Machine Learning, Unsupervised Learning,… total, una referencia en la venta de humo porque me imagino que seguirá sin saber hacer una media ponderada en Excel con el SUMAPRODUCTO y por eso realizo esta entrada en homenaje a esas grandes locomotoras que echan humo y más humo pero que ahí siguen. Además también es útil para varias cosas más como:
@@ -49,6 +49,6 @@ Public Function MEDIAPONDERADA(Valor As Range, Ponderacion As Range)
 
 End Function
 ```
- 
+
 
 Esta función la ponéis en el libro de macros personal y cuando escribáis =MEDIAPONDERADA ya la tendréis a vuestra disposición en todas las sesiones de Excel. Saludos.

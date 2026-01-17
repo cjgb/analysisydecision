@@ -15,7 +15,7 @@ related:
 slug: truco-excel-grafico-de-puntos-con-colores
 tags: []
 title: Truco Excel. Gráfico de puntos con colores
-url: /truco-excel-grafico-de-puntos-con-colores/
+url: /blog/truco-excel-grafico-de-puntos-con-colores/
 ---
 
 [![](/images/2015/01/dispersion-con-colores-de-grupos-excel-300x237.png)](/images/2015/01/dispersion-con-colores-de-grupos-excel.png)
@@ -49,6 +49,6 @@ Dim vec As Variant
 
 End Sub
 ```
- 
+
 
 Lo primero tenemos una variable tipo variant que nos permitirá obtener el número de puntos que deseamos colorear. Seleccionamos el gráfico de dispersión y la única serie de datos es la 1, no hay más. Buscamos el número de puntos que tiene nuestra serie y hacemos un bucle que se recorre cada uno de los puntos de la serie que queremos colorear. Evidentemente necesitamos saber a que grupo pertenece cada punto. Después seleccionamos punto por punto y si pertenece a un grupo le ponemos un color con Selection.Format.Fill.ForeColor.RGB, el color le podéis buscar o elegir de la paleta de colores, [en este blog ya se ha escrito sobre saber el número de color](https://analisisydecision.es/truco-excel-identificar-el-color-de-una-celda/). Si en vez de grupos usáis formatos condicionales y otras cosas pueden quedar resultados muy buenos. Pero esto me lo guardo para otro día. Espero que os sea útil el truco. Saludos.

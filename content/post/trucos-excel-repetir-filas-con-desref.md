@@ -16,7 +16,7 @@ slug: trucos-excel-repetir-filas-con-desref
 tags:
 - DESREF
 title: Trucos Excel. Repetir filas con DESREF
-url: /trucos-excel-repetir-filas-con-desref/
+url: /blog/trucos-excel-repetir-filas-con-desref/
 ---
 
 [![desref repetir filas excel](/images/2015/02/desref-repetir-filas-excel-300x115.png)](/images/2015/02/desref-repetir-filas-excel.png)

@@ -14,7 +14,7 @@ related:
 slug: la-batalla-de-las-nominas-seguimos-buscando-el-dinero-nuevo
 tags: []
 title: La Batalla de las nóminas. Seguimos buscando el dinero nuevo
-url: /la-batalla-de-las-nominas-seguimos-buscando-el-dinero-nuevo/
+url: /blog/la-batalla-de-las-nominas-seguimos-buscando-el-dinero-nuevo/
 ---
 
 Cuanta falta está haciendo el dinero nuevo.

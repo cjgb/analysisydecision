@@ -20,7 +20,7 @@ tags:
 - analisis de textos
 - text mining
 title: El debate político o como analizar textos con WPS
-url: /el-debate-politico-o-como-analizar-textos-con-wps/
+url: /blog/el-debate-politico-o-como-analizar-textos-con-wps/
 ---
 
 ¿Qué hacen los políticos españoles en el Congreso de los Diputados? Las tertulias radiofónicas están llenas de analístas políticos que podrán opinar sobre la labor del Congreso mejor que yo. Sin embargo yo tengo WPS, sé programar en SAS y en la [web del Congreso](http://www.congreso.es/portal/page/portal/Congreso/Congreso) están [todas las sesiones y todas las intervenciones](http://www.congreso.es/portal/page/portal/Congreso/Congreso/Intervenciones/Busqueda%20avanzada) de la democracia. Pues con estos elementos vamos a iniciar un proceso de _text mining,_ aunque no llegaremos a realizar ningún análisis complejo. Para comenzar, como siempre, necesito datos. Me he guardado [la sesión del Congreso de los Diputados del día 26/01/2011](http://www.congreso.es/portal/page/portal/Congreso/PopUpCGI?CMD=VERLST&BASE=puw9&FMT=PUWTXDTS.fmt&DOCS=1-1&QUERY=%28CDP201101260219.CODI.%29#%28P%C3%A1gina46%29) como web y posteriormente con Word la he salvado como fichero de texto (ojo con las codificaciones). De todos modos podéis [descargaros aquí](/images/2011/02/popupcgi.txt "popupcgi.txt") el fichero.

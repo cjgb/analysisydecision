@@ -13,12 +13,12 @@ related:
 slug: manual-curso-introduccion-de-r-capitulo-3-lectura-de-datos
 tags: []
 title: 'Manual. Curso introducción de R. Capítulo 3: Lectura básica de datos'
-url: /manual-curso-introduccion-de-r-capitulo-3-lectura-de-datos/
+url: /blog/manual-curso-introduccion-de-r-capitulo-3-lectura-de-datos/
 ---
 
 En el anterior capítulo creábamos vectores y matrices con las funciones _c_ y _matrix_ pero en R disponemos de otros medios para leer o introducir datos. Empezamos con la entrada manual de datos:
 
-  
+
 `> # Entrada manual de datos`
 ```r
 > ej.3.1 <- scan()
@@ -40,7 +40,7 @@ Read 6 items
 >
 ```
 
-Para introducir manualmente datos en R disponemos de la función _scan_ e introduciremos los datos manualmente separando las entradas con un espacio, para finalizar empleamos intro en una línea sin datos, R nos indicará los registros leídos. La función _scan_ también puede leer ficheros de texto planos si le pasamos el fichero como **parámetro** :  
+Para introducir manualmente datos en R disponemos de la función _scan_ e introduciremos los datos manualmente separando las entradas con un espacio, para finalizar empleamos intro en una línea sin datos, R nos indicará los registros leídos. La función _scan_ también puede leer ficheros de texto planos si le pasamos el fichero como **parámetro** :
 
 ```r
 > > ej.3.2 <- scan("c:\\windows\\temp\\fichero_texto1.txt")
@@ -54,7 +54,7 @@ Read 8 items
 >
 ```
 
-Como vemos es necesario separar los directorios con \\\ en vez de \\. El proceso ha leído 8 registros de un fichero plano _fichero_texto1.txt_ que tiene la siguiente estructura:  
+Como vemos es necesario separar los directorios con \\\ en vez de \\. El proceso ha leído 8 registros de un fichero plano _fichero_texto1.txt_ que tiene la siguiente estructura:
 
 ```r
 123 456 765 345
@@ -83,8 +83,8 @@ In read.table("c:\\windows\\temp\\fichero_texto1.txt") :
 
 >
 ```
-  
-Ahora hemos leído 2 registros y 4 variables y hemos creado una tabla con la estructura del fichero de texto. Si el fichero de texto tuviera los nombres de los campos que leemos habríamos de trabajar con los **parámetros opcionales** de la función _scan_ :  
+
+Ahora hemos leído 2 registros y 4 variables y hemos creado una tabla con la estructura del fichero de texto. Si el fichero de texto tuviera los nombres de los campos que leemos habríamos de trabajar con los **parámetros opcionales** de la función _scan_ :
 
 ```r
 > ej.3.3 <- read.table("c:\\windows\\temp\\fichero_texto1.txt",header=TRUE)
@@ -105,15 +105,15 @@ In read.table("c:\\windows\\temp\\fichero_texto1.txt", header = TRUE) :
 
 >
 ```
-  
-En este caso disponíamos de un fichero de texto con cabeceras, por ello ha sido necesario modificar a verdadero (TRUE) el parámetro _header_ de la función _read.table_. Para saber que parámetros tienen las distintas funciones de R y obtener ayuda sobre ellas en la línea de comandos debemos introducir _? <función>_:  
+
+En este caso disponíamos de un fichero de texto con cabeceras, por ello ha sido necesario modificar a verdadero (TRUE) el parámetro _header_ de la función _read.table_. Para saber que parámetros tienen las distintas funciones de R y obtener ayuda sobre ellas en la línea de comandos debemos introducir _? <función>_:
 
 ```r
 > ?read.table
 
 >
 ```
-  
+
 En función de la configuración de la ayuda que hayamos hecho en el momento de la instalación obtendremos un pop-up o bien la información sobre la función en la misma pantalla de R.
 
 Con estas herramientas ya estamos en disposición de crear estructuras de datos más complejas. En sucesivas entregas leeremos datos de otros orígenes (SAS, ODBC,…)

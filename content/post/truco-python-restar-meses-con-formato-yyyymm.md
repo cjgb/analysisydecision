@@ -15,7 +15,7 @@ related:
 slug: truco-python-restar-meses-con-formato-yyyymm
 tags: []
 title: Truco Python. Restar meses con formato YYYYMM
-url: /truco-python-restar-meses-con-formato-yyyymm/
+url: /blog/truco-python-restar-meses-con-formato-yyyymm/
 ---
 
 La operación con fechas en meses con el formato YYYYMM es tarea habitual cuando trabajamos con tablas particionadas. De hecho [hay una entrada en el blog sobre esto muy popular](https://analisisydecision.es/trucos-sas-operar-con-fechas-yyyymm-tipicas-de-particiones-oracle/). Me ha surgido este tema con Python y os pongo la función que he creado:
@@ -26,6 +26,6 @@ def dif_mes(d1, d2):
 
 dif_mes (201812,201709)
 ```
- 
+
 
 Muy sencilla, por si os surge la necesidad.

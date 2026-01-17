@@ -14,7 +14,7 @@ related:
 slug: partykit-un-paquete-de-r-para-generar-y-manipular-arboles-de-decision
 tags: []
 title: 'partykit: un paquete de R para generar y manipular árboles de decisión'
-url: /partykit-un-paquete-de-r-para-generar-y-manipular-arboles-de-decision/
+url: /blog/partykit-un-paquete-de-r-para-generar-y-manipular-arboles-de-decision/
 ---
 
 Los usuarios de R disponen de una serie de algoritmos estándar para generar y manipular árboles de decisión. Los más habituales están contenidos en alguno de los siguientes paquetes:

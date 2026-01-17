@@ -18,7 +18,7 @@ tags:
 - ''
 - array
 title: Trucos SAS. Primer y último elemento de un array
-url: /trucos-sas-primer-y-ultimo-elemento-de-un-array/
+url: /blog/trucos-sas-primer-y-ultimo-elemento-de-un-array/
 ---
 
 Breve entrada sobre el uso de arrays en SAS. Dada una tabla SAS como esta con una variable mes1, mes2, … mesN:

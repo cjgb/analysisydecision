@@ -17,18 +17,18 @@ tags:
 - graficos SAS
 - GRAPH
 title: Un acercamiento a GRAPH. Sentencias gráficas
-url: /un-acercamiento-a-graph-sentencias-graficas/
+url: /blog/un-acercamiento-a-graph-sentencias-graficas/
 ---
 
 A la hora de trabajar con SAS/GRAPH lo primero que vamos a escribir es:
 
 Después tenemos que conocer las sentencias de GRAPH para dar forma a nuestros gráficos. Estas sentencias no van dentro de ningún procedimiento ni paso data, siempre van precedidas de distintas palabras clave que nos definen los elementos de un grafico o nos indican las opciones necesarias para su representación. Estas sentencias nos permitirán definir los ejes, patrones y opciones más globales, comenzaran por:
 
-AXIS  
-GOPTIONS  
-LEGEND  
-PATTERN  
-SYMBOL  
+AXIS
+GOPTIONS
+LEGEND
+PATTERN
+SYMBOL
 TITLE, FOOTNOTE y NOTE
 
 En la ayuda y en el support de SAS tendréis mas información sobre ellas. Pero, como es habitual, en estas líneas vais a ver algunos ejemplos con la sintaxis más común. El dataset inicial con datos aleatorios contiene datos de altura, peso y sexo y se genera mediante el siguiente código:

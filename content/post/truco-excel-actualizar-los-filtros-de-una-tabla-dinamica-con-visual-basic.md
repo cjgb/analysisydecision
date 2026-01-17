@@ -15,21 +15,21 @@ related:
 slug: truco-excel-actualizar-los-filtros-de-una-tabla-dinamica-con-visual-basic
 tags: []
 title: Truco Excel. Actualizar los filtros de una tabla dinámica con Visual basic
-url: /truco-excel-actualizar-los-filtros-de-una-tabla-dinamica-con-visual-basic/
+url: /blog/truco-excel-actualizar-los-filtros-de-una-tabla-dinamica-con-visual-basic/
 ---
 
 Imaginad que tenéis que cambiar uno o varios filtros de todas las tablas dinámicas de una hoja y cada una de las tablas dinámicas tiene un nombre distinto o hay un número distinto de tablas dinámicas en cada hoja. Eso dificulta a la hora de crear un bucle para la modificación de filtros. Pues este truco de Excel os permitirá actualizar un filtro de una fecha (o cualquier otro) para todas las tablas dinámicas de una hoja. El código es muy sencillo y no creo necesario subiros a la web algún ejemplo:
 
-_Sub filtros()_  
-_‘Macro creada por www.analisisydecision.es_  
+_Sub filtros()_
+_‘Macro creada por www.analisisydecision.es_
 _Dim pt As PivotTable_
 
 _For Each pt In ActiveSheet.PivotTables_
 
-_With pt.PivotFields(«fecha»)_  
-_.PivotItems(«Dec-10»).Visible = False_  
-_.PivotItems(«Mar-10»).Visible = True_  
-_End With_  
+_With pt.PivotFields(«fecha»)_
+_.PivotItems(«Dec-10»).Visible = False_
+_.PivotItems(«Mar-10»).Visible = True_
+_End With_
 _Next pt_
 
 _End Sub_

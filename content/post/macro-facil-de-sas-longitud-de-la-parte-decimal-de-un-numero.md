@@ -15,7 +15,7 @@ related:
 slug: macro-facil-de-sas-longitud-de-la-parte-decimal-de-un-numero
 tags: []
 title: Macro (fácil) de SAS. Longitud de la parte decimal de un número
-url: /macro-facil-de-sas-longitud-de-la-parte-decimal-de-un-numero/
+url: /blog/macro-facil-de-sas-longitud-de-la-parte-decimal-de-un-numero/
 ---
 
 Muy sencillo, vemos el programa y posteriormente lo transformamos en una macro de SAS:

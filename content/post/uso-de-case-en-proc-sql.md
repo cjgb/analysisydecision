@@ -18,7 +18,7 @@ tags:
 - proc sql
 - SAS
 title: Uso de CASE en PROC SQL
-url: /uso-de-case-en-proc-sql/
+url: /blog/uso-de-case-en-proc-sql/
 ---
 
 Vamos a estudiar como funciona CASE en un PROC SQL. Son palabras que aparecen en las búsquedas de Google y también he observado que el número de visitas al blog ha descendido en los últimos días y no sólo es debido a las vacaciones navideñas. El 60% de los clicks a AyD vienen por temas de SAS y en los últimos días tengo muy olvidados los mensajes de esta categoría. Además en el plazo de 2 días voy a dejar de trabajar con esta herramienta por lo que, es posible, que se reduzcan aun más. En fin, a lo que voy, CASE en el PROC SQL. Case nos permite crear campos condicionales dentro del bloque SELECT de una query de PROC SQL:
@@ -81,10 +81,10 @@ quit;
 
 La estructura es bien sencilla:
 
-CASE  
-WHEN condición1 THEN valor1  
-…  
-WHEN condiciónN THEN valorN  
+CASE
+WHEN condición1 THEN valor1
+…
+WHEN condiciónN THEN valorN
 ELSE valorN+1 END AS nombre
 
 Las condiciones son excluyentes y necesitamos finalizar la sentencia con ELSE END AS . Es muy práctico para agrupar cualquier tipo de variable, las condiciones pueden incluir más variables tanto numéricas como carácter o mezcla de todas:

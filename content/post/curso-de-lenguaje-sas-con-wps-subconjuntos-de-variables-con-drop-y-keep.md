@@ -17,7 +17,7 @@ tags:
 - drop
 - keep
 title: Curso de lenguaje SAS con WPS. Subconjuntos de variables con DROP y KEEP
-url: /curso-de-lenguaje-sas-con-wps-subconjuntos-de-variables-con-drop-y-keep/
+url: /blog/curso-de-lenguaje-sas-con-wps-subconjuntos-de-variables-con-drop-y-keep/
 ---
 
 En esta entrega del curso vamos a trabajar con dos palabras fundamentales en WPS: DROP y KEEP. Drop elimina variables de un conjunto de datos y keep las mantiene. Ahora bien, estos elementos del lenguaje SAS se pueden emplear de diversas formas. Pueden ser una sentencia o pueden ser una opción de lectura y escritura del paso data. Para ilustrar este capítulo vamos a generar un dataset con datos aleatorios:
@@ -61,7 +61,7 @@ cards;
 
 ;run;
 ```
-  
+
 **KEEP/DROP como sentencia:**
 
 Una sentencia en WPS es una línea de código y en este caso empezará por alguna de nuestras palabras clave. A ellas le acompañarán aquellas variables que deseemos eliminar con DROP o que deseemos mantener con KEEP:
@@ -87,7 +87,7 @@ drop importe2 importe3 importe4 importe5;
 
 run;
 ```
-  
+
 El dataset USO_DROP también es un subconjunto de ALEATORIO y hemos eliminado las variables IMPORTE2 a IMPORTE5. En este punto es interesante indicaros que podemos realizar listas de variables SAS que nos faciliten el uso de DROP o KEEP. Imaginemos que deseamos eliminar un rango de variables (como en el ejemplo anterior). La lista de variables en WPS se genera con guiones de forma VARIABLE_INICIO – VARIABLE_FIN:
 
 ```r
@@ -99,7 +99,7 @@ drop importe2 -- importe5;
 
 run;
 ```
-  
+
 Otro elemento importante para generar listas de variable son los dos puntos : con ellos podremos crear listas de variables en función de un sufijo, si deseamos quedarnos con aquellas variables que empiezan por IMP hacemos IMP: como vemos en el ejemplo:
 
 ```r
@@ -111,7 +111,7 @@ keep imp:;
 
 run;
 ```
-  
+
 Seleccionamos todas aquellas variables que empiezan por IMP:.
 
 **DROP y KEEP como opciones de lectura y escritura:**

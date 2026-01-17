@@ -17,10 +17,10 @@ tags:
 - Analistas
 - banca comercial
 title: Gestores de información de la banca comercial. Profesionales imprescindibles
-url: /gestores-de-informacion-de-la-banca-comercial-profesionales-imprescindibles/
+url: /blog/gestores-de-informacion-de-la-banca-comercial-profesionales-imprescindibles/
 ---
 
-DEP la banca de inversión o mejor dicho RIP porque es La Reserva Federal de los EEUU la que va a cambiar definitivamente el modelo de banca. Pasamos de una banca no controlada por el estado y basada en riesgos a una banca tradicional mucho más comercial donde los clientes son los principales protagonistas. Desde el punto de vista del analista pasamos del gurú en activos y bolsa, del gran ingeniero financiero al analista de cliente. Este nuevo analista tiene que tener una sólida base matemática y conocer a la perfección la información almacenada y los productos de su organización. 
+DEP la banca de inversión o mejor dicho RIP porque es La Reserva Federal de los EEUU la que va a cambiar definitivamente el modelo de banca. Pasamos de una banca no controlada por el estado y basada en riesgos a una banca tradicional mucho más comercial donde los clientes son los principales protagonistas. Desde el punto de vista del analista pasamos del gurú en activos y bolsa, del gran ingeniero financiero al analista de cliente. Este nuevo analista tiene que tener una sólida base matemática y conocer a la perfección la información almacenada y los productos de su organización.
 
 Este nuevo perfil de analistas tiene que tener una visión más global de la entidad. Ha de controlar la gerencia de los productos, los sistemas de información y los canales de comunicación con los clientes. En este sentido el modelo de banca de inversión requería de menos empleados y tenía una perfecta movilidad geográfica ya que se basaba en “el talento” de sus equipos (Lehman Brothers tenía en España 45 empleados). Sin embargo la banca comercial necesita sistemas de información y un catálogo de productos acorde con las necesidades del mercado y de los clientes. Y justo entre la parte informática de sistemas y la parte comercial de los técnicos de productos y marketing están los gestores de la información. Así pues la banca comercial necesita muchos más empleados y medios para desarrollarse. Sin embargo en el modelo arriesgado «el talento» se pagaba, ahora ese «talento» se reparte en equipos más grandes con una visión orientada 100% hacia sus clientes (tanto vinculados como potenciales).
 

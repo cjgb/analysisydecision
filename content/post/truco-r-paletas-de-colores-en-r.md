@@ -14,17 +14,17 @@ related:
 - truco-r-insertar-imagen-en-un-grafico.md
 slug: truco-r-paletas-de-colores-en-r
 tags:
-- graphics
-- gráficos en R
+- gráficos
+- gráficos con R
 title: Truco R. Paletas de colores en R
-url: /truco-r-paletas-de-colores-en-r/
+url: /blog/truco-r-paletas-de-colores-en-r/
 ---
 
 [](/images/2011/01/paletas_colores_r.png "Paletas de colores en R")
 
 ![Paletas de colores en R](/images/2011/01/paletas_colores_r.png)
 
-  
+
 En cuántas ocasiones habéis querido dar color a un gráfico y por aligerar código creáis gráficos de este tipo:
 
 ```r

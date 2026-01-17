@@ -17,7 +17,7 @@ tags:
 - ''
 - Cluster
 title: Un peligro del análisis cluster
-url: /un-peligro-del-analisis-cluster/
+url: /blog/un-peligro-del-analisis-cluster/
 ---
 
 ![](/images/2009/04/cluster1.JPG)
@@ -90,7 +90,7 @@ totalgrupo_nuevo = cluscluster
 plot(totalx,totaly,col=c(1,2,3)[total$grupo_nuevo])
 ```
 
-![linealidad_cluster2.png](/images/2012/07/linealidad_cluster2.png)  
+![linealidad_cluster2.png](/images/2012/07/linealidad_cluster2.png)
 Necesitamos un objeto con las distancias y sobre él utilizamos la función _kmeans_ que es la más popular y sencilla. El objeto resultante de la realización del modelo tiene una variable cluster que añadimos a nuestros datos y tras graficar vemos que es evidente que no ha funcionado muy correctamente, nos ha creado los 3 grupos homogéneos en base a la distancia entre observaciones, pero no son los segmentos deseados… **Mucho cuidado cuando utilicemos este tipo de técnicas**.
 
 ¿Cómo podemos realizar una segmentación más apropiada para estos datos? ¿Qué técnica podemos utilizar? La respuesta en breve. Espero que esto sirva para desordenar alguna conciencia.

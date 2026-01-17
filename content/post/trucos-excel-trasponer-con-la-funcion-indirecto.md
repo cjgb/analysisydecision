@@ -18,7 +18,7 @@ tags:
 - indirecto
 - trasponer
 title: Trucos Excel. Trasponer con la función indirecto
-url: /trucos-excel-trasponer-con-la-funcion-indirecto/
+url: /blog/trucos-excel-trasponer-con-la-funcion-indirecto/
 ---
 
 Una de las tareas más comunes en Excel es la de transponer filas. En ocasiones hemos de transformar columnas en filas o viceversa:

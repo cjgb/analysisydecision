@@ -14,7 +14,7 @@ related:
 slug: sas-no-se-vende
 tags: []
 title: SAS no se vende
-url: /sas-no-se-vende/
+url: /blog/sas-no-se-vende/
 ---
 
 [Entrevista a Goodnight en Bloomberg](http://www.bloomberg.com/apps/news?pid=newsarchive&sid=auynfPvSg9d4#)

@@ -13,7 +13,7 @@ related:
 slug: reunion-del-grupo-de-usuarios-de-r-de-madrid-12052016
 tags: []
 title: Reunión del Grupo de Usuarios de R de Madrid 12/05/2016
-url: /reunion-del-grupo-de-usuarios-de-r-de-madrid-12052016/
+url: /blog/reunion-del-grupo-de-usuarios-de-r-de-madrid-12052016/
 ---
 
 Nueva reunión del [Grupo de Usuarios de R de Madrid ](http://madrid.r-es.org/)en MediaLab Prado. No está publicado en la web por temas de cerrar definitivamente las agendas. De momento las propuestas son:

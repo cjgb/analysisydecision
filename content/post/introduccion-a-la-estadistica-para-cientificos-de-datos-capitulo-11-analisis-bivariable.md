@@ -19,7 +19,7 @@ slug: introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-11-analis
 tags: []
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 11. Análisis
   bivariable
-url: /introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-11-analisis-bivariable/
+url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-11-analisis-bivariable/
 ---
 
 De nuevo se retoma el ejemplo que está sirviendo de hilo conductor para este ensayo, la campaña de marketing de venta cruzada en el sector asegurador [que está disponible en Kaggle](https://www.kaggle.com/anmolkumar/health-insurance-cross-sell-prediction). Una aseguradora española que opera en múltiples ramos quiere ofrecer seguro de automóviles a sus clientes del ramo de salud. Para ello se realizó un cuestionario a los clientes de forma que se marcó quienes de ellos estarían interesados en el producto de automóviles y quienes no. Se identificaron posibles tareas:
@@ -35,7 +35,7 @@ library(formattable)
 train <- read.csv("./data/train.csv")
 formattable(head(train,5))
 ```
- 
+
 
 Hasta el momento se ha descrito el conjunto de datos, se han determinado que roles juegan las variables dentro de ese conjunto de datos donde se estableció que la variable más relevante es `Response` ya que juega el rol de **variable target**. Esta variable toma valores 0 – no interesa 1 – interesa el producto, es decir, se distribuye según una binomial con parámetros n = 381.000 clientes y p = 0.1223 interesados, conocer la distribución ayuda a afrontar el análisis.
 
@@ -43,7 +43,7 @@ Hasta el momento se ha descrito el conjunto de datos, se han determinado que rol
 formattable(train %>% group_by(Response) %>%
               summarise(clientes = n(),pct_clientes=n()/nrow(train)))
 ```
- 
+
 
 En este capítulo el científico de datos comienza a estudiar la relación entre dos variables que pueden ser cuantitativas o factores. Esta categorización da lugar a 3 tipos de relaciones entre dos variables:
 
@@ -63,7 +63,7 @@ peso <- altura/2.85 + rnorm(personas, 10, 5)
 data.frame(altura=altura, peso=peso) %>%  ggplot(aes(x = altura, y = peso)) +
   geom_point()
 ```
- 
+
 
 [![](/images/2022/12/wp_editor_md_9cb1d779101c9ecefe0d9ea6befb5278.jpg)](/images/2022/12/wp_editor_md_9cb1d779101c9ecefe0d9ea6befb5278.jpg)
 
@@ -72,7 +72,7 @@ Aunque sean datos simulados es evidente, por como se ha hecho la simulación, qu
 ```r
 cor(peso, altura)
 ```
- 
+
 
 Esta medida de 0.8 (aprox) indica que peso y altura se relacionan positivamente, a medida que aumenta uno aumenta el otro pero no es una medida de graduación, sólo mide la **fuerza** de esa relación. El coeficiente de correlación es un valor que toma valores entre -1 y 1 donde -1 significa total correlación negativa (aumenta una implica que disminuye la otra variable), 0 significa que no existe ningún tipo de correlación y 1 la correlación positiva (aumenta una aumenta otra variable).
 
@@ -112,7 +112,7 @@ p4 <- data.frame(x,y) %>%  ggplot(aes(x , y)) +
 
 grid.arrange(p1,p2,p3,p4)
 ```
- 
+
 
 [![](/images/2022/12/wp_editor_md_fd2ebcce92641750bc4231d1edf45753.jpg)](/images/2022/12/wp_editor_md_fd2ebcce92641750bc4231d1edf45753.jpg)
 
@@ -129,7 +129,7 @@ En el ejemplo de trabajo se tiene una variable target que toma valores 0 y 1, a 
 ```r
 train %>% ggplot(aes(x=Age, group=as.factor(Response), fill=as.factor(Response))) + geom_histogram()
 ```
- 
+
 
 [![](/images/2022/12/wp_editor_md_baac73cc7882219c932d64e04c75dbd1.jpg)](/images/2022/12/wp_editor_md_baac73cc7882219c932d64e04c75dbd1.jpg)
 
@@ -139,7 +139,7 @@ Es necesario especificar que la variable es un factor, en este caso `Response` e
 train %>% ggplot(aes(x=Age, group=Response, fill=Response)) +
   geom_histogram()
 ```
- 
+
 
 [![](/images/2022/12/wp_editor_md_9acfcec9d61962270e0e5980bbc1055e.jpg)](/images/2022/12/wp_editor_md_9acfcec9d61962270e0e5980bbc1055e.jpg)
 
@@ -148,7 +148,7 @@ No tiene sentido realizar una escala continua de un factor, es un problema habit
 ```r
 train %>% ggplot(aes(x=Age, group=as.factor(Response), fill=as.factor(Response))) + geom_density()
 ```
- 
+
 
 [![](/images/2022/12/wp_editor_md_a942ed16a4605560ff38faecd136d288.jpg)](/images/2022/12/wp_editor_md_a942ed16a4605560ff38faecd136d288.jpg)
 
@@ -157,7 +157,7 @@ Se aprecian comportamientos distintos para la edad en la respuesta pero se sugie
 ```r
 train %>% ggplot(aes(x=Age, group=as.factor(Response), fill=as.factor(Response))) +  geom_density(alpha = 0.3)
 ```
- 
+
 
 [![](/images/2022/12/wp_editor_md_cc340456a9a69182b33ddf69e0038aeb.jpg)](/images/2022/12/wp_editor_md_cc340456a9a69182b33ddf69e0038aeb.jpg)
 
@@ -166,7 +166,7 @@ Hay claramente dos distribuciones en función de la variable respuesta, estas di
 ```r
 train %>% ggplot(aes(x=Vintage, group=as.factor(Response), fill=as.factor(Response))) + geom_density(alpha = 0.3)
 ```
- 
+
 
 [![](/images/2022/12/wp_editor_md_e67b9187e87af57dbbe47d7235ffbfa8.jpg)](/images/2022/12/wp_editor_md_e67b9187e87af57dbbe47d7235ffbfa8.jpg)
 
@@ -176,7 +176,7 @@ En este caso la forma de la variable tanto para los que afirman estar interesado
 formattable(train %>% group_by(Response) %>%
               summarise(clientes = n(),pct_clientes=n()/nrow(train)))
 ```
-0 
+0
 
 [![](/images/2022/12/wp_editor_md_7c39ad4169e5ea594c980783a3e7aa06.jpg)](/images/2022/12/wp_editor_md_7c39ad4169e5ea594c980783a3e7aa06.jpg)
 
@@ -192,7 +192,7 @@ En el capítulo 7 los factores se estudiaban mediante gráficos de barras y en e
 formattable(train %>% group_by(Response) %>%
               summarise(clientes = n(),pct_clientes=n()/nrow(train)))
 ```
-1 
+1
 
 [![](/images/2022/12/wp_editor_md_77de95b2cab469f0e6374b9b4de46bf9.jpg)](/images/2022/12/wp_editor_md_77de95b2cab469f0e6374b9b4de46bf9.jpg)
 
@@ -202,7 +202,7 @@ Es un gráfico apilado con un problema, no se puede determinar si el target es m
 formattable(train %>% group_by(Response) %>%
               summarise(clientes = n(),pct_clientes=n()/nrow(train)))
 ```
-2 
+2
 
 [![](/images/2022/12/wp_editor_md_3cfa186cbd913be93b260dc0ad00bcfa.jpg)](/images/2022/12/wp_editor_md_3cfa186cbd913be93b260dc0ad00bcfa.jpg)
 
@@ -212,7 +212,7 @@ Al emplear % para comparar se pierde el número de observaciones pero facilita l
 formattable(train %>% group_by(Response) %>%
               summarise(clientes = n(),pct_clientes=n()/nrow(train)))
 ```
-3 
+3
 
 En el ejemplo de trabajo parece que los hombres encuestados muestran mayor interés por el producto de automóviles. Este mismo análisis se debe replicar para todos los factores input presentes en el conjunto de datos. Por ejemplo, la variable `Region_Code`
 
@@ -220,7 +220,7 @@ En el ejemplo de trabajo parece que los hombres encuestados muestran mayor inter
 formattable(train %>% group_by(Response) %>%
               summarise(clientes = n(),pct_clientes=n()/nrow(train)))
 ```
-4 
+4
 
 [![](/images/2022/12/wp_editor_md_d1e60a487683c9511f7fa5b31196afd7.jpg)](/images/2022/12/wp_editor_md_d1e60a487683c9511f7fa5b31196afd7.jpg)
 
@@ -241,11 +241,11 @@ Cuando el científico de datos se encuentre situaciones de baja prevalencia o al
 formattable(train %>% group_by(Response) %>%
               summarise(clientes = n(),pct_clientes=n()/nrow(train)))
 ```
-5 
+5
 
 [![](/images/2022/12/wp_editor_md_a9cb47a8f73d29a2db2164b2b1188cfc.jpg)](/images/2022/12/wp_editor_md_a9cb47a8f73d29a2db2164b2b1188cfc.jpg)
 
-> Se sugiere que aquellas variables del conjunto de datos que estén analizadas o clasificadas empiecen por un prefijo o se las pueda distinguir de algún modo dentro del tablón de datos, en este caso y a lo largo de todo el trabajo, se emplea el prefijo **fr_** para indicar **f** actor **r** eclasificado. Esto facilitará la automatización de análisis y los procesos de modelización como se verá con posterioridad. 
+> Se sugiere que aquellas variables del conjunto de datos que estén analizadas o clasificadas empiecen por un prefijo o se las pueda distinguir de algún modo dentro del tablón de datos, en este caso y a lo largo de todo el trabajo, se emplea el prefijo **fr_** para indicar **f** actor **r** eclasificado. Esto facilitará la automatización de análisis y los procesos de modelización como se verá con posterioridad.
 
 Parece más alto el interés en Madrid, sin embargo, el % de interesados en Barcelona y el resto de España es similar. No es una agrupación convincente pero puede interesar a un equipo de negocio. Otro mecanismo de unión de factores puede basarse en la propia variable respuesta, que sea ese % el que agrupe la variable. A continuación se plantea una agrupación en buenos, regulares y malos, agrupación de niveles de un factor simplista basada en el % de respuesta.
 
@@ -253,7 +253,7 @@ Parece más alto el interés en Madrid, sin embargo, el % de interesados en Barc
 formattable(train %>% group_by(Response) %>%
               summarise(clientes = n(),pct_clientes=n()/nrow(train)))
 ```
-6 
+6
 
 La librería `formattable` además de permitir presentar de forma elegante data frames, puede añadir mayor vistosidad a las tablas como ilustra el ejemplo. Para facilitar el análisis se suma la variable `Response`, motivo por el cual no se transforma (aun) en factor, en ocasiones facilita el trabajo mantenerla como numérica. Se crea un `agregado_clientes` para determinar el % de clientes que se van agrupando. Mediante la función `lag` que permite extraer el anterior registro de un data frame se busca si la acumulación de clientes de la anterior región ya ha superado el 10% de las observaciones, de esa forma se crean grupos de provincias en función de la tasa de respuesta.
 
@@ -263,7 +263,7 @@ La primera agrupación de provincias será aquella que supere el 10% de las obse
 formattable(train %>% group_by(Response) %>%
               summarise(clientes = n(),pct_clientes=n()/nrow(train)))
 ```
-7 
+7
 
 Se vuelve a recalcular el agregado de clientes eliminando las provincias ya clasificadas y el siguiente corte se establece cuando se supere otro 10% de observaciones.
 
@@ -271,7 +271,7 @@ Se vuelve a recalcular el agregado de clientes eliminando las provincias ya clas
 formattable(train %>% group_by(Response) %>%
               summarise(clientes = n(),pct_clientes=n()/nrow(train)))
 ```
-8 
+8
 
 Este proceso se plantea de forma iterativa en distintos data frames para entender el proceso y así se crean los grupos _muy bueno, bueno, regular, malo, muy malo_ de provincias en base a la variable target.
 
@@ -279,7 +279,7 @@ Este proceso se plantea de forma iterativa en distintos data frames para entende
 formattable(train %>% group_by(Response) %>%
               summarise(clientes = n(),pct_clientes=n()/nrow(train)))
 ```
-9 
+9
 
 Es útil ver paso a paso que regiones se van uniendo por si existe algún criterio de negocio o se encuentra algún indicador que pueda mejorar esta agrupación ya que este trabajo no tiene ningún sentido práctico más allá de unir regiones con similares tasas de respuesta, al científico de datos puede interesarle llevar estos datos a una hoja de cálculo y realizar sus propias agrupaciones. Si se trabaja con un gran número de variables existen librerías en R que realizan esta labor de forma automática tanto con variables numéricas como con factores pero se recomienda controlar como se producen estas agrupaciones.
 
@@ -293,7 +293,7 @@ peso <- altura/2.85 + rnorm(personas, 10, 5)
 data.frame(altura=altura, peso=peso) %>%  ggplot(aes(x = altura, y = peso)) +
   geom_point()
 ```
-0 
+0
 
 Se repite el gráfico de barras apiladas.
 
@@ -305,7 +305,7 @@ peso <- altura/2.85 + rnorm(personas, 10, 5)
 data.frame(altura=altura, peso=peso) %>%  ggplot(aes(x = altura, y = peso)) +
   geom_point()
 ```
-1 
+1
 
 [![](/images/2022/12/wp_editor_md_de0df86e05ea581c95bbeb265dfe1cac.jpg)](/images/2022/12/wp_editor_md_de0df86e05ea581c95bbeb265dfe1cac.jpg)
 
@@ -325,7 +325,7 @@ peso <- altura/2.85 + rnorm(personas, 10, 5)
 data.frame(altura=altura, peso=peso) %>%  ggplot(aes(x = altura, y = peso)) +
   geom_point()
 ```
-2 
+2
 
 [![](/images/2022/12/wp_editor_md_b0dc23c102c488501f3ffe35d8c6dc4e.jpg)](/images/2022/12/wp_editor_md_b0dc23c102c488501f3ffe35d8c6dc4e.jpg)
 
@@ -339,7 +339,7 @@ peso <- altura/2.85 + rnorm(personas, 10, 5)
 data.frame(altura=altura, peso=peso) %>%  ggplot(aes(x = altura, y = peso)) +
   geom_point()
 ```
-3 
+3
 
 [![](/images/2022/12/wp_editor_md_312043a585ac063d7fd05693bcf24dcb.jpg)](/images/2022/12/wp_editor_md_312043a585ac063d7fd05693bcf24dcb.jpg)
 
@@ -355,20 +355,20 @@ peso <- altura/2.85 + rnorm(personas, 10, 5)
 data.frame(altura=altura, peso=peso) %>%  ggplot(aes(x = altura, y = peso)) +
   geom_point()
 ```
-4 
+4
 
 [![](/images/2022/12/wp_editor_md_34c60ad23556f55de27910bb55eddad8.jpg)](/images/2022/12/wp_editor_md_34c60ad23556f55de27910bb55eddad8.jpg)
 
 Este código automatiza el gráfico anterior y se puede aplicar para más variables, además sirve de ejemplo de uso de **símbolos** en funciones con dplyr ya que en funciones puede ser un problema pasar cadenas de caracteres. Se pueden emplear funciones como `group_by_at` para evitar esta situación pero en esta función se transforma en símbolo y se referencia mediante !! Como se puede comprobar esta función `bivariable` se puede replicar con todos los factores en estudio.
 
 ```r
-grid.arrange(ncol=2,  
-bivariable(train, ‘Response’, ‘fr_region2’, 1.5),  
-bivariable(train, ‘Response’, ‘Gender’, 1),  
-bivariable(train, ‘Response’, ‘Driving_License’, 1),  
-bivariable(train, ‘Response’, ‘Vehicle_Damage’, 1),  
-bivariable(train, ‘Response’, ‘Policy_Sales_Channel’, 1),  
-bivariable(train, ‘Response’, ‘Previously_Insured’, 1),  
+grid.arrange(ncol=2,
+bivariable(train, ‘Response’, ‘fr_region2’, 1.5),
+bivariable(train, ‘Response’, ‘Gender’, 1),
+bivariable(train, ‘Response’, ‘Driving_License’, 1),
+bivariable(train, ‘Response’, ‘Vehicle_Damage’, 1),
+bivariable(train, ‘Response’, ‘Policy_Sales_Channel’, 1),
+bivariable(train, ‘Response’, ‘Previously_Insured’, 1),
 bivariable(train, ‘Response’, ‘Vehicle_Age’, 1))
 ```
 
@@ -380,7 +380,7 @@ peso <- altura/2.85 + rnorm(personas, 10, 5)
 data.frame(altura=altura, peso=peso) %>%  ggplot(aes(x = altura, y = peso)) +
   geom_point()
 ```
-5 
+5
 
 [![](/images/2022/12/wp_editor_md_9a61750d55d697cc50f5bdbe85acc6df.jpg)](/images/2022/12/wp_editor_md_9a61750d55d697cc50f5bdbe85acc6df.jpg)
 
@@ -398,7 +398,7 @@ peso <- altura/2.85 + rnorm(personas, 10, 5)
 data.frame(altura=altura, peso=peso) %>%  ggplot(aes(x = altura, y = peso)) +
   geom_point()
 ```
-6 
+6
 
 En este caso la V de Cramer tiene un valor muy próximo a 0 lo que indica que hay poca relación entre los factores, valores próximos a 1 indican mucha relación. Cuando se trabaje con modelos lineales se verá la importancia que tiene esta medida para las variables input en los procesos de modelización.
 
@@ -416,7 +416,7 @@ peso <- altura/2.85 + rnorm(personas, 10, 5)
 data.frame(altura=altura, peso=peso) %>%  ggplot(aes(x = altura, y = peso)) +
   geom_point()
 ```
-7 
+7
 
 Esa agrupación es la definición de percentil, se ordena la variable a tramificar de menor a mayor y cada registro dividido por el total si es multiplicado por el número de grupos va a dar un número entre 1 y el número de grupos especificado que tendrán el mismo número de registros y cuyo total recoge el total de los registros. Esa variable grupo se trata como un factor reclasificado por lo que es susceptible de aplicar la función de descripción bivariable.
 
@@ -428,7 +428,7 @@ peso <- altura/2.85 + rnorm(personas, 10, 5)
 data.frame(altura=altura, peso=peso) %>%  ggplot(aes(x = altura, y = peso)) +
   geom_point()
 ```
-8 
+8
 
 [![](/images/2022/12/wp_editor_md_2672fdb0c1a07094c1bb23090010bc67.jpg)](/images/2022/12/wp_editor_md_2672fdb0c1a07094c1bb23090010bc67.jpg)
 

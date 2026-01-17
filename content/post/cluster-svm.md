@@ -18,7 +18,7 @@ tags:
 - análisis cluster
 - SVM
 title: Solventamos los peligros del análisis cluster con SVM
-url: /cluster-svm/
+url: /blog/cluster-svm/
 ---
 
 Retomamos un asunto tratado en días anteriores, [los peligros de realizar un análisis de agrupamiento basado en las distancias entre observaciones](https://analisisydecision.es/un-peligro-del-analisis-cluster/). **¿Cómo podemos evitar este problema?** Empleando máquinas de vectores de soporte, traducción de **Support Vector Machines (SVM)**. Esta técnica de clasificación de la que [ya hablamos en otra entrada ](https://analisisydecision.es/monografico-clasificacion-con-svm-en-r/)nos permite separar observaciones en base la creación de hiperplanos que las separan. Una función _kernel_ será la que nos permita crear estos hiperplanos, en el caso que nos ocupa tenemos sólo dos variables, necesitamos crear líneas de separación entre observaciones. En la red tenéis una gran cantidad de artículos sobre estas técnicas.

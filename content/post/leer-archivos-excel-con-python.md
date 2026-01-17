@@ -16,7 +16,7 @@ tags:
 - Pandas
 - xlrd
 title: Leer archivos Excel con Python
-url: /leer-archivos-excel-con-python/
+url: /blog/leer-archivos-excel-con-python/
 ---
 
 Entrada sobre la importación de Excel con Python, un aporte que sirve para mi documentación y que es posible que sea de ayuda para muchos que se estén iniciando en el uso de Python y Pandas, aunque en este caso para la lectura del Excel usaremos tanto Pandas como la librería xlrd.
@@ -33,9 +33,9 @@ df = pd.read_excel(archivo, sheet_name='Hoja1')
 
 df.describe()
 ```
- 
 
-La función read_excel será suficiente en el 80% de las ocasiones que realicemos esta tarea. Como es habitual en la ayuda tenéis perfectamente descritas sus posibilidades. 
+
+La función read_excel será suficiente en el 80% de las ocasiones que realicemos esta tarea. Como es habitual en la ayuda tenéis perfectamente descritas sus posibilidades.
 
 #### Lectura de Excel con xlrd
 
@@ -53,7 +53,7 @@ print(hoja.nrows)
 print(hoja.ncols)
 print(hoja.cell_value(0, 0))
 ```
- 
+
 
 open_workbook nos abre el Excel para trabajar con él. Seleccionamos hojas por índice (empezando por el 0) y con la hoja seleccionada podemos ver el número de filas (nrows) o columnas (ncols). Seleccionar una celda lo hacemos con cell_value mediante índices (empezando por el 0). Otras posibilidades:
 
@@ -66,7 +66,7 @@ hoja = wb.sheet_by_name('Hoja1')
 for i in range(0,hoja.nrows):
     print(hoja.cell_value(i,1))
 ```
- 
+
 
 Si por ejemplo deseamos saber las cabeceras, los nombres de las columnas:
 
@@ -79,7 +79,7 @@ hoja = wb.sheet_by_index(0)
 nombres = hoja.row(0)
 print(nombres)
 ```
- 
+
 
 Y mediante xlrd podemos crear data frames de pandas con lo que es posible realizar lecturas de rangos:
 
@@ -102,6 +102,6 @@ import pandas as pd
 df = pd.DataFrame(filas)
 df.head()
 ```
- 
+
 
 Hay alguna librería que lo hace de forma más elegante pero la importación de rangos de Excel con xlrd, una vez te familiarizas, me parece bastante sencilla. Espero que sea de utilidad

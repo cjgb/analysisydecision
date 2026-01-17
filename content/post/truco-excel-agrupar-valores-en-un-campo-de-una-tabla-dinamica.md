@@ -16,7 +16,7 @@ slug: truco-excel-agrupar-valores-en-un-campo-de-una-tabla-dinamica
 tags:
 - tabla dinamica
 title: Truco Excel. Agrupar valores en un campo de una tabla dinámica
-url: /truco-excel-agrupar-valores-en-un-campo-de-una-tabla-dinamica/
+url: /blog/truco-excel-agrupar-valores-en-un-campo-de-una-tabla-dinamica/
 ---
 
 Si necesitamos agrupar un campo de una tabla dinámica tenemos dos opciones. Por un lado agrupar manualmente o bien crear intervalos de determinado tamaño. Para agrupar datos manualmente seleccionamos los elementos que deseamos agrupar en la tabla dinámica y pulsamos botón derecho agrupar:

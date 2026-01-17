@@ -13,7 +13,7 @@ related:
 slug: noticia-microsoft-compra-revolution-analytics
 tags: []
 title: 'NOTICIA: Microsoft compra Revolution Analytics'
-url: /noticia-microsoft-compra-revolution-analytics/
+url: /blog/noticia-microsoft-compra-revolution-analytics/
 ---
 
 Noticia bomba: Microsoft compra Revolution Analytics conocida vía Emilio Lopez Cano (@emiliolopezcano). El gigante ha comprado la principal «ala comercial» de R. Los detalles de la compra en el siguiente enlace de su blog corporativo:

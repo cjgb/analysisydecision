@@ -14,7 +14,7 @@ slug: con-los-vehiculos-autonomos-me-quedo-sin-trabajo-o-no
 tags:
 - vehículo autónomo
 title: Con los vehículos autónomos me quedo sin trabajo (o no)
-url: /con-los-vehiculos-autonomos-me-quedo-sin-trabajo-o-no/
+url: /blog/con-los-vehiculos-autonomos-me-quedo-sin-trabajo-o-no/
 ---
 
 ![](https://4www.ecestaticos.com/imagestatic/clipping/43f/def/0c6/43fdef0c60136fdbeb808d3de09be64d/el-vehiculo-del-futuro-ya-esta-aqui-las-firmas-que-ya-trabajan-en-el-coche-autonomo.jpg?mtime=1463742476)
@@ -26,7 +26,7 @@ Lo primero y más urgente, me quedan unos 25-30 años para jubilarme y tengo que
   * En 2013 National Highway Traffic Safety Administration’s (como siempre en USA nos sacan ventaja) empieza a regular o a clasificar este tipo de vehículos: http://www.nhtsa.gov/About+NHTSA/Press+Releases/U.S.+Department+of+Transportation+Releases+Policy+on+Automated+Vehicle+Development
   * En 2014 algunos estados norteamericanos como California, Florida, Michigan, North Dakota y Tennessee ya crean legislación al respecto
   * En 2015 Tesla Motor Inc. incorpora a sus vehículos el Autopilot y parece que es el punto de inflexión.
-  * En 2016 los que trabajamos en el sector asegurador nos empezamos a preocupar: 
+  * En 2016 los que trabajamos en el sector asegurador nos empezamos a preocupar:
     * http://www.rand.org/pubs/research_reports/RR443-1.html
     * https://www.adrianflux.co.uk/driverless-cars/
   * Ahora Tesla sale en las noticias debido a los accidentes y a su forma de financiarse.

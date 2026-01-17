@@ -18,7 +18,7 @@ tags:
 - clasificacion
 - random forest
 title: Medir la importancia de las variables con Random Forest
-url: /medir-la-importancia-de-las-variables-con-random-forest/
+url: /blog/medir-la-importancia-de-las-variables-con-random-forest/
 ---
 
 ¿**Qué variables son las más importantes para nuestro modelo de clasificación**? Yo creo que muchos de vosotros os habréis encontrado con esta problemática. Hay muchas formas de solventarla, habitualmente empleamos aquellas variables que mejor pueden entender nuestras áreas de negocio. Es decir, hacemos segmentaciones en base al sexo y la edad sólo por no tener que explicar como hemos construido una variable artificial a alguien que no entiende lo que es una variable y mucho menos variable artificial. Pero hoy os quería plantear la utilización de métodos de _[random forest](http://en.wikipedia.org/wiki/Random_forest)_ con R para medir la importancia de las variables cuantitativas, para variables cualitativas recomiendo otras formas que plantearé más adelante. El _random forest_ es un **método de clasificación** basado en la realización de **múltiples árboles de decisión** sobre muestras de un conjunto de datos. Hacemos muchas clasificaciones con menos variables y menos observaciones y al final nos quedamos con un promedio de estas clasificaciones, esa sería la idea a grandes rasgos. La característica que hace de este método muy interesante es la posibilidad de incluir un gran número de variables _input_ en nuestro modelo ya que no encontraremos relaciones lineales entre ellas y tampoco aparecerán relaciones debidas al azar.

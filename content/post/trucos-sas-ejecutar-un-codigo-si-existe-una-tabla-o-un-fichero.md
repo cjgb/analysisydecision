@@ -15,7 +15,7 @@ related:
 slug: trucos-sas-ejecutar-un-codigo-si-existe-una-tabla-o-un-fichero
 tags: []
 title: Trucos SAS. Ejecutar un código si existe una tabla o un fichero
-url: /trucos-sas-ejecutar-un-codigo-si-existe-una-tabla-o-un-fichero/
+url: /blog/trucos-sas-ejecutar-un-codigo-si-existe-una-tabla-o-un-fichero/
 ---
 
 Esta duda me llegó hace unos días. Se trataba de ejecutar un código si existía determinado fichero o determinada tabla. Para hacer esto os planteo una posible metodología que yo utilizaba cuando programaba SAS en una gran entidad bancaria con Enterprise Guide 1, por aquellos entonces hacía maravillas con la castaña del Guide v1. Entre ellas unas macros que contenían una sentencia condicional que ejecutaba un código en función de la función (bonita expresión) EXIST o FILEEXIST. Lo que yo hacía era algo parecido a esto:

@@ -17,7 +17,7 @@ tags:
 - Importar a R desde Excel
 - RODBC
 title: Trucos R. Leer de Excel vía RODBC
-url: /trucos-r-leer-de-excel-via-rodbc/
+url: /blog/trucos-r-leer-de-excel-via-rodbc/
 ---
 
 Un gran número de visitas que llegan a este sitio tienen que ver con la importación de datos. En este caso he encontrado en Youtube un video explicativo en el que nos indican de una forma muy sencilla como importar a R datos desde hojas Excel con el paquete [RODBC](http://cran.r-project.org/web/packages/RODBC/index.html):

@@ -14,7 +14,7 @@ related:
 slug: nace-analisisydecision
 tags: []
 title: Nace análisis y decisión AyD
-url: /nace-analisisydecision/
+url: /blog/nace-analisisydecision/
 ---
 
 Nace un nuevo proyecto en la web. Profesionales con amplia experiencia en la gestión de la información se unen para compartir conocimientos.

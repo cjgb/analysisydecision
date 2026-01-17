@@ -16,7 +16,7 @@ slug: mapa-de-catalunya-en-excel-por-comarcas
 tags:
 - mapas excel
 title: Mapa de Catalunya en Excel por comarcas
-url: /mapa-de-catalunya-en-excel-por-comarcas/
+url: /blog/mapa-de-catalunya-en-excel-por-comarcas/
 ---
 
 ![](/images/2013/04/mapa-excel-catalunya-por-comarques.png)

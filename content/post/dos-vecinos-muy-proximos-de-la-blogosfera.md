@@ -18,7 +18,7 @@ tags:
 - minería de datos
 - R
 title: Dos vecinos muy próximos de la «blogosfera»
-url: /dos-vecinos-muy-proximos-de-la-blogosfera/
+url: /blog/dos-vecinos-muy-proximos-de-la-blogosfera/
 ---
 
 Hoy voy a hablar de la competencia, siempre muy deportiva, de este _blog_. Espero que Raúl me excuse y entienda que no quiero alimentar contadores de visitas ajenos a expensas de los propios sino establecer relaciones de buena vecindad con otros proyectos interesantes y complementarios.

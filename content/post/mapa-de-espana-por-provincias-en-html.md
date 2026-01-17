@@ -18,7 +18,7 @@ tags:
 - informes
 - Mapa
 title: Mapa de España por provincias en HTML
-url: /mapa-de-espana-por-provincias-en-html/
+url: /blog/mapa-de-espana-por-provincias-en-html/
 ---
 
 ![gmap.gif](/images/2012/03/gmap.gif)

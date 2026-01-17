@@ -15,7 +15,7 @@ related:
 slug: trucos-excel-graficos-con-caracteres
 tags: []
 title: Trucos Excel. Gráficos con caracteres
-url: /trucos-excel-graficos-con-caracteres/
+url: /blog/trucos-excel-graficos-con-caracteres/
 ---
 
 ![piramide-poblacional-excel.png](/images/2010/08/piramide-poblacional-excel.png)

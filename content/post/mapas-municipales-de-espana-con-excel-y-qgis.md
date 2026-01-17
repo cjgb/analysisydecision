@@ -17,10 +17,10 @@ slug: mapas-municipales-de-espana-con-excel-y-qgis
 tags:
 - QGIS
 title: Mapas municipales de España con Excel y QGIS
-url: /mapas-municipales-de-espana-con-excel-y-qgis/
+url: /blog/mapas-municipales-de-espana-con-excel-y-qgis/
 ---
 
-[![mapa_españa_municipal7](/images/2017/03/mapa_españa_municipal7.png)](/images/2017/03/mapa_españa_municipal7.png)  
+[![mapa_españa_municipal7](/images/2017/03/mapa_españa_municipal7.png)](/images/2017/03/mapa_españa_municipal7.png)
 Un tweet a @r_vaquerizo me preguntaba por mapas para representar datos a nivel municipal en España. Estas cuestiones las suelen plantear porque los mapas en Excel que hay publicados en el blog están muy extendidos y quieren herramientas similares pero a otro nivel, ya sea comarcal, municipal, código postal… Hacer estos mapas con Excel es muy complicado porque estos mapas no dejan de ser un gran rompecabezas que colocamos en Excel. Sin embargo podemos emplear QGIS para realizar este tipo de mapas, QGIS es libre, tiene muchas posibilidades y ‘comunica’ a la perfección con Excel y como ejemplo de ello vamos a realizar un mapa con la población total de la provincia de Zaragoza. Para esta tarea [el mejor mapa que he encontrado es este](https://www.arcgis.com/home/item.html?id=2e47bb12686d4b4b9d4c179c75d4eb78), no tiene restricciones de uso pero sobre todo es muy simple y tiene un campo código de municipio que nos permite cruzar a la perfección con los datos del INE. Comencemos a trabajar.
 
 Descargado el mapa vemos que tenemos 7 archivos que contienen información sobre el mapa, los dejamos en una carpeta y abrimos QGIS, aquí creamos un nuevo proyecto y añadimos una capa vectorial entonces nos pide seleccionar un archivo a abrir y de ese mapa que nos hemos descargado seleccionamos el archivo *.shp y obtendremos:

@@ -19,7 +19,7 @@ tags:
 - maptools
 - spatial data
 title: 'El #brexit con #rstats o como mover spatial data con R'
-url: /el-brexit-con-rstats-o-como-mover-spatial-data-con-r/
+url: /blog/el-brexit-con-rstats-o-como-mover-spatial-data-con-r/
 ---
 
 [![bye_england](/images/2016/08/bye_england.gif)](/images/2016/08/bye_england.gif)
@@ -48,6 +48,6 @@ plot(uk,add=TRUE)},
 interval=.3,
 movie.name="/Users/raulvaquerizo/Desktop/R/animaciones/brexit/bye_england.gif")
 ```
- 
+
 
 Nos descargamos el mapa del link que os pongo y poco más que leer el shape con readShapeSpatial y crear dos objetos uno con Europa sin la isla y otro con la isla, elide nos permite desplazar un objeto de spatial data dentro del gráfico y lo metemos en un bucle y bye England. Ahora el que me mueva las Canarias en un shape file con más de 2 líneas de código me paga una cervecita. Saludos.

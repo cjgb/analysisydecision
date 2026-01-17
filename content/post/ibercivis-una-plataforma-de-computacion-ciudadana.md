@@ -16,7 +16,7 @@ tags:
 - ibercivis
 - seti
 title: Ibercivis, una plataforma de computación ciudadana
-url: /ibercivis-una-plataforma-de-computacion-ciudadana/
+url: /blog/ibercivis-una-plataforma-de-computacion-ciudadana/
 ---
 
 Creo que es hecho conocido que existe el proyecto [SETI@home](http://es.wikipedia.org/wiki/SETI@Home "SETI@home"), una red de ordenadores que ceden voluntarios para analizar nosequé tipo de datos para la nosequé clase de esotéricos fines. Nunca me interesó el asunto en sí, aunque sí la plataforma.

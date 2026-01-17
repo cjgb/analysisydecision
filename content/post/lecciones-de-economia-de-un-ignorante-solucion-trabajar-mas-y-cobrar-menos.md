@@ -15,7 +15,7 @@ tags:
 - ''
 - crisis
 title: 'Lecciones de economía de un ignorante: Solución: ¡TRABAJAR MÁS Y COBRAR MENOS!'
-url: /lecciones-de-economia-de-un-ignorante-solucion-c2a1trabajar-mas-y-cobrar-menos/
+url: /blog/lecciones-de-economia-de-un-ignorante-solucion-c2a1trabajar-mas-y-cobrar-menos/
 ---
 
 Mi buen amigo **David** lleva varios días realizando un interesante análisis de la situación económica actual. Hoy quiero concentrar en pocas líneas este análisis. La hecatombe bancaria se produce debido al **incremento de la morosidad** , sin embargo esta es una situación que ya hemos vivido:

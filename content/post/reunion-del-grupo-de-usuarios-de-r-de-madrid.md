@@ -13,7 +13,7 @@ related:
 slug: reunion-del-grupo-de-usuarios-de-r-de-madrid
 tags: []
 title: Reunión del grupo de usuarios de R de Madrid
-url: /reunion-del-grupo-de-usuarios-de-r-de-madrid/
+url: /blog/reunion-del-grupo-de-usuarios-de-r-de-madrid/
 ---
 
 Nueva reunión del Grupo de Usuarios de R de Madrid este jueves 17 de marzo, para más información:

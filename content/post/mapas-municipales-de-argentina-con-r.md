@@ -18,22 +18,22 @@ tags:
 - sp
 - spatial data
 title: Mapas municipales de Argentina con R
-url: /mapas-municipales-de-argentina-con-r/
+url: /blog/mapas-municipales-de-argentina-con-r/
 ---
 
 [![Municipios Buenos Aires](/images/2016/09/Municipios-Buenos-Aires.png)](/images/2016/09/Municipios-Buenos-Aires.png)
 
-En respuesta a un lector del blog he elaborado de forma rápida una nueva entrada que nos permite realizar mapas por municipalidades para Argentina, ya hay entradas similares pero está bien que este mapa tenga su propia entrada para facilitar las búsquedas. El ejemplo es rápido y es probable que el código tenga algún fallo o error, si es así lo comentáis y lo solvento. Como es habitual nos dirigimos a la web del proyecto _Global Administrative Areas_ (<http://www.gadm.org/country>) y nos descargamos el mapa de Argentina por municipios que es el nivel 2, una vez descargado pocas líneas de R:  
-[sourcecode language=»r»]library(sp)  
+En respuesta a un lector del blog he elaborado de forma rápida una nueva entrada que nos permite realizar mapas por municipalidades para Argentina, ya hay entradas similares pero está bien que este mapa tenga su propia entrada para facilitar las búsquedas. El ejemplo es rápido y es probable que el código tenga algún fallo o error, si es así lo comentáis y lo solvento. Como es habitual nos dirigimos a la web del proyecto _Global Administrative Areas_ (<http://www.gadm.org/country>) y nos descargamos el mapa de Argentina por municipios que es el nivel 2, una vez descargado pocas líneas de R:
+[sourcecode language=»r»]library(sp)
 library(RColorBrewer)
 
 ub_argentina="C:\\\mapas\\\ARG_adm2.rds"
 
-argentina = readRDS(ub_argentina)  
+argentina = readRDS(ub_argentina)
 b.aires = argentina[argentinaNAME_1=="Buenos Aires",]
 
-aleatorio = rpois(length(unique(b.airesNAME_2)),3)  
-b.aires@data=data.frame(aleatorio)  
-spplot(b.aires,col.regions=brewer.pal(5, "Blues"))  
-[/sourcecode]  
+aleatorio = rpois(length(unique(b.airesNAME_2)),3)
+b.aires@data=data.frame(aleatorio)
+spplot(b.aires,col.regions=brewer.pal(5, "Blues"))
+[/sourcecode]
 Leemos el mapa entero y hacemos un subconjunto de datos sólo con los municipios de Buenos Aires, pintamos unos datos aleatorios con la función spplot y con la librería RColorBrewer podemos dar un formato más elegante a nuestro mapa. Saludos.

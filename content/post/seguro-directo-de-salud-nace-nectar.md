@@ -13,7 +13,7 @@ related:
 slug: seguro-directo-de-salud-nace-nectar
 tags: []
 title: Seguro directo de salud. Nace ‘Nectar’
-url: /seguro-directo-de-salud-nace-nectar/
+url: /blog/seguro-directo-de-salud-nace-nectar/
 ---
 
 Interesante noticia:

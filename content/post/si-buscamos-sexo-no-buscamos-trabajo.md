@@ -13,7 +13,7 @@ related:
 slug: si-buscamos-sexo-no-buscamos-trabajo
 tags: []
 title: Si buscamos sexo no buscamos trabajo
-url: /si-buscamos-sexo-no-buscamos-trabajo/
+url: /blog/si-buscamos-sexo-no-buscamos-trabajo/
 ---
 
 «Internáuticamente» hablando cuando buscamos sexo no buscamos trabajo, no lo digo yo, lo dice [Google Trends](http://www.google.com/trends). Observemos que ocurre si comparamos las búsquedas de la palabra sexo frente a trabajo:

@@ -15,7 +15,7 @@ related:
 slug: trucos-sas-autonumerico-con-proc-sql
 tags: []
 title: Trucos sas. Autonumérico con PROC SQL
-url: /trucos-sas-autonumerico-con-proc-sql/
+url: /blog/trucos-sas-autonumerico-con-proc-sql/
 ---
 
 Rápido. Me ha llegado una consulta que me preguntaba como crear un campo autonumérico con PROC SQL. Tenemos que emplear la funciòn _monotonic():_

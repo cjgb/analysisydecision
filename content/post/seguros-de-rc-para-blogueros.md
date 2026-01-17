@@ -14,7 +14,7 @@ related:
 slug: seguros-de-rc-para-blogueros
 tags: []
 title: Seguros de RC para blogueros
-url: /seguros-de-rc-para-blogueros/
+url: /blog/seguros-de-rc-para-blogueros/
 ---
 
 [En el blog de seguros de Alain Puyo.](http://www.alainpuyo.com/seguros-para-blogs-polemicos-cinco-dias-23-09-09/)

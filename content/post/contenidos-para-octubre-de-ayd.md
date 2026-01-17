@@ -16,10 +16,10 @@ tags:
 - Google Analytics
 - visitas web
 title: Contenidos de octubre en función del conocimiento de los usuarios
-url: /contenidos-para-octubre-de-ayd/
+url: /blog/contenidos-para-octubre-de-ayd/
 ---
 
-Google Analytics me está permitiendo conocer a los usuarios que navegan por AyD. Y en función de este conocimiento quiero orientar los contenidos para el mes de octubre. AyD está funcionando por debajo de mis previsiones de visitas nuevas pero muy por encima de mis previsiones de visitas que repiten. Es decir, la captación no va todo lo bien que esperaba pero la fidelización me está sorprendiendo gratamente. Voy a describir las visitas desde el 1 de agosto de 2008 al 15 de septiembre de 2008. 
+Google Analytics me está permitiendo conocer a los usuarios que navegan por AyD. Y en función de este conocimiento quiero orientar los contenidos para el mes de octubre. AyD está funcionando por debajo de mis previsiones de visitas nuevas pero muy por encima de mis previsiones de visitas que repiten. Es decir, la captación no va todo lo bien que esperaba pero la fidelización me está sorprendiendo gratamente. Voy a describir las visitas desde el 1 de agosto de 2008 al 15 de septiembre de 2008.
 
 Como he hecho en anteriores análisis dos son los indicadores que formarán parte de mi estudio:
 

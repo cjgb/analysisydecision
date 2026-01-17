@@ -20,7 +20,7 @@ tags:
 - Trim
 - trimn
 title: Espacios en SAS
-url: /espacios-en-sas/
+url: /blog/espacios-en-sas/
 ---
 
 ![](/images/2014/01/Blancos-en-SAS.png)
@@ -53,7 +53,7 @@ l_st1=length(st1); output;
 
 run;
 ```
- 
+
 
 Distintas formas de eliminar espacios dentro de una cadena de caracteres en SAS. Partimos de la variable string » Cuando brilla el sol » y empleamos las siguientes funciones:
 

@@ -18,7 +18,7 @@ tags:
 - cuotas participativas
 - frob
 title: Lecciones de economía de un ignorante. Las Cajas serán bancos
-url: /lecciones-de-economia-de-un-ignorante-las-cajas-seran-bancos/
+url: /blog/lecciones-de-economia-de-un-ignorante-las-cajas-seran-bancos/
 ---
 
 Muy rápido que no tengo tiempo. Un mensaje que yo mismo me iré comentando. Las cajas se van a ir reordenando. Me preocupa que las reordene el [FROB (Fondo de Reestructuración Ordenada Bancaria)](http://www.iberfinanzas.com/index.php/Articulos-informes/Fondo-de-Reestructuracion-Ordenada.html). ¿Por qué me preocupa? Porque una política económica de intervención va a favorecer que las Cajas de Ahorro vean las [cuotas participativas](http://es.wikipedia.org/wiki/Cuotas_participativas) como el mecanismo con el que llevar a cabo su reestructuración y esta reestructuración convertirá Cajas en bancos.

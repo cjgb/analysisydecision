@@ -16,7 +16,7 @@ related:
 slug: univariantes-de-campos-de-nuestra-bbdd-con-kettle
 tags: []
 title: Univariantes de campos de nuestra BBDD con kettle
-url: /univariantes-de-campos-de-nuestra-bbdd-con-kettle/
+url: /blog/univariantes-de-campos-de-nuestra-bbdd-con-kettle/
 ---
 
 El kettle no sólo puede servirnos para subir y bajar tablas a nuestra BBDD. También puede ayudarnos a describir las tablas de nuestras BBDD de una forma muy sencilla. El paso _Univariate Statistics_ será nuestro aliado para esta sencilla tarea.

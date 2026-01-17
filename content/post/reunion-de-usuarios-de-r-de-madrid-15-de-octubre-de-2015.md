@@ -14,7 +14,7 @@ slug: reunion-de-usuarios-de-r-de-madrid-15-de-octubre-de-2015
 tags:
 - Grupo de usuarios de R de Madrid
 title: Reunión de usuarios de R de Madrid. 15 de octubre de 2015
-url: /reunion-de-usuarios-de-r-de-madrid-15-de-octubre-de-2015/
+url: /blog/reunion-de-usuarios-de-r-de-madrid-15-de-octubre-de-2015/
 ---
 
 El próximo jueves día 15 de octubre comienzan de nuevo las reuniones del Grupo de Usuarios de R de Madrid. A partir de ahora la idea es que el Grupo se junte todos los segundos jueves de mes en el [MediaLab-Prado](http://medialab-prado.es/) desde las 19 horas. La agenda para esta reunión será:

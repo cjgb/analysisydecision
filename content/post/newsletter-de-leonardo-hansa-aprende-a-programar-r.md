@@ -15,7 +15,7 @@ related:
 slug: newsletter-de-leonardo-hansa-aprende-a-programar-r
 tags: []
 title: Newsletter de Leonardo Hansa. Aprende a programar R
-url: /newsletter-de-leonardo-hansa-aprende-a-programar-r/
+url: /blog/newsletter-de-leonardo-hansa-aprende-a-programar-r/
 ---
 
 A raiz de [un comentario en Twitter de Leo Hansa](https://twitter.com/l_hansa/status/1499647910308368385 "hola") hemos descubierto una newsletter que puede resultar de interés para todos aquellos que os estáis acercando a la programación con #rstats.

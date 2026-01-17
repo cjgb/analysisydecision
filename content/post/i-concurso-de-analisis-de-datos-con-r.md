@@ -13,7 +13,7 @@ related:
 slug: i-concurso-de-analisis-de-datos-con-r
 tags: []
 title: I concurso de análisis de datos con R
-url: /i-concurso-de-analisis-de-datos-con-r/
+url: /blog/i-concurso-de-analisis-de-datos-con-r/
 ---
 
 A pesar de tener la primicia (estoy de vacaciones y no leo habitualmente el correo de mi trabajo) soy el último en hacerse eco de la gran noticia de las III jornadas de R: [El primer concurso de análisis de datos con R](http://www.usar.org.es/concurso_es.php). Hay en total 1.500 € en premios que reparte el patrocinador del evento [Nestoria](http://www.nestoria.com/). Nestoria es un motor de búsqueda de inmuebles que está presente en múltiples países.

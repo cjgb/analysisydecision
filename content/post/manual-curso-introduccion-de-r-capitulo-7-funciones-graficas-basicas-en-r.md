@@ -15,7 +15,7 @@ slug: manual-curso-introduccion-de-r-capitulo-7-funciones-graficas-basicas-en-r
 tags: []
 title: 'Manual. Curso introducción de R. Capítulo 7: Funciones gráficas básicas en
   R'
-url: /manual-curso-introduccion-de-r-capitulo-7-funciones-graficas-basicas-en-r/
+url: /blog/manual-curso-introduccion-de-r-capitulo-7-funciones-graficas-basicas-en-r/
 ---
 
 R dispone de múltiples posibilidades a la hora de realizar gráficos. De hecho, bajo mi punto de vista, puede ser una de las herramientas estadísticas más potentes al respecto, además es gratuita y existe una comunidad detrás que pone a nuestra disposición múltiples manuales y documentación. Debido al gran material existente este capítulo sólo será una pequeña introducción a sus posibilidades en sucesivas entregas veremos nuevas funciones y nuevos gráficos más aplicados a ejemplos reales.

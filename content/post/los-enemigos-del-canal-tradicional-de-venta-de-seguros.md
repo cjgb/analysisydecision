@@ -16,7 +16,7 @@ tags:
 - enemigos de agentes y corredores
 - venta de seguros
 title: Los enemigos del canal tradicional de venta de seguros
-url: /los-enemigos-del-canal-tradicional-de-venta-de-seguros/
+url: /blog/los-enemigos-del-canal-tradicional-de-venta-de-seguros/
 ---
 
 Tradicionalmente los seguros se distribuían a través de agentes (trabajadores de la propia compañía) y corredores (trabajadores libres). También ha existido el canal de banca-seguros que en los últimos años, tras el boom inmobiliario, está cogiendo mayor peso. El otro canal mayoritario de comercialización de seguros es el canal directo, el canal con mayor crecimiento y que puede englobar internet, telemarketing y portales de comercialización.

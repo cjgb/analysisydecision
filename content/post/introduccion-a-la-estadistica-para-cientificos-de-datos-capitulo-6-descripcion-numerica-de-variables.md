@@ -16,7 +16,7 @@ slug: introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-6-descrip
 tags: []
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 6. Descripción
   numérica de variables
-url: /introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-6-descripcion-numerica-de-variables/
+url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-6-descripcion-numerica-de-variables/
 ---
 
 # Descripción numérica de variables
@@ -79,14 +79,14 @@ library(tidyverse)
 train <- read_csv("./data/train.csv")
 head(train,5)
 ```
- 
+
 
 El conjunto de datos de trabajo es un archivo csv que se llama train y que previamente se ha descargado (como se indica con anterioridad), la función `read_csv` permite importar ese csv y crear un data frame en la sesión de trabajo de R. Mediante la función `str` es posible ver el tipo de variables que tiene el data frame:
 
 ```r
 str(train)
 ```
- 
+
 
 Numéricas o carácter, como se indicó, pero una variable numérica no tiene necesariamente un comportamiento numérico, por ese motivo siempre es mejor disponer las variables en
 
@@ -108,21 +108,21 @@ En el ejemplo de trabajo se dispone de diversas variables cualitativas. Se ilust
 ```r
 knitr::kable(train %>% group_by(Gender) %>% summarise(`Frecuencia absoluta` = n()))
 ```
- 
+
 
 Señalar la importancia de relativizar los datos absolutos, de obtener porcentajes.
 
 ```r
 knitr::kable(train %>% group_by(Gender) %>% summarise(`Frecuencia relativa` = n()/nrow(train)))
 ```
- 
+
 
 La variable género no tiene ningún tipo de orden, pero una variable cualitativa puede requerir un orden.
 
 ```r
 knitr::kable(train %>% group_by(Vehicle_Age) %>% summarise(`Frecuencia relativa` = n()/nrow(train)))
 ```
- 
+
 
 Por defecto R siempre presenta en las tablas de frecuencias el orden léxico gráfico, no el orden que tiene la variable, en este caso se tienen vehículos < 1, 1 – 2 y > 2, pero no es el orden que presenta el factor, es necesaria una ordenación.
 
@@ -133,7 +133,7 @@ table(trainVehicle_Age)
 trainVehicle_Age = factor(trainVehicle_Age, levels=c('< 1 Year','1-2 Year', '> 2 Years'))
 table(trainVehicle_Age)
 ```
- 
+
 
 La función `table` permite realizar rápidas tablas de frecuencias, cuando trabajemos con variables categóricas es importante realizar esas rápidas comprobaciones sobre el correcto tratamiento de los datos.
 
@@ -146,7 +146,7 @@ train <- train %>% mutate(fr_vehicle_age = case_when(
   TRUE ~ '03 más de 2 años'))
 table(train$fr_vehicle_age)
 ```
- 
+
 
 Usando cualquiera de los dos métodos para clasificar correctamente factores ordinales si es recomendable emplear un sufijo para determinar aquellas variables que han de ser analizadas, en este caso, se emplea `fr_` indicando «factor_reclasificado». Práctica muy útil cuando se manejen grandes cantidades de variables y poder distinguir variables input de variables raw (en bruto).
 
@@ -179,7 +179,7 @@ Es el valor sobre el que se sitúan los datos se obtendría sumando todos los va
 ```r
 train %>% summarise(sum(Age)/nrow(train))
 ```
- 
+
 
 Evidentemente R dispone de una función que realiza este cálculo y podemos hacerlo de diversas formas:
 
@@ -189,7 +189,7 @@ mean(trainAge)
 mean(trainAnnual_Premium)
 mean(train$Vintage)
 ```
- 
+
 
 Para describir correctamente los datos es necesario calcular la media para todas las variables cuantitativas, en R, mediante la librería `kable` es posible realizar salidas de datos formateadas:
 
@@ -198,7 +198,7 @@ knitr::kable(train %>% summarise(`Media edad` = mean(Age),
                     `Media de prima` = mean(Annual_Premium),
                     `Media de antigüedad (meses)` = mean(Vintage)))
 ```
- 
+
 
 Los valores de las variables se sitúan en el entorno de la media pero este valor está muy influenciado por la escala, al definirse como la suma de los valores de la variable entre el número de registros si uno de esos valores es muy alto es posible que la media tienda a perder representatividad sólo por un dato atípico.
 
@@ -209,14 +209,14 @@ Si se ordenan los datos de la variable en estudio de menor a mayor y establecemo
 ```r
 str(train)
 ```
-0 
+0
 
 Se ha definido una función empleando `tidyverse` para aproximar el cálculo de la mediana, esta función tiene sus limitaciones pero sirve para establecer ese valor que deja a su derecha el 50% y a su izquierda el otro 50% de las observaciones. Evidentemente es mejor emplear la función específica de R:
 
 ```r
 str(train)
 ```
-1 
+1
 
 ##### Percentiles de una variable
 
@@ -225,14 +225,14 @@ Además de esa separación 50% de valores a la izquierda – 50% de valores a la
 ```r
 str(train)
 ```
-2 
+2
 
 Para obtener el percentil aparece la función `quantile` que es cuantil en español, es el cuantil el que toma los valores de la variable a intervalos regulares si deseamos dividir en % estamos ante percentiles. Estos valores tienen unos puntos que caracterizan los datos, el percentil 0 es el mínimo de los valores de nuestra variable el valor 100 es el máximo de la variable y, por supuesto, el percentil 50 es la mediana de la variable. Una variable edad es cuantitativa ordinal, en este caso se tienen **valores finitos** entre 20 y 85. Si se replica el código para la variable prima:
 
 ```r
 str(train)
 ```
-3 
+3
 
 En este caso la variable toma muchos valores, **infinitos** , entre 2630 y 540165 eso ya ofrece una impresión de la mayor complejidad para estudiar la concentración de valores.
 
@@ -243,7 +243,7 @@ Otra medida importante para conocer como se posicionan los valores de una variab
 ```r
 str(train)
 ```
-4 
+4
 
 En los datos de trabajo la edad más repetida es `Mode(train$Age)` y hay un valor en la prima muy repetido que es el `r Mode(train$Annual_Premium)`
 
@@ -262,7 +262,7 @@ Como indica su nombre es un rango, un número inferior y un número superior don
 ```r
 str(train)
 ```
-5 
+5
 
 Esta medida establece una dispersión a partir de los percentiles, es una característica de las medidas de dispersión, siempre miden una diferencia con una medida de posición.
 
@@ -273,14 +273,14 @@ Para medir la dispersión una medida a emplear es la diferencia de cada observac
 ```r
 str(train)
 ```
-6 
+6
 
 La varianza no tiene una unidad de medida, para ello contamos con la **desviación típica**.
 
 ```r
 str(train)
 ```
-7 
+7
 
 La desviación típica es la raiz de la varianza y está expresada en las mismas unidades que la variable lo que puede facilitar su interpretacion.
 
@@ -295,7 +295,7 @@ Se define como la relación entre la desviación típica y la media y habitualme
 ```r
 str(train)
 ```
-8 
+8
 
 Se puede decir que la variabilidad de la variable `Age` es un %. Cuando se analizan estadísticos descriptivos de cualquier tipo es muy importante **relativizar** porque empleando valores absolutos todas las conclusiones están afectadas por la unidad de medida.
 
@@ -308,14 +308,14 @@ Para conocer la asimetría se emplea el paquete de R `e1071` que contiene una se
 ```r
 str(train)
 ```
-9 
+9
 
 Un valor superior a 0 indica que es asimétrica a la izquierda por lo que la moda < mediana < media. Valores inferiores a 0 indican asimetría a la derecha por lo que media < mediana < moda, la simetría perfecta sería media = mediana = moda. La asimetría a la izquierda es propia de variables que indican precios como es `Annual_Premium` en los datos de trabajo.
 
 ```r
 knitr::kable(train %>% group_by(Gender) %>% summarise(`Frecuencia absoluta` = n()))
 ```
-0 
+0
 
 En este caso se tiene una asimetría muy alta a la izquierda, hay importes muy altos de prima anual. Con la función `skewness` se puede calcular la asimetría por varios métodos, sería necesario modificar el parámetro `type`.
 
@@ -324,6 +324,6 @@ La curtosis o apuntamiento también se calcula con la función `kurtosis` del pa
 ```r
 knitr::kable(train %>% group_by(Gender) %>% summarise(`Frecuencia absoluta` = n()))
 ```
-1 
+1
 
 Una curtosis negativa indica una distribución «más cuadrada» y una curtosis positiva indica un apuntamiento, cuanto mayor sea ese apuntamiento mayor será la curtosis. En el ejemplo de trabajo la curtosis de la variable `Age` es negativa, es una forma de caja; sin embargo, para la variable `Annual_Premium` se tiene un apuntamiento muy alto, apuntamiento alto y asimetría hacia la izquierda.

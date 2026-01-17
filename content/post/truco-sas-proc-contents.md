@@ -19,7 +19,7 @@ tags:
 - SAS
 - Trucos
 title: Truco SAS. Proc contents que genera un dataset
-url: /truco-sas-proc-contents/
+url: /blog/truco-sas-proc-contents/
 ---
 
 Vamos a introducir los nombres de las variables SAS de un dataset en otro dataset. Esto puede sernos muy útil para realizar documentación, validaciones de los conjuntos de datos generados, automatización de instrucciones,… Es un truco muy sencillo y tan sólo es necesario comprender el funcionamiento del ODS de SAS explicado en otro de los mensajes de este blog. Simplemente empleamos el proc contents de SAS y almacenamos con ODS en un dataset el resultado del listado de las variables:
@@ -48,14 +48,14 @@ run;
 ods noresults;
 ```
 
-*CON ODS ESPECIFICAMOS EL DATASET CON LA SALIDA;  
+*CON ODS ESPECIFICAMOS EL DATASET CON LA SALIDA;
 ods output Variables=contenido (keep=variable);
 
-*HACEMOS UN PROC CONTENTS SIN MAS;  
-proc contents data=&dt.;  
+*HACEMOS UN PROC CONTENTS SIN MAS;
+proc contents data=&dt.;
 quit;
 
-*VOLVEMOS A TENER SALIDAS DE RESULTADOS;  
+*VOLVEMOS A TENER SALIDAS DE RESULTADOS;
 ods results;
 
 *EL DATASET CONTENIDO TIENE LAS VARIABLES;

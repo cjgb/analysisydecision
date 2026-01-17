@@ -18,7 +18,7 @@ tags:
 - intervencion
 title: Lecciones de economía de un ignorante. Poniendo fecha a la intervención de
   España
-url: /lecciones-de-economia-de-un-ignorante-poniendo-fecha-a-la-intervencion-de-espana/
+url: /blog/lecciones-de-economia-de-un-ignorante-poniendo-fecha-a-la-intervencion-de-espana/
 ---
 
 [España no es Grecia](http://www.expansion.com/2010/04/27/economia-politica/1272387902.html?a=9a6c61213fba80f83d1eba145a19bfbc&t=1303408641), [ España no es Irlanda](http://www.cincodias.com/articulo/mercados/Espana-Irlanda-expertos-opinan/20101124cdscdsmer_8/) y por supuesto [España no es Portugal](http://blogs.cincodias.com/el_economista_observador/2011/03/espa%C3%B1a-no-es-como-portugal.html). En realidad España es como las tres anteriores juntas y va a ser intervenida por el BCE a no ser que se [volviera a la peseta](https://analisisydecision.es/lecciones-de-economia-de-un-ignorante-una-cerveza-100-pesetas/). Los motivos son los de siempre pero me gustaría destacar el **problema del endeudamiento** :

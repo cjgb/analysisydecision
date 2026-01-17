@@ -14,7 +14,7 @@ related:
 slug: sas-vs-wps-diferencias-de-precio
 tags: []
 title: SAS vs WPS. Diferencias de precio
-url: /sas-vs-wps-diferencias-de-precio/
+url: /blog/sas-vs-wps-diferencias-de-precio/
 ---
 
 ![](/images/2013/05/Coste-de-SAS-vs-WPS.png)

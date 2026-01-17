@@ -18,5 +18,5 @@ slug: el-modelo-multivariante-en-el-sector-asegurador-las-variables-independient
 tags: []
 title: El modelo multivariante en el sector asegurador. Las variables independientes
   (IV)
-url: /el-modelo-multivariante-en-el-sector-asegurador-las-variables-independientes-iv/
+url: /blog/el-modelo-multivariante-en-el-sector-asegurador-las-variables-independientes-iv/
 ---

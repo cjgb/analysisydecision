@@ -12,11 +12,11 @@ related:
 - ya-estan-en-marcha-las-iv-jornadas-de-usuarios-de-r-en-espana.md
 slug: disponibles-los-videos-completos-de-las-jornadas-de-r-en-murcia
 tags:
-- Jornadas e R
+- Jornadas de R
 - R
 - vídeos
 title: Disponibles los vídeos completos de las Jornadas de R en Murcia
-url: /disponibles-los-videos-completos-de-las-jornadas-de-r-en-murcia/
+url: /blog/disponibles-los-videos-completos-de-las-jornadas-de-r-en-murcia/
 ---
 
 Finalmente, están disponibles los [vídeos completos de las I Jornadas de R en Murcia](http://tv.um.es/serial/index/id/216 "Vídeos de las I Jornadas de R Murcia").

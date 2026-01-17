@@ -13,7 +13,7 @@ related:
 slug: seguir-los-datos-del-coronavirus-en-espana-con-rstats
 tags: []
 title: Seguir los datos del coronavirus en España con Rstats
-url: /seguir-los-datos-del-coronavirus-en-espana-con-rstats/
+url: /blog/seguir-los-datos-del-coronavirus-en-espana-con-rstats/
 ---
 
 [![](/images/2020/03/coronavirus.png)](/images/2020/03/coronavirus.png)
@@ -40,6 +40,6 @@ p <- ggplot(espania, aes(x=fecha, y=casos, group = 1)) +
   xlab("")
 p
 ```
- 
+
 
 Tendría que mejorar los ejes y el aspecto, pero no es eso lo más importante. Estaba escribiendo sobre distribuciones tweedie, ahora me siento tentado para escribir sobre modelos exponenciales y si hacéis esto mismo para los datos de Italia hace 10 días la verdad es que el gráfico es calcado.

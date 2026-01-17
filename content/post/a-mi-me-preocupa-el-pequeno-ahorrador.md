@@ -16,7 +16,7 @@ tags:
 - depósitos bancarios
 - pequeño ahorrador
 title: Me preocupa el pequeño ahorrador (I)
-url: /a-mi-me-preocupa-el-pequeno-ahorrador/
+url: /blog/a-mi-me-preocupa-el-pequeno-ahorrador/
 ---
 
 El año pasado ya hice [referencia a los depósitos bancarios de bajo margen](https://analisisydecision.es/margenes-nulos-en-los-nuevos-depositos-bancarios/). Fue el inicio de la guerra por el pasivo de los bancos y cajas, que empezaban a tomar posiciones para «fusionar» otras entidades más pequeñas que habían crecido a costa del activo y ante un escenario de incremento de la morosidad podrían encontrarse en una situación de falta de liquidez. Esto lo anuncié y [se está produciendo en nuestros días](https://analisisydecision.es/busca-la-relacion-deuda-subordinada-y-cajas-catalanas/).

@@ -15,7 +15,7 @@ related:
 slug: me-rindo-es-necesario-trabajar-en-agile
 tags: []
 title: Me rindo, es necesario trabajar en Agile
-url: /me-rindo-es-necesario-trabajar-en-agile/
+url: /blog/me-rindo-es-necesario-trabajar-en-agile/
 ---
 
 [![Imagen de previsualización de YouTube](https://img.youtube.com/vi/cu3K1njbYqs/0.jpg)](http://www.youtube.com/watch?v=cu3K1njbYqs)

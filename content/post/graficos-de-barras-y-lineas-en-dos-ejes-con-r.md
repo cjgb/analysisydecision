@@ -22,7 +22,7 @@ tags:
 - recode
 - text
 title: Gráficos de barras y líneas en dos ejes con R
-url: /graficos-de-barras-y-lineas-en-dos-ejes-con-r/
+url: /blog/graficos-de-barras-y-lineas-en-dos-ejes-con-r/
 ---
 
 ![grafico_actuarial_r.png](/images/2011/09/grafico_actuarial_r.png)

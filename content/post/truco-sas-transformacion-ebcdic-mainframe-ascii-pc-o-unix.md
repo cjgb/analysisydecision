@@ -14,7 +14,7 @@ related:
 slug: truco-sas-transformacion-ebcdic-mainframe-ascii-pc-o-unix
 tags: []
 title: Truco SAS. Transformación EBCDIC (Mainframe)
-url: /truco-sas-transformacion-ebcdic-mainframe-ascii-pc-o-unix/
+url: /blog/truco-sas-transformacion-ebcdic-mainframe-ascii-pc-o-unix/
 ---
 
 Hay ocasiones en las que tenemos que leer directamente de entornos Mainframe ficheros DB2, conocemos la estructura de esos ficheros y necesitamos leerlos vía FTP. Para ello tenemos que tener en cuenta la transformación EBCDIC (Extended Binary Coded Decimal Interchange Code ) a ASCII (American Standard Code for Information Interchange), esta transformación requiere las siguientes equivalencias entre formatos:

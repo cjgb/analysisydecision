@@ -16,7 +16,7 @@ related:
 slug: que-nos-pasa-con-r-de-nuevo
 tags: []
 title: ¿Qué nos pasa con R? (de nuevo)
-url: /que-nos-pasa-con-r-de-nuevo/
+url: /blog/que-nos-pasa-con-r-de-nuevo/
 ---
 
 [Hace años ya sorprendió R situándose muy arriba](https://analisisydecision.es/la-mejor-posicion-de-r-en-tiobe/) en la [lista tiobe de lenguajes de programación](https://www.tiobe.com/tiobe-index/) subió en los años siguientes y ahora nos encontramos con una sorprendente bajada en el índice:

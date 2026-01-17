@@ -18,7 +18,7 @@ tags:
 - wordcloud
 - wordcloud2
 title: Cloud words con R. Trabajar con la API del Europe PMC con R
-url: /cloud-words-con-r-trabajar-con-la-api-del-europe-pmc-con-r/
+url: /blog/cloud-words-con-r-trabajar-con-la-api-del-europe-pmc-con-r/
 ---
 
 [![](/images/2020/01/Autismo_R3.png)](/images/2020/01/Autismo_R3.png)
@@ -42,7 +42,7 @@ ggplot(autismo, aes(year,  query_hits)) +
   xlab("Año de Publicación") +
   ylab("Articulos publicados sobre Autismo")
 ```
- 
+
 
 [![](/images/2020/01/Autismo_R.png)](/images/2020/01/Autismo_R.png)
 
@@ -69,7 +69,7 @@ matrix <- as.matrix(dtm)
 words <- sort(rowSums(matrix),decreasing=TRUE)
 df <- data.frame(word = names(words),freq=words)
 ```
- 
+
 
 epmc_search por defecto se descarga 100 entradas con limit establecemos el número, en este caso disponemos de 96.000 entradas (nunca poner 96k entradas) pero seleccionamos 10.000 posteriormente realiazamos una **preparación del texto que deseamos analizar y graficar** , esta preparación está sacada de [este enlace de Towards Data Science](https://towardsdatascience.com/create-a-word-cloud-with-r-bde3e7422e8a) tampoco es muy compleja y creo que se puede extrapolar al español, el trabajo se realiza con la librería tm, en el blog tenéis el uso de expresiones regulares para esta tarea. Al final nos queda un data frame con palabra y frecuencia que podemos emplear para crear las nubes de palabras.
 
@@ -82,7 +82,7 @@ install.packages("wordcloud")
 require(devtools)
 devtools::install_github("lchiffon/wordcloud2")
 ```
- 
+
 
 He querido hacer este inciso (redundante) porque he tenido problemas con wordcloud2 que se han solventado tras instalar directamente desde github la librería. Una vez las tenemos instaladas la sintaxis no ha variado mucho para wordcloud:
 
@@ -95,7 +95,7 @@ wordcloud(words = dfword, freq = dffreq, min.freq = 3,
           max.words=200, random.order=FALSE,
           colors=brewer.pal(10, "Spectral"))
 ```
- 
+
 
 [![](/images/2020/01/Autismo_R1.png)](/images/2020/01/Autismo_R1.png)
 
@@ -107,7 +107,7 @@ La novedad de la entrada la tenemos con wordcloud2 que nos ofrece más posibilid
 library(wordcloud2)
 wordcloud2(df, shape="start", minSize = 1) + WCtheme(3)
 ```
- 
+
 
 [![](/images/2020/01/Autismo_R2.png)](/images/2020/01/Autismo_R2.png)
 
@@ -119,7 +119,7 @@ Si queremos hacer nubes de palabras en una palabra tenemos la función letterClo
 dffreq <- sqrt(dffreq)
 letterCloud(df,"AUTISM")
 ```
- 
+
 
 [![](/images/2020/01/Autismo_R4.png)](/images/2020/01/Autismo_R4.png)
 
@@ -130,6 +130,6 @@ wordcloud2(df, shape="start", minSize = 1) + WCtheme(3)
 corazon = "/home/ruli/Descargas/corazon.png"
 wordcloud2(df, figPath = corazon)
 ```
- 
+
 
 Buen gráfico final, ahora espero que alguien recoja el guante y demuestre que estamos ante una burbuja de papers, ya sabéis como obtener datos y como ponerlos bonitos.

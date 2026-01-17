@@ -18,7 +18,7 @@ related:
 slug: recopilacion-data-science-cheat-sheet
 tags: []
 title: Recopilación Data Science Cheat Sheet
-url: /recopilacion-data-science-cheat-sheet/
+url: /blog/recopilacion-data-science-cheat-sheet/
 ---
 
 No sé como me llegado esta recopilación de Cheat Sheet para el Data Science pero viendo el trabajo que realizan algunas personas aun es posible creer en la humanidad. Disfrutad del link y ya estamos todos siguiendo el git de este gran tipo:

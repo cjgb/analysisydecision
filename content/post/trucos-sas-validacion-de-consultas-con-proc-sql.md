@@ -19,7 +19,7 @@ tags:
 - proc sql
 - validate
 title: Trucos SAS. Validación de consultas con PROC SQL
-url: /trucos-sas-validacion-de-consultas-con-proc-sql/
+url: /blog/trucos-sas-validacion-de-consultas-con-proc-sql/
 ---
 
 Hay ocasiones en las que lanzamos consultas a las BBDD con SAS y necesitamos saber si son correctas. Quería plantearos un truco SAS para **PROC SQL** que valida las consultas antes de ser ejecutadas. Empiezo el truco en la línea habitual, creo un dataset de ejemplo y os presento como realizar la validación, de este modo vosotros podéis copiar y pegar el código en una sesión de SAS y comprobar su funcionamiento. Datos aleatorios de partida:

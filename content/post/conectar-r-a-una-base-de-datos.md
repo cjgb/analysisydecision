@@ -13,10 +13,10 @@ related:
 slug: conectar-r-a-una-base-de-datos
 tags: []
 title: Conectar R a una base de datos
-url: /conectar-r-a-una-base-de-datos/
+url: /blog/conectar-r-a-una-base-de-datos/
 ---
 
-Cada día los softwares libres van ganando más y más terreno a los softwares comerciales, no sólo por su precio, si no porque incluyen procedimientos más vanguardistas que los comerciales. El mayor problema que tienen es el volumen de datos. 
+Cada día los softwares libres van ganando más y más terreno a los softwares comerciales, no sólo por su precio, si no porque incluyen procedimientos más vanguardistas que los comerciales. El mayor problema que tienen es el volumen de datos.
 
 Cuando he preguntado a algún desarrollador de los principales softwares libres (R, Weka, Knime…) acerca de esta cuestión siempre me han respondido que depende de la capacidad de la máquina o servidor en la que se ejecuten los procesos. Es una respuesta ambigua, es cierto, pero es totalmente cierta. Si dispusiésemos de una máquina con recursos de memoria y almacenamiento ilimitados el software libre sería prácticamente perfecto. Podríamos decir entonces que la principal desventaja de los software libres frente a los comerciales es la gestión de los procesos (mucho más estudiada en los comerciales), además de una consola o interfaz más amigable.
 

@@ -16,7 +16,7 @@ slug: entender-una-blockchain-con-r
 tags:
 - digest
 title: Entender una blockchain con R
-url: /entender-una-blockchain-con-r/
+url: /blog/entender-una-blockchain-con-r/
 ---
 
 Una introducción de bajo nivel (sin entrar mucho en tecnología) a los blockchain con #rtats. Es una entrada destinada a comprender que es un blockchain desde otro punto de vista, no sólo criptografía o criptomoneda, podemos poner información que sólo conoce el origen. ¿Os imagináis si pusieran a disposición de los científicos de datos información sobre todos los españoles identificados por NIF y si tiene o no coronavirus? Los científicos de datos podrían trabajar de forma anónima con esos datos y ayudar a establecer las zonas libres de covid-19, persona a persona de forma perfectamente anónima. Aunque no se descarta que algún cabestro se dedicara a desencriptar…
@@ -35,7 +35,7 @@ bloque <- list(index = 1,
                profundidad = 9,
                hash = NULL)
 ```
- 
+
 
 En R el bloque es una lista con determinados elementos, siendo un apunte contable ponemos una fecha, una descripción, una referencia y un debe/haber; los elementos que necesitamos para crear los eslabones de la cadena serán la profundidad de la cadena y los hash, tanto previo como el de nuestro bloque. ¿Qué es un hash? Es un procedimiento criptográfico que transforma una información en una cadena de caracteres. Ojo con los hash porque una vez creados no se pueden descifrar, es decir, una vez creado el bloque este queda guardado a fuego. Esto en contabilidad es un problema porque no se puede deshacer, no nos podemos equivocar. Sin embargo, desde el punto de vista del auditor de una cuenta puede ser interesante. En R esa cadena de caracteres la vamos a crear a partir de la librería digest:
 
@@ -46,7 +46,7 @@ library("digest")
 #¿Cómo se ve el término analisisydecision encriptado?
 digest("analisisydecision" ,"sha256")
 ```
- 
+
 
 `[1] "bec1a55f485045e8a1f5f774fe2a66f09cc93e046eb9fa978c97a7c061009d9c"`
 
@@ -70,7 +70,7 @@ crea_hash <- function(block){
 #Vemos su funcionamiento
 crea_hash(bloque)
 ```
- 
+
 
 ```r
 index
@@ -80,19 +80,19 @@ index
 [1] "2020-01-05:00:00:00"
 ```
 
-descripcion  
-[1] "Bloque 0"referencia  
+descripcion
+[1] "Bloque 0"referencia
 [1] "1.1.1"
 
-debe  
-[1] "3000"haber  
+debe
+[1] "3000"haber
 [1] "0"
 
-hash_previos  
-[1] 0profundidad  
+hash_previos
+[1] 0profundidad
 [1] 9
 
-$hash  
+$hash
 [1] "849f2807b1cc111b11608820fdcf76164996d201b8470c1599718432bb5de140"
 
 El elemento fundamental de la cadena serán los eslabones, en este punto sería muy importante dificultar el movimiento entre los eslabones de forma que sólo el creador del bloque fuera capaz de moverse entre ellos. En nuestro caso planteamos un algoritmo ridículo, más tarde veremos el motivo:

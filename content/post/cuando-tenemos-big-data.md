@@ -14,7 +14,7 @@ related:
 slug: cuando-tenemos-big-data
 tags: []
 title: ¿Cuándo tenemos BIG DATA?
-url: /cuando-tenemos-big-data/
+url: /blog/cuando-tenemos-big-data/
 ---
 
 No es que sea yo un gurú del tema precisamente, pero considero que llevo más de 12 años haciendo Big Data, por ello a lo peor alguno toma en serio mis reflexiones. Entonces, ¿cuándo tenemos, hacemos, trabajamos Big Data? La respuesta parece sencilla, “cuando tenemos muchos datos”. Pues no, este es un nombre con mucha pegada (como me han dicho hoy en la comida) es un nombre acertado desde un punto de vista “marketiniano”. Pero muchos datos tiene el operacional de un banco y no creo que un entorno Mainframe haga Big Data. Big Data tenemos cuando accedemos a datos desestructurados. Ya la dimensionalidad pasa a un segundo plano y las tecnologías tradicionales/actuales y sus hechos, metadatas, cubos y demás dejan de tener sentido. Hay Big Data cuando no se prepara la información. Anteriormente el acceso a los datos necesitaba un periodo previo para adaptarlo a una estructura, ahora no, ahora accedemos (por ejemplo) a un sistema operacional sin necesidad de pasar por una capa previa. En realidad hacemos lo mismo, tabulamos, graficamos, modelamos pero sobre datos que no están preparados. Eso es Big Data.

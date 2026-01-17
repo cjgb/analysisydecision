@@ -16,7 +16,7 @@ slug: introduccion-a-la-estadistica-para-cientificos-de-datos-con-r-capitulo-2-d
 tags: []
 title: Introducción a la Estadística para Científicos de Datos con R. Capítulo 2.
   Datos
-url: /introduccion-a-la-estadistica-para-cientificos-de-datos-con-r-capitulo-2-datos/
+url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-con-r-capitulo-2-datos/
 ---
 
 ## Qué son los datos
@@ -25,9 +25,9 @@ Los **datos están en boca de todos** , “la nueva revolución industrial”, �
 
 >   1. m. Información sobre algo concreto que permite su conocimiento exacto o sirve para deducir las consecuencias derivadas de un hecho. A este problema le faltan datos numéricos.
 >   2. m. Documento, testimonio, fundamento.
->   3. m. Inform. Información dispuesta de manera adecuada para su tratamiento por una computadora.  
+>   3. m. Inform. Información dispuesta de manera adecuada para su tratamiento por una computadora.
 >  Base de datos: Conjunto de datos organizado de tal modo que permita obtener con rapidez diversos tipos de información.
-> 
+>
 
 Parece que la tercera acepción es la correcta pero **los datos no son información** , nos van a permitir obtener información, ésta se obtiene mediante un **análisis estadístico**. Disponer datos de forma organizada no es información. Es la estadística a través de un análisis descriptivo, a través de un modelo o a través de un algoritmo la que obtiene la información. Un científico de datos es un gestor, coge datos y los transforma en información a través de análisis estadísticos más o menos complejos.
 
@@ -88,7 +88,7 @@ Esta figura es clave y aparecerá en más ocasiones para señalar la importancia
 
 Es relevante disponer de ese conocimiento matemático porque **todo el trabajo que realiza el científico de datos es algebra lineal** , menos el trabajo administrativo el resto es álgebra. De hecho, la ciencia de datos ha evolucionado a la vez que los equipos informáticos han podido manejar estructuras algebraicas más complejas. La estructura más sencilla podría ser un número o una sucesión de números que forma un vector, para analizar vectores haríamos **estadística univariable**. Si tenemos varias variables y ponemos esos vectores en forma matricial ya estamos en disposición de ver muchas variables a la vez. Si a esas **matrices** le añadimos funciones que puedan ser derivadas podremos sintetizar su información mediante **gradientes** y por último si añadimos más dimensiones y complejidad a estas estructuras estamos ante **tensores matemáticos**. Visto como una secuencia:
 
-  * Vectores -> análisis univariable como tablas de frecuencia, sumarización estadística o gráficos, al trabajo con estructuras vectoriales se le puede denominar **business intelligence**. 
+  * Vectores -> análisis univariable como tablas de frecuencia, sumarización estadística o gráficos, al trabajo con estructuras vectoriales se le puede denominar **business intelligence**.
   * Matrices -> análisis multivariable como modelos lineales, componentes principales,.. cuando se trabaja con cálculo matricial estamos haciendo **modelización estadística**.
 
   * Gradientes -> análisis multivariable basado en modelos de aprendizaje automático, tenemos funciones multivariables que nos permiten derivar matrices de forma parcial para buscar máximos y mínimos locales, permiten realizar modelos de **machine learning**.
@@ -108,7 +108,7 @@ data("iris")
 str(iris)
 head(iris, 5)
 ```
- 
+
 
 La función `str` nos permite describir las características de un objeto de R, en este caso se trata de un data frame donde cada fila será un registro, una observación, que podrá ser un individuo, un contrato, una compañía, una especie de flor, un pingüino,… depende de la **población** que esté en estudio. De esa población se pueden extraer subconjuntos de registros que llamaremos **muestras** que deberían ser representativos de la población y permitirían, con menos medios, estudiar los problemas que deseamos analizar en la población. Esta muestra permitiría **inferir** aspectos de interés en la población.
 
@@ -124,7 +124,7 @@ Son numéricas y pueden tener un número muy grande (en algunos casos infinito) 
 
 Los problemas que plantean estas variables son:
 
-  * Aparición de valores modales que desvirtúan la forma o la distribución de los valores como por ejemplo el valor 0 en una variable que recoja saldo en fondos de inversión, ¿eliminamos una variable porque el 80% de las veces toma un valor 0? 
+  * Aparición de valores modales que desvirtúan la forma o la distribución de los valores como por ejemplo el valor 0 en una variable que recoja saldo en fondos de inversión, ¿eliminamos una variable porque el 80% de las veces toma un valor 0?
   * Valores atípicos o _outlier_ también pueden desvirtuar los análisis estadísticos. Si una observación tiene una variable numérica que toma un valor anormalmente alto o bajo, ¿debemos incluirla en el análisis?
 
   * Valores perdidos o valores missing en las variables cuantitativas supone un problema, debemos tener clara nuestra estrategia con los valores perdidos antes de analizar la información que nos suministran los datos. ¿Qué hacemos con esas observaciones que no tienen datos para determinadas variables? ¿Tiene sentido que no tengan datos?
@@ -145,7 +145,7 @@ Una vez es conocido el como se estructuran los datos y como se puede aproximar a
 
 Una clasificación global del rol de las variables en los datos es:
 
-  * **Variable Target** : Es la variable más importante porque describe el objetivo sobre el que realizamos el análisis. Es la variable encargada de dar respuesta al problema que planteamos a los datos. 
+  * **Variable Target** : Es la variable más importante porque describe el objetivo sobre el que realizamos el análisis. Es la variable encargada de dar respuesta al problema que planteamos a los datos.
   * Variable input: Esta variable servirá para «explicar» el comportamiento de nuestra variable target.
 
   * ID: las observaciones suelen ir identificados por un campo del conjunto de datos. Puede ser un DNI, un número de contrato, una codificación administrativa,…

@@ -19,7 +19,7 @@ tags:
 - función INTNX
 - primer día del mes
 title: Macros SAS. Primer y último día del mes de una fecha SAS
-url: /macros-sas-primer-y-ultimo-dia-del-mes-de-una-fecha-sas/
+url: /blog/macros-sas-primer-y-ultimo-dia-del-mes-de-una-fecha-sas/
 ---
 
 Me debo a vosotros, mis lectores. Y he tenido visitas que buscaban como obtener el primer y el último día de un mes con SAS. Como Análisis y Decisión es una web personalizada voy a dar respuesta a esas búsquedas. Para ello tengo os planteo dos macros de SAS, además nos servirán para entender mejor la función INTNX para operar con fechas. El siguiente ejemplo parte de la necesidad de obtener, dada una fecha, el primer y último día del mes de la fecha dada:

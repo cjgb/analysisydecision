@@ -16,7 +16,7 @@ related:
 slug: libreria-mapspain-en-rstats-mapas-estaticos-de-espana
 tags: []
 title: Librería mapSpain en RStats. Mapas estáticos de España
-url: /libreria-mapspain-en-rstats-mapas-estaticos-de-espana/
+url: /blog/libreria-mapspain-en-rstats-mapas-estaticos-de-espana/
 ---
 
 [![](/images/2020/12/mapspain1.png)](/images/2020/12/mapspain1.png)
@@ -47,7 +47,7 @@ df <- df %>% mutate(ola = case_when(
 agr <- df %>% dplyr::filter(ola=='Primera ola') %>% group_by(iso2.ccaa.code) %>%
   summarise(exceso=round(sum(defunciones_observadas)/sum(defunciones_esperadas)-1,4)*100)
 ```
- 
+
 
 Como vemos en el código se ha preparado una variable `iso2.ccaa.code` para el cruce con el objeto espacial que vamos a obtener con mapSpain. Ahora para realizar el mapa sólo necesitamos unas líneas de código para realizar el mapa con el que empezamos la entrada:
 
@@ -60,7 +60,7 @@ CCAA.sf <- left_join(CCAA.sf, agr)
 
 ggplot() + geom_sf(data=CCAA.sf, aes(fill=exceso)) + scale_fill_continuous(low="white",high="red")
 ```
- 
+
 
 Para incluir el cuadro de Canarias tenemos la función esp_get_can_box(), solo tenemos que hacer:
 
@@ -68,7 +68,7 @@ Para incluir el cuadro de Canarias tenemos la función esp_get_can_box(), solo t
 ggplot() + geom_sf(data=CCAA.sf, aes(fill=exceso)) + scale_fill_continuous(low="white",high="red") +
   geom_sf(data = esp_get_can_box(), colour = "grey50")
 ```
- 
+
 
 [![](/images/2020/12/mapspain3.png)](/images/2020/12/mapspain3.png)
 
@@ -88,7 +88,7 @@ Madrid.sf <- Madrid.sf %>% left_join(empresas)
 
 ggplot() + geom_sf(data=Madrid.sf, aes(fill=n_empresas)) + scale_fill_continuous(low="white",high="green")
 ```
- 
+
 
 Descargado el csv filtramos sólo Madrid para el último periodo disponible. El campo de cruce en este caso será `LAU_CODE`, pasamos de carácter a numérico mediante gsub donde es importante usar los corchetes para que funcione correctamente. La función esp_get_munic nos permite obtener el mapa municipal para la region Madrid, de este modo ya tenemos el objeto espacial que nos permite crear el mapa. Como se ha indicado se cruza por LAU_CODE que es el mismo código del INE y esto mola mucho mucho, bueno, con la peculiaridad que las tablas del INE tienen código de municipio – código de comunidad. Pero nada complicado el cruce. Con el objeto espacial ya podemos hacer el mapa con geom_sf de ggplot y nos queda:
 

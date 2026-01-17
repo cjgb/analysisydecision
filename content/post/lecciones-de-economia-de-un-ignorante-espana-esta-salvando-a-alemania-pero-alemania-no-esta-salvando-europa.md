@@ -16,7 +16,7 @@ tags:
 - recortes
 title: Lecciones de economía de un ignorante. España está salvando a Alemania, pero
   Alemania no está salvando Europa
-url: /lecciones-de-economia-de-un-ignorante-espana-esta-salvando-a-alemania-pero-alemania-no-esta-salvando-europa/
+url: /blog/lecciones-de-economia-de-un-ignorante-espana-esta-salvando-a-alemania-pero-alemania-no-esta-salvando-europa/
 ---
 
 Observemos cuánto le cuesta financiarse a España y cuánto le cuesta financiarse a Alemania en el último año. [Ya hablamos de como crear este gráfico](https://analisisydecision.es/lecciones-de-economia-de-un-ignorante-la-prima-de-riesgo-y-la-madre-que-la-pario/):

@@ -19,7 +19,7 @@ tags:
 - SAS
 - valores missing
 title: Trucos SAS. Informes de valores missing
-url: /trucos-sas-informes-de-valores-missing/
+url: /blog/trucos-sas-informes-de-valores-missing/
 ---
 
 A continuación os planteo como truco SAS una duda que nos mandaba LILIANA. Ella necesitaba estudiar los valores perdidos de las tablas de una librería determinada. En este caso vamos a estudiar los missing de las variables numéricas de una librería, de forma análoga se puede hacer con las alfanuméricas. Como siempre vamos a trabajar con un ejemplo que parte de tablas generadas aleatoriamente. Comenzamos generando estas tablas:
@@ -46,15 +46,15 @@ do id=1 to 200;
  else importe2=round(rand("uniform")*130,.1);
 ```
 
-length zona $15.;  
-if ranuni(0) <=.32 then zona="España";  
-else if ranuni(1) <= 0.32 then zona="Cataluña";  
+length zona $15.;
+if ranuni(0) <=.32 then zona="España";
+else if ranuni(1) <= 0.32 then zona="Cataluña";
 else zona="Resto";
 
-output;  
-end;  
-run;  
-%end;  
+output;
+end;
+run;
+%end;
 %mend aleatorios;
 
 %aleatorios;
@@ -74,13 +74,13 @@ low-high="informado";
 quit;
 ```
 
-%macro nulos (datos,var);  
-title "Valores perdidos de &var. en la tabla &datos.";  
-proc freq data=&datos.;  
-format &var. per.;  
-tables &var./missing;  
-quit;  
-title;  
+%macro nulos (datos,var);
+title "Valores perdidos de &var. en la tabla &datos.";
+proc freq data=&datos.;
+format &var. per.;
+tables &var./missing;
+quit;
+title;
 %mend;
 
 Si ejecutamos:
@@ -94,9 +94,9 @@ Valores perdidos de importe1 en la tabla datos.proyecto_1 33
 ```
 `Procedimiento FREQ`
 
-Frequencia Porcentaje  
-importe1 Frecuencia Porcentaje acumulada acumulado  
-perdido 22 11.00 22 11.00  
+Frequencia Porcentaje
+importe1 Frecuencia Porcentaje acumulada acumulado
+perdido 22 11.00 22 11.00
 informado 178 89.00 200 100.00
 
 Ahora necesitamos automatizar el proceso para hacerlo sobre todas las tablas de una librería. Para esto empleamos las vistas de SASHELP y el PROC SQL. La idea es generar una instrucción que alojada en una macrovariable genere todo el código automáticamente. Por ello recorremos todas las variables numéricas de los dataset que deseamos estudiar y generamos automáticamente el códito de la macro %nulos:

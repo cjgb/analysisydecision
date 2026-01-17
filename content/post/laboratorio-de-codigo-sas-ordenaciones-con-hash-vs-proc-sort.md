@@ -17,7 +17,7 @@ tags:
 - Objetos HASH
 - proc sort
 title: Laboratorio de código SAS. Ordenaciones con HASH vs. PROC SORT
-url: /laboratorio-de-codigo-sas-ordenaciones-con-hash-vs-proc-sort/
+url: /blog/laboratorio-de-codigo-sas-ordenaciones-con-hash-vs-proc-sort/
 ---
 
 [Hace pocas fechas vimos el código SAS empleado para la realización de ordenaciones de conjuntos de datos SAS mediante algoritmos de hash](https://analisisydecision.es/objetos-hash-para-ordenar-tablas-sas/). Ya os comuniqué que era una forma más eficiente y hoy quería demostraros tal eficiencia con un laboratorio de código SAS. La situación es la siguiente, creamos un dataset con 1.000.000 de registros, 13 variables y comparamos un PROC SORT con una ordenación mediante hash, medimos tiempos y podemos determinar qué forma de ordenación es más eficiente.

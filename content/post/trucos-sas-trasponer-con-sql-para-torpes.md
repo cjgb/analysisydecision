@@ -19,7 +19,7 @@ tags:
 - proc sql
 - trasponer
 title: Trucos SAS. Trasponer con SQL para torpes
-url: /trucos-sas-trasponer-con-sql-para-torpes/
+url: /blog/trucos-sas-trasponer-con-sql-para-torpes/
 ---
 
 [](/images/2011/11/trasponer_sql1.png "trasponer_sql1.png")

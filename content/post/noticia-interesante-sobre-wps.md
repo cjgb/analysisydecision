@@ -15,7 +15,7 @@ tags:
 - SAS
 - WPS
 title: Noticia interesante sobre WPS
-url: /noticia-interesante-sobre-wps/
+url: /blog/noticia-interesante-sobre-wps/
 ---
 
 [Tocada de narices a SAS por parte de WPS:](http://www.theinquirer.net/inquirer/news/1585633/british-david-pokes-us-goliath-eye)

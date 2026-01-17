@@ -14,7 +14,7 @@ related:
 slug: proyecto-text-mining-con-excel-iii
 tags: []
 title: Proyecto. Text Mining con Excel (III)
-url: /proyecto-text-mining-con-excel-iii/
+url: /blog/proyecto-text-mining-con-excel-iii/
 ---
 
 Para hacer mi proceso de Text Mining necesito un «tablón» de entrada. Sin información bien tabulada es imposible encontrar patrones sintácticos ni palabras que me ayuden a encontrar mi oportunidad de negocio dentro de la formación en Business Intelligence. Para la realización de este tablón de entrada emplearé macros de Excel que abran resultados de búsquedas en Google y generen tantas hojas en mi archivo como páginas de búsqueda obtenga. Posteriormente estas hojas las uniré en una sóla y está será mi tablón de partida para mi trabajo.
@@ -79,27 +79,27 @@ Indicamos el punto en el que copiamos la hoja que ha abierto la búsqueda. Siemp
 
 ``
 
-Sub cierra()  
-Sheets("search").Select  
-Windows("search").Activate  
-ActiveWindow.Close SaveChanges:=False  
+Sub cierra()
+Sheets("search").Select
+Windows("search").Activate
+ActiveWindow.Close SaveChanges:=False
 End Sub
 
-Sub Abre()  
-'  
-'  
+Sub Abre()
+'
+'
 Dim direccion As String
 
-Workbooks.Open Filename:="http://www.google.es/search?hl=es&q=formacion+business+intelligence&meta="  
-Sheets("search").Select  
+Workbooks.Open Filename:="http://www.google.es/search?hl=es&q=formacion+business+intelligence&meta="
+Sheets("search").Select
 Sheets("search").Copy After:=Workbooks("min.xls").Sheets(1)
 
 cierra
 
-For i = 2 To 10  
-direccion = "http://www.google.es/search?q=formacion+business+intelligence&hl=es&start=" & (i - 1) * 10 & "&sa=N"  
-Workbooks.Open Filename:=direccion  
-Sheets("search").Select  
+For i = 2 To 10
+direccion = "http://www.google.es/search?q=formacion+business+intelligence&hl=es&start=" & (i - 1) * 10 & "&sa=N"
+Workbooks.Open Filename:=direccion
+Sheets("search").Select
 Sheets("search").Copy After:=Workbooks("min.xls").Sheets(i)
 
 cierra
@@ -108,6 +108,6 @@ Next i
 
 End Sub
 
-De momento abrimos sólo algunas entradas para comprobar el correcto funcionamiento del bucle. Parece que añadimos un gran número de hojas a nuestro archivo parece importante tabular cada búsqueda que abrimos, nuestro proceso tiene que ser más «fino». Antes de leer datos hemos de tener clara la estructura de nuestro tablón de datos. El la siguiente entrega será necesario determinar el número de observaciones con las que trabajaremos y que variables hemos de preparar inicialmente. 
+De momento abrimos sólo algunas entradas para comprobar el correcto funcionamiento del bucle. Parece que añadimos un gran número de hojas a nuestro archivo parece importante tabular cada búsqueda que abrimos, nuestro proceso tiene que ser más «fino». Antes de leer datos hemos de tener clara la estructura de nuestro tablón de datos. El la siguiente entrega será necesario determinar el número de observaciones con las que trabajaremos y que variables hemos de preparar inicialmente.
 
 Si no se ve correctamente esta entrada o no funciona el código remitidme el problema a rvaquerizo@analisisydecision.es

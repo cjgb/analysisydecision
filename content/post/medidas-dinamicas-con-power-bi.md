@@ -16,7 +16,7 @@ related:
 slug: medidas-dinamicas-con-power-bi
 tags: []
 title: Medidas dinámicas con Power BI
-url: /medidas-dinamicas-con-power-bi/
+url: /blog/medidas-dinamicas-con-power-bi/
 ---
 
 Se abre una nueva categoría en el blog dedicada al uso de herramientas para la elaboración de cuadros de mando y dashboard. En esta primera entrega trabajaremos con **Power B** I y la creación de medidas dinámicas para ver en un mismo gráfico una medida u otra en función de una segmentación. No es una labor «inmediata» por ello he preferido ilustrar el trabajo con un vídeo donde, de forma velada, se pueden intuir mejoras y trucos a aplicar.

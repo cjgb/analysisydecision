@@ -15,7 +15,7 @@ related:
 slug: trucos-r-la-funcion-mod-para-r
 tags: []
 title: Trucos R. La función mod para R
-url: /trucos-r-la-funcion-mod-para-r/
+url: /blog/trucos-r-la-funcion-mod-para-r/
 ---
 
 Buscando algunas cosas sobre R he encontrado esta función que hice hace mucho tiempo. De hecho puedo decir que de las primeras que hice allá en 2001 (creo) cuando empecé a conocer esto de R. Por aquellos entonces aseguré que el futuro pasaba por R y 9 años después sigo diciendo lo mismo, el tiempo me dará la razón, lo que no me imaginaba que hacía falta tanto tiempo. En fin, historias del dinosaurio. Vamos con la función «histórica». Al no disponer de la función _mod_ en R la programé:

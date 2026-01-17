@@ -13,7 +13,7 @@ related:
 slug: lecciones-de-economia-de-un-ignorante-una-cerveza-100-pesetas
 tags: []
 title: Lecciones de economía de un ignorante. Una cerveza 100 pesetas
-url: /lecciones-de-economia-de-un-ignorante-una-cerveza-100-pesetas/
+url: /blog/lecciones-de-economia-de-un-ignorante-una-cerveza-100-pesetas/
 ---
 
 La única solición que se me ocurre para que salgamos de la crisis es devaluar la peseta y como funcionamos con Euros pues a lo mejor tenemos que volver a los duros con la cara del tío Juancar…

@@ -16,7 +16,7 @@ tags:
 - Fondos garantizados
 - margen negativo
 title: Lecciones de economía de un ignorante. ¿De dónde sacan margen los bancos?
-url: /lecciones-de-economia-de-un-ignorante-c2bfde-donde-sacan-margen-los-bancos/
+url: /blog/lecciones-de-economia-de-un-ignorante-c2bfde-donde-sacan-margen-los-bancos/
 ---
 
 Pereza me da hablar de lo mismo, pero estas noticias:

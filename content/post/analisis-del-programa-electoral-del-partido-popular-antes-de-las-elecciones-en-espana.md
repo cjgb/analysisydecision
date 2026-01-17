@@ -23,7 +23,7 @@ tags:
 - unlist
 title: Análisis del programa electoral del Partido Popular antes de las elecciones
   en España
-url: /analisis-del-programa-electoral-del-partido-popular-antes-de-las-elecciones-en-espana/
+url: /blog/analisis-del-programa-electoral-del-partido-popular-antes-de-las-elecciones-en-espana/
 ---
 
 Ya empleamos R en[ alguna entrada anterior ](https://analisisydecision.es/analisis-de-textos-con-r/)para analizar textos. Ahora nos metemos con el programa electoral del Partido Popular a 20 días de las elecciones en España. En [este link](http://www.pp.es/actualidad-noticia/programa-electoral-pp_5741.html) podéis descargaros el programa del Partido Popular. Lejos de lo insustanciales que suelen ser este tipo de documentos y alguna frase mítica del tipo «Crecimiento sin empleo no es recuperación» nos limitaremos a contar las palabras que emplean en este programa.

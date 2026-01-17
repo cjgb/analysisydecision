@@ -17,7 +17,7 @@ tags:
 - bolsa
 - inversión renta variable
 title: Experimento. Un préstamo personal para invertir en Bolsa.
-url: /experimento-un-prestamo-personal-para-invertir-en-bolsa/
+url: /blog/experimento-un-prestamo-personal-para-invertir-en-bolsa/
 ---
 
 ¿Pedir un préstamo para invertir en bolsa? Si. Vamos a crear este experimento. Evidentemente todo se quedará en eso, un experimento, porque no será este que escribe el que hará semejante (¿)locura(?). Los mercados están en mínimos históricos, en concreto el IBEX 35 a fecha 09.02.2008 13:48 horas está a 8.492,40 La evolución en el último año ha sido:

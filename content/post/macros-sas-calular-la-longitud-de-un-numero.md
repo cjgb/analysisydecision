@@ -19,7 +19,7 @@ tags:
 - length
 - macros SAS
 title: Macros SAS. Calular la longitud de un número.
-url: /macros-sas-calular-la-longitud-de-un-numero/
+url: /blog/macros-sas-calular-la-longitud-de-un-numero/
 ---
 
 Ha llegado hoy una búsqueda que no ha permanecido en AyD ni 20 segundos. Quería calcular la longitud de un número con SAS. Como yo estoy aquí para compartir mis conocimientos y hay una persona que los necesita aquí está esta macro que espero o sea de utilidad:

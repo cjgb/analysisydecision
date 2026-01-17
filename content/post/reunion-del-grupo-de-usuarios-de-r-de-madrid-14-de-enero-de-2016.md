@@ -13,7 +13,7 @@ related:
 slug: reunion-del-grupo-de-usuarios-de-r-de-madrid-14-de-enero-de-2016
 tags: []
 title: Reunión del Grupo de Usuarios de R de Madrid. 14 de enero de 2016
-url: /reunion-del-grupo-de-usuarios-de-r-de-madrid-14-de-enero-de-2016/
+url: /blog/reunion-del-grupo-de-usuarios-de-r-de-madrid-14-de-enero-de-2016/
 ---
 
 De nuevo reunión del Grupo de Usuarios de R de Madrid. La agenda será:

@@ -16,7 +16,7 @@ tags:
 - Seguro Directo
 - Verti
 title: Nace Verti. La directa de Mapfre
-url: /nace-verti-la-directa-de-mapfre/
+url: /blog/nace-verti-la-directa-de-mapfre/
 ---
 
 Nos hacemos eco de una importante noticia en el sector asegurador. **Mapfre** ha creado [Verti](http://www.verti.es/) una compañía de venta de seguros a través de los canales directos. Lo primero que llama la atención al [leer algunas noticias](http://www.abc.es/20101215/economia/mapfre-lanza-verti-para-20101215.html) es la referencia al canal de internet como principal canal de contratación. Evidentemente esto es un guiño a la red comercial de Mapfre para que no se vea amenazada, pero la realidad es que es un canal que, desde mi punto de vista, no goza de la suficiente madurez y es probable que apuesten por el canal telefónico como sucedió con [Clickseguros](http://www.clickseguros.es/Paginas/clickseguros.aspx/), en un principio «tu mundo era _online_ » y después fueron dando más peso a su _contact center._

@@ -17,7 +17,7 @@ related:
 slug: de-estadistico-a-minero-de-datos-a-cientifico-de-datos
 tags: []
 title: De estadístico a minero de datos a científico de datos…
-url: /de-estadistico-a-minero-de-datos-a-cientifico-de-datos/
+url: /blog/de-estadistico-a-minero-de-datos-a-cientifico-de-datos/
 ---
 
 Hace unos meses estuve en un data beers que organizó Accenture que mas parecía una reunión de viejas glorias de Neo Metrics y [hablé sobre la transformación de un dinosaurio a un científico de datos](http://prezi.com/z8hpycujn2_0/?utm_campaign=share&utm_medium=copy&rc=ex0share), por cierto, me llamó la atención como el resto de compañeros hicieron sus presentaciones con software del siglo pasado y eso que yo era el dinosaurio… [Hoy ha salido una noticia sobre el uso de la información de Facebook para tarificar en seguros](https://www.theguardian.com/money/2016/nov/02/facebook-admiral-car-insurance-privacy-data) que define hacía donde quiero ir y los problemas con los que he de lidiar. Así que hoy voy a escribir sobre mi y **la transformación del dinosaurio al científico de datos**.

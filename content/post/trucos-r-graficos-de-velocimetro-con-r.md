@@ -21,7 +21,7 @@ tags:
 - RColorBrewer
 - velocimetro
 title: Trucos R. Gráficos de velocímetro con R
-url: /trucos-r-graficos-de-velocimetro-con-r/
+url: /blog/trucos-r-graficos-de-velocimetro-con-r/
 ---
 
 Hoy toca homenaje a 2 lectores del blog. Es la primera versión de un gráfico en forma de velocímetro con R. Cuando disponga de más tiempo modificaré la versión para darle mayor vistosidad. Como es habitual el truco nos servirá para trabajar con un interesante paquete de R como _RColorBrewer_. [Un paquete que me descubrió un lector](https://analisisydecision.es/truco-r-paletas-de-colores-en-r/). El resultado final no es muy espectacular (de momento):

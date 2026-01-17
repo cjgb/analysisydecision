@@ -17,12 +17,12 @@ tags:
 - car
 - recode
 title: Trabajando con factores en R. Attach frente a within
-url: /trabajando-con-factores-en-r-attach-frente-a-within/
+url: /blog/trabajando-con-factores-en-r-attach-frente-a-within/
 ---
 
 Un ejemplo de trabajo con datos en R. Transformamos factores de dos formas distintas. Por un lado empleamos _within_ con _recode_ de la librería _car_ y por otro lado empleamos el mítico _attach_.
 
-Manejo de datos con **within** :  
+Manejo de datos con **within** :
 
 ```r
 datos library(car)
@@ -34,7 +34,7 @@ else='Más de un reconocimiento'")
 })
 ```
 
-Manejo de datos con **attach/detach** :  
+Manejo de datos con **attach/detach** :
 
 ```r
 attach(datos)

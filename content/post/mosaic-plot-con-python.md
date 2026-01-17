@@ -14,7 +14,7 @@ related:
 slug: mosaic-plot-con-python
 tags: []
 title: Mosaic plot con python
-url: /mosaic-plot-con-python/
+url: /blog/mosaic-plot-con-python/
 ---
 
 Entrada análoga [a otra realizada con R hace mucho tiempo](https://analisisydecision.es/mosaic-plot-con-r/) empleando R, ahora realizo esta tarea con pytho. Estos gráficos van a ser necesarios para un fregado en el que ando metido ahora y como podéis ver es una tarea muy sencilla:
@@ -27,7 +27,7 @@ from statsmodels.graphics.mosaicplot import mosaic
 mosaic(df, ['agecat', 'valuecat'])
 show()
 ```
- 
+
 
 Y da como resultado:
 
@@ -35,5 +35,5 @@ Y da como resultado:
 
 Saludos.
 
-~~¿Si hacemos modelos de riesgo con python?~~  
+~~¿Si hacemos modelos de riesgo con python?~~
 ~~~~

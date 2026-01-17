@@ -15,5 +15,5 @@ tags:
 - crisis
 - planes de pensiones
 title: Lecciones de economía de un ignorante. Arreglo el déficit en un pis pas
-url: /lecciones-de-economia-de-un-ignorante-arreglo-el-deficit-en-un-pis-pas/
+url: /blog/lecciones-de-economia-de-un-ignorante-arreglo-el-deficit-en-un-pis-pas/
 ---

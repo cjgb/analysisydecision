@@ -14,7 +14,7 @@ related:
 slug: mineria-de-datos-una-herramienta-clave-en-consultoria
 tags: []
 title: Minería de datos, una herramienta clave en consultoría
-url: /mineria-de-datos-una-herramienta-clave-en-consultoria/
+url: /blog/mineria-de-datos-una-herramienta-clave-en-consultoria/
 ---
 
 Las empresas de consultoría se dedican en pocas palabras a hacer crecer a sus clientes en el mercado, es decir, a hacerlos más competitivos y más eficaces. Para conseguir este objetivo utilizan principalmente 2 herramientas: el marketing y el datamining, además del sentido común.

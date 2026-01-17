@@ -19,7 +19,7 @@ tags:
 - tranwrd
 - Trim
 title: Macros SAS. Limpiar una cadena de caracteres
-url: /macros-sas-limpiar-una-cadena-de-caracteres/
+url: /blog/macros-sas-limpiar-una-cadena-de-caracteres/
 ---
 
 Macro de SAS que he utilizado hoy para limpiar caracteres en una cadena de texto. Está muy limitada y es muy sencilla pero puede serviros:

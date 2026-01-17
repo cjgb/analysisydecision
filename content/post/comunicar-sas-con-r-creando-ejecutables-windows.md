@@ -19,12 +19,12 @@ tags:
 - file
 - put
 title: Comunicar SAS con R creando ejecutables Windows
-url: /comunicar-sas-con-r-creando-ejecutables-windows/
+url: /blog/comunicar-sas-con-r-creando-ejecutables-windows/
 ---
 
 Quiero trabajar hoy con la función _put_ de SAS para la creación de ficheros ejecutables de Windows (.BAT) y también quiero comunicar SAS con R. Mato dos pájaros de un tiro y para ello vamos a crear un script de R que llamaremos desde SAS a partir de un archivo .BAT. Un ejemplo típico y muy sencillo que espero poder ir sofisticando con el paso del tiempo hasta llegar a paquetizarlo. Tiene los siguientes pasos:
 
-1\. Creamos un fichero con datos aleatorios en SAS:  
+1\. Creamos un fichero con datos aleatorios en SAS:
 
 ```r
 data uno;
@@ -40,7 +40,7 @@ end;
 run;
 ```
 
-2\. Exportamos la tabla SAS a csv para poder ser leído por R:  
+2\. Exportamos la tabla SAS a csv para poder ser leído por R:
 
 ```r
 PROC EXPORT DATA= WORK.Uno
@@ -52,7 +52,7 @@ DBMS=CSV REPLACE;
 RUN;
 ```
 
-3\. Creamos el _script_ de R en SAS a través de un _fileref_ y la sentencia _put_ , sugiero el “abuso” de los punto y coma:  
+3\. Creamos el _script_ de R en SAS a través de un _fileref_ y la sentencia _put_ , sugiero el “abuso” de los punto y coma:
 
 ```r
 filename pgm 'C:\raul\trabajo\SAS_R\pgm.R';
@@ -90,7 +90,7 @@ run;
 
 Con este paso data solo producimos un ejecutable que llama a R en modo _batch_ y ejecuta el _script_ de R previamente creado con SAS.
 
-5\. Por ultimo ejecutamos todo el proceso:  
+5\. Por ultimo ejecutamos todo el proceso:
 
 ```r
 options noxwait noxsync;

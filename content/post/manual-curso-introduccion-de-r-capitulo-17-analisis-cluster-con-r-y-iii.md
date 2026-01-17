@@ -15,7 +15,7 @@ related:
 slug: manual-curso-introduccion-de-r-capitulo-17-analisis-cluster-con-r-y-iii
 tags: []
 title: 'Manual. Curso introducción de R. Capítulo 17: Análisis Cluster con R (y III)'
-url: /manual-curso-introduccion-de-r-capitulo-17-analisis-cluster-con-r-y-iii/
+url: /blog/manual-curso-introduccion-de-r-capitulo-17-analisis-cluster-con-r-y-iii/
 ---
 
 Ante el exito de los mensajes dedicados al análisis cluster la nueva entrega del manual de R la dedicaremos de nuevo al análisis de agrupamiento. Como es habitual trabajaremos con un ejemplo que podéis desgargaros [aquí](/images/2009/06/alimentos2.txt). Partimos de un archivo de texto delimitado por tabuladores con 46 frutas y la información que disponemos es:

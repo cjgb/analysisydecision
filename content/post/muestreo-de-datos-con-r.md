@@ -15,7 +15,7 @@ related:
 slug: muestreo-de-datos-con-r
 tags: []
 title: Muestreo de datos con R
-url: /muestreo-de-datos-con-r/
+url: /blog/muestreo-de-datos-con-r/
 ---
 
 Recientemente, hubo una entrada en este blog sobre [cómo realizar muestreos aleatorios en tablas SAS](https://analisisydecision.es/trucos-sas-muestras-aleatorias-con-y-sin-reemplazamiento/). En ésta vamos a ver cómo se procedería con R.

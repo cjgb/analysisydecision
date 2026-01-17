@@ -13,7 +13,7 @@ related:
 slug: moviendonos-a-una-velocidad-exponencial
 tags: []
 title: Moviéndonos a una velocidad exponencial
-url: /moviendonos-a-una-velocidad-exponencial/
+url: /blog/moviendonos-a-una-velocidad-exponencial/
 ---
 
 [Impresionante video sacado de GurusBlog.](http://www.gurusblog.com/archives/moviendonos-a-una-velocidad-exponencial/08/03/2009/)

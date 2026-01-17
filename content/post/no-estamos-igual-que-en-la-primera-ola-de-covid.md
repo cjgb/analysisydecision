@@ -14,7 +14,7 @@ related:
 slug: no-estamos-igual-que-en-la-primera-ola-de-covid
 tags: []
 title: No estamos igual que en la primera ola de COVID
-url: /no-estamos-igual-que-en-la-primera-ola-de-covid/
+url: /blog/no-estamos-igual-que-en-la-primera-ola-de-covid/
 ---
 
 [![](/images/2020/12/olas_covid.png)](/images/2020/12/olas_covid.png)
@@ -42,7 +42,7 @@ ggplot(data=df, aes(x=fecha_defuncion, y=defunciones_observadas,group=ola, fill=
 
 df %>% group_by(ola) %>% summarise(exceso = sum(exceso))
 ```
- 
+
 
 Comentarios: No tengo ni idea del número de muertes que provoca el COVID (no soy el único) por eso fijo el término exceso como el número observado – número esperado, las fechas de las olas me las he imaginado y he querido poner un par de meses llamados verano en los que veníamos del periodo de confinamiento. Ejecutad el código y…
 

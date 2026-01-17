@@ -16,7 +16,7 @@ tags:
 - R
 - SAS
 title: Migrando de SAS a R
-url: /migrando-de-sas-a-r/
+url: /blog/migrando-de-sas-a-r/
 ---
 
 Estoy ayudando a unos colegas a migrar de SAS a R. Están lejos, en un país de vino y carne al que alguna vez he de ir. Hemos quedado en que si alguna vez borran el último de sus SAS del disco duro, los ayudo gratis. Si no, cuando vaya, me tendrán que pagar hasta el último peso en lifaras y libaciones.

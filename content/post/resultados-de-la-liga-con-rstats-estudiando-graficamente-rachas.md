@@ -19,10 +19,10 @@ related:
 slug: resultados-de-la-liga-con-rstats-estudiando-graficamente-rachas
 tags: []
 title: Resultados de La Liga con rstats. Estudiando gráficamente rachas
-url: /resultados-de-la-liga-con-rstats-estudiando-graficamente-rachas/
+url: /blog/resultados-de-la-liga-con-rstats-estudiando-graficamente-rachas/
 ---
 
-[![](/images/2023/03/wp_editor_md_13f039a1fbdc6199942259afa7e76711.jpg)](/images/2023/03/wp_editor_md_13f039a1fbdc6199942259afa7e76711.jpg)  
+[![](/images/2023/03/wp_editor_md_13f039a1fbdc6199942259afa7e76711.jpg)](/images/2023/03/wp_editor_md_13f039a1fbdc6199942259afa7e76711.jpg)
 Vamos a crear un gráfico con #rstats que recoja los resultados de La Liga equipo a equipo para poder estudiar rachas e «intuir» como puede ser la segunda vuelta. Además, este ejercicio es un buen uso del paquete `worldfootballR` y la función de ggplot `geom_tile` además me va a servir para animarme esta segunda vuelta para que el Español no sufra. La web que vamos a emplear para el trabajo es [FBREF](https://fbref.com/es/ "FBREF"). Empezamos.
 
 ## Librerías necesarias
@@ -34,7 +34,7 @@ library(stringr)
 library(rvest)
 library(lubridate)
 ```
- 
+
 
 ## Extracción y preparación de datos
 
@@ -49,7 +49,7 @@ partidos2 <- partidos %>% filter(Date<=today()) %>%
   TRUE ~ 'Imposible'),
   Jornada=paste0('Jor.',sprintf("%02d",as.numeric(Wk))))
 ```
- 
+
 
 Podéis ver que la función de `worldfootballR` que se está usando es `fb_match_results`, creo que es la más rápida y cómoda, pero como estos datos están pensada para representar datos en una web es necesario cocinar un poco y preparar un conjunto de datos por Equipo-Jornada-Resultado
 
@@ -69,7 +69,7 @@ partidos2_visitante <- partidos2 %>% mutate(Equipo = Away,
 partidos3 <- rbind.data.frame(partidos2_local,partidos2_visitante) %>%
   arrange(Jornada)
 ```
- 
+
 
 Probablemente se pueda hacer mejor, más fácil no creo.
 
@@ -85,7 +85,7 @@ liga=read_html(ub,as.data.frame=TRUE,stringAsFactors=TRUE) %>%
 
 partidos3<-partidos3 %>% left_join(liga)
 ```
- 
+
 
 Ya están todos los elementos necesario para realizar el gráfico con el que comienza esta entrada.
 
@@ -99,6 +99,6 @@ ggplot(partidos3, aes(x = Jornada, y = reorder(Equipo,-Rk), fill = Resultado)) +
   labs(title="Racha La Liga 22/23",
        x ="Jornada", y = "Equipo")
 ```
- 
+
 
 Como comentaba al principio es un buen ejemplo de uso de `geom_tile` para la creación de este tipo de gráficos. En cuanto a lo que se puede ver, **ojo al Espanyol**

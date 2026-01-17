@@ -18,7 +18,7 @@ tags:
 - introducción a modelos estadísticos
 - R
 title: 'Manual. Curso introducción de R. Capítulo 16: Análisis Cluster con R (II)'
-url: /manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-ii/
+url: /blog/manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-ii/
 ---
 
 En esta entrega vamos a seguimos trabajando con el análisis Cluster viendo más posibilidades que nos ofrece R. Para ello vamos a realizar un estudio de agrupamiento de países europeos en función de algunos indicadores básicos:
@@ -123,7 +123,7 @@ size max_diss  av_diss diameter separation
 
 [4,]    1    0.000    0.000    0.000 14336.8688
 ```
-  
+
 Se observa que el cluster identificado como 1 tiene los valores más bajos a excepción de la población rural que se sitúa en la media global. El cluster 2 tiene un PIB alto al igual que el ídice de desarrollo humano, la más alta esperanza de vida y uno de los menores porcentajes de personas en ciudades. El grupo 3 es parecido al grupo 1 pero su PIB no es muy bajo, aunque por debajo de la media, un 40% de su población vive en el medio rural. El grupo 4 recoge a un país muy potente y muy poblado donde nadie reside en el medio rural. Vemos como quedan los grupos:
 
 ```r

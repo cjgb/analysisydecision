@@ -17,7 +17,7 @@ related:
 slug: r-python-reticulate
 tags: []
 title: R + Python = reticulate
-url: /r-python-reticulate/
+url: /blog/r-python-reticulate/
 ---
 
 ![](https://rstudio.github.io/reticulate/images/reticulated_python.png)

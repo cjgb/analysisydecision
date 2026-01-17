@@ -18,7 +18,7 @@ tags:
 - mapas
 - mapas excel
 title: Trucos Excel. Mapa de España por provincias
-url: /trucos-excel-mapa-de-espana-por-provincias/
+url: /blog/trucos-excel-mapa-de-espana-por-provincias/
 ---
 
 Pongo a vuestra disposición un archivo Excel que nos permite la realización del siguiente gráfico:

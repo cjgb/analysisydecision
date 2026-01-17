@@ -27,18 +27,18 @@ tags:
 - XML
 title: Stadistical data warehouse del European Central Bank con R y los depósitos
   a pérdidas
-url: /stadistical-data-warehouse-del-european-central-bank-con-r-y-los-depositos-a-perdidas/
+url: /blog/stadistical-data-warehouse-del-european-central-bank-con-r-y-los-depositos-a-perdidas/
 ---
 
-Más ejemplos de uso del paquete de R **XML**. Vamos a leer datos del _data_ _warehouse_ del European Central Bank. Si dais una vuelta por la web tendréis interesantes datos económicos de los países de la Unión Europea. A modo de ejemplos vamos a leer los datos de los tipos de interés medios a 12 meses que se están dando por los bancos en España y la evolución del Euribor a 6 meses.  
-– Report Tipos: <http://sdw.ecb.europa.eu/quickview.do?SERIES_KEY=124.MIR.M.ES.B.L22.F.R.A.2250.EUR.N>  
+Más ejemplos de uso del paquete de R **XML**. Vamos a leer datos del _data_ _warehouse_ del European Central Bank. Si dais una vuelta por la web tendréis interesantes datos económicos de los países de la Unión Europea. A modo de ejemplos vamos a leer los datos de los tipos de interés medios a 12 meses que se están dando por los bancos en España y la evolución del Euribor a 6 meses.
+– Report Tipos: <http://sdw.ecb.europa.eu/quickview.do?SERIES_KEY=124.MIR.M.ES.B.L22.F.R.A.2250.EUR.N>
 – Report Euribor: <http://sdw.ecb.europa.eu/quickview.do?SERIES_KEY=143.FM.M.U2.EUR.RT.MM.EURIBOR6MD_.HSTA>
 
 Vamos a generar el siguiente gráfico comparativo:
 
 ![interes-vs-euribor.PNG](/images/2010/09/interes-vs-euribor.PNG)
 
-Comenzamos el trabajo con R:  
+Comenzamos el trabajo con R:
 
 ```r
 require(XML)
@@ -81,8 +81,8 @@ names(depos)=c("mes","interes")
 
 head(depos)
 ```
-  
-Es un **código sucio** , no me he preocupado mucho por él. Con la función _readHTMLTable_ leemos la tabla del report que nos ofrece el BCE. **_STR_** es muy importante porque nos quedaremos con la parte del objeto que nos interesa, los datos, y no siempre están en la misma posición, en alguna otra lectura me he encontrado esta problemática, en este caso seleccionamos el elemento 6. Nos quedamos con las fechas por un lado y los datos por otro, le damos el formato que mejor se adecúa y ya tenemos un objeto con mes y tipo medio. De forma análoga lo hacemos con el Euribor a 6 meses:  
+
+Es un **código sucio** , no me he preocupado mucho por él. Con la función _readHTMLTable_ leemos la tabla del report que nos ofrece el BCE. **_STR_** es muy importante porque nos quedaremos con la parte del objeto que nos interesa, los datos, y no siempre están en la misma posición, en alguna otra lectura me he encontrado esta problemática, en este caso seleccionamos el elemento 6. Nos quedamos con las fechas por un lado y los datos por otro, le damos el formato que mejor se adecúa y ya tenemos un objeto con mes y tipo medio. De forma análoga lo hacemos con el Euribor a 6 meses:
 
 ```r
 pag2="http://sdw.ecb.europa.eu/quickview.do?SERIES_KEY=143.FM.M.U2.EUR.RT.MM.EURIBOR6MD_.HSTA"
@@ -117,8 +117,8 @@ names(eur6m)=c("mes","eur6m")
 
 head(eur6m)
 ```
-  
-Si alguien quiere crear una función leeBCEdw…Ya tenemos dos objetos R uno con los tipos medios de depósitos de la banca española y otro con el evolutivo del Euribor, se me ocurre que podíamos pintar una serie comparativa de ambos datos desde 2007, un año antes de la debacle del sistema financiero. Preparamos el objeto:  
+
+Si alguien quiere crear una función leeBCEdw…Ya tenemos dos objetos R uno con los tipos medios de depósitos de la banca española y otro con el evolutivo del Euribor, se me ocurre que podíamos pintar una serie comparativa de ambos datos desde 2007, un año antes de la debacle del sistema financiero. Preparamos el objeto:
 
 ```r
 #Acotamos el número de meses de la serie
@@ -131,8 +131,8 @@ eur6m=subset(eur6m, mes >= "2007")
 
 datos=merge(depos,eur6m,by.x="mes",by.y="mes",all.x)
 ```
-  
-¡Listo! un data frame preparado para trabajar, pero el mes tiene un formato carácter y es necesario darle formato fecha para poder realizar una serie:  
+
+¡Listo! un data frame preparado para trabajar, pero el mes tiene un formato carácter y es necesario darle formato fecha para poder realizar una serie:
 
 ```r
 #Damos un formato apropiadao a las fechas
@@ -167,8 +167,8 @@ library(reshape)
 
 datos<-sort_df(datos,vars='mes')
 ```
-  
-En un [mensaje anterior ya trabajamos con los formatos de las fechas y la configuración local](https://analisisydecision.es/trucos-r-establecer-la-configuracion-local-de-una-fecha/). Esa misma metodología empleamos ahora. Establecemos la fecha a _English_ con **SYS.SETLOCALE** y añadimos un 01 para crear la fecha. Particularmente prefiero los formatos de fecha del tipo AAAAMM y para ello empleamos FORMAT, creo que es un buen ejemplo de uso de fechas en R pasadas a número. Por último aprovechamos la librería **RESHAPE** para ordenar el data frame resultante que tiene muy buena pinta. Ahora toca graficar:  
+
+En un [mensaje anterior ya trabajamos con los formatos de las fechas y la configuración local](https://analisisydecision.es/trucos-r-establecer-la-configuracion-local-de-una-fecha/). Esa misma metodología empleamos ahora. Establecemos la fecha a _English_ con **SYS.SETLOCALE** y añadimos un 01 para crear la fecha. Particularmente prefiero los formatos de fecha del tipo AAAAMM y para ello empleamos FORMAT, creo que es un buen ejemplo de uso de fechas en R pasadas a número. Por último aprovechamos la librería **RESHAPE** para ordenar el data frame resultante que tiene muy buena pinta. Ahora toca graficar:
 
 ```r
 win.graph()

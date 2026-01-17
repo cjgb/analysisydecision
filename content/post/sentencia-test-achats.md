@@ -15,7 +15,7 @@ slug: sentencia-test-achats
 tags:
 - Sentencia Test-Achats
 title: Sentencia Test-Achats
-url: /sentencia-test-achats/
+url: /blog/sentencia-test-achats/
 ---
 
 [![sentencia_test_achats_1.PNG](/images/2012/07/sentencia_test_achats_1.PNG)](/images/2012/07/sentencia_test_achats_1.PNG "sentencia_test_achats_1.PNG")

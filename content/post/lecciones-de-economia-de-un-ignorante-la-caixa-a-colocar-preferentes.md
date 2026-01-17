@@ -13,7 +13,7 @@ related:
 slug: lecciones-de-economia-de-un-ignorante-la-caixa-a-colocar-preferentes
 tags: []
 title: Lecciones de economía de un ignorante. «la Caixa» a colocar preferentes
-url: /lecciones-de-economia-de-un-ignorante-la-caixa-a-colocar-preferentes/
+url: /blog/lecciones-de-economia-de-un-ignorante-la-caixa-a-colocar-preferentes/
 ---
 
 No tengo palabras, creía que eran rumores, estoy a punto de llorar. Hoy empiezan a colocar deuda subordinada otra vez en «la Caixa» y 2.000 millones ampliables a 3.000 nada menos:

@@ -16,7 +16,7 @@ tags:
 - hadoop
 - Mapreduce
 title: ¿Google enemigo del open source?
-url: /c2bfgoogle-enemigo-del-open-source/
+url: /blog/c2bfgoogle-enemigo-del-open-source/
 ---
 
 Carlos Gil ya [habló de Hadoop hace algún tiempo](https://analisisydecision.es/el-futuro-de-la-profesion/) y en su blog [hizo referencia de nuevo a la gestión de información desestructurada](http://datanalytics.wordpress.com/2010/03/01/r-en-the-economist/) por lo que despertó mi curiosidad sobre [mapreduce y el procesado de datos en paralelo](http://sentidoweb.com/2007/11/21/hadoop-plataforma-para-trabajar-con-gran-cantidad-de-datos.php). Pero lo primero que me llamó la atención fue que Google no pusiera pegas sobre el «uso o aprovechamiento» de su algoritmo de mapreduce. Al fin y al cabo tras la salida a bolsa de [Google ](http://es.finance.yahoo.com/q?s=GOOG)en 2004 quedaba claro que era una empresa con un objetivo comercial. No seré yo quien critique este objetivo, son los mejores y punto. Peeeero en todo este proceso de aproximación a Hadoop y mapreduce me encuentro con [esta noticia](http://www.theregister.co.uk/2010/02/22/google_mapreduce_patent/).

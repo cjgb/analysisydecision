@@ -16,7 +16,7 @@ tags:
 - mapas
 - Omnia sunt Communia!
 title: Mapas con R en Omnia sunt Communia!
-url: /mapas-con-r-en-omnia-sunt-communia/
+url: /blog/mapas-con-r-en-omnia-sunt-communia/
 ---
 
 EXCEPCIONAL serie monográfica de mensajes del[ blog Omnia sunt Communia! ](http://procomun.wordpress.com/)sobre la realización de mapas con R.

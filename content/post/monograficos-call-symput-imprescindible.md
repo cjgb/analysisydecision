@@ -15,7 +15,7 @@ related:
 slug: monograficos-call-symput-imprescindible
 tags: []
 title: Monográficos. CALL SYMPUT imprescindible
-url: /monograficos-call-symput-imprescindible/
+url: /blog/monograficos-call-symput-imprescindible/
 ---
 
 He detectado que muchas búsquedas que llegan a Análisis y Decisión vienen por la palabra clave «call symput». Por este motivo me he decidido a escribir este rápido monográfico sobre esta instrucción. Con un par de ejemplos podemos familiarizarnos con su funcionamiento.CALL SYMPUT es una rutina de SAS que nos permite crear macro variables durante la ejecución de un paso data, digamos que es un mecanismo que comunica el compilador del macro lenguaje SAS con el propio lenguaje SAS. El ejemplo prototípico de su uso, determinar el número de observaciones de un dataset que cumplen determinada condición:

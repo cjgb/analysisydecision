@@ -14,7 +14,7 @@ related:
 slug: ayd-2300-visitas-mensuales
 tags: []
 title: 'AyD: 2.300 visitas mensuales'
-url: /ayd-2300-visitas-mensuales/
+url: /blog/ayd-2300-visitas-mensuales/
 ---
 
 Google Analytics dice esto:

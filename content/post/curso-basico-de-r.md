@@ -14,7 +14,7 @@ related:
 slug: curso-basico-de-r
 tags: []
 title: Curso básico de R
-url: /curso-basico-de-r/
+url: /blog/curso-basico-de-r/
 ---
 
 Meritoria iniciativa de:

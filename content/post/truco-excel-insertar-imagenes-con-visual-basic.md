@@ -15,7 +15,7 @@ related:
 slug: truco-excel-insertar-imagenes-con-visual-basic
 tags: []
 title: Truco Excel. Insertar imágenes con Visual Basic
-url: /truco-excel-insertar-imagenes-con-visual-basic/
+url: /blog/truco-excel-insertar-imagenes-con-visual-basic/
 ---
 
 Si deseáis insertar una imagen en Excel desde Visual Basic mediante una macro tenéis que ejecutar un código similar a este:

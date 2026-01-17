@@ -22,7 +22,7 @@ tags:
 - transformar fecha a texto
 - transformar texto a fecha
 title: Trucos Excel. Tranformar un caracter a fecha
-url: /trucos-excel-tranformar-un-caracter-a-fecha/
+url: /blog/trucos-excel-tranformar-un-caracter-a-fecha/
 ---
 
 Si tenemos en Excel celdas con valores en la forma:
@@ -30,7 +30,7 @@ Si tenemos en Excel celdas con valores en la forma:
   * _viernes 1 de enero de 2010_
   * _sábado 2 de enero de 2010_
   * _domingo 3 de enero de 2010_
-  * _…  
+  * _…
 _
 
 y deseamos transformarlo en fecha podemos hacer lo siguiente:

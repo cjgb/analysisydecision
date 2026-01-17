@@ -13,7 +13,7 @@ related:
 slug: data-mining-vs-bigdata-de-momento-con-google-trends
 tags: []
 title: Data mining vs Bigdata. De momento con Google Trends
-url: /data-mining-vs-bigdata-de-momento-con-google-trends/
+url: /blog/data-mining-vs-bigdata-de-momento-con-google-trends/
 ---
 
 [![](/images/2014/09/data-mining-vs-bigdata.png)](/images/2014/09/data-mining-vs-bigdata.png)

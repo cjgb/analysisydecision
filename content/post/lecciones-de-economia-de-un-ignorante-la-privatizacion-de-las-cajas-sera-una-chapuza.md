@@ -16,7 +16,7 @@ tags:
 - Ley de Cajas
 title: Lecciones de economía de un ignorante. La privatización de las cajas será una
   chapuza
-url: /lecciones-de-economia-de-un-ignorante-la-privatizacion-de-las-cajas-sera-una-chapuza/
+url: /blog/lecciones-de-economia-de-un-ignorante-la-privatizacion-de-las-cajas-sera-una-chapuza/
 ---
 
 [Interesante noticia leída en el cincodias.](http://www.cincodias.com/articulo/empresas/Banca-Civica-quiere-ser-pionera-cotizar-Bolsa/20100802cdscdiemp_10/cdsemp/)

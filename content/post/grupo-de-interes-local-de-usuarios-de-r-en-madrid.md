@@ -13,7 +13,7 @@ related:
 slug: grupo-de-interes-local-de-usuarios-de-r-en-madrid
 tags: []
 title: Grupo de interés local de usuarios de R en Madrid
-url: /grupo-de-interes-local-de-usuarios-de-r-en-madrid/
+url: /blog/grupo-de-interes-local-de-usuarios-de-r-en-madrid/
 ---
 
 Lo han preguntado en otro post y prefiero que disponga de entrada propia para ayudar a las búsquedas. El contenido de las reuniones anteriores a julio de 2014 está en la siguiente dirección:

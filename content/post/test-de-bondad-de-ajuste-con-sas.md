@@ -15,7 +15,7 @@ slug: test-de-bondad-de-ajuste-con-sas
 tags:
 - proc univariate
 title: Test de bondad de ajuste con SAS
-url: /test-de-bondad-de-ajuste-con-sas/
+url: /blog/test-de-bondad-de-ajuste-con-sas/
 ---
 
 Pregunta que me han hecho hoy. Cómo hacer un test de bondad de ajuste con SAS y la respuesta que he dado:
@@ -36,6 +36,6 @@ proc univariate data=datos_aleatorios;
    histogram /   gamma;
 run;
 ```
- 
+
 
 Mucho cuidado con estos test de hipótesis. Yo suelo conformarme con ver la tabla de cuantiles. Saludos.

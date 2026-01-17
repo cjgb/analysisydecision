@@ -18,7 +18,7 @@ tags:
 - modelo de riesgo
 - tweedie
 title: La distribución tweedie
-url: /la-distribucion-tweedie/
+url: /blog/la-distribucion-tweedie/
 ---
 
 [![tweedie.png](/images/2012/04/tweedie.png)](/images/2012/04/tweedie.png "tweedie.png")
@@ -27,10 +27,10 @@ Reconozco que hace muy poco tiempo que trabajo con las **distribuciones tweedie*
 
 Este tipo de distribución necesita 3 parámetros; p que nos indica el tipo de distribución en R se denomina _power_ , mu que es la media y phi que es la desviación típica. En R disponemos del paquete **tweedie** para trabajar con este tipo de distribuciones, la función rtweedie es la que genera números aleatorios según una tweedie con parámetros p, mu y phi:
 
-_#install.packages(«tweedie»)_  
-_library(tweedie)_  
-_#Números aleatorios distribuidos según una tweedie_  
-_y1 <\- rtweedie( 10000, p=1, mu=600, phi=1000)_  
+_#install.packages(«tweedie»)_
+_library(tweedie)_
+_#Números aleatorios distribuidos según una tweedie_
+_y1 <\- rtweedie( 10000, p=1, mu=600, phi=1000)_
 _summary(y1)
 ```r
 y1.5 <- rtweedie( 10000, p=1.5, mu=600, phi=1000)

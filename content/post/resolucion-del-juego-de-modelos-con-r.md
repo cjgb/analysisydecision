@@ -21,7 +21,7 @@ tags:
 - redes neuronales
 - SVM
 title: Resolución del juego de modelos con R
-url: /resolucion-del-juego-de-modelos-con-r/
+url: /blog/resolucion-del-juego-de-modelos-con-r/
 ---
 
 [Hace mucho planteé un juego de identificación de modelos con R](https://analisisydecision.es/juego-de-modelos-de-regresion-con-r/) y ya se me había olvidado daros la solución. Pensando en el Grupo de Usuarios de R y en hacer algo parecido en una presentación recordé que había que solucionar el ejercicio. Lo primero es la creación de los datos, se me ocurrió una función sencilla y una nube de puntos alrededor de ella:
@@ -38,7 +38,7 @@ dep=dep+(runif(length(dep),-100,100))
 datos = data.frame(cbind(indep,dep))
 plot(datos)
 ```
- 
+
 
 [![juego_modelos1](/images/2016/05/juego_modelos1.png)](/images/2016/05/juego_modelos1.png)
 
@@ -50,7 +50,7 @@ indices = sample(1:length(dep),length(dep)/2)
 entrenamiento = datos[indices,]
 test = datos[-indices,]
 ```
- 
+
 
 El más sencillo de todos era el caso de la regresión lineal y fue el que puse de ejemplo:
 
@@ -60,7 +60,7 @@ modelo.1=lm(dep ~ indep,entrenamiento)
 plot(test)
 points(test$indep,predict(modelo.1,test),col="red")
 ```
- 
+
 
 [![juego_modelos2](/images/2016/05/juego_modelos2.png)](/images/2016/05/juego_modelos2.png)
 
@@ -74,7 +74,7 @@ control=rpart.control(minsplit=20, cp=0.002, xval=100) )
 plot(test)
 points(test$indep,predict(modelo.2,test),col="red")
 ```
- 
+
 
 [![juego_modelos3](/images/2016/05/juego_modelos3.png)](/images/2016/05/juego_modelos3.png)
 
@@ -88,7 +88,7 @@ control=rpart.control(minsplit=20, cp=0.02, xval=100) )
 plot(test)
 points(test$indep,predict(modelo.2,test),col="red")
 ```
- 
+
 
 [![juego_modelos3b](/images/2016/05/juego_modelos3b.png)](/images/2016/05/juego_modelos3b.png)
 
@@ -104,7 +104,7 @@ mejor.rss for(i in 1:50){
 modelo.rn linout=T, trace=F,decay=0.2)
 if(modelo.rnvalueindep,predict(modelo.3,test),col="red")
 ```
- 
+
 
 [![juego_modelos4](/images/2016/05/juego_modelos4.png)](/images/2016/05/juego_modelos4.png)
 
@@ -119,7 +119,7 @@ kernel="radial",cost=100,gamma=100)
 plot(test)
 points(test$indep,predict(modelo.4,test),col="red")
 ```
- 
+
 
 [![juego_modelos5](/images/2016/05/juego_modelos5.png)](/images/2016/05/juego_modelos5.png)
 
@@ -131,7 +131,7 @@ modelo.5=svm(dep ~ indep ,entrenamiento, method="C-classification",
 plot(test)
 points(test$indep,predict(modelo.5,test),col="red")
 ```
- 
+
 
 [![juego_modelos6](/images/2016/05/juego_modelos6.png)](/images/2016/05/juego_modelos6.png)
 
@@ -145,7 +145,7 @@ modelo.6 k = 4, kernel = c("rectangular"))
 plot(test)
 points(test$indep,predict(modelo.6,test),col="red")
 ```
- 
+
 
 [![juego_modelos7](/images/2016/05/juego_modelos7.png)](/images/2016/05/juego_modelos7.png)
 
@@ -156,7 +156,7 @@ Otro de mis sobreajustadores preferidos y por último el clásico loess que siem
 modelo.7 plot(test)
 points(test$indep,predict(modelo.7,test),col="red")
 ```
- 
+
 
 [![juego_modelos8](/images/2016/05/juego_modelos8.png)](/images/2016/05/juego_modelos8.png)
 

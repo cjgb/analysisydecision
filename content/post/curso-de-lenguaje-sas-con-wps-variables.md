@@ -15,10 +15,10 @@ slug: curso-de-lenguaje-sas-con-wps-variables
 tags:
 - variables
 title: Curso de lenguaje SAS con WPS. Variables
-url: /curso-de-lenguaje-sas-con-wps-variables/
+url: /blog/curso-de-lenguaje-sas-con-wps-variables/
 ---
 
-El elemento fundamental de los conjuntos de datos SAS son las variables. Ya las hemos referenciado en capítulos anteriores. Éstas pueden ser numéricas o alfanuméricas. Las variables se pueden crear, eliminar o se pueden recodificar. Todo esto siempre lo haremos mediante pasos DATA. Disponemos de un amplio número de funciones para que todas las variables se ajusten a nuestras necesidades.  
+El elemento fundamental de los conjuntos de datos SAS son las variables. Ya las hemos referenciado en capítulos anteriores. Éstas pueden ser numéricas o alfanuméricas. Las variables se pueden crear, eliminar o se pueden recodificar. Todo esto siempre lo haremos mediante pasos DATA. Disponemos de un amplio número de funciones para que todas las variables se ajusten a nuestras necesidades.
 Las variables tienen los siguientes **atributos** :
 
   * Nombre: no pueden exceder de 32 caracteres o empezar por un número ni tener espacios en blanco
@@ -178,7 +178,7 @@ En el siguiente capítulo analizaremos mejor este tipo de variables ya que requi
 
 **Variables alfanuméricas** :
 
-Las variables alfanuméricas son aquellas que almacenan caracteres. Su longitud puede ir de 1 a 32.000 bytes. En anteriores ejemplos ya hemos visto la forma de introducir manualmente variables carácter a través de INPUT, sin embargo si queremos realizar  
+Las variables alfanuméricas son aquellas que almacenan caracteres. Su longitud puede ir de 1 a 32.000 bytes. En anteriores ejemplos ya hemos visto la forma de introducir manualmente variables carácter a través de INPUT, sin embargo si queremos realizar
 modificaciones sobre ellas, crear nuevas variables o trabajar con constantes tendremos que emplear las comillas (simples ‘ o dobles ”). Por ejemplo, retomando la tabla fechas creada anteriormente tenemos:
 
 ```r

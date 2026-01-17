@@ -15,7 +15,7 @@ slug: tantarantan-que-te-han-visto-pepe-tantarantan-que-te-han-visto-juan
 tags:
 - Bajar los impuestos
 title: Tantarantán que te han visto Pepe, tantarantán que te han visto Juán
-url: /tantarantan-que-te-han-visto-pepe-tantarantan-que-te-han-visto-juan/
+url: /blog/tantarantan-que-te-han-visto-pepe-tantarantan-que-te-han-visto-juan/
 ---
 
 Unos dicen:

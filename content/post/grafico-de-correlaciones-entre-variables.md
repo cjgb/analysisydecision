@@ -15,7 +15,7 @@ slug: grafico-de-correlaciones-entre-variables
 tags:
 - ggplot2
 title: Gráfico de correlaciones entre variables
-url: /grafico-de-correlaciones-entre-variables/
+url: /blog/grafico-de-correlaciones-entre-variables/
 ---
 
 [![](/images/2013/02/Grafico-correlaciones-R.png)](/images/2013/02/Grafico-correlaciones-R.png)

@@ -15,7 +15,7 @@ related:
 slug: curso-de-lenguaje-sas-con-wps-introduccion
 tags: []
 title: Curso de lenguaje SAS con WPS
-url: /curso-de-lenguaje-sas-con-wps-introduccion/
+url: /blog/curso-de-lenguaje-sas-con-wps-introduccion/
 ---
 
 Paro algunas series de las que venía escribiendo para iniciar una que es de mucha importancia para el blog. Voy a acercar el lenguaje SAS a los lectores con un menor nivel. Se trata de crear un**curso introductorio al lenguaje SAS** pero con la herramienta [WPS](http://www.teamwpc.co.uk/products/wps). La metodología que seguirá el curso será muy similar a la de un manual que _colgué_ en la red hace unos años. Pero en esta ocasión emplearé un lenguaje más apropiado para el blog y mejoraré algunos puntos del manual e incidiré en otros que no quedan muy claros.

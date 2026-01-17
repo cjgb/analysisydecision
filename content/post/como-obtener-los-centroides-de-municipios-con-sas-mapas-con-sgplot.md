@@ -20,18 +20,18 @@ tags:
 - proc sgplot
 - shapefile
 title: Como obtener los centroides de municipios con SAS. Mapas con SGPLOT
-url: /como-obtener-los-centroides-de-municipios-con-sas-mapas-con-sgplot/
+url: /blog/como-obtener-los-centroides-de-municipios-con-sas-mapas-con-sgplot/
 ---
 
 [![mapa_municipios_sas2](/images/2016/11/mapa_municipios_SAS2.png)](/images/2016/11/mapa_municipios_SAS2.png)
 
 Un amigo y lector del blog me ha pedido un mapa de códigos postales donde poder identificar los centroides para andar calculando distancias a otros puntos. Yo ~~no~~ tengo un mapa de España por códigos postales para poder usar con fines comerciales, [pero si cuento en el blog como poder obtenerlo bajo ciertas condiciones](https://analisisydecision.es/como-hacer-un-mapa-de-espana-por-codigos-postales-con-qgis/). Lo que si puedo contar a Juan es como hacer un mapa por municipios con SAS, [aunque ya he hablado de ello](https://analisisydecision.es/mapas-sas-a-partir-de-shapefile/) hay ciertos aspectos que pueden ser interesantes. y todo empieza donde siempre <http://www.gadm.org/country> la web donde tenemos los mapas «libres» por países, seleccionáis Spain y el formato shapefile una vez descargados los mapas en vuestros equipos empezamos con el trabajo en SAS:
 
-[source languaje=»SAS»]  
-proc mapimport datafile="\directorio\mapa\ESP_adm_shp.shp"  
-out = work.espania;  
-run;  
-proc contents;quit;  
+[source languaje=»SAS»]
+proc mapimport datafile="\directorio\mapa\ESP_adm_shp.shp"
+out = work.espania;
+run;
+proc contents;quit;
 [/source]
 
 [![mapa_municipios_sas1](/images/2016/11/mapa_municipios_SAS1.png)](/images/2016/11/mapa_municipios_SAS1.png)
@@ -40,41 +40,41 @@ El procedimiento MAPIMPORT ha creado un conjunto de datos SAS donde tenemos cara
 
 :
 
-[source languaje=»SAS»]  
-proc sql;  
-create table centroides as select  
-id_4,  
-avg(x) as centroide_x,  
-avg(y) as centroide_y  
-from espania  
-group by 1;  
-quit;  
+[source languaje=»SAS»]
+proc sql;
+create table centroides as select
+id_4,
+avg(x) as centroide_x,
+avg(y) as centroide_y
+from espania
+group by 1;
+quit;
 [/source]
 
 ¡A qué molo! El centroide de cada municipio será la media de las coordenadas que lo definen y ahora viene el motivo por el cual he creado una entrada en el blog en vez de llamar por teléfono a Juanito que se ha ido muy lejos a trabajar y no me invita. Vamos a realizar el mapa de la provincia de Barcelona con SAS con el procedimiento SGPLOT que tiene una serie de matices que me hace sugerir que empleéis R para la realización de este tipo de mapas:
 
 [source languaje=»SAS»]
 
-*Creacion de un mapa de Barcelona;  
-data barna;  
-set espania;  
-if name_2 eq "Barcelona";  
-orden = _n_;  
+*Creacion de un mapa de Barcelona;
+data barna;
+set espania;
+if name_2 eq "Barcelona";
+orden = _n_;
 run;
 
-proc sql;  
-create table barna as select distinct  
-a.*, b.*  
-from barna a left join centroides b  
-on a.id_4 eq b.id_4  
-order by orden;  
+proc sql;
+create table barna as select distinct
+a.*, b.*
+from barna a left join centroides b
+on a.id_4 eq b.id_4
+order by orden;
 quit;
 
-proc sgplot data=barna ;  
-polygon x=x y=y ID=id_4 / fill outline;  
-xaxis display=none;  
-yaxis display=none;  
-scatter x=centroide_x y=centroide_y ;  
+proc sgplot data=barna ;
+polygon x=x y=y ID=id_4 / fill outline;
+xaxis display=none;
+yaxis display=none;
+scatter x=centroide_x y=centroide_y ;
 quit;
 
 [/source]

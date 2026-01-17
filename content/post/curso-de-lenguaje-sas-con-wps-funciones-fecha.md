@@ -17,14 +17,14 @@ tags:
 - ''
 - lenguaje SAS
 title: Curso de lenguaje SAS con WPS. Funciones fecha
-url: /curso-de-lenguaje-sas-con-wps-funciones-fecha/
+url: /blog/curso-de-lenguaje-sas-con-wps-funciones-fecha/
 ---
 
 Las fechas con SAS no están muy bien resueltas, con WPS pasa lo mismo. Era necesario un capítulo especial para hablar sobre fechas en WPS. [En este blog ya se habló del tema](https://analisisydecision.es/trabajo-con-fechas-sas-funciones-fecha/). Y ahora, con WPS, la entrada será análoga: **SAS = WPS**. . Las funciones las vamos a dividir en 4 grupos:
 
-• Funciones de extracción de fecha  
-• Funciones de creación de fecha  
-• Funciones de duración  
+• Funciones de extracción de fecha
+• Funciones de creación de fecha
+• Funciones de duración
 • Funciones de intervalo
 
 Las **funciones de extracción de fecha** nos permiter «extraer» información de variables de fecha/hora, veamos un ejemplo para extraer la fecha y la hora de una variable fecha/hora:

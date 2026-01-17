@@ -20,7 +20,7 @@ tags:
 - R
 - XML
 title: Un homenaje a Malthus con R
-url: /un-homenaje-a-malthus-con-r/
+url: /blog/un-homenaje-a-malthus-con-r/
 ---
 
 Hoy quería yo revindicar la figura de un tipo bastante maltratado: [Thomas Malthus](http://es.wikipedia.org/wiki/Thomas_Malthus). Maltratado porque era un poco reaccionario y facha, y parece que eso es suficiente para que se olviden de uno, aunque fuera el tipo que más ha aportado a la [demografía](http://es.wikipedia.org/wiki/Demograf%C3%ADa).Y el homenaje tenía que hacérselo con el paquete de R que más utilizo últimamente, el XML y algunos sencillos gráficos creados con R-commander. Malthus lo que venía a decir es que somos muchos, demasiados y encima la cosa tenía muy mala pinta. Parece que tiene razón, pero vamos a verlo gráficamente. Comenzamos:

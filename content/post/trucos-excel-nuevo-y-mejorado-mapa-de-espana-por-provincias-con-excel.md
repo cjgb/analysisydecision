@@ -17,5 +17,5 @@ slug: trucos-excel-nuevo-y-mejorado-mapa-de-espana-por-provincias-con-excel
 tags:
 - mapa españa provincias excel
 title: Trucos Excel. Nuevo (y mejorado) mapa de España por provincias con Excel
-url: /trucos-excel-nuevo-y-mejorado-mapa-de-espana-por-provincias-con-excel/
+url: /blog/trucos-excel-nuevo-y-mejorado-mapa-de-espana-por-provincias-con-excel/
 ---

@@ -15,7 +15,7 @@ related:
 slug: sas-global-forum-2009
 tags: []
 title: SAS Global Forum 2009
-url: /sas-global-forum-2009/
+url: /blog/sas-global-forum-2009/
 ---
 
 [Ya tenéis disponibles los «paper» del SAS Global Forum 2009](http://support.sas.com/resources/papers/proceedings09/TOC.html). Echadle un vistazo porque siempre merecen la pena.

@@ -13,7 +13,7 @@ related:
 slug: 15-horas-de-introduccion-a-machine-learnig
 tags: []
 title: 15 horas de introducción a machine learnig
-url: /15-horas-de-introduccion-a-machine-learnig/
+url: /blog/15-horas-de-introduccion-a-machine-learnig/
 ---
 
 <http://www.dataschool.io/15-hours-of-expert-machine-learning-videos/>

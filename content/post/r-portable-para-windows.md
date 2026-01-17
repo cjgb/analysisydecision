@@ -13,7 +13,7 @@ related:
 slug: r-portable-para-windows
 tags: []
 title: R portable para Windows
-url: /r-portable-para-windows/
+url: /blog/r-portable-para-windows/
 ---
 
 Miguel Angel Rodríguez pone a nuestra disposición una versión portable de R para Windows:

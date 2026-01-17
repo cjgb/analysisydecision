@@ -14,7 +14,7 @@ related:
 slug: trucos-excel-unir-todos-los-excel-en-uno-version-muy-mejorada
 tags: []
 title: Trucos Excel. Unir todos los excel en uno, versión muy mejorada
-url: /trucos-excel-unir-todos-los-excel-en-uno-version-muy-mejorada/
+url: /blog/trucos-excel-unir-todos-los-excel-en-uno-version-muy-mejorada/
 ---
 
 El amigo @jose nos envía una nueva versión de la macro Excel que nos permite unir varios excel en uno. [En este enlace en formato RAR](/images/2012/09/unir_excel2.rar) tenéis un ejemplo de funcionamiento donde el libro de Excel más importante es UNIR.XLSM Las instrucciones de uso son:

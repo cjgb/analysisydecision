@@ -14,7 +14,7 @@ slug: estadistica-para-cientificos-de-datos-con-r-introduccion
 tags: []
 title: Introducción a la Estadística para Científicos de Datos con R. Capítulo 1.
   Introducción
-url: /estadistica-para-cientificos-de-datos-con-r-introduccion/
+url: /blog/estadistica-para-cientificos-de-datos-con-r-introduccion/
 ---
 
 Este contenido está sujeto a una licencia [creative commons](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es)

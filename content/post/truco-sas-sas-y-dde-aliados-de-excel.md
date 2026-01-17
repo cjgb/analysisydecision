@@ -14,7 +14,7 @@ related:
 slug: truco-sas-sas-y-dde-aliados-de-excel
 tags: []
 title: Truco SAS. SAS y DDE, otra forma de exportar a Excel
-url: /truco-sas-sas-y-dde-aliados-de-excel/
+url: /blog/truco-sas-sas-y-dde-aliados-de-excel/
 ---
 
 Otro elemento con el que contamos para crear archivos Excel desde SAS es el [DDE](http://es.wikipedia.org/wiki/DDE), una tecnología que nos permite comunicar Windows con SAS. Mediante esta comunicación podemos leer un fichero SAS y escribir en una tabla de Excel. Con el siguiente artículo os voy a introducir a otra metodología que no sólo sirve para crear ficheros Excel desde SAS si no que además nos permitirá ejecutar macros, crear gráficos,…
@@ -47,7 +47,7 @@ data _null_;
    end;
 run;
 ```
- 
+
 
 Este ejemplo genera un dataset temporal de 20 observaciones y 3 variables que escribimos en un archivo excel C:\temp\ej_dde.xls que existe. La secuencia para su creación es: abrimos, esperamos unos segundos, asignamos una referencia y escribimos. Hemos creado:
 
@@ -133,7 +133,7 @@ put "[save()]";
 put "[File.Close()]";
 run;
 ```
- 
+
 
 Nuestra tabla Excel ha mejorado mucho su aspecto. Un buen programa para comenzar a usar DDE con SAS. Podemos sofisticarlo todo lo que queramos y crear informes directamente con SAS.
 

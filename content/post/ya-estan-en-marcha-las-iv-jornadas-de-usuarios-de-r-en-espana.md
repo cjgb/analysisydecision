@@ -14,14 +14,15 @@ related:
 slug: ya-estan-en-marcha-las-iv-jornadas-de-usuarios-de-r-en-espana
 tags:
 - R
+- Jornadas de R
 title: Ya están en marcha las IV jornadas de usuarios de R en España
-url: /ya-estan-en-marcha-las-iv-jornadas-de-usuarios-de-r-en-espana/
+url: /blog/ya-estan-en-marcha-las-iv-jornadas-de-usuarios-de-r-en-espana/
 ---
 
 ![](https://www.r-es.org/display7)
 
 En esta dirección tenéis toda la información necesaria:
 
-http://www.r-es.org/IV+Jornadas
+[http://www.r-es.org/IV+Jornadas](http://www.r-es.org/IV+Jornadas)
 
 Para variar soy el último en hacerme eco de tan magno evento al que espero asistir, siempre digo lo mismo y no voy.

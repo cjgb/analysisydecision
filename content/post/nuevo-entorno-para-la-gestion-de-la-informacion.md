@@ -15,7 +15,7 @@ tags:
 - SAS es muy caro
 - WPS
 title: Nuevo entorno para la gestión de la información
-url: /nuevo-entorno-para-la-gestion-de-la-informacion/
+url: /blog/nuevo-entorno-para-la-gestion-de-la-informacion/
 ---
 
 Carlos ya nos habló del clon de SAS [WPS ](https://analisisydecision.es/integracion-de-r-con-sas-spss-y-otros/)también ha hecho referencia al [compilador de SAS en Java](https://analisisydecision.es/traducir-codigo-sas-a-java/) y le estoy dando vueltas al tema. Por si fuera poco [leo esto en DecisionStats](http://decisionstats.wordpress.com/2009/11/18/wps-alternative-sas-language-software-pricing/).

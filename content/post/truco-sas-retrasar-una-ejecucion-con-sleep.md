@@ -15,7 +15,7 @@ related:
 slug: truco-sas-retrasar-una-ejecucion-con-sleep
 tags: []
 title: Truco SAS. Retrasar una ejecución con SLEEP
-url: /truco-sas-retrasar-una-ejecucion-con-sleep/
+url: /blog/truco-sas-retrasar-una-ejecucion-con-sleep/
 ---
 
 El método más sencillo para ejecutar SAS a una hora determinada es el empleo de la función SLEEP:
@@ -26,6 +26,6 @@ data _null_;
     duerme_hasta = sleep(momento - datetime(), 1);
 run;
 ```
- 
+
 
 Un truco muy sencillo que da respuesta a una duda planteada en el blog. Pensé que ya existía esta entrada. Saludos.

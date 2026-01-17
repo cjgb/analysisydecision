@@ -14,7 +14,7 @@ related:
 slug: obtener-las-coordenadas-de-una-direccion-con-r-y-la-api-de-google-earth
 tags: []
 title: Obtener las coordenadas de una dirección con R y la API de Google Earth
-url: /obtener-las-coordenadas-de-una-direccion-con-r-y-la-api-de-google-earth/
+url: /blog/obtener-las-coordenadas-de-una-direccion-con-r-y-la-api-de-google-earth/
 ---
 
 Obtener coordenadas desde la API de Google Maps a partir de una dirección consiste en realizar la petición a la API y obtener un json pero tenemos la suerte de contar con R y ese proceso le podemos hacer de forma más sencilla e incluso le podemos tabular. En realidad son 4 líneas de código pero es posible que a alguien le sean de utilidad. Lo primero es disponer de un proyecto en la [Google Cloud Plattform](https://console.cloud.google.com/) si ya lo tenemos lo que necesitamos es autorizar a este proyecto a acceder a la API de Google Maps, [para ello yo he usado este enlace](https://www.loopeando.com/google-maps-platform-rejected-your-request-an-internal-error-was-found-for-this-api/) y he habilitado la Geocoding API, la que vamos a usar para la consulta de la dirección.
@@ -28,7 +28,7 @@ register_google("[API key]")
 
 coordenadas <- geocode("Calle Murga 15 El Molar Madrid", output = "latlona", source = "google")
 ```
- 
+
 
 Así de sencillo y en este punto os podéis imaginar, podemos pasar una lista o un data frame y realizar un bucle para obtener las coordenadas y que éstas se guarden en un data frame. Dando una vuelta de tuerca podemos obtener el código postal:
 
@@ -37,6 +37,6 @@ coordenadas <- geocode("Paseo Castellana 259 Madrid", output = "more", source = 
 coordenadascodpostal = regmatches(coordenadasaddress,
                                    gregexpr('(?<!\\d)\\d{5}(?:[ -]\\d{4})?\\b', coordenadas$address, perl=T))
 ```
- 
+
 
 Una tontería pero que puede ser útil para algunos. Saludos.

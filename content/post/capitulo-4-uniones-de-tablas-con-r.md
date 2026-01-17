@@ -16,7 +16,7 @@ slug: capitulo-4-uniones-de-tablas-con-r
 tags: []
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 4. Uniones
   de tablas con R
-url: /capitulo-4-uniones-de-tablas-con-r/
+url: /blog/capitulo-4-uniones-de-tablas-con-r/
 ---
 
 Además de manejar los datos de un data frame en ocasiones es necesario realizar uniones entre conjuntos de datos para crear o añadir nuevas variables a un data frame que es una base de observaciones inicial. Se pueden establecer 2 tipos de uniones fundamentales, uniones verticales de tablas y uniones horizontales. Las uniones verticales serán las concatenaciones de data frames, poner una estructura de datos encima de otra y las uniones horizontales serán las que se denominarán _join_.
@@ -33,7 +33,7 @@ df2 <- data.frame(anio = c(2017, 2018, 2019, 2020), variable1=c(50, 60, 70, 80),
 df1 %>% kable()
 df2 %>% kable()
 ```
- 
+
 
 Se puede observar como se han creado manualmente 2 data frames con lo que trabajaremos y el uso de `tidyverse` y `kable` para la visualización de tablas en R. Veamos los principales tipos de uniones.
 
@@ -44,11 +44,11 @@ El siguiente código emplea la función `rbind.data.frame` para concatenar datos
 ```r
 df <- rbind.data.frame(df1, df2)
 ```
- 
+
 
 `Error in match.names(clabs, names(xi)) : names do not match previous names`
 
-Significa que ambos conjuntos de datos no tienen las mismas variables.  
+Significa que ambos conjuntos de datos no tienen las mismas variables.
 En las uniones verticales con la función `rbind.data.frame` se han de unir las **mismas estructuras**. En los datos de trabajo no se dispone de la misma estructura por lo que se torna necesario saber que deseamos unir verticalmente, saber que deseamos concatenar. Si deseamos realizar una unión de todos los datos ambas tablas requieren de las mismas variables:
 
 ```r
@@ -58,7 +58,7 @@ df2variable2 <- NA
 df <- rbind.data.frame(df1, df2)
 df %>% kable()
 ```
- 
+
 
 Se han creado las variables 3 y 2 donde ha sido necesario y ya se está en disposición de concatenar ambos data frames. Observemos como queda el data frame resultante. Es importante puntualizar que se están produciendo duplicidades por la variable anio, cabe preguntarse ¿son necesarias esas duplicidades? Cuando se trabaje con datos es muy importante disponer de un campo identificativo del registro y determinar si existen duplicidades por ese campo.
 
@@ -68,7 +68,7 @@ En cualquier caso, con el paquete `dplyr` se pueden concatenar data frames media
 df <- bind_rows(df1, df2)
 df %>% kable()
 ```
- 
+
 
 El empleo de esta función no es sensible a la necesidad de que ambos conjuntos de datos tengan los mismos nombres de las variables, si eso no ocurre se emplean valores perdidos representados en R como `NA` para aquellas ocasiones en las que no coincida.
 
@@ -93,7 +93,7 @@ df <- inner_join(df1,df2, by='anio')
 # Equivale a df <- df1 %>% inner_join(df2, by='anio')
 df %>% kable()
 ```
- 
+
 
 La unión de ambas estructuras tiene una variable `variable1` en común, `dplyr` entiende que es necesario preservar las variables del conjunto de datos de la derecha, con el sufijo `.x`, y las variables del conjunto de datos de la izquierda, con el sufijo `.y` por este motivo es muy relevante determinar que se quiere unir. En los datos de trabajo podríamos saber cuales de los datos de la izquierda coinciden por año con los de la derecha y unir la variable 3.
 
@@ -102,7 +102,7 @@ df2 <- df2 %>% select(-variable1)
 df <- inner_join(df1,df2)
 df %>% kable()
 ```
- 
+
 
 Se ha eliminado la `variable1` del `df2` como paso previo, es la que ambos conjuntos de datos tienen en común, se realiza la unión y en este caso se ha obviado el campo de unión porque `dplyr` busca la _«unión natural»_ , el campo en común que es `anio` en este caso y no es necesario especificar `by=` con lo que podemos ahorrar código. En el trabajo diario del científico de datos es necesario realizar múltiples uniones de conjuntos de datos por un camo identificativo (roles de las variables), es buena práctica que este campo identificativo tenga el mismo nombre para todos los conjuntos de datos de trabajo.
 
@@ -117,7 +117,7 @@ df2 <- data.frame(anio = c(2017, 2018, 2019, 2020), variable3=c(5000,6000,7000,8
 df1 <- df1 %>% left_join(df2)
 df1 %>% kable()
 ```
- 
+
 
 Se ha añadido por la derecha la `variable3` al `df1`, añadimos una nueva variable a un **data frame de base**.
 
@@ -132,7 +132,7 @@ df2 <- data.frame(anio = c(2017, 2018, 2019, 2020), variable3=c(5000,6000,7000,8
 df <- df1 %>% anti_join(df2)
 df %>% kable()
 ```
- 
+
 
 Se observa que no se ha unido ninguna variable, solo se ha seleccionado el registro de `df1` que no cruza con `df2`.
 
@@ -162,7 +162,7 @@ df %>% kable()
 df <- sqldf("select * from df1 where anio not in (select anio from df2)")
 df %>% kable()
 ```
- 
+
 
 ## Duplicidades en las uniones de tablas
 
@@ -175,13 +175,13 @@ df2 <- data.frame(anio = c(2017, 2018, 2019, 2020, 2020), variable3=c(5000,6000,
 df <- df1 %>% left_join(df2)
 df %>% kable()
 ```
- 
+
 
 En este burdo ejemplo `df2` tiene duplicado el año 2020 por lo que una left join con ese conjunto de datos por ese campo provocará duplicidades. Una forma de controlarlo será contabilizar por el campo identificativo.
 
 ```r
 df <- rbind.data.frame(df1, df2)
 ```
-0 
+0
 
 En el capítulo anterior ya se anotó la **importancia de establecer mecanismos de control cuando se trabajen con datos** , bien sea visualizaciones de datos agrupaciones, tablas de frecuencia o estadísticos básicos que veremos en posteriores capítulos.

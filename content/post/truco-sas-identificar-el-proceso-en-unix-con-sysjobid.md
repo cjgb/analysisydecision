@@ -17,7 +17,7 @@ tags:
 - macro
 - SAS
 title: Truco SAS. Identificar el proceso en Unix con SYSJOBID
-url: /truco-sas-identificar-el-proceso-en-unix-con-sysjobid/
+url: /blog/truco-sas-identificar-el-proceso-en-unix-con-sysjobid/
 ---
 
 Un truco SAS muy rápido y que a algún compañero le ha venido muy bien y por eso lo pongo. La macro variable _& sysjobid_ nos idenfica el job de Unix que está corriendo en ese momento. Es una macro del sistema y se haya en el diccionario de macros de SAS. Tenemos una vista en SASHELP VMACRO de cuales son estas macros AUTOMATIC. Curiosead SASHELP, tiene algunas vistas muy interesantes, creo que ya he comentado algo sonbre ellas.

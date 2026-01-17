@@ -17,7 +17,7 @@ tags:
 - rimage
 - TeachingDemos
 title: Truco R. Insertar imagen en un gráfico
-url: /truco-r-insertar-imagen-en-un-grafico/
+url: /blog/truco-r-insertar-imagen-en-un-grafico/
 ---
 
 Quería pintaros mi estimación sobre el mundial de Sudáfrica con R. La he hecho con el corazón más que con la cabeza. Es evidente que no será así. Esta estimación la pinto utilizando dos paquetes de R más que interesantes. El rimage no está en CRAN, es una cosa muy rara, un paquete «propietario» pero que tiene la función read.jpeg que permite crear objetos de imagen en R. El otro paquete interesante es el TeachingDemos que nos permite añadir imágenes a los gráficos de R, me acerqué a él cuando esta web tenía un logo, ahora ya no lo tiene. También me parece que puede ser de utilidad la función download.file
@@ -45,7 +45,7 @@ download.file(imagen, destino, mode="wb")
 #Leemos jpeg con rimage
 mexico <- read.jpeg(destino)
 ```
- 
+
 
 Nos hemos descargado 3 banderas y las hemos guardado como objetos de R. Ahora hemos de pintar un podium:
 
@@ -61,7 +61,7 @@ points(c(2,3),c(3,3),type="l",lwd=3,col="red")
 points(c(3,4),c(2,2),type="l",lwd=3,col="red")
 points(c(4,4),c(2,1),type="l",lwd=3,col="red")
 ```
- 
+
 
 Y ahora ponemos mi estimación:
 
@@ -72,7 +72,7 @@ subplot(plot(esp),2.5,3.5)
 subplot(plot(mexico),1.3,2.5)
 subplot(plot(arg),3.7,2.5)
 ```
- 
+
 
 ¿Imposible? Seguramente, pero todavía hay esperanza.
 

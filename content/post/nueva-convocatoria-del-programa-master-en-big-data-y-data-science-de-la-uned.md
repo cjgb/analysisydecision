@@ -13,7 +13,7 @@ related:
 slug: nueva-convocatoria-del-programa-master-en-big-data-y-data-science-de-la-uned
 tags: []
 title: Nueva convocatoria del programa Máster en Big Data y Data Science de la UNED
-url: /nueva-convocatoria-del-programa-master-en-big-data-y-data-science-de-la-uned/
+url: /blog/nueva-convocatoria-del-programa-master-en-big-data-y-data-science-de-la-uned/
 ---
 
 Está abierta la convocatoria para 2022 del programa modular en Big Data y Data Science aplicados a la economía y a la administración y dirección de empresas:

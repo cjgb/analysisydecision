@@ -16,7 +16,7 @@ slug: manual-curso-introduccion-de-r-capitulo-11-introduccion-al-analisis-de-la-
 tags: []
 title: 'Manual. Curso introducción de R. Capítulo 11: Introducción al análisis de
   la varianza (ANOVA)'
-url: /manual-curso-introduccion-de-r-capitulo-11-introduccion-al-analisis-de-la-varianza-anova/
+url: /blog/manual-curso-introduccion-de-r-capitulo-11-introduccion-al-analisis-de-la-varianza-anova/
 ---
 
 Para realizar la introducción al análisis de la varianza (ANOVA) con R comenzaremos estableciendo unos conceptos básicos. Lo primero que hacemos es plantear una hipótesis que va a motivar un experimento, elegimos el diseño para nuestro experimento y recogemos los datos y los analizamos mediante el análisis de la varianza que consiste en descomponer la variabilidad total de los datos en sumandos cada uno de ellos asignable a una fuente de variación; posteriormente ya sacamos conclusiones. Lo que se expone a continuación viene recogido en los libros:
@@ -43,16 +43,16 @@ Para diseñar un experimento se tienen en cuenta como son las unidades experimen
 
 Estructuras de diseño:
 
-* Diseño completamente aleatorizado.  
-* Diseño por bloques aleatorizados completos.  
+* Diseño completamente aleatorizado.
+* Diseño por bloques aleatorizados completos.
 * Diseño de cuadrados latinos.
 
 Estructuras de tratamiento:
 
-* Diseño unifactorial.  
-* Diseño bifactorial.  
-* Diseño n factorial.  
-* Diseño 2^n.  
+* Diseño unifactorial.
+* Diseño bifactorial.
+* Diseño n factorial.
+* Diseño 2^n.
 * Diseño anidado.
 
 En esta introducción comenzamos con el diseño más básico de todos:
@@ -67,10 +67,10 @@ Para realizar el análisis de la varianza con R hemos de determinar el modelo co
 
 Ejemplo 11.1:
 
-En un tratamiento contra la hipertensión se seleccionaron 40 enfermos de características similares. A cada enfermo se le administró uno de los fármacos P, A, B, AB, al azar, formando 4 grupos. El grupo P tomó placebo (fármaco inocuo), el grupo A tomó un fármaco «A», el grupo B un fármaco «B» y el grupo AB una asociación entre «A» y «B». Para valorar la eficacia de los tratamientos, se registró el descenso de la presión diastólica desde el estado basal (inicio del tratamiento) hasta el estado al cabo de una semana de tratamiento. Los resultados, después de registrarse algunos abandonos, fueron los siguientes:  
-P: 10, 0, 15, -20, 0, 15, -5  
-A: 20, 25, 33, 25, 30, 18, 27, 0, 35, 20  
-B: 15, 10, 25, 30, 15, 35, 25, 22, 11, 25  
+En un tratamiento contra la hipertensión se seleccionaron 40 enfermos de características similares. A cada enfermo se le administró uno de los fármacos P, A, B, AB, al azar, formando 4 grupos. El grupo P tomó placebo (fármaco inocuo), el grupo A tomó un fármaco «A», el grupo B un fármaco «B» y el grupo AB una asociación entre «A» y «B». Para valorar la eficacia de los tratamientos, se registró el descenso de la presión diastólica desde el estado basal (inicio del tratamiento) hasta el estado al cabo de una semana de tratamiento. Los resultados, después de registrarse algunos abandonos, fueron los siguientes:
+P: 10, 0, 15, -20, 0, 15, -5
+A: 20, 25, 33, 25, 30, 18, 27, 0, 35, 20
+B: 15, 10, 25, 30, 15, 35, 25, 22, 11, 25
 AB: 10, 5, -5, 15, 20, 20, 0, 10
 
 ¿Tenemos diferencias entre los tratamientos?

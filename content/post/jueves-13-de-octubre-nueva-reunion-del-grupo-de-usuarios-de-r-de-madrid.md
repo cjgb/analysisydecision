@@ -13,7 +13,7 @@ related:
 slug: jueves-13-de-octubre-nueva-reunion-del-grupo-de-usuarios-de-r-de-madrid
 tags: []
 title: Jueves 13 de octubre nueva reunión del Grupo de usuarios de R de Madrid
-url: /jueves-13-de-octubre-nueva-reunion-del-grupo-de-usuarios-de-r-de-madrid/
+url: /blog/jueves-13-de-octubre-nueva-reunion-del-grupo-de-usuarios-de-r-de-madrid/
 ---
 
 Para más información:

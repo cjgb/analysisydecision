@@ -17,7 +17,7 @@ tags:
 - macro excel
 - tabla dinamica
 title: Trucos Excel. Múltiples campos calculados en una tabla dinámica
-url: /trucos-excel-multiples-campos-calculados-en-una-tabla-dinamica/
+url: /blog/trucos-excel-multiples-campos-calculados-en-una-tabla-dinamica/
 ---
 
 Truco Excel muy rápido y que os permite crear múltiples campos calculados en una tabla dinámica de Excel. Imaginemos que tenemos una tabla dinámica con un campo que es la suma de la exposición al riesgo y por otro lado tenemos el número de siniestros. Estos dos campos los tenemos para 30 coberturas. Si queremos crear un campo calculado que sea la frecuencia siniestral (número de siniestros/exposición) para esos 30 campos tenemos que irnos a herramientas de tabla dinámica, fórmulas, definir el nuevo campo,… O bien podemos hacer emplear la siguiente macro:

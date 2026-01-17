@@ -18,7 +18,7 @@ tags:
 - web scraping
 title: Beatifulsoup. Web scraping con Python o como las redes sociales pueden estar
   cambiando la forma de escribir
-url: /beatifulsoup-web-scraping-con-python-o-como-las-redes-sociales-estan-cambiando-mi-forma-de-escribir/
+url: /blog/beatifulsoup-web-scraping-con-python-o-como-las-redes-sociales-estan-cambiando-mi-forma-de-escribir/
 ---
 
 [![Boxplot_BeatifulShop](/images/2017/12/Boxplot_BeatifulShop.png)](/images/2017/12/Boxplot_BeatifulShop.png)
@@ -54,7 +54,7 @@ frases = frases.loc[frases.largo>10]
 time.sleep(60)
 return frases
 ```
- 
+
 
 Os comento paso a paso, a la función le vamos a pasar el mes y el año y esa será la url que lee https://analisisydecision.es/2017/02/ esa es la web sobre la que vamos a hacer el scraping. Vía request obtenemos la web y BeatifulSoup sólo para quedarnos con el contenido en HTML de la web cargada:
 
@@ -63,7 +63,7 @@ Os comento paso a paso, a la función le vamos a pasar el mes y el año y esa se
 pagina = requests.get(url)
 soup = BeautifulSoup(pagina.content, 'html.parser')
 ```
- 
+
 
 En este punto tenemos un HTML y debemos saber que nos interesa, para el ejercicio nos interesan los párrafos, las etiquetas P, ojo que puede interesarnos guardar alguna tabla u otro elemento, en nuestro estudio estamos analizando la longitud de las frases que hay en los párrafos luego buscaremos las etiquetas P:
 
@@ -71,14 +71,14 @@ En este punto tenemos un HTML y debemos saber que nos interesa, para el ejercici
 m = str(soup.find_all('p'))
 m = BeautifulSoup(m)
 ```
- 
+
 
 Hemos pasado de un completo código HTML a sólo quedarnos con los párrafos, ahora con limpiar el resto de código HTML tendremos algo que podamos usar:
 
 ```r
 m = str(m.get_text())
 ```
- 
+
 
 Soy un principiante en esto de Python y por ese motivo me encuentro más cómodo trabajando con data frames:
 
@@ -90,7 +90,7 @@ frases['frase'] = frases['frase'].apply(lambda x:''.join([i for i in x if i not 
 frases = frases.loc[frases.largo>10]
 time.sleep(60)
 ```
- 
+
 
 Creamos un data frame con una sola variable que contendrá las frases extraídas en el proceso de scraping y le añadimos una variable largo que será la que al final analicemos, además le añadimos la fecha en la que estamos extrayendo los datos para luego graficar por esa fecha. Ahora sólo hacemos una burda limpieza de texto mediante lambdas eliminando los signos de puntuación y borramos las frases con una longitud menor de 10, en la función se ha añadido un retardo de 1 minuto que no tiene mucha utilidad, luego veremos su motivación. Ahora con esta función realizamos un bucle que lea distintas fechas y nos genere un data frame con las frases de las vistas por fecha de analisisydecision.es:
 
@@ -106,7 +106,7 @@ if (i + j != '200802'):
 m = extrae(i,j)
 df = pd.concat([df,m])
 ```
- 
+
 
 En este punto pediros que no ejecutéis el bucle entero porque el servidor os echará de la web, a mi me ha saltado el firewall en repetidas ocasiones y de nada ha servido que haya puesto retardos, creo que me ha permitido un máximo de 24 descargas, en cualquier caso solo descargamos unos meses y podemos hacer un boxplot.
 
@@ -115,6 +115,6 @@ import matplotlib.pyplot as plt
 df.boxplot(column='largo', by=['mes'])
 plt.show()
 ```
- 
+
 
 Vemos que no parece que las redes sociales estén afectando a la longitud de mis frases, yo diría que si…

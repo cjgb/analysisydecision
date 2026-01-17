@@ -14,7 +14,7 @@ related:
 slug: el-ods-de-sas-iii-documentos-html-y-pdf-desde-sas
 tags: []
 title: El ODS de SAS (III). Documentos HTML y PDF desde SAS
-url: /el-ods-de-sas-iii-documentos-html-y-pdf-desde-sas/
+url: /blog/el-ods-de-sas-iii-documentos-html-y-pdf-desde-sas/
 ---
 
 Desde SAS podemos generar PDF y HTML. Esto es muy práctico a la hora de reportar información ya que no necesitaremos pasar por Excel o cualquier otra herramienta de ofimática para generar informes. Además, si generamos HTML podemos crear webs en las que podemos navegar por los resultados obtenidos con SAS. En este mensaje veremos algunos ejemplos prácticos de uso del ODS para conocer mejor su funcionamiento. El primero de ellos crea un informe web a partir de un proc univariate:
@@ -48,7 +48,7 @@ quit;
 title;
 ods html close;
 ```
- 
+
 
 Generamos un dataset aleatorio y posteriormente deseamos hacer un análisis univariante de la variable num_cargos por el num_productos. En c:\temp\web podemos ver 4 páginas, para verlas empleamos la página «frame» contenido.htm, veamos más ejemplos que nos permitan conocer mejor el funcionamiento:
 
@@ -69,7 +69,7 @@ run;
 title;
 ods html close;
 ```
- 
+
 
 Creamos una tabla con el test de la Chi cuadrado para dos variables y la escribimos en la ubicación de nuestras páginas con el nombre test_chi2. Importante reseñar que el resultado de nuestros informes será «el BODY». Podemos emplear múltiples procedimientos para mejorar nuestros informes:
 
@@ -103,7 +103,7 @@ run;
 title;
 ods html close;
 ```
- 
+
 
 La información que vamos reportando se puede hacer más sofisticada y con el proc report damos formato a nuestras tablas y con la opción STYLE del ODS podemos emplear los distintos estilos que tiene SAS. Otro uso muy frecuente del ODS es la creación de PDF. Veamos un ejemplo de uso:
 
@@ -132,6 +132,6 @@ run;
 title;
 ods pdf close;
 ```
- 
+
 
 En un mismo documento podemos introducir más de un informe. Los marcadores que genera cada parte de nuestro documento PDF nos permiten navegar por él. También podemos introducir comentarios y frases con ello podríamos realizar informes automáticos con comentarios personalizados. Espero que estos mensajes estén sirviendo de ayuda para conocer el uso del ODS, cuando empecemos a realizar estudios planteraré más ejemplos de su uso. Como siempre, para cualquier duda o sugerencia: rvaquerizo@analisisydecision.es

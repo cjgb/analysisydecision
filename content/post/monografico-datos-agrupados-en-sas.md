@@ -19,31 +19,31 @@ tags:
 - last
 - retain
 title: Monográfico. Datos agrupados en SAS
-url: /monografico-datos-agrupados-en-sas/
+url: /blog/monografico-datos-agrupados-en-sas/
 ---
 
 A continuación os planteo un monográfico más orientado a principiantes con SAS. Vamos a realizar un acercamiento a los conjuntos de datos SAS agrupados por variables. La premisa fundamental es: **un conjunto de datos SAS está agrupado por una variable si está ordenado por ella**. Para ordenar variables empleamos el PROC SORT:
 
-PROC SORT DATA= ;  
-BY (DESCENDING) ;  
+PROC SORT DATA= ;
+BY (DESCENDING) ;
 RUN;
 
 **Repetimos un conjunto de datos SAS puede agruparse por una o varias variables si está ordenado por ellas**. Algunas de las posibilidades que nos ofrecen este tipo de conjuntos de datos son:
 
-• Buscar máximos y mínimos por grupos  
-• Crear ranking por grupos  
-• Realizar sumarizaciones  
+• Buscar máximos y mínimos por grupos
+• Crear ranking por grupos
+• Realizar sumarizaciones
 • Unir conjuntos de datos
 
 Para ilustrar esto ejemplos vamos a emplear un conjunto de datos SAS de la librería SASHELP llamado SHOES que todos tenemos en nuestra sesión y que contiene las siguientes variables:
 
-# Variable  
-1 Region  
-2 Product  
-3 Subsidiary  
-4 Stores  
-5 Sales  
-6 Inventory  
+# Variable
+1 Region
+2 Product
+3 Subsidiary
+4 Stores
+5 Sales
+6 Inventory
 7 Returns
 
 La primera tarea encomendada es encontrar el mínimo y el máximo número de tiendas por producto en el total de las regiones:

@@ -18,7 +18,7 @@ tags:
 - R
 - SAS
 title: SAS comienza a fijarse en R
-url: /sas-comienza-a-fijarse-en-r/
+url: /blog/sas-comienza-a-fijarse-en-r/
 ---
 
 [Interesante nocicia leída en ComputerWorld:](http://www.idg.es/computerworld/SAS-tiende-un-puente-hacia-el-codigo-R/seccion-tecnologia/noticia-81073)

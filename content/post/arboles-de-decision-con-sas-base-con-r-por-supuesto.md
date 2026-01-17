@@ -24,7 +24,7 @@ tags:
 - RPART
 - sas base
 title: Árboles de decisión con SAS Base (con R por supuesto)
-url: /arboles-de-decision-con-sas-base-con-r-por-supuesto/
+url: /blog/arboles-de-decision-con-sas-base-con-r-por-supuesto/
 ---
 
 **Con SAS Base podemos hacer árboles de decisión porque tenemos R**. Así de sencillo. Vamos a utilizar SAS para gestionar nuestros datos y R será la herramienta que utilicemos para la realización del modelo de árbol de decisión. Posteriormente emplearemos las reglas generadas por el modelo para etiquetar a nuestros clientes en SAS. Con esta entrada pretendo ilustrar una serie de ejemplos en los que comunico SAS con R. Una herramienta nos sirve para el tratamiento de datos y la otra la utilizaremos para realizar modelos que no están al alcance de SAS. Para realizar esta comunicación SAS-R os planteo la creación en SAS de ficheros de texto con las instrucciones en R y la ejecución en modo batch de R con ese código creado en SAS. Aquí tenéis punto por punto el ejemplo:

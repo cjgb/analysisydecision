@@ -15,7 +15,7 @@ related:
 slug: truco-sas-transformaciones-de-variables-con-arrays
 tags: []
 title: Truco SAS. Transformaciones de variables con arrays
-url: /truco-sas-transformaciones-de-variables-con-arrays/
+url: /blog/truco-sas-transformaciones-de-variables-con-arrays/
 ---
 
 Hacer ceros los missing en un dataset. Crear una etiqueta «NO DISPONIBLE» en campos carácter sin valores. Cuando trabajamos con SAS es una situación más que habitual. A continuación voy a plantear un par de ejemplos de como podemos usar arrays de variables en SAS para realizar una transformación «masiva» de variables de nuestro conjunto de datos.
@@ -127,13 +127,13 @@ run;
 
 Metodología completamente análoga a la anterior. Además podemos emplearla para buscar registros dentro de tablas. Imaginemos que deseamos identificar todas las personas que se apellidan Daza:
 
-data tres;  
-set dos;  
-array c (*) _character_;  
-do i=1 to dim(c);  
-if index(upcase(c(i)),»DAZA»)>0 then output tres;  
-end;  
-drop i;  
+data tres;
+set dos;
+array c (*) _character_;
+do i=1 to dim(c);
+if index(upcase(c(i)),»DAZA»)>0 then output tres;
+end;
+drop i;
 run;
 
 Este truco es muy útil para recorrer tablas de dimensiones en busca de valores. Por supuesto cualquier duda… rvaquerizo@analisisydecision.es

@@ -14,7 +14,7 @@ related:
 slug: curso-de-iniciacion-a-r-en-kschool-de-carlos-gil
 tags: []
 title: Curso de iniciación a R en Kschool de Carlos Gil
-url: /curso-de-iniciacion-a-r-en-kschool-de-carlos-gil/
+url: /blog/curso-de-iniciacion-a-r-en-kschool-de-carlos-gil/
 ---
 
 Carlos Gil Bellosta va a impartir en Kschool un programa profesional de iniciación a R. En el siguiente link tenéis más información al respecto:

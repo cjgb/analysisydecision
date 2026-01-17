@@ -20,7 +20,7 @@ tags:
 - rpanel
 - svWidgets
 title: Nuestras funciones de R en menús con rpanel y svWidgets
-url: /nuestras-funciones-de-r-en-menus-con-rpanel-y-svwidgets/
+url: /blog/nuestras-funciones-de-r-en-menus-con-rpanel-y-svwidgets/
 ---
 
 Hoy quería acercarme a los paquetes **_rpanel_ **y **_svWidgets_ **para crear ventanas y menús respectivamente. La idea es sencilla, tenemos funciones en R que empleamos habitualmente y con ellas vamos a**realizar un menú**. Partimos de una función muy sencilla en R para eliminar datos con valores _missing_. [Por cierto, que cansado estoy de escribir palabras en inglés para facilitar las búsquedas, un valor missing es un valor perdido. Tras el lapso continúo]. Mi función:

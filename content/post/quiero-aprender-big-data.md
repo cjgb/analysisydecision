@@ -15,7 +15,7 @@ slug: quiero-aprender-big-data
 tags:
 - Big Data Bubble
 title: Quiero aprender Big Data
-url: /quiero-aprender-big-data/
+url: /blog/quiero-aprender-big-data/
 ---
 
 Hoy me han dicho esto. Y mi respuesta ha sido un correo electrónico con estas dos imágenes. El Big Data Landscape 2013:

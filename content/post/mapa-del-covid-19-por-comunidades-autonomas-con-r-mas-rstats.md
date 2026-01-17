@@ -13,7 +13,7 @@ related:
 slug: mapa-del-covid-19-por-comunidades-autonomas-con-r-mas-rstats
 tags: []
 title: 'Mapa del COVID-19 por Comunidades Autónomas con R (más #rstats)'
-url: /mapa-del-covid-19-por-comunidades-autonomas-con-r-mas-rstats/
+url: /blog/mapa-del-covid-19-por-comunidades-autonomas-con-r-mas-rstats/
 ---
 
 [![](/images/2020/03/coronavirus7.png)](/images/2020/03/coronavirus7.png)
@@ -27,7 +27,7 @@ Estoy muy activo en twitter con el #covid-19 estos días y eso está dando lugar
 Esta entrada surge aquí:
 
 > Esto os puede interesar a los que estáis haciendo visualizaciones y análisis con datos [#COVID19](https://twitter.com/hashtag/COVID19?src=hash&ref_src=twsrc%5Etfw) en España 👇 [@ramiroaznar](https://twitter.com/ramiroaznar?ref_src=twsrc%5Etfw) [@r_vaquerizo](https://twitter.com/r_vaquerizo?ref_src=twsrc%5Etfw) <https://t.co/3NAP4YL51n>
-> 
+>
 > — Antonio Delgado (@adelgado) [March 12, 2020](https://twitter.com/adelgado/status/1238032972562956289?ref_src=twsrc%5Etfw)
 
 Datadista pone a nuestra disposición datos actualizados por Comunidad Autónoma y con ellos podemos construir los mapas.
@@ -81,7 +81,7 @@ ggplot(data = ccaa, aes(x = long, y = lat, group = group)) +
         axis.title.x=element_blank(),
         axis.title.y=element_blank())
 ```
- 
+
 
 Este código da lugar al mapa con el que se incia esta entrada. Como aspectos interesantes tiene descargar directamente el mapa con R de gadm o la lectura de cabeceras con formato fecha, algo que no conocía, nunca había usado check.names=FALSE. Por lo demás no es un código especialmente complicado. Pero me gustaría escribir sobre la relativización de los datos, no podemos decir que Madrid tiene 5 veces más casos que otra provincia si Madrid tiene 5 veces más habitantes que otra provincia, es necesario relativizar el número de casos y en este caso vamos a emplear el número de habitantes y además nos va a servir para hacer web scraping sobre una tabla de una página web.
 
@@ -97,7 +97,7 @@ numerea <- function(x) {as.numeric(sub(",",".",x)) }
 
 url = 'https://datosmacro.expansion.com/demografia/poblacion/espana-comunidades-autonomas'
 ```
- 
+
 
 Si vais a la url indicada tenemos que extraer la tabla específica con el número de habitantes y para eso necesitamos saber en que lugar del código HTML se encuentra. En mi caso empleo Google Chrome, imagino que será análogo con otros navegadores. Hacemos lo siguiente:
 
@@ -123,7 +123,7 @@ poblacion <- poblacion [,-4] %>% mutate(CCAA = removePunctuation(CCAA),
     TRUE ~ region
   ))
 ```
- 
+
 
 en html_nodes hemos puesto el XPath y ya sabe que parte tiene que leer, como se genera una lista nos quedamos con el primer elemento de la lista y posteriormente se realiza la homogeneización de los nombres de las comunidades, eliminación de signos de puntuación con removePunctuation (que ha cambiado mi vida porque odio regex). Esta tabla puede ser cruzada con los datos de Datadista y crear un número de casos entre habitantes x 1000:
 
@@ -147,7 +147,7 @@ ggplot(data = ccaa, aes(x = long, y = lat, group = group)) +
         axis.title.x=element_blank(),
         axis.title.y=element_blank())
 ```
- 
+
 
 Y el resultado sigue siendo alarmante en Madrid pero la tonalidad del rojo cambia mucho en otras zonas de España, la importancia relativizar un dato.
 

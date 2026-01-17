@@ -14,7 +14,7 @@ related:
 slug: integracion-de-r-con-sas-spss-y-otros
 tags: []
 title: Integración de R con SAS, SPSS y otros
-url: /integracion-de-r-con-sas-spss-y-otros/
+url: /blog/integracion-de-r-con-sas-spss-y-otros/
 ---
 
 Recientemente se publicó en este blog una entrada haciendo mención a la futura integración de R en SAS. Existe, de hecho, un procedimiento _artesanal_ de [lanzar procesos de R desde SAS](http://www.hollandnumerics.co.uk/pdf/SAS2R2SAS_paper.pdf) basado en la posibilidad de realizar llamadas al sistema operativo desde SAS. No obstante, SAS ha decidido ahondar en dicha integración y proporcionale un marchamo corporativo.

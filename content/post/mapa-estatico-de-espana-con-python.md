@@ -13,7 +13,7 @@ related:
 slug: mapa-estatico-de-espana-con-python
 tags: []
 title: Mapa estático de España con Python
-url: /mapa-estatico-de-espana-con-python/
+url: /blog/mapa-estatico-de-espana-con-python/
 ---
 
 [![](/images/2020/05/Mapa_España_Python_comunidades_Autonomas.png)](/images/2020/05/Mapa_España_Python_comunidades_Autonomas.png)
@@ -35,9 +35,9 @@ ub_shp = '/home/rvaquerizo/Mapas/gadm36_ESP_shp/gadm36_ESP_1.shp'
 espania = gpd.read_file(ub_shp, encoding='utf-8')
 espania.head()
 ```
- 
 
-Reseñar que el mapa de GADM a nivel de Comunidad Autónoma 
+
+Reseñar que el mapa de GADM a nivel de Comunidad Autónoma
 
 es el nivel 1 por ello leemos gadm36_ESP_1, la división administrativa correspondiente a las Comunidades Autónomas es la 1, provincias 2, comarcas 3 y municipios 4. Os los descargáis una vez, podéis mover Canarias y así tenéis un gráfico adecuado.
 
@@ -53,7 +53,7 @@ import re
 import time
 import string
 ```
- 
+
 
 El scraping de la tabla de densidades de población por Comunidad Autónoma lo vamos a llevar a cabo con BeatifulShop, creo que es la forma más sencilla:
 
@@ -62,7 +62,7 @@ url = 'https://datosmacro.expansion.com/demografia/poblacion/espana-comunidades-
 pagina = requests.get(url)
 soup = BeautifulSoup(pagina.content, 'html.parser')
 ```
- 
+
 ```r
 tbl = soup.find("table",{"id":"tb1"})
 
@@ -70,7 +70,7 @@ df = pd.read_html(str(tbl))[0]
 df = df[['CCAA', 'Densidad']]
 df.head()
 ```
- 
+
 
 Es evidente que necesitamos trabajar los textos, pero esperamos a unir los datos al mapa.Veamos como están definidas las Comunidades Autónomas en los conjuntos de datos de trabajo:
 
@@ -78,7 +78,7 @@ Es evidente que necesitamos trabajar los textos, pero esperamos a unir los datos
 df.CCAA.unique()
 espania.NAME_1.unique()
 ```
- 
+
 
 Reemplazamos el conjunto de caracteres [+] por nada y cambiamos los nombres de las comunidades que no sean iguales:
 
@@ -94,7 +94,7 @@ espania['NAME_1'] = np.where(espania['NAME_1']=='Comunidad de Madrid','Madrid',e
 espania['NAME_1'] = np.where(espania['NAME_1']=='Islas Canarias','Canarias',espania['NAME_1'])
 espania['NAME_1'] = np.where(espania['NAME_1']=='Principado de Asturias','Asturias',espania['NAME_1'])
 ```
- 
+
 
 Prefiero emplear el nombre del conjunto de datos de datosmacro por ser más corto. Una vez los nombres sean iguales podemos hacer la left join de los dos dataframes y pintar el mapa:
 
@@ -105,7 +105,7 @@ plt.rcParams["figure.figsize"]=20,20
 
 my_map = espania.plot(column="Densidad", linewidth=0.3, cmap="Reds", scheme="quantiles", k=8, alpha=0.7)0
 ```
- 
+
 
 [![](/images/2020/05/Mapa_España_Python_Pandas1.png)](/images/2020/05/Mapa_España_Python_Pandas1.png)
 
@@ -117,7 +117,7 @@ Ya tenemos nuestro gráfico y podemos representar datos sobre la incidencia del 
 datadista = "https://raw.githubusercontent.com/datadista/datasets/master/COVID%2019/ccaa_covid19_casos.csv"
 casos = pd.read_csv (datadista)
 ```
- 
+
 
 Siempre el homenaje a Datadista, ese no puede faltar.
 
@@ -133,6 +133,6 @@ espania['tasa_densidad'] = espania['casos']/espania['Densidad']
 my_map = espania.plot(column="tasa_densidad", linewidth=1, cmap="Reds", scheme="quantiles",
                       k=8, alpha=0.7)
 ```
- 
+
 
 Obtenemos el mapa con el que comienza la entrada. Canarias siquiera aparece, los casos por densidad de población son mínimos y en el extremo opuesto tenemos a Castilla la Mancha y a Aragón.

@@ -16,7 +16,7 @@ tags:
 - EC2
 - R
 title: Probando R sobre el EC2 de Amazon
-url: /probando-r-sobre-el-ec2-de-amazon/
+url: /blog/probando-r-sobre-el-ec2-de-amazon/
 ---
 
 Hacía tiempo que quería probarlo. Menos en las grutas pobladas de seres del siglo anterior, todo el mundo habla del [EC2](http://aws.amazon.com/ec2/ "EC2 de Amazon").

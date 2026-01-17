@@ -17,12 +17,12 @@ tags:
 - mapas
 - mapas españa
 title: Mapas de la provincia de Madrid con BDT
-url: /mapas-de-la-provincia-de-madrid-con-bdt/
+url: /blog/mapas-de-la-provincia-de-madrid-con-bdt/
 ---
 
 ![Mapa Madrid por municipios](/images/2015/02/Mapa-Madrid-por-municipios-291x300.png)
 
-JL un lector del blog me ha descubierto esta herramienta muy útil para la creación de mapas de Madrid, se trata de una herramienta pública donde tenemos un gran número de variables para poder representar y además podemos representar nuestras propias variables. La web es:[  
+JL un lector del blog me ha descubierto esta herramienta muy útil para la creación de mapas de Madrid, se trata de una herramienta pública donde tenemos un gran número de variables para poder representar y además podemos representar nuestras propias variables. La web es:[
 ](/images/2015/02/Mapa-Madrid-por-municipios.png)
 
 http://www.madrid.org/bdt/Inicio.icm

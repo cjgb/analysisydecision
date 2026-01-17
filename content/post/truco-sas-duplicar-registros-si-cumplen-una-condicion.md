@@ -16,7 +16,7 @@ slug: truco-sas-duplicar-registros-si-cumplen-una-condicion
 tags:
 - output
 title: Truco SAS. Duplicar registros si cumplen una condición
-url: /truco-sas-duplicar-registros-si-cumplen-una-condicion/
+url: /blog/truco-sas-duplicar-registros-si-cumplen-una-condicion/
 ---
 
 Mejor que truco, tontería SAS pero sirve para entender mejor el paso DATA. Se trata de duplicar registros si cumplen una condición. Es decir, añadimos una fila en SAS si se cumple la condición:

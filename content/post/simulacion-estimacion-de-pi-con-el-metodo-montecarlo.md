@@ -18,7 +18,7 @@ tags:
 - números aleatorios
 - simulación
 title: Simulación. Estimación de pi con el método Montecarlo
-url: /simulacion-estimacion-de-pi-con-el-metodo-montecarlo/
+url: /blog/simulacion-estimacion-de-pi-con-el-metodo-montecarlo/
 ---
 
 La **simulación** es un campo que está tomando una gran importancia. Nos está permitiendo evaluar comportamientos extremos sin ningún tipo de riesgos. Casi nadie se imaginaba que el escenario económico actual podía cambiar con la velocidad que lo está haciendo. Imaginemos una modificación brusca de los ratios de morosidad implicará que las entidades bancarias tengan que modificar sus fondos de previsión. Esta misma morosidad puede afectar a las aseguradoras de crédito que tienen que estimar sus provisiones técnicas. Ahora mismo es necesario simular las condiciones más extremas para los datos futuros y la simulación nos permite experimentar para aproximarnos al problema.

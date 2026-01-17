@@ -13,12 +13,12 @@ related:
 slug: analisisydecision-es-os-desea-felices-fiestas
 tags: []
 title: Analisisydecision.es os desea felices fiestas
-url: /analisisydecision-es-os-desea-felices-fiestas/
+url: /blog/analisisydecision-es-os-desea-felices-fiestas/
 ---
 
 [![](/images/2020/12/navidad.gif)](/images/2020/12/navidad.gif)
 
-Un homenaje a R base del que nadie se acuerda. Una animación donde se usa el paquete snowflakes para hacer copos de nieve y hay algún uso interesante de la función text. En cualquier caso, lo dicho, felices fiestas en estos días extraños. 
+Un homenaje a R base del que nadie se acuerda. Una animación donde se usa el paquete snowflakes para hacer copos de nieve y hay algún uso interesante de la función text. En cualquier caso, lo dicho, felices fiestas en estos días extraños.
 
 ```r
 alturas <- seq(100,200, by = 3)

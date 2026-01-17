@@ -16,24 +16,24 @@ slug: trucos-sas-matrices-de-adyacencia-con-sas
 tags:
 - matrices
 title: Trucos SAS. Matrices de adyacencia con SAS
-url: /trucos-sas-matrices-de-adyacencia-con-sas/
+url: /blog/trucos-sas-matrices-de-adyacencia-con-sas/
 ---
 
 SAS no está pensado para el cálculo matricial, pero hay ocasiones en las que hemos de trabajar con ellas. Uno de los casos típicos es la matriz de adyacencia. Se trata de partir de estos datos:
 
-a b  
-a e  
-b c  
-b e  
-c e  
+a b
+a e
+b c
+b e
+c e
 d a
 
-Crear:  
-a b c d e  
-a 0 1 0 1 1  
-b 1 0 1 0 1  
-c 0 1 0 0 1  
-d 1 0 0 0 0  
+Crear:
+a b c d e
+a 0 1 0 1 1
+b 1 0 1 0 1
+c 0 1 0 0 1
+d 1 0 0 0 0
 e 1 1 1 0 0
 
 Yo planteo la siguiente metodología:
@@ -68,6 +68,6 @@ from original2
 group by 1;
 quit;
 ```
- 
+
 
 Un método muy sencillo que busca en la matriz de partida el nodo de inicio y el nodo de fin. Creo que se entiende muy bien por eso, y porque estoy casi de vacaciones, no voy a entrar en detalles. Si alguien necesita esos detalles que contacte. Saludos.

@@ -16,7 +16,7 @@ slug: trucos-sas-ordenar-las-variables-de-un-dataset
 tags:
 - retain
 title: Trucos SAS. Ordenar las variables de un dataset
-url: /trucos-sas-ordenar-las-variables-de-un-dataset/
+url: /blog/trucos-sas-ordenar-las-variables-de-un-dataset/
 ---
 
 Para cambiar el orden de las variables en un conjunto de datos SAS hemos de emplear RETAIN antes de SET. Este truco es la respuesta a una duda planteada en el blog. Un vistazo rápido al ejemplo entenderemos la sintaxis:
@@ -38,6 +38,6 @@ retain id importe3;
 set datos;
 run;
 ```
- 
+
 
 Como vemos RETAIN nos permite reordenar las variables del dataset independientemente del tipo de variable que estemos manejando. También podríamos emplear algún otro tipo de sentencia, pero es recomendable usar RETAIN, como vemos no es necesario poner el total de las variables. Saludos.

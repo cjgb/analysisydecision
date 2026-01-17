@@ -18,7 +18,7 @@ tags:
 - Mapa
 - metodología
 title: Trucos Excel. Mapa de España por Comunidades Autónomas
-url: /trucos-excel-mapa-de-espana-por-comunidades-autonomas/
+url: /blog/trucos-excel-mapa-de-espana-por-comunidades-autonomas/
 ---
 
 ![Mapa final de España con Excel](/images/2010/06/mapa_espana_excel_2.JPG)

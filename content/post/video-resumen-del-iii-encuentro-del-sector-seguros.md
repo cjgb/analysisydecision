@@ -11,9 +11,8 @@ related:
 - participaciones-preferentes-de-las-cajas-de-ahorro.md
 - el-modelo-multivariante-en-el-sector-asegurador-las-variables-independientes-iv.md
 slug: video-resumen-del-iii-encuentro-del-sector-seguros
-tags: []
 title: Video resumen del III Encuentro del Sector Seguros
-url: /video-resumen-del-iii-encuentro-del-sector-seguros/
+url: /blog/video-resumen-del-iii-encuentro-del-sector-seguros/
 ---
 
 [![Imagen de previsualización de YouTube](https://img.youtube.com/vi/3Dx9sf1HdO4/0.jpg)](http://www.youtube.com/watch?v=3Dx9sf1HdO4)

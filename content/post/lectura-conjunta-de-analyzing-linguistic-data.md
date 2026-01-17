@@ -15,7 +15,7 @@ related:
 slug: lectura-conjunta-de-analyzing-linguistic-data
 tags: []
 title: Lectura conjunta de “Analyzing Linguistic Data”
-url: /lectura-conjunta-de-analyzing-linguistic-data/
+url: /blog/lectura-conjunta-de-analyzing-linguistic-data/
 ---
 
 Mi compañero y amigo [Carlos Gil](http://www.datanalytics.com/) junto con [Victor Peinado](http://nlp.uned.es/~victor/) van a iniciar un interesante proyecto. Un grupo de lectura del libro [Analyzing Linguistic Data: A practical introduction to Statistics](http://www.ualberta.ca/~baayen/publications/baayenCUPstats.pdf) desde aquí nos hacemos eco de este proyecto que podéis seguir desde [aquí](http://ald.usar.org.es/acerca-de/).

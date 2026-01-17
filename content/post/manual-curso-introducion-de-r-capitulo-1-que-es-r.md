@@ -14,7 +14,7 @@ related:
 slug: manual-curso-introducion-de-r-capitulo-1-%c2%bfque-es-r
 tags: []
 title: 'Manual. Curso introducción de R. Capítulo 1: ¿Qué es R?'
-url: /manual-curso-introducion-de-r-capitulo-1-c2bfque-es-r/
+url: /blog/manual-curso-introducion-de-r-capitulo-1-c2bfque-es-r/
 ---
 
 Si queréis conocer que es R debéis de visitar <http://www.r-project.org/> la web que recoge uno de los proyectos [GNU](http://www.gnu.org/) más interesantes que hay en el mundo. En ella podréis entender como nace una de las más potentes herramientas informáticas para la estadística. Con ella podremos realizar multitud de modelos multivariables, análisis y gráficos y su [código es libre](http://www.gnu.org/). Además disponemos de una extensa comunidad de programadores y colaboradores siempre dispuestos a compartir sus conocimientos con nosotros.

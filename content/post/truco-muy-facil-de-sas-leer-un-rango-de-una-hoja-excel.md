@@ -16,7 +16,7 @@ related:
 slug: truco-muy-facil-de-sas-leer-un-rango-de-una-hoja-excel
 tags: []
 title: Truco (muy fácil) de SAS. Leer un rango de una hoja Excel
-url: /truco-muy-facil-de-sas-leer-un-rango-de-una-hoja-excel/
+url: /blog/truco-muy-facil-de-sas-leer-un-rango-de-una-hoja-excel/
 ---
 
 Cuando tenemos rangos en nuestras hojas Excel y deseamos que se conviertan en tabla SAS podemos emplear la sentencia libname de este modo:
@@ -28,6 +28,6 @@ set selec.rango;
 run;
 libname selec clear;
 ```
- 
+
 
 Asisgnamos la librería al archivo Excel que deseamos leer y tan simple como referenciar al rango en nuestro paso data. Se interactúa fácil entre Excel y SAS. Saludos.

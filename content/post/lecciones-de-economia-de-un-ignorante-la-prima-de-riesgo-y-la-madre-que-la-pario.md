@@ -16,7 +16,7 @@ slug: lecciones-de-economia-de-un-ignorante-la-prima-de-riesgo-y-la-madre-que-la
 tags: []
 title: Lecciones de economía de un ignorante. La prima de riesgo (y la madre que la
   parió)
-url: /lecciones-de-economia-de-un-ignorante-la-prima-de-riesgo-y-la-madre-que-la-pario/
+url: /blog/lecciones-de-economia-de-un-ignorante-la-prima-de-riesgo-y-la-madre-que-la-pario/
 ---
 
 ![](https://lavengro.typepad.com/.a/6a00d8341ccd5b53ef0147e3777daf970b-pi)

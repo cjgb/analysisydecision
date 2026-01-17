@@ -13,7 +13,7 @@ related:
 slug: la-mejor-posicion-de-r-en-tiobe
 tags: []
 title: La mejor posición de R en tiobe
-url: /la-mejor-posicion-de-r-en-tiobe/
+url: /blog/la-mejor-posicion-de-r-en-tiobe/
 ---
 
 [![](/images/2014/11/R-en-tiobe.png)](/images/2014/11/R-en-tiobe.png)

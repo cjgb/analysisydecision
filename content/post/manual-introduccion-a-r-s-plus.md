@@ -14,7 +14,7 @@ related:
 slug: manual-introduccion-a-r-s-plus
 tags: []
 title: Manual. Curso de introducción a R (S-Plus)
-url: /manual-introduccion-a-r-s-plus/
+url: /blog/manual-introduccion-a-r-s-plus/
 ---
 
 En las próximas fechas iré colgando un manual introductorio de R. Con él quiero dar a conocer una potente y excepcional herramienta para la estadística cuya difusión es libre.

@@ -18,7 +18,7 @@ tags:
 - cloud computing
 - nosql
 title: Data mining, Business intelligence (y/o la nube)
-url: /data-mining-business-intelligence-yo-la-nube/
+url: /blog/data-mining-business-intelligence-yo-la-nube/
 ---
 
 Hace tiempo que quería publicar una entrada en respuesta a [estos comentarios escritos en el blog](https://analisisydecision.es/trucos-sas-eliminacion-de-espacios-en-blanco/#comments). Se trata de analizar las búsquedas en Google a través de Google Trends de los términos: [Business Intelligence, Data Mining, Cloud Computing y NOSQL](http://www.google.es/trends/?q=Business+intelligence,+data+mining,+cloud+computing,+nosql&ctab=0&geo=all&date=all&sort=0). El resultado es más que interesante:

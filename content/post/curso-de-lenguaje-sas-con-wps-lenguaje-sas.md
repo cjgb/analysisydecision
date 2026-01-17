@@ -15,7 +15,7 @@ slug: curso-de-lenguaje-sas-con-wps-lenguaje-sas
 tags:
 - libname
 title: Curso de lenguaje SAS con WPS. Lenguaje SAS
-url: /curso-de-lenguaje-sas-con-wps-lenguaje-sas/
+url: /blog/curso-de-lenguaje-sas-con-wps-lenguaje-sas/
 ---
 
 El lenguaje SAS tiene 3 elementos fundamentales:

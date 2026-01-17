@@ -19,7 +19,7 @@ tags:
 - SAS
 - where
 title: Trucos SAS. Identificar registros duplicados
-url: /trucos-sas-identificar-registros-duplicados/
+url: /blog/trucos-sas-identificar-registros-duplicados/
 ---
 
 Muy rápido, para identificar registros duplicados existen múltiples formas. Seguramente haré un monográfico sobre este tema pero de momento dejo una píldora:

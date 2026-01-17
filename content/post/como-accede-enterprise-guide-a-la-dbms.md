@@ -17,7 +17,7 @@ tags:
 - acceso base de datos
 - Enterprise Guide
 title: Como accede Enterprise Guide a la DBMS
-url: /como-accede-enterprise-guide-a-la-dbms/
+url: /blog/como-accede-enterprise-guide-a-la-dbms/
 ---
 
 Un ejemplo muy gráfico de como accede Enterprise Guide a las DBMS:

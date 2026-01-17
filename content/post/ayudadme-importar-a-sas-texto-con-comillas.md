@@ -17,7 +17,7 @@ tags:
 - INFILE
 - PROC IMPORT
 title: Ayudadme. Importar a SAS texto con comillas
-url: /ayudadme-importar-a-sas-texto-con-comillas/
+url: /blog/ayudadme-importar-a-sas-texto-con-comillas/
 ---
 
 Hoy sois vosotros los que tenéis que ayudar al dinosaurio. Ya no estoy para estas cosas. Tengo un problema. Fichero de texto separado por ; típico csv de toda la vida. Este fichero de texto contiene diversos campos que a mis efectos son de texto. Si abrimos el fichero con una hoja de cálculo tendríamos:
@@ -36,6 +36,6 @@ input
             DATO1 DATO2;
 run;
 ```
- 
+
 
 Es un tema que he resuelto pero desde los datos de origen. Pero tengo una duda, ¿qué debo poner en el INFILE para evitar este problema? Que nadie me responda “quitar DSD en el INFILE” que no sirve, tengo campos en blanco. O a lo mejor quitar el DSD en combinación con otra instrucción. El caso es que me atasqué y tiré por el camino más sencillo. A ver si me ayudáis, gracias.

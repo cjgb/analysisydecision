@@ -19,7 +19,7 @@ tags:
 - R
 title: 'Manual. Curso introducción de R. Capítulo 13: Análisis de la varianza. Diseños
   anidados'
-url: /manual-curso-introduccion-de-r-capitulo-13-analisis-de-la-varianza-disenos-anidados/
+url: /blog/manual-curso-introduccion-de-r-capitulo-13-analisis-de-la-varianza-disenos-anidados/
 ---
 
 Continuamos con ejemplos de análisis de la varianza con R. En este caso trabajaremos con diseño de experimentos anidados. Definimos un factor B está anidado a un factor A si para nivel de B tenemos un único nivel de A asociado, es decir, A dos niveles, B tres niveles; A1 (B1,B2,B3) ; A2(B1,B2,B3). En este caso se dice que el nivel B está anidado a A. El modelo matemático viene expresado como:

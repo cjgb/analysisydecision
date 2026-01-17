@@ -21,7 +21,7 @@ tags:
 - script
 - Windows
 title: Macros SAS. Dataset a data frame R
-url: /macros-sas-dataset-a-data-frame-r/
+url: /blog/macros-sas-dataset-a-data-frame-r/
 ---
 
 Voy a presentaros la versión Beta de la macro de SAS que genera data frames a partir de una tabla SAS en Windows, la versión en Linux me la ahorraré hasta el día que pueda instalar SAS en mi máquina virtual. La macro la iré mejorando y evolucionando, probablemente estas mejoras no las colgaré y no retome el hilo hasta que tenga una V1. El tema es sencillo y anteriormente [ya hice mención a este método](https://analisisydecision.es/comunicar-sas-con-r-creando-ejecutables-windows/) pero ahora doy una vuelta de tuerca y directamente creamos data frames a partir de data sets. Os pongo el total del código y comentaré los pasos más interesantes, por supuesto es mejorable. Lo que no puedo asegurar es si funciona bajo WPS porque no me han renovado la licencia. Todo el código seguido:

@@ -14,7 +14,7 @@ related:
 slug: google-mining-analisis-de-las-paginas-indexadas-i
 tags: []
 title: Google Mining. Análisis de las páginas indexadas (I)
-url: /google-mining-analisis-de-las-paginas-indexadas-i/
+url: /blog/google-mining-analisis-de-las-paginas-indexadas-i/
 ---
 
 El proyecto de minería de textos con Excel ha generado el Google Mining. Veamos como puede ayudar la minería de páginas de búsqueda con Google a gestionar una web. Si en el buscador de Google escribimos site:<nombre del sitio web> obtenemos todas las páginas indexadas de nuestro sitio. En el caso de AyD ponemos site:analisisydecision.es y tenemos 49 resultados correspondientes a las 49 páginas indexadas. La herramienta que hemos construido con macros de Excel nos tabula la información y el resultado se puede ver en [Analisis titulos y metas](/images/2008/06/min.htm).
@@ -51,22 +51,22 @@ Dim pal As String
 ```
 
 ```
-'Palabras en diccionario  
-Sheets("diccionario").Select  
-para = 0  
-i = 2  
-While (para = 0)  
-If Cells(i, 2) = "" Then  
-para = 1  
-Else: i = i + 1  
-End If  
+'Palabras en diccionario
+Sheets("diccionario").Select
+para = 0
+i = 2
+While (para = 0)
+If Cells(i, 2) = "" Then
+para = 1
+Else: i = i + 1
+End If
 Wend
 
-For j = 2 To i  
-Sheets("diccionario").Select  
-pal = " " & Cells(j, 2) & " "Sheets("Hoja2").SelectColumns("A:A").Select  
-Selection.Replace What:=pal, Replacement:=" "  
-Next j  
+For j = 2 To i
+Sheets("diccionario").Select
+pal = " " & Cells(j, 2) & " "Sheets("Hoja2").SelectColumns("A:A").Select
+Selection.Replace What:=pal, Replacement:=" "
+Next j
 End Sub
 ```
 

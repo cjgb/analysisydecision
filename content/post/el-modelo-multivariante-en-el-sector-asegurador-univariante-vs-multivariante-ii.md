@@ -15,7 +15,7 @@ slug: el-modelo-multivariante-en-el-sector-asegurador-univariante-vs-multivarian
 tags: []
 title: El modelo multivariante en el sector asegurador. Univariante vs multivariante
   (II)
-url: /el-modelo-multivariante-en-el-sector-asegurador-univariante-vs-multivariante-ii/
+url: /blog/el-modelo-multivariante-en-el-sector-asegurador-univariante-vs-multivariante-ii/
 ---
 
 Hace mucho tiempo se empleaban resultados univariantes en la estructura de la tarifa. Los recargos y descuentos de la prima eran función de un análisis factor a factor, no se detectaban las interacciones entre ellos. **La política de tarificación no era segmentada** y no se ajustaba a la realidad y nos podíamos encontrar la situación prototípica siguiente:

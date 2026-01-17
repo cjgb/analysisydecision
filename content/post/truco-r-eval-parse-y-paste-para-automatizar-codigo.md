@@ -21,7 +21,7 @@ tags:
 - R
 - replicate
 title: Truco R. Eval, parse y paste para automatizar código
-url: /truco-r-eval-parse-y-paste-para-automatizar-codigo/
+url: /blog/truco-r-eval-parse-y-paste-para-automatizar-codigo/
 ---
 
 La función _**paste**_ nos permite concatenar cadenas de texto con R:

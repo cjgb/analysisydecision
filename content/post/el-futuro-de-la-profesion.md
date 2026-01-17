@@ -18,7 +18,7 @@ tags:
 - minería de datos
 - pig
 title: El futuro de la profesión
-url: /el-futuro-de-la-profesion/
+url: /blog/el-futuro-de-la-profesion/
 ---
 
 Nuestra profesión, la del estadístico que trabaja en la _industria_ o la consultoría, está sometida a los cambios que exige el nuevo siglo. Llevo meses clamando en vano frente a un público que no escucha mis advertencias de peligro de obsolescencia. Pero un anuncio de un puesto de trabajo en un país lejano y que algunos consideran adelantado, me hace sentir reivindicado.

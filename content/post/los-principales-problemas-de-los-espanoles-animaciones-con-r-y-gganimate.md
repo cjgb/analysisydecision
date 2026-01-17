@@ -19,7 +19,7 @@ tags:
 - ggplot2
 - XML
 title: Los principales problemas de los españoles. Animaciones con R y gganimate
-url: /los-principales-problemas-de-los-espanoles-animaciones-con-r-y-gganimate/
+url: /blog/los-principales-problemas-de-los-espanoles-animaciones-con-r-y-gganimate/
 ---
 
 [![](/images/2019/08/Problemas_españoles.gif)](/images/2019/08/Problemas_españoles.gif)
@@ -56,11 +56,11 @@ names(problemas) <- nombres
 #Hay un registro en la tabla que tiene el número de encuestas, no es necesario
 problemas <- filter(problemas,Problema != "(N)")
 ```
- 
 
-Cosas interesantes en el código. Hacemos HTMLParse de la web y nos quedamos con las tablas, 
 
-en este caso la segunda, en ese sentido la salida de SAS es sencilla de manipular. No entiendo muy bien porque aparecen filas con todos los valores nulos, por eso se han eliminado. Como la salida es SAS los valores perdidos aparecen como un punto . y es necesario transformaros a 0, además aprovechamos para pasar de carácter a número y eliminar los factores. Para los nombres de las columnas seleccionamos el primer registro de la tabla que contiene las fechas de la obtención de las encuestas, ese único registro que está en un data frame lo transformamos a vector con la instrucción as.vector(t()) una de las mejores formas de pasar de data frame a vector en R. Por último eliminamos del data frame aquellos registros cuyo problema es (N) ya que se trata del número de encuestados. 
+Cosas interesantes en el código. Hacemos HTMLParse de la web y nos quedamos con las tablas,
+
+en este caso la segunda, en ese sentido la salida de SAS es sencilla de manipular. No entiendo muy bien porque aparecen filas con todos los valores nulos, por eso se han eliminado. Como la salida es SAS los valores perdidos aparecen como un punto . y es necesario transformaros a 0, además aprovechamos para pasar de carácter a número y eliminar los factores. Para los nombres de las columnas seleccionamos el primer registro de la tabla que contiene las fechas de la obtención de las encuestas, ese único registro que está en un data frame lo transformamos a vector con la instrucción as.vector(t()) una de las mejores formas de pasar de data frame a vector en R. Por último eliminamos del data frame aquellos registros cuyo problema es (N) ya que se trata del número de encuestados.
 
 Tenemos un data frame con tantas columnas como meses con encuestas, ahora es necesario crear un data frame con los problemas mes a mes, además vamos a aprovechar para quedarnos sólo con los 10 principales problemas:
 
@@ -80,9 +80,9 @@ for (i in 2:length(nombres)){
 #A la hora de realizar la animación es mejor disponer de fechas por lo que tenemos que transformar
 resultado$mes <- parse_date_time2(resultado$mes, orders = "my")
 ```
- 
 
-Es una función que lee mes a mes nuestros datos y va generando un data frame acumulado con el tratamiento deseado para los meses. Como programador SAS que he sido durante muchos años me parece muy sencillo el uso de macros y por eso suelo abusar del eval(parse(text=instrucción)) sólo hay que poner talento en la creación de esa instrucción y en la realización de un bucle que recorra los elementos. Para hacer estos procesos siempre es lo mismo, haces el de un mes aislado y después donde pones el mes pones un parámetro. Bajo mi prisma es muy sencillo, es probable que algún compañero diga que no es eficiente y otros que opinen que es un poco complicado pero los programas son como los resultados electorales nos gustan si sale lo que nosotros queremos y como nosotros queremos. 
+
+Es una función que lee mes a mes nuestros datos y va generando un data frame acumulado con el tratamiento deseado para los meses. Como programador SAS que he sido durante muchos años me parece muy sencillo el uso de macros y por eso suelo abusar del eval(parse(text=instrucción)) sólo hay que poner talento en la creación de esa instrucción y en la realización de un bucle que recorra los elementos. Para hacer estos procesos siempre es lo mismo, haces el de un mes aislado y después donde pones el mes pones un parámetro. Bajo mi prisma es muy sencillo, es probable que algún compañero diga que no es eficiente y otros que opinen que es un poco complicado pero los programas son como los resultados electorales nos gustan si sale lo que nosotros queremos y como nosotros queremos.
 
 Ya estamos en disposición de realizar la animación con ggplot2 y gganimate:
 
@@ -106,7 +106,7 @@ p <- estatico + transition_manual(mes) + labs(title = "Mes de encuesta: {month(c
 #Realizamos la animación
 animate(p, fps = 0.7, width = 800, height = 600)
 ```
- 
+
 
 Para realizar animaciones con gganimate lo más importante es el gráfico estático, comprobad que tiene el formato que queréis. En este caso se representa un ranking ordenado de mayor a menor, sin embargo en el eje ponemos la descripción del problema (que es muy larga y susceptible de ser acortada), con coord_flip hacemos que sea un gráfico de barras horizontal, fijamos la escala del eje y, jugamos con los colores para que cada problema tenga siempre su color y eliminamos todos los elementos del eje y para que se vea la descripción del problema de la forma más clara posible. Con estos elementos hemos configurado el gráfico estático y ahora creamos la animación como una transition_manual (no funcionaba transition_state) y vemos como podemos jugar con el título y funciones de R. Por último creamos la animación donde el parámetro fps es el que nos permite regular la velocidad de transición. Todo este código estará colgado en el github de la web <https://github.com/analisisydecision> para que me ayudéis a que quede mejor porque es cierto que quiero mejorar mis visualizaciones, pero no son bonitas, yo no tengo gusto para esas cosas. Además estaría bien jugar con las transiciones entre frames del gif.
 

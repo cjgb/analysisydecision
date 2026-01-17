@@ -15,7 +15,7 @@ related:
 slug: curso-de-lenguaje-sas-con-wps-funciones-en-wps
 tags: []
 title: Curso de lenguaje SAS con WPS. Funciones en WPS
-url: /curso-de-lenguaje-sas-con-wps-funciones-en-wps/
+url: /blog/curso-de-lenguaje-sas-con-wps-funciones-en-wps/
 ---
 
 [](https://analisisydecision.es/david-gana-a-goliat-la-sentencia-del-caso-sas-frente-a-wps/)A la hora de trabajar con variables en WPS uno de los elementos fundamentales son las funciones. En WPS son completamente análogas a SAS. Además este capítulo quiero que nos sirva para familiarizarnos un poco más con el interfaz de WPS y con los elementos de WPS. Vamos a crear un _script_ , un programa SAS, dentro de nuestro proyecto. Nos ubicamos en el _Proyect Explorer_ pulsamos el botón derecho y _New — Other_ en la ventana que nos sale nos vamos a WPS y generamos un nuevo programa (_script_) al que damos el nombre de funciones:
@@ -87,20 +87,20 @@ Sumar un valor con missing produce un missing. Emplear SUM con un valor y un mis
 
 Funciones de texto:
 
-COMPRESS Elimina un carácter específico  
-COUNT Cuenta el número de veces que aparece un carácter  
-INDEX Busca una cadena de caracteres  
-LEFT Alinea a la izquierda  
-LENGTH Obtiene la longitud de una variable carácter  
-LOWCASE Pone en minúsculas  
-MISSING Indica si la variable es missing  
-QUOTE Pone comillas  
-REVERSE Reversa de carácter  
-RIGHT Alinea a la derecha  
-SCAN Busca una cadena de caracteres dentro de otra cadena  
-SUBSTR Extrae partes de una cadena  
-TRANWRD Reemplaza o extrae dentro de una cadena  
-TRIMN Elimina espacios en blanco innecesarios  
+COMPRESS Elimina un carácter específico
+COUNT Cuenta el número de veces que aparece un carácter
+INDEX Busca una cadena de caracteres
+LEFT Alinea a la izquierda
+LENGTH Obtiene la longitud de una variable carácter
+LOWCASE Pone en minúsculas
+MISSING Indica si la variable es missing
+QUOTE Pone comillas
+REVERSE Reversa de carácter
+RIGHT Alinea a la derecha
+SCAN Busca una cadena de caracteres dentro de otra cadena
+SUBSTR Extrae partes de una cadena
+TRANWRD Reemplaza o extrae dentro de una cadena
+TRIMN Elimina espacios en blanco innecesarios
 UPCASE Pone en mayúsculas
 
 Ejemplos de uso:

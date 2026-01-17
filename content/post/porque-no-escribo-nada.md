@@ -13,7 +13,7 @@ related:
 slug: porque-no-escribo-nada
 tags: []
 title: Porque no escribo nada
-url: /porque-no-escribo-nada/
+url: /blog/porque-no-escribo-nada/
 ---
 
 [![herramienta_r.PNG](/images/2012/03/herramienta_r.PNG)](/images/2012/03/herramienta_r.PNG "herramienta_r.PNG")

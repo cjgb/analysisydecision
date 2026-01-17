@@ -16,7 +16,7 @@ slug: cuanto-dinero-pierdo-jugando-a-la-loteria-una-simulacion-poco-seria-con-r
 tags:
 - simulación
 title: Cuánto dinero pierdo jugando a la lotería. Una simulación poco seria con R
-url: /cuanto-dinero-pierdo-jugando-a-la-loteria-una-simulacion-poco-seria-con-r/
+url: /blog/cuanto-dinero-pierdo-jugando-a-la-loteria-una-simulacion-poco-seria-con-r/
 ---
 
 ![](/images/2012/09/teletexto_loteria.png)
@@ -66,7 +66,7 @@ premio3.1=trunc(primer_premio %% 10)
 premio3.2 = trunc(runif(numsimul,0,9))
 premio3.3 = trunc(runif(numsimul,0,9))
 ```
- 
+
 
 No es un código muy «profesional» pero si ilustrativo. Para todos aquellos que tienen miedo a programar con R, también se pueden hacer «chapuzas». No es tan difícil. Ahora que tenemos los resultados de todos los sorteos durante esos casi 5 años vamos a estudiar cuánto dinero nos ha tocado:
 
@@ -115,6 +115,6 @@ sum(premios)/(numsimul*3)
 
 ### [1] 0.432
 ```
- 
+
 
 Un código aun más chapuzante. Lo habréis ejecutado. Que triste así no me hago rico. A mi me ha salido que, de cada € que juego, pierdo unos 0,60 céntimos. Creo que este no es el camino para enriquecerme. Me voy a dedicar a la política, tampoco, soy un tipo muy íntegro. Tendré que seguir trabajando...

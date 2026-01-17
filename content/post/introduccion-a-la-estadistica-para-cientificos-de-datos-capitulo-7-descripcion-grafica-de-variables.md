@@ -16,7 +16,7 @@ slug: introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-7-descrip
 tags: []
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 7. Descripción
   gráfica de datos
-url: /introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-7-descripcion-grafica-de-variables/
+url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-7-descripcion-grafica-de-variables/
 ---
 
 Los estadísticos son insuficientes para conocer una variable, la siguiente figura es muy conocida y presenta unas series de pares de datos X e Y con los mismos estadísticos que son completamente diferentes.
@@ -31,7 +31,7 @@ El primer paso es cargar los datos de trabajo, ya conocidos, y se da comienzo co
 library(tidyverse)
 train <- read_csv("./data/train.csv")
 ```
- 
+
 
 ### Descripción gráfica de factores
 
@@ -43,7 +43,7 @@ resumen <- train %>% group_by(Gender) %>% summarise(clientes = n())
 ggplot(resumen, aes(x='', y = clientes, fill=Gender)) + geom_bar(stat="identity", width=1) +
   coord_polar("y", start=0)
 ```
- 
+
 
 [![](/images/2022/06/wp_editor_md_51cd37a70286b2a83ff0c5a065f80019.jpg)](/images/2022/06/wp_editor_md_51cd37a70286b2a83ff0c5a065f80019.jpg)
 
@@ -55,7 +55,7 @@ resumen <- train %>% group_by(Gender) %>% summarise(porcen_clientes = n()/nrow(t
 ggplot(resumen, aes(x='', y = porcen_clientes, fill=Gender)) + geom_bar(stat="identity", width=1) +
   coord_polar("y", start=0)
 ```
- 
+
 
 [![](/images/2022/06/wp_editor_md_63cb9c20c15acb328dcae3fe93ac04fa.jpg)](/images/2022/06/wp_editor_md_63cb9c20c15acb328dcae3fe93ac04fa.jpg)
 
@@ -67,7 +67,7 @@ resumen <- train %>% group_by(Gender) %>% summarise(porcen_clientes = n()/nrow(t
 pie(resumenporcen_clientes, labels=paste0(resumenGender, ': ', round(resumen$porcen_clientes*100,1),'%'),
     main="Gráfico sectores por sexo")
 ```
- 
+
 
 [![](/images/2022/06/wp_editor_md_ae875488c4b2a2cdbf3cb3e1da2d71f8.jpg)](/images/2022/06/wp_editor_md_ae875488c4b2a2cdbf3cb3e1da2d71f8.jpg)
 
@@ -79,7 +79,7 @@ resumen <- train %>% group_by(Region_Code) %>% summarise(porcen_clientes = n()/n
 pie(resumenporcen_clientes, labels=paste0(resumenRegion_Code, ': ', round(resumen$porcen_clientes*100,1),'%'),
     main = "Gráfico sectores por Región")
 ```
- 
+
 
 [![](/images/2022/06/wp_editor_md_fd818e7c67f6b50c8eb836d607c4852d.jpg)](/images/2022/06/wp_editor_md_fd818e7c67f6b50c8eb836d607c4852d.jpg)
 
@@ -93,7 +93,7 @@ La variable `Region_Code` tiene `r length(unique(train$Region_code))` posibles v
 train %>% group_by(Region_Code) %>% summarise(porcen_clientes = n()/nrow(train)) %>%
   ggplot(aes(x=Region_Code, y=porcen_clientes)) + geom_bar(stat="identity")
 ```
- 
+
 
 [![](/images/2022/06/wp_editor_md_65218388c4b4cd2cac0136e30b8de760.jpg)](/images/2022/06/wp_editor_md_65218388c4b4cd2cac0136e30b8de760.jpg)
 
@@ -105,7 +105,7 @@ train %>% group_by(Region_Code = as.factor(Region_Code)) %>%
   ggplot(aes(x=Region_Code, y = `Porcentaje de clientes`)) + geom_bar(stat="identity") +
   ggtitle("Porcentaje de clientes por región")
 ```
- 
+
 
 [![](/images/2022/06/wp_editor_md_5150a9efd38409f6fdf74491b308d6a2.jpg)](/images/2022/06/wp_editor_md_5150a9efd38409f6fdf74491b308d6a2.jpg)
 
@@ -124,7 +124,7 @@ describe_factor <- function(df, fct){
 
 describe_factor(train, 'Gender')
 ```
- 
+
 [![](/images/2022/06/wp_editor_md_8d88440aff2be99948d4ce784787d10d.jpg)](/images/2022/06/wp_editor_md_8d88440aff2be99948d4ce784787d10d.jpg)
 
 El código que describe el factor es repetitivo, para simplificar la programación en R se emplea una función, no es el objeto de esta formación aprender a realizar funciones con R pero se van a ilustrar algunos ejemplos de uso. Además, cuando se usa `dplyr` facilita el uso de funciones trabajar con «símbolos» que es una forma de referir valores de un objeto de R, en este caso los nombres y por ello se emplea `as.name()` con el único paramétro `fct` que recibe la función. En este caso la función `describe_factor` crea una sumarización previa por el factor que describe el parámetro de la función `fct` y posteriormente se genera el gráfico de barras más sencillo posible con ggplot, sólo se parametriza el título del gráfico uniendo un texto con el nombre de la variable. Esta función puede describir también variables cuantitativas.
@@ -132,7 +132,7 @@ El código que describe el factor es repetitivo, para simplificar la programaci�
 ```r
 describe_factor(train, 'Age')
 ```
- 
+
 [![](/images/2022/06/wp_editor_md_6a5df6014f4f4e077b1ea5b842cf0dbf.jpg)](/images/2022/06/wp_editor_md_6a5df6014f4f4e077b1ea5b842cf0dbf.jpg)
 
 Se recuerda que una variable cuantitativa puede tener un número finito de elementos lo que da pie a ser tratada como un factor, paradigma de esta situación es la variable edad en prácticamente todos los conjuntos de datos.
@@ -155,7 +155,7 @@ ggplot(data= train,aes(x= Age))+
       geom_histogram(binwidth = 5)+
       geom_density(aes(y=5 * ..count..), color='Blue')
 ```
- 
+
 
 [![](/images/2022/06/wp_editor_md_4472849badfa0836b3cf0b5f2f517a98.jpg)](/images/2022/06/wp_editor_md_4472849badfa0836b3cf0b5f2f517a98.jpg)
 
@@ -173,7 +173,7 @@ resumen <- train %>% group_by(Gender) %>% summarise(clientes = n())
 ggplot(resumen, aes(x='', y = clientes, fill=Gender)) + geom_bar(stat="identity", width=1) +
   coord_polar("y", start=0)
 ```
-0 
+0
 
 [![](/images/2022/06/wp_editor_md_4472849badfa0836b3cf0b5f2f517a98.jpg)](/images/2022/06/wp_editor_md_4472849badfa0836b3cf0b5f2f517a98.jpg)
 
@@ -187,7 +187,7 @@ resumen <- train %>% group_by(Gender) %>% summarise(clientes = n())
 ggplot(resumen, aes(x='', y = clientes, fill=Gender)) + geom_bar(stat="identity", width=1) +
   coord_polar("y", start=0)
 ```
-1 
+1
 
 [![](/images/2022/06/wp_editor_md_c9c24f9b112a2c3e9dca8c08443ade6d.jpg)](/images/2022/06/wp_editor_md_c9c24f9b112a2c3e9dca8c08443ade6d.jpg)
 
@@ -201,7 +201,7 @@ resumen <- train %>% group_by(Gender) %>% summarise(clientes = n())
 ggplot(resumen, aes(x='', y = clientes, fill=Gender)) + geom_bar(stat="identity", width=1) +
   coord_polar("y", start=0)
 ```
-2 
+2
 
 [![](/images/2022/06/wp_editor_md_c00b6b0397340b81132d029e09b9ceef.jpg)](/images/2022/06/wp_editor_md_c00b6b0397340b81132d029e09b9ceef.jpg)
 
@@ -215,7 +215,7 @@ resumen <- train %>% group_by(Gender) %>% summarise(clientes = n())
 ggplot(resumen, aes(x='', y = clientes, fill=Gender)) + geom_bar(stat="identity", width=1) +
   coord_polar("y", start=0)
 ```
-3 
+3
 
 [![](/images/2022/06/wp_editor_md_7f910d58d14b24872f16250d1e823bac.jpg)](/images/2022/06/wp_editor_md_7f910d58d14b24872f16250d1e823bac.jpg)
 
@@ -227,14 +227,14 @@ resumen <- train %>% group_by(Gender) %>% summarise(clientes = n())
 ggplot(resumen, aes(x='', y = clientes, fill=Gender)) + geom_bar(stat="identity", width=1) +
   coord_polar("y", start=0)
 ```
-4 
+4
 ```r
 resumen <- train %>% group_by(Gender) %>% summarise(clientes = n())
 
 ggplot(resumen, aes(x='', y = clientes, fill=Gender)) + geom_bar(stat="identity", width=1) +
   coord_polar("y", start=0)
 ```
-5 
+5
 
 [![](/images/2022/06/wp_editor_md_b16a2c46e257a1db174e73100e26a554.jpg)](/images/2022/06/wp_editor_md_b16a2c46e257a1db174e73100e26a554.jpg)
 
@@ -248,7 +248,7 @@ resumen <- train %>% group_by(Gender) %>% summarise(clientes = n())
 ggplot(resumen, aes(x='', y = clientes, fill=Gender)) + geom_bar(stat="identity", width=1) +
   coord_polar("y", start=0)
 ```
-6 
+6
 
-[![](/images/2022/06/wp_editor_md_5a032daaa7795581a19773d43b642d5c.jpg)](/images/2022/06/wp_editor_md_5a032daaa7795581a19773d43b642d5c.jpg)  
+[![](/images/2022/06/wp_editor_md_5a032daaa7795581a19773d43b642d5c.jpg)](/images/2022/06/wp_editor_md_5a032daaa7795581a19773d43b642d5c.jpg)
 Ya se vio con el gráfico de densidad que la prima anual toma unos valores más complejos. En este caso de la caja parece muy estrecha y aparecen una serie de puntos por la derecha que dificultan la descripción de los datos. Cuando aparecen esos puntos en estos gráficos los posibles valores que toma la variable tienen algún valor atípico, la distribución de la variable tiene _outliers_. Es uno de los posibles problemas que pueden plantear los datos numéricos y que se desarrollarán en capítulos posteriores.
