@@ -1,22 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- banca
-- sin categoría
+  - banca
 date: '2009-03-23'
 lastmod: '2025-07-13'
 related:
-- tantarantan-que-te-han-visto-pepe-tantarantan-que-te-han-visto-juan.md
-- lecciones-de-economia-de-un-ignorante-la-crisis-ha-tocado-fondo-luego-escarbara.md
-- lecciones-de-economia-de-un-ignorante-solucion-trabajar-mas-y-cobrar-menos.md
-- amanece-que-no-es-poco.md
-- a-mi-me-preocupa-el-pequeno-ahorrador.md
+  - tantarantan-que-te-han-visto-pepe-tantarantan-que-te-han-visto-juan.md
+  - lecciones-de-economia-de-un-ignorante-la-crisis-ha-tocado-fondo-luego-escarbara.md
+  - lecciones-de-economia-de-un-ignorante-solucion-trabajar-mas-y-cobrar-menos.md
+  - amanece-que-no-es-poco.md
+  - a-mi-me-preocupa-el-pequeno-ahorrador.md
 tags:
-- bajar impuestos
-- crisis
+  - bajar impuestos
+  - crisis
 title: Bajar los tipos a la japonesa. Al 0%
 url: /blog/bajar-los-tipos-a-la-japonesa-al-0/
 ---
+
 Leo con preocupación: [El servicio de estudios del BBVA estima que el BCE bajará los tipos al 0 en los próximos meses](http://www.europapress.es/economia/finanzas-00340/noticia-economia-amp-bbva-cree-bce-bajara-tipos-cero-proximos-meses-mantendra-nivel-tiempo-20090323214216.html). Esto, que puede parecer una buena noticia, al ahora escribiente le da pánico. Entiendo que esa medida es la última que debería tomar Trichet, sería LA MEDIDA necesaria si la crisis estuviera en la cúspide, al igual que se ha hecho en EEUU. «Sólo cuando el túnel esté en la más absoluta oscuridad es cuando puede volver otra vez la luz»; así empieza uno de los programas de radio más longevos de España y es una frase que define el comportamiento del BCE. Con todo esto debemos asumir que la crisis ha de empeorar y que los síntomas de mejora tienen más de «síntomas» que de «mejora».Y yo me pregunto [¿pueden bajar los tipos por debajo del 0%? ](http://www.cotizalia.com/cache/2009/02/18/opinion_13_pueden_bajar_tipos_debajo.html) No me imagino penalizar a las entidades bancarias por retener el dinero, me parece absurdo.
 
 Está claro que estamos jodidos, pero bien jodidos. Porque todas estas medidas anticrisis que están en la prensa todos los días de bajadas de tipos, inyecciones de liquidez, compra de deuda o rescate de empresas a que nos suenan: A _Japón_ y como estaban en Japón, jodidos y como siguen en Japón, jodidos y como van a seguir… (lo habéis adivinado)

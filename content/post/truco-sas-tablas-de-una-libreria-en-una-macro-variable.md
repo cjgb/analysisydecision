@@ -1,26 +1,27 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- sas
-- trucos
-- wps
+  - formación
+  - sas
+  - trucos
+  - wps
 date: '2017-01-24'
 lastmod: '2025-07-13'
 related:
-- trucos-sas-lista-de-datasets-en-macro-variable.md
-- truco-sas-proc-contents.md
-- macros-sas-informe-de-un-dataset-en-excel.md
-- macro-sas-variables-de-un-dataset-en-una-macro-variable.md
-- trucos-sas-eliminar-etiquetas-en-los-conjunto-de-datos-sas.md
+  - trucos-sas-lista-de-datasets-en-macro-variable.md
+  - truco-sas-proc-contents.md
+  - macros-sas-informe-de-un-dataset-en-excel.md
+  - macro-sas-variables-de-un-dataset-en-una-macro-variable.md
+  - trucos-sas-eliminar-etiquetas-en-los-conjunto-de-datos-sas.md
 tags:
-- proc datasets
-- retain
-- trimn
-- sas
+  - proc datasets
+  - retain
+  - trimn
+  - sas
 title: Truco SAS. Tablas de una librería en una macro variable
 url: /blog/truco-sas-tablas-de-una-libreria-en-una-macro-variable/
 ---
+
 Me plantean una duda, como crear un conjunto de datos con las tablas de una librería en sas y posteriormente generar una macro variable con ellos, [esta es una entrada análoga a otra del blog](https://analisisydecision.es/trucos-sas-lista-de-datasets-en-macro-variable/) pero sirve para recordar como funciona el ODS de SAS y el PROC DATASETS un procedimiento que no he usado habitualmente. Lo primero que vamos a hacer es observar que resultados arroja el PROC DATASETS en su sintaxis más sencilla, ver los contenidos de una librería:
 
 [source languaje=»SAS»] ods trace on;

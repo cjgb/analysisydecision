@@ -1,22 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- banca
-- sin categoría
+  - banca
 date: '2009-09-07'
 lastmod: '2025-07-13'
 related:
-- a-mi-me-preocupa-el-pequeno-ahorrador.md
-- amanece-que-no-es-poco.md
-- lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
-- me-preocupa-el-pequeno-ahorrador-ii.md
-- lecciones-de-economia-de-un-ignorante-los-bancos-pierden-dinero-para-favorecer-a-unos-y-luego-los-salvamos-todos.md
+  - a-mi-me-preocupa-el-pequeno-ahorrador.md
+  - amanece-que-no-es-poco.md
+  - lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
+  - me-preocupa-el-pequeno-ahorrador-ii.md
+  - lecciones-de-economia-de-un-ignorante-los-bancos-pierden-dinero-para-favorecer-a-unos-y-luego-los-salvamos-todos.md
 tags:
-- crisis
-- hipotecas
+  - crisis
+  - hipotecas
 title: Lecciones de economía de un ignorante. No me dan hipoteca
 url: /blog/lecciones-de-economia-de-un-ignorante-no-me-dan-hipoteca/
 ---
+
 En una boda, en el aperitivo de entrada un amigo me pregunta:
 
 -Raúl, ¿por qué en los bancos no me dan una hipoteca?

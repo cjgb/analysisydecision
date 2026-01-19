@@ -1,26 +1,27 @@
 ---
 author: rvaquerizo
 categories:
-- business intelligence
-- consultoría
-- formación
-- mapas
-- monográficos
+  - business intelligence
+  - consultoría
+  - formación
+  - mapas
+  - monográficos
 date: '2016-02-12'
 lastmod: '2025-07-13'
 related:
-- archivos-shape-y-geojason-para-crear-un-mapa-de-espana-por-codigos-postales.md
-- mapas-municipales-de-espana-con-excel-y-qgis.md
-- mapa-de-codigos-postales-con-r-aunque-el-mapa-es-lo-de-menos.md
-- cartografia-digitalizada-de-espana-por-seccion-censal.md
-- libreria-mapspain-en-rstats-mapas-estaticos-de-espana.md
+  - archivos-shape-y-geojason-para-crear-un-mapa-de-espana-por-codigos-postales.md
+  - mapas-municipales-de-espana-con-excel-y-qgis.md
+  - mapa-de-codigos-postales-con-r-aunque-el-mapa-es-lo-de-menos.md
+  - cartografia-digitalizada-de-espana-por-seccion-censal.md
+  - libreria-mapspain-en-rstats-mapas-estaticos-de-espana.md
 tags:
-- codigos postales
-- qgis
-- mapas
+  - codigos postales
+  - qgis
+  - mapas
 title: Como hacer un mapa de España por códigos postales con QGIS
 url: /blog/como-hacer-un-mapa-de-espana-por-codigos-postales-con-qgis/
 ---
+
 ## Editado 2022:
 
 Francisco Goerlich ha elaborado una versión que de nuevo puede obtener los datos de Cartociudad. Volveremos sobre el tema y dejaremos una capa que pueda ser reutilizable.
@@ -31,11 +32,11 @@ https://www.uv.es/goerlich/Ivie/CodPost
 
 Como podéis leer más abajo Correos ha impedido al proyecto Cartociudad incluir los mapas de España por Código Postal, ahora es necesario comprarlos. Sin embargo, hay versiones antiguas como las que se descargó en su día [Íñigo Flores](https://github.com/inigoflores/ds-codigos-postales). Con estas descargas yo he elaborado un mapa de España por códigos postales:
 
-[Descargar el shapefile con el mapa de España por códigos postales para QGIS.](/images/2019/09/España.zip)
+[Descargar el shapefile con el mapa de España por códigos postales para QGIS.](/images/2019/09/Espa%C3%B1a.zip)
 
 Una vez os hayáis descargado el mapa sólo tenéis que abrir la capa vectorial correspondiente (el shp) con QGIS:
 
-[![](/images/2016/02/mapa_españa_codigos_postales_QGIS.png)](/images/2016/02/mapa_españa_codigos_postales_QGIS.png)
+[![](/images/2016/02/mapa_espa%C3%B1a_codigos_postales_QGIS.png)](/images/2016/02/mapa_espa%C3%B1a_codigos_postales_QGIS.png)
 
 Los cruces los realizáis en QGIS a través del campo COD_POSTAL. También podéis hacer filtros para realizar mapas de provincias o ciudades.
 
@@ -48,9 +49,9 @@ Tenía pendiente hablar de **QGIS** y de la creación de un **mapa de España po
 > 2.**El usuario titular de la licencia se compromete a citar al Instituto Geográfico Nacional (IGN) mediante la fórmula:** «© Instituto Geográfico Nacional de España» como origen y propietario de la información geográfica suministrada ante cualquier exhibición o difusión de ella, o de parte de ella o de cualquier producto que, aún siendo de forma parcial, la incorpore o derive de ella.
 >
 > – Si se tratara de Ortofoto o MDT5 (PNOA®), la mención se sustituirá por: «PNOA cedido por © Instituto Geográfico Nacional de España».
->  – Tratándose de datos LiDAR, la mención se sustituirá por: «LiDAR-PNOA cedido por © Instituto Geográfico Nacional de España».
->  – En caso de datos SIOSE®, la mención se sustituirá por: «SIOSE cedido por © Instituto Geográfico Nacional de España».
->  – Tratándose de CartoCiudad®, la mención se sustituirá por: «CartoCiudad cedido por © Instituto Geográfico Nacional de España».
+> – Tratándose de datos LiDAR, la mención se sustituirá por: «LiDAR-PNOA cedido por © Instituto Geográfico Nacional de España».
+> – En caso de datos SIOSE®, la mención se sustituirá por: «SIOSE cedido por © Instituto Geográfico Nacional de España».
+> – Tratándose de CartoCiudad®, la mención se sustituirá por: «CartoCiudad cedido por © Instituto Geográfico Nacional de España».
 >
 > 3\. En caso de CartoCiudad®, los nuevos productos o servicios que puedan generarse basados en CartoCiudad®, no incluirán ninguna referencia a la información catastral, ni suplantarán explícitamente o mediante productos o servicios que puedan dar lugar a confusión a los ofrecidos por la Dirección General del Catastro, del Ministerio de Economía y Hacienda, o a los ofrecidos por la Sociedad Estatal Correos y Telégrafos S.A., a quienes corresponde en exclusiva la competencia para la difusión de la información catastral y postal respectivamente, así como el ejercicio de los derechos de propiedad intelectual inherentes a la información y a las bases de datos catastrales y postales.
 >
@@ -60,9 +61,9 @@ Tenía pendiente hablar de **QGIS** y de la creación de un **mapa de España po
 
 Si os habéis leído la licencia de uso entendréis porque tengo algunas dudas sobre la conveniencia de escribir esta entrada. Así que se me ha ocurrido que, os voy a decir como podéis hacer el mapa de códigos postales, os voy a advertir que el mapa que hagáis no puede tener fines comerciales y que si queréis un mapa comercial hay empresas que os pueden vender estos mapas. Yo en mi puesto de trabajo tengo uno de estos mapas comerciales y no ha sido necesario hacer todo lo que a continuación os voy a relatar.
 
-**Ya tengo la conciencia tranquila** , ahora preparaos para descargar los archivos *.zip de las 52 provincias españolas. Archivo a archivo os los descargáis y los descomprimís en una ubicación de vuestro equipo.
+**Ya tengo la conciencia tranquila** , ahora preparaos para descargar los archivos \*.zip de las 52 provincias españolas. Archivo a archivo os los descargáis y los descomprimís en una ubicación de vuestro equipo.
 
-Si no disponéis de QGIS debéis ir a <http://www.qgis.org/es/site/> y descargar esta aplicación que os permitirá abrir los archivos shape con cada una de las 52 provincias españolas que están en las 52 carpetas que os habéis creado tras descargarros los 52 zip. La tarea, aunque aburrida, no es para tanto, incluso se puede plantear un  _scraping_ por lo que animo a que lo haga algún lector y lo cuelgue en el blog. Cuando ya tenemos las 52 carpetas Si por ejemplo abrimos los archivos codigo_postal.shp de las carpetas Madrid y Guadalajara tendremos:
+Si no disponéis de QGIS debéis ir a <http://www.qgis.org/es/site/> y descargar esta aplicación que os permitirá abrir los archivos shape con cada una de las 52 provincias españolas que están en las 52 carpetas que os habéis creado tras descargarros los 52 zip. La tarea, aunque aburrida, no es para tanto, incluso se puede plantear un _scraping_ por lo que animo a que lo haga algún lector y lo cuelgue en el blog. Cuando ya tenemos las 52 carpetas Si por ejemplo abrimos los archivos codigo_postal.shp de las carpetas Madrid y Guadalajara tendremos:
 
 [![madrid_guadalajara_codigo_postal](/images/2016/02/madrid_guadalajara_codigo_postal-300x179.png)](/images/2016/02/madrid_guadalajara_codigo_postal.png)Si abrís los 52 archivos podéis imaginaros que tendréis un mapa de España por códigos postales que no podéis usar con fines comerciales. Si queréis crear un shape que contenga la unión de los 52 codigo_postal.shp podéis trabajar con datos vectoriales a través del menú Vectorial –> Herramientas de gestión de datos. Pero imaginemos que seguimos con QGIS y guardamos el proyecto, nuestro mapa tiene buena pinta. Ahora cómo asignamos valores a los códigos postales, bastante sencillo. Podéis buscar en la web información acerca de QGIS pero de forma rápida os diré como me ha enseñado mi compañero Luisete a trabajar con QGIS. Lo que hago es añadir los shape y archivos de datos a nivel de código postal ya sea en csv o en Excel y se crean nuevas capas:
 

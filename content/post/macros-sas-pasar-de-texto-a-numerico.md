@@ -1,21 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- sas
+  - formación
+  - sas
 date: '2012-10-10'
 lastmod: '2025-07-13'
 related:
-- transformar-variables-en-sas-caracter-a-numerico.md
-- truco-sas-macro-buscar-y-reemplazar-en-texto.md
-- macros-sas-calular-la-longitud-de-un-numero.md
-- macros-faciles-de-sas-normaliza-un-texto-rapido.md
-- macro-facil-de-sas-longitud-de-la-parte-decimal-de-un-numero.md
+  - transformar-variables-en-sas-caracter-a-numerico.md
+  - truco-sas-macro-buscar-y-reemplazar-en-texto.md
+  - macros-sas-calular-la-longitud-de-un-numero.md
+  - macros-faciles-de-sas-normaliza-un-texto-rapido.md
+  - macro-facil-de-sas-longitud-de-la-parte-decimal-de-un-numero.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Macros SAS. Pasar de texto a numérico
 url: /blog/macros-sas-pasar-de-texto-a-numerico/
 ---
+
 “Pasar de texto a número en SAS”. Una de las búsquedas que más recibe esta web. Ya hay monográficos, trucos, artículos,… al respecto. Pero faltaba una macro que espero os ayude. Es una macro muy básica pero que permite pasar textos con números en formato europeo o en formato americano. La macro:
 
 ```r
@@ -33,7 +34,6 @@ vaux = tranwrd(vaux,",",".");
 &varib_fin. = input(vaux * 1,best12.);
 %mend;
 ```
-
 
 Breve descipción. La variable inicial (parámetro varib_ini) será la cadena de texto que deseamos pasar a número. La variable final (parámetro varib_fin) será el nombre de la variable numérica. Si deseamos conservar el nombre tenemos que jugar con rename como opción de lectura o escritura del paso data. Estoy estudiando otra macro más avanzada para realizar este trabajo. El parámetro europeo=0 es el que nos indica si el número que transformamos tiene formato europeo o no. La macro necesita una variable auxiliar para realizar las transformaciones necesarias en el caso de ser un número en formato europeo. Una vez está el número en formato americano realizamos la transformación sobre la variable final con input, el formato que ponemos es best12.
 
@@ -56,6 +56,5 @@ set uno;
 %texto_numero(varib_ini=dato2,varib_fin=dato_modif2);
 run;
 ```
-
 
 Espero que sea de utilidad. Saludos.

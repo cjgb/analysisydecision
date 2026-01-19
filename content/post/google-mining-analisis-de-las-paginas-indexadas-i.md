@@ -1,33 +1,34 @@
 ---
 author: rvaquerizo
 categories:
-- consultoría
-- data mining
+  - consultoría
+  - data mining
 date: '2008-06-12'
 lastmod: '2025-07-13'
 related:
-- proyecto-text-mining-con-excel-iii.md
-- proyecto-text-mining-con-excel-iv.md
-- proyecto-text-mining-con-excel-ii.md
-- proyecto-text-mining-con-excel-pasa-a-ser-google-mining.md
-- proyecto-text-mining-con-excel-i.md
+  - proyecto-text-mining-con-excel-iii.md
+  - proyecto-text-mining-con-excel-iv.md
+  - proyecto-text-mining-con-excel-ii.md
+  - proyecto-text-mining-con-excel-pasa-a-ser-google-mining.md
+  - proyecto-text-mining-con-excel-i.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Google Mining. Análisis de las páginas indexadas (I)
 url: /blog/google-mining-analisis-de-las-paginas-indexadas-i/
 ---
+
 El proyecto de minería de textos con Excel ha generado el Google Mining. Veamos como puede ayudar la minería de páginas de búsqueda con Google a gestionar una web. Si en el buscador de Google escribimos site:<nombre del sitio web> obtenemos todas las páginas indexadas de nuestro sitio. En el caso de AyD ponemos site:analisisydecision.es y tenemos 49 resultados correspondientes a las 49 páginas indexadas. La herramienta que hemos construido con macros de Excel nos tabula la información y el resultado se puede ver en [Analisis titulos y metas](/images/2008/06/min.htm).
 
 Con información tabulada podemos empezar a analizar si los títulos del sitio son los correctos y si las «metas» son frases que puedan atraer entradas.
 
 Lo primero que se considera relevante es estudiar las palabras de los títulos. El primer paso será realizar una limpieza de las palabras que no vamos a tener en cuenta. No habríamos de estudiar:
 
-  * preposiciones
-  * conjunciones
-  * artículos (sólo en algunos casos)
-  * fechas
-  * signos de puntuación
-  * otros irrelevantes
+- preposiciones
+- conjunciones
+- artículos (sólo en algunos casos)
+- fechas
+- signos de puntuación
+- otros irrelevantes
 
 Para realizar esta limpieza creamos un proceso en visual basic que, para un rango seleccionado, elimine los elementos que no participan en el análisis. En este punto se empieza a crear el diccionario para la realización de la minería de textos. Este diccionario irá creciendo y nos servirá para el total de análisis que deseemos realizar.
 

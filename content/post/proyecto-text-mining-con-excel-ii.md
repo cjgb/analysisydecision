@@ -1,22 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- business intelligence
-- consultoría
-- data mining
+  - business intelligence
+  - consultoría
+  - data mining
 date: '2008-04-28'
 lastmod: '2025-07-13'
 related:
-- proyecto-text-mining-con-excel-iii.md
-- proyecto-text-mining-con-excel-iv.md
-- proyecto-text-mining-con-excel-i.md
-- google-mining-analisis-de-las-paginas-indexadas-i.md
-- proyecto-text-mining-con-excel-pasa-a-ser-google-mining.md
+  - proyecto-text-mining-con-excel-iii.md
+  - proyecto-text-mining-con-excel-iv.md
+  - proyecto-text-mining-con-excel-i.md
+  - google-mining-analisis-de-las-paginas-indexadas-i.md
+  - proyecto-text-mining-con-excel-pasa-a-ser-google-mining.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Proyecto. Text mining con Excel (II)
 url: /blog/proyecto-text-mining-con-excel-ii/
 ---
+
 Sin una tabla no hay Text mining. Hay que idear la forma de tabular las búsquedas que realice en Google. Desde Excel puedo abrir cualquier web. En este caso abriré la búsqueda [«formación business intelligence»](http://www.google.es/search?hl=es&q=formacion+business+intelligence&meta=) con Excel y veré exactamente lo mismo que puedo ver con un explorador web pero en una hoja de cálculo y con una estructura determinada. Hay que aprender a leer esta estructura para tabular la información.
 
 Abrimos nuestra búsqueda de Google con Excel y tenemos algo parecido a esto:

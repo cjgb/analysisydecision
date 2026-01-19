@@ -1,27 +1,28 @@
 ---
 author: cgbellosta
 categories:
-- banca
-- business intelligence
-- consultoría
-- data mining
-- modelos
-- r
+  - banca
+  - business intelligence
+  - consultoría
+  - data mining
+  - modelos
+  - r
 date: '2009-12-12'
 lastmod: '2025-07-13'
 related:
-- amanece-que-no-es-poco.md
-- la-confianza-en-el-sector-financiero.md
-- lecciones-de-economia-de-un-ignorante-la-caixa-a-colocar-preferentes.md
-- lecciones-de-economia-de-un-ignorante-no-me-dan-hipoteca.md
-- participaciones-preferentes-de-las-cajas-de-ahorro.md
+  - amanece-que-no-es-poco.md
+  - la-confianza-en-el-sector-financiero.md
+  - lecciones-de-economia-de-un-ignorante-la-caixa-a-colocar-preferentes.md
+  - lecciones-de-economia-de-un-ignorante-no-me-dan-hipoteca.md
+  - participaciones-preferentes-de-las-cajas-de-ahorro.md
 tags:
-- marketing
-- prim
-- r
+  - marketing
+  - prim
+  - r
 title: Una fabulilla (sobre PRIM) con múltiples moralejas
 url: /blog/una-fabulilla-sobre-prim-con-multiples-moralejas/
 ---
+
 –Érase una vez un banco…
 –¿Me cuenta Vd. un cuento?
 –Mismamente, señora.
@@ -107,7 +108,7 @@ url: /blog/una-fabulilla-sobre-prim-con-multiples-moralejas/
 –No es enteramente así, pero como si lo fuese. En resumen, si el cocientico es alto, el cliente es un pesado que le hace agujeros al banco (o caja de ahorros…). Si es bajo, lo contrario; y al cliente habría que darle besos en la frente.
 –Cargo me hago.
 –Entonces, un hiperrectangulillo contiene, pongamos por caso, a clientes de lo que otrora fue el Reino de Aragón, que ganan menos de 100.000 pesetillas al mes, que viven en casa alquilada y no tienen churrumbeles. Y resulta que éstos son, de entre los pesados, los que más.
-–¡Menuda cuadrilla! Seguro que [Botín](http://es.wikipedia.org/wiki/Emilio_Botín "Botín") los ponía tiesos a comisiones.
+–¡Menuda cuadrilla! Seguro que [Botín](http://es.wikipedia.org/wiki/Emilio_Bot%C3%ADn "Botín") los ponía tiesos a comisiones.
 –Puf, ése (note que acentúo según la gramática vieja) les mandaba los sicilianos a casa…
 –Bueno, ¿y qué hace un banco (o caja…) benéfico con tal hiperrectangulillo?
 –Vaya por orden y no queme etapas en falso, que el diablo se nutre de ambigüedades: los consultores dan al _pley_ , sacan los rectangulillos, los imprimen en cuartillas, clavan éstas con chinchetas en una corchera y luego, en _peticomité_ , junto con los resabidillos del banco acuerdan qué hacer con los sujetos que contiene cada uno.

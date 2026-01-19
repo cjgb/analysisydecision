@@ -1,23 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- consultoría
-- fútbol
-- gráficos
-- r
+  - consultoría
+  - fútbol
+  - gráficos
+  - r
 date: '2023-08-28'
 lastmod: '2025-07-13'
 related:
-- datos-de-eventing-gratuitos-en-statsbomb.md
-- resultados-de-la-liga-con-rstats-estudiando-graficamente-rachas.md
-- los-porteros-del-espanyol-y-la-regresion-binomial-negativa.md
-- minutos-de-juego-y-puntos-es-espanyol-y-sus-finales-de-partido.md
-- incluir-subplot-en-mapa-con-ggplot.md
+  - datos-de-eventing-gratuitos-en-statsbomb.md
+  - resultados-de-la-liga-con-rstats-estudiando-graficamente-rachas.md
+  - los-porteros-del-espanyol-y-la-regresion-binomial-negativa.md
+  - minutos-de-juego-y-puntos-es-espanyol-y-sus-finales-de-partido.md
+  - incluir-subplot-en-mapa-con-ggplot.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: 'Pintando campos de fútbol con #rstats y entendiendo funciones de densidad'
 url: /blog/pintando-campos-de-futbol-con-rstats-y-entendiendo-funciones-de-densidad/
 ---
+
 La librería de rstats ggsoccer permite representar campos de fútbol con un código bastante sencillo, a continuación se plantean una serie de ejemplos para empezar a ilustrar su uso y quiero que me de pie a escribir sobre la función de densidad de una variable, pero empezamos por el principio instalar el paquete y empezar a usar.
 
 ```r
@@ -33,13 +34,11 @@ ggplot() +
   theme_pitch()
 ```
 
-
 El código habla por si solo, muy sencillo a ggplot añadimos annotate_pitch() y theme_pitch(). Ahora sería necesario añadir información a este terreno de juego y para ello [recuperamos una entrada anterior donde podíamos disponer de datos de eventing de Statsbomb](https://analisisydecision.es/datos-de-eventing-gratuitos-en-statsbomb/) que nos van a permitir pintar mapas de calor o _heatmaps_ si nos molamos.
 
 ```r
 messi_data <- readRDS('./data/messi_data.rds')
 ```
-
 
 Ojo que no tenéis en el repositorio ese conjunto de datos, no lo he subido porque son más de 200 MB. Os lo habéis tenido que crear previamente con el código antes linkado y guardado en data, veo venir las preguntas porque si no das al botón y sale son todo problemas. Entonces, si por ejemplo deseamos ver por donde jugaba Jordi Alba en esas temporadas en las que jugó Messi en la Liga tendríamos que hacer:
 
@@ -61,7 +60,6 @@ ubicacion %>%
   theme_pitch()
 ```
 
-
 [![](/images/2023/08/wp_editor_md_95442a2273c54d1584af2fd121c8f575.jpg)](/images/2023/08/wp_editor_md_95442a2273c54d1584af2fd121c8f575.jpg)
 
 Además de los warning de R empezamos a encontrarnos otros warning con el resultado, _tenemos problemas de base con las coordenadas_. La librería ggsoccer tiene una base de coordenadas y Statsbomb tiene otras, además, hasta donde yo sé, Jordi Alba juega por la izquierda y no por la derecha por lo que es necesario cambiar la base si queremos que las coordenadas queden bien y que la dirección del campo sea de izquierda a derecha. Y para ello tenemos que conocer la base de Statsbomb y puede ayudar el punto de penalty:
@@ -70,7 +68,6 @@ Además de los warning de R empezamos a encontrarnos otros warning con el result
 penalties <- messi_data %>% sample_frac(0.1) %>% filter(shot.type.name=='Penalty') %>%
   select(location)
 ```
-
 
 El punto de penalty lo sitúa Statsbomb en el (108,40) con lo cual el campo es (119,80) y las coordenadas van de derecha a izquierda. En este caso ggsoccer asume 100,80 y va de izquierda a derecha por lo que es necesario el cambio de base para la coordenada x mientras que la coordenada y tenemos que hacer que vaya de izquierda a derecha (por lo menos yo lo prefiero así).
 
@@ -89,7 +86,6 @@ ggplot(ubicacion, aes(x=x, y=y) ) +
   direction_label(x_label = 50)
 ```
 
-
 [![](/images/2023/08/wp_editor_md_20230ada43144d74a583199d415337f6.jpg)](/images/2023/08/wp_editor_md_20230ada43144d74a583199d415337f6.jpg)
 
 Ya es un _heatmap_ con mejor pinta aunque muy mejorable y se parece a lo que estamos esperando de Jordi Alba y es que es recomendable conocer como se mueve un jugador a la hora de usar ggsoccer para ajustar bien las bases. Sé que exite la función to_statsbomb en ggsoccer pero prefiero que se entienda la problemática de la base. Con direction_label añadimos la dirección de juego, pero nos lo especifica en inglés. Para editar una función en un paquete de R existente podemos hacer:
@@ -97,7 +93,6 @@ Ya es un _heatmap_ con mejor pinta aunque muy mejorable y se parece a lo que est
 ```r
 trace(direction_label, edit=TRUE)
 ```
-
 
 He cambiado label por «Direccion de juego» y he salvado la función, a partir de ahora lo pondrá en español.
 
@@ -121,7 +116,6 @@ ggplot(ubicacion, aes(x=x, y=y) ) +
   direction_label(x_label = 50)
 ```
 
-
 [![](/images/2023/08/wp_editor_md_41809f6d882ece7efb84ec2b7502b990.jpg)](/images/2023/08/wp_editor_md_41809f6d882ece7efb84ec2b7502b990.jpg)
 
 El gráfico es raro pero yo quería saber en que lugares entra en contacto con la pelota y donde lo hace en mayor medida. Además, recomendar no poner caracteres especiales en las funciones (dirección lleva tilde). En este punto todos entendemos que las zonas más rojas es donde Jordi Alba tocaba más el balón en el Barcelona, es donde encontramos más observaciones, y es que los mapas de calor son gráficos de densidad bivariable (x,y), es decir, conocer como se distribuye las zonas de toque de un jugador dados 2 puntos y podemos ver esos puntos x e y de forma univariable:
@@ -130,7 +124,6 @@ El gráfico es raro pero yo quería saber en que lugares entra en contacto con l
 ubicacion %>% ggplot(aes(x=x)) + geom_density()
 ubicacion %>% ggplot(aes(x=y)) + geom_density()
 ```
-
 
 [![](/images/2023/08/wp_editor_md_e91f62174b203fcec982b77b0695ae43.jpg)](/images/2023/08/wp_editor_md_e91f62174b203fcec982b77b0695ae43.jpg)
 
@@ -153,7 +146,6 @@ ubicacionx <- coordenadasx; ubicaciony<-coordenadas$y
 remove(coordenadas, alba)
 ```
 
-
 Ahora tenemos un objeto que además de la ubicación tiene los minutos. Se puede ver como se extrae el vector del data frame y se le añade posteriormente evitando aquellos casos donde no hay vector, para que se pueda hacer el macheo correctamente. A continuación se propone una animación con los sucesivos gráficos de densidad para buscar diferencias o algún tipo de patrón entre ellos.
 
 ```r
@@ -174,7 +166,6 @@ d + transition_time(rango_minutos)
 
 anim_save("animacion1.gif")
 ```
-
 
 [![](/images/2023/08/animacion1.gif)](/images/2023/08/animacion1.gif)
 

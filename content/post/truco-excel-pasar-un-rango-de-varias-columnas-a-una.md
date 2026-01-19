@@ -1,22 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- excel
-- formación
-- trucos
+  - excel
+  - formación
+  - trucos
 date: '2016-10-05'
 lastmod: '2025-07-13'
 related:
-- truco-excel-repetir-un-campo-a-partir-de-otro-que-define-el-numero-de-repeticiones.md
-- truco-excel-transponer-una-fila-en-varias-columnas-con-desref.md
-- truco-excel-unir-todos-los-libros-en-una-hoja.md
-- desref-para-trasponer-en-excel-varias-columnas.md
-- trucos-excel-transponer-con-la-funcion-desref.md
+  - truco-excel-repetir-un-campo-a-partir-de-otro-que-define-el-numero-de-repeticiones.md
+  - truco-excel-transponer-una-fila-en-varias-columnas-con-desref.md
+  - truco-excel-unir-todos-los-libros-en-una-hoja.md
+  - desref-para-trasponer-en-excel-varias-columnas.md
+  - trucos-excel-transponer-con-la-funcion-desref.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Truco Excel. Pasar un rango de varias columnas a una
 url: /blog/truco-excel-pasar-un-rango-de-varias-columnas-a-una/
 ---
+
 Macro de Excel que nos permite pasar de varias columnas a una sola. De momento no es una función, es un código que sorprende por su sencillez:
 
 ```r
@@ -42,7 +43,6 @@ Next
 
 End Sub
 ```
-
 
 Este código lo ponéis tal cual en vuestro Excel y os ilustro a continuación sobre su funcionamiento. Lo primero es seleccionar el rango de columnas que deseamos transponer:
 

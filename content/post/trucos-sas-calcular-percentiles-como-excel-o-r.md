@@ -1,22 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- sas
-- trucos
+  - formación
+  - sas
+  - trucos
 date: '2015-02-16'
 lastmod: '2025-07-13'
 related:
-- macros-faciles-de-sas-eliminar-outliers-en-una-variable.md
-- truco-sas-crear-ficheros-excel-sin-proc-export-i.md
-- las-cuentas-claras.md
-- truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
-- monograficos-call-symput-imprescindible.md
+  - macros-faciles-de-sas-eliminar-outliers-en-una-variable.md
+  - truco-sas-crear-ficheros-excel-sin-proc-export-i.md
+  - las-cuentas-claras.md
+  - truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
+  - monograficos-call-symput-imprescindible.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Trucos SAS. Calcular percentiles como Excel o R
 url: /blog/trucos-sas-calcular-percentiles-como-excel-o-r/
 ---
+
 Alguna vez habréis calculado un percentil en Excel o en R y os saldrá distinto de SAS. Esto se debe a que [los métodos de cálculo son distintos ](http://en.wikipedia.org/wiki/Percentile)tanto R como Excel utilizan el mismo método consistente en una interpolación en función de la distancia entre los registros que dan la posición del percentil.[ SAS dispone de 5 métodos distintos para calcular el percentil](http://support.sas.com/documentation/cdl/en/procstat/63104/HTML/default/viewer.htm#procstat_univariate_sect028.htm) y por defecto emplea el número 5 y ninguno de los 4 métodos restantes es el que utilizan R o Excel. Pero podemos programar el método de un modo sencillo, cuesta más entender porque no lo implementa SAS que calcularlo. A continuación tenéis una sencilla macro que calcula el percentil con el método de Excel:
 
 ```r
@@ -64,6 +65,5 @@ proc delete data=_1 intermedio; run;
 
 %put &pct.;
 ```
-
 
 Una breve explicación. Creamos una tabla sólo con la variable que deseamos analizar, determinamos el número de observaciones de la tabla y la posición donde debe caer el percentil como (percentil * (observaciones – 1) entre 100 más uno. Sacamos justo los puntos k y k + 1 y realizamos la interpolación en función de la distancia de esos dos puntos para obtener la macrovariable pct que tiene el resultado que deseamos. Espero que os sea de utilidad. Saludos.

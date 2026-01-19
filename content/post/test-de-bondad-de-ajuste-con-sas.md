@@ -1,21 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- sas
+  - formación
+  - sas
 date: '2016-08-02'
 lastmod: '2025-07-13'
 related:
-- test-de-levene-con-sas.md
-- numeros-aleatorios-con-sas.md
-- truco-sas-grafico-de-correlaciones.md
-- minimo-de-una-matriz-de-datos-en-sas.md
-- determinar-el-mimino-tamano-muestral-para-detectar-un-cambio-en-la-fraccion-no-conforme.md
+  - test-de-levene-con-sas.md
+  - numeros-aleatorios-con-sas.md
+  - truco-sas-grafico-de-correlaciones.md
+  - minimo-de-una-matriz-de-datos-en-sas.md
+  - determinar-el-mimino-tamano-muestral-para-detectar-un-cambio-en-la-fraccion-no-conforme.md
 tags:
-- proc univariate
+  - proc univariate
 title: Test de bondad de ajuste con SAS
 url: /blog/test-de-bondad-de-ajuste-con-sas/
 ---
+
 Pregunta que me han hecho hoy. Cómo hacer un test de bondad de ajuste con SAS y la respuesta que he dado:
 
 ```r
@@ -34,6 +35,5 @@ proc univariate data=datos_aleatorios;
    histogram /   gamma;
 run;
 ```
-
 
 Mucho cuidado con estos test de hipótesis. Yo suelo conformarme con ver la tabla de cuantiles. Saludos.

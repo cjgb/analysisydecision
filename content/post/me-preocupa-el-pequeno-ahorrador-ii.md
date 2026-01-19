@@ -1,29 +1,30 @@
 ---
 author: rvaquerizo
 categories:
-- banca
-- monográficos
+  - banca
+  - monográficos
 date: '2009-03-22'
 lastmod: '2025-07-13'
 related:
-- a-mi-me-preocupa-el-pequeno-ahorrador.md
-- lecciones-de-economia-de-un-ignorante-no-me-dan-hipoteca.md
-- lecciones-de-economia-de-un-ignorante-la-caixa-a-colocar-preferentes.md
-- experimento-un-prestamo-personal-para-invertir-en-bolsa.md
-- la-confianza-en-el-sector-financiero.md
+  - a-mi-me-preocupa-el-pequeno-ahorrador.md
+  - lecciones-de-economia-de-un-ignorante-no-me-dan-hipoteca.md
+  - lecciones-de-economia-de-un-ignorante-la-caixa-a-colocar-preferentes.md
+  - experimento-un-prestamo-personal-para-invertir-en-bolsa.md
+  - la-confianza-en-el-sector-financiero.md
 tags:
-- ahorradores
-- productos de ahorro
+  - ahorradores
+  - productos de ahorro
 title: Me preocupa el pequeño ahorrador (II)
 url: /blog/me-preocupa-el-pequeno-ahorrador-ii/
 ---
+
 ¿Dónde meto mi dinero? Esa es la pregunta que se hacen todos los ahorradores. Los productos financieros en los que invertir los podemos dividir en:
 
-  * Productos de renta fija
-  * Productos de renta variable
-  * Productos mixtos
-  * Fondos de inversión
-  * Derivados
+- Productos de renta fija
+- Productos de renta variable
+- Productos mixtos
+- Fondos de inversión
+- Derivados
 
 En los productos de renta fija el inversor conoce a priori la rentabilidad que le va a producir su dinero. Los más habituales son las IPF en los cuales el banco reporta una rentabilidad monetaria o en especie por mantener el dinero del inversor. También tenemos la Deuda Pública producto de gran liquidez y bajo riesgo. Las cédulas hipotecarias y las obligaciones y bonos aunque ofrecen buenas rentabilidades pueden quedar más lejos del pequeño ahorrador debido al plazo y en el caso de las cédulas [da un poco de terror que el respaldo sean los activos bancarios](http://www.cotizalia.com/cache/2007/09/11/87_popular_cancela_emision_cedulas_hipotecarias_millones.html).
 

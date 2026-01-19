@@ -1,22 +1,23 @@
 ---
 author: cgbellosta
 categories:
-- formación
+  - formación
 date: '2009-12-08'
 lastmod: '2025-07-13'
 related:
-- integracion-de-r-con-sas-spss-y-otros.md
-- acercamiento-a-wps-migrando-desde-sas.md
-- sigo-migrando-de-sas-a-wps.md
-- wps-en-el-mercado-espanol.md
-- macros-sas-dataset-a-data-frame-r.md
+  - integracion-de-r-con-sas-spss-y-otros.md
+  - acercamiento-a-wps-migrando-desde-sas.md
+  - sigo-migrando-de-sas-a-wps.md
+  - wps-en-el-mercado-espanol.md
+  - macros-sas-dataset-a-data-frame-r.md
 tags:
-- migración
-- r
-- sas
+  - migración
+  - r
+  - sas
 title: Migrando de SAS a R
 url: /blog/migrando-de-sas-a-r/
 ---
+
 Estoy ayudando a unos colegas a migrar de SAS a R. Están lejos, en un país de vino y carne al que alguna vez he de ir. Hemos quedado en que si alguna vez borran el último de sus SAS del disco duro, los ayudo gratis. Si no, cuando vaya, me tendrán que pagar hasta el último peso en lifaras y libaciones.
 
 Tienen procesos que ejecutaban en SAS. Algunos los iban reescribiendo en R. Se sienten más cómodos en SAS pero cuando éste se queda corto, recurren a R. Es una aproximación «todo o nada».

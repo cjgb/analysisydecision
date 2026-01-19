@@ -1,24 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- business intelligence
-- excel
-- formación
-- trucos
+  - business intelligence
+  - excel
+  - formación
+  - trucos
 date: '2010-11-15'
 lastmod: '2025-07-13'
 related:
-- nuevo-y-muy-mejorado-mapa-de-espana-por-provincias-con-excel.md
-- trucos-excel-mapa-de-mexico-por-estados.md
-- mapa-excel-de-europa.md
-- trucos-excel-mapa-de-espana-por-provincias-mejorado.md
-- nuevo-mapa-por-provincias-en-excel-de-espana-actualiza-los-colores-en-rgb.md
+  - nuevo-y-muy-mejorado-mapa-de-espana-por-provincias-con-excel.md
+  - trucos-excel-mapa-de-mexico-por-estados.md
+  - mapa-excel-de-europa.md
+  - trucos-excel-mapa-de-espana-por-provincias-mejorado.md
+  - nuevo-mapa-por-provincias-en-excel-de-espana-actualiza-los-colores-en-rgb.md
 tags:
-- mapas
-- excel
+  - mapas
+  - excel
 title: Trucos Excel. Mapa de España por provincias
 url: /blog/trucos-excel-mapa-de-espana-por-provincias/
 ---
+
 Pongo a vuestra disposición un archivo Excel que nos permite la realización del siguiente gráfico:
 
 ![mapa-espana-provincias-excel.PNG](/images/2010/11/mapa-espana-provincias-excel.PNG)

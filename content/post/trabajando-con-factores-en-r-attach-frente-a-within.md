@@ -1,23 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- r
+  - formación
+  - r
 date: '2013-05-14'
 lastmod: '2025-07-13'
 related:
-- recodificar-el-valor-de-un-factor-en-r.md
-- truco-r-eval-parse-y-paste-para-automatizar-codigo.md
-- transformar-todos-los-factores-a-caracter-de-mi-data-frame-de-r.md
-- analisis-de-textos-con-r.md
-- trucos-simples-para-rstats.md
+  - recodificar-el-valor-de-un-factor-en-r.md
+  - truco-r-eval-parse-y-paste-para-automatizar-codigo.md
+  - transformar-todos-los-factores-a-caracter-de-mi-data-frame-de-r.md
+  - analisis-de-textos-con-r.md
+  - trucos-simples-para-rstats.md
 tags:
-- attach
-- car
-- recode
+  - attach
+  - car
+  - recode
 title: Trabajando con factores en R. Attach frente a within
 url: /blog/trabajando-con-factores-en-r-attach-frente-a-within/
 ---
+
 Un ejemplo de trabajo con datos en R. Transformamos factores de dos formas distintas. Por un lado empleamos _within_ con _recode_ de la librería _car_ y por otro lado empleamos el mítico _attach_.
 
 Manejo de datos con **within** :

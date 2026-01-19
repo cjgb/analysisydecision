@@ -1,23 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- libro estadística
-- r
+  - formación
+  - libro estadística
+  - r
 date: '2022-02-27'
 lastmod: '2025-07-13'
 related:
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-9-analisis-exploratorio-de-datos-eda.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-8-problemas-con-los-datos.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-16-modelizacion-estadistica-conociendo-los-datos.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-11-analisis-bivariable.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-9-analisis-exploratorio-de-datos-eda.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-8-problemas-con-los-datos.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-16-modelizacion-estadistica-conociendo-los-datos.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-11-analisis-bivariable.md
 tags:
-- sin etiqueta
-title: Introducción a la Estadística para Científicos de Datos. Capítulo 6. Descripción
-  numérica de variables
+  - sin etiqueta
+title: Introducción a la Estadística para Científicos de Datos. Capítulo 6. Descripción numérica de variables
 url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-6-descripcion-numerica-de-variables/
 ---
+
 # Descripción numérica de variables
 
 Se comienza con la recopilación de datos, la tabulación de los mismos y el establecimiento de la tipología y el rol que juegan éstos en el conjunto de datos. Establecido ese marco de es necesario describir datos, recordemos que por si mismos los datos no dicen nada, no resuelven nada. Esa información la suministra un análisis.
@@ -36,26 +36,26 @@ Dentro del mundo del marketing es muy habitual emplear análisis estadísticos p
 
 El análisis univariable nos sirve cuando tenemos cuestiones del tipo:
 
-  * Estudiar la calidad de la información.
-  * Descripción inicial de las variables presentes en el conjunto de datos. En el caso práctico nos permite conocer la cartera de clientes encuestados.
-  * Identificar que características de nuestros datos que pueden ser eficaces cuando tenemos que plantear análisis. Que características de nuestra cartera pueden ser relevantes para ofrecer una acción comercial.
+- Estudiar la calidad de la información.
+- Descripción inicial de las variables presentes en el conjunto de datos. En el caso práctico nos permite conocer la cartera de clientes encuestados.
+- Identificar que características de nuestros datos que pueden ser eficaces cuando tenemos que plantear análisis. Que características de nuestra cartera pueden ser relevantes para ofrecer una acción comercial.
 
 Todas estas cuestiones están vinculadas a la estadística y en primer término a la estadística sobre una sola variable. Comencemos el trabajo con el caso práctico.
 
 Del conjunto de datos de trabajo `train.csv` nos han pasado la siguiente información:
 
-  * id Unique ID for the customer
-  * Gender Gender of the customer
-  * Age Age of the customer
-  * Driving_License 0 : Customer does not have DL, 1 : Customer already has DL
-  * Region_Code Unique code for the region of the customer
-  * Previously_Insured 1 : Customer already has Vehicle Insurance, 0 : Customer doesn’t have Vehicle Insurance
-  * Vehicle_Age Age of the Vehicle
-  * Vehicle_Damage 1 : Customer got his/her vehicle damaged in the past. 0 : Customer didn’t get his/her vehicle damaged in the past.
-  * Annual_Premium The amount customer needs to pay as premium in the year
-  * PolicySalesChannel Anonymized Code for the channel of outreaching to the customer ie. Different Agents, Over Mail, Over Phone, In Person, etc.
-  * Vintage Number of Days, Customer has been associated with the company
-  * Response 1 : Customer is interested, 0 : Customer is not interested
+- id Unique ID for the customer
+- Gender Gender of the customer
+- Age Age of the customer
+- Driving_License 0 : Customer does not have DL, 1 : Customer already has DL
+- Region_Code Unique code for the region of the customer
+- Previously_Insured 1 : Customer already has Vehicle Insurance, 0 : Customer doesn’t have Vehicle Insurance
+- Vehicle_Age Age of the Vehicle
+- Vehicle_Damage 1 : Customer got his/her vehicle damaged in the past. 0 : Customer didn’t get his/her vehicle damaged in the past.
+- Annual_Premium The amount customer needs to pay as premium in the year
+- PolicySalesChannel Anonymized Code for the channel of outreaching to the customer ie. Different Agents, Over Mail, Over Phone, In Person, etc.
+- Vintage Number of Days, Customer has been associated with the company
+- Response 1 : Customer is interested, 0 : Customer is not interested
 
 Se comienza el proceso de análisis.
 
@@ -79,22 +79,20 @@ train <- read_csv("./data/train.csv")
 head(train,5)
 ```
 
-
 El conjunto de datos de trabajo es un archivo csv que se llama train y que previamente se ha descargado (como se indica con anterioridad), la función `read_csv` permite importar ese csv y crear un data frame en la sesión de trabajo de R. Mediante la función `str` es posible ver el tipo de variables que tiene el data frame:
 
 ```r
 str(train)
 ```
 
-
 Numéricas o carácter, como se indicó, pero una variable numérica no tiene necesariamente un comportamiento numérico, por ese motivo siempre es mejor disponer las variables en
 
-  * Variables cuantitativas
-  * Variables cualitativas o factores
+- Variables cuantitativas
+- Variables cualitativas o factores
 
 No todas las variables numéricas serán variables cuantitativas, pero si todas las variables cualitativas serán factores, aunque pueden tener un orden.
 
-* * *
+______________________________________________________________________
 
 ## **Nota** : Nunca se debe tratar una cualidad como un número, si el sexo viene codificado 1-mujer 2-hombre, no debemos tratar esa variable como cuantitativa.
 
@@ -108,20 +106,17 @@ En el ejemplo de trabajo se dispone de diversas variables cualitativas. Se ilust
 knitr::kable(train %>% group_by(Gender) %>% summarise(`Frecuencia absoluta` = n()))
 ```
 
-
 Señalar la importancia de relativizar los datos absolutos, de obtener porcentajes.
 
 ```r
 knitr::kable(train %>% group_by(Gender) %>% summarise(`Frecuencia relativa` = n()/nrow(train)))
 ```
 
-
 La variable género no tiene ningún tipo de orden, pero una variable cualitativa puede requerir un orden.
 
 ```r
 knitr::kable(train %>% group_by(Vehicle_Age) %>% summarise(`Frecuencia relativa` = n()/nrow(train)))
 ```
-
 
 Por defecto R siempre presenta en las tablas de frecuencias el orden léxico gráfico, no el orden que tiene la variable, en este caso se tienen vehículos < 1, 1 – 2 y > 2, pero no es el orden que presenta el factor, es necesaria una ordenación.
 
@@ -132,7 +127,6 @@ table(trainVehicle_Age)
 trainVehicle_Age = factor(trainVehicle_Age, levels=c('< 1 Year','1-2 Year', '> 2 Years'))
 table(trainVehicle_Age)
 ```
-
 
 La función `table` permite realizar rápidas tablas de frecuencias, cuando trabajemos con variables categóricas es importante realizar esas rápidas comprobaciones sobre el correcto tratamiento de los datos.
 
@@ -146,30 +140,29 @@ train <- train %>% mutate(fr_vehicle_age = case_when(
 table(train$fr_vehicle_age)
 ```
 
-
 Usando cualquiera de los dos métodos para clasificar correctamente factores ordinales si es recomendable emplear un sufijo para determinar aquellas variables que han de ser analizadas, en este caso, se emplea `fr_` indicando «factor_reclasificado». Práctica muy útil cuando se manejen grandes cantidades de variables y poder distinguir variables input de variables raw (en bruto).
 
 ### Descritivos en variables cuantitativas
 
 Las variables cuantitativas pueden tomar valores finitos (ejemplo la edad, antigüedad de cliente,…) o valores infinitos (ejemplo prima de un seguro, salario,…) pero en ambas situaciones se emplearán los mismos análisis descriptivos:
 
-  * Estadísticos descriptivos
-  * Representación gráfica que describa la forma y los posibles valores que toma la variable
+- Estadísticos descriptivos
+- Representación gráfica que describa la forma y los posibles valores que toma la variable
 
 Y se pondrá especial cuidado en detectar algunos de estos problemas:
 
-  * Detección de valores modales
-  * Detección de outliers
-  * Detección de valores missing
+- Detección de valores modales
+- Detección de outliers
+- Detección de valores missing
 
 #### Medidas de posición
 
 Los **estadísticos descriptivos** permiten conocer valores relevantes que toman las variables de trabajo. Cuando se quiere conocer sobre que valores se sitúa la variable estamos analizando **medidas de posición** entre las que destacan:
 
-  * Media
-  * Mediana
-  * Percentiles
-  * Moda
+- Media
+- Mediana
+- Percentiles
+- Moda
 
 ##### Media de una variable
 
@@ -178,7 +171,6 @@ Es el valor sobre el que se sitúan los datos se obtendría sumando todos los va
 ```r
 train %>% summarise(sum(Age)/nrow(train))
 ```
-
 
 Evidentemente R dispone de una función que realiza este cálculo y podemos hacerlo de diversas formas:
 
@@ -189,7 +181,6 @@ mean(trainAnnual_Premium)
 mean(train$Vintage)
 ```
 
-
 Para describir correctamente los datos es necesario calcular la media para todas las variables cuantitativas, en R, mediante la librería `kable` es posible realizar salidas de datos formateadas:
 
 ```r
@@ -197,7 +188,6 @@ knitr::kable(train %>% summarise(`Media edad` = mean(Age),
                     `Media de prima` = mean(Annual_Premium),
                     `Media de antigüedad (meses)` = mean(Vintage)))
 ```
-
 
 Los valores de las variables se sitúan en el entorno de la media pero este valor está muy influenciado por la escala, al definirse como la suma de los valores de la variable entre el número de registros si uno de esos valores es muy alto es posible que la media tienda a perder representatividad sólo por un dato atípico.
 
@@ -208,6 +198,7 @@ Si se ordenan los datos de la variable en estudio de menor a mayor y establecemo
 ```r
 str(train)
 ```
+
 0
 
 Se ha definido una función empleando `tidyverse` para aproximar el cálculo de la mediana, esta función tiene sus limitaciones pero sirve para establecer ese valor que deja a su derecha el 50% y a su izquierda el otro 50% de las observaciones. Evidentemente es mejor emplear la función específica de R:
@@ -215,6 +206,7 @@ Se ha definido una función empleando `tidyverse` para aproximar el cálculo de 
 ```r
 str(train)
 ```
+
 1
 
 ##### Percentiles de una variable
@@ -224,6 +216,7 @@ Además de esa separación 50% de valores a la izquierda – 50% de valores a la
 ```r
 str(train)
 ```
+
 2
 
 Para obtener el percentil aparece la función `quantile` que es cuantil en español, es el cuantil el que toma los valores de la variable a intervalos regulares si deseamos dividir en % estamos ante percentiles. Estos valores tienen unos puntos que caracterizan los datos, el percentil 0 es el mínimo de los valores de nuestra variable el valor 100 es el máximo de la variable y, por supuesto, el percentil 50 es la mediana de la variable. Una variable edad es cuantitativa ordinal, en este caso se tienen **valores finitos** entre 20 y 85. Si se replica el código para la variable prima:
@@ -231,6 +224,7 @@ Para obtener el percentil aparece la función `quantile` que es cuantil en espa�
 ```r
 str(train)
 ```
+
 3
 
 En este caso la variable toma muchos valores, **infinitos** , entre 2630 y 540165 eso ya ofrece una impresión de la mayor complejidad para estudiar la concentración de valores.
@@ -242,6 +236,7 @@ Otra medida importante para conocer como se posicionan los valores de una variab
 ```r
 str(train)
 ```
+
 4
 
 En los datos de trabajo la edad más repetida es `Mode(train$Age)` y hay un valor en la prima muy repetido que es el `r Mode(train$Annual_Premium)`
@@ -250,9 +245,9 @@ En los datos de trabajo la edad más repetida es `Mode(train$Age)` y hay un valo
 
 Además de conocer sobre que valores se concentra la variable es necesario analizar como de dispersos están esos valores de esa medida de centralidad. Entre ellas se van a estudiar
 
-  * Rango intercuartílico
-  * Varianza y desviación típica
-  * Coeficiente de variación
+- Rango intercuartílico
+- Varianza y desviación típica
+- Coeficiente de variación
 
 ##### Rango intercuartílico
 
@@ -261,6 +256,7 @@ Como indica su nombre es un rango, un número inferior y un número superior don
 ```r
 str(train)
 ```
+
 5
 
 Esta medida establece una dispersión a partir de los percentiles, es una característica de las medidas de dispersión, siempre miden una diferencia con una medida de posición.
@@ -272,6 +268,7 @@ Para medir la dispersión una medida a emplear es la diferencia de cada observac
 ```r
 str(train)
 ```
+
 6
 
 La varianza no tiene una unidad de medida, para ello contamos con la **desviación típica**.
@@ -279,6 +276,7 @@ La varianza no tiene una unidad de medida, para ello contamos con la **desviaci�
 ```r
 str(train)
 ```
+
 7
 
 La desviación típica es la raiz de la varianza y está expresada en las mismas unidades que la variable lo que puede facilitar su interpretacion.
@@ -294,6 +292,7 @@ Se define como la relación entre la desviación típica y la media y habitualme
 ```r
 str(train)
 ```
+
 8
 
 Se puede decir que la variabilidad de la variable `Age` es un %. Cuando se analizan estadísticos descriptivos de cualquier tipo es muy importante **relativizar** porque empleando valores absolutos todas las conclusiones están afectadas por la unidad de medida.
@@ -307,6 +306,7 @@ Para conocer la asimetría se emplea el paquete de R `e1071` que contiene una se
 ```r
 str(train)
 ```
+
 9
 
 Un valor superior a 0 indica que es asimétrica a la izquierda por lo que la moda < mediana < media. Valores inferiores a 0 indican asimetría a la derecha por lo que media < mediana < moda, la simetría perfecta sería media = mediana = moda. La asimetría a la izquierda es propia de variables que indican precios como es `Annual_Premium` en los datos de trabajo.
@@ -314,6 +314,7 @@ Un valor superior a 0 indica que es asimétrica a la izquierda por lo que la mod
 ```r
 knitr::kable(train %>% group_by(Gender) %>% summarise(`Frecuencia absoluta` = n()))
 ```
+
 0
 
 En este caso se tiene una asimetría muy alta a la izquierda, hay importes muy altos de prima anual. Con la función `skewness` se puede calcular la asimetría por varios métodos, sería necesario modificar el parámetro `type`.
@@ -323,6 +324,7 @@ La curtosis o apuntamiento también se calcula con la función `kurtosis` del pa
 ```r
 knitr::kable(train %>% group_by(Gender) %>% summarise(`Frecuencia absoluta` = n()))
 ```
+
 1
 
 Una curtosis negativa indica una distribución «más cuadrada» y una curtosis positiva indica un apuntamiento, cuanto mayor sea ese apuntamiento mayor será la curtosis. En el ejemplo de trabajo la curtosis de la variable `Age` es negativa, es una forma de caja; sin embargo, para la variable `Annual_Premium` se tiene un apuntamiento muy alto, apuntamiento alto y asimetría hacia la izquierda.

@@ -1,21 +1,22 @@
 ---
 author: svalle
 categories:
-- sas
-- trucos
+  - sas
+  - trucos
 date: '2008-03-04'
 lastmod: '2025-07-13'
 related:
-- trucos-sas-porque-hay-que-usar-objetos-hash.md
-- laboratorio-de-codigo-sas-comparativa-entre-if-y-where.md
-- laboratorio-de-codigo-sas-ordenaciones-con-hash-vs-proc-sort.md
-- truco-sas-transponer-tablas-con-proc-transpose-data-o-proc-sql.md
-- laboratorio-de-codigo-sas-vistas-proc-means-vs-proc-sql.md
+  - trucos-sas-porque-hay-que-usar-objetos-hash.md
+  - laboratorio-de-codigo-sas-comparativa-entre-if-y-where.md
+  - laboratorio-de-codigo-sas-ordenaciones-con-hash-vs-proc-sort.md
+  - truco-sas-transponer-tablas-con-proc-transpose-data-o-proc-sql.md
+  - laboratorio-de-codigo-sas-vistas-proc-means-vs-proc-sql.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Truco SAS. Cruce con proc format
 url: /blog/truco-sas-cruce-con-formatos/
 ---
+
 Veremos un ejemplo de ahorro de tiempo haciendo un cruce con formatos.
 Parece curioso que los formatos ahorren tiempo frente al sort/merge y sql, ya que basicamente no están hecho para esa finalidad, pero realmente podemos ahorrarnos más del 50% del tiempo.
 Además lo más costoso de este método es la carga del formato, pero una vez que lo tenemos cargado podemos hacer las selecciones de todos los grandes volumenes de datos que necesitemos, con el sort/merge, tendríamos que ordenar el conjunto de datos sas ‘grande’ otra vez si no lo teniamos ordenado.
@@ -47,7 +48,6 @@ set conjunto_LARGE (keep=contrato);
 if _n_<=100000;
 run;
 ```
-
 
 Procedimiento 1. SORT / MERGE.
 
@@ -96,7 +96,6 @@ tiempo de cpu 10.07 segundos
 Total del proceso:
 ```
 
-
 Ordenar conjunto grande: 35.82 segundos
 Ordenar conjunto pequeño: 0.25 segundos
 Merge: 11.06 segundos
@@ -123,7 +122,6 @@ tiempo de cpu 0.04 segundos
 
 ```
 
-
 La variable clave con la que vamos a cruzar la tenemos
 
 que renombrar a «START» como «LABEL» podemos poner la etiqueta que queramos,
@@ -144,7 +142,6 @@ tiempo real 0.06 segundos
 tiempo de cpu 0.09 segundos
 ```
 
-
 Por último cargamos el conjunto de datos.
 
 ```r
@@ -153,34 +150,43 @@ set conjunto_LARGE (keep=contrato);
 if _n_<=100000;
 run;
 ```
+
 0
+
 ```r
 data conjunto_SMALL;
 set conjunto_LARGE (keep=contrato);
 if _n_<=100000;
 run;
 ```
+
 1
+
 ```r
 data conjunto_SMALL;
 set conjunto_LARGE (keep=contrato);
 if _n_<=100000;
 run;
 ```
+
 2
+
 ```r
 data conjunto_SMALL;
 set conjunto_LARGE (keep=contrato);
 if _n_<=100000;
 run;
 ```
+
 3
+
 ```r
 data conjunto_SMALL;
 set conjunto_LARGE (keep=contrato);
 if _n_<=100000;
 run;
 ```
+
 4
 
 Carga del formato:

@@ -1,21 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- opinión
-- r
+  - opinión
+  - r
 date: '2020-03-11'
 lastmod: '2025-07-13'
 related:
-- seguir-los-datos-del-coronavirus-en-espana-con-rstats.md
-- mi-breve-seguimiento-del-coronavirus-con-r.md
-- evolucion-del-numero-de-casos-de-coronavirus.md
-- los-pilares-de-mi-simulacion-de-la-extension-del-covid19.md
-- no-estamos-igual-que-en-la-primera-ola-de-covid.md
+  - seguir-los-datos-del-coronavirus-en-espana-con-rstats.md
+  - mi-breve-seguimiento-del-coronavirus-con-r.md
+  - evolucion-del-numero-de-casos-de-coronavirus.md
+  - los-pilares-de-mi-simulacion-de-la-extension-del-covid19.md
+  - no-estamos-igual-que-en-la-primera-ola-de-covid.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Estimación de la evolución de casos del coronavirus en España
 url: /blog/estimacion-de-la-evolucion-de-casos-del-coronavirus-en-espana/
 ---
+
 [Ayer escribrí sobre la obtención de los datos del coronavirus](https://analisisydecision.es/seguir-los-datos-del-coronavirus-en-espana-con-rstats/) con R y después me disponía ha escribir sobre modelos de regresión no lineal, hacer una estimación del coronavirus en España,… Pero estuve hablando con una amiga residente en Italia y allí el número de casos está dos semanas por delante de España, bueno, dos semanas exactamente no, 10 días:
 
 ```r
@@ -42,7 +43,6 @@ p <- ggplot(esp_ita, aes(x=fecha)) +
 p
 ```
 
-
 [![](/images/2020/03/coronavirus2.png)](/images/2020/03/coronavirus2.png)
 
 A la vista de las dos evoluciones hace pensar que el número de casos en España siga la misma evolución que sigue en Italia, por eso en este caso en vez de manejar fechas vamos a manejar días de evolución y al dato de España vamos a quitarle 10 días:
@@ -65,7 +65,6 @@ p <- ggplot(esp_ita, aes(x=fecha)) +
   xlab("") + ylab("")
 p
 ```
-
 
 [![](/images/2020/03/coronavirus3.png)](/images/2020/03/coronavirus3.png)
 

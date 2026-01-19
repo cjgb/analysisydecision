@@ -1,23 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- r
-- trucos
+  - formación
+  - r
+  - trucos
 date: '2010-06-08'
 lastmod: '2025-07-13'
 related:
-- resultados-de-la-liga-con-rstats-estudiando-graficamente-rachas.md
-- alineaciones-de-equipos-de-futbol-con-worldfootballr-de-rstats.md
-- truco-r-insertar-imagen-en-un-grafico.md
-- trucos-r-leer-archivos-xml-con-r.md
-- los-principales-problemas-de-los-espanoles-animaciones-con-r-y-gganimate.md
+  - resultados-de-la-liga-con-rstats-estudiando-graficamente-rachas.md
+  - alineaciones-de-equipos-de-futbol-con-worldfootballr-de-rstats.md
+  - truco-r-insertar-imagen-en-un-grafico.md
+  - trucos-r-leer-archivos-xml-con-r.md
+  - los-principales-problemas-de-los-espanoles-animaciones-con-r-y-gganimate.md
 tags:
-- plotrix
-- xml
+  - plotrix
+  - xml
 title: Ejemplo de uso del paquete XML de R
 url: /blog/ejemplo-de-uso-del-paquete-xml-de-r/
 ---
+
 Quería poneros unos apuntes sobre el paquete XML de R. El caso es que entre todos los fregados en los que ando metidos he retomado el tema de leer páginas web con R. Y con esto he llegado a la sentencia _install.packages(«XML»)_ y con la fiebre mundialista estoy en lo siguiente:
 
 ```r

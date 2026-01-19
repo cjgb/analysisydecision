@@ -1,29 +1,30 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- modelos
-- r
+  - formación
+  - modelos
+  - r
 date: '2009-06-08'
 lastmod: '2025-07-13'
 related:
-- un-peligro-del-analisis-cluster.md
-- manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-ii.md
-- manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-i.md
-- analisis-cluster-con-sas-la-importancia-de-las-semillas-en-las-k-medias.md
-- knn-con-sas-mejorando-k-means.md
+  - un-peligro-del-analisis-cluster.md
+  - manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-ii.md
+  - manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-i.md
+  - analisis-cluster-con-sas-la-importancia-de-las-semillas-en-las-k-medias.md
+  - knn-con-sas-mejorando-k-means.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: 'Manual. Curso introducción de R. Capítulo 17: Análisis Cluster con R (y III)'
 url: /blog/manual-curso-introduccion-de-r-capitulo-17-analisis-cluster-con-r-y-iii/
 ---
+
 Ante el exito de los mensajes dedicados al análisis cluster la nueva entrega del manual de R la dedicaremos de nuevo al análisis de agrupamiento. Como es habitual trabajaremos con un ejemplo que podéis desgargaros [aquí](/images/2009/06/alimentos2.txt). Partimos de un archivo de texto delimitado por tabuladores con 46 frutas y la información que disponemos es:
 
-  * Nombre
-  * Intercambio de hidratos de carbono por gramo
-  * Kilocalorías
-  * Proteinas
-  * Grasas
+- Nombre
+- Intercambio de hidratos de carbono por gramo
+- Kilocalorías
+- Proteinas
+- Grasas
 
 (información obtenida de www.diabetesjuvenil.com)
 
@@ -37,7 +38,7 @@ nombres<-c("nombre","inter_hidratos","kcal","proteinas","grasas")
 names(frutas)<-nombres
 ```
 
-El archivo de texto lo tenemos en una ubicación de nuestra máquina c:\datos, pero lo he subido y también podemos leerlo directamente de la web:
+El archivo de texto lo tenemos en una ubicación de nuestra máquina c:\\datos, pero lo he subido y también podemos leerlo directamente de la web:
 
 ```r
 frutas<-read.table(url("/images/2009/06/alimentos2.txt"),header=FALSE,sep="\t")
@@ -47,7 +48,7 @@ nombres<-c("nombre","inter_hidratos","kcal","proteinas","grasas")
 names(frutas)<-nombres
 ```
 
-Lo leemos sin cabeceras y como separador indicamos el tabulador con el parámetro de _read.table sep=»\t»_. Ya disponemos del objeto para el análisis. Como vimos en capítulos anteriores el primer paso es crear la matriz de distancias, realizar el cluster con ella y seleccionar el número de grupos. Para crear la matriz de distancias entre observaciones hemos de especificar un método de cálculo, en este punto vamos a aprobechar para comparar 4 métodos de obtención de distancias:
+Lo leemos sin cabeceras y como separador indicamos el tabulador con el parámetro de _read.table sep=»\\t»_. Ya disponemos del objeto para el análisis. Como vimos en capítulos anteriores el primer paso es crear la matriz de distancias, realizar el cluster con ella y seleccionar el número de grupos. Para crear la matriz de distancias entre observaciones hemos de especificar un método de cálculo, en este punto vamos a aprobechar para comparar 4 métodos de obtención de distancias:
 
 ```r
 distancias1<-dist(frutas,method="manhattan")
@@ -169,7 +170,7 @@ V1  V2     V3    V4    V5 clus
 12                    GRANADA 133   42.4  1.00   0.1    1
 ```
 
-***
+______________________________________________________________________
 
 ```r
 nombres<-c("nombre","inter_hidratos","kcal","proteinas","grasas","clus")

@@ -1,21 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- banca
-- sin categoría
+  - banca
+  - opinión
 date: '2009-02-02'
 lastmod: '2025-07-13'
 related:
-- bajar-los-tipos-a-la-japonesa-al-0.md
-- a-mi-me-preocupa-el-pequeno-ahorrador.md
-- amanece-que-no-es-poco.md
-- la-nueva-burbuja-de-los-bancos.md
-- lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
+  - bajar-los-tipos-a-la-japonesa-al-0.md
+  - a-mi-me-preocupa-el-pequeno-ahorrador.md
+  - amanece-que-no-es-poco.md
+  - la-nueva-burbuja-de-los-bancos.md
+  - lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
 tags:
-- bajar los impuestos
+  - bajar los impuestos
+  - opinión
 title: Tantarantán que te han visto Pepe, tantarantán que te han visto Juán
 url: /blog/tantarantan-que-te-han-visto-pepe-tantarantan-que-te-han-visto-juan/
 ---
+
 Unos dicen:
 
 [¡Ojo con el endeudamiento!](http://www.cotizalia.com/cache/2009/02/02/noticias_52_miguel_martin_califica.html)

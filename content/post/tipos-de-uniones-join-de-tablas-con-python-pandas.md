@@ -1,23 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- monográficos
-- python
+  - formación
+  - monográficos
+  - python
 date: '2020-05-16'
 lastmod: '2025-07-13'
 related:
-- capitulo-4-uniones-de-tablas-con-r.md
-- proc-sql-merge-set.md
-- data-management-basico-con-pandas.md
-- monografico-paquete-sqldf-si-sabes-sql-sabes-r.md
-- creando-archivos-excel-desde-python-con-pandas-y-excelwriter.md
+  - capitulo-4-uniones-de-tablas-con-r.md
+  - proc-sql-merge-set.md
+  - data-management-basico-con-pandas.md
+  - monografico-paquete-sqldf-si-sabes-sql-sabes-r.md
+  - creando-archivos-excel-desde-python-con-pandas-y-excelwriter.md
 tags:
-- join
-- pandas
+  - join
+  - pandas
 title: Tipos de uniones (join) de tablas con Python Pandas
 url: /blog/tipos-de-uniones-join-de-tablas-con-python-pandas/
 ---
+
 Recopilación de las uniones más habituales con Python Pandas en una sola entrada. No se realiza equivalencias con sql join, la intención es tener de forma resumida los códigos para realizar left join inner join y concatenación de data frames de Pandas. [Hay amplia documentación esto es una síntesis](https://pandas.pydata.org/pandas-docs/stable/user_guide/merging.html).
 
 Los data frames empleados para ilustrar el ejemplo son:
@@ -42,7 +43,6 @@ df2 = pd.DataFrame(ejemplo,index=anio)
 df2
 ```
 
-
 # Uniones de data frames con índices
 
 La estructura de una join con Pandas es:
@@ -54,7 +54,6 @@ pd.merge(left, right, how='inner', on=None, left_on=None, right_on=None,
      validate=None)
 ```
 
-
 ## Left Join
 
 ```r
@@ -62,7 +61,6 @@ left_join = pd.merge(df1, df2, how='left', on=None, left_on=None, right_on=None,
          left_index=True, right_index=True, sort=True)
 left_join
 ```
-
 
 ## Outer Join
 
@@ -72,7 +70,6 @@ outer_join = pd.merge(df1, df2, how='outer', on=None, left_on=None, right_on=Non
 outer_join
 ```
 
-
 ## Right Join
 
 ```r
@@ -81,7 +78,6 @@ right_join = pd.merge(df1, df2, how='right', on=None, left_on=None, right_on=Non
 right_join
 ```
 
-
 ## Inner Join
 
 ```r
@@ -89,7 +85,6 @@ inner_join = pd.merge(df1, df2, how='inner', on=None, left_on=None, right_on=Non
          left_index=True, right_index=True, sort=True)
 inner_join
 ```
-
 
 ## Concatenar
 
@@ -100,7 +95,6 @@ concatenar = pd.concat([df1,df2])
 concatenar
 ```
 
-
 ### Concatenación inner
 
 ```r
@@ -108,14 +102,12 @@ concatenar_inner = pd.concat([df1,df2],join="inner")
 concatenar_inner
 ```
 
-
 ### Concatenación outer
 
 ```r
 concatenar_outer = pd.concat([df1,df2],join="outer")
 concatenar_outer
 ```
-
 
 # Uniones sin índices
 
@@ -129,6 +121,7 @@ anio=["2013", "2014", "2015", "2016"]
 df2 = pd.DataFrame(ejemplo,index=anio)
 df2
 ```
+
 0
 
 Si no tenemos índices es importante especificar en el parámetro on= la variable con la que hacemos la unión de las tablas. En este caso ponemos todas las uniones:
@@ -143,6 +136,7 @@ anio=["2013", "2014", "2015", "2016"]
 df2 = pd.DataFrame(ejemplo,index=anio)
 df2
 ```
+
 1
 
 ## Inner join con campo de unión de distinto nombre
@@ -155,6 +149,7 @@ anio=["2013", "2014", "2015", "2016"]
 df2 = pd.DataFrame(ejemplo,index=anio)
 df2
 ```
+
 2
 
 Uniones más habituales en una sola entrada y en pocas líneas de código.

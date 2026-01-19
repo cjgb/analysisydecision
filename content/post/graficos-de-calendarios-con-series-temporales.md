@@ -1,24 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- business intelligence
-- consultoría
-- formación
-- monográficos
-- r
+  - business intelligence
+  - consultoría
+  - formación
+  - monográficos
+  - r
 date: '2020-01-11'
 lastmod: '2025-07-13'
 related:
-- un-repaso-a-los-paquetes-de-r-solar-chron-directlabels-y-graficos-de-densidades-con-lattice.md
-- mi-breve-seguimiento-del-coronavirus-con-r.md
-- stadistical-data-warehouse-del-european-central-bank-con-r-y-los-depositos-a-perdidas.md
-- incluir-subplot-en-mapa-con-ggplot.md
-- graficos-de-burbuja-con-r.md
+  - un-repaso-a-los-paquetes-de-r-solar-chron-directlabels-y-graficos-de-densidades-con-lattice.md
+  - mi-breve-seguimiento-del-coronavirus-con-r.md
+  - stadistical-data-warehouse-del-european-central-bank-con-r-y-los-depositos-a-perdidas.md
+  - incluir-subplot-en-mapa-con-ggplot.md
+  - graficos-de-burbuja-con-r.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Gráficos de calendarios con series temporales
 url: /blog/graficos-de-calendarios-con-series-temporales/
 ---
+
 Cuando se realizan gráficos de series temporales se emplean gráficos de líneas donde el eje X contiene la fecha y el eje Y contiene el valor a representar. Hoy quiero traer al blog otra forma de representar series temporales, los gráficos de calendario y su realización con R. Para ilustrar el ejemplo vamos a emplear las cotizaciones históricas del índice bursatil IBEX35:
 
 ```r
@@ -34,7 +35,6 @@ getSymbols('^IBEX', from = '2010-01-01')
 # data frame de trabajo
 df<-data.frame(date=index(IBEX),IBEX)
 ```
-
 
 Mediante quantmod extraemos las cotizaciones del IBEX desde 2010 y creamos un data frame de trabajo que llamamos df. Vamos a realizar dos tipos de gráficos, un mapa de calor por años, meses, semanas y días y un calendario de un año puntual.
 
@@ -52,7 +52,6 @@ df <- df %>% mutate(año=year(date),
                     semanames=ceiling(day(date) / 7))
 ```
 
-
 Ahora sólo queda representar el gráfico mediante ggplot2 donde los paneles de facet_grid serán los años en eje X y los meses en eje Y:
 
 ```r
@@ -63,7 +62,6 @@ calendario1<- ggplot(df, aes(semanames, dia, fill = IBEX.Adjusted)) +
   labs(title="Cierre histórico del IBEX", x ="Semana del mes", y = "")
 calendario1
 ```
-
 
 [![](/images/2020/01/Mapa_calor_calendario.png)](/images/2020/01/Mapa_calor_calendario.png)
 
@@ -77,7 +75,6 @@ Si deseamos representar un calendario de un año concreto tenemos la función ca
 library(openair)
 calendarPlot(df, pollutant = "IBEX.Adjusted", year = 2019, cols = "Greens")
 ```
-
 
 [![](/images/2020/01/Grafico_calendario_anual.png)](/images/2020/01/Grafico_calendario_anual.png)
 

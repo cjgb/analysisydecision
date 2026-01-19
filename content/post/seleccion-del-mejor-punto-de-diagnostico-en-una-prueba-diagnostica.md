@@ -1,24 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- modelos
-- monográficos
-- r
+  - formación
+  - modelos
+  - monográficos
+  - r
 date: '2014-02-05'
 lastmod: '2025-07-13'
 related:
-- trucos-excel-area-bajo-la-curva-roc.md
-- el-parametro-gamma-el-coste-la-complejidad-de-un-svm.md
-- regresion-ridge-o-contraida-con-r.md
-- resolucion-del-juego-de-modelos-con-r.md
-- el-sobremuestreo-mejora-mi-estimacion.md
+  - trucos-excel-area-bajo-la-curva-roc.md
+  - el-parametro-gamma-el-coste-la-complejidad-de-un-svm.md
+  - regresion-ridge-o-contraida-con-r.md
+  - resolucion-del-juego-de-modelos-con-r.md
+  - el-sobremuestreo-mejora-mi-estimacion.md
 tags:
-- ggplot2
-- roc
+  - ggplot2
+  - roc
 title: Selección del mejor punto de diagnóstico en una prueba diagnóstica
 url: /blog/seleccion-del-mejor-punto-de-diagnostico-en-una-prueba-diagnostica/
 ---
+
 La pasada semana, en un examen, me preguntaron cuál era el mejor punto para una prueba diagnóstica; era necesario razonar mi respuesta. Seguramente mi respuesta fue correcta pero mi razonamiento no lo fue y por eso quería redimirme. Para evaluar las pruebas diagnósticas con una respuesta binaria si/no contamos con la sensibilidad y la especificidad. La sensibilidad es la capacidad que tiene la prueba para acertar sobre los que de verdad tiene que acertar, la probabilidad de etiquetar como enfermos aquellos que verdaderamente están enfermos. La especificidad es una medida que nos indica cuanto nos hemos equivocado con los “unos”, la probabilidad de etiquetar enfermos a pacientes sanos. Una forma de medir cuanto acertamos y cuanto nos equivocamos con nuestra prueba. Para analizar el comportamiento de nuestra prueba diagnóstica debemos determinar un punto de corte. Para ilustrar como seleccionar el mejor punto de corte vamos a emplear unos [datos sacados de la web de bioestadística del Hospital ramón y Cajal](http://www.hrc.es/bioest/roc_1.html) y vamos a elaborar una curva ROC con R y ggplot2.
 
 La curva ROC es una representación gráfica de la sensibilidad y uno menos la especificidad. ROC es el acrónimo de Reciver Operating Characteristic. Es un método para valorar como está funcionando nuestro método diagnóstico, cuanto mejor es si lo comparamos con el azar. El azar diría que tenemos las mismas probabilidades de tener cualquier tipo de diagnóstico, es decir pintamos una línea recta del punto (0,0) al punto (1,1) eso es el puro azar. En la red tenéis mucha literatura al respecto de divulgadores mejores que yo.
@@ -48,7 +49,6 @@ names(con)=c("medida","Fe")
 datos = data.frame(rbind(sin,con))
 ```
 
-
 Para analizar la sensibilidad y la especificidad de nuestra tenemos que establecer unos puntos de corte y elaborar para cada punto de corte una tabla 2×2 de este modo:
 
 ![](/images/2014/02/prueba_diagnostica_roc_sensibilidad_especificidad_1.jpg)
@@ -67,7 +67,6 @@ else resultados = rbind(resultados,c(i,sensibilidad,1-especificidad)) }
 resultados = data.frame(resultados)
 ```
 
-
 Los resultados obtenidos con nuestra prueba quedan tabulados del siguiente modo:
 
 ```r
@@ -85,7 +84,6 @@ p <- ggplot(resultados, aes(x = X3, y=X2)) + geom_line()
 p + geom_abline(intercept=0, slope=1, colour="red")library(ggplot2)
 ```
 
-
 La primera variable son los puntos de corte seleccionados, la segunda la sensibilidad y la tercera 1 – la especificidad. Así pues si graficamos sensibilidad frente a 1-especificidad tenemos la curva ROC:
 
 ![](/images/2014/02/prueba_diagnostica_roc_sensibilidad_especificidad_2.png)
@@ -93,7 +91,6 @@ La primera variable son los puntos de corte seleccionados, la segunda la sensibi
 ```r
 
 ```
-
 
 Pintamos la curva ROC para los puntos de corte establecidos. Y ahora viene el punto en el que me redimo de la contestación del examen que hice que seguro que suspenderé porque mis problemas de memoria son bastante graves. El punto de corte óptimo es aquel donde es máxima la diferencia sensibilidad -(1-especificidad). Es decir, donde menos errores cometemos a la hora de hacer el diagnóstico y donde menos etiquetamos de forma incorrecta a los que no tienen la enfermedad, donde mejor separamos. Aquí ya me equivoqué en el examen, pero además es muy importante determinar para que estamos empleando nuestro análisis. Todo lo que está escrito arriba no sirve de nada si no sabemos el objeto del análisis.
 

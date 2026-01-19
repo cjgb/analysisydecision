@@ -1,26 +1,27 @@
 ---
 author: rvaquerizo
 categories:
-- monográficos
-- sas
+  - monográficos
+  - sas
 date: '2008-11-07'
 lastmod: '2025-07-13'
 related:
-- trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados.md
-- trabajo-con-fechas-sas-funciones-fecha.md
-- curso-de-lenguaje-sas-con-wps-funciones-fecha.md
-- curso-de-lenguaje-sas-con-wps-variables.md
-- trucos-sas-pasar-fecha-a-caracter-en-sas.md
+  - trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados.md
+  - trabajo-con-fechas-sas-funciones-fecha.md
+  - curso-de-lenguaje-sas-con-wps-funciones-fecha.md
+  - curso-de-lenguaje-sas-con-wps-variables.md
+  - trucos-sas-pasar-fecha-a-caracter-en-sas.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Trabajo con fechas SAS. Introducción
 url: /blog/trabajo-con-fechas-sas-introduccion/
 ---
+
 Debido al gran número de búsquedas que llegan a AyD con el tema de las fechas y horas de SAS me he decidido a realizar un pequeño monográfico sobre estas variables en SAS. Principalmente se estudiará:
 
-*Introducción a las fechas y horas SAS
-*Formatos de fecha y hora en SAS
-*Funciones de fecha y hora en SAS
+\*Introducción a las fechas y horas SAS
+\*Formatos de fecha y hora en SAS
+\*Funciones de fecha y hora en SAS
 
 En esta primera entrega del monográfico veremos como se guardan internamente las variables fecha en SAS y como hacemos referencia a ellas dentro de nuestros pasos data o procedimientos. En SAS, las variables o son numéricas o son alfanuméricas, en el caso de las variables fecha se almacenan como numéricas y son el número de días respecto al 1 de enero de 1960. Las variables hora también son numéricas y se almacenan como el número de segundos transcurridos desde el 1 de enero de 1960 a las 0 horas. Ejecutemos el siguiente programa SAS:
 

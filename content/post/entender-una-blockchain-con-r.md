@@ -1,22 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- big data
-- consultoría
-- r
+  - big data
+  - consultoría
+  - r
 date: '2020-04-09'
 lastmod: '2025-07-13'
 related:
-- objetos-hash-para-ordenar-tablas-sas.md
-- laboratorio-de-codigo-sas-ordenaciones-con-hash-vs-proc-sort.md
-- trucos-sas-porque-hay-que-usar-objetos-hash.md
-- analisis-de-textos-con-r.md
-- trucos-r-llevar-a-sas-las-reglas-de-un-arbol-de-decision.md
+  - objetos-hash-para-ordenar-tablas-sas.md
+  - laboratorio-de-codigo-sas-ordenaciones-con-hash-vs-proc-sort.md
+  - trucos-sas-porque-hay-que-usar-objetos-hash.md
+  - analisis-de-textos-con-r.md
+  - trucos-r-llevar-a-sas-las-reglas-de-un-arbol-de-decision.md
 tags:
-- digest
+  - digest
 title: Entender una blockchain con R
 url: /blog/entender-una-blockchain-con-r/
 ---
+
 Una introducción de bajo nivel (sin entrar mucho en tecnología) a los blockchain con #rtats. Es una entrada destinada a comprender que es un blockchain desde otro punto de vista, no sólo criptografía o criptomoneda, podemos poner información que sólo conoce el origen. ¿Os imagináis si pusieran a disposición de los científicos de datos información sobre todos los españoles identificados por NIF y si tiene o no coronavirus? Los científicos de datos podrían trabajar de forma anónima con esos datos y ayudar a establecer las zonas libres de covid-19, persona a persona de forma perfectamente anónima. Aunque no se descarta que algún cabestro se dedicara a desencriptar…
 
 Al lío, de forma sencilla vamos a construir nuestra cadena de bloques aunque particularmente me gusta mucho el término contabilidad distribuida. Por ese motivo vamos a crear un apunte contable y distribuirlo dentro de una blockchain. No soy un experto en contabilidad pero se me ocurre crear un apunte contable del siguiente modo:
@@ -34,7 +35,6 @@ bloque <- list(index = 1,
                hash = NULL)
 ```
 
-
 En R el bloque es una lista con determinados elementos, siendo un apunte contable ponemos una fecha, una descripción, una referencia y un debe/haber; los elementos que necesitamos para crear los eslabones de la cadena serán la profundidad de la cadena y los hash, tanto previo como el de nuestro bloque. ¿Qué es un hash? Es un procedimiento criptográfico que transforma una información en una cadena de caracteres. Ojo con los hash porque una vez creados no se pueden descifrar, es decir, una vez creado el bloque este queda guardado a fuego. Esto en contabilidad es un problema porque no se puede deshacer, no nos podemos equivocar. Sin embargo, desde el punto de vista del auditor de una cuenta puede ser interesante. En R esa cadena de caracteres la vamos a crear a partir de la librería digest:
 
 ```r
@@ -44,7 +44,6 @@ library("digest")
 #¿Cómo se ve el término analisisydecision encriptado?
 digest("analisisydecision" ,"sha256")
 ```
-
 
 `[1] "bec1a55f485045e8a1f5f774fe2a66f09cc93e046eb9fa978c97a7c061009d9c"`
 
@@ -68,7 +67,6 @@ crea_hash <- function(block){
 #Vemos su funcionamiento
 crea_hash(bloque)
 ```
-
 
 ```r
 index

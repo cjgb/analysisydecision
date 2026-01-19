@@ -1,22 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- business intelligence
-- consultoría
+  - business intelligence
+  - consultoría
 date: '2008-07-10'
 lastmod: '2025-07-13'
 related:
-- contenidos-para-octubre-de-ayd.md
-- ayd-2300-visitas-mensuales.md
-- contenidos-web-analisis-informacion.md
-- crm-me-rio-de-los-topicos.md
-- 1500-visitas-mensuales.md
+  - contenidos-para-octubre-de-ayd.md
+  - ayd-2300-visitas-mensuales.md
+  - contenidos-web-analisis-informacion.md
+  - crm-me-rio-de-los-topicos.md
+  - 1500-visitas-mensuales.md
 tags:
-- buscadores
-- posicionamiento web
+  - buscadores
+  - posicionamiento web
 title: Posicionamiento en buscadores. Estudio de Seolución
 url: /blog/posicionamiento-en-buscadores-estudio-de-seolucion/
 ---
+
 He estado en la web de [Seolución ](http://www.seolucion.com/)del grupo [ADESIS ](http://www.adesis.com/) y me he parado en los estudios e informes de posicionamiento en buscadores por sectores. Seolución ofrece una comparativa entre compañías por sector. Independientemente de los resultados del estudio que se pueden interpretar desde distintos puntos de vista, me parece especialmente interesante y útil la información que nos ofrecen sus informes. Me gusta especialmente el criterio elegido para el estudio del posicionamiento en buscadores, además, trabaja con múltiples indicadores e incluso podemos encontrarnos un cruce entre posicionamiento y popularidad que me parece muy revelador.
 
 Para el posicionamiento en buscadores Seolución plantea distintas palabras clave, las escribe en buscadores y plantea un ranking de empresas en función de la posición en la que aparece la búsqueda. Por ejemplo, para el sector bancario en el estudio de 2008; buscamos «Prestamos Bancarios» y cada banco o caja se posiciona en el ranking en función del orden de la búsqueda. Con esta metodología aparentemente sencilla crea un ratio de visibilidad por empresa. Muy interesante y práctico.

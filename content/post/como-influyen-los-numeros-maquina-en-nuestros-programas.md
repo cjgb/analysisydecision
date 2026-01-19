@@ -1,22 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- r
+  - formación
+  - r
 date: '2008-10-01'
 lastmod: '2025-07-13'
 related:
-- truco-excel-nuestra-propia-funcion-excel.md
-- ajuste-de-splines-con-r.md
-- determinar-el-mimino-tamano-muestral-para-detectar-un-cambio-en-la-fraccion-no-conforme.md
-- trucos-r-la-funcion-mod-para-r.md
-- truco-sas-proc-format-vs-formato-percent.md
+  - truco-excel-nuestra-propia-funcion-excel.md
+  - ajuste-de-splines-con-r.md
+  - determinar-el-mimino-tamano-muestral-para-detectar-un-cambio-en-la-fraccion-no-conforme.md
+  - trucos-r-la-funcion-mod-para-r.md
+  - truco-sas-proc-format-vs-formato-percent.md
 tags:
-- números maquina
-- programación
+  - números maquina
+  - programación
 title: Como influyen los números máquina en nuestros programas
 url: /blog/como-influyen-los-numeros-maquina-en-nuestros-programas/
 ---
+
 Es imposible no cometer un error a la hora de ajustar un número de máquina ya que todos los números tienen un espacio asignado y números con infinitos decimales no se pueden almacenar en memoria correctamente. Este «pequeño» error puede influir en nuestra programación. Vamos a crear una función en R que nos permita ejemplificar como pueden influir los errores de aproximación de los números de máquina en la programación. La siguiente función realiza la operación aritmética 1.1/11, 3.3/33,… y, mediante la función IFELSE creamos una condición:
 
 ```r

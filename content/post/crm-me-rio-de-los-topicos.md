@@ -1,30 +1,31 @@
 ---
 author: rvaquerizo
 categories:
-- business intelligence
-- consultoría
+  - business intelligence
+  - consultoría
 date: '2008-04-12'
 lastmod: '2025-07-13'
 related:
-- ayd-2300-visitas-mensuales.md
-- contenidos-web-analisis-informacion.md
-- contenidos-para-octubre-de-ayd.md
-- el-ano-2010-para-analisisydecision.md
-- el-ano-2009-para-analisis-y-decision.md
+  - ayd-2300-visitas-mensuales.md
+  - contenidos-web-analisis-informacion.md
+  - contenidos-para-octubre-de-ayd.md
+  - el-ano-2010-para-analisisydecision.md
+  - el-ano-2009-para-analisis-y-decision.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: CRM. ¡Me río de los tópicos!
 url: /blog/crm-c2a1me-rio-de-los-topicos/
 ---
+
 Hay mucho escrito sobre CRM « _Customer Relationship Management_ » basta con introducir esas siglas en Google y ¡aparecen 61.000.000 de resultados! Y que puedo contar yo que en 61.000.000 de resultados de Google no se haya contado ya. Lo primero será escribir un artículo sobre CRM sin emplear las palabras:
 
-  * Cliente
-  * Gestión
-  * Estrategia (de negocio)
-  * Marketing
-  * Oportunidad
-  * Back-office/Front-office (estás no las usaría nunca porque suenan pedantes)
-  * Software
+- Cliente
+- Gestión
+- Estrategia (de negocio)
+- Marketing
+- Oportunidad
+- Back-office/Front-office (estás no las usaría nunca porque suenan pedantes)
+- Software
 
 No emplear estas palabras es justo lo contrario al CRM. No os estoy escribiendo las palabras que vosotros queréis leer. Pero yo planteo otra cuestión, hay 61.000.000 de entradas de Google que hablan de lo mismo. Pocos aportan nada nuevo salvo el tipo que aporrea las teclas del ordenador ahora mismo. Todos están dentro de esos 61.000.000 nadie aporta un factor diferente en su discurso, todos trabajan sobre una idea masiva y nadie personaliza su opinión salvo el tipo que aporrea las teclas del ordenador ahora mismo, porque ese tipo está haciendo CRM.
 
@@ -40,9 +41,9 @@ Tengo que aparecer entre los 61.000.000 millones de entradas de Google. Tras pub
 
 Si no aparece mi artículo en los buscadores tendré que registrarme en foros y opinar en otros blogs, pero esto sólo lo haré si el número de visitas es muy bajo. El análisis de mis visitas es imprescindible, así estudiaré si el público objetivo al que me dirijo es el correcto. Para ello tengo que contar con una herramienta que me permita analizar el tráfico de mi web; [Google Analytics ](http://www.google.com/analytics/es-ES)me permite estudiar minuciosamente mis visitas. Las variables que tendré en cuenta para el segimiento de mi artículo serán:
 
-  * Tiempo medio de lectura
-  * Origen del tráfico
-  * Horas de visita
-  * Ubicación de la visita
+- Tiempo medio de lectura
+- Origen del tráfico
+- Horas de visita
+- Ubicación de la visita
 
-En función de mis análisis, de los comentarios que reciba y de las sugerencias que me pueden enviar a [rvaquerizo@análisisydecisión.es](mailto:rvaquerizo@análisisydecisión.es) puedo ir modificando el contenido de mi web y creando nuevas entradas al blog que pueden derivar en un foro de usuarios de CRM diferente donde con propuestas más originales.
+En función de mis análisis, de los comentarios que reciba y de las sugerencias que me pueden enviar a [rvaquerizo@análisisydecisión.es](mailto:rvaquerizo@xn--anlisisydecisin-ojb23a.es) puedo ir modificando el contenido de mi web y creando nuevas entradas al blog que pueden derivar en un foro de usuarios de CRM diferente donde con propuestas más originales.

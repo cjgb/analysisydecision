@@ -1,22 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- sas
-- trucos
+  - sas
+  - trucos
 date: '2008-04-09'
 lastmod: '2025-07-13'
 related:
-- truco-sas-sas-y-dde-aliados-de-excel.md
-- importar-a-sas-desde-otras-aplicaciones.md
-- truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
-- truco-sas-crear-ficheros-excel-sin-proc-export-i.md
-- trucos-excel-y-sas-complemento-para-cambiar-la-configuracion-regional.md
+  - truco-sas-sas-y-dde-aliados-de-excel.md
+  - importar-a-sas-desde-otras-aplicaciones.md
+  - truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
+  - truco-sas-crear-ficheros-excel-sin-proc-export-i.md
+  - trucos-excel-y-sas-complemento-para-cambiar-la-configuracion-regional.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Truco SAS. Leer datos de Excel con SAS vía DDE
 url: /blog/truco-sas-leer-datos-de-excel-con-sas-con-dde/
 ---
-Si no disponemos del módulo Access to PC Files de SAS no podremos importar a SAS datos de Excel sin emplear el DDE. En un [truco anterior ](https://analisisydecision.es/truco-sas-sas-y-dde-aliados-de-excel/)vimos como vía DDE exportábamos ficheros de SAS a Excel. Empleando esta misma vía vamos a importar datos. La metodología es análoga a la empleada con la exportación. Asignamos un _filename_ dinámico a un rango de datos de Excel,  y nuestro paso data lee de ese _filename_ para crear una tabla SAS. Partimos del una tabla ejemplo con estos datos:
+
+Si no disponemos del módulo Access to PC Files de SAS no podremos importar a SAS datos de Excel sin emplear el DDE. En un [truco anterior ](https://analisisydecision.es/truco-sas-sas-y-dde-aliados-de-excel/)vimos como vía DDE exportábamos ficheros de SAS a Excel. Empleando esta misma vía vamos a importar datos. La metodología es análoga a la empleada con la exportación. Asignamos un _filename_ dinámico a un rango de datos de Excel, y nuestro paso data lee de ese _filename_ para crear una tabla SAS. Partimos del una tabla ejemplo con estos datos:
 
 ![null](/images/2008/04/tabla2.JPG)
 
@@ -48,7 +49,6 @@ file sis;
 put "[File.Close()]";
 run;
 ```
-
 
 Con este sistema podremos leer de tablas Excel y volcar su contenido a SAS.
 

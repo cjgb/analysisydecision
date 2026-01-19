@@ -1,22 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- consultoría
-- data mining
+  - consultoría
+  - data mining
 date: '2008-08-29'
 lastmod: '2025-07-13'
 related:
-- mineria-de-datos-una-herramienta-clave-en-consultoria.md
-- de-estadistico-a-minero-de-datos-a-cientifico-de-datos.md
-- crm-me-rio-de-los-topicos.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-con-r-capitulo-2-datos.md
-- entrenamiento-validacion-y-test.md
+  - mineria-de-datos-una-herramienta-clave-en-consultoria.md
+  - de-estadistico-a-minero-de-datos-a-cientifico-de-datos.md
+  - crm-me-rio-de-los-topicos.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-con-r-capitulo-2-datos.md
+  - entrenamiento-validacion-y-test.md
 tags:
-- data mining
-- marketing
+  - data mining
+  - marketing
 title: El Data Mining no es la caja negra que selecciona clientes
 url: /blog/el-data-mining-no-es-la-caja-negra-que-selecciona-clientes/
 ---
+
 El manuscrito [Voynich ](http://es.wikipedia.org/wiki/Manuscrito_Voynich)es un libro escrito hacia el siglo XVI cuyo contenido debe ser muy sofisticado y completamente revolucionario. Y debe de serlo porque a fecha de hoy, y tras 500 años estudiándolo nadie ha descifrado su significado. Así el manuscrito Voynich es algo tremendamente revolucionario que no sirve para nada, sólo para traer de cabeza a los criptógrafos durante 5 siglos y no pone de acuerdo a las áreas de conocimiento que lo estudian. ¿Y esto que tiene que ver con el Data Mining y con el marketing? Pues es un claro ejemplo de como no debe ser un modelo para el mundo del marketing.
 
 El uso comercial del DM da soluciones.

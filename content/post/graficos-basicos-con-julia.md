@@ -1,22 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- gráficos
-- julia
+  - formación
+  - gráficos
+  - julia
 date: '2021-08-21'
 lastmod: '2025-07-13'
 related:
-- capitulo-5-representacion-basica-con-ggplot.md
-- graficos-descriptivos-basicos-con-seaborn-python.md
-- graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
-- descubriendo-ggplot2-421.md
-- grafico-de-barras-y-lineas-con-python.md
+  - capitulo-5-representacion-basica-con-ggplot.md
+  - graficos-descriptivos-basicos-con-seaborn-python.md
+  - graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
+  - descubriendo-ggplot2-421.md
+  - grafico-de-barras-y-lineas-con-python.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Gráficos Básicos con Julia
 url: /blog/graficos-basicos-con-julia/
 ---
+
 De forma análoga a otras entradas sobre análisis gráficos básicos empezamos a trabajar con las posibilidades gráficas del lenguaje Julia. A continuación se recogerán el 80% de los gráficos que un científico de datos realizará en su vida profesional, el 20% restante se abordará en otras entradas. Emplearemos el conjunto de datos _penguins_ para ilustrar los ejemplos:
 
 ```r
@@ -29,13 +30,11 @@ res = HTTP.get(url)
 penguins = DataFrame(CSV.File(res.body))
 ```
 
-
 En esta entrada se emplearán las librerías Plots y StatsPlots que podremos instalar con:
 
 ```r
 using Pkg; Pkg.add("Plots"); Pkg.add("StatsPlots")
 ```
-
 
 ## Descripción univariable
 
@@ -51,7 +50,6 @@ pinta = map(!ismissing, penguins.flipper_length_mm)
 histogram(penguins.flipper_length_mm[pinta])
 ```
 
-
 [![](/images/2021/08/julia_plots_histograma.png)](/images/2021/08/julia_plots_histograma.png)
 
 El primer gráfico con una sintaxis muy sencilla, _histogram(vector)_ Comentarios relevantes, para estas representaciones gráficas empleamos el [framework GR](https://gr-framework.org/), no podemos pintar datos missing y por ello hacemos un filtrado previo mediante map, como sólo deseamos pintar el histograma de una variable trabajamos con vectores, si deseamos variar el número de grupos empleamos nbins. Sentamos las bases del método de trabajo.
@@ -65,7 +63,6 @@ pinta = map(!ismissing, penguins.flipper_length_mm)
 density(penguins.flipper_length_mm[pinta])
 ```
 
-
 [![](/images/2021/08/julia_plots_densidad.png)](/images/2021/08/julia_plots_densidad.png)
 
 Sintaxis muy similar a la empleada con el histograma pero en este caso se usa la función _density_
@@ -78,7 +75,6 @@ using StatsPlots
 pinta = map(!ismissing, penguins.flipper_length_mm)
 boxplot(penguins.flipper_length_mm[pinta])
 ```
-
 
 [![](/images/2021/08/julia_plots_boxplot.png)](/images/2021/08/julia_plots_boxplot.png)
 
@@ -105,7 +101,6 @@ bar(agr.species, agr.conteo,
     legend =:topright)
 ```
 
-
 [![](/images/2021/08/julia_plots_barras.png)](/images/2021/08/julia_plots_barras.png)
 
 Para la realización de gráficos de barras se ha realizado una agregación previa, realizamos el _groupby_ por el campo que deseamos realizar el gráfico y contamos registros. Aprovechamos el ejemplo para introducir etiquetas con label, títulos con title, ver las líneas de división, especificar el tamaño y establecer la posición de la leyenda. Se observa que las opciones del gráfico no son complejas.
@@ -131,7 +126,6 @@ bar(agr.species, agr.pct,
     legend =:topright)
 ```
 
-
 [![](/images/2021/08/julia_plots_barras_porcentaje.png)](/images/2021/08/julia_plots_barras_porcentaje.png)
 
 ## Descripción bivariable
@@ -150,7 +144,6 @@ scatter(grafico.flipper_length_mm, grafico.bill_length_mm, group = grafico.speci
 legend =:topleft)
 ```
 
-
 [![](/images/2021/08/julia_plots_scatter.png)](/images/2021/08/julia_plots_scatter.png)
 
 Anotaciones, se eliminan aquellos registros con valores perdidos para evitar problemas en la representación gráfica, esa selección se lleva a cabo mediante una _query_ y en este caso vamos a identificar cada punto con un color por la especie. La situación es similar a los gráficos de barras, preparamos un data frame con la estructura que deseamos representar gráficamente.
@@ -163,7 +156,6 @@ pinta = map(!ismissing, penguins.flipper_length_mm)
 density(penguins.flipper_length_mm[pinta], group=penguins.species[pinta])
 ```
 
-
 [![](/images/2021/08/julia_plots_densidades.png)](/images/2021/08/julia_plots_densidades.png)
 
 Boxplot comparando distribuciones por factor:
@@ -174,7 +166,6 @@ pinta = map(!ismissing, penguins.flipper_length_mm)
 boxplot(penguins.species[pinta] ,penguins.flipper_length_mm[pinta], legend=false)
 ```
 
-
 [![](/images/2021/08/julia_plots_boxplot_factor.png)](/images/2021/08/julia_plots_boxplot_factor.png)
 
 Gráficos de barras de dos factores:
@@ -182,6 +173,7 @@ Gráficos de barras de dos factores:
 ```r
 using Pkg; Pkg.add("Plots"); Pkg.add("StatsPlots")
 ```
+
 0
 
 [![](/images/2021/08/julia_plots_barras_factor.png)](/images/2021/08/julia_plots_barras_factor.png)
@@ -193,6 +185,7 @@ Gráfico de barras apiladas:
 ```r
 using Pkg; Pkg.add("Plots"); Pkg.add("StatsPlots")
 ```
+
 1
 
 [![](/images/2021/08/julia_plots_barras_apiladas.png)](/images/2021/08/julia_plots_barras_apiladas.png)

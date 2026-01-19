@@ -1,21 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- consultoría
-- sas
+  - consultoría
+  - sas
 date: '2010-02-07'
 lastmod: '2025-07-13'
 related:
-- curso-de-lenguaje-sas-con-wps-lectura-de-ficheros-de-texto.md
-- acercamiento-a-wps-migrando-desde-sas.md
-- ayudadme-importar-a-sas-texto-con-comillas.md
-- como-abrir-proyectos-de-enterprise-guide-corruptos-o-de-una-version-anterior.md
-- truco-leer-sas7bdat-sin-sas.md
+  - curso-de-lenguaje-sas-con-wps-lectura-de-ficheros-de-texto.md
+  - acercamiento-a-wps-migrando-desde-sas.md
+  - ayudadme-importar-a-sas-texto-con-comillas.md
+  - como-abrir-proyectos-de-enterprise-guide-corruptos-o-de-una-version-anterior.md
+  - truco-leer-sas7bdat-sin-sas.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Un problema a WPS. Infile url no funciona
 url: /blog/un-problema-a-wps-infile-url-no-funciona/
 ---
+
 ERROR: url is not a valid access method. The access method names are : DDE, EMAIL
 
 He encontrado una pega que no me gusta al WPS:

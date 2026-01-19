@@ -1,23 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- r
-- sas
-- trucos
+  - formación
+  - r
+  - sas
+  - trucos
 date: '2010-04-10'
 lastmod: '2025-07-13'
 related:
-- trucos-sas-variables-dummy-de-una-variable-continua.md
-- trucos-sas-lista-de-datasets-en-macro-variable.md
-- la-macro-iterlist-para-automatizar-codigo-sas.md
-- minimo-de-una-matriz-de-datos-en-sas.md
-- trucos-sas-macrovariable-a-dataset.md
+  - trucos-sas-variables-dummy-de-una-variable-continua.md
+  - trucos-sas-lista-de-datasets-en-macro-variable.md
+  - la-macro-iterlist-para-automatizar-codigo-sas.md
+  - minimo-de-una-matriz-de-datos-en-sas.md
+  - trucos-sas-macrovariable-a-dataset.md
 tags:
-- combinaciones
+  - combinaciones
 title: Combinaciones de k elementos tomados de n en n. Con SAS y con R
 url: /blog/combinaciones-de-k-elementos-tomados-de-n-en-n-con-sas-y-con-r/
 ---
+
 Me gustaría plantearos un problema que me ha ocurrido recientemente con SAS. Necesitaba todas las posibles combinaciones de 9 elementos tomados de n en n. Tenia que crear un dataset con todas estas combinaciones. Antes de ponerme a programar toca buscar en Google « _sas combinations_ » y tras un rato buscando encuentro el [siguiente link](http://www2.sas.com/proceedings/sugi23/Posters/p177.pdf). Este link contiene una macro de SAS que nos permite crear todas las combinaciones de k elementos tomados de n en n:
 
 ```r

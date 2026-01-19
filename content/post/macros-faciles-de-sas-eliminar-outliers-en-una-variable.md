@@ -1,24 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- monográficos
-- sas
-- trucos
+  - formación
+  - monográficos
+  - sas
+  - trucos
 date: '2011-05-16'
 lastmod: '2025-07-13'
 related:
-- macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
-- monograficos-call-symput-imprescindible.md
-- trucos-sas-calcular-percentiles-como-excel-o-r.md
-- trucos-sas-variables-dummy-de-una-variable-continua.md
-- trucos-sas-medir-la-importancia-de-las-variables-en-nuestro-modelo-de-regresion-logistica.md
+  - macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
+  - monograficos-call-symput-imprescindible.md
+  - trucos-sas-calcular-percentiles-como-excel-o-r.md
+  - trucos-sas-variables-dummy-de-una-variable-continua.md
+  - trucos-sas-medir-la-importancia-de-las-variables-en-nuestro-modelo-de-regresion-logistica.md
 tags:
-- outliers
-- proc univariate
+  - outliers
+  - proc univariate
 title: Macros (fáciles) de SAS. Eliminar outliers en una variable
 url: /blog/macros-faciles-de-sas-eliminar-outliers-en-una-variable/
 ---
+
 Hace tiempo ya os propuse una[ chapuza para eliminar outliers de forma multivariante](https://analisisydecision.es/trucos-sas-eliminacion-de-outliers-2/). Por supuesto quedaba**eliminar outliers en una variable**. Recortar los valores extremos en aquellas variables cuantitativas que deseemos. Para ello os propongo una macro que no considero muy compleja y que os analizaré con mayor detalle, pero lo primero la macro al completo:
 
 ```r
@@ -191,7 +192,7 @@ output out=sal pctlpre=P_ pctlpts=&lim1.,&lim2.;
 quit;
 ```
 
-Esta es la parte más interesante de este proceso, el PROC UNIVARIATE va a crear un dataset con el valor de los percentiles que queremos recortar, esto se realiza en la sentencia OUTPUT con la instrucción pclpre=P_ y pctlpts=limite_infereior,limite_superior. Los límites están en unas macrovariables y el conjunto de datos SAL contendrá los valores sobre los que recortamos la variable.
+Esta es la parte más interesante de este proceso, el PROC UNIVARIATE va a crear un dataset con el valor de los percentiles que queremos recortar, esto se realiza en la sentencia OUTPUT con la instrucción pclpre=P\_ y pctlpts=limite_infereior,limite_superior. Los límites están en unas macrovariables y el conjunto de datos SAL contendrá los valores sobre los que recortamos la variable.
 
 ```r
 *CREAMOS MV CON LOS CORTES DESEADOS;

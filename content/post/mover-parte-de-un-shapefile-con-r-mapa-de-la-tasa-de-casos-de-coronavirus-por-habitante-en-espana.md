@@ -1,29 +1,29 @@
 ---
 author: rvaquerizo
 categories:
-- business intelligence
-- formación
-- mapas
-- monográficos
-- r
+  - business intelligence
+  - formación
+  - mapas
+  - monográficos
+  - r
 date: '2020-04-23'
 lastmod: '2025-07-13'
 related:
-- animacion-de-un-mapa-con-python-porcentaje-de-vacunas-administradas.md
-- mapa-del-covid-19-por-comunidades-autonomas-con-r-mas-rstats.md
-- mapa-estatico-de-espana-con-python.md
-- libreria-mapspain-en-rstats-mapas-estaticos-de-espana.md
-- mapa-de-rstats-animado-con-el-porcentaje-de-vacunacion-en-espana.md
+  - animacion-de-un-mapa-con-python-porcentaje-de-vacunas-administradas.md
+  - mapa-del-covid-19-por-comunidades-autonomas-con-r-mas-rstats.md
+  - mapa-estatico-de-espana-con-python.md
+  - libreria-mapspain-en-rstats-mapas-estaticos-de-espana.md
+  - mapa-de-rstats-animado-con-el-porcentaje-de-vacunacion-en-espana.md
 tags:
-- elide
-- maptools
-- raster
-- shapefile
-- mapas
-title: Mover parte de un shapefile con R. Mapa con tasa de casos de coronavirus por
-  habitante en España
+  - elide
+  - maptools
+  - raster
+  - shapefile
+  - mapas
+title: Mover parte de un shapefile con R. Mapa con tasa de casos de coronavirus por habitante en España
 url: /blog/mover-parte-de-un-shapefile-con-r-mapa-de-la-tasa-de-casos-de-coronavirus-por-habitante-en-espana/
 ---
+
 [![](/images/2020/04/coronavirus21.png)](/images/2020/04/coronavirus21.png)
 
 Si leéis habitualmente el blog ya conocéis la [entrada sobre el mapa del COVID por Comunidades Autónomas](https://analisisydecision.es/mapa-del-covid-19-por-comunidades-autonomas-con-r-mas-rstats/) y estaréis de acuerdo conmigo en que el mapa de España representado con Rstats es feo de solemnidad. Pero el código es «sencillo» por ahí se ve cada representación que requiere ser desarrollador de R cinturón negro. Bueno, los torpes empleamos ggplot con geom_polygon pero podemos empezar a complicar el mapa añadiendo nuevas posibilidades. La que os traigo hoy es muy interesante en el caso de España, se trata de mover las Islas Canarias en el mapa de Comunidades Autónomas pero directamente con R. [ Ya tenemos hecho un mapa con QGIS en otra entrada](https://analisisydecision.es/mover-elementos-de-un-mapa-con-qgis-ejemplo-mover-canarias/), pero ahora vamos a mover esa parte del shapefile directamente con R y [la función elide como hemos hecho en otra ocasión.](https://analisisydecision.es/el-brexit-con-rstats-o-como-mover-spatial-data-con-r/) Estaréis pensando «Vaquerizo no tiene imaginación por eso tira de entradas anteriores y las junta», no es el caso.
@@ -59,7 +59,6 @@ poblacion <- poblacion [,c(1,5)] %>% mutate(region=case_when(
   TRUE ~ region  ))
 ```
 
-
 Nada innovador, si queréis entender mejor que hace id a la primera de las páginas antes mencionadas.
 
 ### Tabla de casos de COVID por Comunidad Autónoma y mapa de comunidades de GADM
@@ -78,7 +77,6 @@ Espania <- getData('GADM', country='Spain', level=1)
 Espanianame = EspaniaNAME_1
 ```
 
-
 Situación similar al anterior código, pero siempre es necesario mencionar y rendir homenaje a Datadista y su trabajo.
 
 ### Mover Canarias con elide
@@ -92,7 +90,6 @@ ccaa1 <- map_data(Espania_sin_canarias)
 ccaa2 <- map_data(Canarias)
 ccaa <- rbind(ccaa1,ccaa2)
 ```
-
 
 En este caso si es necesario pararse brevemente
 
@@ -119,7 +116,6 @@ ccaa <- ccaa %>% mutate(region=case_when(
 ccaa <- left_join(ccaa,pinta)
 ```
 
-
 Que poco me gustan las uniones por descripciones… Ya estamos en disposición de pintar el mapa:
 
 ```r
@@ -133,7 +129,6 @@ mapa <- ggplot() +
         panel.grid.minor = element_blank())
 mapa
 ```
-
 
 Pero lo importante no es pintar datos absolutos, lo importante es pintar datos relativos, recordad siempre esto y por ello representamos el número de casos de COVID / habitantes para relativizar los datos:
 
@@ -152,7 +147,6 @@ mapa <- ggplot() +
         panel.grid.minor = element_blank())
 ```
 
-
 ### Añadir un rectángulo a nuestro mapa con geom_rectangle
 
 ```r
@@ -164,7 +158,6 @@ mapa + geom_rect(data=rectangulo,aes( xmin=xmin, xmax=xmax, ymin=ymin, ymax=ymax
         axis.title.x=element_blank(),
         axis.title.y=element_blank())
 ```
-
 
 Añadimos más elementos al mapa, un rectángulo sobre las Islas Canarias y para eso empleamos el propio shapefile que tenía las Canarias y calculamos máximos, para crear un recuadro sobre las islas. Puede quedarnos más vistoso, pero eso os lo dejo a vosotros. El resultado es:
 

@@ -1,21 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- r
-- video
+  - r
+  - video
 date: '2021-12-27'
 lastmod: '2025-07-13'
 related:
-- comienza-la-publicacion-del-ensayo-introduccion-a-la-estadistica-para-cientificos-de-datos.md
-- estadistica-para-cientificos-de-datos-con-r-introduccion.md
-- manual-introduccion-a-r-s-plus.md
-- mineria-de-datos-con-r-un-pequeno-paseo.md
-- analisisydecision-se-une-a-scout-analyst-primer-curso-de-estadistica-para-analistas.md
+  - comienza-la-publicacion-del-ensayo-introduccion-a-la-estadistica-para-cientificos-de-datos.md
+  - estadistica-para-cientificos-de-datos-con-r-introduccion.md
+  - manual-introduccion-a-r-s-plus.md
+  - mineria-de-datos-con-r-un-pequeno-paseo.md
+  - analisisydecision-se-une-a-scout-analyst-primer-curso-de-estadistica-para-analistas.md
 tags:
-- bookdown
+  - bookdown
 title: Vídeo introducción a bookdown
 url: /blog/video-introduccion-a-bookdown/
 ---
+
 Una introducción a bookdown con R y RStudio para la creación de libros y contenido web. Esta entrada sienta las bases de un proyecto que estoy llevando a cabo, la creación de mi propio libro de introducción a la estadística.
 
 Además, debido a la sencillez de uso y como interacciona con R o Python creo que bookdown puede ser un buen sustituto a nuestras aburridas presentaciones. Desde una serie de notebooks podemos crear nuestas historias y nuestros alumnos pueden interaccionar con ellas empleando el código de ejemplo que usamos en ellas.

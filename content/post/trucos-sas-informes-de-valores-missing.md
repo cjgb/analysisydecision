@@ -1,25 +1,26 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- sas
-- trucos
+  - formación
+  - sas
+  - trucos
 date: '2009-03-16'
 lastmod: '2025-07-13'
 related:
-- macros-sas-hacer-0-los-valores-missing-de-un-dataset.md
-- macros-sas-agrupando-variables-categoricas.md
-- trucos-sas-lista-de-variables-missing.md
-- trucos-sas-lista-de-datasets-en-macro-variable.md
-- macros-sas-informe-de-un-dataset-en-excel.md
+  - macros-sas-hacer-0-los-valores-missing-de-un-dataset.md
+  - macros-sas-agrupando-variables-categoricas.md
+  - trucos-sas-lista-de-variables-missing.md
+  - trucos-sas-lista-de-datasets-en-macro-variable.md
+  - macros-sas-informe-de-un-dataset-en-excel.md
 tags:
-- automatizar código
-- proc sql
-- sas
-- missing values
+  - automatizar código
+  - proc sql
+  - sas
+  - missing values
 title: Trucos SAS. Informes de valores missing
 url: /blog/trucos-sas-informes-de-valores-missing/
 ---
+
 A continuación os planteo como truco SAS una duda que nos mandaba LILIANA. Ella necesitaba estudiar los valores perdidos de las tablas de una librería determinada. En este caso vamos a estudiar los missing de las variables numéricas de una librería, de forma análoga se puede hacer con las alfanuméricas. Como siempre vamos a trabajar con un ejemplo que parte de tablas generadas aleatoriamente. Comenzamos generando estas tablas:
 
 ```r
@@ -45,8 +46,8 @@ do id=1 to 200;
 ```
 
 length zona $15.;
-if ranuni(0) <=.32 then zona="España";
-else if ranuni(1) <= 0.32 then zona="Cataluña";
+if ranuni(0) \<=.32 then zona="España";
+else if ranuni(1) \<= 0.32 then zona="Cataluña";
 else zona="Resto";
 
 output;
@@ -59,7 +60,8 @@ run;
 
 Con este programa generamos 5 datasets aleatorios con 4 variables, dos de ellas son importes que tendrán valores missing en determinados casos. En este punto hemos de crear un proceso que cuente valores perdidos, podemos emplear el PROC SQL o bien podemos emplear el PROC FREQ pero definiendo primero un formato. Empleamos FREQ para crear una macro:
 
-``
+\`\`
+
 ```r
 proc format ;
 
@@ -90,6 +92,7 @@ Obtenemos:
 ```r
 Valores perdidos de importe1 en la tabla datos.proyecto_1 33
 ```
+
 `Procedimiento FREQ`
 
 Frequencia Porcentaje

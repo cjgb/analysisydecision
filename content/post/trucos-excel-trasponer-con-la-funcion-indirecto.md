@@ -1,25 +1,26 @@
 ---
 author: rvaquerizo
 categories:
-- excel
-- formación
-- trucos
+  - excel
+  - formación
+  - trucos
 date: '2009-02-27'
 lastmod: '2025-07-13'
 related:
-- trucos-excel-transponer-con-la-funcion-desref.md
-- desref-para-trasponer-en-excel-varias-columnas.md
-- truco-excel-transponer-una-fila-en-varias-columnas-con-desref.md
-- truco-excel-pasar-un-rango-de-varias-columnas-a-una.md
-- truco-excel-repetir-un-campo-a-partir-de-otro-que-define-el-numero-de-repeticiones.md
+  - trucos-excel-transponer-con-la-funcion-desref.md
+  - desref-para-trasponer-en-excel-varias-columnas.md
+  - truco-excel-transponer-una-fila-en-varias-columnas-con-desref.md
+  - truco-excel-pasar-un-rango-de-varias-columnas-a-una.md
+  - truco-excel-repetir-un-campo-a-partir-de-otro-que-define-el-numero-de-repeticiones.md
 tags:
-- funciones excel
-- indirecto
-- trasponer
-- excel
+  - funciones excel
+  - indirecto
+  - trasponer
+  - excel
 title: Trucos Excel. Trasponer con la función indirecto
 url: /blog/trucos-excel-trasponer-con-la-funcion-indirecto/
 ---
+
 Una de las tareas más comunes en Excel es la de transponer filas. En ocasiones hemos de transformar columnas en filas o viceversa:
 
 ![indirecto.JPG](/images/2009/02/indirecto.JPG)
@@ -34,7 +35,7 @@ Para comenzar a conocer esta función partimos del ejemplo más sencillo, hacer 
 
 Tened en cuenta para trasponer:
 
-  * El rango que debemos recorrer para saber donde ubicar el índice
-  * El comienzo de la trasposición para que el índice comience perfectamente
+- El rango que debemos recorrer para saber donde ubicar el índice
+- El comienzo de la trasposición para que el índice comience perfectamente
 
 Espero que os sea de utilidad. Si tenéis dudas o sugerencias… [rvaquerizo@analisisydecision.es](mailto:rvaquerizo@analisisydecision.es)

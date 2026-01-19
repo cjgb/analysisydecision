@@ -1,20 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- seguros
+  - seguros
 date: '2009-02-05'
 lastmod: '2025-07-13'
 related:
-- el-seguro-de-salud-suma-y-sigue.md
-- nace-pelayonex-la-directa-de-pelayo.md
-- mutua-madrilena-compra-el-50-de-adeslas-seguros-generales.md
-- nace-verti-la-directa-de-mapfre.md
-- consultor-particular-de-seguros.md
+  - el-seguro-de-salud-suma-y-sigue.md
+  - nace-pelayonex-la-directa-de-pelayo.md
+  - mutua-madrilena-compra-el-50-de-adeslas-seguros-generales.md
+  - nace-verti-la-directa-de-mapfre.md
+  - consultor-particular-de-seguros.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Seguro directo de salud. Nace ‘Nectar’
 url: /blog/seguro-directo-de-salud-nace-nectar/
 ---
+
 Interesante noticia:
 
 [PRNOTICIAS](http://www.prnoticias.es/content/view/10027026/227/)

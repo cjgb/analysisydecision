@@ -1,24 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- r
+  - r
 date: '2010-11-14'
 lastmod: '2025-07-13'
 related:
-- descubriendo-ggplot2-421.md
-- graficos-de-burbuja-con-r.md
-- truco-r-paletas-de-colores-en-r.md
-- manual-curso-introduccion-de-r-capitulo-7-funciones-graficas-basicas-en-r.md
-- grafico-con-eje-secundario-en-ggplot2.md
+  - descubriendo-ggplot2-421.md
+  - graficos-de-burbuja-con-r.md
+  - truco-r-paletas-de-colores-en-r.md
+  - manual-curso-introduccion-de-r-capitulo-7-funciones-graficas-basicas-en-r.md
+  - grafico-con-eje-secundario-en-ggplot2.md
 tags:
-- ggplot2
-- lattice
+  - ggplot2
+  - lattice
 title: Haciendo gráficos con R ¿cuáles son vuestras preferencias?
 url: /blog/haciendo-graficos-con-r-c2bfcuales-son-vuestras-preferencias/
 ---
+
 ¿Cúal de estos gráficos de cajas os gusta más?
 
-  * Base de R:
+- Base de R:
 
 ![base.png](/images/2010/11/base.png)
 
@@ -34,7 +35,7 @@ main="Gráfico con Base")
 dev.off()
 ```
 
-  * Con lattice:
+- Con lattice:
 
 ![lattice.png](/images/2010/11/lattice.png)
 
@@ -56,7 +57,7 @@ print(x)
 dev.off()
 ```
 
-  * Con ggplot2:
+- Con ggplot2:
 
 ![ggplot2.png](/images/2010/11/ggplot2.png)
 

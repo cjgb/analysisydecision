@@ -1,23 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- banca
+  - banca
 date: '2009-02-18'
 lastmod: '2025-07-13'
 related:
-- lecciones-de-economia-de-un-ignorante-la-caixa-a-colocar-preferentes.md
-- participaciones-preferentes-de-las-cajas-de-ahorro.md
-- lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
-- a-mi-me-preocupa-el-pequeno-ahorrador.md
-- la-nueva-burbuja-de-los-bancos.md
+  - lecciones-de-economia-de-un-ignorante-la-caixa-a-colocar-preferentes.md
+  - participaciones-preferentes-de-las-cajas-de-ahorro.md
+  - lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
+  - a-mi-me-preocupa-el-pequeno-ahorrador.md
+  - la-nueva-burbuja-de-los-bancos.md
 tags:
-- batalla pasivo
-- cajas catalanas
-- cajas
-- crisis
+  - batalla pasivo
+  - cajas catalanas
+  - cajas
+  - crisis
 title: 'Busca la relación: Deuda Subordinada y Cajas catalanas'
 url: /blog/busca-la-relacion-deuda-subordinada-y-cajas-catalanas/
 ---
+
 No tengo tiempo de comentarlas pero no es muy necesario….
 
 [Emisiones de Deduda Subordinada](http://www.eleconomista.es/mercados-cotizaciones/noticias/1014994/02/09/Conozca-los-entresijos-de-las-acciones-preferentes-y-la-deuda-subordinada.html)

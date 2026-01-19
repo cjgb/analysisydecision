@@ -1,21 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- sas
+  - formación
+  - sas
 date: '2011-08-27'
 lastmod: '2025-07-13'
 related:
-- trucos-sas-muestras-aleatorias-con-y-sin-reemplazamiento.md
-- parametro-asociado-a-una-poisson-con-sas.md
-- trucos-sas-lista-de-datasets-en-macro-variable.md
-- test-de-bondad-de-ajuste-con-sas.md
-- trucos-sas-muestreo-con-proc-surveyselect.md
+  - trucos-sas-muestras-aleatorias-con-y-sin-reemplazamiento.md
+  - parametro-asociado-a-una-poisson-con-sas.md
+  - trucos-sas-lista-de-datasets-en-macro-variable.md
+  - test-de-bondad-de-ajuste-con-sas.md
+  - trucos-sas-muestreo-con-proc-surveyselect.md
 tags:
-- números aleatorios
+  - números aleatorios
 title: Números aleatorios con SAS
 url: /blog/numeros-aleatorios-con-sas/
 ---
+
 En un sólo paso DATA quiero mostraros las funciones más habituales para generar números aleatorios con SAS. Una entrada para que os copiéis el código y lo analicéis con SAS. Quiero que sirva de guía para que recordéis las funciones más empleadas, además será muy útil para los que se estén iniciando en el uso de SAS:
 
 ```r

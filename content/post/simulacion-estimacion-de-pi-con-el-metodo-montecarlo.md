@@ -1,27 +1,28 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- monográficos
-- r
+  - formación
+  - monográficos
+  - r
 date: '2009-10-12'
 lastmod: '2025-07-13'
 related:
-- trucos-excel-area-bajo-la-curva-roc.md
-- el-sobremuestreo-mejora-mi-estimacion.md
-- como-salva-la-linealidad-una-red-neuronal.md
-- el-parametro-gamma-el-coste-la-complejidad-de-un-svm.md
-- atentos-a-los-intervalos-de-confianza.md
+  - trucos-excel-area-bajo-la-curva-roc.md
+  - el-sobremuestreo-mejora-mi-estimacion.md
+  - como-salva-la-linealidad-una-red-neuronal.md
+  - el-parametro-gamma-el-coste-la-complejidad-de-un-svm.md
+  - atentos-a-los-intervalos-de-confianza.md
 tags:
-- método montecarlo
-- números aleatorios
-- simulación
+  - método montecarlo
+  - números aleatorios
+  - simulación
 title: Simulación. Estimación de pi con el método Montecarlo
 url: /blog/simulacion-estimacion-de-pi-con-el-metodo-montecarlo/
 ---
+
 La **simulación** es un campo que está tomando una gran importancia. Nos está permitiendo evaluar comportamientos extremos sin ningún tipo de riesgos. Casi nadie se imaginaba que el escenario económico actual podía cambiar con la velocidad que lo está haciendo. Imaginemos una modificación brusca de los ratios de morosidad implicará que las entidades bancarias tengan que modificar sus fondos de previsión. Esta misma morosidad puede afectar a las aseguradoras de crédito que tienen que estimar sus provisiones técnicas. Ahora mismo es necesario simular las condiciones más extremas para los datos futuros y la simulación nos permite experimentar para aproximarnos al problema.
 
-El primer acercamiento a la simulación lo vamos a realizar mediante el método Montecarlo. Se trata de estimar el valor de pi. El área de la circunferencia es A=pi*radio**2 Si la circunferencia tiene su centro en el origen y el radio es 1 (_circunferencia goniométrica_) entonces A=pi y si nos centramos en el primer cuadrante A=pi/4. Conocemos el resultado, ahora se trata de generar valores aleatorios, puntos en el cuadrante (1,1) del plano que pueden caer o no dentro del área de la circunferencia. Caerán dentro de ese área si la distancia del punto aleatorio al origen es menor que 1.
+El primer acercamiento a la simulación lo vamos a realizar mediante el método Montecarlo. Se trata de estimar el valor de pi. El área de la circunferencia es A=pi\*radio\*\*2 Si la circunferencia tiene su centro en el origen y el radio es 1 (_circunferencia goniométrica_) entonces A=pi y si nos centramos en el primer cuadrante A=pi/4. Conocemos el resultado, ahora se trata de generar valores aleatorios, puntos en el cuadrante (1,1) del plano que pueden caer o no dentro del área de la circunferencia. Caerán dentro de ese área si la distancia del punto aleatorio al origen es menor que 1.
 
 Para este trabajo emplearemos R. Generamos un _data.frame_ con 10.000 observaciones que son nubes de puntos aleatorios (x,y) del plano:
 

@@ -1,28 +1,29 @@
 ---
 author: rvaquerizo
 categories:
-- consultoría
-- data mining
-- formación
-- monográficos
-- sas
-- trucos
-- wps
+  - consultoría
+  - data mining
+  - formación
+  - monográficos
+  - sas
+  - trucos
+  - wps
 date: '2013-04-15'
 lastmod: '2025-07-13'
 related:
-- knn-con-sas-mejorando-k-means.md
-- un-peligro-del-analisis-cluster.md
-- cluster-svm.md
-- macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
-- manual-curso-introduccion-de-r-capitulo-17-analisis-cluster-con-r-y-iii.md
+  - knn-con-sas-mejorando-k-means.md
+  - un-peligro-del-analisis-cluster.md
+  - cluster-svm.md
+  - macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
+  - manual-curso-introduccion-de-r-capitulo-17-analisis-cluster-con-r-y-iii.md
 tags:
-- k-medias
-- proc fastclus
-- seed
+  - k-medias
+  - proc fastclus
+  - seed
 title: Analisis cluster con SAS. La importancia de las semillas en las k-medias
 url: /blog/analisis-cluster-con-sas-la-importancia-de-las-semillas-en-las-k-medias/
 ---
+
 [![](/images/2013/04/gplot-cluster-1-300x225.gif)](/images/2013/04/gplot-cluster-1.gif)
 
 El PROC FASTCLUS en SAS nos permite realizar análisis de agrupamiento dirigido mediante el algoritmo de las k-medias. Este algoritmo tiene algunos problemas pero nos puede servir para agrupar de forma multivariante observaciones. Es rápido, sencillo de explicar y con algunas lagunas no funciona mal. Como aproximación a nuestras segmentaciones puede ser muy práctico. Hoy se va a utilizar para identificar a los clientes más complicados de segmentar, a aquellas observaciones que quedan en las zonas grises. (http://www.datanalytics.com/blog/2011/08/03/clustering-iii-sobresimplificacion/)
@@ -71,7 +72,6 @@ proc gplot data=datos;
 run;quit;
 ```
 
-
 Incluso lo más habitual es tener situaciones más complicadas, aquí está forzado a tres bolas bastante claras. ¿Qué nos sucede si hacemos un análisis cluster empleando el algoritmo de las k medias sobre estos datos tan peculiares?
 
 ```r
@@ -83,7 +83,6 @@ proc gplot data=datos2;
 	plot y * x = cluster;
 run;quit;
 ```
-
 
 [![](/images/2013/04/gplot-cluster-2-300x225.gif)](/images/2013/04/gplot-cluster-2.gif)
 
@@ -103,7 +102,6 @@ proc gplot data=datos3;
 	plot y * x = cluster;
 run;quit;
 ```
-
 
 [![](/images/2013/04/gplot-cluster-3-300x225.gif)](/images/2013/04/gplot-cluster-3.gif)
 
@@ -127,7 +125,6 @@ proc gplot data=datos4;
 	plot y * x = cluster;
 run;quit;
 ```
-
 
 [![](/images/2013/04/gplot-cluster-4-300x225.gif)](/images/2013/04/gplot-cluster-4.gif)
 
@@ -155,7 +152,6 @@ proc gplot data=datos5;
 	plot y * x = cluster;
 run;quit;
 ```
-
 
 [![](/images/2013/04/gplot-cluster-5-300x225.gif)](/images/2013/04/gplot-cluster-5.gif)
 

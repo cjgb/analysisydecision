@@ -1,26 +1,26 @@
 ---
 author: rvaquerizo
 categories:
-- sas
-- sin categoría
+  - sas
 date: '2009-12-30'
 lastmod: '2025-07-13'
 related:
-- sas-te-felicita-la-navidad.md
-- macros-faciles-de-sas-normaliza-un-texto-rapido.md
-- monograficos-call-symput-imprescindible.md
-- macro-facil-de-sas-longitud-de-la-parte-decimal-de-un-numero.md
-- analisisydecision-es-os-desea-felices-fiestas.md
+  - sas-te-felicita-la-navidad.md
+  - macros-faciles-de-sas-normaliza-un-texto-rapido.md
+  - monograficos-call-symput-imprescindible.md
+  - macro-facil-de-sas-longitud-de-la-parte-decimal-de-un-numero.md
+  - analisisydecision-es-os-desea-felices-fiestas.md
 tags:
-- se me va
+  - sas
 title: Felicitación navideña con SAS
 url: /blog/felicitacion-navidena-con-sas/
 ---
+
 Ejecutad el siguiente código en SAS local:
 
-```data _null_;`
+\`\`\`data _null_;\`
 
-/*
+/\*
 LA 440
 SI 494
 DO 523
@@ -29,7 +29,7 @@ MI 659
 FA 698
 SOL 784
 LA 880
-*/
+\*/
 
 call sound(659,100);
 call sound(659,100);

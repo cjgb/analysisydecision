@@ -1,26 +1,27 @@
 ---
 author: rvaquerizo
 categories:
-- banca
-- data mining
-- formación
-- modelos
-- monográficos
-- sas
+  - banca
+  - data mining
+  - formación
+  - modelos
+  - monográficos
+  - sas
 date: '2010-06-24'
 lastmod: '2025-07-13'
 related:
-- arboles-de-decision-con-sas-base-con-r-por-supuesto.md
-- monografico-regresion-logistica-con-r.md
-- monografico-arboles-de-clasificacion-con-rpart.md
-- macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
-- monografico-paquete-de-r-nnet-para-modelos-de-redes-neuronales.md
+  - arboles-de-decision-con-sas-base-con-r-por-supuesto.md
+  - monografico-regresion-logistica-con-r.md
+  - monografico-arboles-de-clasificacion-con-rpart.md
+  - macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
+  - monografico-paquete-de-r-nnet-para-modelos-de-redes-neuronales.md
 tags:
-- proc logistic
-- regresión logística
+  - proc logistic
+  - regresión logística
 title: Monográfico. Un poco de PROC LOGISTIC
 url: /blog/monografico-un-poco-de-proc-logistic/
 ---
+
 El **PROC LOGISTIC** es un procedimiento de SAS que nos ha dado muchas satisfacciones a los dinosaurios como el ahora escribiente. La [regresión logística ](http://es.wikipedia.org/wiki/Regresi%C3%B3n_log%C3%ADstica)es uno de los modelos de regresión más utilizados y es bien conocido por todos mis lectores (bastante más inteligentes que yo). El problema es muy sencillo hemos de clasificar una población dividida en dos partes a partir de unas variables independientes. Su aplicación es muy extensa: patrones de fuga, propensiones a compra, salud, fraude,… Con este monográfico pretendo acercaros en 3 minutos a las sentencias básicas en **SAS** para crear un modelo de regresión logística y proponer gráficos y validaciones. En la línea habitual del blog partimos de una simulación y analizamos la sintaxis, evitamos poner las salidas para no “cargar” la entrada con tablas de poca utilidad. El ejemplo es el que sigue:
 
 ```r
@@ -368,6 +369,7 @@ else contrata=0;
 
 run;
 ```
+
 0
 
 Vemos que se generan dos tablas con las estimaciones de los parámetros y con los ODDS ratios. El signo de las estimaciones nos permiten ver si la relación con la variable dependiente es positiva o negativa, además la Chi-Cuadrado de Wald nos identifica la variable con mayor relevancia, la que tenga el valor más alto. Por último la tabla de ODDS ratios que nos mide la probabilidad de que ocurra el evento contrata si está o no presente la variable. A menor ODDS Ratio mayor importancia tiene la variable. Esto puede ayudarnos a encontrar casuísticas de negocio.

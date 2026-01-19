@@ -1,35 +1,35 @@
 ---
 author: rvaquerizo
 categories:
-- business intelligence
-- sin categoría
+  - business intelligence
 date: '2008-09-21'
 lastmod: '2025-07-13'
 related:
-- contenidos-web-analisis-informacion.md
-- ayd-2300-visitas-mensuales.md
-- 1500-visitas-mensuales.md
-- el-ano-2009-para-analisis-y-decision.md
-- el-ano-2010-para-analisisydecision.md
+  - contenidos-web-analisis-informacion.md
+  - ayd-2300-visitas-mensuales.md
+  - 1500-visitas-mensuales.md
+  - el-ano-2009-para-analisis-y-decision.md
+  - el-ano-2010-para-analisisydecision.md
 tags:
-- google analytics
-- visitas web
+  - google analytics
+  - visitas web
 title: Contenidos de octubre en función del conocimiento de los usuarios
 url: /blog/contenidos-para-octubre-de-ayd/
 ---
+
 Google Analytics me está permitiendo conocer a los usuarios que navegan por AyD. Y en función de este conocimiento quiero orientar los contenidos para el mes de octubre. AyD está funcionando por debajo de mis previsiones de visitas nuevas pero muy por encima de mis previsiones de visitas que repiten. Es decir, la captación no va todo lo bien que esperaba pero la fidelización me está sorprendiendo gratamente. Voy a describir las visitas desde el 1 de agosto de 2008 al 15 de septiembre de 2008.
 
 Como he hecho en anteriores análisis dos son los indicadores que formarán parte de mi estudio:
 
-  1. Número de visitas
-  2. Promedio de tiempo de las visitas
+1. Número de visitas
+1. Promedio de tiempo de las visitas
 
 Con el número de visitas espero tener una visión global de los intereses de mis visitas y con el promedio de tiempo espero conocer que es lo que más interesa a mis visitas. En cuanto a las dimensiones de mi estudio tendré en cuenta:
 
-  1. Visión general del sitio y los usuarios
-  2. El contenido visitado
-  3. Palabras clave de acceso
-  4. Ubicaciones de red y físicas
+1. Visión general del sitio y los usuarios
+1. El contenido visitado
+1. Palabras clave de acceso
+1. Ubicaciones de red y físicas
 
 Con estas dimensiones tendré una visión de que contenidos son los que despiertan mayor interés, si de verdad mis propuestas tienen un «mercado» y si estamos hablando de visitas universitarias, profesionales o particulares.
 
@@ -51,11 +51,11 @@ Quitando la página raiz, el podio de visitas se inicia con el mensaje que crea 
 
 En cuanto a las palabras clave de acceso la he agregado y os planteo un resumen por referencia:
 
-  * Análisis de decisión – 12 visitas
-  * SAS – 42 visitas
-  * R – 31 visitas
-  * regresión lineal – 15 visitas
-  * Excel – 9 visitas
+- Análisis de decisión – 12 visitas
+- SAS – 42 visitas
+- R – 31 visitas
+- regresión lineal – 15 visitas
+- Excel – 9 visitas
 
 El promedio de estancia no tiene sentido en esta dimensión. Pero hay que hacer mención al gran número de visitas que vienen de búsquedas tipo «importar [ACCESS a SAS](https://analisisydecision.es/importar-a-sas-desde-otras-aplicaciones/)«. Creo que esa labor trae de cabeza a más de uno.
 

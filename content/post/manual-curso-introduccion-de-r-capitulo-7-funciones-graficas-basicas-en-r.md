@@ -1,22 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- r
+  - formación
+  - r
 date: '2008-04-16'
 lastmod: '2025-07-13'
 related:
-- manual-curso-introduccion-de-r-capitulo-6-funciones-de-estadistica-descriptiva.md
-- graficos-de-burbuja-con-r.md
-- graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
-- manual-curso-introduccion-de-r-capitulo-2-interfaz-y-primeras-sentencias.md
-- trucos-r-graficos-de-velocimetro-con-r.md
+  - manual-curso-introduccion-de-r-capitulo-6-funciones-de-estadistica-descriptiva.md
+  - graficos-de-burbuja-con-r.md
+  - graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
+  - manual-curso-introduccion-de-r-capitulo-2-interfaz-y-primeras-sentencias.md
+  - trucos-r-graficos-de-velocimetro-con-r.md
 tags:
-- sin etiqueta
-title: 'Manual. Curso introducción de R. Capítulo 7: Funciones gráficas básicas en
-  R'
+  - sin etiqueta
+title: 'Manual. Curso introducción de R. Capítulo 7: Funciones gráficas básicas en R'
 url: /blog/manual-curso-introduccion-de-r-capitulo-7-funciones-graficas-basicas-en-r/
 ---
+
 R dispone de múltiples posibilidades a la hora de realizar gráficos. De hecho, bajo mi punto de vista, puede ser una de las herramientas estadísticas más potentes al respecto, además es gratuita y existe una comunidad detrás que pone a nuestra disposición múltiples manuales y documentación. Debido al gran material existente este capítulo sólo será una pequeña introducción a sus posibilidades en sucesivas entregas veremos nuevas funciones y nuevos gráficos más aplicados a ejemplos reales.
 
 Como inicio de nuestro ejemplo vamos a crear dos veectores de datos:
@@ -29,7 +29,7 @@ Como inicio de nuestro ejemplo vamos a crear dos veectores de datos:
 > plot(ejey,ejex)
 ```
 
-Generamos un gráfico muy básico de dos ejes. Con ello podremos pintar funciones por ejemplo f(x)=x**3:
+Generamos un gráfico muy básico de dos ejes. Con ello podremos pintar funciones por ejemplo f(x)=x\*\*3:
 
 ```r
 > ejex<-seq(-10,10,lenght=20)
@@ -67,4 +67,4 @@ Las funciones gráficas más empleadas en R serán:
 > boxplot(datos)
 ```
 
-A estos gráficos podemos añadirles títulos, pies, modificarles los colores,… Para descubir todas las posibilidades de cada función recordad que tenéis la ayuda  _?-función-_ Y por supuesto, si tenéis cualquier duda o sugerencia [rvaquerizo@analisisydecision.es](mailto:rvaquerizo@analisisydecision.es)
+A estos gráficos podemos añadirles títulos, pies, modificarles los colores,… Para descubir todas las posibilidades de cada función recordad que tenéis la ayuda _?-función-_ Y por supuesto, si tenéis cualquier duda o sugerencia [rvaquerizo@analisisydecision.es](mailto:rvaquerizo@analisisydecision.es)

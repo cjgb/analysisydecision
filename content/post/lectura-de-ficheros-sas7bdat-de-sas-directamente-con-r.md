@@ -1,22 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- r
-- sas
-- trucos
+  - r
+  - sas
+  - trucos
 date: '2011-04-19'
 lastmod: '2025-07-13'
 related:
-- truco-leer-sas7bdat-sin-sas.md
-- crear-archivo-csv-desde-python.md
-- paquete-sas7bdat-de-r-me-pongo-con-ello.md
-- comunicar-sas-con-r-creando-ejecutables-windows.md
-- truco-sas-como-leer-pc-axis-con-sas.md
+  - truco-leer-sas7bdat-sin-sas.md
+  - crear-archivo-csv-desde-python.md
+  - paquete-sas7bdat-de-r-me-pongo-con-ello.md
+  - comunicar-sas-con-r-creando-ejecutables-windows.md
+  - truco-sas-como-leer-pc-axis-con-sas.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Lectura de ficheros SAS7BDAT de SAS directamente con R
 url: /blog/lectura-de-ficheros-sas7bdat-de-sas-directamente-con-r/
 ---
+
 Un post de **BIOSTATMATT** que nos conduce a un código en R que nos permite leer datasets de SAS directamente con R sin necesidad de tener SAS. Un problema recurrente que abordaré con más detenimiento otro día [ahora me voy a pescar]. Aquí tenéis el enlace:
 
 <http://biostatmatt.com/archives/1216>

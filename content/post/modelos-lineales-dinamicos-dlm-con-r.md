@@ -1,26 +1,27 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- modelos
-- monográficos
-- r
+  - formación
+  - modelos
+  - monográficos
+  - r
 date: '2014-09-07'
 lastmod: '2025-07-13'
 related:
-- manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-15-modelos-glm-regresion-logistica-y-regresion-de-poisson.md
-- manual-curso-introduccion-de-r-capitulo-10-funciones-graficas-en-regresion-lineal.md
-- interpretacion-de-los-parametros-de-un-modelo-glm.md
-- modelos-gam-dejando-satisfechos-a-los-equipos-de-negocio.md
+  - manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-15-modelos-glm-regresion-logistica-y-regresion-de-poisson.md
+  - manual-curso-introduccion-de-r-capitulo-10-funciones-graficas-en-regresion-lineal.md
+  - interpretacion-de-los-parametros-de-un-modelo-glm.md
+  - modelos-gam-dejando-satisfechos-a-los-equipos-de-negocio.md
 tags:
-- dlm
-- dlmfilter
-- dlmmodpoly
-- dlmsmooth
+  - dlm
+  - dlmfilter
+  - dlmmodpoly
+  - dlmsmooth
 title: Modelos lineales dinámicos (DLM) con R
 url: /blog/modelos-lineales-dinamicos-dlm-con-r/
 ---
+
 [![](/images/2014/08/DLM_1.png)](/images/2014/08/DLM_1.png)
 
 Otro de los modelos que está tocando estudiar este verano son los Dinamic Linear Models (DLM). Para estudiar este tipo de modelos[ es imprescindible leer este documento](http://www.jstatsoft.org/v36/i12/paper "Este enlace externo se abrirá en una nueva ventana"). Estos métodos parten de una idea: «la vida no es fácil cuando tienes que hacer estimaciones sobre una serie temporal». Una serie temporal es un vector de datos aleatorios, una sucesión de observaciones de la forma Yt con t=1,2,.. Si sobre esta sucesión tenemos una característica que puede influir estamos ante un modelo de espacio estado. Estos modelos tienen una cadena de Markov (<http://es.wikipedia.org/wiki/Cadena_de_M%C3%A1rkov>) porque esa característica que afecta a la serie es una cadena de Markov y eso nos permite que los Yt sean independientes ya que dependen sólo de esa característica. El más importante modelo de espacio estado es el **modelo lineal dinámico**.
@@ -30,16 +31,17 @@ Los modelos lineales dinámicos vienen representados por una ecuación de observ
 Ahora vamos a dar comienzo con el trabajo en R a ver si podemos analizar el número de visitas que recibe esta web desde abril de 2008 hasta julio de 2014.
 
 # Objeto con las visitas
+
 visitas=c(213,376, 398, 481,416, 505, 771, 883,686, 712 ,
 883,993,1234 , 1528 ,1965 ,1676 ,1037 , 1487 ,1871 ,2725 ,2455 ,2856 ,
 2868,2809 ,3326 ,4284 ,4599 ,3863 ,3778 ,5090 ,5510 ,5911 ,4460 ,5495 ,5290 ,
 6407,5619 ,6494 ,5854 ,4940 , 4735 ,6049 ,6839 ,8695 ,7112 ,9207 ,8991 , 10909 , 9647 , 10943 , 9819 , 8982 ,
 8597,10004,12550,12025, 9108,10664, 9563,9751 ,11402 ,11875,10395,
 10078,8706,10893, 13197,12868 ,9857 ,12119 , 13421 ,14411, 12820 , 14443 , 12713 ,
-13869)
+13869\)
 
 #Creacion de la serie temporal desde abril de 2008 a julio de 2014
-serie <\- ts(visitas, start=c(2008, 4), end=c(2014, 7), frequency=12)
+serie \<- ts(visitas, start=c(2008, 4), end=c(2014, 7), frequency=12)
 plot(serie,main=»Visitas a analisisydecision.es»)
 
 #install.packages(«dlm»)
@@ -60,7 +62,7 @@ $ GG : num [1, 1] 1
 $ W : num [1, 1] 100
 JFF: NULL JV : NULL
 JGG: NULL JW : NULL
-– attr(*, «class»)= chr «dlm»
+– attr(\*, «class»)= chr «dlm»
 
 Nosotros hemos especificado el orden del polinomio. La varianza de las observaciones dV y la varianza de los estados dW. Los datos que hemos asignado a estas varianzas han sido seleccionados de forma azarosa para no alargar la entrada del blog. Con estas especificaciones podemos realizar un filtrado mediante el filtro de Kalman sobre la serie y representar gráficamente los resultados obtenidos:
 

@@ -1,22 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- excel
-- formación
-- trucos
+  - excel
+  - formación
+  - trucos
 date: '2013-11-05'
 lastmod: '2025-07-13'
 related:
-- truco-excel-repetir-un-campo-a-partir-de-otro-que-define-el-numero-de-repeticiones.md
-- trucos-excel-multiples-campos-calculados-en-una-tabla-dinamica.md
-- macros-sas-agrupando-variables-categoricas.md
-- trucos-sas-operaciones-con-tablas-de-dimensiones-con-sas.md
-- truco-excel-dividir-una-variable-cuantitativa-en-tramos.md
+  - truco-excel-repetir-un-campo-a-partir-de-otro-que-define-el-numero-de-repeticiones.md
+  - trucos-excel-multiples-campos-calculados-en-una-tabla-dinamica.md
+  - macros-sas-agrupando-variables-categoricas.md
+  - trucos-sas-operaciones-con-tablas-de-dimensiones-con-sas.md
+  - truco-excel-dividir-una-variable-cuantitativa-en-tramos.md
 tags:
-- tabla dinamica
+  - tabla dinamica
 title: Truco Excel. Agrupar valores en un campo de una tabla dinámica
 url: /blog/truco-excel-agrupar-valores-en-un-campo-de-una-tabla-dinamica/
 ---
+
 Si necesitamos agrupar un campo de una tabla dinámica tenemos dos opciones. Por un lado agrupar manualmente o bien crear intervalos de determinado tamaño. Para agrupar datos manualmente seleccionamos los elementos que deseamos agrupar en la tabla dinámica y pulsamos botón derecho agrupar:
 
 ![](/images/2013/11/agrupar_excel_tabla_dinamica_1.png)

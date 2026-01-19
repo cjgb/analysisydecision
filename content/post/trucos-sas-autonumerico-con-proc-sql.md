@@ -1,22 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- sas
-- trucos
+  - formación
+  - sas
+  - trucos
 date: '2009-11-06'
 lastmod: '2025-07-13'
 related:
-- truco-sas-duplicar-registros-si-cumplen-una-condicion.md
-- trucos-sas-muestras-aleatorias-con-y-sin-reemplazamiento.md
-- trucos-sas-identificar-registros-duplicados.md
-- truco-sas-observaciones-de-un-dataset-en-una-macro-variable.md
-- macro-facil-de-sas-longitud-de-la-parte-decimal-de-un-numero.md
+  - truco-sas-duplicar-registros-si-cumplen-una-condicion.md
+  - trucos-sas-muestras-aleatorias-con-y-sin-reemplazamiento.md
+  - trucos-sas-identificar-registros-duplicados.md
+  - truco-sas-observaciones-de-un-dataset-en-una-macro-variable.md
+  - macro-facil-de-sas-longitud-de-la-parte-decimal-de-un-numero.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Trucos sas. Autonumérico con PROC SQL
 url: /blog/trucos-sas-autonumerico-con-proc-sql/
 ---
+
 Rápido. Me ha llegado una consulta que me preguntaba como crear un campo autonumérico con PROC SQL. Tenemos que emplear la funciòn _monotonic():_
 
 ```r

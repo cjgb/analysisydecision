@@ -1,21 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- sin categoría
+  - sas
 date: '2010-01-14'
 lastmod: '2025-07-13'
 related:
-- sentencia-del-tribunal-de-justicia-de-la-ue-sobre-el-caso-wps-y-sas.md
-- en-breve-revision-de-wps-clonico-de-sas.md
-- comparativa-de-precio-wps-vs-sas.md
-- sas-vs-wps-diferencias-de-precio.md
-- wps-en-el-mercado-espanol.md
+  - sentencia-del-tribunal-de-justicia-de-la-ue-sobre-el-caso-wps-y-sas.md
+  - en-breve-revision-de-wps-clonico-de-sas.md
+  - comparativa-de-precio-wps-vs-sas.md
+  - sas-vs-wps-diferencias-de-precio.md
+  - wps-en-el-mercado-espanol.md
 tags:
-- sas
-- wps
+  - sas
+  - wps
 title: Noticia interesante sobre WPS
 url: /blog/noticia-interesante-sobre-wps/
 ---
+
 [Tocada de narices a SAS por parte de WPS:](http://www.theinquirer.net/inquirer/news/1585633/british-david-pokes-us-goliath-eye)
 
 A BLIGHTY BASED software outfit that is being sued by a big US company in a bid to shut it down has just scored a win with IBM.**World Programming’s WPS software has been approved as ready for IBM’s Linux on its system z mainframes.**

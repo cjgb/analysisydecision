@@ -1,21 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- big data
-- formación
+  - big data
+  - formación
 date: '2017-01-20'
 lastmod: '2025-07-13'
 related:
-- cuando-tenemos-big-data.md
-- nos-hemos-terminado-de-reinventar-acabamos-con-el-data-mining-y-empezamos-con-el-big-data.md
-- abierto-el-plazo-para-la-matricula-en-el-master-en-big-data-y-data-science-de-la-uned.md
-- data-mining-vs-bigdata-de-momento-con-google-trends.md
-- cuando-paralelizar-procesos-con-r-era-otra-cosa.md
+  - cuando-tenemos-big-data.md
+  - nos-hemos-terminado-de-reinventar-acabamos-con-el-data-mining-y-empezamos-con-el-big-data.md
+  - abierto-el-plazo-para-la-matricula-en-el-master-en-big-data-y-data-science-de-la-uned.md
+  - data-mining-vs-bigdata-de-momento-con-google-trends.md
+  - cuando-paralelizar-procesos-con-r-era-otra-cosa.md
 tags:
-- big data bubble
+  - big data bubble
 title: Quiero aprender Big Data
 url: /blog/quiero-aprender-big-data/
 ---
+
 Hoy me han dicho esto. Y mi respuesta ha sido un correo electrónico con estas dos imágenes. El Big Data Landscape 2013:
 
 ![](https://3.bp.blogspot.com/-xwq0p0FgSK4/UQp8Aet5InI/AAAAAAAAATo/vAKlJGRzHb8/s1600/The+Big+Data+Landscape.png)

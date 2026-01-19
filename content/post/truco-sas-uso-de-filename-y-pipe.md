@@ -1,21 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- sas
-- trucos
+  - sas
+  - trucos
 date: '2008-07-17'
 lastmod: '2025-07-13'
 related:
-- trucos-sas-mas-usos-de-infile-y-pipe-directorios-en-tablas-sas.md
-- truco-sas-dataset-con-los-ficheros-y-carpetas-de-un-directorio.md
-- trucos-sas-ejecutar-un-codigo-si-existe-una-tabla-o-un-fichero.md
-- comunicar-sas-con-r-creando-ejecutables-windows.md
-- trucos-sas-macrovariable-a-dataset.md
+  - trucos-sas-mas-usos-de-infile-y-pipe-directorios-en-tablas-sas.md
+  - truco-sas-dataset-con-los-ficheros-y-carpetas-de-un-directorio.md
+  - trucos-sas-ejecutar-un-codigo-si-existe-una-tabla-o-un-fichero.md
+  - comunicar-sas-con-r-creando-ejecutables-windows.md
+  - trucos-sas-macrovariable-a-dataset.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Truco SAS. Uso de filename y pipe
 url: /blog/truco-sas-uso-de-filename-y-pipe/
 ---
+
 Hoy presento una de las utilidades de FILENAME para interactuar con los _file systems_ en los que creamos tablas SAS. Consiste en emplear FILENAME con la opción PIPE. Lo que hacemos es asignar una referencia a una ejecución del sistema operativo. Por ejemplo en Windows:
 
 ```r
@@ -28,8 +29,7 @@ filename dir pipe "dir c:\";data uno;
 run;
 ```
 
-
-Creamos una tabla SAS temporal que contiene el resultado de la ejecución en MS DOS de _dir c:\_ muy simple. Pero donde de verdad puede sernos de utilidad el uso de PIPE es en ejecuciones con UNIX. A continuación planteo algunos ejemplos:
+Creamos una tabla SAS temporal que contiene el resultado de la ejecución en MS DOS de \_dir c:\_ muy simple. Pero donde de verdad puede sernos de utilidad el uso de PIPE es en ejecuciones con UNIX. A continuación planteo algunos ejemplos:
 
 Informe sobre estado de un filesystem del servidor:
 
@@ -62,7 +62,6 @@ proc print data=uno;
 
 proc delete data=uno; run;
 ```
-
 
 Tenemos una salida que nos premite conocer el espacio libre, el espacio ocupado y el %. Por otro lado si deseamos listar aquellos ficheros que tienen un tamaño mayor a 1GB podemos hacer los comandos UNIX _ls -ltr|sort +4nr_ :
 
@@ -97,7 +96,6 @@ data dos;
 
 run;
 ```
-
 
 El uso del FILENAME y el PIPE puede ser tremendamente práctico para realizar pequeños informes sobre la situación de nuestro servidor y en función de estos informes podremos lanzar nuestros procesos. También podemos eliminar con SAS ficheros antiguos, identificar que usuario llena un filesystem,…
 

@@ -1,29 +1,30 @@
 ---
 author: rvaquerizo
 categories:
-- consultoría
-- formación
+  - consultoría
+  - formación
 date: '2010-05-29'
 lastmod: '2025-07-13'
 related:
-- curso-de-lenguaje-sas-con-wps-lectura-de-ficheros-de-texto.md
-- curso-de-lenguaje-sas-con-wps-el-paso-data.md
-- curso-de-lenguaje-sas-con-wps-ejecuciones.md
-- curso-de-lenguaje-sas-con-wps-subconjuntos-de-variables-con-drop-y-keep.md
-- macros-sas-dataset-a-data-frame-r.md
+  - curso-de-lenguaje-sas-con-wps-lectura-de-ficheros-de-texto.md
+  - curso-de-lenguaje-sas-con-wps-el-paso-data.md
+  - curso-de-lenguaje-sas-con-wps-ejecuciones.md
+  - curso-de-lenguaje-sas-con-wps-subconjuntos-de-variables-con-drop-y-keep.md
+  - macros-sas-dataset-a-data-frame-r.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Curso de lenguaje SAS con WPS. Que hace el paso DATA
 url: /blog/curso-de-lenguaje-sas-con-wps-que-hace-el-paso-data/
 ---
+
 El elemento principal del lenguaje SAS es el paso DATA. Este elemento crea, modifica y transforma conjunto de datos SAS (datasets). El paso DATA se compone de 2 fases, la fase de compilación y la fase de ejecución. En la fase de compilación DATA crea una estructura de memoria, conocida como program data vector (PDV), con la estructura que **SAS considera más adecuada** para el conjunto de datos, paralelamente crea toda una descripción de la información del dataset. Una vez creada la estructura de la tabla SAS se pasa a la fase de ejecución en la que SAS itera con cada registro haciendo “output” en el dataset cuando SAS llega a la sentencia RUN. La iteración se lleva a cabo hasta que SAS detecta el final del archivo.
 
 DATA trabaja con conjuntos de datos que fundamentalmente serán:
 
-  * Entrada manual de datos (INFILE + INPUT + DATALINES)
-  * Ficheros de texto (INFILE + INPUT)
-  * Otros conjuntos de datos SAS/WPS (SET MERGE UPDATE)
-  * DBMS (Esto mejor no lo haremos con data…)
+- Entrada manual de datos (INFILE + INPUT + DATALINES)
+- Ficheros de texto (INFILE + INPUT)
+- Otros conjuntos de datos SAS/WPS (SET MERGE UPDATE)
+- DBMS (Esto mejor no lo haremos con data…)
 
 La entrada manual de datos en SAS no es muy cómoda pero sirve para conocer como funciona el PDV sin embargo eso no es mu útil en nuestro trabajo diario, no tenemos tiempo de pararnos en aspectos teóricos. Por esto es preferible poner un ejemplo «que funciona siempre» de este modo le guardáis y cuando tengáis que meter datos manualmente le recuperáis:
 
@@ -51,14 +52,14 @@ Recomiendo recordar esta estructura. Comenzamos con DATA y el nombre del conjunt
 
 Para crear datasets desde ficheros de texto emplearemos una metodología distinta en WPS que la utilizada en SAS. WPS no tiene asistentes por ello lo mejor que podemos hacer es importar el fichero paso a paso para comprobar si lo hacemos correctamente. Para ilustrar el ejemplo [podéis bajaros este archivo](/images/2008/03/grades.TXT) a vuestro equipo. Este fichero tiene las siguientes variables:
 
-  * ID del estudiante
-  * genero
-  * clase
-  * puntuación de test
-  * puntuación del examen 1
-  * puntuación del examen 2
-  * puntuación de laboratorio
-  * puntuación del examen final
+- ID del estudiante
+- genero
+- clase
+- puntuación de test
+- puntuación del examen 1
+- puntuación del examen 2
+- puntuación de laboratorio
+- puntuación del examen final
 
 Desde WPS podemos abrirlo para hacerle una vista y así poder dar una estructura correcta al conjunto de datos SAS. Vemos que tiene 28 líneas y está separado por espacios. Luego el paso data sería así:
 

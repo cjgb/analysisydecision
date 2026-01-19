@@ -1,24 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- formación
+  - formación
 date: '2008-02-27'
 lastmod: '2025-07-13'
 related:
-- manual-curso-introduccion-de-r-capitulo-5-lectura-avanzada-de-datos.md
-- leer-fichero-de-texto-de-ancho-fijo-con-python-pandas.md
-- manual-curso-introduccion-de-r-capitulo-2-interfaz-y-primeras-sentencias.md
-- curso-de-lenguaje-sas-con-wps-lectura-de-ficheros-de-texto.md
-- curso-de-lenguaje-sas-con-wps-que-hace-el-paso-data.md
+  - manual-curso-introduccion-de-r-capitulo-5-lectura-avanzada-de-datos.md
+  - leer-fichero-de-texto-de-ancho-fijo-con-python-pandas.md
+  - manual-curso-introduccion-de-r-capitulo-2-interfaz-y-primeras-sentencias.md
+  - curso-de-lenguaje-sas-con-wps-lectura-de-ficheros-de-texto.md
+  - curso-de-lenguaje-sas-con-wps-que-hace-el-paso-data.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: 'Manual. Curso introducción de R. Capítulo 3: Lectura básica de datos'
 url: /blog/manual-curso-introduccion-de-r-capitulo-3-lectura-de-datos/
 ---
+
 En el anterior capítulo creábamos vectores y matrices con las funciones _c_ y _matrix_ pero en R disponemos de otros medios para leer o introducir datos. Empezamos con la entrada manual de datos:
 
-
 `> # Entrada manual de datos`
+
 ```r
 > ej.3.1 <- scan()
 
@@ -53,7 +54,7 @@ Read 8 items
 >
 ```
 
-Como vemos es necesario separar los directorios con \\\ en vez de \\. El proceso ha leído 8 registros de un fichero plano _fichero_texto1.txt_ que tiene la siguiente estructura:
+Como vemos es necesario separar los directorios con \\\\ en vez de \\. El proceso ha leído 8 registros de un fichero plano _fichero_texto1.txt_ que tiene la siguiente estructura:
 
 ```r
 123 456 765 345
@@ -105,7 +106,7 @@ In read.table("c:\\windows\\temp\\fichero_texto1.txt", header = TRUE) :
 >
 ```
 
-En este caso disponíamos de un fichero de texto con cabeceras, por ello ha sido necesario modificar a verdadero (TRUE) el parámetro _header_ de la función _read.table_. Para saber que parámetros tienen las distintas funciones de R y obtener ayuda sobre ellas en la línea de comandos debemos introducir _? <función>_:
+En este caso disponíamos de un fichero de texto con cabeceras, por ello ha sido necesario modificar a verdadero (TRUE) el parámetro _header_ de la función _read.table_. Para saber que parámetros tienen las distintas funciones de R y obtener ayuda sobre ellas en la línea de comandos debemos introducir _? \<función>_:
 
 ```r
 > ?read.table

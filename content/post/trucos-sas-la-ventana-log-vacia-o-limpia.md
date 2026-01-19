@@ -1,23 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- sas
-- trucos
+  - formación
+  - sas
+  - trucos
 date: '2011-06-28'
 lastmod: '2025-07-13'
 related:
-- trucos-sas-borrando-blancos-innecesarios-con-compbl.md
-- trucos-sas-eliminacion-de-espacios-en-blanco.md
-- curso-de-lenguaje-sas-con-wps-ejecuciones.md
-- truco-sas-elminar-retornos-de-carro-o-saltos-de-linea-engorrosos.md
-- truco-sas-duplicar-registros-si-cumplen-una-condicion.md
+  - trucos-sas-borrando-blancos-innecesarios-con-compbl.md
+  - trucos-sas-eliminacion-de-espacios-en-blanco.md
+  - curso-de-lenguaje-sas-con-wps-ejecuciones.md
+  - truco-sas-elminar-retornos-de-carro-o-saltos-de-linea-engorrosos.md
+  - truco-sas-duplicar-registros-si-cumplen-una-condicion.md
 tags:
-- log
-- proc printto
+  - log
+  - proc printto
 title: Trucos SAS. La ventana LOG vacía o limpia
 url: /blog/trucos-sas-la-ventana-log-vacia-o-limpia/
 ---
+
 Duda que me trasmitieron hace tiempo. Necesito que no se genere salida en el _log_ porque se llena y mi proceso da problemas. Con el **PROC PRINTTO** podemos hacer que nuestros procesos no generen salida en la ventana _log_. Para ello sólo tenemos que utilizar el siguiente código:
 
 `proc printto log='null'; quit;`

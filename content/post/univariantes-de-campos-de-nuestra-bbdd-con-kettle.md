@@ -1,23 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- business intelligence
-- consultoría
-- formación
-- monográficos
+  - business intelligence
+  - consultoría
+  - formación
+  - monográficos
 date: '2011-09-12'
 lastmod: '2025-07-13'
 related:
-- montemos-un-sistema-de-informacion-en-nuestro-equipo-ii.md
-- montemos-un-sistema-de-informacion-en-nuestro-equipo-iii.md
-- las-cuentas-claras.md
-- montemos-un-sistema-de-informacion-en-nuestro-equipo-i.md
-- trucos-sas-trasponer-con-sql-para-torpes.md
+  - montemos-un-sistema-de-informacion-en-nuestro-equipo-ii.md
+  - montemos-un-sistema-de-informacion-en-nuestro-equipo-iii.md
+  - las-cuentas-claras.md
+  - montemos-un-sistema-de-informacion-en-nuestro-equipo-i.md
+  - trucos-sas-trasponer-con-sql-para-torpes.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Univariantes de campos de nuestra BBDD con kettle
 url: /blog/univariantes-de-campos-de-nuestra-bbdd-con-kettle/
 ---
+
 El kettle no sólo puede servirnos para subir y bajar tablas a nuestra BBDD. También puede ayudarnos a describir las tablas de nuestras BBDD de una forma muy sencilla. El paso _Univariate Statistics_ será nuestro aliado para esta sencilla tarea.
 
 ![transfomacion_kettle.png](/images/2011/09/transfomacion_kettle.png)

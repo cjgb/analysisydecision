@@ -1,33 +1,34 @@
 ---
 author: rvaquerizo
 categories:
-- business intelligence
-- formación
-- sas
+  - business intelligence
+  - formación
+  - sas
 date: '2009-06-12'
 lastmod: '2025-07-13'
 related:
-- curso-de-lenguaje-sas-con-wps-ejecuciones.md
-- trucos-sas-porque-hay-que-usar-objetos-hash.md
-- trucos-sas-trasponer-con-sql-para-torpes.md
-- proc-sql-merge-set.md
-- curso-de-lenguaje-sas-con-wps-librerias-en-wps.md
+  - curso-de-lenguaje-sas-con-wps-ejecuciones.md
+  - trucos-sas-porque-hay-que-usar-objetos-hash.md
+  - trucos-sas-trasponer-con-sql-para-torpes.md
+  - proc-sql-merge-set.md
+  - curso-de-lenguaje-sas-con-wps-librerias-en-wps.md
 tags:
-- oracle y sas
-- pass thru
+  - oracle y sas
+  - pass thru
 title: Oracle y SAS vía SQL pass trough
 url: /blog/oracle-y-sas-via-sql-pass-trough/
 ---
+
 Para trabajar directamente con el motor de BBDD SAS cuenta con «Pass trougth». SAS crea una conexión al gestor de BBDD y desde ese momento podemos ejecutar sentencias de SQL directamente. Para seguir con la línea de trabajo habitual emplearemos ejemplos para conocer su funcionamiento. Los ejemplos que vamos a emplear serán sobre una BBDD Oracle ya que es muy común trabajar en entornos SAS con acceso a algún datamart de Oracle. Evidentemente la utilidad pass trough o pas thru convive perfectamente con
 
 las librerías dinámicas de SAS a Oracle. Los ejemplos que vamos a ver serán:
 
-  * Bajada de tabla Oracle a SAS vía pass thru. Usuario de consulta.
-  * Subida de tabla SAS a un esquema Oracle. Usuario propierario asigna permisos.
-  * Oracle como motor de consulta desde SAS. Usuario propietario crea tabla.
-  * Borrar tabla Oracle. Usuario propietario hace DROP.
+- Bajada de tabla Oracle a SAS vía pass thru. Usuario de consulta.
+- Subida de tabla SAS a un esquema Oracle. Usuario propierario asigna permisos.
+- Oracle como motor de consulta desde SAS. Usuario propietario crea tabla.
+- Borrar tabla Oracle. Usuario propietario hace DROP.
 
-Estos 4 ejemplos pueden ayudarnos a conocer mejor como funciona la utilidad pass thru y sobre todo estoy seguro que pueden ser de utilidad para muchos profesionales que tengan que migrar procesos en PL/SQL a SAS. Lo primero que vamos a hacer es definir un usuario de consulta, un usuario propietario y un usuario de carga que tendrán sus respectivos roles en la BBDD Oracle (*con_role, *car_role y *own_role) . Emplearemos un lenguaje SAS muy genérico:
+Estos 4 ejemplos pueden ayudarnos a conocer mejor como funciona la utilidad pass thru y sobre todo estoy seguro que pueden ser de utilidad para muchos profesionales que tengan que migrar procesos en PL/SQL a SAS. Lo primero que vamos a hacer es definir un usuario de consulta, un usuario propietario y un usuario de carga que tendrán sus respectivos roles en la BBDD Oracle (\*con_role, \*car_role y \*own_role) . Emplearemos un lenguaje SAS muy genérico:
 
 ```r
 *DECLARAMOS LOS USUARIOS PROPIETARIOS;

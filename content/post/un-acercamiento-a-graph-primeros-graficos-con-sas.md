@@ -1,23 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- sas
+  - formación
+  - sas
 date: '2010-03-30'
 lastmod: '2025-07-13'
 related:
-- un-acercamiento-a-graph-proc-gchart.md
-- un-acercamiento-a-graph-sentencias-graficas.md
-- un-acercamiento-a-graph-ods-graphs-proc-sgplot.md
-- un-acercamiento-a-graph-proc-ganno.md
-- graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
+  - un-acercamiento-a-graph-proc-gchart.md
+  - un-acercamiento-a-graph-sentencias-graficas.md
+  - un-acercamiento-a-graph-ods-graphs-proc-sgplot.md
+  - un-acercamiento-a-graph-proc-ganno.md
+  - graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
 tags:
-- gráficos
-- sas
-- graph
+  - gráficos
+  - sas
+  - graph
 title: Un acercamiento a GRAPH. Primeros gráficos con SAS
 url: /blog/un-acercamiento-a-graph-primeros-graficos-con-sas/
 ---
+
 SAS es muy caro y tiene muchas limitaciones. Aunque puedas enchufarle gigas y gigas de datos tiene importantes lagunas y una de ellas es su motor gráfico. Por ello quiero dedicarle una serie de monográficos de acercamiento e intentar analizar las (pocas) posibilidades graficas de SAS. Los monográficos van a ser un poco inconexos y orientados a personas con algo de nivel de programación. Nos centraremos en el modulo GRAPH. Antes de empezar quiero recomendaros una web donde podréis ver mejor todas las posibilidades que nos ofrece SAS a la hora de graficar: <http://robslink.com/SAS/Home.htm> Esto si que es contenido y no lo que aporta esta web. Para comenzar esta serie vamos a trabajar con los procedimientos GCHART, GPLOT y GREPLAY. Como es habitual el primer paso es generar un _dataset_ con datos mas o menos aleatorios:
 
 ```r
@@ -68,7 +69,7 @@ plot2 coseno*i/overlay;
 run;quit;
 ```
 
-En este ejemplo comenzamos a trabajar con las opciones gráficas. SYMBOL nos permite especificar el formato de los puntos de un gráfico de dispersion, con i=JOIN indicamos que deseamos unir esos puntos con una línea. GPLOT requiere la sentencia PLOT y*x, con OVERLAY le hacemos que el grafico será superpuesto, para ello el _eje x será el mismo_ en los dos gráficos, empleamos NAME para asignar un nombre al gráfico generado. Ahora estos 4 gráficos que hemos creado tenemos que juntarlos en uno solo. El PROC GREPLAY nos permite realizar esta tarea:
+En este ejemplo comenzamos a trabajar con las opciones gráficas. SYMBOL nos permite especificar el formato de los puntos de un gráfico de dispersion, con i=JOIN indicamos que deseamos unir esos puntos con una línea. GPLOT requiere la sentencia PLOT y\*x, con OVERLAY le hacemos que el grafico será superpuesto, para ello el _eje x será el mismo_ en los dos gráficos, empleamos NAME para asignar un nombre al gráfico generado. Ahora estos 4 gráficos que hemos creado tenemos que juntarlos en uno solo. El PROC GREPLAY nos permite realizar esta tarea:
 
 ```r
 proc greplay igout=work.gseg tc=sashelp.templt template=L2r2 NOFS ;

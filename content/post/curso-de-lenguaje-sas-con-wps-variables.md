@@ -1,52 +1,53 @@
 ---
 author: rvaquerizo
 categories:
-- consultoría
-- formación
+  - consultoría
+  - formación
 date: '2010-06-14'
 lastmod: '2025-07-13'
 related:
-- trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados.md
-- curso-de-lenguaje-sas-con-wps-introduccion-a-los-formatos-de-variables.md
-- trabajo-con-fechas-sas-introduccion.md
-- curso-de-lenguaje-sas-con-wps-funciones-fecha.md
-- trabajo-con-fechas-sas-funciones-fecha.md
+  - trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados.md
+  - curso-de-lenguaje-sas-con-wps-introduccion-a-los-formatos-de-variables.md
+  - trabajo-con-fechas-sas-introduccion.md
+  - curso-de-lenguaje-sas-con-wps-funciones-fecha.md
+  - trabajo-con-fechas-sas-funciones-fecha.md
 tags:
-- variables
+  - variables
 title: Curso de lenguaje SAS con WPS. Variables
 url: /blog/curso-de-lenguaje-sas-con-wps-variables/
 ---
+
 El elemento fundamental de los conjuntos de datos SAS son las variables. Ya las hemos referenciado en capítulos anteriores. Éstas pueden ser numéricas o alfanuméricas. Las variables se pueden crear, eliminar o se pueden recodificar. Todo esto siempre lo haremos mediante pasos DATA. Disponemos de un amplio número de funciones para que todas las variables se ajusten a nuestras necesidades.
 Las variables tienen los siguientes **atributos** :
 
-  * Nombre: no pueden exceder de 32 caracteres o empezar por un número ni tener espacios en blanco
-  * Tipo: Numérica o alfanumérica ($)
-  * Longitud: máximo 8 bytes para numérica y 1 – 32,000 para alfnumérica
-  * Formato salida de la variable: Por defecto para num BEST12. para numéricas y $w. para alfanumérica
-  * Formato de entrada: similar al formato de salida
-  * Etiqueta
+- Nombre: no pueden exceder de 32 caracteres o empezar por un número ni tener espacios en blanco
+- Tipo: Numérica o alfanumérica ($)
+- Longitud: máximo 8 bytes para numérica y 1 – 32,000 para alfnumérica
+- Formato salida de la variable: Por defecto para num BEST12. para numéricas y $w. para alfanumérica
+- Formato de entrada: similar al formato de salida
+- Etiqueta
 
 Un tipo muy especial de variable es el valor perdido o missing. Por defecto la representación del missing para una variable numérica es . y ‘ ‘ para una variable alfanumérica. Para todas las variables podemos emplear operadores de comparación (por ejemplo en sentencias IF) y/o operadores lógicos. Los operadores de comparación son:
 
-  * = EQ
-  * ^= NE
-  * ¬= NE
-  * ~= NE
-  * > GT
-  * < LT
-  * >= GE
-  * <= LE
-  * IN
+- = EQ
+- ^= NE
+- ¬= NE
+- ~= NE
+- > GT
+- < LT
+- > = GE
+- \<= LE
+- IN
 
 Los operadores lógicos son:
 
-  * & AND
-  * | OR
-  * ! OR
-  * ¦ OR
-  * ¬ NOT
-  * ˆ NOT
-  * ~ NOT
+- & AND
+- | OR
+- ! OR
+- ¦ OR
+- ¬ NOT
+- ˆ NOT
+- ~ NOT
 
 **Variables numéricas:**
 
@@ -156,9 +157,9 @@ AAAAC 01/01/1980
 
 El formato es uno de los atributos más importantes de las variables y en función de él podremos ver correctamente los resultados. Los formatos fecha/hora más empleados son:
 
-  * DATE
-  * DATETIME
-  * DDMMYY
+- DATE
+- DATETIME
+- DDMMYY
 
 Para trabajar con constantes tenemos que introducir el valor numérico o escribir “DIA(MES EN INGLES)AÑO”d, por ejemplo:
 

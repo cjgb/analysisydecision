@@ -1,31 +1,31 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- libro estadística
-- machine learning
-- modelos
-- monográficos
-- r
+  - formación
+  - libro estadística
+  - machine learning
+  - modelos
+  - monográficos
+  - r
 date: '2022-12-08'
 lastmod: '2025-07-13'
 related:
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-6-descripcion-numerica-de-variables.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-15-modelos-glm-regresion-logistica-y-regresion-de-poisson.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
-- monografico-analisis-de-factores-con-r-una-introduccion.md
-- monografico-regresion-logistica-con-r.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-6-descripcion-numerica-de-variables.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-15-modelos-glm-regresion-logistica-y-regresion-de-poisson.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
+  - monografico-analisis-de-factores-con-r-una-introduccion.md
+  - monografico-regresion-logistica-con-r.md
 tags:
-- sin etiqueta
-title: Introducción a la Estadística para Científicos de Datos. Capítulo 11. Análisis
-  bivariable
+  - sin etiqueta
+title: Introducción a la Estadística para Científicos de Datos. Capítulo 11. Análisis bivariable
 url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-11-analisis-bivariable/
 ---
+
 De nuevo se retoma el ejemplo que está sirviendo de hilo conductor para este ensayo, la campaña de marketing de venta cruzada en el sector asegurador [que está disponible en Kaggle](https://www.kaggle.com/anmolkumar/health-insurance-cross-sell-prediction). Una aseguradora española que opera en múltiples ramos quiere ofrecer seguro de automóviles a sus clientes del ramo de salud. Para ello se realizó un cuestionario a los clientes de forma que se marcó quienes de ellos estarían interesados en el producto de automóviles y quienes no. Se identificaron posibles tareas:
 
-  * Describir la cartera de clientes.
-  * **Identificar que características de nuestros clientes pueden ser eficaces a la hora de crear una campaña comercial.**
-  * Sugerir unas reglas para la elaboración de la campaña.
+- Describir la cartera de clientes.
+- **Identificar que características de nuestros clientes pueden ser eficaces a la hora de crear una campaña comercial.**
+- Sugerir unas reglas para la elaboración de la campaña.
 
 ```r
 library(tidyverse)
@@ -35,7 +35,6 @@ train <- read.csv("./data/train.csv")
 formattable(head(train,5))
 ```
 
-
 Hasta el momento se ha descrito el conjunto de datos, se han determinado que roles juegan las variables dentro de ese conjunto de datos donde se estableció que la variable más relevante es `Response` ya que juega el rol de **variable target**. Esta variable toma valores 0 – no interesa 1 – interesa el producto, es decir, se distribuye según una binomial con parámetros n = 381.000 clientes y p = 0.1223 interesados, conocer la distribución ayuda a afrontar el análisis.
 
 ```r
@@ -43,12 +42,11 @@ formattable(train %>% group_by(Response) %>%
               summarise(clientes = n(),pct_clientes=n()/nrow(train)))
 ```
 
-
 En este capítulo el científico de datos comienza a estudiar la relación entre dos variables que pueden ser cuantitativas o factores. Esta categorización da lugar a 3 tipos de relaciones entre dos variables:
 
-  * Variable numérica frente a variable numérica
-  * Variable numérica frente a factor
-  * Factor frente a factor
+- Variable numérica frente a variable numérica
+- Variable numérica frente a factor
+- Factor frente a factor
 
 ## Variable numérica frente a variable numérica
 
@@ -63,7 +61,6 @@ data.frame(altura=altura, peso=peso) %>%  ggplot(aes(x = altura, y = peso)) +
   geom_point()
 ```
 
-
 [![](/images/2022/12/wp_editor_md_9cb1d779101c9ecefe0d9ea6befb5278.jpg)](/images/2022/12/wp_editor_md_9cb1d779101c9ecefe0d9ea6befb5278.jpg)
 
 Aunque sean datos simulados es evidente, por como se ha hecho la simulación, que a medida que aumenta la altura aumenta el peso. Hay una medida estadística para describir esta situación, el coeficiente de correlación que en R se calcula mediante la función `cor`.
@@ -71,7 +68,6 @@ Aunque sean datos simulados es evidente, por como se ha hecho la simulación, qu
 ```r
 cor(peso, altura)
 ```
-
 
 Esta medida de 0.8 (aprox) indica que peso y altura se relacionan positivamente, a medida que aumenta uno aumenta el otro pero no es una medida de graduación, sólo mide la **fuerza** de esa relación. El coeficiente de correlación es un valor que toma valores entre -1 y 1 donde -1 significa total correlación negativa (aumenta una implica que disminuye la otra variable), 0 significa que no existe ningún tipo de correlación y 1 la correlación positiva (aumenta una aumenta otra variable).
 
@@ -112,7 +108,6 @@ p4 <- data.frame(x,y) %>%  ggplot(aes(x , y)) +
 grid.arrange(p1,p2,p3,p4)
 ```
 
-
 [![](/images/2022/12/wp_editor_md_fd2ebcce92641750bc4231d1edf45753.jpg)](/images/2022/12/wp_editor_md_fd2ebcce92641750bc4231d1edf45753.jpg)
 
 Se simulan 4 tipos distintos de correlación, correlación positiva, negativa (vistas con anterioridad); en el tercer caso no hay correlación, cuando ésta no existe los gráficos de dispersión generan polígonos como cuadrados, rectángulos o circunferencias ya que la disposición de los pares de puntos se debe a un comportamiento azaroso (una variable no afecta a otra). Sin embargo, se ilustra otro tipo de situación, el cuarto gráfico, donde es evidente que hay una relación entre las variables pero ésta no es lineal y por ello el coeficiente de correlación no es suficiente para identificar esta situación.
@@ -129,7 +124,6 @@ En el ejemplo de trabajo se tiene una variable target que toma valores 0 y 1, a 
 train %>% ggplot(aes(x=Age, group=as.factor(Response), fill=as.factor(Response))) + geom_histogram()
 ```
 
-
 [![](/images/2022/12/wp_editor_md_baac73cc7882219c932d64e04c75dbd1.jpg)](/images/2022/12/wp_editor_md_baac73cc7882219c932d64e04c75dbd1.jpg)
 
 Es necesario especificar que la variable es un factor, en este caso `Response` es numérica y a efectos prácticos se sigue manteniendo como numérica. Si no se especifica que es un factor se tendría la siguiente situación:
@@ -139,7 +133,6 @@ train %>% ggplot(aes(x=Age, group=Response, fill=Response)) +
   geom_histogram()
 ```
 
-
 [![](/images/2022/12/wp_editor_md_9acfcec9d61962270e0e5980bbc1055e.jpg)](/images/2022/12/wp_editor_md_9acfcec9d61962270e0e5980bbc1055e.jpg)
 
 No tiene sentido realizar una escala continua de un factor, es un problema habitual cuando se trabaja con factores en R. En cualquier caso, emplear un histograma de este tipo no sirve porque se están contando registros y si una de las categorías del factor tiene menos observaciones no se podrá comparar su comportamiento. Pero se dispone de los gráficos de densidad que permiten estudiar mediante una función continua la distribución de los valores.
@@ -147,7 +140,6 @@ No tiene sentido realizar una escala continua de un factor, es un problema habit
 ```r
 train %>% ggplot(aes(x=Age, group=as.factor(Response), fill=as.factor(Response))) + geom_density()
 ```
-
 
 [![](/images/2022/12/wp_editor_md_a942ed16a4605560ff38faecd136d288.jpg)](/images/2022/12/wp_editor_md_a942ed16a4605560ff38faecd136d288.jpg)
 
@@ -157,7 +149,6 @@ Se aprecian comportamientos distintos para la edad en la respuesta pero se sugie
 train %>% ggplot(aes(x=Age, group=as.factor(Response), fill=as.factor(Response))) +  geom_density(alpha = 0.3)
 ```
 
-
 [![](/images/2022/12/wp_editor_md_cc340456a9a69182b33ddf69e0038aeb.jpg)](/images/2022/12/wp_editor_md_cc340456a9a69182b33ddf69e0038aeb.jpg)
 
 Hay claramente dos distribuciones en función de la variable respuesta, estas distribuciones no son conocidas y tampoco es relevante porque es la distribución de la variable respuesta la que tiene importancia. La variable respuesta toma dos posibles valores y suponiendo cada cliente como independiente se tiene una distribución binomial como se ha indicado con anterioridad. Si el objetivo del ejercicio es establecer que características hacen que los clientes sean más propensos a adquirir un seguro de automóviles parece que la edad es una de esas características. A la vista del gráfico es más evidente que a mayor edad mayor interés, mayor probabilidad de adquirir un seguro de automóviles en la compañía. Cuando se tiene una variable respuesta es necesario estudiar esta variable frente a las variables que se consideren relevantes en su comportamiento, frente a todas las **variables input**. Por ejemplo, se repite el ejercicio contra `Vintage` que hace referencia a la antigüedad como cliente.
@@ -165,7 +156,6 @@ Hay claramente dos distribuciones en función de la variable respuesta, estas di
 ```r
 train %>% ggplot(aes(x=Vintage, group=as.factor(Response), fill=as.factor(Response))) + geom_density(alpha = 0.3)
 ```
-
 
 [![](/images/2022/12/wp_editor_md_e67b9187e87af57dbbe47d7235ffbfa8.jpg)](/images/2022/12/wp_editor_md_e67b9187e87af57dbbe47d7235ffbfa8.jpg)
 
@@ -175,6 +165,7 @@ En este caso la forma de la variable tanto para los que afirman estar interesado
 formattable(train %>% group_by(Response) %>%
               summarise(clientes = n(),pct_clientes=n()/nrow(train)))
 ```
+
 0
 
 [![](/images/2022/12/wp_editor_md_7c39ad4169e5ea594c980783a3e7aa06.jpg)](/images/2022/12/wp_editor_md_7c39ad4169e5ea594c980783a3e7aa06.jpg)
@@ -191,6 +182,7 @@ En el capítulo 7 los factores se estudiaban mediante gráficos de barras y en e
 formattable(train %>% group_by(Response) %>%
               summarise(clientes = n(),pct_clientes=n()/nrow(train)))
 ```
+
 1
 
 [![](/images/2022/12/wp_editor_md_77de95b2cab469f0e6374b9b4de46bf9.jpg)](/images/2022/12/wp_editor_md_77de95b2cab469f0e6374b9b4de46bf9.jpg)
@@ -201,6 +193,7 @@ Es un gráfico apilado con un problema, no se puede determinar si el target es m
 formattable(train %>% group_by(Response) %>%
               summarise(clientes = n(),pct_clientes=n()/nrow(train)))
 ```
+
 2
 
 [![](/images/2022/12/wp_editor_md_3cfa186cbd913be93b260dc0ad00bcfa.jpg)](/images/2022/12/wp_editor_md_3cfa186cbd913be93b260dc0ad00bcfa.jpg)
@@ -211,6 +204,7 @@ Al emplear % para comparar se pierde el número de observaciones pero facilita l
 formattable(train %>% group_by(Response) %>%
               summarise(clientes = n(),pct_clientes=n()/nrow(train)))
 ```
+
 3
 
 En el ejemplo de trabajo parece que los hombres encuestados muestran mayor interés por el producto de automóviles. Este mismo análisis se debe replicar para todos los factores input presentes en el conjunto de datos. Por ejemplo, la variable `Region_Code`
@@ -219,18 +213,19 @@ En el ejemplo de trabajo parece que los hombres encuestados muestran mayor inter
 formattable(train %>% group_by(Response) %>%
               summarise(clientes = n(),pct_clientes=n()/nrow(train)))
 ```
+
 4
 
 [![](/images/2022/12/wp_editor_md_d1e60a487683c9511f7fa5b31196afd7.jpg)](/images/2022/12/wp_editor_md_d1e60a487683c9511f7fa5b31196afd7.jpg)
 
 En este gráfico aparecen dos problemas que el científico de datos tiene que tener en cuenta cuando trabaje con factores.
 
-  * El factor tiene demasiados niveles
-  * El factor puede tener pocas observaciones y se están sacando conclusiones con pocos registros
+- El factor tiene demasiados niveles
+- El factor puede tener pocas observaciones y se están sacando conclusiones con pocos registros
 
 Al primer problema ya se hizo mención al inicio del ensayo, se sugiere realizar una agrupación de niveles para facilitar su interpretación. Además, es posible que se obtengan conclusiones sobre niveles del factor que puedan llevar al error debido a la escasa **prevalencia**. La prevalencia tiene diversas definiciones pero en este caso se define como el divisor en el cálculo del porcentaje dentro del nivel del factor.
 
-$$pct-interesados_{nivel-i}= \frac {interesados_{nivel-i}}{observaciones_{nivel-i}} = \frac {interesados_{nivel-i}}{prevalencia_{nivel-i}}$$
+$$pct-interesados\_{nivel-i}= \\frac {interesados\_{nivel-i}}{observaciones\_{nivel-i}} = \\frac {interesados\_{nivel-i}}{prevalencia\_{nivel-i}}$$
 
 Es relevante porque es **sentido común** no dar el mismo valor al % de la variable respuesta en una provincia donde se tiene una cartera de 80.000 clientes que en una provincia donde se tienen 80 clientes. El % de clientes interesados en un caso se calcula con un denominador de 80.000 y en otro caso con un denominador de 80 y **en los gráficos presentados hasta el momento no es posible estudiar correctamente la prevalencia**.
 
@@ -240,11 +235,12 @@ Cuando el científico de datos se encuentre situaciones de baja prevalencia o al
 formattable(train %>% group_by(Response) %>%
               summarise(clientes = n(),pct_clientes=n()/nrow(train)))
 ```
+
 5
 
 [![](/images/2022/12/wp_editor_md_a9cb47a8f73d29a2db2164b2b1188cfc.jpg)](/images/2022/12/wp_editor_md_a9cb47a8f73d29a2db2164b2b1188cfc.jpg)
 
-> Se sugiere que aquellas variables del conjunto de datos que estén analizadas o clasificadas empiecen por un prefijo o se las pueda distinguir de algún modo dentro del tablón de datos, en este caso y a lo largo de todo el trabajo, se emplea el prefijo **fr_** para indicar **f** actor **r** eclasificado. Esto facilitará la automatización de análisis y los procesos de modelización como se verá con posterioridad.
+> Se sugiere que aquellas variables del conjunto de datos que estén analizadas o clasificadas empiecen por un prefijo o se las pueda distinguir de algún modo dentro del tablón de datos, en este caso y a lo largo de todo el trabajo, se emplea el prefijo **fr\_** para indicar **f** actor **r** eclasificado. Esto facilitará la automatización de análisis y los procesos de modelización como se verá con posterioridad.
 
 Parece más alto el interés en Madrid, sin embargo, el % de interesados en Barcelona y el resto de España es similar. No es una agrupación convincente pero puede interesar a un equipo de negocio. Otro mecanismo de unión de factores puede basarse en la propia variable respuesta, que sea ese % el que agrupe la variable. A continuación se plantea una agrupación en buenos, regulares y malos, agrupación de niveles de un factor simplista basada en el % de respuesta.
 
@@ -252,6 +248,7 @@ Parece más alto el interés en Madrid, sin embargo, el % de interesados en Barc
 formattable(train %>% group_by(Response) %>%
               summarise(clientes = n(),pct_clientes=n()/nrow(train)))
 ```
+
 6
 
 La librería `formattable` además de permitir presentar de forma elegante data frames, puede añadir mayor vistosidad a las tablas como ilustra el ejemplo. Para facilitar el análisis se suma la variable `Response`, motivo por el cual no se transforma (aun) en factor, en ocasiones facilita el trabajo mantenerla como numérica. Se crea un `agregado_clientes` para determinar el % de clientes que se van agrupando. Mediante la función `lag` que permite extraer el anterior registro de un data frame se busca si la acumulación de clientes de la anterior región ya ha superado el 10% de las observaciones, de esa forma se crean grupos de provincias en función de la tasa de respuesta.
@@ -262,6 +259,7 @@ La primera agrupación de provincias será aquella que supere el 10% de las obse
 formattable(train %>% group_by(Response) %>%
               summarise(clientes = n(),pct_clientes=n()/nrow(train)))
 ```
+
 7
 
 Se vuelve a recalcular el agregado de clientes eliminando las provincias ya clasificadas y el siguiente corte se establece cuando se supere otro 10% de observaciones.
@@ -270,6 +268,7 @@ Se vuelve a recalcular el agregado de clientes eliminando las provincias ya clas
 formattable(train %>% group_by(Response) %>%
               summarise(clientes = n(),pct_clientes=n()/nrow(train)))
 ```
+
 8
 
 Este proceso se plantea de forma iterativa en distintos data frames para entender el proceso y así se crean los grupos _muy bueno, bueno, regular, malo, muy malo_ de provincias en base a la variable target.
@@ -278,6 +277,7 @@ Este proceso se plantea de forma iterativa en distintos data frames para entende
 formattable(train %>% group_by(Response) %>%
               summarise(clientes = n(),pct_clientes=n()/nrow(train)))
 ```
+
 9
 
 Es útil ver paso a paso que regiones se van uniendo por si existe algún criterio de negocio o se encuentra algún indicador que pueda mejorar esta agrupación ya que este trabajo no tiene ningún sentido práctico más allá de unir regiones con similares tasas de respuesta, al científico de datos puede interesarle llevar estos datos a una hoja de cálculo y realizar sus propias agrupaciones. Si se trabaja con un gran número de variables existen librerías en R que realizan esta labor de forma automática tanto con variables numéricas como con factores pero se recomienda controlar como se producen estas agrupaciones.
@@ -292,6 +292,7 @@ peso <- altura/2.85 + rnorm(personas, 10, 5)
 data.frame(altura=altura, peso=peso) %>%  ggplot(aes(x = altura, y = peso)) +
   geom_point()
 ```
+
 0
 
 Se repite el gráfico de barras apiladas.
@@ -304,6 +305,7 @@ peso <- altura/2.85 + rnorm(personas, 10, 5)
 data.frame(altura=altura, peso=peso) %>%  ggplot(aes(x = altura, y = peso)) +
   geom_point()
 ```
+
 1
 
 [![](/images/2022/12/wp_editor_md_de0df86e05ea581c95bbeb265dfe1cac.jpg)](/images/2022/12/wp_editor_md_de0df86e05ea581c95bbeb265dfe1cac.jpg)
@@ -324,6 +326,7 @@ peso <- altura/2.85 + rnorm(personas, 10, 5)
 data.frame(altura=altura, peso=peso) %>%  ggplot(aes(x = altura, y = peso)) +
   geom_point()
 ```
+
 2
 
 [![](/images/2022/12/wp_editor_md_b0dc23c102c488501f3ffe35d8c6dc4e.jpg)](/images/2022/12/wp_editor_md_b0dc23c102c488501f3ffe35d8c6dc4e.jpg)
@@ -338,6 +341,7 @@ peso <- altura/2.85 + rnorm(personas, 10, 5)
 data.frame(altura=altura, peso=peso) %>%  ggplot(aes(x = altura, y = peso)) +
   geom_point()
 ```
+
 3
 
 [![](/images/2022/12/wp_editor_md_312043a585ac063d7fd05693bcf24dcb.jpg)](/images/2022/12/wp_editor_md_312043a585ac063d7fd05693bcf24dcb.jpg)
@@ -354,6 +358,7 @@ peso <- altura/2.85 + rnorm(personas, 10, 5)
 data.frame(altura=altura, peso=peso) %>%  ggplot(aes(x = altura, y = peso)) +
   geom_point()
 ```
+
 4
 
 [![](/images/2022/12/wp_editor_md_34c60ad23556f55de27910bb55eddad8.jpg)](/images/2022/12/wp_editor_md_34c60ad23556f55de27910bb55eddad8.jpg)
@@ -379,15 +384,16 @@ peso <- altura/2.85 + rnorm(personas, 10, 5)
 data.frame(altura=altura, peso=peso) %>%  ggplot(aes(x = altura, y = peso)) +
   geom_point()
 ```
+
 5
 
 [![](/images/2022/12/wp_editor_md_9a61750d55d697cc50f5bdbe85acc6df.jpg)](/images/2022/12/wp_editor_md_9a61750d55d697cc50f5bdbe85acc6df.jpg)
 
 Esta salida que se obtiene con la función `CrossTable` de la librería gmodels, se trata de una tabla de contingencia, muy empleada en el ámbito estadístico. Como dice la descripción previa para el cruce de los dos factores se tiene el número de observaciones y la **Chi-square contribution** que es:
 
-$$contribucion- \chi^2 = \frac {(Esperado – Observado)^2}{Esperado}$$
+$$contribucion- \\chi^2 = \\frac {(Esperado – Observado)^2}{Esperado}$$
 
-Esta es la idea que se emplea para definir si hay dependencia entre factores, ¿qué es el valor esperado? Es el producto de las frecuencias marginales entre el total de observaciones. En el ejemplo se espera para el género _Female_ no está interesado: 334399*175020/381109 = 153569 frente a 156835 que es lo observado, entonces (153569 – 156835)^2/153569 = 69.46 que es un número, no una medida. Además no sabemos la validez estadística que tiene ese valor pero sí es conocido que esta diferencia tiene una distribución asociada llamada Chi-cuadrado que se verá en el siguiente capítulo. Esta prueba da lugar al estadístico de la \chi^2 que está influenciado por el tamaño de la muestra y no da ninguna medida, por este motivo se le aplica una corrección por el número total de observaciones y las filas o columnas de la tabla de contingencia y ello permite dar una magnitud, esa corrección da lugar al estadístico V de Cramer. Para la obtención de la V de Cramer se emplea en este caso la librería vcd.
+Esta es la idea que se emplea para definir si hay dependencia entre factores, ¿qué es el valor esperado? Es el producto de las frecuencias marginales entre el total de observaciones. En el ejemplo se espera para el género _Female_ no está interesado: 334399\*175020/381109 = 153569 frente a 156835 que es lo observado, entonces (153569 – 156835)^2/153569 = 69.46 que es un número, no una medida. Además no sabemos la validez estadística que tiene ese valor pero sí es conocido que esta diferencia tiene una distribución asociada llamada Chi-cuadrado que se verá en el siguiente capítulo. Esta prueba da lugar al estadístico de la \\chi^2 que está influenciado por el tamaño de la muestra y no da ninguna medida, por este motivo se le aplica una corrección por el número total de observaciones y las filas o columnas de la tabla de contingencia y ello permite dar una magnitud, esa corrección da lugar al estadístico V de Cramer. Para la obtención de la V de Cramer se emplea en este caso la librería vcd.
 
 ```r
 personas <- 100
@@ -397,6 +403,7 @@ peso <- altura/2.85 + rnorm(personas, 10, 5)
 data.frame(altura=altura, peso=peso) %>%  ggplot(aes(x = altura, y = peso)) +
   geom_point()
 ```
+
 6
 
 En este caso la V de Cramer tiene un valor muy próximo a 0 lo que indica que hay poca relación entre los factores, valores próximos a 1 indican mucha relación. Cuando se trabaje con modelos lineales se verá la importancia que tiene esta medida para las variables input en los procesos de modelización.
@@ -415,6 +422,7 @@ peso <- altura/2.85 + rnorm(personas, 10, 5)
 data.frame(altura=altura, peso=peso) %>%  ggplot(aes(x = altura, y = peso)) +
   geom_point()
 ```
+
 7
 
 Esa agrupación es la definición de percentil, se ordena la variable a tramificar de menor a mayor y cada registro dividido por el total si es multiplicado por el número de grupos va a dar un número entre 1 y el número de grupos especificado que tendrán el mismo número de registros y cuyo total recoge el total de los registros. Esa variable grupo se trata como un factor reclasificado por lo que es susceptible de aplicar la función de descripción bivariable.
@@ -427,6 +435,7 @@ peso <- altura/2.85 + rnorm(personas, 10, 5)
 data.frame(altura=altura, peso=peso) %>%  ggplot(aes(x = altura, y = peso)) +
   geom_point()
 ```
+
 8
 
 [![](/images/2022/12/wp_editor_md_2672fdb0c1a07094c1bb23090010bc67.jpg)](/images/2022/12/wp_editor_md_2672fdb0c1a07094c1bb23090010bc67.jpg)

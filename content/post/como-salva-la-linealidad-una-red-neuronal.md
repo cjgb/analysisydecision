@@ -1,25 +1,26 @@
 ---
 author: rvaquerizo
 categories:
-- consultoría
-- data mining
-- formación
-- modelos
-- monográficos
-- seguros
+  - consultoría
+  - data mining
+  - formación
+  - modelos
+  - monográficos
+  - seguros
 date: '2016-09-27'
 lastmod: '2025-07-13'
 related:
-- resolucion-del-juego-de-modelos-con-r.md
-- regresion-con-redes-neuronales-en-r.md
-- monografico-paquete-de-r-nnet-para-modelos-de-redes-neuronales.md
-- representacion-de-redes-neuronales-con-r.md
-- el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v.md
+  - resolucion-del-juego-de-modelos-con-r.md
+  - regresion-con-redes-neuronales-en-r.md
+  - monografico-paquete-de-r-nnet-para-modelos-de-redes-neuronales.md
+  - representacion-de-redes-neuronales-con-r.md
+  - el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v.md
 tags:
-- redes neuronales
+  - redes neuronales
 title: Como salva la linealidad una red neuronal
 url: /blog/como-salva-la-linealidad-una-red-neuronal/
 ---
+
 En los últimos tiempos estoy empeñado en usar redes neuronales para la tarificación en seguros. Históricamente la tarificación de seguros, el pricing, se ha basado en modelos lineales generalizados GLM (sus siglas en inglés) porque su estructura es sencilla, se interpreta bien y no olvidemos que el sector asegurador está regulado y es necesario elaborar una nota detallada de cómo se articula una tarifa y el GLM nos ofrece una estructura multiplicativa que se comprende y con la que los reguladores se sienten muy cómodos. Sin embargo, una red neuronal es el paradigma de «caja negra», ¿cómo podemos saber que hace esa caja negra? Estoy trabajando en ello, la descripción del funcionamiento de las ponderaciones de una red está muy arriba en la lista de mis tareas pendientes.
 
 Pero esta entrada del blog va encaminada a describir de forma como las neuronas de una red neuronal salvan la linealidad y como un mayor número de neuronas son capaces de ajustar mejor a una estructura compleja y si llegamos a describir como funciona esa estructura compleja podremos usar estas técnicas para realizar tarifas de riesgo. [

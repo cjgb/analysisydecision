@@ -1,30 +1,30 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- libro estadística
-- r
+  - formación
+  - libro estadística
+  - r
 date: '2022-09-15'
 lastmod: '2025-07-13'
 related:
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-8-problemas-con-los-datos.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-6-descripcion-numerica-de-variables.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-7-descripcion-grafica-de-variables.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-16-modelizacion-estadistica-conociendo-los-datos.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-8-problemas-con-los-datos.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-6-descripcion-numerica-de-variables.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-7-descripcion-grafica-de-variables.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-16-modelizacion-estadistica-conociendo-los-datos.md
 tags:
-- sin etiqueta
-title: Introducción a la Estadística para Científicos de Datos. Capítulo 9. Análisis
-  exploratorio de datos. EDA
+  - sin etiqueta
+title: Introducción a la Estadística para Científicos de Datos. Capítulo 9. Análisis exploratorio de datos. EDA
 url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-9-analisis-exploratorio-de-datos-eda/
 ---
+
 Los capítulos 7 y 8 se resumen en éste mediante visualizaciones trabajadas en el capítulo 5. El **análisis EDA** (**E** xploratory **D** ata **A** nalysis) es el primer paso que ha de seguir un científico de datos y articula los temas tratados en el capítulo 2 ya que convertir datos en información implica que el científico de datos ha de preocuparse en saber como pueden estar estructurados sus datos, que tipo de variables los componen, el nivel al que se encuentran los registros, que problemas pueden presentar o como resumir información. Además, es necesario conocer los capítulos 3 y 4 para el manejo de variables y cruces de tablas y por este motivo el análisis EDA es la base, pero lo visto anteriormente son los cimientos.
 
 Para realizar este tipo de análisis R dispone de distintas librerías, algunas de ellas son:
 
-  * [ExPanDaR](https://joachim-gassen.github.io/ExPanDaR/)
-  * [dataMaid](https://github.com/ekstroem/dataMaid)
-  * DataExplorer
+- [ExPanDaR](https://joachim-gassen.github.io/ExPanDaR/)
+- [dataMaid](https://github.com/ekstroem/dataMaid)
+- DataExplorer
 
 > Se sugiere que sea el propio científico de datos quien debería tener sus propias herramientas descriptivas.
 
@@ -37,7 +37,6 @@ train <- read.csv("./data/train.csv")
 head(train,5)
 ```
 
-
 En el capítulo anterior ya aparecieron posibles problemas, no sólo de datos, también cuestiones de negocio a las que llegamos tras un análisis estadístico sencillo, por ese motivo se insiste en la idea de dar importancia al problema de negocio que se está abordando. El primer paso es conocer el número de observaciones y como son las variables del conjunto de datos, esto nos permite saber si es posible prescindir de algunas (observaciones y/o variables). Con DataExplorer se comenzará con la función `introduce`.
 
 ```r
@@ -45,13 +44,11 @@ library(DataExplorer)
 introduce(train)
 ```
 
-
 Este análisis se puede acompañar de una visión gráfica.
 
 ```r
 plot_intro(train)
 ```
-
 
 [![](/images/2022/09/wp_editor_md_4a31eeb5defb93766f0ce87affffbfe4.jpg)](/images/2022/09/wp_editor_md_4a31eeb5defb93766f0ce87affffbfe4.jpg)
 
@@ -61,24 +58,22 @@ Disponemos de 381109 observaciones y 12 variables donde un 25% son factores fren
 plot_str(train)
 ```
 
-
 Se observa que hay variables como `Previously_Insured`, `Region_Code` o `Policy_Sales_Channel` que son numéricas y serían susceptibles de ser factores. Los propios nombres de variables y sus descripciones tienen que ser de ayuda en estos primeros acercamientos. El siguiente paso es describir las variables en función del tipo. Si la variable es numérica se recomendaba la realización de histogramas, con `plot_histogram` se automatiza esta labor.
 
 ```r
 plot_histogram(train, ncol = 3)
 ```
 
-
 [![](/images/2022/09/wp_editor_md_ba9a3c26dc97cdbce445f56ef384b4b8.jpg)](/images/2022/09/wp_editor_md_ba9a3c26dc97cdbce445f56ef384b4b8.jpg)
 
 Se disponen de 6 variables numéricas dispuestas en tres columnas con `ncol=3` columnas. En este punto el científico de datos ya debe empezar a describir comportamientos buscando ese _sentido de negocio_. Veamos variable por variable:
 
-  * `Age` Es la edad del encuestado, la moda en 25 años aproximadamente con otro repunte en torno a los 45.
-  * `Annual_Premium` Prima anual concentrada en valores bajos con algún registro con valor superior a 40000 €.
-  * `Id` Identificador de cliente poco o nada puede aportar a la resolución de un problema con los datos.
-  * `Policy_Sales_Channel` Canal de venta del contrato, no tiene sentido su histograma, ha de ser tratada como un factor.
-  * `Region_Code` Es un código de región ha de ser tratada como un factor.
-  * `Vintage` Antigüedad del contrato, no tiene una forma definida, de hecho sus posibles valores se parecen mucho al campo identificativo.
+- `Age` Es la edad del encuestado, la moda en 25 años aproximadamente con otro repunte en torno a los 45.
+- `Annual_Premium` Prima anual concentrada en valores bajos con algún registro con valor superior a 40000 €.
+- `Id` Identificador de cliente poco o nada puede aportar a la resolución de un problema con los datos.
+- `Policy_Sales_Channel` Canal de venta del contrato, no tiene sentido su histograma, ha de ser tratada como un factor.
+- `Region_Code` Es un código de región ha de ser tratada como un factor.
+- `Vintage` Antigüedad del contrato, no tiene una forma definida, de hecho sus posibles valores se parecen mucho al campo identificativo.
 
 El primer acercamiento va buscando ese sentido y pretende utilizar dialéctica propia de negocio estudiando las formas, los posibles valores que toman las observaciones y las variables. Sin embargo, en este primer paso ya encontramos acciones y modificaciones interesantes.
 
@@ -88,30 +83,28 @@ train <- train %>%
          Region_Code = as.character(Region_Code))
 ```
 
-
 Las siguientes variables a analizar serán los factores, en el capítulo 7 se sugirió el uso de gráficos de barras, en DataExplorer se emplea la función `plot_bar`.
 
 ```r
 plot_bar(train)
 ```
 
-
 [![](/images/2022/09/wp_editor_md_01ca9131af8d981d66888d2140a1e6fb.jpg)](/images/2022/09/wp_editor_md_01ca9131af8d981d66888d2140a1e6fb.jpg)
 
 En este caso DataExplorer nos arroja un warning que da una pista sobre un problema que tiene nuestro conjunto de datos de trabajo:
 
 > 2 columns ignored with more than 50 categories.
->  Region_Code: 53 categories
->  Policy_Sales_Channel: 155 categories
+> Region_Code: 53 categories
+> Policy_Sales_Channel: 155 categories
 
 Hay dos columnas que se considera innecesario representar, justo los factores que se acaban de crear. Estas variables son susceptibles de ser agrupadas pero no han de ser tratadas como numéricas. En cuanto al resto de variables:
 
-  * `Gender` Describe el sexo del encuestado, es un factor con dos niveles.
-  * `Vehicle_Age` Esta variable define la antigüedad del vehículo, se ha agrupado en 3 niveles de un factor y por eso no es numérica pero es necesario observar el orden. Es un factor y el EDA ya nos advierte un posible problema, el orden, <1 1-2 y >2\. En este caso toma el orden lexicográfico pone en primer lugar el nivel 1-2 Year y ha de estar en segundo lugar.
-  * `Vehicle_Damage` Indica si el vehículo tiene daños, a priori no parece presentar resultado anómalo.
-  * `Driving_License` Indica si se dispone o no de carnet, apenas hay observaciones sin carnet, ¿tiene sentido ofrecer un seguro de automóviles a clientes sin carnet? Esos registros son susceptibles de ser eliminados.
-  * `Previously_Insured` Es una variable numérica pero al tomar 2 valores se interpreta como factor.
-  * `Response` Será la variable más relevante de nuestro conjunto de datos, toma valores 1/0 Si/No.
+- `Gender` Describe el sexo del encuestado, es un factor con dos niveles.
+- `Vehicle_Age` Esta variable define la antigüedad del vehículo, se ha agrupado en 3 niveles de un factor y por eso no es numérica pero es necesario observar el orden. Es un factor y el EDA ya nos advierte un posible problema, el orden, \<1 1-2 y >2. En este caso toma el orden lexicográfico pone en primer lugar el nivel 1-2 Year y ha de estar en segundo lugar.
+- `Vehicle_Damage` Indica si el vehículo tiene daños, a priori no parece presentar resultado anómalo.
+- `Driving_License` Indica si se dispone o no de carnet, apenas hay observaciones sin carnet, ¿tiene sentido ofrecer un seguro de automóviles a clientes sin carnet? Esos registros son susceptibles de ser eliminados.
+- `Previously_Insured` Es una variable numérica pero al tomar 2 valores se interpreta como factor.
+- `Response` Será la variable más relevante de nuestro conjunto de datos, toma valores 1/0 Si/No.
 
 A continuación se resuelven algunos de los problemas planteados. Se empieza por la variable `Vehicle_Age`, para reordenar factores en R se cuenta con la función `factor`, se sugiere hacer:
 
@@ -121,7 +114,6 @@ train <- train %>% mutate(Vehicle_Age=factor(Vehicle_Age, c('< 1 Year','1-2 Year
 table(trainVehicle_Age)
 ```
 
-
 Sin embargo, en este punto se plantea una recomendación. Cuando se trabaja con datos en bruto y estos datos son analizados y clasificados es bueno crear una nueva variable y jugar con prefijos para determinar si esa variable está trabajada o no. En este caso, tratándose de un factor, se emplea el prefijo `fr_` de factor reclasificado, en el ejemplo que se está trabajando:
 
 ```r
@@ -129,7 +121,6 @@ train <- train %>% mutate(fr_vehicle_age = factor(Vehicle_Age, c('< 1 Year','1-2
 train %>% group_by(fr_vehicle_age) %>% summarise(conteo=n()) %>%
   ggplot(aes(x=fr_vehicle_age, y=conteo)) + geom_bar(stat = 'identity')
 ```
-
 
 [![](/images/2022/09/wp_editor_md_77a3530c633a05f322a523423b7e21dc.jpg)](/images/2022/09/wp_editor_md_77a3530c633a05f322a523423b7e21dc.jpg)
 
@@ -142,13 +133,13 @@ train <- train %>% rename(
   fr_previouly_insured = Previously_Insured)
 ```
 
-
 Quedan pendientes los dos factores con un gran número de niveles. En el caso de `Region_Code` se sabe que los datos provienen de una aseguradora española y se tienen 52 códigos, es evidente que hace mención a las provincias españolas:
 
 ```r
 library(DataExplorer)
 introduce(train)
 ```
+
 0
 
 [![](/images/2022/09/wp_editor_md_127a33281de8f80da90e279ed93ab9a6.jpg)](/images/2022/09/wp_editor_md_127a33281de8f80da90e279ed93ab9a6.jpg)
@@ -159,6 +150,7 @@ Se observa que los niveles 28 y 8 son los que más encuestados tienen, en el cas
 library(DataExplorer)
 introduce(train)
 ```
+
 1
 
 Otra posible agrupación tendría ese _sentido de negocio provincial_
@@ -167,6 +159,7 @@ Otra posible agrupación tendría ese _sentido de negocio provincial_
 library(DataExplorer)
 introduce(train)
 ```
+
 2
 
 Sin embargo, la mejor agrupación será aquella que una provincias con similar comportamiento ante un problema o ante la respuesta de un problema. En la misma situación está la variable `Policy_Sales_Channel` donde no tenemos ese conocimiento de negocio necesario para proponer una agrupación de niveles del factor. En capítulos posteriores se retomará este problema y se propondrá una solución.

@@ -1,20 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- formación
+  - formación
 date: '2009-05-26'
 lastmod: '2025-07-13'
 related:
-- lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
-- lecciones-de-economia-de-un-ignorante-la-caixa-a-colocar-preferentes.md
-- una-fabulilla-sobre-prim-con-multiples-moralejas.md
-- a-mi-me-preocupa-el-pequeno-ahorrador.md
-- busca-la-relacion-deuda-subordinada-y-cajas-catalanas.md
+  - lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
+  - lecciones-de-economia-de-un-ignorante-la-caixa-a-colocar-preferentes.md
+  - una-fabulilla-sobre-prim-con-multiples-moralejas.md
+  - a-mi-me-preocupa-el-pequeno-ahorrador.md
+  - busca-la-relacion-deuda-subordinada-y-cajas-catalanas.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Participaciones Preferentes de las Cajas de Ahorro
 url: /blog/participaciones-preferentes-de-las-cajas-de-ahorro/
 ---
+
 Iba a escribir un mensaje alertando de las nuevas emisiones de Participaciones Preferentes de las Cajas de Ahorro pero me he encontrado con este[ foro en elConfidencial.com ](http://foro.cotizalia.com/foro/foro.asp?id=38434&sec=93)Atentos a los comentarios de _jrwwpu17_ , simplemente una lección magistral de conocimiento de la red comercial de un banco. Merece la pena leer todos sus comentarios y aprender. Así empieza:
 
 Ahora bien, el tocomocho va a ser mayúsculo entre jubilados, principal público objetivo de estas emisiones. Dentro de dos años les veremos con las cacerolas en las oficinas de las cajas. Al tiempo…

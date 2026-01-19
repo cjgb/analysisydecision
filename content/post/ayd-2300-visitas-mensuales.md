@@ -1,21 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- business intelligence
-- sin categoría
+  - business intelligence
 date: '2009-11-08'
 lastmod: '2025-07-13'
 related:
-- 1500-visitas-mensuales.md
-- contenidos-para-octubre-de-ayd.md
-- contenidos-web-analisis-informacion.md
-- el-ano-2009-para-analisis-y-decision.md
-- el-ano-2010-para-analisisydecision.md
+  - 1500-visitas-mensuales.md
+  - contenidos-para-octubre-de-ayd.md
+  - contenidos-web-analisis-informacion.md
+  - el-ano-2009-para-analisis-y-decision.md
+  - el-ano-2010-para-analisisydecision.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: 'AyD: 2.300 visitas mensuales'
 url: /blog/ayd-2300-visitas-mensuales/
 ---
+
 Google Analytics dice esto:
 
 ![uso-del-sitio.JPG](/images/2009/11/uso-del-sitio.JPG)
@@ -30,8 +30,8 @@ Por último no quería dejar de mencionar a Carlos Gil. Su amplio conocimiento d
 
 Para los próximos tiempos la línea que espero seguir será:
 
-  * Código SAS para principiantes. Cerraron Geocities y ya no está colgado mi manual de SAS y no tengo intención de colgarlo en AyD porque quiero controlar su distribución. Así que una línea de este tipo se me antoja imprescindible sobre todo para atraer y fidelizar.
-  * R-commander. Hay que empezar a manejar esta herramienta para acercar R al ámbito empresarial.
-  * Realización de mapas con Excel e informes sofisticados con tablas dinámicas.
+- Código SAS para principiantes. Cerraron Geocities y ya no está colgado mi manual de SAS y no tengo intención de colgarlo en AyD porque quiero controlar su distribución. Así que una línea de este tipo se me antoja imprescindible sobre todo para atraer y fidelizar.
+- R-commander. Hay que empezar a manejar esta herramienta para acercar R al ámbito empresarial.
+- Realización de mapas con Excel e informes sofisticados con tablas dinámicas.
 
 Espero que sigamos creciendo. Por cierto, no pienso poner publicidad, no tengo ningún tipo de interés económico en AyD. Esto me sigue costando dinero pero creo que me está reportando otras cosas más importantes que los 60$ anuales. Y por supuesto, si tenéis alguna sugerencia rvaquerizo@analisisydecision.es

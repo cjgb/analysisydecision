@@ -1,23 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- modelos
-- trucos
+  - formación
+  - modelos
+  - trucos
 date: '2015-10-22'
 lastmod: '2025-07-13'
 related:
-- truco-sas-transformacion-ebcdic-mainframe-ascii-pc-o-unix.md
-- truco-sas-macro-buscar-y-reemplazar-en-texto.md
-- recodificar-el-valor-de-un-factor-en-r.md
-- trucos-sas-modificar-el-nombre-de-una-tabla-con-codigo.md
-- trucos-sas-variables-dicotomicas-desde-factores.md
+  - truco-sas-transformacion-ebcdic-mainframe-ascii-pc-o-unix.md
+  - truco-sas-macro-buscar-y-reemplazar-en-texto.md
+  - recodificar-el-valor-de-un-factor-en-r.md
+  - trucos-sas-modificar-el-nombre-de-una-tabla-con-codigo.md
+  - trucos-sas-variables-dicotomicas-desde-factores.md
 tags:
-- emblem
+  - emblem
 title: Truco para EMB Emblem. Cambiar el nivel base de un factor
 url: /blog/truco-para-emb-emblem-cambiar-el-nivel-base-de-un-factor/
 ---
-Un buen truco que me han descubierto hoy para los usuarios de EMB Emblem, como cambiar el nivel base de un factor de datos sin necesidad de pasar por los datos (habitualmente SAS) o sin hacerlo a posteriori (habitualmente Excel y lo que hacía el ahora escribiente). Cuando se generan los datos se genera el fichero binario *.BID y el fichero que se emplea para leer ese fichero *.FAC; para alterar el nivel base debemos abrir este archivo *.FAC con un block de notas o cualquier editor de texto plano. Al abrirlo tendremos lo siguiente:
+
+Un buen truco que me han descubierto hoy para los usuarios de EMB Emblem, como cambiar el nivel base de un factor de datos sin necesidad de pasar por los datos (habitualmente SAS) o sin hacerlo a posteriori (habitualmente Excel y lo que hacía el ahora escribiente). Cuando se generan los datos se genera el fichero binario \*.BID y el fichero que se emplea para leer ese fichero \*.FAC; para alterar el nivel base debemos abrir este archivo \*.FAC con un block de notas o cualquier editor de texto plano. Al abrirlo tendremos lo siguiente:
 
 XXXXXXXXXX –> ES EL NOMBRE DEL ARCHIVO
 99 –>ES EL NÚMERO DE FACTORES

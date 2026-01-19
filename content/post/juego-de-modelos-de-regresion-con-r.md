@@ -1,25 +1,26 @@
 ---
 author: rvaquerizo
 categories:
-- data mining
-- formación
-- modelos
-- r
+  - data mining
+  - formación
+  - modelos
+  - r
 date: '2015-06-28'
 lastmod: '2025-07-13'
 related:
-- resolucion-del-juego-de-modelos-con-r.md
-- manual-curso-introduccion-de-r-capitulo-10-funciones-graficas-en-regresion-lineal.md
-- manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
-- regresion-con-redes-neuronales-en-r.md
-- machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algoritmos-de-clasificacion.md
+  - resolucion-del-juego-de-modelos-con-r.md
+  - manual-curso-introduccion-de-r-capitulo-10-funciones-graficas-en-regresion-lineal.md
+  - manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
+  - regresion-con-redes-neuronales-en-r.md
+  - machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algoritmos-de-clasificacion.md
 tags:
-- knn
-- loess
-- svm
+  - knn
+  - loess
+  - svm
 title: Juego de modelos de regresión con R
 url: /blog/juego-de-modelos-de-regresion-con-r/
 ---
+
 [![Rplot](/images/2015/06/Rplot.png)](/images/2015/06/Rplot.png)
 
 Os propongo un juego con R. El juego parte de unos datos aleatorios que he generado con R (los que veis arriba) que dividimos en entrenamiento y test. Sobre el conjunto de datos de entrenamiento he realizado varios modelos y valoro las predicciones gráficamente sobre los datos de test. El juego consiste en asociar cada resultado gráfico de test a cada código de R correspondiente y justificar brevemente la respuesta.

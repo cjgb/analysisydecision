@@ -1,25 +1,26 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- sas
-- trucos
+  - formación
+  - sas
+  - trucos
 date: '2009-05-11'
 lastmod: '2025-07-13'
 related:
-- numeros-aleatorios-con-sas.md
-- trucos-sas-muestreo-con-proc-surveyselect.md
-- trucos-sas-variables-dummy-de-una-variable-continua.md
-- trucos-sas-lista-de-datasets-en-macro-variable.md
-- trucos-sas-informes-de-valores-missing.md
+  - numeros-aleatorios-con-sas.md
+  - trucos-sas-muestreo-con-proc-surveyselect.md
+  - trucos-sas-variables-dummy-de-una-variable-continua.md
+  - trucos-sas-lista-de-datasets-en-macro-variable.md
+  - trucos-sas-informes-de-valores-missing.md
 tags:
-- aleatorios
-- rand
-- ranuni
-- while
+  - aleatorios
+  - rand
+  - ranuni
+  - while
 title: Trucos SAS. Muestras aleatorias con y sin reemplazamiento
 url: /blog/trucos-sas-muestras-aleatorias-con-y-sin-reemplazamiento/
 ---
+
 Un ejemplo típico de SAS pero que creo que puede ayudar a conocer algunas funciones de SAS. Los ejemplos que planteo a continuación crean un dataset con 10.000 observaciones y sobre él vamos a crear dos subconjuntos de datos, dos muestras aleatorias del dataset de partida, una muestra sin reemplazamiento y otra muestra con reemplazamiento. Son dos ejemplos muy sencillos. Como siempre creo un dataset de forma aleatoria que me sirve de base para plantearos el truco:
 
 ```r
@@ -38,7 +39,8 @@ run;
 
 El dataset de partida tiene 10.000 observaciones y dos variables una de ellas creada con la función _ranuni_ que genera aleatorios de uniforme (0,1) con una raiz. Ahora vamos a realizar una muestra aleatoria de este conjunto de datos SAS de tamaño 300 sin reemplazamiento:
 
-``
+\`\`
+
 ```r
 *MUESTRA ALEATORIA SIN REEMPLAZAMIENTO;
 
@@ -85,9 +87,9 @@ data select;
 retain para;
 select=0;
 para=0;
-do while (para<&tamanio.);
-select=ceil(rand("uniform")*10**length(compress("&num_obs"))-1);
-if 1<=select<=&num_obs. then do;
+do while (para\<&tamanio.);
+select=ceil(rand("uniform")\*10\*\*length(compress("&num_obs"))-1);
+if 1\<=select\<=&num_obs. then do;
 para=para+1;
 output;
 end;

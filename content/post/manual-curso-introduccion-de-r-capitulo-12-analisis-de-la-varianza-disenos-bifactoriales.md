@@ -1,25 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- modelos
-- r
+  - formación
+  - modelos
+  - r
 date: '2008-10-04'
 lastmod: '2025-07-13'
 related:
-- manual-curso-introduccion-de-r-capitulo-11-introduccion-al-analisis-de-la-varianza-anova.md
-- manual-curso-introduccion-de-r-capitulo-13-analisis-de-la-varianza-disenos-anidados.md
-- manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
-- manual-curso-introduccion-de-r-capitulo-10-funciones-graficas-en-regresion-lineal.md
-- monografico-analisis-de-factores-con-r-una-introduccion.md
+  - manual-curso-introduccion-de-r-capitulo-11-introduccion-al-analisis-de-la-varianza-anova.md
+  - manual-curso-introduccion-de-r-capitulo-13-analisis-de-la-varianza-disenos-anidados.md
+  - manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
+  - manual-curso-introduccion-de-r-capitulo-10-funciones-graficas-en-regresion-lineal.md
+  - monografico-analisis-de-factores-con-r-una-introduccion.md
 tags:
-- anova
-- diseño bifactorial
-- modelos
-title: 'Manual. Curso introducción de R. Capítulo 12: Análisis de la varianza. Diseños
-  bifactoriales'
+  - anova
+  - diseño bifactorial
+  - modelos
+title: 'Manual. Curso introducción de R. Capítulo 12: Análisis de la varianza. Diseños bifactoriales'
 url: /blog/manual-curso-introduccion-de-r-capitulo-12-analisis-de-la-varianza-disenos-bifactoriales/
 ---
+
 En esta nueva entrega del manual de R vamos a ver un modelo ANOVA que analiza dos fuentes de variación. Si recordamos en el capítulo 11 estudiamos la diferencia entre los tratamientos que seguían determinados pacientes teníamos una variable respuesta en función de una variable factor, el diseño factorial aleatorizado. En este caso vamos a tener la variable respuesta en función de dos factores y podrá existir una interacción entre ambos. Con lo que la tabla ANOVA será del siguiente modo:
 
 ![Figura 12.1](/images/2008/10/c121.JPG)
@@ -48,7 +48,7 @@ taladradora<-factor(rep(1:4,each=12,len=48)) broca<-factor(rep(1:3,each=1,len=48
 $ estudio<-data.frame(cbind(datos,taladradora,broca))
 ```
 
-Como siempre en el manual vamos introduciendo nuevas funciones para el trabajo con datos. La función rep crea un vector de repeticiones, en el caso de la taladradora, repeticiones de 1 a 4 repetido 3 veces y de longitud 12, es decir un vector 3*12=48 de longitud. En el caso del vector broca hacemos un vector con valores de 1 a 3 que se repiten 1 sola vez hasta 48. Al final creamos un data.frame que es el resultado de la unión de los 3 vectores de datos y factores.
+Como siempre en el manual vamos introduciendo nuevas funciones para el trabajo con datos. La función rep crea un vector de repeticiones, en el caso de la taladradora, repeticiones de 1 a 4 repetido 3 veces y de longitud 12, es decir un vector 3\*12=48 de longitud. En el caso del vector broca hacemos un vector con valores de 1 a 3 que se repiten 1 sola vez hasta 48. Al final creamos un data.frame que es el resultado de la unión de los 3 vectores de datos y factores.
 
 El primer paso a seguir es ver si el modelo tiene que incluir la interacción entre los factores, para realizar esta comprobación emplearemos una visión gráfica de los datos. El gráfico a realizar será un gráfico con 4 líneas (una por taladradora) y cada punto del eje x representará las brocas, en el eje y tendremos el valor de penetración de cada combinación. Parra este tipo de gráficos empleamos la función interaction.plot:
 
@@ -108,4 +108,4 @@ Warning messages:
 non-factors ignored: taladradora
 3: In replications(paste("~", xx), data = mf) :
 non-factors ignored: broca, taladradora
-``
+\`\`

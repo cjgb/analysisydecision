@@ -1,21 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- r
+  - formación
+  - r
 date: '2012-10-23'
 lastmod: '2025-07-13'
 related:
-- curso-basico-de-r.md
-- nueva-edicion-del-curso-basico-de-r.md
-- jornadas-de-r-gratuitas-en-galicia.md
-- lectura-conjunta-de-analyzing-linguistic-data.md
-- estadistica-para-cientificos-de-datos-con-r-introduccion.md
+  - curso-basico-de-r.md
+  - nueva-edicion-del-curso-basico-de-r.md
+  - jornadas-de-r-gratuitas-en-galicia.md
+  - lectura-conjunta-de-analyzing-linguistic-data.md
+  - estadistica-para-cientificos-de-datos-con-r-introduccion.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Nuevo curso de estadística con R
 url: /blog/nuevo-curso-de-estadistica-con-r/
 ---
+
 De nuevo **Juanjo Gibaja** y **Carlos Gil** ponen en marcha un nuevo curso de estadística con R. Gratuito y abierto a todo aquel que desee inscribirse. En la [web de Carlos ](http://www.datanalytics.com/blog/2012/10/22/nuevo-curso-gratuito-de-estadistica-con-r/)podéis encontrar más información acerca de este nuevo curso. El nombre ahora es _Introducción a la Estadística Moderna con R_. Viendo como funcionó el anterior curso el éxito está garantizado y en este caso la temática es más interesante si cabe por lo que le auguro aun mayor éxito.
 
 Soy consciente de que este blog es leído por responsables de equipos de BI, profesores y consultoras (y algún ministro). Creo que debéis sugerir esta formación a todos los miembros de vuestro equipo y a todos vuestros alumnos.

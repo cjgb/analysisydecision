@@ -1,24 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- sas
+  - formación
+  - sas
 date: '2010-11-24'
 lastmod: '2025-07-13'
 related:
-- truco-sas-observaciones-de-un-dataset-en-una-macro-variable.md
-- macro-sas-numero-de-observaciones-de-un-dataset-en-una-macro.md
-- macros-sas-informe-de-un-dataset-en-excel.md
-- macros-sas-macro-split-para-partir-un-conjunto-de-datos.md
-- truco-sas-proc-contents.md
+  - truco-sas-observaciones-de-un-dataset-en-una-macro-variable.md
+  - macro-sas-numero-de-observaciones-de-un-dataset-en-una-macro.md
+  - macros-sas-informe-de-un-dataset-en-excel.md
+  - macros-sas-macro-split-para-partir-un-conjunto-de-datos.md
+  - truco-sas-proc-contents.md
 tags:
-- attrn
-- close
-- funciones sas i/o
-- open
+  - attrn
+  - close
+  - funciones sas i/o
+  - open
 title: Macros (fáciles) de SAS. Número de obsevaciones de un dataset
 url: /blog/macros-faciles-de-sas-numero-de-obsevaciones-de-un-dataset/
 ---
+
 Con esta macro podréis identificar el número de observaciones de UN CONJUNTO DE DATOS SAS. No funciona con tablas Oracle, Informix, DB2,… me gustaría dejarlo claro. Al emplear la función de**I/O** OPEN junto con ATTRN y CLOSE no realizamos un conteo de observaciones. Al final el proceso crea una macro variable que se llama _NOBS_ y que podremos usar en nuestra sesión SAS.
 
 ```r

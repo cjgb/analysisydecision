@@ -1,31 +1,32 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- monográficos
-- r
+  - formación
+  - monográficos
+  - r
 date: '2012-09-18'
 lastmod: '2025-07-13'
 related:
-- monografico-arboles-de-clasificacion-con-rpart.md
-- informes-con-r-en-html-comienzo-con-r2html-i.md
-- evaluando-la-capacidad-predictiva-de-mi-modelo-tweedie.md
-- sobremuestreo-y-pesos-a-las-observaciones-ahora-con-r.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-10-probabilidad-y-distribuciones.md
+  - monografico-arboles-de-clasificacion-con-rpart.md
+  - informes-con-r-en-html-comienzo-con-r2html-i.md
+  - evaluando-la-capacidad-predictiva-de-mi-modelo-tweedie.md
+  - sobremuestreo-y-pesos-a-las-observaciones-ahora-con-r.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-10-probabilidad-y-distribuciones.md
 tags:
-- simulación
+  - simulación
 title: Cuánto dinero pierdo jugando a la lotería. Una simulación poco seria con R
 url: /blog/cuanto-dinero-pierdo-jugando-a-la-loteria-una-simulacion-poco-seria-con-r/
 ---
+
 ![](/images/2012/09/teletexto_loteria.png)
 
 Esta pantalla es muy habitual en mi televisor todos los jueves por la noche. Son los resultados de la Lotería Nacional de España, el sorteo de los jueves. Mi mujer insiste en comprar lotería para dejar de ser pobres. No es una buena opción. Aunque por lo menos ahora compramos lotería nacional. Antes jugábamos a eso de la Bonoloto, las probabilidades de que te toque son menores que la cantidad de sustancias dopantes que le encontraron al gran Alberto Contador. Eso lo entendió, pero había que jugar. ¿Y cuánto nos cuesta jugar?
 
 Pues empecemos con el número de semanas que deseamos simular, unos 5 años, unas 250 semanas y simulemos números entre 0 y 99999 y los correspondientes premios que son:
 
-  * 30.000 € al primer premio
-  * 10.000 € al segundo premio
-  * Distintos importes en función de las terminaciones
+- 30.000 € al primer premio
+- 10.000 € al segundo premio
+- Distintos importes en función de las terminaciones
 
 ```r
 #Número de semanas que jugamos
@@ -64,7 +65,6 @@ premio3.1=trunc(primer_premio %% 10)
 premio3.2 = trunc(runif(numsimul,0,9))
 premio3.3 = trunc(runif(numsimul,0,9))
 ```
-
 
 No es un código muy «profesional» pero si ilustrativo. Para todos aquellos que tienen miedo a programar con R, también se pueden hacer «chapuzas». No es tan difícil. Ahora que tenemos los resultados de todos los sorteos durante esos casi 5 años vamos a estudiar cuánto dinero nos ha tocado:
 
@@ -113,6 +113,5 @@ sum(premios)/(numsimul*3)
 
 ### [1] 0.432
 ```
-
 
 Un código aun más chapuzante. Lo habréis ejecutado. Que triste así no me hago rico. A mi me ha salido que, de cada € que juego, pierdo unos 0,60 céntimos. Creo que este no es el camino para enriquecerme. Me voy a dedicar a la política, tampoco, soy un tipo muy íntegro. Tendré que seguir trabajando...

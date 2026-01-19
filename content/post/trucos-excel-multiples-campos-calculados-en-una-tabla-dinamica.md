@@ -1,23 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- excel
-- formación
-- trucos
+  - excel
+  - formación
+  - trucos
 date: '2011-05-12'
 lastmod: '2025-07-13'
 related:
-- truco-excel-actualizar-el-filtro-de-todas-las-tablas-dinamicas-de-mi-libro.md
-- truco-excel-producto-cartesiano-de-dos-campos.md
-- truco-excel-agrupar-valores-en-un-campo-de-una-tabla-dinamica.md
-- truco-excel-actualizar-los-filtros-de-una-tabla-dinamica-con-visual-basic.md
-- truco-excel-repetir-un-campo-a-partir-de-otro-que-define-el-numero-de-repeticiones.md
+  - truco-excel-actualizar-el-filtro-de-todas-las-tablas-dinamicas-de-mi-libro.md
+  - truco-excel-producto-cartesiano-de-dos-campos.md
+  - truco-excel-agrupar-valores-en-un-campo-de-una-tabla-dinamica.md
+  - truco-excel-actualizar-los-filtros-de-una-tabla-dinamica-con-visual-basic.md
+  - truco-excel-repetir-un-campo-a-partir-de-otro-que-define-el-numero-de-repeticiones.md
 tags:
-- macro excel
-- tabla dinamica
+  - macro excel
+  - tabla dinamica
 title: Trucos Excel. Múltiples campos calculados en una tabla dinámica
 url: /blog/trucos-excel-multiples-campos-calculados-en-una-tabla-dinamica/
 ---
+
 Truco Excel muy rápido y que os permite crear múltiples campos calculados en una tabla dinámica de Excel. Imaginemos que tenemos una tabla dinámica con un campo que es la suma de la exposición al riesgo y por otro lado tenemos el número de siniestros. Estos dos campos los tenemos para 30 coberturas. Si queremos crear un campo calculado que sea la frecuencia siniestral (número de siniestros/exposición) para esos 30 campos tenemos que irnos a herramientas de tabla dinámica, fórmulas, definir el nuevo campo,… O bien podemos hacer emplear la siguiente macro:
 
 ```r
@@ -28,11 +29,11 @@ Sub calculados()
 
 '
 
-ActiveSheet.PivotTables("Tabla dinámica4").CalculatedFields.Add "FREQ1", _
+ActiveSheet.PivotTables("Tabla dinámica4").CalculatedFields.Add "FREQ1", \_
 
 "=N_SINIESTROS_1 /EXPOSICION_1", True
 
-ActiveSheet.PivotTables("Tabla dinámica4").CalculatedFields.Add "FREQ2", _
+ActiveSheet.PivotTables("Tabla dinámica4").CalculatedFields.Add "FREQ2", \_
 
 "=N_SINIESTROS_2 /EXPOSICION_2", True
 
@@ -42,7 +43,7 @@ ActiveSheet.PivotTables("Tabla dinámica4").CalculatedFields.Add "FREQ2", _
 
 '
 
-ActiveSheet.PivotTables("Tabla dinámica4").CalculatedFields.Add "FREQ30", _
+ActiveSheet.PivotTables("Tabla dinámica4").CalculatedFields.Add "FREQ30", \_
 
 "=N_SINIESTROS_30 /EXPOSICION_30", True
 

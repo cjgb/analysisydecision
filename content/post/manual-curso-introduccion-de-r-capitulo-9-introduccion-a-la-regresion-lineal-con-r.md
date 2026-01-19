@@ -1,27 +1,26 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- r
+  - formación
+  - r
 date: '2008-07-03'
 lastmod: '2025-07-13'
 related:
-- manual-curso-introduccion-de-r-capitulo-10-funciones-graficas-en-regresion-lineal.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-15-modelos-glm-regresion-logistica-y-regresion-de-poisson.md
-- el-problema-de-la-multicolinealidad-intuirlo-y-detectarlo.md
-- resolucion-del-juego-de-modelos-con-r.md
-- manual-curso-introduccion-de-r-capitulo-13-analisis-de-la-varianza-disenos-anidados.md
+  - manual-curso-introduccion-de-r-capitulo-10-funciones-graficas-en-regresion-lineal.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-15-modelos-glm-regresion-logistica-y-regresion-de-poisson.md
+  - el-problema-de-la-multicolinealidad-intuirlo-y-detectarlo.md
+  - resolucion-del-juego-de-modelos-con-r.md
+  - manual-curso-introduccion-de-r-capitulo-13-analisis-de-la-varianza-disenos-anidados.md
 tags:
-- estadistica
-- regresión lineal
-- regresión
-title: 'Manual. Curso introducción de R. Capítulo 9: Introducción a la regresión lineal
-  con R'
+  - estadistica
+  - regresión lineal
+  - regresión
+title: 'Manual. Curso introducción de R. Capítulo 9: Introducción a la regresión lineal con R'
 url: /blog/manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r/
 ---
+
 En este capítulo del curso de R vamos a comenza a estudiar el análisis de regresión lineal. Los modelos de regresión lineal son modelos probabilísticos basados en una función lineal, nuestro objetivo es expresar una variable dependiente en función otro conjunto de variables. Los pasos básicos a seguir en el estudio de un modelo lineal son:
 1\. Escribir el modelo matemático con todas sus hipótesis.
-
 
 2\. Estimación de los parámetros del modelo.
 3\. Inferencias sobre los parámetros.
@@ -244,7 +243,9 @@ Creamos un modelo en el que la nota final será nuestra variable dependiente y l
 
   NA's : 1.0 NA's :1.000e+00
 ```
+
 0
+
 ```r
 > an.varianza<-anova(ejemplo9.1)
 
@@ -266,7 +267,9 @@ Creamos un modelo en el que la nota final será nuestra variable dependiente y l
 
   NA's : 1.0 NA's :1.000e+00
 ```
+
 1
+
 ```r
 > an.varianza<-anova(ejemplo9.1)
 
@@ -288,13 +291,14 @@ Creamos un modelo en el que la nota final será nuestra variable dependiente y l
 
   NA's : 1.0 NA's :1.000e+00
 ```
+
 2
 
 Coefficients:
 Estimate Std. Error t value Pr(>|t|)
 (Intercept) -17.8277 50.2996 -0.354 0.72471
 test 0.8606 0.7650 1.125 0.26672
-exam1 0.6709 0.2413 2.781 0.00795 **
+exam1 0.6709 0.2413 2.781 0.00795 \*\*
 exam2 0.4316 0.3667 1.177 0.24547
 labo 0.2924 0.6182 0.473 0.63855
 \---
@@ -327,6 +331,7 @@ Vemos que sólo se rechaza la hipótesis de nulidad del parámetro para la varia
 
   NA's : 1.0 NA's :1.000e+00
 ```
+
 3
 
 Para hacer la matriz de correlaciones empleamos la función cor pero sólo “atacamos” a los campos numéricos de nuestra matriz de datos. Si hacemos:
@@ -352,6 +357,7 @@ Para hacer la matriz de correlaciones empleamos la función cor pero sólo “at
 
   NA's : 1.0 NA's :1.000e+00
 ```
+
 4
 
 Esto es debido a que tenemos observaciones carácter, la función cor nos devuelve un error. No se detectan relaciones lineales muy fuertes entre las variables. El problema de la multicolinealidad viene por alguna relación lineal entre combinaciones de variables.

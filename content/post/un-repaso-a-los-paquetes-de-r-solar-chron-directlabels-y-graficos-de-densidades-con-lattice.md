@@ -1,30 +1,30 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- monográficos
-- r
+  - formación
+  - monográficos
+  - r
 date: '2011-05-22'
 lastmod: '2025-07-13'
 related:
-- graficos-de-calendarios-con-series-temporales.md
-- mi-breve-seguimiento-del-coronavirus-con-r.md
-- leer-y-representar-datos-de-google-trends-con-r.md
-- stadistical-data-warehouse-del-european-central-bank-con-r-y-los-depositos-a-perdidas.md
-- libreria-mapspain-en-rstats-mapas-estaticos-de-espana.md
+  - graficos-de-calendarios-con-series-temporales.md
+  - mi-breve-seguimiento-del-coronavirus-con-r.md
+  - leer-y-representar-datos-de-google-trends-con-r.md
+  - stadistical-data-warehouse-del-european-central-bank-con-r-y-los-depositos-a-perdidas.md
+  - libreria-mapspain-en-rstats-mapas-estaticos-de-espana.md
 tags:
-- as.yearmon
-- chron
-- densityplot
-- directlabels
-- is.weekend
-- lattice
-- solar
-- weekday
-title: Un repaso a los paquetes de R solaR, chron, directlabels y gráficos de densidades
-  con lattice
+  - as.yearmon
+  - chron
+  - densityplot
+  - directlabels
+  - is.weekend
+  - lattice
+  - solar
+  - weekday
+title: Un repaso a los paquetes de R solaR, chron, directlabels y gráficos de densidades con lattice
 url: /blog/un-repaso-a-los-paquetes-de-r-solar-chron-directlabels-y-graficos-de-densidades-con-lattice/
 ---
+
 Y además vamos a analizar si de verdad llueve más los fines de semana en Madrid. Hace tiempo que me gustaría estudiar la influencia de la contaminación en algunos fenómenos atmosféricos. Por supuesto no tengo tiempo para elaborar un estudio de ese tipo. La base de este estudio iba a ser el [paquete solaR](http://procomun.wordpress.com/software/solar/). Por otro lado quería elaborar un monográfico sobre el [paquete chron](http://cran.r-project.org/web/packages/chron/chron.pdf) que contiene funciones muy interesantes para el manejo de fechas. Sin tiempo es imposible, por ello nos vamos a acercar a estos dos paquetes con un ejemplo y de propina os presento [directlabels ](http://directlabels.r-forge.r-project.org/docs/index.html)otro paquete muy interesante para añadir etiquetas a nuestros gráficos.
 
 Nuestro trabajo va a comenzar con la descarga de datos agroclimáticos con **solaR**. Este paquete nos permite conectarnos con el SIAR ([descripción](http://www.mappinginteractivo.com/plantilla-ante.asp?id_articulo=177)) Sistema de Información Agroclimática para el Regadío:

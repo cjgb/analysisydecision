@@ -1,23 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- libro estadística
-- r
+  - formación
+  - libro estadística
+  - r
 date: '2022-08-16'
 lastmod: '2025-07-13'
 related:
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-9-analisis-exploratorio-de-datos-eda.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-7-descripcion-grafica-de-variables.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-6-descripcion-numerica-de-variables.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-16-modelizacion-estadistica-conociendo-los-datos.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-9-analisis-exploratorio-de-datos-eda.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-7-descripcion-grafica-de-variables.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-6-descripcion-numerica-de-variables.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-16-modelizacion-estadistica-conociendo-los-datos.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
 tags:
-- sin etiqueta
-title: Introducción a la Estadística para Científicos de Datos. Capítulo 8. Problemas
-  con los datos
+  - sin etiqueta
+title: Introducción a la Estadística para Científicos de Datos. Capítulo 8. Problemas con los datos
 url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-8-problemas-con-los-datos/
 ---
+
 Siguiendo con el desarrollo se ha establecido una estructura de datos, fundamentalmente se está trabajando con _data frames_ , que se componen de filas (registros) y columnas (variables). Tanto registros como variables pueden presentar problemas que dificulten la gestión de la información al científico de datos. En este capítulo se van a estudiar los problemas más comunes con los datos y se plantean posibles estrategias para resolver estos problemas. Aunque los datos pueden presentar problemas desde el punto de vista de los registros y desde el punto de vista de las variables en este caso se van a abordar **análisis de variables** que permitirán identificar tanto variables como registros que distorsionan el análisis. Para encontrar y describir estas situaciones se dispone tanto de análisis numéricos como análisis gráficos sencillos con los que se tomó contacto en los dos capítulos anteriores.
 
 Para ilustrar esta situaciones se continúa con el [caso práctico de trabajo visto en el apartado 6.2 de este libro](https://analisisydecision.es/estadistica-data-scientist/descripcion-numerica-variables.html#caso-pr%C3%A1ctico.-campa%C3%B1a-de-venta-cruzada). Como en capítulos anteriores se cargan los datos:
@@ -28,7 +28,6 @@ library(tidyverse)
 train <- read.csv("./data/train.csv")
 head(train,5)
 ```
-
 
 A modo de recuerdo, son datos de una compañía de seguros que opera en el ramo de salud y que desea realizar una campaña de venta cruzada para ofrecer seguro de automóviles a sus asegurados de salud. Para ello ha elaborado una encuesta que le permite perfilar que clientes son los más propensos a comprar su producto de automóviles.
 
@@ -48,7 +47,6 @@ ggplot(resumen, aes(x=Driving_License, y=porcen_clientes)) + geom_bar(stat="iden
   ggtitle("Distribución de variable Driving_License")
 ```
 
-
 La práctica totalidad de los clientes encuestados tiene carnet. Es una variable que no tiene sentido, si se va a ofrecer un seguro de automóviles será necesario que el cliente pueda optar a tener un automóvil. En esta situación se plantea una estrategia muy simple **la variable ha de ser eliminada** , bien es cierto que se puede plantear la eliminación de aquellos clientes que no tienen carnet, pero son muy pocos. Un análisis descriptivo de lo más sencillo está permitiendo detectar claros problemas de negocio.
 
 > Cuando se trabaje con factores es necesario estudiar si hay algún nivel con un porcentaje desmesurado de observaciones, esa desmesura la debe establecer el científico de datos con sus análisis descriptivos, si fuera necesario fijar un umbral, por encima de un 95% de observaciones en un mismo nivel se sugiere trabajar con mayor detenimiento ese factor.
@@ -61,7 +59,6 @@ Se sigue haciendo mención en múltiples ocasiones, **el científico de datos de
 summary(train$Region_Code)
 ```
 
-
 ¿Tiene sentido esta sumarización? Evidentemente no, y este es uno de los problemas más comunes que aparece en el trabajo con datos. El formato de las variables no es el adecuado, lo podremos identificar conociendo los datos o bien asignando nombres a las variables que nos permitan «intuir» el tipo, en este caso se emplea el sufijo _code_ que ya nos deja claro que tipo de variable es y como debemos tratarla
 
 ```r
@@ -72,7 +69,6 @@ head(resumen)
 ggplot(resumen, aes(x=Region_Code, y=porcen_clientes)) + geom_bar(stat="identity") +
   ggtitle("Distribución de variable Region_Code")
 ```
-
 
 Se ha indicado con anterioridad que son datos de una aseguradora española, si se conoce la distribución geográfica de España esta variable hace referencia a las provincias, donde el 28 es Madrid y el 8 es Barcelona. Es posible que este dato no se conozca, se insiste, es relevante asociar un dato numérico a una codificación, esta variable nunca habría de tratarse como numérica. En el caso que nos ocupa, conocida la estructura administrativa de España, aparece la provincia 0, como tal no es un valor perdido, es un **valor desconocido** que no ofrece información a la resolución del problema que se está planteando con los datos.
 
@@ -89,14 +85,13 @@ train %>% group_by(Region_Code=as.factor(Region_Code)) %>%
   ggtitle("Distribución de variable Region_Code") + coord_flip()
 ```
 
-
 El código empleado en ggplot tiene aspectos interesantes y que permiten crear gráficos descriptivos más completos. Empezando por indicar que no se crea un data frame temporal intermedio, directamente se emplea el pipe (%>%) para realizar la representación gráfica. Por otro lado, se emplea la función `reorder(factor, orden)` para ordenar el factor en análisis en función de otro campo, en este caso se pretenden ordenar los códigos de provincia en función del porcentaje de observaciones que contiene. Por otro lado, para realizar un ranking se emplea un gráfico de barras horizontal, para rotar el gráfico se emplea `coord_flip()`, se aprecia que el eje y conserva el nombre de la variable establecida en `aes`. Este trabajo es habitual cuando se quieren representar rankings de factores.
 
 Cabe preguntarse ¿Es necesario agrupar esta variable? Se puede responder con otra cuestión, ¿se debe dar la misma relevancia al código 28 (Madrid) que al código postal 51 (Ceuta)? La respuesta evidente es no, pero esta respuesta **no tiene ningún sustento estadísto** , al menos de momento. Cuando aparece esta situación será de utilidad agrupar los niveles del factor, posibles estrategias para esta labor:
 
-  * Agrupar los niveles en base al peso, en este caso al % de clientes.
-  * Agrupar los niveles en base a «criterios de negocio».
-  * Agrupar los niveles en base a _nuestro problema_ , en este caso, agrupar los códigos de provincia en base a una variable respuesta, agrupar en base al interés por el producto de automóviles.
+- Agrupar los niveles en base al peso, en este caso al % de clientes.
+- Agrupar los niveles en base a «criterios de negocio».
+- Agrupar los niveles en base a _nuestro problema_ , en este caso, agrupar los códigos de provincia en base a una variable respuesta, agrupar en base al interés por el producto de automóviles.
 
 En la tercera de las estrategias se plantea estudiar una variable en función de otra lo que denominamos análisis bivariable, en estos momentos no se dispone de una herramienta para realizar este análisis por ello se sugiere la primera de las estrategias.
 
@@ -110,8 +105,7 @@ train %>% group_by(fr_zona) %>% summarise(porcen_clientes = n()/nrow(train)) %>%
   ggplot(aes(x=fr_zona, y=porcen_clientes)) + geom_bar(stat="identity")
 ```
 
-
-Se transforma un factor con 53 niveles en un nuevo factor reclasificado (prefijo fr_ en la variable) que tiene 3 niveles.
+Se transforma un factor con 53 niveles en un nuevo factor reclasificado (prefijo fr\_ en la variable) que tiene 3 niveles.
 
 > Es buena práctica asignar prefijos o sufijos a variables que se codifiquen cuando se manejan datos. De este modo se puede determinar el rol que juega esa variable en el análisis planteado. A lo largo de este trabajo se insistirá en esa labor.
 
@@ -125,14 +119,13 @@ resumen <- train %>% group_by(Region_Code) %>%
 head(resumen)
 ```
 
-
 Se ha indicado que `Region_Code` es una variable que recoge los códigos provinciales de España. En España no existe un código provincial 0, no es un valor perdido, es un **valor desconocido**. Puede parecer lo mismo pero no lo es, se volverá sobre esta situación cuando se trabajen los valores perdidos numéricos.
 
 Posibles estrategias ante esta situación:
 
-  * Imputar ese valor al nivel con mayor número de observaciones, al 28. Esta posibilidad no debería afectar al estudio, pero es cierto que el 0 tiene cierto peso.
-  * Al disponer de más de 300.000 observaciones se puede optar por eliminar esas observaciones, no deben afectar al estudio.
-  * No hacer nada. Pocas observaciones, no deberían existir clientes sin provincia. Se puede dejar ese nivel de esa observación y estudiar si tiene un comportamiento atípico.
+- Imputar ese valor al nivel con mayor número de observaciones, al 28. Esta posibilidad no debería afectar al estudio, pero es cierto que el 0 tiene cierto peso.
+- Al disponer de más de 300.000 observaciones se puede optar por eliminar esas observaciones, no deben afectar al estudio.
+- No hacer nada. Pocas observaciones, no deberían existir clientes sin provincia. Se puede dejar ese nivel de esa observación y estudiar si tiene un comportamiento atípico.
 
 ## Problemas con variables numéricas
 
@@ -146,7 +139,6 @@ ggplot(data= train,aes(x = Annual_Premium))+
       geom_density(aes(y= 10000 * ..count..), color='Blue')
   ggtitle('Distribución de la variable prima')
 ```
-
 
 La prima es un importe, el científico de datos ya ha de familiarizarse con los gráficos de densidad, y en importes se suelen obtener formas asimétricas con mayor número de observaciones a la izquierda con colas muy largas. Es decir, hay una alta concentración de importes bajos o habituales y luego hay importes desmesurados, no suelen producirse importes negativos o importes 0. Sin embargo, en este caso la prima anual que es lo que paga el cliente por su seguro de Salud tiene un gran número de observaciones en un valor muy próximo a 0. Se puede considerar que la variable `Annual_Premium` tiene un valor modal que se va a identificar numéricamente:
 
@@ -165,7 +157,6 @@ resumen <- train %>% group_by(Prima_modal = ifelse(Annual_Premium <= moda, "Si",
 kable(resumen)
 ```
 
-
 Sirva este proceso de ejemplo de uso de la librería `kableExtra` para la presentación de data frames con formas vistosas en R. Se calcula la moda de la variable `Annual_Premium` y se determina cuantos registros están por debajo de ese umbral de `r moda`€ de importe anual, se tiene `r round(resumen[2,2]*100,1)`% que es un número importante de observaciones para determinar con el equipo que suministra los datos que está sucediendo con esa variable.
 
 En esta situación una posible estrategia es discretizar la variable prima para dar ese sentido de negocio, es decir, crear un factor a partir de la variable numérica que nos permita aislar ese comportamiento. En este caso, se decide mantener la variable y posteriores análisis indicarán que hacer con ella pero parece clara la necesidad de discretizar.
@@ -178,7 +169,6 @@ Un valor atípico es aquel que está fuera de un rango de valores donde esperamo
 ggplot(train , aes(y = Annual_Premium)) + geom_boxplot() + coord_flip()
 ```
 
-
 Este gráfico se realiza a partir de las medidas de posición y las medidas de dispersión de una variable. No existe una definición formal de outlier pero se usa un umbral sobre el que se volverá posteriormente, si un valor supera 1.5 veces el rango intercuartílico estamos ante un outlier:
 
 ```r
@@ -188,6 +178,7 @@ resumen <- train %>% group_by(Driving_License=as.factor(Driving_License)) %>%
 ggplot(resumen, aes(x=Driving_License, y=porcen_clientes)) + geom_bar(stat="identity") +
   ggtitle("Distribución de variable Driving_License")
 ```
+
 0
 
 En este código mediante `outlier.colour = "red"` podemos cambiar el color a los outliers, podemos cambiar el color a aquellas observaciones que están +/- 1.5 veces por encima del rango intercuartílico.
@@ -199,14 +190,15 @@ resumen <- train %>% group_by(Driving_License=as.factor(Driving_License)) %>%
 ggplot(resumen, aes(x=Driving_License, y=porcen_clientes)) + geom_bar(stat="identity") +
   ggtitle("Distribución de variable Driving_License")
 ```
+
 1
 
 Como indicaba el boxplot la variable `Annual_Premium` no tiene valores atípicos en la parte inferior de su distribución, pero en la parte superior, todo aquel valor que supere los `r round(lim2,1)` será considerado como un outlier. En este caso tenemos `r sum(train$Annual_Premium>=lim2)` observaciones cuyo valor de prima está por encima de ese umbral, tenemos `r sum(train$Annual_Premium>=lim2)` outliers. Pueden parecer muchas observaciones pero trabajamos con `r nrow(train)` observaciones lo que supone un `r round(sum(train$Annual_Premium>=lim2)/nrow(train),3) * 100`% del total de registros.
 
 En este caso, las estrategias para solventar este problema dependen del científico de datos, se puede optar:
 
-  * Eliminar las observaciones. Si no se tienen muchos registros se pueden considerar atípicos y no participar en el estudio.
-  * Asignación de un valor máximo de modo que no sean atípicos. En este caso se vuelve a la idea de discretizar una variable numérica ya que si supera determinado umbral tendría siempre el mismo valor.
+- Eliminar las observaciones. Si no se tienen muchos registros se pueden considerar atípicos y no participar en el estudio.
+- Asignación de un valor máximo de modo que no sean atípicos. En este caso se vuelve a la idea de discretizar una variable numérica ya que si supera determinado umbral tendría siempre el mismo valor.
 
 ### Variables numéricas como factores
 
@@ -219,6 +211,7 @@ resumen <- train %>% group_by(Driving_License=as.factor(Driving_License)) %>%
 ggplot(resumen, aes(x=Driving_License, y=porcen_clientes)) + geom_bar(stat="identity") +
   ggtitle("Distribución de variable Driving_License")
 ```
+
 2
 
 La edad toma valores finitos con orden. Como variable numérica se aprecian dos formas en los datos, en edades jóvenes y edades maduras.

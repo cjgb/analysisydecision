@@ -1,26 +1,26 @@
 ---
 author: rvaquerizo
 categories:
-- excel
-- formación
-- trucos
+  - excel
+  - formación
+  - trucos
 date: '2012-02-26'
 lastmod: '2025-07-13'
 related:
-- truco-excel-abrir-multiples-libros-de-excel-en-distintas-hojas-de-un-nuevo-libro.md
-- trucos-excel-archivos-de-un-directorio-con-una-macro.md
-- trucos-excel-unir-varios-excel-en-uno.md
-- proyecto-text-mining-con-excel-iv.md
-- trucos-excel-crear-un-borrador-de-correo-con-excel.md
+  - truco-excel-abrir-multiples-libros-de-excel-en-distintas-hojas-de-un-nuevo-libro.md
+  - trucos-excel-archivos-de-un-directorio-con-una-macro.md
+  - trucos-excel-unir-varios-excel-en-uno.md
+  - proyecto-text-mining-con-excel-iv.md
+  - trucos-excel-crear-un-borrador-de-correo-con-excel.md
 tags:
-- application
-- explorador de windows
-- getopenfilename
-- macro
-title: Truco Excel. Application GetOpenFilename el explorador de archivos sencillo
-  en macro
+  - application
+  - explorador de windows
+  - getopenfilename
+  - macro
+title: Truco Excel. Application GetOpenFilename el explorador de archivos sencillo en macro
 url: /blog/truco-excel-application-getopenfilename-el-explorador-de-archivos-sencillo-en-macro/
 ---
+
 Application.GetOpenFilename y como parámetros el texto y el tipo de archivo. Un truco excel para meter en una macro el explorador de archivos más sencillo. Por ejemplo para obtener los archivos de Word de un directorio podremos hacer:
 
 ```r

@@ -1,26 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- r
+  - formación
+  - r
 date: '2008-03-31'
 lastmod: '2025-07-13'
 related:
-- manual-curso-introduccion-de-r-capitulo-7-funciones-graficas-basicas-en-r.md
-- determinar-la-distribucion-de-un-vector-de-datos-con-r.md
-- trucos-sas-calcular-percentiles-como-excel-o-r.md
-- manual-curso-introduccion-de-r-capitulo-2-interfaz-y-primeras-sentencias.md
-- manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
+  - manual-curso-introduccion-de-r-capitulo-7-funciones-graficas-basicas-en-r.md
+  - determinar-la-distribucion-de-un-vector-de-datos-con-r.md
+  - trucos-sas-calcular-percentiles-como-excel-o-r.md
+  - manual-curso-introduccion-de-r-capitulo-2-interfaz-y-primeras-sentencias.md
+  - manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: 'Manual. Curso introducción de R. Capítulo 6: Funciones de estadística descriptiva'
 url: /blog/manual-curso-introduccion-de-r-capitulo-6-funciones-de-estadistica-descriptiva/
 ---
+
 En R trabajaremos con objetos y funciones. En capítulos anteriores hemos empezado a crear objetos, fundamentalmente vectores y matrices. En la presente entrega vamos a estudiar las funciones básicas de estadística descriptiva.
 
 Como funciones de medida de tendencia y localización tendremos:
-
-
 
 ```r
 > alturas<- scan() #creamos el objeto alturas con 11 observaciones
@@ -72,7 +71,7 @@ Como funciones de medida de dispersión tenemos:
 [1] 0.1149308
 ```
 
-Si deseamos la varianza hemos de crear en R una función que nos calcule [(n-1)/n]*cuasivarianza:
+Si deseamos la varianza hemos de crear en R una función que nos calcule [(n-1)/n]\*cuasivarianza:
 
 ```r
 > varianza<-function(x) { ((length(x)-1)/length(x))*var(x) } #creamos la función varianza

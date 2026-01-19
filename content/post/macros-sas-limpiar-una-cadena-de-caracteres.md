@@ -1,25 +1,26 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- sas
-- trucos
+  - formación
+  - sas
+  - trucos
 date: '2010-04-29'
 lastmod: '2025-07-13'
 related:
-- macros-faciles-de-sas-normaliza-un-texto-rapido.md
-- trucos-sas-eliminacion-de-espacios-en-blanco.md
-- truco-sas-funcion-para-contar-caracteres.md
-- macros-sas-contar-las-palabras-de-una-macro-variable.md
-- curso-de-lenguaje-sas-con-wps-funciones-en-wps.md
+  - macros-faciles-de-sas-normaliza-un-texto-rapido.md
+  - trucos-sas-eliminacion-de-espacios-en-blanco.md
+  - truco-sas-funcion-para-contar-caracteres.md
+  - macros-sas-contar-las-palabras-de-una-macro-variable.md
+  - curso-de-lenguaje-sas-con-wps-funciones-en-wps.md
 tags:
-- compress
-- substr
-- tranwrd
-- trim
+  - compress
+  - substr
+  - tranwrd
+  - trim
 title: Macros SAS. Limpiar una cadena de caracteres
 url: /blog/macros-sas-limpiar-una-cadena-de-caracteres/
 ---
+
 Macro de SAS que he utilizado hoy para limpiar caracteres en una cadena de texto. Está muy limitada y es muy sencilla pero puede serviros:
 
 ```r

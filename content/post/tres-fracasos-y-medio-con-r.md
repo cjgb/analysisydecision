@@ -1,23 +1,24 @@
 ---
 author: cgbellosta
 categories:
-- data mining
-- r
+  - data mining
+  - r
 date: '2009-12-15'
 lastmod: '2025-07-13'
 related:
-- conectar-r-a-una-base-de-datos.md
-- manual-curso-introduccion-de-r-capitulo-5-lectura-avanzada-de-datos.md
-- monografico-paquete-sqldf-si-sabes-sql-sabes-r.md
-- analisis-de-textos-con-r.md
-- lectura-de-archivos-csv-con-python-y-pandas.md
+  - conectar-r-a-una-base-de-datos.md
+  - manual-curso-introduccion-de-r-capitulo-5-lectura-avanzada-de-datos.md
+  - monografico-paquete-sqldf-si-sabes-sql-sabes-r.md
+  - analisis-de-textos-con-r.md
+  - lectura-de-archivos-csv-con-python-y-pandas.md
 tags:
-- ficheros grandes
-- memoria
-- r
+  - ficheros grandes
+  - memoria
+  - r
 title: Tres fracasos y medio con R
 url: /blog/tres-fracasos-y-medio-con-r/
 ---
+
 Hoy, mientras Raúl departía en el cuarto de al lado —él os dirá por qué y para qué— y hacía tiempo para saludarlo, me he entretenido fracasando tres veces y media en lo que abajo desarrollo. No pensaba publicarlo hasta que, reflexionando, he considerado que, a veces, más útil es una buena pregunta que algunas certezas. Inconcluso —o fracasado— puede no significar inútil o imperfecto.
 
 Veamos en qué han consistido mis fraccionarios fracasos.

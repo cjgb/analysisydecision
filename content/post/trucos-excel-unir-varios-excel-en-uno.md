@@ -1,25 +1,26 @@
 ---
 author: rvaquerizo
 categories:
-- excel
-- formación
-- monográficos
-- trucos
+  - excel
+  - formación
+  - monográficos
+  - trucos
 date: '2011-09-21'
 lastmod: '2025-07-13'
 related:
-- truco-excel-unir-todos-los-libros-en-una-hoja.md
-- truco-sas-unir-todos-los-excel-en-uno-solo.md
-- truco-excel-abrir-multiples-libros-de-excel-en-distintas-hojas-de-un-nuevo-libro.md
-- truco-sas-unir-todas-las-hojas-de-un-excel-en-una.md
-- trucos-excel-unir-todos-los-excel-en-uno-version-muy-mejorada.md
+  - truco-excel-unir-todos-los-libros-en-una-hoja.md
+  - truco-sas-unir-todos-los-excel-en-uno-solo.md
+  - truco-excel-abrir-multiples-libros-de-excel-en-distintas-hojas-de-un-nuevo-libro.md
+  - truco-sas-unir-todas-las-hojas-de-un-excel-en-una.md
+  - trucos-excel-unir-todos-los-excel-en-uno-version-muy-mejorada.md
 tags:
-- macros
-- unir excel
-- visual basic
+  - macros
+  - unir excel
+  - visual basic
 title: Trucos Excel. Unir varios Excel en uno
 url: /blog/trucos-excel-unir-varios-excel-en-uno/
 ---
+
 Tenía pendiente revisar [una de las entradas más visitadas del blog](https://analisisydecision.es/truco-sas-unir-todos-los-excel-en-uno-solo/). Trata la problemática de **unir varios Excel en uno sólo**. En el caso concreto servía para unir varios Excel generados por SAS a través de una macro en SAS. En la entrada de hoy quiero trabajar con un ejemplo que os podéis [ descargar aquí en formato rar](/images/2011/09/unir_excel1.rar "unir_excel1.rar"). De los archivos que comparto el más interesante el que llamamos [unir_varios_excel.xlsm](/images/2011/09/unir_varios_excel1.xlsm "unir_varios_excel1.xlsm") se trata de un archivo Excel para macros que contiene un par de macros más que interesantes. Un pantallazo de este libro de Excel:
 
 ![unir_excel.png](/images/2011/09/unir_excel.png)
@@ -88,7 +89,8 @@ End If
 Wend
 ```
 
-``
+\`\`
+
 ```r
 XL.Quit
 
@@ -99,8 +101,8 @@ Creamos un objeto _XL_ como **aplicación de Excel**. Y sobre un Excel que llama
 
 Al ser esta una primera versión que espero vaya mejorando por mi parte y por parte de las personas que deseen colaborar tiene algunas limitaciones:
 
-  * Sólo une la **primera hoja** de los libros que deseamos unir
-  * Cuando el **Excel resultante ya está creado** nos pide si deseamos sobreescribirlo
-  * He detectado un **problema en Excel 2010** con el resultado cuando tratamos de guardarlo como xlsx
+- Sólo une la **primera hoja** de los libros que deseamos unir
+- Cuando el **Excel resultante ya está creado** nos pide si deseamos sobreescribirlo
+- He detectado un **problema en Excel 2010** con el resultado cuando tratamos de guardarlo como xlsx
 
 Poco a poco iremos puliendo estos defectos y seguramente podamos crear una aplicación en VB para unir archivos Excel más completa. Espero que os sea de utilidad, un saludo.

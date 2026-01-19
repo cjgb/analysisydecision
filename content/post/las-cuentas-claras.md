@@ -1,23 +1,24 @@
 ---
 author: danifernandez
 categories:
-- data mining
-- formación
-- monográficos
-- sas
+  - data mining
+  - formación
+  - monográficos
+  - sas
 date: '2010-05-22'
 lastmod: '2025-07-13'
 related:
-- macros-sas-agrupando-variables-categoricas.md
-- trucos-sas-informes-de-valores-missing.md
-- trucos-sas-muestreo-con-proc-surveyselect.md
-- truco-sas-cruce-con-formatos.md
-- trucos-sas-trasponer-con-sql-para-torpes.md
+  - macros-sas-agrupando-variables-categoricas.md
+  - trucos-sas-informes-de-valores-missing.md
+  - trucos-sas-muestreo-con-proc-surveyselect.md
+  - truco-sas-cruce-con-formatos.md
+  - trucos-sas-trasponer-con-sql-para-torpes.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Las cuentas claras.
 url: /blog/las-cuentas-claras/
 ---
+
 > Si hay alguna tarea o procedimiento indispensable y más repetitivo hasta la saciedad por excelencia a la hora de trabajar con bases de datos y tener que reportar alguna información por mínima que sea, esta es contar o contabilizar el número de casos (registros) que tenemos en total o en subtotales (por grupos) dentro de una tabla (los llamados ‘datasets’ en SAS).
 
 Para dar mayor utilidad a este ‘tutorial’ sobre conteo, partiré de una tabla con 2 columnas (campos) tipo cadena, es decir tipo texto, de manera que podamos ver diferentes métodos para contar-contabilizar NO solo campos tipo texto sino también trucos que nos den una solución más ‘elegante’ de la combinación de ambos campos tipo cadena. Estos 2 campos se llamarán ‘grupo’ y ‘tipo’, muy empleados por muchos programadores, pero se podrían llamar tambien ‘familia’ y ‘familia_segmento’ o bien
@@ -49,7 +50,7 @@ B Z
 Recordemos que el PROC FREQ, en vez de agrupar con la sentencia ‘BY’ o ‘CLASS’ (o bien el ‘GROUP BY’ de PROC SQL), lo hace mediante ‘TABLES’:
 
 proc freq data=test noprint;
-tables Grupo*Tipo /out=METODO_1 (drop=percent );
+tables Grupo\*Tipo /out=METODO_1 (drop=percent );
 run;
 
 Salida:
@@ -63,14 +64,14 @@ B Z 3
 Veamos su particularidad: además de ser un procedimiento (‘procedure’) rico en realizar tests de bondad de ajuste, coeficientes de correlación, Chi-Cuadrado, etc etc para nuestro cometido de contabilizar registros nos facilita el conteo de valores inexistentes, es decir, para nuestro caso es capaz de identificar aquellas combinaciones no resueltas que si las tuvieramos que contar e informar en un questionario o formulario a mano serían zero. En nuestra tabla que llamamos ‘TEST’ NO tenemos ningun registro del campo ‘tipo’ con valor ‘X’ para el grupo ‘B’, pero si usamos la opción ‘SPARSE’ este nos informa de esta carencia de tal manera que ‘profesionaliza’ nuestro report hasta el máximo detalle (así tu jefe no te preguntará que es lo que sucede con ‘el grupo B – tipo X’) :
 
 proc freq data=test noprint;
-tables Grupo*Tipo /out=METODO_1 (drop=percent ) SPARSE;
+tables Grupo\*Tipo /out=METODO_1 (drop=percent ) SPARSE;
 run;
 
 Grupo Tipo Count
 
 A X 1
 A Z 2
-B X 0 /* <—- Inexistente !! */
+B X 0 /\* \<—- Inexistente !! \*/
 B Z 3
 
 Vista esta particularidad curiosa de PROC FREQ, vayamos a lo grande, creamos una tabla con 30 millones de registros y cada cual que observe su ‘performance’ en su máquina (espero escuchar vuestras opiniones más adelante ! ).
@@ -78,7 +79,7 @@ Vista esta particularidad curiosa de PROC FREQ, vayamos a lo grande, creamos una
 data test;
 do i=1 to 30e6;
 Grupo=char(‘ABCDEFGH’,ceil(ranuni(200) * 8));
-Tipo=char(‘WXYZ’,ceil(ranuni(1999) * 5)); *creamos nulos!;
+Tipo=char(‘WXYZ’,ceil(ranuni(1999) * 5)); \*creamos nulos!;
 output;
 end;
 drop i;
@@ -89,7 +90,7 @@ run;
 Haciendo uso del PROC FREQ. Rápido y sencillo de programar.
 
 proc freq data=test noprint;
-tables Grupo*Tipo /out=METODO_1 (drop=percent ) ;
+tables Grupo\*Tipo /out=METODO_1 (drop=percent ) ;
 run;
 
 Aqui NO hace falta usar la opción SPARSE al tratarse de una tabla tan grande con valores aleatorios distribuidos uniformemente por lo que la probabilidad de NO obtener una sola combinación de entre todas las combinaciones posibles entre ambos campos (‘grupo’ y ‘tipo’) expresados en esta tabla es ínfima. Pero tampoco pasa nada si añadimos esta opción (si encuentra tal remota carencia, nuestro conteo abarcará toda la gama de agrupaciones posibles y por ende NO tendremos que cuestionarnos que combinaciones NO se encontraban en la tabla).
@@ -103,7 +104,7 @@ Algunos se preguntarán, ¿como voy a contar dichos registros si ambos campos so
 proc summary data=test;
 class grupo tipo;
 var grupo tipo;
-output out = MALO (drop=_:) N()=;
+output out = MALO (drop=\_:) N()=;
 run;
 
 ..porque el LOG nos dirá:
@@ -129,27 +130,27 @@ proc sort data=test2 out=test3; BY grupo tipo; run;
 proc summary data=test3;
 BY grupo tipo;
 var unos;
-output out = METODO_2A (drop=_:) N()=;
+output out = METODO_2A (drop=\_:) N()=;
 run;
 
 -B-
 
 Prescindimos de ordenarla previamente y nos ahorramos tiempo. Para ello debemos usar el ‘CLASS’ en vez del ‘BY’ como sigue:
 
-proc summary data=test2; * <– la tabla ‘test2’ NO ha sido ordenada;
+proc summary data=test2; * \<– la tabla ‘test2’ NO ha sido ordenada;
 CLASS grupo tipo;
 var unos;
-output out = METODO_2B (drop=_:) N()=;
+output out = METODO_2B (drop=\_:) N()=;
 run;
 
-La ventaja por añadidura (o desventaja si NO nos conviene) es que el ‘CLASS’ nos añadirá el total global de registros NO nulos y los respectivos totales de cada valor categórico de cada uno de los campos ‘grupo’ y ‘tipo’ por separado. Internamente SAS los agrupa por importancia jerárquica dentro de una variable artifial creada a propósito llamada ‘_TYPE_’, un molesto y engorroso sistema que NO recomiendo adentrarse a estudiar. Habitualmente elimino las variables artifiales _TYPE_ y _FREQ_ mediante el ‘ (drop= _: ) ‘ y por ello NO aparecen.
+La ventaja por añadidura (o desventaja si NO nos conviene) es que el ‘CLASS’ nos añadirá el total global de registros NO nulos y los respectivos totales de cada valor categórico de cada uno de los campos ‘grupo’ y ‘tipo’ por separado. Internamente SAS los agrupa por importancia jerárquica dentro de una variable artifial creada a propósito llamada ‘_TYPE_’, un molesto y engorroso sistema que NO recomiendo adentrarse a estudiar. Habitualmente elimino las variables artifiales _TYPE_ y _FREQ_ mediante el ‘ (drop= \_: ) ‘ y por ello NO aparecen.
 
 Repito, mediante el uso de ‘CLASS’ en vez de ‘BY’ obtenemos información más rica con su total global de registros NO nulos y totales agrupados; si queremos evitar que nos reporte dichos totales debemos usar la opción ‘NWAY’. No obstante seguimos teniendo un problema: el ‘CLASS’ descarta cualquier registro que contenga al menos un valor nulo o missing en uno de sus campos (por lo que no obtendremos el mismo resultado que usando el ‘BY’ del camino ‘A’ o bien el PROC FREQ que vimos o los siguientes métodos que seguirán a continuación), por lo que debemos usar la opción MISSING para que los cuente expresamente:
 
 proc summary data=test2 NWAY;
 class grupo tipo /MISSING;
 var unos;
-output out = METODO_2B (drop=_: ) N()= ;
+output out = METODO_2B (drop=\_: ) N()= ;
 run;
 
 Ciertamente los procedimientos (‘PROCedures’) de SAS son como cajas negras, cada cual tiene su sintaxis, sus opciones y trucos por lo que NO hay más remedio que aprenderselos a fuerza de práctica y lectura de su documentación.
@@ -161,7 +162,7 @@ proc summary data=test2 NWAY MISSING;
 
 …pero NO podemos insertar la opción ‘NWAY’ en la segunda línea:
 
-class grupo tipo /MISSING NWAY; *NO funciona;
+class grupo tipo /MISSING NWAY; \*NO funciona;
 
 Resumiendo, el camino ‘B’ (con el uso del ‘CLASS’) ofrece 2 ventajas:
 -Nos ahorramos de ordenar previamente la tabla (el tiempo que ello conlleva).
@@ -173,7 +174,7 @@ El clásico PROC SQL. Sencillo pero lento a pesar de que NO requiere ordenar pre
 
 proc sql ;
 create table METODO_3 as
-select Grupo, Tipo, count(*) as Count
+select Grupo, Tipo, count(\*) as Count
 from test
 group by Grupo, Tipo;
 quit;
@@ -188,7 +189,7 @@ shu.definekey (‘Grupo’,’Tipo’);
 shu.definedata (‘Grupo’,’Tipo’,’Count’);
 shu.definedone();
 
-El ‘hashexp’ corresponde al exponente ‘n’ en base 2 de ‘hash buckets’ (nodos) que vamos a crear con este ‘array’, por cada ‘bucket’ se asigna un identificador de una/s clave/s asociada/s (los ‘definekey’), donde se ‘incrustan’ los ‘definekey’ con su/s correspondiente/s variable/s ‘satelite/s’ (en nuestro caso la variable ‘count’) en forma de árbol binario AVL (de sus creadores: Adelson-Velskii y Landis, lo que ellos llamaron ‘Un algoritmo para la organización de la información’ en 1962), este árbol binario permite agilizar la búsqueda de clave/s asociada/s, resolver colisiones de sus correspondientes variable/s ‘satelite/s’, eliminar duplicados etc etc. En la versión SAS 9.1 el exponente esta limitado a 16, todo número por encima por defecto se truncará a 16, y como una de las novedades de la versión SAS 9.2 es que su límite es ahora 20. Es decir, con exponente 5 estaríamos creando 32 ‘buckets’ (2**5= 32), con 20 crearíamos más de 1 millón de ‘buckets’ (2**20 = 1.048.576). NO por ello significa que cuantos más ‘buckets’ tengamos mejor será nuestro rendimiento operativo pues resultará en menores elementos por cada ‘bucket’ que SAS tendrá que ‘adentrarse a buscar’ y realizar menos comparaciones; es decir, el rendimiento operativo apenas mejora (o puede mermar) utilizando el máximo exponente permitido de nuestra versión SAS, ello depende más del factor de carga. De hecho, si escribieramos ‘hashexp=0’ (2**0 = 1) estaríamos creando un solo ‘bucket’ y funciona bastante bien; probando diferentes exponentes en esta tabla ‘test’ de 30 millones de registros, apenas mejora el rendimiento cuando usamos un exponente mayor de 5 o 6. Si no hacemos mención al ‘hashexp’ este funciona con exponente 8 por defecto.
+El ‘hashexp’ corresponde al exponente ‘n’ en base 2 de ‘hash buckets’ (nodos) que vamos a crear con este ‘array’, por cada ‘bucket’ se asigna un identificador de una/s clave/s asociada/s (los ‘definekey’), donde se ‘incrustan’ los ‘definekey’ con su/s correspondiente/s variable/s ‘satelite/s’ (en nuestro caso la variable ‘count’) en forma de árbol binario AVL (de sus creadores: Adelson-Velskii y Landis, lo que ellos llamaron ‘Un algoritmo para la organización de la información’ en 1962), este árbol binario permite agilizar la búsqueda de clave/s asociada/s, resolver colisiones de sus correspondientes variable/s ‘satelite/s’, eliminar duplicados etc etc. En la versión SAS 9.1 el exponente esta limitado a 16, todo número por encima por defecto se truncará a 16, y como una de las novedades de la versión SAS 9.2 es que su límite es ahora 20. Es decir, con exponente 5 estaríamos creando 32 ‘buckets’ (2**5= 32), con 20 crearíamos más de 1 millón de ‘buckets’ (2**20 = 1.048.576). NO por ello significa que cuantos más ‘buckets’ tengamos mejor será nuestro rendimiento operativo pues resultará en menores elementos por cada ‘bucket’ que SAS tendrá que ‘adentrarse a buscar’ y realizar menos comparaciones; es decir, el rendimiento operativo apenas mejora (o puede mermar) utilizando el máximo exponente permitido de nuestra versión SAS, ello depende más del factor de carga. De hecho, si escribieramos ‘hashexp=0’ (2\*\*0 = 1) estaríamos creando un solo ‘bucket’ y funciona bastante bien; probando diferentes exponentes en esta tabla ‘test’ de 30 millones de registros, apenas mejora el rendimiento cuando usamos un exponente mayor de 5 o 6. Si no hacemos mención al ‘hashexp’ este funciona con exponente 8 por defecto.
 Cuando en mi ejemplo digo «ordered ‘a'», le hago saber que quiero que la salida este ordenada ascendentemente. La función ‘replace’ hace actualizar la variable satelite ‘count’ cada vez que la variables claves asociadas ‘grupo’ y ‘tipo’ son encontradas en el árbol binario del ‘bucket’. Por último, hago servir la función ‘output’ como nombre de tabla salida.
 
 Explicar la funcionalidad, funciones y estilo de código de los ‘hash’ resulta tedioso, sin embargo resultan muy utiles para unir tablas sin estar ordenadas, manejar grandes volumenes de datos y todo en muy poco tiempo. Para un estudio más profundo para el lector más inquieto, recomiendo busque tutoriales de ‘SAS hash’,’Hsize’,’hash buckets’…

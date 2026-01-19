@@ -1,25 +1,26 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- r
+  - formación
+  - r
 date: '2012-06-05'
 lastmod: '2025-07-13'
 related:
-- nuevo-curso-de-estadistica-con-r.md
-- nueva-edicion-del-curso-basico-de-r.md
-- da-comienzo-la-lectura-de-the-elements-of-statistical-learning.md
-- jornadas-de-r-gratuitas-en-galicia.md
-- curso-de-iniciacion-a-r-en-kschool-de-carlos-gil.md
+  - nuevo-curso-de-estadistica-con-r.md
+  - nueva-edicion-del-curso-basico-de-r.md
+  - da-comienzo-la-lectura-de-the-elements-of-statistical-learning.md
+  - jornadas-de-r-gratuitas-en-galicia.md
+  - curso-de-iniciacion-a-r-en-kschool-de-carlos-gil.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Curso básico de R
 url: /blog/curso-basico-de-r/
 ---
+
 Meritoria iniciativa de:
 
-  * <http://jjgibaja.net/>
-  * <http://www.datanalytics.com/blog/>
+- <http://jjgibaja.net/>
+- <http://www.datanalytics.com/blog/>
 
 O lo que es lo mismo Juan José Gibaja y Carlos J. Gil Bellosta.
 

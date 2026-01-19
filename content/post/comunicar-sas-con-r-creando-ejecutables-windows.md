@@ -1,24 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- r
-- sas
+  - formación
+  - r
+  - sas
 date: '2010-04-01'
 lastmod: '2025-07-13'
 related:
-- macros-sas-dataset-a-data-frame-r.md
-- trucos-sas-envio-de-email-con-data.md
-- curso-de-lenguaje-sas-con-wps-ejecuciones.md
-- truco-sas-como-leer-pc-axis-con-sas.md
-- lectura-de-ficheros-sas7bdat-de-sas-directamente-con-r.md
+  - macros-sas-dataset-a-data-frame-r.md
+  - trucos-sas-envio-de-email-con-data.md
+  - curso-de-lenguaje-sas-con-wps-ejecuciones.md
+  - truco-sas-como-leer-pc-axis-con-sas.md
+  - lectura-de-ficheros-sas7bdat-de-sas-directamente-con-r.md
 tags:
-- conectar sas y r
-- file
-- put
+  - conectar sas y r
+  - file
+  - put
 title: Comunicar SAS con R creando ejecutables Windows
 url: /blog/comunicar-sas-con-r-creando-ejecutables-windows/
 ---
+
 Quiero trabajar hoy con la función _put_ de SAS para la creación de ficheros ejecutables de Windows (.BAT) y también quiero comunicar SAS con R. Mato dos pájaros de un tiro y para ello vamos a crear un script de R que llamaremos desde SAS a partir de un archivo .BAT. Un ejemplo típico y muy sencillo que espero poder ir sofisticando con el paso del tiempo hasta llegar a paquetizarlo. Tiene los siguientes pasos:
 
 1\. Creamos un fichero con datos aleatorios en SAS:
@@ -67,7 +68,7 @@ put " ";
 run;
 ```
 
-Vemos que el código R le hemos metido a través de un paso _data+file+put_ en un _script_ de R \pgm.R, este _script_ lee el fichero de texto exportado previamente, realiza una sumarización y genera un fichero ._jpg_ en la misma ubicación que trabajamos. Este fichero tiene un simple histograma de la variable x que hemos gestado con SAS.
+Vemos que el código R le hemos metido a través de un paso _data+file+put_ en un _script_ de R \\pgm.R, este _script_ lee el fichero de texto exportado previamente, realiza una sumarización y genera un fichero ._jpg_ en la misma ubicación que trabajamos. Este fichero tiene un simple histograma de la variable x que hemos gestado con SAS.
 
 4\. Creamos un fichero de lotes de Windows que nos permite ejecutar R y el código previamente generado:
 

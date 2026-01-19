@@ -1,22 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- python
-- trucos
+  - python
+  - trucos
 date: '2017-07-22'
 lastmod: '2025-07-13'
 related:
-- leer-fichero-de-texto-de-ancho-fijo-con-python-pandas.md
-- transponer-data-frames-con-r-de-filas-a-columnas-y-de-columnas-a-filas.md
-- data-management-basico-con-pandas.md
-- manejo-de-datos-basico-con-python-datatable.md
-- truco-python-seleccionar-o-eliminar-variables-de-un-data-frame-en-base-a-un-prefijo-sufijo-o-si-contienen-un-caracter.md
+  - leer-fichero-de-texto-de-ancho-fijo-con-python-pandas.md
+  - transponer-data-frames-con-r-de-filas-a-columnas-y-de-columnas-a-filas.md
+  - data-management-basico-con-pandas.md
+  - manejo-de-datos-basico-con-python-datatable.md
+  - truco-python-seleccionar-o-eliminar-variables-de-un-data-frame-en-base-a-un-prefijo-sufijo-o-si-contienen-un-caracter.md
 tags:
-- pandas
-title: Truco Python. Reemplazar una cadena de caracteres en los nombres de las columnas
-  de un data frame
+  - pandas
+title: Truco Python. Reemplazar una cadena de caracteres en los nombres de las columnas de un data frame
 url: /blog/truco-python-reemplazar-una-cadena-de-caracteres-en-los-nombres-de-las-columnas-de-un-data-frame/
 ---
+
 Más largo el título de la entrada que la entrada en si misma. Tenemos un conjunto de datos que os podéis descargar [de este link que ya es conocido](http://archive.ics.uci.edu/ml/machine-learning-databases/00197/AU.zip). Os descargáis los datos y creamos un data frame que tiene 10.000 registros y 251 columnas, casi todas se llaman attx y queremos cambiar el nombre a columna_x. Mi sugerencia para hacerlo vía pandas es:
 
 ```r
@@ -27,6 +27,5 @@ df.head()
 df.columns = df.columns.str.replace('att','columna_')
 df.head()
 ```
-
 
 Espero que sea de utilidad. Saludos.

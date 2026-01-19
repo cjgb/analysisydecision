@@ -1,23 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- sas
-- trucos
-- wps
+  - formación
+  - sas
+  - trucos
+  - wps
 date: '2012-05-21'
 lastmod: '2025-07-13'
 related:
-- monografico-first-y-last-ejemplos-en-data.md
-- monografico-datos-agrupados-en-sas.md
-- pasando-de-sas-a-r-primer-y-ultimo-elemento-de-un-campo-agrupado-de-un-data-frame.md
-- trucos-sas-operaciones-con-tablas-de-dimensiones-con-sas.md
-- bucle-de-fechas-con-sas-para-tablas-particionadas.md
+  - monografico-first-y-last-ejemplos-en-data.md
+  - monografico-datos-agrupados-en-sas.md
+  - pasando-de-sas-a-r-primer-y-ultimo-elemento-de-un-campo-agrupado-de-un-data-frame.md
+  - trucos-sas-operaciones-con-tablas-de-dimensiones-con-sas.md
+  - bucle-de-fechas-con-sas-para-tablas-particionadas.md
 tags:
-- array
+  - array
 title: Trucos SAS. Primer y último elemento de un array
 url: /blog/trucos-sas-primer-y-ultimo-elemento-de-un-array/
 ---
+
 Breve entrada sobre el uso de arrays en SAS. Dada una tabla SAS como esta con una variable mes1, mes2, … mesN:
 
 ![arrays_sas.PNG](/images/2012/05/arrays_sas.PNG)

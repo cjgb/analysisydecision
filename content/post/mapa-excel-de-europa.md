@@ -1,24 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- consultoría
-- excel
-- formación
-- monográficos
+  - consultoría
+  - excel
+  - formación
+  - monográficos
 date: '2015-04-24'
 lastmod: '2025-07-13'
 related:
-- trucos-excel-mapa-de-mexico-por-estados.md
-- trucos-excel-mapa-de-espana-por-provincias.md
-- nuevo-y-muy-mejorado-mapa-de-espana-por-provincias-con-excel.md
-- trucos-excel-mapa-de-espana-por-comunidades-autonomas.md
-- mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel.md
+  - trucos-excel-mapa-de-mexico-por-estados.md
+  - trucos-excel-mapa-de-espana-por-provincias.md
+  - nuevo-y-muy-mejorado-mapa-de-espana-por-provincias-con-excel.md
+  - trucos-excel-mapa-de-espana-por-comunidades-autonomas.md
+  - mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel.md
 tags:
-- mapas
-- excel
+  - mapas
+  - excel
 title: Mapa Excel de Europa
 url: /blog/mapa-excel-de-europa/
 ---
+
 [![mapa_excel_europa1](/images/2015/04/mapa_excel_europa1.png)](/images/2015/04/mapa_excel_europa1.png)
 
 Un lector me había pedido disponer en Excel de un mapa de Europa y dicho y hecho. Además en este Excel os muestro como hacer paletas de colores más o menos atractivas y como poder usarlas indistintamente con el mapa. Este Excel además contiene algunas líneas de Visual Basic que considero interesantes y que veremos después. [Los shape están sacados de este link](http://www.clearlyandsimply.com/clearly_and_simply/2009/06/choropleth-maps-with-excel.html), pero se retoca completamente el código Visual Basic para hacerlo (a mi entender) más sencillo. El mapa se controla desde esta zona del Excel:
@@ -46,7 +47,7 @@ Sheets(«mapa»).Select
 
 ‘ESTA PARTE PONE LOS COLORES DE LAS FORMAS
 For i = 1 To rngPais.Rows.Count
-pais = «S_» & rngPais.Cells(i, 2)
+pais = «S\_» & rngPais.Cells(i, 2)
 
 ActiveSheet.Shapes(pais).Select
 ActiveSheet.Shapes(pais).Fill.ForeColor.RGB = rngPais.Cells(i, 3).Interior.Color

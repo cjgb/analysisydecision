@@ -1,29 +1,30 @@
 ---
 author: rvaquerizo
 categories:
-- monográficos
-- sas
+  - monográficos
+  - sas
 date: '2008-11-17'
 lastmod: '2025-07-13'
 related:
-- curso-de-lenguaje-sas-con-wps-funciones-fecha.md
-- monografico-funciones-intnx-e-intck-para-fechas-en-sas.md
-- trabajo-con-fechas-sas-introduccion.md
-- trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados.md
-- trucos-sas-numero-de-dias-de-un-mes.md
+  - curso-de-lenguaje-sas-con-wps-funciones-fecha.md
+  - monografico-funciones-intnx-e-intck-para-fechas-en-sas.md
+  - trabajo-con-fechas-sas-introduccion.md
+  - trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados.md
+  - trucos-sas-numero-de-dias-de-un-mes.md
 tags:
-- fechas sas
-- formatos sas
-- funciones sas
+  - fechas sas
+  - formatos sas
+  - funciones sas
 title: Trabajo con fechas SAS. Funciones fecha
 url: /blog/trabajo-con-fechas-sas-funciones-fecha/
 ---
+
 En las entregas anteriores del monográfico sobre fechas SAS hemos estudiado como almacena internamente las fechas el sistema y los formatos más prácticos que disponemos para visualizarlas. En esta última entrega veremos algunas de las funciones de fecha hora de las que dispone SAS. Las funciones las vamos a dividir en 4 grupos:
 
-  * Funciones de extracción de fecha
-  * Funciones de creación de fecha
-  * Funciones de duración
-  * Funciones de intervalo
+- Funciones de extracción de fecha
+- Funciones de creación de fecha
+- Funciones de duración
+- Funciones de intervalo
 
 Las funciones de **extracción** de fecha nos permiter «extraer» información de variables de fecha/hora, veamos un ejemplo para extraer la fecha y la hora de una variable fecha/hora:
 

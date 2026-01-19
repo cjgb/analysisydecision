@@ -1,24 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- monográficos
-- r
+  - formación
+  - monográficos
+  - r
 date: '2010-10-09'
 lastmod: '2025-07-13'
 related:
-- mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel.md
-- mapas-estaticos-de-peru-con-r-y-python-a-nivel-de-distrito.md
-- mapas-estaticos-municipales-para-estados-de-mexico-con-r-y-con-excel.md
-- mapa-de-argentina-con-r.md
-- mapa-estatico-de-espana-con-python.md
+  - mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel.md
+  - mapas-estaticos-de-peru-con-r-y-python-a-nivel-de-distrito.md
+  - mapas-estaticos-municipales-para-estados-de-mexico-con-r-y-con-excel.md
+  - mapa-de-argentina-con-r.md
+  - mapa-estatico-de-espana-con-python.md
 tags:
-- mapas
-- sp
-- spatial data
+  - mapas
+  - sp
+  - spatial data
 title: Mapas con spatial data de R
 url: /blog/mapas-con-spatial-data-de-r/
 ---
+
 [](/images/2010/10/colombia13.jpg "colombia13.jpg")
 
 ![colombia13.jpg](/images/2010/10/colombia13.thumbnail.jpg)[![espania1.jpg](/images/2010/10/espania1.thumbnail.jpg)](/images/2010/10/espania1.jpg "espania1.jpg")[![mexico1.jpg](/images/2010/10/mexico1.thumbnail.jpg)](/images/2010/10/mexico1.jpg "mexico1.jpg")

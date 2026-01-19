@@ -1,24 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- excel
-- formación
-- monográficos
-- trucos
+  - excel
+  - formación
+  - monográficos
+  - trucos
 date: '2016-03-17'
 lastmod: '2025-07-13'
 related:
-- trucos-excel-unir-varios-excel-en-uno.md
-- truco-excel-unir-todos-los-libros-en-una-hoja.md
-- truco-excel-application-getopenfilename-el-explorador-de-archivos-sencillo-en-macro.md
-- truco-sas-unir-todas-las-hojas-de-un-excel-en-una.md
-- truco-sas-unir-todos-los-excel-en-uno-solo.md
+  - trucos-excel-unir-varios-excel-en-uno.md
+  - truco-excel-unir-todos-los-libros-en-una-hoja.md
+  - truco-excel-application-getopenfilename-el-explorador-de-archivos-sencillo-en-macro.md
+  - truco-sas-unir-todas-las-hojas-de-un-excel-en-una.md
+  - truco-sas-unir-todos-los-excel-en-uno-solo.md
 tags:
-- getopenfilename
-title: Truco Excel. Abrir múltiples libros de Excel en distintas hojas de un nuevo
-  libro
+  - getopenfilename
+title: Truco Excel. Abrir múltiples libros de Excel en distintas hojas de un nuevo libro
 url: /blog/truco-excel-abrir-multiples-libros-de-excel-en-distintas-hojas-de-un-nuevo-libro/
 ---
+
 Hace tiempo escribí sobre el método de Excel GetOpenFilename para abrir archivos desde Excel a través del explorador de archivos ahora le damos una nueva vuelta de tuerca a aquella entrada y de forma simple podemos abrir múltiples libros de Excel que además se añadirán de forma sucesiva en un nuevo libro. [En este link podéis descargaros el archivo](/images/2016/03/abrir_excel1.xlsm) y como veréis no tiene nada. Un botón Abrir Excel realiza el proceso, se abre el explorador de Windows y podéis seleccionar múltiples archivos Excel que se almacenan en un array. La macro a ejecutar es la siguiente:
 
 _Sub abre_libros()_
@@ -26,7 +26,7 @@ _Dim Hoja As Object, rango As String_
 _Dim libros As Variant_
 
 _‘Ventana con archivos_
-_libros = Application.GetOpenFilename __
+\_libros = Application.GetOpenFilename \_\_
 _(«Archivos Excel (*.xls*), *.xls*», 2, «Abrir archivos», , True)_
 _‘Es necesario seleccionar archivos_
 _If IsArray(libros) Then_

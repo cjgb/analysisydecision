@@ -1,23 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- business intelligence
-- consultoría
+  - business intelligence
+  - consultoría
 date: '2010-04-13'
 lastmod: '2025-07-13'
 related:
-- acercamiento-a-wps-migrando-desde-sas.md
-- nuevo-entorno-para-la-gestion-de-la-informacion.md
-- en-breve-revision-de-wps-clonico-de-sas.md
-- comparativa-de-precio-wps-vs-sas.md
-- sigo-migrando-de-sas-a-wps.md
+  - acercamiento-a-wps-migrando-desde-sas.md
+  - nuevo-entorno-para-la-gestion-de-la-informacion.md
+  - en-breve-revision-de-wps-clonico-de-sas.md
+  - comparativa-de-precio-wps-vs-sas.md
+  - sigo-migrando-de-sas-a-wps.md
 tags:
-- sas es muy caro
-- wps
-- sas
+  - sas es muy caro
+  - wps
+  - sas
 title: WPS en el mercado español
 url: /blog/wps-en-el-mercado-espanol/
 ---
+
 ¿Puede funcionar WPS en España? Hoy 3 de los más eficientes gestores de la información que hay en España, bueno, en realidad 2 de los mejores y yo nos hemos hecho esta pregunta en la comida. Los tres conocemos WPS y hemos “trabajado” con el software. Trabajado va entrecomillado porque aun no lo hemos empleado en ningún entorno concreto, más bien nos hemos instalado el software, hemos jugado con él, hemos realizado algunos programas, hemos movido algunos GB y la conclusión a la que hemos llegado es: “Hace lo mismo que SAS y costaría muy poco migrar”. Entonces surgió la pregunta ¿Puede funcionar WPS en España?
 
 La respuesta a esta pregunta no es muy sencilla. Todos os podéis imaginar que en último término voy a finalizar con **SI**. Sin embargo a la hora de migrar de software tenemos que tener en cuenta 3 aspectos:

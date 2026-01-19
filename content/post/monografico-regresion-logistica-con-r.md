@@ -1,66 +1,67 @@
 ---
 author: rvaquerizo
 categories:
-- data mining
-- formación
-- modelos
-- monográficos
-- r
+  - data mining
+  - formación
+  - modelos
+  - monográficos
+  - r
 date: '2010-01-29'
 lastmod: '2025-07-13'
 related:
-- monografico-analisis-de-factores-con-r-una-introduccion.md
-- monografico-un-poco-de-proc-logistic.md
-- monografico-arboles-de-clasificacion-con-rpart.md
-- interpretacion-de-los-parametros-de-un-modelo-glm.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-15-modelos-glm-regresion-logistica-y-regresion-de-poisson.md
+  - monografico-analisis-de-factores-con-r-una-introduccion.md
+  - monografico-un-poco-de-proc-logistic.md
+  - monografico-arboles-de-clasificacion-con-rpart.md
+  - interpretacion-de-los-parametros-de-un-modelo-glm.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-15-modelos-glm-regresion-logistica-y-regresion-de-poisson.md
 tags:
-- data management
-- modelos
-- r
-- regresión logística
+  - data management
+  - modelos
+  - r
+  - regresión logística
 title: Monográfico. Regresión logística con R
 url: /blog/monografico-regresion-logistica-con-r/
 ---
+
 Por fin nos metemos con la regresión logística en R. Nos meteremos con WPS (si es posible). Los modelos de regresión logística son los más utilizados en las áreas en las que el ahora escribiente ha trabajado. ¿Por qué tiene tanto «éxito»? Porque es el mejor ejemplo de modelo de variable linealmente dependiente de otras variables independientes. Pero sobre todo tiene éxito porque modelamos una probabilidad de un suceso (habitualmente dicotómico) en función de unos
-factores que pueden ser discretos o continuos. Modelizamos probabilidades, insisto; por ejemplo, si clasificamos la variable comete fraude como 1 y no comete fraude como 0 podríamos realizar un modelo de regresión lineal del tipo fraude(0,1)=:término independiente:+:parámetro:*:independiente:. Matemáticamente es posible, pero si me dices que un cliente tiene un 1,34 de «potencial» de fraude entro en estado de shock. Peeero, si p es la probabilidad de cometer fraude podemos construir esta función Ln(p/(1-p)) y sobre esta función si hacemos: Ln(p/q)=:término independiente: + :parámetro:*:independiente:. O lo que es lo mismo: prob. fraude=1/(1+e**(-:término independiente:-:parámetro:*:independiente:)). Qué bonita función y que interesante propiedad de los logaritmos que transforman sumas en productos.
+factores que pueden ser discretos o continuos. Modelizamos probabilidades, insisto; por ejemplo, si clasificamos la variable comete fraude como 1 y no comete fraude como 0 podríamos realizar un modelo de regresión lineal del tipo fraude(0,1)=:término independiente:+:parámetro:*:independiente:. Matemáticamente es posible, pero si me dices que un cliente tiene un 1,34 de «potencial» de fraude entro en estado de shock. Peeero, si p es la probabilidad de cometer fraude podemos construir esta función Ln(p/(1-p)) y sobre esta función si hacemos: Ln(p/q)=:término independiente: + :parámetro:*:independiente:. O lo que es lo mismo: prob. fraude=1/(1+e\*\*(-:término independiente:-:parámetro:\*:independiente:)). Qué bonita función y que interesante propiedad de los logaritmos que transforman sumas en productos.
 
 Ya os he contado toda la teoría que necesitáis para comenzar a trabajar. Imagino que os habéis leído 4 o 5 entradas de Google sobre el tema y estáis preparados para comenzar a trabajar con datos. En este caso vamos a emplear la regresión logística para describir. Al introduciros en este análisis he hablado de la probabilidad de presentar o no una característica. Sin embargo ahora le doy la vuelta y, sabiendo que pertenecen a un grupo quiero encontrar las interacciones entre las variables independientes. En este monográfico quiero analizar las poblaciones de España que tienen una tasa de paro para las mujeres un 90% más alta que la tasa de paro de los hombres. ¿Qué está pasando en estas poblaciones? ¿Qué factores socioecómicos son los más influyentes? ¿Cómo interactúan estos factores? Para ilustrar este ejemplo vamos a emplear los datos del anuario de «la Caixa» que os podéis bajar en [este link](http://www.anuarieco.lacaixa.comunicacions.com/java/X?cgi=caixa.le_DEM.pattern&CLEAR=YES). Seleccionamos todos los municipios y nos quedamos con las siguientes variables:
 
-* Código INE
-* Variación población 03-08 (Absoluta)
-* Variación población españoles 03-08 (absoluta)
-* Variación población extranjera 03-08 (absoluta)
-* Variación población 03-08 (%)
-* Variación población 96-01 (%)
-* Extensión (Km2)
-* Paro registrado en % s/población total 2008
-* Paro registrado en % s/población total 2007
-* Paro registrado en % s/población total 2006
-* Paro registrado en % s/población total 2005
-* Paro registrado en % s/población total 2004
-* Paro registrado en % s/población total 2003
-* Paro registrado en % s/población total 2002
-* Paro registrado en % s/población total 2001
-* Paro registrado en % s/población total 2000
-* Paro registrado en % s/población total 1999
-* Paro registrado en % s/población total 1998
-* Paro registrado en % s/población total 1997
-* Paro registrado en % s/población total 1996
-* % Paro de varones
-* % Paro de mujeres
-* % Paro de 16 a 24 años
-* % Paro de 25 a 49 años
-* % Paro de 50 y más años
-* Variación teléfonos fijos 03-08 (%)
-* Líneas de banda ancha 2008
-* Variación total vehículos de motor 03-08 (%)
-* Variación oficinas bancarias 04-09 (Absoluta)
-* Variación cooperativas de crédito 04-09 (Absoluta)
-* Variación actividades industriales 03-08 (%)
-* Variación actividades comerciales mayoristas 03-08 (%)
-* Variación actividades comerciales minoristas 03-08 (%)
-* Variación actividades de restauración y bares 03-08 (%)
+- Código INE
+- Variación población 03-08 (Absoluta)
+- Variación población españoles 03-08 (absoluta)
+- Variación población extranjera 03-08 (absoluta)
+- Variación población 03-08 (%)
+- Variación población 96-01 (%)
+- Extensión (Km2)
+- Paro registrado en % s/población total 2008
+- Paro registrado en % s/población total 2007
+- Paro registrado en % s/población total 2006
+- Paro registrado en % s/población total 2005
+- Paro registrado en % s/población total 2004
+- Paro registrado en % s/población total 2003
+- Paro registrado en % s/población total 2002
+- Paro registrado en % s/población total 2001
+- Paro registrado en % s/población total 2000
+- Paro registrado en % s/población total 1999
+- Paro registrado en % s/población total 1998
+- Paro registrado en % s/población total 1997
+- Paro registrado en % s/población total 1996
+- % Paro de varones
+- % Paro de mujeres
+- % Paro de 16 a 24 años
+- % Paro de 25 a 49 años
+- % Paro de 50 y más años
+- Variación teléfonos fijos 03-08 (%)
+- Líneas de banda ancha 2008
+- Variación total vehículos de motor 03-08 (%)
+- Variación oficinas bancarias 04-09 (Absoluta)
+- Variación cooperativas de crédito 04-09 (Absoluta)
+- Variación actividades industriales 03-08 (%)
+- Variación actividades comerciales mayoristas 03-08 (%)
+- Variación actividades comerciales minoristas 03-08 (%)
+- Variación actividades de restauración y bares 03-08 (%)
 
 Ahora tenemos que preparar el _data.frame_ para R. En mi caso prefiero modificar los nombres directamente en Excel y luego realizar la importación con Rcomander. Como sois unos tipos muy afortunados esta tarea tan aburrida ya la he realizado yo y la tenéis en el [siguiente link](/images/2010/01/sociodemo.RData "sociodemo.RData"). El objeto datos será nuestro _data.frame_ de trabajo, hacemos _str(datos)_ :
 

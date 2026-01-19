@@ -1,22 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- sas
-- trucos
+  - formación
+  - sas
+  - trucos
 date: '2008-03-11'
 lastmod: '2025-07-13'
 related:
-- truco-sas-crear-ficheros-excel-sin-proc-export-i.md
-- intervalos-en-sas-con-proc-format.md
-- trucos-sas-calcular-percentiles-como-excel-o-r.md
-- macros-sas-pasar-de-texto-a-numerico.md
-- transformar-variables-en-sas-caracter-a-numerico.md
+  - truco-sas-crear-ficheros-excel-sin-proc-export-i.md
+  - intervalos-en-sas-con-proc-format.md
+  - trucos-sas-calcular-percentiles-como-excel-o-r.md
+  - macros-sas-pasar-de-texto-a-numerico.md
+  - transformar-variables-en-sas-caracter-a-numerico.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Truco SAS. Proc format VS formato percent
 url: /blog/truco-sas-proc-format-vs-formato-percent/
 ---
+
 El formato SAS _percent_ nos ofrece una apariencia poco habitual a la hora de realizar informes con SAS. Necesitamos emplear el _proc format_ ya que SAS no tiene un formato de porcentajes que se adecúe a los reportes de un buen gestor de la información. Para estudiar su uso emplearemos un ejemplo:
 
 ```r
@@ -28,7 +29,6 @@ end;
 run;
 proc print data=uno; run;
 ```
-
 
 La ejecución de este programa nos ofrece:
 
@@ -62,7 +62,6 @@ run;
 
 proc print; run;
 ```
-
 
 El resultado obtenido tras esta ejecución:
 

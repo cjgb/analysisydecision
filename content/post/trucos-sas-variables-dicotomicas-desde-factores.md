@@ -1,27 +1,28 @@
 ---
 author: rvaquerizo
 categories:
-- formación
+  - formación
 date: '2011-01-31'
 lastmod: '2025-07-13'
 related:
-- macro-sas-crear-variables-dummy-desde-una-variable-categorica.md
-- trucos-sas-variables-dummy-de-una-variable-continua.md
-- macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
-- truco-sas-categorizar-variables-continuas.md
-- macros-sas-agrupando-variables-categoricas.md
+  - macro-sas-crear-variables-dummy-desde-una-variable-categorica.md
+  - trucos-sas-variables-dummy-de-una-variable-continua.md
+  - macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
+  - truco-sas-categorizar-variables-continuas.md
+  - macros-sas-agrupando-variables-categoricas.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Trucos SAS. Variables dicotómicas desde factores
 url: /blog/trucos-sas-variables-dicotomicas-desde-factores/
 ---
+
 El verbo **dumificar** es una invención propia y consiste en la acción de transformar una variable en una o n **variables dicotómicas** y eso es lo que os planteo en esta entrada, dumificar variables cualitativas con SAS. Partimos de una variable discreta o **factor** y hemos de transformarla en n variables, tantas como valores tome el factor, que toman valores 1 o 0 en función del grupo al valor que toma. Gráficamente:
 
 [![dummys-desde-factores.png](/images/2011/01/dummys-desde-factores.png)](/images/2011/01/dummys-desde-factores.png "dummys-desde-factores.png")
 
 Seguro que se os ocurren mil aplicaciones y seguro que pensáis que eso ya lo hace SAS en determinados modelos, pero tened este código bien guardado porque en ocasiones puede serviros. El método empleado para realizar este proceso es uno que ya habéis podido ver en esta web y consiste en crear instrucciones con SAS desde conjuntos de datos. La macro que he creado distingue entre números y caracteres a través de la función VTYPEX que tendrá una entrada propia en el blog. Aquí tenéis el código:
 
-``
+\`\`
 
 Realizamos una tabla de frecuencias para recoger los valores, si hay perdidos no se genera variable y necesita un trabajo previo. Creamos dos campos instrucción debido a que en unos casos podemos tener variables numéricas y en otro alfanuméricas. Ese tema lo controlamos con el data _null_ siguiente que nos genera una macro variable local que toma valor 1 si trabajamos con variables numéricas. Después metemos la instrucción en una macro variable instr que se ejecuta en el posterior paso data. Finalizamos borrando la tabla de frecuencias. Es muy importante emplear la macro validar caracteres, nos evita factores con caracteres extraños. Por supuesto podéis ejecutar los siguientes ejemplos para analizar su funcionamiento:
 

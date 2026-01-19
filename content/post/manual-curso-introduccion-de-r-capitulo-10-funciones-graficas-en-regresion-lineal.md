@@ -1,26 +1,26 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- modelos
-- r
+  - formación
+  - modelos
+  - r
 date: '2008-10-03'
 lastmod: '2025-07-13'
 related:
-- manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
-- el-problema-de-la-multicolinealidad-intuirlo-y-detectarlo.md
-- primeros-pasos-con-regresion-no-lineal-nls-con-r.md
-- regresion-ridge-o-contraida-con-r.md
-- trucos-sas-medir-la-importancia-de-las-variables-en-nuestro-modelo-de-regresion-logistica.md
+  - manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
+  - el-problema-de-la-multicolinealidad-intuirlo-y-detectarlo.md
+  - primeros-pasos-con-regresion-no-lineal-nls-con-r.md
+  - regresion-ridge-o-contraida-con-r.md
+  - trucos-sas-medir-la-importancia-de-las-variables-en-nuestro-modelo-de-regresion-logistica.md
 tags:
-- modelos
-- r
-- regresión lineal
-- regresión
-title: 'Manual. Curso introducción de R. Capítulo 10: Funciones gráficas en regresión
-  lineal'
+  - modelos
+  - r
+  - regresión lineal
+  - regresión
+title: 'Manual. Curso introducción de R. Capítulo 10: Funciones gráficas en regresión lineal'
 url: /blog/manual-curso-introduccion-de-r-capitulo-10-funciones-graficas-en-regresion-lineal/
 ---
+
 En esta nueva entrega del manual de R vamos a trabajar con más ejemplos de regresión lineal haciendo especial mención a las posibilidades gráficas de R. El ejemplo de partida será el mismo empleado en el capítulo 9.
 
 Ejemplo 10.1:
@@ -114,8 +114,8 @@ Min 1Q Median 3Q Max
 Coefficients:
 Estimate Std. Error t value Pr(>|t|)
 (Intercept) 25.9520 20.3937 1.273 0.209573
-test 1.3026 0.5457 2.387 0.021143 *
-exam1 0.7172 0.2036 3.523 0.000977 ***
+test 1.3026 0.5457 2.387 0.021143 \*
+exam1 0.7172 0.2036 3.523 0.000977 \*\*\*
 —
 Signif. codes: 0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 

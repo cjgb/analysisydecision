@@ -1,22 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- modelos
-- sas
+  - formación
+  - modelos
+  - sas
 date: '2012-05-07'
 lastmod: '2025-07-13'
 related:
-- test-de-bondad-de-ajuste-con-sas.md
-- macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
-- truco-sas-categorizar-variables-continuas.md
-- trucos-sas-variables-dummy-de-una-variable-continua.md
-- determinar-el-mimino-tamano-muestral-para-detectar-un-cambio-en-la-fraccion-no-conforme.md
+  - test-de-bondad-de-ajuste-con-sas.md
+  - macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
+  - truco-sas-categorizar-variables-continuas.md
+  - trucos-sas-variables-dummy-de-una-variable-continua.md
+  - determinar-el-mimino-tamano-muestral-para-detectar-un-cambio-en-la-fraccion-no-conforme.md
 tags:
-- proc glm
+  - proc glm
 title: Test de Levene con SAS
 url: /blog/test-de-levene-con-sas/
 ---
+
 El Test de Levene se aplica para la igualdad de varianzas. Es un análisis de la varianza de las desviaciones de los valores muestrales respecto a una medida de tenedencia central. Parte de la hipótesis nula de igualdad de varianzas. Para realizar este test en SAS emplearemos el **PROC GLM** en combinación con la opción **HOVtest**. En la línea habitual vemos un ejemplo:
 
 ```r

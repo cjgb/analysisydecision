@@ -1,22 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- monográficos
-- sas
+  - formación
+  - monográficos
+  - sas
 date: '2008-12-03'
 lastmod: '2025-07-13'
 related:
-- macros-sas-pasar-de-texto-a-numerico.md
-- trucos-sas-pasar-de-caracter-a-numerico-y-viceversa.md
-- truco-sas-macro-buscar-y-reemplazar-en-texto.md
-- trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados.md
-- importar-a-sas-desde-otras-aplicaciones.md
+  - macros-sas-pasar-de-texto-a-numerico.md
+  - trucos-sas-pasar-de-caracter-a-numerico-y-viceversa.md
+  - truco-sas-macro-buscar-y-reemplazar-en-texto.md
+  - trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados.md
+  - importar-a-sas-desde-otras-aplicaciones.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Transformar variables en SAS. Carácter a numérico
 url: /blog/transformar-variables-en-sas-caracter-a-numerico/
 ---
+
 Muchas visitas a este sitio son búsquedas de Google que plantean la problemática que surge al transformar variables caracter a numéricas y viceversa con SAS. Las palabras habituales son «transformar texto a número SAS», «como paso de variable string a numerica en sas», «pasar de caracter a fecha en SAS», «sas transformar fecha numerica en texto», son todas búsquedas que han generado mucho tiempo de estancia en el sitio a pesar de que no existe un mensaje específico. En el siguiente monográfico vamos a tratar estas conversiones. De esta forma se crearán una serie de dos post que pueden ser un interesante material de consulta para profesionales y estudiantes que trabajen con SAS.
 
 En esta primera entrega vamos a transformar variables de texto en variables numéricas. Como es habitual trabajaremos con ejemplos que podéis ejecutar en vuestras sesiones de SAS para comprobar el funcionamiento. Veamos que posibles casuísticas podemos encontrar:

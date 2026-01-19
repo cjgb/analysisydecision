@@ -1,31 +1,31 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- machine learning
-- modelos
-- monográficos
-- python
+  - formación
+  - machine learning
+  - modelos
+  - monográficos
+  - python
 date: '2017-05-03'
 lastmod: '2025-07-13'
 related:
-- resolucion-del-juego-de-modelos-con-r.md
-- monografico-clasificacion-con-svm-en-r.md
-- cluster-svm.md
-- knn-con-sas-mejorando-k-means.md
-- machine-learning-elegir-el-mejor-gradient-boost-de-forma-iterativa-con-gridseacrchcv.md
+  - resolucion-del-juego-de-modelos-con-r.md
+  - monografico-clasificacion-con-svm-en-r.md
+  - cluster-svm.md
+  - knn-con-sas-mejorando-k-means.md
+  - machine-learning-elegir-el-mejor-gradient-boost-de-forma-iterativa-con-gridseacrchcv.md
 tags:
-- arboles de clasificacion
-- knn
-- machine learning
-- perceptrón
-- random forest
-- svm
-- redes neuronales
-title: Machine learnig. Análisis gráfico del funcionamiento de algunos algoritmos
-  de clasificacion
+  - arboles de clasificacion
+  - knn
+  - machine learning
+  - perceptrón
+  - random forest
+  - svm
+  - redes neuronales
+title: Machine learnig. Análisis gráfico del funcionamiento de algunos algoritmos de clasificacion
 url: /blog/machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algoritmos-de-clasificacion/
 ---
+
 [![Letra_O](/images/2017/05/Letra_O.png)](/images/2017/05/Letra_O.png)
 
 De forma gráfica os voy a presentar algunas técnicas de clasificación supervisada de las más empleadas en Machine Learning y podremos ver cómo se comportan de forma gráfica en el plano. Como siempre prefiero ilustrarlo a entrar en temas teóricos y para esta tarea se me ha ocurrido pintar una letra O y comenzar a trabajar con Python, así de simple. Lo primero es tener los datos, evidentemente serán puntos aleatorios en el plano donde pintamos una variable dependiente con forma de O:
@@ -47,7 +47,6 @@ plt.scatter(df.X, df.Y,c=dependiente,marker=".")
 show()
 ```
 
-
 Se crea un data frame con 10.000 registros y dos variables aleatorias con valores entre 0 y 100 X e Y. Soy consciente de la forma en la que se obtiene la variable dependiente, no entiendo como funciona **np.where** con condiciones múltiples y por ello toman valor 1 aquellas observaciones del plano que están entre las dos eclipses que pinto dentro del plano. Con todo esto tenemos unos datos como ilustran el scatter plot con el que se inicia esta entrada. El siguiente paso será dividir los datos en validación y test mediante train_test_split:
 
 ```r
@@ -56,7 +55,6 @@ from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(df,dependiente,stratify=dependiente,
 test_size = 0.5, random_state=123)
 ```
-
 
 Ahora vamos a estudiar gráficamente como se comportan algunos algoritmos de machine learning para clasificar la letra O en el espacio. Empezamos por los árboles de decisión:
 
@@ -69,7 +67,6 @@ predichos = arbol_1.predict(X_test)
 plt.scatter(X_test.X, X_test.Y,c=predichos,marker=".",cmap=plt.cm.Blues)
 show()
 ```
-
 
 [![arbol_clasificacion_python](/images/2017/05/arbol_clasificacion_python.png)](/images/2017/05/arbol_clasificacion_python.png)
 
@@ -85,7 +82,6 @@ plt.scatter(X_test.X, X_test.Y,c=predichos,marker=".",cmap=plt.cm.Blues)
 show()
 ```
 
-
 [![random_forest_clasificacion](/images/2017/05/random_forest_clasificacion.png)](/images/2017/05/random_forest_clasificacion.png)
 
 Con una complejidad parecida ya no hay bloques ahora tenemos “pequeños cuadrados” que son capaces de trazar las zonas no lineales, pero no todas, necesita una mayor complejidad para poder clasificar mejor la letra O. Una técnica de clasificación que nos va a funcionar muy bien son los k vecinos más cercanos, AKA knn, donde los puntos en el espacio no van a suponer problema para esta técnica:
@@ -97,7 +93,6 @@ predichos = vecinos_1.predict(X_test)
 plt.scatter(X_test.X, X_test.Y,c=predichos,marker=".",cmap=plt.cm.Blues)
 show()
 ```
-
 
 [![knn_clasificacion_python](/images/2017/05/knn_clasificacion_python.png)](/images/2017/05/knn_clasificacion_python.png)
 
@@ -111,7 +106,6 @@ predichos = svm_1.predict(X_test)
 plt.scatter(X_test.X, X_test.Y,c=predichos,marker=".",cmap=plt.cm.Blues)
 show()
 ```
-
 
 [![svm_clasificacion_python](/images/2017/05/svm_clasificacion_python.png)](/images/2017/05/svm_clasificacion_python.png)
 
@@ -127,7 +121,6 @@ plt.scatter(X_test.X, X_test.Y,c=predichos,marker=".",cmap=plt.cm.Blues)
 show()
 ```
 
-
 [![perceptron_python](/images/2017/05/perceptron_python.png)](/images/2017/05/perceptron_python.png)
 
 Observamos como una red neuronal con 3 capas con 30 unidades ocultas, un perceptrón muy complejo, no puede clasificar con precisión la letra O. En este caso es muy interesante hacer el scatter plot con colores donde graduamos la probabilidad que asigna el modelo no sólo graficar la predicción:
@@ -142,7 +135,6 @@ plt.scatter(X_test.X, X_test.Y,c=proba, cmap=plt.cm.Blues)
 plt.colorbar()
 plt.show()
 ```
-
 
 [![perceptron_probabilidades_python](/images/2017/05/perceptron_probabilidades_python.png)](/images/2017/05/perceptron_probabilidades_python.png)
 

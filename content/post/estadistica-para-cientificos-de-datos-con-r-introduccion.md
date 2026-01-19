@@ -1,21 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- formación
+  - formación
 date: '2022-01-01'
 lastmod: '2025-07-13'
 related:
-- comienza-la-publicacion-del-ensayo-introduccion-a-la-estadistica-para-cientificos-de-datos.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-9-analisis-exploratorio-de-datos-eda.md
-- analisisydecision-se-une-a-scout-analyst-primer-curso-de-estadistica-para-analistas.md
-- evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso.md
-- nuevo-curso-de-estadistica-con-r.md
+  - comienza-la-publicacion-del-ensayo-introduccion-a-la-estadistica-para-cientificos-de-datos.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-9-analisis-exploratorio-de-datos-eda.md
+  - analisisydecision-se-une-a-scout-analyst-primer-curso-de-estadistica-para-analistas.md
+  - evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso.md
+  - nuevo-curso-de-estadistica-con-r.md
 tags:
-- sin etiqueta
-title: Introducción a la Estadística para Científicos de Datos con R. Capítulo 1.
-  Introducción
+  - sin etiqueta
+title: Introducción a la Estadística para Científicos de Datos con R. Capítulo 1. Introducción
 url: /blog/estadistica-para-cientificos-de-datos-con-r-introduccion/
 ---
+
 Este contenido está sujeto a una licencia [creative commons](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es)
 
 ![](https://www3.gobiernodecanarias.org/medusa/wiki/images/5/5a/00-Logo-Creative-Commons.png)
@@ -28,31 +28,31 @@ Hay muchos y mejores pero he creado mi propio trabajo de introducción a la esta
 
 Como se ha comentado con anterioridad es mejor leer otros trabajos y por ahí da comienzo este ensayo, la referencias empleadas son:
 
-  * [Libro de Carlos Gil](https://datanalytics.com/libro_estadistica/index.html)
-  * [Introducction to Stadistical Learning](https://fcorowe.github.io/sl/)
-  * [R for Data Science](https://es.r4ds.hadley.nz/index.html)
-  * [Un Recorrido por los Métodos Cuantitativos en Ciencias Sociales a bordo de R](https://estadisticacienciassocialesr.rbind.io/)
+- [Libro de Carlos Gil](https://datanalytics.com/libro_estadistica/index.html)
+- [Introducction to Stadistical Learning](https://fcorowe.github.io/sl/)
+- [R for Data Science](https://es.r4ds.hadley.nz/index.html)
+- [Un Recorrido por los Métodos Cuantitativos en Ciencias Sociales a bordo de R](https://estadisticacienciassocialesr.rbind.io/)
 
-Los aspectos teóricos están sacados del [material que publica José R. Berrendero](https://caminosaleatorios.wordpress.com/materiales-docentes/) y se recomienda seguir [todo su trabajo en la web](http://matemáticas.uam.es/~joser.berrendero/docencia.html)
+Los aspectos teóricos están sacados del [material que publica José R. Berrendero](https://caminosaleatorios.wordpress.com/materiales-docentes/) y se recomienda seguir [todo su trabajo en la web](http://xn--matemticas-w4a.uam.es/~joser.berrendero/docencia.html)
 
 Aunque se hará referencia a las publicaciones concretas, las cuentas de Twitter que inspiran algunos capítulos son:
 
-  * [JL Cañadas](https://twitter.com/joscani)
-  * [Carlos Gil](https://twitter.com/gilbellosta)
-  * [Picanumeros](https://twitter.com/Picanumeros)
-  * [AnaBayes](https://twitter.com/AnaBayes) también se hará mención a su [blog](http://anabelforte.com/)
-  * [JulioMulero](https://twitter.com/juliomulero)
-  * [Dados de Laplace](https://twitter.com/DadosdeLaplace)
+- [JL Cañadas](https://twitter.com/joscani)
+- [Carlos Gil](https://twitter.com/gilbellosta)
+- [Picanumeros](https://twitter.com/Picanumeros)
+- [AnaBayes](https://twitter.com/AnaBayes) también se hará mención a su [blog](http://anabelforte.com/)
+- [JulioMulero](https://twitter.com/juliomulero)
+- [Dados de Laplace](https://twitter.com/DadosdeLaplace)
 
 Esta serie monográfica será similar a la formación que he impartido en empresas, universidades y escuelas de negocio desde hace algunos años. Los capítulos de los que se compone este ensayo son:
 
-  * Datos
-  * Manejo de datos con R
-  * Uniones de tablas con R
-  * Representar datos con ggplot
-  * Análisis univariable
-  * Problemas que plantean las variables
-  * …
+- Datos
+- Manejo de datos con R
+- Uniones de tablas con R
+- Representar datos con ggplot
+- Análisis univariable
+- Problemas que plantean las variables
+- …
 
 Visión completamente práctica y desde el punto de vista _frecuentista_ que será distinta a lo que se puede encontrar en otros foros. Cada tema tendrá una sección descriptiva y una sección práctica con R.
 
@@ -60,21 +60,21 @@ Visión completamente práctica y desde el punto de vista _frecuentista_ que ser
 
 Se asume un conocimiento básico de R y su entorno, aunque no es necesario ser un usuario avanzado. Como se hizo mención entre los objetivos está el contar historias con la Estadística desde otro punto de vista y para ello la herramienta con la que se va a contar esta misma historia es Markdown desde RStudio a través de la librería bookdown por este motivo es necesario disponer de [RStudio](https://www.rstudio.com/) e instalar las librerías necesarias para crear Markdown. Los paquetes que se van a emplear a lo largo del curso serán:
 
-  * readxl
-  * tidyverse
-  * lubridate
-  * sqldf
-  * raster
-  * DataExplorer
-  * formattable
-  * MASS
-  * car
-  * rmarkdown
-  * knitr
-  * bookdown
+- readxl
+- tidyverse
+- lubridate
+- sqldf
+- raster
+- DataExplorer
+- formattable
+- MASS
+- car
+- rmarkdown
+- knitr
+- bookdown
 
 Estas librerías de R se emplearán en casos prácticos pero no son necesarias:
 
-  * h2o
-  * e1071
-  * vcd
+- h2o
+- e1071
+- vcd

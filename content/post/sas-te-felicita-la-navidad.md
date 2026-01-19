@@ -1,20 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- formación
+  - formación
 date: '2012-12-20'
 lastmod: '2025-07-13'
 related:
-- felicitacion-navidena-con-sas.md
-- analisisydecision-es-os-desea-felices-fiestas.md
-- macros-faciles-de-sas-normaliza-un-texto-rapido.md
-- analisis-del-discurso-de-navidad-del-rey-de-espana-2013.md
-- tipos-de-merge-con-sas-o-wps.md
+  - felicitacion-navidena-con-sas.md
+  - analisisydecision-es-os-desea-felices-fiestas.md
+  - macros-faciles-de-sas-normaliza-un-texto-rapido.md
+  - analisis-del-discurso-de-navidad-del-rey-de-espana-2013.md
+  - tipos-de-merge-con-sas-o-wps.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: SAS te felicita la Navidad
 url: /blog/sas-te-felicita-la-navidad/
 ---
+
 Mirad para que sirve call sound:
 
 ```r
@@ -54,6 +55,5 @@ call sound(784,200);
 
 run;
 ```
-
 
 Felices Fiestas.

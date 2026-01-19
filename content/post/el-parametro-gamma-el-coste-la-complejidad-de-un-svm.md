@@ -1,26 +1,27 @@
 ---
 author: rvaquerizo
 categories:
-- big data
-- consultoría
-- data mining
-- formación
-- modelos
-- monográficos
-- r
+  - big data
+  - consultoría
+  - data mining
+  - formación
+  - modelos
+  - monográficos
+  - r
 date: '2016-10-13'
 lastmod: '2025-07-13'
 related:
-- monografico-clasificacion-con-svm-en-r.md
-- resolucion-del-juego-de-modelos-con-r.md
-- cluster-svm.md
-- machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algoritmos-de-clasificacion.md
-- obteniendo-los-parametros-de-mi-modelo-gam.md
+  - monografico-clasificacion-con-svm-en-r.md
+  - resolucion-del-juego-de-modelos-con-r.md
+  - cluster-svm.md
+  - machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algoritmos-de-clasificacion.md
+  - obteniendo-los-parametros-de-mi-modelo-gam.md
 tags:
-- svm
+  - svm
 title: El parámetro gamma, el coste, la complejidad de un SVM
 url: /blog/el-parametro-gamma-el-coste-la-complejidad-de-un-svm/
 ---
+
 [![letra_o_svm_r](/images/2016/10/Letra_O_SVM_R.png)](/images/2016/10/Letra_O_SVM_R.png)
 
 Cuando clasificamos datos con SVM es necesario fijar un margen de separación entre observaciones, si no fijamos este margen nuestro modelo sería tan bueno tan bueno que sólo serviría para esos datos, estaría sobrestimando y eso es malo. El coste C y el gamma son los dos parámetros con los que contamos en los SVM. El parámetro C es el peso que le [
@@ -50,23 +51,23 @@ library(e1071)
 
 #Datos iniciales
 long = 20000
-x <\- runif(long,1,100)
-y <\- runif(long,1,100)
-datos <\- data.frame(x,y)
+x \<- runif(long,1,100)
+y \<- runif(long,1,100)
+datos \<- data.frame(x,y)
 #La mitad entrenamiento la mitad test
-indices <\- sample(1:long,long/2)
-entrenamiento <\- datos[indices,]
-test <\- datos[-indices,]
+indices \<- sample(1:long,long/2)
+entrenamiento \<- datos[indices,]
+test \<- datos[-indices,]
 
 #letra O
-O <\- ifelse((entrenamientox-50)^2/20^2 + (entrenamientoy-50)^2/40^2 >1 , 1,0)
-O <\- ifelse((entrenamientox-50)^2/30^2 + (entrenamientoy-50)^2/50^2 >1 , 0,O)
+O \<- ifelse((entrenamientox-50)^2/20^2 + (entrenamientoy-50)^2/40^2 >1 , 1,0)
+O \<- ifelse((entrenamientox-50)^2/30^2 + (entrenamientoy-50)^2/50^2 >1 , 0,O)
 
-g.train <\- ggplot(entrenamiento,aes(entrenamientox,entrenamientoy)) + geom_point()
+g.train \<- ggplot(entrenamiento,aes(entrenamientox,entrenamientoy)) + geom_point()
 g.train + geom_point(aes(colour = O)) + labs(title=»DATOS DE ENTRENAMIENTO PARA LA LETRA O»)
 
 #Gráfico de test
-g.test <\- ggplot(test,aes(x, y)) + geom_point()
+g.test \<- ggplot(test,aes(x, y)) + geom_point()
 
 svm.O=svm(O ~ x + y,entrenamiento,method=»C-classification»,
 kernel=»radial»,cost=10,gamma=1)

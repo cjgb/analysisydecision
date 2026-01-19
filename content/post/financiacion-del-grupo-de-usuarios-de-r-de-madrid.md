@@ -1,20 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- formación
+  - formación
 date: '2016-11-15'
 lastmod: '2025-07-13'
 related:
-- reunion-usuarios-de-r-en-madrid-26-de-noviembre-de-2014.md
-- aprende-rstats-de-forma-presencial-por-muy-poco.md
-- reunion-del-grupo-de-usuarios-de-r-en-madrid-el-28-de-enero.md
-- reunion-de-usuarios-de-r-de-madrid-15-de-octubre-de-2015.md
-- reunion-del-grupo-de-usuarios-de-r-de-madrid-12-de-noviembre.md
+  - reunion-usuarios-de-r-en-madrid-26-de-noviembre-de-2014.md
+  - aprende-rstats-de-forma-presencial-por-muy-poco.md
+  - reunion-del-grupo-de-usuarios-de-r-en-madrid-el-28-de-enero.md
+  - reunion-de-usuarios-de-r-de-madrid-15-de-octubre-de-2015.md
+  - reunion-del-grupo-de-usuarios-de-r-de-madrid-12-de-noviembre.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Financiación del Grupo de Usuarios de R de Madrid
 url: /blog/financiacion-del-grupo-de-usuarios-de-r-de-madrid/
 ---
+
 El Grupo de Usuarios de R de Madrid no ha renovado el patrocinio con Revolution Analytics y para la financiación de los gastos que genera se ha lanzado una edición de tazas con el logo del grupo. Las tazas cuestan 9,99€ y se han hecho una tirada de 100 tazas, del precio de estas tazas la mitad iría para dicha financiación.
 
 Para reservar sólo tienes que rellenar este formulario web:

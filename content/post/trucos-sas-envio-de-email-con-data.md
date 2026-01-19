@@ -1,23 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- sas
-- trucos
+  - formación
+  - sas
+  - trucos
 date: '2010-06-28'
 lastmod: '2025-07-13'
 related:
-- trucos-excel-crear-un-borrador-de-correo-con-excel.md
-- enviar-correos-electronicos-con-rstats-libreria-emayili.md
-- comunicar-sas-con-r-creando-ejecutables-windows.md
-- trucos-sas-macrovariable-a-dataset.md
-- truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
+  - trucos-excel-crear-un-borrador-de-correo-con-excel.md
+  - enviar-correos-electronicos-con-rstats-libreria-emayili.md
+  - comunicar-sas-con-r-creando-ejecutables-windows.md
+  - trucos-sas-macrovariable-a-dataset.md
+  - truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
 tags:
-- email
-- filename
+  - email
+  - filename
 title: Trucos SAS. Envío de email con DATA
 url: /blog/trucos-sas-envio-de-email-con-data/
 ---
+
 Si deseamos **enviar un email con SAS** hemos de realizar un proceso similar al que os presento a continuación. Es una duda que me ha llegado a través de correo electrónico, la resolución la comparto con todos por si vuelve a surgir. No quiero plantear macros complicadas ni parametrizaciones «extrañas». Esto se hace a través de FILENAME EMAIL:
 
 ```r

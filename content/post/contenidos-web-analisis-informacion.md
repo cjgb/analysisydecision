@@ -1,21 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- business intelligence
-- consultoría
+  - business intelligence
+  - consultoría
 date: '2008-06-24'
 lastmod: '2025-07-13'
 related:
-- contenidos-para-octubre-de-ayd.md
-- ayd-2300-visitas-mensuales.md
-- 1500-visitas-mensuales.md
-- el-ano-2009-para-analisis-y-decision.md
-- el-ano-2010-para-analisisydecision.md
+  - contenidos-para-octubre-de-ayd.md
+  - ayd-2300-visitas-mensuales.md
+  - 1500-visitas-mensuales.md
+  - el-ano-2009-para-analisis-y-decision.md
+  - el-ano-2010-para-analisisydecision.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Análisis con Google Analytics
 url: /blog/contenidos-web-analisis-informacion/
 ---
+
 Google Analytics es la herramienta que dirige los contenidos de AyD. De momento los contenidos se centran en el manejo de software para el análisis y el reporte de la información. Fundamentalmente SAS, R y Excel. Pero estos contenidos se van adaptando en función del número de visitas y del tiempo de estancia en la página. Es decir, los contenidos se adaptan en función del interés que despierten. Con Google Analytics estudio esta información y me planteo una serie de mensajes a lo largo del mes.
 
 A continuación os expongo como preparo los contenidos del mes que viene.

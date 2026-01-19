@@ -1,21 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- r
+  - r
 date: '2019-08-29'
 lastmod: '2025-07-13'
 related:
-- twitter-con-r-el-hashtag-rstats.md
-- estadistica-para-cientificos-de-datos-con-r-introduccion.md
-- seguir-los-datos-del-coronavirus-en-espana-con-rstats.md
-- mapa-de-mexico-rapido-y-sucio-y-estatico-con-rstats.md
-- el-paquete-de-r-weatherdata-para-la-obtencion-de-datos-meteorologicos-en-espana.md
+  - twitter-con-r-el-hashtag-rstats.md
+  - estadistica-para-cientificos-de-datos-con-r-introduccion.md
+  - seguir-los-datos-del-coronavirus-en-espana-con-rstats.md
+  - mapa-de-mexico-rapido-y-sucio-y-estatico-con-rstats.md
+  - el-paquete-de-r-weatherdata-para-la-obtencion-de-datos-meteorologicos-en-espana.md
 tags:
-- ropenspain
-title: Paquete opendataes en rOpenSpain para acceder a los datos de datos.gob.es con
-  R
+  - ropenspain
+title: Paquete opendataes en rOpenSpain para acceder a los datos de datos.gob.es con R
 url: /blog/paquete-opendataes-en-ropenspain-para-acceder-a-los-datos-de-datos-gob-es-con-r/
 ---
+
 > Hay un package de [#rstats](https://twitter.com/hashtag/rstats?src=hash&ref_src=twsrc%5Etfw) para extraer datos de <https://t.co/1lKm70SY8M> que desarrollamos [@cimentadaj](https://twitter.com/cimentadaj?ref_src=twsrc%5Etfw) y yo: <https://t.co/a45eg9enOU>
 >
 > — Jorge López (@jlopezper) [August 29, 2019](https://twitter.com/jlopezper/status/1167040581236854785?ref_src=twsrc%5Etfw)

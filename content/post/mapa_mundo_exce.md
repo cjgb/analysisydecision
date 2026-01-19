@@ -1,23 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- consultoría
-- excel
-- formación
+  - consultoría
+  - excel
+  - formación
 date: '2014-09-30'
 lastmod: '2025-07-13'
 related:
-- mapa-excel-de-europa.md
-- trucos-excel-mapa-de-mexico-por-estados.md
-- trucos-excel-mapa-de-espana-por-provincias.md
-- nuevo-y-muy-mejorado-mapa-de-espana-por-provincias-con-excel.md
-- trucos-excel-mapa-de-espana-por-comunidades-autonomas.md
+  - mapa-excel-de-europa.md
+  - trucos-excel-mapa-de-mexico-por-estados.md
+  - trucos-excel-mapa-de-espana-por-provincias.md
+  - nuevo-y-muy-mejorado-mapa-de-espana-por-provincias-con-excel.md
+  - trucos-excel-mapa-de-espana-por-comunidades-autonomas.md
 tags:
-- mapas
-- excel
+  - mapas
+  - excel
 title: Mapa del mundo en Excel
 url: /blog/mapa_mundo_exce/
 ---
+
 [![](/images/2014/09/mapa_mundo_excel-300x200.png)](/images/2014/09/mapa_mundo_excel.png)
 
 Un**mapa del mundo en Excel** preparado para poner datos de la Base de Datos de la UNESCO. Está sacado de una web, cuando encuentre el link os lo pongo porque lo he perdido. Además al César lo que es del César. Sobre el fichero Excel que me descargué realicé diversas modificaciones para mejorar los resultados y darle simplicidad. Hay una hoja de datos que es donde debéis pegar los datos (preferiblemente) por otro lado está la hoja Mapa que contiene el mapa sobre el que podéis realizar las modificaciones. En esta hoja están los datos sobre los que se hace la jerarquía. La gama de colores que utiliza este mapa es de gris a rojo. Esto podéis cambiarlo vosotros mismos, [en esta web se han dado pistas sobre cómo hacerlo](https://analisisydecision.es/truco-excel-identificar-el-color-de-una-celda/). No es correcto darlo todo hecho pero jugando con formatos condicionales y con esas pistas podéis obtener un mapa espectacular.

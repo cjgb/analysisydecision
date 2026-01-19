@@ -1,23 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- monográficos
-- wps
+  - formación
+  - monográficos
+  - wps
 date: '2011-01-27'
 lastmod: '2025-07-13'
 related:
-- subconjuntos-de-variables-con-dropkeep.md
-- curso-de-lenguaje-sas-con-wps-sentencias-condicionales-if-then.md
-- curso-de-lenguaje-sas-con-wps-el-paso-data.md
-- curso-de-lenguaje-sas-con-wps-que-hace-el-paso-data.md
-- curso-de-lenguaje-sas-con-wps-ejecuciones.md
+  - subconjuntos-de-variables-con-dropkeep.md
+  - curso-de-lenguaje-sas-con-wps-sentencias-condicionales-if-then.md
+  - curso-de-lenguaje-sas-con-wps-el-paso-data.md
+  - curso-de-lenguaje-sas-con-wps-que-hace-el-paso-data.md
+  - curso-de-lenguaje-sas-con-wps-ejecuciones.md
 tags:
-- drop
-- keep
+  - drop
+  - keep
 title: Curso de lenguaje SAS con WPS. Subconjuntos de variables con DROP y KEEP
 url: /blog/curso-de-lenguaje-sas-con-wps-subconjuntos-de-variables-con-drop-y-keep/
 ---
+
 En esta entrega del curso vamos a trabajar con dos palabras fundamentales en WPS: DROP y KEEP. Drop elimina variables de un conjunto de datos y keep las mantiene. Ahora bien, estos elementos del lenguaje SAS se pueden emplear de diversas formas. Pueden ser una sentencia o pueden ser una opción de lectura y escritura del paso data. Para ilustrar este capítulo vamos a generar un dataset con datos aleatorios:
 
 ```r

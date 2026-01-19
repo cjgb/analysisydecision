@@ -1,23 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- r
+  - formación
+  - r
 date: '2010-12-05'
 lastmod: '2025-07-13'
 related:
-- truco-r-paletas-de-colores-en-r.md
-- trucos-r-graficos-de-velocimetro-con-r.md
-- grafico-de-correlaciones-entre-variables.md
-- descubriendo-ggplot2-421.md
-- manual-curso-introduccion-de-r-capitulo-7-funciones-graficas-basicas-en-r.md
+  - truco-r-paletas-de-colores-en-r.md
+  - trucos-r-graficos-de-velocimetro-con-r.md
+  - grafico-de-correlaciones-entre-variables.md
+  - descubriendo-ggplot2-421.md
+  - manual-curso-introduccion-de-r-capitulo-7-funciones-graficas-basicas-en-r.md
 tags:
-- ggplot2
-- palette
-- symbols
+  - ggplot2
+  - palette
+  - symbols
 title: Gráficos de burbuja con R
 url: /blog/graficos-de-burbuja-con-r/
 ---
+
 El otro día en [R-bloggers leí este post](http://www.r-bloggers.com/bubble-chart-by-using-ggplot2/). Entonces busqué información sobre estos gráficos con R en español y sólo encontré ayuda para realizarlos con Excel. Es verdad que el enlace que os pongo es más que suficiente para realizar los gráficos de burbuja pero en pocas líneas puedo ilustrar mejor un ejemplo y proponeros varias formas de crearlo. La primera de ellas emplea la función symbols y genera el siguiente gráfico:
 
 [![r_bubble_plot1.png](/images/2010/12/r_bubble_plot1.thumbnail.png)](/images/2010/12/r_bubble_plot1.png "r_bubble_plot1.png")
@@ -42,7 +43,7 @@ text(x,y,etiqueta)
 palette("default")
 ```
 
-Para etiquetar las variables empleao la función _text_ y  __ me parece interesante el uso de la función _palette_ (así tenéis un ejemplo de uso) para la leyenda he tenido que tirar de búsqueda y [encontré esta idea](http://flowingdata.com/2010/11/23/how-to-make-bubble-charts/) pero he tenido algún problema para realizarla, por ello he preferido evitarla. Y la otra forma de realizar el gráfico es emplear el _ggplot2_ con una sintaxis muy similar a la que se utilizaba en el link de Rbloggers que os ponía al principio:
+Para etiquetar las variables empleao la función _text_ y \_\_ me parece interesante el uso de la función _palette_ (así tenéis un ejemplo de uso) para la leyenda he tenido que tirar de búsqueda y [encontré esta idea](http://flowingdata.com/2010/11/23/how-to-make-bubble-charts/) pero he tenido algún problema para realizarla, por ello he preferido evitarla. Y la otra forma de realizar el gráfico es emplear el _ggplot2_ con una sintaxis muy similar a la que se utilizaba en el link de Rbloggers que os ponía al principio:
 
 ```r
 datos=data.frame(x,y,tamanio)

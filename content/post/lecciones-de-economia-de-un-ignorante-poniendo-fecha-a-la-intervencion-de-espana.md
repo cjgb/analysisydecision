@@ -1,24 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- banca
-- monográficos
-- sin categoría
+  - banca
+  - monográficos
 date: '2011-04-21'
 lastmod: '2025-07-13'
 related:
-- lecciones-de-economia-de-un-ignorante-espana-esta-salvando-a-alemania-pero-alemania-no-esta-salvando-europa.md
-- lecciones-de-economia-de-un-ignorante-solucion-trabajar-mas-y-cobrar-menos.md
-- lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
-- lecciones-de-economia-de-un-ignorante-una-cerveza-100-pesetas.md
-- lecciones-de-economia-de-un-ignorante-la-prima-de-riesgo-y-la-madre-que-la-pario.md
+  - lecciones-de-economia-de-un-ignorante-espana-esta-salvando-a-alemania-pero-alemania-no-esta-salvando-europa.md
+  - lecciones-de-economia-de-un-ignorante-solucion-trabajar-mas-y-cobrar-menos.md
+  - lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
+  - lecciones-de-economia-de-un-ignorante-una-cerveza-100-pesetas.md
+  - lecciones-de-economia-de-un-ignorante-la-prima-de-riesgo-y-la-madre-que-la-pario.md
 tags:
-- crisis económica
-- intervencion
-title: Lecciones de economía de un ignorante. Poniendo fecha a la intervención de
-  España
+  - crisis económica
+  - intervencion
+title: Lecciones de economía de un ignorante. Poniendo fecha a la intervención de España
 url: /blog/lecciones-de-economia-de-un-ignorante-poniendo-fecha-a-la-intervencion-de-espana/
 ---
+
 [España no es Grecia](http://www.expansion.com/2010/04/27/economia-politica/1272387902.html?a=9a6c61213fba80f83d1eba145a19bfbc&t=1303408641), [ España no es Irlanda](http://www.cincodias.com/articulo/mercados/Espana-Irlanda-expertos-opinan/20101124cdscdsmer_8/) y por supuesto [España no es Portugal](http://blogs.cincodias.com/el_economista_observador/2011/03/espa%C3%B1a-no-es-como-portugal.html). En realidad España es como las tres anteriores juntas y va a ser intervenida por el BCE a no ser que se [volviera a la peseta](https://analisisydecision.es/lecciones-de-economia-de-un-ignorante-una-cerveza-100-pesetas/). Los motivos son los de siempre pero me gustaría destacar el **problema del endeudamiento** :
 
 ![](https://investorsconundrum.com/wp-content/uploads/2010/02/spain-total-debt-1980-jun-09-mckinsey.jpg)

@@ -1,28 +1,29 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- modelos
-- monográficos
-- r
+  - formación
+  - modelos
+  - monográficos
+  - r
 date: '2016-05-11'
 lastmod: '2025-07-13'
 related:
-- juego-de-modelos-de-regresion-con-r.md
-- machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algoritmos-de-clasificacion.md
-- regresion-con-redes-neuronales-en-r.md
-- el-parametro-gamma-el-coste-la-complejidad-de-un-svm.md
-- como-salva-la-linealidad-una-red-neuronal.md
+  - juego-de-modelos-de-regresion-con-r.md
+  - machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algoritmos-de-clasificacion.md
+  - regresion-con-redes-neuronales-en-r.md
+  - el-parametro-gamma-el-coste-la-complejidad-de-un-svm.md
+  - como-salva-la-linealidad-una-red-neuronal.md
 tags:
-- árboles de regresión
-- regresión
-- knn
-- loess
-- redes neuronales
-- svm
+  - árboles de regresión
+  - regresión
+  - knn
+  - loess
+  - redes neuronales
+  - svm
 title: Resolución del juego de modelos con R
 url: /blog/resolucion-del-juego-de-modelos-con-r/
 ---
+
 [Hace mucho planteé un juego de identificación de modelos con R](https://analisisydecision.es/juego-de-modelos-de-regresion-con-r/) y ya se me había olvidado daros la solución. Pensando en el Grupo de Usuarios de R y en hacer algo parecido en una presentación recordé que había que solucionar el ejercicio. Lo primero es la creación de los datos, se me ocurrió una función sencilla y una nube de puntos alrededor de ella:
 
 ```r
@@ -38,7 +39,6 @@ datos = data.frame(cbind(indep,dep))
 plot(datos)
 ```
 
-
 [![juego_modelos1](/images/2016/05/juego_modelos1.png)](/images/2016/05/juego_modelos1.png)
 
 Seleccionamos los datos de entrenamiento y test:
@@ -50,7 +50,6 @@ entrenamiento = datos[indices,]
 test = datos[-indices,]
 ```
 
-
 El más sencillo de todos era el caso de la regresión lineal y fue el que puse de ejemplo:
 
 ```r
@@ -59,7 +58,6 @@ modelo.1=lm(dep ~ indep,entrenamiento)
 plot(test)
 points(test$indep,predict(modelo.1,test),col="red")
 ```
-
 
 [![juego_modelos2](/images/2016/05/juego_modelos2.png)](/images/2016/05/juego_modelos2.png)
 
@@ -74,7 +72,6 @@ plot(test)
 points(test$indep,predict(modelo.2,test),col="red")
 ```
 
-
 [![juego_modelos3](/images/2016/05/juego_modelos3.png)](/images/2016/05/juego_modelos3.png)
 
 En los árboles de decisión podemos jugar con el parámetro de complejidad cp:
@@ -87,7 +84,6 @@ control=rpart.control(minsplit=20, cp=0.02, xval=100) )
 plot(test)
 points(test$indep,predict(modelo.2,test),col="red")
 ```
-
 
 [![juego_modelos3b](/images/2016/05/juego_modelos3b.png)](/images/2016/05/juego_modelos3b.png)
 
@@ -104,7 +100,6 @@ modelo.rn linout=T, trace=F,decay=0.2)
 if(modelo.rnvalueindep,predict(modelo.3,test),col="red")
 ```
 
-
 [![juego_modelos4](/images/2016/05/juego_modelos4.png)](/images/2016/05/juego_modelos4.png)
 
 Necesitamos seleccionar el mejor modelo y lanzamos 50 iteraciones, obtenemos un gran ajuste, recordamos que linout=T porque estamos con una regresión y no con una clasificación. Empezamos con los “sobreajustadores” el primero el SVM:
@@ -119,7 +114,6 @@ plot(test)
 points(test$indep,predict(modelo.4,test),col="red")
 ```
 
-
 [![juego_modelos5](/images/2016/05/juego_modelos5.png)](/images/2016/05/juego_modelos5.png)
 
 Venga me he pasado con los parámetros de ajuste para dejar mal a los SVM, si soy un poco menos listo podemos hacer:
@@ -130,7 +124,6 @@ modelo.5=svm(dep ~ indep ,entrenamiento, method="C-classification",
 plot(test)
 points(test$indep,predict(modelo.5,test),col="red")
 ```
-
 
 [![juego_modelos6](/images/2016/05/juego_modelos6.png)](/images/2016/05/juego_modelos6.png)
 
@@ -145,7 +138,6 @@ plot(test)
 points(test$indep,predict(modelo.6,test),col="red")
 ```
 
-
 [![juego_modelos7](/images/2016/05/juego_modelos7.png)](/images/2016/05/juego_modelos7.png)
 
 Otro de mis sobreajustadores preferidos y por último el clásico loess que siempre nos ha puesto mucho a los dinosaurios:
@@ -155,7 +147,6 @@ Otro de mis sobreajustadores preferidos y por último el clásico loess que siem
 modelo.7 plot(test)
 points(test$indep,predict(modelo.7,test),col="red")
 ```
-
 
 [![juego_modelos8](/images/2016/05/juego_modelos8.png)](/images/2016/05/juego_modelos8.png)
 

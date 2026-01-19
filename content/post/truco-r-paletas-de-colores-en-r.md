@@ -1,27 +1,27 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- r
-- trucos
+  - formación
+  - r
+  - trucos
 date: '2011-01-30'
 lastmod: '2025-07-13'
 related:
-- trucos-r-graficos-de-velocimetro-con-r.md
-- graficos-de-burbuja-con-r.md
-- graficos-dinamicos-en-r-con-la-funcion-text.md
-- grafico-de-correlaciones-entre-variables.md
-- truco-r-insertar-imagen-en-un-grafico.md
+  - trucos-r-graficos-de-velocimetro-con-r.md
+  - graficos-de-burbuja-con-r.md
+  - graficos-dinamicos-en-r-con-la-funcion-text.md
+  - grafico-de-correlaciones-entre-variables.md
+  - truco-r-insertar-imagen-en-un-grafico.md
 tags:
-- gráficos
-- r
+  - gráficos
+  - r
 title: Truco R. Paletas de colores en R
 url: /blog/truco-r-paletas-de-colores-en-r/
 ---
+
 [](/images/2011/01/paletas_colores_r.png "Paletas de colores en R")
 
 ![Paletas de colores en R](/images/2011/01/paletas_colores_r.png)
-
 
 En cuántas ocasiones habéis querido dar color a un gráfico y por aligerar código creáis gráficos de este tipo:
 
@@ -33,10 +33,10 @@ barplot(sort(x))
 
 Pues en R esta labor puede costarnos muy poco si empleamos las paletas de colores. Hoy quiero presentaros las siguientes:
 
-  * rainbow
-  * heat.colors
-  * terrain.colors
-  * topo.colors
+- rainbow
+- heat.colors
+- terrain.colors
+- topo.colors
 
 Ejemplos de uso:
 

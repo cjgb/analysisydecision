@@ -1,28 +1,29 @@
 ---
 author: rvaquerizo
 categories:
-- data mining
-- modelos
-- monográficos
-- r
-- trucos
+  - data mining
+  - modelos
+  - monográficos
+  - r
+  - trucos
 date: '2014-09-29'
 lastmod: '2025-07-13'
 related:
-- regresion-con-redes-neuronales-en-r.md
-- representacion-de-redes-neuronales-con-r.md
-- medir-la-importancia-de-las-variables-con-random-forest.md
-- como-salva-la-linealidad-una-red-neuronal.md
-- monografico-paquete-de-r-nnet-para-modelos-de-redes-neuronales.md
+  - regresion-con-redes-neuronales-en-r.md
+  - representacion-de-redes-neuronales-con-r.md
+  - medir-la-importancia-de-las-variables-con-random-forest.md
+  - como-salva-la-linealidad-una-red-neuronal.md
+  - monografico-paquete-de-r-nnet-para-modelos-de-redes-neuronales.md
 tags:
-- nnet
-- plot.nnet
-- plot
-- redes neuronales
-- r
+  - nnet
+  - plot.nnet
+  - plot
+  - redes neuronales
+  - r
 title: Medir la importancia de las variables en una red neuronal con R
 url: /blog/medir-la-importancia-de-las-variables-en-una-red-neuronal-con-r/
 ---
+
 [![](/images/2014/09/importancia_variables-300x236.png)](/images/2014/09/importancia_variables.png)
 
 Sigo a vueltas con [esta gran web](http://beckmw.wordpress.com/) y hoy vamos a **medir la importancia de las variables en una red neuronal**. Al igual que sucede en un modelo de regresión los parámetros obtenidos pueden servirnos para determinar la importancia de una variable dentro del modelo. En el caso de una red neuronal los pesos de la red pueden ser utilizados para determinar cómo influye una variable en el modelo. Para ilustrar este tipo de tareas el gran @beckmw realizó esta entrada:

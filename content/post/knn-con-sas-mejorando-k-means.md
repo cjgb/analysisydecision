@@ -1,23 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- modelos
-- sas
+  - formación
+  - modelos
+  - sas
 date: '2016-04-29'
 lastmod: '2025-07-13'
 related:
-- analisis-cluster-con-sas-la-importancia-de-las-semillas-en-las-k-medias.md
-- un-peligro-del-analisis-cluster.md
-- cluster-svm.md
-- machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algoritmos-de-clasificacion.md
-- monografico-clasificacion-con-svm-en-r.md
+  - analisis-cluster-con-sas-la-importancia-de-las-semillas-en-las-k-medias.md
+  - un-peligro-del-analisis-cluster.md
+  - cluster-svm.md
+  - machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algoritmos-de-clasificacion.md
+  - monografico-clasificacion-con-svm-en-r.md
 tags:
-- knn
-- proc discrim
+  - knn
+  - proc discrim
 title: KNN con SAS. Mejorando K-Means
 url: /blog/knn-con-sas-mejorando-k-means/
 ---
+
 [![Imagen de previsualización de YouTube](https://img.youtube.com/vi/UqYde-LULfs/0.jpg)](http://www.youtube.com/watch?v=UqYde-LULfs)
 
 La clasificación por k vecinos más cercanos es EL MÉTODO supervisado no paramétrico. El KNN, si empleamos las siglas en inglés, clasifica las observaciones en función de su probabilidad de pertenecer a uno u otro grupo, en el video que encabeza la entrada queda muy bien explicado. El caso es que tenemos la posibilidad de realizar esta clasificación con SAS STAT y el PROC DISCRIM y me parece interesante dedicarle unas líneas. [Hace años ya hablamos de segmentación con SAS](https://analisisydecision.es/analisis-cluster-con-sas-la-importancia-de-las-semillas-en-las-k-medias/) y vamos a emplear los mismos datos para ilustrar esta entrada. Primero generamos un conjunto de datos con datos simulados de 3 esferas que clasificamos en 3 grupos:
@@ -60,7 +61,6 @@ proc gplot data=datos;
 run;quit;
 ```
 
-
 [![KNN_SAS1](/images/2016/04/KNN_SAS1.png)](/images/2016/04/KNN_SAS1.png)
 
 Si realizamos un análisis mediante k-means sin asignar centroides obtenemos esta clasificación:
@@ -74,7 +74,6 @@ proc gplot data=datos2;
 	plot y * x = cluster;
 run;quit;
 ```
-
 
 [![KNN_SAS2](/images/2016/04/KNN_SAS2.png)](/images/2016/04/KNN_SAS2.png)
 
@@ -99,7 +98,6 @@ proc gplot data=puntuacion;
 run;quit;
 ```
 
-
 [![KNN_SAS3](/images/2016/04/KNN_SAS3.png)](/images/2016/04/KNN_SAS3.png)
 
 El resultado es muy satisfactorio como se puede ver en la figura y la sintaxis del PROC DISCRIM tampoco es muy compleja, necesitamos conjunto de datos de test y validación y generamos un dataset de salida que denominamos puntuación en method especificamos que la clasificación la llevamos a cabo con un método no paramétrico y en ese momento necesitamos especificar la k que es el número de vecinos que vamos a evaluar para clasificar cada observación y evaluamos como funciona nuestra clasificación mediante validación cruzada. El resultado de esta clasificación no paramétrica lo podemos ver en el gráfico, el resultado muy satisfactorio. Es necesario tratar con más cariño el número de vecinos (k) pero esta tarea la dejo pendiente para otro momento porque sería interesante automatizarla. El caso es que bajo mi punto de vista sigo prefiriendo el uso de k medias pero knn puede ayudarnos a seleccionar las semillas iniciales para nuestra clasificación por k medias:
@@ -118,7 +116,6 @@ proc gplot data=datos3;
 	plot y * x = cluster;
 run;quit;
 ```
-
 
 [![KNN_SAS4](/images/2016/04/KNN_SAS4.png)](/images/2016/04/KNN_SAS4.png)
 

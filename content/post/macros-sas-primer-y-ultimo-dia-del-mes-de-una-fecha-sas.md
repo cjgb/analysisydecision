@@ -1,28 +1,30 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- sas
-- trucos
+  - formación
+  - sas
+  - trucos
 date: '2008-12-23'
 lastmod: '2025-07-13'
 related:
-- trucos-sas-numero-de-dias-de-un-mes.md
-- bucle-de-fechas-con-sas-para-tablas-particionadas.md
-- monografico-funciones-intnx-e-intck-para-fechas-en-sas.md
-- trabajo-con-fechas-sas-funciones-fecha.md
-- trucos-sas-operar-con-fechas-yyyymm-tipicas-de-particiones-oracle.md
+  - trucos-sas-numero-de-dias-de-un-mes.md
+  - bucle-de-fechas-con-sas-para-tablas-particionadas.md
+  - monografico-funciones-intnx-e-intck-para-fechas-en-sas.md
+  - trabajo-con-fechas-sas-funciones-fecha.md
+  - trucos-sas-operar-con-fechas-yyyymm-tipicas-de-particiones-oracle.md
 tags:
-- último día del mes
-- fechas sas
-- función intnx
-- primer día del mes
+  - último día del mes
+  - fechas sas
+  - función intnx
+  - primer día del mes
 title: Macros SAS. Primer y último día del mes de una fecha SAS
 url: /blog/macros-sas-primer-y-ultimo-dia-del-mes-de-una-fecha-sas/
 ---
+
 Me debo a vosotros, mis lectores. Y he tenido visitas que buscaban como obtener el primer y el último día de un mes con SAS. Como Análisis y Decisión es una web personalizada voy a dar respuesta a esas búsquedas. Para ello tengo os planteo dos macros de SAS, además nos servirán para entender mejor la función INTNX para operar con fechas. El siguiente ejemplo parte de la necesidad de obtener, dada una fecha, el primer y último día del mes de la fecha dada:
 
-``
+\`\`
+
 ```r
 data _null_;
 
@@ -67,7 +69,8 @@ intnx("month",&fec.,0)
 
 Como ejemplo de uso:
 
-``
+\`\`
+
 ```r
 data _null_;
 

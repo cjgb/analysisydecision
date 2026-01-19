@@ -1,28 +1,28 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- modelos
-- r
+  - formación
+  - modelos
+  - r
 date: '2008-10-03'
 lastmod: '2025-07-13'
 related:
-- manual-curso-introduccion-de-r-capitulo-13-analisis-de-la-varianza-disenos-anidados.md
-- manual-curso-introduccion-de-r-capitulo-12-analisis-de-la-varianza-disenos-bifactoriales.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-14-introduccion-al-diseno-de-experimentos.md
-- monografico-analisis-de-factores-con-r-una-introduccion.md
-- manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
+  - manual-curso-introduccion-de-r-capitulo-13-analisis-de-la-varianza-disenos-anidados.md
+  - manual-curso-introduccion-de-r-capitulo-12-analisis-de-la-varianza-disenos-bifactoriales.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-14-introduccion-al-diseno-de-experimentos.md
+  - monografico-analisis-de-factores-con-r-una-introduccion.md
+  - manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
 tags:
-- sin etiqueta
-title: 'Manual. Curso introducción de R. Capítulo 11: Introducción al análisis de
-  la varianza (ANOVA)'
+  - sin etiqueta
+title: 'Manual. Curso introducción de R. Capítulo 11: Introducción al análisis de la varianza (ANOVA)'
 url: /blog/manual-curso-introduccion-de-r-capitulo-11-introduccion-al-analisis-de-la-varianza-anova/
 ---
+
 Para realizar la introducción al análisis de la varianza (ANOVA) con R comenzaremos estableciendo unos conceptos básicos. Lo primero que hacemos es plantear una hipótesis que va a motivar un experimento, elegimos el diseño para nuestro experimento y recogemos los datos y los analizamos mediante el análisis de la varianza que consiste en descomponer la variabilidad total de los datos en sumandos cada uno de ellos asignable a una fuente de variación; posteriormente ya sacamos conclusiones. Lo que se expone a continuación viene recogido en los libros:
 
-*MONTGOMERY, D.C.: Diseño y Análisis de Experimentos. Grupo Editorial Iberoamérica, 1991.
+\*MONTGOMERY, D.C.: Diseño y Análisis de Experimentos. Grupo Editorial Iberoamérica, 1991.
 
-*PEÑA, D.: Estadística: Modelos y Métodos, vol. II: Modelos Lineales y Series Temporales, Alianza Universidad Textos, 1992
+\*PEÑA, D.: Estadística: Modelos y Métodos, vol. II: Modelos Lineales y Series Temporales, Alianza Universidad Textos, 1992
 
 Conceptos y definiciones:
 
@@ -42,17 +42,17 @@ Para diseñar un experimento se tienen en cuenta como son las unidades experimen
 
 Estructuras de diseño:
 
-* Diseño completamente aleatorizado.
-* Diseño por bloques aleatorizados completos.
-* Diseño de cuadrados latinos.
+- Diseño completamente aleatorizado.
+- Diseño por bloques aleatorizados completos.
+- Diseño de cuadrados latinos.
 
 Estructuras de tratamiento:
 
-* Diseño unifactorial.
-* Diseño bifactorial.
-* Diseño n factorial.
-* Diseño 2^n.
-* Diseño anidado.
+- Diseño unifactorial.
+- Diseño bifactorial.
+- Diseño n factorial.
+- Diseño 2^n.
+- Diseño anidado.
 
 En esta introducción comenzamos con el diseño más básico de todos:
 
@@ -112,7 +112,7 @@ Residuals   31 3020.93   97.45
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 ```
 
-Se rechaza la hipótesis nula de igualdad de medias en *** que planteamos con el test F así pues hay diferencias entre los tratamientos. Para ver cual de estos tratamientos son diferentes contamos con métodos de test de recorrido estudentizado y con métodos de contrastes múltiples. Con R podemos programar el test que nos interese, pero el módulo base tiene test de recorrido estudentizado. En este caso vamos a ver el test de Tuckey que compara todas las posibles medias dos a dos y basándose en una distribución q alfa(k,n) del rango estudentizado determina una diferencia mínima significativa para que dos medias sean distintas. En R el test de Tukey se realiza con la función TuckeyHSD:
+Se rechaza la hipótesis nula de igualdad de medias en \*\*\* que planteamos con el test F así pues hay diferencias entre los tratamientos. Para ver cual de estos tratamientos son diferentes contamos con métodos de test de recorrido estudentizado y con métodos de contrastes múltiples. Con R podemos programar el test que nos interese, pero el módulo base tiene test de recorrido estudentizado. En este caso vamos a ver el test de Tuckey que compara todas las posibles medias dos a dos y basándose en una distribución q alfa(k,n) del rango estudentizado determina una diferencia mínima significativa para que dos medias sean distintas. En R el test de Tukey se realiza con la función TuckeyHSD:
 
 ```r
 $ TukeyHSD(unifact)

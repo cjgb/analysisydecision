@@ -1,23 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- libro estadística
-- r
+  - formación
+  - libro estadística
+  - r
 date: '2023-03-15'
 lastmod: '2025-07-13'
 related:
-- manual-curso-introduccion-de-r-capitulo-11-introduccion-al-analisis-de-la-varianza-anova.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-10-probabilidad-y-distribuciones.md
-- monografico-analisis-de-factores-con-r-una-introduccion.md
-- manual-curso-introduccion-de-r-capitulo-13-analisis-de-la-varianza-disenos-anidados.md
-- manual-curso-introduccion-de-r-capitulo-12-analisis-de-la-varianza-disenos-bifactoriales.md
+  - manual-curso-introduccion-de-r-capitulo-11-introduccion-al-analisis-de-la-varianza-anova.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-10-probabilidad-y-distribuciones.md
+  - monografico-analisis-de-factores-con-r-una-introduccion.md
+  - manual-curso-introduccion-de-r-capitulo-13-analisis-de-la-varianza-disenos-anidados.md
+  - manual-curso-introduccion-de-r-capitulo-12-analisis-de-la-varianza-disenos-bifactoriales.md
 tags:
-- sin etiqueta
-title: Introducción a la Estadística para Científicos de Datos. Capítulo 14. Introducción
-  al diseño de experimentos
+  - sin etiqueta
+title: Introducción a la Estadística para Científicos de Datos. Capítulo 14. Introducción al diseño de experimentos
 url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-14-introduccion-al-diseno-de-experimentos/
 ---
+
 Otro de los temas dedicados a la Estadística que tiene que conocer el científico de datos es el diseño de experimentos. La motivación del diseño de experimentos está magistralmente ilustrada por [ Julio Mulero](https://elultimoversodefermat.wordpress.com/) en [este hilo de Twitter](https://twitter.com/juliomulero/status/1331993894721097729). Y se considera imprescindible conocer estas técnicas porque aportan una forma de trabajar, de plantear los problemas y un conocimiento de las variables que mejorará el desempeño (y los modelos) del científico de datos.
 
 Los modelos de diseño de experimentos son modelos estadísticos cuyo objetivo es **determinar si unos factores influyen en una variable respuesta cuantitativa** , y si influyen cuantificar esa influencia.
@@ -36,8 +36,8 @@ Es necesario plantear conceptos básicos (algunos ya conocidos) a tener en cuent
 
 **Factor** : son las variables cualitativas independientes que pueden influir en la variabilidad de la variable de interés. Pueden ser:
 
-  * Factor tratamiento: es un factor del que interesa conocer su influencia en la respuesta.
-  * Factor bloque: es un factor que aporta variación pero no es de interés en el experimento. Sin embargo, se quiere controlar para disminuir la variabilidad residual.
+- Factor tratamiento: es un factor del que interesa conocer su influencia en la respuesta.
+- Factor bloque: es un factor que aporta variación pero no es de interés en el experimento. Sin embargo, se quiere controlar para disminuir la variabilidad residual.
 
 Según sean elegidos por el experimentador o elegidos al azar de una amplia población se denominan factores de efectos fijos o factores de efectos aleatorios.
 
@@ -55,21 +55,23 @@ Según sean elegidos por el experimentador o elegidos al azar de una amplia pobl
 
 Este tipo de análisis se basan en la experimentación y en el análisis de resultados, se estudia si empleando un tratamiento, como una vacuna, un nuevo diseño de la web, unos nuevos precios o modificando una publicación en RRSS se producen mejoras en unas unidades experimentales que serán los elementos que participan en el test, individuos, clics, likes… Fuera de un laboratorio es complicado controlar los efectos de una vacuna o una modificación de una web. Existen fuentes variación distintas a los factores que se pretenden estudiar y estos factores exógenos al problema pueden plantear cambios significativos en la variable respuesta. Por este motivo es importante diseñar correctamente el experimento y determinar los tipos de variabilidad se pueden encontrar a la hora de realizar el experimento:
 
-  * **Variabilidad sistemática y planificada**. La establece los tratamientos y es la que se desea estudiar, tiene o no vacuna, grupo de control frente a grupo de tratamiento o la edad del individuo, aunque no interese medirla puede interesar el efecto. En una publicación en RRSS la vertiente política puede ser de interés pero aparece la hora de la publicación como fuente de variación, se tiene que tener claro que se desea medir para evitar introducir variabilidad no deseada.
-  * **Variabilidad por la naturaleza**. Es un componente que a priori es aleatorio en el caso de la aplicación de la vacuna puede ser la raza o el lugar de residencia. En una publicación en RRSS pueden influir otras noticias de actualidad que inicialmente se desconocían y que han surgido en el momento de la publicación.
+- **Variabilidad sistemática y planificada**. La establece los tratamientos y es la que se desea estudiar, tiene o no vacuna, grupo de control frente a grupo de tratamiento o la edad del individuo, aunque no interese medirla puede interesar el efecto. En una publicación en RRSS la vertiente política puede ser de interés pero aparece la hora de la publicación como fuente de variación, se tiene que tener claro que se desea medir para evitar introducir variabilidad no deseada.
 
-  * **Variabilidad sistemática y no planificada**. Hay causas desconocidas que afectan a los resultados y es fundamental encontrar estas fuentes de variación de la variable respuesta. En la prueba de la vacuna pueden existir patologías previas que estén influyendo negativamente y en el caso de las RRSS variaciones en la priorización llevadas a cabo por la propia red social o publicaciones de la competencia deberían detectarse para aislar su comportamiento.
+- **Variabilidad por la naturaleza**. Es un componente que a priori es aleatorio en el caso de la aplicación de la vacuna puede ser la raza o el lugar de residencia. En una publicación en RRSS pueden influir otras noticias de actualidad que inicialmente se desconocían y que han surgido en el momento de la publicación.
+
+- **Variabilidad sistemática y no planificada**. Hay causas desconocidas que afectan a los resultados y es fundamental encontrar estas fuentes de variación de la variable respuesta. En la prueba de la vacuna pueden existir patologías previas que estén influyendo negativamente y en el caso de las RRSS variaciones en la priorización llevadas a cabo por la propia red social o publicaciones de la competencia deberían detectarse para aislar su comportamiento.
 
 ## Planificación
 
 Este es uno de los elementos más importantes del diseño de experimentos y lo que puede ayudar al científico de datos a mejorar en sus análisis porque en esta fase han de quedar claros todos los elementos participantes en el proceso de modelización. Paso a paso los elementos son:
 
-  * **Definir el objetivo del experimento**. Es necesario tener claro cuales son las unidades experimentales y cual es la variable respuesta. Además, es importante saber como se estructuran estos elementos en los datos, en capítulos anteriores ya se hizo mención a la relevancia de la estructura.
-  * **Identificar las fuentes de variación**. Los principales, los factores de tratamiento y la definición de los niveles. Pero está el ruido, esos factores bloque que están aportando variabilidad y que no son relevantes en el análisis, es necesario identificarlos para eliminar variación residual.
+- **Definir el objetivo del experimento**. Es necesario tener claro cuales son las unidades experimentales y cual es la variable respuesta. Además, es importante saber como se estructuran estos elementos en los datos, en capítulos anteriores ya se hizo mención a la relevancia de la estructura.
 
-  * **Definir el diseño**. En este caso los diseños son muchos y variados, y es la parte más compleja del diseño de experimentos. En este ensayo no se entrarán en diseños de alta complejidad pero en función de las fuentes de variación, si hay uno o más factores de tratamiento, bloques, factores anidados,… se disponen de distintos tipos de diseño, en este capítulo se verán lo más importantes.
+- **Identificar las fuentes de variación**. Los principales, los factores de tratamiento y la definición de los niveles. Pero está el ruido, esos factores bloque que están aportando variabilidad y que no son relevantes en el análisis, es necesario identificarlos para eliminar variación residual.
 
-  * **Modelo matemático**. Una vez se tienen claros todos los elementos anteriores es necesario definir el modelo matemático porque será éste el que nos marque la **tabla ANOVA** a emplear para contrastar las hipótesis del estudio. Esta tabla contendrá todas las fuentes de variación, las sumas de cuadrados correspondientes a esas variaciones y los contrastes de igualdad de medias.
+- **Definir el diseño**. En este caso los diseños son muchos y variados, y es la parte más compleja del diseño de experimentos. En este ensayo no se entrarán en diseños de alta complejidad pero en función de las fuentes de variación, si hay uno o más factores de tratamiento, bloques, factores anidados,… se disponen de distintos tipos de diseño, en este capítulo se verán lo más importantes.
+
+- **Modelo matemático**. Una vez se tienen claros todos los elementos anteriores es necesario definir el modelo matemático porque será éste el que nos marque la **tabla ANOVA** a emplear para contrastar las hipótesis del estudio. Esta tabla contendrá todas las fuentes de variación, las sumas de cuadrados correspondientes a esas variaciones y los contrastes de igualdad de medias.
 
 ## Bloquear y aleatorizar factores
 
@@ -99,19 +101,20 @@ La filosofía del ciclo de procesos de A/B testing es:
 
 En función del modo en que interactuan las poblaciones en análisis se tienen distintos tipos de test:
 
-  * Test A/A. El mismo experimento se aplica en poblaciones distintas. Esta labor la realizará el científico de datos en múltiples ocasiones si trabaja en el ámbito del marketing, para medir una campaña comercial seleccionará un grupo de tratamiento y un grupo de control. Una campaña comercial es un experimento y ha de medirse el éxito.
-  * Test A/B. Distinto experimento, distintas poblaciones pero **situación homogénea**. Se prueba un tipo de publicación en RRSS analizando el número de likes para cada tipo de publicación. Un diseño de una web, se prueba otro diseño y se analiza el tiempo de permanencia en ella. En estos casos se contrastan diseños y es necesario velar porque los usuarios de las web y los tiempos de exposición sean similares, que exista esa igualdad de condiciones que garantice la aleatoriedad de las mediciones.
+- Test A/A. El mismo experimento se aplica en poblaciones distintas. Esta labor la realizará el científico de datos en múltiples ocasiones si trabaja en el ámbito del marketing, para medir una campaña comercial seleccionará un grupo de tratamiento y un grupo de control. Una campaña comercial es un experimento y ha de medirse el éxito.
 
-  * Test A/B/N. Similar al test A/B pero introduciendo nuevos factores, en este caso es un diseño factorial con más de un factor en análisis con las complicaciones que ello tiene como se verá posteriormente.
+- Test A/B. Distinto experimento, distintas poblaciones pero **situación homogénea**. Se prueba un tipo de publicación en RRSS analizando el número de likes para cada tipo de publicación. Un diseño de una web, se prueba otro diseño y se analiza el tiempo de permanencia en ella. En estos casos se contrastan diseños y es necesario velar porque los usuarios de las web y los tiempos de exposición sean similares, que exista esa igualdad de condiciones que garantice la aleatoriedad de las mediciones.
+
+- Test A/B/N. Similar al test A/B pero introduciendo nuevos factores, en este caso es un diseño factorial con más de un factor en análisis con las complicaciones que ello tiene como se verá posteriormente.
 
 **Ejemplo con R**
 
 Para ilustrar como se realiza un modelo unifactorial A/B testing se plantea testear si el diseño de una página provoca más o menos conversión de objetivos. Al científico de datos le han suministrado un conjunto de datos `ab_data.txt` y se le plantean las siguientes cuestiones:
 
-  * Pregunta: ¿El diseño de la web afecta en la consecución de objetivos?
-  * Hipótesis: El nuevo diseño aumenta la conversión
-  * Variable dependiente: la conversión
-  * Variable independiente: el diseño de la web
+- Pregunta: ¿El diseño de la web afecta en la consecución de objetivos?
+- Hipótesis: El nuevo diseño aumenta la conversión
+- Variable dependiente: la conversión
+- Variable independiente: el diseño de la web
 
 Comienza el trabajo con R:
 
@@ -123,21 +126,19 @@ ab_data <- read_csv("./data/ab_data.txt") %>%
 head(ab_data)
 ```
 
-
 Se dispone de 5 variables.
 
-  * `user_id` identificador de usuario. Juega el rol de ID
-  * `timestamp` fecha y hora de la visita, si se ha realizado bien el experimento ha de ser intrascendente.
-  * `group` define el grupo de control y el grupo de tratamiento
-  * `landing_page` define el diseño de la página web, antiguo o nuevo
-  * `converted` es la variable conversión, la que interesa medir
+- `user_id` identificador de usuario. Juega el rol de ID
+- `timestamp` fecha y hora de la visita, si se ha realizado bien el experimento ha de ser intrascendente.
+- `group` define el grupo de control y el grupo de tratamiento
+- `landing_page` define el diseño de la página web, antiguo o nuevo
+- `converted` es la variable conversión, la que interesa medir
 
 Para la correcta realización de un A/B testing es necesario determinar el **mínimo número de observaciones necesarias** para que los resultados tengan validez estadística. ¿Son suficientes los registros que se disponen? Se recuerda que el científico de datos ha de tener nociones de muestreo, pueden aparecer estas situaciones. Se va a emplear la librería de R `powerMediation` para entender los elementos necesarios en la determinación del tamaño de la muestra.
 
 ```r
 require(powerMediation)
 ```
-
 
 La función `SSizeLogicBin` permite calcular el tamaño necesario de la muestra en base a elementos tratados en el capítulo 12 dedicado al muestreo y la inferencia, a priori el científico de datos ha de fijar un p-valor y una potencia de test para una clasificación binaria (convierte o no convierte), la función requiere los siguientes parámetros:
 
@@ -149,7 +150,6 @@ SSizeLogisticBin(p1,
                 power = 0.8)
 ```
 
-
 Donde p1 es la probabilidad el evento cuando X = 0, cuando se está en el grupo de control, en la fórmula de la logística logit(p) = a + b X; en el ejemplo de trabajo puede ser la proporción de éxito «habitual», las conversiones lógicas con el actual diseño. Si no existe experiencia previa el científico de datos tendrá que establecer esta proporción del algún modo. En este caso se va a tomar directamente un 0.1
 
 El caso de p2 es la probabilidad del evento cuando x = 1, cuando es el grupo de tratamiento en la fórmula de la logística logit(p) = a + b X, también es desconocida pero se asume superior a p1 porque no tendría sentido el experimento. Se toma el valor 0.12 porque conviene establecer proporciones realistas y no asumir que un experimento dará unos resultados excepcionales.
@@ -159,7 +159,6 @@ El valor B es la proporción entre tratamiento y control. Se puede comprobar ese
 ```r
 ab_data %>% group_by(group) %>% summarise(proporcion=n()/nrow(ab_data))
 ```
-
 
 La proporción es de un 50% por lo que se toma un valor de 0.5, este tipo de resultados son garantía de la correcta aleatorización que se comprobará en un paso poseterior.
 
@@ -174,7 +173,6 @@ tamaño = SSizeLogisticBin(p1 = 0.10,
 tamaño
 ```
 
-
 En este caso el experimento requieren `r tamaño` observaciones. El conjunto de datos de trabajo tiene `r nrow(ab_data)`, a priori el científico de datos ya sabía que tenía observaciones suficientes, pero este proceso recalca la posibilidad de reducir el número de observaciones y facilitar experimentos, reducir los tiempos de planteamiento del test y reducción de costes para obtener resultados con validez estadística.
 
 Como se ha indicado es necesario medir o analizar la aleatoriedad de los datos disponibles. Se ha de contrastar si el equipo que ha recopilado los datos lo ha hecho en igualdad de condiciones. El primer paso será identificar duplicidades en el `user_id`.
@@ -185,13 +183,11 @@ duplicados <- ab_data %>% group_by(user_id) %>% summarise(conteo=n()) %>%
 nrow(duplicados)
 ```
 
-
 Hay registros duplicados por usuario, directamente se opta por eliminar esos registros ya que se disponen de observaciones suficientes. El ejemplo ilustra como eliminar elementos de una lista con `dplyr`
 
 ```r
 ab_data2 <- ab_data %>% filter(!(user_id %in% duplicados$user_id))
 ```
-
 
 Hay una fecha de obtención del dato, el graficado de la serie temporal puede ayudar a determinar la aleatoriedad de los registros.
 
@@ -204,7 +200,6 @@ ab_data2 %>% group_by(fecha) %>% summarise(visitas = n()) %>%
   scale_x_date(date_labels = "%d/%m/%Y")
 ```
 
-
 [![](/images/2023/03/wp_editor_md_56407c331c5063c5b92d89fa26b855ba.jpg)](/images/2023/03/wp_editor_md_56407c331c5063c5b92d89fa26b855ba.jpg)
 
 Hay homogeneidad en las fechas excepto en 2, el inicio y el fin del experimento. De nuevo se utiliza la estrategia del exceso de observaciones por lo que esas fechas van a ser eliminadas.
@@ -213,19 +208,18 @@ Hay homogeneidad en las fechas excepto en 2, el inicio y el fin del experimento.
 ab_data2 <- ab_data2 %>% filter(fecha > min(ab_data2fecha)&fechafecha) )
 ```
 
-
 Las visitas son las unidades experimentales pero lo que interesa estudiar en el experimento es el diseño de la web y para ello se elaboró un grupo de tratamiento con el nuevo diseño de la web y un grupo de control con el antiguo diseño.
 
 ```r
 ab_data2 %>% group_by(group,landing_page) %>% summarise(visitas=n())
 ```
 
-
 Ya se sabía que las proporciones estaban equilibradas y eliminando observaciones siguen siendo muy parecidas. El número de visitas recogidas para cada nivel del factor en análisis es similar, no es imprescindible pero también refleja aleatoriedad. Además, se ha de corroborar que en las fechas no existe ningún comportamiento aleatorio.
 
 ```r
 require(powerMediation)
 ```
+
 0
 
 [![](/images/2023/03/wp_editor_md_cc8f427539ef3512081f1df3218c8eca.jpg)](/images/2023/03/wp_editor_md_cc8f427539ef3512081f1df3218c8eca.jpg)
@@ -237,6 +231,7 @@ Analizada la **suficiencia y la aleatoriedad** de los datos disponibles es neces
 ```r
 require(powerMediation)
 ```
+
 1
 
 [![](/images/2023/03/wp_editor_md_fb5efe34732a987015f7264669f516a8.jpg)](/images/2023/03/wp_editor_md_fb5efe34732a987015f7264669f516a8.jpg)
@@ -246,6 +241,7 @@ Con la función `aov` se obtiene la tabla ANOVA, la hipótesis de partida es «s
 ```r
 require(powerMediation)
 ```
+
 2
 
 [![](/images/2023/03/wp_editor_md_a6cbb1cb2ed4d51ad4fb78ac69f38546.jpg)](/images/2023/03/wp_editor_md_a6cbb1cb2ed4d51ad4fb78ac69f38546.jpg)
@@ -256,9 +252,9 @@ En este caso la salida es un modelo con sus parámetros y el parámetro asociado
 
 Cuando existen dos factores que pueden presentar una fuente de variación se tienen modelos bifactoriales. Conviene no tener muchos factores en análisis cuando se realiza un diseño de experimentos porque se complica la posibilidad de estudiar como esos factores afectan a la variable de interés. Para entender como se complica basta con ver la formulación del modelo matemático del diseño bifactorial.
 
-Y = \nu + \alpha_i + \beta_j + \alpha\beta_{ij} + \epsilon
+Y = \\nu + \\alpha_i + \\beta_j + \\alpha\\beta\_{ij} + \\epsilon
 
-En la línea del modelo unifactorial, \nu es la media global, \alpha es la media debida al primer factor de interés, \beta la media debida al segundo factor, ¿qué es \alpha\beta? Es la **interacción entre ambos factores**. Cuantos más parámetros más contrastes, más complejidad.
+En la línea del modelo unifactorial, \\nu es la media global, \\alpha es la media debida al primer factor de interés, \\beta la media debida al segundo factor, ¿qué es \\alpha\\beta? Es la **interacción entre ambos factores**. Cuantos más parámetros más contrastes, más complejidad.
 
 Existe interacción cuando la asociación entre dos variables varía según los diferentes niveles de otra u
 otras variables. Con el ANOVA bifactorial es posible analizar la existencia de interacción, pero el conocimiento previo y el análisis de esta situación pueden permitir al científico de datos **crear nuevas variables** para sus modelos que mejoren sustancialmente los resultados.
@@ -268,6 +264,7 @@ El paradigma de la interacción entre variables es la paradoja de Simpson que se
 ```r
 require(powerMediation)
 ```
+
 3
 
 [![](/images/2023/03/wp_editor_md_29d3b16b134630a8cb25aa8370080bfe.jpg)](/images/2023/03/wp_editor_md_29d3b16b134630a8cb25aa8370080bfe.jpg)
@@ -277,6 +274,7 @@ Con `geom_smooth` se añade una función lineal que recoja la nube de puntos, el
 ```r
 require(powerMediation)
 ```
+
 4
 
 [![](/images/2023/03/wp_editor_md_b9af074c14a08b445d261bf0d1c1211d.jpg)](/images/2023/03/wp_editor_md_b9af074c14a08b445d261bf0d1c1211d.jpg)
@@ -294,6 +292,7 @@ Para entender los diseños bifactoriales con R se emplea un conjunto de datos co
 ```r
 require(powerMediation)
 ```
+
 5
 
 Se tiene un experimento con 76 individuos que han sido sometidos a tres tipos de dieta distintos (A, B y C) para cada uno de ellos se tiene un código identificativo, el sexo del individuo, la edad, la altura, el tipo de dieta, peso inicial y peso final. Lo primero es definir la variable respuesta, será la variación de peso en función de su altura.
@@ -301,22 +300,25 @@ Se tiene un experimento con 76 individuos que han sido sometidos a tres tipos de
 ```r
 require(powerMediation)
 ```
+
 6
 
 [![](/images/2023/03/wp_editor_md_5e722b5d05c5a7ae04b0bc837596f91f.jpg)](/images/2023/03/wp_editor_md_5e722b5d05c5a7ae04b0bc837596f91f.jpg)
 
 Los factores presentes en el estudio son:
 
-  * La edad. No se considera una variable relevante pero puede presentar variación, se considera un factor aleatorizado por lo que no se analizará en el modelo.
-  * El sexo. Se considera factor de tratamiento con 2 niveles.
+- La edad. No se considera una variable relevante pero puede presentar variación, se considera un factor aleatorizado por lo que no se analizará en el modelo.
 
-  * El tipo de dieta. Evidentemente será un factor de tratamiento con 3 niveles.
+- El sexo. Se considera factor de tratamiento con 2 niveles.
+
+- El tipo de dieta. Evidentemente será un factor de tratamiento con 3 niveles.
 
 Como se tiene un modelo bifactorial es necesario estudiar previamente si existe interacción entre los factores presentes en el estudio.
 
 ```r
 require(powerMediation)
 ```
+
 7
 
 [![](/images/2023/03/wp_editor_md_0c10b6e09fe16cb116bf873b5191e9ae.jpg)](/images/2023/03/wp_editor_md_0c10b6e09fe16cb116bf873b5191e9ae.jpg)
@@ -326,6 +328,7 @@ Parece evidente que hay un tipo de dieta que está funcionando mejor para el sex
 ```r
 require(powerMediation)
 ```
+
 8
 
 [![](/images/2023/03/wp_editor_md_2a103e709bc07fe90239060a03b62093.jpg)](/images/2023/03/wp_editor_md_2a103e709bc07fe90239060a03b62093.jpg)
@@ -335,6 +338,7 @@ Se aprecia que los hombres han tenido una variación similar pero las mujeres ti
 ```r
 require(powerMediation)
 ```
+
 9
 
 [![](/images/2023/03/wp_editor_md_af185e2311d57c68bc221c202d0e8e10.jpg)](/images/2023/03/wp_editor_md_af185e2311d57c68bc221c202d0e8e10.jpg)
@@ -343,7 +347,7 @@ En la formulación del modelo aparece la interacción como `gender*diet.type`, p
 
 El científico de datos no se va a enfrentar a diseños complejos, pero si ha de contrastar como están funcionando sus modelos mediante pruebas piloto o experimentos. Por ello, se considera importante que maneje los conceptos básicos que se tratan en este capítulo del ensayo. Existen diseños más complejos como los anidados, cuadrados latinos, diseños por bloques, 2^k,… Si se desea material de fácil comprensión y que mejora la anterior exposición se recomienda estudiar los siguientes enlaces:
 
-  * [ Introducción al diseño de experimentos](https://halweb.uc3m.es/esp/Personal/personas/jmmarin/esp/Disenno/IntroDE.pdf)
-  * [ Modelos unifactoriales ](http://verso.mat.uam.es/~joser.berrendero/cursos/adatos/ad2-tema1-12.pdf)
-  * [ Modelos con múltiples factores ](http://verso.mat.uam.es/~joser.berrendero/cursos/adatos/ad2-tema2-12.pdf)
-  * [ Design and Analysis of Experiments and Observational Studies using R ](https://designexptr.org/)
+- [ Introducción al diseño de experimentos](https://halweb.uc3m.es/esp/Personal/personas/jmmarin/esp/Disenno/IntroDE.pdf)
+- [ Modelos unifactoriales ](http://verso.mat.uam.es/~joser.berrendero/cursos/adatos/ad2-tema1-12.pdf)
+- [ Modelos con múltiples factores ](http://verso.mat.uam.es/~joser.berrendero/cursos/adatos/ad2-tema2-12.pdf)
+- [ Design and Analysis of Experiments and Observational Studies using R ](https://designexptr.org/)

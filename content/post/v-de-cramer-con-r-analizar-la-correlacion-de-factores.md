@@ -1,21 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- r
+  - formación
+  - r
 date: '2014-10-08'
 lastmod: '2025-07-13'
 related:
-- grafico-de-correlaciones-entre-factores-grafico-de-la-v-de-cramer.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-11-analisis-bivariable.md
-- monografico-analisis-de-factores-con-r-una-introduccion.md
-- el-problema-de-la-multicolinealidad-intuirlo-y-detectarlo.md
-- manual-curso-introduccion-de-r-capitulo-14-introduccion-al-calculo-matricial-con-analisis-de-componentes-principales.md
+  - grafico-de-correlaciones-entre-factores-grafico-de-la-v-de-cramer.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-11-analisis-bivariable.md
+  - monografico-analisis-de-factores-con-r-una-introduccion.md
+  - el-problema-de-la-multicolinealidad-intuirlo-y-detectarlo.md
+  - manual-curso-introduccion-de-r-capitulo-14-introduccion-al-calculo-matricial-con-analisis-de-componentes-principales.md
 tags:
-- vcd
+  - vcd
 title: V de Cramer con R. Analizar la correlación de factores
 url: /blog/v-de-cramer-con-r-analizar-la-correlacion-de-factores/
 ---
+
 Cómo calcular la **V de Cramer con R** , una pregunta que me han hecho recientemente. Sirve para medir la asociación entre factores. Además esta entrada es útil para retomar el paquete **vcd** de R que nos permite analizar y _Visualizar Categorical Data_. Partimos de un ejemplo muy sencillo:
 
 ```r

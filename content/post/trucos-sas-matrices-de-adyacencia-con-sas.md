@@ -1,22 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- sas
-- trucos
+  - formación
+  - sas
+  - trucos
 date: '2010-08-05'
 lastmod: '2025-07-13'
 related:
-- minimo-de-una-matriz-de-datos-en-sas.md
-- trucos-sas-operaciones-con-tablas-de-dimensiones-con-sas.md
-- trucos-sas-trasponer-con-sql-para-torpes.md
-- truco-sas-cruce-con-formatos.md
-- proc-sql-merge-set.md
+  - minimo-de-una-matriz-de-datos-en-sas.md
+  - trucos-sas-operaciones-con-tablas-de-dimensiones-con-sas.md
+  - trucos-sas-trasponer-con-sql-para-torpes.md
+  - truco-sas-cruce-con-formatos.md
+  - proc-sql-merge-set.md
 tags:
-- matrices
+  - matrices
 title: Trucos SAS. Matrices de adyacencia con SAS
 url: /blog/trucos-sas-matrices-de-adyacencia-con-sas/
 ---
+
 SAS no está pensado para el cálculo matricial, pero hay ocasiones en las que hemos de trabajar con ellas. Uno de los casos típicos es la matriz de adyacencia. Se trata de partir de estos datos:
 
 a b
@@ -66,6 +67,5 @@ from original2
 group by 1;
 quit;
 ```
-
 
 Un método muy sencillo que busca en la matriz de partida el nodo de inicio y el nodo de fin. Creo que se entiende muy bien por eso, y porque estoy casi de vacaciones, no voy a entrar en detalles. Si alguien necesita esos detalles que contacte. Saludos.

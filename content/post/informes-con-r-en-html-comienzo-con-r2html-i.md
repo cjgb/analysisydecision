@@ -1,30 +1,31 @@
 ---
 author: rvaquerizo
 categories:
-- business intelligence
-- consultoría
-- formación
-- monográficos
-- r
+  - business intelligence
+  - consultoría
+  - formación
+  - monográficos
+  - r
 date: '2011-11-28'
 lastmod: '2025-07-13'
 related:
-- graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
-- stadistical-data-warehouse-del-european-central-bank-con-r-y-los-depositos-a-perdidas.md
-- monografico-arboles-de-clasificacion-con-rpart.md
-- arboles-de-decision-con-sas-base-con-r-por-supuesto.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
+  - graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
+  - stadistical-data-warehouse-del-european-central-bank-con-r-y-los-depositos-a-perdidas.md
+  - monografico-arboles-de-clasificacion-con-rpart.md
+  - arboles-de-decision-con-sas-base-con-r-por-supuesto.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
 tags:
-- ddply
-- ggplot2
-- informes
-- memisc
-- plyr
-- r2html
-- recode
+  - ddply
+  - ggplot2
+  - informes
+  - memisc
+  - plyr
+  - r2html
+  - recode
 title: Informes con R en HTML. Comienzo con R2HTML (I)
 url: /blog/informes-con-r-en-html-comienzo-con-r2html-i/
 ---
+
 En las III jornadas de R tuve el placer de asistir al[ taller de Gregorio Serrano sobre informes con R](http://demo.usar.org.es/Taller+4). Me abrió los ojos. Siempre he pensado que R no es una herramienta que sirva para hacer informes _[modo consultor = ON]_ R no servía para realizar reporting _[modo consultor = OFF]_. Pero R tiene un poderoso motor gráfico y dispone del paquete **R2HTML** para poder realizar tablas en HTML y si trabajamos con libros CSS de estilos podemos obtener resultados muy atractivos. Así que la otra tarde me puse manos a la obra y creo que puede salir una trilogía interesante. Bueno, depende del interés que despierte esta entrada del blog haré más entregas, pero de momento tengo en mente llegar a 3.
 
 Seguimos con el sistema habitual. Simulo unos datos de ejemplo que podéis copiar y pegar en vuestra consola de R:
@@ -58,9 +59,7 @@ runif(1,0,0.09)*(saldo_fondos>30000)+
 
 runif(1,0,0.07)*(saldo_ppi>10000)
 
-datos_inipvi=(datos_inipotencial>=quantile(datos_inipotencial,
-
-0.85))*1
+datos_inipvi=(datos_inipotencial>=quantile(datos_inipotencial, 0.85))*1
 
 #Eliminamos la columna que genera nuestra variable dependiente
 
@@ -165,7 +164,6 @@ resum2clientes=sep.miles(resum2clientes)
 resum2contrata=sep.miles(resum2$contrata)
 ```
 
-````````
 ```r
 png(file="C:\\temp\\informes\\resum2.png",width=600, height=450)
 
@@ -176,7 +174,7 @@ a + geom_bar()
 dev.off()
 ```
 
-Mucho código. Los objetos _resumx_ son las tablas que hemos de representar, son sumarizaciones del total de clientes y de los clientes que contratan el producto. Calculamos una tasa y aplicamos los correspondientes formatos. Al formatear los datos los números pasan a ser texto, en ese sentido R no es como otras herramientas, no provoca muchos problemas. El último paso es realizar el informe. Todo quedará almacenado en nuestro disco, en este caso trabajamos con Windows y guardamos el informe en C:\Temp\informes\:
+Mucho código. Los objetos _resumx_ son las tablas que hemos de representar, son sumarizaciones del total de clientes y de los clientes que contratan el producto. Calculamos una tasa y aplicamos los correspondientes formatos. Al formatear los datos los números pasan a ser texto, en ese sentido R no es como otras herramientas, no provoca muchos problemas. El último paso es realizar el informe. Todo quedará almacenado en nuestro disco, en este caso trabajamos con Windows y guardamos el informe en C:\\Temp\\informes:
 
 ```r
 library(R2HTML)
@@ -207,6 +205,5 @@ HTML("</div>")
 
 HTMLEndFile()
 ```
-
 
 El objeto _salida_ es una página estática HTML que llama a una hoja de estilos, con esto podemos realizar tablas más bonitas y espectaculares. Esta página se crea con la función **HTMLInitFile** , con la función HTML ya introducimos código HTML a _salida_ hasta que encontramos **HTMLEndFile.** Yo no soy ningún experto en HTML, creo que sería mejor decir que no tengo ni idea pero con Google y R2HTML vamos a crear informes [tan bonitos como este](/images/2011/11/informes/salida.html).

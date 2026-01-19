@@ -1,20 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- seguros
+  - seguros
 date: '2012-05-21'
 lastmod: '2025-07-13'
 related:
-- el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v.md
-- el-seguro-de-salud-suma-y-sigue.md
-- el-modelo-multivariante-en-el-sector-asegurador-introduccion-i.md
-- consultor-particular-de-seguros.md
-- el-seguro-de-credito-interesante-reto-tecnico.md
+  - el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v.md
+  - el-seguro-de-salud-suma-y-sigue.md
+  - el-modelo-multivariante-en-el-sector-asegurador-introduccion-i.md
+  - consultor-particular-de-seguros.md
+  - el-seguro-de-credito-interesante-reto-tecnico.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Informe 2011 de la Dirección de Seguros y Fondos de Pensiones
 url: /blog/informe-2011-de-la-direccion-de-seguros-y-fondos-de-pensiones/
 ---
+
 Ya tenéis disponible el informe del 2011 de la DGS:
 
 <http://www.dgsfp.meh.es/sector/documentos/Informes%202011/InformeSeguros2011.pdf>

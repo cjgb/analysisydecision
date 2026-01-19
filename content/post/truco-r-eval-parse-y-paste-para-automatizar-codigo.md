@@ -1,27 +1,28 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- r
-- trucos
+  - formación
+  - r
+  - trucos
 date: '2011-01-07'
 lastmod: '2025-07-13'
 related:
-- recodificar-el-valor-de-un-factor-en-r.md
-- trucos-simples-para-rstats.md
-- trabajando-con-factores-en-r-attach-frente-a-within.md
-- truco-malo-de-r-leer-datos-desde-excel.md
-- analisis-de-textos-con-r.md
+  - recodificar-el-valor-de-un-factor-en-r.md
+  - trucos-simples-para-rstats.md
+  - trabajando-con-factores-en-r-attach-frente-a-within.md
+  - truco-malo-de-r-leer-datos-desde-excel.md
+  - analisis-de-textos-con-r.md
 tags:
-- automatizar código
-- eval
-- parse
-- paste
-- r
-- replicate
+  - automatizar código
+  - eval
+  - parse
+  - paste
+  - r
+  - replicate
 title: Truco R. Eval, parse y paste para automatizar código
 url: /blog/truco-r-eval-parse-y-paste-para-automatizar-codigo/
 ---
+
 La función _**paste**_ nos permite concatenar cadenas de texto con R:
 
 `paste("Dato",rep(1:10),sep="")`

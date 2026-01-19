@@ -1,26 +1,26 @@
 ---
 author: rvaquerizo
 categories:
-- r
-- sin categoría
+  - r
 date: '2009-01-19'
 lastmod: '2025-07-13'
 related:
-- sas-comienza-a-fijarse-en-r.md
-- porque-me-gusta-r.md
-- noticias-del-congreso-de-usuarios-de-r.md
-- integracion-de-r-con-sas-spss-y-otros.md
-- sas-investiga-la-tecnologia-de-r.md
+  - sas-comienza-a-fijarse-en-r.md
+  - porque-me-gusta-r.md
+  - noticias-del-congreso-de-usuarios-de-r.md
+  - integracion-de-r-con-sas-spss-y-otros.md
+  - sas-investiga-la-tecnologia-de-r.md
 tags:
-- noticias
-- r
-- software libre
+  - noticias
+  - r
+  - software libre
 title: El futuro del análisis de datos pasa por R
 url: /blog/el-futuro-del-analisis-de-datos-pasa-por-r/
 ---
+
 Es evidente que R dentro del mundo empresarial aun no tiene la presencia que se merece. Pero se está creando una base de estadísticos, ingenieros y programadores que muy pronto demandarán el uso de R en sus empresas. En el New York Times ya se hicieron eco de este hecho:
 
-[http://www.nytimes.com/2009/01/07/technology/business-computing/07program.html?pagewanted=1&_r=1&partner=permalink&exprod=permalink](http://www.nytimes.com/2009/01/07/technology/business-computing/07program.html?pagewanted=1&_r=1&partner=permalink&exprod=permalink)
+[http://www.nytimes.com/2009/01/07/technology/business-computing/07program.html?pagewanted=1&\_r=1&partner=permalink&exprod=permalink](http://www.nytimes.com/2009/01/07/technology/business-computing/07program.html?pagewanted=1&_r=1&partner=permalink&exprod=permalink)
 
 Además ya hay algunas grandes empresas que emplean este sofware libre como reseña New York Times. En España no seremos una excepción y pronto muchos estudiantes e investigadores precisarán de R en su trabajo diario. Lo harán porque R es la herramienta que han empleado en su universidad, porque es fácil de programar, porque es barato y porque hay una comunidad de programadores detrás que garantizan una larga viva a R.
 

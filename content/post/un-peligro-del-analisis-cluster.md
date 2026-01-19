@@ -1,22 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- data mining
-- formación
-- r
+  - data mining
+  - formación
+  - r
 date: '2012-07-16'
 lastmod: '2025-07-13'
 related:
-- analisis-cluster-con-sas-la-importancia-de-las-semillas-en-las-k-medias.md
-- cluster-svm.md
-- knn-con-sas-mejorando-k-means.md
-- manual-curso-introduccion-de-r-capitulo-17-analisis-cluster-con-r-y-iii.md
-- manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-ii.md
+  - analisis-cluster-con-sas-la-importancia-de-las-semillas-en-las-k-medias.md
+  - cluster-svm.md
+  - knn-con-sas-mejorando-k-means.md
+  - manual-curso-introduccion-de-r-capitulo-17-analisis-cluster-con-r-y-iii.md
+  - manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-ii.md
 tags:
-- cluster
+  - cluster
 title: Un peligro del análisis cluster
 url: /blog/un-peligro-del-analisis-cluster/
 ---
+
 ![](/images/2009/04/cluster1.JPG)
 
 Quería plantearos un ejemplo de análisis cluster para observar **el peligro que tiene agrupar observaciones en base a grupos homogéneos creados con distancias multivariantes**. Para ilustrar el ejemplo trabajamos con R, creamos grupos en base a 2 variables, esto nos facilita los análisis gráficos. Simulamos el conjunto de datos con el que trabajamos:

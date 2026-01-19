@@ -1,26 +1,27 @@
 ---
 author: rvaquerizo
 categories:
-- business intelligence
-- data mining
-- formación
-- monográficos
-- sas
-- wps
+  - business intelligence
+  - data mining
+  - formación
+  - monográficos
+  - sas
+  - wps
 date: '2011-02-04'
 lastmod: '2025-07-13'
 related:
-- analisis-de-textos-con-r.md
-- analisis-del-programa-electoral-del-partido-popular-antes-de-las-elecciones-en-espana.md
-- comparamos-los-programas-electorales-de-pp-y-psoe-con-r.md
-- ejemplo-de-web-scraping-con-r-la-formacion-de-los-diputados-del-congreso.md
-- curso-de-lenguaje-sas-con-wps-funciones-en-wps.md
+  - analisis-de-textos-con-r.md
+  - analisis-del-programa-electoral-del-partido-popular-antes-de-las-elecciones-en-espana.md
+  - comparamos-los-programas-electorales-de-pp-y-psoe-con-r.md
+  - ejemplo-de-web-scraping-con-r-la-formacion-de-los-diputados-del-congreso.md
+  - curso-de-lenguaje-sas-con-wps-funciones-en-wps.md
 tags:
-- text mining
-- sas
+  - text mining
+  - sas
 title: El debate político o como analizar textos con WPS
 url: /blog/el-debate-politico-o-como-analizar-textos-con-wps/
 ---
+
 ¿Qué hacen los políticos españoles en el Congreso de los Diputados? Las tertulias radiofónicas están llenas de analístas políticos que podrán opinar sobre la labor del Congreso mejor que yo. Sin embargo yo tengo WPS, sé programar en SAS y en la [web del Congreso](http://www.congreso.es/portal/page/portal/Congreso/Congreso) están [todas las sesiones y todas las intervenciones](http://www.congreso.es/portal/page/portal/Congreso/Congreso/Intervenciones/Busqueda%20avanzada) de la democracia. Pues con estos elementos vamos a iniciar un proceso de _text mining,_ aunque no llegaremos a realizar ningún análisis complejo. Para comenzar, como siempre, necesito datos. Me he guardado [la sesión del Congreso de los Diputados del día 26/01/2011](http://www.congreso.es/portal/page/portal/Congreso/PopUpCGI?CMD=VERLST&BASE=puw9&FMT=PUWTXDTS.fmt&DOCS=1-1&QUERY=%28CDP201101260219.CODI.%29#%28P%C3%A1gina46%29) como web y posteriormente con Word la he salvado como fichero de texto (ojo con las codificaciones). De todos modos podéis [descargaros aquí](/images/2011/02/popupcgi.txt "popupcgi.txt") el fichero.
 
 Comienza nuestro trabajo con WPS y lo primero es crear una tabla con la sesión:
@@ -75,7 +76,7 @@ run;
 
 Este código no es sencillo pero lo puedo resumir en si hay un espacio en blanco o un guión eso implica separación entre palabras, es en ese momento cuando hago el OUTPUT, también lo tengo que hacer con la última palabra de la tabla. El proceso se realiza recorriendo caracter a caracter. El resultado es un dataset PALABRAS con las 29.903 palabras que se pronunciaron aquel día en el Congreso de los Diputados. Ahora necesitamos mejorar nuestros datos y quiero emplear [una macro que ya ha asomado en el blog en otras ocasiones](https://analisisydecision.es/macros-sas-limpiar-una-cadena-de-caracteres/). Además elimino tildes y algunas palabras que suelen usarse mucho:
 
-``
+\`\`
 
 Ya tenemos en nuestra sesión de WPS el dataset PALABRAS2 con la variable PALABRA2 con la que ya podemos hacer un pequeño análisis de que asuntos son los que más se tratan en las sesiones del congreso. ¿Y qué es lo primero que podemos hacer? Un ranking de palabras:
 

@@ -1,22 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- monográficos
-- sas
+  - formación
+  - monográficos
+  - sas
 date: '2009-12-02'
 lastmod: '2025-07-13'
 related:
-- monografico-datos-agrupados-en-sas.md
-- trucos-sas-primer-y-ultimo-elemento-de-un-array.md
-- pasando-de-sas-a-r-primer-y-ultimo-elemento-de-un-campo-agrupado-de-un-data-frame.md
-- trucos-sas-variables-dummy-de-una-variable-continua.md
-- macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
+  - monografico-datos-agrupados-en-sas.md
+  - trucos-sas-primer-y-ultimo-elemento-de-un-array.md
+  - pasando-de-sas-a-r-primer-y-ultimo-elemento-de-un-campo-agrupado-de-un-data-frame.md
+  - trucos-sas-variables-dummy-de-una-variable-continua.md
+  - macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Monográfico. FIRST. y LAST. ejemplos en DATA
 url: /blog/monografico-first-y-last-ejemplos-en-data/
 ---
+
 [Ya trabajamos en un monográfico anterior con datos agrupados en SAS](https://analisisydecision.es/monografico-datos-agrupados-en-sas/). Cuando empleamos BY tenemos dos variables dentro del paso data con las que trabajaremos habitualmente FIRST. y LAST. A continuación vamos a plantear un ejemplo de uso para entender mejor su funcionamiento. Partimos de una simulación de una catera de una CIA asguradora que tiene 1.000 pólizas y está a nivel de póliza, renovación y suplemento. Para la realización de diversos análisis necesitamos marcar las pólizas de nueva producción, marcar la anualidad, determinar la prima en el momento anterior a la renovación y la prima que tienen a día de hoy.
 
 Como hemos indicado lo primero será crear una tabla que simule nuestra cartera:

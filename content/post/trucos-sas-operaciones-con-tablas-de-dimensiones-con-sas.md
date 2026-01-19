@@ -1,24 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- business intelligence
-- formación
-- sas
-- trucos
+  - business intelligence
+  - formación
+  - sas
+  - trucos
 date: '2011-10-25'
 lastmod: '2025-07-13'
 related:
-- trucos-sas-variables-dummy-de-una-variable-continua.md
-- truco-sas-categorizar-variables-continuas.md
-- trucos-sas-trasponer-con-sql-para-torpes.md
-- macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
-- macros-sas-agrupando-variables-categoricas.md
+  - trucos-sas-variables-dummy-de-una-variable-continua.md
+  - truco-sas-categorizar-variables-continuas.md
+  - trucos-sas-trasponer-con-sql-para-torpes.md
+  - macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
+  - macros-sas-agrupando-variables-categoricas.md
 tags:
-- array
-- data warehouse
+  - array
+  - data warehouse
 title: Trucos SAS. Operaciones con tablas de dimensiones con SAS
 url: /blog/trucos-sas-operaciones-con-tablas-de-dimensiones-con-sas/
 ---
+
 Algunos llaman a las tablas de dimensiones tablas de lookup, yo me niego. Con SAS ya hemos visto como crear cruces de tablas de dimensiones con tablas de hechos a través de formatos, bajo mi punto de vista el método más eficiente. Pero hoy quería traeros un ejemplo de cruce de tabla pequeña con tabla grande a través de arrays multidimensionales con SAS. Se trata de guardar los valores de la tabla “pequeña” en un array temporal multidimensional cuando leemos la tabla grande. Para ilustrar esta tarea he preparado un ejemplo:
 
 ```r

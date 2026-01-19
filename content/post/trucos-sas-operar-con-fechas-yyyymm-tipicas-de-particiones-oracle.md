@@ -1,22 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- sas
-- trucos
+  - formación
+  - sas
+  - trucos
 date: '2008-10-01'
 lastmod: '2025-07-13'
 related:
-- bucle-de-fechas-con-sas-para-tablas-particionadas.md
-- trucos-sas-numero-de-dias-de-un-mes.md
-- trabajo-con-fechas-sas-funciones-fecha.md
-- macros-sas-primer-y-ultimo-dia-del-mes-de-una-fecha-sas.md
-- trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados.md
+  - bucle-de-fechas-con-sas-para-tablas-particionadas.md
+  - trucos-sas-numero-de-dias-de-un-mes.md
+  - trabajo-con-fechas-sas-funciones-fecha.md
+  - macros-sas-primer-y-ultimo-dia-del-mes-de-una-fecha-sas.md
+  - trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Trucos SAS. Operar con fechas YYYYMM típicas de particiones Oracle
 url: /blog/trucos-sas-operar-con-fechas-yyyymm-tipicas-de-particiones-oracle/
 ---
+
 Este truco va orientado a programadores SAS que estén habituados a trabajar con Oracle. El SAS Tip de hoy nos permite parametrizar a la perfección la lectura de tablas históricas particionadas. En estos casos podemos crear parámetros con macrovariables de SAS para leer las tablas Oracle sin necesidad de modificar manualmente las fechas de partición. Un ejemplo:
 
 1\. sin parametrizar:
@@ -57,7 +58,8 @@ quit;
 
 Con este ejemplo queda claro nuestro objetivo. En el siguiente paso data veremos las funciones que vamos a emplear para trabajar con fechas de partición AAAAMM, las más habituales:
 
-`%let mes=200808;``data _null_;`
+``` %let mes=200808;``data _null_; ```
+
 ```r
 *PREPARAMOS LA FECHA DE LA PARTICION;
 
@@ -104,6 +106,7 @@ y=2;
 
 run;
 ```
+
 `Operamos con la fecha AAAAMM y de ella obtenemos año y mes. Si este proceso lo pasamos a una macro podemos crear una función muy potente y práctica para trabajar con pariticiones:`
 
 ```r
@@ -120,7 +123,8 @@ run;
 
 Ejemplos de uso de esta función:
 
-```%let mes=200808;`
+\`\`\`%let mes=200808;\`
+
 ```r
 data _null_;
 
@@ -211,7 +215,8 @@ GLOBAL MES_MENOS_23 200609
 
 Muy útil para no tener necesidad de modificar fechas en nuestros procesos mensuales. Y podemos crear una macro que nos genere las macrovariables automaticamente, además es un buen ejemplo de bucles con macros:
 
-``
+\`\`
+
 ```r
 %macro doit (inicio,fin);
 
@@ -245,6 +250,7 @@ run;
 
 %mend;
 ```
+
 `%doit(-24,3);`
 
 Un código más avanzado para ir conociendo mejor la programación en macro.

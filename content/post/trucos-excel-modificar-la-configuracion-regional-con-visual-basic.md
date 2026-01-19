@@ -1,26 +1,27 @@
 ---
 author: rvaquerizo
 categories:
-- excel
-- trucos
+  - excel
+  - trucos
 date: '2010-02-21'
 lastmod: '2025-07-13'
 related:
-- truco-sas-sas-y-dde-aliados-de-excel.md
-- trucos-excel-y-sas-complemento-para-cambiar-la-configuracion-regional.md
-- truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
-- trucos-excel-pasar-de-caracter-a-numerico-con-formulas.md
-- macros-sas-pasar-de-texto-a-numerico.md
+  - truco-sas-sas-y-dde-aliados-de-excel.md
+  - trucos-excel-y-sas-complemento-para-cambiar-la-configuracion-regional.md
+  - truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
+  - trucos-excel-pasar-de-caracter-a-numerico-con-formulas.md
+  - macros-sas-pasar-de-texto-a-numerico.md
 tags:
-- application
-- configuracion regional
-- decimalseparator
-- thousandsseparator
-- r
-- sas
+  - application
+  - configuracion regional
+  - decimalseparator
+  - thousandsseparator
+  - r
+  - sas
 title: Trucos Excel. Modificar la configuración regional con Visual Basic
 url: /blog/trucos-excel-modificar-la-configuracion-regional-con-visual-basic/
 ---
+
 Con Visual Basic podemos modificar la configuración regional. Podemos crear macros en Excel que nos realicen esta tarea. De este modo si trabajamos con aplicaciones que tienen configuración americana podemos cambiar con una macro, pegar los valores y volver a cambiar la configuración. Para poner separador decimal «.» y separador de miles «,» tendremos que emplear el siguiente código:
 
 ```r

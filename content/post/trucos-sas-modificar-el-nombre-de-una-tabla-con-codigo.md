@@ -1,22 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- sas
-- trucos
+  - sas
+  - trucos
 date: '2010-06-16'
 lastmod: '2025-07-13'
 related:
-- trucos-sas-eliminar-etiquetas-en-los-conjunto-de-datos-sas.md
-- truco-sas-proc-contents.md
-- trucos-sas-union-de-multiples-tablas-sas-con-un-nombre-parecido.md
-- trucos-sas-ordenar-las-variables-de-un-dataset.md
-- trucos-sas-lista-de-datasets-en-macro-variable.md
+  - trucos-sas-eliminar-etiquetas-en-los-conjunto-de-datos-sas.md
+  - truco-sas-proc-contents.md
+  - trucos-sas-union-de-multiples-tablas-sas-con-un-nombre-parecido.md
+  - trucos-sas-ordenar-las-variables-de-un-dataset.md
+  - trucos-sas-lista-de-datasets-en-macro-variable.md
 tags:
-- change
-- proc datasets
+  - change
+  - proc datasets
 title: Trucos SAS. Modificar el nombre de una tabla con código
 url: /blog/trucos-sas-modificar-el-nombre-de-una-tabla-con-codigo/
 ---
+
 Dando un repaso a las entradas de Google me he encontrado repetida la frase: «cambiar el nobre de un dataset SAS». Imagino que desearán cambiar el nombre de un dataset con código sin realizar un paso DATA. Para hacer esta labor hemos de emplear el PROC DATASETS y la sentencia CHANGE. Veamos un código de ejemplo muy sencillo:
 
 ```r

@@ -1,24 +1,25 @@
 ---
 author: cgbellosta
 categories:
-- formación
-- sas
+  - formación
+  - sas
 date: '2009-11-22'
 lastmod: '2025-07-13'
 related:
-- la-funcion-lag-de-sas.md
-- laboratorio-de-codigo-sas-vistas-proc-means-vs-proc-sql.md
-- curso-de-lenguaje-sas-con-wps-ejecuciones.md
-- trucos-sas-trasponer-con-sql-para-torpes.md
-- proc-sql-merge-set.md
+  - la-funcion-lag-de-sas.md
+  - laboratorio-de-codigo-sas-vistas-proc-means-vs-proc-sql.md
+  - curso-de-lenguaje-sas-con-wps-ejecuciones.md
+  - trucos-sas-trasponer-con-sql-para-torpes.md
+  - proc-sql-merge-set.md
 tags:
-- funciones de ventana
-- lag
-- sas
-- sql
+  - funciones de ventana
+  - lag
+  - sas
+  - sql
 title: Funciones de ventana, SAS y bases de datos
 url: /blog/funciones-de-ventana-sas-y-bases-de-datos/
 ---
+
 Hace unos meses padecí (eso sí, brevemente) un proyecto que consistía en la migración de cierto código en SAS (¡nos lo pasaron como un documento de 20 hojas de Word!) a otro lenguaje de programación.
 
 Esencialmente, desde la nueva plataforma habrían de lanzarse consultas a cierta base de datos (cuando el código SAS permitiese resolver los cálculos como una consulta de SQL) y procesarse los resultados procedimentalmente desde el nuevo lenguaje de programación cuando SQL ,declarativo, no fuese suficiente. Surgió el problema de que el lenguaje procedimental era incapaz de procesar bloques tan grandes de información. Pero ésa es otra historia.
@@ -27,9 +28,9 @@ En esencia, lo que SQL era incapaz (¿lo era realmente? sigamos leyendo…) de p
 
 Las nuevas especificaciones de SQL (la [2003](http://es.wikipedia.org/wiki/SQL:2003) y la [2008](http://en.wikipedia.org/wiki/SQL:2008)) introdujeron y detallaron el uso de [funciones de ventana](http://www.postgresql-es.org/node/376). Las funciones de ventana son extensiones de las clásicas consultas con «group by». Éstas últimas sólo permiten devolver una fila por cada nivel de agrupamiento. Las funciones de ventana permiten operar sobre el bloque completo que define un nivel y:
 
-  * Devolver tantas filas como contiene el bloque
-  * Devolver valores basados en la totalidad de las filas del bloque
-  * Si los bloques, además, se ordenan, tener acceso al primer valor (o último, o enésimo) de cada bloque; o a la fila anterior (mediante lag).
+- Devolver tantas filas como contiene el bloque
+- Devolver valores basados en la totalidad de las filas del bloque
+- Si los bloques, además, se ordenan, tener acceso al primer valor (o último, o enésimo) de cada bloque; o a la fila anterior (mediante lag).
 
 Puede leerse más al respecto [aquí](http://www.pgcon.org/2009/schedule/attachments/98_Windowing%20Functions.pdf "Presentación sobre funciones de ventana") y [aquí](http://www.postgresql.org/docs/current/static/functions-window.html "Documentación de Postgres sobre funciones de ventana").
 

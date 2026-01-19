@@ -1,31 +1,31 @@
 ---
 author: rvaquerizo
 categories:
-- formación
+  - formación
 date: '2020-04-07'
 lastmod: '2025-07-13'
 related:
-- mi-breve-seguimiento-del-coronavirus-con-r.md
-- mapa-del-covid-19-por-comunidades-autonomas-con-r-mas-rstats.md
-- evolucion-del-numero-de-casos-de-coronavirus.md
-- los-pilares-de-mi-simulacion-de-la-extension-del-covid19.md
-- incluir-subplot-en-mapa-con-ggplot.md
+  - mi-breve-seguimiento-del-coronavirus-con-r.md
+  - mapa-del-covid-19-por-comunidades-autonomas-con-r-mas-rstats.md
+  - evolucion-del-numero-de-casos-de-coronavirus.md
+  - los-pilares-de-mi-simulacion-de-la-extension-del-covid19.md
+  - incluir-subplot-en-mapa-con-ggplot.md
 tags:
-- sin etiqueta
-title: Etiquetas en scatter plot. Muertes covid por millón de habitantes vs gasto
-  en salud
+  - sin etiqueta
+title: Etiquetas en scatter plot. Muertes covid por millón de habitantes vs gasto en salud
 url: /blog/etiquetas-en-scatter-plot-muertes-covid-por-millon-de-habitantes-vs-gasto-en-salud/
 ---
+
 [![](/images/2020/04/coronavirus15.png)](/images/2020/04/coronavirus15.png)
 
 He intentado permanecer ajeno a los datos del coronoavirus pero es imposible, sin embargo, me gustaría aprovechar para mostrar algunos trucos con R y Python. Esta vez en una sola entrada vamos a tratar las siguientes situaciones:
 
-  * Importar la tabla de worldometer sobre datos de países.
-  * Problemas con la librería OECD.
-  * Importar Excel con R.
-  * Not in con R.
-  * Gráficos de ranking ordenados con ggplot.
-  * Etiquetas en los scatter plot.
+- Importar la tabla de worldometer sobre datos de países.
+- Problemas con la librería OECD.
+- Importar Excel con R.
+- Not in con R.
+- Gráficos de ranking ordenados con ggplot.
+- Etiquetas en los scatter plot.
 
 #### Importar la tabla de worldometer
 
@@ -49,7 +49,6 @@ worldometers <- worldometers %>% rename(pais = `Country,Other` , muertes_habitan
   select(pais,muertes_habitante, muertes)
 ```
 
-
 Creamos un data frame con las variables necesarias
 
 para realizar un ranking de porcentaje de muertes sobre millón de habitantes.
@@ -62,7 +61,6 @@ En este punto más que mostrar como leer datos de la OECD casi pido ayuda para e
 library(OECD)
 salud <- search_dataset('health', data = get_datasets(), ignore.case = TRUE)
 ```
-
 
 No encuentro la tabla SH.XPD.CHEX.GD.ZS que contiene Current health expenditure (% of GDP), el gasto en sanidad sobre % de PIB; tampoco he llegado a comprender bien la API para bajarme el XML o el Json, a los 45 minutos de lucha me rendí. Así que opte por descargar el Excel, tratarlo manualmente y leerlo.
 
@@ -81,7 +79,6 @@ pib_salud <- pib_salud %>% mutate(pais = case_when(
   TRUE ~ pais))
 ```
 
-
 Descargué los datos en formato Excel de la tabla con ID SH.XPD.CHEX.GD.ZS En el propio Excel quité lo que sobraba y así pude crear un data frame y adaptar los nombres con case_when que pueden darme problemas a la hora de cruzar con worldometer.
 
 #### Not in con R
@@ -96,8 +93,7 @@ pinta <- worldometers %>% filter(pais %notin% c('Total:','World')) %>%
 pinta <- left_join(pinta, pib_salud)
 ```
 
-
-La tabla de worldometer tiene un total y un mundo que hay que eliminar, de ahí el uso del not in, por otro lado no vamos a pintar los casi 200 países que tenemos nos vamos a quedar con los 20 con mayor número de muertes y por ello ordenamos de forma descendente con arrange y en filter ponemos row_number <= 20. También unimos los datos de muertes por millón de habitantes con los datos de PIB.
+La tabla de worldometer tiene un total y un mundo que hay que eliminar, de ahí el uso del not in, por otro lado no vamos a pintar los casi 200 países que tenemos nos vamos a quedar con los 20 con mayor número de muertes y por ello ordenamos de forma descendente con arrange y en filter ponemos row_number \<= 20. También unimos los datos de muertes por millón de habitantes con los datos de PIB.
 
 #### Gráficos de ranking ordenados con ggplot
 
@@ -112,7 +108,6 @@ pinta %>%
   ylab("Muertes COVID por 1m. habitantes") +
   theme_classic()
 ```
-
 
 [![](/images/2020/04/coronavirus11.png)](/images/2020/04/coronavirus11.png)
 
@@ -130,7 +125,6 @@ pinta %>%
   theme_classic()
 ```
 
-
 [![](/images/2020/04/coronavirus12.png)](/images/2020/04/coronavirus12.png)
 
 Se puede opinar que el % de gasto en salud sobre el PIB no es un dato apropiado porque los grupos de poder en USA distorsionan este dato (y arruinan familias), pero no quiero dejar en mal lugar a mi país y hay algún dato que deja en muy mal lugar al actual Gobierno. Ya hablaré.
@@ -144,7 +138,6 @@ base <- ggplot(pinta, aes(x = pib_salud, y = muertes_habitante))
 base + geom_point()
 ```
 
-
 Sobre una base vamos añadiendo de lo más sencillo a lo más complicado. Añadimos las etiquetas de la forma más sencilla creando un vector que las contenga y empleando geom_text
 
 ```r
@@ -152,7 +145,6 @@ paises <- pinta$pais
 base + geom_point() +
   geom_text(aes(label = paises), size = 3, hjust = 0, nudge_x = 0.2)
 ```
-
 
 [![](/images/2020/04/coronavirus13.png)](/images/2020/04/coronavirus13.png)
 
@@ -171,7 +163,6 @@ base + geom_point() +
   xlab("gasto en salud sobre % de PIB") +
   theme_classic()
 ```
-
 
 [![](/images/2020/04/coronavirus14.png)](/images/2020/04/coronavirus14.png)
 

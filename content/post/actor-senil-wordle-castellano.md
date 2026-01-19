@@ -1,20 +1,22 @@
 ---
 author: Paco Gárate
 categories:
-- python
+  - python
 date: '2022-02-08'
 lastmod: '2025-07-13'
 related:
-- longitud-de-las-frases-del-quijote-con-rstats.md
-- el-debate-politico-o-como-analizar-textos-con-wps.md
-- analisis-de-textos-con-r.md
-- resolucion-del-juego-de-modelos-con-r.md
-- cuanto-dinero-pierdo-jugando-a-la-loteria-una-simulacion-poco-seria-con-r.md
+  - longitud-de-las-frases-del-quijote-con-rstats.md
+  - el-debate-politico-o-como-analizar-textos-con-wps.md
+  - analisis-de-textos-con-r.md
+  - resolucion-del-juego-de-modelos-con-r.md
+  - cuanto-dinero-pierdo-jugando-a-la-loteria-una-simulacion-poco-seria-con-r.md
 tags:
-- sin etiqueta
+  - python
+  - wordle
 title: 'Actor senil: Las mejores palabras para iniciar en Wordle en castellano'
 url: /blog/actor-senil-wordle-castellano/
 ---
+
 Creo que cualquier persona con conocimientos de estadística cada vez que juega a un juego de probabilidades (_¿el 99.9% de los juegos existentes?_) lo primero que piensa, por deformación profesional, es en cómo inferir un **patrón ganador** para optimizar sus movimientos.
 
 Por ejemplo, en el juego de _Los colonos de Catán_ donde se juega con dos dados, nunca elegiría situar mi poblado en la celda 2 o 12 (con probabilidades de 1/36) estando libres la 6 o la 8 (probabilidades de 5/36). De hecho, el 7 que es la suma más probable (6/36) está reservada para mover el ladrón y así equilibrar las posiciones del tablero.
@@ -56,7 +58,6 @@ ganadora = list(filter(lambda x:('a' and 'c' and 't' in x), ganadora))
 print(ganadora)
 ```
 
-
 **[‘secta’]**
 
 [![](/images/2022/02/actor_senil-258x300.png)](/images/2022/02/actor_senil.png)
@@ -74,7 +75,6 @@ ganadora = list(filter(lambda x:('a' in x), ganadora))
 print(ganadora)
 ```
 
-
 **[‘aunar’, ‘banar’, ‘danar’, ‘dunar’, ‘fanar’, ‘funar’, ‘ganar’, ‘manar’, ‘punar’, ‘runar’]**
 
 Al existir múltiples opciones (aunque una clara candidata), decido limitar la búsqueda a la base de datos del Quijote, que es **lo más parecido a lo que haría nuestro cerebro** , obteniendo sólo una palabra posible:
@@ -86,7 +86,6 @@ ganadora = list(filter(lambda x:(x[4]=='r'), ganadora))
 ganadora = list(filter(lambda x:('a' in x), ganadora))
 print(ganadora)
 ```
-
 
 **[‘ganar’]**
 [![](/images/2022/02/actor_senil_2-250x300.png)](/images/2022/02/actor_senil_2.png)

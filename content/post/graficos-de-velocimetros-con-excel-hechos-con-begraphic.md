@@ -1,24 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- business intelligence
-- excel
-- formación
-- monográficos
+  - business intelligence
+  - excel
+  - formación
+  - monográficos
 date: '2012-02-06'
 lastmod: '2025-07-13'
 related:
-- begraphic-un-add-in-para-excel-muy-interesante.md
-- trucos-r-graficos-de-velocimetro-con-r.md
-- chart-tools-un-add-in-imprescindible-para-excel.md
-- trucos-excel-poner-etiquetas-en-graficos-de-dispersion.md
-- trucos-excel-graficos-dot-plot-representando-un-ranking-graficamente.md
+  - begraphic-un-add-in-para-excel-muy-interesante.md
+  - trucos-r-graficos-de-velocimetro-con-r.md
+  - chart-tools-un-add-in-imprescindible-para-excel.md
+  - trucos-excel-poner-etiquetas-en-graficos-de-dispersion.md
+  - trucos-excel-graficos-dot-plot-representando-un-ranking-graficamente.md
 tags:
-- begraphic
-- gráfico de velocímetro
+  - begraphic
+  - gráfico de velocímetro
 title: Gráficos de velocímetros con Excel hechos con Begraphic
 url: /blog/graficos-de-velocimetros-con-excel-hechos-con-begraphic/
 ---
+
 [En el blog ya hemos hablado de Begraphic](https://analisisydecision.es/begraphic-un-add-in-para-excel-muy-interesante/). Ahora vamos a descubrir algunas de sus posibilidades. En concreto vamos a realizar gráficos del tipo velocímetro con Excel de una forma muy sencilla. Tan sencilla que vamos a partir de tener instalado Begraphic y de estos datos:
 
 ![velocimetro_excel1.png](/images/2012/02/velocimetro_excel1.png)

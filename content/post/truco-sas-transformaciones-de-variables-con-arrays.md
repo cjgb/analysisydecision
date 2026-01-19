@@ -1,22 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- sas
-- trucos
+  - formación
+  - sas
+  - trucos
 date: '2008-09-18'
 lastmod: '2025-07-13'
 related:
-- macros-sas-hacer-0-los-valores-missing-de-un-dataset.md
-- trucos-sas-lista-de-variables-missing.md
-- trucos-sas-informes-de-valores-missing.md
-- truco-sas-crear-ficheros-excel-sin-proc-export-i.md
-- maximo-por-registro-de-una-serie-de-variables-caracter-en-sas.md
+  - macros-sas-hacer-0-los-valores-missing-de-un-dataset.md
+  - trucos-sas-lista-de-variables-missing.md
+  - trucos-sas-informes-de-valores-missing.md
+  - truco-sas-crear-ficheros-excel-sin-proc-export-i.md
+  - maximo-por-registro-de-una-serie-de-variables-caracter-en-sas.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Truco SAS. Transformaciones de variables con arrays
 url: /blog/truco-sas-transformaciones-de-variables-con-arrays/
 ---
+
 Hacer ceros los missing en un dataset. Crear una etiqueta «NO DISPONIBLE» en campos carácter sin valores. Cuando trabajamos con SAS es una situación más que habitual. A continuación voy a plantear un par de ejemplos de como podemos usar arrays de variables en SAS para realizar una transformación «masiva» de variables de nuestro conjunto de datos.
 
 Poner missing numéricos a 0:
@@ -77,7 +78,8 @@ Valores de texto «NO DISPONIBLE»:
 
 En este caso se trata de recorrer una tabla y poner los valores missing de caracteres con el valor «NO DISPONIBLE».
 
-``
+\`\`
+
 ```r
 data dos;
 
@@ -128,7 +130,7 @@ Metodología completamente análoga a la anterior. Además podemos emplearla par
 
 data tres;
 set dos;
-array c (*) _character_;
+array c (\*) _character_;
 do i=1 to dim(c);
 if index(upcase(c(i)),»DAZA»)>0 then output tres;
 end;

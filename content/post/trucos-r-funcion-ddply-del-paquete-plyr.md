@@ -1,30 +1,31 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- r
-- trucos
+  - formación
+  - r
+  - trucos
 date: '2010-04-19'
 lastmod: '2025-07-13'
 related:
-- monografico-paquete-sqldf-si-sabes-sql-sabes-r.md
-- data-management-con-dplyr.md
-- calcular-porcentajes-por-grupos-con-dplyr.md
-- datos-agrupados-en-r-con-dplyr.md
-- informes-con-r-en-html-comienzo-con-r2html-i.md
+  - monografico-paquete-sqldf-si-sabes-sql-sabes-r.md
+  - data-management-con-dplyr.md
+  - calcular-porcentajes-por-grupos-con-dplyr.md
+  - datos-agrupados-en-r-con-dplyr.md
+  - informes-con-r-en-html-comienzo-con-r2html-i.md
 tags:
-- agregar
-- ddply
-- plyr
-- sumarizar
+  - agregar
+  - ddply
+  - plyr
+  - sumarizar
 title: Trucos R. Función ddply del paquete plyr
 url: /blog/trucos-r-funcion-ddply-del-paquete-plyr/
 ---
+
 El **paquete plyr de R** tiene unas funciones que nos permiten hacer sumarizaciones de forma muy rápida y sencilla. Hoy quería trabajar con la función **ddply**. Todos esos resúmenes y agregaciones que nos cuestan mucho código con la función **ddply** pasan a ser de lo más sencillo. Al tajo, o mejor dicho, al ejemplo, como siempre, creo que ilustrar ddply es mejor que entrar en su sintaxis, para eso está la ayuda. Creamos un _data.frame_ con datos inventados que tendrá duplicados por _id_cliente_ :
 
 [source language=»R»]
-saldo1=runif(100,0,1)*1000
-saldo2=runif(100,0,0.5)*10000
+saldo1=runif(100,0,1)\*1000
+saldo2=runif(100,0,0.5)\*10000
 saldos=data.frame(cbind(saldo1,saldo2))
 #Voy a crear un id_cliente con duplicados
 saldosid_cliente=rpois(100,10000)+rpois(100,9000)

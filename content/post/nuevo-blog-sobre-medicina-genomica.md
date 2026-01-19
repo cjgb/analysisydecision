@@ -1,20 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- sin categoría
+  - estadística
 date: '2011-03-16'
 lastmod: '2025-07-13'
 related:
-- la-medicina-genomica-y-los-modelos-predictivos.md
-- dos-vecinos-muy-proximos-de-la-blogosfera.md
-- agregador-de-noticias-de-r-en-espanol.md
-- un-nuevo-blog-sobre-sas-en-espanol.md
-- que-ando-leyendo-hoy.md
+  - la-medicina-genomica-y-los-modelos-predictivos.md
+  - dos-vecinos-muy-proximos-de-la-blogosfera.md
+  - agregador-de-noticias-de-r-en-espanol.md
+  - un-nuevo-blog-sobre-sas-en-espanol.md
+  - que-ando-leyendo-hoy.md
 tags:
-- medicina genómica
+  - medicina genómica
 title: Nuevo blog sobre medicina genómica
 url: /blog/nuevo-blog-sobre-medicina-genomica/
 ---
+
 Nos felicitamos hoy por la aparición de un blog sobre medicina genómica. Un tema que me apasiona y al que no puedo dedicar tiempo. El blog está escrito por el profesor[ Manuel Pérez-Alonso](http://www.linkedin.com/in/manuelperezalonso) y se convertirá en una referencia en español sobre el tema. La bitácora en cuestión la encontramos en:
 
 <http://medicina-genomica.blogspot.com/>

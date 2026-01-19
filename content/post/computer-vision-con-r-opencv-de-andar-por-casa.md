@@ -1,24 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- big data
-- formación
-- inteligencia artificial
-- monográficos
-- r
+  - big data
+  - formación
+  - inteligencia artificial
+  - monográficos
+  - r
 date: '2020-11-27'
 lastmod: '2025-07-13'
 related:
-- tratamiento-y-procesado-de-imagenes-con-r-y-magick.md
-- inteligencia-arficial-frente-a-un-juego-de-ninos-la-particula-tonta-de-nicolas.md
-- resolucion-del-juego-de-modelos-con-r.md
-- truco-r-insertar-imagen-en-un-grafico.md
-- machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algoritmos-de-clasificacion.md
+  - tratamiento-y-procesado-de-imagenes-con-r-y-magick.md
+  - inteligencia-arficial-frente-a-un-juego-de-ninos-la-particula-tonta-de-nicolas.md
+  - resolucion-del-juego-de-modelos-con-r.md
+  - truco-r-insertar-imagen-en-un-grafico.md
+  - machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algoritmos-de-clasificacion.md
 tags:
-- opencv
+  - opencv
 title: Computer Vision con R. OpenCV de andar por casa
 url: /blog/computer-vision-con-r-opencv-de-andar-por-casa/
 ---
+
 Trabajando con Computer Vision aprecio que estamos muy limitados por las máquinas que usamos, o tiene mucho sentido montar GPUs en casa del tamaño del aire acondicionado y por supuesto no tiene sentido el consumo energético que implica. Aquí estoy yo montando una GPU para el análisis de imágenes.
 
 [![](/images/2020/11/openCV_1.png)](/images/2020/11/openCV_1.png)
@@ -37,7 +38,6 @@ ub = "/images/2020/11/futbol.png"
 
 futbol <- ocv_read(ub)
 ```
-
 
 Tenemos la imagen cargada y empezar por `ocv_edges(futbol)` para ver los límites de las imágenes:
 
@@ -69,13 +69,11 @@ personas <- ocv_facemask(seleccion)
 nrow(attr(personas, 'faces'))
 ```
 
-
 A la vista está que ha contado una persona de mas. Hay un pliegue en un pantalón que está llevando a error al algoritmo, sólo tenéis que ver el objeto personas. Para evitar el problema podríamos hacer:
 
 ```r
 ocv_read(ub2) %>% ocv_blur() %>% ocv_face()
 ```
-
 
 [![](/images/2020/11/ocv_blur.png)](/images/2020/11/ocv_blur.png)
 

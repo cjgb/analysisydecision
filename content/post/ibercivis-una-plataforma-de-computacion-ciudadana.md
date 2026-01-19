@@ -1,22 +1,23 @@
 ---
 author: cgbellosta
 categories:
-- data mining
+  - data mining
 date: '2009-12-17'
 lastmod: '2025-07-13'
 related:
-- introduccion-a-la-estadistica-para-cientificos-de-datos-con-r-capitulo-2-datos.md
-- noticias-del-congreso-de-usuarios-de-r.md
-- manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-i.md
-- entender-una-blockchain-con-r.md
-- computer-vision-con-r-opencv-de-andar-por-casa.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-con-r-capitulo-2-datos.md
+  - noticias-del-congreso-de-usuarios-de-r.md
+  - manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-i.md
+  - entender-una-blockchain-con-r.md
+  - computer-vision-con-r-opencv-de-andar-por-casa.md
 tags:
-- computación distribuida
-- ibercivis
-- seti
+  - computación distribuida
+  - ibercivis
+  - seti
 title: Ibercivis, una plataforma de computación ciudadana
 url: /blog/ibercivis-una-plataforma-de-computacion-ciudadana/
 ---
+
 Creo que es hecho conocido que existe el proyecto [SETI@home](http://es.wikipedia.org/wiki/SETI@Home "SETI@home"), una red de ordenadores que ceden voluntarios para analizar nosequé tipo de datos para la nosequé clase de esotéricos fines. Nunca me interesó el asunto en sí, aunque sí la plataforma.
 
 Más que el ser capaces de robarle el _wifi_ a un marciano, el subproducto más intersante del proyecto ha sido [BOINC](http://es.wikipedia.org/wiki/Berkeley_Open_Infrastructure_for_Network_Computing "BOINC"), la plataforma de software que permite distribuir trabajos intensivos en uso de recursos computacionales a través de una red de ordenadores. Eso ha permitido la emergencia de [un buen número de proyectos](http://es.wikipedia.org/wiki/Proyectos_que_usan_BOINC "Proyectos que usan BOINC") que lo usufructan para fines más tangibles (aunque no universalmente más útiles).

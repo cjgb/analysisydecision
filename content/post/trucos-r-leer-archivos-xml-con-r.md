@@ -1,25 +1,26 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- r
-- trucos
+  - formación
+  - r
+  - trucos
 date: '2010-09-08'
 lastmod: '2025-07-13'
 related:
-- stadistical-data-warehouse-del-european-central-bank-con-r-y-los-depositos-a-perdidas.md
-- los-principales-problemas-de-los-espanoles-animaciones-con-r-y-gganimate.md
-- trucos-simples-para-rstats.md
-- analisis-de-textos-con-r.md
-- leer-fichero-de-texto-de-ancho-fijo-con-python-pandas.md
+  - stadistical-data-warehouse-del-european-central-bank-con-r-y-los-depositos-a-perdidas.md
+  - los-principales-problemas-de-los-espanoles-animaciones-con-r-y-gganimate.md
+  - trucos-simples-para-rstats.md
+  - analisis-de-textos-con-r.md
+  - leer-fichero-de-texto-de-ancho-fijo-con-python-pandas.md
 tags:
-- encoding
-- r
-- xml
-- xmltodataframe
+  - encoding
+  - r
+  - xml
+  - xmltodataframe
 title: Trucos R. Leer archivos XML con R
 url: /blog/trucos-r-leer-archivos-xml-con-r/
 ---
+
 Un truco de R práctico que busca la colaboración de los lectores para mejorarlo. Se trata de **leer ficheros xml con R**. Los más asiduos ya sabéis que paquete voy a emplear, el XML. En los últimos tiempos la sentencia _require(XML)_ aparece al principio de casi todos mis códigos en el **Tinn-R**. El ejemplo que ilustrará el truco lee de [la BBDD del banco mundial ](http://datos.bancomundial.org/)en español el indicador de emisiones de CO2 en toneladas por habitante y año. La sintaxis es de este modo:
 
 ```r

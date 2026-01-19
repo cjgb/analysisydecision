@@ -1,24 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- monográficos
-- sas
+  - formación
+  - monográficos
+  - sas
 date: '2010-04-02'
 lastmod: '2025-07-13'
 related:
-- un-acercamiento-a-graph-ods-graphs-proc-sgplot.md
-- un-acercamiento-a-graph-proc-gchart.md
-- un-acercamiento-a-graph-primeros-graficos-con-sas.md
-- un-acercamiento-a-graph-proc-ganno.md
-- un-acercamiento-a-graph-annotate-macros.md
+  - un-acercamiento-a-graph-ods-graphs-proc-sgplot.md
+  - un-acercamiento-a-graph-proc-gchart.md
+  - un-acercamiento-a-graph-primeros-graficos-con-sas.md
+  - un-acercamiento-a-graph-proc-ganno.md
+  - un-acercamiento-a-graph-annotate-macros.md
 tags:
-- gráficos
-- sas
-- graph
+  - gráficos
+  - sas
+  - graph
 title: Un acercamiento a GRAPH. Sentencias gráficas
 url: /blog/un-acercamiento-a-graph-sentencias-graficas/
 ---
+
 A la hora de trabajar con SAS/GRAPH lo primero que vamos a escribir es:
 
 Después tenemos que conocer las sentencias de GRAPH para dar forma a nuestros gráficos. Estas sentencias no van dentro de ningún procedimiento ni paso data, siempre van precedidas de distintas palabras clave que nos definen los elementos de un grafico o nos indican las opciones necesarias para su representación. Estas sentencias nos permitirán definir los ejes, patrones y opciones más globales, comenzaran por:

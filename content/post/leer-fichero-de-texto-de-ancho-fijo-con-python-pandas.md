@@ -1,21 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- python
+  - formación
+  - python
 date: '2020-09-17'
 lastmod: '2025-07-13'
 related:
-- manual-curso-introduccion-de-r-capitulo-3-lectura-de-datos.md
-- lectura-de-archivos-csv-con-python-y-pandas.md
-- analisis-de-textos-con-r.md
-- leer-archivos-excel-con-python.md
-- data-management-basico-con-pandas.md
+  - manual-curso-introduccion-de-r-capitulo-3-lectura-de-datos.md
+  - lectura-de-archivos-csv-con-python-y-pandas.md
+  - analisis-de-textos-con-r.md
+  - leer-archivos-excel-con-python.md
+  - data-management-basico-con-pandas.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Leer fichero de texto de ancho fijo con Python Pandas
 url: /blog/leer-fichero-de-texto-de-ancho-fijo-con-python-pandas/
 ---
+
 Es muy habitual trabajar con archivos csv pero en ocasiones disponemos de ficheros de texto con determinado formato o con ancho fijo para las columnas. [Hace tiempo ya escribí sobre la lectura de archivos csv con Python y Pandas](https://analisisydecision.es/lectura-de-archivos-csv-con-python-y-pandas/) pero en esta ocasión vamos a leer archivos que no tienen un separador. Evidentemente tienen que darnos el formato del archivo, en este caso, para ilustrar el ejemplo, vamos a pasar un código en R a un código en Python. Necesitamos leer unos datos usados en el libro _Non-Life Insurance Pricing with GLM_ , con R teníamos el siguiente programa:
 
 ```r
@@ -31,7 +32,6 @@ moto <- read.fwf(con, widths = varib, header = FALSE,
                  na.strings = NULL, comment.char = "")
 ```
 
-
 Necesitamos crear ese data frame moto con Python. Evidentemente una lectura a las bravas no tiene sentido:
 
 ```r
@@ -39,7 +39,6 @@ import pandas as pd
 data1 = pd.read_fwf("http://staff.math.su.se/esbj/GLMbook/mccase.txt")
 data1.head(10)
 ```
-
 
 [![](/images/2020/09/lectura_txt_python1.png)](/images/2020/09/lectura_txt_python1.png)
 
@@ -52,14 +51,12 @@ data1 = pd.read_fwf("http://staff.math.su.se/esbj/GLMbook/mccase.txt", colspecs=
 data1.head(10)
 ```
 
-
 Vamos a crear una lista con el ancho de los campos que denominamos columnas, como siempre, en este caso empezamos en 0 no en el 1 y el final del anterior campo será el principio del siguiente, después sumamos a ese principio la longitud del campo que nos han definido. Ahora cuando usemos read_fwf que es la función necesaria para leer files-with-format, ficheros con formato, en colspecs pondremos la lista con las longitudes de los campos y en este caso no tenemos encabezados por lo que es necesario poner header = None. Ya tenemos un data frame al que solo falta asignar los nombres con los campos:
 
 ```r
 data1.columns = ['edad','sexo','zona','clase_moto', 'antveh', 'bonus', 'exposicion', 'nsin', 'impsin']
 data1.head()
 ```
-
 
 El ejemplo os sirve, pero se puede simplificar porque los campos son consecutivos usando widths = lista de longitudes:
 
@@ -68,6 +65,5 @@ data2 = pd.read_fwf("http://staff.math.su.se/esbj/GLMbook/mccase.txt", widths = 
 data2.columns = ['edad','sexo','zona','clase_moto', 'antveh', 'bonus', 'exposicion', 'nsin', 'impsin']
 data2.head()
 ```
-
 
 Equivale a lo que hemos visto con anterioridad pero es preferible usar el primer método porque es más rápida la lectura. Saludos.

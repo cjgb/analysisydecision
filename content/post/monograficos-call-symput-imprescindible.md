@@ -1,22 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- monográficos
-- sas
+  - formación
+  - monográficos
+  - sas
 date: '2009-02-16'
 lastmod: '2025-07-13'
 related:
-- macros-faciles-de-sas-eliminar-outliers-en-una-variable.md
-- truco-sas-observaciones-de-un-dataset-en-una-macro-variable.md
-- trucos-sas-variables-dummy-de-una-variable-continua.md
-- macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
-- trucos-sas-lista-de-datasets-en-macro-variable.md
+  - macros-faciles-de-sas-eliminar-outliers-en-una-variable.md
+  - truco-sas-observaciones-de-un-dataset-en-una-macro-variable.md
+  - trucos-sas-variables-dummy-de-una-variable-continua.md
+  - macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
+  - trucos-sas-lista-de-datasets-en-macro-variable.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Monográficos. CALL SYMPUT imprescindible
 url: /blog/monograficos-call-symput-imprescindible/
 ---
+
 He detectado que muchas búsquedas que llegan a Análisis y Decisión vienen por la palabra clave «call symput». Por este motivo me he decidido a escribir este rápido monográfico sobre esta instrucción. Con un par de ejemplos podemos familiarizarnos con su funcionamiento.CALL SYMPUT es una rutina de SAS que nos permite crear macro variables durante la ejecución de un paso data, digamos que es un mecanismo que comunica el compilador del macro lenguaje SAS con el propio lenguaje SAS. El ejemplo prototípico de su uso, determinar el número de observaciones de un dataset que cumplen determinada condición:
 
 ```r
@@ -46,6 +47,7 @@ data _null_;
 
 run;
 ```
+
 `%put _user_;`
 
 Partimos de un dataset aleatorio con 1000 observaciones y necesitamos introducir en una macro variable cuantas observaciones tienen un importe mayor a 2000. Vemos que generamos la macro variable nobs a partir de la variable automática _n_ en el momento en que se finaliza la lectura del dataset uno. Hay que tener especial cuidado con el formato que toman las macro variables en la tabla de símbolos ya que los espacios que deja a la izquierda pueden generarnos algún contratiempo, se recomienda dar formatos como hacemos en el siguiente ejemplo. Si deseamos introducir en 3 macros los valores del mínimo, mediana y máximo podemos emplear el proc univariate y call symput:
@@ -75,11 +77,13 @@ data _null_;
 
 run;
 ```
+
 `%put _user_;`
 
 Una forma práctica de trabajar con percentiles. Es importante que las macro variables tengan un formato adecuado. Otro ejemplo de uso de CALL SYMPUT es la generación de arrays de macro variables, por ejemplo generar macro_1 a macro_20 con valores aleatorios:
 
-``
+\`\`
+
 ```r
 data _null_;
 
@@ -91,6 +95,7 @@ data _null_;
 
 run;
 ```
+
 `%put _user_;`
 
 Con estos ejemplos espero que se entienda su uso. En el trabajo diario con SAS, es una de las rutinas más utilizadas. Como siempre, si tenéis dudas, sugerencias o un trabajo bien retribuido mi dirección de correo es r_vaquerizo@analisisydecision.es

@@ -1,23 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- monográficos
-- sas
+  - formación
+  - monográficos
+  - sas
 date: '2010-11-15'
 lastmod: '2025-07-13'
 related:
-- objetos-hash-para-ordenar-tablas-sas.md
-- la-importancia-del-parametro-hashexp.md
-- trucos-sas-porque-hay-que-usar-objetos-hash.md
-- truco-sas-cruce-con-formatos.md
-- laboratorio-de-codigo-sas-comparativa-entre-if-y-where.md
+  - objetos-hash-para-ordenar-tablas-sas.md
+  - la-importancia-del-parametro-hashexp.md
+  - trucos-sas-porque-hay-que-usar-objetos-hash.md
+  - truco-sas-cruce-con-formatos.md
+  - laboratorio-de-codigo-sas-comparativa-entre-if-y-where.md
 tags:
-- objetos hash
-- proc sort
+  - objetos hash
+  - proc sort
 title: Laboratorio de código SAS. Ordenaciones con HASH vs. PROC SORT
 url: /blog/laboratorio-de-codigo-sas-ordenaciones-con-hash-vs-proc-sort/
 ---
+
 [Hace pocas fechas vimos el código SAS empleado para la realización de ordenaciones de conjuntos de datos SAS mediante algoritmos de hash](https://analisisydecision.es/objetos-hash-para-ordenar-tablas-sas/). Ya os comuniqué que era una forma más eficiente y hoy quería demostraros tal eficiencia con un laboratorio de código SAS. La situación es la siguiente, creamos un dataset con 1.000.000 de registros, 13 variables y comparamos un PROC SORT con una ordenación mediante hash, medimos tiempos y podemos determinar qué forma de ordenación es más eficiente.
 
 Si disponéis de una versión de SAS superior al 9.1 me gustaría que ejecutarais las siguientes líneas. No es un código muy complejo pero si alguien tiene dudas en su funcionamiento o le gustaría profundizar más en lo que hace que comente el mensaje, no lo hagáis vía correo electrónico porque tengo muchos mensajes en cola y poco tiempo para responder. El código para la realización de este experimento ya lo hemos visto en mensajes anteriores y es el siguiente:
@@ -138,7 +139,7 @@ run;
 proc sort data=test; by tiempo; run;
 ```
 
-Para los que me seguís habitualmente este código os resultará familiar. El código empleado para la ordenación con hash ya lo vimos en anteriores entradas, es el mismo. Pero me gustaría recalcar el uso de la opción HASHEXP en este caso 20 (2**20 = 1.048.576 tablas que se reparten el objeto). Veamos el resultado:
+Para los que me seguís habitualmente este código os resultará familiar. El código empleado para la ordenación con hash ya lo vimos en anteriores entradas, es el mismo. Pero me gustaría recalcar el uso de la opción HASHEXP en este caso 20 (2\*\*20 = 1.048.576 tablas que se reparten el objeto). Veamos el resultado:
 
 ![ejecucion-hash-1.PNG](/images/2010/11/ejecucion-hash-1.PNG)
 

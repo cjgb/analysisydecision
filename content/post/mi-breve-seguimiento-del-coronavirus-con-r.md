@@ -1,23 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- monográficos
-- r
+  - formación
+  - monográficos
+  - r
 date: '2020-04-20'
 lastmod: '2025-07-13'
 related:
-- evolucion-del-numero-de-casos-de-coronavirus.md
-- incluir-subplot-en-mapa-con-ggplot.md
-- estimacion-de-la-evolucion-de-casos-del-coronavirus-en-espana.md
-- seguir-los-datos-del-coronavirus-en-espana-con-rstats.md
-- mapa-del-covid-19-por-comunidades-autonomas-con-r-mas-rstats.md
+  - evolucion-del-numero-de-casos-de-coronavirus.md
+  - incluir-subplot-en-mapa-con-ggplot.md
+  - estimacion-de-la-evolucion-de-casos-del-coronavirus-en-espana.md
+  - seguir-los-datos-del-coronavirus-en-espana-con-rstats.md
+  - mapa-del-covid-19-por-comunidades-autonomas-con-r-mas-rstats.md
 tags:
-- coronavirus
-- covid
+  - coronavirus
+  - covid
 title: Mi breve seguimiento del coronavirus con R
 url: /blog/mi-breve-seguimiento-del-coronavirus-con-r/
 ---
+
 Ya comentaré con más detenimiento el código, pero es la unión de muchos de los códigos R de días anteriores, es un buen ejemplo de uso de la librería gridExtra para poner múltiples gráficos en una sola salida:
 
 ```r
@@ -67,7 +68,6 @@ total = grafica('Total')
 grid.arrange(madrid, cat, mancha, leon, pvasco, valencia, andalucia, aragon, resto, total, nrow=5,ncol=2)
 ```
 
-
 [![](/images/2020/04/coronavirus16.png)](/images/2020/04/coronavirus16.png)
 
 Del mismo modo podemos hacer el número de casos:
@@ -113,7 +113,6 @@ total = grafica('Total')
 
 grid.arrange(madrid, cat, mancha, leon, pvasco, valencia, andalucia, galicia, resto, total, nrow=5,ncol=2)
 ```
-
 
 [![](/images/2020/04/coronavirus17.png)](/images/2020/04/coronavirus17.png)
 

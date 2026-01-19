@@ -1,24 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- data mining
-- formación
-- modelos
-- r
+  - data mining
+  - formación
+  - modelos
+  - r
 date: '2011-01-08'
 lastmod: '2025-07-13'
 related:
-- trucos-sas-medir-la-importancia-de-las-variables-en-nuestro-modelo-de-regresion-logistica.md
-- variables-categoricas-en-cajas-treemap-con-r.md
-- macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
-- medir-la-importancia-de-las-variables-en-una-red-neuronal-con-r.md
-- monografico-arboles-de-decision-con-party.md
+  - trucos-sas-medir-la-importancia-de-las-variables-en-nuestro-modelo-de-regresion-logistica.md
+  - variables-categoricas-en-cajas-treemap-con-r.md
+  - macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
+  - medir-la-importancia-de-las-variables-en-una-red-neuronal-con-r.md
+  - monografico-arboles-de-decision-con-party.md
 tags:
-- clasificacion
-- random forest
+  - clasificacion
+  - random forest
 title: Medir la importancia de las variables con Random Forest
 url: /blog/medir-la-importancia-de-las-variables-con-random-forest/
 ---
+
 ¿**Qué variables son las más importantes para nuestro modelo de clasificación**? Yo creo que muchos de vosotros os habréis encontrado con esta problemática. Hay muchas formas de solventarla, habitualmente empleamos aquellas variables que mejor pueden entender nuestras áreas de negocio. Es decir, hacemos segmentaciones en base al sexo y la edad sólo por no tener que explicar como hemos construido una variable artificial a alguien que no entiende lo que es una variable y mucho menos variable artificial. Pero hoy os quería plantear la utilización de métodos de _[random forest](http://en.wikipedia.org/wiki/Random_forest)_ con R para medir la importancia de las variables cuantitativas, para variables cualitativas recomiendo otras formas que plantearé más adelante. El _random forest_ es un **método de clasificación** basado en la realización de **múltiples árboles de decisión** sobre muestras de un conjunto de datos. Hacemos muchas clasificaciones con menos variables y menos observaciones y al final nos quedamos con un promedio de estas clasificaciones, esa sería la idea a grandes rasgos. La característica que hace de este método muy interesante es la posibilidad de incluir un gran número de variables _input_ en nuestro modelo ya que no encontraremos relaciones lineales entre ellas y tampoco aparecerán relaciones debidas al azar.
 
 Para ilustrar nuestro ejemplo con R vamos a emplear un conjunto de datos que podéis obtener obtener en [este link](http://archive.ics.uci.edu/ml/machine-learning-databases/00197/AU.zip). Es una serie de datos y modelos, nos quedaremos con el conjunto de datos _au2_10000.csv_ que tiene 251 variables y 10.000 registros. Son una [serie de datos preparados para el estudio de modelos de clasificación](http://sites.google.com/site/autouniv/). En nuestro caso nos servirá para determinar las **variables cuantitativas** más influyentes sobre la variable dependiente. Como variables explicativas tenemos aquellas que comienzan con _att_ y como variable dependiente tendremos _class_. En mi caso concreto he subido los datos a la BBDD con la ayuda de Kettle por lo que mi trabajo con R comienza con la lectura de estos datos:

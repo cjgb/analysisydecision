@@ -1,33 +1,34 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- modelos
-- r
+  - formación
+  - modelos
+  - r
 date: '2009-05-04'
 lastmod: '2025-07-13'
 related:
-- manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-i.md
-- manual-curso-introduccion-de-r-capitulo-17-analisis-cluster-con-r-y-iii.md
-- adyacencia-de-poligonos-con-el-paquete-spdep-de-r.md
-- un-peligro-del-analisis-cluster.md
-- mover-parte-de-un-shapefile-con-r-mapa-de-la-tasa-de-casos-de-coronavirus-por-habitante-en-espana.md
+  - manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-i.md
+  - manual-curso-introduccion-de-r-capitulo-17-analisis-cluster-con-r-y-iii.md
+  - adyacencia-de-poligonos-con-el-paquete-spdep-de-r.md
+  - un-peligro-del-analisis-cluster.md
+  - mover-parte-de-un-shapefile-con-r-mapa-de-la-tasa-de-casos-de-coronavirus-por-habitante-en-espana.md
 tags:
-- análisis cluster
-- modelos
-- estadística
-- r
+  - análisis cluster
+  - modelos
+  - estadística
+  - r
 title: 'Manual. Curso introducción de R. Capítulo 16: Análisis Cluster con R (II)'
 url: /blog/manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-ii/
 ---
+
 En esta entrega vamos a seguimos trabajando con el análisis Cluster viendo más posibilidades que nos ofrece R. Para ello vamos a realizar un estudio de agrupamiento de países europeos en función de algunos indicadores básicos:
 
-  * Superficie
-  * Población
-  * PIB (en mil de $)
-  * Esperanza de vida
-  * Índice de desarrollo humano
-  * % Población en ciudad
+- Superficie
+- Población
+- PIB (en mil de $)
+- Esperanza de vida
+- Índice de desarrollo humano
+- % Población en ciudad
 
 Para este estudio contamos con [este archivo excel](/images/2009/05/paises.xls "paises.xls") . El primer paso por supuesto es crear un objeto en R:
 

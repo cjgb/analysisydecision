@@ -1,22 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- sas
-- trucos
+  - formación
+  - sas
+  - trucos
 date: '2010-09-06'
 lastmod: '2025-07-13'
 related:
-- trucos-sas-porque-hay-que-usar-objetos-hash.md
-- truco-sas-cruce-con-formatos.md
-- truco-sas-tablas-de-una-libreria-en-una-macro-variable.md
-- trucos-sas-lista-de-datasets-en-macro-variable.md
-- trucos-sas-macrovariable-a-dataset.md
+  - trucos-sas-porque-hay-que-usar-objetos-hash.md
+  - truco-sas-cruce-con-formatos.md
+  - truco-sas-tablas-de-una-libreria-en-una-macro-variable.md
+  - trucos-sas-lista-de-datasets-en-macro-variable.md
+  - trucos-sas-macrovariable-a-dataset.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Trucos SAS. Mejor que hash IN para cruzar tablas
 url: /blog/trucos-sas-mejor-que-hash-in-para-cruzar-tablas/
 ---
+
 El otro día Fernando comentó que los cruces de tablas más rápidos entre tablas grandes y tablas pequeñas son las sentencias condicionales sobre listas. Tiene razón. Es una práctica muy habitual en SAS cuando leemos tablas de Oracle la ralización de listas, esto derivará en otro truco SAS en breves días. El caso es que me gustaría que probárais este código:
 
 ```r

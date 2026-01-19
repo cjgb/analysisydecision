@@ -1,28 +1,29 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- monográficos
-- r
+  - formación
+  - monográficos
+  - r
 date: '2011-09-26'
 lastmod: '2025-07-13'
 related:
-- grafico-con-eje-secundario-en-ggplot2.md
-- capitulo-5-representacion-basica-con-ggplot.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-7-descripcion-grafica-de-variables.md
-- informes-con-r-en-html-comienzo-con-r2html-i.md
-- trucos-r-graficos-de-velocimetro-con-r.md
+  - grafico-con-eje-secundario-en-ggplot2.md
+  - capitulo-5-representacion-basica-con-ggplot.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-7-descripcion-grafica-de-variables.md
+  - informes-con-r-en-html-comienzo-con-r2html-i.md
+  - trucos-r-graficos-de-velocimetro-con-r.md
 tags:
-- axis
-- barplot
-- gráficos
-- plot
-- points
-- recode
-- text
+  - axis
+  - barplot
+  - gráficos
+  - plot
+  - points
+  - recode
+  - text
 title: Gráficos de barras y líneas en dos ejes con R
 url: /blog/graficos-de-barras-y-lineas-en-dos-ejes-con-r/
 ---
+
 ![grafico_actuarial_r.png](/images/2011/09/grafico_actuarial_r.png)
 
 [Aunque no es recomendable crear gráficos con 2 ejes](http://www.perceptualedge.com/articles/visual_business_intelligence/dual-scaled_axes.pdf) hoy quería mostraros un gráfico muy común realizado con R. Se trata del **gráfico de barras y líneas para un factor**. Las barras serán un valor de exposición del factor y las líneas pueden ser una frecuencia siniestral y estarán en un eje secundario. Con esto crearemos nuestro gráfico de barras y líneas en dos ejes. Simulamos los datos para crear el gráfico con R:

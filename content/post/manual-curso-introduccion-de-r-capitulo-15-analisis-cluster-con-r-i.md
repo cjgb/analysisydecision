@@ -1,22 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- modelos
-- r
+  - formación
+  - modelos
+  - r
 date: '2009-04-23'
 lastmod: '2025-07-13'
 related:
-- manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-ii.md
-- manual-curso-introduccion-de-r-capitulo-17-analisis-cluster-con-r-y-iii.md
-- mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel.md
-- arboles-de-decision-con-sas-base-con-r-por-supuesto.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-9-analisis-exploratorio-de-datos-eda.md
+  - manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-ii.md
+  - manual-curso-introduccion-de-r-capitulo-17-analisis-cluster-con-r-y-iii.md
+  - mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel.md
+  - arboles-de-decision-con-sas-base-con-r-por-supuesto.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-9-analisis-exploratorio-de-datos-eda.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: 'Manual. Curso introducción de R. Capítulo 15: Análisis Cluster con R (I)'
 url: /blog/manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-i/
 ---
+
 El proposito del análisis de conglomerados (cluster en terminología inglesa) es el agrupar las observaciones de forma que los datos sean muy homogéneos dentro de los grupos (mínima varianza) y que estos grupos sean lo más heterogéneos posible entre ellos (máxima varianza). De este modo obtenemos una clasificación de los datos multivariante con la que podemos comprender mejor los mismos y la población de la que proceden. Podemos realizar análisis cluster de casos, un análisis cluster de variables o un análisis cluster por bloques si agrupamos variables y casos. El análisis cluster se puede utilizar para:
 
 • La taxonomía, agrupar especies naturales.
@@ -49,7 +50,6 @@ URL abierta
 
 downloaded 190 Kb
 ```
-
 
 ```r
 package 'RODBC' successfully unpacked and MD5 sums checked
@@ -237,7 +237,6 @@ Vemos que a la función DIST le introducimos valores carácter y tenemos el warn
 
 ![cluster1.JPG](/images/2009/04/cluster1.thumbnail.JPG)
 
-
 He marcado manualmente el gráfico resultante y considero que 6 grupos son los adecuados. Aunque parece que 2 grupos son muy numerosos y el resto mucho menos, el corte queda sujeto a la interpretación del analísta. Ya podemos realizar un análisis no jerárquico para asignar a cada observación un cluster:
 
 ```r
@@ -287,30 +286,35 @@ Ahora trabajaremos con la variable cluster del objeto _analisis.ok_. Hemos cambi
 ```r
 package 'RODBC' successfully unpacked and MD5 sums checked
 ```
+
 0
 Empleamos la función TAPPLY con _length_. Es el grupo 2 el más numeroso en contraposición del 4 y el 3 que aglutinan muy pocas ciudades.Veamos las medias de las variables en estudio por cluster:
 
 ```r
 package 'RODBC' successfully unpacked and MD5 sums checked
 ```
+
 1
 Vemos que los municipios del grupo 2 han seguido un precio al alza de la vivienda de la vivienda con menos de 2 años durante 2008. Destacar del grupo 3 el fuerte alza de los precios del metro cuadrado en el último trimestre de 2008. Continuemos con el resto:
 
 ```r
 package 'RODBC' successfully unpacked and MD5 sums checked
 ```
+
 2
 Variaciones mucho menores para la vivienda antigua. Destacan las subidas del T4 de 2008 de los grupos 3 y 6. No parece ser el precio de la vivienda antigua una variable que agrupe los municipios. Comencemos con las tasaciones, altamente correlacionadas con el número de hipotecas concedidas:
 
 ```r
 package 'RODBC' successfully unpacked and MD5 sums checked
 ```
+
 3
 El grupo 3 se diferencia por el increíble aumento en el número de las tasaciones ¿problemas de promotoras? Los grupos 4 y 6 hacen lo mismo pero en el último trimestre, siendo el grupo 4 el que tiene un aumento del 1300%. El grupo 1 el aumento lo sufre en T3 y el 5 aunque también tiene un pico en T3 permanece más lineal. Veamos las viviendas de segunda mano:
 
 ```r
 package 'RODBC' successfully unpacked and MD5 sums checked
 ```
+
 4
 Fuerte aumento en T3 y T4 para todos, destaca el grupo 4 muy por encima del resto y que además ya sufrió subidas en T2 ¿embargos?
 Con estos resultados podemos describir los 6 grupos formados:

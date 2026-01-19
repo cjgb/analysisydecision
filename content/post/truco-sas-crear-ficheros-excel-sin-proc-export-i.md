@@ -1,21 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- sas
-- trucos
+  - sas
+  - trucos
 date: '2008-04-02'
 lastmod: '2025-07-13'
 related:
-- truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
-- el-ods-de-sas-ii-dataset-desde-output.md
-- el-ods-de-sas-i-elementos-del-output.md
-- el-ods-de-sas-iii-documentos-html-y-pdf-desde-sas.md
-- importar-a-sas-desde-otras-aplicaciones.md
+  - truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
+  - el-ods-de-sas-ii-dataset-desde-output.md
+  - el-ods-de-sas-i-elementos-del-output.md
+  - el-ods-de-sas-iii-documentos-html-y-pdf-desde-sas.md
+  - importar-a-sas-desde-otras-aplicaciones.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Truco SAS. Crear ficheros Excel sin PROC EXPORT (I)
 url: /blog/truco-sas-crear-ficheros-excel-sin-proc-export-i/
 ---
+
 No disponemos del módulo **ACCESS TO PC FILES** y necesitamos poner nuestra tabla SAS en Excel. Usaremos el **ODS** (Outpus Delivery System) de SAS. Junto con el _proc print_ crearemos un fichero HTML con extensión .XLS que podremos manejar perfectamente con Excel, insisto, no es un fichero Excel, es HTML pero que se manejará sin ningún problema en la hoja de cálculo y que podremos guardar como fichero Excel.
 
 El primer paso para nuestro ejemplo será generar una tabla SAS con valores aleatorios que deseamos exportar a Excel:
@@ -34,7 +35,6 @@ output;
 end;
 run;
 ```
-
 
 Generamos un dataset aleatorio de 100 observaciones y 8 variables y si observamos el LOG:
 
@@ -81,8 +81,7 @@ DBMS=CSV REPLACE;
 RUN;
 ```
 
-
-Con el proc export podemos exportar nuestra tabla SAS a un fichero separado por comas pero necesitamos importar el texto desde Excel y el manejo sería más lento. Del mismo modo sucedería si generamos un fichero de texto separado por tabuladores. Utilizando el ODS vamos a exportar nuestra tabla SAS al directorio C:\temp\ de forma que podamos abrirlo perfectamente con Excel:
+Con el proc export podemos exportar nuestra tabla SAS a un fichero separado por comas pero necesitamos importar el texto desde Excel y el manejo sería más lento. Del mismo modo sucedería si generamos un fichero de texto separado por tabuladores. Utilizando el ODS vamos a exportar nuestra tabla SAS al directorio C:\\temp\\ de forma que podamos abrirlo perfectamente con Excel:
 
 ```r
 title; /*ELIMINAMOS EL TITULO*/
@@ -96,7 +95,6 @@ ods html close; /*REESTABLECEMOS LAS OPCIONES DEL ODS*/
 ods results;
 ods listing;
 ```
-
 
 En la ubicación deseada disponemos de un fichero con extensión .XLS que podemos abrir y modificar sin ningún problema con Excel. Pero si lo abrimos tenemos algunas limitaciones:
 
@@ -133,7 +131,6 @@ ods listing;
 option missing=".";
 ```
 
-
 El resultado ha mejorado mucho:
 
 i | j | k | l | m | n | uno | y | 1 | 2 | 2 | 1 | 6 | 0,5 | hola | 19,7
@@ -149,7 +146,7 @@ i | j | k | l | m | n | uno | y | 1 | 2 | 2 | 1 | 6 | 0,5 | hola | 19,7
 10 | 1 | 1 | 1 | 4 | 1,0 | hola | 96,4
 11 | 1 | 2 | 2 | 5 | 2,0 | hola | 43,0
 12 | 3 | 2 | 7 | 1 | 2,3 | hola | 13,5
-13 | 0 | 5 | 3 | 2 |  | hola | 55,2
+13 | 0 | 5 | 3 | 2 | | hola | 55,2
 
 El código SAS se presenta muy complejo. No compensa crearlo, pero si hacemos nuestra propia función para exportar ficheros a Excel entonces no sería necesario emplear todo el código que os he mostrado anteriormente. Pero esto lo veremos en sucesivas entregas de trucos. Quedaros bien con el uso del ODS que nos va a permitir crear hojas de cálculo con rapidez.
 

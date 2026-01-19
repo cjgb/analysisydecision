@@ -1,20 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- formación
+  - formación
 date: '2019-01-31'
 lastmod: '2025-07-13'
 related:
-- mapas-estaticos-municipales-para-estados-de-mexico-con-r-y-con-excel.md
-- mapas-estaticos-de-peru-con-r-y-python-a-nivel-de-distrito.md
-- mapa-de-argentina-con-r.md
-- mapas-municipales-de-argentina-con-r.md
-- mapas-con-spatial-data-de-r.md
+  - mapas-estaticos-municipales-para-estados-de-mexico-con-r-y-con-excel.md
+  - mapas-estaticos-de-peru-con-r-y-python-a-nivel-de-distrito.md
+  - mapa-de-argentina-con-r.md
+  - mapas-municipales-de-argentina-con-r.md
+  - mapas-con-spatial-data-de-r.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: 'Mapa de México rápido (y sucio) y estático con #rstats'
 url: /blog/mapa-de-mexico-rapido-y-sucio-y-estatico-con-rstats/
 ---
+
 [![](/images/2019/01/mexico_quick_rstats.png)](/images/2019/01/mexico_quick_rstats.png)
 
 No sabía como mostraros el funcionamiento de getData del paquete raster para tener que evitaros ir a GADM y descargar los correspondientes mapas. Bueno, pues se me ha ocurrido hacer una entrada que tenga el menor número de líneas posibles y que genere un mapa. No me lo tengáis mucho en cuenta:
@@ -43,6 +44,5 @@ ggplot(data = mex, aes(x = long, y = lat, group = group)) +
   labs(title = "Quick and dirty") +
   theme_void()
 ```
-
 
 Ahí lo tenéis getData se conecta a GADM donde vía ISO 3 le decimos que mapa queremos y el nivel que queremos y pintamos un mapa de México con ggplot2 en un pis pas. Comentad si no entendéis algo, hay miles de entradas que hacen lo mismo de forma más detallada pero en menos líneas ninguna. Saludos.

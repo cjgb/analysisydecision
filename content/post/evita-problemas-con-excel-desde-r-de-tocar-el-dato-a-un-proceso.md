@@ -1,22 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- excel
-- formación
-- r
+  - excel
+  - formación
+  - r
 date: '2020-10-09'
 lastmod: '2025-07-13'
 related:
-- trucos-simples-para-rstats.md
-- los-principales-problemas-de-los-espanoles-animaciones-con-r-y-gganimate.md
-- porque-me-gusta-r.md
-- macros-sas-dataset-a-data-frame-r.md
-- estadistica-para-cientificos-de-datos-con-r-introduccion.md
+  - trucos-simples-para-rstats.md
+  - los-principales-problemas-de-los-espanoles-animaciones-con-r-y-gganimate.md
+  - porque-me-gusta-r.md
+  - macros-sas-dataset-a-data-frame-r.md
+  - estadistica-para-cientificos-de-datos-con-r-introduccion.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Evita problemas con Excel desde R. De tocar el dato a un proceso
 url: /blog/evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso/
 ---
+
 En estos días hemos vivido una situación con Excel y los datos de COVID de UK peculiar. Hemos aparecido todos en las redes sociales para reírnos de Excel y de los que usan Excel. De nuevo partidarios de Matlab, R, Python,… ¡a la gresca! [Mi opinión la podéis leer en Twitter](https://twitter.com/r_vaquerizo) y creo que sobre este tema puedo opinar. En mi vida profesional me he especializado en cambiar equipos de negocio, por ese motivo tanto ir y venir de compañía. Uno de esos cambios consiste en transformar super usuarios de Excel a usuarios de herramientas más apropiadas para la gestión de la información.
 
 Mi carrera en el sector de la gestión de la información comenzó introduciendo SAS allí donde Business Objects y Access ya eran insuficientes. Continué con SAS durante muchos años, siempre con guiños al software libre porque R me permitía llegar allá donde SAS n€c€sitaba otromódulo. En los últimos años estoy alternando el uso de Python con R. Sin embargo, mis ponencias y mis presentaciones de servicios están incluyendo el siguiente gráfico:
@@ -29,8 +30,8 @@ No usemos Excel como motor de BBDD, no toquemos manualmente los datos, empecemos
 
 Si soy yo el que te ayuda ese proceso prefiero usar R:
 
-  1. Es gratuito, te instalas R y RStudio y los paquetes que necesites.
-  2. Es sencillo, unas instrucciones te permiten hacer con dplyr el 90% del trabajo que haces en Excel con cientos de fórmulas.
+1. Es gratuito, te instalas R y RStudio y los paquetes que necesites.
+1. Es sencillo, unas instrucciones te permiten hacer con dplyr el 90% del trabajo que haces en Excel con cientos de fórmulas.
 
 ### Un ejemplo práctico, pasando datos de R a Excel
 
@@ -55,7 +56,6 @@ dataFallecimientos.nuevos <- c( NA, diff(datafallecimientos))
 dataUCI.nuevos <- c(NA, diff(dataingresos_uci))
 ```
 
-
 Un ejemplo claro, por algún motivo en Windows el nombre de la variable fecha contiene algún carácter extraño, modifico el nombre con colnames, esta acción queda reflejada en un proceso. Si se producen cambios en los campos de la tabla quedan recogidos en un código que puede ser reproducible por cualquier persona de la organización, podemos (es conveniente) llevar un control de versiones del código por si se produjeran cambios. Las fórmulas empleadas no distan de las que usamos en Excel y si se desconoce que fórmula usar R tiene una comunidad de usuarios por detrás que estarán dispuestos a ayudar, eso no pasa con SAS (por ejemplo).
 
 Continuamos y deseamos realizar un gráfico con los casos nuevos por día para buscar posibles anomalías:
@@ -74,7 +74,6 @@ p3 <- ggplot(data,aes(x=fecha,y=UCI.nuevos),na.rm = TRUE) + geom_line() +
 p <- grid.arrange(p1, p2, p3, ncol=2)
 ```
 
-
 Este paso puede ser más duro, hacer gráficos en R ya no es seleccionar datos y tipo de gráfico pero en dos líneas hemos hecho un gráfico, es el mismo para las tres variables que deseamos analizar y deseamos unir todos los gráficos de ggplot en uno lo hacemos con una función que se llama grid.arrange. Esto lo haces una vez, no lo repites siempre y si lo intentas hacer con Visual Basic lo conseguirás pero otro compañero no podrá abrir las macros, a otro no le funciona,… -¿esto quién lo hizo? -¡pero si ya está jubilado!
 
 Ahora lo que hacemos es poner estos datos en un Excel para hacer nuestros resúmenes, nuestro cuadro de mando con tablas dinámicas,… lo que sea para lo que Excel si es una gran herramienta (si, he puesto cuadros de mando). Este código también es más complejo pero siempre es el mismo:
@@ -92,7 +91,6 @@ insertPlot(excel, sheet = "DatosCOVID", startRow = 2, startCol = length(data) + 
 saveWorkbook(excel, "C:/temp/datos_covid.xlsx")
 remove(excel)
 ```
-
 
 [![](/images/2020/10/ejemplo_excel_R.png)](/images/2020/10/ejemplo_excel_R.png)
 

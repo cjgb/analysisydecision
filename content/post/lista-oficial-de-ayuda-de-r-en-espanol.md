@@ -1,20 +1,21 @@
 ---
 author: cgbellosta
 categories:
-- r
+  - r
 date: '2009-06-18'
 lastmod: '2025-07-13'
 related:
-- i-jornadas-de-usuarios-de-r-en-espana.md
-- primeras-jornadas-de-usuarios-de-r-en-espana-ya-es-oficial.md
-- dos-paginas-con-recursos-para-introducirse-en-r.md
-- grupo-de-interes-local-de-usuarios-de-r-en-madrid.md
-- comienza-la-cuenta-atras-iii-jornadas-de-usuarios-de-r.md
+  - i-jornadas-de-usuarios-de-r-en-espana.md
+  - primeras-jornadas-de-usuarios-de-r-en-espana-ya-es-oficial.md
+  - dos-paginas-con-recursos-para-introducirse-en-r.md
+  - grupo-de-interes-local-de-usuarios-de-r-en-madrid.md
+  - comienza-la-cuenta-atras-iii-jornadas-de-usuarios-de-r.md
 tags:
-- r
+  - r
 title: Lista oficial de ayuda de R en español
 url: /blog/lista-oficial-de-ayuda-de-r-en-espanol/
 ---
+
 Desde hace apenas unas semanas existe una lista de correo de ayuda en español para R. Está gestionada desde los servidores de CRAN.
 
 Para darse de alta en ella sólo hay que seguir las instrucciones contenidas en el siguiente enlace:

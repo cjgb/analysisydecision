@@ -1,22 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- sas
-- wps
+  - formación
+  - sas
+  - wps
 date: '2013-09-12'
 lastmod: '2025-07-13'
 related:
-- macros-sas-macro-split-para-partir-un-conjunto-de-datos.md
-- trucos-r-de-string-a-dataframe-de-palabras.md
-- trucos-sas-particionar-y-exportar-a-texto-un-dataset.md
-- macros-sas-limpiar-una-cadena-de-caracteres.md
-- truco-sas-funcion-para-contar-caracteres.md
+  - macros-sas-macro-split-para-partir-un-conjunto-de-datos.md
+  - trucos-r-de-string-a-dataframe-de-palabras.md
+  - trucos-sas-particionar-y-exportar-a-texto-un-dataset.md
+  - macros-sas-limpiar-una-cadena-de-caracteres.md
+  - truco-sas-funcion-para-contar-caracteres.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Dividir en palabras un texto con SAS
 url: /blog/dividir-en-palabras-un-texto-con-sas/
 ---
+
 Una duda que planteó una lectora del blog acerca de separar una cadena de caracteres separados por comas y crear observaciones en otra variable:
 Hola! he buscado por toda la página, necesito ayuda urgente. Mi problema es el siguiente.
 
@@ -58,6 +59,5 @@ end;end;
 if fin then output;
 run;
 ```
-
 
 Se trata de ir caracter a caracter y volcarlo a una nueva variable en el momento que encuentra la coma y realizar un output en ese momento. Saludos.

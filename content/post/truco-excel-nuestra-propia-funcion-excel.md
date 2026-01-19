@@ -1,22 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- excel
-- formación
-- trucos
+  - excel
+  - formación
+  - trucos
 date: '2008-11-21'
 lastmod: '2025-07-13'
 related:
-- medias-ponderadas-en-excel-crear-tu-propia-funcion.md
-- trucos-sas-calcular-percentiles-como-excel-o-r.md
-- truco-excel-repetir-celdas-en-funcion-de-los-valores-de-otra-celda.md
-- trucos-excel-convertir-texto-en-un-resultado-o-formula.md
-- trucos-excel-repetir-filas-o-columnas-con-la-funcion-desref.md
+  - medias-ponderadas-en-excel-crear-tu-propia-funcion.md
+  - trucos-sas-calcular-percentiles-como-excel-o-r.md
+  - truco-excel-repetir-celdas-en-funcion-de-los-valores-de-otra-celda.md
+  - trucos-excel-convertir-texto-en-un-resultado-o-formula.md
+  - trucos-excel-repetir-filas-o-columnas-con-la-funcion-desref.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Truco Excel. Nuestra propia función redondear en Excel
 url: /blog/truco-excel-nuestra-propia-funcion-excel/
 ---
+
 Hay operaciones que pueden ser muy habituales de hacer con Excel y necesitaríamos una función propia que la realizara. A continuación vamos a plantear una situación en la que es especialmente útil crear una función específica y guardarla en el libro de macros personal para utilizarla en nuestras sesiones SAS. En este caso concreto vamos a crear una función que nos redondeé un número a 0 o 0.5, es decir, 6,3 valdría 6 y 6,7 valdría 6,5. Para realizarlo sin una función específica emplaríamos múltiples funciones de Excel, por ejemplo:
 
 `=ENTERO(6,3)+(SI(RESIDUO(6,3;1)>=0,5;0,5;0))`

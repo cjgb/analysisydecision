@@ -1,20 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- consultoría
+  - consultoría
 date: '2008-06-25'
 lastmod: '2025-07-13'
 related:
-- el-seguro-de-salud-suma-y-sigue.md
-- el-seguro-de-credito-interesante-reto-tecnico.md
-- consultor-particular-de-seguros.md
-- el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v.md
-- mutua-madrilena-compra-el-50-de-adeslas-seguros-generales.md
+  - el-seguro-de-salud-suma-y-sigue.md
+  - el-seguro-de-credito-interesante-reto-tecnico.md
+  - consultor-particular-de-seguros.md
+  - el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v.md
+  - mutua-madrilena-compra-el-50-de-adeslas-seguros-generales.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: 'El seguro de salud: la futura guerra'
 url: /blog/el-seguro-de-salud-la-futura-guerra/
 ---
+
 Acabo de darme una vuelta por ICEA y me encuentro el siguiente cuadro:
 
 ![icea.JPG](/images/2008/06/icea.JPG)
@@ -29,8 +30,8 @@ Pero no sólo podemos establecer «perfiles cuantitativos», además potenciamos
 
 Así pues auguro una futura guerra por la captación del seguro de salud y 3 son los aspectos más interesantes:
 
-  * Compañías especializadas frente a multirramo
-  * Información cuantitativa de clientes potenciales de otros ramos
-  * Mejora de imagen en tiempos de crisis
+- Compañías especializadas frente a multirramo
+- Información cuantitativa de clientes potenciales de otros ramos
+- Mejora de imagen en tiempos de crisis
 
 De momento en esta guerra saldrá beneficiado el usuario pero las compañías más pequeñas van a tener que buscar alianzas para salir adelante. El tiempo me dará o me quitará la razón.

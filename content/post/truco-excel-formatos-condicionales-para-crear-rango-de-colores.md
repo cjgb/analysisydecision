@@ -1,22 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- excel
-- formación
-- trucos
+  - excel
+  - formación
+  - trucos
 date: '2015-01-15'
 lastmod: '2025-07-13'
 related:
-- truco-excel-identificar-el-color-de-una-celda.md
-- truco-excel-funcion-para-identificar-el-color-de-una-celda.md
-- truco-excel-grafico-de-puntos-con-colores.md
-- truco-excel-graficos-de-dispersion-que-identifican-los-puntos.md
-- trucos-excel-mapa-de-espana-por-provincias.md
+  - truco-excel-identificar-el-color-de-una-celda.md
+  - truco-excel-funcion-para-identificar-el-color-de-una-celda.md
+  - truco-excel-grafico-de-puntos-con-colores.md
+  - truco-excel-graficos-de-dispersion-que-identifican-los-puntos.md
+  - trucos-excel-mapa-de-espana-por-provincias.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Truco Excel. Formatos condicionales para crear rango de colores
 url: /blog/truco-excel-formatos-condicionales-para-crear-rango-de-colores/
 ---
+
 Un truco de Excel poco ortodoxo. Aprovechar los colores que nos ofrece un formato condicional sin necesidad de emplear el formato condicional para crear un rango de colores. Parece un trabalenguas pero puede ser muy útil cuando trabajamos con Visual Basic. En mi caso particular es muy útil disponer de estas paletas de colores para hacer mapas mucho más vistosos. El truco es muy sencillo empezamos por escribir números del 1 hasta el número de colores que deseamos y elegimos el formato condicional a aplicar:
 
 [![](/images/2015/01/formatos_condicionales_excel1-286x300.png)](/images/2015/01/formatos_condicionales_excel1.png)

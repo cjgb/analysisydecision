@@ -1,21 +1,22 @@
 ---
 author: apadrones
 categories:
-- consultoría
-- data mining
+  - consultoría
+  - data mining
 date: '2008-03-11'
 lastmod: '2025-07-13'
 related:
-- el-data-mining-no-es-la-caja-negra-que-selecciona-clientes.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-con-r-capitulo-2-datos.md
-- de-estadistico-a-minero-de-datos-a-cientifico-de-datos.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-16-modelizacion-estadistica-conociendo-los-datos.md
-- contenidos-web-analisis-informacion.md
+  - el-data-mining-no-es-la-caja-negra-que-selecciona-clientes.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-con-r-capitulo-2-datos.md
+  - de-estadistico-a-minero-de-datos-a-cientifico-de-datos.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-16-modelizacion-estadistica-conociendo-los-datos.md
+  - contenidos-web-analisis-informacion.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Minería de datos, una herramienta clave en consultoría
 url: /blog/mineria-de-datos-una-herramienta-clave-en-consultoria/
 ---
+
 Las empresas de consultoría se dedican en pocas palabras a hacer crecer a sus clientes en el mercado, es decir, a hacerlos más competitivos y más eficaces. Para conseguir este objetivo utilizan principalmente 2 herramientas: el marketing y el datamining, además del sentido común.
 
 El marketing siempre ha estado unido a este tipo de negocio, por naturaleza el marketing y crecimiento empresarial van unidos. La minería de datos (datamining) es sin embargo un concepto más amplio, no sólo aplicable al ámbito empresarial, si no también con gran importancia en la investigación médica, en algoritmos de aprendizaje, en robótica … etc. Quizás es por ello que la relevancia del datamining ha llegado más tarde al mundo de la Consultoría, aunque hoy en día es una herramienta básica e incuestionable de cualquier consultora, e incluso de cualquier empresa que quiera mejorar su eficiencia o conocer sus puntos débiles con el paso del tiempo.

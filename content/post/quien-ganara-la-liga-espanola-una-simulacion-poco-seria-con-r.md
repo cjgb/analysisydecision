@@ -1,21 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- r
-- sin categoría
+  - r
 date: '2012-02-04'
 lastmod: '2025-07-13'
 related:
-- resultados-de-la-liga-con-rstats-estudiando-graficamente-rachas.md
-- minutos-de-juego-y-puntos-es-espanyol-y-sus-finales-de-partido.md
-- los-porteros-del-espanyol-y-la-regresion-binomial-negativa.md
-- alineaciones-de-equipos-de-futbol-con-worldfootballr-de-rstats.md
-- cuanto-dinero-pierdo-jugando-a-la-loteria-una-simulacion-poco-seria-con-r.md
+  - resultados-de-la-liga-con-rstats-estudiando-graficamente-rachas.md
+  - minutos-de-juego-y-puntos-es-espanyol-y-sus-finales-de-partido.md
+  - los-porteros-del-espanyol-y-la-regresion-binomial-negativa.md
+  - alineaciones-de-equipos-de-futbol-con-worldfootballr-de-rstats.md
+  - cuanto-dinero-pierdo-jugando-a-la-loteria-una-simulacion-poco-seria-con-r.md
 tags:
-- simulación
+  - simulación
+  - r
 title: ¿Quién ganará la liga española? Una simulación poco seria con R
 url: /blog/c2bfquien-ganara-la-liga-espanola-una-simulacion-poco-seria-con-r/
 ---
+
 Está a punto de acabar un partido de futbol entre la Real Sociedad y el Barcelona y me temo que esta jornada vuelven a ganar los equipos que más dinero ganan por los derechos televisivos de la liga española. El Real Madrid está a 7 puntos del Barcelona. Está claro que el Barcelona ganará al Real en su campo. Si asumimos que los dos equipos tienen un 80% de posibilidades de ganar el partido, un 10% de empatarlo y un 10% de perderlo ¿cual es la probabilidad de que gane alguno de los dos equipos?
 
 Pido disculpas por la «poca profesionalidad» del código pero últimamente pico poco código en R, de todas formas es muy sencillo de entender y no voy a entrar en profundidad:
@@ -40,13 +41,13 @@ madrid <- recode(madrid,
 final_madrid = rbind(final_madrid,sum(madrid,52))}
 ```
 
-final_barcelona<-data.frame()
+final_barcelona\<-data.frame()
 for (i in 1:1000){
 barcelona = runif(16)
-barcelona <\- recode(barcelona,
-0 <\- range(0,0.1),
-1 <\- range(0.1,0.2),
-3 <\- range(0.2,1))
+barcelona \<- recode(barcelona,
+0 \<- range(0,0.1),
+1 \<- range(0.1,0.2),
+3 \<- range(0.2,1))
 final_barcelona = rbind(final_barcelona,sum(barcelona,45,3))}
 
 resultado_liga = cbind(final_madrid,final_barcelona)

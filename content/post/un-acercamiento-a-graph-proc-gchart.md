@@ -1,24 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- sas
+  - formación
+  - sas
 date: '2010-04-05'
 lastmod: '2025-07-13'
 related:
-- un-acercamiento-a-graph-sentencias-graficas.md
-- un-acercamiento-a-graph-primeros-graficos-con-sas.md
-- un-acercamiento-a-graph-ods-graphs-proc-sgplot.md
-- un-acercamiento-a-graph-proc-ganno.md
-- graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
+  - un-acercamiento-a-graph-sentencias-graficas.md
+  - un-acercamiento-a-graph-primeros-graficos-con-sas.md
+  - un-acercamiento-a-graph-ods-graphs-proc-sgplot.md
+  - un-acercamiento-a-graph-proc-ganno.md
+  - graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
 tags:
-- graph
-- legend
-- pattern
-- proc gchart
+  - graph
+  - legend
+  - pattern
+  - proc gchart
 title: Un acercamiento a GRAPH. PROC GCHART
 url: /blog/un-acercamiento-a-graph-proc-gchart/
 ---
+
 Uno de los procedimientos más importantes a la hora de graficar con SAS es el PROC GCHART. Además nos va a servir para trabajar con PATTERN y LEGEND sentencias que nos dejamos en el anterior capítulo. GCHART nos permite realizar gráficos de barras, de esos que siempre hacemos en Excel porque es mas sencillo y mas rápido. Sin embargo en muchas ocasiones necesitamos automatizar informes y estudios, para ello es recomendable emplear SAS en vez del habitual Excel por eso estas líneas que estáis leyendo. Para GCHART podemos emplear las sentencias habituales de GRAPH pero PATTERN es especialmente importante porque SAS nos deja cada barra del mismo color. Para ilustrar el capitulo simulo la cartera de una compañía de seguros, durante 2009, mensualmente, las pólizas de esta compañía pueden ser anuladas, renovadas (nuestra cartera) o nueva producción:
 
 ```r
@@ -111,12 +112,12 @@ run;quit;
 
 Es curioso, para que funcione PATTERN con GCHART tenemos que usar SUBGROUP (¿?) empezamos a sospechar porque muchos prefieren Excel. En este caso empleamos VBAR3D para obtener barras de 3 dimensiones, con SHAPE especificamos el tipo de barra que deseamos, por defecto es BLOCK. Con NOFRAME evitamos que SAS ponga un fondo poco estético. Dejo para el final LEGEND. Las leyendas en SAS tienen que venir predefinidas con la sentencia LEGEND fuera de los procedimientos, también dan motivos para usar Excel. En LEGEND podemos modificar:
 
-  * across – numero de columnas
-  * frame – cuadrado alrededor
-  * label – Etiqueta de la leyenda
-  * position – ubicación
-  * shape – especificamos el tamaño y la forma
-  * value – valores para las representaciones
+- across – numero de columnas
+- frame – cuadrado alrededor
+- label – Etiqueta de la leyenda
+- position – ubicación
+- shape – especificamos el tamaño y la forma
+- value – valores para las representaciones
 
 En el ejemplo que nos ocupa indicamos una columna con el titulo Tipo, la posición es izquierda y arriba y damos 3 valores de tamaño (height) 9. Completo ejemplo. El resultado obtenido es:
 

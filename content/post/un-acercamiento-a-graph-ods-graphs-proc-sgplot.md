@@ -1,24 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- monográficos
-- sas
+  - formación
+  - monográficos
+  - sas
 date: '2010-05-28'
 lastmod: '2025-07-13'
 related:
-- un-acercamiento-a-graph-sentencias-graficas.md
-- un-acercamiento-a-graph-primeros-graficos-con-sas.md
-- un-acercamiento-a-graph-proc-gchart.md
-- graficos-de-densidades-con-sas-y-el-proc-kde.md
-- capitulo-5-representacion-basica-con-ggplot.md
+  - un-acercamiento-a-graph-sentencias-graficas.md
+  - un-acercamiento-a-graph-primeros-graficos-con-sas.md
+  - un-acercamiento-a-graph-proc-gchart.md
+  - graficos-de-densidades-con-sas-y-el-proc-kde.md
+  - capitulo-5-representacion-basica-con-ggplot.md
 tags:
-- graph
-- ods graphs
-- sgplot
+  - graph
+  - ods graphs
+  - sgplot
 title: Un acercamiento a GRAPH. ODS GRAPHS PROC SGPLOT
 url: /blog/un-acercamiento-a-graph-ods-graphs-proc-sgplot/
 ---
+
 [](/images/2010/05/sgplot18.png "BOXPLOT SGPLOT")[![BOXPLOT SGPLOT](/images/2010/05/sgplot22.thumbnail.png)](/images/2010/05/sgplot22.png "BOXPLOT SGPLOT") [![HISTOGRAMAS SGPLOT](/images/2010/05/sgplot34.thumbnail.png)](/images/2010/05/sgplot34.png "HISTOGRAMAS SGPLOT")[![BARRAS CON GRUPOS SGPLOT](/images/2010/05/sgplot46.thumbnail.png)](/images/2010/05/sgplot46.png "BARRAS CON GRUPOS SGPLOT")
 
 [![REGRESION CON SGPLOT](/images/2010/05/sgplot59.thumbnail.png)](/images/2010/05/sgplot59.png "REGRESION CON SGPLOT")[![GRAFICO BARRAS LINEAS SGPLOT](/images/2010/05/sgplot180.thumbnail.png)](/images/2010/05/sgplot180.png "GRAFICO BARRAS LINEAS SGPLOT")[![BARRAS HORIZONTALES SGPLOT](/images/2010/05/sgplot40.thumbnail.png)](/images/2010/05/sgplot40.png "BARRAS HORIZONTALES SGPLOT")
@@ -88,7 +89,9 @@ proc sgplot data=aleatorio;
 
 run; quit;
 ```
+
 `Código sencillo para unos gráficos vistosos y muy prácticos, no perdáis de vista el uso de ODS. Veamos histogramas:`
+
 ```r
 ods html style=statistical;
 
@@ -104,6 +107,7 @@ density altura/type=kernel ;
 
 run;quit;
 ```
+
 `Importante el uso de densidades, en mi caso particular un gráfico muy habitual. Barras verticales y horizontales:`
 
 ```r

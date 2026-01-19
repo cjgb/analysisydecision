@@ -1,24 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- libro estadística
-- monográficos
-- r
+  - formación
+  - libro estadística
+  - monográficos
+  - r
 date: '2022-10-16'
 lastmod: '2025-07-13'
 related:
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-15-modelos-glm-regresion-logistica-y-regresion-de-poisson.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-14-introduccion-al-diseno-de-experimentos.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-12-muestreo-e-inferencia-estadistica.md
-- manual-curso-introduccion-de-r-capitulo-8-inferencia-estadistica.md
-- manual-curso-introduccion-de-r-capitulo-11-introduccion-al-analisis-de-la-varianza-anova.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-15-modelos-glm-regresion-logistica-y-regresion-de-poisson.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-14-introduccion-al-diseno-de-experimentos.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-12-muestreo-e-inferencia-estadistica.md
+  - manual-curso-introduccion-de-r-capitulo-8-inferencia-estadistica.md
+  - manual-curso-introduccion-de-r-capitulo-11-introduccion-al-analisis-de-la-varianza-anova.md
 tags:
-- sin etiqueta
-title: Introducción a la Estadística para Científicos de Datos. Capítulo 10. Probabilidad
-  y distribuciones
+  - sin etiqueta
+title: Introducción a la Estadística para Científicos de Datos. Capítulo 10. Probabilidad y distribuciones
 url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-10-probabilidad-y-distribuciones/
 ---
+
 En este punto es necesario realizar un paréntesis en el hilo conductor del ensayo. Hasta el momento se han descrito variables, limpiado y depurado datos y se hizo mención al rol que desempeña cada variable en el conjunto de datos. Entre esas variables hay una de ellas que juega un rol fundamental para el científico de datos, **la variable target o variable respuesta**. Si no existe esa variable el científico de datos se enfrenta a un análisis no dirigido, no conoce como es el problema que representan las variables y las observaciones. Este trabajo se centra en el caso contrario, el conjunto de datos recoge la variable target o recoge las variables en bruto necesarias para crearla y esa variable _dirige_ el tipo de análisis.
 
 ¿Por qué el científico de datos ha de tener conocimientos de probabilidad y distribuciones? Porque esa variable target define un evento que puede tener una probabilidad o función de probabilidad asociada y por lo tanto tiene una distribución. Ese evento ha de presentar unos valores que, representados gráficamente, tengan una forma conocida.
@@ -39,9 +39,9 @@ El **espacio muestral** es aquel conjunto que recoge todos los posibles resultad
 
 **Probabilidad** consiste en asignar a cada evento del espacio muestral un número entre 0 y 1 (no un porcentaje), pero más importante que su definición son las características de la probabilidad:
 
-  * La probabilidad de cualquier evento siempre es mayor o igual a 0.
-  * La probabilidad de que se produzca al menos uno de los eventos del espacio muestral es 1.
-  * La probabilidad de los eventos es mutuamente excluyentes, lo que nos permite aseverar que la probabilidad de que suceda un evento u otro evento es la suma de las probabilidades. La probabilidad de sacar un 3 con un dado es 1/6, la probabilidad de sacar un 3 o un 5 es 2/6.
+- La probabilidad de cualquier evento siempre es mayor o igual a 0.
+- La probabilidad de que se produzca al menos uno de los eventos del espacio muestral es 1.
+- La probabilidad de los eventos es mutuamente excluyentes, lo que nos permite aseverar que la probabilidad de que suceda un evento u otro evento es la suma de las probabilidades. La probabilidad de sacar un 3 con un dado es 1/6, la probabilidad de sacar un 3 o un 5 es 2/6.
 
 Además hay ocasiones en las que la probabilidad de un evento está condicionada a que suceda otro evento a este hecho se le denomina **probabilidad condicionada**. En el caso de que un evento no influya en otro estamos ante **sucesos independientes**.
 
@@ -64,7 +64,6 @@ c2 = train %>% ggplot(aes(x=Age)) + geom_density() +ggtitle("Valores continuos")
 grid.arrange(c1, c2, ncol=2)
 ```
 
-
 [![](/images/2022/10/wp_editor_md_0b89b903d2d0e9cd56a0ba1dfe9f722b.jpg)](/images/2022/10/wp_editor_md_0b89b903d2d0e9cd56a0ba1dfe9f722b.jpg)
 
 En el caso de los valores discretos la probabilidad de pertenecer a alguno de los grupos de `Vehicle_Age` será:
@@ -72,7 +71,6 @@ En el caso de los valores discretos la probabilidad de pertenecer a alguno de lo
 ```r
 train %>% group_by(Vehicle_Age) %>% summarise(pct= round(n()/nrow(train),3))
 ```
-
 
 En esta situación la probabilidad coincide con el porcentaje de observaciones, de ahí la tendencia a transformar una probabilidad en un porcentaje, _en la medida de lo posible_ el científico de datos debe evitar esa transformación. De igual modo se puede plantear para la variable `Age` ya que es una variable «peculiar» donde la línea entre la cantidad o la cualidad con orden es muy fina. Si se plantea como numérica es necesario recordar que una integral calcula el área bajo una curva en un determinado intervalo, por lo que se puede obtener el área que hay por debajo de un valor hasta el siguiente. Por ejemplo, la probabilidad de tener 50 años o más en la población de trabajo, en la encuesta realizada, es:
 
@@ -83,13 +81,12 @@ densidad <- density(trainAge)
 integrate(approxfun(densidad), lower=50, upper=max(trainAge))
 ```
 
-
 Esa es la probabilidad de tener 50 años o más en los datos en estudio a partir de la función de densidad.
 
 > Se puede hilar un argumento del siguiente modo:
->  1\. Una variable numérica se describe mediante un histograma o una gráfica de densidad que es una función continua
->  2\. Esa función continua recoge el total de observaciones de la muestra
->  3\. El área que deja por debajo de la función nos devuelve la probabilidad de un intervalo de valores de la muestra
+> 1\. Una variable numérica se describe mediante un histograma o una gráfica de densidad que es una función continua
+> 2\. Esa función continua recoge el total de observaciones de la muestra
+> 3\. El área que deja por debajo de la función nos devuelve la probabilidad de un intervalo de valores de la muestra
 
 Si se obtiene la probabilidad de tener 44 años en el conjunto de datos de trabajo:
 
@@ -97,13 +94,11 @@ Si se obtiene la probabilidad de tener 44 años en el conjunto de datos de traba
 integrate(approxfun(densidad), lower=44, upper=45)
 ```
 
-
 Esta probabilidad es muy similar a la probabilidad si se considera la variable como un factor:
 
 ```r
 train %>% group_by(Age) %>% summarise(pct=round(n()/nrow(train),3)) %>% filter(Age==44)
 ```
-
 
 En este caso la variable `Age` tiene una forma que describe su función de densidad, pero se ha hecho mención a que la forma de la variable ha de ser conocida para facilitar la labor al científico de datos.
 
@@ -111,20 +106,26 @@ En este caso la variable `Age` tiene una forma que describe su función de densi
 
 En capítulos anteriores se distinguieron dos tipos de variables, variables discretas o variables numéricas por lo que las distribuciones conocidas son discretas o continuas. Dentro de las continuas se tienen distribuciones naturales o artificiales, estas últimas muy relevantes para la realización de modelos matemáticos y que se tratarán cuando se hable de inferencia. Hay múltiples distribuciones, en R se emplea `help("Distributions")` para presentar que distribuciones disponibles en la base de R. De todas ellas se considera que el científico de datos debe conocer:
 
-  * Distribuciones discretas
-    * Bernoulli
-    * Binomial
-    * Poisson
-  * Distribuciones continuas
-    * Naturales
-    * Uniforme
-    * Normal
-    * Gamma
-    * Artificiales (se verán en capítulos posteriores)
+- Distribuciones discretas
+  - Bernoulli
+  - Binomial
+  - Poisson
+- Distribuciones continuas
+  - Naturales
 
-    * T-Student
-    * F-Snedecor
-    * Chi-Cuadrado
+  - Uniforme
+
+  - Normal
+
+  - Gamma
+
+  - Artificiales (se verán en capítulos posteriores)
+
+  - T-Student
+
+  - F-Snedecor
+
+  - Chi-Cuadrado
 
 Existen más distribuciones de especial relevancia, pero en una primera aproximación se consideran estas como las fundamentales. A continuación se analizan una a una y se emplea su descripción para introducir al lector a la simulación de datos con R, aunque no sea el objetivo del ensayo, puede ayudar a la comprensión de estas distribuciones.
 
@@ -132,9 +133,9 @@ Existen más distribuciones de especial relevancia, pero en una primera aproxima
 
 R siempre trabaja con 3 elementos de cálculo:
 
-  * `d` obtiene la función de densidad de la distribución seleccionada
-  * `p` obtiene la función de probabilidad acumulada
-  * `q` obtiene el cuartil de la inversa de la función
+- `d` obtiene la función de densidad de la distribución seleccionada
+- `p` obtiene la función de probabilidad acumulada
+- `q` obtiene el cuartil de la inversa de la función
 
 ### Generación de números aleatorios con R
 
@@ -158,7 +159,6 @@ Si se responde al azar en el test la probabilidad de sacar un 5 es:
 dbinom(x = 5, size = 10, prob = 0.33)
 ```
 
-
 Pero esta probabilidad de sacar un 5 no es la probabilidad de aprobar, el que responda y saque un 6 también aprueba se recuerda que son eventos mutuamente excluyentes por lo que la probabilidad de aprobar, la probabilidad de sacar 5 o mayor es:
 
 ```r
@@ -170,13 +170,11 @@ dbinom(x = 5, size = 10, prob = 0.33) +
   dbinom(x = 10, size = 10, prob = 0.33)
 ```
 
-
 Respondiendo al azar en un 20% de las ocasiones se aprobará. Se están acumulando resultados por ello es mejor emplear:
 
 ```r
 sum(dbinom(x = 5:10, size = 10, prob = 0.33))
 ```
-
 
 Mediante `pbinom` se obtiene el área que hay por debajo de la función de distribución acumulada hasta un valor `q`, en el ejemplo de trabajo, ¿cuál es la probabilidad de suspender o de sacar hasta un 4?
 
@@ -184,19 +182,18 @@ Mediante `pbinom` se obtiene el área que hay por debajo de la función de distr
 pbinom(q = 4, size = 10, prob = 0.33)
 ```
 
-
 Como es la acumulación lo que quede a la derecha de esa función acumulada será la probabilidad de aprobar, el suceso contrario a suspender.
 
 ```r
 1 - pbinom(q = 4, size = 10, prob = 0.33)
 ```
 
-
 Se están planteando ejemplos con valores, pero es posible que interese conocer la puntuación obtenida en función de un percentil, para ello se emplea `qbinom` que ofrece la inversa de la función acumulada de densidad.
 
 ```r
 train %>% group_by(Vehicle_Age) %>% summarise(pct= round(n()/nrow(train),3))
 ```
+
 0
 
 A partir del percentil 80 ya empezarían a aparecer aprobados, pero hasta ese punto no. Sin embargo, puede resultar más sencillo para el científico de datos **simular los resultados** de forma que sean tangibles y poder obtener de ellos las probabilidades deseadas. Para la realización de simulaciones de una función binomial se emplea `rbinom`.
@@ -206,6 +203,7 @@ Un test:
 ```r
 train %>% group_by(Vehicle_Age) %>% summarise(pct= round(n()/nrow(train),3))
 ```
+
 1
 
 Mediante la función `set.seed(12)` se garantiza que el resultado de la simulación siempre es el mismo porque se establece la semilla para la obtención de números aleatorios, en este caso se suspende el único test realizado. Realizando 1000 test y calculando la media o la proporción de casos en las que se supera el 5:
@@ -213,6 +211,7 @@ Mediante la función `set.seed(12)` se garantiza que el resultado de la simulaci
 ```r
 train %>% group_by(Vehicle_Age) %>% summarise(pct= round(n()/nrow(train),3))
 ```
+
 2
 
 El resultado obtenido vía simulación es similar al que devuelve la función de densidad. Estos resultados se pueden ver gráficamente:
@@ -220,6 +219,7 @@ El resultado obtenido vía simulación es similar al que devuelve la función de
 ```r
 train %>% group_by(Vehicle_Age) %>% summarise(pct= round(n()/nrow(train),3))
 ```
+
 3
 
 [![](/images/2022/10/wp_editor_md_1f6cf0664c9e05942c9db2996b6a0ca2.jpg)](/images/2022/10/wp_editor_md_1f6cf0664c9e05942c9db2996b6a0ca2.jpg)
@@ -230,9 +230,9 @@ Es evidente que es mejor estudiar. Pero en el gráfico se observa que la media e
 
 Los sucesos que se distribuyen según una distribución de Poisson aparecen cuando **se cuentan eventos en un determinado espacio de tiempo**. Ejemplos donde es posible encontrarse una distribución de poisson como variable respuesta pueden ser:
 
-  * Número de llamadas a un call center.
-  * Número de personas en espera.
-  * Número de siniestros en un seguro de autos en un año.
+- Número de llamadas a un call center.
+- Número de personas en espera.
+- Número de siniestros en un seguro de autos en un año.
 
 En esta situación se tiene una distribución de poisson con parámetro λ = media de eventos. Tiene una característica fundamental, la media es igual que la varianza. Hay un resultado interesante cuando se simulan valores que siguen una distribución de poisson porque se puede identificar el número de veces que se produce un fenómeno con una probabilidad baja de ocurrir.
 
@@ -241,6 +241,7 @@ Para simular valores que siguen una distribución de poisson se emplea `rpois(si
 ```r
 train %>% group_by(Vehicle_Age) %>% summarise(pct= round(n()/nrow(train),3))
 ```
+
 4
 
 [![](/images/2022/10/wp_editor_md_20339d9d0c86b51e68d3c8e75c8465f1.jpg)](/images/2022/10/wp_editor_md_20339d9d0c86b51e68d3c8e75c8465f1.jpg)
@@ -250,6 +251,7 @@ Un λ = 0.15 hace que casi un 15% de las observaciones tengan un único evento, 
 ```r
 train %>% group_by(Vehicle_Age) %>% summarise(pct= round(n()/nrow(train),3))
 ```
+
 5
 
 [![](/images/2022/10/wp_editor_md_3bb819300e78cbc19667cda1b2e56e71.jpg)](/images/2022/10/wp_editor_md_3bb819300e78cbc19667cda1b2e56e71.jpg)
@@ -259,6 +261,7 @@ La forma de esta distribución es prácticamente triangular una característica 
 ```r
 train %>% group_by(Vehicle_Age) %>% summarise(pct= round(n()/nrow(train),3))
 ```
+
 6
 
 La probabilidad es ínfima como se puede comprobar. Esta distribución además de ser utilizada en el mundo actuarial es útil cuando se buscan observaciones extremas como se ha señalado con anterioridad:
@@ -266,6 +269,7 @@ La probabilidad es ínfima como se puede comprobar. Esta distribución además d
 ```r
 train %>% group_by(Vehicle_Age) %>% summarise(pct= round(n()/nrow(train),3))
 ```
+
 7
 
 [![](/images/2022/10/wp_editor_md_64fe17be168a289da8e38c3bbd4174e6.jpg)](/images/2022/10/wp_editor_md_64fe17be168a289da8e38c3bbd4174e6.jpg)
@@ -283,6 +287,7 @@ Un paseo aleatorio con `runif(size,min,max)` por fecha:
 ```r
 train %>% group_by(Vehicle_Age) %>% summarise(pct= round(n()/nrow(train),3))
 ```
+
 8
 
 [![](/images/2022/10/wp_editor_md_b65de7b5fcb16303ea16e4b6bd49cfee.jpg)](/images/2022/10/wp_editor_md_b65de7b5fcb16303ea16e4b6bd49cfee.jpg)
@@ -292,6 +297,7 @@ De 0 a 1 el resultado es equiprobable, luego la probabilidad de obtener un dato 
 ```r
 train %>% group_by(Vehicle_Age) %>% summarise(pct= round(n()/nrow(train),3))
 ```
+
 9
 
 [![](/images/2022/10/wp_editor_md_0c14e4d54a78afa14a110d42ce9ee473.jpg)](/images/2022/10/wp_editor_md_0c14e4d54a78afa14a110d42ce9ee473.jpg)
@@ -304,6 +310,7 @@ densidad <- density(trainAge)
 
 integrate(approxfun(densidad), lower=50, upper=max(trainAge))
 ```
+
 0
 
 Todo valor que esté a una distancia mayor de 1 del centro estará fuera de la circunferencia:
@@ -314,11 +321,12 @@ densidad <- density(trainAge)
 
 integrate(approxfun(densidad), lower=50, upper=max(trainAge))
 ```
+
 1
 
 [![](/images/2022/10/wp_editor_md_1a3520acefe87bed2e4d2958b10daaf0.jpg)](/images/2022/10/wp_editor_md_1a3520acefe87bed2e4d2958b10daaf0.jpg)
 
-La proporción de casos que caen dentro del círculo será el área, como se trata de un círculo de radio 2 se puede despejar \Pi como el área por 4:
+La proporción de casos que caen dentro del círculo será el área, como se trata de un círculo de radio 2 se puede despejar \\Pi como el área por 4:
 
 ```r
 # Es necesario obtener la función de densidad
@@ -326,6 +334,7 @@ densidad <- density(trainAge)
 
 integrate(approxfun(densidad), lower=50, upper=max(trainAge))
 ```
+
 2
 
 Como se ha comentado, la lotería sigue una distribución uniforme. En 1000 semanas jugando, ¿puede tocar el número 10976?
@@ -336,6 +345,7 @@ densidad <- density(trainAge)
 
 integrate(approxfun(densidad), lower=50, upper=max(trainAge))
 ```
+
 3
 
 Sin embargo, ¿qué sucede con el reintegro?
@@ -346,6 +356,7 @@ densidad <- density(trainAge)
 
 integrate(approxfun(densidad), lower=50, upper=max(trainAge))
 ```
+
 4
 
 De este modo es posible medir la inversión realizada en lotería:
@@ -356,6 +367,7 @@ densidad <- density(trainAge)
 
 integrate(approxfun(densidad), lower=50, upper=max(trainAge))
 ```
+
 5
 
 No parece una inversión muy rentable, con datos estadísticos no es posible saber el número de la lotería a priori, pero si se puede determinar las posibilidades de obtenerlo y transformar esas posibilidades en un resultado económico.
@@ -366,11 +378,11 @@ Se tiene una función continua con un punto medio muy probable y conforme se ale
 
 Tiene una serie de propiedades relevantes:
 
-  * Tiene una única moda, que coincide con su media y su mediana.
-  * La curva normal es asintótica al eje de abscisas, por ello, cualquier valor de los conocidos es teóricamente posible. El área total bajo la curva es igual a 1.
-  * Es simétrica con respecto a su media. Para este tipo de variables existe una probabilidad de un 50% de observar un dato mayor que la media, y un 50% de observar un dato menor.
-  * La distancia entre la línea trazada en la media y el punto de inflexión de la curva es igual a una desviación típica. Cuanto mayor sea, cuanto mayor dispersión haya, más aplanada será la curva de la densidad.
-  * El área bajo la curva comprendida entre los valores situados aproximadamente a dos desviaciones estándar de la media es igual a 0.95. En concreto, existe un 95% de posibilidades de observar un valor comprendido dentro de ese intervalo.
+- Tiene una única moda, que coincide con su media y su mediana.
+- La curva normal es asintótica al eje de abscisas, por ello, cualquier valor de los conocidos es teóricamente posible. El área total bajo la curva es igual a 1.
+- Es simétrica con respecto a su media. Para este tipo de variables existe una probabilidad de un 50% de observar un dato mayor que la media, y un 50% de observar un dato menor.
+- La distancia entre la línea trazada en la media y el punto de inflexión de la curva es igual a una desviación típica. Cuanto mayor sea, cuanto mayor dispersión haya, más aplanada será la curva de la densidad.
+- El área bajo la curva comprendida entre los valores situados aproximadamente a dos desviaciones estándar de la media es igual a 0.95. En concreto, existe un 95% de posibilidades de observar un valor comprendido dentro de ese intervalo.
 
 Se simula una población de 1000 individuos con una altura media de 174 cm y una desviación de 7.6 cm, se agrupan las alturas simuladas en función del número de desviaciones y se contabilizan cuantos individuos de la población caen en cada grupo de desviaciones:
 
@@ -380,6 +392,7 @@ densidad <- density(trainAge)
 
 integrate(approxfun(densidad), lower=50, upper=max(trainAge))
 ```
+
 6
 
 En el primer grupo de desviación están aproximadamente el 68% de las personas, entre las 2 desviaciones están el 95% de las personas (aproximadamente) y en 3 desviaciones típicas deben estar el 99.7%. Gráficamente.
@@ -390,6 +403,7 @@ densidad <- density(trainAge)
 
 integrate(approxfun(densidad), lower=50, upper=max(trainAge))
 ```
+
 7
 
 [![](/images/2022/10/wp_editor_md_4880a4ccce6e811ed273b7ea4ed741c8.jpg)](/images/2022/10/wp_editor_md_4880a4ccce6e811ed273b7ea4ed741c8.jpg)
@@ -410,6 +424,7 @@ densidad <- density(trainAge)
 
 integrate(approxfun(densidad), lower=50, upper=max(trainAge))
 ```
+
 8
 
 [![](/images/2022/10/wp_editor_md_d1e80931b1957db643d6f3ae6e9741ac.jpg)](/images/2022/10/wp_editor_md_d1e80931b1957db643d6f3ae6e9741ac.jpg)
@@ -424,6 +439,7 @@ densidad <- density(trainAge)
 
 integrate(approxfun(densidad), lower=50, upper=max(trainAge))
 ```
+
 9
 
 El campo `impsin` tiene el importe de los siniestros de la cartera, si se traza un gráfico de densidad:
@@ -431,6 +447,7 @@ El campo `impsin` tiene el importe de los siniestros de la cartera, si se traza 
 ```r
 integrate(approxfun(densidad), lower=44, upper=45)
 ```
+
 0
 
 [![](/images/2022/10/wp_editor_md_6fcea694bf5e30cd780b21a0bf8ec068.jpg)](/images/2022/10/wp_editor_md_6fcea694bf5e30cd780b21a0bf8ec068.jpg)
@@ -440,6 +457,7 @@ Se observa como es una distribución completamente asimétrica, demasiado, ya qu
 ```r
 integrate(approxfun(densidad), lower=44, upper=45)
 ```
+
 1
 
 [![](/images/2022/10/wp_editor_md_a3f974dc599e3fcc00a8ca4f00ac1f6a.jpg)](/images/2022/10/wp_editor_md_a3f974dc599e3fcc00a8ca4f00ac1f6a.jpg)

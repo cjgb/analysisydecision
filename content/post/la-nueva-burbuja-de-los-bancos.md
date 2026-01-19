@@ -1,24 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- banca
-- sin categoría
+  - banca
 date: '2009-03-06'
 lastmod: '2025-07-13'
 related:
-- lecciones-de-economia-de-un-ignorante-la-crisis-ha-tocado-fondo-luego-escarbara.md
-- lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
-- amanece-que-no-es-poco.md
-- lecciones-de-economia-de-un-ignorante-los-bancos-pierden-dinero-para-favorecer-a-unos-y-luego-los-salvamos-todos.md
-- margenes-nulos-en-los-nuevos-depositos-bancarios.md
+  - lecciones-de-economia-de-un-ignorante-la-crisis-ha-tocado-fondo-luego-escarbara.md
+  - lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
+  - amanece-que-no-es-poco.md
+  - lecciones-de-economia-de-un-ignorante-los-bancos-pierden-dinero-para-favorecer-a-unos-y-luego-los-salvamos-todos.md
+  - margenes-nulos-en-los-nuevos-depositos-bancarios.md
 tags:
-- banca
-- burbuja
-- crisis
-- deuda
+  - banca
+  - burbuja
+  - crisis
+  - deuda
 title: La nueva burbuja de los bancos
 url: /blog/la-nueva-burbuja-de-los-bancos/
 ---
+
 Si vemos que nos estalla una burbuja creamos otra.
 
 Cuando yo era pequeñito había un tipo con gafas que salía por la tele haciendo burbujas de jabón enormes:

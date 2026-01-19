@@ -1,23 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- libro estadística
-- r
+  - formación
+  - libro estadística
+  - r
 date: '2022-06-24'
 lastmod: '2025-07-13'
 related:
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-8-problemas-con-los-datos.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-9-analisis-exploratorio-de-datos-eda.md
-- capitulo-5-representacion-basica-con-ggplot.md
-- graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
-- graficos-descriptivos-basicos-con-seaborn-python.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-8-problemas-con-los-datos.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-9-analisis-exploratorio-de-datos-eda.md
+  - capitulo-5-representacion-basica-con-ggplot.md
+  - graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
+  - graficos-descriptivos-basicos-con-seaborn-python.md
 tags:
-- sin etiqueta
-title: Introducción a la Estadística para Científicos de Datos. Capítulo 7. Descripción
-  gráfica de datos
+  - sin etiqueta
+title: Introducción a la Estadística para Científicos de Datos. Capítulo 7. Descripción gráfica de datos
 url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-7-descripcion-grafica-de-variables/
 ---
+
 Los estadísticos son insuficientes para conocer una variable, la siguiente figura es muy conocida y presenta unas series de pares de datos X e Y con los mismos estadísticos que son completamente diferentes.
 
 ![](https://damassets.autodesk.net/content/dam/autodesk/research/publications-assets/images/AllDinosGrey_1.png)
@@ -31,7 +31,6 @@ library(tidyverse)
 train <- read_csv("./data/train.csv")
 ```
 
-
 ### Descripción gráfica de factores
 
 Si numéricamente tenemos frecuencias absolutas o frecuencias relativas los gráficos más sencillos para describir estas variables son los gráficos de barras y gráficos de sectores.
@@ -42,7 +41,6 @@ resumen <- train %>% group_by(Gender) %>% summarise(clientes = n())
 ggplot(resumen, aes(x='', y = clientes, fill=Gender)) + geom_bar(stat="identity", width=1) +
   coord_polar("y", start=0)
 ```
-
 
 [![](/images/2022/06/wp_editor_md_51cd37a70286b2a83ff0c5a065f80019.jpg)](/images/2022/06/wp_editor_md_51cd37a70286b2a83ff0c5a065f80019.jpg)
 
@@ -55,7 +53,6 @@ ggplot(resumen, aes(x='', y = porcen_clientes, fill=Gender)) + geom_bar(stat="id
   coord_polar("y", start=0)
 ```
 
-
 [![](/images/2022/06/wp_editor_md_63cb9c20c15acb328dcae3fe93ac04fa.jpg)](/images/2022/06/wp_editor_md_63cb9c20c15acb328dcae3fe93ac04fa.jpg)
 
 En el caso concreto de los gráficos de sectores puede ser más sencillo emplear los gráficos propios del módulo base, el corazón de R. En ese caso, se dispone de la función `pie`
@@ -67,7 +64,6 @@ pie(resumenporcen_clientes, labels=paste0(resumenGender, ': ', round(resumen$por
     main="Gráfico sectores por sexo")
 ```
 
-
 [![](/images/2022/06/wp_editor_md_ae875488c4b2a2cdbf3cb3e1da2d71f8.jpg)](/images/2022/06/wp_editor_md_ae875488c4b2a2cdbf3cb3e1da2d71f8.jpg)
 
 El código y el gráfico (aparentemente) es más sencillo de entender. Este tipo de representación está limitada cuando el factor a analizar tiene un gran número de niveles como sucede con la variable `Region_Code`.
@@ -78,7 +74,6 @@ resumen <- train %>% group_by(Region_Code) %>% summarise(porcen_clientes = n()/n
 pie(resumenporcen_clientes, labels=paste0(resumenRegion_Code, ': ', round(resumen$porcen_clientes*100,1),'%'),
     main = "Gráfico sectores por Región")
 ```
-
 
 [![](/images/2022/06/wp_editor_md_fd818e7c67f6b50c8eb836d607c4852d.jpg)](/images/2022/06/wp_editor_md_fd818e7c67f6b50c8eb836d607c4852d.jpg)
 
@@ -93,7 +88,6 @@ train %>% group_by(Region_Code) %>% summarise(porcen_clientes = n()/nrow(train))
   ggplot(aes(x=Region_Code, y=porcen_clientes)) + geom_bar(stat="identity")
 ```
 
-
 [![](/images/2022/06/wp_editor_md_65218388c4b4cd2cac0136e30b8de760.jpg)](/images/2022/06/wp_editor_md_65218388c4b4cd2cac0136e30b8de760.jpg)
 
 En este código no se genera el habitual data frame intermedio, directamente podemos aplicar `ggplot` sobre la sumarización, es otro modo de trabajar si no se quiere disponer de la sumarización. Se observa que el eje X interpreta la variable `Region_Code` como numérica, establece rangos númericos, no aparece cada valor. se recomienda empezar a describirla como un factor. Esta es una situación habitual que se da en los datos importados, hay valores cualitativos que se almacenan en vriables cuantitativas y viceversa. Se trata de un problema habitual que se encuentra el científico de datos.
@@ -104,7 +98,6 @@ train %>% group_by(Region_Code = as.factor(Region_Code)) %>%
   ggplot(aes(x=Region_Code, y = `Porcentaje de clientes`)) + geom_bar(stat="identity") +
   ggtitle("Porcentaje de clientes por región")
 ```
-
 
 [![](/images/2022/06/wp_editor_md_5150a9efd38409f6fdf74491b308d6a2.jpg)](/images/2022/06/wp_editor_md_5150a9efd38409f6fdf74491b308d6a2.jpg)
 
@@ -155,7 +148,6 @@ ggplot(data= train,aes(x= Age))+
       geom_density(aes(y=5 * ..count..), color='Blue')
 ```
 
-
 [![](/images/2022/06/wp_editor_md_4472849badfa0836b3cf0b5f2f517a98.jpg)](/images/2022/06/wp_editor_md_4472849badfa0836b3cf0b5f2f517a98.jpg)
 
 [![](/images/2022/06/wp_editor_md_d59b8b9b992d62c7fc66dff324a6e531.jpg)](/images/2022/06/wp_editor_md_d59b8b9b992d62c7fc66dff324a6e531.jpg)
@@ -172,6 +164,7 @@ resumen <- train %>% group_by(Gender) %>% summarise(clientes = n())
 ggplot(resumen, aes(x='', y = clientes, fill=Gender)) + geom_bar(stat="identity", width=1) +
   coord_polar("y", start=0)
 ```
+
 0
 
 [![](/images/2022/06/wp_editor_md_4472849badfa0836b3cf0b5f2f517a98.jpg)](/images/2022/06/wp_editor_md_4472849badfa0836b3cf0b5f2f517a98.jpg)
@@ -186,6 +179,7 @@ resumen <- train %>% group_by(Gender) %>% summarise(clientes = n())
 ggplot(resumen, aes(x='', y = clientes, fill=Gender)) + geom_bar(stat="identity", width=1) +
   coord_polar("y", start=0)
 ```
+
 1
 
 [![](/images/2022/06/wp_editor_md_c9c24f9b112a2c3e9dca8c08443ade6d.jpg)](/images/2022/06/wp_editor_md_c9c24f9b112a2c3e9dca8c08443ade6d.jpg)
@@ -200,6 +194,7 @@ resumen <- train %>% group_by(Gender) %>% summarise(clientes = n())
 ggplot(resumen, aes(x='', y = clientes, fill=Gender)) + geom_bar(stat="identity", width=1) +
   coord_polar("y", start=0)
 ```
+
 2
 
 [![](/images/2022/06/wp_editor_md_c00b6b0397340b81132d029e09b9ceef.jpg)](/images/2022/06/wp_editor_md_c00b6b0397340b81132d029e09b9ceef.jpg)
@@ -214,6 +209,7 @@ resumen <- train %>% group_by(Gender) %>% summarise(clientes = n())
 ggplot(resumen, aes(x='', y = clientes, fill=Gender)) + geom_bar(stat="identity", width=1) +
   coord_polar("y", start=0)
 ```
+
 3
 
 [![](/images/2022/06/wp_editor_md_7f910d58d14b24872f16250d1e823bac.jpg)](/images/2022/06/wp_editor_md_7f910d58d14b24872f16250d1e823bac.jpg)
@@ -226,13 +222,16 @@ resumen <- train %>% group_by(Gender) %>% summarise(clientes = n())
 ggplot(resumen, aes(x='', y = clientes, fill=Gender)) + geom_bar(stat="identity", width=1) +
   coord_polar("y", start=0)
 ```
+
 4
+
 ```r
 resumen <- train %>% group_by(Gender) %>% summarise(clientes = n())
 
 ggplot(resumen, aes(x='', y = clientes, fill=Gender)) + geom_bar(stat="identity", width=1) +
   coord_polar("y", start=0)
 ```
+
 5
 
 [![](/images/2022/06/wp_editor_md_b16a2c46e257a1db174e73100e26a554.jpg)](/images/2022/06/wp_editor_md_b16a2c46e257a1db174e73100e26a554.jpg)
@@ -247,6 +246,7 @@ resumen <- train %>% group_by(Gender) %>% summarise(clientes = n())
 ggplot(resumen, aes(x='', y = clientes, fill=Gender)) + geom_bar(stat="identity", width=1) +
   coord_polar("y", start=0)
 ```
+
 6
 
 [![](/images/2022/06/wp_editor_md_5a032daaa7795581a19773d43b642d5c.jpg)](/images/2022/06/wp_editor_md_5a032daaa7795581a19773d43b642d5c.jpg)

@@ -1,27 +1,28 @@
 ---
 author: rvaquerizo
 categories:
-- data mining
-- formación
-- modelos
+  - data mining
+  - formación
+  - modelos
 date: '2010-07-28'
 lastmod: '2025-07-13'
 related:
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-16-modelizacion-estadistica-conociendo-los-datos.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
-- el-sobremuestreo-mejora-mi-estimacion.md
-- monografico-paquete-de-r-nnet-para-modelos-de-redes-neuronales.md
-- el-analisis-de-supervivencia-para-segmentar-el-churn.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-16-modelizacion-estadistica-conociendo-los-datos.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
+  - el-sobremuestreo-mejora-mi-estimacion.md
+  - monografico-paquete-de-r-nnet-para-modelos-de-redes-neuronales.md
+  - el-analisis-de-supervivencia-para-segmentar-el-churn.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Entrenamiento, validación y test
 url: /blog/entrenamiento-validacion-y-test/
 ---
+
 Cuando realizamos modelos hay 3 conjuntos de datos fundamentales:
 
-  * Conjunto de datos de **entrenamiento** : son los datos que entrenan los modelos
-  * Conjunto de datos de **validación** : selecciona el mejor de los modelos entrenados
-  * Conjunto de datos de **test** : Nos ofrece el error real cometido con el modelo seleccionado
+- Conjunto de datos de **entrenamiento** : son los datos que entrenan los modelos
+- Conjunto de datos de **validación** : selecciona el mejor de los modelos entrenados
+- Conjunto de datos de **test** : Nos ofrece el error real cometido con el modelo seleccionado
 
 Para entender mejor su importancia y como funcionan he preparado el siguiente esquema/ejemplo:
 

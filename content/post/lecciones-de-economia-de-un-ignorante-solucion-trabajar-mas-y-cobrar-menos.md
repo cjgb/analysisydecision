@@ -1,20 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- formación
+  - formación
 date: '2012-06-28'
 lastmod: '2025-07-13'
 related:
-- lecciones-de-economia-de-un-ignorante-poniendo-fecha-a-la-intervencion-de-espana.md
-- lecciones-de-economia-de-un-ignorante-una-cerveza-100-pesetas.md
-- bajar-los-tipos-a-la-japonesa-al-0.md
-- lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
-- lecciones-de-economia-de-un-ignorante-los-bancos-pierden-dinero-para-favorecer-a-unos-y-luego-los-salvamos-todos.md
+  - lecciones-de-economia-de-un-ignorante-poniendo-fecha-a-la-intervencion-de-espana.md
+  - lecciones-de-economia-de-un-ignorante-una-cerveza-100-pesetas.md
+  - bajar-los-tipos-a-la-japonesa-al-0.md
+  - lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
+  - lecciones-de-economia-de-un-ignorante-los-bancos-pierden-dinero-para-favorecer-a-unos-y-luego-los-salvamos-todos.md
 tags:
-- crisis
+  - crisis
 title: 'Lecciones de economía de un ignorante: Solución: ¡TRABAJAR MÁS Y COBRAR MENOS!'
 url: /blog/lecciones-de-economia-de-un-ignorante-solucion-c2a1trabajar-mas-y-cobrar-menos/
 ---
+
 Mi buen amigo **David** lleva varios días realizando un interesante análisis de la situación económica actual. Hoy quiero concentrar en pocas líneas este análisis. La hecatombe bancaria se produce debido al **incremento de la morosidad** , sin embargo esta es una situación que ya hemos vivido:
 
 ![morosidad_el_pais.PNG](/images/2012/06/morosidad_el_pais.PNG)

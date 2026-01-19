@@ -1,25 +1,26 @@
 ---
 author: rvaquerizo
 categories:
-- sas
-- trucos
+  - sas
+  - trucos
 date: '2008-09-02'
 lastmod: '2025-07-13'
 related:
-- macros-sas-pasar-de-texto-a-numerico.md
-- transformar-variables-en-sas-caracter-a-numerico.md
-- importar-a-sas-desde-otras-aplicaciones.md
-- trucos-sas-macrovariable-a-dataset.md
-- truco-sas-limpiar-un-fichero-de-texto-con-sas.md
+  - macros-sas-pasar-de-texto-a-numerico.md
+  - transformar-variables-en-sas-caracter-a-numerico.md
+  - importar-a-sas-desde-otras-aplicaciones.md
+  - trucos-sas-macrovariable-a-dataset.md
+  - truco-sas-limpiar-un-fichero-de-texto-con-sas.md
 tags:
-- configuracion regional
-- importar datos
-- sas
-- texto
+  - configuracion regional
+  - importar datos
+  - sas
+  - texto
 title: Truco SAS. Macro buscar y reemplazar en texto
 url: /blog/truco-sas-macro-buscar-y-reemplazar-en-texto/
 ---
-A veces hay problemas a la hora de importar un fichero de texto a SAS. Por ejemplo el fichero proviene de Access y tiene los números con formato europeo. El siguiente programa hace un buscar y reemplazar pero con SAS. Partimos de un fichero de texto ubicado en c:\temp\pepin.txt así:
+
+A veces hay problemas a la hora de importar un fichero de texto a SAS. Por ejemplo el fichero proviene de Access y tiene los números con formato europeo. El siguiente programa hace un buscar y reemplazar pero con SAS. Partimos de un fichero de texto ubicado en c:\\temp\\pepin.txt así:
 
 4.497,31 2.776,50
 2.555,46 6.782,73
@@ -70,9 +71,9 @@ run;
 %mend;
 ```
 
-%reemplazar(c:\temp,pepin.txt);
+%reemplazar(c:\\temp,pepin.txt);
 
-Tras ejecutar este código en c:\temp tenemos DEP_pepin.txt con la siguiente información:
+Tras ejecutar este código en c:\\temp tenemos DEP_pepin.txt con la siguiente información:
 
 4497.31 2776.50
 2555.46 6782.73

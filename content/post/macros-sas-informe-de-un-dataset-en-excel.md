@@ -1,28 +1,29 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- sas
+  - formación
+  - sas
 date: '2010-04-11'
 lastmod: '2025-07-13'
 related:
-- macro-sas-variables-de-un-dataset-en-una-macro-variable.md
-- trucos-sas-lista-de-datasets-en-macro-variable.md
-- macro-sas-numero-de-observaciones-de-un-dataset-en-una-macro.md
-- truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
-- truco-sas-tablas-de-una-libreria-en-una-macro-variable.md
+  - macro-sas-variables-de-un-dataset-en-una-macro-variable.md
+  - trucos-sas-lista-de-datasets-en-macro-variable.md
+  - macro-sas-numero-de-observaciones-de-un-dataset-en-una-macro.md
+  - truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
+  - truco-sas-tablas-de-una-libreria-en-una-macro-variable.md
 tags:
-- excel
-- ods
-- proc datasets
+  - excel
+  - ods
+  - proc datasets
 title: Macros SAS. Informe de un dataset en Excel
 url: /blog/macros-sas-informe-de-un-dataset-en-excel/
 ---
+
 [](/images/2010/04/salida.JPG "Informe dataset")
 
 [![Informe dataset](/images/2010/04/salida.JPG)](/images/2010/04/salida.JPG "Informe dataset")
 
-Tengo por ahí este programa SAS interesante. Es una macro que realiza un pequeño informe sobre un dataset. Nos ofrece la librería, las variables y el tipo, longitud, posición y formato de estas y por ultimo el numero de observaciones. Si el dataset que deseamos explorar es una tabla oracle, informix o db2 hace un count(*) para determinar el numero de observaciones. Este breve resumen lo vuelca en una tabla temporal SAS que nos llevaremos a Excel. Con esto los parámetros que recibe la macro son el dataset sobre el que realizamos el resumen y la ubicación del Excel de salida. Hache os pongo el código:
+Tengo por ahí este programa SAS interesante. Es una macro que realiza un pequeño informe sobre un dataset. Nos ofrece la librería, las variables y el tipo, longitud, posición y formato de estas y por ultimo el numero de observaciones. Si el dataset que deseamos explorar es una tabla oracle, informix o db2 hace un count(\*) para determinar el numero de observaciones. Este breve resumen lo vuelca en una tabla temporal SAS que nos llevaremos a Excel. Con esto los parámetros que recibe la macro son el dataset sobre el que realizamos el resumen y la ubicación del Excel de salida. Hache os pongo el código:
 
 ```r
 *MACRO QUE EXPLORA UN CONJUNTO DE DATOS Y CREA UN EXCEL EN UN DIRECTORIO CON EL

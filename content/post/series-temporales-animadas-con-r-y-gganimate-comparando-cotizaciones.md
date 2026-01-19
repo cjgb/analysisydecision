@@ -1,20 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- formación
+  - formación
 date: '2021-02-01'
 lastmod: '2025-07-13'
 related:
-- random-walk-se-escribe-con-r.md
-- graficos-de-calendarios-con-series-temporales.md
-- mi-breve-seguimiento-del-coronavirus-con-r.md
-- stadistical-data-warehouse-del-european-central-bank-con-r-y-los-depositos-a-perdidas.md
-- grafico-con-eje-secundario-en-ggplot2.md
+  - random-walk-se-escribe-con-r.md
+  - graficos-de-calendarios-con-series-temporales.md
+  - mi-breve-seguimiento-del-coronavirus-con-r.md
+  - stadistical-data-warehouse-del-european-central-bank-con-r-y-los-depositos-a-perdidas.md
+  - grafico-con-eje-secundario-en-ggplot2.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Series temporales animadas con R y gganimate, comparando cotizaciones
 url: /blog/series-temporales-animadas-con-r-y-gganimate-comparando-cotizaciones/
 ---
+
 La comparación de series es otro de los usos que le estoy dando a las animaciones, en este caso quiero comparar la cotización de Tesla frente a la cotización del Bitcoin e intentar establecer paralelismo (o no). Obtenemos los datos vía quantmod y comenzamos a traficar:
 
 ```r
@@ -31,7 +32,6 @@ btc =  data.frame(date=index(`BTC-USD`), coredata(`BTC-USD`))
 tesla =  data.frame(date=index(`TSLA`), coredata(`TSLA`))
 ```
 
-
 Ya tenemos dos data frames con la cotización de Testa y la cotización del Bitcoin desde el 31/12/2019 hasta la fecha. Ahora vamos a unir los 2 objetos en uno para facilitar los gráficos.
 
 ```r
@@ -40,7 +40,6 @@ df <- btc %>% select(date, BTC.USD.Adjusted) %>% left_join(select(tesla, date, T
 while (sum(is.na(df$TSLA.Adjusted))){
 df <- df %>% mutate(TSLA.Adjusted=ifelse(is.na(TSLA.Adjusted), lag(TSLA.Adjusted), TSLA.Adjusted)) }
 ```
-
 
 Como Tesla no cotiza en feriados y fines de semana se hace una chapuza, si es vacío se asigna la última cotización disponible, eso facilita la realización del gráfico.
 
@@ -59,7 +58,6 @@ animacion1 <- p + transition_time(date) +
 
 anim_save(paste0(ub,"animacion1.gif"), animacion1)
 ```
-
 
 En este caso hacemos primero el gráfico y posteriormente creamos la animación, con shadow_mark vamos dejando rastro de los puntos que pintamos en el gráfico y el resultado es interesante.
 
@@ -80,7 +78,6 @@ p <- ggplot(df) +
 animacion2 <- animate(p, end_pause = 25, fps=5)
 anim_save(paste0(ub,"animacion2.gif"), animacion2)
 ```
-
 
 El resultado es muy interesante, cada cual que saque sus conclusiones.
 

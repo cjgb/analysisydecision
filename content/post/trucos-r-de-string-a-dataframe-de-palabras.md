@@ -1,23 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- r
-- trucos
+  - formación
+  - r
+  - trucos
 date: '2011-08-09'
 lastmod: '2025-07-13'
 related:
-- analisis-de-textos-con-r.md
-- dividir-en-palabras-un-texto-con-sas.md
-- truco-r-eval-parse-y-paste-para-automatizar-codigo.md
-- comparamos-los-programas-electorales-de-pp-y-psoe-con-r.md
-- como-ordenar-un-data-frame-en-r.md
+  - analisis-de-textos-con-r.md
+  - dividir-en-palabras-un-texto-con-sas.md
+  - truco-r-eval-parse-y-paste-para-automatizar-codigo.md
+  - comparamos-los-programas-electorales-de-pp-y-psoe-con-r.md
+  - como-ordenar-un-data-frame-en-r.md
 tags:
-- strsplit
-- unlist
+  - strsplit
+  - unlist
 title: Trucos R. De string a data.frame de palabras
 url: /blog/trucos-r-de-string-a-dataframe-de-palabras/
 ---
+
 Manejo de textos con R en este truco. Partimos de un vector de _string_ y deseamos dividir ese _string_ en palabras y posteriormente crear un _data frame_ de una sola columna con tantos elementos como palabras tenga nuestro vector de cadenas de texto. Es decir, vamos a transformar un texto en una tabla de palabras. Veamos una posible situación:
 
 ```r

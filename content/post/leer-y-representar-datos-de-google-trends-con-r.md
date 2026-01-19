@@ -1,29 +1,30 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- monográficos
-- r
+  - formación
+  - monográficos
+  - r
 date: '2011-03-11'
 lastmod: '2025-07-13'
 related:
-- stadistical-data-warehouse-del-european-central-bank-con-r-y-los-depositos-a-perdidas.md
-- los-principales-problemas-de-los-espanoles-animaciones-con-r-y-gganimate.md
-- contenidos-web-analisis-informacion.md
-- contenidos-para-octubre-de-ayd.md
-- ayd-2300-visitas-mensuales.md
+  - stadistical-data-warehouse-del-european-central-bank-con-r-y-los-depositos-a-perdidas.md
+  - los-principales-problemas-de-los-espanoles-animaciones-con-r-y-gganimate.md
+  - contenidos-web-analisis-informacion.md
+  - contenidos-para-octubre-de-ayd.md
+  - ayd-2300-visitas-mensuales.md
 tags:
-- google trends
-- read.csv
-- rgoogletrends
+  - google trends
+  - read.csv
+  - rgoogletrends
 title: Leer y representar datos de Google Trends con R
 url: /blog/leer-y-representar-datos-de-google-trends-con-r/
 ---
+
 En el [blog del profesor Serrano tomé contacto con el paquete RGoogleTrends](http://www.grserrano.es/wp/2010/12/ejemplo-r-explotacion-de-google-trends-1/) para leer datosde [Google Trends](http://www.google.es/trends). Tras diversos intentos y analizando bien el paquete RGoogleTrends no he sido capaz de hacerlo funcionar. Sin embargo sólo hay que leer un csv, por esto podemos emplear _read.csv_ para descargarnos los datos de Google Trends y analizarlos con R. Además el objeto resultante nos será mucho más familiar que el generado por RGoogleTrends. Para realizar esta lectura necesitamos lo siguiente:
 
-  1. Una cuenta de Google y permanecer conectado a ellas (tema de cookies)
-  2. Tener explorer como navegador predeterminado (¡?, más tema de cookies)
-  3. Poder conectar R con internet, en vuestro puesto de trabajo a lo mejor necesitáis [recordar esta entrada](https://analisisydecision.es/trucos-r-conectar-a-internet-por-el-puerto-8080/)
+1. Una cuenta de Google y permanecer conectado a ellas (tema de cookies)
+1. Tener explorer como navegador predeterminado (¡?, más tema de cookies)
+1. Poder conectar R con internet, en vuestro puesto de trabajo a lo mejor necesitáis [recordar esta entrada](https://analisisydecision.es/trucos-r-conectar-a-internet-por-el-puerto-8080/)
 
 Pues con estas condiciones ya podemos descargar datos de Google Trends. En este ejemplo vamos a analizar las búsquedas de los términos «SAS software» y r-project:
 

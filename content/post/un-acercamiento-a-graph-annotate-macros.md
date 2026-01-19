@@ -1,24 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- sas
+  - formación
+  - sas
 date: '2010-06-07'
 lastmod: '2025-07-13'
 related:
-- un-acercamiento-a-graph-proc-ganno.md
-- un-acercamiento-a-graph-sentencias-graficas.md
-- un-acercamiento-a-graph-primeros-graficos-con-sas.md
-- un-acercamiento-a-graph-ods-graphs-proc-sgplot.md
-- un-acercamiento-a-graph-proc-gchart.md
+  - un-acercamiento-a-graph-proc-ganno.md
+  - un-acercamiento-a-graph-sentencias-graficas.md
+  - un-acercamiento-a-graph-primeros-graficos-con-sas.md
+  - un-acercamiento-a-graph-ods-graphs-proc-sgplot.md
+  - un-acercamiento-a-graph-proc-gchart.md
 tags:
-- annomac
-- annotate
-- graph
-- proc ganno
+  - annomac
+  - annotate
+  - graph
+  - proc ganno
 title: Un acercamiento a GRAPH. ANNOTATE macros
 url: /blog/un-acercamiento-a-graph-annotate-macros/
 ---
+
 No quiero entrar en muchos detalles sobre el uso de %_**ANNOMAC**_. Esta macro nos permite usar las macros de _**ANNOTATE**_. Estas macros sirven para trabajar con el PROC GANNO del que ya hicimos una [pequeña revisión](https://analisisydecision.es/un-acercamiento-a-graph-proc-ganno/). Ahora me gustaría presentaros un ejemplo de uso de estas macros y sobre todo me gustaría que analizáseis el conjunto de datos SAS generado. Pongo directamente todo el código necesario:
 
 ```r

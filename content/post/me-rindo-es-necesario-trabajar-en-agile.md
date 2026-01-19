@@ -1,22 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- consultoría
-- monográficos
-- opinión
+  - consultoría
+  - monográficos
+  - opinión
 date: '2019-12-23'
 lastmod: '2025-07-13'
 related:
-- de-actuario-a-cientifico-de-datos.md
-- gestores-de-informacion-de-la-banca-comercial-profesionales-imprescindibles.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-con-r-capitulo-2-datos.md
-- de-estadistico-a-minero-de-datos-a-cientifico-de-datos.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-16-modelizacion-estadistica-conociendo-los-datos.md
+  - de-actuario-a-cientifico-de-datos.md
+  - gestores-de-informacion-de-la-banca-comercial-profesionales-imprescindibles.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-con-r-capitulo-2-datos.md
+  - de-estadistico-a-minero-de-datos-a-cientifico-de-datos.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-16-modelizacion-estadistica-conociendo-los-datos.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Me rindo, es necesario trabajar en Agile
 url: /blog/me-rindo-es-necesario-trabajar-en-agile/
 ---
+
 [![Imagen de previsualización de YouTube](https://img.youtube.com/vi/cu3K1njbYqs/0.jpg)](http://www.youtube.com/watch?v=cu3K1njbYqs)
 
 «Agile sounds good» y representa todo eso que critico. Tenía compuesta y preparada una canción que versiona el «Me cago en el amor» de Tonino Carotone, «Me cago en el Agile» se llamaba. **¿Por qué este cambio de opinión tan radical?** Porque no se trabaja de forma horizontal, se trabaja de forma vertical y cada uno hace la guerra por su cuenta. Me voy a mi terreno**Agile Analytics**
@@ -27,12 +28,12 @@ Echamos y vendemos humo. Empecemos: arquitectos, ingenieros, científicos de dat
 
 Me gustaría plantear una visión distinta de las personas y los roles dentro de un proyecto analítico:
 
-  * Jefe de proyecto (project manager sounds better). Esto ni Agile, ni cascadas, hace falta alguien que se las lleve y que reparta, no queda más remedio. Es muy importante su rol en la documentación y entregables de resultados.
-  * Científico, ingeniero o arquitecto de soluciones. Al final son los que trabajan tutelados por un jefe de proyecto.
-  * _Sponsor_ de negocio. Este es el que plantea el caso de negocio, el que pone en marcha toda la maquinaria para plantear un proyecto.
-  * Usuario de negocio. Persona que en último término va a usar las herramientas que estén desarrollando y el que tiene un problema que la analítica puede resolver. La línea entre _sponsor_ y usuario es fina.
-  * Product Owner (la prefiero en english). Esta figura es la clave porque es la verdadera figura horizontal a las anteriores, rol multidisciplinar tiene que entender el lenguaje de todas las personas implicadas y velar por la correcta administración del proyecto, el que se traga la correcta documentación e imputación de las tareas, que si el resto lo hiciera bien no sería necesario. Junto con el jefe de proyecto cuida del cumplimiento de los objetivos a corto plazo.
-  * Scrum máster. Es la persona encargada de que todo lo anterior se lleve a cabo y para ello dispone de una serie de ceremonias y de ritos ridículos pero que sin ellos todas las figuras anteriormente citadas harían lo que les viene en gana. Tiene una tarea de interlocución a más alto nivel en la organización muy importante ya que en el caso de producirse retrasos, problemas o impedimentos en el desarrollo de los proyectos debe ser capaz de eliminar esos problemas. También mide junto con negocio y dirección cual es el impacto económico de los proyectos llevados a cabo.
+- Jefe de proyecto (project manager sounds better). Esto ni Agile, ni cascadas, hace falta alguien que se las lleve y que reparta, no queda más remedio. Es muy importante su rol en la documentación y entregables de resultados.
+- Científico, ingeniero o arquitecto de soluciones. Al final son los que trabajan tutelados por un jefe de proyecto.
+- _Sponsor_ de negocio. Este es el que plantea el caso de negocio, el que pone en marcha toda la maquinaria para plantear un proyecto.
+- Usuario de negocio. Persona que en último término va a usar las herramientas que estén desarrollando y el que tiene un problema que la analítica puede resolver. La línea entre _sponsor_ y usuario es fina.
+- Product Owner (la prefiero en english). Esta figura es la clave porque es la verdadera figura horizontal a las anteriores, rol multidisciplinar tiene que entender el lenguaje de todas las personas implicadas y velar por la correcta administración del proyecto, el que se traga la correcta documentación e imputación de las tareas, que si el resto lo hiciera bien no sería necesario. Junto con el jefe de proyecto cuida del cumplimiento de los objetivos a corto plazo.
+- Scrum máster. Es la persona encargada de que todo lo anterior se lleve a cabo y para ello dispone de una serie de ceremonias y de ritos ridículos pero que sin ellos todas las figuras anteriormente citadas harían lo que les viene en gana. Tiene una tarea de interlocución a más alto nivel en la organización muy importante ya que en el caso de producirse retrasos, problemas o impedimentos en el desarrollo de los proyectos debe ser capaz de eliminar esos problemas. También mide junto con negocio y dirección cual es el impacto económico de los proyectos llevados a cabo.
 
 Esta es mi visión de un proyecto en Agile Analytics y alguno llevo encima (con cierto éxito). No entro en las ceremonias, que tienen su pena y su gloria también pero obligan a que todos los elementos participantes de un proyecto se reúnan, se escriban actas y se gestionen tareas. Si alguien quiere hablaré sobre ellas.
 

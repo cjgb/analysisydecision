@@ -1,32 +1,33 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- sas
-- trucos
-- wps
+  - formación
+  - sas
+  - trucos
+  - wps
 date: '2011-07-15'
 lastmod: '2025-07-13'
 related:
-- truco-sas-uso-de-filename-y-pipe.md
-- truco-sas-dataset-con-los-ficheros-y-carpetas-de-un-directorio.md
-- curso-de-lenguaje-sas-con-wps-lectura-de-ficheros-de-texto.md
-- trucos-sas-macrovariable-a-dataset.md
-- importar-a-sas-desde-otras-aplicaciones.md
+  - truco-sas-uso-de-filename-y-pipe.md
+  - truco-sas-dataset-con-los-ficheros-y-carpetas-de-un-directorio.md
+  - curso-de-lenguaje-sas-con-wps-lectura-de-ficheros-de-texto.md
+  - trucos-sas-macrovariable-a-dataset.md
+  - importar-a-sas-desde-otras-aplicaciones.md
 tags:
-- infile
-- input
-- pipe
-- scan
+  - infile
+  - input
+  - pipe
+  - scan
 title: Trucos SAS. Más usos de INFILE y PIPE directorios en tablas SAS
 url: /blog/trucos-sas-mas-usos-de-infile-y-pipe-directorios-en-tablas-sas/
 ---
+
 Puede interesarnos tener **directorios y subdirectorios en tablas SAS**. Es decir, tabular el resultado de un _lm_ en Unix o poner en una tabla el resultado de un _dir_ de MS DOS / Windows. Ya tengo ejemplos publicados a este respecto:
 
-  * <https://analisisydecision.es/truco-sas-uso-de-filename-y-pipe/>
-  * <https://analisisydecision.es/macros-sas-asignar-permisos-en-unix/>
+- <https://analisisydecision.es/truco-sas-uso-de-filename-y-pipe/>
+- <https://analisisydecision.es/macros-sas-asignar-permisos-en-unix/>
 
-Pero no está mal volver a poner un truco para analizar las posibilidades del **INFILE + PIPE**. Vamos a hacer un DIR de todo nuestro C:\ y sacar los archivos de mayor tamaño.
+Pero no está mal volver a poner un truco para analizar las posibilidades del **INFILE + PIPE**. Vamos a hacer un DIR de todo nuestro C:\\ y sacar los archivos de mayor tamaño.
 
 ```r
 *ESTA ES LA INSTRUCCION DIR QUE EMPLEAMOS,

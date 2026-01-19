@@ -1,22 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- excel
-- formación
-- trucos
+  - excel
+  - formación
+  - trucos
 date: '2010-11-02'
 lastmod: '2025-07-13'
 related:
-- truco-excel-application-getopenfilename-el-explorador-de-archivos-sencillo-en-macro.md
-- truco-sas-dataset-con-los-ficheros-y-carpetas-de-un-directorio.md
-- trucos-excel-unir-varios-excel-en-uno.md
-- truco-excel-abrir-multiples-libros-de-excel-en-distintas-hojas-de-un-nuevo-libro.md
-- trucos-sas-mas-usos-de-infile-y-pipe-directorios-en-tablas-sas.md
+  - truco-excel-application-getopenfilename-el-explorador-de-archivos-sencillo-en-macro.md
+  - truco-sas-dataset-con-los-ficheros-y-carpetas-de-un-directorio.md
+  - trucos-excel-unir-varios-excel-en-uno.md
+  - truco-excel-abrir-multiples-libros-de-excel-en-distintas-hojas-de-un-nuevo-libro.md
+  - trucos-sas-mas-usos-de-infile-y-pipe-directorios-en-tablas-sas.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Trucos Excel. Archivos de un directorio con una macro
 url: /blog/trucos-excel-archivos-de-un-directorio-con-una-macro/
 ---
+
 Puede resultarnos útil tener todos los archivos de un directorio en una tabla de excel. Si estamos documentando un proceso, si nos dan un gran número de ficheros y tenemos que realizar procesos repetitivos sobre ellos, si queremos tener inventariados nuestros programas,… Para esto os planteo una macro bien sencilla que recorre un directorio y nos escribe los elementos que encuentra en él. El código visual basic para la macro en Excel no puede ser más sencillo:
 
 ```r

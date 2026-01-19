@@ -1,22 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- excel
-- formación
-- trucos
+  - excel
+  - formación
+  - trucos
 date: '2016-12-17'
 lastmod: '2025-07-13'
 related:
-- truco-excel-repetir-celdas-en-funcion-de-los-valores-de-otra-celda.md
-- truco-excel-pasar-un-rango-de-varias-columnas-a-una.md
-- trucos-excel-repetir-filas-con-desref.md
-- trucos-excel-repetir-filas-o-columnas-con-la-funcion-desref.md
-- trucos-excel-transponer-con-la-funcion-desref.md
+  - truco-excel-repetir-celdas-en-funcion-de-los-valores-de-otra-celda.md
+  - truco-excel-pasar-un-rango-de-varias-columnas-a-una.md
+  - trucos-excel-repetir-filas-con-desref.md
+  - trucos-excel-repetir-filas-o-columnas-con-la-funcion-desref.md
+  - trucos-excel-transponer-con-la-funcion-desref.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Truco Excel. Repetir un campo a partir de otro que define el número de repeticiones
 url: /blog/truco-excel-repetir-un-campo-a-partir-de-otro-que-define-el-numero-de-repeticiones/
 ---
+
 En realidad necesitamos repetir filas, pero el número de repeticiones está parametrizado por otro campo. Partimos de un rango donde la primera columna es un valor que necesita ser repetido el número de filas que nos indica la segunda columna. Es una duda que planteaba un lector del blog:
 
 _Hola, a ver si me podeis ayudar,_
@@ -62,7 +63,6 @@ Next
 
 End Sub
 ```
-
 
 Se ejecutan 2 cuadros con el método Application.InputBox, en el primero seleccionamos el rango de datos **sin cabeceras** y en el segundo indicamos donde queremos que salgan los datos. Se trata de recorrer el rango y pararse a repetir las primera columna del rango tantas veces como lo indica la segunda columna. Un proceso sencillo con Visual Basic pero que sería interesante replicar con funciones de Excel, en este caso creo que INDIRECTO sería la más adecuada. En el siguiente enlace podéis descargar el ejemplo:
 

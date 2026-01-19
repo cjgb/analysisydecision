@@ -1,24 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- inteligencia artificial
-- machine learning
-- modelos
-- monográficos
-- r
+  - inteligencia artificial
+  - machine learning
+  - modelos
+  - monográficos
+  - r
 date: '2019-07-16'
 lastmod: '2025-07-13'
 related:
-- resolucion-del-juego-de-modelos-con-r.md
-- computer-vision-con-r-opencv-de-andar-por-casa.md
-- juego-de-modelos-de-regresion-con-r.md
-- machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algoritmos-de-clasificacion.md
-- trucos-r-llevar-a-sas-las-reglas-de-un-arbol-de-decision.md
+  - resolucion-del-juego-de-modelos-con-r.md
+  - computer-vision-con-r-opencv-de-andar-por-casa.md
+  - juego-de-modelos-de-regresion-con-r.md
+  - machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algoritmos-de-clasificacion.md
+  - trucos-r-llevar-a-sas-las-reglas-de-un-arbol-de-decision.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Inteligencia Arficial frente a un juego de niños. La partícula tonta de Nicolás
 url: /blog/inteligencia-arficial-frente-a-un-juego-de-ninos-la-particula-tonta-de-nicolas/
 ---
+
 Pablo Picasso decía que en aprender a pintar como los pintores del renacimiento tardó unos años pero pintar como los niños le llevó toda la vida y en ocasiones creo que hacemos las cosas difíciles porque nos creemos que hacemos cosas difíciles y entonces llega un niño de nueve años y dice «Papá un punto que primero vaya a la izquierda y luego a la derecha no es tan difícil».
 Os pongo en antecedentes, el pasado 7 de mayo fui al AWS Summit de Madrid porque Sergio Caballero iba a contar uno de los casos de uso. Los de AWS no se deben ni imaginar de las maravillas que ha hecho Sergio en el Ayuntamiento de Alcobendas porque sólo dejaron que hablara 10 minutos, muy torpes ellos, su trabajo es mejor escaparate que el planteado por Mai-Lan Tomsen, un error en el planteamiento de la jornada. El caso es que había una «competición» de vehículos que circulaban por un circuito guiados por complicados algoritmos de inteligencia artificial. Vimos algún «bucanero serio» de alguno de los participantes, ya sabemos reinforcement learning, pero reinforcement reinforcement. Otros participantes más o menos honrosos, en fin, distraído. Viendo la competición me entraron ganas de participar y al llegar a casa me siento a preparar un algoritmo que recorriera el circuito del Jarama de Madrid, no un circuito cualquiera un circuito donde yo he visto ganar carreras a Jorge Martínez Aspar.
 

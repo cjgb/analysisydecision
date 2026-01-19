@@ -1,24 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- sas
-- trucos
-- wps
+  - formación
+  - sas
+  - trucos
+  - wps
 date: '2011-11-21'
 lastmod: '2025-07-13'
 related:
-- truco-sas-transponer-tablas-con-proc-transpose-data-o-proc-sql.md
-- trucos-sas-operaciones-con-tablas-de-dimensiones-con-sas.md
-- las-cuentas-claras.md
-- truco-sas-cruce-con-formatos.md
-- trucos-sas-variables-dummy-de-una-variable-continua.md
+  - truco-sas-transponer-tablas-con-proc-transpose-data-o-proc-sql.md
+  - trucos-sas-operaciones-con-tablas-de-dimensiones-con-sas.md
+  - las-cuentas-claras.md
+  - truco-sas-cruce-con-formatos.md
+  - trucos-sas-variables-dummy-de-una-variable-continua.md
 tags:
-- proc sql
-- trasponer
+  - proc sql
+  - trasponer
 title: Trucos SAS. Trasponer con SQL para torpes
 url: /blog/trucos-sas-trasponer-con-sql-para-torpes/
 ---
+
 [](/images/2011/11/trasponer_sql1.png "trasponer_sql1.png")
 
 [![trasponer_sql1.png](/images/2011/11/trasponer_sql1.png)](/images/2011/11/trasponer_sql1.png "trasponer_sql1.png")

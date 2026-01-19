@@ -1,22 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- consultoría
-- formación
-- sas
+  - consultoría
+  - formación
+  - sas
 date: '2010-05-21'
 lastmod: '2025-07-13'
 related:
-- wps-en-el-mercado-espanol.md
-- acercamiento-a-wps-migrando-desde-sas.md
-- en-breve-revision-de-wps-clonico-de-sas.md
-- curso-de-lenguaje-sas-con-wps-introduccion-2.md
-- porque-me-gusta-r.md
+  - wps-en-el-mercado-espanol.md
+  - acercamiento-a-wps-migrando-desde-sas.md
+  - en-breve-revision-de-wps-clonico-de-sas.md
+  - curso-de-lenguaje-sas-con-wps-introduccion-2.md
+  - porque-me-gusta-r.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Curso de lenguaje SAS con WPS
 url: /blog/curso-de-lenguaje-sas-con-wps-introduccion/
 ---
+
 Paro algunas series de las que venía escribiendo para iniciar una que es de mucha importancia para el blog. Voy a acercar el lenguaje SAS a los lectores con un menor nivel. Se trata de crear un**curso introductorio al lenguaje SAS** pero con la herramienta [WPS](http://www.teamwpc.co.uk/products/wps). La metodología que seguirá el curso será muy similar a la de un manual que _colgué_ en la red hace unos años. Pero en esta ocasión emplearé un lenguaje más apropiado para el blog y mejoraré algunos puntos del manual e incidiré en otros que no quedan muy claros.
 
 En estos años he enseñado SAS a muchas personas de distintos perfiles y niveles y creo que he dado con un método más práctico y más orientado al trabajo diario. Manuales del mundo universitario hay unos pocos y mucho mejores que el mío. Sin embargo a partir de ahora emplearemos ejemplos simulados (como siempre) pero muy enfocados a los sectores donde más se utiliza SAS como pueda ser el sector asegurador, el sector bancario o el sector de las telecomunicaciones.

@@ -1,24 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- sas
-- trucos
+  - formación
+  - sas
+  - trucos
 date: '2011-02-25'
 lastmod: '2025-07-13'
 related:
-- macro-sas-variables-de-un-dataset-en-una-macro-variable.md
-- macros-sas-informe-de-un-dataset-en-excel.md
-- macro-sas-numero-de-observaciones-de-un-dataset-en-una-macro.md
-- macros-faciles-de-sas-busca-duplicados.md
-- trucos-sas-ejecutar-un-codigo-si-existe-una-tabla-o-un-fichero.md
+  - macro-sas-variables-de-un-dataset-en-una-macro-variable.md
+  - macros-sas-informe-de-un-dataset-en-excel.md
+  - macro-sas-numero-de-observaciones-de-un-dataset-en-una-macro.md
+  - macros-faciles-de-sas-busca-duplicados.md
+  - trucos-sas-ejecutar-un-codigo-si-existe-una-tabla-o-un-fichero.md
 tags:
-- '%upcase'
-- dictionary
-- scan
+  - '%upcase'
+  - dictionary
+  - scan
 title: Macros (fáciles) de SAS. Determinar si existe una variable en un dataset
 url: /blog/macros-faciles-de-sas-determinar-si-existe-una-variable-en-un-dataset/
 ---
+
 Duda que me plantearon el otro día. ¿Es posible determinar si existe una variable en un conjunto de datos SAS? Pretendían crear una macro variable que tomara el valor 1 si existía o 0 si no existía. Resolví la duda pero me guardé la macro para ponerla en el blog y así la podéis utilizar todos. De eso se trata, de compartir mis conocimientos con todos de forma altruista por ello prefiero que planteéis las dudas en el blog, no por correo. Así, entre todos, las podemos resolver. En este caso la macro es muy sencilla y tiene pocas líneas:
 
 ```r
@@ -45,7 +46,6 @@ quit;
 %mend;;
 ```
 
-
 La macro merece algún comentario. Mediante %scan separamos la librería del dataset. Siempre trabajamos con mayúsculas. Realizamos una consulta a una de las tablas de dictionary de SAS, en concreto a columns. Contamos el número de veces que puede aparecer una variable, como mucho una y es el valor que toma la macro variable existe. Por supuesto acompaño de ejemplo de uso:
 
 ```r
@@ -66,6 +66,5 @@ drop j;
 end;
 run;
 ```
-
 
 La verdad es que una vez realizado el proceso no le encuentro mucha utilidad pero ahí le tenéis por si le necesitáis en alguna ocasión. Saludos.

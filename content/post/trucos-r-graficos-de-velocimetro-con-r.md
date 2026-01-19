@@ -1,31 +1,32 @@
 ---
 author: rvaquerizo
 categories:
-- business intelligence
-- formación
-- r
+  - business intelligence
+  - formación
+  - r
 date: '2011-03-20'
 lastmod: '2025-07-13'
 related:
-- truco-r-paletas-de-colores-en-r.md
-- graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
-- trucos-r-el-paquete-classint-para-clasificar-variables-continuas.md
-- graficos-dinamicos-en-r-con-la-funcion-text.md
-- graficos-de-burbuja-con-r.md
+  - truco-r-paletas-de-colores-en-r.md
+  - graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
+  - trucos-r-el-paquete-classint-para-clasificar-variables-continuas.md
+  - graficos-dinamicos-en-r-con-la-funcion-text.md
+  - graficos-de-burbuja-con-r.md
 tags:
-- lines
-- points
-- polygon
-- rcolorbrewer
-- velocimetro
+  - lines
+  - points
+  - polygon
+  - rcolorbrewer
+  - velocimetro
 title: Trucos R. Gráficos de velocímetro con R
 url: /blog/trucos-r-graficos-de-velocimetro-con-r/
 ---
+
 Hoy toca homenaje a 2 lectores del blog. Es la primera versión de un gráfico en forma de velocímetro con R. Cuando disponga de más tiempo modificaré la versión para darle mayor vistosidad. Como es habitual el truco nos servirá para trabajar con un interesante paquete de R como _RColorBrewer_. [Un paquete que me descubrió un lector](https://analisisydecision.es/truco-r-paletas-de-colores-en-r/). El resultado final no es muy espectacular (de momento):
 
 ![velocimetro_r.png](/images/2011/03/velocimetro_r.png)
 
-De momento la versión más sencilla. Veamos el código R que representa el semicírculo y posteriormente lo analizaremos. Me gustaría que también lo ejecutéis vosotros para comentarme posibles incidencias. Se genera el gráfico como PNG en C:\temp:
+De momento la versión más sencilla. Veamos el código R que representa el semicírculo y posteriormente lo analizaremos. Me gustaría que también lo ejecutéis vosotros para comentarme posibles incidencias. Se genera el gráfico como PNG en C:\\temp:
 
 ```r
 #Datos a graficar

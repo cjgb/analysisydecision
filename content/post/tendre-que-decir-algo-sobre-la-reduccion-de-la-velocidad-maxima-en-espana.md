@@ -1,21 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- monográficos
-- sin categoría
+  - opinión
 date: '2011-02-28'
 lastmod: '2025-07-13'
 related:
-- bajar-los-tipos-a-la-japonesa-al-0.md
-- internet-of-things-en-el-sector-asegurador.md
-- con-los-vehiculos-autonomos-me-quedo-sin-trabajo-o-no.md
-- tantarantan-que-te-han-visto-pepe-tantarantan-que-te-han-visto-juan.md
-- mas-recortes-para-la-ciencia-espanola.md
+  - bajar-los-tipos-a-la-japonesa-al-0.md
+  - internet-of-things-en-el-sector-asegurador.md
+  - con-los-vehiculos-autonomos-me-quedo-sin-trabajo-o-no.md
+  - tantarantan-que-te-han-visto-pepe-tantarantan-que-te-han-visto-juan.md
+  - mas-recortes-para-la-ciencia-espanola.md
 tags:
-- sin etiqueta
+  - opinión
 title: Tendré que decir algo sobre la reducción de la velocidad máxima en España
 url: /blog/tendre-que-decir-algo-sobre-la-reduccion-de-la-velocidad-maxima-en-espana/
 ---
+
 [modo=»demagogia» on]
 
 [Me da pereza hablar de esto](http://www.elmundo.es/elmundo/2011/02/25/espana/1298641194.html). Pero tengo que decir algo sobre la rebaja de la velocidad máxima en España de 120 km/h a 110 km/h. No voy a realizar un análisis muy pormenorizado del tema. [Ya hay otros mejor preparados y cuyas opiniones si han de tenerse en cuenta](http://www.fedeablogs.net/economia/?p=9746). Desde luego la medida es una chapuza y [se puede demostrar incluso con Excel](http://upcommons.upc.edu/pfc/bitstream/2099.1/6285/5/ANEXO%20D_An%C3%A1lisis%20emisiones%20HERMES.pdf) menor velocidad no implicará menor consumo, sólo influirá en las horas de menor tráfico, en las horas donde menos combustible se consume. [Imagino que harán algo de caja con la medida](http://www.eleconomista.es/economia/noticias/2860555/02/11/Los-conductores-gastaran-mas-en-multas-de-lo-que-ahorraran-en-gasolinaLos-conductores-gastaran-mas-en-multas-de-lo-que-ahorraran-en-gasolina.html), que nunca viene mal para [mantener el parque de coches oficiales](http://www.eleconomista.es/economia/noticias/2185123/05/10/sextos-del-mundoen-coches-oficiales.html), a ver si lideramos algo como el consumo en vehículos oficiales. Señores políticos, ¿saben lo que es el [teletrabajo](http://es.wikipedia.org/wiki/Teletrabajo)? En fin, lo que de verdad me preocupa es,**¿cómo hemos llegado a esto? ¿Es necesario tomar medidas para reducir el gasto?**

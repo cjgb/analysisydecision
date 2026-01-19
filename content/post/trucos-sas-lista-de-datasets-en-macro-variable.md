@@ -1,25 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- sas
-- trucos
+  - formación
+  - sas
+  - trucos
 date: '2009-02-05'
 lastmod: '2025-07-13'
 related:
-- macro-sas-variables-de-un-dataset-en-una-macro-variable.md
-- trucos-sas-union-de-multiples-tablas-sas-con-un-nombre-parecido.md
-- trucos-sas-eliminar-etiquetas-en-los-conjunto-de-datos-sas.md
-- trucos-sas-macrovariable-a-dataset.md
-- truco-sas-tablas-de-una-libreria-en-una-macro-variable.md
+  - macro-sas-variables-de-un-dataset-en-una-macro-variable.md
+  - trucos-sas-union-de-multiples-tablas-sas-con-un-nombre-parecido.md
+  - trucos-sas-eliminar-etiquetas-en-los-conjunto-de-datos-sas.md
+  - trucos-sas-macrovariable-a-dataset.md
+  - truco-sas-tablas-de-una-libreria-en-una-macro-variable.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Trucos SAS. Lista de datasets en macro variable
 url: /blog/trucos-sas-lista-de-datasets-en-macro-variable/
 ---
-Un uso frecuente del proc sql es la generación de macro variables. En este ejemplo vamos a crear una macro variable con el nombre de los dataset de una librería SAS que empiecen por un determinado sufijo. También es un ejemplo bastante práctico del uso de las vistas de SASHELP. Creo que es un ejemplo bastante sencillo y sobre él iremos generando nuevos trucos que espero puedan serviros. Para entender mejor el truco vamos a generar 20 ficheros “ficticios” con variables aleatorias en el directorio c:\temp de nuestro PC:
 
-
+Un uso frecuente del proc sql es la generación de macro variables. En este ejemplo vamos a crear una macro variable con el nombre de los dataset de una librería SAS que empiecen por un determinado sufijo. También es un ejemplo bastante práctico del uso de las vistas de SASHELP. Creo que es un ejemplo bastante sencillo y sobre él iremos generando nuevos trucos que espero puedan serviros. Para entender mejor el truco vamos a generar 20 ficheros “ficticios” con variables aleatorias en el directorio c:\\temp de nuestro PC:
 
 ```r
 *GENERAMOS 2 DATASETS ALEATORIOS;
@@ -56,6 +55,7 @@ run;
 ```r
 
 ```
+
 `%tablas_aleatorias;`
 
 Esta macro hace un bucle y genera 20 datasets aleatorios. A continuación necesitamos crear un dataset que sea la concatenación de los 20 generados anteriormente. Podríamos poner los 20:
@@ -104,7 +104,7 @@ set &lista_tablas.;
 run;
 ```
 
-``
+\`\`
 
 La macro variable lista_tablas contiene todos los dataset de la librería temp que empiezan por el sufijo aleatorio. Evidentemente podemos modificar el sufijo e incluso la libería. Incluso podemos crear una macro a medida:
 

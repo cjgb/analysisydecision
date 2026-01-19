@@ -1,22 +1,23 @@
 ---
 author: cgbellosta
 categories:
-- formación
+  - formación
 date: '2009-12-08'
 lastmod: '2025-07-13'
 related:
-- arboles-de-decision-con-sas-base-con-r-por-supuesto.md
-- aprende-pyspark-sin-complicaciones.md
-- cloud-words-con-r-trabajar-con-la-api-del-europe-pmc-con-r.md
-- porque-me-gusta-r.md
-- manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-i.md
+  - arboles-de-decision-con-sas-base-con-r-por-supuesto.md
+  - aprende-pyspark-sin-complicaciones.md
+  - cloud-words-con-r-trabajar-con-la-api-del-europe-pmc-con-r.md
+  - porque-me-gusta-r.md
+  - manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-i.md
 tags:
-- amazon
-- ec2
-- r
+  - amazon
+  - ec2
+  - r
 title: Probando R sobre el EC2 de Amazon
 url: /blog/probando-r-sobre-el-ec2-de-amazon/
 ---
+
 Hacía tiempo que quería probarlo. Menos en las grutas pobladas de seres del siglo anterior, todo el mundo habla del [EC2](http://aws.amazon.com/ec2/ "EC2 de Amazon").
 
 Entre otras muchas cosas que iré explorando más adelante, el EC2 de Amazon te alquila un servidor por horas. También te ofrece [espacio de disco](http://aws.amazon.com/s3/ "Amazon S3") a unos [precios de risa](http://aws.amazon.com/s3/#pricing "Precios Amazon S3") y otras cosas más que bien podrían mandar al paro a departamentos enteros de IT. Pero hoy, de momento, sólo me interesaba el servidor, alquilar un servidor por un rato.
@@ -29,9 +30,9 @@ Primero me he dado de alta en el servicio a través de [http://aws.amazon.com](h
 
 En mi primer paseo por EC2 me he apoyado en dos páginas, una de [Ubuntu](https://help.ubuntu.com/community/EC2StartersGuide "EC2 Guide for Ubuntu") y [otra más genérica](http://linuxsysadminblog.com/2009/06/howto-get-started-with-amazon-ec2-api-tools/ "EC2 for Linux"). Para interactuar con los servidores de Amazon hacen falta unos certificados de seguridad con claves privada y pública, etc. que esos tutoriales explican cómo gestionar mejor de lo que podría hacer yo. Pero en esencia, lo que hay que hacer es lo siguiente:
 
-1) Descargarse los ficheros de los certificados (el certificado y la clave) de la sección _«Security Credentials»_ de la página de Amazon.
+1. Descargarse los ficheros de los certificados (el certificado y la clave) de la sección _«Security Credentials»_ de la página de Amazon.
 
-2) Guardarlos en el lugar adecuado y crear una llave privada usando el comando `ec2-add-keypair`. Yo la he llamado `ec2-keypair` (lo hago constar para que queden claros comandos posteriores).
+1. Guardarlos en el lugar adecuado y crear una llave privada usando el comando `ec2-add-keypair`. Yo la he llamado `ec2-keypair` (lo hago constar para que queden claros comandos posteriores).
 
 En Amazon EC2 hay muchos tipos distintos de servidores dependiendo del _hardware_ , del _software_ y de la ubicación. Ubicaciones hay tres: dos en EE.UU. y otra en Irlanda. Plataformas de _hardware_ , también, otras tres: buena (1 núcleo de 32 bits, 1,7GB de RAM y 160GB de disco por 10 céntimos de dólar la hora), mejor y requetemejor (8 CPUs de 64 bits, 15GB de RAM y 1.690GB de disco por 0.76 céntimos de dólar por hora).
 

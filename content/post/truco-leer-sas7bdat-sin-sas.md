@@ -1,21 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- sas
-- trucos
+  - sas
+  - trucos
 date: '2010-05-05'
 lastmod: '2025-07-13'
 related:
-- lectura-de-ficheros-sas7bdat-de-sas-directamente-con-r.md
-- sigo-migrando-de-sas-a-wps.md
-- crear-archivo-csv-desde-python.md
-- importar-a-sas-desde-otras-aplicaciones.md
-- acercamiento-a-wps-migrando-desde-sas.md
+  - lectura-de-ficheros-sas7bdat-de-sas-directamente-con-r.md
+  - sigo-migrando-de-sas-a-wps.md
+  - crear-archivo-csv-desde-python.md
+  - importar-a-sas-desde-otras-aplicaciones.md
+  - acercamiento-a-wps-migrando-desde-sas.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: ¿Truco? Leer .sas7bdat sin SAS
 url: /blog/c2bftruco-leer-sas7bdat-sin-sas/
 ---
+
 Me han pasado una tabla SAS y no sé como llevármela a SPSS. Este problema es habitual y ha traído de cabeza a más de uno. Es lo que tienen estas herramientas tan propietarias, si en tu organización tienen WPS (bueno bonito y barato) esto no pasa. En fin, me ha llegado esta cuestión y voy a plantearos una posible forma de resolverla. Podríamos usar los formatos XPORT, la persona que me pasa la tabla emplea el libname xport y me envía un fichero .xpt, sin embargo esto no pasa. Casi siempre nos mandan el .sas7bdat y tenemos un problema.
 
 Bueno, pues quiero plantearos una posible solución a esta contingencia. Es una solución de emergencia y que espero funcione. Se trata de descargarnos la versión gratuita del JMP de SAS ([por ejemplo de softonic](http://jmp.softonic.com/)) y abrir la tabla SAS .sas7bdat, después podemos guardar como .txt y ya podremos leer la tabla en cuestión.

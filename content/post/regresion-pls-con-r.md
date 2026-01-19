@@ -1,22 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- modelos
-- r
+  - formación
+  - modelos
+  - r
 date: '2014-08-18'
 lastmod: '2025-07-13'
 related:
-- regresion-ridge-o-contraida-con-r.md
-- manual-curso-introduccion-de-r-capitulo-14-introduccion-al-calculo-matricial-con-analisis-de-componentes-principales.md
-- manual-curso-introduccion-de-r-capitulo-10-funciones-graficas-en-regresion-lineal.md
-- manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
-- primeros-pasos-con-regresion-no-lineal-nls-con-r.md
+  - regresion-ridge-o-contraida-con-r.md
+  - manual-curso-introduccion-de-r-capitulo-14-introduccion-al-calculo-matricial-con-analisis-de-componentes-principales.md
+  - manual-curso-introduccion-de-r-capitulo-10-funciones-graficas-en-regresion-lineal.md
+  - manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
+  - primeros-pasos-con-regresion-no-lineal-nls-con-r.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Regresión PLS con R
 url: /blog/regresion-pls-con-r/
 ---
+
 El tema que estoy estudiando estos días es la regresión por mínimos cuadrados parciales, partial least squares (PLS). Para documentarme teóricamente y conocer las principales posibilidades de R [estoy empleando este documento](http://www.jstatsoft.org/v18/i02/paper). Para argumentar el uso de esta técnica de nuevo partimos del modelo lineal general Y = X • Beta + Error donde Beta = inv(X’X) * X’Y y ya analizamos los trastornos que nos provoca la inv(X’X) cuando hay columnas de X que son linealmente dependientes, cuando hay multicolinealidad. En ese caso empleábamos la regresión ridge. Bueno, imaginemos esta situación, tenemos más variables que observaciones. Entonces si que no somos capaces de tener una solución para la inv(X’X). Para este problema contamos con los mínimos cuadrados parciales.
 
 Como siempre se trata de estimar Y a partir de X con la salvedad de que X tiene más columnas que filas y el modelo de mínimos cuadrados ordinarios no tiene solución. En este caso lo primero que se nos puede ocurrir es realizar un análisis de componentes principales de X para reducir la dimensionalidad. Estaríamos ante la regresión por componentes principales, principal components regression (PCR). Esta técnica está íntimamente ligada a la PLS. Lo que haremos será estimar Y a partir de las componentes principales de X. Por definición las componentes principales sirven para reducir la dimensionalidad capturando la mayor varianza de los datos, se seleccionan matricialmente las componentes de mayor a menor contribución a la variabilidad de los datos. Si transformamos la matriz X = UdV donde U’U = V’V = I son los vectores singulares y d es la matriz con los valores singulares ya podremos obtener una solución por mínimos cuadrados.
@@ -37,14 +38,12 @@ entreno = entreno[,-10]
 library(pls)
 ```
 
-
 Descargamos los datos de una url y creamos el objeto cancer. Disponemos de una variable que nos permite distinguir los datos de entrenamiento de los datos de test. Nuestra variable dependiente de nuevo será el logaritmo de psa, del nivel del antígeno prostático. El primer modelo que vamos a realizar será la regresión por componentes principales, con el paquete pls esta tarea se lleva a cabo con la función **pcr** :
 
 ```r
 modelo_pcr <- pcr(lpsa~. , ncomp=8, data=entreno, validation="LOO")
 summary(modelo_pcr)
 ```
-
 
 Creamos un modelo con el número máximo de componentes 8 y realizamos una validación cruzada con el método LOO leave-one-out, dejando uno fuera. Típico método de validación cuando usas cuatro observaciones guarras. Por defecto pls tiene CV como método de validación, que realiza una validación cruzada más simple, también podemos emplear la opción none si no deseamos que se realice. Lo que es evidente es que necesitamos determinar el número más apropiado, por favor no emplear el término óptimo, de componentes. Vamos a graficar la raíz del cuadrado de los errores para determinar que número de componentes seleccionamos:
 
@@ -53,13 +52,11 @@ plot(RMSEP(modelo_pcr), legendpos = "topright",
 main="Raiz del error para el modelo con PCR")
 ```
 
-
 [![](/images/2014/08/regresion-pls1-300x295.png)](/images/2014/08/regresion-pls1.png)Parece que 5 componentes pueden ser adecuados, aunque se sigue produciendo un descenso en la raíz del error pero en menor medida. Con estas matizaciones nuestro modelo final quedaría:
 
 ```r
 modelo_pcr <- pcr(lpsa~. , ncomp=5, data=entreno, validation="none")
 ```
-
 
 Analizamos su comportamiento predictor:
 
@@ -72,7 +69,6 @@ test = test[,-10]
 pred_pcr = predict(modelo_pcr,ncomp=5,newdata=test)
 sum((test$lpsa-pred_pcr)^2)
 ```
-
 
 La suma del cuadrado del error es 16.8 no es un modelo que mejore a un modelo de regresión por mínimos cuadrados ordinarios. En cualquier caso se recomienda tipificar las variables a la hora de realizar el modelo. Por defecto los algoritmos que incluye el paquete pls corrigen los datos por la media, pero si añadimos la opción sclale=TRUE además de corregir por la media dividiremos por la desviación típica:
 
@@ -88,7 +84,6 @@ pred_pcr2 <- predict(modelo_pcr2,ncomp=5,newdata=test)
 sum((test$lpsa-pred_pcr2)^2)
 ```
 
-
 La suma del cuadrado de los errores queda en 16.2 mejorando ligeramente el resultado anterior pero sin mejorar el resultado de mínimos cuadrados ordinarios. Evaluemos ahora el modelo PLS con los mismos datos:
 
 ```r
@@ -97,6 +92,7 @@ entreno = entreno[,-10]
 #install.packages("pls")
 library(pls)
 ```
+
 0
 
 ![](/images/2014/08/regresion-pls2-300x298.png)
@@ -109,6 +105,7 @@ entreno = entreno[,-10]
 #install.packages("pls")
 library(pls)
 ```
+
 1
 
 La suma de cuadrados del error está en 15 el modelo mejora al anterior pero no mejora a los resultados del modelo por regresión ridge. Es posible que nos interese analizar el comportamiento de los parámetros que obtenemos con el modelo. Para ello el paquete pls nos permite graficar los parámetros de la regresión en función del número de componentes:
@@ -119,6 +116,7 @@ entreno = entreno[,-10]
 #install.packages("pls")
 library(pls)
 ```
+
 2
 
 [![](/images/2014/08/regresion-pls3-300x300.png)](/images/2014/08/regresion-pls3.png)
@@ -130,6 +128,7 @@ entreno = entreno[,-10]
 #install.packages("pls")
 library(pls)
 ```
+
 3
 
 ![](/images/2014/08/regresion-pls4-300x295.png)

@@ -1,23 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- sas
+  - formación
+  - sas
 date: '2010-04-07'
 lastmod: '2025-07-13'
 related:
-- un-acercamiento-a-graph-annotate-macros.md
-- un-acercamiento-a-graph-sentencias-graficas.md
-- un-acercamiento-a-graph-primeros-graficos-con-sas.md
-- un-acercamiento-a-graph-proc-gchart.md
-- un-acercamiento-a-graph-ods-graphs-proc-sgplot.md
+  - un-acercamiento-a-graph-annotate-macros.md
+  - un-acercamiento-a-graph-sentencias-graficas.md
+  - un-acercamiento-a-graph-primeros-graficos-con-sas.md
+  - un-acercamiento-a-graph-proc-gchart.md
+  - un-acercamiento-a-graph-ods-graphs-proc-sgplot.md
 tags:
-- annotate
-- graph
-- proc ganno
+  - annotate
+  - graph
+  - proc ganno
 title: Un acercamiento a GRAPH. PROC GANNO
 url: /blog/un-acercamiento-a-graph-proc-ganno/
 ---
+
 Uso del PROC GANNO de SAS:
 
 El procedimiento SAS GANNO crea gráficos a partir de conjuntos de datos SAS ANNOTATE. Estos conjuntos de datos SAS ANNOTATE recogen las distintas formas o cuadros de texto que tu quieres representar. Estos conjuntos de datos han de tener unas variables que son las que recogen las formas a pintar, imprescindibles son:
@@ -28,11 +29,11 @@ length function style color 8 text 25;
 retain hsys xsys ysys '3';
 ```
 
-  * FUNCTION: En esta variable recogemos la forma a pintar o la acción a realizar.
-  * STYLE: fuente del texto.
-  * COLOR: color de la forma o el texto.
-  * TEXT: texto.
-  * HSYS XSYS YSYS: Son variables del sistema donde indicas el área donde dibujas.
+- FUNCTION: En esta variable recogemos la forma a pintar o la acción a realizar.
+- STYLE: fuente del texto.
+- COLOR: color de la forma o el texto.
+- TEXT: texto.
+- HSYS XSYS YSYS: Son variables del sistema donde indicas el área donde dibujas.
 
 Con estas variables hemos de formar el ANNOTATE que será el que posteriormente nos sacará en la ventana gráfica el proc ganno.Veamos un ejemplo de annotate:
 

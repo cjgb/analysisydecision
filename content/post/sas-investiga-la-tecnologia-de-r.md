@@ -1,24 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- business intelligence
-- sin categoría
+  - business intelligence
 date: '2009-04-12'
 lastmod: '2025-07-13'
 related:
-- sas-comienza-a-fijarse-en-r.md
-- integracion-de-r-con-sas-spss-y-otros.md
-- el-futuro-del-analisis-de-datos-pasa-por-r.md
-- porque-me-gusta-r.md
-- sas-global-forum-2009.md
+  - sas-comienza-a-fijarse-en-r.md
+  - integracion-de-r-con-sas-spss-y-otros.md
+  - el-futuro-del-analisis-de-datos-pasa-por-r.md
+  - porque-me-gusta-r.md
+  - sas-global-forum-2009.md
 tags:
-- gnu
-- software comercial
+  - gnu
+  - software comercial
+  - sas
+  - r
 title: SAS investiga la tecnología de R
 url: /blog/sas-investiga-la-tecnologia-de-r/
 ---
-Sacado de[ http://www.decisionstats.com/](http://www.decisionstats.com/) muy interesante:
 
+Sacado de[ http://www.decisionstats.com/](http://www.decisionstats.com/) muy interesante:
 
 A SAS spokesperson has confirmed to this blog that they have invested in the R –Core project to help build next generation algorithms . The new R powered SAS would not be sold as licenses but would be hosted on Amazon EC 2, thus users pay only for the time of usage.The shift to SaaS is expected to boost SAS’s revenue while at the same time helping small consultants and big clients like banks to cut costs.The official announcement had been planned for release during the RUser conference however the announcement was moved earlier due to rumors building up early this week due to leakages from SAS R and D ( called birdie leakages). The size of the investment is expected to be more than 20 million USD , the exact amount is expected to be disclosed later.The R Core team would be using this for much needed investments in GUI development and up gradation of the website besides offering R courses in East European universities. An expectation of an annual prize for R User of The Year is also expected to take place.
 

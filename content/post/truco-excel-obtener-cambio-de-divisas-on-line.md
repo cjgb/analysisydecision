@@ -1,26 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- excel
-- trucos
+  - excel
+  - trucos
 date: '2008-07-17'
 lastmod: '2025-07-13'
 related:
-- trucos-excel-modificar-la-configuracion-regional-con-visual-basic.md
-- trucos-excel-pasar-de-caracter-a-numerico-con-formulas.md
-- truco-sas-sas-y-dde-aliados-de-excel.md
-- truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
-- trucos-excel-y-sas-complemento-para-cambiar-la-configuracion-regional.md
+  - trucos-excel-modificar-la-configuracion-regional-con-visual-basic.md
+  - trucos-excel-pasar-de-caracter-a-numerico-con-formulas.md
+  - truco-sas-sas-y-dde-aliados-de-excel.md
+  - truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
+  - trucos-excel-y-sas-complemento-para-cambiar-la-configuracion-regional.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Truco Excel. Obtener cambio de divisas on-line
 url: /blog/truco-excel-obtener-cambio-de-divisas-on-line/
 ---
+
 El siguiente truco Excel es muy sencillo. Se trata de una consulta web que nos permite obtener el cambio de divisas a Euro casi practicamente on-line. La consulta se realiza sobre la web [www.finanzas.com](http://www.finanzas.com/) sitio que además quiero recomendar, desde él sigo la imparable caida de mis valores…
 
 La consulta es la siguiente:
-
-
 
 ```r
 Sub cambio_divisas()

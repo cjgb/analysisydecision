@@ -1,26 +1,27 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- r
-- trucos
+  - formación
+  - r
+  - trucos
 date: '2010-12-07'
 lastmod: '2025-07-13'
 related:
-- trabajando-con-factores-en-r-attach-frente-a-within.md
-- truco-r-eval-parse-y-paste-para-automatizar-codigo.md
-- trucos-simples-para-rstats.md
-- graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
-- informes-con-r-en-html-comienzo-con-r2html-i.md
+  - trabajando-con-factores-en-r-attach-frente-a-within.md
+  - truco-r-eval-parse-y-paste-para-automatizar-codigo.md
+  - trucos-simples-para-rstats.md
+  - graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
+  - informes-con-r-en-html-comienzo-con-r2html-i.md
 tags:
-- as.item
-- bucle
-- car
-- memisc
-- recode
+  - as.item
+  - bucle
+  - car
+  - memisc
+  - recode
 title: Recodificar el valor de un factor en R
 url: /blog/recodificar-el-valor-de-un-factor-en-r/
 ---
+
 Tras leer una duda planteada en la [lista de R-Help en español](https://stat.ethz.ch/mailman/listinfo/r-help-es) me he animado a crear una entrada acerca de la recodificación de factores en R. Así dejo recogido algún **código/truco** que puede serviros en vuestro trabajo con R y que este pequeño problema no afecte a vuestra productividad. Además os acerco a la función _recode_ del paquete _car_. Pero en primer lugar os planteo como recodificar factores empleando IF/ELSE:
 
 ```r

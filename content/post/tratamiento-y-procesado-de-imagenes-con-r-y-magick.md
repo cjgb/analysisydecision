@@ -1,22 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- monográficos
-- r
+  - formación
+  - monográficos
+  - r
 date: '2020-09-01'
 lastmod: '2025-07-13'
 related:
-- computer-vision-con-r-opencv-de-andar-por-casa.md
-- truco-r-anadir-una-marca-de-agua-a-nuestro-grafico-con-ggplot2.md
-- inteligencia-arficial-frente-a-un-juego-de-ninos-la-particula-tonta-de-nicolas.md
-- analisis-del-discurso-de-navidad-del-rey-de-espana-2013.md
-- los-principales-problemas-de-los-espanoles-animaciones-con-r-y-gganimate.md
+  - computer-vision-con-r-opencv-de-andar-por-casa.md
+  - truco-r-anadir-una-marca-de-agua-a-nuestro-grafico-con-ggplot2.md
+  - inteligencia-arficial-frente-a-un-juego-de-ninos-la-particula-tonta-de-nicolas.md
+  - analisis-del-discurso-de-navidad-del-rey-de-espana-2013.md
+  - los-principales-problemas-de-los-espanoles-animaciones-con-r-y-gganimate.md
 tags:
-- magick
+  - magick
 title: Tratamiento y procesado de imágenes con R y magick
 url: /blog/tratamiento-y-procesado-de-imagenes-con-r-y-magick/
 ---
+
 [![](/images/2020/09/sean.gif)](/images/2020/09/sean.gif)
 
 Estoy preparando la batalla entre geometría e inteligencia artificial, batalla que está perdida porque tengo que dar de comer a mis chavales y si tengo que ir a vender un producto queda más comercial contar lo que se supone que hace la inteligencia artificial y no contar lo que hacen vectores, direcciones, puntos en el espacio,… eso lo cuentan en la educación secundaria y no es «disruptivo». Sin embargo, aprovecho para contar historia del abuelo, el único proyecto serio basado en inteligencia artificial en el que he estado involucrado se resolvió gracias a la geometría y a las mejoras que se propusieron en el reconocimiento óptico, las redes convolucionales nos provocaron un problema. Inicialmente es mejor plantear una solución sencilla.
@@ -49,7 +50,6 @@ image_info(sean)
 plot(sean)
 ```
 
-
 Tenemos 5 imágenes de Sean Connery en una así pues será necesario seleccionar y estandarizar cada una de las imágenes para que la unión sea más homogénea:
 
 ```r
@@ -66,7 +66,6 @@ sean_5 <- sean %>% image_crop( "400x450+1635+0") %>% image_scale("x300") %>%
 plot(sean_1)
 ```
 
-
 Con image_crop vamos a cortar las imágenes del siguiente modo width x height + donde empiezo por la izquierda + donde empiezo por arriba. En el momento en el que habéis cortado 3 imágenes le cogéis el aire enseguida, no cuesta. Con image_scale le damos a todas las imágenes la misma escala, para nuestro ejercicio puede ser redundante pero está bien que lo sepamos. Por último vamos a añadir un borde con image_border es una cuestión estética.
 
 Ya tenemos 5 imágenes similares y podemos realizar una animación pasando una tras otra:
@@ -77,6 +76,5 @@ image_resize(c(sean_1, sean_2, sean_3, sean_4, sean_5), '300x300!') %>%
   image_morph() %>%
   image_animate(fps=5)
 ```
-
 
 image_resize ya realiza la homogeneización de las 5 imágenes de Sir Connery, por eso comentaba la redundancia. Ponemos un fondo con image_background, la combinación entre image_morph e image_animate realiza la animación donde hemos puesto la opción fps (frames por segundo) para que no pasen tan rápido. Desde mi punto de vista la forma más sencilla de realizar animaciones. Por cierto, a la hora de guardar la imagen lo hago desde el navegador.

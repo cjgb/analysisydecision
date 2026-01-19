@@ -1,22 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- monográficos
-- sas
+  - formación
+  - monográficos
+  - sas
 date: '2009-11-03'
 lastmod: '2025-07-13'
 related:
-- en-merge-mejor-if-o-where.md
-- laboratorio-de-codigo-sas-vistas-proc-means-vs-proc-sql.md
-- truco-sas-cruce-con-formatos.md
-- laboratorio-de-codigo-sas-ordenaciones-con-hash-vs-proc-sort.md
-- curso-de-lenguaje-sas-con-wps-sentencias-condicionales-if-then.md
+  - en-merge-mejor-if-o-where.md
+  - laboratorio-de-codigo-sas-vistas-proc-means-vs-proc-sql.md
+  - truco-sas-cruce-con-formatos.md
+  - laboratorio-de-codigo-sas-ordenaciones-con-hash-vs-proc-sort.md
+  - curso-de-lenguaje-sas-con-wps-sentencias-condicionales-if-then.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Laboratorio de código SAS. Comparativa entre IF y WHERE
 url: /blog/laboratorio-de-codigo-sas-comparativa-entre-if-y-where/
 ---
+
 Inicio hoy otra serie de mensajes para analizar el uso óptimo del código SAS. La intención es comparar distintas ejecuciones y obtener un pequeño reporte con la metodología y el tiempo empleado en su ejecución. Para evitar el efecto que pueda causar la concurrencia en un servidor con SAS se realizarán múltiples ejecuciones. He intentado que el código que utilizo para comparar las ejecuciones sea lo más sencillo posible. Soy consciente que se puede usar un código más «profesional» o un código más «sencillo» pero lo que planteo a continuación me parece la mejor solución. La idea es hacer una macro que haga N ejecuciones para evitar el efecto concurrencia. Cada método tendrá una ejecución, esta ejecución se controlará con una macrovariable con la hora del sistema. Esta mv se guardará en una tabla SAS junto con un nombre que le damos al método y la ejecución realizada. Al final lo más sencillo es ordenar por el tiempo de ejecución e imprimir el resultado.
 
 Para iniciar esta serie comenzamos con la comparativa entre IF y WHERE, ya hicimos algo parecido dentro de un MERGE, pero ahora vamos a hacerlo con y sin índices. Los métodos a emplear serán:
@@ -170,6 +171,7 @@ proc delete data=dos dos_prima tres cuatro cinco; run;
 
 %test(4);
 ```
+
 `Ya sólo ordeno el dataset test y hago un PROC PRINT:`
 
 ```r

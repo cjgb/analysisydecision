@@ -1,21 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- consultoría
-- data mining
+  - consultoría
+  - data mining
 date: '2008-05-05'
 lastmod: '2025-07-13'
 related:
-- proyecto-text-mining-con-excel-iv.md
-- proyecto-text-mining-con-excel-ii.md
-- google-mining-analisis-de-las-paginas-indexadas-i.md
-- proyecto-text-mining-con-excel-pasa-a-ser-google-mining.md
-- proyecto-text-mining-con-excel-i.md
+  - proyecto-text-mining-con-excel-iv.md
+  - proyecto-text-mining-con-excel-ii.md
+  - google-mining-analisis-de-las-paginas-indexadas-i.md
+  - proyecto-text-mining-con-excel-pasa-a-ser-google-mining.md
+  - proyecto-text-mining-con-excel-i.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Proyecto. Text Mining con Excel (III)
 url: /blog/proyecto-text-mining-con-excel-iii/
 ---
+
 Para hacer mi proceso de Text Mining necesito un «tablón» de entrada. Sin información bien tabulada es imposible encontrar patrones sintácticos ni palabras que me ayuden a encontrar mi oportunidad de negocio dentro de la formación en Business Intelligence. Para la realización de este tablón de entrada emplearé macros de Excel que abran resultados de búsquedas en Google y generen tantas hojas en mi archivo como páginas de búsqueda obtenga. Posteriormente estas hojas las uniré en una sóla y está será mi tablón de partida para mi trabajo.
 
 Todas las web de búsquedas de Google que abrimos con Excel contienen una sóla hoja que se llama «search» para evitar problemas creo un archivo excel (_min._ xls) que a su vez abrirá las búsquedas y genero una macro con la que abro dos búsquedas y las añado a mi fichero base _min._ Veamos el código Visual Basic que he generado tras algunos retoques:
@@ -76,7 +77,7 @@ After:=Workbooks("min.xls").Sheets(2)
 
 Indicamos el punto en el que copiamos la hoja que ha abierto la búsqueda. Siempre irá creciendo en una unidad. Con todo esto creamos el siguiente bucle:
 
-``
+\`\`
 
 Sub cierra()
 Sheets("search").Select

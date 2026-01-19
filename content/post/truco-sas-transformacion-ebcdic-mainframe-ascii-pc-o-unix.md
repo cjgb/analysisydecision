@@ -1,27 +1,28 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- sas
+  - formación
+  - sas
 date: '2009-07-15'
 lastmod: '2025-07-13'
 related:
-- truco-sas-macro-buscar-y-reemplazar-en-texto.md
-- truco-sas-leer-datos-de-excel-con-sas-con-dde.md
-- trucos-sas-mas-usos-de-infile-y-pipe-directorios-en-tablas-sas.md
-- importar-a-sas-desde-otras-aplicaciones.md
-- curso-de-lenguaje-sas-con-wps-lectura-de-ficheros-de-texto.md
+  - truco-sas-macro-buscar-y-reemplazar-en-texto.md
+  - truco-sas-leer-datos-de-excel-con-sas-con-dde.md
+  - trucos-sas-mas-usos-de-infile-y-pipe-directorios-en-tablas-sas.md
+  - importar-a-sas-desde-otras-aplicaciones.md
+  - curso-de-lenguaje-sas-con-wps-lectura-de-ficheros-de-texto.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Truco SAS. Transformación EBCDIC (Mainframe)
 url: /blog/truco-sas-transformacion-ebcdic-mainframe-ascii-pc-o-unix/
 ---
+
 Hay ocasiones en las que tenemos que leer directamente de entornos Mainframe ficheros DB2, conocemos la estructura de esos ficheros y necesitamos leerlos vía FTP. Para ello tenemos que tener en cuenta la transformación EBCDIC (Extended Binary Coded Decimal Interchange Code ) a ASCII (American Standard Code for Information Interchange), esta transformación requiere las siguientes equivalencias entre formatos:
 
-  * Decimales empaquetados: PD5. -> S370FPD5.
-  * Enteros binarios: IB5. -> S370FIB5.
-  * Caracter: 5\. ->EBCDIC5.
-  * Numérico con 0: Z5. -> S370FZDU5.
+- Decimales empaquetados: PD5. -> S370FPD5.
+- Enteros binarios: IB5. -> S370FIB5.
+- Caracter: 5. ->EBCDIC5.
+- Numérico con 0: Z5. -> S370FZDU5.
 
 De modo que para leer el fichero del Mainframe haremos:
 

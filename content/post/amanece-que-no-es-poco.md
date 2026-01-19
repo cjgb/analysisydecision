@@ -1,21 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- banca
-- consultoría
+  - banca
+  - consultoría
 date: '2008-12-23'
 lastmod: '2025-07-13'
 related:
-- a-mi-me-preocupa-el-pequeno-ahorrador.md
-- lecciones-de-economia-de-un-ignorante-no-me-dan-hipoteca.md
-- una-fabulilla-sobre-prim-con-multiples-moralejas.md
-- la-confianza-en-el-sector-financiero.md
-- lecciones-de-economia-de-un-ignorante-solucion-trabajar-mas-y-cobrar-menos.md
+  - a-mi-me-preocupa-el-pequeno-ahorrador.md
+  - lecciones-de-economia-de-un-ignorante-no-me-dan-hipoteca.md
+  - una-fabulilla-sobre-prim-con-multiples-moralejas.md
+  - la-confianza-en-el-sector-financiero.md
+  - lecciones-de-economia-de-un-ignorante-solucion-trabajar-mas-y-cobrar-menos.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Amanece que no es poco
 url: /blog/amanece-que-no-es-poco/
 ---
+
 Hace 20 años que se rodó una película subabsurda y fantástica llamada: Amanece que no es poco. No me corresponde escribir sobre cine pero esta genial película tiene uno de los mejores diálogos de la historia (sacado de <http://es.wikipedia.org/wiki/Amanece,_que_no_es_poco>): «Se te está muriendo divinamente, te lo juro! Tenía ganas de que vinieras para poder decírtelo. Puedes estar orgulloso, ¡de verdad!, de los años que llevo de médico nunca había visto a nadie morirse tan bien como se está muriendo tu padre. Qué irse, qué apagarse, con qué parsimonia. Estoy disfrutando que no te lo puedes ni imaginar… — ¿Y él sufre? — Por fuerza, seguro que sí, ¿no ves que se le está yendo la vida?»
 
 Este diálogo se lo podemos aplicar a negocio bancario: (El banquero al político) «El sistema financiero se está muriendo divinamente, ¡te lo juro! Tenía ganas de que vinieras para poder decírtelo. Puedes estar orgulloso, ¡de verdad!, de todas las crisis financieras nunca había visto ninguna como esta. Qué irse, qué apagarse, con qué parsimonia. Los analistas disfrutan que no te lo puedes ni imaginar… — ¿Y él mercado sufre? — Por fuerza, seguro que sí, ¿no ves que se le están desmoronando a todos las cuentas de resultados?»

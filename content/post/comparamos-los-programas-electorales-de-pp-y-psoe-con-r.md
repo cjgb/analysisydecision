@@ -1,29 +1,30 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- monográficos
-- r
+  - formación
+  - monográficos
+  - r
 date: '2011-11-03'
 lastmod: '2025-07-13'
 related:
-- analisis-del-programa-electoral-del-partido-popular-antes-de-las-elecciones-en-espana.md
-- analisis-de-textos-con-r.md
-- el-debate-politico-o-como-analizar-textos-con-wps.md
-- ejemplo-de-web-scraping-con-r-la-formacion-de-los-diputados-del-congreso.md
-- longitud-de-las-frases-del-quijote-con-rstats.md
+  - analisis-del-programa-electoral-del-partido-popular-antes-de-las-elecciones-en-espana.md
+  - analisis-de-textos-con-r.md
+  - el-debate-politico-o-como-analizar-textos-con-wps.md
+  - ejemplo-de-web-scraping-con-r-la-formacion-de-los-diputados-del-congreso.md
+  - longitud-de-las-frases-del-quijote-con-rstats.md
 tags:
-- cloud
-- nchar
-- política
-- snippets
-- strsplit
-- sub
-- text mining
-- unlist
+  - cloud
+  - nchar
+  - política
+  - snippets
+  - strsplit
+  - sub
+  - text mining
+  - unlist
 title: Comparamos los programas electorales de PP y PSOE con R
 url: /blog/comparamos-los-programas-electorales-de-pp-y-psoe-con-r/
 ---
+
 [Replicamos el post anterior sobre el análisis del programa electoral del PP](https://analisisydecision.es/analisis-del-programa-electoral-del-partido-popular-antes-de-las-elecciones-en-espana/) y lo comparamos con el programa electoral del PSOE. Programas electorales que presentan estos partidos políticos españoles de cara a las elecciones del 20-N. No vamos a entrar en el contenido de ambos programas, sólo nos limitamos a representar gráficamente su contenido con nubes de palabras.
 
 _Programa del PSOE:_
@@ -87,17 +88,17 @@ texto_col = subset(texto_col, largo>4)
 #Nube de palabras
 #install.packages('snippets',,'http://www.rforge.net/')
 library(snippets)
-wt <\- table(texto_colV1)
-wt <\- wt[wt>40]
-jpeg('D:\\\raul\\\wordpress\\\text minning R\\\programa_pp.jpg', quality = 100,
+wt \<- table(texto_colV1)
+wt \<- wt[wt>40]
+jpeg('D:\\\\raul\\\\wordpress\\\\text minning R\\\\programa_pp.jpg', quality = 100,
 bg = "white", res = 100, width=850, height=500)
 cloud(wt, col = col.br(wt, fit=TRUE))
 dev.off()
 
 #Análisis del programa del PSOE
 #Leemos el fichero de una ubicación de nuestro equipo
-ubicacion="D:\\\raul\\\wordpress\\\text minning R\\\programa_Psoe.txt"
-texto = read.table (ubicacion,sep="\r")
+ubicacion="D:\\\\raul\\\\wordpress\\\\text minning R\\\\programa_Psoe.txt"
+texto = read.table (ubicacion,sep="\\r")
 #Dejamos todas las palabras en mayúsculas
 texto = toupper(textoV1)
 #El texto lo transformamos en una lista separada por espacios
@@ -108,9 +109,9 @@ texto_col = data.frame(texto_col)
 names(texto_col) = c("V1")
 
 #Eliminamos algunos caracteres regulares
-texto_colV1 = sub("([[:space:]])","",texto_colV1)
-texto_colV1 = sub("([[:digit:]])","",texto_colV1)
-texto_colV1 = sub("([[:punct:]])","",texto_colV1)
+texto_colV1 = sub("(\[[:space:]\])","",texto_colV1)
+texto_colV1 = sub("(\[[:digit:]\])","",texto_colV1)
+texto_colV1 = sub("(\[[:punct:]\])","",texto_colV1)
 #Creo una variable longitud de la palabra
 texto_collargo = nchar(texto_colV1)
 #Controles que utilizo

@@ -1,22 +1,23 @@
 ---
 author: cgbellosta
 categories:
-- formación
-- r
+  - formación
+  - r
 date: '2009-11-29'
 lastmod: '2025-07-13'
 related:
-- revision-de-las-iii-jornadas-de-r.md
-- comienza-la-cuenta-atras-iii-jornadas-de-usuarios-de-r.md
-- porque-me-gusta-r.md
-- el-futuro-del-analisis-de-datos-pasa-por-r.md
-- estadistica-para-cientificos-de-datos-con-r-introduccion.md
+  - revision-de-las-iii-jornadas-de-r.md
+  - comienza-la-cuenta-atras-iii-jornadas-de-usuarios-de-r.md
+  - porque-me-gusta-r.md
+  - el-futuro-del-analisis-de-datos-pasa-por-r.md
+  - estadistica-para-cientificos-de-datos-con-r-introduccion.md
 tags:
-- jornadas de r
-- r
+  - jornadas de r
+  - r
 title: Noticias del congreso de usuarios de R
 url: /blog/noticias-del-congreso-de-usuarios-de-r/
 ---
+
 Hoy he regresado de las primeras jornadas de usuarios de R. Han sido dos días largos y densos, pero también productivos. Tenemos que estar muy agradecidos a [José Antonio Palazón](http://fobos.bio.um.es/palazon/index/ "J.A. Palazón"), de la Universidad de Murcia y coordinador del comité organizador, y a Manuel Muñoz Márquez, coordinador del comité científico y responsable del proyecto [R UCA](http://knuth.uca.es/R/doku.php "R UCA"), por su extraordinario trabajo.
 
 Creo que para muchos de los participantes, uno de los principales beneficios que extrajimos de las jornadas fue el de poder establecer contacto real, físico, con gente y grupos a los que ya conocíamos directa o indirectamente. Allá me encontré con compañeros con los que había mantenido largos intercambios de correo y chat sobre los temas más diversos; algunos que me agradecieron alguna respuesta que les di años ha en la lista de correo de R-help (antes de que existiese R-help-es, incluso) e, incluso, fieles seguidores de este blog (del que sólo supieron contarme maravillas antes, incluso, de revelarles mi participación en él y que la cordialidad los cuasiobligase a ello). Incluso surgieron muchas vías de colaboración entre proyectos que habían surgido de manera espontánea e independiente y que, de repente, se vio que se enriquecían mutuamente.
@@ -31,8 +32,8 @@ Existen iniciativas, emergió en la ronda de preguntas, para que, igual que los 
 
 De la segunda de las ponencias sólo puedo hablar maravillas, dado que fue la mía. Trató, bajo una perspectiva enteramente personal (y, por ende, algo caótica, deslavazada y _quevediana_), de qué cabida tiene R en la empresa y de qué otras herramientas puede servirse para hacerse un hueco en un ecosistema dominado por viejos depredadores. En particular, y dada la naturaleza de los entornos corporativos, quiso proponer una serie de herramientas orientada a resolver dos problemas fundamentales:
 
-  * El de las restricciones de memoria de R cuando se trata de manejar grandes volúmenes de datos.
-  * El de cómo encapsular la complejidad de R para que pueda ser implícitamente utilizado por empleados que ni saben ni tienen por qué saber R (o, más generalmente, programar).
+- El de las restricciones de memoria de R cuando se trata de manejar grandes volúmenes de datos.
+- El de cómo encapsular la complejidad de R para que pueda ser implícitamente utilizado por empleados que ni saben ni tienen por qué saber R (o, más generalmente, programar).
 
 Así, hablé de [KNIME](http://www.knime.org "KNIME"), [Kettle](http://kettle.pentaho.org/ "Kettle"), [Postgres](http://www.postgresql.org/ "Postgres"), [Rapache](http://biostat.mc.vanderbilt.edu/rapache/ "Rapache"). Y di ejemplos de uso y de posibles vías de extensión. Pero creo que el éxito, si alguno, de la conferencia fue el de los ejemplos reales de aplicaciones de la estadística en contextos reales, esos de los que nunca te habla nadie mientras eres estudiante.
 
@@ -58,9 +59,9 @@ Finalmente, Xavi de Blas, en una charla muy amena (en la que, de todos modos, ec
 
 A estas charlas siguió una mesa redonda para recoger ideas de cara a la creación de una organización, plataforma o similar que integre a los usuarios de R (con ámbitos geográficos e idiomáticos a definir) y que sirva de punto de referencia a las iniciativas que se tomen, como, por ejemplo,
 
-  * la organización de las II (y subsecuentes) Jornadas,
-  * el desarrollo y mantenimiento de un portal que concentre y administre recursos relacionados con R que aporte la comunidad,
-  * y la función de portavocía de la comunidad de usuarios frente a medios de comunicación o administraciones públicas.
+- la organización de las II (y subsecuentes) Jornadas,
+- el desarrollo y mantenimiento de un portal que concentre y administre recursos relacionados con R que aporte la comunidad,
+- y la función de portavocía de la comunidad de usuarios frente a medios de comunicación o administraciones públicas.
 
 Se quedó en que en las semanas venideras y a través de la [lista de correo R-help-es](https://stat.ethz.ch/mailman/listinfo/r-help-es "r-help-es"), van a proponerse y discutirse los temas relacionados con la organización de dicha superestructura, desde la elección de su nombre hasta su gestión.
 

@@ -1,23 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- modelos
-- r
-- trucos
+  - formación
+  - modelos
+  - r
+  - trucos
 date: '2014-05-22'
 lastmod: '2025-07-13'
 related:
-- manual-curso-introduccion-de-r-capitulo-6-funciones-de-estadistica-descriptiva.md
-- manual-introduccion-a-r-s-plus.md
-- sobremuestreo-y-pesos-a-las-observaciones-ahora-con-r.md
-- la-distribucion-tweedie.md
-- numeros-aleatorios-con-sas.md
+  - manual-curso-introduccion-de-r-capitulo-6-funciones-de-estadistica-descriptiva.md
+  - manual-introduccion-a-r-s-plus.md
+  - sobremuestreo-y-pesos-a-las-observaciones-ahora-con-r.md
+  - la-distribucion-tweedie.md
+  - numeros-aleatorios-con-sas.md
 tags:
-- rriskdistributions
+  - rriskdistributions
 title: Determinar la distribución de un vector de datos con R
 url: /blog/determinar-la-distribucion-de-un-vector-de-datos-con-r/
 ---
+
 Para determinar la distribución que sigue un vector de datos en R contamos con el paquete rriskDistributions. Este paquete de R nos permite realizar un test para las distribuciones siguientes:
 
 • Normal
@@ -36,6 +37,6 @@ Todos aquellos que estén trabajando con los modelos de supervisión de riesgos 
 
 install.packages(«rriskDistributions»)
 library(rriskDistributions)
-res1<-fit.cont(data2fit=rnorm(374,40,1)) res1 Tras llamar al objeto tenemos la siguiente ventana: ![](/images/2014/05/rriskDistributions-ejemplo-300x191.png)
+res1\<-fit.cont(data2fit=rnorm(374,40,1)) res1 Tras llamar al objeto tenemos la siguiente ventana: ![](/images/2014/05/rriskDistributions-ejemplo-300x191.png)
 
 Ya podéis seleccionar la distribución más adecuada. Saludos.

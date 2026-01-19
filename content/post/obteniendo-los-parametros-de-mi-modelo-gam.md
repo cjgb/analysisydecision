@@ -1,24 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- machine learning
-- monográficos
-- r
-- seguros
+  - formación
+  - machine learning
+  - monográficos
+  - r
+  - seguros
 date: '2019-11-21'
 lastmod: '2025-07-13'
 related:
-- modelos-gam-dejando-satisfechos-a-los-equipos-de-negocio.md
-- los-parametros-del-modelo-glm-como-relatividades-como-recargos-o-descuentos.md
-- interpretacion-de-los-parametros-de-un-modelo-glm.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-15-modelos-glm-regresion-logistica-y-regresion-de-poisson.md
-- el-parametro-gamma-el-coste-la-complejidad-de-un-svm.md
+  - modelos-gam-dejando-satisfechos-a-los-equipos-de-negocio.md
+  - los-parametros-del-modelo-glm-como-relatividades-como-recargos-o-descuentos.md
+  - interpretacion-de-los-parametros-de-un-modelo-glm.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-15-modelos-glm-regresion-logistica-y-regresion-de-poisson.md
+  - el-parametro-gamma-el-coste-la-complejidad-de-un-svm.md
 tags:
-- gam
+  - gam
 title: Obteniendo los parámetros de mi modelo GAM
 url: /blog/obteniendo-los-parametros-de-mi-modelo-gam/
 ---
+
 [Vimos como los modelos GAM iban más allá del GLM](https://analisisydecision.es/modelos-gam-dejando-satisfechos-a-los-equipos-de-negocio/) porque en el momento de obtener los parámetros asociados al modelo de un factor nos proponían, en vez de una función lineal una función de suavizado no paramétrica para aquellos factores susceptibles de transformar en variables numéricas ordinales con un sentido determinado. Se trabajó con un modelo de riesgo con una sola variable como era la edad y al sumarizar el modelo no era posible obtener los parámetros en la salida. En último término nuestra intención con este tipo de modelos es obtener esos parámetros para transformarlos en relatividades. Qué sentido tiene obtener un buen modelo para Negocio si su resultado no se puede expresar en términos de incrementos o descuentos, en términos de relatividades.
 
 La entrada del blog que ahora os propongo nos permite extraer los parámetros de cualquier modelo GLM o GAM a partir de la función **predict** y una de las opciones más olvidadas por todos nosotros:
@@ -26,7 +27,6 @@ La entrada del blog que ahora os propongo nos permite extraer los parámetros de
 ```r
 predict(modelo, newdata = datos,  type = "terms")
 ```
-
 
 con type = «terms» lo que obtenemos en el momento de realizar la predicción son los parámetros del modelo que aplicamos, no es el resultado de la predicción.
 
@@ -58,7 +58,6 @@ gam.1 <- gam(nsin ~ s(edad_numero,bs="cr",k=3) + zona, data=filter(moto,exposici
 summary(gam.1)
 ```
 
-
 Ejecutad este código y obtendréis un modelo GAM con la zona por la que circula el riesgo y una función de suavizado de la edad del asegurado. A la hora de sumarizar el modelo para la edad, la variable suavizada, no vemos parámetros solo una función, si queremos obtener parámetros solo aparece la zona, ¿cómo puedo obtener las relatividades que me arroja este modelo? Empleando predict como se indicó con anterioridad:
 
 ```r
@@ -67,14 +66,12 @@ names(terminos) <- c("rela_zona","rela_edad")
 terminos <- cbind.data.frame(terminos,select(moto,zona,edad))
 ```
 
-
 Se crea el data.frame terminos que tiene el exponencial del parámetro asociado a ese registro para los factores participantes en el modelo. Cabe señalar que predict no respeta el orden de las variables en el modelo, primero pone las variables que no están suavizadas y después las suavizadas. Después de obtener los parámetros registro a registro lo que hacemos es añadir al data frame los factores de los que deseamos obtener las relatividades y como os podéis imaginar la tabla de relatividades finalmente es el resultado de seleccionar los distintos elementos:
 
 ```r
 rela_zona <- distinct(select(terminos,zona,rela_zona))
 rela_edad <- distinct(select(terminos,edad,rela_edad))
 ```
-
 
 [![](/images/2019/11/parametros_GAM.png)](/images/2019/11/parametros_GAM.png)
 

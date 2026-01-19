@@ -1,23 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- sas
-- trucos
+  - formación
+  - sas
+  - trucos
 date: '2010-10-01'
 lastmod: '2025-07-13'
 related:
-- funciones-de-ventana-sas-y-bases-de-datos.md
-- trucos-sas-operaciones-con-tablas-de-dimensiones-con-sas.md
-- curso-de-lenguaje-sas-con-wps-funciones-en-wps.md
-- macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
-- laboratorio-de-codigo-sas-vistas-proc-means-vs-proc-sql.md
+  - funciones-de-ventana-sas-y-bases-de-datos.md
+  - trucos-sas-operaciones-con-tablas-de-dimensiones-con-sas.md
+  - curso-de-lenguaje-sas-con-wps-funciones-en-wps.md
+  - macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
+  - laboratorio-de-codigo-sas-vistas-proc-means-vs-proc-sql.md
 tags:
-- funciones sas
-- lag
+  - funciones sas
+  - lag
 title: La función LAG de SAS
 url: /blog/la-funcion-lag-de-sas/
 ---
+
 La función LAG de SAS nos devuelve el valor de la observación _n_-n de la variable indicada. Me explico con un ejemplo:
 
 ```r

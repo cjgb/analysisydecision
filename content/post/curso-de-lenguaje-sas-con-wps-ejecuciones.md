@@ -1,21 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- consultoría
-- formación
+  - consultoría
+  - formación
 date: '2010-06-09'
 lastmod: '2025-07-13'
 related:
-- curso-de-lenguaje-sas-con-wps-el-paso-data.md
-- curso-de-lenguaje-sas-con-wps-que-hace-el-paso-data.md
-- curso-de-lenguaje-sas-con-wps-subconjuntos-de-variables-con-drop-y-keep.md
-- curso-de-lenguaje-sas-con-wps-lectura-de-ficheros-de-texto.md
-- curso-de-lenguaje-sas-con-wps-librerias-en-wps.md
+  - curso-de-lenguaje-sas-con-wps-el-paso-data.md
+  - curso-de-lenguaje-sas-con-wps-que-hace-el-paso-data.md
+  - curso-de-lenguaje-sas-con-wps-subconjuntos-de-variables-con-drop-y-keep.md
+  - curso-de-lenguaje-sas-con-wps-lectura-de-ficheros-de-texto.md
+  - curso-de-lenguaje-sas-con-wps-librerias-en-wps.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Curso de lenguaje SAS con WPS. Ejecuciones
 url: /blog/curso-de-lenguaje-sas-con-wps-ejecuciones/
 ---
+
 Hasta la fecha nos hemos aproximado al interfaz de WPS y hemos ejecutado algunos script para trabajar con conjuntos de datos SAS y sobre todo entender que hace el paso DATA, también hemos analizado que son y como trabajan las librerías WPS. En nuevas entregas nos seguiremos centrando en el trabajo con dataset temporales y permanentes. La intención es conocer bien que hace DATA y establecer una metodología de trabajo con WPS. SAS es un lenguaje orientado a la gestión de datos y las personas acostumbradas a programar en otros lenguajes pueden tener muchos problemas conceptuales. Al final, con este manual intentaremos ayudar a todos aquellos que trabajáis con SAS a crear un método que permita a nuestros procesos SAS que funcionen de la forma más óptima para ganar tiempo y espacio en disco los dos elementos más importantes cuando manejamos grandes volúmenes de datos.
 
 Lo más habitual en SAS es la lectura de otros conjuntos de datos para crear subconjuntos de registros o de variables o crear y modificar variables. La sintaxis habitual para seleccionar datasets es:
@@ -62,11 +63,11 @@ run;
 
 No necesitamos declarar las nuevas variables. ¿Qué es lo que hace SAS en este caso?
 
-  * DATA crea un conjunto de datos SAS llamado _prueba_.
-  * SET indica a DATA que lee otro conjunto de datos SAS.
-  * En este punto crea una estructura para prueba con las mismas variables.
-  * Creamos una nueva variable resultado de emplear la función SAS ranuni.
-  * RUN indica el final del paso DATA y el punto en el que itera el bucle de lectura.
+- DATA crea un conjunto de datos SAS llamado _prueba_.
+- SET indica a DATA que lee otro conjunto de datos SAS.
+- En este punto crea una estructura para prueba con las mismas variables.
+- Creamos una nueva variable resultado de emplear la función SAS ranuni.
+- RUN indica el final del paso DATA y el punto en el que itera el bucle de lectura.
 
 La ejecución del paso DATA es eso, estructura de tabla SAS (PDV) y bucle de lectura. El resultado de la ejecución lo podemos ver en el **log** de WPS al que podemos acceder desde el _output explorer_. El **log** es fundamental para trabajar con WPS. Es una ventana donde podemos seguir las ejecuciones de nuestros programas SAS. Es un depurador de código donde podremos analizar como han funcionado nuestros procesos. Sigue un código semafórico muy sencillo, si aparece en rojo tenemos un error, si aparece en verde tenemos un _warning_ y si aparece en azul nuestra ejecución es correcta. A la hora de ejecutar pasos DATA siempre tendremos un mensaje del tipo:
 

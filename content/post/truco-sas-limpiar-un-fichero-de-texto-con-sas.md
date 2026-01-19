@@ -1,30 +1,31 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- sas
-- trucos
+  - formación
+  - sas
+  - trucos
 date: '2013-03-04'
 lastmod: '2025-07-13'
 related:
-- truco-sas-elminar-retornos-de-carro-o-saltos-de-linea-engorrosos.md
-- macros-sas-limpiar-una-cadena-de-caracteres.md
-- truco-sas-macro-buscar-y-reemplazar-en-texto.md
-- ayudadme-importar-a-sas-texto-con-comillas.md
-- importar-a-sas-desde-otras-aplicaciones.md
+  - truco-sas-elminar-retornos-de-carro-o-saltos-de-linea-engorrosos.md
+  - macros-sas-limpiar-una-cadena-de-caracteres.md
+  - truco-sas-macro-buscar-y-reemplazar-en-texto.md
+  - ayudadme-importar-a-sas-texto-con-comillas.md
+  - importar-a-sas-desde-otras-aplicaciones.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Truco SAS. Limpiar un fichero de texto con SAS
 url: /blog/truco-sas-limpiar-un-fichero-de-texto-con-sas/
 ---
+
 El otro día me llegó al correo la siguiente cuestión acerca de caracteres extraños en un fichero de texto y la importación a SAS:
 
-> >> Tengo un problema a la hora de importar a SAS un fichero txt.
->  >> El caso es que tiene en algunos registros el carácter «flechita».
->  >> Ejemplo: Calle Paseo de la Castellana «flechita» 60.
->  >> Cuando lo importo como carácter para al llegar a la flechita.
->  >> No se sí podrás ayudarme.
->  >> Muchas gracias por adelantado.
+> > > Tengo un problema a la hora de importar a SAS un fichero txt.
+> > > El caso es que tiene en algunos registros el carácter «flechita».
+> > > Ejemplo: Calle Paseo de la Castellana «flechita» 60.
+> > > Cuando lo importo como carácter para al llegar a la flechita.
+> > > No se sí podrás ayudarme.
+> > > Muchas gracias por adelantado.
 
 Se me ocurrió un programa muy rápido que nos permitía leer carácter a carácter un fichero plano y eliminar aquellos caracteres que nos den problemas:
 
@@ -44,5 +45,4 @@ data _null_;
 run;
 ```
 
-
-Necesita un directorio, un archivo con extensión TXT y nos creará ese archivo con el sufijo _modificado y limpio de caracteres extraños, en este caso sólo con letras y números, ojo que podéis necesitar signos de puntuación. Creo que es muy sencillo y bastante práctico. Espero que os sea de utilidad, a la lectora que planteó la duda si lo fue. Saludos.
+Necesita un directorio, un archivo con extensión TXT y nos creará ese archivo con el sufijo \_modificado y limpio de caracteres extraños, en este caso sólo con letras y números, ojo que podéis necesitar signos de puntuación. Creo que es muy sencillo y bastante práctico. Espero que os sea de utilidad, a la lectora que planteó la duda si lo fue. Saludos.

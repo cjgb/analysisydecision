@@ -1,23 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- monográficos
-- sas
+  - formación
+  - monográficos
+  - sas
 date: '2008-11-10'
 lastmod: '2025-07-13'
 related:
-- trucos-sas-pasar-fecha-a-caracter-en-sas.md
-- trabajo-con-fechas-sas-introduccion.md
-- trabajo-con-fechas-sas-funciones-fecha.md
-- macros-sas-transformar-un-numerico-a-fecha.md
-- curso-de-lenguaje-sas-con-wps-variables.md
+  - trucos-sas-pasar-fecha-a-caracter-en-sas.md
+  - trabajo-con-fechas-sas-introduccion.md
+  - trabajo-con-fechas-sas-funciones-fecha.md
+  - macros-sas-transformar-un-numerico-a-fecha.md
+  - curso-de-lenguaje-sas-con-wps-variables.md
 tags:
-- fechas sas
-- formatos sas
+  - fechas sas
+  - formatos sas
 title: Trabajo con fechas SAS. Formatos de fecha SAS más utilizados
 url: /blog/trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados/
 ---
+
 En esta nueva entrega del monografico de fechas SAS vamos a estudiar algunos formatos. Un formato es la forma en la que vemos una variable. 17327 es un valor sin significado, pero el 20 de junio de 2007 es una fecha. En la anterior entrega estudiamos como SAS guardaba las fechas como variables numéricas, como el número de días transcurridos desde el 1 de enero de 1960. Las fechas/horas se guardaban como el número de segundos transcurridos. Con los distintos formatos fecha/hora nosotros podremos visualizar estas variables numéricas de SAS. Por ejemplo:
 
 ```r
@@ -27,6 +28,7 @@ x=1; y=1; z=1; m=1;
 
 format x date9. y ddmmyy10. z datetime20. m time10.;
 ```
+
 `proc print noobs; run;`
 
 x y z m
@@ -48,6 +50,7 @@ m=z-12;
 
 format x ddmmyy8. y ddmmyy10. z yymmddn8. m date7.;
 ```
+
 `proc print noobs; run;`
 
 x y z m
@@ -69,6 +72,7 @@ m=z-12;
 
 format x julian7. y EURDFDD10. z yymmn6. m worddate20.;
 ```
+
 `proc print noobs; run;`
 
 x y z m

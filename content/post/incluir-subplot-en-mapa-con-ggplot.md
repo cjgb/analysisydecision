@@ -1,26 +1,27 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- gráficos
-- mapas
-- monográficos
-- r
-- trucos
+  - formación
+  - gráficos
+  - mapas
+  - monográficos
+  - r
+  - trucos
 date: '2021-02-08'
 lastmod: '2025-07-13'
 related:
-- libreria-mapspain-en-rstats-mapas-estaticos-de-espana.md
-- mi-breve-seguimiento-del-coronavirus-con-r.md
-- anadiendo-graficos-de-tarta-a-nuestros-mapas-de-ggplot-con-scatterpie.md
-- mapa-de-rstats-animado-con-el-porcentaje-de-vacunacion-en-espana.md
-- mover-parte-de-un-shapefile-con-r-mapa-de-la-tasa-de-casos-de-coronavirus-por-habitante-en-espana.md
+  - libreria-mapspain-en-rstats-mapas-estaticos-de-espana.md
+  - mi-breve-seguimiento-del-coronavirus-con-r.md
+  - anadiendo-graficos-de-tarta-a-nuestros-mapas-de-ggplot-con-scatterpie.md
+  - mapa-de-rstats-animado-con-el-porcentaje-de-vacunacion-en-espana.md
+  - mover-parte-de-un-shapefile-con-r-mapa-de-la-tasa-de-casos-de-coronavirus-por-habitante-en-espana.md
 tags:
-- mapas
-- r
+  - mapas
+  - r
 title: Incluir subplot en mapa con ggplot
 url: /blog/incluir-subplot-en-mapa-con-ggplot/
 ---
+
 [![](/images/2021/02/mapa_subplot_ggplot3.png)](/images/2021/02/mapa_subplot_ggplot3.png)
 
 Se ha trabajado un mapa de España con ggplot al que podemos añadir subplot en función de unas coordenadas, en este caso es un mapa de España que incluye gráficos de líneas para cada Comunidad Autónoma, vamos a representar el exceso de mortalidad que está suponiendo la pandemia por COVID, un dato que se puede seguir con [MoMo del ISCIII ](https://momo.isciii.es/public/momo/dashboard/momo_dashboard.html). Los que seguidores el blog ya conocen una entrada en la que [se escribió sobre la inclusión de pie chart en mapas con R](https://analisisydecision.es/anadiendo-graficos-de-tarta-a-nuestros-mapas-de-ggplot-con-scatterpie/) esta entrada supone ir un paso más allá.
@@ -34,7 +35,6 @@ library(tidyverse)
 library(lubridate)
 library(ggplotify)
 ```
-
 
 [mapSpain se ha convertido en librería imprescindible para elaborar mapas estáticos de España](https://analisisydecision.es/libreria-mapspain-en-rstats-mapas-estaticos-de-espana/). Necesitamos sf para obtener centroides de objetos espaciales y de **ggplotify** necesitaremos la función **as.grob** para incluir los subplot en el mapa que se elaborará con ggplot.
 
@@ -54,7 +54,6 @@ df2 <- df %>% dplyr::filter(ambito =='ccaa' & nombre_sexo=='todos' & cod_gedad==
 CCAA.sf <- esp_get_ccaa()
 ```
 
-
 [Datos conocidos y manejados con anterioridad de MoMo.](https://analisisydecision.es/no-estamos-igual-que-en-la-primera-ola-de-covid/) Se define un exceso de mortalidad que es lo que estamos interesados en representar. También es necesario el mapa estático de España a nivel de Comunidad Autónoma, empleamos esp_get_ccaa de mapSpain.
 
 ### Centroides por Comunidad Autónoma
@@ -68,7 +67,6 @@ centroides <- cbind.data.frame(iso2.ccaa.code, centroides)
 
 df2 <- left_join(df2, centroides)
 ```
-
 
 Los centroides serán el lugar, las coordenadas donde centraremos los subplot. Para obtenerlos empleamos st_centroid sobre la geometría del objeto mapa y transformamos el objeto lista resultante en coordenadas mediante st_coordinates, transformamos en data frame y se lo unimos al cojunto de datos df2 que incluye los datos a representar.
 
@@ -88,7 +86,6 @@ AN <- ggplot(data=dt, aes(x=fecha_defuncion, y=exceso, group=1)) +
 AN
 ```
 
-
 [![](/images/2021/02/mapa_subplot_ggplot1.png)](/images/2021/02/mapa_subplot_ggplot1.png)
 
 Este es el mapa con el exceso de mortalidad desde diciembre de 2020 para la Comunidad Autónoma de Andalucía y si deseamos incluirlo en un mapa haríamos. **Importante** si realizamos este tipo de gráficos será necesario preservar el tamaño de ejes por elegancia y por rigor, ylim siempre.
@@ -102,7 +99,6 @@ ggplot() + geom_sf(data=CCAA.sf, color="white")  +
   geom_sf(data = esp_get_can_box(), colour = "grey50") + subgrafico +
   theme_light()
 ```
-
 
 [![](/images/2021/02/mapa_subplot_ggplot2.png)](/images/2021/02/mapa_subplot_ggplot2.png)
 
@@ -138,6 +134,5 @@ mapa <- mapa +theme_minimal()
 
 mapa
 ```
-
 
 Por último hacemos un bucle que añada al mapa vacío los distintos subplot que vamos generando igual que el primero, se juega con xmin, ymax,… para que queden lo mejor posible y aun así es posible, es necesario, mejorar el posicionamiento de los gráficos de líneas sobre el mapa. Y con este código podréis realizar el mapa con el que empieza la entrada. Saludos.

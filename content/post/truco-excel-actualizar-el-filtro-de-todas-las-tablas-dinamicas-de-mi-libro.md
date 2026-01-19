@@ -1,22 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- excel
-- formación
-- trucos
+  - excel
+  - formación
+  - trucos
 date: '2017-03-10'
 lastmod: '2025-07-13'
 related:
-- truco-excel-actualizar-los-filtros-de-una-tabla-dinamica-con-visual-basic.md
-- trucos-excel-multiples-campos-calculados-en-una-tabla-dinamica.md
-- truco-excel-unir-todos-los-libros-en-una-hoja.md
-- truco-excel-pasar-un-rango-de-varias-columnas-a-una.md
-- truco-excel-abrir-multiples-libros-de-excel-en-distintas-hojas-de-un-nuevo-libro.md
+  - truco-excel-actualizar-los-filtros-de-una-tabla-dinamica-con-visual-basic.md
+  - trucos-excel-multiples-campos-calculados-en-una-tabla-dinamica.md
+  - truco-excel-unir-todos-los-libros-en-una-hoja.md
+  - truco-excel-pasar-un-rango-de-varias-columnas-a-una.md
+  - truco-excel-abrir-multiples-libros-de-excel-en-distintas-hojas-de-un-nuevo-libro.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Truco Excel. Actualizar el filtro de todas las tablas dinámicas de mi libro
 url: /blog/truco-excel-actualizar-el-filtro-de-todas-las-tablas-dinamicas-de-mi-libro/
 ---
+
 Traigo hoy al blog una macro de Excel que nos permite recorrer todas las hojas de un libro y dentro de las hojas nos permite recorrer todas las tablas dinámicas y actualizar un campo. Cuando tenemos un informe que se basa en tablas dinámicas y tiene una actualización mensual nos podemos encontrar con la necesidad de cambiar sólo un elemento de la tabla dinámica para actualizar el informe. Este era el caso de mi compañera, [hay una entrada en el blog que ya trataba el tema pero esta nueva macro supone otra vuelta de tuerca sobre ella](https://analisisydecision.es/truco-excel-actualizar-los-filtros-de-una-tabla-dinamica-con-visual-basic/), no sólo recorre y actualiza todas las tablas dinámicas de una hoja, además lo hace de todo el libro. El código de Visual Basic para Excel es:
 
 [sourcecode language=»vb»]

@@ -1,25 +1,26 @@
 ---
 author: cgbellosta
 categories:
-- formación
-- r
+  - formación
+  - r
 date: '2009-12-01'
 lastmod: '2025-07-13'
 related:
-- ayd-2300-visitas-mensuales.md
-- el-ano-2010-para-analisisydecision.md
-- agregador-de-noticias-de-r-en-espanol.md
-- el-ano-2009-para-analisis-y-decision.md
-- que-ando-leyendo-hoy.md
+  - ayd-2300-visitas-mensuales.md
+  - el-ano-2010-para-analisisydecision.md
+  - agregador-de-noticias-de-r-en-espanol.md
+  - el-ano-2009-para-analisis-y-decision.md
+  - que-ando-leyendo-hoy.md
 tags:
-- blogs
-- estadistica
-- machine learning
-- r
-- jornadas de r
+  - blogs
+  - estadistica
+  - machine learning
+  - r
+  - jornadas de r
 title: Dos vecinos muy próximos de la «blogosfera»
 url: /blog/dos-vecinos-muy-proximos-de-la-blogosfera/
 ---
+
 Hoy voy a hablar de la competencia, siempre muy deportiva, de este _blog_. Espero que Raúl me excuse y entienda que no quiero alimentar contadores de visitas ajenos a expensas de los propios sino establecer relaciones de buena vecindad con otros proyectos interesantes y complementarios.
 
 El primero, _[El blog de los erreros](http://erre-que-erre-paco.blogspot.com/ "El blog de los erreros")_ , del que tuve noticia hablando con su autor mientras comíamos en la cantina de la Universidad de Murcia en el marco de las Jornadas de R (las primeras de una serie perpetua, quede dicho). Está orientado al mundo de R y contiene trucos, noticias y aplicaciones estadísticas (desarrolladas y resueltas, claro está, con R).

@@ -1,33 +1,33 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- libro estadística
-- monográficos
-- r
+  - formación
+  - libro estadística
+  - monográficos
+  - r
 date: '2023-01-29'
 lastmod: '2025-07-13'
 related:
-- el-sobremuestreo-mejora-mi-estimacion.md
-- trucos-sas-muestreo-con-proc-surveyselect.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-16-modelizacion-estadistica-conociendo-los-datos.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-10-probabilidad-y-distribuciones.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
+  - el-sobremuestreo-mejora-mi-estimacion.md
+  - trucos-sas-muestreo-con-proc-surveyselect.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-16-modelizacion-estadistica-conociendo-los-datos.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-10-probabilidad-y-distribuciones.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
 tags:
-- sin etiqueta
-title: Introducción a la Estadística para Científicos de Datos. Capítulo 12. Muestreo
-  e inferencia estadística
+  - sin etiqueta
+title: Introducción a la Estadística para Científicos de Datos. Capítulo 12. Muestreo e inferencia estadística
 url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-12-muestreo-e-inferencia-estadistica/
 ---
+
 En el capítulo anterior dedicado al análisis bivariable se crearon visualizaciones sencillas para describir la posible relación entre dos variables, pero más allá de impresiones visuales no es posible asegurar que esa relación tiene validez estadística. Para establecer esa validez es necesario disponer de cierta dialéctica, de cierta base teórica básica para entender como se comporta un contraste estadístico o un intervalo de confianza. El científico de datos tiende a considerar que toda esa base teórica está obsoleta y que existe un cambio en el paradigma, pero los problemas a resolver con análisis estadísticos avanzados son similares a los que resuelve la estadística clásica. El trabajo del científico de datos en muchas ocasiones consiste en separar la señal del ruido, separar lo aleatorio de lo **estadísticamente significativo**. En los capítulos anteriores se han ido estableciendo los cimientos para realizar esta labor.
 
 Todo problema y todo estudio parte de la **población** , en la RAE aparecen las siguientes definiciones de población:
 
-  1. f. Acción y efecto de poblar.
-  2. f. Conjunto de personas que habitan en un determinado lugar.
-  3. f. Conjunto de edificios y espacios de una ciudad. Atravesó la población de una parte a otra.
-  4. f. Conjunto de individuos de la misma especie que ocupan determinada área geográfica.
-  5. f. Sociol. Conjunto de los elementos sometidos a una **evaluación estadística mediante muestreo**.
+1. f. Acción y efecto de poblar.
+1. f. Conjunto de personas que habitan en un determinado lugar.
+1. f. Conjunto de edificios y espacios de una ciudad. Atravesó la población de una parte a otra.
+1. f. Conjunto de individuos de la misma especie que ocupan determinada área geográfica.
+1. f. Sociol. Conjunto de los elementos sometidos a una **evaluación estadística mediante muestreo**.
 
 Desarrollando esta quinta acepción se tiene que la población es el conjunto de elementos sobre el que se estudia una característica y es necesario tener claro como se compone porque es la herramienta a disposición del científico de datos para resolver el problema que le plantean los datos. Esa población no tiene porque ser individuos, en el ejemplo de trabajo que sirve de hilo conductor se tiene una población de clientes de una compañía de seguros pero se pueden tener empresas, contratos, acciones deportivas,… Además, la población no tiene porque ser finita, de hecho para estudiar a la población será necesario obtener muestras mediante técnicas de muestreo.
 
@@ -37,8 +37,8 @@ Comprende las técnicas para la selección de elementos de una población. En oc
 
 Se distinguen dos grandes tipos de muestreo:
 
-  * Muestreo no probabilístico. Es un método de selección de elementos de la población donde el analista selecciona los elementos en base a su propia experiencia o necesidad. Ejemplos: seleccionar a clientes con una característica para realizar un análisis cualitativo.
-  * Muestreo probabilístico. Cada elemento de la población tiene una probabilidad conocida a priori de ser seleccionado para el estudio.
+- Muestreo no probabilístico. Es un método de selección de elementos de la población donde el analista selecciona los elementos en base a su propia experiencia o necesidad. Ejemplos: seleccionar a clientes con una característica para realizar un análisis cualitativo.
+- Muestreo probabilístico. Cada elemento de la población tiene una probabilidad conocida a priori de ser seleccionado para el estudio.
 
 El científico de datos trabaja habitualmente con muestreo probabilístico y dentro de este tipo de muestreo existen diversas técnicas encaminadas a garantizar la **representatividad** de la muestra, garantizan que la selección de elementos tenga el rigor requerido para el análisis.
 
@@ -59,13 +59,11 @@ set.seed(10)
 muestra_aleatoria1 <- train %>% sample_n(size = 100, replace = F)
 ```
 
-
 Con la función `set.seed(10)` se fija la semilla ya que en realidad R genera números _pseudoaleatorios_ y al fijar la semilla se obtiene siempre la misma muestra aleatoria lo que garantiza que los trabajos puedan ser reproducibles, en este caso con `sample_n` se obtiene una muestra de tamaño `size` observaciones y la opción `replace` indica si se hace con reemplazamiento de individuos o no. Si se quiere obtener una muestra que sea una proporción:
 
 ```r
 muestra_aleatoria2 <- train %>% sample_frac(size = 0.1, replace = F)
 ```
-
 
 En el ejemplo se obtiene una muestra aleatoria de un 10% de las observaciones mediante la instrucción `sample_frac`. Si el científico de datos desea dividir un data frame en dos partes es habitual el empleo de índices:
 
@@ -80,7 +78,6 @@ nrow(datos_entrenamiento)/nrow(train)
 # % de datos de test
 nrow(datos_test)/nrow(train)
 ```
-
 
 De ese modo se han dividido los datos de partida en dos data frames disjuntos donde `datos_entrenamiento` tiene el 70% de las observaciones y `datos_test` tiene el 30% de observaciones restantes del conjunto de datos de partida.
 
@@ -101,13 +98,11 @@ muestra_disminuida <- train %>% filter(Response==1) %>%
   bind_rows(sample_n(train %>% filter(Response==0), size=interesados))
 ```
 
-
 Muestra con número de interesados incrementados artificialmente:
 
 ```r
 formattable(muestra_aumentada %>% group_by(Response) %>% summarise(conteo=n()))
 ```
-
 
 [![](/images/2023/01/wp_editor_md_e42377b9dcf7795433545d1a7f03ecc2.jpg)](/images/2023/01/wp_editor_md_e42377b9dcf7795433545d1a7f03ecc2.jpg)
 
@@ -116,7 +111,6 @@ Muestra con número de interesados decrementados artificialmente:
 ```r
 formattable(muestra_disminuida %>% group_by(Response) %>% summarise(conteo=n()))
 ```
-
 
 [![](/images/2023/01/wp_editor_md_eb8a1e4499db92f98ba3cb11158c3432.jpg)](/images/2023/01/wp_editor_md_eb8a1e4499db92f98ba3cb11158c3432.jpg)
 
@@ -130,7 +124,6 @@ muestra_balanceada <- strata(train, stratanames = "Response", size = c(10000,100
 formattable(muestra_balanceada %>% group_by(Response) %>% summarise(conteo=n()))
 ```
 
-
 ### Muestreo por conglomerados
 
 Supone seleccionar al azar todos los elementos de un grupo o un conglomerado, es un tipo de muestreo aleatorio donde se seleccionan todos los elementos de un conglomerado. Si el científico de datos selecciona un colegio, una calle, una provincia,… está realizando muestreo por conglomerados. En el ejemplo de trabajo se desean seleccionar 100 clientes de la provincia de Madrid y 100 clientes de la provincia de Barcelona.
@@ -140,16 +133,15 @@ Barcelona <- train %>% filter(Region_Code==8) %>% sample_n(100)
 Madrid <- train %>% filter(Region_Code==28) %>% sample_n(100)
 ```
 
-
 El científico de datos ha de saber que en el momento de realizar una selección de observaciones de cualquier tipo que está haciendo muestreo y por ello debe conocer y argumentar los motivos que le han llevado a realizar esa selección. Como se señaló con anterioridad estos apuntes son un mínimo, el muestreo abarca técnicas y modelos más complejos.
 
 ## Inferencia estadística
 
 Inferir significa extraer una conclusión a partir de hechos concretos a hechos generales. La inferencia estadística trata de extraer conclusiones sobre una característica, sobre un **parámetro de la población** a partir de una muestra de ésta. Los parámetros a analizar se denominan estadísticos muestrales, además si se conoce la distribución de dichos estadísticos (generalmente distribución normal) y se cumplen una serie de condiciones se trata de inferencia paramétrica. La estadística paramétrica clásica plantea tres tipos de problemas:
 
-  * Estimación puntual en la que se trata de dar un valor al parámetro a estimar (Ej: valor esperado de una media).
-  * Estimación por intervalos (buscar un intervalo de confianza).
-  * Contrastes de hipótesis donde se busca contrastar información acerca del parámetro.
+- Estimación puntual en la que se trata de dar un valor al parámetro a estimar (Ej: valor esperado de una media).
+- Estimación por intervalos (buscar un intervalo de confianza).
+- Contrastes de hipótesis donde se busca contrastar información acerca del parámetro.
 
 Se parte de un experimento, repetido varias veces y se obtiene una muestra con variables aleatorias independientes
 idénticamente distribuidas y función de distribución conocida. Por ejemplo, se pretende estimar la altura media de los varones españoles, se recogen las alturas de 30 individuos y su media es de 1,74 metros. Esa es una estimación puntual. Entonces, cualquier función de la muestra de 30 varones que no dependan del parámetro a estimar es un **estadístico muestra** y esa media obtenida que nos sirve para conocer la altura media de los varones españoles es un **estimador del parámetro**. Ejemplos de estadísticos son el total muestra, la media muestral, la varianza muestral, la cuasivarianza muestral y los estadísticos de orden que habitualmente se representan con letras griegas.
@@ -158,12 +150,13 @@ idénticamente distribuidas y función de distribución conocida. Por ejemplo, s
 
 Hay que determinar cual es el mejor estimador de un parámetro para una población a partir de una muestra. ¿Cuál será el estadístico muestral que mejor representa ese parámetro poblacional? El mejor estadístico será el más creíble, el más verosímil y por ello se denomina estimador de máxima verosimilitud pero tiene que cumplir una serie de condiciones:
 
-  * Será aquel que tiene menor sesgo. Esto se cumplirá cuando el promedio de las distintas estimaciones es análogo al parámetro poblacional.
-  * Será el más eficiente. Cuando la desviación de las distintas estimaciones es la más baja, se minimiza la varianza de esas estimaciones.
+- Será aquel que tiene menor sesgo. Esto se cumplirá cuando el promedio de las distintas estimaciones es análogo al parámetro poblacional.
 
-  * Será el más consistente. Si la muestra crece también crece la probabilidad de que ese sea el estimador.
+- Será el más eficiente. Cuando la desviación de las distintas estimaciones es la más baja, se minimiza la varianza de esas estimaciones.
 
-  * Será suficiente. Ningún estadístico calculado sobre la muestra va a proporcionar información adicional sobre su valor.
+- Será el más consistente. Si la muestra crece también crece la probabilidad de que ese sea el estimador.
+
+- Será suficiente. Ningún estadístico calculado sobre la muestra va a proporcionar información adicional sobre su valor.
 
 A la hora de estimar el parámetro se plantea un dilema que el científico de datos deberá abordar en múltiples ocasiones, se trata del **dilema sesgo – varianza**.
 
@@ -201,7 +194,6 @@ bivariable(train, 'Response', 'Vehicle_Damage', 1),
 bivariable(train, 'Response', 'Previously_Insured', 1))
 ```
 
-
 [![](/images/2023/01/wp_editor_md_93a577960a6d386196519869e8d3dcbe.jpg)](/images/2023/01/wp_editor_md_93a577960a6d386196519869e8d3dcbe.jpg)
 
 Este dilema está presente siempre que se trabajan datos. Por ejemplo, aseverar que los inmigrantes cometen más delitos que los residentes de un país. Sin embargo, son más los hombres que cometen delitos que las mujeres. En ese caso la solución para vivir con mayor seguridad no sería una sociedad sin extranjeros, será una sociedad sin hombres. Para dar ambos datos se introduce sesgo, puede ser cierto que se acierte en mayor medida pero introduciendo condiciones que interesan al analista.
@@ -236,21 +228,21 @@ bivariable(train, 'Response', 'Vehicle_Damage', 1),
 bivariable(train, 'Response', 'Previously_Insured', 1))
 ```
 
-
 La estimación mejorará si se incluye la variable `Vehicle_Damage` y `Previously_Insured` porque los clientes sin cobertura de daños no van a contratar, igual que aquellos que ya han estado asegurados, no deben de ser reglas, **deben ser condiciones** a la hora de seleccionar clientes pero el analista debe tener claro, argumentar estas acciones y consensuar con los usuarios de los datos si son correctas las decisiones y los sesgos que está introduciendo en su análisis.
 
 ## Intervalos de confianza
 
 El intervalo de confianza está presente en el lenguaje, si alguien pregunta sobre el precio de una vivienda no es posible dar un número, se da un mínimo y un máximo que recoja el mayor número de viviendas. El intervalo de confianza será un rango que recoja un x% de los posibles valores que toma una variable. Y su creación se sustenta en el **Teorema central del límite**. Éste dice, si se suman variables aleatorias, sin importar la distribución que éstas tienen, el resultado final será una variable con distribución normal si se cumplen ciertas condiciones:
 
-  * Las variables aleatorias tienen varianza finita
-  * Hay un número elevado de variables aleatorias
+- Las variables aleatorias tienen varianza finita
+- Hay un número elevado de variables aleatorias
 
 Para entenderlo mejor, se lanza al aire una moneda 100 veces y se anota el número de caras, se repite el experimento 10 veces:
 
 ```r
 muestra_aleatoria2 <- train %>% sample_frac(size = 0.1, replace = F)
 ```
+
 0
 
 [![](/images/2023/01/wp_editor_md_15eef2ce7c326c9d202aa648f3cd5390.jpg)](/images/2023/01/wp_editor_md_15eef2ce7c326c9d202aa648f3cd5390.jpg)
@@ -260,6 +252,7 @@ Si ese mismo experimento se repite 1000 veces:
 ```r
 muestra_aleatoria2 <- train %>% sample_frac(size = 0.1, replace = F)
 ```
+
 1
 
 [![](/images/2023/01/wp_editor_md_5e92d11d4045d428f004725977669008.jpg)](/images/2023/01/wp_editor_md_5e92d11d4045d428f004725977669008.jpg)
@@ -269,6 +262,7 @@ muestra_aleatoria2 <- train %>% sample_frac(size = 0.1, replace = F)
 ```r
 muestra_aleatoria2 <- train %>% sample_frac(size = 0.1, replace = F)
 ```
+
 2
 
 Se realizan 500 muestras con reemplazamiento de tamaño 100 clientes encuestados de 40 años de edad. Si se estudia la distribución de las medias de la variable respuesta en esas 500 muestras:
@@ -276,6 +270,7 @@ Se realizan 500 muestras con reemplazamiento de tamaño 100 clientes encuestados
 ```r
 muestra_aleatoria2 <- train %>% sample_frac(size = 0.1, replace = F)
 ```
+
 3
 
 [![](/images/2023/01/wp_editor_md_803cfb531644ad57f9b6cf6eff42b6a1.jpg)](/images/2023/01/wp_editor_md_803cfb531644ad57f9b6cf6eff42b6a1.jpg)
@@ -285,23 +280,25 @@ Recuerda a la distribución normal con sólo 100 observaciones seleccionadas en 
 ```r
 muestra_aleatoria2 <- train %>% sample_frac(size = 0.1, replace = F)
 ```
+
 4
 
 [![](/images/2023/01/wp_editor_md_88b8b091dc2268de2e44a4a7f342dd84.jpg)](/images/2023/01/wp_editor_md_88b8b091dc2268de2e44a4a7f342dd84.jpg)
 
-El 95% de los posibles valores que va a tomar la media de la respuesta para los clientes de 40 años está dentro de ese intervalo (de confianza). Si se lleva este trabajo teórico al total de los grupos de edad para una confianza de 1 – \alpha se produce un error que se define como:
+El 95% de los posibles valores que va a tomar la media de la respuesta para los clientes de 40 años está dentro de ese intervalo (de confianza). Si se lleva este trabajo teórico al total de los grupos de edad para una confianza de 1 – \\alpha se produce un error que se define como:
 
-$$Error = Z_{\frac{\alpha}{2}} \frac{\alpha}{\sqrt{n}}$$
+$$Error = Z\_{\\frac{\\alpha}{2}} \\frac{\\alpha}{\\sqrt{n}}$$
 
 De lo que se deduce que la media estará en un intervalo definido por ese error:
 
-$$MED-ESTIMADA – Z_{\frac{\alpha}{2}} \frac{\alpha}{\sqrt{n}}$$
+$$MED-ESTIMADA – Z\_{\\frac{\\alpha}{2}} \\frac{\\alpha}{\\sqrt{n}}$$
 
 Para entenderlo mejor se programa con R el intervalo sobre la variable `Age` del conjunto de datos de trabajo paso a paso.
 
 ```r
 muestra_aleatoria2 <- train %>% sample_frac(size = 0.1, replace = F)
 ```
+
 5
 
 Para cada grupo de edad se tiene el % de clientes, el % de interesados, que es igual que la media de interesados porque en variables de respuesta binomial la media es la proporción, y el cuantil de una normal que deja tanto a derecha como a izquierda un 2.5% de forma que se pueda crear un intervalo del confianza que contenga el 95% de los posibles valores, además, es necesaria la desviación típica y el número de clientes para cada grupo de edad. Se calculan los límites del intervalo y se realiza una gráfica con los intervalos de confianza:
@@ -309,23 +306,25 @@ Para cada grupo de edad se tiene el % de clientes, el % de interesados, que es i
 ```r
 muestra_aleatoria2 <- train %>% sample_frac(size = 0.1, replace = F)
 ```
+
 6
 
 [![](/images/2023/01/wp_editor_md_50981ea13ab2ef2af3d55dc39e5a60a7.jpg)](/images/2023/01/wp_editor_md_50981ea13ab2ef2af3d55dc39e5a60a7.jpg)
 
-El 95% de los posibles valores que va a tomar la media de la respuesta para los clientes de 40 años está dentro de ese intervalo (de confianza). Si se lleva este trabajo teórico al total de los grupos de edad para una confianza de 1 – \alpha se produce un error que se define como:
+El 95% de los posibles valores que va a tomar la media de la respuesta para los clientes de 40 años está dentro de ese intervalo (de confianza). Si se lleva este trabajo teórico al total de los grupos de edad para una confianza de 1 – \\alpha se produce un error que se define como:
 
-$$Error = Z_{\frac{\alpha}{2}} \frac{\alpha}{\sqrt{n}}$$
+$$Error = Z\_{\\frac{\\alpha}{2}} \\frac{\\alpha}{\\sqrt{n}}$$
 
 De lo que se deduce que la media estará en un intervalo definido por ese error:
 
-$$MED-ESTIMADA – Z_{\frac{\alpha}{2}} \frac{\alpha}{\sqrt{n}}$$
+$$MED-ESTIMADA – Z\_{\\frac{\\alpha}{2}} \\frac{\\alpha}{\\sqrt{n}}$$
 
 Para entenderlo mejor se programa con R el intervalo sobre la variable `Age` del conjunto de datos de trabajo paso a paso.
 
 ```r
 muestra_aleatoria2 <- train %>% sample_frac(size = 0.1, replace = F)
 ```
+
 7
 
 Para cada grupo de edad se tiene el % de clientes, el % de interesados, que es igual que la media de interesados porque en variables de respuesta binomial la media es la proporción, y el cuantil de una normal que deja tanto a derecha como a izquierda un 2.5% de forma que se pueda crear un intervalo del confianza que contenga el 95% de los posibles valores, además, es necesaria la desviación típica y el número de clientes para cada grupo de edad. Se calculan los límites del intervalo y se realiza una gráfica con los intervalos de confianza:
@@ -333,9 +332,10 @@ Para cada grupo de edad se tiene el % de clientes, el % de interesados, que es i
 ```r
 muestra_aleatoria2 <- train %>% sample_frac(size = 0.1, replace = F)
 ```
+
 8
 
-Se observa que grupos con gran número de observaciones crean intervalos muy estrechos y grupos de edad con pocas observaciones crean intervalos enormes, incluso con posibles valores negativos que no se pueden dar. En la fórmula de cálculo del intervalo se tiene $\sqrt{n}$, la propia definición del intervalo está «ponderando» la definición del intervalo con el número de observaciones, además, una mayor desviación también hará incrementar el tamaño del intervalo.
+Se observa que grupos con gran número de observaciones crean intervalos muy estrechos y grupos de edad con pocas observaciones crean intervalos enormes, incluso con posibles valores negativos que no se pueden dar. En la fórmula de cálculo del intervalo se tiene $\\sqrt{n}$, la propia definición del intervalo está «ponderando» la definición del intervalo con el número de observaciones, además, una mayor desviación también hará incrementar el tamaño del intervalo.
 Una de las funciones de los intervalos de confianza reside en la utilidad a la hora de agrupar factores, algo que se trató en el capítulo 11 donde se describió la importancia de crear estas agrupaciones, a modo ilustrativo:
 
 [![](/images/2023/01/wp_editor_md_f920e82fc5f3cf7071e3ef372237a67f.jpg)](/images/2023/01/wp_editor_md_f920e82fc5f3cf7071e3ef372237a67f.jpg)
@@ -345,6 +345,7 @@ El intervalo de confianza puede servir al científico de datos para agrupar los 
 ```r
 muestra_aleatoria2 <- train %>% sample_frac(size = 0.1, replace = F)
 ```
+
 9
 
 [![](/images/2023/01/wp_editor_md_60e831578bbbb0b929fabd8da653f339.jpg)](/images/2023/01/wp_editor_md_60e831578bbbb0b929fabd8da653f339.jpg)
@@ -355,7 +356,7 @@ La estadística clásica es muy conservadora, se reitera que el intervalo es fun
 
 Para realizar contrastes de hipótesis es necesario conocer 3 distribuciones artificiales asociadas a la distribución normal que no se trataron en capítulos anteriores.
 
-La **chi-cuadrado** ($\chi^2$) es una función similar a la gamma y se define como una suma de distribuciones normales al cuadrado, el número de distribuciones normales sumadas son los grados de libertad de la $\chi^2$
+La **chi-cuadrado** ($\\chi^2$) es una función similar a la gamma y se define como una suma de distribuciones normales al cuadrado, el número de distribuciones normales sumadas son los grados de libertad de la $\\chi^2$
 
 ```r
 set.seed(10)
@@ -368,6 +369,7 @@ nrow(datos_entrenamiento)/nrow(train)
 # % de datos de test
 nrow(datos_test)/nrow(train)
 ```
+
 0
 
 [![](/images/2023/01/wp_editor_md_f02d3fad8ad44a4443c4104b09ce4f82.jpg)](/images/2023/01/wp_editor_md_f02d3fad8ad44a4443c4104b09ce4f82.jpg)
@@ -380,7 +382,7 @@ La **F de Snedecor** se crea a partir de dos chi-cuadrado independientes dividid
 
 > Se tienen muchos supuestos, distribuciones y _artificios estadísticos_ que dependen en gran medida del tamaño de la población. El científico de datos pretende trabajar en un «entorno Big Data» y con modelos de aprendizaje automático donde todos estos aspectos teóricos no tienen cabida y están obsoletos. **Pero todos estos conceptos y el método de trabajo es imprescindible**.
 
-El inicio de todo es la hipótesis, el pilar de una investigación, primero se establece y después se contrasta si es cierta o no. Se parte de una afirmación sobre un parámetro poblacional. ¿Es el parámetro \theta un valor? Se establece la afirmación contraria \theta no es ese valor.
+El inicio de todo es la hipótesis, el pilar de una investigación, primero se establece y después se contrasta si es cierta o no. Se parte de una afirmación sobre un parámetro poblacional. ¿Es el parámetro \\theta un valor? Se establece la afirmación contraria \\theta no es ese valor.
 
 ¿Un factor es independiente de otro? ¿Es independiente la respuesta positiva a la encuesta del género del cliente encuestado? Este es un **contraste de independencia** y se realiza mediante un test de la chi cuadrado.
 
@@ -395,6 +397,7 @@ nrow(datos_entrenamiento)/nrow(train)
 # % de datos de test
 nrow(datos_test)/nrow(train)
 ```
+
 1
 
 [![](/images/2023/01/wp_editor_md_645139df6902a3bd8fcaaf3862b238e9.jpg)](/images/2023/01/wp_editor_md_645139df6902a3bd8fcaaf3862b238e9.jpg)
@@ -414,6 +417,7 @@ nrow(datos_entrenamiento)/nrow(train)
 # % de datos de test
 nrow(datos_test)/nrow(train)
 ```
+
 2
 
 [![](/images/2023/01/wp_editor_md_e67b9187e87af57dbbe47d7235ffbfa8.jpg)](/images/2023/01/wp_editor_md_e67b9187e87af57dbbe47d7235ffbfa8.jpg)
@@ -424,20 +428,21 @@ Hay infinidad de contrastes de hipótesis, en el [este link](https://bookdown.or
 
 En general el contraste de hipótesis es una cuestión del tipo **¿Los datos de nuestras muestras respaldan las hipótesis de la población?** y esa cuestión se resuelve del siguiente modo.
 
-  * Se parte de una hipótesis estadística (H_0) que es una proposición acerca de una característica de la población de estudio. Si esa hipótesis se realiza sobre un parámetro es una hipótesis paramétrica. Habitualmente las H_0 se enuncian bajo el supuesto de que no hay efectos, por ejemplo, de que las muestras observadas pertenecen a las
-poblaciones definidas en las Hipótesis Nulas, no hay diferencias estadísticas entre las muestras comparadas, correlaciones nulas,…
-  * Se establece un criterio de precisión que podemos controlar a priori con la probabilidad de rechazar esa hipótesis.
+- Se parte de una hipótesis estadística (H_0) que es una proposición acerca de una característica de la población de estudio. Si esa hipótesis se realiza sobre un parámetro es una hipótesis paramétrica. Habitualmente las H_0 se enuncian bajo el supuesto de que no hay efectos, por ejemplo, de que las muestras observadas pertenecen a las
+  poblaciones definidas en las Hipótesis Nulas, no hay diferencias estadísticas entre las muestras comparadas, correlaciones nulas,…
 
-  * Siempre hay dos hipótesis:
+- Se establece un criterio de precisión que podemos controlar a priori con la probabilidad de rechazar esa hipótesis.
 
-    * Hipótesis de partida o nula (H_0) que supone que el parámetro toma un valor determinado, se supone cierta y se rechazará si no es compatible con la evidencia de la muestra. Se controla a priori el error de rechazarla con el nivel de significación del contraste (p-valor).
-    * Hipótesis alternativa (H_1) se formula como la Ho no es cierta.
+- Siempre hay dos hipótesis:
+
+  - Hipótesis de partida o nula (H_0) que supone que el parámetro toma un valor determinado, se supone cierta y se rechazará si no es compatible con la evidencia de la muestra. Se controla a priori el error de rechazarla con el nivel de significación del contraste (p-valor).
+  - Hipótesis alternativa (H_1) se formula como la Ho no es cierta.
 
 Evidentemente es posible errar a la hora de realizar el contraste de hipótesis, pero se trata de controlar ese error:
 
 [![](/images/2023/01/wp_editor_md_4f5f2d2be001e3d903dfc9c3401f7eab.jpg)](/images/2023/01/wp_editor_md_4f5f2d2be001e3d903dfc9c3401f7eab.jpg)
 
-Se define Error de tipo I α como una probabilidad de rechazar H_0 siendo H_0 cierta. Probabilidad de, siendo inocente, dejar libre y se puede controlar. El error de tipo II es β y es una probabilidad de aceptar H_0 siendo H_0 falsa. Probabilidad de, no ser inocente y entrar en la cárcel. No se puede controlar, define la potencia del contraste de hipótesis = 1- β. Todos las aplicaciones estadísticas manejan el concepto p-valor que es una probabilidad fijada por el analista, define un **umbral**. El contraste de hipótesis sigue una distribución asociada a la normal y va a arrojar una probabilidad, si esa probabilidad está fuera de una región donde se rechaza la H_0 y que fija ese umbral \alpha (habitualmente 0.05) entonces se podrá rechazar la H_0 bajo los supuestos establecidos. Como se vio en el capítulo 10 la función de densidad permite calcular probabilidades:
+Se define Error de tipo I α como una probabilidad de rechazar H_0 siendo H_0 cierta. Probabilidad de, siendo inocente, dejar libre y se puede controlar. El error de tipo II es β y es una probabilidad de aceptar H_0 siendo H_0 falsa. Probabilidad de, no ser inocente y entrar en la cárcel. No se puede controlar, define la potencia del contraste de hipótesis = 1- β. Todos las aplicaciones estadísticas manejan el concepto p-valor que es una probabilidad fijada por el analista, define un **umbral**. El contraste de hipótesis sigue una distribución asociada a la normal y va a arrojar una probabilidad, si esa probabilidad está fuera de una región donde se rechaza la H_0 y que fija ese umbral \\alpha (habitualmente 0.05) entonces se podrá rechazar la H_0 bajo los supuestos establecidos. Como se vio en el capítulo 10 la función de densidad permite calcular probabilidades:
 
 ```r
 set.seed(10)
@@ -450,21 +455,22 @@ nrow(datos_entrenamiento)/nrow(train)
 # % de datos de test
 nrow(datos_test)/nrow(train)
 ```
+
 3
 
 [![](/images/2023/01/wp_editor_md_b5dbc258cd88aa304038284656e1631e.jpg)](/images/2023/01/wp_editor_md_b5dbc258cd88aa304038284656e1631e.jpg)
 
 Precisamente en función de esa región de rechazo se pueden clasificar los contrastes de hipótesis en:
 
-  * El contraste bilateral sitúa la región de rechazo en los dos extremos (colas) de la distribución muestral. Lanzar un dado y contrastar que la proporción de 3 es 1/6.
-  * El contraste unilateral sitúa la región de rechazo en uno de los dos extremos (colas) de la distribución muestral. Lanzar el dado y contrastar si la proporción de 3 es < 1/6.
+- El contraste bilateral sitúa la región de rechazo en los dos extremos (colas) de la distribución muestral. Lanzar un dado y contrastar que la proporción de 3 es 1/6.
+- El contraste unilateral sitúa la región de rechazo en uno de los dos extremos (colas) de la distribución muestral. Lanzar el dado y contrastar si la proporción de 3 es < 1/6.
 
 Además de la región de rechazo se pueden clasificar en función del conocimiento de la distribución de la población.
 
-  * Inferencia paramétrica, se conoce la distribución de la población y se cumplen todos los supuestos generales de la prueba de contraste.
-  * Inferencia no paramétrica, no se conoce la distribución y no se cumplen los supuestos
+- Inferencia paramétrica, se conoce la distribución de la población y se cumplen todos los supuestos generales de la prueba de contraste.
+- Inferencia no paramétrica, no se conoce la distribución y no se cumplen los supuestos
 
-Retomando ejemplos anteriores, ¿es distinta la media de la antigüedad para la respuesta de los encuestados? Es necesario aplicar el test de la $\chi^2$
+Retomando ejemplos anteriores, ¿es distinta la media de la antigüedad para la respuesta de los encuestados? Es necesario aplicar el test de la $\\chi^2$
 
 ```r
 set.seed(10)
@@ -477,6 +483,7 @@ nrow(datos_entrenamiento)/nrow(train)
 # % de datos de test
 nrow(datos_test)/nrow(train)
 ```
+
 4
 
 Como se indicó con anterioridad, el contraste suele partir desde la situación de igualdad, $H_0$: Hay independencia, la respuesta al cuestionario no depende del sexo. $H_1$: Hay dependencia, la respuesta depende del sexo. Este contraste arroja un p-valor de 0.0000 … la probabilidad es ínfima, se sitúa dentro de esa región de rechazo. De este modo, fijado un umbral de 0.05 se rechaza la $H_0$ y se rechaza que hay independencia, la respuesta depende del sexo del encuestado. Recordando el análisis bivariable con los intervalos de confianza anterior:
@@ -492,6 +499,7 @@ nrow(datos_entrenamiento)/nrow(train)
 # % de datos de test
 nrow(datos_test)/nrow(train)
 ```
+
 5
 
 [![](/images/2023/01/wp_editor_md_60e831578bbbb0b929fabd8da653f339.jpg)](/images/2023/01/wp_editor_md_60e831578bbbb0b929fabd8da653f339.jpg)
@@ -509,11 +517,12 @@ nrow(datos_entrenamiento)/nrow(train)
 # % de datos de test
 nrow(datos_test)/nrow(train)
 ```
+
 6
 
 [![](/images/2023/01/wp_editor_md_efb1c3f7efb177950169c3511e8b66eb.jpg)](/images/2023/01/wp_editor_md_efb1c3f7efb177950169c3511e8b66eb.jpg)
 
-Se aprecia que las proporciones de ambos sexos están dentro del intervalo, el test de la $\chi^2$ queda:
+Se aprecia que las proporciones de ambos sexos están dentro del intervalo, el test de la $\\chi^2$ queda:
 
 ```r
 set.seed(10)
@@ -526,6 +535,7 @@ nrow(datos_entrenamiento)/nrow(train)
 # % de datos de test
 nrow(datos_test)/nrow(train)
 ```
+
 7
 
 En este caso se obtiene un p-valor superior a ese umbral habitual de 0.05 se está situando en la región de aceptación de la H_0 por lo que la respuesta no depende del sexo del encuestado. Estos ejemplos están forzados pero es importante que el científico de datos no saque conclusiones erróneas en proporciones pequeñas, un modelo de aprendizaje automático no es tan sensible a esta situación y puede ser más difícil controlarla.
@@ -543,6 +553,7 @@ nrow(datos_entrenamiento)/nrow(train)
 # % de datos de test
 nrow(datos_test)/nrow(train)
 ```
+
 8
 
 [![](/images/2023/01/wp_editor_md_e67b9187e87af57dbbe47d7235ffbfa8.jpg)](/images/2023/01/wp_editor_md_e67b9187e87af57dbbe47d7235ffbfa8.jpg)
@@ -560,6 +571,7 @@ nrow(datos_entrenamiento)/nrow(train)
 # % de datos de test
 nrow(datos_test)/nrow(train)
 ```
+
 9
 
 En este caso la H_0 en condiciones de igualdad es la media de la antigüedad de los clientes que responden positivamente a la encuesta es igual a la media de la antigüedad de los clientes que responden negativamente y la H_1 la contraria. El contraste tiene una probabilidad de 0.5 por lo que fijado un umbral de 0.05 este está muy por debajo así que no es posible rechazar la hipótesis nula, con estos datos la antigüedad como cliente no está influyendo en la respuesta al cuestionario. De hecho, se ha pedido el intervalo de confianza y se observa que el 0 estaría dentro de ese intervalo. También cabe reseñar que el contraste de diferencia de medias requiere una gran cantidad de supuestos, además el t-test está muy influido por el número de observaciones.

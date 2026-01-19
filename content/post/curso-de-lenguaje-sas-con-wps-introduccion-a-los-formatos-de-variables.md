@@ -1,23 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- monográficos
-- wps
+  - formación
+  - monográficos
+  - wps
 date: '2011-01-14'
 lastmod: '2025-07-13'
 related:
-- curso-de-lenguaje-sas-con-wps-variables.md
-- trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados.md
-- trucos-sas-pasar-fecha-a-caracter-en-sas.md
-- trabajo-con-fechas-sas-introduccion.md
-- curso-de-lenguaje-sas-con-wps-funciones-fecha.md
+  - curso-de-lenguaje-sas-con-wps-variables.md
+  - trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados.md
+  - trucos-sas-pasar-fecha-a-caracter-en-sas.md
+  - trabajo-con-fechas-sas-introduccion.md
+  - curso-de-lenguaje-sas-con-wps-funciones-fecha.md
 tags:
-- format
-- informat
+  - format
+  - informat
 title: Curso de lenguaje SAS con WPS. Introducción a los formatos de variables
 url: /blog/curso-de-lenguaje-sas-con-wps-introduccion-a-los-formatos-de-variables/
 ---
+
 Volvemos con el curso de lenguaje SAS con WPS. Estaba parado debido a un problema con las licencias de WPS desde junio de 2010 pero le retomamos con uno de los capítulos más interesantes: **formatos de variables en SAS**. Si tuvieramos que definirlos Son imprescindibles tanto para leer como para escribir variables. Y esa es la característica que los divide, existen formatos de entrada INFORMAT y formatos de salida FORMAT. Se dividen por categorías, entre las que destacan los formatos numéricos, formatos carácter y formatos de fecha. La sintaxis es sencilla (IN)FORMAT
 -variable–formato-
 

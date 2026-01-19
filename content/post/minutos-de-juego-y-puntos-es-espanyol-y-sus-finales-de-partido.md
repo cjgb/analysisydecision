@@ -1,23 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- consultoría
-- fútbol
-- opinión
-- r
+  - consultoría
+  - fútbol
+  - opinión
+  - r
 date: '2024-04-01'
 lastmod: '2025-07-13'
 related:
-- los-porteros-del-espanyol-y-la-regresion-binomial-negativa.md
-- resultados-de-la-liga-con-rstats-estudiando-graficamente-rachas.md
-- alineaciones-de-equipos-de-futbol-con-worldfootballr-de-rstats.md
-- pintando-campos-de-futbol-con-rstats-y-entendiendo-funciones-de-densidad.md
-- datos-de-eventing-gratuitos-en-statsbomb.md
+  - los-porteros-del-espanyol-y-la-regresion-binomial-negativa.md
+  - resultados-de-la-liga-con-rstats-estudiando-graficamente-rachas.md
+  - alineaciones-de-equipos-de-futbol-con-worldfootballr-de-rstats.md
+  - pintando-campos-de-futbol-con-rstats-y-entendiendo-funciones-de-densidad.md
+  - datos-de-eventing-gratuitos-en-statsbomb.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Minutos de juego y puntos. El Espanyol, sus finales de partido y mis enfados
 url: /blog/minutos-de-juego-y-puntos-es-espanyol-y-sus-finales-de-partido/
 ---
+
 Pienso que el Espanyol este 2024 se está dejando muchos puntos al final de los partidos. Cuando el partido llega al minuto 75 pierdo años de vida. ¿Es verdad que el Espanyol se está dejando puntos en el tramo final del partido? Vamos a estudiarlo numéricamente con worldfootballR y datos de FBRef empleando funciones que ya se han trabajado con anterioridad.
 
 El primer paso será obtener todos los partidos de la Liga Hypermotion de este 2024 con **fb_mach_url**
@@ -31,13 +32,11 @@ partidos_segunda <- data.frame(url=fb_match_urls(country = "ESP", gender = "M",
                           season_end_year = c(2024), tier = "2nd"))
 ```
 
-
 De todos los partidos, se seleccionan aquellos del equipo en el que estamos interesados. En este ejemplo estamos con el Espanyol pero podéis poner el nombre del equipo que deseáis sin tildes como está en al url.
 
 ```r
 equipo = 'Espanyol'
 ```
-
 
 Creo que existía una función que permitía obtener el reporte del partido con todos aquellos hechos más relevantes pero en el momento de escribir estas líneas no funcionaba para un equipo de segunda división o se trata de un reporte que no se puede obtener de FBRef, el caso es que se opta por emplear **fb_macth_shooting** para determinar en que minuto se produce un gol y poder ir creando un resultado de partido.
 
@@ -52,13 +51,11 @@ for (i in seq(1:nrow(partidos))) {
 }
 ```
 
-
 Descargados todos los tiros de los partidos en los que ha participado el Espanyol esta temporada de liga se ordenan por fecha y minuto de juego para crear ese marcador.
 
 ```r
 shots <- shots %>% arrange(Date, Minute)
 ```
-
 
 Se observa que _Minute_ no es numérico, tiene el tiempo añadido y su ordenación puede causar problemas, por ello se crea un campo minuto con formato numérico. Se aprovecha este paso para eliminar tildes del nombre del equipo que se está analizando ya que a futuro puede dar problemas.
 
@@ -69,7 +66,6 @@ shots <- shots %>% mutate(minuto = ifelse(grepl("+",Minute)>0, substr(Minute,1,2
   mutate(Squad = chartr("áéíóú", "aeiou", Squad))
 ```
 
-
 El formato ya es más adecuado acortando los tiempos añadidos en el minuto 45 o minuto 90. A continuación, se crea una tabla artificial con todas las fechas de partidos y los 90 minutos de juego que permitirá cruzar con la tabla de tiros a puerta.
 
 ```r
@@ -79,7 +75,6 @@ minutos <- data.frame(minuto)
 
 resultados <- crossing(fechas,minutos)
 ```
-
 
 Sobre esta tabla artificial que empieza deliveradamente en el 0 se añade un campo que indica si el gol es del equipo en estudio o bien el gol es del equipo rival.
 
@@ -94,7 +89,6 @@ resultados <- resultados %>% left_join(goles_equipo) %>% left_join(goles_rival) 
   mutate(gol_equipo = ifelse(is.na(gol_equipo), 0, gol_equipo),
          gol_rival = ifelse(is.na(gol_rival), 0, gol_rival))
 ```
-
 
 Como se aprecia en el código también se han eliminado valores perdidos en los campos de gol para facilitar la realización de una suma acumulada que se va a realizar con la función de base _ave_ , un homenaje a R base que cada vez parece usarse menos.
 

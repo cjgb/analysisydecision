@@ -1,36 +1,37 @@
 ---
 author: rvaquerizo
 categories:
-- business intelligence
-- formación
-- monográficos
+  - business intelligence
+  - formación
+  - monográficos
 date: '2010-11-27'
 lastmod: '2025-07-13'
 related:
-- montemos-un-sistema-de-informacion-en-nuestro-equipo-iii.md
-- montemos-un-sistema-de-informacion-en-nuestro-equipo-ii.md
-- evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso.md
-- conectar-r-a-una-base-de-datos.md
-- estadistica-para-cientificos-de-datos-con-r-introduccion.md
+  - montemos-un-sistema-de-informacion-en-nuestro-equipo-iii.md
+  - montemos-un-sistema-de-informacion-en-nuestro-equipo-ii.md
+  - evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso.md
+  - conectar-r-a-una-base-de-datos.md
+  - estadistica-para-cientificos-de-datos-con-r-introduccion.md
 tags:
-- pentaho
-- postgres
-- bases de datos
-- r
+  - pentaho
+  - postgres
+  - bases de datos
+  - r
 title: Montemos un sistema de información en nuestro equipo (I)
 url: /blog/montemos-un-sistema-de-informacion-en-nuestro-equipo-i/
 ---
+
 Un poco de bricolaje. Se trata de crear un sistema de información sin coste y que nos permita almacenar nuestros datos con orden y coherencia, crear informes y realizar modelos matemáticos bajo Windows. Es perfectamente replicable para Linux. También estoy abierto a sugerencias ya que tampoco soy ningún experto en el tema y podemos crear un debate interesante. El sistema que planteo se va a sustentar en 3 pilares fundamentales que os podéis descargar de forma gratuita en los link creados:
 
-  * [Postgres: ](http://www.postgresql.org/)
+- [Postgres: ](http://www.postgresql.org/)
 
 Será nuestro motor de BBDD relacionales. Seguramente no haremos un modelo de datos complicado e incluso nos dedicaremos a llenar la BBDD con tablas de todo tipo sin mucha conexión entre ellas pero es necesario tener una BBDD.
 
-  * [Data integration de Pentaho:](http://sourceforge.net/projects/pentaho/files/)
+- [Data integration de Pentaho:](http://sourceforge.net/projects/pentaho/files/)
 
 Será la herramienta que empleemos para subir datos al servidor. También podremos emplearla para realizar informes.
 
-  * [R:](http://www.r-project.org/)
+- [R:](http://www.r-project.org/)
 
 Que puedo más puedo decir sobre R. El futuro.
 

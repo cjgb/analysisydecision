@@ -1,21 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- banca
-- consultoría
+  - banca
+  - consultoría
 date: '2009-03-02'
 lastmod: '2025-07-13'
 related:
-- margenes-nulos-en-los-nuevos-depositos-bancarios.md
-- a-mi-me-preocupa-el-pequeno-ahorrador.md
-- busca-la-relacion-deuda-subordinada-y-cajas-catalanas.md
-- lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
-- participaciones-preferentes-de-las-cajas-de-ahorro.md
+  - margenes-nulos-en-los-nuevos-depositos-bancarios.md
+  - a-mi-me-preocupa-el-pequeno-ahorrador.md
+  - busca-la-relacion-deuda-subordinada-y-cajas-catalanas.md
+  - lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
+  - participaciones-preferentes-de-las-cajas-de-ahorro.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: La Batalla de las nóminas. Seguimos buscando el dinero nuevo
 url: /blog/la-batalla-de-las-nominas-seguimos-buscando-el-dinero-nuevo/
 ---
+
 Cuanta falta está haciendo el dinero nuevo.
 
 El año pasado tuvimos la guerra de los depósitos, con lo que el pequeño ahorrador salió ganando y este año tenemos la Batalla de las nóminas:

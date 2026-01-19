@@ -1,22 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- consultoría
+  - consultoría
 date: '2009-11-19'
 lastmod: '2025-07-13'
 related:
-- en-breve-revision-de-wps-clonico-de-sas.md
-- comparativa-de-precio-wps-vs-sas.md
-- wps-en-el-mercado-espanol.md
-- acercamiento-a-wps-migrando-desde-sas.md
-- sas-vs-wps-diferencias-de-precio.md
+  - en-breve-revision-de-wps-clonico-de-sas.md
+  - comparativa-de-precio-wps-vs-sas.md
+  - wps-en-el-mercado-espanol.md
+  - acercamiento-a-wps-migrando-desde-sas.md
+  - sas-vs-wps-diferencias-de-precio.md
 tags:
-- sas es muy caro
-- wps
-- sas
+  - sas es muy caro
+  - wps
+  - sas
 title: Nuevo entorno para la gestión de la información
 url: /blog/nuevo-entorno-para-la-gestion-de-la-informacion/
 ---
+
 Carlos ya nos habló del clon de SAS [WPS ](https://analisisydecision.es/integracion-de-r-con-sas-spss-y-otros/)también ha hecho referencia al [compilador de SAS en Java](https://analisisydecision.es/traducir-codigo-sas-a-java/) y le estoy dando vueltas al tema. Por si fuera poco [leo esto en DecisionStats](http://decisionstats.wordpress.com/2009/11/18/wps-alternative-sas-language-software-pricing/).
 
 ¿Cuánto dinero puede ahorrar una organización dependiente de SAS si monta un entorno en WPS (el compilador me pone menos)?

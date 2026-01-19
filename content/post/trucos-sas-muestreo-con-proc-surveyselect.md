@@ -1,23 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- sas
-- trucos
+  - formación
+  - sas
+  - trucos
 date: '2009-06-15'
 lastmod: '2025-07-13'
 related:
-- muestreo-de-datos-con-r.md
-- trucos-sas-muestras-aleatorias-con-y-sin-reemplazamiento.md
-- truco-sas-categorizar-variables-continuas.md
-- trucos-sas-variables-dummy-de-una-variable-continua.md
-- las-cuentas-claras.md
+  - muestreo-de-datos-con-r.md
+  - trucos-sas-muestras-aleatorias-con-y-sin-reemplazamiento.md
+  - truco-sas-categorizar-variables-continuas.md
+  - trucos-sas-variables-dummy-de-una-variable-continua.md
+  - las-cuentas-claras.md
 tags:
-- muestreo con sas
-- proc surveyselect
+  - muestreo con sas
+  - proc surveyselect
 title: Trucos SAS. Muestreo con PROC SURVEYSELECT
 url: /blog/trucos-sas-muestreo-con-proc-surveyselect/
 ---
+
 Hace varios días planteamos algún truco SAS para la realización de muestras aleatorias. Hoy planteo otro truco para lo mismo pero empleando el procedimiento de SAS SURVEYSELECT. Este procedimiento lo tenemos en el módulo STAT y tiene una sintaxis muy sencilla. Además nos permite realizar [muestreos estratificados ](http://www.bioestadistica.uma.es/libro/node89.htm)de forma muy sencilla, mediante pasos data el muestreo estratificado se complica. Como es habitual vemos varios ejemplos partiendo de una tabla SAS aleatoria:
 
 ```r
@@ -92,7 +93,7 @@ PROC SURVEYSELECT DATA=aleat3
 RUN;
 ```
 
-Realizamos una ordenación previa por la variable que hace de estrato, indicamos el método y en el número de observaciones ponemos el número que deseamos por estrato, con esto tendremos nº estratos*N observaciones en el dataset de salida. Para indicarle cual es la variable por la que se realiza el muestreo estratificado tenemos la instrucción STRATA. De especial interés pueden ser las variables que se añaden al dataset de salida _SelectionProb_ y _SamplingWeight_ que nos indican la probabilidad de obtención de la observación y el peso que ésta tiene. Si deseamos muestreo estratificado con reemplazamiento podemos hacer:
+Realizamos una ordenación previa por la variable que hace de estrato, indicamos el método y en el número de observaciones ponemos el número que deseamos por estrato, con esto tendremos nº estratos\*N observaciones en el dataset de salida. Para indicarle cual es la variable por la que se realiza el muestreo estratificado tenemos la instrucción STRATA. De especial interés pueden ser las variables que se añaden al dataset de salida _SelectionProb_ y _SamplingWeight_ que nos indican la probabilidad de obtención de la observación y el peso que ésta tiene. Si deseamos muestreo estratificado con reemplazamiento podemos hacer:
 
 ```r
 *MUESTREO ESTRATIFICADO CON REEMPLAZAMIENTO;

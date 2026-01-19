@@ -1,24 +1,25 @@
 ---
 author: Paco Gárate
 categories:
-- banca
-- machine learning
-- python
-- seguros
+  - banca
+  - machine learning
+  - python
+  - seguros
 date: '2019-07-01'
 lastmod: '2025-07-13'
 related:
-- graficos-de-calendarios-con-series-temporales.md
-- trabajo-con-fechas-sas-funciones-fecha.md
-- curso-de-lenguaje-sas-con-wps-funciones-fecha.md
-- trucos-sas-operar-con-fechas-yyyymm-tipicas-de-particiones-oracle.md
-- bucle-de-fechas-con-sas-para-tablas-particionadas.md
+  - graficos-de-calendarios-con-series-temporales.md
+  - trabajo-con-fechas-sas-funciones-fecha.md
+  - curso-de-lenguaje-sas-con-wps-funciones-fecha.md
+  - trucos-sas-operar-con-fechas-yyyymm-tipicas-de-particiones-oracle.md
+  - bucle-de-fechas-con-sas-para-tablas-particionadas.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Calendario de días laborales con Pandas
 url: /blog/calendario-dias-laborales-pandas/
 ---
-Es habitual escuchar que un científico de datos es un estadístico que trabaja con Python. En parte, tiene razón. Sin embargo, quien ha trabajado dentro del mundo académico sabe que para un estadístico las [vacas son esféricas](https://es.wikipedia.org/wiki/Vaca_esférica) y los meses tienen 365,25/12 días. En cambio, en el mundo real, ni hay dos vacas iguales ni un mes igual a otro.
+
+Es habitual escuchar que un científico de datos es un estadístico que trabaja con Python. En parte, tiene razón. Sin embargo, quien ha trabajado dentro del mundo académico sabe que para un estadístico las [vacas son esféricas](https://es.wikipedia.org/wiki/Vaca_esf%C3%A9rica) y los meses tienen 365,25/12 días. En cambio, en el mundo real, ni hay dos vacas iguales ni un mes igual a otro.
 Sirva esta entrada para poner en valor todo aquel trabajo adicional y tiempo dedicado por aquellos que trabajan con datos y huyen de simplificaciones estadísticas, ya se denominen científicos de datos o cómo quieran llamarse.
 
 ## Series temporales con Pandas
@@ -26,15 +27,15 @@ Sirva esta entrada para poner en valor todo aquel trabajo adicional y tiempo ded
 Pandas, como se ha visto aquí, es la librería por excelencia para el [manejo de datos](https://analisisydecision.es/data-management-basico-con-pandas/) ya que permite trabajar fácilmente con tablas numéricas y series temporales.
 Una utilidad disponible en Pandas en relación a las series temporales es crear directamente rangos de fechas con la función `pd.date_range()`, la cual utiliza los siguientes parámetros (no todos obligatorios):
 
-  * **start** : Inicio del rango. Límite izquierdo para generar fechas.
-  * **end** : Fin del rango. Límite derecho para generar fechas.
-  * **period** : Número de periodos a generar
-  * **freq** : Frecuencia de las proyecciones. Entre otros:
-    * D: Diaria (por defecto)
-    * Y: Anual
-    * M: Mensual
-  * **closed** : Si queremos excluir el inicio (closed=’right’) o el final (closed=’left’)
-  * **name** : Nombre del DatetimeIndex resultante (por defecto ninguno)
+- **start** : Inicio del rango. Límite izquierdo para generar fechas.
+- **end** : Fin del rango. Límite derecho para generar fechas.
+- **period** : Número de periodos a generar
+- **freq** : Frecuencia de las proyecciones. Entre otros:
+  - D: Diaria (por defecto)
+  - Y: Anual
+  - M: Mensual
+- **closed** : Si queremos excluir el inicio (closed=’right’) o el final (closed=’left’)
+- **name** : Nombre del DatetimeIndex resultante (por defecto ninguno)
 
 ## Ejemplo básico de una serie temporal
 
@@ -60,7 +61,6 @@ Fecha
 10 2019-11-30
 11 2019-12-31
 ```
-
 
 ## Crear una serie temporal con los últimos días laborales de cada mes
 
@@ -89,7 +89,6 @@ Fecha
 10 2019-11-29
 11 2019-12-31
 ```
-
 
 Aunque si queremos mayor exactitud, debemos tener en cuenta los días festivos (por ejemplo, si calculamos costes que dependan de los días exactamente transcurridos entre cupón y cupón, un 1 día entre 20 representa un 5% de error). Conocer los días festivos dentro de un periodo de tiempo es especialmente útil cuando estimamos usos y comportamientos humanos (transporte público, asistencias médicas, cargas en servidores informáticos…). En el sector asegurador, dichos patrones pueden afectar directamente en las reservas contables, por ejemplo, a la hora de calcular los costes incurridos pero no declarados (IBNR). De hecho, en algunas compañías aseguradoras es habitual que se incrementen ligeramente los ratios de siniestralidad los años bisiestos simplemente por disponer de un día natural más que el resto.
 
@@ -120,7 +119,6 @@ Fecha  n_dias
 10 2019-11-29    29.0
 11 2019-12-31    32.0
 ```
-
 
 _(Como puede observarse, el 28-2 y 31-5 no aparecen en el calendario de pagos)_
 
@@ -177,7 +175,6 @@ Fecha
 18 2019-12-31
 ```
 
-
 _(Se aprecia como el domingo 8 de diciembre es reemplazado por el lunes 9)_
 
 Así, una vez creado nuestro calendario de fiestas nacionales, podemos utilizarlo para conocer las fiestas de próximos años, por ejemplo para el año 2020:
@@ -193,7 +190,6 @@ DatetimeIndex(['2020-01-01', '2020-01-06', '2020-04-10', '2020-05-01',
                '2020-12-08', '2020-12-25'],
               dtype='datetime64[ns]', freq=None)
 ```
-
 
 Las fiestas regionales o locales pueden ser incluidas de la misma manera, aunque hay que tener en cuenta que en ciertas comunidades es costumbre trasladar ciertas fiestas al 19 de marzo o el jueves del Corpus en vez de al siguiente lunes (en ese caso habría que crear una nueva función basada en la función de Pandas `sunday_to_monday`).
 

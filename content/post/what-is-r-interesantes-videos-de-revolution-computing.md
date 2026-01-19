@@ -1,23 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- consultoría
-- formación
-- r
+  - consultoría
+  - formación
+  - r
 date: '2010-03-30'
 lastmod: '2025-07-13'
 related:
-- dos-paginas-con-recursos-para-introducirse-en-r.md
-- los-recursos-mas-destacados-de-r-en-la-web.md
-- algunos-temas-de-interes-sobre-r.md
-- manual-curso-introducion-de-r-capitulo-1-que-es-r.md
-- revision-de-las-iii-jornadas-de-r.md
+  - dos-paginas-con-recursos-para-introducirse-en-r.md
+  - los-recursos-mas-destacados-de-r-en-la-web.md
+  - algunos-temas-de-interes-sobre-r.md
+  - manual-curso-introducion-de-r-capitulo-1-que-es-r.md
+  - revision-de-las-iii-jornadas-de-r.md
 tags:
-- revolution computing
-- what is r
+  - revolution computing
+  - what is r
 title: What is R? Interesantes videos de REvolution Computing
 url: /blog/what-is-r-interesantes-videos-de-revolution-computing/
 ---
+
 Serie de 4 videos de REvolution que aconsejo ver:
 
 [![Imagen de previsualización de YouTube](https://img.youtube.com/vi/M2u7kbcXI_k/0.jpg)](http://www.youtube.com/watch?v=M2u7kbcXI_k)

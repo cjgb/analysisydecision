@@ -1,25 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- libro estadística
-- modelos
-- monográficos
-- r
+  - formación
+  - libro estadística
+  - modelos
+  - monográficos
+  - r
 date: '2023-08-21'
 lastmod: '2025-07-13'
 related:
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-16-modelizacion-estadistica-conociendo-los-datos.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-9-analisis-exploratorio-de-datos-eda.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-6-descripcion-numerica-de-variables.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-8-problemas-con-los-datos.md
-- monografico-arboles-de-clasificacion-con-rpart.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-16-modelizacion-estadistica-conociendo-los-datos.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-9-analisis-exploratorio-de-datos-eda.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-6-descripcion-numerica-de-variables.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-8-problemas-con-los-datos.md
+  - monografico-arboles-de-clasificacion-con-rpart.md
 tags:
-- sin etiqueta
-title: Introducción a la Estadística para Científicos de Datos. Capítulo 17. Modelización
-  estadística. Seleccionar variables y modelo
+  - sin etiqueta
+title: Introducción a la Estadística para Científicos de Datos. Capítulo 17. Modelización estadística. Seleccionar variables y modelo
 url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo/
 ---
+
 El capítulo anterior comenzó con esta imagen.
 
 [![](/images/2023/05/wp_editor_md_27b9a01430023cb93f618c4fef0f4448.jpg)](/images/2023/05/wp_editor_md_27b9a01430023cb93f618c4fef0f4448.jpg)
@@ -93,7 +93,6 @@ mutate(fr_antiguedad = as.factor(ceiling((row_number()/n()) * grupos)))
 datatable(head(train2))
 ```
 
-
 Se replica de nuevo el filtrado de datos eliminando a los clientes que no han estado asegurados cuya respuesta siempre es 0 y no tienen interés en comunicaciones comerciales y por el mismo motivo se eliminan a los clientes con garantía de daños creando el objeto `train2`. Se aplica el código inicial de la reclasificación de factores a la que se llegó de forma univariable. A continuación, se crean los conjuntos de datos de entrenamiento y de test, en este caso no se balanceará la muestra debido a que se dispone de un 21.5% de respuestas positivas y por ese motivo no es necesario disponer de un conjunto de validación.
 
 ```r
@@ -108,7 +107,6 @@ test <- train2[-indices,]
 # % de observaciones en test
 nrow(test)/nrow(train2)
 ```
-
 
 El % de observaciones seleccionadas difiere con los planteado en el capítulo anterior debido a que se seleccionan un 70% de observaciones para entrenar el modelo y el 30% para testear, en la fase previa, de cara a agilizar los procesos, se seleccionaba un 50% de las observaciones.
 
@@ -133,8 +131,7 @@ predictoras <- colnames(entrenamiento)
 predictoras <- predictoras[substr(predictoras,1,3)=="fr_"]
 ```
 
-
-De nuevo, retiterar la importancia que tiene que las variables participantes en la modelización tengan una característica común para automatizar código, en este caso todas comienzan con el prefijo fr_. A continuación se presenta un bucle [obtenido en stackoverflow que permite crear la matriz de correlaciones](https://stackoverflow.com/questions/44070853/association-matrix-in-r).
+De nuevo, retiterar la importancia que tiene que las variables participantes en la modelización tengan una característica común para automatizar código, en este caso todas comienzan con el prefijo fr\_. A continuación se presenta un bucle [obtenido en stackoverflow que permite crear la matriz de correlaciones](https://stackoverflow.com/questions/44070853/association-matrix-in-r).
 
 ```r
 correlaciones <- entrenamiento %>%
@@ -163,7 +160,6 @@ remove(correlaciones)
 corrplot(cor_matrix, addCoef.col = 'black')
 ```
 
-
 [![](/images/2023/08/wp_editor_md_2b6cd22115a4f5ec2463508d66ed31b5.jpg)](/images/2023/08/wp_editor_md_2b6cd22115a4f5ec2463508d66ed31b5.jpg)
 
 ¿Qué valor de la V de Cramer es umbral para determinar que dos factores están correlacionados? A partir de 0.4 ya se tiene sospecha, por encima de 0.6 hay una clara relación. En este caso Edad, canal y antigüedad del vehículo parece que están correlacionados. ¿Se deben eliminar 2 de esas 3 variables? De nuevo hay que apelar a los análisis planteados durante todo el ensayo y a la comunicación con los equipos de negocio para entender porque se está produciendo este hecho. Para entender mejor el problema, se procede a tabular el cruce de esos factores.
@@ -176,7 +172,6 @@ datatable(entrenamiento %>% group_by(fr_edad, fr_canal) %>%
   pivot_wider(names_from = fr_canal, values_from = conteo), options = list(dom = 't'))
 ```
 
-
 Se pone de manifiesto la necesidad de agrupar canales con algún sentido de negocio, la agrupación en niveles de interés está provocando la correlación.
 
 ¿Qué puede estar pasando con canal y la antigüedad del vehículo?
@@ -187,7 +182,6 @@ datatable(entrenamiento %>% group_by(fr_antiguedad_vehiculo, fr_canal) %>%
   pivot_wider(names_from = fr_canal, values_from = conteo), options = list(dom = 't'))
 ```
 
-
 El bajo interés que tiene el seguro de automóviles entre los clientes con vehículo nuevo está provocando esta situación.
 
 Por ultimo, queda el análisis entre edad y antigüedad del vehículo.
@@ -197,7 +191,6 @@ datatable(entrenamiento %>% group_by(fr_edad, fr_antiguedad_vehiculo) %>%
   summarise(conteo=n()) %>%
   pivot_wider(names_from = fr_antiguedad_vehiculo, values_from = conteo), options = list(dom = 't'))
 ```
-
 
 Son los encuestados jóvenes los que concentran los vehículos nuevos, los encuestados con vehículos nuevos son los que se concentran en los canales con menor interés. Parece existir sesgo con la selección de clientes a los que se realiza el cuestionario y por ese motivo se opta por mantener las variables esperando que el propio modelo elimine alguna de ellas. Pero se reitera la importancia que tiene la comunicación con el equipo que ha generado los datos y con los usuarios finales de los modelos ya que se toman decisiones que han de estar consensuadas y el modelo está adoleciendo de problemas.
 
@@ -211,13 +204,11 @@ formula_modelo = as.formula(paste0('Response ~', paste(predictoras,collapse = '+
 modelo.1 <- glm(data = entrenamiento, formula = formula_modelo, family='binomial')
 ```
 
-
-Recordar que `glm` requiere un data frame, una fórmula y especificar la familia de la función de enlace que permite modelizar ese tipo de datos. Para evitar escribir todas las variables presentes en la fórmula se emplea otra de las posibilidades que ofrece emplear un método de identificación de variables. El `summary` del modelo permite estudiar el test $\beta_i=0$ asociado a cada parámetro del modelo.
+Recordar que `glm` requiere un data frame, una fórmula y especificar la familia de la función de enlace que permite modelizar ese tipo de datos. Para evitar escribir todas las variables presentes en la fórmula se emplea otra de las posibilidades que ofrece emplear un método de identificación de variables. El `summary` del modelo permite estudiar el test $\\beta_i=0$ asociado a cada parámetro del modelo.
 
 ```r
 summary(modelo.1)
 ```
-
 
 El trabajo previo en las variables ha permitido que el modelo arroje unos resultados esperados. La única variable que no está aportando al modelo es la antigüedad como cliente, solo un nivel y con un p-valor asociado por encima del 0.05 parece ofrecer un parámetro capaz de discriminar a los clientes interesados. Este hecho ya se intuía en los análisis univariables previos debido a su comportamiento completamente azaroso. Con tantas observaciones y un efecto tan pequeño se puede eliminar esa variable.
 
@@ -229,14 +220,13 @@ modelo.2 <- glm(data = entrenamiento, formula = formula_modelo, family='binomial
 summary(modelo.2)
 ```
 
-
-En este caso el test $\beta_i=0$ se rechaza en todos los niveles de los factores seleccionados. Esto lo ha facilitado el trabajo previo en los factores. Este `modelo.2` sería el modelo final, en cualquier caso, se podrían emplear técnicas de selección de variables vistas en capítulos anteriores para contrastar si este trabajo manual tiene el mismo resultado. En el caso de tener cientos de variables este proceso sería más complicado y optar por métodos de selección automáticos puede ahorrar mucho tiempo y esfuerzo.
+En este caso el test $\\beta_i=0$ se rechaza en todos los niveles de los factores seleccionados. Esto lo ha facilitado el trabajo previo en los factores. Este `modelo.2` sería el modelo final, en cualquier caso, se podrían emplear técnicas de selección de variables vistas en capítulos anteriores para contrastar si este trabajo manual tiene el mismo resultado. En el caso de tener cientos de variables este proceso sería más complicado y optar por métodos de selección automáticos puede ahorrar mucho tiempo y esfuerzo.
 
 ## Selección del modelo
 
 Se selecciona este `modelo.2` como el modelo final y sus parámetros están describiendo a los clientes con mayor interés. Como se aprecia en la salida anterior los clientes con vehículos antiguos muestran más interés ya que el parámetro asociado es positivo, en un modelo aditivo _suma probabilidad_ , incluso se podría plantear transformar este factor de 3 niveles en un factor de 2 niveles. También aporta probabilidad si el cliente es hombre, pero aporta menos ya que el parámetro es más próximo a 0. En el canal y la zona todos los parámetros restan probabilidad, al nivel que no aparece, el nivel base que es `alto interés` ya que se recuerda que, si no se modifica previamente, el orden de los niveles se establece por orden lexico-gráfico. Por edad lo que se esperaba, un comportamiento que no es lineal y que en el rango de 31 a 35 años es donde mayor probabilidad, mayor interés demuestran los encuestados por el seguro de automóviles. En cuanto a la prima se produce un hecho curioso, los dos parámetros son significativos, pero su capacidad de discriminar es mínima ya que el valor que tienen se podrían unir en un único nivel.
 
-Cuanto más trabajados estén los niveles de los factores en la fase de conocimiento menos problemas tendrá el científico de datos en esta fase, aun así se va a optar por agrupar la prima en dos niveles (<=3000 y >3000 €) para dar mayor sencillez al modelo.
+Cuanto más trabajados estén los niveles de los factores en la fase de conocimiento menos problemas tendrá el científico de datos en esta fase, aun así se va a optar por agrupar la prima en dos niveles (\<=3000 y >3000 €) para dar mayor sencillez al modelo.
 
 ```r
 set.seed(12)
@@ -250,6 +240,7 @@ test <- train2[-indices,]
 # % de observaciones en test
 nrow(test)/nrow(train2)
 ```
+
 0
 
 Qué sucede si durante el proceso de modelización se vuelve a reclasificar un factor. Que será necesario incluirlo en el código de creación de los niveles de los factores.
@@ -266,6 +257,7 @@ test <- train2[-indices,]
 # % de observaciones en test
 nrow(test)/nrow(train2)
 ```
+
 1
 
 Y por supuesto sería necesario volver a ejecutar entrenamiento y test. Sin embargo, en este caso se opta por ejecutar la reclasificación sobre el conjunto de datos de entrenamiento. Pero estas situaciones se deben manejar con cuidado porque el código y el proceso de generación de los datos para la tabla de modelización final **son parte de la documentación** que el científico de datos tiene que entregar cuando realice un modelo.
@@ -282,6 +274,7 @@ test <- train2[-indices,]
 # % de observaciones en test
 nrow(test)/nrow(train2)
 ```
+
 2
 
 El llamado `modelo.3` será un candidato a ser el modelo final, para seleccionar el modelo que habría de ser puesto en producción además del comportamiento de los parámetros y del código necesario para _productivizarlo_ es evidente que es necesario estudiar su capacidad predictiva.
@@ -304,6 +297,7 @@ test <- train2[-indices,]
 # % de observaciones en test
 nrow(test)/nrow(train2)
 ```
+
 3
 
 El % es análogo porque es una selección al azar del 10% de las observaciones, ya que a todos los clientes les da la misma probabilidad independientemente de si están interesados en el seguro de automóviles o no. Pero el científico de datos ha creado una estructura matemática que permite establecer una probabilidad de ese interés en el seguro de autos en base a unas características de los clientes. De esta manera el primer paso es añadir esa probabilidad a los datos de test del modelo candidato a ser el final.
@@ -320,14 +314,15 @@ test <- train2[-indices,]
 # % de observaciones en test
 nrow(test)/nrow(train2)
 ```
+
 4
 
 Este proceso de emplear la estructura matemática de un modelo a un conjunto de datos es lo que se denomina **escorear un modelo** y permite obtener un _output_ registro a registro con el resultado del modelo, en este caso la probabilidad de mostrar interés en el seguro de automóviles. Ahora, ordenando el conjunto de datos por esa probabilidad de mayor a menor, si el modelo tiene un correcto funcionamiento, al seleccionar el 10% de las primeras observaciones el % de interesados hace superar a ese 21% de partida.
 
-«`{r message=FALSE, warning=FALSE}
-test <\- test %>% arrange(desc(probabilidad_modelo.3))
+«\`{r message=FALSE, warning=FALSE}
+test \<- test %>% arrange(desc(probabilidad_modelo.3))
 
-porcen_mas_interesados=test %>% filter(row_number()<=round(nrow(test)<em>0.1,0)) %>%
+porcen_mas_interesados=test %>% filter(row_number()\<=round(nrow(test)<em>0.1,0)) %>%
 summarise(porcen_interesados=sum(Response)/round(nrow(test)</em>0.1,0))
 porcen_mas_interesados = as.numeric(round(porcen_mas_interesados,4))
 

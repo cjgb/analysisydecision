@@ -1,21 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- r
+  - formación
+  - r
 date: '2014-02-04'
 lastmod: '2025-07-13'
 related:
-- nuevo-curso-de-estadistica-con-r.md
-- aprende-rstats-de-forma-presencial-por-muy-poco.md
-- nueva-edicion-del-curso-basico-de-r.md
-- curso-basico-de-r.md
-- lectura-conjunta-de-analyzing-linguistic-data.md
+  - nuevo-curso-de-estadistica-con-r.md
+  - aprende-rstats-de-forma-presencial-por-muy-poco.md
+  - nueva-edicion-del-curso-basico-de-r.md
+  - curso-basico-de-r.md
+  - lectura-conjunta-de-analyzing-linguistic-data.md
 tags:
-- jornadas de r
+  - jornadas de r
 title: Jornadas de R gratuitas en Galicia
 url: /blog/jornadas-de-r-gratuitas-en-galicia/
 ---
+
 Buena iniciativa en la que seguro que algún lector está interesado:
 
 <http://www.galpon.org/content/2a-xornada-dos-sabados-libres-na-altamar-estatistica-con-r-i>

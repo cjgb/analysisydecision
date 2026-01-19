@@ -1,23 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- sas
+  - formación
+  - sas
 date: '2010-01-13'
 lastmod: '2025-07-13'
 related:
-- las-cuentas-claras.md
-- trucos-sas-trasponer-con-sql-para-torpes.md
-- proc-sql-merge-set.md
-- macros-sas-agrupando-variables-categoricas.md
-- trucos-sas-variables-dummy-de-una-variable-continua.md
+  - las-cuentas-claras.md
+  - trucos-sas-trasponer-con-sql-para-torpes.md
+  - proc-sql-merge-set.md
+  - macros-sas-agrupando-variables-categoricas.md
+  - trucos-sas-variables-dummy-de-una-variable-continua.md
 tags:
-- case
-- proc sql
-- sas
+  - case
+  - proc sql
+  - sas
 title: Uso de CASE en PROC SQL
 url: /blog/uso-de-case-en-proc-sql/
 ---
+
 Vamos a estudiar como funciona CASE en un PROC SQL. Son palabras que aparecen en las búsquedas de Google y también he observado que el número de visitas al blog ha descendido en los últimos días y no sólo es debido a las vacaciones navideñas. El 60% de los clicks a AyD vienen por temas de SAS y en los últimos días tengo muy olvidados los mensajes de esta categoría. Además en el plazo de 2 días voy a dejar de trabajar con esta herramienta por lo que, es posible, que se reduzcan aun más. En fin, a lo que voy, CASE en el PROC SQL. Case nos permite crear campos condicionales dentro del bloque SELECT de una query de PROC SQL:
 
 ```r

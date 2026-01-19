@@ -1,22 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- excel
-- formación
-- trucos
+  - excel
+  - formación
+  - trucos
 date: '2017-03-14'
 lastmod: '2025-07-13'
 related:
-- trucos-excel-unir-varios-excel-en-uno.md
-- truco-excel-abrir-multiples-libros-de-excel-en-distintas-hojas-de-un-nuevo-libro.md
-- truco-sas-unir-todos-los-excel-en-uno-solo.md
-- truco-sas-unir-todas-las-hojas-de-un-excel-en-una.md
-- truco-excel-pasar-un-rango-de-varias-columnas-a-una.md
+  - trucos-excel-unir-varios-excel-en-uno.md
+  - truco-excel-abrir-multiples-libros-de-excel-en-distintas-hojas-de-un-nuevo-libro.md
+  - truco-sas-unir-todos-los-excel-en-uno-solo.md
+  - truco-sas-unir-todas-las-hojas-de-un-excel-en-una.md
+  - truco-excel-pasar-un-rango-de-varias-columnas-a-una.md
 tags:
-- visual basic
+  - visual basic
 title: Truco Excel. Unir todos los libros en una hoja
 url: /blog/truco-excel-unir-todos-los-libros-en-una-hoja/
 ---
+
 ![unir_excel1](/images/2017/03/unir_excel1.png)
 
 Los trucos Excel referentes a la unión de varios libros en uno tienen mucho éxito en esta web, además era necesario crear una versión que uniera de forma horizontal. No es una unión como la pueda hacer **Power Query** de anexar tablas con cierto sentido teniendo en cuenta el nombre de las columnas y demás, se trata [
@@ -82,11 +83,10 @@ ThisWorkbook.Save
 End Sub
 ```
 
-
 Abrimos un array de libros de Excel y seleccionamos donde guardamos, bajo mi punto de vista la parte más interesante del código es esta:
 
 _With Range(celda)_
-_.Resize(Cells(Rows.Count, «A»).End(xlUp).Row – (.Row – 1), __
+\_.Resize(Cells(Rows.Count, «A»).End(xlUp).Row – (.Row – 1), \_\_
 _Cells(5, Columns.Count).End(xlToLeft).Column – (.Column – 1)).Copy_
 _End With_
 

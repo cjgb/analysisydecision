@@ -1,26 +1,27 @@
 ---
 author: danifernandez
 categories:
-- formación
+  - formación
 date: '2010-05-20'
 lastmod: '2025-07-13'
 related:
-- stadistical-data-warehouse-del-european-central-bank-con-r-y-los-depositos-a-perdidas.md
-- series-temporales-animadas-con-r-y-gganimate-comparando-cotizaciones.md
-- leer-y-representar-datos-de-google-trends-con-r.md
-- graficos-de-calendarios-con-series-temporales.md
-- informes-con-r-en-html-comienzo-con-r2html-i.md
+  - stadistical-data-warehouse-del-european-central-bank-con-r-y-los-depositos-a-perdidas.md
+  - series-temporales-animadas-con-r-y-gganimate-comparando-cotizaciones.md
+  - leer-y-representar-datos-de-google-trends-con-r.md
+  - graficos-de-calendarios-con-series-temporales.md
+  - informes-con-r-en-html-comienzo-con-r2html-i.md
 tags:
-- bolsa
-- charts gratis
-- getquote
-- getsymbols
-- mercados financieros
-- quantmod
-- r
+  - bolsa
+  - charts gratis
+  - getquote
+  - getsymbols
+  - mercados financieros
+  - quantmod
+  - r
 title: «Random walk» se escribe con R.
 url: /blog/random-walk-se-escribe-con-r/
 ---
+
 ‘Random walk’ hace referencia a la teoría financiera de que los mercados financieros siguen un camino aleatorio. Pero NO vamos discutir si se da o NO se da tal hipótesis, lo que SÍ vamos a hacer es utilizar R para seguir las acciones, fondos de inversión, o sencillamente para ver nuestro decepcionante Euro respecto a otras divisas (por si algún día los ‘españolitos’ debieramos empezar a emigrar de nuevo… tal como esta el patio!).
 
 Vamos a necesitar varios paquetes, si no me olvido de ninguno, básicamente son estos 2:
@@ -32,7 +33,7 @@ La manera de funcionar es que conectan a la fuente de datos de los portales de Y
 Es tan sencillo como hacer:
 
 > getQuote(‘AAPL’)
-..y nos informa de la última cotización de las acciones de APPLE.
+> ..y nos informa de la última cotización de las acciones de APPLE.
 
 El ligero inconveniente es que siempre vamos a depender de la conectividad a Yahoo o Google, si ellos dejan de recibir datos, nosotros tambien. Un apunte importante, para las acciones americanas solo basta escribir su ‘ticker’ (código de 3 o 4 letras que identifica a las acciones de una compañía) tal cual, pero para el resto de paises es otra historia, hemos de añadir su ‘destino’. Aquí os facilito una breve guía:
 
@@ -50,7 +51,7 @@ La lista de valores la podemos separar por ‘;’ o ‘+’, aunque creo que NO
 
 Veamos un listado de índices europeos (4), americanos (3) , Japón, Brasil y algunos pares de divisas:
 
->getQuote(‘^IBEX;^GDAXI;^FCHI;^STOXX50E;^DJI;^IXIC;^GSPC;^N225;^BVSP;
+> getQuote(‘^IBEX;^GDAXI;^FCHI;^STOXX50E;^DJI;^IXIC;^GSPC;^N225;^BVSP;
 
 EURUSD=X;GBPEUR=X;USDJPY=X’)
 
@@ -76,7 +77,7 @@ y ahora llega lo mejor, vamos a confeccionar su gráfico ‘chart’ , y sin cer
 …y guardamos el gráfico en ‘.PDF’:
 
 > saveChart(.type = «pdf», dev = dev.cur())
-chart saved to SBUX.pdf
+> chart saved to SBUX.pdf
 
 Si quisieramos concretar el rango temporal basta con definirlo (ejemplo sólo año 2009):
 
@@ -111,6 +112,7 @@ No así en Europa, donde es difícil tener juntos ‘stocks’ de tan diferentes
 www.boursorama.com
 
 Algunos fondos para estar cortos y beneficiarse de caídas del mercado (‘CZI’,’FAZ’,LHB’,ERY’…) o bien el ‘VXX’:
+
 > getSymbols(«VXX»,from=’2009-01-01′)
 > chartSeries(VXX)
 

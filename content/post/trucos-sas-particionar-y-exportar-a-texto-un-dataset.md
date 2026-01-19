@@ -1,23 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- sas
-- wps
+  - formación
+  - sas
+  - wps
 date: '2012-06-05'
 lastmod: '2025-07-13'
 related:
-- macros-sas-macro-split-para-partir-un-conjunto-de-datos.md
-- truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
-- truco-sas-crear-ficheros-excel-sin-proc-export-i.md
-- macros-sas-informe-de-un-dataset-en-excel.md
-- truco-sas-proc-contents.md
+  - macros-sas-macro-split-para-partir-un-conjunto-de-datos.md
+  - truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
+  - truco-sas-crear-ficheros-excel-sin-proc-export-i.md
+  - macros-sas-informe-de-un-dataset-en-excel.md
+  - truco-sas-proc-contents.md
 tags:
-- csv
-- exportar
+  - csv
+  - exportar
 title: Trucos SAS. Particionar y exportar a texto un dataset
 url: /blog/trucos-sas-particionar-y-exportar-a-texto-un-dataset/
 ---
+
 Duda que plantea David. Exporta a csv una tabla SAS en varias partes. Ya habrá tiempo para comentarlo:
 
 ```r
@@ -36,7 +37,7 @@ end;
 run;
 ```
 
-*MACRO QUE RECORRE LA TABLA, PARTE Y EXPORTA CADA PARTE
+\*MACRO QUE RECORRE LA TABLA, PARTE Y EXPORTA CADA PARTE
 NECESITA EL CONJUNTO DE DATOS Y EL TAMAÑO DE CADA PARTE;
 %macro parte(ds, tamanio);
 %do i = 1 %to 10000 %by &tamanio.;
@@ -45,7 +46,7 @@ set &ds. (firstobs = &i. obs = %eval(&i. + &tamanio.));
 run;
 
 PROC EXPORT DATA= WORK.Parte
-OUTFILE= "C:\TEMP\parte&i..csv"
+OUTFILE= "C:\\TEMP\\parte&i..csv"
 DBMS=CSV REPLACE;
 RUN;
 proc delete data=parte; quit;

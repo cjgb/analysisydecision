@@ -1,32 +1,33 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- sas
-- wps
+  - formación
+  - sas
+  - wps
 date: '2011-01-15'
 lastmod: '2025-07-13'
 related:
-- macros-sas-limpiar-una-cadena-de-caracteres.md
-- curso-de-lenguaje-sas-con-wps-variables.md
-- curso-de-lenguaje-sas-con-wps-lectura-de-ficheros-de-texto.md
-- trucos-sas-eliminacion-de-espacios-en-blanco.md
-- truco-sas-funcion-para-contar-caracteres.md
+  - macros-sas-limpiar-una-cadena-de-caracteres.md
+  - curso-de-lenguaje-sas-con-wps-variables.md
+  - curso-de-lenguaje-sas-con-wps-lectura-de-ficheros-de-texto.md
+  - trucos-sas-eliminacion-de-espacios-en-blanco.md
+  - truco-sas-funcion-para-contar-caracteres.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Curso de lenguaje SAS con WPS. Funciones en WPS
 url: /blog/curso-de-lenguaje-sas-con-wps-funciones-en-wps/
 ---
+
 [](https://analisisydecision.es/david-gana-a-goliat-la-sentencia-del-caso-sas-frente-a-wps/)A la hora de trabajar con variables en WPS uno de los elementos fundamentales son las funciones. En WPS son completamente análogas a SAS. Además este capítulo quiero que nos sirva para familiarizarnos un poco más con el interfaz de WPS y con los elementos de WPS. Vamos a crear un _script_ , un programa SAS, dentro de nuestro proyecto. Nos ubicamos en el _Proyect Explorer_ pulsamos el botón derecho y _New — Other_ en la ventana que nos sale nos vamos a WPS y generamos un nuevo programa (_script_) al que damos el nombre de funciones:
 
 !(/images/2011/01/wps-nuevo-script.png)
 
 Poco a poco tomamos contacto con la herramienta y con los conceptos. El interfaz y el modo de trabajo se parece más al Enterprise Guide que al <SAS BASE>. Este script nos servirá para crear los ejemplos de uso de funciones en WPS. Las funciones las vamos a dividir en 4 clases en función del tipo de variable:
 
-  1. Funciones numéricas
-  2. Funciones de texto
-  3. Funciones fecha
-  4. Otras funciones
+1. Funciones numéricas
+1. Funciones de texto
+1. Funciones fecha
+1. Otras funciones
 
 En esta entrega vamos a ver ejemplos de los dos primeros tipos de funciones. Las funciones fecha tendrán su propio capítulo, las otras funciones son referentes a I/O, arrays,… pertenecen a una programación más avanzada, irán saliendo a lo largo del curso algunas de esas funciones. WPS contiene una extensa ayuda sobre todas las funciones disponibles en el WPS Core (la base de WPS):
 

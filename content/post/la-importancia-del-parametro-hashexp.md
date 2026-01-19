@@ -1,23 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- formación
-- monográficos
-- sas
+  - formación
+  - monográficos
+  - sas
 date: '2010-11-16'
 lastmod: '2025-07-13'
 related:
-- laboratorio-de-codigo-sas-ordenaciones-con-hash-vs-proc-sort.md
-- objetos-hash-para-ordenar-tablas-sas.md
-- trucos-sas-porque-hay-que-usar-objetos-hash.md
-- trucos-sas-mejor-que-hash-in-para-cruzar-tablas.md
-- truco-sas-cruce-con-formatos.md
+  - laboratorio-de-codigo-sas-ordenaciones-con-hash-vs-proc-sort.md
+  - objetos-hash-para-ordenar-tablas-sas.md
+  - trucos-sas-porque-hay-que-usar-objetos-hash.md
+  - trucos-sas-mejor-que-hash-in-para-cruzar-tablas.md
+  - truco-sas-cruce-con-formatos.md
 tags:
-- hashexp
-- objetos hash
+  - hashexp
+  - objetos hash
 title: La importancia del parámetro HASHEXP
 url: /blog/la-importancia-del-parametro-hashexp/
 ---
+
 La última entrada (de momento) sobre objetos HASH en SAS. Quiero analizar la importancia que tiene el parámetro _hashexp_ a la hora de crear el objeto _hash_ cuando deseamos ordenar un conjunto de datos. Para ello he realizado un experimento con SAS cuyo código podéis descargaros .[aquí](/images/2010/11/pruebas-hash-exponente.sas "pruebas-hash-exponente.sas"). Es un código de calidad muy baja pero que da como resultado el siguiente gráfico:
 
 ![ejecuciones-hashexp-distintas.png](/images/2010/11/ejecuciones-hashexp-distintas.png)

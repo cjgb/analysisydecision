@@ -1,22 +1,23 @@
 ---
 author: cgbellosta
 categories:
-- formación
-- r
-- trucos
+  - formación
+  - r
+  - trucos
 date: '2009-06-04'
 lastmod: '2025-07-13'
 related:
-- trucos-sas-muestreo-con-proc-surveyselect.md
-- sobremuestreo-y-pesos-a-las-observaciones-ahora-con-r.md
-- trucos-sas-muestras-aleatorias-con-y-sin-reemplazamiento.md
-- introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-12-muestreo-e-inferencia-estadistica.md
-- truco-sas-categorizar-variables-continuas.md
+  - trucos-sas-muestreo-con-proc-surveyselect.md
+  - sobremuestreo-y-pesos-a-las-observaciones-ahora-con-r.md
+  - trucos-sas-muestras-aleatorias-con-y-sin-reemplazamiento.md
+  - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-12-muestreo-e-inferencia-estadistica.md
+  - truco-sas-categorizar-variables-continuas.md
 tags:
-- sin etiqueta
+  - sin etiqueta
 title: Muestreo de datos con R
 url: /blog/muestreo-de-datos-con-r/
 ---
+
 Recientemente, hubo una entrada en este blog sobre [cómo realizar muestreos aleatorios en tablas SAS](https://analisisydecision.es/trucos-sas-muestras-aleatorias-con-y-sin-reemplazamiento/). En ésta vamos a ver cómo se procedería con R.
 
 Consideraremos el conjunto de datos `iris` —de dimensión 150 x 5— y extraeremos 60 filas con distintos procedimientos.
