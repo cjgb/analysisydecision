@@ -1,18 +1,17 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Monográficos
-- R
-date: '2011-11-03T15:56:40-05:00'
-lastmod: '2025-07-13T15:55:08.824784'
+- formación
+- monográficos
+- r
+date: '2011-11-03'
+lastmod: '2025-07-13'
 related:
 - analisis-del-programa-electoral-del-partido-popular-antes-de-las-elecciones-en-espana.md
 - analisis-de-textos-con-r.md
 - el-debate-politico-o-como-analizar-textos-con-wps.md
 - ejemplo-de-web-scraping-con-r-la-formacion-de-los-diputados-del-congreso.md
 - longitud-de-las-frases-del-quijote-con-rstats.md
-slug: comparamos-los-programas-electorales-de-pp-y-psoe-con-r
 tags:
 - cloud
 - nchar
@@ -25,7 +24,6 @@ tags:
 title: Comparamos los programas electorales de PP y PSOE con R
 url: /blog/comparamos-los-programas-electorales-de-pp-y-psoe-con-r/
 ---
-
 [Replicamos el post anterior sobre el análisis del programa electoral del PP](https://analisisydecision.es/analisis-del-programa-electoral-del-partido-popular-antes-de-las-elecciones-en-espana/) y lo comparamos con el programa electoral del PSOE. Programas electorales que presentan estos partidos políticos españoles de cara a las elecciones del 20-N. No vamos a entrar en el contenido de ambos programas, sólo nos limitamos a representar gráficamente su contenido con nubes de palabras.
 
 _Programa del PSOE:_

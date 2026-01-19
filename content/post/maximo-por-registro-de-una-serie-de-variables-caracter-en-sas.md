@@ -1,23 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- SAS
-- Trucos
-date: '2017-02-24T08:19:59-05:00'
-lastmod: '2025-07-13T16:02:16.750916'
+- sas
+- trucos
+date: '2017-02-24'
+lastmod: '2025-07-13'
 related:
 - truco-sas-transformaciones-de-variables-con-arrays.md
 - minimo-de-una-matriz-de-datos-en-sas.md
 - macro-sas-variables-de-un-dataset-en-una-macro-variable.md
 - trucos-sas-mejor-que-hash-in-para-cruzar-tablas.md
 - trucos-sas-operaciones-con-tablas-de-dimensiones-con-sas.md
-slug: maximo-por-registro-de-una-serie-de-variables-caracter-en-sas
 tags:
 - array
 title: Máximo por registro de una serie de variables carácter en SAS
 url: /blog/maximo-por-registro-de-una-serie-de-variables-caracter-en-sas/
 ---
-
 Un lector del blog preguntaba como obtener el valor máximo dentro de un registro, por fila, de una sucesión de variables caracter; evidentemente la función max no servía porque es específica para variables numéricas. La duda la planteaba del siguiente modo:
 
 ```r

@@ -1,22 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Consultoría
-- Data Mining
-- Formación
-- Monográficos
-- SAS
-- Trucos
-- WPS
-date: '2013-04-15T10:00:29-05:00'
-lastmod: '2025-07-13T15:53:55.986896'
+- consultoría
+- data mining
+- formación
+- monográficos
+- sas
+- trucos
+- wps
+date: '2013-04-15'
+lastmod: '2025-07-13'
 related:
 - knn-con-sas-mejorando-k-means.md
 - un-peligro-del-analisis-cluster.md
 - cluster-svm.md
 - macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
 - manual-curso-introduccion-de-r-capitulo-17-analisis-cluster-con-r-y-iii.md
-slug: analisis-cluster-con-sas-la-importancia-de-las-semillas-en-las-k-medias
 tags:
 - k-medias
 - proc fastclus
@@ -24,7 +23,6 @@ tags:
 title: Analisis cluster con SAS. La importancia de las semillas en las k-medias
 url: /blog/analisis-cluster-con-sas-la-importancia-de-las-semillas-en-las-k-medias/
 ---
-
 [![](/images/2013/04/gplot-cluster-1-300x225.gif)](/images/2013/04/gplot-cluster-1.gif)
 
 El PROC FASTCLUS en SAS nos permite realizar análisis de agrupamiento dirigido mediante el algoritmo de las k-medias. Este algoritmo tiene algunos problemas pero nos puede servir para agrupar de forma multivariante observaciones. Es rápido, sencillo de explicar y con algunas lagunas no funciona mal. Como aproximación a nuestras segmentaciones puede ser muy práctico. Hoy se va a utilizar para identificar a los clientes más complicados de segmentar, a aquellas observaciones que quedan en las zonas grises. (http://www.datanalytics.com/blog/2011/08/03/clustering-iii-sobresimplificacion/)

@@ -1,25 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-date: '2010-03-30T03:56:59-05:00'
-lastmod: '2025-07-13T16:10:49.195510'
+- formación
+- sas
+date: '2010-03-30'
+lastmod: '2025-07-13'
 related:
 - un-acercamiento-a-graph-proc-gchart.md
 - un-acercamiento-a-graph-sentencias-graficas.md
 - un-acercamiento-a-graph-ods-graphs-proc-sgplot.md
 - un-acercamiento-a-graph-proc-ganno.md
 - graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
-slug: un-acercamiento-a-graph-primeros-graficos-con-sas
 tags:
-- ''
-- graficos SAS
-- GRAPH
+- gráficos
+- sas
+- graph
 title: Un acercamiento a GRAPH. Primeros gráficos con SAS
 url: /blog/un-acercamiento-a-graph-primeros-graficos-con-sas/
 ---
-
 SAS es muy caro y tiene muchas limitaciones. Aunque puedas enchufarle gigas y gigas de datos tiene importantes lagunas y una de ellas es su motor gráfico. Por ello quiero dedicarle una serie de monográficos de acercamiento e intentar analizar las (pocas) posibilidades graficas de SAS. Los monográficos van a ser un poco inconexos y orientados a personas con algo de nivel de programación. Nos centraremos en el modulo GRAPH. Antes de empezar quiero recomendaros una web donde podréis ver mejor todas las posibilidades que nos ofrece SAS a la hora de graficar: <http://robslink.com/SAS/Home.htm> Esto si que es contenido y no lo que aporta esta web. Para comenzar esta serie vamos a trabajar con los procedimientos GCHART, GPLOT y GREPLAY. Como es habitual el primer paso es generar un _dataset_ con datos mas o menos aleatorios:
 
 ```r

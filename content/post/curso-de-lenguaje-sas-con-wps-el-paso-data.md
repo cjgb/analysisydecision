@@ -1,23 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Consultoría
-- Formación
-date: '2010-05-26T16:00:15-05:00'
-lastmod: '2025-07-13T15:55:44.150013'
+- consultoría
+- formación
+date: '2010-05-26'
+lastmod: '2025-07-13'
 related:
 - curso-de-lenguaje-sas-con-wps-ejecuciones.md
 - curso-de-lenguaje-sas-con-wps-que-hace-el-paso-data.md
 - curso-de-lenguaje-sas-con-wps-lectura-de-ficheros-de-texto.md
 - curso-de-lenguaje-sas-con-wps-subconjuntos-de-variables-con-drop-y-keep.md
 - curso-de-lenguaje-sas-con-wps-librerias-en-wps.md
-slug: curso-de-lenguaje-sas-con-wps-el-paso-data
 tags:
-- DATA
+- data
 title: Curso de lenguaje SAS con WPS. El paso DATA
 url: /blog/curso-de-lenguaje-sas-con-wps-el-paso-data/
 ---
-
 El elemento estrella del código SAS es el paso DATA. Con data podemos leer y escribir conjuntos de datos SAS. Un conjunto de datos SAS es una tabla de datos que contiene información sobre las variables y los registros de la tabla. Data lo que hace es crear una estructura para la tabla y posteriormente añadir datos a esta estructura, es un bucle, no necesitamos indicarle al sistema como recorrer la tabla. En WPS ejecutaremos nuestras sentencias en el editor a través de scripts sobre los que podemos navegar en el _Proyect Explorer_. La sintaxis de un paso data es imposible resumirla pero se puede estructurar del siguiente modo:
 
   1. DATA <nombre conjunto de datos SAS> ; Crea 1 o n conjuntos de datos SAS

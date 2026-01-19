@@ -1,27 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- Data Mining
-- Formación
-- Modelos
-- Monográficos
-- R
-date: '2010-06-15T11:32:08-05:00'
-lastmod: '2025-07-13T16:02:47.107859'
+- data mining
+- formación
+- modelos
+- monográficos
+- r
+date: '2010-06-15'
+lastmod: '2025-07-13'
 related:
 - cluster-svm.md
 - machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algoritmos-de-clasificacion.md
 - el-parametro-gamma-el-coste-la-complejidad-de-un-svm.md
 - resolucion-del-juego-de-modelos-con-r.md
 - un-peligro-del-analisis-cluster.md
-slug: monografico-clasificacion-con-svm-en-r
 tags:
-- Cluster
-- SVM
+- cluster
+- svm
 title: Monográfico. Clasificación con SVM en R
 url: /blog/monografico-clasificacion-con-svm-en-r/
 ---
-
 Las máquinas de vectores de soporte, Support Vector Machines, **SVM** a partir de ahora, son un conjunto de técnicas estadísticas que nos permiten clasificar una población en función de la partición en subespacios de múltiples variables. Parte de la idea de dividir de forma lineal un conjunto de múltiples dimensiones. Creamos muchos hiperplanos que nos dividen las observaciones. Es una técnica que está ganando popularidad y que por supuesto podemos realizarla con R. Para ello tenemos algunos paquetes específicos como kvm, svmlight y el **e1071**. Este último es al que pretendo acercarme hoy.
 
 El SVM es un algoritmo que, a partir del producto escalar de vos vectores multidimensionales, busca hiperplanos que separen los grupos. La función que define este producto escalar la denominaremos _kernel_ y puede ser lineal, polinómica, radial o sigmoidal. Para clasificación el SVM se plantea como un problema de programación lineal en el que buscamos maximizar la distancia entre categorías sujeto a un coste y a un número óptimo de patrones de entrenamiento. Para entender mejor su funcionamiento trabajamos un ejemplo bidimensional:

@@ -1,22 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- R
-date: '2014-02-27T10:03:39-05:00'
-lastmod: '2025-07-13T15:55:40.068868'
+- formación
+- r
+date: '2014-02-27'
+lastmod: '2025-07-13'
 related:
 - estadistica-para-cientificos-de-datos-con-r-introduccion.md
 - analisisydecision-se-une-a-scout-analyst-primer-curso-de-estadistica-para-analistas.md
 - nuevo-curso-de-estadistica-con-r.md
 - lectura-conjunta-de-analyzing-linguistic-data.md
 - manual-introduccion-a-r-s-plus.md
-slug: curso-de-analisis-estadistico-de-datos-omicos-con-r
-tags: []
+tags:
+- sin etiqueta
 title: CURSO DE ANÁLISIS ESTADÍSTICO DE DATOS ‘ÓMICOS’ CON R
 url: /blog/curso-de-analisis-estadistico-de-datos-omicos-con-r/
 ---
-
 > Los días 8, 9 y 10 de Abril de 2014.
 >
 > Este curso pretenden introducir a los investigadores al análisis de datos que se están generando con las nuevas tecnologías de secuenciación, así como facilitar a aquellos que ya disponen de datos, su análisis e interpretación de resultados. El curso es un curso práctico en el que se utilizará una metodología similar a la que se ha usado en otros cursos anteriores y que tan buenos resultados ha obtenido.

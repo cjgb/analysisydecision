@@ -1,24 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Consultoría
-- Formación
-- R
-date: '2022-03-15T10:44:49-05:00'
-lastmod: '2025-07-13T15:54:03.650654'
+- consultoría
+- formación
+- r
+date: '2022-03-15'
+lastmod: '2025-07-13'
 related:
 - estadistica-para-cientificos-de-datos-con-r-introduccion.md
 - nuevo-curso-de-estadistica-con-r.md
 - curso-de-analisis-estadistico-de-datos-omicos-con-r.md
 - manual-introduccion-a-r-s-plus.md
 - curso-de-lenguaje-sas-con-wps-introduccion.md
-slug: analisisydecision-se-une-a-scout-analyst-primer-curso-de-estadistica-para-analistas
-tags: []
+tags:
+- sin etiqueta
 title: analisisydecision se une a Scout Analyst. Primer curso de Estadística para
   analistas
 url: /blog/analisisydecision-se-une-a-scout-analyst-primer-curso-de-estadistica-para-analistas/
 ---
-
 Me uno al equipo de Scout Analyst poniendo en marcha el primer curso de estadística para analistas. Si deseas recibir información acerca del curso visita la siguiente página:
 
 [Estadística para analistas – Scout Analyst](https://scoutanalyst.com/estadistica-para-analistas/ "Estadística para analistas - Scout Analyst")

@@ -1,25 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Gráficos
-- Libro Estadística
-- R
-date: '2022-01-27T09:06:57-05:00'
-lastmod: '2025-07-13T15:54:43.583208'
+- formación
+- gráficos
+- libro estadística
+- r
+date: '2022-01-27'
+lastmod: '2025-07-13'
 related:
 - graficos-descriptivos-basicos-con-seaborn-python.md
 - graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
 - graficos-basicos-con-julia.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-7-descripcion-grafica-de-variables.md
 - descubriendo-ggplot2-421.md
-slug: capitulo-5-representacion-basica-con-ggplot
-tags: []
+tags:
+- sin etiqueta
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 5. Representación
   gráfica básica con ggplot
 url: /blog/capitulo-5-representacion-basica-con-ggplot/
 ---
-
 Además del manejo de datos es necesario tener conocimientos de representación de datos. En este trabajo se va a emplear la librería de R `ggplot` y se trabajarán las **representaciones gráficas básicas** que ha de manejar un científico de datos. Se pueden explorar las múltiples posibilidades que ofrece esta librería [en la web Statistical tools for high-throughput data analysis](http://www.sthda.com/english/) que dispone de un gran número de recursos para R entre los que destaca el [uso del paquete ggplot](http://www.sthda.com/english/wiki/ggplot2-essentials).
 
 Iniciamos el proceso cargando la librería `tidyverse` donde podemos encontrar `ggplot` como podemos en los mensajes que nos ofrece cuando la cargamos.

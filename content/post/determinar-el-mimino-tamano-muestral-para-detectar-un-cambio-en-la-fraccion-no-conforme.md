@@ -1,23 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-date: '2014-12-18T10:11:13-05:00'
-lastmod: '2025-07-13T15:56:23.690224'
+- formación
+- sas
+date: '2014-12-18'
+lastmod: '2025-07-13'
 related:
 - macros-faciles-de-sas-eliminar-outliers-en-una-variable.md
 - macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
 - trucos-sas-calcular-percentiles-como-excel-o-r.md
 - monograficos-call-symput-imprescindible.md
 - test-de-bondad-de-ajuste-con-sas.md
-slug: determinar-el-mimino-tamano-muestral-para-detectar-un-cambio-en-la-fraccion-no-conforme
-tags: []
+tags:
+- sin etiqueta
 title: Determinar el mímino tamaño muestral para detectar un cambio en la fracción
   no conforme
 url: /blog/determinar-el-mimino-tamano-muestral-para-detectar-un-cambio-en-la-fraccion-no-conforme/
 ---
-
 Este año he aprendido algo sobre metodología 6 sigma para el control de la calidad, me gustó mucho lo que aprendí. Para la realización de algunos ejercicios cree libros Excel y algún proceso SAS. Hoy quería traeros al blog una macro de SAS que nos permite determinar el tamaño mínimo muestral para detectar un cambio en la fracción no conforme con una determinada probabilidad. El programa es un bucle de SAS que crea los límites de control para la fracción no conforme y estandariza la diferencia del límite superior con la nueva fracción no conforme. Se calcula la probabilidad que deja este dato estandarizado y el paso del bucle será el número mínimo de muestras. Es más sencillo el código que la definición:
 
 ```r

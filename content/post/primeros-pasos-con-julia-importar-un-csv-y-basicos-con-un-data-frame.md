@@ -1,25 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Julia
-- Monográficos
-date: '2021-08-12T15:00:56-05:00'
-lastmod: '2025-07-13T16:04:35.098113'
+- formación
+- julia
+- monográficos
+date: '2021-08-12'
+lastmod: '2025-07-13'
 related:
 - data-management-basico-con-pandas.md
 - data-management-con-dplyr.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-3-manejo-de-datos-con-r.md
 - trabajando-con-r-y-julia-desde-rstudio.md
 - manejo-de-datos-basico-con-python-datatable.md
-slug: primeros-pasos-con-julia-importar-un-csv-y-basicos-con-un-data-frame
 tags:
-- Julia
+- julia
 title: Primeros pasos con Julia. Importar un csv y data management básico con un data
   frame
 url: /blog/primeros-pasos-con-julia-importar-un-csv-y-basicos-con-un-data-frame/
 ---
-
 Empiezo a trabajar con el lenguaje Julia ante la insistencia de [JL Cañadas](https://muestrear-no-es-pecado.netlify.app/). Lo primero es comentar que este trabajo está hecho en Julia 1.6.2 con una máquina Ubuntu 18, para instalar Julia en Ubuntu:
 
   * [Descarga de Julia](https://julialang.org/downloads/)

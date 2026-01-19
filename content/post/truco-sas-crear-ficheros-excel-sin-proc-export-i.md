@@ -1,22 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- SAS
-- Trucos
-date: '2008-04-02T08:29:11-05:00'
-lastmod: '2025-07-13T16:08:05.137343'
+- sas
+- trucos
+date: '2008-04-02'
+lastmod: '2025-07-13'
 related:
 - truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
 - el-ods-de-sas-ii-dataset-desde-output.md
 - el-ods-de-sas-i-elementos-del-output.md
 - el-ods-de-sas-iii-documentos-html-y-pdf-desde-sas.md
 - importar-a-sas-desde-otras-aplicaciones.md
-slug: truco-sas-crear-ficheros-excel-sin-proc-export-i
-tags: []
+tags:
+- sin etiqueta
 title: Truco SAS. Crear ficheros Excel sin PROC EXPORT (I)
 url: /blog/truco-sas-crear-ficheros-excel-sin-proc-export-i/
 ---
-
 No disponemos del módulo **ACCESS TO PC FILES** y necesitamos poner nuestra tabla SAS en Excel. Usaremos el **ODS** (Outpus Delivery System) de SAS. Junto con el _proc print_ crearemos un fichero HTML con extensión .XLS que podremos manejar perfectamente con Excel, insisto, no es un fichero Excel, es HTML pero que se manejará sin ningún problema en la hoja de cálculo y que podremos guardar como fichero Excel.
 
 El primer paso para nuestro ejemplo será generar una tabla SAS con valores aleatorios que deseamos exportar a Excel:

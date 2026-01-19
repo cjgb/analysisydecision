@@ -1,24 +1,23 @@
 ---
 author: Paco Gárate
 categories:
-- Banca
-- Machine Learning
-- Python
-- Seguros
-date: '2019-07-01T11:53:55-05:00'
-lastmod: '2025-07-13T15:54:39.271434'
+- banca
+- machine learning
+- python
+- seguros
+date: '2019-07-01'
+lastmod: '2025-07-13'
 related:
 - graficos-de-calendarios-con-series-temporales.md
 - trabajo-con-fechas-sas-funciones-fecha.md
 - curso-de-lenguaje-sas-con-wps-funciones-fecha.md
 - trucos-sas-operar-con-fechas-yyyymm-tipicas-de-particiones-oracle.md
 - bucle-de-fechas-con-sas-para-tablas-particionadas.md
-slug: calendario-dias-laborales-pandas
-tags: []
+tags:
+- sin etiqueta
 title: Calendario de días laborales con Pandas
 url: /blog/calendario-dias-laborales-pandas/
 ---
-
 Es habitual escuchar que un científico de datos es un estadístico que trabaja con Python. En parte, tiene razón. Sin embargo, quien ha trabajado dentro del mundo académico sabe que para un estadístico las [vacas son esféricas](https://es.wikipedia.org/wiki/Vaca_esférica) y los meses tienen 365,25/12 días. En cambio, en el mundo real, ni hay dos vacas iguales ni un mes igual a otro.
 Sirva esta entrada para poner en valor todo aquel trabajo adicional y tiempo dedicado por aquellos que trabajan con datos y huyen de simplificaciones estadísticas, ya se denominen científicos de datos o cómo quieran llamarse.
 

@@ -1,27 +1,26 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Libro Estadística
-- Machine Learning
-- Modelos
-- Monográficos
-- R
-date: '2022-12-08T13:02:59-05:00'
-lastmod: '2025-07-13T15:58:48.818021'
+- formación
+- libro estadística
+- machine learning
+- modelos
+- monográficos
+- r
+date: '2022-12-08'
+lastmod: '2025-07-13'
 related:
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-6-descripcion-numerica-de-variables.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-15-modelos-glm-regresion-logistica-y-regresion-de-poisson.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
 - monografico-analisis-de-factores-con-r-una-introduccion.md
 - monografico-regresion-logistica-con-r.md
-slug: introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-11-analisis-bivariable
-tags: []
+tags:
+- sin etiqueta
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 11. Análisis
   bivariable
 url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-11-analisis-bivariable/
 ---
-
 De nuevo se retoma el ejemplo que está sirviendo de hilo conductor para este ensayo, la campaña de marketing de venta cruzada en el sector asegurador [que está disponible en Kaggle](https://www.kaggle.com/anmolkumar/health-insurance-cross-sell-prediction). Una aseguradora española que opera en múltiples ramos quiere ofrecer seguro de automóviles a sus clientes del ramo de salud. Para ello se realizó un cuestionario a los clientes de forma que se marcó quienes de ellos estarían interesados en el producto de automóviles y quienes no. Se identificaron posibles tareas:
 
   * Describir la cartera de clientes.

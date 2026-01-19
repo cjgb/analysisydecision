@@ -1,26 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Business Intelligence
-- Consultoría
-- Formación
-- SAS
-date: '2011-04-23T16:24:31-05:00'
-lastmod: '2025-07-13T16:00:22.765922'
+- business intelligence
+- consultoría
+- formación
+- sas
+date: '2011-04-23'
+lastmod: '2025-07-13'
 related:
 - importar-a-sas-desde-otras-aplicaciones.md
 - curso-de-lenguaje-sas-con-wps-lectura-de-ficheros-de-texto.md
 - trucos-sas-mejor-que-hash-in-para-cruzar-tablas.md
 - en-merge-mejor-if-o-where.md
 - ayudadme-importar-a-sas-texto-con-comillas.md
-slug: los-10-errores-y-warnings-mas-habituales-en-sas
 tags:
-- DATA
+- data
 - format
 title: Los 10 errores y warnings más habituales en SAS
 url: /blog/los-10-errores-y-warnings-mas-habituales-en-sas/
 ---
-
 En función de los contactos con SAS support han elaborado un ranking de errores y warnings reportados a SAS con respecto al paso DATA.[ En este enlace](http://blogs.sas.com/supportnews/index.php?/archives/151-The-top-10-errors,-notes-and-warnings-that-prompt-DATA-step-programmers-to-call-SAS-Technical-Support.html) tenéis el ranking, a los comentarios de Kim Wilson podéis añadir los míos. Veamos uno por uno esos errores:
 
   1. **ERROR: AN INTERNAL ERROR HAS OCCURRED WHILE READING A COMPRESSED FILE. PLEASE CALL YOUR SAS SITE REPRESENTATIVE AND REPORT THE FOLLOWING…**

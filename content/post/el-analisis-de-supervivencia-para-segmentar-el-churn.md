@@ -1,25 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Consultoría
-- Data Mining
-- Modelos
-- R
-date: '2019-12-24T06:27:01-05:00'
-lastmod: '2025-07-13T15:56:42.627430'
+- consultoría
+- data mining
+- modelos
+- r
+date: '2019-12-24'
+lastmod: '2025-07-13'
 related:
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
 - entrenamiento-validacion-y-test.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-9-analisis-exploratorio-de-datos-eda.md
 - monografico-arboles-de-clasificacion-con-rpart.md
 - monografico-un-poco-de-proc-logistic.md
-slug: el-analisis-de-supervivencia-para-segmentar-el-churn
 tags:
 - análisis de supervivencia
 title: El análisis de supervivencia en R para segmentar el churn
 url: /blog/el-analisis-de-supervivencia-para-segmentar-el-churn/
 ---
-
 El análisis de supervivencia es uno de los olvidados por el Machine Learning y la nueva forma de ver el oficio. A la regresión logística si la damos algo de recorrido porque aparece en scikit-learn ([con sus cositas](https://www.datanalytics.com/2019/12/02/sobre-los-coeficientes-de-los-glm-en-scikit-learn/)), sin embargo, el análisis de supervivencia no tiene ese cartel porque en el momento que trabajas con un gran número de variables estos modelos «empiezan a echar chispas». Sin embargo ofrecen una serie de gráficos y resultados que más allá de la estimación nos describen problemas y pueden servirnos para segmentar poblaciones en base a la duración hasta la ocurrencia de un evento.
 
 El modelo de supervivencia tiene como variable fundamental el**tiempo hasta que ocurre un evento** y como este tiempo se modifica en base a unas variables explicativas, mas allá de una tasa nos puede permitir identificar segmentos y poblaciones con comportamientos distintos. El ejemplo que quiero mostraros es el paradigma de todo lo que estoy contando, identificar segmentos de clientes que abandonan mi compañía de telecomunicaciones, mas allá de priorizar clientes en base a su probabilidad de anulación tratamos de identificar características que hacen que mi cliente dure más o menos en la compañía.

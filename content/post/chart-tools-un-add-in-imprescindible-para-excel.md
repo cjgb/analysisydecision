@@ -1,25 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Excel
-- Formación
-- Monográficos
-date: '2011-10-28T16:39:05-05:00'
-lastmod: '2025-07-13T15:54:46.747586'
+- excel
+- formación
+- monográficos
+date: '2011-10-28'
+lastmod: '2025-07-13'
 related:
 - trucos-excel-graficos-dot-plot-representando-un-ranking-graficamente.md
 - trucos-excel-poner-etiquetas-en-graficos-de-dispersion.md
 - begraphic-un-add-in-para-excel-muy-interesante.md
 - graficos-de-velocimetros-con-excel-hechos-con-begraphic.md
 - trucos-excel-graficos-con-caracteres.md
-slug: chart-tools-un-add-in-imprescindible-para-excel
 tags:
 - etiquetas
-- gráficos Excel
+- gráficos
+- excel
 title: Chart Tools un add in imprescindible para Excel
 url: /blog/chart-tools-un-add-in-imprescindible-para-excel/
 ---
-
 El add-in jk-chart tools de excel que os podéis [descargar aquí](http://spreadsheetpage.com/index.php/file/j_walk_chart_tools_add_in/) nos ofrece una serie de funcionalidades que pueden ayudarnos a trabajar con gráficos en Excel. Una vez descargado y activado el add-in al seleccionar un gráfico podemos emplear este complemento. En la primera pestaña podemos añadir etiquetas personalizadas a nuestros gráficos de Excel, algo que [ya realizamos con macros](https://analisisydecision.es/trucos-excel-poner-etiquetas-en-graficos-de-dispersion/):
 
 ![chart-tools-1.png](/images/2011/10/chart-tools-1.png)

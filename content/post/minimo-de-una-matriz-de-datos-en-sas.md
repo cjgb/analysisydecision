@@ -1,22 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-date: '2015-04-27T02:29:43-05:00'
-lastmod: '2025-07-13T16:02:35.573539'
+- formación
+- sas
+date: '2015-04-27'
+lastmod: '2025-07-13'
 related:
 - trucos-sas-operaciones-con-tablas-de-dimensiones-con-sas.md
 - trucos-sas-matrices-de-adyacencia-con-sas.md
 - monograficos-call-symput-imprescindible.md
 - maximo-por-registro-de-una-serie-de-variables-caracter-en-sas.md
 - macros-sas-agrupando-variables-categoricas.md
-slug: minimo-de-una-matriz-de-datos-en-sas
-tags: []
+tags:
+- sin etiqueta
 title: Mínimo de una matriz de datos en SAS
 url: /blog/minimo-de-una-matriz-de-datos-en-sas/
 ---
-
 [El otro día una lectora del blog me preguntaba como obtener el mínimo de una matriz de datos de 100×1000 con SAS](https://analisisydecision.es/monografico-datos-agrupados-en-sas/#comment-76186). El ejercicio es muy práctico para ayudar a que se entienda mejor como “piensa” SAS. Probablemente esta lectora estaba pensando en complicados bucles que recorren, que almacenan, que arrastran,… con SAS las cosas no son así. El paso data es un bucle en si mismo y SAS no tiene pereza en crear tablas intermedias. Así que la mejor solución para encontrar ese mínimo sería:
 
 ```r

@@ -1,21 +1,20 @@
 ---
 author: rvaquerizo
 categories:
-- R
-date: '2017-03-28T08:54:56-05:00'
-lastmod: '2025-07-13T15:55:03.348917'
+- r
+date: '2017-03-28'
+lastmod: '2025-07-13'
 related:
 - trucos-r-graficos-de-velocimetro-con-r.md
 - analisisydecision-es-os-desea-felices-fiestas.md
 - graficos-dinamicos-en-r-con-la-funcion-text.md
 - descubriendo-ggplot2-421.md
 - truco-r-paletas-de-colores-en-r.md
-slug: como-me-encuentro-hoy-con-rstats
-tags: []
+tags:
+- sin etiqueta
 title: 'Como me encuentro hoy, con #rstats'
 url: /blog/como-me-encuentro-hoy-con-rstats/
 ---
-
 [![Happy_con_R](/images/2017/03/Happy_con_R.png)](/images/2017/03/Happy_con_R.png)
 
 Gráfico absurdo con R y un buen ejemplo de las cosas que hace pi. Tras 2 meses de dolores intensos en mi hombro hoy sólo noto una molestia, y claro…

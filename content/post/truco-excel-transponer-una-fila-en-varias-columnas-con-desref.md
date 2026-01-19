@@ -1,24 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Excel
-- Formación
-- Trucos
-date: '2018-09-30T14:44:21-05:00'
-lastmod: '2025-07-13T16:07:32.921553'
+- excel
+- formación
+- trucos
+date: '2018-09-30'
+lastmod: '2025-07-13'
 related:
 - desref-para-trasponer-en-excel-varias-columnas.md
 - trucos-excel-transponer-con-la-funcion-desref.md
 - trucos-excel-repetir-filas-o-columnas-con-la-funcion-desref.md
 - trucos-excel-repetir-filas-con-desref.md
 - truco-excel-pasar-un-rango-de-varias-columnas-a-una.md
-slug: truco-excel-transponer-una-fila-en-varias-columnas-con-desref
 tags:
-- DESREF
+- desref
 title: Truco Excel. Transponer una fila en varias columnas con DESREF
 url: /blog/truco-excel-transponer-una-fila-en-varias-columnas-con-desref/
 ---
-
 Creo que alguna vez me lo han preguntado. Se trata de tranponer en Excel el contenido de una fila en varias columnas, como es habitual (sobre todo si escribo yo) una imagen vale más que mil palabras:
 
 [![Transponer varias columnas](/images/2018/09/Transponer-varias-columnas.jpg)](/images/2018/09/Transponer-varias-columnas.jpg)

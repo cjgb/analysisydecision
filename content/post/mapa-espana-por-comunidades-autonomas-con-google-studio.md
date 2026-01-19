@@ -1,26 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- Business Intelligence
-- Formación
-- Mapas
-- Trucos
-date: '2020-09-24T04:39:21-05:00'
-lastmod: '2025-07-13T16:01:53.577376'
+- business intelligence
+- formación
+- mapas
+- trucos
+date: '2020-09-24'
+lastmod: '2025-07-13'
 related:
 - mapas-municipales-de-espana-con-excel-y-qgis.md
 - trucos-excel-mapa-de-espana-por-comunidades-autonomas.md
 - mapa-estatico-de-espana-con-python.md
 - mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel.md
 - mapas-estaticos-municipales-para-estados-de-mexico-con-r-y-con-excel.md
-slug: mapa-espana-por-comunidades-autonomas-con-google-studio
 tags:
-- Data Studio
-- Google Sheets
+- data studio
+- google sheets
+- mapas
 title: Mapa España por Comunidades Autónomas con Google Studio
 url: /blog/mapa-espana-por-comunidades-autonomas-con-google-studio/
 ---
-
 Continúo evaluando métodos para crear mapas con software que no sea de pago e intentando que la dificultad sea mínima. En este caso quería mostraros y poner a vuestra disposición un mapa de España por Comunidades Autónomas, además os dejo acceso libre a los datos que usa el mapa para que vosotros mismos podáis realizar el trabajo. Voy a pasaros 2 enlaces uno con los datos donde tenemos datos de pruebas PCR por 100.000 habitantes a nivel de Comunidad Autónoma (por representar algo) es ahí donde incluís los datos que deseáis representar gráficamente. Y el otro enlace es el dashboard simple hecho con Data Studio que véis al inicio de la entrada que contiene un mapa con el formato que en este momento necesito. Este trabajo es meramente experimental porque pongo a disposición de todos tanto mapa como Hoja de Google, veremos lo que tarda en dejar de funcionar.
 
 El mapa se ha llevado a cabo según las instrucciones de este video:

@@ -1,24 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Libro Estadística
-- R
-date: '2022-02-27T15:35:06-05:00'
-lastmod: '2025-07-13T15:58:59.653163'
+- formación
+- libro estadística
+- r
+date: '2022-02-27'
+lastmod: '2025-07-13'
 related:
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-9-analisis-exploratorio-de-datos-eda.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-8-problemas-con-los-datos.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-16-modelizacion-estadistica-conociendo-los-datos.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-11-analisis-bivariable.md
-slug: introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-6-descripcion-numerica-de-variables
-tags: []
+tags:
+- sin etiqueta
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 6. Descripción
   numérica de variables
 url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-6-descripcion-numerica-de-variables/
 ---
-
 # Descripción numérica de variables
 
 Se comienza con la recopilación de datos, la tabulación de los mismos y el establecimiento de la tipología y el rol que juegan éstos en el conjunto de datos. Establecido ese marco de es necesario describir datos, recordemos que por si mismos los datos no dicen nada, no resuelven nada. Esa información la suministra un análisis.

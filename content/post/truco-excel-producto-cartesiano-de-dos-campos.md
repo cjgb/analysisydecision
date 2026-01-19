@@ -1,23 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Excel
-- Formación
-- Trucos
-date: '2019-04-14T14:01:16-05:00'
-lastmod: '2025-07-13T16:07:27.604415'
+- excel
+- formación
+- trucos
+date: '2019-04-14'
+lastmod: '2025-07-13'
 related:
 - truco-excel-repetir-celdas-en-funcion-de-los-valores-de-otra-celda.md
 - trucos-excel-multiples-campos-calculados-en-una-tabla-dinamica.md
 - truco-excel-unir-todos-los-libros-en-una-hoja.md
 - truco-excel-repetir-un-campo-a-partir-de-otro-que-define-el-numero-de-repeticiones.md
 - truco-excel-pasar-un-rango-de-varias-columnas-a-una.md
-slug: truco-excel-producto-cartesiano-de-dos-campos
-tags: []
+tags:
+- sin etiqueta
 title: Truco Excel. Producto cartesiano de dos campos
 url: /blog/truco-excel-producto-cartesiano-de-dos-campos/
 ---
-
 Hacía tiempo que no ponía trucos en Excel y hoy os traigo un truco que puede ser de utilidad cuando tienes que hacer combinaciones. Se trata de realizar el producto cartesiano mediante una macro de Excel, además os pongo el enlace al propio Excel para que podáis rellenar los campos a cruzar. No creo que haga falta describir que es un producto cartesiano de dos campospero de forma resumida se puede decir que es crear el total de pares de esos dos campos, un todos con todos, es útil cuando quieres hacer combinaciones (como ya he dicho). La macro en Visual Basic se podrá hacer mejor, pero a mi se me ha ocurrido hacer un triple bucle, probablemente se pueda hacer con n campos pero si tenéis que realizar productos cartesianos más complejos es preferible que lo hagáis con otra herramienta. El código empleado es este:
 
 ```r

@@ -1,22 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Consultoría
-- Data Mining
-date: '2008-05-26T08:13:44-05:00'
-lastmod: '2025-07-13T16:04:52.436099'
+- consultoría
+- data mining
+date: '2008-05-26'
+lastmod: '2025-07-13'
 related:
 - proyecto-text-mining-con-excel-iii.md
 - proyecto-text-mining-con-excel-ii.md
 - google-mining-analisis-de-las-paginas-indexadas-i.md
 - proyecto-text-mining-con-excel-i.md
 - truco-excel-unir-todos-los-libros-en-una-hoja.md
-slug: proyecto-text-mining-con-excel-iv
-tags: []
+tags:
+- sin etiqueta
 title: Proyecto. Text Mining con Excel (IV)
 url: /blog/proyecto-text-mining-con-excel-iv/
 ---
-
 [](/images/2008/05/pyt_3_entradas.JPG "pyt_3_entradas.JPG")En la anterior entrega del seguimiento de mi proyecto de minería de textos con Excel creé un proceso que leía búsquedas de Google y las almacenaba en un fichero excel que denominaba base. El problema que me encontré es que generaba un excel con una gran cantidad de hojas y posteriormente tenía que leerlas y extraer la información de cada una. Esta metodología no me parece eficiente, es mejor leer una búsqueda, extraer la información relevante de ella e introducirla en mi tablón de datos.
 
 Para extraer la información relevante de cada búsqueda he de conocer muy bien como se almacena cada página web de Google en Excel. En un primer vistazo obtengo esto:

@@ -1,24 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Consultoría
-- Seguros
-date: '2009-12-05T14:18:49-05:00'
-lastmod: '2025-07-13T16:00:25.510176'
+- consultoría
+- seguros
+date: '2009-12-05'
+lastmod: '2025-07-13'
 related:
 - nace-verti-la-directa-de-mapfre.md
 - consultor-particular-de-seguros.md
 - el-seguro-directo-de-zurich.md
 - el-seguro-de-salud-suma-y-sigue.md
 - el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v.md
-slug: los-enemigos-del-canal-tradicional-de-venta-de-seguros
 tags:
 - enemigos de agentes y corredores
 - venta de seguros
+- seguros
 title: Los enemigos del canal tradicional de venta de seguros
 url: /blog/los-enemigos-del-canal-tradicional-de-venta-de-seguros/
 ---
-
 Tradicionalmente los seguros se distribuían a través de agentes (trabajadores de la propia compañía) y corredores (trabajadores libres). También ha existido el canal de banca-seguros que en los últimos años, tras el boom inmobiliario, está cogiendo mayor peso. El otro canal mayoritario de comercialización de seguros es el canal directo, el canal con mayor crecimiento y que puede englobar internet, telemarketing y portales de comercialización.
 
 El canal tradicional está permanentemente amenazado por los canales de banca y directo. Un buen ejemplo del nuevo método de comercialización de seguros a través de entidades bancarias lo vemos en [este artículo de El País](http://www.elpais.com/articulo/carreras/capital/humano/Polizas/sucursal/banco/elpepueconeg/20090628elpnegser_3/Tes). A la vista de este tipo de opiniones un corredor argumentará que la persona que comercializa Fondos de Inversión no puede ser la misma que comercializa seguros de hogar ya que desaparece la especialización, cualquiera puede vender un seguro mientras que Ley de Mediación es exigente con los los mediadores. El canal directo también supone una amenaza para agentes y corredores, por un lado tendríamos internet donde la aparición en escena de los multitarificadores facilita al usuario el acceso a precios y garantías y las compañías de telemarketing donde tenemos operadoras que nos orientarán a la hora de adquirir el producto. En este caso el canal tradicional no recomienda su uso porque se pierde el trato personalizado y el nivel de especialización del agente o corredor.

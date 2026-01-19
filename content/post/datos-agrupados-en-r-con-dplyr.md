@@ -1,24 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- R
-- Trucos
-date: '2020-03-26T11:33:57-05:00'
-lastmod: '2025-07-13T15:56:08.695434'
+- formación
+- r
+- trucos
+date: '2020-03-26'
+lastmod: '2025-07-13'
 related:
 - trucos-r-funcion-ddply-del-paquete-plyr.md
 - pasando-de-sas-a-r-primer-y-ultimo-elemento-de-un-campo-agrupado-de-un-data-frame.md
 - creacion-de-ranking-con-r.md
 - trucos-simples-para-rstats.md
 - calcular-porcentajes-por-grupos-con-dplyr.md
-slug: datos-agrupados-en-r-con-dplyr
 tags:
 - dplyr
 title: Datos agrupados en R con dplyr
 url: /blog/datos-agrupados-en-r-con-dplyr/
 ---
-
 Entrada rápida para ilustrar como crear un campo autonumérico por un factor, es una duda que me plantean, tienen datos de clientes y fechas y necesitan crear un autonumérico en R que les diga el número de orden de los eventos de una fecha. Algo parecido a lo que hacemos con el retain de R. Vamos a ilustrar la tarea con un ejemplo:
 
 ```r

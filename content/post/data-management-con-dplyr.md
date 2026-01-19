@@ -1,23 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- R
-date: '2018-11-22T14:33:04-05:00'
-lastmod: '2025-07-13T15:56:04.616484'
+- formación
+- r
+date: '2018-11-22'
+lastmod: '2025-07-13'
 related:
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-3-manejo-de-datos-con-r.md
 - data-management-basico-con-pandas.md
 - trucos-r-funcion-ddply-del-paquete-plyr.md
 - manejo-de-datos-basico-con-python-datatable.md
 - primeros-pasos-con-julia-importar-un-csv-y-basicos-con-un-data-frame.md
-slug: data-management-con-dplyr
 tags:
 - dplyr
 title: Data management con dplyr
 url: /blog/data-management-con-dplyr/
 ---
-
 Dos años con pandas y sckitlearn y ahora vuelvo a R. Y en mi regreso me propuse comenzar a trabajar con dplyr y mi productividad se está incrementando exponencialmente, creo que dplyr es LA HERRAMIENTA para el manejo de data frame con R, ni me imagino como puede funcionar sparlyr… Para aquellos que estéis iniciando vuestra andadura con R o para los que no estéis acostumbrados a dplyr he hecho una recopilación de las tareas más habituales que hago con esta librería. Se pueden resumir:
 
 • Seleccionar columnas

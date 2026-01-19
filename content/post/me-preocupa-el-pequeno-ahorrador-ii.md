@@ -1,24 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Banca
-- Monográficos
-date: '2009-03-22T15:43:13-05:00'
-lastmod: '2025-07-13T16:02:24.041797'
+- banca
+- monográficos
+date: '2009-03-22'
+lastmod: '2025-07-13'
 related:
 - a-mi-me-preocupa-el-pequeno-ahorrador.md
 - lecciones-de-economia-de-un-ignorante-no-me-dan-hipoteca.md
 - lecciones-de-economia-de-un-ignorante-la-caixa-a-colocar-preferentes.md
 - experimento-un-prestamo-personal-para-invertir-en-bolsa.md
 - la-confianza-en-el-sector-financiero.md
-slug: me-preocupa-el-pequeno-ahorrador-ii
 tags:
 - ahorradores
 - productos de ahorro
 title: Me preocupa el pequeño ahorrador (II)
 url: /blog/me-preocupa-el-pequeno-ahorrador-ii/
 ---
-
 ¿Dónde meto mi dinero? Esa es la pregunta que se hacen todos los ahorradores. Los productos financieros en los que invertir los podemos dividir en:
 
   * Productos de renta fija

@@ -1,32 +1,30 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-- Trucos
-- WPS
-date: '2012-01-10T11:05:34-05:00'
-lastmod: '2025-07-13T16:09:52.069453'
+- formación
+- sas
+- trucos
+- wps
+date: '2012-01-10'
+lastmod: '2025-07-13'
 related:
 - espacios-en-sas.md
 - trucos-sas-borrando-blancos-innecesarios-con-compbl.md
 - macros-sas-limpiar-una-cadena-de-caracteres.md
 - truco-sas-limpieza-de-tabuladores-con-expresiones-regulares.md
 - macros-faciles-de-sas-normaliza-un-texto-rapido.md
-slug: trucos-sas-eliminacion-de-espacios-en-blanco
 tags:
-- ''
-- COMPBL
+- compbl
 - compress
-- funciones de texto
+- funciones texto
 - left
 - rxchange
 - rxparse
 - trimn
+- sas
 title: Trucos SAS. Eliminación de espacios en blanco
 url: /blog/trucos-sas-eliminacion-de-espacios-en-blanco/
 ---
-
 Truco SAS práctico para aquellos que os estáis iniciando en el uso de las **funciones de texto con SAS**. Se trata de **eliminar aquellos espacios en blanco que no son necesarios en una variable**. Quería plantearos las posibles soluciones que se me han ido ocurriendo. Algunas de ellas no son eficientes pero es necesario que dispongáis de todas. En la línea habitual planteo un ejemplo para que lo ejecutéis y así podáis analizar los resultados:
 
 ```r

@@ -1,21 +1,20 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-date: '2020-03-10T07:00:18-05:00'
-lastmod: '2025-07-13T16:05:56.805338'
+- formación
+date: '2020-03-10'
+lastmod: '2025-07-13'
 related:
 - estimacion-de-la-evolucion-de-casos-del-coronavirus-en-espana.md
 - mi-breve-seguimiento-del-coronavirus-con-r.md
 - evolucion-del-numero-de-casos-de-coronavirus.md
 - mapa-del-covid-19-por-comunidades-autonomas-con-r-mas-rstats.md
 - mapa-de-rstats-animado-con-el-porcentaje-de-vacunacion-en-espana.md
-slug: seguir-los-datos-del-coronavirus-en-espana-con-rstats
-tags: []
+tags:
+- sin etiqueta
 title: Seguir los datos del coronavirus en España con Rstats
 url: /blog/seguir-los-datos-del-coronavirus-en-espana-con-rstats/
 ---
-
 [![](/images/2020/03/coronavirus.png)](/images/2020/03/coronavirus.png)
 
 No he podido evitarlo, os traigo unas líneas de código en R para seguir la evolución del coronavirus en España (podéis filtrar cualquier país). Me hubiera gustado hacer un scraping de la página <https://www.worldometers.info/coronavirus/> sin embargo me ha parecido más sencillo leer directamente los datos del repositorio de la Universidad Jonh Hopkins (<https://github.com/CSSEGISandData/COVID-19>) creo que la actualización es diaria. También existe ya un paquete en R denominado coronavirus pero su funcionamiento deja que desear. Por mi parte os ofrezco para seguir su evolución el siguiente script:

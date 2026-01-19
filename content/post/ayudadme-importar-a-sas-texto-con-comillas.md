@@ -1,25 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- SAS
-- Trucos
-- WPS
-date: '2013-01-17T10:43:37-05:00'
-lastmod: '2025-07-13T15:54:23.608093'
+- sas
+- trucos
+- wps
+date: '2013-01-17'
+lastmod: '2025-07-13'
 related:
 - curso-de-lenguaje-sas-con-wps-lectura-de-ficheros-de-texto.md
 - importar-a-sas-desde-otras-aplicaciones.md
 - truco-sas-limpiar-un-fichero-de-texto-con-sas.md
 - truco-sas-macro-buscar-y-reemplazar-en-texto.md
 - curso-de-lenguaje-sas-con-wps-que-hace-el-paso-data.md
-slug: ayudadme-importar-a-sas-texto-con-comillas
 tags:
-- INFILE
-- PROC IMPORT
+- infile
+- proc import
 title: Ayudadme. Importar a SAS texto con comillas
 url: /blog/ayudadme-importar-a-sas-texto-con-comillas/
 ---
-
 Hoy sois vosotros los que tenéis que ayudar al dinosaurio. Ya no estoy para estas cosas. Tengo un problema. Fichero de texto separado por ; típico csv de toda la vida. Este fichero de texto contiene diversos campos que a mis efectos son de texto. Si abrimos el fichero con una hoja de cálculo tendríamos:
 
 [![](/images/2013/01/importar_sas_csv.png)](/images/2013/01/importar_sas_csv.png)

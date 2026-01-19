@@ -1,21 +1,20 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-date: '2010-05-11T02:14:47-05:00'
-lastmod: '2025-07-13T15:59:43.247495'
+- formación
+date: '2010-05-11'
+lastmod: '2025-07-13'
 related:
 - lecciones-de-economia-de-un-ignorante-la-crisis-ha-tocado-fondo-luego-escarbara.md
 - lecciones-de-economia-de-un-ignorante-poniendo-fecha-a-la-intervencion-de-espana.md
 - lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
 - lecciones-de-economia-de-un-ignorante-los-bancos-pierden-dinero-para-favorecer-a-unos-y-luego-los-salvamos-todos.md
 - lecciones-de-economia-de-un-ignorante-por-que-no-hablo-de-la-batalla-de-los-depositos.md
-slug: lecciones-de-economia-de-un-ignorante-el-club-bilberberg-en-espana
-tags: []
+tags:
+- sin etiqueta
 title: Lecciones de economía de un ignorante. El Club Bilderberg en España
 url: /blog/lecciones-de-economia-de-un-ignorante-el-club-bilberberg-en-espana/
 ---
-
 Resulta que el grupo de seres humanos que dirige el mundo se reune este año en la ciudad de los ingleses borrachos. El [Club Bilderberg](http://es.wikipedia.org/wiki/Grupo_Bilderberg) pasa este año por nuestro país y se me ha ocurrido el siguiente [modelo econométrico](http://es.wikipedia.org/wiki/Econometr%C3%ADa):
 
 2008 – EEUU – Subprime

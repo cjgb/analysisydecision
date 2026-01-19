@@ -1,24 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Excel
-- Formación
-- Trucos
-date: '2017-03-14T02:18:56-05:00'
-lastmod: '2025-07-13T16:07:34.503247'
+- excel
+- formación
+- trucos
+date: '2017-03-14'
+lastmod: '2025-07-13'
 related:
 - trucos-excel-unir-varios-excel-en-uno.md
 - truco-excel-abrir-multiples-libros-de-excel-en-distintas-hojas-de-un-nuevo-libro.md
 - truco-sas-unir-todos-los-excel-en-uno-solo.md
 - truco-sas-unir-todas-las-hojas-de-un-excel-en-una.md
 - truco-excel-pasar-un-rango-de-varias-columnas-a-una.md
-slug: truco-excel-unir-todos-los-libros-en-una-hoja
 tags:
 - visual basic
 title: Truco Excel. Unir todos los libros en una hoja
 url: /blog/truco-excel-unir-todos-los-libros-en-una-hoja/
 ---
-
 ![unir_excel1](/images/2017/03/unir_excel1.png)
 
 Los trucos Excel referentes a la unión de varios libros en uno tienen mucho éxito en esta web, además era necesario crear una versión que uniera de forma horizontal. No es una unión como la pueda hacer **Power Query** de anexar tablas con cierto sentido teniendo en cuenta el nombre de las columnas y demás, se trata [

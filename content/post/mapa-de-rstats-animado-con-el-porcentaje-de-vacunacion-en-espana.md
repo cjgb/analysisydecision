@@ -1,26 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Gráficos
-- Mapas
-date: '2021-01-20T09:18:08-05:00'
-lastmod: '2025-07-13T16:01:52.236100'
+- formación
+- gráficos
+- mapas
+date: '2021-01-20'
+lastmod: '2025-07-13'
 related:
 - animacion-de-un-mapa-con-python-porcentaje-de-vacunas-administradas.md
 - mover-parte-de-un-shapefile-con-r-mapa-de-la-tasa-de-casos-de-coronavirus-por-habitante-en-espana.md
 - incluir-subplot-en-mapa-con-ggplot.md
 - mapa-del-covid-19-por-comunidades-autonomas-con-r-mas-rstats.md
 - libreria-mapspain-en-rstats-mapas-estaticos-de-espana.md
-slug: mapa-de-rstats-animado-con-el-porcentaje-de-vacunacion-en-espana
 tags:
-- Animaciones
+- animaciones
 - gganimate
-- ggplot
+- ggplot2
+- mapas
 title: Mapa de Rstats animado con el porcentaje de vacunación en España
 url: /blog/mapa-de-rstats-animado-con-el-porcentaje-de-vacunacion-en-espana/
 ---
-
 [![](/images/2021/01/mapa_vacunas.gif)](/images/2021/01/mapa_vacunas.gif)
 
 El dato del porcentaje de vacunados de COVID por Comunidad Autónoma está en prensa diariamente y yo estoy empezando a trabajar animaciones para visualizar los datos de un modo más dinámico, fundamentalmente visualizaciones con R y las librerías ggplot y gganimate, así que un mapa animado con ese dato me parecía un ejercicio interesante. No esperaba que estos ejercicios tuvieran mucho interés puesto que hay material en la web más que suficiente, pero dos personas sí mostraron interés por lo que crearé dos entradas en el blog con algunas animaciones realizadas. La primera de ellas la traigo hoy y consiste en el porcentaje de personas vacunadas en España en función de las vacunas entregadas por Comunidad Autónoma. No me quiero meter en los datos, directamente vamos a representar, todo lo referente a datos y coronovirus en España no funciona tan correcto como debiera.

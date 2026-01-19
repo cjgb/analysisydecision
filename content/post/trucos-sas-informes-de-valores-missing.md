@@ -1,27 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-- Trucos
-date: '2009-03-16T08:13:17-05:00'
-lastmod: '2025-07-13T16:10:02.459135'
+- formación
+- sas
+- trucos
+date: '2009-03-16'
+lastmod: '2025-07-13'
 related:
 - macros-sas-hacer-0-los-valores-missing-de-un-dataset.md
 - macros-sas-agrupando-variables-categoricas.md
 - trucos-sas-lista-de-variables-missing.md
 - trucos-sas-lista-de-datasets-en-macro-variable.md
 - macros-sas-informe-de-un-dataset-en-excel.md
-slug: trucos-sas-informes-de-valores-missing
 tags:
 - automatizar código
 - proc sql
-- SAS
-- valores missing
+- sas
+- missing values
 title: Trucos SAS. Informes de valores missing
 url: /blog/trucos-sas-informes-de-valores-missing/
 ---
-
 A continuación os planteo como truco SAS una duda que nos mandaba LILIANA. Ella necesitaba estudiar los valores perdidos de las tablas de una librería determinada. En este caso vamos a estudiar los missing de las variables numéricas de una librería, de forma análoga se puede hacer con las alfanuméricas. Como siempre vamos a trabajar con un ejemplo que parte de tablas generadas aleatoriamente. Comenzamos generando estas tablas:
 
 ```r

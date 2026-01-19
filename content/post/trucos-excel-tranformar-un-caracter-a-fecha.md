@@ -1,30 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Excel
-- Formación
-- Trucos
-date: '2011-03-13T16:34:55-05:00'
-lastmod: '2025-07-13T16:09:21.673546'
+- excel
+- formación
+- trucos
+date: '2011-03-13'
+lastmod: '2025-07-13'
 related:
 - truco-excel-pasar-de-numero-con-formato-aaaammdd-a-fecha-con-formulas.md
 - trucos-sas-pasar-fecha-a-caracter-en-sas.md
 - trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados.md
 - macros-sas-transformar-un-numerico-a-fecha.md
 - trucos-r-establecer-la-configuracion-local-de-una-fecha.md
-slug: trucos-excel-tranformar-un-caracter-a-fecha
 tags:
-- DERECHA
-- ENCONTRAR
-- EXTRAE
-- IZQUIERDA
-- Texto
-- transformar fecha a texto
-- transformar texto a fecha
+- funciones texto
+- fechas
+- excel
 title: Trucos Excel. Tranformar un caracter a fecha
 url: /blog/trucos-excel-tranformar-un-caracter-a-fecha/
 ---
-
 Si tenemos en Excel celdas con valores en la forma:
 
   * _viernes 1 de enero de 2010_

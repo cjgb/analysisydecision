@@ -1,28 +1,26 @@
 ---
 author: rvaquerizo
 categories:
-- Big Data
-- Consultoría
-- Data Mining
-- Formación
-- Modelos
-- Monográficos
-- R
-date: '2016-10-13T08:25:33-05:00'
-lastmod: '2025-07-13T15:57:08.491091'
+- big data
+- consultoría
+- data mining
+- formación
+- modelos
+- monográficos
+- r
+date: '2016-10-13'
+lastmod: '2025-07-13'
 related:
 - monografico-clasificacion-con-svm-en-r.md
 - resolucion-del-juego-de-modelos-con-r.md
 - cluster-svm.md
 - machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algoritmos-de-clasificacion.md
 - obteniendo-los-parametros-de-mi-modelo-gam.md
-slug: el-parametro-gamma-el-coste-la-complejidad-de-un-svm
 tags:
-- SVM
+- svm
 title: El parámetro gamma, el coste, la complejidad de un SVM
 url: /blog/el-parametro-gamma-el-coste-la-complejidad-de-un-svm/
 ---
-
 [![letra_o_svm_r](/images/2016/10/Letra_O_SVM_R.png)](/images/2016/10/Letra_O_SVM_R.png)
 
 Cuando clasificamos datos con SVM es necesario fijar un margen de separación entre observaciones, si no fijamos este margen nuestro modelo sería tan bueno tan bueno que sólo serviría para esos datos, estaría sobrestimando y eso es malo. El coste C y el gamma son los dos parámetros con los que contamos en los SVM. El parámetro C es el peso que le [

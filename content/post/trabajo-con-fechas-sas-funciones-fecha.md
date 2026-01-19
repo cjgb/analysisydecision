@@ -1,17 +1,16 @@
 ---
 author: rvaquerizo
 categories:
-- Monográficos
-- SAS
-date: '2008-11-17T09:58:16-05:00'
-lastmod: '2025-07-13T16:06:45.978061'
+- monográficos
+- sas
+date: '2008-11-17'
+lastmod: '2025-07-13'
 related:
 - curso-de-lenguaje-sas-con-wps-funciones-fecha.md
 - monografico-funciones-intnx-e-intck-para-fechas-en-sas.md
 - trabajo-con-fechas-sas-introduccion.md
 - trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados.md
 - trucos-sas-numero-de-dias-de-un-mes.md
-slug: trabajo-con-fechas-sas-funciones-fecha
 tags:
 - fechas sas
 - formatos sas
@@ -19,7 +18,6 @@ tags:
 title: Trabajo con fechas SAS. Funciones fecha
 url: /blog/trabajo-con-fechas-sas-funciones-fecha/
 ---
-
 En las entregas anteriores del monográfico sobre fechas SAS hemos estudiado como almacena internamente las fechas el sistema y los formatos más prácticos que disponemos para visualizarlas. En esta última entrega veremos algunas de las funciones de fecha hora de las que dispone SAS. Las funciones las vamos a dividir en 4 grupos:
 
   * Funciones de extracción de fecha

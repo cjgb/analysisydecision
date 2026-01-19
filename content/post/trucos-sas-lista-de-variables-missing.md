@@ -1,26 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-- Trucos
-- WPS
-date: '2013-03-08T02:48:28-05:00'
-lastmod: '2025-07-13T16:10:06.808058'
+- formación
+- sas
+- trucos
+- wps
+date: '2013-03-08'
+lastmod: '2025-07-13'
 related:
 - trucos-sas-informes-de-valores-missing.md
 - truco-sas-transformaciones-de-variables-con-arrays.md
 - macros-sas-hacer-0-los-valores-missing-de-un-dataset.md
 - macros-faciles-de-sas-determinar-si-existe-una-variable-en-un-dataset.md
 - trucos-sas-macrovariable-a-dataset.md
-slug: trucos-sas-lista-de-variables-missing
 tags:
 - array
-- missing
+- missing values
+- sas
 title: Trucos SAS. Lista de variables missing
 url: /blog/trucos-sas-lista-de-variables-missing/
 ---
-
 Duda que me plantearon ayer por la tarde. Dada una serie de variables determinar que registro tiene todas esas variables nulas. El truco que planteo puede servir para determinar incluso cuantos valores perdidos tiene esa lista de variables, ese truco me le reservo para otro día. El código lo acompaño con un ejemplo para que se pueda ejecutar y analizar su funcionamiento:
 
 ```r

@@ -1,22 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-date: '2009-08-11T02:48:57-05:00'
-lastmod: '2025-07-13T15:57:23.389308'
+- formación
+- sas
+date: '2009-08-11'
+lastmod: '2025-07-13'
 related:
 - laboratorio-de-codigo-sas-comparativa-entre-if-y-where.md
 - proc-sql-merge-set.md
 - truco-sas-cruce-con-formatos.md
 - trucos-sas-porque-hay-que-usar-objetos-hash.md
 - curso-de-lenguaje-sas-con-wps-sentencias-condicionales-if-then.md
-slug: en-merge-%c2%bfmejor-if-o-where
-tags: []
+tags:
+- sin etiqueta
 title: En MERGE, ¿mejor IF o WHERE?
 url: /blog/en-merge-c2bfmejor-if-o-where/
 ---
-
 Cuando programo en SAS algún paso data como unión con MERGE a modo de filtro empleo habitualmente IF en vez de WHERE. ¿El motivo? Mejor lo vemos en ejemplos. Voy a generar dos datasets aleatorios de 2 millones de registros cada uno. Tendrán un campo autonumérico y un campo aleatorio que toma valores entre 0 y 1:
 
 ```r

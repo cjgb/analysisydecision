@@ -1,23 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-- Trucos
-date: '2008-03-11T09:50:18-05:00'
-lastmod: '2025-07-13T16:08:30.365336'
+- formación
+- sas
+- trucos
+date: '2008-03-11'
+lastmod: '2025-07-13'
 related:
 - truco-sas-crear-ficheros-excel-sin-proc-export-i.md
 - intervalos-en-sas-con-proc-format.md
 - trucos-sas-calcular-percentiles-como-excel-o-r.md
 - macros-sas-pasar-de-texto-a-numerico.md
 - transformar-variables-en-sas-caracter-a-numerico.md
-slug: truco-sas-proc-format-vs-formato-percent
-tags: []
+tags:
+- sin etiqueta
 title: Truco SAS. Proc format VS formato percent
 url: /blog/truco-sas-proc-format-vs-formato-percent/
 ---
-
 El formato SAS _percent_ nos ofrece una apariencia poco habitual a la hora de realizar informes con SAS. Necesitamos emplear el _proc format_ ya que SAS no tiene un formato de porcentajes que se adecúe a los reportes de un buen gestor de la información. Para estudiar su uso emplearemos un ejemplo:
 
 ```r

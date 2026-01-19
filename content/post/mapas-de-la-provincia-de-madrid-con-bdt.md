@@ -1,25 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Business Intelligence
-- Excel
-- Formación
-date: '2015-02-16T16:24:19-05:00'
-lastmod: '2025-07-13T16:02:03.187762'
+- business intelligence
+- excel
+- formación
+date: '2015-02-16'
+lastmod: '2025-07-13'
 related:
 - mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel.md
 - mapas-municipales-de-espana-con-excel-y-qgis.md
 - mapa-espana-por-comunidades-autonomas-con-google-studio.md
 - mapas-estaticos-municipales-para-estados-de-mexico-con-r-y-con-excel.md
 - nuevo-y-muy-mejorado-mapa-de-espana-por-provincias-con-excel.md
-slug: mapas-de-la-provincia-de-madrid-con-bdt
 tags:
 - mapas
-- mapas españa
+- españa
 title: Mapas de la provincia de Madrid con BDT
 url: /blog/mapas-de-la-provincia-de-madrid-con-bdt/
 ---
-
 ![Mapa Madrid por municipios](/images/2015/02/Mapa-Madrid-por-municipios-291x300.png)
 
 JL un lector del blog me ha descubierto esta herramienta muy útil para la creación de mapas de Madrid, se trata de una herramienta pública donde tenemos un gran número de variables para poder representar y además podemos representar nuestras propias variables. La web es:[

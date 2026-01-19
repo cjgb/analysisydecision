@@ -1,27 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Machine Learning
-- Modelos
-- R
-- Seguros
-date: '2020-12-01T07:32:13-05:00'
-lastmod: '2025-07-13T16:02:41.427758'
+- formación
+- machine learning
+- modelos
+- r
+- seguros
+date: '2020-12-01'
+lastmod: '2025-07-13'
 related:
 - evaluando-la-capacidad-predictiva-de-mi-modelo-tweedie.md
 - el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
 - la-distribucion-tweedie.md
 - el-modelo-multivariante-en-el-sector-asegurador-la-variable-dependiente-iii.md
-slug: modelos-tweedie-con-h2o-mutualizar-siniestralidad-en-base-a-factores-de-riesgo
 tags:
-- H2O
+- h2o
 - tweedie
 title: Modelos tweedie con H2O. Mutualizar siniestralidad en base a factores de riesgo
 url: /blog/modelos-tweedie-con-h2o-mutualizar-siniestralidad-en-base-a-factores-de-riesgo/
 ---
-
 [Ya he escrito sobre la distribución tweedie en otra ocasión](https://analisisydecision.es/la-distribucion-tweedie/) y hoy vuelvo a traeros un ejemplo de uso que además servirá para introducir un método, una forma de trabajar con modelos en H2O y R además de emplear gradient boosting machine (gbm) para la obtención de primas de riesgo. Ya hay buenos profesionales repartidos en el mercado laboral a los que les he mostrado como hacer modelos de riesgo para el sector asegurador con R y H2O dentro del [Máster en Big Data de la UNED](https://www.masterbigdataonline.com/index.php) donde imparto el módulo de seguros. Pero hoy quiero traer al blog un resumen de otro tipo de modelos que nos pueden servir para segmentar una cartera de seguros en base a la siniestralidad esperada de un riesgo. Recordad que un seguro trata de mutualizar el gasto entre una cartera, no sé a priori quien va a tener un siniestro (¡si lo supiera!) pero si dispongo de información histórica de mi cartera y esa información me puede dar unas pistas sobre lo que ocurrirá a futuro (habitualmente un año), quiero ver que parte de esa información histórica es reproducible asumiendo siempre un error.
 
 Para entender mejor como se mutualiza, como se reparte el riesgo, como se reparte la siniestralidad en nuestra cartera, vamos a emplear modelos tweedie, además los vamos a realizar con H2O y de paso os comento como trabajo en un entorno R + H2O. El ejemplo lo ilustramos con un conjunto de datos de la librería CASdatasets:

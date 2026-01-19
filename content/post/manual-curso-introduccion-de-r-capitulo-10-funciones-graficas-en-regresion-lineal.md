@@ -1,27 +1,26 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Modelos
-- R
-date: '2008-10-03T12:02:35-05:00'
-lastmod: '2025-07-13T16:01:15.763111'
+- formación
+- modelos
+- r
+date: '2008-10-03'
+lastmod: '2025-07-13'
 related:
 - manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
 - el-problema-de-la-multicolinealidad-intuirlo-y-detectarlo.md
 - primeros-pasos-con-regresion-no-lineal-nls-con-r.md
 - regresion-ridge-o-contraida-con-r.md
 - trucos-sas-medir-la-importancia-de-las-variables-en-nuestro-modelo-de-regresion-logistica.md
-slug: manual-curso-introduccion-de-r-capitulo-10-funciones-graficas-en-regresion-lineal
 tags:
-- Modelos
-- R
+- modelos
+- r
 - regresión lineal
+- regresión
 title: 'Manual. Curso introducción de R. Capítulo 10: Funciones gráficas en regresión
   lineal'
 url: /blog/manual-curso-introduccion-de-r-capitulo-10-funciones-graficas-en-regresion-lineal/
 ---
-
 En esta nueva entrega del manual de R vamos a trabajar con más ejemplos de regresión lineal haciendo especial mención a las posibilidades gráficas de R. El ejemplo de partida será el mismo empleado en el capítulo 9.
 
 Ejemplo 10.1:

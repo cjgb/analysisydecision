@@ -1,26 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Monográficos
-- Python
-date: '2017-12-25T17:10:42-05:00'
-lastmod: '2025-07-13T15:54:27.920460'
+- formación
+- monográficos
+- python
+date: '2017-12-25'
+lastmod: '2025-07-13'
 related:
 - ejemplo-de-web-scraping-con-r-la-formacion-de-los-diputados-del-congreso.md
 - los-principales-problemas-de-los-espanoles-animaciones-con-r-y-gganimate.md
 - leer-y-representar-datos-de-google-trends-con-r.md
 - analisis-de-textos-con-r.md
 - el-ano-2010-para-analisisydecision.md
-slug: beatifulsoup-web-scraping-con-python-o-como-las-redes-sociales-estan-cambiando-mi-forma-de-escribir
 tags:
-- Beatifulsoup
+- beatifulsoup
 - web scraping
 title: Beatifulsoup. Web scraping con Python o como las redes sociales pueden estar
   cambiando la forma de escribir
 url: /blog/beatifulsoup-web-scraping-con-python-o-como-las-redes-sociales-estan-cambiando-mi-forma-de-escribir/
 ---
-
 [![Boxplot_BeatifulShop](/images/2017/12/Boxplot_BeatifulShop.png)](/images/2017/12/Boxplot_BeatifulShop.png)
 
 Desde hace tiempo mis frases son más cortas. Creo que es un problema de las redes sociales, sobre todo twitter, que está cambiando mi comportamiento. Para analizar si esto está pasando se me ha ocurrido analizar la longitud de las frases de este blog desde sus inicios y de paso aprovechar para hacer web scraping con la librería Beatifulshop de Python. La idea es recorrer el blog y calcular la longitud de las frases y representar gráficamente como ha ido evolucionando esa longitud.

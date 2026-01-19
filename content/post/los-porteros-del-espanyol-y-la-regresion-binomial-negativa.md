@@ -1,26 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- Consultoría
-- Fútbol
-- Formación
-- Modelos
-- Opinión
-- R
-date: '2023-12-08T17:40:48-05:00'
-lastmod: '2025-07-13T16:00:32.320851'
+- consultoría
+- fútbol
+- formación
+- modelos
+- opinión
+- r
+date: '2023-12-08'
+lastmod: '2025-07-13'
 related:
 - minutos-de-juego-y-puntos-es-espanyol-y-sus-finales-de-partido.md
 - resultados-de-la-liga-con-rstats-estudiando-graficamente-rachas.md
 - pintando-campos-de-futbol-con-rstats-y-entendiendo-funciones-de-densidad.md
 - alineaciones-de-equipos-de-futbol-con-worldfootballr-de-rstats.md
 - datos-libres-de-statsbomb-independencia-estadistica-y-tandas-de-penaltis.md
-slug: los-porteros-del-espanyol-y-la-regresion-binomial-negativa
-tags: []
+tags:
+- sin etiqueta
 title: Los porteros del Espanyol y la regresión binomial negativa
 url: /blog/los-porteros-del-espanyol-y-la-regresion-binomial-negativa/
 ---
-
 En la temporada 22/23 de la Liga el RCD Espanyol descendió a segunda división y los aficionados culpamos en parte los problemas que hubo durante toda la temporada con los porteros y quería analizar si hubo diferencias entre los porteros que jugaron esa temporada en el Espanyol y Diego López que jugó como portero titular la temporada anterior, dejaremos de lado las intervenciones de Joan García y Olazábal.
 
 Comenzamos con un código conocido.

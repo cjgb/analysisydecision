@@ -1,23 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- SAS
-- Sin catergoría
-date: '2009-12-30T08:27:14-05:00'
-lastmod: '2025-07-13T15:57:50.461941'
+- sas
+- sin categoría
+date: '2009-12-30'
+lastmod: '2025-07-13'
 related:
 - sas-te-felicita-la-navidad.md
 - macros-faciles-de-sas-normaliza-un-texto-rapido.md
 - monograficos-call-symput-imprescindible.md
 - macro-facil-de-sas-longitud-de-la-parte-decimal-de-un-numero.md
 - analisisydecision-es-os-desea-felices-fiestas.md
-slug: felicitacion-navidena-con-sas
 tags:
-- Se me va
+- se me va
 title: Felicitación navideña con SAS
 url: /blog/felicitacion-navidena-con-sas/
 ---
-
 Ejecutad el siguiente código en SAS local:
 
 ```data _null_;`

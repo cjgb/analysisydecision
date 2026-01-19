@@ -1,25 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Modelos
-- R
-- Seguros
-date: '2017-01-26T11:28:09-05:00'
-lastmod: '2025-07-13T15:53:46.007020'
+- formación
+- modelos
+- r
+- seguros
+date: '2017-01-26'
+lastmod: '2025-07-13'
 related:
 - resolucion-del-juego-de-modelos-con-r.md
 - modelos-gam-dejando-satisfechos-a-los-equipos-de-negocio.md
 - manual-curso-introduccion-de-r-capitulo-10-funciones-graficas-en-regresion-lineal.md
 - primeros-pasos-con-regresion-no-lineal-nls-con-r.md
 - manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
-slug: ajuste-de-splines-con-r
 tags:
 - spline
 title: Ajuste de splines con R
 url: /blog/ajuste-de-splines-con-r/
 ---
-
 [![spline_R1](/images/2017/01/spline_R1.png)](/images/2017/01/spline_R1.png)
 
 El ajuste por polinomios,[ el ajuste por spline](https://es.wikipedia.org/wiki/Spline), es una técnica imprescindible dentro de análisis actuarial. Como siempre la parte matemática y la parte debida al puro azar pueden arrojar discrepancias. ¿Dónde son mayores estas discrepancias cuando usamos métodos estadísticos clásicos? Donde siempre, donde tenemos pocos datos, el comportamiento errático que tiene una tendencia y que habitualmente achacamos a la falta de información los actuarios gustan de corregirlo con ajuste por cúbicas, aunque es mejor emplear ajuste por polinomios ya que no tienen que ser necesariamente polinomios de grado 3. En mi caso particular tengo un Excel que no puedo poner a vuestra disposición porque no lo hice yo, creo que lo hizo alguna divinidad egipcia y desde entonces circula por el mundo la función cubic_spline. Hoy quiero aprovechar el blog no solo para sugeriros como realizar splines con R, además quería pedir ayuda para crear una herramienta en shiny que permita realizar este ajuste que voy a mostraros a continuación.

@@ -1,22 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Seguros
-date: '2010-04-20T15:44:11-05:00'
-lastmod: '2025-07-13T15:56:58.902419'
+- formación
+- seguros
+date: '2010-04-20'
+lastmod: '2025-07-13'
 related:
 - el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v.md
 - el-modelo-multivariante-en-el-sector-asegurador-introduccion-i.md
 - modelos-tweedie-con-h2o-mutualizar-siniestralidad-en-base-a-factores-de-riesgo.md
 - el-modelo-multivariante-en-el-sector-asegurador-univariante-vs-multivariante-ii.md
 - los-parametros-del-modelo-glm-como-relatividades-como-recargos-o-descuentos.md
-slug: el-modelo-multivariante-en-el-sector-asegurador-la-variable-dependiente-iii
-tags: []
+tags:
+- sin etiqueta
 title: El modelo multivariante en el sector asegurador. La variable dependiente (III)
 url: /blog/el-modelo-multivariante-en-el-sector-asegurador-la-variable-dependiente-iii/
 ---
-
 Hasta ahora estamos hablando de un concepto muy difuso que denomino **comportamiento siniestral**. A la hora de ajustar un modelo estadístico necesito una variable dependiente que será función de otras variables independientes. Las variables independientes serán los riesgos a los que también les dedicaremos unas líneas, y la variable independiente será el comportamiento siniestral; pero este concepto un poco difuso no lo vamos a medir en una sóla variable si no en dos:
 
   * Número de siniestros que en función de la exposición nos determina la frecuencia siniestral

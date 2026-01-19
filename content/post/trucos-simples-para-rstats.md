@@ -1,23 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- R
-- Trucos
-date: '2019-02-11T06:32:07-05:00'
-lastmod: '2025-07-13T16:10:41.932964'
+- formación
+- r
+- trucos
+date: '2019-02-11'
+lastmod: '2025-07-13'
 related:
 - evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso.md
 - analisis-de-textos-con-r.md
 - los-principales-problemas-de-los-espanoles-animaciones-con-r-y-gganimate.md
 - truco-r-eval-parse-y-paste-para-automatizar-codigo.md
 - tablas-elegantes-en-rstats-y-formattable.md
-slug: trucos-simples-para-rstats
-tags: []
+tags:
+- sin etiqueta
 title: 'Trucos simples para #rstats'
 url: /blog/trucos-simples-para-rstats/
 ---
-
 En [mi cuenta de twitter](https://twitter.com/r_vaquerizo) suelo poner algunos trucos sencillos de R, cosas que me surgen cuando estoy trabajando y que no me cuesta compartir en 2 minutos, por si puedo ayudar a alguien. Me acabo de dar cuenta que de verdad son útiles y que tenerlos en twitter desperdigados es un problema, así que he pensado en recopilarlos en una entrada del blog para que sea más sencillo buscarlos (incluso para mi). Aquí van algunos de esos trucos:
 
 Pasar los datos de un _data frame_ al portapapeles, útil cuando quieres mover datos de R a Excel sin complicaciones:

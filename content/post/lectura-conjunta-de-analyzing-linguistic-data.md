@@ -1,23 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Modelos
-- R
-date: '2013-04-25T03:17:08-05:00'
-lastmod: '2025-07-13T16:00:02.376670'
+- formación
+- modelos
+- r
+date: '2013-04-25'
+lastmod: '2025-07-13'
 related:
 - da-comienzo-la-lectura-de-the-elements-of-statistical-learning.md
 - nuevo-curso-de-estadistica-con-r.md
 - jornadas-de-r-gratuitas-en-galicia.md
 - nueva-edicion-del-curso-basico-de-r.md
 - curso-de-iniciacion-a-r-en-kschool-de-carlos-gil.md
-slug: lectura-conjunta-de-analyzing-linguistic-data
-tags: []
+tags:
+- sin etiqueta
 title: Lectura conjunta de “Analyzing Linguistic Data”
 url: /blog/lectura-conjunta-de-analyzing-linguistic-data/
 ---
-
 Mi compañero y amigo [Carlos Gil](http://www.datanalytics.com/) junto con [Victor Peinado](http://nlp.uned.es/~victor/) van a iniciar un interesante proyecto. Un grupo de lectura del libro [Analyzing Linguistic Data: A practical introduction to Statistics](http://www.ualberta.ca/~baayen/publications/baayenCUPstats.pdf) desde aquí nos hacemos eco de este proyecto que podéis seguir desde [aquí](http://ald.usar.org.es/acerca-de/).
 
 El calendario del curso es:

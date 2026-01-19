@@ -1,22 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Julia
-- R
-date: '2021-09-23T06:15:18-05:00'
-lastmod: '2025-07-13T16:06:40.607090'
+- julia
+- r
+date: '2021-09-23'
+lastmod: '2025-07-13'
 related:
 - r-python-reticulate.md
 - primeros-pasos-con-julia-importar-un-csv-y-basicos-con-un-data-frame.md
 - graficos-basicos-con-julia.md
 - estadistica-para-cientificos-de-datos-con-r-introduccion.md
 - evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso.md
-slug: trabajando-con-r-y-julia-desde-rstudio
-tags: []
+tags:
+- sin etiqueta
 title: Trabajando con R y Julia desde RStudio
 url: /blog/trabajando-con-r-y-julia-desde-rstudio/
 ---
-
 Muchas veces pienso que no es R es RStudio. Por eso hoy traigo unas líneas para ilustrar el uso de Julia en R markdown y poder elaborar vuestros documentos y vuestra documentación con RStudio. Todo el trabajo se articula [entorno a la librería JuliaCall](https://github.com/Non-Contradiction/JuliaCall) y se fundamenta en el uso de markdown donde usaremos indistintamente R o Julia. Todo comienza con un chunk de R:
 
 ```r

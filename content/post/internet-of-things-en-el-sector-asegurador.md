@@ -1,21 +1,20 @@
 ---
 author: rvaquerizo
 categories:
-- Seguros
-date: '2016-02-20T14:24:39-05:00'
-lastmod: '2025-07-13T15:58:43.424980'
+- seguros
+date: '2016-02-20'
+lastmod: '2025-07-13'
 related:
 - el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v.md
 - con-los-vehiculos-autonomos-me-quedo-sin-trabajo-o-no.md
 - consultor-particular-de-seguros.md
 - el-modelo-multivariante-en-el-sector-asegurador-introduccion-i.md
 - modelos-tweedie-con-h2o-mutualizar-siniestralidad-en-base-a-factores-de-riesgo.md
-slug: internet-of-things-en-el-sector-asegurador
-tags: []
+tags:
+- sin etiqueta
 title: Internet of things en el sector asegurador
 url: /blog/internet-of-things-en-el-sector-asegurador/
 ---
-
 [![DSC00028](/images/2016/02/DSC00028-300x225.jpg)](/images/2016/02/DSC00028.jpg)El martes 23 de febrero de 2016 voy a [una ponencia en la Semana del Seguro](http://semanadelseguro.inese.es/2016/jornada-dell-internet-of-things/) que tiene casi el mismo título que esta entrada del blog. Antes de ir a este tipo de jornadas es bueno realizar diversas búsquedas en Google con para conocer a los ponentes, buscar algo de literatura al respecto y saber de primera mano que está haciendo el sector en este ámbito. En vez de hacer eso me acabo de sentar delante de www.analisisydecision.es y voy a añadir una nueva entrada. ¿El motivo? En cuanto escribes _Internet of Things sector asegurador_ en el buscador por excelencia en seguida aparecen coches que circulan sin conductor, big data (como no), ecosistemas interconectados, networking,… y mucha terminología que debe excitar mucho a los consultores pero que a un dinosaurio como yo le viene un poco grande. Sin embargo, me acabo de dar cuenta de que **el internet de las cosas puede ayudarnos mucho en el sector asegurador** , por eso en vez de contaminarme con tendencias, seguros basados en uso (UBI en inglés) y demás se me ha ocurrido dar mi propia opinión y crear mi propio disparate.
 
 Al buscar un uso para mi trabajo diario evidentemente me he ido al cálculo de la prima de riesgo en función del internet de las cosas y se me ha ocurrido que se puede hacer. Imagino que no seré el único, sin embargo en mi caso particular conectar mi terminal con mi seguro podría beneficiarme mucho a mí y a mi aseguradora. Empiezo con mi reflexión. Desgraciadamente soy el propietario de 4 vehículos:

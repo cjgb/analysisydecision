@@ -1,22 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Consultoría
-- Formación
-date: '2010-06-09T16:38:34-05:00'
-lastmod: '2025-07-13T15:55:42.775906'
+- consultoría
+- formación
+date: '2010-06-09'
+lastmod: '2025-07-13'
 related:
 - curso-de-lenguaje-sas-con-wps-el-paso-data.md
 - curso-de-lenguaje-sas-con-wps-que-hace-el-paso-data.md
 - curso-de-lenguaje-sas-con-wps-subconjuntos-de-variables-con-drop-y-keep.md
 - curso-de-lenguaje-sas-con-wps-lectura-de-ficheros-de-texto.md
 - curso-de-lenguaje-sas-con-wps-librerias-en-wps.md
-slug: curso-de-lenguaje-sas-con-wps-ejecuciones
-tags: []
+tags:
+- sin etiqueta
 title: Curso de lenguaje SAS con WPS. Ejecuciones
 url: /blog/curso-de-lenguaje-sas-con-wps-ejecuciones/
 ---
-
 Hasta la fecha nos hemos aproximado al interfaz de WPS y hemos ejecutado algunos script para trabajar con conjuntos de datos SAS y sobre todo entender que hace el paso DATA, también hemos analizado que son y como trabajan las librerías WPS. En nuevas entregas nos seguiremos centrando en el trabajo con dataset temporales y permanentes. La intención es conocer bien que hace DATA y establecer una metodología de trabajo con WPS. SAS es un lenguaje orientado a la gestión de datos y las personas acostumbradas a programar en otros lenguajes pueden tener muchos problemas conceptuales. Al final, con este manual intentaremos ayudar a todos aquellos que trabajáis con SAS a crear un método que permita a nuestros procesos SAS que funcionen de la forma más óptima para ganar tiempo y espacio en disco los dos elementos más importantes cuando manejamos grandes volúmenes de datos.
 
 Lo más habitual en SAS es la lectura de otros conjuntos de datos para crear subconjuntos de registros o de variables o crear y modificar variables. La sintaxis habitual para seleccionar datasets es:

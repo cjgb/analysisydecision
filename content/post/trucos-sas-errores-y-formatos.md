@@ -1,27 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-- Trucos
-date: '2012-04-19T09:39:45-05:00'
-lastmod: '2025-07-13T16:09:58.131206'
+- formación
+- sas
+- trucos
+date: '2012-04-19'
+lastmod: '2025-07-13'
 related:
 - truco-sas-ver-el-contenido-de-un-formato.md
 - trucos-sas-eliminar-etiquetas-en-los-conjunto-de-datos-sas.md
 - truco-sas-limpieza-de-tabuladores-con-expresiones-regulares.md
 - truco-sas-limpiar-un-fichero-de-texto-con-sas.md
 - truco-sas-elminar-retornos-de-carro-o-saltos-de-linea-engorrosos.md
-slug: trucos-sas-errores-y-formatos
 tags:
-- ''
-- DATASETS
-- FMTERR
+- datasets
+- fmterr
 - formatos
 title: Trucos SAS. Errores y formatos
 url: /blog/trucos-sas-errores-y-formatos/
 ---
-
 Un truco SAS que puede ayudar a todos aquellos que estén empezando a programar en SAS. Hay ocasiones que trabajamos con datasets que tienen formatos y nos encontramos con el error: « _formato FMT no se ha encontrado o no se ha podido cargar»._ ¿Qué hacer? Lo primero es jugar con la opción FMTERR:
 
 `options nofmterr;`

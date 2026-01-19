@@ -1,22 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Modelos
-date: '2012-05-27T02:49:01-05:00'
-lastmod: '2025-07-13T15:59:31.062470'
+- formación
+- modelos
+date: '2012-05-27'
+lastmod: '2025-07-13'
 related:
 - curso-basico-de-r.md
 - nuevo-curso-de-estadistica-con-r.md
 - da-comienzo-la-lectura-de-the-elements-of-statistical-learning.md
 - muestrear-no-es-pecado.md
 - nueva-edicion-del-curso-basico-de-r.md
-slug: la-nueva-web-de-jjgibaja
-tags: []
+tags:
+- sin etiqueta
 title: La nueva web de @jjgibaja
 url: /blog/la-nueva-web-de-jjgibaja/
 ---
-
 Estaba preparando una entrada con el recopilatorio de los videos de Gibaja pero es mucho mejor lo que ha hecho su autor:
 
 <http://jjgibaja.net/>

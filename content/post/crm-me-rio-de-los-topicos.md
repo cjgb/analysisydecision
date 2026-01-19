@@ -1,22 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Business Intelligence
-- Consultoría
-date: '2008-04-12T10:58:47-05:00'
-lastmod: '2025-07-13T15:55:30.555524'
+- business intelligence
+- consultoría
+date: '2008-04-12'
+lastmod: '2025-07-13'
 related:
 - ayd-2300-visitas-mensuales.md
 - contenidos-web-analisis-informacion.md
 - contenidos-para-octubre-de-ayd.md
 - el-ano-2010-para-analisisydecision.md
 - el-ano-2009-para-analisis-y-decision.md
-slug: crm-%c2%a1me-rio-de-los-topicos
-tags: []
+tags:
+- sin etiqueta
 title: CRM. ¡Me río de los tópicos!
 url: /blog/crm-c2a1me-rio-de-los-topicos/
 ---
-
 Hay mucho escrito sobre CRM « _Customer Relationship Management_ » basta con introducir esas siglas en Google y ¡aparecen 61.000.000 de resultados! Y que puedo contar yo que en 61.000.000 de resultados de Google no se haya contado ya. Lo primero será escribir un artículo sobre CRM sin emplear las palabras:
 
   * Cliente

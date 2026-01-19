@@ -1,22 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Python
-date: '2020-09-17T03:24:54-05:00'
-lastmod: '2025-07-13T16:00:10.526305'
+- formación
+- python
+date: '2020-09-17'
+lastmod: '2025-07-13'
 related:
 - manual-curso-introduccion-de-r-capitulo-3-lectura-de-datos.md
 - lectura-de-archivos-csv-con-python-y-pandas.md
 - analisis-de-textos-con-r.md
 - leer-archivos-excel-con-python.md
 - data-management-basico-con-pandas.md
-slug: leer-fichero-de-texto-de-ancho-fijo-con-python-pandas
-tags: []
+tags:
+- sin etiqueta
 title: Leer fichero de texto de ancho fijo con Python Pandas
 url: /blog/leer-fichero-de-texto-de-ancho-fijo-con-python-pandas/
 ---
-
 Es muy habitual trabajar con archivos csv pero en ocasiones disponemos de ficheros de texto con determinado formato o con ancho fijo para las columnas. [Hace tiempo ya escribí sobre la lectura de archivos csv con Python y Pandas](https://analisisydecision.es/lectura-de-archivos-csv-con-python-y-pandas/) pero en esta ocasión vamos a leer archivos que no tienen un separador. Evidentemente tienen que darnos el formato del archivo, en este caso, para ilustrar el ejemplo, vamos a pasar un código en R a un código en Python. Necesitamos leer unos datos usados en el libro _Non-Life Insurance Pricing with GLM_ , con R teníamos el siguiente programa:
 
 ```r

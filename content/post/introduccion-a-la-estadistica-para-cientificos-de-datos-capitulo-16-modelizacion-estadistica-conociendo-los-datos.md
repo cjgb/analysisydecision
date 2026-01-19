@@ -1,26 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- Consultoría
-- Formación
-- Libro Estadística
-- Machine Learning
-- R
-date: '2023-05-16T10:11:06-05:00'
-lastmod: '2025-07-13T15:58:55.574545'
+- consultoría
+- formación
+- libro estadística
+- machine learning
+- r
+date: '2023-05-16'
+lastmod: '2025-07-13'
 related:
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-6-descripcion-numerica-de-variables.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-8-problemas-con-los-datos.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-9-analisis-exploratorio-de-datos-eda.md
 - entrenamiento-validacion-y-test.md
-slug: introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-16-modelizacion-estadistica-conociendo-los-datos
-tags: []
+tags:
+- sin etiqueta
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 16. Modelización
   estadística. Conociendo los datos
 url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-16-modelizacion-estadistica-conociendo-los-datos/
 ---
-
 ## Establecer un método para la modelización estadística
 
 En el capítulo 3 del ensayo se hacía mención al [universo tidyverse](https://www.tidyverse.org/) y las librerías de R que englobaba, además de esas librerías hay una publicación de Hadley Wickham y Garret Grolemund [R for data sience](https://r4ds.had.co.nz/) donde aparece la siguiente imagen:

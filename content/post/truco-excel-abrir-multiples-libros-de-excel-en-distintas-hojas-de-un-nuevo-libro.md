@@ -1,26 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Excel
-- Formación
-- Monográficos
-- Trucos
-date: '2016-03-17T10:59:03-05:00'
-lastmod: '2025-07-13T16:07:01.241764'
+- excel
+- formación
+- monográficos
+- trucos
+date: '2016-03-17'
+lastmod: '2025-07-13'
 related:
 - trucos-excel-unir-varios-excel-en-uno.md
 - truco-excel-unir-todos-los-libros-en-una-hoja.md
 - truco-excel-application-getopenfilename-el-explorador-de-archivos-sencillo-en-macro.md
 - truco-sas-unir-todas-las-hojas-de-un-excel-en-una.md
 - truco-sas-unir-todos-los-excel-en-uno-solo.md
-slug: truco-excel-abrir-multiples-libros-de-excel-en-distintas-hojas-de-un-nuevo-libro
 tags:
-- GetOpenFilename
+- getopenfilename
 title: Truco Excel. Abrir múltiples libros de Excel en distintas hojas de un nuevo
   libro
 url: /blog/truco-excel-abrir-multiples-libros-de-excel-en-distintas-hojas-de-un-nuevo-libro/
 ---
-
 Hace tiempo escribí sobre el método de Excel GetOpenFilename para abrir archivos desde Excel a través del explorador de archivos ahora le damos una nueva vuelta de tuerca a aquella entrada y de forma simple podemos abrir múltiples libros de Excel que además se añadirán de forma sucesiva en un nuevo libro. [En este link podéis descargaros el archivo](/images/2016/03/abrir_excel1.xlsm) y como veréis no tiene nada. Un botón Abrir Excel realiza el proceso, se abre el explorador de Windows y podéis seleccionar múltiples archivos Excel que se almacenan en un array. La macro a ejecutar es la siguiente:
 
 _Sub abre_libros()_

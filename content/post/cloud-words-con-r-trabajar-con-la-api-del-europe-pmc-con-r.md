@@ -1,26 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Business Intelligence
-- Formación
-- Opinión
-- R
-date: '2020-01-19T15:48:28-05:00'
-lastmod: '2025-07-13T15:54:48.141840'
+- business intelligence
+- formación
+- opinión
+- r
+date: '2020-01-19'
+lastmod: '2025-07-13'
 related:
 - analisis-del-discurso-de-navidad-del-rey-de-espana-2013.md
 - puede-la-informacion-de-twitter-servir-para-tarificar-seguros.md
 - analisis-de-textos-con-r.md
 - manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-i.md
 - libreria-mapspain-en-rstats-mapas-estaticos-de-espana.md
-slug: cloud-words-con-r-trabajar-con-la-api-del-europe-pmc-con-r
 tags:
 - wordcloud
 - wordcloud2
 title: Cloud words con R. Trabajar con la API del Europe PMC con R
 url: /blog/cloud-words-con-r-trabajar-con-la-api-del-europe-pmc-con-r/
 ---
-
 [![](/images/2020/01/Autismo_R3.png)](/images/2020/01/Autismo_R3.png)
 
 Hace años ya tuvimos [nubes de palabras en el blog](https://analisisydecision.es/analisis-del-discurso-de-navidad-del-rey-de-espana-2013/) y ya era hora de ir actualizando algunas cosas. Y además quería aprovechar y presentaros un paquete de R que nos permite consultar la API del [Europe PMC](https://europepmc.org/). Para quien no sepa que es el Europe PMC podemos decir que es un un buscador de documentos y artículos científicos (que ahora todo el mundo molón llama papers) y que tiene una API desde la que podemos acceder desde R mediante el paquete europepmc.

@@ -1,24 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Monográficos
-- R
-date: '2020-09-01T02:56:06-05:00'
-lastmod: '2025-07-13T16:06:56.718798'
+- formación
+- monográficos
+- r
+date: '2020-09-01'
+lastmod: '2025-07-13'
 related:
 - computer-vision-con-r-opencv-de-andar-por-casa.md
 - truco-r-anadir-una-marca-de-agua-a-nuestro-grafico-con-ggplot2.md
 - inteligencia-arficial-frente-a-un-juego-de-ninos-la-particula-tonta-de-nicolas.md
 - analisis-del-discurso-de-navidad-del-rey-de-espana-2013.md
 - los-principales-problemas-de-los-espanoles-animaciones-con-r-y-gganimate.md
-slug: tratamiento-y-procesado-de-imagenes-con-r-y-magick
 tags:
 - magick
 title: Tratamiento y procesado de imágenes con R y magick
 url: /blog/tratamiento-y-procesado-de-imagenes-con-r-y-magick/
 ---
-
 [![](/images/2020/09/sean.gif)](/images/2020/09/sean.gif)
 
 Estoy preparando la batalla entre geometría e inteligencia artificial, batalla que está perdida porque tengo que dar de comer a mis chavales y si tengo que ir a vender un producto queda más comercial contar lo que se supone que hace la inteligencia artificial y no contar lo que hacen vectores, direcciones, puntos en el espacio,… eso lo cuentan en la educación secundaria y no es «disruptivo». Sin embargo, aprovecho para contar historia del abuelo, el único proyecto serio basado en inteligencia artificial en el que he estado involucrado se resolvió gracias a la geometría y a las mejoras que se propusieron en el reconocimiento óptico, las redes convolucionales nos provocaron un problema. Inicialmente es mejor plantear una solución sencilla.

@@ -1,18 +1,17 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- R
-- Trucos
-date: '2010-04-19T11:41:43-05:00'
-lastmod: '2025-07-13T16:09:36.094862'
+- formación
+- r
+- trucos
+date: '2010-04-19'
+lastmod: '2025-07-13'
 related:
 - monografico-paquete-sqldf-si-sabes-sql-sabes-r.md
 - data-management-con-dplyr.md
 - calcular-porcentajes-por-grupos-con-dplyr.md
 - datos-agrupados-en-r-con-dplyr.md
 - informes-con-r-en-html-comienzo-con-r2html-i.md
-slug: trucos-r-funcion-ddply-del-paquete-plyr
 tags:
 - agregar
 - ddply
@@ -21,7 +20,6 @@ tags:
 title: Trucos R. Función ddply del paquete plyr
 url: /blog/trucos-r-funcion-ddply-del-paquete-plyr/
 ---
-
 El **paquete plyr de R** tiene unas funciones que nos permiten hacer sumarizaciones de forma muy rápida y sencilla. Hoy quería trabajar con la función **ddply**. Todos esos resúmenes y agregaciones que nos cuestan mucho código con la función **ddply** pasan a ser de lo más sencillo. Al tajo, o mejor dicho, al ejemplo, como siempre, creo que ilustrar ddply es mejor que entrar en su sintaxis, para eso está la ayuda. Creamos un _data.frame_ con datos inventados que tendrá duplicados por _id_cliente_ :
 
 [source language=»R»]

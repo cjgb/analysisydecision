@@ -1,21 +1,20 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-date: '2008-02-27T09:43:39-05:00'
-lastmod: '2025-07-13T16:01:29.270609'
+- formación
+date: '2008-02-27'
+lastmod: '2025-07-13'
 related:
 - manual-curso-introduccion-de-r-capitulo-5-lectura-avanzada-de-datos.md
 - leer-fichero-de-texto-de-ancho-fijo-con-python-pandas.md
 - manual-curso-introduccion-de-r-capitulo-2-interfaz-y-primeras-sentencias.md
 - curso-de-lenguaje-sas-con-wps-lectura-de-ficheros-de-texto.md
 - curso-de-lenguaje-sas-con-wps-que-hace-el-paso-data.md
-slug: manual-curso-introduccion-de-r-capitulo-3-lectura-de-datos
-tags: []
+tags:
+- sin etiqueta
 title: 'Manual. Curso introducción de R. Capítulo 3: Lectura básica de datos'
 url: /blog/manual-curso-introduccion-de-r-capitulo-3-lectura-de-datos/
 ---
-
 En el anterior capítulo creábamos vectores y matrices con las funciones _c_ y _matrix_ pero en R disponemos de otros medios para leer o introducir datos. Empezamos con la entrada manual de datos:
 
 

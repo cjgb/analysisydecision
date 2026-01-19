@@ -1,25 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Libro Estadística
-- Monográficos
-- R
-date: '2023-01-29T12:17:04-05:00'
-lastmod: '2025-07-13T15:58:50.168046'
+- formación
+- libro estadística
+- monográficos
+- r
+date: '2023-01-29'
+lastmod: '2025-07-13'
 related:
 - el-sobremuestreo-mejora-mi-estimacion.md
 - trucos-sas-muestreo-con-proc-surveyselect.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-16-modelizacion-estadistica-conociendo-los-datos.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-10-probabilidad-y-distribuciones.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
-slug: introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-12-muestreo-e-inferencia-estadistica
-tags: []
+tags:
+- sin etiqueta
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 12. Muestreo
   e inferencia estadística
 url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-12-muestreo-e-inferencia-estadistica/
 ---
-
 En el capítulo anterior dedicado al análisis bivariable se crearon visualizaciones sencillas para describir la posible relación entre dos variables, pero más allá de impresiones visuales no es posible asegurar que esa relación tiene validez estadística. Para establecer esa validez es necesario disponer de cierta dialéctica, de cierta base teórica básica para entender como se comporta un contraste estadístico o un intervalo de confianza. El científico de datos tiende a considerar que toda esa base teórica está obsoleta y que existe un cambio en el paradigma, pero los problemas a resolver con análisis estadísticos avanzados son similares a los que resuelve la estadística clásica. El trabajo del científico de datos en muchas ocasiones consiste en separar la señal del ruido, separar lo aleatorio de lo **estadísticamente significativo**. En los capítulos anteriores se han ido estableciendo los cimientos para realizar esta labor.
 
 Todo problema y todo estudio parte de la **población** , en la RAE aparecen las siguientes definiciones de población:

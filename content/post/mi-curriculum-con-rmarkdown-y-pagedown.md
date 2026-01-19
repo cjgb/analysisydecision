@@ -1,25 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Consultoría
-- Formación
-- R
-date: '2020-12-21T03:30:26-05:00'
-lastmod: '2025-07-13T16:02:28.336457'
+- consultoría
+- formación
+- r
+date: '2020-12-21'
+lastmod: '2025-07-13'
 related:
 - comienza-la-publicacion-del-ensayo-introduccion-a-la-estadistica-para-cientificos-de-datos.md
 - estadistica-para-cientificos-de-datos-con-r-introduccion.md
 - ejemplo-de-web-scraping-con-r-la-formacion-de-los-diputados-del-congreso.md
 - evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso.md
 - de-estadistico-a-minero-de-datos-a-cientifico-de-datos.md
-slug: mi-curriculum-con-rmarkdown-y-pagedown
 tags:
 - markdown
 - rmardown
 title: Mi curriculum con RMarkdown y pagedown
 url: /blog/mi-curriculum-con-rmarkdown-y-pagedown/
 ---
-
 [![](/images/2020/12/CV_R2.png)](/images/2020/12/CV_R2.png)
 
 Me he puesto a actualizar mi curriculum y a la vez estoy aprendiendo markdown y en ese proceso [Jose Luis Cañadas](https://twitter.com/joscani) me dijo «usa pagedown». No era yo fan de Rmarkdown, pero me estoy reconvirtiendo. Me está pasando con markdown algo parecido a lo que me pasó con el picante, no me gustaba hasta que lo probé y desde entonces me encanta. ¿Por qué lo probé? Porque había decidido tomarme un tiempo sabático para elaborar una serie de cursos, webminar y actualizar la web que son 12 años sin modificaciones. **Tras 3 meses sabáticos estoy harto de no trabajar** , son 25 años seguidos trabajando, 20 gestionando datos, y otros 5 en los que hice de todo (hasta servir en la Armada). No soy capaz de estar sin trabajar, el primer paso es elaborar un resumen de mi vida profesional y dar un nuevo formato porque llevo con el mismo unos 12 años.

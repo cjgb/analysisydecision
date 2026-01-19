@@ -1,25 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Monográficos
-- SAS
-date: '2008-11-10T10:35:10-05:00'
-lastmod: '2025-07-13T16:06:44.414081'
+- formación
+- monográficos
+- sas
+date: '2008-11-10'
+lastmod: '2025-07-13'
 related:
 - trucos-sas-pasar-fecha-a-caracter-en-sas.md
 - trabajo-con-fechas-sas-introduccion.md
 - trabajo-con-fechas-sas-funciones-fecha.md
 - macros-sas-transformar-un-numerico-a-fecha.md
 - curso-de-lenguaje-sas-con-wps-variables.md
-slug: trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados
 tags:
 - fechas sas
 - formatos sas
 title: Trabajo con fechas SAS. Formatos de fecha SAS más utilizados
 url: /blog/trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados/
 ---
-
 En esta nueva entrega del monografico de fechas SAS vamos a estudiar algunos formatos. Un formato es la forma en la que vemos una variable. 17327 es un valor sin significado, pero el 20 de junio de 2007 es una fecha. En la anterior entrega estudiamos como SAS guardaba las fechas como variables numéricas, como el número de días transcurridos desde el 1 de enero de 1960. Las fechas/horas se guardaban como el número de segundos transcurridos. Con los distintos formatos fecha/hora nosotros podremos visualizar estas variables numéricas de SAS. Por ejemplo:
 
 ```r

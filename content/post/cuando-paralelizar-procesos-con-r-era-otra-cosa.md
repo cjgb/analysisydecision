@@ -1,22 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Big Data
-- R
-date: '2015-01-27T10:28:57-05:00'
-lastmod: '2025-07-13T15:55:31.921704'
+- big data
+- r
+date: '2015-01-27'
+lastmod: '2025-07-13'
 related:
 - noticias-del-congreso-de-usuarios-de-r.md
 - porque-me-gusta-r.md
 - algunos-temas-de-interes-sobre-r.md
 - revision-de-las-iii-jornadas-de-r.md
 - conectar-r-a-una-base-de-datos.md
-slug: cuando-paralelizar-procesos-con-r-era-otra-cosa
-tags: []
+tags:
+- sin etiqueta
 title: Cuando paralelizar procesos con R era otra cosa
 url: /blog/cuando-paralelizar-procesos-con-r-era-otra-cosa/
 ---
-
 Allá en noviembre de 2011 en las III jornadas de usuarios de R en España [José Ramón Díaz Uriarte](http://ligarto.org/rdiaz/) nos habló de paralelizar procesos con R, los principios de ese concepto que han denominado Big Data:
 
 <http://usar.org.es/pdfs/Diaz_Uriarte-final.pdf>

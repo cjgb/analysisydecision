@@ -1,23 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-- WPS
-date: '2013-09-12T01:09:44-05:00'
-lastmod: '2025-07-13T15:56:30.453054'
+- formación
+- sas
+- wps
+date: '2013-09-12'
+lastmod: '2025-07-13'
 related:
 - macros-sas-macro-split-para-partir-un-conjunto-de-datos.md
 - trucos-r-de-string-a-dataframe-de-palabras.md
 - trucos-sas-particionar-y-exportar-a-texto-un-dataset.md
 - macros-sas-limpiar-una-cadena-de-caracteres.md
 - truco-sas-funcion-para-contar-caracteres.md
-slug: dividir-en-palabras-un-texto-con-sas
-tags: []
+tags:
+- sin etiqueta
 title: Dividir en palabras un texto con SAS
 url: /blog/dividir-en-palabras-un-texto-con-sas/
 ---
-
 Una duda que planteó una lectora del blog acerca de separar una cadena de caracteres separados por comas y crear observaciones en otra variable:
 Hola! he buscado por toda la página, necesito ayuda urgente. Mi problema es el siguiente.
 

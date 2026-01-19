@@ -1,24 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Banca
-date: '2009-12-04T06:26:10-05:00'
-lastmod: '2025-07-13T15:59:41.898950'
+- banca
+date: '2009-12-04'
+lastmod: '2025-07-13'
 related:
 - lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
 - lecciones-de-economia-de-un-ignorante-los-bancos-pierden-dinero-para-favorecer-a-unos-y-luego-los-salvamos-todos.md
 - lecciones-de-economia-de-un-ignorante-la-caixa-a-colocar-preferentes.md
 - a-mi-me-preocupa-el-pequeno-ahorrador.md
 - lecciones-de-economia-de-un-ignorante-arreglo-el-deficit-en-un-pis-pas.md
-slug: lecciones-de-economia-de-un-ignorante-%c2%bfde-donde-sacan-margen-los-bancos
 tags:
-- ''
-- Fondos garantizados
+- fondos garantizados
 - margen negativo
 title: Lecciones de economía de un ignorante. ¿De dónde sacan margen los bancos?
 url: /blog/lecciones-de-economia-de-un-ignorante-c2bfde-donde-sacan-margen-los-bancos/
 ---
-
 Pereza me da hablar de lo mismo, pero estas noticias:
 
 [Cincodías](http://www.cincodias.com/articulo/mercados/garantizados-han-ejecutado-garantia-2009/20091203cdscdimer_2/cdsmer/)

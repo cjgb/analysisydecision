@@ -1,22 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Machine Learning
-date: '2020-10-02T03:15:21-05:00'
-lastmod: '2025-07-13T16:06:50.525211'
+- formación
+- machine learning
+date: '2020-10-02'
+lastmod: '2025-07-13'
 related:
 - macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
 - monografico-un-poco-de-proc-logistic.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
 - grafico-de-barras-y-lineas-con-python.md
 - el-analisis-de-supervivencia-para-segmentar-el-churn.md
-slug: transformaciones-de-variables-cuantitativas-en-modelos-binomiales
-tags: []
+tags:
+- sin etiqueta
 title: Transformaciones de variables cuantitativas en modelos binomiales
 url: /blog/transformaciones-de-variables-cuantitativas-en-modelos-binomiales/
 ---
-
 Para mejorar la capacidad predictiva de nuestros modelos binomiales es recomendable transformar las variables independientes. Existen técnicas que lo hacen de modo automático pero hoy os quería mostrar en un video un método «casero» para agrupar una variable cuantitativa con respecto a una variable respuesta, todo muy orientado a que la transformación tenga un sentido de negocio.
 
 El código empleado para hacer el video es el siguiente:

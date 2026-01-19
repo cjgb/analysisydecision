@@ -1,24 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Libro Estadística
-- R
-date: '2022-01-05T10:27:29-05:00'
-lastmod: '2025-07-13T15:59:05.112227'
+- formación
+- libro estadística
+- r
+date: '2022-01-05'
+lastmod: '2025-07-13'
 related:
 - de-estadistico-a-minero-de-datos-a-cientifico-de-datos.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-16-modelizacion-estadistica-conociendo-los-datos.md
 - cuando-tenemos-big-data.md
 - estadistica-para-cientificos-de-datos-con-r-introduccion.md
 - nos-hemos-terminado-de-reinventar-acabamos-con-el-data-mining-y-empezamos-con-el-big-data.md
-slug: introduccion-a-la-estadistica-para-cientificos-de-datos-con-r-capitulo-2-datos
-tags: []
+tags:
+- sin etiqueta
 title: Introducción a la Estadística para Científicos de Datos con R. Capítulo 2.
   Datos
 url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-con-r-capitulo-2-datos/
 ---
-
 ## Qué son los datos
 
 Los **datos están en boca de todos** , “la nueva revolución industrial”, “el nuevo petróleo”, «el nuevo plutonio»,… pero ¿qué son los datos? Si nos dirigimos al diccionario de la Real Academia tenemos:

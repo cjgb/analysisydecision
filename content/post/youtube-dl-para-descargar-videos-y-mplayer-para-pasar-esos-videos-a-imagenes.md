@@ -1,23 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Big Data
-- Consultoría
-- Formación
-- Monográficos
-date: '2021-01-11T12:57:51-05:00'
-lastmod: '2025-07-13T16:11:30.835913'
+- big data
+- consultoría
+- formación
+- monográficos
+date: '2021-01-11'
+lastmod: '2025-07-13'
 related:
 - leer-fichero-de-texto-de-ancho-fijo-con-python-pandas.md
 - lectura-de-archivos-csv-con-python-y-pandas.md
 - mapa-de-codigos-postales-con-r-aunque-el-mapa-es-lo-de-menos.md
 - beatifulsoup-web-scraping-con-python-o-como-las-redes-sociales-estan-cambiando-mi-forma-de-escribir.md
 - mapa-estatico-de-espana-con-python.md
-slug: youtube-dl-para-descargar-videos-y-mplayer-para-pasar-esos-videos-a-imagenes
 title: youtube-dl para descargar videos y mplayer para pasar esos vídeos a imágenes
 url: /blog/youtube-dl-para-descargar-videos-y-mplayer-para-pasar-esos-videos-a-imagenes/
+tags:
+- sin etiqueta
 ---
-
 Si deseamos [descargar vídeos de Youtube tenemos youtube-dl](https://youtube-dl.org/) pero podemos descargar de otras web y en esta entrada vamos a ver como. Además podemos transformar esas entradas en fotogramas, esto es útil a la hora de analizar imágenes, podríamos estudiar la presencia de una marca en un partido de fútbol, identificar las matrículas que pasan delante de determinada cámara u otros casos de uso. Y en uno de esos casos precisamente [J.L. Cañadas](https://twitter.com/joscani) del [blog hermano Muestrear no es Pecado](https://muestrear-no-es-pecado.netlify.app/) me ha descubierto la librería youtube-dl y la creación de scripts para tranformar videos en imágenes que posteriormente podemos analizar. El caso de mplayer es distinto, lo conocía, Cañadas me ha descubierto el ffmpeg que ofrece más posibilidades.
 
 ### shell scripting

@@ -1,25 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Modelos
-- R
-date: '2014-03-19T04:57:50-05:00'
-lastmod: '2025-07-13T15:57:11.174657'
+- formación
+- modelos
+- r
+date: '2014-03-19'
+lastmod: '2025-07-13'
 related:
 - manual-curso-introduccion-de-r-capitulo-10-funciones-graficas-en-regresion-lineal.md
 - manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
 - manual-curso-introduccion-de-r-capitulo-14-introduccion-al-calculo-matricial-con-analisis-de-componentes-principales.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-11-analisis-bivariable.md
 - regresion-pls-con-r.md
-slug: el-problema-de-la-multicolinealidad-intuirlo-y-detectarlo
 tags:
 - car
 - vif
 title: El problema de la multicolinealidad, intuirlo y detectarlo
 url: /blog/el-problema-de-la-multicolinealidad-intuirlo-y-detectarlo/
 ---
-
 El **modelo líneal** se puede escribir de forma matricial como Y = X • Beta + Error. Donde Y es el vector con nuestra variable dependiente, X la matriz con las variables regresoras, Beta el vector de parámetros y el error esa parte aleatoria que tiene que tener todo modelo. La matriz con nuestras variables regresoras X ha de tener rango completo es decir, todas sus columnas tienen que ser linealmente independientes. Eso nos garantiza que a la hora de estimar por mínimos cuadrados ordinarios X’ X es invertible. Si no es invertible la estimación por mínimos cuadrados ordinarios “se vuelve inestable” ya que X’X =0 y 1/ X’X será muy complicado de calcular ya que los Beta son inversa(X’ X) •X’Y; por ello los resultados que arroja el modelo tienen una alta variabilidad. Cuando esto nos pasa tenemos colinealidad.
 
 Hay varias formas de intuir si hay relación lineal entre nuestras variables independientes. La primera es analizar el coeficiente de correlación. Si tenemos variables altamente correladas es muy probable que el modelo pueda tener colinealidad entre esas variables. Otro de los síntomas se produce cuando nuestro modelo tiene un alto coeficiente de correlación y muchas variables no son significativas. En estos casos es muy probable la existencia de colinealidad.

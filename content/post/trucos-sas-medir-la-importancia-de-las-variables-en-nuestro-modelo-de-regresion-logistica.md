@@ -1,30 +1,28 @@
 ---
 author: rvaquerizo
 categories:
-- Consultoría
-- Data Mining
-- Formación
-- Modelos
-- Monográficos
-- SAS
-date: '2013-02-27T10:18:04-05:00'
-lastmod: '2025-07-13T16:10:12.826348'
+- consultoría
+- data mining
+- formación
+- modelos
+- monográficos
+- sas
+date: '2013-02-27'
+lastmod: '2025-07-13'
 related:
 - macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
 - en-la-regresion-logistica-el-sobremuestreo-es-lo-mismo-que-asignar-pesos-a-las-observaciones.md
 - medir-la-importancia-de-las-variables-con-random-forest.md
 - macros-faciles-de-sas-eliminar-outliers-en-una-variable.md
 - manual-curso-introduccion-de-r-capitulo-10-funciones-graficas-en-regresion-lineal.md
-slug: trucos-sas-medir-la-importancia-de-las-variables-en-nuestro-modelo-de-regresion-logistica
 tags:
-- PROC LOGISTIC
+- proc logistic
 - random forest
 - regresión logística
 title: Trucos SAS. Medir la importancia de las variables en nuestro modelo de regresión
   logística
 url: /blog/trucos-sas-medir-la-importancia-de-las-variables-en-nuestro-modelo-de-regresion-logistica/
 ---
-
 Hoy quería proponeros una forma poco ortodoxa de **medir la importancia de las variables en un modelo de regresión logística con SAS**. La cuestión es: dado un modelo de regresión logística crear un ranking con las variables más importantes dentro del modelo. Para esta tarea recomiendo el uso de [random forest](https://analisisydecision.es/medir-la-importancia-de-las-variables-con-random-forest/), pero puede ser imposible disponer de un software que realice este tipo de modelos. Imaginemos un caso concreto, disponemos de SAS STAT y nos da reparo trabajar con R. Para este caso podemos emplear el siguiente truco. El **AIC** (criterio de información de Akaike) es un estadístico que relaciona el cociente de la verosimilitud con el número de parámetros del modelo que ajustamos. Cuanto menor sea este cociente mejor será nuestro modelo. Si eliminamos una variable del modelo ¿cuánto empeora este modelo? Esa será la filosofía que emplearemos para analizar la importancia de las variables presentes en nuestro modelo. En la línea habitual hacemos un ejemplo para que podáis copiar y pegar en vuestro SAS:
 
 Vamos a crear un dataset preparado para hacer una regresión logística perfecta donde en un 10% de los casos sucede un evento:

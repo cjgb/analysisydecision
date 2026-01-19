@@ -1,23 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Monográficos
-- Opinión
-- R
-date: '2020-03-23T09:48:20-05:00'
-lastmod: '2025-07-13T16:00:30.963528'
+- monográficos
+- opinión
+- r
+date: '2020-03-23'
+lastmod: '2025-07-13'
 related:
 - mapa-del-covid-19-por-comunidades-autonomas-con-r-mas-rstats.md
 - mi-breve-seguimiento-del-coronavirus-con-r.md
 - mover-parte-de-un-shapefile-con-r-mapa-de-la-tasa-de-casos-de-coronavirus-por-habitante-en-espana.md
 - mapa-de-rstats-animado-con-el-porcentaje-de-vacunacion-en-espana.md
 - libreria-mapspain-en-rstats-mapas-estaticos-de-espana.md
-slug: los-pilares-de-mi-simulacion-de-la-extension-del-covid19
-tags: []
+tags:
+- sin etiqueta
 title: Los pilares de mi simulación de la extensión del COVID19
 url: /blog/los-pilares-de-mi-simulacion-de-la-extension-del-covid19/
 ---
-
 No debería publicar esta simulación de la extensión del CODVID10 o coronavirus porque puede disparar alarmas, provocar insultos, levantar ampollas,… el caso es que yo llevo 7 días de aislamiento más que el resto de España porque sólo había que ver los datos de Italia para saber lo que iba a pasar y no avisé a nadie para no disparar alarmas, provocar insultos, levantar ampollas… Y AL FINAL YO TENÍA RAZÓN. Así que os voy a exponer el motivo por el cual estoy muy asustado, bueno, hoy quiero mostraros el inicio de una simulación mala y sin fundamento que estoy realizando sobre la extensión en España del COVID19. Para hacerla vamos a emplear la siguiente información:
 
   * [Datos del padrón municipal](https://www.ine.es/censos2011_datos/cen11_datos_resultados_seccen.htm)

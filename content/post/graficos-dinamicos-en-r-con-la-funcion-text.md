@@ -1,24 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- R
-- Trucos
-date: '2010-07-22T06:50:29-05:00'
-lastmod: '2025-07-13T15:58:20.353554'
+- formación
+- r
+- trucos
+date: '2010-07-22'
+lastmod: '2025-07-13'
 related:
 - trucos-r-graficos-de-velocimetro-con-r.md
 - truco-r-paletas-de-colores-en-r.md
 - un-acercamiento-a-graph-proc-ganno.md
 - graficos-de-burbuja-con-r.md
 - analisisydecision-es-os-desea-felices-fiestas.md
-slug: graficos-dinamicos-en-r-con-la-funcion-text
 tags:
 - text
 title: Gráficos dinámicos en R con la función text
 url: /blog/graficos-dinamicos-en-r-con-la-funcion-text/
 ---
-
 En graphics tenemos la función **text** y hoy nos vamos a divertir con esta función. Simplemente lo que hace es poner un texto en un gráfico. Lo más sencillo:
 
 ```r

@@ -1,23 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-- Trucos
-date: '2013-03-04T10:27:42-05:00'
-lastmod: '2025-07-13T16:08:20.542217'
+- formación
+- sas
+- trucos
+date: '2013-03-04'
+lastmod: '2025-07-13'
 related:
 - truco-sas-elminar-retornos-de-carro-o-saltos-de-linea-engorrosos.md
 - macros-sas-limpiar-una-cadena-de-caracteres.md
 - truco-sas-macro-buscar-y-reemplazar-en-texto.md
 - ayudadme-importar-a-sas-texto-con-comillas.md
 - importar-a-sas-desde-otras-aplicaciones.md
-slug: truco-sas-limpiar-un-fichero-de-texto-con-sas
-tags: []
+tags:
+- sin etiqueta
 title: Truco SAS. Limpiar un fichero de texto con SAS
 url: /blog/truco-sas-limpiar-un-fichero-de-texto-con-sas/
 ---
-
 El otro día me llegó al correo la siguiente cuestión acerca de caracteres extraños en un fichero de texto y la importación a SAS:
 
 > >> Tengo un problema a la hora de importar a SAS un fichero txt.

@@ -1,23 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Data Mining
-- Formación
-- Modelos
-date: '2010-07-28T04:59:32-05:00'
-lastmod: '2025-07-13T15:57:26.116095'
+- data mining
+- formación
+- modelos
+date: '2010-07-28'
+lastmod: '2025-07-13'
 related:
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-16-modelizacion-estadistica-conociendo-los-datos.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
 - el-sobremuestreo-mejora-mi-estimacion.md
 - monografico-paquete-de-r-nnet-para-modelos-de-redes-neuronales.md
 - el-analisis-de-supervivencia-para-segmentar-el-churn.md
-slug: entrenamiento-validacion-y-test
-tags: []
+tags:
+- sin etiqueta
 title: Entrenamiento, validación y test
 url: /blog/entrenamiento-validacion-y-test/
 ---
-
 Cuando realizamos modelos hay 3 conjuntos de datos fundamentales:
 
   * Conjunto de datos de **entrenamiento** : son los datos que entrenan los modelos

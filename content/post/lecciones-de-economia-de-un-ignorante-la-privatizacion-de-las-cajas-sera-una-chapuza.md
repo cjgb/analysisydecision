@@ -1,24 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-date: '2010-08-02T03:41:31-05:00'
-lastmod: '2025-07-13T15:59:50.060110'
+- formación
+date: '2010-08-02'
+lastmod: '2025-07-13'
 related:
 - lecciones-de-economia-de-un-ignorante-las-cajas-seran-bancos.md
 - lecciones-de-economia-de-un-ignorante-la-caixa-a-colocar-preferentes.md
 - lecciones-de-economia-de-un-ignorante-por-que-no-hablo-de-la-batalla-de-los-depositos.md
 - lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
 - participaciones-preferentes-de-las-cajas-de-ahorro.md
-slug: lecciones-de-economia-de-un-ignorante-la-privatizacion-de-las-cajas-sera-una-chapuza
 tags:
 - frob
-- Ley de Cajas
+- ley de cajas
+- cajas
 title: Lecciones de economía de un ignorante. La privatización de las cajas será una
   chapuza
 url: /blog/lecciones-de-economia-de-un-ignorante-la-privatizacion-de-las-cajas-sera-una-chapuza/
 ---
-
 [Interesante noticia leída en el cincodias.](http://www.cincodias.com/articulo/empresas/Banca-Civica-quiere-ser-pionera-cotizar-Bolsa/20100802cdscdiemp_10/cdsemp/)
 
 La Ley de Cajas, el FROB y otros artificios se han hecho exclusivamente para la rápida privatización de las Cajas de cara a evitar un posible corralito. Se está pasando de puntillas sobre el tema porque es una verdadera chapuza. Los principales puntos sobre los que se quería incidir con todas estas leyes ad-hoc pensadas a la hora de la comida por nuestros representantes políticos en un restaurante vegetariano que hay detrás del Congreso son:

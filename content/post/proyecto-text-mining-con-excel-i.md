@@ -1,22 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Consultoría
-- Data Mining
-date: '2008-04-23T08:36:20-05:00'
-lastmod: '2025-07-13T16:04:50.794782'
+- consultoría
+- data mining
+date: '2008-04-23'
+lastmod: '2025-07-13'
 related:
 - proyecto-text-mining-con-excel-ii.md
 - proyecto-text-mining-con-excel-pasa-a-ser-google-mining.md
 - proyecto-text-mining-con-excel-iii.md
 - proyecto-text-mining-con-excel-iv.md
 - google-mining-analisis-de-las-paginas-indexadas-i.md
-slug: proyecto-text-mining-con-excel-i
-tags: []
+tags:
+- sin etiqueta
 title: Proyecto. Text mining con Excel (I)
 url: /blog/proyecto-text-mining-con-excel-i/
 ---
-
 ¿Minería de textos con Excel? ¿Se puede hacer text mining con una hoja de cálculo? La respuesta a estas dos preguntas será SI. Desde hoy paro mis mensajes de formación en R y en SAS y me pongo con un proyecto que lleva días rondando por mi cabeza. Voy a crear una herramienta capaz de identificar **oportunidades en internet**. Y lo voy a hacer con muy pocos medios, nada de SAS, nada de R, nada de WEKA, sólo con la herramienta de ofimática más habitual: Excel.
 
 Lo primero que tengo que hacer es buscarme un sistema con información sobre oportunidades para explotarlo. ¿Cúal es el sistema de información más grande y con mayores posibilidades de encontrar una oportunidad?

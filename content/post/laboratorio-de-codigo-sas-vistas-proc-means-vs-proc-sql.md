@@ -1,24 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-- Sin catergoría
-date: '2010-07-19T04:00:26-05:00'
-lastmod: '2025-07-13T15:59:17.499236'
+- formación
+- sas
+- sin categoría
+date: '2010-07-19'
+lastmod: '2025-07-13'
 related:
 - laboratorio-de-codigo-sas-comparativa-entre-if-y-where.md
 - truco-sas-transponer-tablas-con-proc-transpose-data-o-proc-sql.md
 - truco-sas-cruce-con-formatos.md
 - trucos-sas-porque-hay-que-usar-objetos-hash.md
 - trucos-sas-operaciones-con-tablas-de-dimensiones-con-sas.md
-slug: laboratorio-de-codigo-sas-vistas-proc-means-vs-proc-sql
 tags:
-- Vistas SAS
+- vistas sas
 title: Laboratorio de código SAS. Vistas + PROC MEANS vs. PROC SQL
 url: /blog/laboratorio-de-codigo-sas-vistas-proc-means-vs-proc-sql/
 ---
-
 Las vistas son muy importantes cuando trabajamos con SAS. El problema del espacio en disco se acentúa cuando trabajamos con SAS. Este problema podemos minimizarlo empleando vistas. También hay otras situaciones en las que se recomienda usar vistas, cuando realizamos agregaciones sobre campos de una tabla y a la vez realizamos una operación sobre estos campos es muy habitual emplear el PROC SQL. Ejemplo de lo que cuento:
 
 ```r

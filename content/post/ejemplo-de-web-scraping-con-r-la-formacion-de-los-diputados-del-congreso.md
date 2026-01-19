@@ -1,26 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Consultoría
-- Formación
-- Monográficos
-- R
-date: '2017-01-25T07:08:32-05:00'
-lastmod: '2025-07-13T15:56:41.275604'
+- consultoría
+- formación
+- monográficos
+- r
+date: '2017-01-25'
+lastmod: '2025-07-13'
 related:
 - analisis-de-textos-con-r.md
 - el-debate-politico-o-como-analizar-textos-con-wps.md
 - comparamos-los-programas-electorales-de-pp-y-psoe-con-r.md
 - beatifulsoup-web-scraping-con-python-o-como-las-redes-sociales-estan-cambiando-mi-forma-de-escribir.md
 - los-principales-problemas-de-los-espanoles-animaciones-con-r-y-gganimate.md
-slug: ejemplo-de-web-scraping-con-r-la-formacion-de-los-diputados-del-congreso
 tags:
 - text mining
 - web scraping
 title: Ejemplo de web scraping con R. La formación de los diputados del Congreso
 url: /blog/ejemplo-de-web-scraping-con-r-la-formacion-de-los-diputados-del-congreso/
 ---
-
 ![](https://www.congreso.es/wc/htdocs/web/img/logo.gif)
 
 No sabía si realizar esta entrada sobre web scraping con R o con python. He obtado por la primera opción porque en un principio era una entrada para ilustrar un ejemplo de web scraping y al final se me están ocurriendo muchas ideas sobre el análisis de [la web de Congreso de los diputados](http://www.congreso.es/portal/page/portal/Congreso/Congreso) y he preferido hacerla con R porque tengo una mayor soltura para hacer distintos análisis. Quería empezar por estudiar la formación que tienen nuestros 350 diputados, para ello se me ocurrió descargarme las líneas que tienen en su ficha de diputado y crear un data frame con los datos personales referentes a su formación. Si entráis en la ficha de cualquier diputado ([http://www.congreso.es/portal/page/portal/Congreso/Congreso/Diputados/BusqForm?_piref73_1333155_73_1333154_1333154.next_page=/wc/fichaDiputado?idDiputado=171&idLegislatura=12](http://www.congreso.es/portal/page/portal/Congreso/Congreso/Diputados/BusqForm?_piref73_1333155_73_1333154_1333154.next_page=/wc/fichaDiputado?idDiputado=171&idLegislatura=12)) veréis que les han dejado un pequeño texto donde describen su hoja de vida. La verdad es que cada uno a escrito lo que le ha parecido pero algún patrón se puede encontrar. Para ilustrar el ejemplo he preferido usar [la librería rvest](https://blog.rstudio.org/2014/11/24/rvest-easy-web-scraping-with-r/) porque me ha parecido una sintaxis más sencilla. Yo no soy un buen programador, incluso soy un poco desastre, hasta guarrete programando y con rvest creo que el código es bastante claro.

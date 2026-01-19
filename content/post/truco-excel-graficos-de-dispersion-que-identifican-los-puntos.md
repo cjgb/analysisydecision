@@ -1,24 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Business Intelligence
-- Excel
-- Formación
-- Trucos
-date: '2015-07-28T06:48:42-05:00'
-lastmod: '2025-07-13T16:07:16.324086'
+- business intelligence
+- excel
+- formación
+- trucos
+date: '2015-07-28'
+lastmod: '2025-07-13'
 related:
 - truco-excel-grafico-de-puntos-con-colores.md
 - trucos-excel-poner-etiquetas-en-graficos-de-dispersion.md
 - truco-excel-formatos-condicionales-para-crear-rango-de-colores.md
 - truco-excel-identificar-el-color-de-una-celda.md
 - trucos-excel-mapa-de-mexico-por-estados.md
-slug: truco-excel-graficos-de-dispersion-que-identifican-los-puntos
-tags: []
+tags:
+- sin etiqueta
 title: Truco Excel. Gráficos de dispersión que identifican los puntos
 url: /blog/truco-excel-graficos-de-dispersion-que-identifican-los-puntos/
 ---
-
 [![Gráfico Dispersión con colores Excel](/images/2015/07/grafico-dispersion-excel-300x212.png)](/images/2015/07/grafico-dispersion-excel.png)Gráfico Dispersión con colores Excel
 
 Yo no sé hacer**gráficos de dispersión con Excel** en los que se identificaran los puntos mediante un color, es necesario programar en visual basic para hacerlo. Imagino que se podrá hacer de forma más elegante pero hoy quería mostraros que esa tarea se puede llevar a cabo mediante macros. Los datos que tenemos tienen un valor para X, un valor para Y y un valor que nos identifica el grupo de cada registro. En el ejemplo que os voy a adjuntar se identifican dentro de la nube de puntos aleatorios 2 grupos marcados con un 0 o un 1, por lo cual tendremos 2 colores para identificar esos puntos. ¿Cómo variamos los colores? Sencillo, una macro recorre punto a punto y pone otro color si pertenece al grupo 1, los que pertenezcan al grupo 0 tendrán el color por defecto. Este color por defecto será el negro y el color para los 1 será el rojo. El código de la macro es:

@@ -1,24 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Business Intelligence
-- Sin catergoría
-date: '2008-09-21T15:41:46-05:00'
-lastmod: '2025-07-13T15:55:18.357458'
+- business intelligence
+- sin categoría
+date: '2008-09-21'
+lastmod: '2025-07-13'
 related:
 - contenidos-web-analisis-informacion.md
 - ayd-2300-visitas-mensuales.md
 - 1500-visitas-mensuales.md
 - el-ano-2009-para-analisis-y-decision.md
 - el-ano-2010-para-analisisydecision.md
-slug: contenidos-para-octubre-de-ayd
 tags:
-- Google Analytics
+- google analytics
 - visitas web
 title: Contenidos de octubre en función del conocimiento de los usuarios
 url: /blog/contenidos-para-octubre-de-ayd/
 ---
-
 Google Analytics me está permitiendo conocer a los usuarios que navegan por AyD. Y en función de este conocimiento quiero orientar los contenidos para el mes de octubre. AyD está funcionando por debajo de mis previsiones de visitas nuevas pero muy por encima de mis previsiones de visitas que repiten. Es decir, la captación no va todo lo bien que esperaba pero la fidelización me está sorprendiendo gratamente. Voy a describir las visitas desde el 1 de agosto de 2008 al 15 de septiembre de 2008.
 
 Como he hecho en anteriores análisis dos son los indicadores que formarán parte de mi estudio:

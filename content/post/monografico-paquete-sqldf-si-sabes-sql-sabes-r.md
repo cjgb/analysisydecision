@@ -1,27 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Monográficos
-- R
-date: '2010-01-12T16:35:10-05:00'
-lastmod: '2025-07-13T16:02:54.818869'
+- formación
+- monográficos
+- r
+date: '2010-01-12'
+lastmod: '2025-07-13'
 related:
 - trucos-r-funcion-ddply-del-paquete-plyr.md
 - proc-sql-merge-set.md
 - capitulo-4-uniones-de-tablas-con-r.md
 - tres-fracasos-y-medio-con-r.md
 - data-management-con-dplyr.md
-slug: monografico-paquete-sqldf-si-sabes-sql-sabes-r
 tags:
 - merge
-- R
-- SQL
+- r
+- sql
 - sqldf
 title: Monografico. Paquete sqldf, si sabes sql, sabes R
 url: /blog/monografico-paquete-sqldf-si-sabes-sql-sabes-r/
 ---
-
 El paquete sqldf de R nos permite ejecutar sentencias de [SQL ](http://en.wikipedia.org/wiki/SQL). Las cláusulas, las expresiones, los predicados,… son lasalvación para muchos tipos mediocres como el ahora escribiente. sqldf es un módulo imprescindible, hasta el novio de Falete es capaz de programar en SQL. Evidentemente no voy a enseñaros a hacer _queries_ , pero si quiero mostraros algunas de las posibilidades que nos ofrece este paquete de R. Como siempre y como caracterizan la mayoría de los mensajes del blog trabajaremos con ejemplos. El primer paso es crear un _data.frame_ :
 
 ```r

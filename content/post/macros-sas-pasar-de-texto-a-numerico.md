@@ -1,22 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-date: '2012-10-10T09:37:56-05:00'
-lastmod: '2025-07-13T16:01:08.986921'
+- formación
+- sas
+date: '2012-10-10'
+lastmod: '2025-07-13'
 related:
 - transformar-variables-en-sas-caracter-a-numerico.md
 - truco-sas-macro-buscar-y-reemplazar-en-texto.md
 - macros-sas-calular-la-longitud-de-un-numero.md
 - macros-faciles-de-sas-normaliza-un-texto-rapido.md
 - macro-facil-de-sas-longitud-de-la-parte-decimal-de-un-numero.md
-slug: macros-sas-pasar-de-texto-a-numerico
-tags: []
+tags:
+- sin etiqueta
 title: Macros SAS. Pasar de texto a numérico
 url: /blog/macros-sas-pasar-de-texto-a-numerico/
 ---
-
 “Pasar de texto a número en SAS”. Una de las búsquedas que más recibe esta web. Ya hay monográficos, trucos, artículos,… al respecto. Pero faltaba una macro que espero os ayude. Es una macro muy básica pero que permite pasar textos con números en formato europeo o en formato americano. La macro:
 
 ```r

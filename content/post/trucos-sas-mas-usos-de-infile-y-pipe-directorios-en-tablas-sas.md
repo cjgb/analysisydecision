@@ -1,29 +1,26 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-- Trucos
-- WPS
-date: '2011-07-15T10:47:18-05:00'
-lastmod: '2025-07-13T16:10:09.782744'
+- formación
+- sas
+- trucos
+- wps
+date: '2011-07-15'
+lastmod: '2025-07-13'
 related:
 - truco-sas-uso-de-filename-y-pipe.md
 - truco-sas-dataset-con-los-ficheros-y-carpetas-de-un-directorio.md
 - curso-de-lenguaje-sas-con-wps-lectura-de-ficheros-de-texto.md
 - trucos-sas-macrovariable-a-dataset.md
 - importar-a-sas-desde-otras-aplicaciones.md
-slug: trucos-sas-mas-usos-de-infile-y-pipe-directorios-en-tablas-sas
 tags:
-- ''
-- INFILE
-- INPUT
+- infile
+- input
 - pipe
-- SCAN
+- scan
 title: Trucos SAS. Más usos de INFILE y PIPE directorios en tablas SAS
 url: /blog/trucos-sas-mas-usos-de-infile-y-pipe-directorios-en-tablas-sas/
 ---
-
 Puede interesarnos tener **directorios y subdirectorios en tablas SAS**. Es decir, tabular el resultado de un _lm_ en Unix o poner en una tabla el resultado de un _dir_ de MS DOS / Windows. Ya tengo ejemplos publicados a este respecto:
 
   * <https://analisisydecision.es/truco-sas-uso-de-filename-y-pipe/>

@@ -1,23 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Consultoría
-- Monográficos
-- Opinión
-date: '2019-12-23T10:44:10-05:00'
-lastmod: '2025-07-13T16:02:25.487005'
+- consultoría
+- monográficos
+- opinión
+date: '2019-12-23'
+lastmod: '2025-07-13'
 related:
 - de-actuario-a-cientifico-de-datos.md
 - gestores-de-informacion-de-la-banca-comercial-profesionales-imprescindibles.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-con-r-capitulo-2-datos.md
 - de-estadistico-a-minero-de-datos-a-cientifico-de-datos.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-16-modelizacion-estadistica-conociendo-los-datos.md
-slug: me-rindo-es-necesario-trabajar-en-agile
-tags: []
+tags:
+- sin etiqueta
 title: Me rindo, es necesario trabajar en Agile
 url: /blog/me-rindo-es-necesario-trabajar-en-agile/
 ---
-
 [![Imagen de previsualización de YouTube](https://img.youtube.com/vi/cu3K1njbYqs/0.jpg)](http://www.youtube.com/watch?v=cu3K1njbYqs)
 
 «Agile sounds good» y representa todo eso que critico. Tenía compuesta y preparada una canción que versiona el «Me cago en el amor» de Tonino Carotone, «Me cago en el Agile» se llamaba. **¿Por qué este cambio de opinión tan radical?** Porque no se trabaja de forma horizontal, se trabaja de forma vertical y cada uno hace la guerra por su cuenta. Me voy a mi terreno**Agile Analytics**

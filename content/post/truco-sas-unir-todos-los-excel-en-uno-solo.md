@@ -1,22 +1,21 @@
 ---
 author: svalle
 categories:
-- SAS
-- Trucos
-date: '2008-04-23T03:13:18-05:00'
-lastmod: '2025-07-13T16:08:45.207764'
+- sas
+- trucos
+date: '2008-04-23'
+lastmod: '2025-07-13'
 related:
 - trucos-excel-unir-varios-excel-en-uno.md
 - truco-sas-unir-todas-las-hojas-de-un-excel-en-una.md
 - truco-excel-unir-todos-los-libros-en-una-hoja.md
 - truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
 - trucos-excel-unir-todos-los-excel-en-uno-version-muy-mejorada.md
-slug: truco-sas-unir-todos-los-excel-en-uno-solo
-tags: []
+tags:
+- sin etiqueta
 title: Truco SAS. Unir todos los Excel en uno sólo
 url: /blog/truco-sas-unir-todos-los-excel-en-uno-solo/
 ---
-
 Este programa SAS une todos los excel que queramos en un único libro.
 Cuando estamos haciendo análisis de variables y exportamos los resultados
 con ods o con otro método a excel, resulta un poco pesado ir abriendo

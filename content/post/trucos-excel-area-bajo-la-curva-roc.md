@@ -1,28 +1,26 @@
 ---
 author: rvaquerizo
 categories:
-- Consultoría
-- Data Mining
-- Excel
-- Modelos
-- Monográficos
-date: '2011-01-13T16:11:29-05:00'
-lastmod: '2025-07-13T16:08:52.782154'
+- consultoría
+- data mining
+- excel
+- modelos
+- monográficos
+date: '2011-01-13'
+lastmod: '2025-07-13'
 related:
 - seleccion-del-mejor-punto-de-diagnostico-en-una-prueba-diagnostica.md
 - simulacion-estimacion-de-pi-con-el-metodo-montecarlo.md
 - el-sobremuestreo-mejora-mi-estimacion.md
 - trucos-sas-calcular-percentiles-como-excel-o-r.md
 - en-la-regresion-logistica-el-sobremuestreo-es-lo-mismo-que-asignar-pesos-a-las-observaciones.md
-slug: trucos-excel-area-bajo-la-curva-roc
 tags:
-- curva ROC
+- curva roc
 - montecarlo
 - simulación
 title: Trucos Excel. Área bajo la curva ROC
 url: /blog/trucos-excel-area-bajo-la-curva-roc/
 ---
-
 ![curva-roc.png](/images/2011/01/curva-roc.png)
 
 ¿Curva ROC y Excel? ¡Si no tiene nada que ver! No del todo. En ocasiones tenemos que pintar las curvas ROC y empleamos las herramientas específicas para ello, sin embargo es habitual que nuestros resultados sean presentados en Excel (demasiado habitual). En ese caso creamos nuestros datos para llevarlos a Excel y realizamos nuestro gráfico. Ya tenemos nuestra tabla y hacemos un algo muy parecido a lo que tenemos más arriba. La curva ROC es un mecanismo para evaluar nuestro modelo y compara la **especificidad** que es la probabilidad de clasificar mal un caso negativo frente a la **sensibilidad** que es la probabilidad de clasificar correctamente un caso positivo, es decir, falsos positivos frente a verdaderos positivos. El área bajo la curva ROC será un valor entre 0,5 y 1. Cuanto más próximo a 1 mejor será nuestro modelo. Queda pendiente una revisión «en condiciones» de las curvas ROC y de los gráficos _lift_ , mucho mejores cuando tienes que presentar resultados en un área de negocio.

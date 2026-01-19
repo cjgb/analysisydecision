@@ -1,26 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-date: '2010-04-07T15:40:40-05:00'
-lastmod: '2025-07-13T16:10:50.709366'
+- formación
+- sas
+date: '2010-04-07'
+lastmod: '2025-07-13'
 related:
 - un-acercamiento-a-graph-annotate-macros.md
 - un-acercamiento-a-graph-sentencias-graficas.md
 - un-acercamiento-a-graph-primeros-graficos-con-sas.md
 - un-acercamiento-a-graph-proc-gchart.md
 - un-acercamiento-a-graph-ods-graphs-proc-sgplot.md
-slug: un-acercamiento-a-graph-proc-ganno
 tags:
-- ''
-- ANNOTATE
-- GRAPH
-- PROC GANNO
+- annotate
+- graph
+- proc ganno
 title: Un acercamiento a GRAPH. PROC GANNO
 url: /blog/un-acercamiento-a-graph-proc-ganno/
 ---
-
 Uso del PROC GANNO de SAS:
 
 El procedimiento SAS GANNO crea gráficos a partir de conjuntos de datos SAS ANNOTATE. Estos conjuntos de datos SAS ANNOTATE recogen las distintas formas o cuadros de texto que tu quieres representar. Estos conjuntos de datos han de tener unas variables que son las que recogen las formas a pintar, imprescindibles son:

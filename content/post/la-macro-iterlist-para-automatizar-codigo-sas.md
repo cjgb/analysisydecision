@@ -1,24 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Monográficos
-- SAS
-- Trucos
-date: '2012-10-17T09:32:22-05:00'
-lastmod: '2025-07-13T15:59:25.631077'
+- formación
+- monográficos
+- sas
+- trucos
+date: '2012-10-17'
+lastmod: '2025-07-13'
 related:
 - macro-sas-variables-de-un-dataset-en-una-macro-variable.md
 - trucos-sas-macrovariable-a-dataset.md
 - trucos-sas-lista-de-datasets-en-macro-variable.md
 - macros-sas-ordenar-alfabeticamente-las-variables-de-un-dataset.md
 - macros-sas-agrupando-variables-categoricas.md
-slug: la-macro-iterlist-para-automatizar-codigo-sas
-tags: []
+tags:
+- sin etiqueta
 title: La macro iterlist para automatizar código SAS
 url: /blog/la-macro-iterlist-para-automatizar-codigo-sas/
 ---
-
 Impresionante macro de SAS que nos puede ahorrar picar mucho mucho código SAS. La macro se llama **iterlist** y la he encontrado en [este enlace](http://www.wuss.org/proceedings08/08WUSS%20Proceedings/papers/cod/cod06.pdf). Es código SAS muy avanzado:
 
 ```r

@@ -1,19 +1,18 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Monográficos
-- SAS
-- Trucos
-date: '2011-04-06T14:46:15-05:00'
-lastmod: '2025-07-13T16:10:37.590767'
+- formación
+- monográficos
+- sas
+- trucos
+date: '2011-04-06'
+lastmod: '2025-07-13'
 related:
 - trucos-sas-ejecutar-un-codigo-si-existe-una-tabla-o-un-fichero.md
 - trucos-sas-informes-de-valores-missing.md
 - curso-de-lenguaje-sas-con-wps-ejecuciones.md
 - trucos-sas-mejor-que-hash-in-para-cruzar-tablas.md
 - laboratorio-de-codigo-sas-comparativa-entre-if-y-where.md
-slug: trucos-sas-validacion-de-consultas-con-proc-sql
 tags:
 - noexec
 - proc sql
@@ -21,7 +20,6 @@ tags:
 title: Trucos SAS. Validación de consultas con PROC SQL
 url: /blog/trucos-sas-validacion-de-consultas-con-proc-sql/
 ---
-
 Hay ocasiones en las que lanzamos consultas a las BBDD con SAS y necesitamos saber si son correctas. Quería plantearos un truco SAS para **PROC SQL** que valida las consultas antes de ser ejecutadas. Empiezo el truco en la línea habitual, creo un dataset de ejemplo y os presento como realizar la validación, de este modo vosotros podéis copiar y pegar el código en una sesión de SAS y comprobar su funcionamiento. Datos aleatorios de partida:
 
 ```r

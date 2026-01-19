@@ -1,25 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- R
-date: '2008-07-03T05:23:49-05:00'
-lastmod: '2025-07-13T16:01:37.384360'
+- formación
+- r
+date: '2008-07-03'
+lastmod: '2025-07-13'
 related:
 - manual-curso-introduccion-de-r-capitulo-10-funciones-graficas-en-regresion-lineal.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-15-modelos-glm-regresion-logistica-y-regresion-de-poisson.md
 - el-problema-de-la-multicolinealidad-intuirlo-y-detectarlo.md
 - resolucion-del-juego-de-modelos-con-r.md
 - manual-curso-introduccion-de-r-capitulo-13-analisis-de-la-varianza-disenos-anidados.md
-slug: manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r
 tags:
-- Estadistica
+- estadistica
 - regresión lineal
+- regresión
 title: 'Manual. Curso introducción de R. Capítulo 9: Introducción a la regresión lineal
   con R'
 url: /blog/manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r/
 ---
-
 En este capítulo del curso de R vamos a comenza a estudiar el análisis de regresión lineal. Los modelos de regresión lineal son modelos probabilísticos basados en una función lineal, nuestro objetivo es expresar una variable dependiente en función otro conjunto de variables. Los pasos básicos a seguir en el estudio de un modelo lineal son:
 1\. Escribir el modelo matemático con todas sus hipótesis.
 

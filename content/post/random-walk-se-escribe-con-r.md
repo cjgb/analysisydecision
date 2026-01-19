@@ -1,28 +1,26 @@
 ---
 author: danifernandez
 categories:
-- Formación
-date: '2010-05-20T11:58:44-05:00'
-lastmod: '2025-07-13T16:05:07.027670'
+- formación
+date: '2010-05-20'
+lastmod: '2025-07-13'
 related:
 - stadistical-data-warehouse-del-european-central-bank-con-r-y-los-depositos-a-perdidas.md
 - series-temporales-animadas-con-r-y-gganimate-comparando-cotizaciones.md
 - leer-y-representar-datos-de-google-trends-con-r.md
 - graficos-de-calendarios-con-series-temporales.md
 - informes-con-r-en-html-comienzo-con-r2html-i.md
-slug: random-walk-se-escribe-con-r
 tags:
 - bolsa
 - charts gratis
-- getQuote
-- getSymbols
+- getquote
+- getsymbols
 - mercados financieros
 - quantmod
-- R
+- r
 title: «Random walk» se escribe con R.
 url: /blog/random-walk-se-escribe-con-r/
 ---
-
 ‘Random walk’ hace referencia a la teoría financiera de que los mercados financieros siguen un camino aleatorio. Pero NO vamos discutir si se da o NO se da tal hipótesis, lo que SÍ vamos a hacer es utilizar R para seguir las acciones, fondos de inversión, o sencillamente para ver nuestro decepcionante Euro respecto a otras divisas (por si algún día los ‘españolitos’ debieramos empezar a emigrar de nuevo… tal como esta el patio!).
 
 Vamos a necesitar varios paquetes, si no me olvido de ninguno, básicamente son estos 2:

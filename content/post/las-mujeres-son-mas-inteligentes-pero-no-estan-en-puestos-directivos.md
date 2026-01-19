@@ -1,24 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Opinión
-- Python
-date: '2019-02-03T17:30:33-05:00'
-lastmod: '2025-07-13T15:59:33.788559'
+- opinión
+- python
+date: '2019-02-03'
+lastmod: '2025-07-13'
 related:
 - monografico-regresion-logistica-con-r.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-7-descripcion-grafica-de-variables.md
 - los-pilares-de-mi-simulacion-de-la-extension-del-covid19.md
 - un-acercamiento-a-graph-ods-graphs-proc-sgplot.md
 - el-modelo-multivariante-en-el-sector-asegurador-univariante-vs-multivariante-ii.md
-slug: las-mujeres-son-mas-inteligentes-pero-no-estan-en-puestos-directivos
 tags:
 - kdeplot
 - seaborn
 title: Las mujeres son más inteligentes pero no están en puestos directivos
 url: /blog/las-mujeres-son-mas-inteligentes-pero-no-estan-en-puestos-directivos/
 ---
-
 A raíz de una noticia sobre la reestructuración del consejo directivo de un gran banco en España donde sólo una mujer ha sido elegida entre los 12 puestos de dirección general me ha surgido la oportunidad para explicar que es una distribución de probabilidad, que es una distribución normal y que es la media y la desviación típica.
 
 Aquí tenéis en python un código que simula el IC de los hombres y el IC de las mujeres, no me he complicado mucho la vida ni he buscado datos al respecto pero leyendo un poco creo que deben de parecerse mucho a esto:

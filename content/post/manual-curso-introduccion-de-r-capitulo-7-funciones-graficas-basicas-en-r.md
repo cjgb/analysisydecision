@@ -1,23 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- R
-date: '2008-04-16T08:59:34-05:00'
-lastmod: '2025-07-13T16:01:34.671019'
+- formación
+- r
+date: '2008-04-16'
+lastmod: '2025-07-13'
 related:
 - manual-curso-introduccion-de-r-capitulo-6-funciones-de-estadistica-descriptiva.md
 - graficos-de-burbuja-con-r.md
 - graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
 - manual-curso-introduccion-de-r-capitulo-2-interfaz-y-primeras-sentencias.md
 - trucos-r-graficos-de-velocimetro-con-r.md
-slug: manual-curso-introduccion-de-r-capitulo-7-funciones-graficas-basicas-en-r
-tags: []
+tags:
+- sin etiqueta
 title: 'Manual. Curso introducción de R. Capítulo 7: Funciones gráficas básicas en
   R'
 url: /blog/manual-curso-introduccion-de-r-capitulo-7-funciones-graficas-basicas-en-r/
 ---
-
 R dispone de múltiples posibilidades a la hora de realizar gráficos. De hecho, bajo mi punto de vista, puede ser una de las herramientas estadísticas más potentes al respecto, además es gratuita y existe una comunidad detrás que pone a nuestra disposición múltiples manuales y documentación. Debido al gran material existente este capítulo sólo será una pequeña introducción a sus posibilidades en sucesivas entregas veremos nuevas funciones y nuevos gráficos más aplicados a ejemplos reales.
 
 Como inicio de nuestro ejemplo vamos a crear dos veectores de datos:

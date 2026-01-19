@@ -1,21 +1,20 @@
 ---
 author: rvaquerizo
 categories:
-- Consultoría
-date: '2009-01-20T09:57:53-05:00'
-lastmod: '2025-07-13T16:04:19.464030'
+- consultoría
+date: '2009-01-20'
+lastmod: '2025-07-13'
 related:
 - crm-me-rio-de-los-topicos.md
 - contenidos-web-analisis-informacion.md
 - ayd-2300-visitas-mensuales.md
 - contenidos-para-octubre-de-ayd.md
 - de-estadistico-a-minero-de-datos-a-cientifico-de-datos.md
-slug: personalizar-los-contactos-comerciales
-tags: []
+tags:
+- sin etiqueta
 title: Personalizar los contactos comerciales
 url: /blog/personalizar-los-contactos-comerciales/
 ---
-
 La herramienta de Google para la inserción de anuncios el [Adwords](https://analisisydecision.es/wp-admin/www.AdWords.Google.es) nos permite descubrir en la red uno de los métodos de personalización de contactos comerciales con mayor futuro. En función del contenido de la página web que se carge Adwords selecciona el anuncio para que llegue a un público objetivo. Veamos por elemplo la edición del diario [El Mundo](http://www.elmundo.es/) para el día 20/01/2009. Entre las noticias de portada tenemos el ERE de Seat y su correspondiente publicidad de Adwords:
 
 ![ere.JPG](/images/2009/01/ere.JPG)

@@ -1,26 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Data Mining
-- Formación
-- Monográficos
-- R
-date: '2012-03-27T08:39:55-05:00'
-lastmod: '2025-07-13T16:06:21.506679'
+- data mining
+- formación
+- monográficos
+- r
+date: '2012-03-27'
+lastmod: '2025-07-13'
 related:
 - en-la-regresion-logistica-el-sobremuestreo-es-lo-mismo-que-asignar-pesos-a-las-observaciones.md
 - el-sobremuestreo-mejora-mi-estimacion.md
 - que-pasa-si-uso-una-regresion-de-poisson-en-vez-de-una-regresion-logistica.md
 - trucos-sas-muestreo-con-proc-surveyselect.md
 - muestreo-de-datos-con-r.md
-slug: sobremuestreo-y-pesos-a-las-observaciones-ahora-con-r
 tags:
 - regresión logística
 - sampling
 title: Sobremuestreo y pesos a las observaciones. Ahora con R
 url: /blog/sobremuestreo-y-pesos-a-las-observaciones-ahora-con-r/
 ---
-
 De nuevo volvemos a la entrada de ayer para replicar el código SAS utilizado en R. Se trata de realizar 3 modelos de regresión logística con R para estudiar como influyen en los parámetros el uso de un conjunto de datos con sobremuestreo o el uso de un conjunto de datos donde asignamos pesos a las observaciones. El programa es sencillo pero tiene un uso interesante de la librería de R sampling. Aquí tenéis el código:
 
 ```r

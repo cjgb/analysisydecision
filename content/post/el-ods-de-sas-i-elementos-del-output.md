@@ -1,22 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-date: '2008-05-08T07:21:48-05:00'
-lastmod: '2025-07-13T15:57:03.044558'
+- formación
+- sas
+date: '2008-05-08'
+lastmod: '2025-07-13'
 related:
 - el-ods-de-sas-ii-dataset-desde-output.md
 - el-ods-de-sas-iii-documentos-html-y-pdf-desde-sas.md
 - truco-sas-crear-ficheros-excel-sin-proc-export-i.md
 - truco-sas-proc-contents.md
 - macros-sas-informe-de-un-dataset-en-excel.md
-slug: el-ods-de-sas-i-elementos-del-output
-tags: []
+tags:
+- sin etiqueta
 title: El ODS de SAS (I). Elementos del OUTPUT
 url: /blog/el-ods-de-sas-i-elementos-del-output/
 ---
-
 Hoy comenzaré una serie de mensajes dedicados al ODS (Output Delivery System) de SAS. Este mecanismo de SAS nos permite un uso más eficiente del OUTPUT de nuestros pasos PROC además podemos crear excel (como ya vimos), crear dataset, no generar salidas,… Antes SAS nos ofrecia un texto plano en la ventana OUTPUT, ahora generamos documentos sofisticados. En tres entregas veremos:
 *Trazar el OUTPUT de SAS
 *Datasets de salidas de SAS

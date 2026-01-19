@@ -1,22 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Fútbol
-- Formación
-date: '2024-01-02T05:09:28-05:00'
-lastmod: '2025-07-13T15:56:11.434525'
+- fútbol
+- formación
+date: '2024-01-02'
+lastmod: '2025-07-13'
 related:
 - datos-de-eventing-gratuitos-en-statsbomb.md
 - minutos-de-juego-y-puntos-es-espanyol-y-sus-finales-de-partido.md
 - los-porteros-del-espanyol-y-la-regresion-binomial-negativa.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-10-probabilidad-y-distribuciones.md
 - pintando-campos-de-futbol-con-rstats-y-entendiendo-funciones-de-densidad.md
-slug: datos-libres-de-statsbomb-independencia-estadistica-y-tandas-de-penaltis
-tags: []
+tags:
+- sin etiqueta
 title: Datos libres de StatsBomb. Independencia estadística y tandas de penaltis
 url: /blog/datos-libres-de-statsbomb-independencia-estadistica-y-tandas-de-penaltis/
 ---
-
 «Suponiendo que los lanzamientos de una tanda de penaltis son independientes…» Así empiezo parte de una formación que imparto y siempre he pensado que no tiene ningún sustento científico y se me ha ocurrido estudiar la validez de esta suposición. Y por ello vamos a emplear datos de Statsbomb para investigar si un lanzamiento de una tanda de penaltis es independientes del anterior y aprovechamos para conocer el test de la chi cuadrado
 
 **¿Qué es un suceso/penalti independiente?** Un penalti es independiente del otro si la probabilidad de uno no influye sobre la probabilidad del otro, es decir, un lanzamiento no depende del resultado de los anteriores. Para estudiar si una sucesión de números es independiente existen test estadísticos pero en el párrafo anterior ya se desvela lo que vamos a analizar, **¿un lanzamiento es independiente del anterior?**. El problema lo podemos hacer tan complejo como queramos y ver la tanda de 5 penaltis en su conjunto, trabajar con funciones del paquete randomizeR, hacer test de independencia de vectores aleatorios, emplear test de estadísticos con nombres impronunciables,… Pero, ¿no será más sencillo estudiar si el resultado de un penalti depende del anterior? Este ejercicio quiero que sirva también para reflexionar sobre la complejidad de los contrastes de hipótesis.

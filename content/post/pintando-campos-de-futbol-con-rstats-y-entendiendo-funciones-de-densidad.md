@@ -1,24 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Consultoría
-- Fútbol
-- Gráficos
-- R
-date: '2023-08-28T09:09:44-05:00'
-lastmod: '2025-07-13T16:04:22.309390'
+- consultoría
+- fútbol
+- gráficos
+- r
+date: '2023-08-28'
+lastmod: '2025-07-13'
 related:
 - datos-de-eventing-gratuitos-en-statsbomb.md
 - resultados-de-la-liga-con-rstats-estudiando-graficamente-rachas.md
 - los-porteros-del-espanyol-y-la-regresion-binomial-negativa.md
 - minutos-de-juego-y-puntos-es-espanyol-y-sus-finales-de-partido.md
 - incluir-subplot-en-mapa-con-ggplot.md
-slug: pintando-campos-de-futbol-con-rstats-y-entendiendo-funciones-de-densidad
-tags: []
+tags:
+- sin etiqueta
 title: 'Pintando campos de fútbol con #rstats y entendiendo funciones de densidad'
 url: /blog/pintando-campos-de-futbol-con-rstats-y-entendiendo-funciones-de-densidad/
 ---
-
 La librería de rstats ggsoccer permite representar campos de fútbol con un código bastante sencillo, a continuación se plantean una serie de ejemplos para empezar a ilustrar su uso y quiero que me de pie a escribir sobre la función de densidad de una variable, pero empezamos por el principio instalar el paquete y empezar a usar.
 
 ```r

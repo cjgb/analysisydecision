@@ -1,23 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-- Trucos
-date: '2009-08-17T06:17:50-05:00'
-lastmod: '2025-07-13T16:09:55.112856'
+- formación
+- sas
+- trucos
+date: '2009-08-17'
+lastmod: '2025-07-13'
 related:
 - macro-sas-variables-de-un-dataset-en-una-macro-variable.md
 - trucos-sas-lista-de-datasets-en-macro-variable.md
 - trucos-sas-union-de-multiples-tablas-sas-con-un-nombre-parecido.md
 - macros-sas-ordenar-alfabeticamente-las-variables-de-un-dataset.md
 - truco-sas-tablas-de-una-libreria-en-una-macro-variable.md
-slug: trucos-sas-eliminar-etiquetas-en-los-conjunto-de-datos-sas
-tags: []
+tags:
+- sin etiqueta
 title: Trucos SAS. Eliminar etiquetas en los conjunto de datos SAS
 url: /blog/trucos-sas-eliminar-etiquetas-en-los-conjunto-de-datos-sas/
 ---
-
 Hoy planteo un ejemplo de uso de las vistas de SASHELP con los nombres de las columnas de una tabla SAS. Además sirve para conocer mejor el PROC DATASETS y la creación de macro variables con el PROC SQL. Una macro que no es de mucha utilidad pero con la que podemos empezar a aproximarnos al lenguage macro de SAS:
 
 ```r

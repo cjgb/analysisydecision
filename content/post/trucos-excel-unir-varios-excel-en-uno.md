@@ -1,28 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- Excel
-- Formación
-- Monográficos
-- Trucos
-date: '2011-09-21T14:03:15-05:00'
-lastmod: '2025-07-13T16:09:27.441031'
+- excel
+- formación
+- monográficos
+- trucos
+date: '2011-09-21'
+lastmod: '2025-07-13'
 related:
 - truco-excel-unir-todos-los-libros-en-una-hoja.md
 - truco-sas-unir-todos-los-excel-en-uno-solo.md
 - truco-excel-abrir-multiples-libros-de-excel-en-distintas-hojas-de-un-nuevo-libro.md
 - truco-sas-unir-todas-las-hojas-de-un-excel-en-una.md
 - trucos-excel-unir-todos-los-excel-en-uno-version-muy-mejorada.md
-slug: trucos-excel-unir-varios-excel-en-uno
 tags:
-- ''
 - macros
 - unir excel
 - visual basic
 title: Trucos Excel. Unir varios Excel en uno
 url: /blog/trucos-excel-unir-varios-excel-en-uno/
 ---
-
 Tenía pendiente revisar [una de las entradas más visitadas del blog](https://analisisydecision.es/truco-sas-unir-todos-los-excel-en-uno-solo/). Trata la problemática de **unir varios Excel en uno sólo**. En el caso concreto servía para unir varios Excel generados por SAS a través de una macro en SAS. En la entrada de hoy quiero trabajar con un ejemplo que os podéis [ descargar aquí en formato rar](/images/2011/09/unir_excel1.rar "unir_excel1.rar"). De los archivos que comparto el más interesante el que llamamos [unir_varios_excel.xlsm](/images/2011/09/unir_varios_excel1.xlsm "unir_varios_excel1.xlsm") se trata de un archivo Excel para macros que contiene un par de macros más que interesantes. Un pantallazo de este libro de Excel:
 
 ![unir_excel.png](/images/2011/09/unir_excel.png)

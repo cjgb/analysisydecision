@@ -1,23 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Gráficos
-- Python
-date: '2021-08-09T04:40:04-05:00'
-lastmod: '2025-07-13T15:58:17.645261'
+- formación
+- gráficos
+- python
+date: '2021-08-09'
+lastmod: '2025-07-13'
 related:
 - capitulo-5-representacion-basica-con-ggplot.md
 - graficos-basicos-con-julia.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-7-descripcion-grafica-de-variables.md
 - un-acercamiento-a-graph-ods-graphs-proc-sgplot.md
 - graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
-slug: graficos-descriptivos-basicos-con-seaborn-python
-tags: []
+tags:
+- sin etiqueta
 title: Gráficos descriptivos básicos con Seaborn Python
 url: /blog/graficos-descriptivos-basicos-con-seaborn-python/
 ---
-
 Revisión de los gráficos más habituales que realizaremos en labores descriptivas de variables con Python, se emplea seaborn para ilustrar estos ejemplos. El tipo de gráfico dependerá del tipo de variable que deseamos describir e incluso del número de variables que deseamos describir Como aproximación inicial describiremos variables cuantitativas o variables cualitativas análisis univariables o análisis bivariables. Se trabaja con el conjunto de datos iris:
 
 ```r

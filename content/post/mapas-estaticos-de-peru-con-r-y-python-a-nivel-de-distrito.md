@@ -1,24 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Mapas
-- Python
-- R
-date: '2020-12-28T04:19:42-05:00'
-lastmod: '2025-07-13T16:02:05.891175'
+- formación
+- mapas
+- python
+- r
+date: '2020-12-28'
+lastmod: '2025-07-13'
 related:
 - mapa-estatico-de-espana-con-python.md
 - mapas-con-spatial-data-de-r.md
 - mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel.md
 - mapa-de-argentina-con-r.md
 - mapas-municipales-de-argentina-con-r.md
-slug: mapas-estaticos-de-peru-con-r-y-python-a-nivel-de-distrito
-tags: []
+tags:
+- mapas
 title: Mapas estáticos de Perú con R y Python a nivel de Distrito
 url: /blog/mapas-estaticos-de-peru-con-r-y-python-a-nivel-de-distrito/
 ---
-
 [![](/images/2020/12/mapa_peru_distritos2.png)](/images/2020/12/mapa_peru_distritos2.png)
 
 Petición de un lector de un código de ejemplo para hacer mapas de Perú con R y con Python, perfectamente reproducible si seguimos algunas entradas del blog pero que, de este modo, quedan resumidos en un solo sitio. En este caso se va a **emplear un notebook** desde RStudio donde tendremos chunks de R y Python en función de lo que necesitemos. Podéis copiar y pegar directamente, debe salir lo mismo.

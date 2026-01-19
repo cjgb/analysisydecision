@@ -1,23 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Monográficos
-- Seguros
-date: '2013-04-18T10:59:07-05:00'
-lastmod: '2025-07-13T15:57:15.236499'
+- monográficos
+- seguros
+date: '2013-04-18'
+lastmod: '2025-07-13'
 related:
 - el-seguro-de-salud-la-futura-guerra.md
 - el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v.md
 - el-seguro-de-credito-interesante-reto-tecnico.md
 - consultor-particular-de-seguros.md
 - mutua-madrilena-compra-el-50-de-adeslas-seguros-generales.md
-slug: el-seguro-de-salud-suma-y-sigue
 tags:
 - seguro de salud
+- seguros
 title: El seguro de Salud suma y sigue
 url: /blog/el-seguro-de-salud-suma-y-sigue/
 ---
-
 [![](/images/2013/04/seguro-de-salud-1.png)](/images/2013/04/seguro-de-salud-1.png)
 
 Si nos damos una vuelta por ICEA podremos sacar la tabla que tenemos arriba (espero que no se enfaden conmigo por sacarlo tal cual, no he cambiado ni los formatos). Vemos que a lo largo de 2012 el seguro directo en España está sufriendo, especialmente en Autos, casi todos los ramos registran pérdidas de prima a excepción de Hogar y Salud. El tema de Hogar lo trataremos en otra entrada con más cuidado, es un ramo que tiene mucho recorrido debido a que la penetración en España todavía es muy baja, además tendremos que escribir sobre revalorización de capitales, la famosa REVA. Hoy nos centraremos en la otra gran estrella de la tabla que nos ofrece ICEA, el Seguro de Salud.

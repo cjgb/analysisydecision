@@ -1,25 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Gráficos
-- Mapas
-- R
-date: '2020-11-18T06:34:08-05:00'
-lastmod: '2025-07-13T15:53:54.532238'
+- formación
+- gráficos
+- mapas
+- r
+date: '2020-11-18'
+lastmod: '2025-07-13'
 related:
 - incluir-subplot-en-mapa-con-ggplot.md
 - mapa-estatico-de-espana-con-python.md
 - mover-parte-de-un-shapefile-con-r-mapa-de-la-tasa-de-casos-de-coronavirus-por-habitante-en-espana.md
 - mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel.md
 - animacion-de-un-mapa-con-python-porcentaje-de-vacunas-administradas.md
-slug: anadiendo-graficos-de-tarta-a-nuestros-mapas-de-ggplot-con-scatterpie
 tags:
 - geom_scatterpie
+- mapas
 title: Añadiendo gráficos de tarta a nuestros mapas de ggplot con scatterpie
 url: /blog/anadiendo-graficos-de-tarta-a-nuestros-mapas-de-ggplot-con-scatterpie/
 ---
-
 [![](/images/2020/11/piechart_mapa1.png)](/images/2020/11/piechart_mapa1.png)
 
 Los gráficos de tarta o pie charts [tienen algunos peligros](https://www.data-to-viz.com/caveat/pie.html) y el ahora escribiente no es muy partidario de su uso, sin embargo la librería scatterpie facilita mucho su realización en R y quería traer al blog un método más o menos sencillo para entender como hacer el gráfico y como disponer los datos.

@@ -1,23 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Monográficos
-- SAS
-date: '2009-02-16T09:29:25-05:00'
-lastmod: '2025-07-13T16:02:57.895866'
+- formación
+- monográficos
+- sas
+date: '2009-02-16'
+lastmod: '2025-07-13'
 related:
 - macros-faciles-de-sas-eliminar-outliers-en-una-variable.md
 - truco-sas-observaciones-de-un-dataset-en-una-macro-variable.md
 - trucos-sas-variables-dummy-de-una-variable-continua.md
 - macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
 - trucos-sas-lista-de-datasets-en-macro-variable.md
-slug: monograficos-call-symput-imprescindible
-tags: []
+tags:
+- sin etiqueta
 title: Monográficos. CALL SYMPUT imprescindible
 url: /blog/monograficos-call-symput-imprescindible/
 ---
-
 He detectado que muchas búsquedas que llegan a Análisis y Decisión vienen por la palabra clave «call symput». Por este motivo me he decidido a escribir este rápido monográfico sobre esta instrucción. Con un par de ejemplos podemos familiarizarnos con su funcionamiento.CALL SYMPUT es una rutina de SAS que nos permite crear macro variables durante la ejecución de un paso data, digamos que es un mecanismo que comunica el compilador del macro lenguaje SAS con el propio lenguaje SAS. El ejemplo prototípico de su uso, determinar el número de observaciones de un dataset que cumplen determinada condición:
 
 ```r

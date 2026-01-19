@@ -1,23 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Business Intelligence
-- Python
-date: '2019-10-18T09:05:40-05:00'
-lastmod: '2025-07-13T15:56:19.623575'
+- business intelligence
+- python
+date: '2019-10-18'
+lastmod: '2025-07-13'
 related:
 - parametros-en-nuestra-consulta-sql-server-desde-r-truco-r.md
 - montemos-un-sistema-de-informacion-en-nuestro-equipo-iii.md
 - leer-archivos-excel-con-python.md
 - aprende-pyspark-sin-complicaciones.md
 - manual-curso-introduccion-de-r-capitulo-5-lectura-avanzada-de-datos.md
-slug: de-sql-server-a-python-pandas-dataframe
 tags:
-- SQL SERVER
+- sql server
+- bases de datos
 title: Importar de SQL Server a Python Pandas dataframe
 url: /blog/de-sql-server-a-python-pandas-dataframe/
 ---
-
 Nueva duda que me han planteado, cómo pasar la extracción de una consulta en BBDD SQL server a un dataframe de pandas. Es sencillo, pero siempre tenemos que tener configurado el origen de datos ODBC, doy por sentado que esa tarea ya está hecha. El paquete que vamos a usar es pip install pyodbc y el ejemplo de uso es el siguiente:
 
 ```r

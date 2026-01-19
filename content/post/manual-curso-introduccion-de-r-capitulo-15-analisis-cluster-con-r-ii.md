@@ -1,26 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Modelos
-- R
-date: '2009-05-04T16:34:39-05:00'
-lastmod: '2025-07-13T16:01:22.528576'
+- formación
+- modelos
+- r
+date: '2009-05-04'
+lastmod: '2025-07-13'
 related:
 - manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-i.md
 - manual-curso-introduccion-de-r-capitulo-17-analisis-cluster-con-r-y-iii.md
 - adyacencia-de-poligonos-con-el-paquete-spdep-de-r.md
 - un-peligro-del-analisis-cluster.md
 - mover-parte-de-un-shapefile-con-r-mapa-de-la-tasa-de-casos-de-coronavirus-por-habitante-en-espana.md
-slug: manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-ii
 tags:
 - análisis cluster
-- introducción a modelos estadísticos
-- R
+- modelos
+- estadística
+- r
 title: 'Manual. Curso introducción de R. Capítulo 16: Análisis Cluster con R (II)'
 url: /blog/manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-ii/
 ---
-
 En esta entrega vamos a seguimos trabajando con el análisis Cluster viendo más posibilidades que nos ofrece R. Para ello vamos a realizar un estudio de agrupamiento de países europeos en función de algunos indicadores básicos:
 
   * Superficie

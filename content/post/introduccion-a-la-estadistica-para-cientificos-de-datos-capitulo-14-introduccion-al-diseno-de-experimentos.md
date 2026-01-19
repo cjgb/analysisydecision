@@ -1,24 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Libro Estadística
-- R
-date: '2023-03-15T12:25:17-05:00'
-lastmod: '2025-07-13T15:58:52.893964'
+- formación
+- libro estadística
+- r
+date: '2023-03-15'
+lastmod: '2025-07-13'
 related:
 - manual-curso-introduccion-de-r-capitulo-11-introduccion-al-analisis-de-la-varianza-anova.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-10-probabilidad-y-distribuciones.md
 - monografico-analisis-de-factores-con-r-una-introduccion.md
 - manual-curso-introduccion-de-r-capitulo-13-analisis-de-la-varianza-disenos-anidados.md
 - manual-curso-introduccion-de-r-capitulo-12-analisis-de-la-varianza-disenos-bifactoriales.md
-slug: introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-14-introduccion-al-diseno-de-experimentos
-tags: []
+tags:
+- sin etiqueta
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 14. Introducción
   al diseño de experimentos
 url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-14-introduccion-al-diseno-de-experimentos/
 ---
-
 Otro de los temas dedicados a la Estadística que tiene que conocer el científico de datos es el diseño de experimentos. La motivación del diseño de experimentos está magistralmente ilustrada por [ Julio Mulero](https://elultimoversodefermat.wordpress.com/) en [este hilo de Twitter](https://twitter.com/juliomulero/status/1331993894721097729). Y se considera imprescindible conocer estas técnicas porque aportan una forma de trabajar, de plantear los problemas y un conocimiento de las variables que mejorará el desempeño (y los modelos) del científico de datos.
 
 Los modelos de diseño de experimentos son modelos estadísticos cuyo objetivo es **determinar si unos factores influyen en una variable respuesta cuantitativa** , y si influyen cuantificar esa influencia.

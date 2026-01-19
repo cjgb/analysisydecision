@@ -1,27 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- Excel
-- Formación
-- Monográficos
-- Trucos
-date: '2010-09-30T09:38:33-05:00'
-lastmod: '2025-07-13T15:55:25.147710'
+- excel
+- formación
+- monográficos
+- trucos
+date: '2010-09-30'
+lastmod: '2025-07-13'
 related:
 - trucos-excel-mapa-de-espana-por-comunidades-autonomas.md
 - trucos-excel-mapa-de-espana-por-provincias.md
 - mapas-municipales-de-espana-con-excel-y-qgis.md
 - mapa-excel-de-europa.md
 - trucos-excel-mapa-de-colombia-por-departamentos.md
-slug: creando-un-mapa-en-excel-con-archivos-svg
 tags:
-- ''
-- mapas españa
+- mapas
+- españa
 - svg
 title: Creando un mapa en Excel con archivos SVG
 url: /blog/creando-un-mapa-en-excel-con-archivos-svg/
 ---
-
 Aunque me lo agradezcan poco el [mapa por comunidades de Excel](https://analisisydecision.es/trucos-excel-mapa-de-espana-por-comunidades-autonomas/) está teniendo un gran éxito. Mientras preparo un mapa por provincias en Excel he elaborado el siguiente tutorial para crear mapas en Excel a partir de archivos SVG. El punto de partida, disponer de [Inkscape ](http://inkscape.org/?lang=es)software libre para la elaboración de dibujos y Excel. Podemos buscar mapas en la wikipedia, en este caso [mapa por provincias de España](http://es.wikipedia.org/wiki/Archivo:Provincias_de_Espa%C3%B1a.svg). Se trata de utilizar ese archivo svg y crear un Excel con objetos de ms-office que provienen del archivo svg que hemos abierto con el Inkscape. Juntamos las piezas del puzle y ya podemos trabajar con el mapa.
 
 El paso 0 es abrir Excel y el svg con el Inkscape. En el Inkscape seleccionamos la provincia a copiar:

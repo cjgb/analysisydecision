@@ -1,23 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Gráficos
-- Julia
-date: '2021-08-21T11:40:54-05:00'
-lastmod: '2025-07-13T15:58:10.847160'
+- formación
+- gráficos
+- julia
+date: '2021-08-21'
+lastmod: '2025-07-13'
 related:
 - capitulo-5-representacion-basica-con-ggplot.md
 - graficos-descriptivos-basicos-con-seaborn-python.md
 - graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
 - descubriendo-ggplot2-421.md
 - grafico-de-barras-y-lineas-con-python.md
-slug: graficos-basicos-con-julia
-tags: []
+tags:
+- sin etiqueta
 title: Gráficos Básicos con Julia
 url: /blog/graficos-basicos-con-julia/
 ---
-
 De forma análoga a otras entradas sobre análisis gráficos básicos empezamos a trabajar con las posibilidades gráficas del lenguaje Julia. A continuación se recogerán el 80% de los gráficos que un científico de datos realizará en su vida profesional, el 20% restante se abordará en otras entradas. Emplearemos el conjunto de datos _penguins_ para ilustrar los ejemplos:
 
 ```r

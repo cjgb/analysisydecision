@@ -1,24 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Modelos
-- Python
-- Trucos
-date: '2017-10-24T06:27:20-05:00'
-lastmod: '2025-07-13T16:04:32.283729'
+- modelos
+- python
+- trucos
+date: '2017-10-24'
+lastmod: '2025-07-13'
 related:
 - leer-fichero-de-texto-de-ancho-fijo-con-python-pandas.md
 - truco-python-reemplazar-una-cadena-de-caracteres-en-los-nombres-de-las-columnas-de-un-data-frame.md
 - transformar-todos-los-factores-a-caracter-de-mi-data-frame-de-r.md
 - trucos-r-de-string-a-dataframe-de-palabras.md
 - analisis-de-textos-con-r.md
-slug: preparar-nuestros-datos-para-sklearn-pasar-de-string-a-numero
 tags:
 - sklearn
 title: Preparar nuestros datos para sklearn. Pasar de string a número
 url: /blog/preparar-nuestros-datos-para-sklearn-pasar-de-string-a-numero/
 ---
-
 Cuando trabajamos con python y sklearn necesitamos que todos los datos que vamos a modelizar sean númericos, si tenemos variables carácter necesitamos previamente transformarlas a números. La forma más rápida para realizar esta tarea es emplear preprocesing de sklearn:
 
 ```r

@@ -1,25 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Consultoría
-- Excel
-- Formación
-- Trucos
-date: '2012-08-06T02:16:22-05:00'
-lastmod: '2025-07-13T16:09:00.053981'
+- consultoría
+- excel
+- formación
+- trucos
+date: '2012-08-06'
+lastmod: '2025-07-13'
 related:
 - trucos-excel-poner-etiquetas-en-graficos-de-dispersion.md
 - chart-tools-un-add-in-imprescindible-para-excel.md
 - truco-excel-grafico-de-puntos-con-colores.md
 - truco-excel-graficos-de-dispersion-que-identifican-los-puntos.md
 - nuevo-y-muy-mejorado-mapa-de-espana-por-provincias-con-excel.md
-slug: trucos-excel-graficos-dot-plot-representando-un-ranking-graficamente
 tags:
-- Dot plot
+- dot plot
 title: Trucos Excel. Gráficos dot plot, representando un ranking gráficamente
 url: /blog/trucos-excel-graficos-dot-plot-representando-un-ranking-graficamente/
 ---
-
 Los gráficos de puntos son muy prácticos para representar de una forma visual rankings (por ejemplo). En Excel su realización no es inmediata como con otras herramientas (R por ejemplo). Para ilustrar el ejemplo se van a presentar los 20 primeros puestos de la [lista TIOBE ](http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html)de mayo de 2012 (la entrada estaba en la nevera). Entramos en la lista y sin más copiamos y pegamos los datos de tabla HTML a tabla Excel:
 
 [![](/images/2012/08/Dot_plot_excel1.jpg)](/images/2012/08/Dot_plot_excel1.jpg)

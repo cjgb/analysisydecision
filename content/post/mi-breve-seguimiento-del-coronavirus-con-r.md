@@ -1,25 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Monográficos
-- R
-date: '2020-04-20T08:56:49-05:00'
-lastmod: '2025-07-13T16:02:26.920875'
+- formación
+- monográficos
+- r
+date: '2020-04-20'
+lastmod: '2025-07-13'
 related:
 - evolucion-del-numero-de-casos-de-coronavirus.md
 - incluir-subplot-en-mapa-con-ggplot.md
 - estimacion-de-la-evolucion-de-casos-del-coronavirus-en-espana.md
 - seguir-los-datos-del-coronavirus-en-espana-con-rstats.md
 - mapa-del-covid-19-por-comunidades-autonomas-con-r-mas-rstats.md
-slug: mi-breve-seguimiento-del-coronavirus-con-r
 tags:
 - coronavirus
-- COVID
+- covid
 title: Mi breve seguimiento del coronavirus con R
 url: /blog/mi-breve-seguimiento-del-coronavirus-con-r/
 ---
-
 Ya comentaré con más detenimiento el código, pero es la unión de muchos de los códigos R de días anteriores, es un buen ejemplo de uso de la librería gridExtra para poner múltiples gráficos en una sola salida:
 
 ```r

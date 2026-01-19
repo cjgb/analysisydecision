@@ -1,22 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Consultoría
-- Formación
-date: '2010-05-22T09:44:36-05:00'
-lastmod: '2025-07-13T15:55:48.246300'
+- consultoría
+- formación
+date: '2010-05-22'
+lastmod: '2025-07-13'
 related:
 - acercamiento-a-wps-migrando-desde-sas.md
 - en-breve-revision-de-wps-clonico-de-sas.md
 - curso-de-lenguaje-sas-con-wps-introduccion.md
 - wps-en-el-mercado-espanol.md
 - curso-de-lenguaje-sas-con-wps-lenguaje-sas.md
-slug: curso-de-lenguaje-sas-con-wps-introduccion-2
-tags: []
+tags:
+- sin etiqueta
 title: Curso de lenguaje SAS con WPS. Introducción
 url: /blog/curso-de-lenguaje-sas-con-wps-introduccion-2/
 ---
-
 Hoy me gustaría mostraros el interfaz de WPS y cuales son las características principales de WPS y cuales son comunes entre SAS y WPS. Si pincháis [este link](http://teamwpc.co.uk/tryorbuy) podréis descargaros una demo de WPS y seguir este curso. Cuando lo hagáis y abráis WPS os encontraréis con esto:
 
 [](https://analisisydecision.es/curso-de-lenguaje-sas-con-wps-introduccion-2/339/ "interfaz_wps.jpg")

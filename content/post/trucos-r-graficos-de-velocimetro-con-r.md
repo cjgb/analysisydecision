@@ -1,29 +1,26 @@
 ---
 author: rvaquerizo
 categories:
-- Business Intelligence
-- Formación
-- R
-date: '2011-03-20T09:29:49-05:00'
-lastmod: '2025-07-13T16:09:37.572549'
+- business intelligence
+- formación
+- r
+date: '2011-03-20'
+lastmod: '2025-07-13'
 related:
 - truco-r-paletas-de-colores-en-r.md
 - graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
 - trucos-r-el-paquete-classint-para-clasificar-variables-continuas.md
 - graficos-dinamicos-en-r-con-la-funcion-text.md
 - graficos-de-burbuja-con-r.md
-slug: trucos-r-graficos-de-velocimetro-con-r
 tags:
-- ''
 - lines
 - points
 - polygon
-- RColorBrewer
+- rcolorbrewer
 - velocimetro
 title: Trucos R. Gráficos de velocímetro con R
 url: /blog/trucos-r-graficos-de-velocimetro-con-r/
 ---
-
 Hoy toca homenaje a 2 lectores del blog. Es la primera versión de un gráfico en forma de velocímetro con R. Cuando disponga de más tiempo modificaré la versión para darle mayor vistosidad. Como es habitual el truco nos servirá para trabajar con un interesante paquete de R como _RColorBrewer_. [Un paquete que me descubrió un lector](https://analisisydecision.es/truco-r-paletas-de-colores-en-r/). El resultado final no es muy espectacular (de momento):
 
 ![velocimetro_r.png](/images/2011/03/velocimetro_r.png)

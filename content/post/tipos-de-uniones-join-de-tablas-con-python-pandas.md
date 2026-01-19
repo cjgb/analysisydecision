@@ -1,25 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Monográficos
-- Python
-date: '2020-05-16T11:59:26-05:00'
-lastmod: '2025-07-13T16:06:37.253853'
+- formación
+- monográficos
+- python
+date: '2020-05-16'
+lastmod: '2025-07-13'
 related:
 - capitulo-4-uniones-de-tablas-con-r.md
 - proc-sql-merge-set.md
 - data-management-basico-con-pandas.md
 - monografico-paquete-sqldf-si-sabes-sql-sabes-r.md
 - creando-archivos-excel-desde-python-con-pandas-y-excelwriter.md
-slug: tipos-de-uniones-join-de-tablas-con-python-pandas
 tags:
 - join
-- Pandas
+- pandas
 title: Tipos de uniones (join) de tablas con Python Pandas
 url: /blog/tipos-de-uniones-join-de-tablas-con-python-pandas/
 ---
-
 Recopilación de las uniones más habituales con Python Pandas en una sola entrada. No se realiza equivalencias con sql join, la intención es tener de forma resumida los códigos para realizar left join inner join y concatenación de data frames de Pandas. [Hay amplia documentación esto es una síntesis](https://pandas.pydata.org/pandas-docs/stable/user_guide/merging.html).
 
 Los data frames empleados para ilustrar el ejemplo son:

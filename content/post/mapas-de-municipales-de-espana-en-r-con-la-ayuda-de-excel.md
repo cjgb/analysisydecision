@@ -1,29 +1,27 @@
 ---
 author: rvaquerizo
 categories:
-- Business Intelligence
-- Excel
-- Formación
-- Monográficos
-- R
-- Trucos
-date: '2015-02-20T10:37:37-05:00'
-lastmod: '2025-07-13T16:02:04.548741'
+- business intelligence
+- excel
+- formación
+- monográficos
+- r
+- trucos
+date: '2015-02-20'
+lastmod: '2025-07-13'
 related:
 - mapas-estaticos-municipales-para-estados-de-mexico-con-r-y-con-excel.md
 - mapas-municipales-de-espana-con-excel-y-qgis.md
 - identificar-los-municipios-costeros-y-limitrofes-de-espana-con-r.md
 - mapa-estatico-de-espana-con-python.md
 - mapas-con-spatial-data-de-r.md
-slug: mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel
 tags:
-- Mapa
-- mapa españa
+- mapas
 - spatial data
+- españa
 title: Mapas municipales de España en R, con la ayuda de Excel
 url: /blog/mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel/
 ---
-
 [![municipios extremadura R 1](/images/2015/02/municipios-extremadura-R-1-293x300.png)](/images/2015/02/municipios-extremadura-R-1.png)
 
 [El escribir sobre el BDT de Madrid ](https://analisisydecision.es/mapas-de-la-provincia-de-madrid-con-bdt/)me ha hecho [recordar mi trabajo con statial data de R](https://analisisydecision.es/mapas-con-spatial-data-de-r/). Los mapas de spatial data los podemos obtener de forma gratuita de <http://www.gadm.org/country> y en este caso vamos a descargarnos para España un SpatialPolygonsDataFrame específico para R de nivel 4 que está a nivel municipal (repito nivel todas las veces necesarias), el archivo que os debéis descargar se llamará ESP_adm4.RData. Si buscáis un poco en google encontraréis documentación acerca de este tipo de archivos de R y veréis que se pueden hacer maravillas. En este caso quiero hacer un ejemplo lo más sencillo posible, muy artesanal y casero. Con un poco de imaginación podréis complicarlo o incluso hacer una herramienta en Excel que hiciera mapas con R.

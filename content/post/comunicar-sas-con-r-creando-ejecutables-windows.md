@@ -1,27 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- R
-- SAS
-date: '2010-04-01T17:36:22-05:00'
-lastmod: '2025-07-13T15:55:12.902139'
+- formación
+- r
+- sas
+date: '2010-04-01'
+lastmod: '2025-07-13'
 related:
 - macros-sas-dataset-a-data-frame-r.md
 - trucos-sas-envio-de-email-con-data.md
 - curso-de-lenguaje-sas-con-wps-ejecuciones.md
 - truco-sas-como-leer-pc-axis-con-sas.md
 - lectura-de-ficheros-sas7bdat-de-sas-directamente-con-r.md
-slug: comunicar-sas-con-r-creando-ejecutables-windows
 tags:
-- ''
-- conectar SAS y R
+- conectar sas y r
 - file
 - put
 title: Comunicar SAS con R creando ejecutables Windows
 url: /blog/comunicar-sas-con-r-creando-ejecutables-windows/
 ---
-
 Quiero trabajar hoy con la función _put_ de SAS para la creación de ficheros ejecutables de Windows (.BAT) y también quiero comunicar SAS con R. Mato dos pájaros de un tiro y para ello vamos a crear un script de R que llamaremos desde SAS a partir de un archivo .BAT. Un ejemplo típico y muy sencillo que espero poder ir sofisticando con el paso del tiempo hasta llegar a paquetizarlo. Tiene los siguientes pasos:
 
 1\. Creamos un fichero con datos aleatorios en SAS:

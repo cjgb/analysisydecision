@@ -1,27 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Excel
-- Formación
-- Trucos
-date: '2011-04-30T16:13:20-05:00'
-lastmod: '2025-07-13T16:09:23.120632'
+- excel
+- formación
+- trucos
+date: '2011-04-30'
+lastmod: '2025-07-13'
 related:
 - desref-para-trasponer-en-excel-varias-columnas.md
 - truco-excel-transponer-una-fila-en-varias-columnas-con-desref.md
 - trucos-excel-repetir-filas-o-columnas-con-la-funcion-desref.md
 - trucos-excel-repetir-filas-con-desref.md
 - trucos-excel-trasponer-con-la-funcion-indirecto.md
-slug: trucos-excel-transponer-con-la-funcion-desref
 tags:
-- ''
-- DESREF
+- desref
 - funciones excel
 - trasponer
 title: Trucos Excel. Transponer con la función DESREF
 url: /blog/trucos-excel-transponer-con-la-funcion-desref/
 ---
-
 [Este blog ya contó como trasponer filas a columnas con la función INDIRECTO](https://analisisydecision.es/trucos-excel-trasponer-con-la-funcion-indirecto/). Recientemente tuve que explicar ese proceso a una persona y parece que le costó, sin embargo entendió a la perfección el uso de la función **DESREF**([a la que ya hicimos mención en una entrada reciente](https://analisisydecision.es/trucos-excel-repetir-filas-o-columnas-con-la-funcion-desref/)) y por ello me he animado a crear esta entrada. [En este enlace](/images/2011/04/transponer-con-desref.xlsx "transponer-con-desref.xlsx") podéis descargar un **excel 2007** que contiene el siguiente ejemplo:
 
 ![transponer-con-desref.png](/images/2011/04/transponer-con-desref.png)

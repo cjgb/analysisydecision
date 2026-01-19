@@ -1,27 +1,27 @@
 ---
 author: rvaquerizo
 categories:
-- Data Mining
-- Formación
-- Modelos
-- Monográficos
-- R
-date: '2014-09-09T09:13:05-05:00'
-lastmod: '2025-07-13T16:05:19.111643'
+- data mining
+- formación
+- modelos
+- monográficos
+- r
+date: '2014-09-09'
+lastmod: '2025-07-13'
 related:
 - regresion-con-redes-neuronales-en-r.md
 - resolucion-del-juego-de-modelos-con-r.md
 - monografico-paquete-de-r-nnet-para-modelos-de-redes-neuronales.md
 - juego-de-modelos-de-regresion-con-r.md
 - como-salva-la-linealidad-una-red-neuronal.md
-slug: representacion-de-redes-neuronales-con-r
 tags:
 - plot.nnet
+- plot
 - redes neuronales
+- r
 title: Representación de redes neuronales con R
 url: /blog/representacion-de-redes-neuronales-con-r/
 ---
-
 ![](/images/2014/09/pintar-redes-neuronales-1.png)
 
 [En la última entrada ](https://analisisydecision.es/regresion-con-redes-neuronales-en-r/)realizamos un modelo de regresión con redes neuronales. Hoy quería mostraros como representar gráficamente la red neuronal creada en esa entrada. A la modelización con redes neuronales siempre se le ha achacado un comportamiento de “caja negra”, nosotros pasamos unas variables de entrada por una capa oculta y obtenemos una salida. No hay parámetros ni inferencia sobre los mismos, no sabemos lo que hace la red por dentro. En el caso concreto de R y continuando con la entrada anterior si hacemos summary(bestnn):

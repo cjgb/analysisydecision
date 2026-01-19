@@ -1,26 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- Consultoría
-- Formación
-- Modelos
-- Monográficos
-- Seguros
-date: '2010-12-27T14:17:35-05:00'
-lastmod: '2025-07-13T15:57:00.329331'
+- consultoría
+- formación
+- modelos
+- monográficos
+- seguros
+date: '2010-12-27'
+lastmod: '2025-07-13'
 related:
 - el-modelo-multivariante-en-el-sector-asegurador-introduccion-i.md
 - el-modelo-multivariante-en-el-sector-asegurador-la-variable-dependiente-iii.md
 - el-modelo-multivariante-en-el-sector-asegurador-univariante-vs-multivariante-ii.md
 - internet-of-things-en-el-sector-asegurador.md
 - modelos-tweedie-con-h2o-mutualizar-siniestralidad-en-base-a-factores-de-riesgo.md
-slug: el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v
-tags: []
+tags:
+- sin etiqueta
 title: El modelo multivariante en el sector asegurador. Los modelos por coberturas
   (V)
 url: /blog/el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v/
 ---
-
 Debido a la pobre aceptación había dado de lado esta serie de monográficos sobre la **tarifa multivariante en el sector asegurador**. Pero tengo una lectora que si los seguía y como yo me debo a mis lectores continúo con la serie. Recapitulemos. Como v[ariables dependientes tenemos la frecuencia siniestral y el coste medio de los siniestros](https://analisisydecision.es/el-modelo-multivariante-en-el-sector-asegurador-la-variable-dependiente-iii/), las [variables independientes serán aquellas que compongan la estructura de nuestra tarifa](https://analisisydecision.es/el-modelo-multivariante-en-el-sector-asegurador-las-variables-independientes-iv/), como prototipo para determinar que variables forman parte de nuestro modelo empleamos el multitarificador de [ARPEM](http://www.arpem.com/). Con este planteamiento partimos de dos modelos: el **modelo de frecuencias** y el**modelo de costes medios**. Sin embargo a la hora de ajustar es muy importante plantear **un modelo para cada una de las garantías**. Parece lógico que el modelo multivariante para el contenido en una tarifa de hogar no ha de ser el mismo que el modelo para el continente. O centrándonos en el modelo de autos (sobre el que está girando nuestra serie) es necesario modelizar los siniestros de responsabilidad civil por un lado, los siniestros de daños propios por otro, defensa, robo,…
 
 En el caso de automóviles las garantías a modelizar podrían ser:

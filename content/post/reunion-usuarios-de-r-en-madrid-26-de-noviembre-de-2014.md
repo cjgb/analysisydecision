@@ -1,21 +1,20 @@
 ---
 author: rvaquerizo
 categories:
-- R
-date: '2014-11-19T06:40:26-05:00'
-lastmod: '2025-07-13T16:05:35.313438'
+- r
+date: '2014-11-19'
+lastmod: '2025-07-13'
 related:
 - reunion-de-usuarios-de-r-de-madrid-15-de-octubre-de-2015.md
 - reunion-del-grupo-de-usuarios-de-r-de-madrid-14042016.md
 - reunion-del-grupo-de-usuarios-de-r-de-madrid-12-de-noviembre.md
 - reunion-del-grupo-de-usuarios-de-r-de-madrid-14-de-enero-de-2016.md
 - martes-25-de-abril-nueva-reunion-del-grupo-de-usuarios-de-r-y-python.md
-slug: reunion-usuarios-de-r-en-madrid-26-de-noviembre-de-2014
-tags: []
+tags:
+- sin etiqueta
 title: Reunión Usuarios de R en Madrid. 26 de noviembre de 2014
 url: /blog/reunion-usuarios-de-r-en-madrid-26-de-noviembre-de-2014/
 ---
-
 El 26 de noviembre será la próxima reunión del grupo de usuarios de R en Madrid. En palabras de Carlos Ortega:
 
 ```r

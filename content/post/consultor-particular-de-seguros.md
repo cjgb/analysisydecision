@@ -1,21 +1,20 @@
 ---
 author: rvaquerizo
 categories:
-- Seguros
-date: '2014-02-07T06:42:14-05:00'
-lastmod: '2025-07-13T15:55:17.003904'
+- seguros
+date: '2014-02-07'
+lastmod: '2025-07-13'
 related:
 - el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v.md
 - los-enemigos-del-canal-tradicional-de-venta-de-seguros.md
 - el-seguro-de-salud-suma-y-sigue.md
 - internet-of-things-en-el-sector-asegurador.md
 - el-seguro-de-credito-interesante-reto-tecnico.md
-slug: consultor-particular-de-seguros
-tags: []
+tags:
+- sin etiqueta
 title: Consultor particular de seguros
 url: /blog/consultor-particular-de-seguros/
 ---
-
 En España cada vez hay más emprendedores. Como no hay trabajo es necesario buscarse la vida para generar ingresos. No es una buena noticia, podemos crear algo parecido a “la burbuja de los emprendedores”. Espero equivocarme, esto da para otra entrada. El caso es que me gustaría ayudar a aquellas personas que deseen emprender. Mi idea ya tendrá precedentes y pondrá en pie de guerra a mediadores, corredores y muchos profesionales del seguro. ¿Por qué no crear un consultor particular de seguros?
 
 Actualmente en internet podemos recabar opiniones y precios de casi cualquier cosa. Por supuesto podemos recabar precios de seguros. Pero es evidente que si no somos expertos podemos tener algún problema con lo que contratemos a través de la web, además hay una gran oferta, terminas volviéndote loco. Por esto mismo a la hora de contratar un seguro somos muchos los que preferimos el asesoramiento y el trato personal de un profesional. Pero hay otros clientes que no tienen esa percepción de un seguro. Quieren un mínimo de coberturas y el precio es lo que más les importa a la hora de disponer de un seguro. Por otro lado está el cliente al que le interesa el precio del seguro pero necesita coberturas muy específicas y buscar ese asesoramiento puede resultarle caro. Hay distintos perfiles de asegurados.

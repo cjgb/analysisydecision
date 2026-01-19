@@ -1,25 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Business Intelligence
-- Sin catergoría
-date: '2009-04-12T13:11:46-05:00'
-lastmod: '2025-07-13T16:05:48.342038'
+- business intelligence
+- sin categoría
+date: '2009-04-12'
+lastmod: '2025-07-13'
 related:
 - sas-comienza-a-fijarse-en-r.md
 - integracion-de-r-con-sas-spss-y-otros.md
 - el-futuro-del-analisis-de-datos-pasa-por-r.md
 - porque-me-gusta-r.md
 - sas-global-forum-2009.md
-slug: sas-investiga-la-tecnologia-de-r
 tags:
-- ''
-- GNU
+- gnu
 - software comercial
 title: SAS investiga la tecnología de R
 url: /blog/sas-investiga-la-tecnologia-de-r/
 ---
-
 Sacado de[ http://www.decisionstats.com/](http://www.decisionstats.com/) muy interesante:
 
 

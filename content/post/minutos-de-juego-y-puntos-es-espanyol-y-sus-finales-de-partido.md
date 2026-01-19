@@ -1,24 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Consultoría
-- Fútbol
-- Opinión
-- R
-date: '2024-04-01T03:15:44-05:00'
-lastmod: '2025-07-13T16:02:37.003706'
+- consultoría
+- fútbol
+- opinión
+- r
+date: '2024-04-01'
+lastmod: '2025-07-13'
 related:
 - los-porteros-del-espanyol-y-la-regresion-binomial-negativa.md
 - resultados-de-la-liga-con-rstats-estudiando-graficamente-rachas.md
 - alineaciones-de-equipos-de-futbol-con-worldfootballr-de-rstats.md
 - pintando-campos-de-futbol-con-rstats-y-entendiendo-funciones-de-densidad.md
 - datos-de-eventing-gratuitos-en-statsbomb.md
-slug: minutos-de-juego-y-puntos-es-espanyol-y-sus-finales-de-partido
-tags: []
+tags:
+- sin etiqueta
 title: Minutos de juego y puntos. El Espanyol, sus finales de partido y mis enfados
 url: /blog/minutos-de-juego-y-puntos-es-espanyol-y-sus-finales-de-partido/
 ---
-
 Pienso que el Espanyol este 2024 se está dejando muchos puntos al final de los partidos. Cuando el partido llega al minuto 75 pierdo años de vida. ¿Es verdad que el Espanyol se está dejando puntos en el tramo final del partido? Vamos a estudiarlo numéricamente con worldfootballR y datos de FBRef empleando funciones que ya se han trabajado con anterioridad.
 
 El primer paso será obtener todos los partidos de la Liga Hypermotion de este 2024 con **fb_mach_url**

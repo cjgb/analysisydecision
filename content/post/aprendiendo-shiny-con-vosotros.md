@@ -1,23 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- R
-date: '2015-02-01T16:26:09-05:00'
-lastmod: '2025-07-13T15:54:11.707163'
+- formación
+- r
+date: '2015-02-01'
+lastmod: '2025-07-13'
 related:
 - aprendiendo-shiny-server-r-ui-r.md
 - aprendiendo-shiny-la-funcion-shinyui-seguida-de-fluidpage-o-fluidrow.md
 - rstats-shiny-leaftlet-mapas-interactivos.md
 - informes-con-r-en-html-comienzo-con-r2html-i.md
 - ajuste-de-splines-con-r.md
-slug: aprendiendo-shiny-con-vosotros
 tags:
 - shiny
 title: Aprendiendo shiny con vosotros
 url: /blog/aprendiendo-shiny-con-vosotros/
 ---
-
 No queda otro remedio. Necesito actualizarme un poco y comenzar a usar [shiny](http://shiny.rstudio.com/) y espero poder llegar a publicar en el blog las aplicaciones resultantes. No sé si seré capaz pero allá vamos. Lo primero es tener [Rstudio](http://www.rstudio.com/) instalado y empezar a escribir:
 
 install.packages(«shiny»)

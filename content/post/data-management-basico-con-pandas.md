@@ -1,23 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Python
-date: '2019-04-26T10:25:17-05:00'
-lastmod: '2025-07-13T15:56:03.257093'
+- formación
+- python
+date: '2019-04-26'
+lastmod: '2025-07-13'
 related:
 - manejo-de-datos-basico-con-python-datatable.md
 - data-management-con-dplyr.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-3-manejo-de-datos-con-r.md
 - primeros-pasos-con-julia-importar-un-csv-y-basicos-con-un-data-frame.md
 - truco-python-seleccionar-o-eliminar-variables-de-un-data-frame-en-base-a-un-prefijo-sufijo-o-si-contienen-un-caracter.md
-slug: data-management-basico-con-pandas
 tags:
-- Pandas
+- pandas
 title: Data Management básico con Pandas
 url: /blog/data-management-basico-con-pandas/
 ---
-
 Entrada dedicada al manejo de datos más básico con Python y Pandas, [es análoga a otra ya realizada con dplyr para R](https://analisisydecision.es/data-management-con-dplyr/). Sirve para tener en un vistazo las tareas más habituales que realizamos en el día a día con Pandas. Para aquel que se esté introduciendo al uso de Python puede ser de utilidad tener todo junto y más claro, a mi personalmente me sirve para no olvidar cosas que ya no uso. En una sola entrada recogemos las dudas más básicas cuando nos estamos iniciando con Python. Las tareas más comunes son:
 
   * Seleccionar columnas con python pandas

@@ -1,23 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- R
-- Trucos
-date: '2010-09-02T08:10:28-05:00'
-lastmod: '2025-07-13T16:09:34.669482'
+- formación
+- r
+- trucos
+date: '2010-09-02'
+lastmod: '2025-07-13'
 related:
 - trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados.md
 - trucos-sas-pasar-fecha-a-caracter-en-sas.md
 - trucos-excel-tranformar-un-caracter-a-fecha.md
 - trucos-sas-pasar-de-caracter-a-numerico-y-viceversa.md
 - truco-sas-transformar-variable-caracter-a-fecha.md
-slug: trucos-r-establecer-la-configuracion-local-de-una-fecha
-tags: []
+tags:
+- sin etiqueta
 title: Trucos R. Establecer la configuración local de una fecha
 url: /blog/trucos-r-establecer-la-configuracion-local-de-una-fecha/
 ---
-
 Cuando manejamos datos las fechas nos producen muchos quebraderos de cabeza, por ejemplo cuando tenemos que **transformar un caracter a fecha**. En mi opinión R es una de las herramientas las flexibles y rápidas para trabajar con fechas, claro que acostumbrado a SAS cualquier otra herramienta me parece perfecta. A lo que vamos, imaginemos la siguiente situación :
 
 ```r

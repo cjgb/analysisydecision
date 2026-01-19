@@ -1,24 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Excel
-- Formación
-- Trucos
-date: '2015-02-23T10:17:19-05:00'
-lastmod: '2025-07-13T16:09:18.538744'
+- excel
+- formación
+- trucos
+date: '2015-02-23'
+lastmod: '2025-07-13'
 related:
 - trucos-excel-repetir-filas-o-columnas-con-la-funcion-desref.md
 - trucos-excel-transponer-con-la-funcion-desref.md
 - truco-excel-transponer-una-fila-en-varias-columnas-con-desref.md
 - desref-para-trasponer-en-excel-varias-columnas.md
 - truco-excel-repetir-un-campo-a-partir-de-otro-que-define-el-numero-de-repeticiones.md
-slug: trucos-excel-repetir-filas-con-desref
 tags:
-- DESREF
+- desref
 title: Trucos Excel. Repetir filas con DESREF
 url: /blog/trucos-excel-repetir-filas-con-desref/
 ---
-
 [![desref repetir filas excel](/images/2015/02/desref-repetir-filas-excel-300x115.png)](/images/2015/02/desref-repetir-filas-excel.png)
 
 En respuesta a una [cuestión planteada por una lectora ](https://analisisydecision.es/trucos-excel-repetir-filas-o-columnas-con-la-funcion-desref/#comment-73872)en una entrada muy parecida a esta podemos usar la función de Excel DESREF para repetir registros el número de veces que deseemos. Como sabemos DESREF parte desde una celda referenciada y nos movemos FILAS y COLUMNAS en función de los parámetros. La sintaxis es DESREF(CELDA DE REFERENCIA; FILA; COLUMNA) de modo que si ponemos DESREF(A1;0;1) haremos referencia a la celda B1 o bien si ponemos DESREF(A1;1;0) hará refrencia a la celda A2. Para repetir lo que haremos será algo de este estilo:

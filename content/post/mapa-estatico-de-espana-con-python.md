@@ -1,21 +1,20 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-date: '2020-05-11T11:50:23-05:00'
-lastmod: '2025-07-13T16:01:54.929070'
+- formación
+date: '2020-05-11'
+lastmod: '2025-07-13'
 related:
 - animacion-de-un-mapa-con-python-porcentaje-de-vacunas-administradas.md
 - mover-parte-de-un-shapefile-con-r-mapa-de-la-tasa-de-casos-de-coronavirus-por-habitante-en-espana.md
 - mapas-estaticos-de-peru-con-r-y-python-a-nivel-de-distrito.md
 - mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel.md
 - mapas-municipales-de-espana-con-excel-y-qgis.md
-slug: mapa-estatico-de-espana-con-python
-tags: []
+tags:
+- sin etiqueta
 title: Mapa estático de España con Python
 url: /blog/mapa-estatico-de-espana-con-python/
 ---
-
 [![](/images/2020/05/Mapa_España_Python_comunidades_Autonomas.png)](/images/2020/05/Mapa_España_Python_comunidades_Autonomas.png)
 
 Faltaban **mapas de España con Python** en el blog y hoy ilustro como hacerlos con geopandas y matplotlib, creo que una de las formas más sencillas de hacer este tipo de mapas. No debía de ser necesaria esta entrada puesto que la realización del mapa debería hacerse con QGis pero es posible que alguien necesite hacer un mapa de España por Comunidades Autónomas de manera rápida y sencilla en su sesión de Python. Es necesario comentar que este trabajo está hecho con Ubuntu, en un entorno Windows la instalación del paquete geopandas es un dolor de cabeza.

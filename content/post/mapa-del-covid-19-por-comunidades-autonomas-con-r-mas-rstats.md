@@ -1,21 +1,20 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-date: '2020-03-18T03:19:34-05:00'
-lastmod: '2025-07-13T16:01:49.528131'
+- formación
+date: '2020-03-18'
+lastmod: '2025-07-13'
 related:
 - libreria-mapspain-en-rstats-mapas-estaticos-de-espana.md
 - mover-parte-de-un-shapefile-con-r-mapa-de-la-tasa-de-casos-de-coronavirus-por-habitante-en-espana.md
 - mapa-de-rstats-animado-con-el-porcentaje-de-vacunacion-en-espana.md
 - mi-breve-seguimiento-del-coronavirus-con-r.md
 - mapa-estatico-de-espana-con-python.md
-slug: mapa-del-covid-19-por-comunidades-autonomas-con-r-mas-rstats
-tags: []
+tags:
+- sin etiqueta
 title: 'Mapa del COVID-19 por Comunidades Autónomas con R (más #rstats)'
 url: /blog/mapa-del-covid-19-por-comunidades-autonomas-con-r-mas-rstats/
 ---
-
 [![](/images/2020/03/coronavirus7.png)](/images/2020/03/coronavirus7.png)
 
 Estoy muy activo en twitter con el #covid-19 estos días y eso está dando lugar a algunas entradas en el blog. Sin embargo, he parado esa actividad porque **el número de casos no me parece el indicador adecuado para medir la verdadera incidencia de la pandemia**. Empiezo a tener posibles casos entre personas conocidas y no se realiza ningún test, permanecen en casa y son casos no informados. Sin embargo, quería que esta entrada sirviera de homenaje a la gente de [Datadista ](https://datadista.com/) que está recogiendo datos y realizan un seguimiento del número de camas ocupadas, uno de los mejores indicadores. Además sigo mi labor formativa con Rstats, hoy toca:

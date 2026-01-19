@@ -1,30 +1,29 @@
 ---
 author: rvaquerizo
 categories:
-- Business Intelligence
-- Formación
-- Mapas
-- Monográficos
-- R
-date: '2020-04-23T13:31:57-05:00'
-lastmod: '2025-07-13T16:03:10.631382'
+- business intelligence
+- formación
+- mapas
+- monográficos
+- r
+date: '2020-04-23'
+lastmod: '2025-07-13'
 related:
 - animacion-de-un-mapa-con-python-porcentaje-de-vacunas-administradas.md
 - mapa-del-covid-19-por-comunidades-autonomas-con-r-mas-rstats.md
 - mapa-estatico-de-espana-con-python.md
 - libreria-mapspain-en-rstats-mapas-estaticos-de-espana.md
 - mapa-de-rstats-animado-con-el-porcentaje-de-vacunacion-en-espana.md
-slug: mover-parte-de-un-shapefile-con-r-mapa-de-la-tasa-de-casos-de-coronavirus-por-habitante-en-espana
 tags:
 - elide
 - maptools
 - raster
 - shapefile
+- mapas
 title: Mover parte de un shapefile con R. Mapa con tasa de casos de coronavirus por
   habitante en España
 url: /blog/mover-parte-de-un-shapefile-con-r-mapa-de-la-tasa-de-casos-de-coronavirus-por-habitante-en-espana/
 ---
-
 [![](/images/2020/04/coronavirus21.png)](/images/2020/04/coronavirus21.png)
 
 Si leéis habitualmente el blog ya conocéis la [entrada sobre el mapa del COVID por Comunidades Autónomas](https://analisisydecision.es/mapa-del-covid-19-por-comunidades-autonomas-con-r-mas-rstats/) y estaréis de acuerdo conmigo en que el mapa de España representado con Rstats es feo de solemnidad. Pero el código es «sencillo» por ahí se ve cada representación que requiere ser desarrollador de R cinturón negro. Bueno, los torpes empleamos ggplot con geom_polygon pero podemos empezar a complicar el mapa añadiendo nuevas posibilidades. La que os traigo hoy es muy interesante en el caso de España, se trata de mover las Islas Canarias en el mapa de Comunidades Autónomas pero directamente con R. [ Ya tenemos hecho un mapa con QGIS en otra entrada](https://analisisydecision.es/mover-elementos-de-un-mapa-con-qgis-ejemplo-mover-canarias/), pero ahora vamos a mover esa parte del shapefile directamente con R y [la función elide como hemos hecho en otra ocasión.](https://analisisydecision.es/el-brexit-con-rstats-o-como-mover-spatial-data-con-r/) Estaréis pensando «Vaquerizo no tiene imaginación por eso tira de entradas anteriores y las junta», no es el caso.

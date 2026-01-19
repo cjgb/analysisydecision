@@ -1,23 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Modelos
-- SAS
-- Trucos
-date: '2013-10-03T03:09:40-05:00'
-lastmod: '2025-07-13T16:08:31.828991'
+- modelos
+- sas
+- trucos
+date: '2013-10-03'
+lastmod: '2025-07-13'
 related:
 - truco-excel-y-sas-ejecutar-sas-desde-macro-en-excel.md
 - macros-faciles-de-sas-dias-de-un-mes-en-una-fecha.md
 - trucos-sas-macrovariable-a-dataset.md
 - truco-sas-sysecho-para-controlar-las-ejecuciones-en-enterprise-guide.md
 - trucos-sas-ejecutar-un-codigo-si-existe-una-tabla-o-un-fichero.md
-slug: truco-sas-retrasar-una-ejecucion-con-sleep
-tags: []
+tags:
+- sin etiqueta
 title: Truco SAS. Retrasar una ejecución con SLEEP
 url: /blog/truco-sas-retrasar-una-ejecucion-con-sleep/
 ---
-
 El método más sencillo para ejecutar SAS a una hora determinada es el empleo de la función SLEEP:
 
 ```r

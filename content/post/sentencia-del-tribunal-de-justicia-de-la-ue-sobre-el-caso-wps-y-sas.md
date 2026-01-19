@@ -1,23 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Consultoría
-- SAS
-- WPS
-date: '2012-05-02T15:28:47-05:00'
-lastmod: '2025-07-13T16:06:08.618494'
+- consultoría
+- sas
+- wps
+date: '2012-05-02'
+lastmod: '2025-07-13'
 related:
 - david-gana-a-goliat-la-sentencia-del-caso-sas-frente-a-wps.md
 - noticia-interesante-sobre-wps.md
 - wps-en-el-mercado-espanol.md
 - acercamiento-a-wps-migrando-desde-sas.md
 - comparativa-de-precio-wps-vs-sas.md
-slug: sentencia-del-tribunal-de-justicia-de-la-ue-sobre-el-caso-wps-y-sas
-tags: []
+tags:
+- sin etiqueta
 title: Sentencia del Tribunal de Justicia de la UE sobre el caso WPS y SAS
 url: /blog/sentencia-del-tribunal-de-justicia-de-la-ue-sobre-el-caso-wps-y-sas/
 ---
-
 [El caso de WPS y SAS por fin tiene un final](http://curia.europa.eu/juris/document/document.jsf?text=SAS%2BInstitute&docid=122362&pageIndex=0&doclang=ES&mode=req&dir=&occ=first&part=1&cid=148988#ctx1). World Programing Software ha vencido (por fin) al todo poderoso SAS Institute Inc. La sentencia establece que:
 
 De este modo, procede señalar que no puede haber infracción del derecho de autor sobre el programa de ordenador cuando, como sucede en el caso de autos, el adquirente legítimo de la licencia no ha tenido acceso al código fuente del programa de ordenador correspondiente a esa licencia, sino que se limitó a estudiar, observar y verificar ese programa con el fin de reproducir su funcionalidad en un segundo programa.

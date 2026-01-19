@@ -1,26 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Monográficos
-- R
-date: '2010-12-18T16:16:07-05:00'
-lastmod: '2025-07-13T16:03:01.175139'
+- formación
+- monográficos
+- r
+date: '2010-12-18'
+lastmod: '2025-07-13'
 related:
 - montemos-un-sistema-de-informacion-en-nuestro-equipo-i.md
 - montemos-un-sistema-de-informacion-en-nuestro-equipo-ii.md
 - manual-curso-introduccion-de-r-capitulo-5-lectura-avanzada-de-datos.md
 - parametros-en-nuestra-consulta-sql-server-desde-r-truco-r.md
 - manual-curso-introduccion-de-r-capitulo-4-contribuciones-a-r-paquetes.md
-slug: montemos-un-sistema-de-informacion-en-nuestro-equipo-iii
 tags:
 - pentaho
 - postgres
-- R
+- bases de datos
+- r
 title: Montemos un sistema de información en nuestro equipo (III)
 url: /blog/montemos-un-sistema-de-informacion-en-nuestro-equipo-iii/
 ---
-
 Vamos a conectar**R** a nuestra BBDD **postgres**. Lo vamos a hacer vía **ODBC** con el paquete de R**RODBC** [inciso] recordad que todo el trabajo lo estamos realizando bajo Win. Además trabajar con ODBC nos permitirá conectar nuestro postgres con Access o Excel. Aunque para este tipo de tarea recomiendo el uso del Data Integration de Pentaho. El primer paso será descargarnos de[ esta dirección ](http://www.postgresql.org/ftp/odbc/versions/msi/)los controladores ODBC para Postgres que se adecúen con nuestro S.O. y nuestra versión de postgres. Tras instalarlos ya podemos ir a las Herramientas Administrativas Orígenes de Datos ODBC e introducimos un nuevo DSN de sistema y de usuario:
 
 ![sinfo_casero7.png](/images/2010/12/sinfo_casero7.png)

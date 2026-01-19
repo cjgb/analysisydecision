@@ -1,22 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- R
-date: '2008-02-26T09:14:33-05:00'
-lastmod: '2025-07-13T16:01:27.911758'
+- formación
+- r
+date: '2008-02-26'
+lastmod: '2025-07-13'
 related:
 - manual-curso-introduccion-de-r-capitulo-3-lectura-de-datos.md
 - manual-curso-introduccion-de-r-capitulo-7-funciones-graficas-basicas-en-r.md
 - manual-curso-introduccion-de-r-capitulo-6-funciones-de-estadistica-descriptiva.md
 - truco-r-eval-parse-y-paste-para-automatizar-codigo.md
 - manual-curso-introduccion-de-r-capitulo-5-lectura-avanzada-de-datos.md
-slug: manual-curso-introduccion-de-r-capitulo-2-interfaz-y-primeras-sentencias
-tags: []
+tags:
+- sin etiqueta
 title: 'Manual. Curso introducción de R. Capítulo 2: Interfaz y primeras sentencias'
 url: /blog/manual-curso-introduccion-de-r-capitulo-2-interfaz-y-primeras-sentencias/
 ---
-
 En esta nueva entrega del curso comenzamos a trabajar con R. Ya nos hemos descargado e instalado la herramienta y es momento de conocer a grandes rasgos como funciona R. Si abrimos una sesión nos encontramos con la siguiente pantalla:
 
 ![](/images/2008/02/interfaz_r.JPG)

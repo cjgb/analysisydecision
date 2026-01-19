@@ -1,29 +1,27 @@
 ---
 author: rvaquerizo
 categories:
-- Consultoría
-- Data Mining
-- Formación
-- Monográficos
-- SAS
-date: '2012-03-26T08:34:18-05:00'
-lastmod: '2025-07-13T15:57:22.034811'
+- consultoría
+- data mining
+- formación
+- monográficos
+- sas
+date: '2012-03-26'
+lastmod: '2025-07-13'
 related:
 - sobremuestreo-y-pesos-a-las-observaciones-ahora-con-r.md
 - que-pasa-si-uso-una-regresion-de-poisson-en-vez-de-una-regresion-logistica.md
 - el-sobremuestreo-mejora-mi-estimacion.md
 - trucos-sas-medir-la-importancia-de-las-variables-en-nuestro-modelo-de-regresion-logistica.md
 - monografico-un-poco-de-proc-logistic.md
-slug: en-la-regresion-logistica-%c2%bfel-sobremuestreo-es-lo-mismo-que-asignar-pesos-a-las-observaciones
 tags:
-- OFFSET
-- PROC LOGISTIC
-- SOBREMUESTREO
+- offset
+- proc logistic
+- sobremuestreo
 title: En la regresión logística ¿el sobremuestreo es lo mismo que asignar pesos a
   las observaciones?
 url: /blog/en-la-regresion-logistica-c2bfel-sobremuestreo-es-lo-mismo-que-asignar-pesos-a-las-observaciones/
 ---
-
 Hoy vamos a volver sobre el tema del **sobremuestreo**. Respondemos a un lector, Roberto, que hace mucho tiempo planteó una duda al respecto. La duda se puede resumir: En un modelo logístico, ¿equivale entrenar un modelo con las observaciones sobremuestreadas a entrenar el modelo poniendo un peso a cada observación? Esta cuestión nunca me la había planteado. Siempre había realizado un sobremuestreo de las observaciones adecuando la población de casos negativos a la población de casos positivos. Si estás habituado a trabajar con **Enterprise Miner de SAS** es habitual asignar pesos a las observaciones para realizar el proceso de sobremuestreo. ¿Obtendremos distintos resultados?
 
 Vamos a estudiar un ejemplo con SAS y analizar que está pasando:

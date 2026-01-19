@@ -1,22 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-date: '2008-06-19T09:10:11-05:00'
-lastmod: '2025-07-13T15:57:05.751214'
+- formación
+- sas
+date: '2008-06-19'
+lastmod: '2025-07-13'
 related:
 - el-ods-de-sas-ii-dataset-desde-output.md
 - el-ods-de-sas-i-elementos-del-output.md
 - truco-sas-crear-ficheros-excel-sin-proc-export-i.md
 - truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
 - macros-sas-informe-de-un-dataset-en-excel.md
-slug: el-ods-de-sas-iii-documentos-html-y-pdf-desde-sas
-tags: []
+tags:
+- sin etiqueta
 title: El ODS de SAS (III). Documentos HTML y PDF desde SAS
 url: /blog/el-ods-de-sas-iii-documentos-html-y-pdf-desde-sas/
 ---
-
 Desde SAS podemos generar PDF y HTML. Esto es muy práctico a la hora de reportar información ya que no necesitaremos pasar por Excel o cualquier otra herramienta de ofimática para generar informes. Además, si generamos HTML podemos crear webs en las que podemos navegar por los resultados obtenidos con SAS. En este mensaje veremos algunos ejemplos prácticos de uso del ODS para conocer mejor su funcionamiento. El primero de ellos crea un informe web a partir de un proc univariate:
 
 ```r

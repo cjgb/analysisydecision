@@ -1,22 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- R
-date: '2008-03-10T09:39:46-05:00'
-lastmod: '2025-07-13T16:01:31.964497'
+- formación
+- r
+date: '2008-03-10'
+lastmod: '2025-07-13'
 related:
 - manual-curso-introduccion-de-r-capitulo-3-lectura-de-datos.md
 - manual-curso-introduccion-de-r-capitulo-4-contribuciones-a-r-paquetes.md
 - montemos-un-sistema-de-informacion-en-nuestro-equipo-iii.md
 - parametros-en-nuestra-consulta-sql-server-desde-r-truco-r.md
 - tres-fracasos-y-medio-con-r.md
-slug: manual-curso-introduccion-de-r-capitulo-5-lectura-avanzada-de-datos
-tags: []
+tags:
+- sin etiqueta
 title: 'Manual. Curso introducción de R. Capítulo 5: Lectura avanzada de datos'
 url: /blog/manual-curso-introduccion-de-r-capitulo-5-lectura-avanzada-de-datos/
 ---
-
 En esta nueva entrega aprenderemos a importar datos a R desde otras fuentes. Habitualmente no introduciremos manualmente los datos, emplearemos las posibilidades de lectura que nos ofrece R. En este capítulo leeremos ficheros de texto y ficheros Access, para ello necesitaremos el paquete de R [RODBC](http://cran.cict.fr/bin/windows/contrib/2.3/RODBC_1.1-7.zip).
 
 Para leer fichero de texto emplearemos un fichero de ejemplo GRADES.TXT que es un fichero de texto delimitado por espacios y sin cabeceras, tiene los siguientes campos:

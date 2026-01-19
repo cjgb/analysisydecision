@@ -1,29 +1,26 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Monográficos
-- WPS
-date: '2011-02-16T15:42:13-05:00'
-lastmod: '2025-07-13T15:55:57.753656'
+- formación
+- monográficos
+- wps
+date: '2011-02-16'
+lastmod: '2025-07-13'
 related:
 - curso-de-lenguaje-sas-con-wps-subconjuntos-de-variables-con-drop-y-keep.md
 - laboratorio-de-codigo-sas-comparativa-entre-if-y-where.md
 - curso-de-lenguaje-sas-con-wps-el-paso-data.md
 - curso-de-lenguaje-sas-con-wps-ejecuciones.md
 - en-merge-mejor-if-o-where.md
-slug: curso-de-lenguaje-sas-con-wps-sentencias-condicionales-if-then
 tags:
-- ''
-- DELETE
-- ELSE
-- IF
+- delete
+- else
+- if
 - output
-- THEN
+- then
 title: Curso de lenguaje SAS con WPS. Sentencias condicionales IF THEN
 url: /blog/curso-de-lenguaje-sas-con-wps-sentencias-condicionales-if-then/
 ---
-
 Las sentencias**IF THEN** son básicas en la programación SAS y en todos los lenguajes. Su estructura es muy sencilla: IF <condición> THEN <acción>; ELSE <acción>. Todas estas sentencias empezarán con IF y como condición podemos poner una o varias. Para crearlas tenemos los operadores de comparación:
 
 ![operadores-de-comparacion.png](/images/2011/02/operadores-de-comparacion.png)

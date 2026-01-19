@@ -1,27 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- Data Mining
-- Formación
-- Monográficos
-- R
-date: '2010-01-26T16:31:15-05:00'
-lastmod: '2025-07-13T16:02:53.215035'
+- data mining
+- formación
+- monográficos
+- r
+date: '2010-01-26'
+lastmod: '2025-07-13'
 related:
 - regresion-con-redes-neuronales-en-r.md
 - monografico-arboles-de-clasificacion-con-rpart.md
 - monografico-un-poco-de-proc-logistic.md
 - como-salva-la-linealidad-una-red-neuronal.md
 - representacion-de-redes-neuronales-con-r.md
-slug: monografico-paquete-de-r-nnet-para-modelos-de-redes-neuronales
 tags:
 - nnet
-- R
+- r
 - redes neuronales
 title: Monográfico. Paquete de R NNET para modelos de redes neuronales
 url: /blog/monografico-paquete-de-r-nnet-para-modelos-de-redes-neuronales/
 ---
-
 Quiero introduciros a los **modelos de redes neuronales** **con R** , mas concretamente quiero acercaros al módulo **_nnet_** de R. Tenemos extensa literatura al respecto de las redes neuronales, personalmente considero de lectura obligatoria [este link](http://halweb.uc3m.es/esp/Personal/personas/jmmarin/esp/DM/tema3dm.pdf) (y prácticamente toda la documentación de este profesor) El paquete **_nnet_** nos permite crear redes neuronales de clasificación monocapa. Las redes neuronales clasifican mediante algoritmos o métodos de entrenamiento, en función de estos métodos podemos tener redes supervisadas y redes no supervisadas. Las primeras buscan un límite de decisión lineal a través de un entrenamiento. Las segundas parten de unos parámetros (pesos) fijos y no requieren entrenamiento porque realizan mecanismos de aprendizaje en función de experiencias anteriores. Como ya os he indicado hay mucha bibliografía al respecto y muchas entradas en Google que pueden ayudaros a conocer mejor estos modelos. En el caso que nos ocupa, y como viene siendo tónica habitual de la bitácora, vamos a darle una visión más práctica (tampoco soy yo el más adecuado para dar esa visión teórica). Trabajamos en una gran Caja española y nuestro responsable nos pide realizar una selección de clientes para un mailing. Tenemos que «colocar» planes de pensiones vitalicios inmediatos. A nosotros se nos ocurre realizar un modelo de redes neuronales para seleccionar aquellos clientes con una puntuación más alta y, por tanto, más propensos a comprar el producto.
 
 Como en anteriores ejemplos partimos de un objeto con datos aleatorios que simula la cartera de una entidad bancaria. Queremos determinar que clientes son mas propensos a la contratación de un plan vitalicio de pensión inmediata para seleccionarlos y lanzar una comunicación comercial sobre ellos. Simulamos una cartera de 20.000 clientes:

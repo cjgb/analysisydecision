@@ -1,26 +1,24 @@
 ---
 author: cgbellosta
 categories:
-- Formación
-- SAS
-date: '2009-11-22T09:19:29-05:00'
-lastmod: '2025-07-13T15:57:55.891543'
+- formación
+- sas
+date: '2009-11-22'
+lastmod: '2025-07-13'
 related:
 - la-funcion-lag-de-sas.md
 - laboratorio-de-codigo-sas-vistas-proc-means-vs-proc-sql.md
 - curso-de-lenguaje-sas-con-wps-ejecuciones.md
 - trucos-sas-trasponer-con-sql-para-torpes.md
 - proc-sql-merge-set.md
-slug: funciones-de-ventana-sas-y-bases-de-datos
 tags:
 - funciones de ventana
 - lag
-- SAS
-- SQL
+- sas
+- sql
 title: Funciones de ventana, SAS y bases de datos
 url: /blog/funciones-de-ventana-sas-y-bases-de-datos/
 ---
-
 Hace unos meses padecí (eso sí, brevemente) un proyecto que consistía en la migración de cierto código en SAS (¡nos lo pasaron como un documento de 20 hojas de Word!) a otro lenguaje de programación.
 
 Esencialmente, desde la nueva plataforma habrían de lanzarse consultas a cierta base de datos (cuando el código SAS permitiese resolver los cálculos como una consulta de SQL) y procesarse los resultados procedimentalmente desde el nuevo lenguaje de programación cuando SQL ,declarativo, no fuese suficiente. Surgió el problema de que el lenguaje procedimental era incapaz de procesar bloques tan grandes de información. Pero ésa es otra historia.

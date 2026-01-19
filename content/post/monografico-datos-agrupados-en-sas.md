@@ -1,18 +1,17 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Monográficos
-- SAS
-date: '2009-11-06T09:18:58-05:00'
-lastmod: '2025-07-13T16:02:48.586505'
+- formación
+- monográficos
+- sas
+date: '2009-11-06'
+lastmod: '2025-07-13'
 related:
 - monografico-first-y-last-ejemplos-en-data.md
 - macros-sas-agrupando-variables-categoricas.md
 - pasando-de-sas-a-r-primer-y-ultimo-elemento-de-un-campo-agrupado-de-un-data-frame.md
 - macros-sas-ordenar-alfabeticamente-las-variables-de-un-dataset.md
 - las-cuentas-claras.md
-slug: monografico-datos-agrupados-en-sas
 tags:
 - by
 - first
@@ -21,7 +20,6 @@ tags:
 title: Monográfico. Datos agrupados en SAS
 url: /blog/monografico-datos-agrupados-en-sas/
 ---
-
 A continuación os planteo un monográfico más orientado a principiantes con SAS. Vamos a realizar un acercamiento a los conjuntos de datos SAS agrupados por variables. La premisa fundamental es: **un conjunto de datos SAS está agrupado por una variable si está ordenado por ella**. Para ordenar variables empleamos el PROC SORT:
 
 PROC SORT DATA= ;

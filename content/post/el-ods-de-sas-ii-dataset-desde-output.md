@@ -1,22 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-date: '2008-05-19T08:07:38-05:00'
-lastmod: '2025-07-13T15:57:04.396002'
+- formación
+- sas
+date: '2008-05-19'
+lastmod: '2025-07-13'
 related:
 - el-ods-de-sas-i-elementos-del-output.md
 - truco-sas-crear-ficheros-excel-sin-proc-export-i.md
 - el-ods-de-sas-iii-documentos-html-y-pdf-desde-sas.md
 - truco-sas-proc-contents.md
 - macros-sas-informe-de-un-dataset-en-excel.md
-slug: el-ods-de-sas-ii-dataset-desde-output
-tags: []
+tags:
+- sin etiqueta
 title: El ODS de SAS (II). Dataset desde OUTPUT
 url: /blog/el-ods-de-sas-ii-dataset-desde-output/
 ---
-
 Ya vimos el funcionamiento de ODS TRACE ON/OFF. Ahora crearemos datasets a partir del OUTPUT que genera un paso PROC de SAS con ODS. Lo principal es conocer como se denomina cada parte del OUTPUT, esto lo conseguimos con TRACE y analizando el LOG. Una vez conocemos la salida empleamos ODS OUTPUT <nombre de la salida> = libreria.dataset. En el ejemplo que teníamos:
 
 ```

@@ -1,23 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-date: '2012-12-21T06:02:27-05:00'
-lastmod: '2025-07-13T15:58:46.128766'
+- formación
+- sas
+date: '2012-12-21'
+lastmod: '2025-07-13'
 related:
 - truco-sas-proc-format-vs-formato-percent.md
 - curso-de-lenguaje-sas-con-wps-variables.md
 - macros-sas-agrupando-variables-categoricas.md
 - macros-faciles-de-sas-eliminar-outliers-en-una-variable.md
 - trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados.md
-slug: intervalos-en-sas-con-proc-format
 tags:
-- PROC FORMAT
+- proc format
 title: Intervalos en SAS con PROC FORMAT
 url: /blog/intervalos-en-sas-con-proc-format/
 ---
-
 El uso de formatos en SAS para la creación de intervalos puede ahorrarnos tanto escritura de código como espacio en nuestros conjuntos de datos SAS. Una vez que nos familiaricemos con ellos evitaremos la creación de sentencias IF anidadas y generar nuevas variables de texto de gran longitud en nuestro dataset. Sin embargo siempre me plantean la misma cuestión, ¿por dónde están cerrados los intervalos en un formato? Hoy vamos a generar una serie de ejemplos para analizar este tema. Partimos de un conjunto de datos aleatorio con una variable de poisson con media 18:
 
 ```r

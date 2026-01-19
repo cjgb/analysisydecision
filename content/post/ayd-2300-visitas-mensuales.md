@@ -1,22 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Business Intelligence
-- Sin catergoría
-date: '2009-11-08T13:56:49-05:00'
-lastmod: '2025-07-13T15:54:20.720108'
+- business intelligence
+- sin categoría
+date: '2009-11-08'
+lastmod: '2025-07-13'
 related:
 - 1500-visitas-mensuales.md
 - contenidos-para-octubre-de-ayd.md
 - contenidos-web-analisis-informacion.md
 - el-ano-2009-para-analisis-y-decision.md
 - el-ano-2010-para-analisisydecision.md
-slug: ayd-2300-visitas-mensuales
-tags: []
+tags:
+- sin etiqueta
 title: 'AyD: 2.300 visitas mensuales'
 url: /blog/ayd-2300-visitas-mensuales/
 ---
-
 Google Analytics dice esto:
 
 ![uso-del-sitio.JPG](/images/2009/11/uso-del-sitio.JPG)

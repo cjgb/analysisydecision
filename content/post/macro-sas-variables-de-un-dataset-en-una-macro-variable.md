@@ -1,24 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Monográficos
-- SAS
-- Trucos
-date: '2012-09-06T01:25:06-05:00'
-lastmod: '2025-07-13T16:00:44.535096'
+- formación
+- monográficos
+- sas
+- trucos
+date: '2012-09-06'
+lastmod: '2025-07-13'
 related:
 - trucos-sas-lista-de-datasets-en-macro-variable.md
 - macros-faciles-de-sas-determinar-si-existe-una-variable-en-un-dataset.md
 - trucos-sas-eliminar-etiquetas-en-los-conjunto-de-datos-sas.md
 - macros-sas-ordenar-alfabeticamente-las-variables-de-un-dataset.md
 - trucos-sas-macrovariable-a-dataset.md
-slug: macro-sas-variables-de-un-dataset-en-una-macro-variable
-tags: []
+tags:
+- sin etiqueta
 title: Macro SAS. Variables de un dataset en una macro variable
 url: /blog/macro-sas-variables-de-un-dataset-en-una-macro-variable/
 ---
-
 Hoy os presento una macro de SAS que nos permite recoger en una macro variable las variables de un conjunto de datos SAS. Tiene como particularidad que nos sirve para seleccionar aquellas variables que tienen un determinado patrón, del tipo consumo2010, consumo2011,… Es un código un poco más complejo de lo habitual pero tiene aspectos interesantes:
 
 ```r

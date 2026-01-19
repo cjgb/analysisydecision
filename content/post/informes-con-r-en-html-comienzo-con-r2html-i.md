@@ -1,33 +1,30 @@
 ---
 author: rvaquerizo
 categories:
-- Business Intelligence
-- Consultoría
-- Formación
-- Monográficos
-- R
-date: '2011-11-28T04:42:48-05:00'
-lastmod: '2025-07-13T15:58:39.376707'
+- business intelligence
+- consultoría
+- formación
+- monográficos
+- r
+date: '2011-11-28'
+lastmod: '2025-07-13'
 related:
 - graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
 - stadistical-data-warehouse-del-european-central-bank-con-r-y-los-depositos-a-perdidas.md
 - monografico-arboles-de-clasificacion-con-rpart.md
 - arboles-de-decision-con-sas-base-con-r-por-supuesto.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
-slug: informes-con-r-en-html-comienzo-con-r2html-i
 tags:
-- ''
 - ddply
 - ggplot2
 - informes
 - memisc
 - plyr
-- R2HTML
+- r2html
 - recode
 title: Informes con R en HTML. Comienzo con R2HTML (I)
 url: /blog/informes-con-r-en-html-comienzo-con-r2html-i/
 ---
-
 En las III jornadas de R tuve el placer de asistir al[ taller de Gregorio Serrano sobre informes con R](http://demo.usar.org.es/Taller+4). Me abrió los ojos. Siempre he pensado que R no es una herramienta que sirva para hacer informes _[modo consultor = ON]_ R no servía para realizar reporting _[modo consultor = OFF]_. Pero R tiene un poderoso motor gráfico y dispone del paquete **R2HTML** para poder realizar tablas en HTML y si trabajamos con libros CSS de estilos podemos obtener resultados muy atractivos. Así que la otra tarde me puse manos a la obra y creo que puede salir una trilogía interesante. Bueno, depende del interés que despierte esta entrada del blog haré más entregas, pero de momento tengo en mente llegar a 3.
 
 Seguimos con el sistema habitual. Simulo unos datos de ejemplo que podéis copiar y pegar en vuestra consola de R:

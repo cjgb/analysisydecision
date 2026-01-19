@@ -1,25 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-- Trucos
-date: '2010-07-29T02:58:29-05:00'
-lastmod: '2025-07-13T16:10:20.541762'
+- formación
+- sas
+- trucos
+date: '2010-07-29'
+lastmod: '2025-07-13'
 related:
 - macros-sas-primer-y-ultimo-dia-del-mes-de-una-fecha-sas.md
 - macros-faciles-de-sas-dias-de-un-mes-en-una-fecha.md
 - macros-sas-transformar-un-numerico-a-fecha.md
 - trucos-sas-operar-con-fechas-yyyymm-tipicas-de-particiones-oracle.md
 - trabajo-con-fechas-sas-funciones-fecha.md
-slug: trucos-sas-numero-de-dias-de-un-mes
 tags:
 - fechas sas
-- INTNX
+- intnx
 title: Trucos SAS. Número de días de un mes
 url: /blog/trucos-sas-numero-de-dias-de-un-mes/
 ---
-
 Están entrando muchas visitas con las palabras «número de días de un mes en SAS». Y hoy vamos a dar respuesta a estas entradas con una macro y un truco de SAS. Si tenemos una fecha en formato AAAAMM numérica, típica de las particiones de Oracle, disponemos de la siguiente macro:
 
 ```r

@@ -1,23 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Excel
-- Trucos
-date: '2016-03-08T09:25:03-05:00'
-lastmod: '2025-07-13T15:56:20.974862'
+- excel
+- trucos
+date: '2016-03-08'
+lastmod: '2025-07-13'
 related:
 - truco-excel-transponer-una-fila-en-varias-columnas-con-desref.md
 - trucos-excel-transponer-con-la-funcion-desref.md
 - trucos-excel-repetir-filas-o-columnas-con-la-funcion-desref.md
 - trucos-excel-repetir-filas-con-desref.md
 - trucos-excel-trasponer-con-la-funcion-indirecto.md
-slug: desref-para-trasponer-en-excel-varias-columnas
 tags:
-- DESREF
+- desref
 title: DESREF para trasponer en Excel varias columnas
 url: /blog/desref-para-trasponer-en-excel-varias-columnas/
 ---
-
 [Hoy han planteado una duda en el blog que me ha parecido interesante](https://analisisydecision.es/trucos-excel-trasponer-con-la-funcion-indirecto/#comment-94010) porque es un buen ejemplo de uso de la **función DESREF de Excel** para trasponer filas en columnas con cierto criterio. La idea que planteaba es realizar una trasposición de 3 en 3 elementos como indica en la figura:
 
 ![ejemplo_trasponer_desref](/images/2016/03/ejemplo_trasponer_desref-300x193.png)

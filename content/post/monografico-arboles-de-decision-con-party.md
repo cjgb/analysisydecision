@@ -1,28 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- Data Mining
-- Formación
-- Modelos
-- R
-date: '2010-01-09T05:13:59-05:00'
-lastmod: '2025-07-13T16:02:45.682154'
+- data mining
+- formación
+- modelos
+- r
+date: '2010-01-09'
+lastmod: '2025-07-13'
 related:
 - monografico-arboles-de-clasificacion-con-rpart.md
 - trucos-r-llevar-a-sas-las-reglas-de-un-arbol-de-decision.md
 - arboles-de-decision-con-sas-base-con-r-por-supuesto.md
 - monografico-un-poco-de-proc-logistic.md
 - el-sobremuestreo-mejora-mi-estimacion.md
-slug: monografico-arboles-de-decision-con-party
 tags:
-- ''
 - árboles de decisión
 - party
-- RPART
+- rpart
 title: Monografico. Arboles de decisión con party
 url: /blog/monografico-arboles-de-decision-con-party/
 ---
-
 Los árboles de clasificación son una de las técnicas de análisis más utilizadas. No requieren supuestos distribucionales, permite detectar interacciones entre variables y no es muy sensible a la presencia de valores perdidos y outliers. En resumen, es una técnica que no quita mucho tiempo al analista para hacer consultas carentes de valor para sus responsables y permite identificar tanto perfiles positivos como perfiles negativos. Además, sus resultados son muy fáciles de interpretar. Tan fáciles que, **INCLUSO** , las áreas de negocio pueden entender sus resultados. Por todo esto estamos ante una de las técnicas más extendidas. En el blog ya hicimos un [breve monográfico con _rpart_ de R](https://analisisydecision.es/monografico-arboles-de-clasificacion-con-rpart/) y nos quedaba realizar una revisión al paquete _party_. La metodología para esta rápida revisión será la habitual, planteamos un ejemplo y realizamos un análisis con las instrucciones de _party_.
 
 Al igual que no hicimos para el monográfico de _Rpart_ simulamos la cartera de un banco con 20.000 clientes. Deseamos establecer perfiles de clientes propensos a contratar un plan vitalicio de pensión inmediata, las variables con las que contamos son:

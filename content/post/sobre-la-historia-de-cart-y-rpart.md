@@ -1,26 +1,24 @@
 ---
 author: cgbellosta
 categories:
-- Data Mining
-- Modelos
-- R
-date: '2009-06-25T05:26:26-05:00'
-lastmod: '2025-07-13T16:06:19.953064'
+- data mining
+- modelos
+- r
+date: '2009-06-25'
+lastmod: '2025-07-13'
 related:
 - trucos-r-llevar-a-sas-las-reglas-de-un-arbol-de-decision.md
 - partykit-un-paquete-de-r-para-generar-y-manipular-arboles-de-decision.md
 - monografico-arboles-de-decision-con-party.md
 - porque-me-gusta-r.md
 - recodificar-el-valor-de-un-factor-en-r.md
-slug: sobre-la-historia-de-cart-y-rpart
 tags:
 - árboles de decisión
-- CART
-- R
+- cart
+- r
 title: Sobre la historia de CART y rpart
 url: /blog/sobre-la-historia-de-cart-y-rpart/
 ---
-
 Hace unos días conversábamos Raúl y yo sobre árboles de clasificación. En particular, hablábamos de [CART](http://www.salfordsystems.com/cart.php), el algoritmo propietario de [Salford Systems](http://www.salfordsystems.com). Me intrigó saber cuál sería la diferencia entre dicho algoritmo y la alternativa existente en R, [rpart](http://cran.r-project.org/web/packages/rpart/index.html).
 
 El autor de dicho paquete, [Terry Therneau](http://mayoresearch.mayo.edu/staff/therneau_tm.cfm), tuvo la gentileza de ofrecer una introducción histórica al particular de la que ofrezco algunos fragmentos que traduzco yo mismo a continuación:

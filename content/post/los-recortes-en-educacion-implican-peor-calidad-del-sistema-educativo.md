@@ -1,24 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Excel
-- Sin catergoría
-date: '2012-04-12T13:29:58-05:00'
-lastmod: '2025-07-13T16:00:35.026420'
+- excel
+- sin categoría
+date: '2012-04-12'
+lastmod: '2025-07-13'
 related:
 - lecciones-de-economia-de-un-ignorante-espana-esta-salvando-a-alemania-pero-alemania-no-esta-salvando-europa.md
 - mas-recortes-para-la-ciencia-espanola.md
 - lecciones-de-economia-de-un-ignorante-poniendo-fecha-a-la-intervencion-de-espana.md
 - bajar-los-tipos-a-la-japonesa-al-0.md
 - lecciones-de-economia-de-un-ignorante-solucion-trabajar-mas-y-cobrar-menos.md
-slug: los-recortes-en-educacion-%c2%bfimplican-peor-calidad-del-sistema-educativo
 tags:
 - crisis
 - recortes
 title: Los recortes en educación, ¿implican peor calidad del sistema educativo?
 url: /blog/los-recortes-en-educacion-c2bfimplican-peor-calidad-del-sistema-educativo/
 ---
-
 Mucho se está hablando de los recortes en educación que va a llevar a cabo el Gobierno español. Es evidente que la educación en España no funciona muy bien. No lo digo yo, lo dice el informe PISA:
 
 <http://www.oecd.org/dataoecd/54/12/46643496.pdf>

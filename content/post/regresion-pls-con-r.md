@@ -1,23 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Modelos
-- R
-date: '2014-08-18T02:09:05-05:00'
-lastmod: '2025-07-13T16:05:16.176374'
+- formación
+- modelos
+- r
+date: '2014-08-18'
+lastmod: '2025-07-13'
 related:
 - regresion-ridge-o-contraida-con-r.md
 - manual-curso-introduccion-de-r-capitulo-14-introduccion-al-calculo-matricial-con-analisis-de-componentes-principales.md
 - manual-curso-introduccion-de-r-capitulo-10-funciones-graficas-en-regresion-lineal.md
 - manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
 - primeros-pasos-con-regresion-no-lineal-nls-con-r.md
-slug: regresion-pls-con-r
-tags: []
+tags:
+- sin etiqueta
 title: Regresión PLS con R
 url: /blog/regresion-pls-con-r/
 ---
-
 El tema que estoy estudiando estos días es la regresión por mínimos cuadrados parciales, partial least squares (PLS). Para documentarme teóricamente y conocer las principales posibilidades de R [estoy empleando este documento](http://www.jstatsoft.org/v18/i02/paper). Para argumentar el uso de esta técnica de nuevo partimos del modelo lineal general Y = X • Beta + Error donde Beta = inv(X’X) * X’Y y ya analizamos los trastornos que nos provoca la inv(X’X) cuando hay columnas de X que son linealmente dependientes, cuando hay multicolinealidad. En ese caso empleábamos la regresión ridge. Bueno, imaginemos esta situación, tenemos más variables que observaciones. Entonces si que no somos capaces de tener una solución para la inv(X’X). Para este problema contamos con los mínimos cuadrados parciales.
 
 Como siempre se trata de estimar Y a partir de X con la salvedad de que X tiene más columnas que filas y el modelo de mínimos cuadrados ordinarios no tiene solución. En este caso lo primero que se nos puede ocurrir es realizar un análisis de componentes principales de X para reducir la dimensionalidad. Estaríamos ante la regresión por componentes principales, principal components regression (PCR). Esta técnica está íntimamente ligada a la PLS. Lo que haremos será estimar Y a partir de las componentes principales de X. Por definición las componentes principales sirven para reducir la dimensionalidad capturando la mayor varianza de los datos, se seleccionan matricialmente las componentes de mayor a menor contribución a la variabilidad de los datos. Si transformamos la matriz X = UdV donde U’U = V’V = I son los vectores singulares y d es la matriz con los valores singulares ya podremos obtener una solución por mínimos cuadrados.

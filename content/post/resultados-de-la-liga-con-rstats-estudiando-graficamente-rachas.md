@@ -1,27 +1,26 @@
 ---
 author: rvaquerizo
 categories:
-- Consultoría
-- Fútbol
-- Formación
-- Gráficos
-- Monográficos
-- R
-- Trucos
-date: '2023-03-01T13:00:26-05:00'
-lastmod: '2025-07-13T16:05:23.559296'
+- consultoría
+- fútbol
+- formación
+- gráficos
+- monográficos
+- r
+- trucos
+date: '2023-03-01'
+lastmod: '2025-07-13'
 related:
 - alineaciones-de-equipos-de-futbol-con-worldfootballr-de-rstats.md
 - minutos-de-juego-y-puntos-es-espanyol-y-sus-finales-de-partido.md
 - los-porteros-del-espanyol-y-la-regresion-binomial-negativa.md
 - pintando-campos-de-futbol-con-rstats-y-entendiendo-funciones-de-densidad.md
 - mi-breve-seguimiento-del-coronavirus-con-r.md
-slug: resultados-de-la-liga-con-rstats-estudiando-graficamente-rachas
-tags: []
+tags:
+- sin etiqueta
 title: Resultados de La Liga con rstats. Estudiando gráficamente rachas
 url: /blog/resultados-de-la-liga-con-rstats-estudiando-graficamente-rachas/
 ---
-
 [![](/images/2023/03/wp_editor_md_13f039a1fbdc6199942259afa7e76711.jpg)](/images/2023/03/wp_editor_md_13f039a1fbdc6199942259afa7e76711.jpg)
 Vamos a crear un gráfico con #rstats que recoja los resultados de La Liga equipo a equipo para poder estudiar rachas e «intuir» como puede ser la segunda vuelta. Además, este ejercicio es un buen uso del paquete `worldfootballR` y la función de ggplot `geom_tile` además me va a servir para animarme esta segunda vuelta para que el Español no sufra. La web que vamos a emplear para el trabajo es [FBREF](https://fbref.com/es/ "FBREF"). Empezamos.
 

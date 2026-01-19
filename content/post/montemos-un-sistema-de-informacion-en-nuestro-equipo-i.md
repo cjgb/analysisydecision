@@ -1,26 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- Business Intelligence
-- Formación
-- Monográficos
-date: '2010-11-27T12:16:23-05:00'
-lastmod: '2025-07-13T16:03:04.563828'
+- business intelligence
+- formación
+- monográficos
+date: '2010-11-27'
+lastmod: '2025-07-13'
 related:
 - montemos-un-sistema-de-informacion-en-nuestro-equipo-iii.md
 - montemos-un-sistema-de-informacion-en-nuestro-equipo-ii.md
 - evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso.md
 - conectar-r-a-una-base-de-datos.md
 - estadistica-para-cientificos-de-datos-con-r-introduccion.md
-slug: montemos-un-sistema-de-informacion-en-nuestro-equipo-i
 tags:
 - pentaho
 - postgres
-- R
+- bases de datos
+- r
 title: Montemos un sistema de información en nuestro equipo (I)
 url: /blog/montemos-un-sistema-de-informacion-en-nuestro-equipo-i/
 ---
-
 Un poco de bricolaje. Se trata de crear un sistema de información sin coste y que nos permita almacenar nuestros datos con orden y coherencia, crear informes y realizar modelos matemáticos bajo Windows. Es perfectamente replicable para Linux. También estoy abierto a sugerencias ya que tampoco soy ningún experto en el tema y podemos crear un debate interesante. El sistema que planteo se va a sustentar en 3 pilares fundamentales que os podéis descargar de forma gratuita en los link creados:
 
   * [Postgres: ](http://www.postgresql.org/)

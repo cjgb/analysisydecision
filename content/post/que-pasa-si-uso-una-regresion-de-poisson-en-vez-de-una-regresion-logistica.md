@@ -1,28 +1,26 @@
 ---
 author: rvaquerizo
 categories:
-- Data Mining
-- Modelos
-- Monográficos
-- SAS
-date: '2016-09-19T02:08:06-05:00'
-lastmod: '2025-07-13T16:05:02.648561'
+- data mining
+- modelos
+- monográficos
+- sas
+date: '2016-09-19'
+lastmod: '2025-07-13'
 related:
 - en-la-regresion-logistica-el-sobremuestreo-es-lo-mismo-que-asignar-pesos-a-las-observaciones.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-15-modelos-glm-regresion-logistica-y-regresion-de-poisson.md
 - sobremuestreo-y-pesos-a-las-observaciones-ahora-con-r.md
 - monografico-un-poco-de-proc-logistic.md
 - manual-curso-introduccion-de-r-capitulo-18-modelos-de-regresion-de-poisson.md
-slug: que-pasa-si-uso-una-regresion-de-poisson-en-vez-de-una-regresion-logistica
 tags:
 - proc genmod
-- PROC LOGISTIC
+- proc logistic
 - regresión logística
 - regresión poisson
 title: Qué pasa si uso una regresión de poisson en vez de una regresión logística
 url: /blog/que-pasa-si-uso-una-regresion-de-poisson-en-vez-de-una-regresion-logistica/
 ---
-
 Para un tema de mi trabajo voy a utilizar una regresión de poisson en vez de una regresión logística, el evento es si o no y no tiene nada que ver el tiempo, ni se puede contabilizar como un número, pero a efectos prácticos es mejor para mi usar una regresión de poisson. Entonces, ¿qué pasa si hago una poisson en vez de binomial? [Como siempre si mi n es muy grande hay relación entre ambas distribuciones](https://en.wikipedia.org/wiki/Relationships_among_probability_distributions). Pero yo quiero saber si me puede clasificar mis registros igual una regresión de poisson y una binomial y se me ha ocurrido hacer un ejercicio teórico muy simple.
 
 Construyo con SAS 10.000 datos aleatorios con las variables independientes x e y normalmente distribuidas y la variable dependiente z que es una función logística «perfecta» de x e y:

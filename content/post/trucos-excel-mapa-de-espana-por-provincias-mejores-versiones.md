@@ -1,26 +1,26 @@
 ---
 author: rvaquerizo
 categories:
-- Excel
-- Formación
-- Monográficos
-- Trucos
-date: '2011-07-03T15:25:11-05:00'
-lastmod: '2025-07-13T16:09:07.378678'
+- excel
+- formación
+- monográficos
+- trucos
+date: '2011-07-03'
+lastmod: '2025-07-13'
 related:
 - trucos-excel-mapa-de-espana-por-provincias-mejorado.md
 - trucos-excel-mapa-de-espana-por-provincias.md
 - nuevo-y-muy-mejorado-mapa-de-espana-por-provincias-con-excel.md
 - trucos-excel-nuevo-y-mejorado-mapa-de-espana-por-provincias-con-excel.md
 - mapa-excel-de-europa.md
-slug: trucos-excel-mapa-de-espana-por-provincias-mejores-versiones
 tags:
 - macro
-- mapa españa provincias excel
+- mapas
+- españa
+- excel
 title: Trucos Excel. Mapa de España por provincias (mejores versiones)
 url: /blog/trucos-excel-mapa-de-espana-por-provincias-mejores-versiones/
 ---
-
 Nuestro lector Jose Antonio tiene una [nueva versión del mapa ](/images/2011/07/mapa-de-espana-2.xlsm "mapa-de-espana-2.xlsm") de España por provincias con Excel. Mejores y más comprensibles macros, el problema de León y las Canarias solventados y aparecen Ceuta y Melilla.
 
 ![mapa_espana_excelv3.png](/images/2011/07/mapa_espana_excelv3.png)

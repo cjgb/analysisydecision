@@ -1,24 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-- Trucos
-- WPS
-date: '2015-12-02T08:19:45-05:00'
-lastmod: '2025-07-13T16:00:41.815936'
+- formación
+- sas
+- trucos
+- wps
+date: '2015-12-02'
+lastmod: '2025-07-13'
 related:
 - trucos-sas-variables-dummy-de-una-variable-continua.md
 - trucos-sas-variables-dicotomicas-desde-factores.md
 - macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
 - truco-sas-categorizar-variables-continuas.md
 - macro-sas-variables-de-un-dataset-en-una-macro-variable.md
-slug: macro-sas-crear-variables-dummy-desde-una-variable-categorica
-tags: []
+tags:
+- sin etiqueta
 title: Macro SAS. Crear variables dummy desde una variable categórica
 url: /blog/macro-sas-crear-variables-dummy-desde-una-variable-categorica/
 ---
-
 [En alguna ocasión ya he conjugado el verbo dumificar](https://analisisydecision.es/trucos-sas-variables-dummy-de-una-variable-continua/) y preparando una segmentación he creado una macro SAS que genera variables dummy a partir de variables categóricas, es decir, si la variable A toma valores 1, 2 y 3 tendría que generar A_1 con valor 1 si A toma 1 y con valor 0 en caso contrario, A_2 tiene valor 1 si A es igual a 2 y A_3 tiene valor 1 si A es igual a 3, no es complicado de comprender, pasamos de una variable con 3 niveles a 3 variables con valores 0 o 1. Para esto podemos emplear arrays o la siguiente macro:
 
 _%macro dumificar(varib, grupos, mv);_

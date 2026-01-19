@@ -1,18 +1,17 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-- Trucos
-date: '2009-12-07T07:48:41-05:00'
-lastmod: '2025-07-13T16:10:36.153290'
+- formación
+- sas
+- trucos
+date: '2009-12-07'
+lastmod: '2025-07-13'
 related:
 - trucos-sas-lista-de-datasets-en-macro-variable.md
 - macro-sas-variables-de-un-dataset-en-una-macro-variable.md
 - trucos-sas-eliminar-etiquetas-en-los-conjunto-de-datos-sas.md
 - truco-sas-tablas-de-una-libreria-en-una-macro-variable.md
 - trucos-sas-macrovariable-a-dataset.md
-slug: trucos-sas-union-de-multiples-tablas-sas-con-un-nombre-parecido
 tags:
 - dictionary
 - into
@@ -22,7 +21,6 @@ tags:
 title: Trucos SAS. Unión de múltiples tablas SAS con un nombre parecido
 url: /blog/trucos-sas-union-de-multiples-tablas-sas-con-un-nombre-parecido/
 ---
-
 Ha llegado una búsqueda y ponemos el truco. Creo que ya lo puse pero no está mal de recordarlo.
 
 1\. Creamos 20 datasets aleatorios con 10 observaciones cada uno:

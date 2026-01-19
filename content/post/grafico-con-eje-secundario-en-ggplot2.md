@@ -1,23 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- R
-date: '2019-02-13T09:10:04-05:00'
-lastmod: '2025-07-13T15:58:05.423286'
+- formación
+- r
+date: '2019-02-13'
+lastmod: '2025-07-13'
 related:
 - graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
 - grafico-de-barras-y-lineas-con-python.md
 - capitulo-5-representacion-basica-con-ggplot.md
 - descubriendo-ggplot2-421.md
 - un-acercamiento-a-graph-primeros-graficos-con-sas.md
-slug: grafico-con-eje-secundario-en-ggplot2
 tags:
 - ggplot2
 title: Gráfico con eje secundario en ggplot2
 url: /blog/grafico-con-eje-secundario-en-ggplot2/
 ---
-
 ![](/images/2019/02/ggplot2_eje_secundario.png)
 
 Los gráficos con eje secundario o con dos ejes son un tema que ya he puesto en el blog en varias ocasiones, [hay un ejemplo con R que tenía sus problemas](https://analisisydecision.es/graficos-de-barras-y-lineas-en-dos-ejes-con-r/) y [hay un ejemplo con Python y matplotlib](https://analisisydecision.es/grafico-de-barras-y-lineas-con-python/) que particularmente me gusta por elegancia y sencillez. En esta entrada vamos a repetir el ejercicio y vamos a realizar un gráfico de columnas y líneas con 2 ejes, primario y secundario pero con ggplot2. Este tipo de gráficos son muy utilizados por los actuarios para representar frecuencias o siniestralidades y exposición. Para ilustrar el ejercicio vamos a emplear los mismos datos que usamos en el ejemplo con matplotlib pero vemos paso a paso como realizaríamos el gráfico:

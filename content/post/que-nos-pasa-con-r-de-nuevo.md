@@ -1,24 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Big Data
-- Machine Learning
-- Opinión
-- R
-date: '2019-03-09T04:15:51-05:00'
-lastmod: '2025-07-13T16:05:01.225691'
+- big data
+- machine learning
+- opinión
+- r
+date: '2019-03-09'
+lastmod: '2025-07-13'
 related:
 - r-cayendo-en-la-lista-tiobe.md
 - lista-de-los-lengajes-de-programacion-mas-populares.md
 - como-medir-la-presencia-de-r-en-el-mercado-del-analisis-de-datos.md
 - la-mejor-posicion-de-r-en-tiobe.md
 - cuando-paralelizar-procesos-con-r-era-otra-cosa.md
-slug: que-nos-pasa-con-r-de-nuevo
-tags: []
+tags:
+- sin etiqueta
 title: ¿Qué nos pasa con R? (de nuevo)
 url: /blog/que-nos-pasa-con-r-de-nuevo/
 ---
-
 [Hace años ya sorprendió R situándose muy arriba](https://analisisydecision.es/la-mejor-posicion-de-r-en-tiobe/) en la [lista tiobe de lenguajes de programación](https://www.tiobe.com/tiobe-index/) subió en los años siguientes y ahora nos encontramos con una sorprendente bajada en el índice:
 
 [![](/images/2019/03/R_tiobe-300x147.png)](/images/2019/03/R_tiobe.png)

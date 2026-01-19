@@ -1,23 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- R
-date: '2015-02-13T17:28:19-05:00'
-lastmod: '2025-07-13T15:54:13.322294'
+- formación
+- r
+date: '2015-02-13'
+lastmod: '2025-07-13'
 related:
 - aprendiendo-shiny-server-r-ui-r.md
 - aprendiendo-shiny-con-vosotros.md
 - rstats-shiny-leaftlet-mapas-interactivos.md
 - manual-curso-introduccion-de-r-capitulo-2-interfaz-y-primeras-sentencias.md
 - nuestras-funciones-de-r-en-menus-con-rpanel-y-svwidgets.md
-slug: aprendiendo-shiny-la-funcion-shinyui-seguida-de-fluidpage-o-fluidrow
 tags:
 - shiny
 title: Aprendiendo Shiny. La función shinyUI seguida de fluidPage o fluidRow
 url: /blog/aprendiendo-shiny-la-funcion-shinyui-seguida-de-fluidpage-o-fluidrow/
 ---
-
 Con shinyUI creamos el interface de nuestra app de shiny y cuando la usamos inmediatamente ponemos fluidPage o fluidRow (por lo menos en estos primeros acercamientos). Utilizaremos una u otra en función del diseño que deseamos. Los argumentos que pueden tener fluidPage o fluidRow son múltiples. Algunos de los que estoy usando:
 
   * titlePanel. Imprescindible, sirve para poner títulos a nuestra app

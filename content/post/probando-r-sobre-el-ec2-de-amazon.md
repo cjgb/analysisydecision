@@ -1,24 +1,22 @@
 ---
 author: cgbellosta
 categories:
-- Formación
-date: '2009-12-08T19:44:27-05:00'
-lastmod: '2025-07-13T16:04:39.362808'
+- formación
+date: '2009-12-08'
+lastmod: '2025-07-13'
 related:
 - arboles-de-decision-con-sas-base-con-r-por-supuesto.md
 - aprende-pyspark-sin-complicaciones.md
 - cloud-words-con-r-trabajar-con-la-api-del-europe-pmc-con-r.md
 - porque-me-gusta-r.md
 - manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-i.md
-slug: probando-r-sobre-el-ec2-de-amazon
 tags:
-- Amazon
-- EC2
-- R
+- amazon
+- ec2
+- r
 title: Probando R sobre el EC2 de Amazon
 url: /blog/probando-r-sobre-el-ec2-de-amazon/
 ---
-
 Hacía tiempo que quería probarlo. Menos en las grutas pobladas de seres del siglo anterior, todo el mundo habla del [EC2](http://aws.amazon.com/ec2/ "EC2 de Amazon").
 
 Entre otras muchas cosas que iré explorando más adelante, el EC2 de Amazon te alquila un servidor por horas. También te ofrece [espacio de disco](http://aws.amazon.com/s3/ "Amazon S3") a unos [precios de risa](http://aws.amazon.com/s3/#pricing "Precios Amazon S3") y otras cosas más que bien podrían mandar al paro a departamentos enteros de IT. Pero hoy, de momento, sólo me interesaba el servidor, alquilar un servidor por un rato.

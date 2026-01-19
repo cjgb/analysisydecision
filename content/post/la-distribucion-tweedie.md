@@ -1,26 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Modelos
-- Monográficos
-- R
-date: '2012-04-23T09:34:30-05:00'
-lastmod: '2025-07-13T15:59:20.215089'
+- formación
+- modelos
+- monográficos
+- r
+date: '2012-04-23'
+lastmod: '2025-07-13'
 related:
 - evaluando-la-capacidad-predictiva-de-mi-modelo-tweedie.md
 - modelos-tweedie-con-h2o-mutualizar-siniestralidad-en-base-a-factores-de-riesgo.md
 - determinar-la-distribucion-de-un-vector-de-datos-con-r.md
 - manual-curso-introduccion-de-r-capitulo-8-inferencia-estadistica.md
 - capitulo-5-representacion-basica-con-ggplot.md
-slug: la-distribucion-tweedie
 tags:
 - modelo de riesgo
 - tweedie
 title: La distribución tweedie
 url: /blog/la-distribucion-tweedie/
 ---
-
 [![tweedie.png](/images/2012/04/tweedie.png)](/images/2012/04/tweedie.png "tweedie.png")
 
 Reconozco que hace muy poco tiempo que trabajo con las **distribuciones tweedie**. Un viejo dinosaurio que trabaja sobre todo con SAS se hace el sordo cuando le hablan de la distribución tweedie. Quizá sea el trabajo con SAS el que me ha nublado. Pero ahora que empiezo a trabajar con otras herramientas… Para comprender mejor la base teórica para este tipo de distribuciones os [enlazo a la wikipedia](http://en.wikipedia.org/wiki/Tweedie_distributions). Pero despierta mi interés debido a que se puede considerar una gamma con punto de masa en el 0 ¡toma aberración matemática! Aspecto interesante.

@@ -1,24 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Banca
-- Consultoría
-date: '2009-02-19T03:18:44-05:00'
-lastmod: '2025-07-13T15:53:53.116559'
+- banca
+- consultoría
+date: '2009-02-19'
+lastmod: '2025-07-13'
 related:
 - me-preocupa-el-pequeno-ahorrador-ii.md
 - margenes-nulos-en-los-nuevos-depositos-bancarios.md
 - lecciones-de-economia-de-un-ignorante-no-me-dan-hipoteca.md
 - lecciones-de-economia-de-un-ignorante-los-bancos-pierden-dinero-para-favorecer-a-unos-y-luego-los-salvamos-todos.md
 - amanece-que-no-es-poco.md
-slug: a-mi-me-preocupa-el-pequeno-ahorrador
 tags:
 - depósitos bancarios
 - pequeño ahorrador
 title: Me preocupa el pequeño ahorrador (I)
 url: /blog/a-mi-me-preocupa-el-pequeno-ahorrador/
 ---
-
 El año pasado ya hice [referencia a los depósitos bancarios de bajo margen](https://analisisydecision.es/margenes-nulos-en-los-nuevos-depositos-bancarios/). Fue el inicio de la guerra por el pasivo de los bancos y cajas, que empezaban a tomar posiciones para «fusionar» otras entidades más pequeñas que habían crecido a costa del activo y ante un escenario de incremento de la morosidad podrían encontrarse en una situación de falta de liquidez. Esto lo anuncié y [se está produciendo en nuestros días](https://analisisydecision.es/busca-la-relacion-deuda-subordinada-y-cajas-catalanas/).
 
 La guerra de los depósitos para captar pasivo fue muy beneficiosa para el pequeño ahorrador. Pero se produjo en una situación con los tipos al 4,25% que permitían incluso llegar a un 5% TAE si se movía el dinero con un poco de talento, ahora mismo tenemos los tipos al 2% y todos los bancos quieren aumentar su margen para seguir creciendo a ritmos de años anteriores; de este modo están ofreciendo al cliente con 30.000 euros ahorrados depósitos al 2,5% TAE, menos de la mitad que hace un año.

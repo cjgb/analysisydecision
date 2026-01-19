@@ -1,26 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- SAS
-- Trucos
-date: '2008-09-02T03:23:38-05:00'
-lastmod: '2025-07-13T16:08:23.791364'
+- sas
+- trucos
+date: '2008-09-02'
+lastmod: '2025-07-13'
 related:
 - macros-sas-pasar-de-texto-a-numerico.md
 - transformar-variables-en-sas-caracter-a-numerico.md
 - importar-a-sas-desde-otras-aplicaciones.md
 - trucos-sas-macrovariable-a-dataset.md
 - truco-sas-limpiar-un-fichero-de-texto-con-sas.md
-slug: truco-sas-macro-buscar-y-reemplazar-en-texto
 tags:
 - configuracion regional
-- importar
-- SAS
-- Texto
+- importar datos
+- sas
+- texto
 title: Truco SAS. Macro buscar y reemplazar en texto
 url: /blog/truco-sas-macro-buscar-y-reemplazar-en-texto/
 ---
-
 A veces hay problemas a la hora de importar un fichero de texto a SAS. Por ejemplo el fichero proviene de Access y tiene los números con formato europeo. El siguiente programa hace un buscar y reemplazar pero con SAS. Partimos de un fichero de texto ubicado en c:\temp\pepin.txt así:
 
 4.497,31 2.776,50

@@ -1,25 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Machine Learning
-- Python
-- Trucos
-date: '2018-05-22T09:47:28-05:00'
-lastmod: '2025-07-13T16:07:51.760291'
+- formación
+- machine learning
+- python
+- trucos
+date: '2018-05-22'
+lastmod: '2025-07-13'
 related:
 - data-management-basico-con-pandas.md
 - manejo-de-datos-basico-con-python-datatable.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-3-manejo-de-datos-con-r.md
 - curso-de-lenguaje-sas-con-wps-subconjuntos-de-variables-con-drop-y-keep.md
 - truco-python-reemplazar-una-cadena-de-caracteres-en-los-nombres-de-las-columnas-de-un-data-frame.md
-slug: truco-python-seleccionar-o-eliminar-variables-de-un-data-frame-en-base-a-un-prefijo-sufijo-o-si-contienen-un-caracter
-tags: []
+tags:
+- sin etiqueta
 title: Truco Python. Seleccionar o eliminar variables de un data frame en base a un
   prefijo, sufijo o si contienen un caracter
 url: /blog/truco-python-seleccionar-o-eliminar-variables-de-un-data-frame-en-base-a-un-prefijo-sufijo-o-si-contienen-un-caracter/
 ---
-
 A la hora de seleccionar las características de un data frame es posible que nos encontremos con la necesidad de seleccionar o eliminar características del data frame y que el nombre de esas características tenga un determinado patrón. Esta labor la podemos realizar mediante selección de elementos en listas, en esta entrada del blog vamos a tener 3 tipos de selecciones:
 
 1\. Seleccionar o eliminar aquellas variables que empiezan por un determinado prefijo

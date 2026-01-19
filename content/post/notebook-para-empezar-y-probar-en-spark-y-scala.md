@@ -1,17 +1,16 @@
 ---
 author: rvaquerizo
 categories:
-- Big Data
-- Machine Learning
-date: '2018-03-11T06:02:57-05:00'
-lastmod: '2025-07-13T16:03:32.875730'
+- big data
+- machine learning
+date: '2018-03-11'
+lastmod: '2025-07-13'
 related:
 - aprende-pyspark-sin-complicaciones.md
 - r-python-reticulate.md
 - montemos-un-sistema-de-informacion-en-nuestro-equipo-i.md
 - univariantes-de-campos-de-nuestra-bbdd-con-kettle.md
 - probando-r-sobre-el-ec2-de-amazon.md
-slug: notebook-para-empezar-y-probar-en-spark-y-scala
 tags:
 - notebook
 - scala
@@ -19,7 +18,6 @@ tags:
 title: Notebook para empezar (y probar) en spark y scala
 url: /blog/notebook-para-empezar-y-probar-en-spark-y-scala/
 ---
-
 No debo enseñar Spark a nadie, no soy ni un usuario avanzado, ni le veo mucho recorrido. Sin embargo tengo que hacer diversos procesos con dataframes en spark y realizar modelos con MLlib y tengo que «perder tiempo» probando cosas, necesitaba un entorno sencillo en casa. En un primer momento exploré máquinas virtuales y alguna sandbox. Ninguna me convencía y le pedí a un compañero mío, Juanvi, que sabe mucho que me montara un entorno con un notebook de spark para poder jugar con scala y MLlib de modo sencillo. En vez de montarme el entorno en 20 minutos me escribió un correo con 3 direcciones que me están siendo de mucha utilidad y quería compartirlas con vosotros.
 
 La primera dirección es el repositorio donde está alojado este desarrollo del notebook de spark: [https://github.com/spark-notebook/spark-notebook ](https://github.com/spark-notebook/spark-notebook) Lo primero que [debemos estudiar es la documentación](https://github.com/spark-notebook/spark-notebook/blob/master/docs/quick_start.md) y por último [generar o seleccionar el notebook que deseamos](http://spark-notebook.io/). Aquí me gustaría hacer una anotación, no he sido capaz de hacer funcionar en Windows ninguna distribución que no sea de [docker](https://www.docker.com/), sin ningún problema las dos distribuciones que he probado en Ubuntu y en el Apple sin problema con docker, al final, por temas profesionales, he optado por una versión con Hive-parquet y spark 2.0.1:

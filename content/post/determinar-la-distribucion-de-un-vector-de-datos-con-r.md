@@ -1,25 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Modelos
-- R
-- Trucos
-date: '2014-05-22T10:22:35-05:00'
-lastmod: '2025-07-13T15:56:25.051896'
+- formación
+- modelos
+- r
+- trucos
+date: '2014-05-22'
+lastmod: '2025-07-13'
 related:
 - manual-curso-introduccion-de-r-capitulo-6-funciones-de-estadistica-descriptiva.md
 - manual-introduccion-a-r-s-plus.md
 - sobremuestreo-y-pesos-a-las-observaciones-ahora-con-r.md
 - la-distribucion-tweedie.md
 - numeros-aleatorios-con-sas.md
-slug: determinar-la-distribucion-de-un-vector-de-datos-con-r
 tags:
-- rriskDistributions
+- rriskdistributions
 title: Determinar la distribución de un vector de datos con R
 url: /blog/determinar-la-distribucion-de-un-vector-de-datos-con-r/
 ---
-
 Para determinar la distribución que sigue un vector de datos en R contamos con el paquete rriskDistributions. Este paquete de R nos permite realizar un test para las distribuciones siguientes:
 
 • Normal

@@ -1,25 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Excel
-- Formación
-- SAS
-- Trucos
-date: '2011-12-12T10:07:23-05:00'
-lastmod: '2025-07-13T16:07:36.083179'
+- excel
+- formación
+- sas
+- trucos
+date: '2011-12-12'
+lastmod: '2025-07-13'
 related:
 - truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
 - truco-sas-sas-y-dde-aliados-de-excel.md
 - trucos-sas-macrovariable-a-dataset.md
 - macros-sas-informe-de-un-dataset-en-excel.md
 - trucos-sas-ejecutar-un-codigo-si-existe-una-tabla-o-un-fichero.md
-slug: truco-excel-y-sas-ejecutar-sas-desde-macro-en-excel
 tags:
 - initstmt
 title: Truco Excel y SAS. Ejecutar SAS desde macro en Excel
 url: /blog/truco-excel-y-sas-ejecutar-sas-desde-macro-en-excel/
 ---
-
 Un truco muy malo hoy. Se trata de crear una macro de Excel que llame a un programa SAS y que además podamos pasar un parámetro. Es un código en Visual Basic que no tiene complejidad pero que puede ser útil. El código es:
 
 ```r

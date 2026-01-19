@@ -1,24 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Monográficos
-- R
-date: '2019-09-18T12:48:13-05:00'
-lastmod: '2025-07-13T15:57:58.601395'
+- monográficos
+- r
+date: '2019-09-18'
+lastmod: '2025-07-13'
 related:
 - trucos-r-graficos-de-velocimetro-con-r.md
 - representar-poligonos-de-voronoi-dentro-de-un-poligono.md
 - graficos-dinamicos-en-r-con-la-funcion-text.md
 - descubriendo-ggplot2-421.md
 - manual-curso-introduccion-de-r-capitulo-7-funciones-graficas-basicas-en-r.md
-slug: geometria-basica-con-r-triangulos-circunferencias-estrellas-distancias-angulos
 tags:
-- learnGeom
+- learngeom
 title: Geometría básica con R. Triángulos, circunferencias, estrellas, distancias,
   ángulos,…
 url: /blog/geometria-basica-con-r-triangulos-circunferencias-estrellas-distancias-angulos/
 ---
-
 Trabajar con triángulos y R es bien sencillo con el paquete learnGeom. La entrada viene a cuento por una duda en [lista de correo de ayuda en R](https://stat.ethz.ch/mailman/listinfo/r-help-es) que no pude ayudar a resolver por no disponer de un equipo informático en ese momento. Es un paquete que nos permite visualizar los aspectos básicos de la geometría que todos tenemos olvidada. Un ejemplo de uso sería:
 
 ```r

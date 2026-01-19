@@ -1,24 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Modelos
-- R
-date: '2008-10-03T15:04:43-05:00'
-lastmod: '2025-07-13T16:01:17.114446'
+- formación
+- modelos
+- r
+date: '2008-10-03'
+lastmod: '2025-07-13'
 related:
 - manual-curso-introduccion-de-r-capitulo-13-analisis-de-la-varianza-disenos-anidados.md
 - manual-curso-introduccion-de-r-capitulo-12-analisis-de-la-varianza-disenos-bifactoriales.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-14-introduccion-al-diseno-de-experimentos.md
 - monografico-analisis-de-factores-con-r-una-introduccion.md
 - manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
-slug: manual-curso-introduccion-de-r-capitulo-11-introduccion-al-analisis-de-la-varianza-anova
-tags: []
+tags:
+- sin etiqueta
 title: 'Manual. Curso introducción de R. Capítulo 11: Introducción al análisis de
   la varianza (ANOVA)'
 url: /blog/manual-curso-introduccion-de-r-capitulo-11-introduccion-al-analisis-de-la-varianza-anova/
 ---
-
 Para realizar la introducción al análisis de la varianza (ANOVA) con R comenzaremos estableciendo unos conceptos básicos. Lo primero que hacemos es plantear una hipótesis que va a motivar un experimento, elegimos el diseño para nuestro experimento y recogemos los datos y los analizamos mediante el análisis de la varianza que consiste en descomponer la variabilidad total de los datos en sumandos cada uno de ellos asignable a una fuente de variación; posteriormente ya sacamos conclusiones. Lo que se expone a continuación viene recogido en los libros:
 
 *MONTGOMERY, D.C.: Diseño y Análisis de Experimentos. Grupo Editorial Iberoamérica, 1991.

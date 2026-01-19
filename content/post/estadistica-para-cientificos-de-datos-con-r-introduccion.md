@@ -1,22 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-date: '2022-01-01T14:12:02-05:00'
-lastmod: '2025-07-13T15:57:32.867163'
+- formación
+date: '2022-01-01'
+lastmod: '2025-07-13'
 related:
 - comienza-la-publicacion-del-ensayo-introduccion-a-la-estadistica-para-cientificos-de-datos.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-9-analisis-exploratorio-de-datos-eda.md
 - analisisydecision-se-une-a-scout-analyst-primer-curso-de-estadistica-para-analistas.md
 - evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso.md
 - nuevo-curso-de-estadistica-con-r.md
-slug: estadistica-para-cientificos-de-datos-con-r-introduccion
-tags: []
+tags:
+- sin etiqueta
 title: Introducción a la Estadística para Científicos de Datos con R. Capítulo 1.
   Introducción
 url: /blog/estadistica-para-cientificos-de-datos-con-r-introduccion/
 ---
-
 Este contenido está sujeto a una licencia [creative commons](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es)
 
 ![](https://www3.gobiernodecanarias.org/medusa/wiki/images/5/5a/00-Logo-Creative-Commons.png)

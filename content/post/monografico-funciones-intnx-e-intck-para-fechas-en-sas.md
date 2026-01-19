@@ -1,26 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Monográficos
-- SAS
-date: '2010-07-06T05:45:19-05:00'
-lastmod: '2025-07-13T16:02:51.532552'
+- formación
+- monográficos
+- sas
+date: '2010-07-06'
+lastmod: '2025-07-13'
 related:
 - trabajo-con-fechas-sas-funciones-fecha.md
 - curso-de-lenguaje-sas-con-wps-funciones-fecha.md
 - trucos-sas-numero-de-dias-de-un-mes.md
 - macros-sas-primer-y-ultimo-dia-del-mes-de-una-fecha-sas.md
 - trucos-sas-operar-con-fechas-yyyymm-tipicas-de-particiones-oracle.md
-slug: monografico-funciones-intnx-e-intck-para-fechas-en-sas
 tags:
-- funciones fecha en SAS
-- INTCK
-- INTNX
+- fechas sas
+- sas
+- intck
+- intnx
 title: Monográfico. Funciones INTNX e INTCK para fechas en SAS
 url: /blog/monografico-funciones-intnx-e-intck-para-fechas-en-sas/
 ---
-
 Las funciones **INTNX e INTCK de SAS** atraen muchas visitas a esta web. Aunque ya hay algún mensaje en el que muestro como funcionan creo que algunos trabajadores me agradecerán este monográfico. INTNX e INTCK son funciones para trabajar con fechas en SAS. INTNX sirve para trabajar con periodos luego el resultado que ofrece será una fecha e INTCK sirve para trabajar con intervalos, luego el resultado que nos ofrece será un número entero. Esta es la premisa fundamental. Entonces:
 
   * Si queremos calcular el número de meses entre 01-01-2002 y el 02-04-2003 empleamos INTCK porque el resultado será 3 meses.

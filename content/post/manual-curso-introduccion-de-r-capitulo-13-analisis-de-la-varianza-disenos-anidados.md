@@ -1,27 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Modelos
-- R
-date: '2009-01-12T09:42:23-05:00'
-lastmod: '2025-07-13T16:01:19.783173'
+- formación
+- modelos
+- r
+date: '2009-01-12'
+lastmod: '2025-07-13'
 related:
 - manual-curso-introduccion-de-r-capitulo-11-introduccion-al-analisis-de-la-varianza-anova.md
 - manual-curso-introduccion-de-r-capitulo-12-analisis-de-la-varianza-disenos-bifactoriales.md
 - manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
 - monografico-analisis-de-factores-con-r-una-introduccion.md
 - manual-curso-introduccion-de-r-capitulo-10-funciones-graficas-en-regresion-lineal.md
-slug: manual-curso-introduccion-de-r-capitulo-13-analisis-de-la-varianza-disenos-anidados
 tags:
 - análisis de la varianza
-- Anova factores anidados
-- R
+- anova factores anidados
+- r
 title: 'Manual. Curso introducción de R. Capítulo 13: Análisis de la varianza. Diseños
   anidados'
 url: /blog/manual-curso-introduccion-de-r-capitulo-13-analisis-de-la-varianza-disenos-anidados/
 ---
-
 Continuamos con ejemplos de análisis de la varianza con R. En este caso trabajaremos con diseño de experimentos anidados. Definimos un factor B está anidado a un factor A si para nivel de B tenemos un único nivel de A asociado, es decir, A dos niveles, B tres niveles; A1 (B1,B2,B3) ; A2(B1,B2,B3). En este caso se dice que el nivel B está anidado a A. El modelo matemático viene expresado como:
 
 ![modelo.JPG](/images/2009/01/modelo.JPG)

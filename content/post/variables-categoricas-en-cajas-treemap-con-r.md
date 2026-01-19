@@ -1,22 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- R
-- Seguros
-date: '2020-09-29T07:13:46-05:00'
-lastmod: '2025-07-13T16:11:11.739208'
+- formación
+- r
+- seguros
+date: '2020-09-29'
+lastmod: '2025-07-13'
 related:
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-9-analisis-exploratorio-de-datos-eda.md
 - graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-7-descripcion-grafica-de-variables.md
 - evaluando-la-capacidad-predictiva-de-mi-modelo-tweedie.md
-slug: variables-categoricas-en-cajas-treemap-con-r
 title: Variables categóricas en cajas, treemap con R
 url: /blog/variables-categoricas-en-cajas-treemap-con-r/
+tags:
+- sin etiqueta
 ---
-
 [![](/images/2020/09/Ejemplo_treemap_R_3.png)](/images/2020/09/Ejemplo_treemap_R_3.png)
 
 La representación de variables categóricas en cajas es uno de los gráficos que más utilizo, empezaron a gustarme debido al uso de Qlik Sense y sus gráficos de cajas, me permitían comparar variables categóricas en un periodo frente a otro. En R podemos usar la librería treemap para realizar estos gráficos y comparar variables categóricas. En este caso interesa comparar una variable dentro de dos grupos.

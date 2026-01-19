@@ -1,28 +1,26 @@
 ---
 author: rvaquerizo
 categories:
-- Consultoría
-- Formación
-- Mapas
-- Monográficos
-- SAS
-date: '2016-11-09T15:03:33-05:00'
-lastmod: '2025-07-13T15:55:04.717411'
+- consultoría
+- formación
+- mapas
+- monográficos
+- sas
+date: '2016-11-09'
+lastmod: '2025-07-13'
 related:
 - mapas-sas-a-partir-de-shapefile.md
 - adyacencia-de-poligonos-con-el-paquete-spdep-de-r.md
 - representar-poligonos-de-voronoi-dentro-de-un-poligono.md
 - incluir-subplot-en-mapa-con-ggplot.md
 - identificar-los-municipios-costeros-y-limitrofes-de-espana-con-r.md
-slug: como-obtener-los-centroides-de-municipios-con-sas-mapas-con-sgplot
 tags:
-- MAPA SAS
 - proc sgplot
 - shapefile
+- mapas
 title: Como obtener los centroides de municipios con SAS. Mapas con SGPLOT
 url: /blog/como-obtener-los-centroides-de-municipios-con-sas-mapas-con-sgplot/
 ---
-
 [![mapa_municipios_sas2](/images/2016/11/mapa_municipios_SAS2.png)](/images/2016/11/mapa_municipios_SAS2.png)
 
 Un amigo y lector del blog me ha pedido un mapa de códigos postales donde poder identificar los centroides para andar calculando distancias a otros puntos. Yo ~~no~~ tengo un mapa de España por códigos postales para poder usar con fines comerciales, [pero si cuento en el blog como poder obtenerlo bajo ciertas condiciones](https://analisisydecision.es/como-hacer-un-mapa-de-espana-por-codigos-postales-con-qgis/). Lo que si puedo contar a Juan es como hacer un mapa por municipios con SAS, [aunque ya he hablado de ello](https://analisisydecision.es/mapas-sas-a-partir-de-shapefile/) hay ciertos aspectos que pueden ser interesantes. y todo empieza donde siempre <http://www.gadm.org/country> la web donde tenemos los mapas «libres» por países, seleccionáis Spain y el formato shapefile una vez descargados los mapas en vuestros equipos empezamos con el trabajo en SAS:

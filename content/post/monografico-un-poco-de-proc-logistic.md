@@ -1,29 +1,26 @@
 ---
 author: rvaquerizo
 categories:
-- Banca
-- Data Mining
-- Formación
-- Modelos
-- Monográficos
-- SAS
-date: '2010-06-24T09:24:38-05:00'
-lastmod: '2025-07-13T16:02:59.493639'
+- banca
+- data mining
+- formación
+- modelos
+- monográficos
+- sas
+date: '2010-06-24'
+lastmod: '2025-07-13'
 related:
 - arboles-de-decision-con-sas-base-con-r-por-supuesto.md
 - monografico-regresion-logistica-con-r.md
 - monografico-arboles-de-clasificacion-con-rpart.md
 - macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
 - monografico-paquete-de-r-nnet-para-modelos-de-redes-neuronales.md
-slug: monografico-un-poco-de-proc-logistic
 tags:
-- ''
-- PROC LOGISTIC
+- proc logistic
 - regresión logística
 title: Monográfico. Un poco de PROC LOGISTIC
 url: /blog/monografico-un-poco-de-proc-logistic/
 ---
-
 El **PROC LOGISTIC** es un procedimiento de SAS que nos ha dado muchas satisfacciones a los dinosaurios como el ahora escribiente. La [regresión logística ](http://es.wikipedia.org/wiki/Regresi%C3%B3n_log%C3%ADstica)es uno de los modelos de regresión más utilizados y es bien conocido por todos mis lectores (bastante más inteligentes que yo). El problema es muy sencillo hemos de clasificar una población dividida en dos partes a partir de unas variables independientes. Su aplicación es muy extensa: patrones de fuga, propensiones a compra, salud, fraude,… Con este monográfico pretendo acercaros en 3 minutos a las sentencias básicas en **SAS** para crear un modelo de regresión logística y proponer gráficos y validaciones. En la línea habitual del blog partimos de una simulación y analizamos la sintaxis, evitamos poner las salidas para no “cargar” la entrada con tablas de poca utilidad. El ejemplo es el que sigue:
 
 ```r

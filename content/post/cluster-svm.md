@@ -1,26 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Data Mining
-- Formación
-- Monográficos
-- R
-date: '2012-08-01T03:10:19-05:00'
-lastmod: '2025-07-13T15:54:49.522815'
+- data mining
+- formación
+- monográficos
+- r
+date: '2012-08-01'
+lastmod: '2025-07-13'
 related:
 - monografico-clasificacion-con-svm-en-r.md
 - un-peligro-del-analisis-cluster.md
 - machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algoritmos-de-clasificacion.md
 - knn-con-sas-mejorando-k-means.md
 - analisis-cluster-con-sas-la-importancia-de-las-semillas-en-las-k-medias.md
-slug: cluster-svm
 tags:
 - análisis cluster
-- SVM
+- svm
 title: Solventamos los peligros del análisis cluster con SVM
 url: /blog/cluster-svm/
 ---
-
 Retomamos un asunto tratado en días anteriores, [los peligros de realizar un análisis de agrupamiento basado en las distancias entre observaciones](https://analisisydecision.es/un-peligro-del-analisis-cluster/). **¿Cómo podemos evitar este problema?** Empleando máquinas de vectores de soporte, traducción de **Support Vector Machines (SVM)**. Esta técnica de clasificación de la que [ya hablamos en otra entrada ](https://analisisydecision.es/monografico-clasificacion-con-svm-en-r/)nos permite separar observaciones en base la creación de hiperplanos que las separan. Una función _kernel_ será la que nos permita crear estos hiperplanos, en el caso que nos ocupa tenemos sólo dos variables, necesitamos crear líneas de separación entre observaciones. En la red tenéis una gran cantidad de artículos sobre estas técnicas.
 
 Para ilustrar como funciona retomamos el ejemplo anterior:

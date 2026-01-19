@@ -1,24 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Consultoría
-- Python
-- Trucos
-date: '2018-08-25T09:22:01-05:00'
-lastmod: '2025-07-13T15:55:26.500038'
+- consultoría
+- python
+- trucos
+date: '2018-08-25'
+lastmod: '2025-07-13'
 related:
 - lectura-de-ficheros-sas7bdat-de-sas-directamente-con-r.md
 - trucos-sas-particionar-y-exportar-a-texto-un-dataset.md
 - truco-leer-sas7bdat-sin-sas.md
 - truco-sas-como-leer-pc-axis-con-sas.md
 - truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
-slug: crear-archivo-csv-desde-python
 tags:
 - sas7bdat
 title: Crear archivo csv desde SAS con Python
 url: /blog/crear-archivo-csv-desde-python/
 ---
-
 Con la librería [sas7bdat de Python](https://pypi.org/project/sas7bdat/) podemos leer archivos SAS y crear directamente un data frame, es la mejor librería para hacerlo, si la tabla SAS que deseáis leer está comprimida (compress=yes) con pandas no podréis hacerlo. Pero tengo que agradecer a mi compañero Juan que me haya descubierto la función convert_file para pasar directamente el archivo SAS a csv, es más eficiente y parece que consume menos recursos del equipo. La sintaxis es muy sencilla:
 
 ```r

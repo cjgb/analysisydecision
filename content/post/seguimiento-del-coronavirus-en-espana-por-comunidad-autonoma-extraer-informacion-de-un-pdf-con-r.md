@@ -1,23 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- R
-date: '2020-03-11T16:13:18-05:00'
-lastmod: '2025-07-13T16:05:54.620772'
+- formación
+- r
+date: '2020-03-11'
+lastmod: '2025-07-13'
 related:
 - mapa-del-covid-19-por-comunidades-autonomas-con-r-mas-rstats.md
 - mover-parte-de-un-shapefile-con-r-mapa-de-la-tasa-de-casos-de-coronavirus-por-habitante-en-espana.md
 - libreria-mapspain-en-rstats-mapas-estaticos-de-espana.md
 - seguir-los-datos-del-coronavirus-en-espana-con-rstats.md
 - mi-breve-seguimiento-del-coronavirus-con-r.md
-slug: seguimiento-del-coronavirus-en-espana-por-comunidad-autonoma-extraer-informacion-de-un-pdf-con-r
-tags: []
+tags:
+- sin etiqueta
 title: Seguimiento del coronavirus en España por Comunidad Autónoma. Extraer información
   de un PDF con R
 url: /blog/seguimiento-del-coronavirus-en-espana-por-comunidad-autonoma-extraer-informacion-de-un-pdf-con-r/
 ---
-
 Una entrada anterior del blog ha dado lugar a una conversación interesante en twitter:
 
 > Evolución del número de casos de [#coronavirusEspana](https://twitter.com/hashtag/coronavirusEspana?src=hash&ref_src=twsrc%5Etfw) una analogía con Italia <https://t.co/GhWtlFL3Df>

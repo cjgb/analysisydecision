@@ -1,23 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Monográficos
-- R
-date: '2019-02-27T08:12:44-05:00'
-lastmod: '2025-07-13T16:00:21.403594'
+- formación
+- monográficos
+- r
+date: '2019-02-27'
+lastmod: '2025-07-13'
 related:
 - analisis-de-textos-con-r.md
 - beatifulsoup-web-scraping-con-python-o-como-las-redes-sociales-estan-cambiando-mi-forma-de-escribir.md
 - comparamos-los-programas-electorales-de-pp-y-psoe-con-r.md
 - descubriendo-ggplot2-421.md
 - ejemplo-de-web-scraping-con-r-la-formacion-de-los-diputados-del-congreso.md
-slug: longitud-de-las-frases-del-quijote-con-rstats
-tags: []
+tags:
+- sin etiqueta
 title: 'Longitud de las frases del Quijote con #rstats'
 url: /blog/longitud-de-las-frases-del-quijote-con-rstats/
 ---
-
 Siempre he querido hacer cosas con Rstats y el Quijote y ayer se me ocurrió medir la longitud de las frases del Quijote y crear un histograma que describa esta longitud. Aunque confieso que no me lo he leído, me he quedado en el capítulo 7 u 8 (no recuerdo) el caso es que me pareció hipnótico con sus ritmos, es musical. Además tengo muchas ganas de meter mano al proyecto Gutemberg porque esos ritmos, esa musicalidad, el uso de palabras esdrújulas,… me llama la atención.
 Bueno, al lío, todo el código está subido al repositorio por si lo queréis, pero hay algunas funciones y algunas ideas que me parecen interesantes.
 

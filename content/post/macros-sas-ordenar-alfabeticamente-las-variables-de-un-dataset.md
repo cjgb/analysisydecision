@@ -1,22 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- SAS
-- Trucos
-date: '2008-11-06T06:55:12-05:00'
-lastmod: '2025-07-13T16:01:07.627686'
+- sas
+- trucos
+date: '2008-11-06'
+lastmod: '2025-07-13'
 related:
 - macro-sas-variables-de-un-dataset-en-una-macro-variable.md
 - trucos-sas-lista-de-datasets-en-macro-variable.md
 - trucos-sas-macrovariable-a-dataset.md
 - trucos-sas-eliminar-etiquetas-en-los-conjunto-de-datos-sas.md
 - truco-sas-tablas-de-una-libreria-en-una-macro-variable.md
-slug: macros-sas-ordenar-alfabeticamente-las-variables-de-un-dataset
-tags: []
+tags:
+- sin etiqueta
 title: Macros SAS. Ordenar alfabéticamente las variables de un dataset
 url: /blog/macros-sas-ordenar-alfabeticamente-las-variables-de-un-dataset/
 ---
-
 Si deseamos ordenar alfabéticamente las variables de un conjunto de datos SAS porque puede falitarnos la realización de sumatorios de importes, saldos,… y el conjunto de datos SAS está desordenado os planteo una macro bien sencilla y que trabaja con una de las vistas más útiles de la SASHELP. La macro es bien sencilla y nos permite establecer que variables deseamos que aparezcan primero, selecciona los nombres de las variables, los ordena alfabéticamente y mediante un proc append (más rápido que un paso data) crea el fichero SAS con las variables ordenadas:
 
 ```r

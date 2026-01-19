@@ -1,24 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Monográficos
-- R
-date: '2012-09-18T14:36:37-05:00'
-lastmod: '2025-07-13T15:55:36.000728'
+- formación
+- monográficos
+- r
+date: '2012-09-18'
+lastmod: '2025-07-13'
 related:
 - monografico-arboles-de-clasificacion-con-rpart.md
 - informes-con-r-en-html-comienzo-con-r2html-i.md
 - evaluando-la-capacidad-predictiva-de-mi-modelo-tweedie.md
 - sobremuestreo-y-pesos-a-las-observaciones-ahora-con-r.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-10-probabilidad-y-distribuciones.md
-slug: cuanto-dinero-pierdo-jugando-a-la-loteria-una-simulacion-poco-seria-con-r
 tags:
 - simulación
 title: Cuánto dinero pierdo jugando a la lotería. Una simulación poco seria con R
 url: /blog/cuanto-dinero-pierdo-jugando-a-la-loteria-una-simulacion-poco-seria-con-r/
 ---
-
 ![](/images/2012/09/teletexto_loteria.png)
 
 Esta pantalla es muy habitual en mi televisor todos los jueves por la noche. Son los resultados de la Lotería Nacional de España, el sorteo de los jueves. Mi mujer insiste en comprar lotería para dejar de ser pobres. No es una buena opción. Aunque por lo menos ahora compramos lotería nacional. Antes jugábamos a eso de la Bonoloto, las probabilidades de que te toque son menores que la cantidad de sustancias dopantes que le encontraron al gran Alberto Contador. Eso lo entendió, pero había que jugar. ¿Y cuánto nos cuesta jugar?

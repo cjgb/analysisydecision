@@ -1,26 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- R
-date: '2010-12-05T16:02:03-05:00'
-lastmod: '2025-07-13T15:58:13.567215'
+- formación
+- r
+date: '2010-12-05'
+lastmod: '2025-07-13'
 related:
 - truco-r-paletas-de-colores-en-r.md
 - trucos-r-graficos-de-velocimetro-con-r.md
 - grafico-de-correlaciones-entre-variables.md
 - descubriendo-ggplot2-421.md
 - manual-curso-introduccion-de-r-capitulo-7-funciones-graficas-basicas-en-r.md
-slug: graficos-de-burbuja-con-r
 tags:
-- ''
 - ggplot2
 - palette
 - symbols
 title: Gráficos de burbuja con R
 url: /blog/graficos-de-burbuja-con-r/
 ---
-
 El otro día en [R-bloggers leí este post](http://www.r-bloggers.com/bubble-chart-by-using-ggplot2/). Entonces busqué información sobre estos gráficos con R en español y sólo encontré ayuda para realizarlos con Excel. Es verdad que el enlace que os pongo es más que suficiente para realizar los gráficos de burbuja pero en pocas líneas puedo ilustrar mejor un ejemplo y proponeros varias formas de crearlo. La primera de ellas emplea la función symbols y genera el siguiente gráfico:
 
 [![r_bubble_plot1.png](/images/2010/12/r_bubble_plot1.thumbnail.png)](/images/2010/12/r_bubble_plot1.png "r_bubble_plot1.png")

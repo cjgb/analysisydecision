@@ -1,21 +1,20 @@
 ---
 author: rvaquerizo
 categories:
-- Sin catergoría
-date: '2008-10-20T08:14:01-05:00'
-lastmod: '2025-07-13T16:10:56.805229'
+- sin categoría
+date: '2008-10-20'
+lastmod: '2025-07-13'
 related:
 - lecciones-de-economia-de-un-ignorante-la-caixa-a-colocar-preferentes.md
 - una-fabulilla-sobre-prim-con-multiples-moralejas.md
 - lecciones-de-economia-de-un-ignorante-llegamos-a-solvencia-ii.md
 - la-confianza-en-el-sector-financiero.md
 - ojo-con-las-redes-sociales.md
-slug: un-detalle-puede-hacer-que-no-te-tomen-en-serio
-tags: []
+tags:
+- sin etiqueta
 title: Un detalle puede hacer que no te tomen en serio
 url: /blog/un-detalle-puede-hacer-que-no-te-tomen-en-serio/
 ---
-
 Preocupado por la caida en bolsa de ING y sobre todo de Société Générale esta mañana he dado un paseo por la prensa nacional. De momento parece que ninguna entidad española va a tener los mismos problemas que otros gigantes europeos, muy a pesar de lo que diga Merrill Lynch. Navegando por otras noticias me he encontrado esta fotografia en [El País](http://www.elpais.com/articulo/espana/fiscal/cree/protegidas/victimas/Ley/Memoria/elpepuesp/20081020elpepunac_9/Tes):
 
 [![detalles1.JPG](/images/2008/10/detalles1.thumbnail.JPG)](/images/2008/10/detalles1.JPG "detalles1.JPG")

@@ -1,24 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-- Trucos
-- WPS
-date: '2013-02-06T09:17:26-05:00'
-lastmod: '2025-07-13T16:08:49.828261'
+- formación
+- sas
+- trucos
+- wps
+date: '2013-02-06'
+lastmod: '2025-07-13'
 related:
 - truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
 - trucos-sas-errores-y-formatos.md
 - truco-muy-facil-de-sas-leer-un-rango-de-una-hoja-excel.md
 - trucos-sas-macrovariable-a-dataset.md
 - truco-sas-proc-format-vs-formato-percent.md
-slug: truco-sas-ver-el-contenido-de-un-formato
-tags: []
+tags:
+- sin etiqueta
 title: Truco SAS. Ver el contenido de un formato
 url: /blog/truco-sas-ver-el-contenido-de-un-formato/
 ---
-
 Para ver los valores que toma un formato con SAS tenemos que emplear el PROC FORMAT. La sintaxis es muy sencilla:
 
 ```r

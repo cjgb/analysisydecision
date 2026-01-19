@@ -1,21 +1,20 @@
 ---
 author: rvaquerizo
 categories:
-- Banca
-date: '2008-11-24T09:35:00-05:00'
-lastmod: '2025-07-13T15:59:18.850611'
+- banca
+date: '2008-11-24'
+lastmod: '2025-07-13'
 related:
 - margenes-nulos-en-los-nuevos-depositos-bancarios.md
 - amanece-que-no-es-poco.md
 - lecciones-de-economia-de-un-ignorante-llegamos-a-solvencia-ii.md
 - a-mi-me-preocupa-el-pequeno-ahorrador.md
 - una-fabulilla-sobre-prim-con-multiples-moralejas.md
-slug: la-confianza-en-el-sector-financiero
-tags: []
+tags:
+- sin etiqueta
 title: La confianza en el sector financiero
 url: /blog/la-confianza-en-el-sector-financiero/
 ---
-
 La primera subasta del **Fondo de Liquidez** del gobierno Español ha sido un fracaso, esto no es una opinión, no llegar ni al 50% subastado es un fracaso. Una de las medidas estrellas contra la crisis financiera está teniendo muy poca aceptación en la Banca española. Sólo han acudido unas pocas entidades y algunas de ellas podemos considerar que su cúpula directiva es afín al gobierno que ha puesto en marcha esta medida. Entonces se plantean dos cuestiones fundamentales:
 
   1. ¿Las entidades pueden mantener el ritmo crediticio?

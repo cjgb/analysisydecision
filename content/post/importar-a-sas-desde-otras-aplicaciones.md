@@ -1,27 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-date: '2008-07-28T07:54:22-05:00'
-lastmod: '2025-07-13T15:58:35.285085'
+- formación
+- sas
+date: '2008-07-28'
+lastmod: '2025-07-13'
 related:
 - curso-de-lenguaje-sas-con-wps-lectura-de-ficheros-de-texto.md
 - truco-sas-leer-datos-de-excel-con-sas-con-dde.md
 - ayudadme-importar-a-sas-texto-con-comillas.md
 - truco-sas-macro-buscar-y-reemplazar-en-texto.md
 - truco-sas-crear-ficheros-excel-sin-proc-export-i.md
-slug: importar-a-sas-desde-otras-aplicaciones
 tags:
-- Access
-- Excel
-- Import
-- SAS
-- Texto
+- access
+- excel
+- import
+- sas
+- texto
 title: Importar a SAS desde otras aplicaciones.
 url: /blog/importar-a-sas-desde-otras-aplicaciones/
 ---
-
 Una de las labores más comunes con SAS consiste en leer e importar ficheros provenientes de otras aplicaciones. Es muy habitual trabajar con tablas de Excel, Access, Lotus, Business Object, Microstrategy, SQL Server, SAP… Para ello SAS dispone de algunos módulos que no se disponen en todas las instalaciones debido a que pueden encarecer mucho la instalación final. Por este motivo voy a introduciros en una metodología muy habitual en el trabajo diario: Importación de textos delimitados con SAS.
 
 Para importar desde SAS ficheros de texto debemos tener en cuenta lo siguiente:

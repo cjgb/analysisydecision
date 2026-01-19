@@ -1,22 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- R
-date: '2008-06-23T07:56:56-05:00'
-lastmod: '2025-07-13T16:01:36.037851'
+- formación
+- r
+date: '2008-06-23'
+lastmod: '2025-07-13'
 related:
 - capitulo-5-representacion-basica-con-ggplot.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-10-probabilidad-y-distribuciones.md
 - manual-curso-introduccion-de-r-capitulo-11-introduccion-al-analisis-de-la-varianza-anova.md
 - manual-curso-introduccion-de-r-capitulo-13-analisis-de-la-varianza-disenos-anidados.md
 - manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
-slug: manual-curso-introduccion-de-r-capitulo-8-inferencia-estadistica
-tags: []
+tags:
+- sin etiqueta
 title: 'Manual. Curso introducción de R. Capítulo 8: Inferencia estadística'
 url: /blog/manual-curso-introduccion-de-r-capitulo-8-inferencia-estadistica/
 ---
-
 En esta nueva entrega del curso de R vamos a trabajar con algunos conceptos básicos de inferencia estadística. En primer lugar hacemos inferencia a partir de unas observaciones obtenidas a partir de la **población** a las que vamos a extraer unas propiedades que se denominan **estadísticos muestrales**. Además vamos a conocer la distribución de dichos estadísticos (generalmente distribución normal) por lo que hacemos **inferencia paramétrica**.
 
 La **inferencia paramétrica** puede recogerse en una vertiente o en otra según el parámetro a estimar; tenemos por un lado la estadística clásica (que es en la que nos vamos a centrar) y por otro lado la estadística ballesiana.

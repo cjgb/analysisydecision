@@ -1,27 +1,26 @@
 ---
 author: rvaquerizo
 categories:
-- Business Intelligence
-- Consultoría
-- Formación
-- Mapas
-- Monográficos
-date: '2016-02-12T16:35:11-05:00'
-lastmod: '2025-07-13T15:54:59.284343'
+- business intelligence
+- consultoría
+- formación
+- mapas
+- monográficos
+date: '2016-02-12'
+lastmod: '2025-07-13'
 related:
 - archivos-shape-y-geojason-para-crear-un-mapa-de-espana-por-codigos-postales.md
 - mapas-municipales-de-espana-con-excel-y-qgis.md
 - mapa-de-codigos-postales-con-r-aunque-el-mapa-es-lo-de-menos.md
 - cartografia-digitalizada-de-espana-por-seccion-censal.md
 - libreria-mapspain-en-rstats-mapas-estaticos-de-espana.md
-slug: como-hacer-un-mapa-de-espana-por-codigos-postales-con-qgis
 tags:
 - codigos postales
-- QGIS
+- qgis
+- mapas
 title: Como hacer un mapa de España por códigos postales con QGIS
 url: /blog/como-hacer-un-mapa-de-espana-por-codigos-postales-con-qgis/
 ---
-
 ## Editado 2022:
 
 Francisco Goerlich ha elaborado una versión que de nuevo puede obtener los datos de Cartociudad. Volveremos sobre el tema y dejaremos una capa que pueda ser reutilizable.

@@ -1,27 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- Data Mining
-- Formación
-- Modelos
-- SAS
-date: '2009-04-08T05:22:13-05:00'
-lastmod: '2025-07-13T16:01:11.684894'
+- data mining
+- formación
+- modelos
+- sas
+date: '2009-04-08'
+lastmod: '2025-07-13'
 related:
 - trucos-sas-variables-dummy-de-una-variable-continua.md
 - truco-sas-categorizar-variables-continuas.md
 - macros-faciles-de-sas-eliminar-outliers-en-una-variable.md
 - macro-sas-crear-variables-dummy-desde-una-variable-categorica.md
 - trucos-sas-variables-dicotomicas-desde-factores.md
-slug: macros-sas-tramificar-en-funcion-de-una-variable-respuesta
 tags:
 - macro
 - regresión logística
-- SAS
+- sas
 title: Macros SAS. Tramificar en función de una variable respuesta
 url: /blog/macros-sas-tramificar-en-funcion-de-una-variable-respuesta/
 ---
-
 Sobre la idea de “dumificar” variables he ideado un proceso para agrupar variables cuantitativas en función de una variable respuesta. Los que disponéis de herramientas de análisis más complejas tipo Enterprise Miner o Clementine ya disponéis de algoritmos y funciones que realizan esta útil tarea, además los árboles pueden trabajar con variables continuas. Pero un modelo es bueno si las variables de entrada están bien elegidas y bien construidas y como paso previo al análisis multivariante el análisis univariable es imprescindible. Tramificar una variable continua en función de una variable respuesta no va más allá de un análisis univariante, igualmente podemos tener dependencia lineal entre variables, algo que sólo detectaremos con análisis multivariables. Pero este sencillo algoritmo puede ayudarnos a conocer mejor algunas variables que deseamos introducir en nuestro modelo.
 
 La idea es muy fácil: dispongo de una variable continua y una variable respuesta, divido la variable continua en N variables dicotómicas y mediante una regresión logística determino una respuesta media de cada grupo y si la media de un grupo es muy parecida a la media de otro grupo cercano entonces los uno. Es como un análisis de la varianza en el que medimos que las medias por grupo no sean significativamente distintas de las de otros grupos cercanos. Y este criterio de distinción lo establecemos nosotros con unos criterios de corte basados en la diferencia relativa con la media del grupo más cercano esté dentro de un rango.

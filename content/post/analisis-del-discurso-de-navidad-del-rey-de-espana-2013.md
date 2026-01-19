@@ -1,25 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- R
-- Trucos
-date: '2013-12-26T03:45:40-05:00'
-lastmod: '2025-07-13T15:53:57.533870'
+- r
+- trucos
+date: '2013-12-26'
+lastmod: '2025-07-13'
 related:
 - cloud-words-con-r-trabajar-con-la-api-del-europe-pmc-con-r.md
 - analisis-de-textos-con-r.md
 - comparamos-los-programas-electorales-de-pp-y-psoe-con-r.md
 - puede-la-informacion-de-twitter-servir-para-tarificar-seguros.md
 - analisisydecision-es-os-desea-felices-fiestas.md
-slug: analisis-del-discurso-de-navidad-del-rey-de-espana-2013
 tags:
-- RColorBrewer
+- rcolorbrewer
 - text mining
 - wordcloud
 title: Análisis del discurso de navidad del Rey de España 2013
 url: /blog/analisis-del-discurso-de-navidad-del-rey-de-espana-2013/
 ---
-
 [![](/images/2013/12/Discurso-del-rey-españa-2013.png)](/images/2013/12/Discurso-del-rey-españa-2013.png)
 
 Me llena de orgullo y satisfacción mostraros un ejemplo de uso de la librería **wordcloud** para la realización de nubes de palabras con R. Esta entrada no es muy innovadora porque ya tenemos alguna similar en el blog. Lo primero que tenéis que hacer es descargaros el discurso del Rey y ejecutad este código:

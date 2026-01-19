@@ -1,25 +1,23 @@
 ---
 author: cgbellosta
 categories:
-- Formación
-- Monográficos
-- R
-date: '2009-12-03T18:07:54-05:00'
-lastmod: '2025-07-13T16:02:32.735861'
+- formación
+- monográficos
+- r
+date: '2009-12-03'
+lastmod: '2025-07-13'
 related:
 - noticias-del-congreso-de-usuarios-de-r.md
 - estadistica-para-cientificos-de-datos-con-r-introduccion.md
 - proyecto-text-mining-con-excel-iv.md
 - comparamos-los-programas-electorales-de-pp-y-psoe-con-r.md
 - algunos-temas-de-interes-sobre-r.md
-slug: mineria-de-datos-con-r-un-pequeno-paseo
 tags:
-- minería de datos
-- R
+- machine learning
+- r
 title: 'Minería de datos con R: un pequeño paseo'
 url: /blog/mineria-de-datos-con-r-un-pequeno-paseo/
 ---
-
 Éste es mi primer _monográfico_. Como soy más perezoso que Raúl y peor estudiante que nadie, en lugar de hacerlo yo, lo copio. Y en lugar de desarrollarlo en su totalidad, dejo más de la mitad como deberes.
 
 Y es que he encontrado un [pequeño programa en R](http://i2pi.com/rez/ml_talk/ml_demo.R "Minería de datos con R") que repasa una serie de técnicas clásicas de minería de datos a modo de paseo. Está en inglés y tal vez alguien (es la tarea que propongo a algún voluntarioso lector del _blog_) se anime a traducirlo. De hacerlo, me comprometo a darle alojamiento y publicidad respetando las debidas atribuciones.

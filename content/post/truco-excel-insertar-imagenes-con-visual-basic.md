@@ -1,23 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Excel
-- Formación
-- Trucos
-date: '2015-09-15T07:26:18-05:00'
-lastmod: '2025-07-13T16:07:19.314251'
+- excel
+- formación
+- trucos
+date: '2015-09-15'
+lastmod: '2025-07-13'
 related:
 - trucos-excel-crear-un-borrador-de-correo-con-excel.md
 - truco-excel-unir-todos-los-libros-en-una-hoja.md
 - truco-excel-abrir-multiples-libros-de-excel-en-distintas-hojas-de-un-nuevo-libro.md
 - truco-excel-pasar-un-rango-de-varias-columnas-a-una.md
 - trucos-excel-archivos-de-un-directorio-con-una-macro.md
-slug: truco-excel-insertar-imagenes-con-visual-basic
-tags: []
+tags:
+- sin etiqueta
 title: Truco Excel. Insertar imágenes con Visual Basic
 url: /blog/truco-excel-insertar-imagenes-con-visual-basic/
 ---
-
 Si deseáis insertar una imagen en Excel desde Visual Basic mediante una macro tenéis que ejecutar un código similar a este:
 
 ```r

@@ -1,28 +1,26 @@
 ---
 author: rvaquerizo
 categories:
-- Business Intelligence
-- Data Mining
-- Formación
-- Monográficos
-- SAS
-- WPS
-date: '2011-02-04T17:02:20-05:00'
-lastmod: '2025-07-13T15:56:49.408442'
+- business intelligence
+- data mining
+- formación
+- monográficos
+- sas
+- wps
+date: '2011-02-04'
+lastmod: '2025-07-13'
 related:
 - analisis-de-textos-con-r.md
 - analisis-del-programa-electoral-del-partido-popular-antes-de-las-elecciones-en-espana.md
 - comparamos-los-programas-electorales-de-pp-y-psoe-con-r.md
 - ejemplo-de-web-scraping-con-r-la-formacion-de-los-diputados-del-congreso.md
 - curso-de-lenguaje-sas-con-wps-funciones-en-wps.md
-slug: el-debate-politico-o-como-analizar-textos-con-wps
 tags:
-- analisis de textos
 - text mining
+- sas
 title: El debate político o como analizar textos con WPS
 url: /blog/el-debate-politico-o-como-analizar-textos-con-wps/
 ---
-
 ¿Qué hacen los políticos españoles en el Congreso de los Diputados? Las tertulias radiofónicas están llenas de analístas políticos que podrán opinar sobre la labor del Congreso mejor que yo. Sin embargo yo tengo WPS, sé programar en SAS y en la [web del Congreso](http://www.congreso.es/portal/page/portal/Congreso/Congreso) están [todas las sesiones y todas las intervenciones](http://www.congreso.es/portal/page/portal/Congreso/Congreso/Intervenciones/Busqueda%20avanzada) de la democracia. Pues con estos elementos vamos a iniciar un proceso de _text mining,_ aunque no llegaremos a realizar ningún análisis complejo. Para comenzar, como siempre, necesito datos. Me he guardado [la sesión del Congreso de los Diputados del día 26/01/2011](http://www.congreso.es/portal/page/portal/Congreso/PopUpCGI?CMD=VERLST&BASE=puw9&FMT=PUWTXDTS.fmt&DOCS=1-1&QUERY=%28CDP201101260219.CODI.%29#%28P%C3%A1gina46%29) como web y posteriormente con Word la he salvado como fichero de texto (ojo con las codificaciones). De todos modos podéis [descargaros aquí](/images/2011/02/popupcgi.txt "popupcgi.txt") el fichero.
 
 Comienza nuestro trabajo con WPS y lo primero es crear una tabla con la sesión:

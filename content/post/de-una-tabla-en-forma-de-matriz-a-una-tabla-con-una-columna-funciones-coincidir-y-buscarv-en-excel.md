@@ -1,24 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Excel
-- Formación
-- Trucos
-date: '2023-01-18T09:09:20-05:00'
-lastmod: '2025-07-13T15:56:26.402680'
+- excel
+- formación
+- trucos
+date: '2023-01-18'
+lastmod: '2025-07-13'
 related:
 - truco-excel-repetir-celdas-en-funcion-de-los-valores-de-otra-celda.md
 - truco-excel-pasar-un-rango-de-varias-columnas-a-una.md
 - truco-excel-transponer-una-fila-en-varias-columnas-con-desref.md
 - trucos-excel-trasponer-con-la-funcion-indirecto.md
 - desref-para-trasponer-en-excel-varias-columnas.md
-slug: de-una-tabla-en-forma-de-matriz-a-una-tabla-con-una-columna-funciones-coincidir-y-buscarv-en-excel
-tags: []
+tags:
+- sin etiqueta
 title: De una tabla en forma de matriz a una tabla con una columna. Funciones COINCIDIR
   y BUSCARV en Excel
 url: /blog/de-una-tabla-en-forma-de-matriz-a-una-tabla-con-una-columna-funciones-coincidir-y-buscarv-en-excel/
 ---
-
 En Excel nos encontramos con la necesidad de transformar matrices a columnas. El tema de la transposición con Excel ya se ha visto en el blog con anterioridad siendo [el pasar de varias columnas a una con código](https://analisisydecision.es/truco-excel-pasar-un-rango-de-varias-columnas-a-una/ "el pasar de varias columnas a una con código") uno de las entradas con más visitas de este sitio. El caso es que en este caso no es tan importante la transposición como la búsqueda de la celda mediante BUSCARV. La tarea que se expone es la siguiente:
 [![](/images/2023/01/wp_editor_md_32b17e49e2dd219a103913c1d722fad7.jpg)](/images/2023/01/wp_editor_md_32b17e49e2dd219a103913c1d722fad7.jpg)
 

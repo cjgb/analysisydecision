@@ -1,24 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Consultoría
-- Data Mining
-- Formación
-- R
-date: '2019-11-07T14:07:07-05:00'
-lastmod: '2025-07-13T16:00:29.585322'
+- consultoría
+- data mining
+- formación
+- r
+date: '2019-11-07'
+lastmod: '2025-07-13'
 related:
 - obteniendo-los-parametros-de-mi-modelo-gam.md
 - modelos-gam-dejando-satisfechos-a-los-equipos-de-negocio.md
 - interpretacion-de-los-parametros-de-un-modelo-glm.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-15-modelos-glm-regresion-logistica-y-regresion-de-poisson.md
 - manual-curso-introduccion-de-r-capitulo-18-modelos-de-regresion-de-poisson.md
-slug: los-parametros-del-modelo-glm-como-relatividades-como-recargos-o-descuentos
-tags: []
+tags:
+- sin etiqueta
 title: Los parámetros del modelo GLM como relatividades, como recargos o descuentos
 url: /blog/los-parametros-del-modelo-glm-como-relatividades-como-recargos-o-descuentos/
 ---
-
 Los modelos GLM son muy empleados en el ámbito actuarial para la obtención de modelos de riesgo, estos modelos de riesgo son los elementos fundamentales en el cálculo de tarifas y qué es una tarifa, imaginad el precio del seguro de vuestra vivienda, bueno pues es un cálculo en el que partiendo de un precio base se van añadiendo recargos y descuentos en función del tipo de riesgo que se quiera asegurar (recargos y descuentos en función de los metros cuadrados, de la ubicación de la vivienda de las calidades de construcción….). Esta es una visión muy simplista porque al final se tienen múltiples garantías y es necesaria la combinación de garantías, pero se puede entender de ese modo, un precio base al que recargamos o descontamos precio. Estos recargos y descuentos se denominan frecuentemente relatividades y hoy quiero acercaros a la obtención de esas relatividades y como un modelo GLM se transforma en el precio de un seguro.
 
 En la línea habitual del blog vamos a ilustrar con un ejemplo usando unos [datos muy conocidos para el trabajo con GLM y modelos de cálculo de tarifas](http://staff.math.su.se/esbj/GLMbook/case.html). El primer paso es cargar el conjunto de datos en nuestra sesión de R:

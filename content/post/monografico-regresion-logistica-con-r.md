@@ -1,29 +1,27 @@
 ---
 author: rvaquerizo
 categories:
-- Data Mining
-- Formación
-- Modelos
-- Monográficos
-- R
-date: '2010-01-29T08:47:34-05:00'
-lastmod: '2025-07-13T16:02:56.418141'
+- data mining
+- formación
+- modelos
+- monográficos
+- r
+date: '2010-01-29'
+lastmod: '2025-07-13'
 related:
 - monografico-analisis-de-factores-con-r-una-introduccion.md
 - monografico-un-poco-de-proc-logistic.md
 - monografico-arboles-de-clasificacion-con-rpart.md
 - interpretacion-de-los-parametros-de-un-modelo-glm.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-15-modelos-glm-regresion-logistica-y-regresion-de-poisson.md
-slug: monografico-regresion-logistica-con-r
 tags:
 - data management
-- modelos con R
-- R
+- modelos
+- r
 - regresión logística
 title: Monográfico. Regresión logística con R
 url: /blog/monografico-regresion-logistica-con-r/
 ---
-
 Por fin nos metemos con la regresión logística en R. Nos meteremos con WPS (si es posible). Los modelos de regresión logística son los más utilizados en las áreas en las que el ahora escribiente ha trabajado. ¿Por qué tiene tanto «éxito»? Porque es el mejor ejemplo de modelo de variable linealmente dependiente de otras variables independientes. Pero sobre todo tiene éxito porque modelamos una probabilidad de un suceso (habitualmente dicotómico) en función de unos
 factores que pueden ser discretos o continuos. Modelizamos probabilidades, insisto; por ejemplo, si clasificamos la variable comete fraude como 1 y no comete fraude como 0 podríamos realizar un modelo de regresión lineal del tipo fraude(0,1)=:término independiente:+:parámetro:*:independiente:. Matemáticamente es posible, pero si me dices que un cliente tiene un 1,34 de «potencial» de fraude entro en estado de shock. Peeero, si p es la probabilidad de cometer fraude podemos construir esta función Ln(p/(1-p)) y sobre esta función si hacemos: Ln(p/q)=:término independiente: + :parámetro:*:independiente:. O lo que es lo mismo: prob. fraude=1/(1+e**(-:término independiente:-:parámetro:*:independiente:)). Qué bonita función y que interesante propiedad de los logaritmos que transforman sumas en productos.
 

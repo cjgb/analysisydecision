@@ -1,25 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Machine Learning
-- Python
-date: '2020-10-08T05:31:22-05:00'
-lastmod: '2025-07-13T16:01:14.395388'
+- formación
+- machine learning
+- python
+date: '2020-10-08'
+lastmod: '2025-07-13'
 related:
 - data-management-basico-con-pandas.md
 - data-management-con-dplyr.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-3-manejo-de-datos-con-r.md
 - leer-fichero-de-texto-de-ancho-fijo-con-python-pandas.md
 - truco-python-seleccionar-o-eliminar-variables-de-un-data-frame-en-base-a-un-prefijo-sufijo-o-si-contienen-un-caracter.md
-slug: manejo-de-datos-basico-con-python-datatable
 tags:
 - datatable
-- Pandas
+- pandas
 title: Manejo de datos básico con Python datatable
 url: /blog/manejo-de-datos-basico-con-python-datatable/
 ---
-
 Nueva entrada dedicada al **data management con Python** , esta vez con **datatable**. No voy a justificar el uso de datatable antes que pandas, en un vistazo rápido por la web encontráis numerosas ocasiones en las que datatable es más eficiente que pandas en el manejo de datos con Python. En cuanto a la complejidad en el uso de uno u otro mi opinión no es objetiva porque me cuesta mucho trabajar con Pandas.
 
 Asumo que habéis instalado datatable en vuestro entorno de Python (siempre por encima de la versión 3.5) y una vez está instalado os propongo obtener un conjunto de datos del [repositorio de analisisydecision](https://github.com/analisisydecision). Por supuesto la carga de este csv de ejemplo la realizamos con datatable y la función fread:

@@ -1,27 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Modelos
-- R
-date: '2008-10-04T05:45:18-05:00'
-lastmod: '2025-07-13T16:01:18.450253'
+- formación
+- modelos
+- r
+date: '2008-10-04'
+lastmod: '2025-07-13'
 related:
 - manual-curso-introduccion-de-r-capitulo-11-introduccion-al-analisis-de-la-varianza-anova.md
 - manual-curso-introduccion-de-r-capitulo-13-analisis-de-la-varianza-disenos-anidados.md
 - manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
 - manual-curso-introduccion-de-r-capitulo-10-funciones-graficas-en-regresion-lineal.md
 - monografico-analisis-de-factores-con-r-una-introduccion.md
-slug: manual-curso-introduccion-de-r-capitulo-12-analisis-de-la-varianza-disenos-bifactoriales
 tags:
 - anova
 - diseño bifactorial
-- Modelos
+- modelos
 title: 'Manual. Curso introducción de R. Capítulo 12: Análisis de la varianza. Diseños
   bifactoriales'
 url: /blog/manual-curso-introduccion-de-r-capitulo-12-analisis-de-la-varianza-disenos-bifactoriales/
 ---
-
 En esta nueva entrega del manual de R vamos a ver un modelo ANOVA que analiza dos fuentes de variación. Si recordamos en el capítulo 11 estudiamos la diferencia entre los tratamientos que seguían determinados pacientes teníamos una variable respuesta en función de una variable factor, el diseño factorial aleatorizado. En este caso vamos a tener la variable respuesta en función de dos factores y podrá existir una interacción entre ambos. Con lo que la tabla ANOVA será del siguiente modo:
 
 ![Figura 12.1](/images/2008/10/c121.JPG)

@@ -1,28 +1,26 @@
 ---
 author: rvaquerizo
 categories:
-- Business Intelligence
-- Excel
-- Formación
-- Monográficos
-- Trucos
-date: '2012-04-07T13:53:22-05:00'
-lastmod: '2025-07-13T16:09:09.094354'
+- business intelligence
+- excel
+- formación
+- monográficos
+- trucos
+date: '2012-04-07'
+lastmod: '2025-07-13'
 related:
 - mapa-excel-de-europa.md
 - trucos-excel-mapa-de-espana-por-provincias.md
 - trucos-excel-mapa-de-espana-por-comunidades-autonomas.md
 - nuevo-y-muy-mejorado-mapa-de-espana-por-provincias-con-excel.md
 - trucos-excel-mapa-de-colombia-por-departamentos.md
-slug: trucos-excel-mapa-de-mexico-por-estados
 tags:
-- macros de Excel
+- macros de excel
 - mapas
 - mexico
 title: Trucos Excel. Mapa de México por Estados
 url: /blog/trucos-excel-mapa-de-mexico-por-estados/
 ---
-
 ![mapa_excel_mexico1.png](/images/2012/04/mapa_excel_mexico1.png)
 
 Hoy os presento la versión inicial del**mapa de México por Estados Federales** para que le podáis usar en Excel, Powerpoint, Word o alguna de las herramientas habituales de ofimática. Se trata de un archivo Excel con macros que os [podéis descargar en este enlace](/images/2012/04/mapa-mexico.xlsm "mapa-mexico.xlsm"). La hoja Mapa contiene una serie de _shapes_ que están nombrados para poder cambiar de color en función de una variable tramo. Este Excel inicial está preparado para poder pintar hasta 5 tramos, si deseáis más tramos tenéis que meteros en el código Excel que modifica el color de cada uno de los 32 _shapes_ que componen el mapa, posteriormente lo repasamos de forma rápida. Por otro lado tenemos la división de los estados, el nombre de los _shapes_ y los tramos que previamente habremos preparado. Este ejemplo no pinta nada concreto. La hoja Mapa además dispone de dos botones asociados a las dos macros que contiene el Excel. Por un lado tenemos una macro que nos deja los Estados en blanco y por otro tenemos la macro que nos pinta de cada color elegido el mapa.Un vistazo sobre estos elementos de la hoja Excel:

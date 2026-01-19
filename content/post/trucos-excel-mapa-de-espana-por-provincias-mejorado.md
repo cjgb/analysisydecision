@@ -1,25 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- Excel
-- Formación
-- Trucos
-date: '2011-06-09T14:36:29-05:00'
-lastmod: '2025-07-13T16:09:05.938224'
+- excel
+- formación
+- trucos
+date: '2011-06-09'
+lastmod: '2025-07-13'
 related:
 - trucos-excel-mapa-de-espana-por-provincias-mejores-versiones.md
 - trucos-excel-mapa-de-espana-por-provincias.md
 - nuevo-mapa-por-provincias-en-excel-de-espana-actualiza-los-colores-en-rgb.md
 - nuevo-y-muy-mejorado-mapa-de-espana-por-provincias-con-excel.md
 - trucos-excel-nuevo-y-mejorado-mapa-de-espana-por-provincias-con-excel.md
-slug: trucos-excel-mapa-de-espana-por-provincias-mejorado
 tags:
 - macro
-- mapa españa provincias excel
+- mapas
+- españa
+- excel
 title: Trucos Excel. Mapa de España por provincias (mejorado)
 url: /blog/trucos-excel-mapa-de-espana-por-provincias-mejorado/
 ---
-
 ![mapa_espana_excelv2.png](/images/2011/06/mapa_espana_excelv2.png)
 Un nuevo mapa de España mejorado para Excel. Sobre la base del [mapa ya publicado en esta bitácora](https://analisisydecision.es/trucos-excel-mapa-de-espana-por-provincias/) un lector ha realizado una espectacular mejora. El compañero Daniel resume sus mejoras como:
 

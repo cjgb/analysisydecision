@@ -1,27 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- Data Mining
-- Formación
-- Modelos
-- Monográficos
-- R
-date: '2009-08-31T10:13:13-05:00'
-lastmod: '2025-07-13T16:02:44.282800'
+- data mining
+- formación
+- modelos
+- monográficos
+- r
+date: '2009-08-31'
+lastmod: '2025-07-13'
 related:
 - monografico-arboles-de-decision-con-party.md
 - trucos-r-llevar-a-sas-las-reglas-de-un-arbol-de-decision.md
 - arboles-de-decision-con-sas-base-con-r-por-supuesto.md
 - monografico-paquete-de-r-nnet-para-modelos-de-redes-neuronales.md
 - monografico-un-poco-de-proc-logistic.md
-slug: monografico-arboles-de-clasificacion-con-rpart
 tags:
 - árbol decisión
-- RPART
+- rpart
 title: Monográfico. Arboles de clasificación con RPART
 url: /blog/monografico-arboles-de-clasificacion-con-rpart/
 ---
-
 Con este rápido monográfico voy a acercarnos a los árboles de regresión con R. Esta metodología de predicción realiza construcciones lógicas que establecen reglas que nos permiten clasificar observaciones en función de una variable respuesta y de las relaciones existentes entre las variables dependientes. En esta primera aproximación no no voy a entrar en algoritmos ni en tipos de árboles (hay suficiente documentación en la red) intentaré en despertar la curiosidad del lector sobre este tipo de análisis y sobre todo quiero acercar a R al mundo empresarial un ámbito donde creo que R no destaca (al menos en España).
 
 Como es habitual voy a plantear un ejemplo e iremos analizando las posibilidades del paquete rpart. También quiero que este ejemplo sirva como introducción a la generación de datos aleatorios con R. Con esto la idea es “simular” la cartera de un banco que tiene 380 clientes y quiere estudiar la propensión a la contratación de una pensión vitalicia inmediata (PVI). Para el estudio va a emplear las siguientes variables:

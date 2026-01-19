@@ -1,26 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Monográficos
-- Python
-date: '2019-04-30T10:21:21-05:00'
-lastmod: '2025-07-13T16:00:03.744686'
+- formación
+- monográficos
+- python
+date: '2019-04-30'
+lastmod: '2025-07-13'
 related:
 - leer-fichero-de-texto-de-ancho-fijo-con-python-pandas.md
 - tres-fracasos-y-medio-con-r.md
 - leer-archivos-excel-con-python.md
 - data-management-basico-con-pandas.md
 - manejo-de-datos-basico-con-python-datatable.md
-slug: lectura-de-archivos-csv-con-python-y-pandas
 tags:
 - csv
-- importar csv
-- Pandas
+- importar datos
+- pandas
 title: Lectura de archivos csv con Python y Pandas
 url: /blog/lectura-de-archivos-csv-con-python-y-pandas/
 ---
-
 A continuación os planteo un acercamiento básico a la lectura de archivos csv con Python y algunos trucos para facilitar la vida cuando realizamos importaciones basados en la experiencia como son leer los primeros registros del csv o realizar una lectura de observaciones aleatoria por si el archivo es muy voluminoso. Para realizar las importaciones vamos a emplear Pandas y la función read_csv con sus infititas opciones:
 
 ```r

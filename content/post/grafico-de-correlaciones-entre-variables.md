@@ -1,23 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- R
-date: '2013-02-20T10:03:02-05:00'
-lastmod: '2025-07-13T15:58:09.483629'
+- formación
+- r
+date: '2013-02-20'
+lastmod: '2025-07-13'
 related:
 - grafico-de-correlaciones-entre-factores-grafico-de-la-v-de-cramer.md
 - truco-sas-grafico-de-correlaciones.md
 - graficos-de-burbuja-con-r.md
 - graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
 - anadiendo-graficos-de-tarta-a-nuestros-mapas-de-ggplot-con-scatterpie.md
-slug: grafico-de-correlaciones-entre-variables
 tags:
 - ggplot2
 title: Gráfico de correlaciones entre variables
 url: /blog/grafico-de-correlaciones-entre-variables/
 ---
-
 [![](/images/2013/02/Grafico-correlaciones-R.png)](/images/2013/02/Grafico-correlaciones-R.png)
 
 Los gráficos de correlaciones no me gustan especialmente pero empiezo a verlos en algunas presentaciones. En R tenemos algunos ejemplos interesantes pero con códigos que, bajo mi prisma, son complejos. Por este motivo me he puesto manos a la obra para realizar este gráfico de correlaciones con un código lo más sencillo posible. Para ello vamos a emplear ggplot2:

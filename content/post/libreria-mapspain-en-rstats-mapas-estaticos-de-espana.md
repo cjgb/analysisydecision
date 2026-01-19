@@ -1,24 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Business Intelligence
-- Formación
-- Mapas
-- R
-date: '2020-12-10T07:37:54-05:00'
-lastmod: '2025-07-13T16:00:14.595441'
+- business intelligence
+- formación
+- mapas
+- r
+date: '2020-12-10'
+lastmod: '2025-07-13'
 related:
 - mapa-del-covid-19-por-comunidades-autonomas-con-r-mas-rstats.md
 - incluir-subplot-en-mapa-con-ggplot.md
 - mover-parte-de-un-shapefile-con-r-mapa-de-la-tasa-de-casos-de-coronavirus-por-habitante-en-espana.md
 - mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel.md
 - mapa-estatico-de-espana-con-python.md
-slug: libreria-mapspain-en-rstats-mapas-estaticos-de-espana
-tags: []
+tags:
+- mapas
+- r
 title: Librería mapSpain en RStats. Mapas estáticos de España
 url: /blog/libreria-mapspain-en-rstats-mapas-estaticos-de-espana/
 ---
-
 [![](/images/2020/12/mapspain1.png)](/images/2020/12/mapspain1.png)
 
 Más mapas estáticos de España con R esta vez con la [librería mapSpain de Diego Hernangomez](http://CCAA.sf <- esp_get_ccaa\(\) table\(CCAA.sf$iso2.ccaa.code\)) que simplifica mucho la realización de esta tarea. el primer ejemplo es un mapa del exceso de mortalidad por comunidad Autónoma para el año 2020 [reaprovechando un código del blog](https://analisisydecision.es/no-estamos-igual-que-en-la-primera-ola-de-covid/):

@@ -1,26 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Excel
-- Formación
-- R
-- Trucos
-date: '2015-03-20T10:21:57-05:00'
-lastmod: '2025-07-13T16:02:07.242017'
+- excel
+- formación
+- r
+- trucos
+date: '2015-03-20'
+lastmod: '2025-07-13'
 related:
 - mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel.md
 - mapas-con-spatial-data-de-r.md
 - mapas-municipales-de-espana-con-excel-y-qgis.md
 - mapas-estaticos-de-peru-con-r-y-python-a-nivel-de-distrito.md
 - mapa-estatico-de-espana-con-python.md
-slug: mapas-estaticos-municipales-para-estados-de-mexico-con-r-y-con-excel
 tags:
-- Mapa
-- mapa mexico
+- mapas
+- mexico
 title: Mapas estáticos municipales para estados de México. Con R y con Excel
 url: /blog/mapas-estaticos-municipales-para-estados-de-mexico-con-r-y-con-excel/
 ---
-
 ![mexico_municipios_R_excel](/images/2015/03/mexico_municipios_R_excel-300x267.png)
 
 Podemos pintar mapas municipales de México con la ayuda de R y Excel. Esta entrada está [en la línea de otra anterior para hacer esta misma tarea con mapas de España](https://analisisydecision.es/mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel/). Disponemos de los datos en Excel y tenemos intalado R y la librería sp. El objeto R con los mapas de México lo podemos encontrar en <http://www.gadm.org/country> seleccionamos Mexico y R Spatial Poligons Data Frame y debemos descargarnos el objeto de nivel 2. Comenzamos el trabajo con R:

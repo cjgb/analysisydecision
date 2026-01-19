@@ -1,25 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Business Intelligence
-- Formación
-- SAS
-date: '2010-09-03T02:35:33-05:00'
-lastmod: '2025-07-13T15:54:56.540337'
+- business intelligence
+- formación
+- sas
+date: '2010-09-03'
+lastmod: '2025-07-13'
 related:
 - truco-leer-sas7bdat-sin-sas.md
 - ayudadme-importar-a-sas-texto-con-comillas.md
 - importar-a-sas-desde-otras-aplicaciones.md
 - acercamiento-a-wps-migrando-desde-sas.md
 - truco-sas-elminar-retornos-de-carro-o-saltos-de-linea-engorrosos.md
-slug: como-abrir-proyectos-de-enterprise-guide-corruptos-o-de-una-version-anterior
 tags:
 - corruptos
-- Enterprise Guide
+- enterprise guide
 title: Como abrir proyectos de Enterprise Guide corruptos o de una versión anterior
 url: /blog/como-abrir-proyectos-de-enterprise-guide-corruptos-o-de-una-version-anterior/
 ---
-
 Muchos hemos sufrido este error trabajando con Enterprise Guide de SAS:
 
 Unable to open file as a valid project file

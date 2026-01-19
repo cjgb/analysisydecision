@@ -1,28 +1,26 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Monográficos
-- R
-date: '2010-06-13T16:05:12-05:00'
-lastmod: '2025-07-13T16:10:58.415591'
+- formación
+- monográficos
+- r
+date: '2010-06-13'
+lastmod: '2025-07-13'
 related:
 - los-pilares-de-mi-simulacion-de-la-extension-del-covid19.md
 - etiquetas-en-scatter-plot-muertes-covid-por-millon-de-habitantes-vs-gasto-en-salud.md
 - manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-ii.md
 - informes-con-r-en-html-comienzo-con-r2html-i.md
 - monografico-regresion-logistica-con-r.md
-slug: un-homenaje-a-malthus-con-r
 tags:
 - gsub
 - plotrix
 - pyramid.plot
-- R
-- XML
+- r
+- xml
 title: Un homenaje a Malthus con R
 url: /blog/un-homenaje-a-malthus-con-r/
 ---
-
 Hoy quería yo revindicar la figura de un tipo bastante maltratado: [Thomas Malthus](http://es.wikipedia.org/wiki/Thomas_Malthus). Maltratado porque era un poco reaccionario y facha, y parece que eso es suficiente para que se olviden de uno, aunque fuera el tipo que más ha aportado a la [demografía](http://es.wikipedia.org/wiki/Demograf%C3%ADa).Y el homenaje tenía que hacérselo con el paquete de R que más utilizo últimamente, el XML y algunos sencillos gráficos creados con R-commander. Malthus lo que venía a decir es que somos muchos, demasiados y encima la cosa tenía muy mala pinta. Parece que tiene razón, pero vamos a verlo gráficamente. Comenzamos:
 
 ```r

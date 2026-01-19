@@ -1,26 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Machine Learning
-- Monográficos
-- R
-- Seguros
-date: '2019-11-21T13:38:25-05:00'
-lastmod: '2025-07-13T16:04:01.621495'
+- formación
+- machine learning
+- monográficos
+- r
+- seguros
+date: '2019-11-21'
+lastmod: '2025-07-13'
 related:
 - modelos-gam-dejando-satisfechos-a-los-equipos-de-negocio.md
 - los-parametros-del-modelo-glm-como-relatividades-como-recargos-o-descuentos.md
 - interpretacion-de-los-parametros-de-un-modelo-glm.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-15-modelos-glm-regresion-logistica-y-regresion-de-poisson.md
 - el-parametro-gamma-el-coste-la-complejidad-de-un-svm.md
-slug: obteniendo-los-parametros-de-mi-modelo-gam
 tags:
-- GAM
+- gam
 title: Obteniendo los parámetros de mi modelo GAM
 url: /blog/obteniendo-los-parametros-de-mi-modelo-gam/
 ---
-
 [Vimos como los modelos GAM iban más allá del GLM](https://analisisydecision.es/modelos-gam-dejando-satisfechos-a-los-equipos-de-negocio/) porque en el momento de obtener los parámetros asociados al modelo de un factor nos proponían, en vez de una función lineal una función de suavizado no paramétrica para aquellos factores susceptibles de transformar en variables numéricas ordinales con un sentido determinado. Se trabajó con un modelo de riesgo con una sola variable como era la edad y al sumarizar el modelo no era posible obtener los parámetros en la salida. En último término nuestra intención con este tipo de modelos es obtener esos parámetros para transformarlos en relatividades. Qué sentido tiene obtener un buen modelo para Negocio si su resultado no se puede expresar en términos de incrementos o descuentos, en términos de relatividades.
 
 La entrada del blog que ahora os propongo nos permite extraer los parámetros de cualquier modelo GLM o GAM a partir de la función **predict** y una de las opciones más olvidadas por todos nosotros:

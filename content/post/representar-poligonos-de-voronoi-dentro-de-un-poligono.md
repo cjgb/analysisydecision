@@ -1,24 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Gráficos
-- Mapas
-- R
-date: '2021-11-29T08:11:27-05:00'
-lastmod: '2025-07-13T16:05:20.541593'
+- formación
+- gráficos
+- mapas
+- r
+date: '2021-11-29'
+lastmod: '2025-07-13'
 related:
 - incluir-subplot-en-mapa-con-ggplot.md
 - diagramas-de-voronoi-con-spatial-de-python.md
 - como-obtener-los-centroides-de-municipios-con-sas-mapas-con-sgplot.md
 - identificar-los-municipios-costeros-y-limitrofes-de-espana-con-r.md
 - adyacencia-de-poligonos-con-el-paquete-spdep-de-r.md
-slug: representar-poligonos-de-voronoi-dentro-de-un-poligono
-tags: []
+tags:
+- mapas
+- r
 title: Representar polígonos de Voronoi dentro de un polígono
 url: /blog/representar-poligonos-de-voronoi-dentro-de-un-poligono/
 ---
-
 No es la primera vez que traigo al blog la realización de polígonos de Voronoi pero hoy la entrada está más orientada a la representación gráfica con #rstats y ggplot. En este caso deseamos crear polígonos de Voronoi en función del centro geográfico de las provincias españolas.
 
 ## Origen de los datos

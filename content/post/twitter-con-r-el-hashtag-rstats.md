@@ -1,24 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Monográficos
-- R
-date: '2016-01-06T14:35:06-05:00'
-lastmod: '2025-07-13T16:10:43.422661'
+- formación
+- monográficos
+- r
+date: '2016-01-06'
+lastmod: '2025-07-13'
 related:
 - puede-la-informacion-de-twitter-servir-para-tarificar-seguros.md
 - paquete-opendataes-en-ropenspain-para-acceder-a-los-datos-de-datos-gob-es-con-r.md
 - comienza-la-publicacion-del-ensayo-introduccion-a-la-estadistica-para-cientificos-de-datos.md
 - leer-y-representar-datos-de-google-trends-con-r.md
 - trucos-simples-para-rstats.md
-slug: twitter-con-r-el-hashtag-rstats
 tags:
 - twitter
 title: 'TwitteR con R. El hashtag #rstats'
 url: /blog/twitter-con-r-el-hashtag-rstats/
 ---
-
 El objetivo de la entrada es empezar a analizar _tweets_ con R y que mejor comienzo que usar el _hashtag_**#rstats** para ver usuarios que más lo utilizan. [no me gusta conjugar el verbo retwitear] El primer paso es **crear una _app_ con Twitter**, para ello nos dirigimos a <https://apps.twitter.com/> y creamos una aplicación. Crearla es muy sencillo, sólo necesitamos una descripción y un nombre. La aplicación será la que permitirá a R interaccionar con Twitter mediante [OAuth](https://es.wikipedia.org/wiki/OAuth) y para realizar esta interacción entre la aplicación y nuestra sesión de R es imprescindible:
 
   * Consumer key

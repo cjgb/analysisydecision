@@ -1,16 +1,15 @@
 ---
 author: rvaquerizo
 categories:
-- Consultoría
-date: '2012-06-07T02:04:07-05:00'
-lastmod: '2025-07-13T15:59:54.171126'
+- consultoría
+date: '2012-06-07'
+lastmod: '2025-07-13'
 related:
 - lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
 - lecciones-de-economia-de-un-ignorante-de-donde-sacan-margen-los-bancos.md
 - a-mi-me-preocupa-el-pequeno-ahorrador.md
 - lecciones-de-economia-de-un-ignorante-poniendo-fecha-a-la-intervencion-de-espana.md
 - lecciones-de-economia-de-un-ignorante-solucion-trabajar-mas-y-cobrar-menos.md
-slug: lecciones-de-economia-de-un-ignorante-los-bancos-pierden-dinero-para-favorecer-a-unos-y-luego-los-salvamos-todos
 tags:
 - crisis
 - intervencion
@@ -18,7 +17,6 @@ title: Lecciones de economía de un ignorante. Los bancos pierden dinero para fa
   a unos y luego los salvamos todos
 url: /blog/lecciones-de-economia-de-un-ignorante-los-bancos-pierden-dinero-para-favorecer-a-unos-y-luego-los-salvamos-todos/
 ---
-
 Si pintamos con Excel una línea con el **Euribor a 6 meses** y otra línea con el **interés medio a un año de los depósitos bancarios**. Tenemos:
 
 [![euribor-frente-interes-medio-depositos-a-un-ano.PNG](/images/2012/06/euribor-frente-interes-medio-depositos-a-un-ano.PNG)](/images/2012/06/euribor-frente-interes-medio-depositos-a-un-ano.PNG "euribor-frente-interes-medio-depositos-a-un-ano.PNG")

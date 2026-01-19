@@ -1,21 +1,20 @@
 ---
 author: Paco Gárate
 categories:
-- Python
-date: '2022-02-08T11:47:41-05:00'
-lastmod: '2025-07-13T15:53:38.873569'
+- python
+date: '2022-02-08'
+lastmod: '2025-07-13'
 related:
 - longitud-de-las-frases-del-quijote-con-rstats.md
 - el-debate-politico-o-como-analizar-textos-con-wps.md
 - analisis-de-textos-con-r.md
 - resolucion-del-juego-de-modelos-con-r.md
 - cuanto-dinero-pierdo-jugando-a-la-loteria-una-simulacion-poco-seria-con-r.md
-slug: actor-senil-wordle-castellano
-tags: []
+tags:
+- sin etiqueta
 title: 'Actor senil: Las mejores palabras para iniciar en Wordle en castellano'
 url: /blog/actor-senil-wordle-castellano/
 ---
-
 Creo que cualquier persona con conocimientos de estadística cada vez que juega a un juego de probabilidades (_¿el 99.9% de los juegos existentes?_) lo primero que piensa, por deformación profesional, es en cómo inferir un **patrón ganador** para optimizar sus movimientos.
 
 Por ejemplo, en el juego de _Los colonos de Catán_ donde se juega con dos dados, nunca elegiría situar mi poblado en la celda 2 o 12 (con probabilidades de 1/36) estando libres la 6 o la 8 (probabilidades de 5/36). De hecho, el 7 que es la suma más probable (6/36) está reservada para mover el ladrón y así equilibrar las posiciones del tablero.

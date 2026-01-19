@@ -1,23 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Excel
-- Formación
-- Trucos
-date: '2015-12-01T05:20:39-05:00'
-lastmod: '2025-07-13T16:07:13.304000'
+- excel
+- formación
+- trucos
+date: '2015-12-01'
+lastmod: '2025-07-13'
 related:
 - truco-excel-identificar-el-color-de-una-celda.md
 - truco-excel-formatos-condicionales-para-crear-rango-de-colores.md
 - truco-excel-grafico-de-puntos-con-colores.md
 - truco-excel-graficos-de-dispersion-que-identifican-los-puntos.md
 - trucos-excel-convertir-texto-en-un-resultado-o-formula.md
-slug: truco-excel-funcion-para-identificar-el-color-de-una-celda
-tags: []
+tags:
+- sin etiqueta
 title: Truco Excel. Función para identificar el color de una celda
 url: /blog/truco-excel-funcion-para-identificar-el-color-de-una-celda/
 ---
-
 [En alguna entrada anterior ya vimos como identificar el color de una celda con Excel](https://analisisydecision.es/truco-excel-identificar-el-color-de-una-celda/). Recientemente me trasladaron una duda, se trataba de realizar una acción determinada si el color de la celda era distinto. Algo muy habitual cuando realizas alguna validación visual y marcas celdas con otro color. La solución es sencilla, se trata de crear nuestra propia función que identifique el color de la celda:
 
 _Function color_celda(celda As Range)_

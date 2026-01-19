@@ -1,24 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Modelos
-- SAS
-- WPS
-date: '2013-07-26T04:01:28-05:00'
-lastmod: '2025-07-13T15:54:19.240224'
+- formación
+- modelos
+- sas
+- wps
+date: '2013-07-26'
+lastmod: '2025-07-13'
 related:
 - manual-curso-introduccion-de-r-capitulo-10-funciones-graficas-en-regresion-lineal.md
 - primeros-pasos-con-regresion-no-lineal-nls-con-r.md
 - parametro-asociado-a-una-poisson-con-sas.md
 - en-la-regresion-logistica-el-sobremuestreo-es-lo-mismo-que-asignar-pesos-a-las-observaciones.md
 - manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
-slug: atentos-a-los-intervalos-de-confianza
-tags: []
+tags:
+- sin etiqueta
 title: Atentos a los intervalos de confianza
 url: /blog/atentos-a-los-intervalos-de-confianza/
 ---
-
 [![](/images/2013/07/cali.png)](/images/2013/07/cali.png)
 
 Un [intervalo de confianza ](http://es.wikipedia.org/wiki/Intervalo_de_confianza)es la zona en la que me fío de lo que estimo. Cuanto más amplia es esa zona menos me fío de lo que estimo y cuanto más estrecha más me fío de lo que estimo. Lo que pasa es que un intervalo de confianza por definición empieza con la famosa expresión “ _dada una población de media nu y desviación típica sigma…_ ”

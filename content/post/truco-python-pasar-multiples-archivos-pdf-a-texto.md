@@ -1,22 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Python
-- Trucos
-date: '2024-02-02T03:50:07-05:00'
-lastmod: '2025-07-13T16:07:47.379438'
+- python
+- trucos
+date: '2024-02-02'
+lastmod: '2025-07-13'
 related:
 - trucos-excel-archivos-de-un-directorio-con-una-macro.md
 - proyecto-text-mining-con-excel-iv.md
 - truco-excel-abrir-multiples-libros-de-excel-en-distintas-hojas-de-un-nuevo-libro.md
 - truco-sas-dataset-con-los-ficheros-y-carpetas-de-un-directorio.md
 - lectura-de-archivos-csv-con-python-y-pandas.md
-slug: truco-python-pasar-multiples-archivos-pdf-a-texto
-tags: []
+tags:
+- sin etiqueta
 title: Truco Python. Pasar múltiples archivos pdf a texto
 url: /blog/truco-python-pasar-multiples-archivos-pdf-a-texto/
 ---
-
 Estoy realizando un trabajo de scraping de archivos que genera una entidad estatal en pdf y es necesario transformar esos archivos pdf en archivos txt para un análisis de minería de textos. Los archivos que genera esta entidad estatal me los he descargado vía php y los he alojado en una carpeta específica por lo que será necesario recorrer esa carpeta e ir cambiando de pdf a texto cada archivo de esa carpeta (y subcarpetas) por lo que el truco se divide en dos partes.
 
 ## Función para generar un archivo de texto a partir de un pdf

@@ -1,24 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Modelos
-- Monográficos
-- R
-date: '2014-07-09T02:10:40-05:00'
-lastmod: '2025-07-13T16:05:17.696554'
+- formación
+- modelos
+- monográficos
+- r
+date: '2014-07-09'
+lastmod: '2025-07-13'
 related:
 - regresion-pls-con-r.md
 - manual-curso-introduccion-de-r-capitulo-10-funciones-graficas-en-regresion-lineal.md
 - primeros-pasos-con-regresion-no-lineal-nls-con-r.md
 - manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
 - resolucion-del-juego-de-modelos-con-r.md
-slug: regresion-ridge-o-contraida-con-r
-tags: []
+tags:
+- sin etiqueta
 title: Regresión ridge o regresión contraída con R
 url: /blog/regresion-ridge-o-contraida-con-r/
 ---
-
 Por lo visto no he estudiado lo suficiente. Tengo que redimirme y estudiar este verano determinadas técnicas avanzadas de predicción. Fundamentalmente tengo que trabajar con R y tener determinados conocimientos teóricos sobre estas técnicas. Así que he pensado que, a la vez que estudio yo, estudian todos mis lectores. Además es probable que genere debate.
 
 En esta primera entrega vamos a tratar la **regresión contraída o regresión ridge**. [En el blog ya hablamos del problema que suponía la multicolinealidad](https://analisisydecision.es/el-problema-de-la-multicolinealidad-intuirlo-y-detectarlo/) cuando tenemos este problema una de las posibles soluciones es la regresión contraída o regresión ridge. Como ya dijimos el modelo lineal se expresa como Y = X • Beta + Error la estimación de nuestros parámetros Beta por mínimos cuadrados ordinarios es Beta = inv(X’X) * X’Y **cuando X’X no es invertible tenemos un problema**. La regresión ridge plantea una solución a este problema con unos parámetros Beta_contraidos = inv(X’X + lambda*I) * X’Y si lambda es 0 estamos ante mínimos cuadrados ordinarios, en otro caso estamos ante un estimador sesgado de Beta. Este estimador sesgado es solución al problema de mínimos cuadrados penalizados y lo que hace es contraer los Betas en torno a 0. En resumen, metemos sesgo pero reducimos varianza.

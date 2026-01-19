@@ -1,23 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Sin catergoría
-date: '2010-01-01T17:40:57-05:00'
-lastmod: '2025-07-13T15:56:43.982367'
+- sin categoría
+date: '2010-01-01'
+lastmod: '2025-07-13'
 related:
 - ayd-2300-visitas-mensuales.md
 - el-ano-2010-para-analisisydecision.md
 - 1500-visitas-mensuales.md
 - contenidos-para-octubre-de-ayd.md
 - contenidos-web-analisis-informacion.md
-slug: el-ano-2009-para-analisis-y-decision
 tags:
 - analisis visitas
-- Google Analytics
+- google analytics
 title: El año 2009 para Análisis y Decisión
 url: /blog/el-ano-2009-para-analisis-y-decision/
 ---
-
 Es tiempo de hacer balance. El 2009 se despide con unos resultados para este blog que ni yo mismo podía haber imaginado. La incorporación de Carlos J. Gil, más de 18.500 visitas muchas de ellas fidelizadas, 140 mensajes y un posicionamiento en Google que permite que el número de visitas aumente todos los días. Linkad el gráfico siguiente:
 
 [](/images/2010/01/visitas-2009.JPG "Visitas a AyD en 2009")

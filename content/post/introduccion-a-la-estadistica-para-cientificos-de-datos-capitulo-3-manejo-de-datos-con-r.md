@@ -1,24 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Libro Estadística
-- R
-date: '2022-01-07T13:54:16-05:00'
-lastmod: '2025-07-13T15:58:58.287612'
+- formación
+- libro estadística
+- r
+date: '2022-01-07'
+lastmod: '2025-07-13'
 related:
 - data-management-con-dplyr.md
 - data-management-basico-con-pandas.md
 - manejo-de-datos-basico-con-python-datatable.md
 - capitulo-4-uniones-de-tablas-con-r.md
 - primeros-pasos-con-julia-importar-un-csv-y-basicos-con-un-data-frame.md
-slug: introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-3-manejo-de-datos-con-r
-tags: []
+tags:
+- sin etiqueta
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 3. Manejo
   de datos con R
 url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-3-manejo-de-datos-con-r/
 ---
-
 ## Universo tidyverse
 
 En el capítulo anterior se iniciaba el método dialéctico a utilizar en el resto del ensayo fundamentado en la idea de **transformar datos en información mediante análisis estadístico con el software R**. Los datos a explotar tienen una estructura tabular que llamamos _data frame_. Esta estructura contiene observaciones y variables sobre las que se fundamenta la labor del científico de datos ya que son ellas las que plantean y resuelven problemas. Para trabajar con data frames en R disponemos de un entorno conocido como `tidyverse` que engloba un gran número de librerías de R.

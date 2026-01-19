@@ -1,21 +1,20 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-date: '2019-01-31T15:31:51-05:00'
-lastmod: '2025-07-13T16:01:50.883126'
+- formación
+date: '2019-01-31'
+lastmod: '2025-07-13'
 related:
 - mapas-estaticos-municipales-para-estados-de-mexico-con-r-y-con-excel.md
 - mapas-estaticos-de-peru-con-r-y-python-a-nivel-de-distrito.md
 - mapa-de-argentina-con-r.md
 - mapas-municipales-de-argentina-con-r.md
 - mapas-con-spatial-data-de-r.md
-slug: mapa-de-mexico-rapido-y-sucio-y-estatico-con-rstats
-tags: []
+tags:
+- sin etiqueta
 title: 'Mapa de México rápido (y sucio) y estático con #rstats'
 url: /blog/mapa-de-mexico-rapido-y-sucio-y-estatico-con-rstats/
 ---
-
 [![](/images/2019/01/mexico_quick_rstats.png)](/images/2019/01/mexico_quick_rstats.png)
 
 No sabía como mostraros el funcionamiento de getData del paquete raster para tener que evitaros ir a GADM y descargar los correspondientes mapas. Bueno, pues se me ha ocurrido hacer una entrada que tenga el menor número de líneas posibles y que genere un mapa. No me lo tengáis mucho en cuenta:

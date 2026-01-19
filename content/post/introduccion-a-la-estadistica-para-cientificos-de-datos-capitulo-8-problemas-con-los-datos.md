@@ -1,24 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Libro Estadística
-- R
-date: '2022-08-16T03:04:34-05:00'
-lastmod: '2025-07-13T15:59:02.414088'
+- formación
+- libro estadística
+- r
+date: '2022-08-16'
+lastmod: '2025-07-13'
 related:
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-9-analisis-exploratorio-de-datos-eda.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-7-descripcion-grafica-de-variables.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-6-descripcion-numerica-de-variables.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-16-modelizacion-estadistica-conociendo-los-datos.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
-slug: introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-8-problemas-con-los-datos
-tags: []
+tags:
+- sin etiqueta
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 8. Problemas
   con los datos
 url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-8-problemas-con-los-datos/
 ---
-
 Siguiendo con el desarrollo se ha establecido una estructura de datos, fundamentalmente se está trabajando con _data frames_ , que se componen de filas (registros) y columnas (variables). Tanto registros como variables pueden presentar problemas que dificulten la gestión de la información al científico de datos. En este capítulo se van a estudiar los problemas más comunes con los datos y se plantean posibles estrategias para resolver estos problemas. Aunque los datos pueden presentar problemas desde el punto de vista de los registros y desde el punto de vista de las variables en este caso se van a abordar **análisis de variables** que permitirán identificar tanto variables como registros que distorsionan el análisis. Para encontrar y describir estas situaciones se dispone tanto de análisis numéricos como análisis gráficos sencillos con los que se tomó contacto en los dos capítulos anteriores.
 
 Para ilustrar esta situaciones se continúa con el [caso práctico de trabajo visto en el apartado 6.2 de este libro](https://analisisydecision.es/estadistica-data-scientist/descripcion-numerica-variables.html#caso-pr%C3%A1ctico.-campa%C3%B1a-de-venta-cruzada). Como en capítulos anteriores se cargan los datos:

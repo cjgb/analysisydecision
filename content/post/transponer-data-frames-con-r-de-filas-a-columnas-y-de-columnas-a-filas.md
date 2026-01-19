@@ -1,23 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- R
-- Trucos
-date: '2021-05-19T10:49:28-05:00'
-lastmod: '2025-07-13T16:06:55.078373'
+- r
+- trucos
+date: '2021-05-19'
+lastmod: '2025-07-13'
 related:
 - data-management-con-dplyr.md
 - trucos-simples-para-rstats.md
 - leer-fichero-de-texto-de-ancho-fijo-con-python-pandas.md
 - expandir-un-data-frame-de-r-con-tidyr.md
 - truco-sas-transponer-tablas-con-proc-transpose-data-o-proc-sql.md
-slug: transponer-data-frames-con-r-de-filas-a-columnas-y-de-columnas-a-filas
 tags:
 - tidyr
 title: Transponer data frames con R. De filas a columnas y de columnas a filas
 url: /blog/transponer-data-frames-con-r-de-filas-a-columnas-y-de-columnas-a-filas/
 ---
-
 Entrada para recordar como transponer data frames con R, como pasar de n filas a n columnas manteniendo campos identificativos y como pasar de columnas a filas y crear un campo identificativo. Siento que últimamente más que un blog tengo un cuaderno de apuntes pero si estos apuntes pueden ayudar a alguien mejor. En realidad la entrada es un ejemplo ilustrativo de las funciones de tidy pivot_wider y pivot_longer.
 
 ### Pasar de filas a columnas

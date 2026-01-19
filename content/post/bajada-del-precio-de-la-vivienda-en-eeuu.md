@@ -1,23 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Business Intelligence
-date: '2009-03-24T06:06:00-05:00'
-lastmod: '2025-07-13T15:54:25.038970'
+- business intelligence
+date: '2009-03-24'
+lastmod: '2025-07-13'
 related:
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-13-regresion-lineal.md
 - bajar-los-tipos-a-la-japonesa-al-0.md
 - lecciones-de-economia-de-un-ignorante-solucion-trabajar-mas-y-cobrar-menos.md
 - a-mi-me-preocupa-el-pequeno-ahorrador.md
 - amanece-que-no-es-poco.md
-slug: bajada-del-precio-de-la-vivienda-en-eeuu
 tags:
-- dimension geografica
-- precio vivienda EEUU
+- dimensión geográfica
+- precio vivienda eeuu
+- vivienda
 title: Bajada del precio de la vivienda en EEUU
 url: /blog/bajada-del-precio-de-la-vivienda-en-eeuu/
 ---
-
 Repasando algunos blogs imprescindibles he visto [En Silicio](http://www.ensilicio.com/2009/03/%C2%A1mas-datos-%C2%A1mas-datos.html) un curioso dato publicado en [Gurusblog](http://www.gurusblog.com/archives/el-precio-de-la-vivienda-en-eeuu-se-desmploma-un-182-en-el-ultimo-trimestre-del-2008/24/02/2009/): El precio de la vivienda en EEUU se desploma un 18%. Inmediatamente había que visitar la web de [Standard & Poors](http://www2.standardandpoors.com/portal/site/sp/en/us/page.topic/indices_csmahp/0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0.html) para analizar el precio de la vivienda, la subida y posterior desplome, en principio me interesaban las fechas. Pero me ha sorprendido una dimensión del análisis que no se está teniendo en cuenta a la hora de estudiar el precio de la vivienda en los EEUU: La zona geográfica. Mientras hay ciudades con una subida y posterior bajada muy pronunciada hay otras donde esto se ha producido de forma más suave. Rápido gráfico en Excel:
 
 [![Vivienda en EEUU por ambito geografico](/images/2009/03/precio_vivienda_usa1.JPG)](/images/2009/03/precio_vivienda_usa1.JPG "Vivienda en EEUU por ambito geografico")

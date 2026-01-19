@@ -1,26 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Modelos
-- Seguros
-date: '2010-04-14T06:28:26-05:00'
-lastmod: '2025-07-13T15:56:56.211000'
+- formación
+- modelos
+- seguros
+date: '2010-04-14'
+lastmod: '2025-07-13'
 related:
 - el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v.md
 - el-modelo-multivariante-en-el-sector-asegurador-univariante-vs-multivariante-ii.md
 - el-modelo-multivariante-en-el-sector-asegurador-la-variable-dependiente-iii.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-16-modelizacion-estadistica-conociendo-los-datos.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
-slug: el-modelo-multivariante-en-el-sector-asegurador-introduccion-i
 tags:
-- GLM
+- glm
 - modelo multivariante
 - tarificación
 title: El modelo multivariante en el sector asegurador. Introducción (I)
 url: /blog/el-modelo-multivariante-en-el-sector-asegurador-introduccion-i/
 ---
-
 Con ese artículo comienza una serie que nos permitirá aproximarnos a los métodos estadísticos multivariantes empleados para la obtención de la **estructura óptima de la tarifa** en un el sector asegurador. No es un método novedoso. La práctica totalidad de las compañías aseguradoras cuentan con estos procesos en su operativa diaria. Desde el punto de vista de muchos expertos el sector asegurador tiene 4 escalones para adaptarse técnicamente a la realidad del mercado:
 
   * Modelo multivariante

@@ -1,24 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Banca
-- Formación
-- Monográficos
-date: '2011-08-07T10:27:00-05:00'
-lastmod: '2025-07-13T15:59:48.695892'
+- banca
+- formación
+- monográficos
+date: '2011-08-07'
+lastmod: '2025-07-13'
 related:
 - lecciones-de-economia-de-un-ignorante-espana-esta-salvando-a-alemania-pero-alemania-no-esta-salvando-europa.md
 - lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
 - lecciones-de-economia-de-un-ignorante-poniendo-fecha-a-la-intervencion-de-espana.md
 - lecciones-de-economia-de-un-ignorante-llegamos-a-solvencia-ii.md
 - lecciones-de-economia-de-un-ignorante-la-caixa-a-colocar-preferentes.md
-slug: lecciones-de-economia-de-un-ignorante-la-prima-de-riesgo-y-la-madre-que-la-pario
-tags: []
+tags:
+- sin etiqueta
 title: Lecciones de economía de un ignorante. La prima de riesgo (y la madre que la
   parió)
 url: /blog/lecciones-de-economia-de-un-ignorante-la-prima-de-riesgo-y-la-madre-que-la-pario/
 ---
-
 ![](https://lavengro.typepad.com/.a/6a00d8341ccd5b53ef0147e3777daf970b-pi)
 
 El término **prima de riesgo** está todo el día y a todas horas en los informativos españoles. La bolsa baja porque la prima de riesgo sube, ahora baja, ahora estamos por encima de Italia, luego por debajo, los franceses asustados,… En fin «los mercados» nos tienen asustados porque están locos, algunos llaman a esto volatilidad que suena más técnico. Y los menos puestos os preguntaréis **¿que es la prima de riesgo?** Pues aquí estoy yo para transmitir mi ignorancia. Me centro en la zona Euro.

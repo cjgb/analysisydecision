@@ -1,25 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-- WPS
-date: '2012-06-05T05:14:52-05:00'
-lastmod: '2025-07-13T16:10:27.169537'
+- formación
+- sas
+- wps
+date: '2012-06-05'
+lastmod: '2025-07-13'
 related:
 - macros-sas-macro-split-para-partir-un-conjunto-de-datos.md
 - truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
 - truco-sas-crear-ficheros-excel-sin-proc-export-i.md
 - macros-sas-informe-de-un-dataset-en-excel.md
 - truco-sas-proc-contents.md
-slug: trucos-sas-particionar-y-exportar-a-texto-un-dataset
 tags:
 - csv
 - exportar
 title: Trucos SAS. Particionar y exportar a texto un dataset
 url: /blog/trucos-sas-particionar-y-exportar-a-texto-un-dataset/
 ---
-
 Duda que plantea David. Exporta a csv una tabla SAS en varias partes. Ya habrá tiempo para comentarlo:
 
 ```r

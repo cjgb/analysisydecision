@@ -1,23 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-- WPS
-date: '2013-01-22T04:36:14-05:00'
-lastmod: '2025-07-13T16:01:06.286153'
+- formación
+- sas
+- wps
+date: '2013-01-22'
+lastmod: '2025-07-13'
 related:
 - trucos-sas-particionar-y-exportar-a-texto-un-dataset.md
 - truco-sas-categorizar-variables-continuas.md
 - macros-faciles-de-sas-numero-de-obsevaciones-de-un-dataset.md
 - dividir-en-palabras-un-texto-con-sas.md
 - truco-sas-observaciones-de-un-dataset-en-una-macro-variable.md
-slug: macros-sas-macro-split-para-partir-un-conjunto-de-datos
-tags: []
+tags:
+- sin etiqueta
 title: Macros SAS. Macro split para partir un conjunto de datos
 url: /blog/macros-sas-macro-split-para-partir-un-conjunto-de-datos/
 ---
-
 Debido a problemas con un servidor hace años descubrí [la macro Split](http://www2.sas.com/proceedings/sugi27/p083-27.pdf). Básicamente lo que hace es **partir un conjunto de datos SAS en múltiples conjuntos de datos SAS** con el mismo número de observaciones, además lo hace en un solo paso data. La forma de particionar el conjunto de datos es muy simple, si alguien tiene dudas con el código que lo comente y lo analizamos mejor. La macro (mejorada) es:
 
 ```r

@@ -1,25 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Big Data
-- Business Intelligence
-- Data Mining
-- Formación
-- Monográficos
-date: '2016-11-03T12:54:27-05:00'
-lastmod: '2025-07-13T15:56:15.525491'
+- big data
+- business intelligence
+- data mining
+- formación
+- monográficos
+date: '2016-11-03'
+lastmod: '2025-07-13'
 related:
 - puede-la-informacion-de-twitter-servir-para-tarificar-seguros.md
 - porque-me-gusta-r.md
 - de-actuario-a-cientifico-de-datos.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-con-r-capitulo-2-datos.md
 - el-ano-2010-para-analisisydecision.md
-slug: de-estadistico-a-minero-de-datos-a-cientifico-de-datos
-tags: []
+tags:
+- sin etiqueta
 title: De estadístico a minero de datos a científico de datos…
 url: /blog/de-estadistico-a-minero-de-datos-a-cientifico-de-datos/
 ---
-
 Hace unos meses estuve en un data beers que organizó Accenture que mas parecía una reunión de viejas glorias de Neo Metrics y [hablé sobre la transformación de un dinosaurio a un científico de datos](http://prezi.com/z8hpycujn2_0/?utm_campaign=share&utm_medium=copy&rc=ex0share), por cierto, me llamó la atención como el resto de compañeros hicieron sus presentaciones con software del siglo pasado y eso que yo era el dinosaurio… [Hoy ha salido una noticia sobre el uso de la información de Facebook para tarificar en seguros](https://www.theguardian.com/money/2016/nov/02/facebook-admiral-car-insurance-privacy-data) que define hacía donde quiero ir y los problemas con los que he de lidiar. Así que hoy voy a escribir sobre mi y **la transformación del dinosaurio al científico de datos**.
 
 Un poco de mi vida. Yo antes fui aplicador de plaguicidas, Infante de Marina, oficial de segunda en mantenimiento industrial,… y por las tardes dio por estudiar y en 2001 me diplomé en estadística y en 2003 sacrifiqué mi sueldo de oficial de mantenimiento para trabajar en una consultora de esas que hace _body shopping_ (yo soy partidario del _body shopping_) aunque ganaba más y trabajaba menos como oficial de mantenimiento descubrí que me gustaba mucho la estadística, había una web en geocities que lo demuestra, con uno de los primeros cursos de R en español. Al principio, en mi trabajo, hacía eso estadísticas, y a esto lo empezaron a llamar _Business Intelligence_ y allí estaba yo con SAS y mis primeras segmentaciones, mis primeras regresiones logísticas con más o menos acierto y sobre todo con mis primeras reglas de negocio, empezaban a sonar términos como _data mining_. [[La primera entrada de la wikipedia sobre data mining data de 2002]](https://en.wikipedia.org/w/index.php?title=Data_mining&dir=prev&action=history). SAS, Clementine, Pretium, software comercial muy caro, consultoras que se forraron, yo decía que R era capaz de hacer todo aquello gratis, pero nadie me escuchaba. Me gustaba mucho lo que hacía, disfruté y aprendí en telecos, bancos y ASEGURADORAS,… Bueno pues en las aseguradoras conocí a los **actuarios** y con ellos llevo mano a mano 10 años, ellos me consideran actuario, yo no. El paradigma de como la estadística ha mejorado los negocios es el sector asegurador. En concreto en el ámbito del cálculo de precios que es donde yo trabajo las relaciones lineales entre variables llevan siendo beneficiosas desde hace muchos años tanto para las compañías como para los asegurados.

@@ -1,21 +1,20 @@
 ---
 author: rvaquerizo
 categories:
-- R
-date: '2016-10-31T10:01:56-05:00'
-lastmod: '2025-07-13T15:54:10.080173'
+- r
+date: '2016-10-31'
+lastmod: '2025-07-13'
 related:
 - jornadas-de-r-gratuitas-en-galicia.md
 - reunion-de-usuarios-de-r-de-madrid-15-de-octubre-de-2015.md
 - i-jornadas-de-usuarios-de-r-en-espana.md
 - reunion-usuarios-de-r-en-madrid-26-de-noviembre-de-2014.md
 - nuevo-curso-de-estadistica-con-r.md
-slug: aprende-rstats-de-forma-presencial-por-muy-poco
-tags: []
+tags:
+- jornadas de r
 title: 'Aprende #rstats de forma presencial por muy poco'
 url: /blog/aprende-rstats-de-forma-presencial-por-muy-poco/
 ---
-
 Ha llegado al [Grupo de Usuarios de R de Madrid](http://madrid.r-es.org/) el siguiente curso de R:
 
 Os anuncio el siguiente curso de análisis de estadístico de datos en R.

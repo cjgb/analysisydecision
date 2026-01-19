@@ -1,26 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Data Mining
-- Machine Learning
-- Modelos
-- R
-- Seguros
-date: '2020-12-17T05:04:52-05:00'
-lastmod: '2025-07-13T15:57:39.652262'
+- data mining
+- machine learning
+- modelos
+- r
+- seguros
+date: '2020-12-17'
+lastmod: '2025-07-13'
 related:
 - modelos-tweedie-con-h2o-mutualizar-siniestralidad-en-base-a-factores-de-riesgo.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
 - la-distribucion-tweedie.md
 - variables-categoricas-en-cajas-treemap-con-r.md
 - el-sobremuestreo-mejora-mi-estimacion.md
-slug: evaluando-la-capacidad-predictiva-de-mi-modelo-tweedie
 tags:
 - tweedie
 title: Evaluando la capacidad predictiva de mi modelo tweedie
 url: /blog/evaluando-la-capacidad-predictiva-de-mi-modelo-tweedie/
 ---
-
 [![](/images/2020/12/modelo_tweedie_resultado.png)](/images/2020/12/modelo_tweedie_resultado.png)
 
 Cuando tenemos que evaluar el comportamiento de un modelo de clasificación binomial empleamos sensibilidad, especificidad,… [ya he hablado sobre ese tema](https://analisisydecision.es/principales-elementos-en-las-pruebas-diagnosticas/) aunque volveré sobre ello. Sin embargo, si nuestro modelo estima un valor es posible que no tengamos tan claro como está funcionando su capacidad predictiva. Lo que traigo hoy es un análisis muy básico pero que entienden muy bien aquellas personas que no tienen grandes conocimientos en ciencia de datos, además es una continuación de [la entrada en la que se ilustraba un ejemplo de uso de los modelos tweedie](https://analisisydecision.es/modelos-tweedie-con-h2o-mutualizar-siniestralidad-en-base-a-factores-de-riesgo/).

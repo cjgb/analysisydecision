@@ -1,25 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-- Trucos
-date: '2012-04-11T11:12:05-05:00'
-lastmod: '2025-07-13T16:10:30.231421'
+- formación
+- sas
+- trucos
+date: '2012-04-11'
+lastmod: '2025-07-13'
 related:
 - trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados.md
 - trabajo-con-fechas-sas-funciones-fecha.md
 - trabajo-con-fechas-sas-introduccion.md
 - curso-de-lenguaje-sas-con-wps-funciones-fecha.md
 - macros-sas-transformar-un-numerico-a-fecha.md
-slug: trucos-sas-pasar-fecha-a-caracter-en-sas
 tags:
 - fechas sas
 - formatos
 title: Trucos SAS. Pasar fecha a caracter en SAS
 url: /blog/trucos-sas-pasar-fecha-a-caracter-en-sas/
 ---
-
 Pasar números a carácter en SAS es un tema reiterativo tanto en entradas al blog como en búsquedas. Pero que se le puede dar otra vuelta de tuerca. Se trata de transformar fechas a variables alfanuméricas, pero en este caso vamos a poner las fechas en formato español. Ejecutad este ejemplo en SAS:
 
 ```r

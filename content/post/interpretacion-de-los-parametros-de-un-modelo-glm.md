@@ -1,24 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Modelos
-- SAS
-date: '2016-03-21T06:07:50-05:00'
-lastmod: '2025-07-13T15:58:44.769881'
+- formación
+- modelos
+- sas
+date: '2016-03-21'
+lastmod: '2025-07-13'
 related:
 - modelos-gam-dejando-satisfechos-a-los-equipos-de-negocio.md
 - obteniendo-los-parametros-de-mi-modelo-gam.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-15-modelos-glm-regresion-logistica-y-regresion-de-poisson.md
 - los-parametros-del-modelo-glm-como-relatividades-como-recargos-o-descuentos.md
 - manual-curso-introduccion-de-r-capitulo-18-modelos-de-regresion-de-poisson.md
-slug: interpretacion-de-los-parametros-de-un-modelo-glm
 tags:
-- GENMOD
+- genmod
 title: Interpretación de los parámetros de un modelo GLM
 url: /blog/interpretacion-de-los-parametros-de-un-modelo-glm/
 ---
-
 Muchos estudiantes terminarán trabajando con GLM que siguen buscando relaciones lineales en multitud de organizaciones a lo largo del planeta. Y hoy quería ayudar a esos estudiantes a **interpretar los parámetros resultantes de un GLM** , más concretamente los resultados de un **PROC GENMOD de SAS** aunque lo que vaya a contar ahora se puede extrapolar a otras salidas de SAS o R. En la línea de siempre no entro en aspectos teóricos y os remito a [los apuntes del profesor Juan Miguel Marín](http://halweb.uc3m.es/esp/Personal/personas/jmmarin/esp/Categor/Tema3Cate.pdf). Con un GLM al final lo que buscamos (como siempre) es distinguir lo que es aleatorio de lo que es debido al azar a través de relaciones lineales de un modo similar a como lo hace una regresión lineal, sin embargo los GLM nos permiten que nuestra variable dependiente no sólo siga una distribución normal, puede seguir otras distribuciones como Gamma, Poisson o Binomial. Además un GLM puede trabajar indistintamente con variables categóricas y numéricas pero yo recomiendo trabajar siempre con variables categóricas y en la práctica cuando realizamos un modelo de esta tipo siempre realizaremos agrupaciones de variables numéricas. Si disponemos de variables agrupadas, de factores, los parámetros de los modelos nos servirán para saber **como se comporta nuestra variable dependiente a lo largo de cada nivel del factor**.
 
 El modelo siempre fija un nivel base del factor, un nivel que promedia nuestros datos y el resto de niveles corrigen el promedio en base al coeficiente estimado. Imaginemos que modelizamos el número de abandonos en 3 carreras de coches, cuando la carrera se disputa en un circuito A el número de abandonos es 5, sin embargo en el circuito B son 10 y en el circuito C son 15. Si fijamos como nivel base de nuestro factor circuito el B tendríamos un modelo de este modo abandonos = 10 + 0.5*es circuito A + 1*es circuito B + 1.5*es circuito C + Error. El nivel base promedia nuestro modelo por lo que va multiplicado por 1 y el resto de niveles se corrigen por su multiplicador. Esta es la base de la modelización multivariante en el sector asegurador. Veamos en un ejemplo como se articulan los parámetros de estos modelos. Simulamos unos datos con la probabilidad de tener un siniestro por edad, zona y edad:

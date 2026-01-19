@@ -1,31 +1,29 @@
 ---
 author: rvaquerizo
 categories:
-- Data Mining
-- Formación
-- Modelos
-- Monográficos
-- R
-date: '2011-11-06T11:43:36-05:00'
-lastmod: '2025-07-13T15:57:17.941788'
+- data mining
+- formación
+- modelos
+- monográficos
+- r
+date: '2011-11-06'
+lastmod: '2025-07-13'
 related:
 - sobremuestreo-y-pesos-a-las-observaciones-ahora-con-r.md
 - en-la-regresion-logistica-el-sobremuestreo-es-lo-mismo-que-asignar-pesos-a-las-observaciones.md
 - resolucion-del-juego-de-modelos-con-r.md
 - monografico-un-poco-de-proc-logistic.md
 - monografico-regresion-logistica-con-r.md
-slug: el-sobremuestreo-%c2%bfmejora-mi-estimacion
 tags:
 - árboles de decisión
-- curva ROC
+- curva roc
 - muestreo
 - regresión logística
-- ROCR
+- rocr
 - sample
 title: El sobremuestreo ¿mejora mi estimación?
 url: /blog/el-sobremuestreo-c2bfmejora-mi-estimacion/
 ---
-
 El **sobremuestreo**(oversampling) es una técnica de muestreo que se emplea habitualmente cuando tenemos una baja proporción de casos positivos en clasificaciones binomiales. Los modelos pueden “despreciar” los casos positivos por ser muy pocos y nuestro modelo no funcionaría. Para **incrementar el número de casos positivos** se emplea el sobremuestreo. Ejemplos habituales pueden ser los modelos de fraude, un 99% de las compras son correctas, un 1% son fraudulentas. Si realizo un modelo puedo estar seguro al 99% de que todas mis compras son correctas, en este caso hemos de realizar un sobremuestreo para incrementar nuestros casos de fraude y poder detectar los patrones.
 
 Personalmente no sabría deciros el porcentaje de casos positivos a partir del cual sería necesario llevar a cabo un proceso de remuestreo. A mi particularmente me gusta hacerlo siempre. Por lo menos realizar algunas pruebas para identificar aquellas variables que son más influyentes y comenzar a eliminar aquellas que no van a funcionar. Busco exagerar. Tampoco me quiero mojar mucho sobre la proporción de casos positivos y negativos, pero si estamos realizando un nuevo muestreo podemos emplear perfectamente un 50% para ambos, aquí si que dependemos del número de registros con el que estemos trabajando ya que al final el sobremuestreo será la repetición de los casos positivos sobre la tabla de entrada del modelo.

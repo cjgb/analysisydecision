@@ -1,18 +1,17 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-- Trucos
-date: '2009-05-11T11:01:29-05:00'
-lastmod: '2025-07-13T16:10:17.454549'
+- formación
+- sas
+- trucos
+date: '2009-05-11'
+lastmod: '2025-07-13'
 related:
 - numeros-aleatorios-con-sas.md
 - trucos-sas-muestreo-con-proc-surveyselect.md
 - trucos-sas-variables-dummy-de-una-variable-continua.md
 - trucos-sas-lista-de-datasets-en-macro-variable.md
 - trucos-sas-informes-de-valores-missing.md
-slug: trucos-sas-muestras-aleatorias-con-y-sin-reemplazamiento
 tags:
 - aleatorios
 - rand
@@ -21,7 +20,6 @@ tags:
 title: Trucos SAS. Muestras aleatorias con y sin reemplazamiento
 url: /blog/trucos-sas-muestras-aleatorias-con-y-sin-reemplazamiento/
 ---
-
 Un ejemplo típico de SAS pero que creo que puede ayudar a conocer algunas funciones de SAS. Los ejemplos que planteo a continuación crean un dataset con 10.000 observaciones y sobre él vamos a crear dos subconjuntos de datos, dos muestras aleatorias del dataset de partida, una muestra sin reemplazamiento y otra muestra con reemplazamiento. Son dos ejemplos muy sencillos. Como siempre creo un dataset de forma aleatoria que me sirve de base para plantearos el truco:
 
 ```r

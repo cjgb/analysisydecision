@@ -1,25 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- R
-- Trucos
-date: '2010-01-31T15:10:52-05:00'
-lastmod: '2025-07-13T16:07:59.157291'
+- r
+- trucos
+date: '2010-01-31'
+lastmod: '2025-07-13'
 related:
 - macros-sas-hacer-0-los-valores-missing-de-un-dataset.md
 - truco-sas-transformaciones-de-variables-con-arrays.md
 - trucos-sas-lista-de-variables-missing.md
 - trucos-simples-para-rstats.md
 - trucos-sas-informes-de-valores-missing.md
-slug: truco-r-valores-perdidos-a-0-ejemplo-de-uso-de-sapply
 tags:
-- missing
-- NA
+- missing values
 - sapply
 title: Truco R. Valores perdidos a 0, ejemplo de uso de sapply
 url: /blog/truco-r-valores-perdidos-a-0-ejemplo-de-uso-de-sapply/
 ---
-
 Muy habitual partinos la cabeza con valores perdidos en R. Los NA pueden darnos algún quebradero de cabeza. Este truco es muy sencillo, transforma valores missing a 0 y nos sirve para aplicar funciones a _data.frame_ con la función _sapply_. Veamos el sencillo ejemplo:
 
 ```r

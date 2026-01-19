@@ -1,26 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Big Data
-- Consultoría
-- Python
-date: '2017-12-08T15:01:19-05:00'
-lastmod: '2025-07-13T15:56:27.755869'
+- big data
+- consultoría
+- python
+date: '2017-12-08'
+lastmod: '2025-07-13'
 related:
 - representar-poligonos-de-voronoi-dentro-de-un-poligono.md
 - identificar-los-municipios-costeros-y-limitrofes-de-espana-con-r.md
 - machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algoritmos-de-clasificacion.md
 - adyacencia-de-poligonos-con-el-paquete-spdep-de-r.md
 - un-peligro-del-analisis-cluster.md
-slug: diagramas-de-voronoi-con-spatial-de-python
 tags:
-- cDKTree
+- cdktree
 - spatial
-- Voronoi
+- voronoi
 title: Diagramas de Voronoi con spatial de python
 url: /blog/diagramas-de-voronoi-con-spatial-de-python/
 ---
-
 En breve «mis cachorros», como llamo a un grupo de los mejores Data Scientist de Europa (de los que tengo que hablar algún día) se van a enfrentar a un problema que probablemente tengan que resolver con análisis geométricos muy complejos. Para despertarles la curiosidad (sé que me leen) hoy traigo al blog una entrada que nos aproxima al método de interpolación geométrica más sencillo, [al diagrama de Voronoi](http://www.abc.es/ciencia/abci-diagrama-voronoi-forma-matematica-dividir-mundo-201704241101_noticia.html). Con [spatial de scipy](https://docs.scipy.org/doc/scipy-0.18.1/reference/generated/scipy.spatial.Voronoi.html) podemos trabajar con estos diagramas:
 
 ```r

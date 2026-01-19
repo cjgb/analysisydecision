@@ -1,25 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Consultoría
-- Excel
-- Formación
-- Mapas
-date: '2016-06-08T10:22:02-05:00'
-lastmod: '2025-07-13T16:03:55.687033'
+- consultoría
+- excel
+- formación
+- mapas
+date: '2016-06-08'
+lastmod: '2025-07-13'
 related:
 - trucos-excel-mapa-de-espana-por-provincias.md
 - nuevo-mapa-por-provincias-en-excel-de-espana-actualiza-los-colores-en-rgb.md
 - mapa-excel-de-europa.md
 - trucos-excel-mapa-de-espana-por-provincias-mejorado.md
 - mapas-municipales-de-espana-con-excel-y-qgis.md
-slug: nuevo-y-muy-mejorado-mapa-de-espana-por-provincias-con-excel
 tags:
-- mapa Excel
+- mapas
+- excel
 title: Nuevo y muy mejorado mapa de España por provincias con Excel
 url: /blog/nuevo-y-muy-mejorado-mapa-de-espana-por-provincias-con-excel/
 ---
-
 ![Nuevo_mapa_españa1](/images/2016/06/Nuevo_mapa_españa1.png)
 
 Hacía tiempo que no publicaba un mapa de España de Excel, aquí tenéis una nueva versión que mejora mucho a las anteriores. La primera mejora y la que más destaca es que nos permite incluir datos, además ponemos los nombres de las provincias para todos aquellos que dominen poco la geografía española. Podemos pintar hasta 4 datos distintos que se pueden seleccionar en el desplegable que tenéis arriba. Ahora los colores van en dos escalas que podéis seleccionar vosotros:[

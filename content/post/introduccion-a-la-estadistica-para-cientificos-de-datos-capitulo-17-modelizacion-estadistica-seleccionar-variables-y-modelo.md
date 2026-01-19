@@ -1,26 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Libro Estadística
-- Modelos
-- Monográficos
-- R
-date: '2023-08-21T12:18:47-05:00'
-lastmod: '2025-07-13T15:58:56.925144'
+- formación
+- libro estadística
+- modelos
+- monográficos
+- r
+date: '2023-08-21'
+lastmod: '2025-07-13'
 related:
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-16-modelizacion-estadistica-conociendo-los-datos.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-9-analisis-exploratorio-de-datos-eda.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-6-descripcion-numerica-de-variables.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-8-problemas-con-los-datos.md
 - monografico-arboles-de-clasificacion-con-rpart.md
-slug: introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo
-tags: []
+tags:
+- sin etiqueta
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 17. Modelización
   estadística. Seleccionar variables y modelo
 url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo/
 ---
-
 El capítulo anterior comenzó con esta imagen.
 
 [![](/images/2023/05/wp_editor_md_27b9a01430023cb93f618c4fef0f4448.jpg)](/images/2023/05/wp_editor_md_27b9a01430023cb93f618c4fef0f4448.jpg)

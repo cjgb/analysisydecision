@@ -1,24 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Consultoría
-- Excel
-- Formación
-- Trucos
-date: '2021-02-04T06:59:05-05:00'
-lastmod: '2025-07-13T16:07:29.357904'
+- consultoría
+- excel
+- formación
+- trucos
+date: '2021-02-04'
+lastmod: '2025-07-13'
 related:
 - truco-excel-repetir-un-campo-a-partir-de-otro-que-define-el-numero-de-repeticiones.md
 - trucos-excel-repetir-filas-con-desref.md
 - trucos-excel-repetir-filas-o-columnas-con-la-funcion-desref.md
 - truco-excel-producto-cartesiano-de-dos-campos.md
 - truco-excel-transponer-una-fila-en-varias-columnas-con-desref.md
-slug: truco-excel-repetir-celdas-en-funcion-de-los-valores-de-otra-celda
-tags: []
+tags:
+- sin etiqueta
 title: Truco Excel. Repetir celdas en función de los valores de otra celda
 url: /blog/truco-excel-repetir-celdas-en-funcion-de-los-valores-de-otra-celda/
 ---
-
 En alguna ocasión me habéis planteado como repetir celdas en Excel en función del valor de una celda, es decir, repetir una celda tantas veces como nos indica otra celda. Disponía de una versión con fórmulas más complejas que programar el proceso en visual basic, si alguien está interesado cuelgo un ejemplo en Excel sin describir el funcionamiento porque es muy complejo, quizá en el futuro retome esas fórmulas e intente simplificar el proceso. Hoy os traigo esta tarea de repetir celdas en Excel en base a otra celda pero insertando y usando fórmulas sencillas. Para el ejemplo partiríamos de esta situación:
 
 [![](/images/2021/02/repetir_columna_excel.png)](/images/2021/02/repetir_columna_excel.png)

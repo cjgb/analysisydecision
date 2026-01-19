@@ -1,28 +1,27 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Libro Estadística
-- Machine Learning
-- Modelos
-- Monográficos
-- R
-- Seguros
-date: '2023-04-11T14:49:09-05:00'
-lastmod: '2025-07-13T15:58:54.230266'
+- formación
+- libro estadística
+- machine learning
+- modelos
+- monográficos
+- r
+- seguros
+date: '2023-04-11'
+lastmod: '2025-07-13'
 related:
 - interpretacion-de-los-parametros-de-un-modelo-glm.md
 - que-pasa-si-uso-una-regresion-de-poisson-en-vez-de-una-regresion-logistica.md
 - manual-curso-introduccion-de-r-capitulo-18-modelos-de-regresion-de-poisson.md
 - manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-11-analisis-bivariable.md
-slug: introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-15-modelos-glm-regresion-logistica-y-regresion-de-poisson
-tags: []
+tags:
+- sin etiqueta
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 15. Modelos
   GLM. Regresión logística y regresión de poisson
 url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-15-modelos-glm-regresion-logistica-y-regresion-de-poisson/
 ---
-
 ## Motivación de los modelos GLM
 
 Hasta el momento se han planteado los siguientes modelos.

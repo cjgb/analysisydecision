@@ -1,26 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Machine Learning
-- Monográficos
-- R
-date: '2018-11-07T16:59:31-05:00'
-lastmod: '2025-07-13T15:55:27.835316'
+- machine learning
+- monográficos
+- r
+date: '2018-11-07'
+lastmod: '2025-07-13'
 related:
 - juego-de-modelos-de-regresion-con-r.md
 - manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
 - arboles-de-decision-con-sas-base-con-r-por-supuesto.md
 - resolucion-del-juego-de-modelos-con-r.md
 - trucos-r-llevar-a-sas-las-reglas-de-un-arbol-de-decision.md
-slug: crear-una-restful-api-con-r-plumber
 tags:
 - plumber
-- REST
-- RESTful
+- rest
+- restful
 title: Crear una RESTful API con R con plumber
 url: /blog/crear-una-restful-api-con-r-plumber/
 ---
-
 Podéis buscar info en la web acerca de lo que es una REST y una RESTful pero el objetivo de este trabajo es la creación de una API para «escorear» unos datos a partir de un modelo que hemos creado en R. Vamos a hacer lo más sencillo, un modelo de regresión lineal creado por R será guardado y una API con datos podrá llamar a este modelo mediante un cliente RESTful para obtener una predicción. Esta será la primera de una serie de entradas que le voy a dedicar a Carlos, un antiguo compañero mío y que me ha enseñado a desaprender y el primer guiño a Carlos será abandonar mi subversion local para conectar mi RStudio con GitHub, todo el trabajo que voy desarrollando lo tenéis en <https://github.com/analisisydecision/Modelo1>. Si echáis un vistazo al repositorio ya os podéis imaginar hacia donde irán encaminadas esta serie de entradas.
 
 Bien, lo primero será crear y guardar el modelo con R:

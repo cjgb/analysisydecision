@@ -1,27 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-- Trucos
-date: '2009-10-29T13:48:48-05:00'
-lastmod: '2025-07-13T16:10:01.006208'
+- formación
+- sas
+- trucos
+date: '2009-10-29'
+lastmod: '2025-07-13'
 related:
 - macros-faciles-de-sas-busca-duplicados.md
 - truco-sas-duplicar-registros-si-cumplen-una-condicion.md
 - trucos-sas-porque-hay-que-usar-objetos-hash.md
 - trucos-sas-union-de-multiples-tablas-sas-con-un-nombre-parecido.md
 - trucos-sas-muestras-aleatorias-con-y-sin-reemplazamiento.md
-slug: trucos-sas-identificar-registros-duplicados
 tags:
 - duplicados
 - proc sql
-- SAS
+- sas
 - where
 title: Trucos SAS. Identificar registros duplicados
 url: /blog/trucos-sas-identificar-registros-duplicados/
 ---
-
 Muy rápido, para identificar registros duplicados existen múltiples formas. Seguramente haré un monográfico sobre este tema pero de momento dejo una píldora:
 
 ```r

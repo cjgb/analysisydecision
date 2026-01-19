@@ -1,23 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Big Data
-- Formación
-date: '2018-09-07T15:50:41-05:00'
-lastmod: '2025-07-13T15:54:08.555341'
+- big data
+- formación
+date: '2018-09-07'
+lastmod: '2025-07-13'
 related:
 - notebook-para-empezar-y-probar-en-spark-y-scala.md
 - lectura-de-archivos-csv-con-python-y-pandas.md
 - montemos-un-sistema-de-informacion-en-nuestro-equipo-ii.md
 - r-python-reticulate.md
 - de-sql-server-a-python-pandas-dataframe.md
-slug: aprende-pyspark-sin-complicaciones
 tags:
 - pyspark
 title: Aprende Pyspark sin complicaciones
 url: /blog/aprende-pyspark-sin-complicaciones/
 ---
-
 Hace tiempo un gran data engineer me preparó una máquina virtual para hacer «pinitos» con pyspark y llevaba tiempo pensando en como poder publicar trucos y ejemplos con pyspark sin necesidad de máquinas virtuales y empleando notebooks. Ya he encontrado la mejor manera, los contenedores de docker. Cuanto más profundizo en docker más me gusta trabajar con contenedores y con esta entrada me váis a entender perfectamente.
 
 El primer paso es instalar docker y arrancar el terminal. La idea de docker es ejecutar un contenedor en cualquier máquina independientemente del sistema operativo. Instalar spark en windows es un dolor de cabeza, si disponemos de una máquina virtual con linux es más sencillo, pero imaginad que, con dos líneas de código ya podéis trabajar con un notebook y pyspark, pues eso lo podemos hacer con docker.

@@ -1,22 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-date: '2020-04-07T04:21:18-05:00'
-lastmod: '2025-07-13T15:57:38.298652'
+- formación
+date: '2020-04-07'
+lastmod: '2025-07-13'
 related:
 - mi-breve-seguimiento-del-coronavirus-con-r.md
 - mapa-del-covid-19-por-comunidades-autonomas-con-r-mas-rstats.md
 - evolucion-del-numero-de-casos-de-coronavirus.md
 - los-pilares-de-mi-simulacion-de-la-extension-del-covid19.md
 - incluir-subplot-en-mapa-con-ggplot.md
-slug: etiquetas-en-scatter-plot-muertes-covid-por-millon-de-habitantes-vs-gasto-en-salud
-tags: []
+tags:
+- sin etiqueta
 title: Etiquetas en scatter plot. Muertes covid por millón de habitantes vs gasto
   en salud
 url: /blog/etiquetas-en-scatter-plot-muertes-covid-por-millon-de-habitantes-vs-gasto-en-salud/
 ---
-
 [![](/images/2020/04/coronavirus15.png)](/images/2020/04/coronavirus15.png)
 
 He intentado permanecer ajeno a los datos del coronoavirus pero es imposible, sin embargo, me gustaría aprovechar para mostrar algunos trucos con R y Python. Esta vez en una sola entrada vamos a tratar las siguientes situaciones:

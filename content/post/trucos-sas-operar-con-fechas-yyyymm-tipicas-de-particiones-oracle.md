@@ -1,23 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-- Trucos
-date: '2008-10-01T03:21:13-05:00'
-lastmod: '2025-07-13T16:10:23.691485'
+- formación
+- sas
+- trucos
+date: '2008-10-01'
+lastmod: '2025-07-13'
 related:
 - bucle-de-fechas-con-sas-para-tablas-particionadas.md
 - trucos-sas-numero-de-dias-de-un-mes.md
 - trabajo-con-fechas-sas-funciones-fecha.md
 - macros-sas-primer-y-ultimo-dia-del-mes-de-una-fecha-sas.md
 - trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados.md
-slug: trucos-sas-operar-con-fechas-yyyymm-tipicas-de-particiones-oracle
-tags: []
+tags:
+- sin etiqueta
 title: Trucos SAS. Operar con fechas YYYYMM típicas de particiones Oracle
 url: /blog/trucos-sas-operar-con-fechas-yyyymm-tipicas-de-particiones-oracle/
 ---
-
 Este truco va orientado a programadores SAS que estén habituados a trabajar con Oracle. El SAS Tip de hoy nos permite parametrizar a la perfección la lectura de tablas históricas particionadas. En estos casos podemos crear parámetros con macrovariables de SAS para leer las tablas Oracle sin necesidad de modificar manualmente las fechas de partición. Un ejemplo:
 
 1\. sin parametrizar:

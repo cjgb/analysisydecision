@@ -1,23 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Modelos
-- R
-date: '2009-10-23T15:51:12-05:00'
-lastmod: '2025-07-13T16:01:26.554375'
+- formación
+- modelos
+- r
+date: '2009-10-23'
+lastmod: '2025-07-13'
 related:
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-15-modelos-glm-regresion-logistica-y-regresion-de-poisson.md
 - interpretacion-de-los-parametros-de-un-modelo-glm.md
 - que-pasa-si-uso-una-regresion-de-poisson-en-vez-de-una-regresion-logistica.md
 - monografico-regresion-logistica-con-r.md
 - manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
-slug: manual-curso-introduccion-de-r-capitulo-18-modelos-de-regresion-de-poisson
-tags: []
+tags:
+- sin etiqueta
 title: 'Manual. Curso introducción de R. Capítulo 18: Modelos de regresión de Poisson'
 url: /blog/manual-curso-introduccion-de-r-capitulo-18-modelos-de-regresion-de-poisson/
 ---
-
 Cuando disponemos de un número de eventos que ocurren en un intervalo tiempo estamos ante una variable de poisson, además tiene que producirse que este número de eventos en intervalos sean independientes del número de eventos que ocurran fuera de ese intervalo de tiempo. En un intervalo muy pequeño la probabilidad de que ocurra un evento es proporcional al tamaño del intervalo y por último la probabilidad de que ocurran dos o más eventos en un intervalo muy pequeño es prácticamente 0. Cualquier variable medida en un intervalo de tiempo o en un intervalo espacial es una variable de Poisson, también se pueden emplear para medir frecuencias en intervalos de población (casos de cáncer en poblaciones, frecuencias siniestrales,…). Tiene como particularidad que la media y la varianza son iguales a p*s donde p es la probabilidad de ocurrencia de un evento de poisson en un intervalo de tiempo de tamaño unidad y s es el tamaño del intervalo de tiempo o espacial en estudio.
 
 Un modelo de regresión de Poisson mide la relación de dependencia de una variable de Poisson con una o varias variables. Si p, repetimos, es la probabilidad de ocurrencia de un evento de poisson en un intervalo de tiempo de tamaño unidad y s es el tamaño del intervalo el modelo matemático podría expresarse como LN(p*s) = B0 + B1*X1 + B2*X2 + … + Bn*Xn. De este modo si X1=X2=…=Xn=0 => p=e**B0 luego e**B0 es la probabilidad de que ocurra el evento en un intervalo igual a 1. También podría expresarse como LN(p)=LN(s) + B0 + B1*X1 +…+ Bn*Xn Para ilustrar este ejemplo partimos de una BBDD access que contiene reclamaciones en una compañía aseguradora:

@@ -1,23 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- R
-- Trucos
-date: '2013-12-03T10:33:03-05:00'
-lastmod: '2025-07-13T16:07:39.444554'
+- formación
+- r
+- trucos
+date: '2013-12-03'
+lastmod: '2025-07-13'
 related:
 - leer-una-tabla-en-pdf-con-excel-a-traves-de-r.md
 - trucos-r-leer-de-excel-via-rodbc.md
 - trucos-simples-para-rstats.md
 - evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso.md
 - truco-r-eval-parse-y-paste-para-automatizar-codigo.md
-slug: truco-malo-de-r-leer-datos-desde-excel
-tags: []
+tags:
+- sin etiqueta
 title: Truco (malo) de R. Leer datos desde Excel
 url: /blog/truco-malo-de-r-leer-datos-desde-excel/
 ---
-
 Tenemos unos datos en Excel y deseamos crear un objeto en R con ellos. La forma más sencilla es seleccionar y copiar los datos y ejecutar el siguiente código:
 
 ```r

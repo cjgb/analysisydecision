@@ -1,23 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Monográficos
-- Seguros
-date: '2011-12-29T15:15:28-05:00'
-lastmod: '2025-07-13T15:59:52.808409'
+- monográficos
+- seguros
+date: '2011-12-29'
+lastmod: '2025-07-13'
 related:
 - lecciones-de-economia-de-un-ignorante-la-prima-de-riesgo-y-la-madre-que-la-pario.md
 - la-confianza-en-el-sector-financiero.md
 - el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v.md
 - lecciones-de-economia-de-un-ignorante-la-caixa-a-colocar-preferentes.md
 - el-seguro-de-salud-suma-y-sigue.md
-slug: lecciones-de-economia-de-un-ignorante-%c2%bfllegamos-a-solvencia-ii
 tags:
 - solvencia
 title: Lecciones de economía de un ignorante. ¿Llegamos a Solvencia II?
 url: /blog/lecciones-de-economia-de-un-ignorante-c2bfllegamos-a-solvencia-ii/
 ---
-
 ![](https://www.alertadigital.com/wp-content/uploads/2011/06/prima-de-riesgo.jpg)
 
 Lo primero, antes de expresar mi preocupación, aunque no sea el tipo más apropiado debido a que no soy ningún experto os cuento un poco de que va el tema. **Solvencia II** es una normativa iniciada en la Unión Europea para regular las operaciones de compañías aseguradoras. La sana intención que tiene es controlar los riesgos contratados y evitar que no se líe parda. Se estructura en 3 pilares:

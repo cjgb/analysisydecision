@@ -1,25 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Business Intelligence
-- Formación
-date: '2010-12-03T17:42:03-05:00'
-lastmod: '2025-07-13T16:03:02.865380'
+- business intelligence
+- formación
+date: '2010-12-03'
+lastmod: '2025-07-13'
 related:
 - montemos-un-sistema-de-informacion-en-nuestro-equipo-iii.md
 - montemos-un-sistema-de-informacion-en-nuestro-equipo-i.md
 - univariantes-de-campos-de-nuestra-bbdd-con-kettle.md
 - manual-curso-introduccion-de-r-capitulo-5-lectura-avanzada-de-datos.md
 - curso-de-lenguaje-sas-con-wps-que-hace-el-paso-data.md
-slug: montemos-un-sistema-de-informacion-en-nuestro-equipo-ii
 tags:
-- importar csv
+- importar datos
 - pentaho
 - postgres
+- bases de datos
 title: Montemos un sistema de información en nuestro equipo (II)
 url: /blog/montemos-un-sistema-de-informacion-en-nuestro-equipo-ii/
 ---
-
 Vamos a empezar a subir archivos a la BBDD. Evidentemente lo primero que tenemos que hacer es crearnos una BBDD en Postgres. Con el _PGAdmin_ creamos una nueva base de datos, disponemos de varias opciones, en nuestro caso no modificamos ninguna y creamos BD. Ya tenemos una BBDD funcionando y a la hora de conectarnos a ella tendremos que asignarle las propiedades necesarias para su correcto funcionamiento:
 
 ![postgres-1.png](/images/2010/11/postgres-1.png)

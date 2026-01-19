@@ -1,28 +1,26 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Modelos
-- R
-date: '2009-01-17T04:50:15-05:00'
-lastmod: '2025-07-13T16:01:21.170898'
+- formación
+- modelos
+- r
+date: '2009-01-17'
+lastmod: '2025-07-13'
 related:
 - regresion-pls-con-r.md
 - monografico-analisis-de-factores-con-r-una-introduccion.md
 - el-problema-de-la-multicolinealidad-intuirlo-y-detectarlo.md
 - manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-11-analisis-bivariable.md
-slug: manual-curso-introduccion-de-r-capitulo-14-introduccion-al-calculo-matricial-con-analisis-de-componentes-principales
 tags:
 - calculo matricial
-- Componentes principales
+- componentes principales
 - matriz de correlaciones
-- R
+- r
 title: 'Manual. Curso introducción de R. Capítulo 14: Introducción al cálculo matricial
   con análisis de componentes principales'
 url: /blog/manual-curso-introduccion-de-r-capitulo-14-introduccion-al-calculo-matricial-con-analisis-de-componentes-principales/
 ---
-
 Para el trabajo con matrices vamos a emplear un análisis de componentes principales. El análisis de componentes principales puede encuadrarse dentro del conjunto de técnicas multivariantes conocidas como métodos factoriales (también se incluyen el análisis de factores y el análisis de correspondencias). Pretendemos sintetizar un gran conjunto de datos, crear estructuras de interdependencia entre variables cuantitativas para crear unas nuevas variables que son función lineal de las originales y de las que podemos hacer una representación gráfica. El objetivo del análisis de componentes principales será el reducir la dimensión de un conjunto de p variables a un conjunto m de menor número de variables para mejorar la interpretabilidad de los datos.
 
 Las nuevas variables, las componentes principales, determinan lo esencial de las variables originales, son una combinación lineal de ellas que además tienen unas propiedades interesantes:

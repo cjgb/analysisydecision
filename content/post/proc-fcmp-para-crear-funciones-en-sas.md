@@ -1,24 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-- Trucos
-date: '2014-10-28T05:45:37-05:00'
-lastmod: '2025-07-13T16:04:42.213999'
+- formación
+- sas
+- trucos
+date: '2014-10-28'
+lastmod: '2025-07-13'
 related:
 - macros-faciles-de-sas-dias-de-un-mes-en-una-fecha.md
 - trucos-sas-operar-con-fechas-yyyymm-tipicas-de-particiones-oracle.md
 - macros-sas-transformar-un-numerico-a-fecha.md
 - trucos-sas-numero-de-dias-de-un-mes.md
 - trabajo-con-fechas-sas-funciones-fecha.md
-slug: proc-fcmp-para-crear-funciones-en-sas
 tags:
-- PROC FCMP
+- proc fcmp
 title: PROC FCMP para crear funciones en SAS
 url: /blog/proc-fcmp-para-crear-funciones-en-sas/
 ---
-
 Unas pinceladas del PROC FCMP para SAS. Este procedimiento nos permite crear nuestras propias funciones que posteriormente podremos utilizar en nuestras sesiones de SAS. yo he programado mucho en SAS y tengo que decir que no utilizo mucho este procedimiento por la propia filosofía de SAS. Al final siempre se tiende a crear una macro antes que una función, pero hay que reconocer que el lenguaje macro de SAS en ocasiones no es sencillo y muchos olvidamos el PROC FCMP. En mi caso concreto hago unas macros muy enrevesadas antes que programarme una función. Para ilustrar el ejemplo de uso vamos a crear una función dif_anios para determinar la diferencia en años entre dos fechas SAS. El código es:
 
 ```r

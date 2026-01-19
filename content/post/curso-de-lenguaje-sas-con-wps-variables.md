@@ -1,23 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Consultoría
-- Formación
-date: '2010-06-14T16:05:52-05:00'
-lastmod: '2025-07-13T15:56:00.521354'
+- consultoría
+- formación
+date: '2010-06-14'
+lastmod: '2025-07-13'
 related:
 - trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados.md
 - curso-de-lenguaje-sas-con-wps-introduccion-a-los-formatos-de-variables.md
 - trabajo-con-fechas-sas-introduccion.md
 - curso-de-lenguaje-sas-con-wps-funciones-fecha.md
 - trabajo-con-fechas-sas-funciones-fecha.md
-slug: curso-de-lenguaje-sas-con-wps-variables
 tags:
 - variables
 title: Curso de lenguaje SAS con WPS. Variables
 url: /blog/curso-de-lenguaje-sas-con-wps-variables/
 ---
-
 El elemento fundamental de los conjuntos de datos SAS son las variables. Ya las hemos referenciado en capítulos anteriores. Éstas pueden ser numéricas o alfanuméricas. Las variables se pueden crear, eliminar o se pueden recodificar. Todo esto siempre lo haremos mediante pasos DATA. Disponemos de un amplio número de funciones para que todas las variables se ajusten a nuestras necesidades.
 Las variables tienen los siguientes **atributos** :
 

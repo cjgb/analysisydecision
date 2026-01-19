@@ -1,26 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Machine Learning
-- Monográficos
-- Python
-date: '2017-06-19T01:32:43-05:00'
-lastmod: '2025-07-13T16:00:39.125833'
+- formación
+- machine learning
+- monográficos
+- python
+date: '2017-06-19'
+lastmod: '2025-07-13'
 related:
 - machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algoritmos-de-clasificacion.md
 - el-parametro-gamma-el-coste-la-complejidad-de-un-svm.md
 - resolucion-del-juego-de-modelos-con-r.md
 - monografico-clasificacion-con-svm-en-r.md
 - juego-de-modelos-de-regresion-con-r.md
-slug: machine-learning-elegir-el-mejor-gradient-boost-de-forma-iterativa-con-gridseacrchcv
 tags:
-- GradientBoostingClassifier
-- GridSearchCV
+- gradientboostingclassifier
+- gridsearchcv
 title: Machine learning. Elegir el mejor Gradient Boost de forma iterativa con GridSearchCV
 url: /blog/machine-learning-elegir-el-mejor-gradient-boost-de-forma-iterativa-con-gridseacrchcv/
 ---
-
 Carlos [aka «el tete»] me está enseñando python y una de las cosas que me ha enseñado es seleccionar de forma iterativa el mejor modelo con GridSearchCV y por si fuera poco vamos a emplear el método de clasificación «gradient boosting» para que no caiga en desuso sobre todo porque es una técnica que, bajo mi punto de vista, ofrece modelos muy estables. El ejemplo para ilustrar el proceso ya es conocido ya que vamos a estimar la letra O, mi talento no da para mucho más. Recordamos los primeros pasos:
 
 ```r

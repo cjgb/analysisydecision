@@ -1,27 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Monográficos
-- SAS
-date: '2010-05-28T07:38:01-05:00'
-lastmod: '2025-07-13T16:10:47.766721'
+- formación
+- monográficos
+- sas
+date: '2010-05-28'
+lastmod: '2025-07-13'
 related:
 - un-acercamiento-a-graph-sentencias-graficas.md
 - un-acercamiento-a-graph-primeros-graficos-con-sas.md
 - un-acercamiento-a-graph-proc-gchart.md
 - graficos-de-densidades-con-sas-y-el-proc-kde.md
 - capitulo-5-representacion-basica-con-ggplot.md
-slug: un-acercamiento-a-graph-ods-graphs-proc-sgplot
 tags:
-- ''
-- GRAPH
-- ODS GRAPHS
-- SGPLOT
+- graph
+- ods graphs
+- sgplot
 title: Un acercamiento a GRAPH. ODS GRAPHS PROC SGPLOT
 url: /blog/un-acercamiento-a-graph-ods-graphs-proc-sgplot/
 ---
-
 [](/images/2010/05/sgplot18.png "BOXPLOT SGPLOT")[![BOXPLOT SGPLOT](/images/2010/05/sgplot22.thumbnail.png)](/images/2010/05/sgplot22.png "BOXPLOT SGPLOT") [![HISTOGRAMAS SGPLOT](/images/2010/05/sgplot34.thumbnail.png)](/images/2010/05/sgplot34.png "HISTOGRAMAS SGPLOT")[![BARRAS CON GRUPOS SGPLOT](/images/2010/05/sgplot46.thumbnail.png)](/images/2010/05/sgplot46.png "BARRAS CON GRUPOS SGPLOT")
 
 [![REGRESION CON SGPLOT](/images/2010/05/sgplot59.thumbnail.png)](/images/2010/05/sgplot59.png "REGRESION CON SGPLOT")[![GRAFICO BARRAS LINEAS SGPLOT](/images/2010/05/sgplot180.thumbnail.png)](/images/2010/05/sgplot180.png "GRAFICO BARRAS LINEAS SGPLOT")[![BARRAS HORIZONTALES SGPLOT](/images/2010/05/sgplot40.thumbnail.png)](/images/2010/05/sgplot40.png "BARRAS HORIZONTALES SGPLOT")

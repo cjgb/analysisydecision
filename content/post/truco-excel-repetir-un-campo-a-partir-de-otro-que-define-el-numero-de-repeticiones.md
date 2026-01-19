@@ -1,23 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Excel
-- Formación
-- Trucos
-date: '2016-12-17T16:43:13-05:00'
-lastmod: '2025-07-13T16:07:31.246083'
+- excel
+- formación
+- trucos
+date: '2016-12-17'
+lastmod: '2025-07-13'
 related:
 - truco-excel-repetir-celdas-en-funcion-de-los-valores-de-otra-celda.md
 - truco-excel-pasar-un-rango-de-varias-columnas-a-una.md
 - trucos-excel-repetir-filas-con-desref.md
 - trucos-excel-repetir-filas-o-columnas-con-la-funcion-desref.md
 - trucos-excel-transponer-con-la-funcion-desref.md
-slug: truco-excel-repetir-un-campo-a-partir-de-otro-que-define-el-numero-de-repeticiones
-tags: []
+tags:
+- sin etiqueta
 title: Truco Excel. Repetir un campo a partir de otro que define el número de repeticiones
 url: /blog/truco-excel-repetir-un-campo-a-partir-de-otro-que-define-el-numero-de-repeticiones/
 ---
-
 En realidad necesitamos repetir filas, pero el número de repeticiones está parametrizado por otro campo. Partimos de un rango donde la primera columna es un valor que necesita ser repetido el número de filas que nos indica la segunda columna. Es una duda que planteaba un lector del blog:
 
 _Hola, a ver si me podeis ayudar,_

@@ -1,23 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Modelos
-- R
-date: '2019-07-16T03:59:09-05:00'
-lastmod: '2025-07-13T15:58:08.137579'
+- formación
+- modelos
+- r
+date: '2019-07-16'
+lastmod: '2025-07-13'
 related:
 - v-de-cramer-con-r-analizar-la-correlacion-de-factores.md
 - grafico-de-correlaciones-entre-variables.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-11-analisis-bivariable.md
 - graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
 - monografico-analisis-de-factores-con-r-una-introduccion.md
-slug: grafico-de-correlaciones-entre-factores-grafico-de-la-v-de-cramer
-tags: []
+tags:
+- sin etiqueta
 title: Gráfico de correlaciones entre factores. Gráfico de la V de Cramer
 url: /blog/grafico-de-correlaciones-entre-factores-grafico-de-la-v-de-cramer/
 ---
-
 Un gráfico muy habitual a la hora de construir modelos de riesgo para el cálculo de tarifas es el gráfico de correlaciones de la V de Cramer que nos sirve para medir la correlación entre factores, entre variables cuantitativas [hace muchos años ya escribí sobre el tema](https://analisisydecision.es/v-de-cramer-con-r-analizar-la-correlacion-de-factores/). Hoy os traigo la creación de un corrplot con R aplicado a la V de Cramer y además os descubro una función muy elegante para realizar este análisis de correlaciones entre factores, [esta función está sacada de stackoverflow](https://stackoverflow.com/questions/44070853/association-matrix-in-r) (como no) y añado un análisis gráfico que nos permite conocer algunas opciones de corrplot.
 
 ```r

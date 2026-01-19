@@ -1,18 +1,17 @@
 ---
 author: rvaquerizo
 categories:
-- Excel
-- Formación
-- Trucos
-date: '2012-11-20T11:14:21-05:00'
-lastmod: '2025-07-13T16:07:10.235216'
+- excel
+- formación
+- trucos
+date: '2012-11-20'
+lastmod: '2025-07-13'
 related:
 - truco-excel-transponer-una-fila-en-varias-columnas-con-desref.md
 - truco-excel-repetir-celdas-en-funcion-de-los-valores-de-otra-celda.md
 - truco-excel-agrupar-valores-en-un-campo-de-una-tabla-dinamica.md
 - desref-para-trasponer-en-excel-varias-columnas.md
 - truco-excel-repetir-un-campo-a-partir-de-otro-que-define-el-numero-de-repeticiones.md
-slug: truco-excel-dividir-una-variable-cuantitativa-en-tramos
 tags:
 - contar
 - jerarquia
@@ -20,7 +19,6 @@ tags:
 title: Truco Excel. Dividir una variable cuantitativa en tramos
 url: /blog/truco-excel-dividir-una-variable-cuantitativa-en-tramos/
 ---
-
 Un truco Excel que implica la utilización de la función **JERARQUIA** para la creación de un ranking y que la complementamos con la tramificación de ese ranking, de este modo creamos tramos de una variable numérica con Excel sin necesidad de ordenación previa. La situación sería:
 
 [![](/images/2012/11/tramos-variable-excel-1.png)](/images/2012/11/tramos-variable-excel-1.png)

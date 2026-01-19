@@ -1,26 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Modelos
-- Monográficos
-- R
-date: '2014-02-05T11:32:27-05:00'
-lastmod: '2025-07-13T16:06:07.045863'
+- formación
+- modelos
+- monográficos
+- r
+date: '2014-02-05'
+lastmod: '2025-07-13'
 related:
 - trucos-excel-area-bajo-la-curva-roc.md
 - el-parametro-gamma-el-coste-la-complejidad-de-un-svm.md
 - regresion-ridge-o-contraida-con-r.md
 - resolucion-del-juego-de-modelos-con-r.md
 - el-sobremuestreo-mejora-mi-estimacion.md
-slug: seleccion-del-mejor-punto-de-diagnostico-en-una-prueba-diagnostica
 tags:
 - ggplot2
-- ROC
+- roc
 title: Selección del mejor punto de diagnóstico en una prueba diagnóstica
 url: /blog/seleccion-del-mejor-punto-de-diagnostico-en-una-prueba-diagnostica/
 ---
-
 La pasada semana, en un examen, me preguntaron cuál era el mejor punto para una prueba diagnóstica; era necesario razonar mi respuesta. Seguramente mi respuesta fue correcta pero mi razonamiento no lo fue y por eso quería redimirme. Para evaluar las pruebas diagnósticas con una respuesta binaria si/no contamos con la sensibilidad y la especificidad. La sensibilidad es la capacidad que tiene la prueba para acertar sobre los que de verdad tiene que acertar, la probabilidad de etiquetar como enfermos aquellos que verdaderamente están enfermos. La especificidad es una medida que nos indica cuanto nos hemos equivocado con los “unos”, la probabilidad de etiquetar enfermos a pacientes sanos. Una forma de medir cuanto acertamos y cuanto nos equivocamos con nuestra prueba. Para analizar el comportamiento de nuestra prueba diagnóstica debemos determinar un punto de corte. Para ilustrar como seleccionar el mejor punto de corte vamos a emplear unos [datos sacados de la web de bioestadística del Hospital ramón y Cajal](http://www.hrc.es/bioest/roc_1.html) y vamos a elaborar una curva ROC con R y ggplot2.
 
 La curva ROC es una representación gráfica de la sensibilidad y uno menos la especificidad. ROC es el acrónimo de Reciver Operating Characteristic. Es un método para valorar como está funcionando nuestro método diagnóstico, cuanto mejor es si lo comparamos con el azar. El azar diría que tenemos las mismas probabilidades de tener cualquier tipo de diagnóstico, es decir pintamos una línea recta del punto (0,0) al punto (1,1) eso es el puro azar. En la red tenéis mucha literatura al respecto de divulgadores mejores que yo.

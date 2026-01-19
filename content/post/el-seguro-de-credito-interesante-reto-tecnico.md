@@ -1,24 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Consultoría
-- Seguros
-date: '2008-12-16T09:04:45-05:00'
-lastmod: '2025-07-13T15:57:12.532528'
+- consultoría
+- seguros
+date: '2008-12-16'
+lastmod: '2025-07-13'
 related:
 - detalles-tecnicos-del-seguro-de-credito-el-factor-de-uso-del-importe-concedido.md
 - el-seguro-de-salud-suma-y-sigue.md
 - el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v.md
 - consultor-particular-de-seguros.md
 - el-seguro-de-salud-la-futura-guerra.md
-slug: el-seguro-de-credito-interesante-reto-tecnico
 tags:
 - seguro de crédito
 - técnicos de seguros
+- seguros
 title: El seguro de crédito interesante reto técnico
 url: /blog/el-seguro-de-credito-interesante-reto-tecnico/
 ---
-
 [](/images/2008/12/seguro-de-credito.JPG "seguro-de-credito.JPG")Dando un paseo por [www.icea.es](http://www.icea.es/) he visitado los ranking de seguros no vida de 2007 y 2008. Me ha impactado un valor. Entre las 25 entidades más potentes de 2008 hay una que hay dos que han crecido por encima del resto con respecto al año 2007:
 
 [![seguro-de-credito.JPG](/images/2008/12/seguro-de-credito.JPG)](/images/2008/12/seguro-de-credito.JPG "seguro-de-credito.JPG")[](/images/2008/12/seguro-de-credito.JPG "seguro-de-credito.JPG")

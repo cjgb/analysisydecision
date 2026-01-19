@@ -1,26 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Monográficos
-- R
-- Trucos
-date: '2015-07-02T01:47:57-05:00'
-lastmod: '2025-07-13T16:09:33.224315'
+- formación
+- monográficos
+- r
+- trucos
+date: '2015-07-02'
+lastmod: '2025-07-13'
 related:
 - trucos-r-graficos-de-velocimetro-con-r.md
 - truco-r-paletas-de-colores-en-r.md
 - capitulo-5-representacion-basica-con-ggplot.md
 - graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
 - informes-con-r-en-html-comienzo-con-r2html-i.md
-slug: trucos-r-el-paquete-classint-para-clasificar-variables-continuas
 tags:
-- classInt
-- RColorBrewer
+- classint
+- rcolorbrewer
 title: Trucos R. El paquete classInt para clasificar variables continuas
 url: /blog/trucos-r-el-paquete-classint-para-clasificar-variables-continuas/
 ---
-
 El paquete **classInt** de R últimamente está muy presente en mis programas y me gustaría dedicarle unas líneas para que podáis ver algunas de sus posibilidades a la hora de clasificar variables continuas, además estas posibilidades unidas con **RColorBrewer** nos permiten crear gráficos muy atractivos. Instalamos y clasificamos un vector de ejemplo:
 
 ```r

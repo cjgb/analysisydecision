@@ -1,23 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-date: '2009-07-02T08:38:20-05:00'
-lastmod: '2025-07-13T16:06:26.030599'
+- formación
+- sas
+date: '2009-07-02'
+lastmod: '2025-07-13'
 related:
 - curso-de-lenguaje-sas-con-wps-subconjuntos-de-variables-con-drop-y-keep.md
 - trucos-sas-ordenar-las-variables-de-un-dataset.md
 - trucos-sas-eliminar-etiquetas-en-los-conjunto-de-datos-sas.md
 - truco-sas-tablas-de-una-libreria-en-una-macro-variable.md
 - trucos-sas-variables-dummy-de-una-variable-continua.md
-slug: subconjuntos-de-variables-con-dropkeep
 tags:
 - drop keep
 title: Subconjuntos de variables con DROP/KEEP
 url: /blog/subconjuntos-de-variables-con-dropkeep/
 ---
-
 Me han llegado algunas cuestiones sobre el uso de DROP/KEEP y a raiz de ello me he decidido a hacer un mensaje sencillo para que los usuarios menos avanzados de SAS puedan entender su funcionamiento. Sé que muchos lectores son expertos programadores pero también es necesario tener un rincón con código SAS menos avanzado para aquellos que se estén acercando a esta programación. En este caso partimos de una tabla de datos aleatorios con 102 variables y 10.000 observaciones que generamos mediante el siguiente programa SAS:
 
 ```r

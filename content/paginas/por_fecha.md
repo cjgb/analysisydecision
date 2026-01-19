@@ -1,6 +1,7 @@
+
 ---
 author: Admin
-date: 2025-11-04
+date: 2026-01-19
 draft: false
 title: Por fecha
 type: page
@@ -64,8 +65,8 @@ menu:
     * [Introducción a la Estadística para Científicos de Datos. Capítulo 4. Uniones de tablas con R](/blog/capitulo-4-uniones-de-tablas-con-r/)
     * [Introducción a la Estadística para Científicos de Datos. Capítulo 3. Manejo de datos con R](/blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-3-manejo-de-datos-con-r/)
     * [Introducción a la Estadística para Científicos de Datos con R. Capítulo 2. Datos](/blog/introduccion-a-la-estadistica-para-cientificos-de-datos-con-r-capitulo-2-datos/)
-    * [Introducción a la Estadística para Científicos de Datos con R. Capítulo 1. Introducción](/blog/estadistica-para-cientificos-de-datos-con-r-introduccion/)
     * [Comienza la publicación del ensayo Introducción a la Estadística para Científicos de Datos con R](/blog/comienza-la-publicacion-del-ensayo-introduccion-a-la-estadistica-para-cientificos-de-datos/)
+    * [Introducción a la Estadística para Científicos de Datos con R. Capítulo 1. Introducción](/blog/estadistica-para-cientificos-de-datos-con-r-introduccion/)
 * 2021
   * Diciembre 2021
     * [Vídeo introducción a bookdown](/blog/video-introduccion-a-bookdown/)
@@ -119,8 +120,8 @@ menu:
     * [Manejo de datos básico con Python datatable](/blog/manejo-de-datos-basico-con-python-datatable/)
     * [Transformaciones de variables cuantitativas en modelos binomiales](/blog/transformaciones-de-variables-cuantitativas-en-modelos-binomiales/)
   * Septiembre 2020
-    * [Variables categóricas en cajas, treemap con R](/blog/variables-categoricas-en-cajas-treemap-con-r/)
     * [Nueva edición del Programa en Big Data y Data Science de la UNED](/blog/nueva-edicion-del-programa-en-big-data-y-data-science-de-la-uned/)
+    * [Variables categóricas en cajas, treemap con R](/blog/variables-categoricas-en-cajas-treemap-con-r/)
     * [Mapa España por Comunidades Autónomas con Google Studio](/blog/mapa-espana-por-comunidades-autonomas-con-google-studio/)
     * [Leer fichero de texto de ancho fijo con Python Pandas](/blog/leer-fichero-de-texto-de-ancho-fijo-con-python-pandas/)
     * [Leer una tabla en PDF con Excel (a través de R)](/blog/leer-una-tabla-en-pdf-con-excel-a-traves-de-r/)
@@ -213,8 +214,8 @@ menu:
     * [Truco Python. Seleccionar o eliminar variables de un data frame en base a un prefijo, sufijo o si contienen un caracter](/blog/truco-python-seleccionar-o-eliminar-variables-de-un-data-frame-en-base-a-un-prefijo-sufijo-o-si-contienen-un-caracter/)
     * [Truco Python. Agrupar variable en función de la frecuencia](/blog/truco-python-agrupar-variable-en-funcion-de-la-frecuencia/)
   * Abril 2018
-    * [Truco Python. Restar meses con formato YYYYMM](/blog/truco-python-restar-meses-con-formato-yyyymm/)
     * [Libro de R de Carlos Gil](/blog/libro-de-r-de-carlos-gil/)
+    * [Truco Python. Restar meses con formato YYYYMM](/blog/truco-python-restar-meses-con-formato-yyyymm/)
   * Marzo 2018
     * [Facebook y su Facebookgate son buenas noticias para el data scientist y para el oficio en general](/blog/facebook-y-su-facebookgate-son-buenas-noticias-para-el-data-scientist/)
     * [Notebook para empezar (y probar) en spark y scala](/blog/notebook-para-empezar-y-probar-en-spark-y-scala/)
@@ -344,8 +345,8 @@ menu:
   * Febrero 2015
     * [Trucos Excel. Repetir filas con DESREF](/blog/trucos-excel-repetir-filas-con-desref/)
     * [Mapas municipales de España en R, con la ayuda de Excel](/blog/mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel/)
-    * [Mapas de la provincia de Madrid con BDT](/blog/mapas-de-la-provincia-de-madrid-con-bdt/)
     * [Trucos SAS. Calcular percentiles como Excel o R](/blog/trucos-sas-calcular-percentiles-como-excel-o-r/)
+    * [Mapas de la provincia de Madrid con BDT](/blog/mapas-de-la-provincia-de-madrid-con-bdt/)
     * [Aprendiendo Shiny. La función shinyUI seguida de fluidPage o fluidRow](/blog/aprendiendo-shiny-la-funcion-shinyui-seguida-de-fluidpage-o-fluidrow/)
     * [Aprendiendo shiny. server.R ui.R](/blog/aprendiendo-shiny-server-r-ui-r/)
     * [Aprendiendo shiny con vosotros](/blog/aprendiendo-shiny-con-vosotros/)
@@ -376,8 +377,8 @@ menu:
     * [Haciendo ventanas con %WINDOW en SAS](/blog/haciendo-ventanas-con-window-en-sas/)
     * [Data mining vs Bigdata. De momento con Google Trends](/blog/data-mining-vs-bigdata-de-momento-con-google-trends/)
     * [Representación de redes neuronales con R](/blog/representacion-de-redes-neuronales-con-r/)
-    * [Regresión con redes neuronales en R](/blog/regresion-con-redes-neuronales-en-r/)
     * [Modelos lineales dinámicos (DLM) con R](/blog/modelos-lineales-dinamicos-dlm-con-r/)
+    * [Regresión con redes neuronales en R](/blog/regresion-con-redes-neuronales-en-r/)
   * Agosto 2014
     * [Primeros pasos con regresión no lineal (nls) con R](/blog/primeros-pasos-con-regresion-no-lineal-nls-con-r/)
     * [Regresión PLS con R](/blog/regresion-pls-con-r/)
@@ -426,8 +427,8 @@ menu:
     * [Mapa Excel por distritos de Barcelona](/blog/mapa-excel-por-distritos-de-barcelona/)
   * Mayo 2013
     * [Trucos SAS. Ordenar las variables de un dataset](/blog/trucos-sas-ordenar-las-variables-de-un-dataset/)
-    * [SAS vs WPS. Diferencias de precio](/blog/sas-vs-wps-diferencias-de-precio/)
     * [Manual para realizar mapas en Excel con archivos SVG](/blog/manual-para-realizar-mapas-en-excel-con-archivos-svg/)
+    * [SAS vs WPS. Diferencias de precio](/blog/sas-vs-wps-diferencias-de-precio/)
     * [Video resumen del III Encuentro del Sector Seguros](/blog/video-resumen-del-iii-encuentro-del-sector-seguros/)
     * [Trabajando con factores en R. Attach frente a within](/blog/trabajando-con-factores-en-r-attach-frente-a-within/)
   * Abril 2013
@@ -466,7 +467,6 @@ menu:
     * [Trucos Excel. Pasar de caracter a numérico con fórmulas](/blog/trucos-excel-pasar-de-caracter-a-numerico-con-formulas/)
     * [Nuevo curso de estadística con R](/blog/nuevo-curso-de-estadistica-con-r/)
     * [La macro iterlist para automatizar código SAS](/blog/la-macro-iterlist-para-automatizar-codigo-sas/)
-    * [Trucos SAS. Fecha de creación de una tabla](/blog/trucos-sas-fecha-de-creacion-de-una-tabla/)
     * [Macros SAS. Pasar de texto a numérico](/blog/macros-sas-pasar-de-texto-a-numerico/)
   * Septiembre 2012
     * [Trucos Excel. Unir todos los excel en uno, versión muy mejorada](/blog/trucos-excel-unir-todos-los-excel-en-uno-version-muy-mejorada/)
@@ -475,7 +475,6 @@ menu:
   * Agosto 2012
     * [Macro (fácil) de SAS. Longitud de la parte decimal de un número](/blog/macro-facil-de-sas-longitud-de-la-parte-decimal-de-un-numero/)
     * [Truco SAS. Un vistazo a ficheros planos muy grandes](/blog/truco-sas-un-vistazo-a-ficheros-planos-muy-grandes/)
-    * [Trucos Excel. Nuevo (y mejorado) mapa de España por provincias con Excel](/blog/trucos-excel-nuevo-y-mejorado-mapa-de-espana-por-provincias-con-excel/)
     * [Fechas importantes para las IV Jornadas de Usuarios de R](/blog/fechas-importantes-para-las-iv-jornadas-de-usuarios-de-r/)
     * [Trucos Excel. Gráficos dot plot, representando un ranking gráficamente](/blog/trucos-excel-graficos-dot-plot-representando-un-ranking-graficamente/)
     * [Solventamos los peligros del análisis cluster con SVM](/blog/cluster-svm/)
@@ -486,14 +485,14 @@ menu:
   * Junio 2012
     * [Lecciones de economía de un ignorante: Solución: ¡TRABAJAR MÁS Y COBRAR MENOS!](/blog/lecciones-de-economia-de-un-ignorante-solucion-c2a1trabajar-mas-y-cobrar-menos/)
     * [Lecciones de economía de un ignorante. España está salvando a Alemania, pero Alemania no está salvando Europa](/blog/lecciones-de-economia-de-un-ignorante-espana-esta-salvando-a-alemania-pero-alemania-no-esta-salvando-europa/)
-    * [Truco SAS. Macro número de días de un año](/blog/truco-sas-macro-numero-de-dias-de-un-ano/)
     * [Lecciones de economía de un ignorante. Los bancos pierden dinero para favorecer a unos y luego los salvamos todos](/blog/lecciones-de-economia-de-un-ignorante-los-bancos-pierden-dinero-para-favorecer-a-unos-y-luego-los-salvamos-todos/)
-    * [Curso básico de R](/blog/curso-basico-de-r/)
+    * [Truco SAS. Macro número de días de un año](/blog/truco-sas-macro-numero-de-dias-de-un-ano/)
     * [Trucos SAS. Particionar y exportar a texto un dataset](/blog/trucos-sas-particionar-y-exportar-a-texto-un-dataset/)
+    * [Curso básico de R](/blog/curso-basico-de-r/)
   * Mayo 2012
     * [La nueva web de @jjgibaja](/blog/la-nueva-web-de-jjgibaja/)
-    * [Informe 2011 de la Dirección de Seguros y Fondos de Pensiones](/blog/informe-2011-de-la-direccion-de-seguros-y-fondos-de-pensiones/)
     * [Trucos SAS. Primer y último elemento de un array](/blog/trucos-sas-primer-y-ultimo-elemento-de-un-array/)
+    * [Informe 2011 de la Dirección de Seguros y Fondos de Pensiones](/blog/informe-2011-de-la-direccion-de-seguros-y-fondos-de-pensiones/)
     * [Test de Levene con SAS](/blog/test-de-levene-con-sas/)
     * [Sentencia del Tribunal de Justicia de la UE sobre el caso WPS y SAS](/blog/sentencia-del-tribunal-de-justicia-de-la-ue-sobre-el-caso-wps-y-sas/)
   * Abril 2012
@@ -516,8 +515,8 @@ menu:
     * [Gráficos de velocímetros con Excel hechos con Begraphic](/blog/graficos-de-velocimetros-con-excel-hechos-con-begraphic/)
     * [¿Quién ganará la liga española? Una simulación poco seria con R](/blog/c2bfquien-ganara-la-liga-espanola-una-simulacion-poco-seria-con-r/)
   * Enero 2012
-    * [Da comienzo la lectura de  “The Elements of Statistical Learning”](/blog/da-comienzo-la-lectura-de-e2809cthe-elements-of-statistical-learninge2809d/)
     * [Trucos SAS. Eliminación de espacios en blanco](/blog/trucos-sas-eliminacion-de-espacios-en-blanco/)
+    * [Da comienzo la lectura de  “The Elements of Statistical Learning”](/blog/da-comienzo-la-lectura-de-e2809cthe-elements-of-statistical-learninge2809d/)
 * 2011
   * Diciembre 2011
     * [Lecciones de economía de un ignorante. ¿Llegamos a Solvencia II?](/blog/lecciones-de-economia-de-un-ignorante-c2bfllegamos-a-solvencia-ii/)
@@ -526,8 +525,8 @@ menu:
   * Noviembre 2011
     * [Informes con R en HTML. Comienzo con R2HTML (I)](/blog/informes-con-r-en-html-comienzo-con-r2html-i/)
     * [Trucos Excel (y SAS). Complemento para cambiar la configuración regional](/blog/trucos-excel-y-sas-complemento-para-cambiar-la-configuracion-regional/)
-    * [Trucos SAS. Trasponer con SQL para torpes](/blog/trucos-sas-trasponer-con-sql-para-torpes/)
     * [Revisión de las III Jornadas de R](/blog/revision-de-las-iii-jornadas-de-r/)
+    * [Trucos SAS. Trasponer con SQL para torpes](/blog/trucos-sas-trasponer-con-sql-para-torpes/)
     * [Segundo día en las III jornadas de R](/blog/segundo-dia-en-las-iii-jornadas-de-r/)
     * [¡Por fin en las III jornadas de R!](/blog/c2a1por-fin-en-las-iii-jornadas-de-r/)
     * [El sobremuestreo ¿mejora mi estimación?](/blog/el-sobremuestreo-c2bfmejora-mi-estimacion/)
@@ -588,8 +587,8 @@ menu:
     * [Trucos SAS. Borrando blancos innecesarios con COMPBL](/blog/trucos-sas-borrando-blancos-innecesarios-con-compbl/)
   * Enero 2011
     * [Trucos SAS. Variables dicotómicas desde factores](/blog/trucos-sas-variables-dicotomicas-desde-factores/)
-    * [Muchas variables no implican una mejor predicción](/blog/muchas-variables-no-implican-una-mejor-prediccion/)
     * [Truco R. Paletas de colores en R](/blog/truco-r-paletas-de-colores-en-r/)
+    * [Muchas variables no implican una mejor predicción](/blog/muchas-variables-no-implican-una-mejor-prediccion/)
     * [Curso de lenguaje SAS con WPS. Subconjuntos de variables con DROP y KEEP](/blog/curso-de-lenguaje-sas-con-wps-subconjuntos-de-variables-con-drop-y-keep/)
     * [Curso de lenguaje SAS con WPS. Funciones fecha](/blog/curso-de-lenguaje-sas-con-wps-funciones-fecha/)
     * [Mutua Madrileña compra el 50% de Adeslas Seguros Generales](/blog/mutua-madrilena-compra-el-50-de-adeslas-seguros-generales/)
@@ -602,7 +601,6 @@ menu:
     * [El año 2010 para analisisydecision](/blog/el-ano-2010-para-analisisydecision/)
 * 2010
   * Diciembre 2010
-    * [Trucos SAS. Eliminación de outliers](/blog/trucos-sas-eliminacion-de-outliers-2/)
     * [El modelo multivariante en el sector asegurador. Los modelos por coberturas (V)](/blog/el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v/)
     * [Montemos un sistema de información en nuestro equipo (III)](/blog/montemos-un-sistema-de-informacion-en-nuestro-equipo-iii/)
     * [Nace Verti. La directa de Mapfre](/blog/nace-verti-la-directa-de-mapfre/)
@@ -629,7 +627,6 @@ menu:
   * Octubre 2010
     * [Duda de SAS. Longitud de la parte decimal de un número](/blog/duda-de-sas-longitud-de-la-parte-decimal-de-un-numero/)
     * [Emisión de bonos de la Generalitat Catalana. ¿Cómo permiten esto?](/blog/emision-de-bonos-de-la-generalitat-catalana-c2bfcomo-permiten-esto/)
-    * [Macros SAS. De dataset a data frame de R V1](/blog/macros-sas-de-dataset-a-data-frame-de-r-v1/)
     * [Mapas con spatial data de R](/blog/mapas-con-spatial-data-de-r/)
     * [Macros (fáciles) de SAS. Busca duplicados](/blog/macros-faciles-de-sas-busca-duplicados/)
     * [Descubriendo ggplot2](/blog/descubriendo-ggplot2/)
@@ -648,8 +645,8 @@ menu:
     * [Detalles técnicos del seguro de crédito. El factor de uso del importe concedido](/blog/detalles-tecnicos-del-seguro-de-credito-el-factor-de-uso-del-importe-concedido/)
     * [Trucos Excel. Gráficos con caracteres](/blog/trucos-excel-graficos-con-caracteres/)
     * [Trucos SAS. Matrices de adyacencia con SAS](/blog/trucos-sas-matrices-de-adyacencia-con-sas/)
-    * [Bootstrap con SAS sin complicaciones](/blog/bootstrap-con-sas-sin-complicaciones/)
     * [Lecciones de economía de un ignorante. Cosas que no comprendo](/blog/lecciones-de-economia-de-un-ignorante-cosas-que-no-comprendo/)
+    * [Bootstrap con SAS sin complicaciones](/blog/bootstrap-con-sas-sin-complicaciones/)
     * [Lecciones de economía de un ignorante. La privatización de las cajas será una chapuza](/blog/lecciones-de-economia-de-un-ignorante-la-privatizacion-de-las-cajas-sera-una-chapuza/)
   * Julio 2010
     * [David gana a Goliat. La sentencia del caso SAS frente a WPS](/blog/david-gana-a-goliat-la-sentencia-del-caso-sas-frente-a-wps/)
@@ -659,26 +656,25 @@ menu:
     * [Gráficos dinámicos en R con la función text](/blog/graficos-dinamicos-en-r-con-la-funcion-text/)
     * [Laboratorio de código SAS. Vistas + PROC MEANS vs. PROC SQL](/blog/laboratorio-de-codigo-sas-vistas-proc-means-vs-proc-sql/)
     * [Monográfico. Funciones INTNX e INTCK para fechas en SAS](/blog/monografico-funciones-intnx-e-intck-para-fechas-en-sas/)
-    * [El modelo multivariante en el sector asegurador. Las variables independientes (IV)](/blog/el-modelo-multivariante-en-el-sector-asegurador-las-variables-independientes-iv/)
   * Junio 2010
     * [Gráficos de densidades con SAS y el PROC KDE](/blog/graficos-de-densidades-con-sas-y-el-proc-kde/)
     * [Trucos SAS. Envío de email con DATA](/blog/trucos-sas-envio-de-email-con-data/)
     * [Monográfico. Un poco de PROC LOGISTIC](/blog/monografico-un-poco-de-proc-logistic/)
-    * [Truco R. Insertar imagen en un gráfico](/blog/truco-r-insertar-imagen-en-un-grafico/)
     * [Trucos R. Conectar a internet por el puerto 8080](/blog/trucos-r-conectar-a-internet-por-el-puerto-8080/)
+    * [Truco R. Insertar imagen en un gráfico](/blog/truco-r-insertar-imagen-en-un-grafico/)
     * [X command (MS-DOS prompt) desde SAS.](/blog/x-command-ms-dos-prompt-desde-sas/)
     * [Trucos SAS. Modificar el nombre de una tabla con código](/blog/trucos-sas-modificar-el-nombre-de-una-tabla-con-codigo/)
     * [Monográfico. Clasificación con SVM en R](/blog/monografico-clasificacion-con-svm-en-r/)
     * [Curso de lenguaje SAS con WPS. Variables](/blog/curso-de-lenguaje-sas-con-wps-variables/)
     * [Macros SAS. Agrupando variables categóricas](/blog/macros-sas-agrupando-variables-categoricas/)
     * [Un homenaje a Malthus con R](/blog/un-homenaje-a-malthus-con-r/)
-    * [Truco SAS. Duplicar registros si cumplen una condición](/blog/truco-sas-duplicar-registros-si-cumplen-una-condicion/)
     * [Excelente descripción de los PIAS](/blog/excelente-descripcion-de-los-pias/)
+    * [Truco SAS. Duplicar registros si cumplen una condición](/blog/truco-sas-duplicar-registros-si-cumplen-una-condicion/)
     * [Curso de lenguaje SAS con WPS. Ejecuciones](/blog/curso-de-lenguaje-sas-con-wps-ejecuciones/)
     * [Ejemplo de uso del paquete XML de R](/blog/ejemplo-de-uso-del-paquete-xml-de-r/)
-    * [Los recursos más destacados de R en la web](/blog/los-recursos-mas-destacados-de-r-en-la-web/)
     * [Agregador de noticias de R en español](/blog/agregador-de-noticias-de-r-en-espanol/)
     * [Un acercamiento a GRAPH. ANNOTATE macros](/blog/un-acercamiento-a-graph-annotate-macros/)
+    * [Los recursos más destacados de R en la web](/blog/los-recursos-mas-destacados-de-r-en-la-web/)
     * [Nace Pelayonex, la directa de Pelayo](/blog/nace-pelayonex-la-directa-de-pelayo/)
     * [Trucos Excel. Mapa de España por Comunidades Autónomas](/blog/trucos-excel-mapa-de-espana-por-comunidades-autonomas/)
     * [Curso de lenguaje SAS con WPS. Lectura de ficheros de texto](/blog/curso-de-lenguaje-sas-con-wps-lectura-de-ficheros-de-texto/)
@@ -704,22 +700,21 @@ menu:
     * [El modelo multivariante en el sector asegurador. Introducción (I)](/blog/el-modelo-multivariante-en-el-sector-asegurador-introduccion-i/)
     * [WPS en el mercado español](/blog/wps-en-el-mercado-espanol/)
     * [Macros SAS. Informe de un dataset en Excel](/blog/macros-sas-informe-de-un-dataset-en-excel/)
-    * [Camping o Campain. ¿Es lo mismo una campaña que una tienda de campaña?](/blog/camping-o-campain-c2bfes-lo-mismo-una-campana-que-una-tienda-de-campana/)
     * [Combinaciones de k elementos tomados de n en n. Con SAS y con R](/blog/combinaciones-de-k-elementos-tomados-de-n-en-n-con-sas-y-con-r/)
-    * [Un homenaje a mis compañeros](/blog/un-homenaje-a-mis-companeros/)
+    * [Camping o Campain. ¿Es lo mismo una campaña que una tienda de campaña?](/blog/camping-o-campain-c2bfes-lo-mismo-una-campana-que-una-tienda-de-campana/)
     * [Un acercamiento a GRAPH. PROC GANNO](/blog/un-acercamiento-a-graph-proc-ganno/)
+    * [Un homenaje a mis compañeros](/blog/un-homenaje-a-mis-companeros/)
     * [Comienza la cuenta atrás](/blog/comienza-la-cuenta-atras/)
     * [Life Time Value. Los costes de adquisición ideales e irreales](/blog/life-time-value-los-costes-de-adquisicion-ideales-e-irreales/)
-    * [Un acercamiento a GRAPH. PROC GCHART](/blog/un-acercamiento-a-graph-proc-gchart/)
     * [Ejemplo de uso de PROC GCHART](/blog/ejemplodeusodeprocgchart/)
+    * [Un acercamiento a GRAPH. PROC GCHART](/blog/un-acercamiento-a-graph-proc-gchart/)
     * [Un acercamiento a GRAPH. Sentencias gráficas](/blog/un-acercamiento-a-graph-sentencias-graficas/)
-    * [Lecciones de economía de un ignorante. Arreglo el déficit en un pis pas](/blog/lecciones-de-economia-de-un-ignorante-arreglo-el-deficit-en-un-pis-pas/)
     * [Comunicar SAS con R creando ejecutables Windows](/blog/comunicar-sas-con-r-creando-ejecutables-windows/)
     * [Trucos SAS. Macrovariable a dataset](/blog/trucos-sas-macrovariable-a-dataset/)
   * Marzo 2010
     * [Ojo con las redes sociales](/blog/ojo-con-las-redes-sociales/)
-    * [What is R? Interesantes videos de REvolution Computing](/blog/what-is-r-interesantes-videos-de-revolution-computing/)
     * [Un acercamiento a GRAPH. Primeros gráficos con SAS](/blog/un-acercamiento-a-graph-primeros-graficos-con-sas/)
+    * [What is R? Interesantes videos de REvolution Computing](/blog/what-is-r-interesantes-videos-de-revolution-computing/)
     * [Porque me gusta R](/blog/porque-me-gusta-r/)
     * [Desarrollo de IDE para R](/blog/desarrollo-de-ide-para-r/)
     * [Lectura para el fin de semana](/blog/lectura-para-el-fin-de-semana/)
@@ -749,8 +744,8 @@ menu:
     * [El año 2009 para Análisis y Decisión](/blog/el-ano-2009-para-analisis-y-decision/)
 * 2009
   * Diciembre 2009
-    * [Lecciones de economía de un ignorante. Las Cajas serán bancos](/blog/lecciones-de-economia-de-un-ignorante-las-cajas-seran-bancos/)
     * [Felicitación navideña con SAS](/blog/felicitacion-navidena-con-sas/)
+    * [Lecciones de economía de un ignorante. Las Cajas serán bancos](/blog/lecciones-de-economia-de-un-ignorante-las-cajas-seran-bancos/)
     * [Los mejores y más útiles trucos de R](/blog/los-mejores-y-mas-utiles-trucos-de-r/)
     * [Disponibles los vídeos completos de las Jornadas de R en Murcia](/blog/disponibles-los-videos-completos-de-las-jornadas-de-r-en-murcia/)
     * [Ibercivis, una plataforma de computación ciudadana](/blog/ibercivis-una-plataforma-de-computacion-ciudadana/)
@@ -758,8 +753,8 @@ menu:
     * [Tres fracasos y medio con R](/blog/tres-fracasos-y-medio-con-r/)
     * [Dos páginas con recursos para introducirse en R](/blog/dos-paginas-con-recursos-para-introducirse-en-r/)
     * [Una fabulilla (sobre PRIM) con múltiples moralejas](/blog/una-fabulilla-sobre-prim-con-multiples-moralejas/)
-    * [Probando R sobre el EC2 de Amazon](/blog/probando-r-sobre-el-ec2-de-amazon/)
     * [Migrando de SAS a R](/blog/migrando-de-sas-a-r/)
+    * [Probando R sobre el EC2 de Amazon](/blog/probando-r-sobre-el-ec2-de-amazon/)
     * [Trucos SAS. Unión de múltiples tablas SAS con un nombre parecido](/blog/trucos-sas-union-de-multiples-tablas-sas-con-un-nombre-parecido/)
     * [Seguros de RC para blogueros](/blog/seguros-de-rc-para-blogueros/)
     * [Los enemigos del canal tradicional de venta de seguros](/blog/los-enemigos-del-canal-tradicional-de-venta-de-seguros/)
@@ -773,11 +768,11 @@ menu:
     * [Nuevo entorno para la gestión de la información](/blog/nuevo-entorno-para-la-gestion-de-la-informacion/)
     * [Lecciones de economía de un ignorante. Caen los beneficios y nos dejan colocar preferentes](/blog/lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes/)
     * [Intro RCommander: 1. Qué es RCommander](/blog/intro-rcommander-1-que-es-rcommander/)
-    * [Programa de la I Conferencia Hispana de R-Project.](/blog/programa-de-la-i-conferencia-hispana-de-r-project/)
     * [Traducir código SAS a Java](/blog/traducir-codigo-sas-a-java/)
+    * [Programa de la I Conferencia Hispana de R-Project.](/blog/programa-de-la-i-conferencia-hispana-de-r-project/)
     * [AyD: 2.300 visitas mensuales](/blog/ayd-2300-visitas-mensuales/)
-    * [Trucos sas. Autonumérico con PROC SQL](/blog/trucos-sas-autonumerico-con-proc-sql/)
     * [Monográfico. Datos agrupados en SAS](/blog/monografico-datos-agrupados-en-sas/)
+    * [Trucos sas. Autonumérico con PROC SQL](/blog/trucos-sas-autonumerico-con-proc-sql/)
     * [Laboratorio de código SAS. Comparativa entre IF y WHERE](/blog/laboratorio-de-codigo-sas-comparativa-entre-if-y-where/)
   * Octubre 2009
     * [Trucos SAS. Identificar registros duplicados](/blog/trucos-sas-identificar-registros-duplicados/)
@@ -791,8 +786,8 @@ menu:
     * [Lista de los lengajes de programación mas populares](/blog/lista-de-los-lengajes-de-programacion-mas-populares/)
     * [Primeras jornadas de usuarios de R en España: ya es oficial](/blog/primeras-jornadas-de-usuarios-de-r-en-espana-ya-es-oficial/)
     * [¿Qué hacer con los valores perdidos de nuestras variables?](/blog/c2bfque-hacer-con-los-valores-perdidos-de-nuestras-variables/)
-    * [Lecciones de economía de un ignorante. No me dan hipoteca](/blog/lecciones-de-economia-de-un-ignorante-no-me-dan-hipoteca/)
     * [SAS no se vende](/blog/sas-no-se-vende/)
+    * [Lecciones de economía de un ignorante. No me dan hipoteca](/blog/lecciones-de-economia-de-un-ignorante-no-me-dan-hipoteca/)
   * Agosto 2009
     * [Monográfico. Arboles de clasificación con RPART](/blog/monografico-arboles-de-clasificacion-con-rpart/)
     * [Truco SAS. Transponer tablas con PROC TRANSPOSE, DATA o PROC SQL](/blog/truco-sas-transponer-tablas-con-proc-transpose-data-o-proc-sql/)
@@ -832,8 +827,8 @@ menu:
     * [Manual. Curso introducción de R. Capítulo 15: Análisis Cluster con R (I)](/blog/manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-i/)
     * [La medicina genómica y los modelos predictivos](/blog/la-medicina-genomica-y-los-modelos-predictivos/)
     * [Entrevista a Jim Goodnight fundador de SAS](/blog/entrevista-a-jim-goodnight-fundador-de-sas/)
-    * [SAS investiga la tecnología de R](/blog/sas-investiga-la-tecnologia-de-r/)
     * [SAS Global Forum 2009](/blog/sas-global-forum-2009/)
+    * [SAS investiga la tecnología de R](/blog/sas-investiga-la-tecnologia-de-r/)
     * [Trucos R. Leer de Excel vía RODBC](/blog/trucos-r-leer-de-excel-via-rodbc/)
     * [Macros SAS. Tramificar en función de una variable respuesta](/blog/macros-sas-tramificar-en-funcion-de-una-variable-respuesta/)
     * [Trucos SAS. Variables dummy de una variable continua](/blog/trucos-sas-variables-dummy-de-una-variable-continua/)
@@ -841,8 +836,8 @@ menu:
     * [Bajada del precio de la vivienda en EEUU](/blog/bajada-del-precio-de-la-vivienda-en-eeuu/)
     * [Bajar los tipos a la japonesa. Al 0%](/blog/bajar-los-tipos-a-la-japonesa-al-0/)
     * [Me preocupa el pequeño ahorrador (II)](/blog/me-preocupa-el-pequeno-ahorrador-ii/)
-    * [Como accede Enterprise Guide a la DBMS](/blog/como-accede-enterprise-guide-a-la-dbms/)
     * [Trucos SAS. Informes de valores missing](/blog/trucos-sas-informes-de-valores-missing/)
+    * [Como accede Enterprise Guide a la DBMS](/blog/como-accede-enterprise-guide-a-la-dbms/)
     * [Moviéndonos a una velocidad exponencial](/blog/moviendonos-a-una-velocidad-exponencial/)
     * [La nueva burbuja de los bancos](/blog/la-nueva-burbuja-de-los-bancos/)
     * [La Batalla de las nóminas. Seguimos buscando el dinero nuevo](/blog/la-batalla-de-las-nominas-seguimos-buscando-el-dinero-nuevo/)
@@ -865,8 +860,8 @@ menu:
     * [Manual. Curso introducción de R. Capítulo 13: Análisis de la varianza. Diseños anidados](/blog/manual-curso-introduccion-de-r-capitulo-13-analisis-de-la-varianza-disenos-anidados/)
 * 2008
   * Diciembre 2008
-    * [Amanece que no es poco](/blog/amanece-que-no-es-poco/)
     * [Macros SAS. Primer y último día del mes de una fecha SAS](/blog/macros-sas-primer-y-ultimo-dia-del-mes-de-una-fecha-sas/)
+    * [Amanece que no es poco](/blog/amanece-que-no-es-poco/)
     * [El seguro de crédito interesante reto técnico](/blog/el-seguro-de-credito-interesante-reto-tecnico/)
     * [Transformar variables en SAS. Carácter a numérico](/blog/transformar-variables-en-sas-caracter-a-numerico/)
   * Noviembre 2008
@@ -882,15 +877,15 @@ menu:
     * [Truco SAS. Función para contar caracteres](/blog/truco-sas-funcion-para-contar-caracteres/)
     * [Un detalle puede hacer que no te tomen en serio](/blog/un-detalle-puede-hacer-que-no-te-tomen-en-serio/)
     * [Manual. Curso introducción de R. Capítulo 12: Análisis de la varianza. Diseños bifactoriales](/blog/manual-curso-introduccion-de-r-capitulo-12-analisis-de-la-varianza-disenos-bifactoriales/)
-    * [Manual. Curso introducción de R. Capítulo 11: Introducción al análisis de la varianza (ANOVA)](/blog/manual-curso-introduccion-de-r-capitulo-11-introduccion-al-analisis-de-la-varianza-anova/)
     * [Manual. Curso introducción de R. Capítulo 10: Funciones gráficas en regresión lineal](/blog/manual-curso-introduccion-de-r-capitulo-10-funciones-graficas-en-regresion-lineal/)
+    * [Manual. Curso introducción de R. Capítulo 11: Introducción al análisis de la varianza (ANOVA)](/blog/manual-curso-introduccion-de-r-capitulo-11-introduccion-al-analisis-de-la-varianza-anova/)
     * [Como influyen los números máquina en nuestros programas](/blog/como-influyen-los-numeros-maquina-en-nuestros-programas/)
     * [Trucos SAS. Operar con fechas YYYYMM típicas de particiones Oracle](/blog/trucos-sas-operar-con-fechas-yyyymm-tipicas-de-particiones-oracle/)
   * Septiembre 2008
     * [Gestores de información de la banca comercial. Profesionales imprescindibles](/blog/gestores-de-informacion-de-la-banca-comercial-profesionales-imprescindibles/)
     * [Contenidos de octubre en función del conocimiento de los usuarios](/blog/contenidos-para-octubre-de-ayd/)
-    * [Crecimiento del comercio electrónico, pero del comercio electrónico de siempre](/blog/crecimiento-del-comercio-electronico-pero-del-comercio-electronico-de-siempre/)
     * [Truco SAS. Transformaciones de variables con arrays](/blog/truco-sas-transformaciones-de-variables-con-arrays/)
+    * [Crecimiento del comercio electrónico, pero del comercio electrónico de siempre](/blog/crecimiento-del-comercio-electronico-pero-del-comercio-electronico-de-siempre/)
     * [¿Alguien se atreve a estimar el precio del petróleo?](/blog/c2bfalguien-se-atreve-a-estimar-el-precio-del-petroleo/)
     * [Truco SAS. Macro buscar y reemplazar en texto](/blog/truco-sas-macro-buscar-y-reemplazar-en-texto/)
   * Agosto 2008

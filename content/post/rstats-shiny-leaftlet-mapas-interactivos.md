@@ -1,25 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- Gráficos
-- Mapas
-- R
-date: '2021-09-29T09:10:45-05:00'
-lastmod: '2025-07-13T16:05:43.922926'
+- gráficos
+- mapas
+- r
+date: '2021-09-29'
+lastmod: '2025-07-13'
 related:
 - mapas-estaticos-de-peru-con-r-y-python-a-nivel-de-distrito.md
 - anadiendo-graficos-de-tarta-a-nuestros-mapas-de-ggplot-con-scatterpie.md
 - leaflet-con-r-apuntes-de-mapas-de-coordenadas.md
 - mover-parte-de-un-shapefile-con-r-mapa-de-la-tasa-de-casos-de-coronavirus-por-habitante-en-espana.md
 - mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel.md
-slug: rstats-shiny-leaftlet-mapas-interactivos
 tags:
 - leaflet
 - shiny
+- mapas
+- r
 title: Rstats + Shiny + Leaftlet -> Mapas interactivos muy sencillos
 url: /blog/rstats-shiny-leaftlet-mapas-interactivos/
 ---
-
 [![](/images/2021/09/Leaflet_shiny.png)](/images/2021/09/Leaflet_shiny.png)
 
 Entrada en la que os mostraré como hacer un mapa con Leaflet en R que además añadimos a un Shiny para poder filtrar datos de forma interactiva. Ya mostramos en el blog como [crear mapas marcando coordenadas con Leaflet](https://analisisydecision.es/leaflet-con-r-apuntes-de-mapas-de-coordenadas/) y R de forma muy sencilla y hoy damos una vuelta de tuerca a aquella entrada, las coordenadas que deseamos representar tienen además, algún factor por el que hay especial interés en realizar un filtrado del mapa. Para ilustrar el ejemplo nos vamos a ir al [Centro de descargas del Centro Nacional de Información Geográfica](https://centrodedescargas.cnig.es/CentroDescargas/catalogo.do?Serie=CAANE) y nos bajamos del servidor los datos municipales en concreto a Nomenclátor Geográfico de Municipios y Entidades de Población, descargamos el archivo y tenemos un zip que contiene un csv llamado MUNICIPIOS.CSV

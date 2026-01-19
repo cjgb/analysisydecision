@@ -1,32 +1,29 @@
 ---
 author: rvaquerizo
 categories:
-- Data Mining
-- Formación
-- Modelos
-- Monográficos
-- R
-- SAS
-- WPS
-date: '2011-07-12T11:17:20-05:00'
-lastmod: '2025-07-13T15:54:16.326620'
+- data mining
+- formación
+- modelos
+- monográficos
+- r
+- sas
+- wps
+date: '2011-07-12'
+lastmod: '2025-07-13'
 related:
 - trucos-r-llevar-a-sas-las-reglas-de-un-arbol-de-decision.md
 - monografico-un-poco-de-proc-logistic.md
 - monografico-arboles-de-clasificacion-con-rpart.md
 - monografico-arboles-de-decision-con-party.md
 - monografico-paquete-de-r-nnet-para-modelos-de-redes-neuronales.md
-slug: arboles-de-decision-con-sas-base-con-r-por-supuesto
 tags:
-- ''
 - árboles de decisión
 - datalines4
-- RPART
-- sas base
+- rpart
+- sas
 title: Árboles de decisión con SAS Base (con R por supuesto)
 url: /blog/arboles-de-decision-con-sas-base-con-r-por-supuesto/
 ---
-
 **Con SAS Base podemos hacer árboles de decisión porque tenemos R**. Así de sencillo. Vamos a utilizar SAS para gestionar nuestros datos y R será la herramienta que utilicemos para la realización del modelo de árbol de decisión. Posteriormente emplearemos las reglas generadas por el modelo para etiquetar a nuestros clientes en SAS. Con esta entrada pretendo ilustrar una serie de ejemplos en los que comunico SAS con R. Una herramienta nos sirve para el tratamiento de datos y la otra la utilizaremos para realizar modelos que no están al alcance de SAS. Para realizar esta comunicación SAS-R os planteo la creación en SAS de ficheros de texto con las instrucciones en R y la ejecución en modo batch de R con ese código creado en SAS. Aquí tenéis punto por punto el ejemplo:
 
 El primer paso, como es habitual, es crear un conjunto de datos SAS con datos aleatorios que nos sirva de ejemplo:

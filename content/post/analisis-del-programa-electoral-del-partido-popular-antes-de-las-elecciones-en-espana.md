@@ -1,20 +1,18 @@
 ---
 author: rvaquerizo
 categories:
-- Business Intelligence
-- Consultoría
-- R
-date: '2011-11-01T14:57:14-05:00'
-lastmod: '2025-07-13T15:53:59.039765'
+- business intelligence
+- consultoría
+- r
+date: '2011-11-01'
+lastmod: '2025-07-13'
 related:
 - comparamos-los-programas-electorales-de-pp-y-psoe-con-r.md
 - el-debate-politico-o-como-analizar-textos-con-wps.md
 - analisis-de-textos-con-r.md
 - ejemplo-de-web-scraping-con-r-la-formacion-de-los-diputados-del-congreso.md
 - manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-ii.md
-slug: analisis-del-programa-electoral-del-partido-popular-antes-de-las-elecciones-en-espana
 tags:
-- ''
 - nchar
 - política
 - strsplit
@@ -25,7 +23,6 @@ title: Análisis del programa electoral del Partido Popular antes de las eleccio
   en España
 url: /blog/analisis-del-programa-electoral-del-partido-popular-antes-de-las-elecciones-en-espana/
 ---
-
 Ya empleamos R en[ alguna entrada anterior ](https://analisisydecision.es/analisis-de-textos-con-r/)para analizar textos. Ahora nos metemos con el programa electoral del Partido Popular a 20 días de las elecciones en España. En [este link](http://www.pp.es/actualidad-noticia/programa-electoral-pp_5741.html) podéis descargaros el programa del Partido Popular. Lejos de lo insustanciales que suelen ser este tipo de documentos y alguna frase mítica del tipo «Crecimiento sin empleo no es recuperación» nos limitaremos a contar las palabras que emplean en este programa.
 
 En el [link ](http://www.pp.es/actualidad-noticia/programa-electoral-pp_5741.html)donde tenemos el programa accedemos al mismo en formato PDF, seleccionamos todo el documento, lo copiamos en un archivo de texto y ya podemos trabajar con R. El código ya ha sido comentado en este blog:

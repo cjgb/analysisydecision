@@ -1,29 +1,28 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Modelos
-- Monográficos
-- R
-date: '2016-05-11T15:33:57-05:00'
-lastmod: '2025-07-13T16:05:22.073984'
+- formación
+- modelos
+- monográficos
+- r
+date: '2016-05-11'
+lastmod: '2025-07-13'
 related:
 - juego-de-modelos-de-regresion-con-r.md
 - machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algoritmos-de-clasificacion.md
 - regresion-con-redes-neuronales-en-r.md
 - el-parametro-gamma-el-coste-la-complejidad-de-un-svm.md
 - como-salva-la-linealidad-una-red-neuronal.md
-slug: resolucion-del-juego-de-modelos-con-r
 tags:
-- arboles de regresion
+- árboles de regresión
+- regresión
 - knn
-- LOESS
+- loess
 - redes neuronales
-- SVM
+- svm
 title: Resolución del juego de modelos con R
 url: /blog/resolucion-del-juego-de-modelos-con-r/
 ---
-
 [Hace mucho planteé un juego de identificación de modelos con R](https://analisisydecision.es/juego-de-modelos-de-regresion-con-r/) y ya se me había olvidado daros la solución. Pensando en el Grupo de Usuarios de R y en hacer algo parecido en una presentación recordé que había que solucionar el ejercicio. Lo primero es la creación de los datos, se me ocurrió una función sencilla y una nube de puntos alrededor de ella:
 
 ```r

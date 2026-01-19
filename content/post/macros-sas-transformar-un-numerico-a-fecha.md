@@ -1,18 +1,17 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-- Trucos
-date: '2008-11-20T06:17:54-05:00'
-lastmod: '2025-07-13T16:01:13.029230'
+- formación
+- sas
+- trucos
+date: '2008-11-20'
+lastmod: '2025-07-13'
 related:
 - trucos-sas-numero-de-dias-de-un-mes.md
 - macros-faciles-de-sas-dias-de-un-mes-en-una-fecha.md
 - trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados.md
 - trucos-sas-operar-con-fechas-yyyymm-tipicas-de-particiones-oracle.md
 - bucle-de-fechas-con-sas-para-tablas-particionadas.md
-slug: macros-sas-transformar-un-numerico-a-fecha
 tags:
 - fechas sas
 - funciones sas
@@ -21,7 +20,6 @@ tags:
 title: Macros SAS. Transformar un numérico a fecha
 url: /blog/macros-sas-transformar-un-numerico-a-fecha/
 ---
-
 A continuación vamos a plantear una macro de SAS bastante sencilla que nos permitirá transformar valores numéricos del tipo 20080607, fechas en formato AAAAMMDD pero que son numéricas, a valores fecha en SAS que nos permitirán realizar operaciones. Siguiendo el sistema de todos los mensajes de AyD trabajaremos con ejemplos para estudiar su utilidad.
 
 Partimos de dos fechas en formato AAAAMMDD y desamos realizar una diferencia entre ellas:

@@ -1,26 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Business Intelligence
-- R
-- SAS
-date: '2009-05-28T13:37:05-05:00'
-lastmod: '2025-07-13T16:05:45.482472'
+- business intelligence
+- r
+- sas
+date: '2009-05-28'
+lastmod: '2025-07-13'
 related:
 - integracion-de-r-con-sas-spss-y-otros.md
 - el-futuro-del-analisis-de-datos-pasa-por-r.md
 - sas-investiga-la-tecnologia-de-r.md
 - porque-me-gusta-r.md
 - migrando-de-sas-a-r.md
-slug: sas-comienza-a-fijarse-en-r
 tags:
 - noticias
-- R
-- SAS
+- r
+- sas
 title: SAS comienza a fijarse en R
 url: /blog/sas-comienza-a-fijarse-en-r/
 ---
-
 [Interesante nocicia leída en ComputerWorld:](http://www.idg.es/computerworld/SAS-tiende-un-puente-hacia-el-codigo-R/seccion-tecnologia/noticia-81073)
 
 **SAS amplía las opciones de análisis avanzado para sus clientes con la nueva interfaz de software estadístico de código abierto R. La integración inicial de R en SAS estará incluida en SAS/IML Studio 3.2 (antes SAS Stat Studio) este verano.**

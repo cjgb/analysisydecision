@@ -1,22 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- R
-date: '2012-06-05T14:32:36-05:00'
-lastmod: '2025-07-13T15:55:38.718411'
+- formación
+- r
+date: '2012-06-05'
+lastmod: '2025-07-13'
 related:
 - nuevo-curso-de-estadistica-con-r.md
 - nueva-edicion-del-curso-basico-de-r.md
 - da-comienzo-la-lectura-de-the-elements-of-statistical-learning.md
 - jornadas-de-r-gratuitas-en-galicia.md
 - curso-de-iniciacion-a-r-en-kschool-de-carlos-gil.md
-slug: curso-basico-de-r
-tags: []
+tags:
+- sin etiqueta
 title: Curso básico de R
 url: /blog/curso-basico-de-r/
 ---
-
 Meritoria iniciativa de:
 
   * <http://jjgibaja.net/>

@@ -1,22 +1,20 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-date: '2016-08-12T06:50:55-05:00'
-lastmod: '2025-07-13T15:55:15.633683'
+- formación
+date: '2016-08-12'
+lastmod: '2025-07-13'
 related:
 - internet-of-things-en-el-sector-asegurador.md
 - el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v.md
 - de-estadistico-a-minero-de-datos-a-cientifico-de-datos.md
 - tendre-que-decir-algo-sobre-la-reduccion-de-la-velocidad-maxima-en-espana.md
 - el-seguro-de-salud-suma-y-sigue.md
-slug: con-los-vehiculos-autonomos-me-quedo-sin-trabajo-o-no
 tags:
 - vehículo autónomo
 title: Con los vehículos autónomos me quedo sin trabajo (o no)
 url: /blog/con-los-vehiculos-autonomos-me-quedo-sin-trabajo-o-no/
 ---
-
 ![](https://4www.ecestaticos.com/imagestatic/clipping/43f/def/0c6/43fdef0c60136fdbeb808d3de09be64d/el-vehiculo-del-futuro-ya-esta-aqui-las-firmas-que-ya-trabajan-en-el-coche-autonomo.jpg?mtime=1463742476)
 
 «Los actuarios y los analistas de pricing os vaís a quedar sin trabajo con la llegada de los vehículos autónomos», yo ya he escuchado esta frase. Como podéis ver en m[i perfil de Linkedin ](https://www.linkedin.com/in/raúl-vaquerizo-a6119a8?trk=hp-identity-photo)(un poco obsoleto) mi familia y yo comemos gracias a mi trabajo en equipos de actuarios encargados de dar precios tanto de nuevo negocio como en el momento de la renovación para compañías que operan fundamentalmente con el ramo de Automóviles. Llevo muchos años separando el «AZAHAAAAR» de lo estadísticamente explicable mediante relaciones lineales y, aunque esté feo decirlo, se me da muy bien [anda que no ha escuchado gente este discurso] Pero qué pasa si los coches ya no dependieran de las personas, fueran todos prácticamente iguales, nos diera igual la zona de circulación y no existiera la posibilidad de explicar nada estadísticamente porque no hubiera margen de error. **Qué pasaría si los coches fueran autónomos**.

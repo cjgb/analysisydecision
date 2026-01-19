@@ -1,24 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Libro Estadística
-- R
-date: '2022-06-24T05:15:31-05:00'
-lastmod: '2025-07-13T15:59:01.059848'
+- formación
+- libro estadística
+- r
+date: '2022-06-24'
+lastmod: '2025-07-13'
 related:
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-8-problemas-con-los-datos.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-9-analisis-exploratorio-de-datos-eda.md
 - capitulo-5-representacion-basica-con-ggplot.md
 - graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
 - graficos-descriptivos-basicos-con-seaborn-python.md
-slug: introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-7-descripcion-grafica-de-variables
-tags: []
+tags:
+- sin etiqueta
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 7. Descripción
   gráfica de datos
 url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-7-descripcion-grafica-de-variables/
 ---
-
 Los estadísticos son insuficientes para conocer una variable, la siguiente figura es muy conocida y presenta unas series de pares de datos X e Y con los mismos estadísticos que son completamente diferentes.
 
 ![](https://damassets.autodesk.net/content/dam/autodesk/research/publications-assets/images/AllDinosGrey_1.png)

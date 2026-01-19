@@ -1,25 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Libro Estadística
-- Monográficos
-- R
-date: '2022-10-16T07:31:01-05:00'
-lastmod: '2025-07-13T15:58:47.476997'
+- formación
+- libro estadística
+- monográficos
+- r
+date: '2022-10-16'
+lastmod: '2025-07-13'
 related:
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-15-modelos-glm-regresion-logistica-y-regresion-de-poisson.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-14-introduccion-al-diseno-de-experimentos.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-12-muestreo-e-inferencia-estadistica.md
 - manual-curso-introduccion-de-r-capitulo-8-inferencia-estadistica.md
 - manual-curso-introduccion-de-r-capitulo-11-introduccion-al-analisis-de-la-varianza-anova.md
-slug: introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-10-probabilidad-y-distribuciones
-tags: []
+tags:
+- sin etiqueta
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 10. Probabilidad
   y distribuciones
 url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-10-probabilidad-y-distribuciones/
 ---
-
 En este punto es necesario realizar un paréntesis en el hilo conductor del ensayo. Hasta el momento se han descrito variables, limpiado y depurado datos y se hizo mención al rol que desempeña cada variable en el conjunto de datos. Entre esas variables hay una de ellas que juega un rol fundamental para el científico de datos, **la variable target o variable respuesta**. Si no existe esa variable el científico de datos se enfrenta a un análisis no dirigido, no conoce como es el problema que representan las variables y las observaciones. Este trabajo se centra en el caso contrario, el conjunto de datos recoge la variable target o recoge las variables en bruto necesarias para crearla y esa variable _dirige_ el tipo de análisis.
 
 ¿Por qué el científico de datos ha de tener conocimientos de probabilidad y distribuciones? Porque esa variable target define un evento que puede tener una probabilidad o función de probabilidad asociada y por lo tanto tiene una distribución. Ese evento ha de presentar unos valores que, representados gráficamente, tengan una forma conocida.

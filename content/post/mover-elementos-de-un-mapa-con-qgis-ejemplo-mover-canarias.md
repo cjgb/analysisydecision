@@ -1,24 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Business Intelligence
-- Formación
-- Mapas
-date: '2016-12-22T08:57:14-05:00'
-lastmod: '2025-07-13T16:03:09.227430'
+- business intelligence
+- formación
+- mapas
+date: '2016-12-22'
+lastmod: '2025-07-13'
 related:
 - mover-parte-de-un-shapefile-con-r-mapa-de-la-tasa-de-casos-de-coronavirus-por-habitante-en-espana.md
 - mapas-municipales-de-espana-con-excel-y-qgis.md
 - mapas-sas-a-partir-de-shapefile.md
 - animacion-de-un-mapa-con-python-porcentaje-de-vacunas-administradas.md
 - creando-un-mapa-en-excel-con-archivos-svg.md
-slug: mover-elementos-de-un-mapa-con-qgis-ejemplo-mover-canarias
 tags:
-- QGIS
+- qgis
+- mapas
 title: Mover elementos de un mapa con QGIS. Ejemplo mover Canarias
 url: /blog/mover-elementos-de-un-mapa-con-qgis-ejemplo-mover-canarias/
 ---
-
 Para modificar shapefile estaba acostumbrado a usar R, sin embargo, poco a poco estoy usando más QGIS para este tipo de tareas. Lo primero que tengo que comentaros es que no sé QGIS, no tengo ni idea, lo uso sólo para visualizar mapas porque es más cómodo que R pero poco a poco me estoy acostumbrando a usarlo. Hoy quería mostraros como he realizado una tarea muy habitual cuando hacemos mapas de España, mover las Islas Canarias para que queden más cerca de la Península. El proceso lo he presentado para torpes con QGIS (como yo mismo). Lo primero es abrir el shapefile con QGIS y nos encontraremos con algo parecido a esto:
 
 [![mover_qgis](/images/2016/12/mover_QGIS.png)](/images/2016/12/mover_QGIS.png)

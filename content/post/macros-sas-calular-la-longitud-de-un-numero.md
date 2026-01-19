@@ -1,27 +1,26 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-- Trucos
-date: '2009-10-27T07:46:17-05:00'
-lastmod: '2025-07-13T16:00:56.773255'
+- formación
+- sas
+- trucos
+date: '2009-10-27'
+lastmod: '2025-07-13'
 related:
 - macro-facil-de-sas-longitud-de-la-parte-decimal-de-un-numero.md
 - duda-de-sas-longitud-de-la-parte-decimal-de-un-numero.md
 - macros-sas-contar-las-palabras-de-una-macro-variable.md
 - macros-sas-pasar-de-texto-a-numerico.md
 - macros-sas-limpiar-una-cadena-de-caracteres.md
-slug: macros-sas-calular-la-longitud-de-un-numero
 tags:
 - compress
-- funciones de texto SAS
+- funciones texto
+- sas
 - length
-- macros SAS
+- macros sas
 title: Macros SAS. Calular la longitud de un número.
 url: /blog/macros-sas-calular-la-longitud-de-un-numero/
 ---
-
 Ha llegado hoy una búsqueda que no ha permanecido en AyD ni 20 segundos. Quería calcular la longitud de un número con SAS. Como yo estoy aquí para compartir mis conocimientos y hay una persona que los necesita aquí está esta macro que espero o sea de utilidad:
 
 ```r

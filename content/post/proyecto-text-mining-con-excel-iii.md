@@ -1,22 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Consultoría
-- Data Mining
-date: '2008-05-05T08:33:07-05:00'
-lastmod: '2025-07-13T16:04:47.839407'
+- consultoría
+- data mining
+date: '2008-05-05'
+lastmod: '2025-07-13'
 related:
 - proyecto-text-mining-con-excel-iv.md
 - proyecto-text-mining-con-excel-ii.md
 - google-mining-analisis-de-las-paginas-indexadas-i.md
 - proyecto-text-mining-con-excel-pasa-a-ser-google-mining.md
 - proyecto-text-mining-con-excel-i.md
-slug: proyecto-text-mining-con-excel-iii
-tags: []
+tags:
+- sin etiqueta
 title: Proyecto. Text Mining con Excel (III)
 url: /blog/proyecto-text-mining-con-excel-iii/
 ---
-
 Para hacer mi proceso de Text Mining necesito un «tablón» de entrada. Sin información bien tabulada es imposible encontrar patrones sintácticos ni palabras que me ayuden a encontrar mi oportunidad de negocio dentro de la formación en Business Intelligence. Para la realización de este tablón de entrada emplearé macros de Excel que abran resultados de búsquedas en Google y generen tantas hojas en mi archivo como páginas de búsqueda obtenga. Posteriormente estas hojas las uniré en una sóla y está será mi tablón de partida para mi trabajo.
 
 Todas las web de búsquedas de Google que abrimos con Excel contienen una sóla hoja que se llama «search» para evitar problemas creo un archivo excel (_min._ xls) que a su vez abrirá las búsquedas y genero una macro con la que abro dos búsquedas y las añado a mi fichero base _min._ Veamos el código Visual Basic que he generado tras algunos retoques:

@@ -1,26 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Monográficos
-- SAS
-- Trucos
-date: '2010-11-12T04:17:18-05:00'
-lastmod: '2025-07-13T16:03:58.540932'
+- formación
+- monográficos
+- sas
+- trucos
+date: '2010-11-12'
+lastmod: '2025-07-13'
 related:
 - laboratorio-de-codigo-sas-ordenaciones-con-hash-vs-proc-sort.md
 - la-importancia-del-parametro-hashexp.md
 - trucos-sas-porque-hay-que-usar-objetos-hash.md
 - truco-sas-cruce-con-formatos.md
 - trucos-sas-operaciones-con-tablas-de-dimensiones-con-sas.md
-slug: objetos-hash-para-ordenar-tablas-sas
 tags:
-- ''
 - hash
 title: Objetos hash para ordenar tablas SAS
 url: /blog/objetos-hash-para-ordenar-tablas-sas/
 ---
-
 A partir de la versión 9.1 de SAS se incluyeron los **objetos HASH**. Hace [tiempo ya demostramos su eficiencia en el cruce de tablas ](https://analisisydecision.es/trucos-sas-porque-hay-que-usar-objetos-hash/)y hoy quería mostraros como se programa una ordenación empleando HASH. La verdad es que estoy saboreando mis últimos días con SAS v9.2, en breve volveré a una versión muy anterior. El codigo, en mi opinión, es muy sencillo y como es habitual tenemos ejemplo ilustrativo que comentaré a continuación:
 
 ```r

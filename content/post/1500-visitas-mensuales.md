@@ -1,21 +1,20 @@
 ---
 author: rvaquerizo
 categories:
-- Business Intelligence
-date: '2009-05-25T11:54:47-05:00'
-lastmod: '2025-07-13T15:53:29.324809'
+- business intelligence
+date: '2009-05-25'
+lastmod: '2025-07-13'
 related:
 - ayd-2300-visitas-mensuales.md
 - contenidos-para-octubre-de-ayd.md
 - contenidos-web-analisis-informacion.md
 - el-ano-2010-para-analisisydecision.md
 - el-ano-2009-para-analisis-y-decision.md
-slug: 1500-visitas-mensuales
-tags: []
+tags:
+- sin etiqueta
 title: 1.500 visitas mensuales
 url: /blog/1500-visitas-mensuales/
 ---
-
 1.500 Visitas mensuales tiene este sitio en media. No son muchas, tampoco es para presumir de ello, pero van creciendo a un ritmo del 15% mensual. Además sobrepasamos las 3.000 páginas vistas en un mes. Son buenas noticias y merece que me pare a contaros como va la situación de esta web. Como siempre analizaré las dimensión geográfica y las palabras de acceso cruzados como indicadores tendré el número de visitas y el tiempo medio.
 
 **País de las visitas:**

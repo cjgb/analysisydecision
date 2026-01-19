@@ -1,22 +1,21 @@
 ---
 author: cgbellosta
 categories:
-- Data Mining
-- R
-date: '2009-06-09T12:44:39-05:00'
-lastmod: '2025-07-13T16:04:16.629739'
+- data mining
+- r
+date: '2009-06-09'
+lastmod: '2025-07-13'
 related:
 - trucos-r-llevar-a-sas-las-reglas-de-un-arbol-de-decision.md
 - monografico-arboles-de-decision-con-party.md
 - sobre-la-historia-de-cart-y-rpart.md
 - noticias-del-congreso-de-usuarios-de-r.md
 - reunion-del-grupo-de-usuarios-de-r-en-madrid-el-28-de-enero.md
-slug: partykit-un-paquete-de-r-para-generar-y-manipular-arboles-de-decision
-tags: []
+tags:
+- sin etiqueta
 title: 'partykit: un paquete de R para generar y manipular árboles de decisión'
 url: /blog/partykit-un-paquete-de-r-para-generar-y-manipular-arboles-de-decision/
 ---
-
 Los usuarios de R disponen de una serie de algoritmos estándar para generar y manipular árboles de decisión. Los más habituales están contenidos en alguno de los siguientes paquetes:
 
   * [rpart](http://cran.r-project.org/web/packages/rpart/index.html), tal vez mi favorito

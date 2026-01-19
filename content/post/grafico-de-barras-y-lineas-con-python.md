@@ -1,22 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Python
-date: '2017-07-09T12:04:35-05:00'
-lastmod: '2025-07-13T15:58:06.785969'
+- formación
+- python
+date: '2017-07-09'
+lastmod: '2025-07-13'
 related:
 - grafico-con-eje-secundario-en-ggplot2.md
 - graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
 - graficos-basicos-con-julia.md
 - capitulo-5-representacion-basica-con-ggplot.md
 - graficos-descriptivos-basicos-con-seaborn-python.md
-slug: grafico-de-barras-y-lineas-con-python
-tags: []
+tags:
+- sin etiqueta
 title: Gráfico de barras y líneas con Python
 url: /blog/grafico-de-barras-y-lineas-con-python/
 ---
-
 [![grafico de barras y lineas python](/images/2017/07/grafico-de-barras-y-lineas-python.png)](/images/2017/07/grafico-de-barras-y-lineas-python.png)
 
 Típico gráfico de dos ejes de barras y líneas donde las barras miden una exposición y las líneas una frecuencia, en el mundo actuarial son muy habituales y son muy útiles para ver proporciones dentro de grupos a la vez que representamos el tamaño del grupo. Los datos habituales del curso de GLM for insurance data:

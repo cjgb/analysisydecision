@@ -1,24 +1,22 @@
 ---
 author: cgbellosta
 categories:
-- Formación
-- R
-date: '2009-11-29T12:58:34-05:00'
-lastmod: '2025-07-13T16:03:37.633541'
+- formación
+- r
+date: '2009-11-29'
+lastmod: '2025-07-13'
 related:
 - revision-de-las-iii-jornadas-de-r.md
 - comienza-la-cuenta-atras-iii-jornadas-de-usuarios-de-r.md
 - porque-me-gusta-r.md
 - el-futuro-del-analisis-de-datos-pasa-por-r.md
 - estadistica-para-cientificos-de-datos-con-r-introduccion.md
-slug: noticias-del-congreso-de-usuarios-de-r
 tags:
-- Jornadas de R
-- R
+- jornadas de r
+- r
 title: Noticias del congreso de usuarios de R
 url: /blog/noticias-del-congreso-de-usuarios-de-r/
 ---
-
 Hoy he regresado de las primeras jornadas de usuarios de R. Han sido dos días largos y densos, pero también productivos. Tenemos que estar muy agradecidos a [José Antonio Palazón](http://fobos.bio.um.es/palazon/index/ "J.A. Palazón"), de la Universidad de Murcia y coordinador del comité organizador, y a Manuel Muñoz Márquez, coordinador del comité científico y responsable del proyecto [R UCA](http://knuth.uca.es/R/doku.php "R UCA"), por su extraordinario trabajo.
 
 Creo que para muchos de los participantes, uno de los principales beneficios que extrajimos de las jornadas fue el de poder establecer contacto real, físico, con gente y grupos a los que ya conocíamos directa o indirectamente. Allá me encontré con compañeros con los que había mantenido largos intercambios de correo y chat sobre los temas más diversos; algunos que me agradecieron alguna respuesta que les di años ha en la lista de correo de R-help (antes de que existiese R-help-es, incluso) e, incluso, fieles seguidores de este blog (del que sólo supieron contarme maravillas antes, incluso, de revelarles mi participación en él y que la cordialidad los cuasiobligase a ello). Incluso surgieron muchas vías de colaboración entre proyectos que habían surgido de manera espontánea e independiente y que, de repente, se vio que se enriquecían mutuamente.

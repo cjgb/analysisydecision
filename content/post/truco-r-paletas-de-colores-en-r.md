@@ -1,25 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- R
-- Trucos
-date: '2011-01-30T10:02:04-05:00'
-lastmod: '2025-07-13T16:07:57.709922'
+- formación
+- r
+- trucos
+date: '2011-01-30'
+lastmod: '2025-07-13'
 related:
 - trucos-r-graficos-de-velocimetro-con-r.md
 - graficos-de-burbuja-con-r.md
 - graficos-dinamicos-en-r-con-la-funcion-text.md
 - grafico-de-correlaciones-entre-variables.md
 - truco-r-insertar-imagen-en-un-grafico.md
-slug: truco-r-paletas-de-colores-en-r
 tags:
 - gráficos
-- gráficos con R
+- r
 title: Truco R. Paletas de colores en R
 url: /blog/truco-r-paletas-de-colores-en-r/
 ---
-
 [](/images/2011/01/paletas_colores_r.png "Paletas de colores en R")
 
 ![Paletas de colores en R](/images/2011/01/paletas_colores_r.png)

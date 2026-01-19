@@ -1,25 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- R
-date: '2009-11-15T06:40:39-05:00'
-lastmod: '2025-07-13T15:59:06.492361'
+- formación
+- r
+date: '2009-11-15'
+lastmod: '2025-07-13'
 related:
 - manual-introduccion-a-r-s-plus.md
 - manual-curso-introducion-de-r-capitulo-1-que-es-r.md
 - manual-curso-introduccion-de-r-capitulo-4-contribuciones-a-r-paquetes.md
 - manual-curso-introduccion-de-r-capitulo-2-interfaz-y-primeras-sentencias.md
 - manual-curso-introduccion-de-r-capitulo-5-lectura-avanzada-de-datos.md
-slug: intro-rcommander-1-que-es-rcommander
 tags:
-- Introduccion RCommander
-- R
-- RCommander Windows
+- r
+- rcommander
 title: 'Intro RCommander: 1. Qué es RCommander'
 url: /blog/intro-rcommander-1-que-es-rcommander/
 ---
-
 RCommander es un interfaz gráfico de usuario de R (siglas GUI en inglés) y nos permite acceder a múltiples capacidades gráficas y estadísticas de R a través de menús, sin olvidarnos de sus posibilidades de acceso a distintos entornos de datos. Yo lo defino como un «AutoR» pero es otro paquete de R. Por ello es gratuito y muy fácil de instalar. Tan fácil como instalar R y buscar en CRAN RComdr. Descargamos el paquete, lo guardamos en _library_ y ya disponemos de la más potente herramienta para la estadística y no hemos tenido que utilizar en ningún momento el número de nuestra VISA. RCommander requiere de múltiples paquetes de R por ello cuando en R ejecutemos _library(Rcmdr)_ o carguemos el paquete mediante el menú podemos tener un mensaje como este:
 
 ![i_1.JPG](/images/2009/11/i_1.JPG)

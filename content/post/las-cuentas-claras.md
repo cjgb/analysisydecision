@@ -1,24 +1,23 @@
 ---
 author: danifernandez
 categories:
-- Data Mining
-- Formación
-- Monográficos
-- SAS
-date: '2010-05-22T04:59:34-05:00'
-lastmod: '2025-07-13T15:59:32.412774'
+- data mining
+- formación
+- monográficos
+- sas
+date: '2010-05-22'
+lastmod: '2025-07-13'
 related:
 - macros-sas-agrupando-variables-categoricas.md
 - trucos-sas-informes-de-valores-missing.md
 - trucos-sas-muestreo-con-proc-surveyselect.md
 - truco-sas-cruce-con-formatos.md
 - trucos-sas-trasponer-con-sql-para-torpes.md
-slug: las-cuentas-claras
-tags: []
+tags:
+- sin etiqueta
 title: Las cuentas claras.
 url: /blog/las-cuentas-claras/
 ---
-
 > Si hay alguna tarea o procedimiento indispensable y más repetitivo hasta la saciedad por excelencia a la hora de trabajar con bases de datos y tener que reportar alguna información por mínima que sea, esta es contar o contabilizar el número de casos (registros) que tenemos en total o en subtotales (por grupos) dentro de una tabla (los llamados ‘datasets’ en SAS).
 
 Para dar mayor utilidad a este ‘tutorial’ sobre conteo, partiré de una tabla con 2 columnas (campos) tipo cadena, es decir tipo texto, de manera que podamos ver diferentes métodos para contar-contabilizar NO solo campos tipo texto sino también trucos que nos den una solución más ‘elegante’ de la combinación de ambos campos tipo cadena. Estos 2 campos se llamarán ‘grupo’ y ‘tipo’, muy empleados por muchos programadores, pero se podrían llamar tambien ‘familia’ y ‘familia_segmento’ o bien

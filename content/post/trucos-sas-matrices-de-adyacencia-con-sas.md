@@ -1,24 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-- Trucos
-date: '2010-08-05T06:49:04-05:00'
-lastmod: '2025-07-13T16:10:11.324359'
+- formación
+- sas
+- trucos
+date: '2010-08-05'
+lastmod: '2025-07-13'
 related:
 - minimo-de-una-matriz-de-datos-en-sas.md
 - trucos-sas-operaciones-con-tablas-de-dimensiones-con-sas.md
 - trucos-sas-trasponer-con-sql-para-torpes.md
 - truco-sas-cruce-con-formatos.md
 - proc-sql-merge-set.md
-slug: trucos-sas-matrices-de-adyacencia-con-sas
 tags:
 - matrices
 title: Trucos SAS. Matrices de adyacencia con SAS
 url: /blog/trucos-sas-matrices-de-adyacencia-con-sas/
 ---
-
 SAS no está pensado para el cálculo matricial, pero hay ocasiones en las que hemos de trabajar con ellas. Uno de los casos típicos es la matriz de adyacencia. Se trata de partir de estos datos:
 
 a b

@@ -1,25 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- R
-- Trucos
-date: '2020-08-13T09:04:38-05:00'
-lastmod: '2025-07-13T15:57:45.053446'
+- formación
+- r
+- trucos
+date: '2020-08-13'
+lastmod: '2025-07-13'
 related:
 - transponer-data-frames-con-r-de-filas-a-columnas-y-de-columnas-a-filas.md
 - trucos-r-funcion-ddply-del-paquete-plyr.md
 - datos-agrupados-en-r-con-dplyr.md
 - capitulo-4-uniones-de-tablas-con-r.md
 - data-management-con-dplyr.md
-slug: expandir-un-data-frame-de-r-con-tidyr
 tags:
 - expand
 - tidyr
 title: Expandir un data frame de R con tidyr
 url: /blog/expandir-un-data-frame-de-r-con-tidyr/
 ---
-
 [En alguna entrada del blog ya he tratado sobre la expansión de un conjunto de datos](https://analisisydecision.es/los-pilares-de-mi-simulacion-de-la-extension-del-covid19/) pero quería tener una entrada específica. Es algo que se puede programar mediante bucles (tarda una vida) o bien podemos usar la función expand del paquete tydyr. Viendo un ejemplo y los conjuntos de datos generados vais a entender el propósito de la expansión de tablas, se trata de un inicio y un fin y deseamos que se genere una secuencia de observaciones sucesivas dado ese inicio y ese fin. A modo de ejemplo ilustrativo:
 
 ```r

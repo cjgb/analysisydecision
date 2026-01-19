@@ -1,25 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Modelos
-- SAS
-date: '2016-04-29T06:55:21-05:00'
-lastmod: '2025-07-13T15:59:11.903747'
+- formación
+- modelos
+- sas
+date: '2016-04-29'
+lastmod: '2025-07-13'
 related:
 - analisis-cluster-con-sas-la-importancia-de-las-semillas-en-las-k-medias.md
 - un-peligro-del-analisis-cluster.md
 - cluster-svm.md
 - machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algoritmos-de-clasificacion.md
 - monografico-clasificacion-con-svm-en-r.md
-slug: knn-con-sas-mejorando-k-means
 tags:
 - knn
-- PROC DISCRIM
+- proc discrim
 title: KNN con SAS. Mejorando K-Means
 url: /blog/knn-con-sas-mejorando-k-means/
 ---
-
 [![Imagen de previsualización de YouTube](https://img.youtube.com/vi/UqYde-LULfs/0.jpg)](http://www.youtube.com/watch?v=UqYde-LULfs)
 
 La clasificación por k vecinos más cercanos es EL MÉTODO supervisado no paramétrico. El KNN, si empleamos las siglas en inglés, clasifica las observaciones en función de su probabilidad de pertenecer a uno u otro grupo, en el video que encabeza la entrada queda muy bien explicado. El caso es que tenemos la posibilidad de realizar esta clasificación con SAS STAT y el PROC DISCRIM y me parece interesante dedicarle unas líneas. [Hace años ya hablamos de segmentación con SAS](https://analisisydecision.es/analisis-cluster-con-sas-la-importancia-de-las-semillas-en-las-k-medias/) y vamos a emplear los mismos datos para ilustrar esta entrada. Primero generamos un conjunto de datos con datos simulados de 3 esferas que clasificamos en 3 grupos:

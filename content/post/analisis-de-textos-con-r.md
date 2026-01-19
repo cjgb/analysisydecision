@@ -1,18 +1,17 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Monográficos
-- R
-date: '2011-09-05T12:34:27-05:00'
-lastmod: '2025-07-13T15:54:00.583654'
+- formación
+- monográficos
+- r
+date: '2011-09-05'
+lastmod: '2025-07-13'
 related:
 - el-debate-politico-o-como-analizar-textos-con-wps.md
 - comparamos-los-programas-electorales-de-pp-y-psoe-con-r.md
 - ejemplo-de-web-scraping-con-r-la-formacion-de-los-diputados-del-congreso.md
 - analisis-del-programa-electoral-del-partido-popular-antes-de-las-elecciones-en-espana.md
 - trucos-r-de-string-a-dataframe-de-palabras.md
-slug: analisis-de-textos-con-r
 tags:
 - nchar
 - strsplit
@@ -22,7 +21,6 @@ tags:
 title: Análisis de textos con R
 url: /blog/analisis-de-textos-con-r/
 ---
-
 [Vamos a replicar un ejemplo ya presentado con WPS en esta misma bitácora](https://analisisydecision.es/el-debate-politico-o-como-analizar-textos-con-wps/). Tratamos de hacer algo tan sencillo como contar palabras y para ello empleamos de nuevo [un debate del Congreso de los Diputados de España](http://www.congreso.es/portal/page/portal/Congreso/PopUpCGI?CMD=VERLST&BASE=puw9&FMT=PUWTXDTS.fmt&DOCS=1-1&QUERY=%28CDP201108300269.CODI.%29#\(Página2\)). Estas intervenciones las transformamos en un fichero de texto que vosotros podéis descargaros de [este link](/images/2011/09/intervencion_congreso.txt "intervencion_congreso.txt"). Bien, partimos de un archivo de texto de Windows y con él vamos a crear un _data frame_ de R que contendrá las palabras empleadas en esa sesión del Congreso español. Pasamos a analizar el código empleado:
 
 ```r

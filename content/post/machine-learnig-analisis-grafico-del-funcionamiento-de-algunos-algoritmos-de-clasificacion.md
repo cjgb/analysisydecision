@@ -1,32 +1,31 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Machine Learning
-- Modelos
-- Monográficos
-- Python
-date: '2017-05-03T04:03:46-05:00'
-lastmod: '2025-07-13T16:00:37.765427'
+- formación
+- machine learning
+- modelos
+- monográficos
+- python
+date: '2017-05-03'
+lastmod: '2025-07-13'
 related:
 - resolucion-del-juego-de-modelos-con-r.md
 - monografico-clasificacion-con-svm-en-r.md
 - cluster-svm.md
 - knn-con-sas-mejorando-k-means.md
 - machine-learning-elegir-el-mejor-gradient-boost-de-forma-iterativa-con-gridseacrchcv.md
-slug: machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algoritmos-de-clasificacion
 tags:
 - arboles de clasificacion
 - knn
-- Machine learning
+- machine learning
 - perceptrón
 - random forest
-- SVM
+- svm
+- redes neuronales
 title: Machine learnig. Análisis gráfico del funcionamiento de algunos algoritmos
   de clasificacion
 url: /blog/machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algoritmos-de-clasificacion/
 ---
-
 [![Letra_O](/images/2017/05/Letra_O.png)](/images/2017/05/Letra_O.png)
 
 De forma gráfica os voy a presentar algunas técnicas de clasificación supervisada de las más empleadas en Machine Learning y podremos ver cómo se comportan de forma gráfica en el plano. Como siempre prefiero ilustrarlo a entrar en temas teóricos y para esta tarea se me ha ocurrido pintar una letra O y comenzar a trabajar con Python, así de simple. Lo primero es tener los datos, evidentemente serán puntos aleatorios en el plano donde pintamos una variable dependiente con forma de O:

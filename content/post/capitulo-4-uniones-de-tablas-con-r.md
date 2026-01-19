@@ -1,24 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Libro Estadística
-- R
-date: '2022-01-18T13:48:01-05:00'
-lastmod: '2025-07-13T15:54:42.155873'
+- formación
+- libro estadística
+- r
+date: '2022-01-18'
+lastmod: '2025-07-13'
 related:
 - tipos-de-uniones-join-de-tablas-con-python-pandas.md
 - proc-sql-merge-set.md
 - monografico-paquete-sqldf-si-sabes-sql-sabes-r.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-3-manejo-de-datos-con-r.md
 - data-management-con-dplyr.md
-slug: capitulo-4-uniones-de-tablas-con-r
-tags: []
+tags:
+- sin etiqueta
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 4. Uniones
   de tablas con R
 url: /blog/capitulo-4-uniones-de-tablas-con-r/
 ---
-
 Además de manejar los datos de un data frame en ocasiones es necesario realizar uniones entre conjuntos de datos para crear o añadir nuevas variables a un data frame que es una base de observaciones inicial. Se pueden establecer 2 tipos de uniones fundamentales, uniones verticales de tablas y uniones horizontales. Las uniones verticales serán las concatenaciones de data frames, poner una estructura de datos encima de otra y las uniones horizontales serán las que se denominarán _join_.
 
 Se emplea una estructura de datos sencilla para ejemplificar el funcionamiento.

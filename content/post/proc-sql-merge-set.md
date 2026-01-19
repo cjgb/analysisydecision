@@ -1,22 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-date: '2009-08-12T02:57:08-05:00'
-lastmod: '2025-07-13T16:04:43.614641'
+- formación
+- sas
+date: '2009-08-12'
+lastmod: '2025-07-13'
 related:
 - capitulo-4-uniones-de-tablas-con-r.md
 - tipos-de-uniones-join-de-tablas-con-python-pandas.md
 - truco-sas-transponer-tablas-con-proc-transpose-data-o-proc-sql.md
 - truco-sas-cruce-con-formatos.md
 - en-merge-mejor-if-o-where.md
-slug: proc-sql-merge-set
-tags: []
+tags:
+- sin etiqueta
 title: Equivalencias entre PROC SQL y DATA en las uniones de tablas SAS
 url: /blog/proc-sql-merge-set/
 ---
-
 Muchos de los que llegan a programar con SAS son grandes expertos en SQL. Cuando dominas perfectamente un lenguaje es difícil acostumbrarse a otro. Por ello quiero plantear un artículo que estudie los tipos de uniones mediante pasos DATA y su análogo con el PROC SQL. Con ello espero que los profesionales que manejan el lenguaje SQL entiendan mejor el paso DATA. En mi línea habitual creo dos dataset y manejo ejemplos.
 
 ```r

@@ -1,24 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-date: '2008-07-24T05:31:53-05:00'
-lastmod: '2025-07-13T16:02:12.678619'
+- formación
+date: '2008-07-24'
+lastmod: '2025-07-13'
 related:
 - a-mi-me-preocupa-el-pequeno-ahorrador.md
 - la-confianza-en-el-sector-financiero.md
 - la-batalla-de-las-nominas-seguimos-buscando-el-dinero-nuevo.md
 - lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
 - lecciones-de-economia-de-un-ignorante-los-bancos-pierden-dinero-para-favorecer-a-unos-y-luego-los-salvamos-todos.md
-slug: margenes-nulos-en-los-nuevos-depositos-bancarios
 tags:
-- ''
-- Banca
+- banca
 - crisis
 title: Márgenes nulos en los nuevos depósitos bancarios
 url: /blog/margenes-nulos-en-los-nuevos-depositos-bancarios/
 ---
-
 «Muchas entidades han tirado la casa por la ventana y han ofrecido tipos de interés tan elevados que difícilmente podrán recuperar esa inversión”. Cita sacada de [aquí](http://www.cotizalia.com/cache/2008/07/24/4_preocupacion_banco_espana_altos_intereses_banca.html). La batalla por el pasivo ha comenzado en el mercado bancario nacional. La exposición del entorno bancario al cemento y el ladrillo hacen temer una falta de liquidez, las entidades financieras necesitan pasivo para evitar un posible «[corralito](http://es.wikipedia.org/wiki/Corralito)«. ¿Alquien piensa que la gran banca no ha provisionado los problemas de esta exposición? ¿Alguien piensa que  la banca va a tener problemas de liquidez? Por muy vertiginosa que sea la caida el sistema financiero español está preparado.
 
 No es por situarme en posiciones «conspiranóicas» pero la situación actual no es una batalla por el pasivo. Es una batalla por la compra de la mediana – pequeña entidad financiera. Las grandes entidades están tomando posiciones y tienen sus arcas bien cargadas. Por si fuera poco estos nuevos depósitos de margen nulo van a por el dinero nuevo: «sólo nuevos clientes» «dinero procedente de otra entidad» «traspase su fondo»…. La mediana – pequeña banca no puede asumir estos márgenes y después de unas excelentes cuentas ha llegado el momento de «fusionarse» con entidades más potentes. Los grandes les quitan el pasivo y no es buena época para crecer con el activo.

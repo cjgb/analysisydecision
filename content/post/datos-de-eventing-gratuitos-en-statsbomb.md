@@ -1,24 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Consultoría
-- Fútbol
-- Formación
-- R
-date: '2023-08-23T03:03:21-05:00'
-lastmod: '2025-07-13T15:56:10.072150'
+- consultoría
+- fútbol
+- formación
+- r
+date: '2023-08-23'
+lastmod: '2025-07-13'
 related:
 - pintando-campos-de-futbol-con-rstats-y-entendiendo-funciones-de-densidad.md
 - datos-libres-de-statsbomb-independencia-estadistica-y-tandas-de-penaltis.md
 - alineaciones-de-equipos-de-futbol-con-worldfootballr-de-rstats.md
 - minutos-de-juego-y-puntos-es-espanyol-y-sus-finales-de-partido.md
 - resultados-de-la-liga-con-rstats-estudiando-graficamente-rachas.md
-slug: datos-de-eventing-gratuitos-en-statsbomb
-tags: []
+tags:
+- sin etiqueta
 title: Datos de eventing gratuitos en Statsbomb
 url: /blog/datos-de-eventing-gratuitos-en-statsbomb/
 ---
-
 ![](https://import.cdn.thinkific.com/277488%2Fcustom_site_themes%2Fid%2F8yHhosOVQji56gzkZcqm_sb_-_core_wordmark_-_colour_positive.png)
 
 Da comienzo una serie de entradas sobre datos, fútbol y rstats. Todas estas entradas estarán disponibles en [mi repositorio de github](https://github.com/rvaquerizo02 "mi repositorio de github"). La función de estos artículos es poner en orden cosas que yo he ido aprendiendo, no olvidar esas cosas y servir de ayuda a nuevos analistas. Para entender mejor esta serie recomiendo leer el libro [Introducción a la Estadística para Científicos de Datos con R](https://analisisydecision.es/estadistica-data-scientist/index.html) que yo mismo escribí.

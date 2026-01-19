@@ -1,25 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Machine Learning
-- Modelos
-- R
-date: '2019-11-10T14:14:18-05:00'
-lastmod: '2025-07-13T16:02:38.406921'
+- formación
+- machine learning
+- modelos
+- r
+date: '2019-11-10'
+lastmod: '2025-07-13'
 related:
 - obteniendo-los-parametros-de-mi-modelo-gam.md
 - interpretacion-de-los-parametros-de-un-modelo-glm.md
 - los-parametros-del-modelo-glm-como-relatividades-como-recargos-o-descuentos.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-15-modelos-glm-regresion-logistica-y-regresion-de-poisson.md
 - ajuste-de-splines-con-r.md
-slug: modelos-gam-dejando-satisfechos-a-los-equipos-de-negocio
 tags:
-- GAM
+- gam
 title: Modelos GAM con R. Dejando satisfechos a los equipos de negocio
 url: /blog/modelos-gam-dejando-satisfechos-a-los-equipos-de-negocio/
 ---
-
 Los modelos GAM (Generalized Additive Model) son el conjuntos de modelos que tenemos los estadísticos, actuarios, data scientist o como nos denominen en el momento que leas esto para dejar a nuestros equipos de negocio contentos con los resultados de nuestro modelo GLM. No voy a entrar en los aspectos teóricos de este tipo de modelos, [hay documentación como esta](http://www.est.uc3m.es/durban/esp/web/cursos/GAMs/material/GAM_bilbao.pdf) que os puede ayudar. Por qué se quedan contentos los equipos de negocio, porque nos ayudan a dar sentido a los modelos. Retomemos un ejemplo que vimos en otra entrada del blog: <https://analisisydecision.es/los-parametros-del-modelo-glm-como-relatividades-como-recargos-o-descuentos/> en esta entrada presentamos como el resultado de un modelo GLM se transforma en una relatividad, en un mecanismo para ofrecer recargos y descuentos.
 
 Si desarrollamos un modelo GLM en último término podríamos enseñar este gráfico al responsable comercial:

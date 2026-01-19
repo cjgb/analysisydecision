@@ -1,24 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Gráficos
-- Mapas
-- Monográficos
-- Python
-date: '2021-03-22T02:17:18-05:00'
-lastmod: '2025-07-13T15:54:05.344132'
+- gráficos
+- mapas
+- monográficos
+- python
+date: '2021-03-22'
+lastmod: '2025-07-13'
 related:
 - mapa-de-rstats-animado-con-el-porcentaje-de-vacunacion-en-espana.md
 - mapa-estatico-de-espana-con-python.md
 - mover-parte-de-un-shapefile-con-r-mapa-de-la-tasa-de-casos-de-coronavirus-por-habitante-en-espana.md
 - incluir-subplot-en-mapa-con-ggplot.md
 - anadiendo-graficos-de-tarta-a-nuestros-mapas-de-ggplot-con-scatterpie.md
-slug: animacion-de-un-mapa-con-python-porcentaje-de-vacunas-administradas
-tags: []
+tags:
+- mapas
+- python
 title: Animación de un mapa con Python. Porcentaje de vacunas administradas
 url: /blog/animacion-de-un-mapa-con-python-porcentaje-de-vacunas-administradas/
 ---
-
 [![](/images/2021/03/animacion1.gif)](/images/2021/03/animacion1.gif)
 
 Las animaciones con Python que mostramos hoy, al final, son animaciones con Image Magick pero esta entrada es un ejemplo de como podemos usar Python para la creación de gráficos que posteriormente generarán esa animación con las instrucciones concretas de Imagemagick (que tiene que estar instalado). La idea es realizar un mapa animado con el porcentaje de vacunas de COVID administradas.

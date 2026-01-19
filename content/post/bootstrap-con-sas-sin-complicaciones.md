@@ -1,25 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-date: '2010-08-03T07:06:19-05:00'
-lastmod: '2025-07-13T15:54:30.712117'
+- formación
+- sas
+date: '2010-08-03'
+lastmod: '2025-07-13'
 related:
 - trucos-sas-muestreo-con-proc-surveyselect.md
 - un-acercamiento-a-graph-ods-graphs-proc-sgplot.md
 - las-cuentas-claras.md
 - macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
 - sobremuestreo-y-pesos-a-las-observaciones-ahora-con-r.md
-slug: bootstrap-con-sas-sin-complicaciones
 tags:
-- Bootstrap
+- bootstrap
 - proc sgplot
 - remuestreo
 title: Bootstrap con SAS sin complicaciones
 url: /blog/bootstrap-con-sas-sin-complicaciones/
 ---
-
 El bootstrap es una técnica de muestreo que, a partir de la simulación, crea sucesivas muestras con reemplazamiento que teóricamente son una buena aproximación al universo muestral. [Por aquí podéis encontrar información y bibliografía al respecto](http://www-stat.stanford.edu/~ckirby/brad/). Lo que yo quería comentaros hoy es algo a lo que ya [hizo referencia la comunidad de SAS en ](http://www.lasug.org/2009/06/bootstrap-en-3-pasos.html)español. Hacer bootstrap con SAS no es complicado. Cuando buscas información ves unas macros que dan miedo y piensas “esto es un software”, sin embargo el tema no es tan difícil y con un paso DATA ya podemos poner a funcionar esta técnica. Veamos el ejemplo, partimos de un conjunto de datos SAS que obtenemos en [esta web](http://www.ats.ucla.edu/stat/sas/dae/poissonreg.htm) interesantes ejemplos verdad. Nos bajamos el archivo a una ubicación de nuestra máquina o leemos la url y comenzamos a trabajar:
 
 ```r

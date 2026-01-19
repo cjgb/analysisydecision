@@ -1,25 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Modelos
-- Monográficos
-- R
-date: '2014-08-21T04:53:43-05:00'
-lastmod: '2025-07-13T16:04:36.531333'
+- formación
+- modelos
+- monográficos
+- r
+date: '2014-08-21'
+lastmod: '2025-07-13'
 related:
 - manual-curso-introduccion-de-r-capitulo-10-funciones-graficas-en-regresion-lineal.md
 - regresion-con-redes-neuronales-en-r.md
 - resolucion-del-juego-de-modelos-con-r.md
 - manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-15-modelos-glm-regresion-logistica-y-regresion-de-poisson.md
-slug: primeros-pasos-con-regresion-no-lineal-nls-con-r
 tags:
 - nls
 title: Primeros pasos con regresión no lineal (nls) con R
 url: /blog/primeros-pasos-con-regresion-no-lineal-nls-con-r/
 ---
-
 La regresión no lineal se da cuando tenemos que estimar Y a partir de una función del tipo Y=f(X,Beta) + Error donde Beta son Beta1, Beta2,…, Beta n. Unos datos X e Y se relacionan mediante una función no lineal respecto a unos parámetros Beta desconocidos. Y cómo obtenemos estos Beta desconocidos, a través de mínimos cuadrados o bien con otros métodos como máxima verosilimilitud. Este cálculo llevará asociada su inferencia estadística habitual. La función que asocia los pares de datos (x1,y1), (x2, y2),…, (yn, xn) será una función conocida. Por eso esta técnica es muy utilizada en ciencias químicas, geodinámica,… donde ya se conoce la relación que hay entre las variables independientes y la variable dependiente pero es necesario realizar modelos con los pares de datos disponibles de cara a obtener estimaciones.
 
 Para la realización de este monográfico con R vamos a emplear el [conjunto de datos Thurber](http://www.itl.nist.gov/div898/strd/nls/data/thurber.shtml) Son datos de un estudio NIST de movilidad de electrones en semiconductores la variable respuesta es la movilidad del electrón y la variable regresora es el logaritmo de la densidad. El modelo es:

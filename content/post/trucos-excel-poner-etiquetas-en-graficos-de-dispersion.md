@@ -1,27 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Excel
-- Formación
-- Monográficos
-- Trucos
-date: '2011-04-11T05:47:32-05:00'
-lastmod: '2025-07-13T16:09:16.948038'
+- excel
+- formación
+- monográficos
+- trucos
+date: '2011-04-11'
+lastmod: '2025-07-13'
 related:
 - truco-excel-grafico-de-puntos-con-colores.md
 - truco-excel-graficos-de-dispersion-que-identifican-los-puntos.md
 - trucos-excel-graficos-dot-plot-representando-un-ranking-graficamente.md
 - chart-tools-un-add-in-imprescindible-para-excel.md
 - trucos-excel-mapa-de-espana-por-provincias.md
-slug: trucos-excel-poner-etiquetas-en-graficos-de-dispersion
 tags:
-- ''
 - etiquetas
 - grafico dispersion
 title: Trucos Excel. Poner etiquetas en gráficos de dispersión
 url: /blog/trucos-excel-poner-etiquetas-en-graficos-de-dispersion/
 ---
-
 Una macro de Visual Basic muy sencilla es la única forma de etiquetar gráficos de dispersión que me he encontrado. Si alguien encuentra otro modo más sencillo de hacerlo que lo comente en estas líneas. La intencion es llegar a este gráfico:
 
 ![etiquetas-grafico-dispersion-excel-1.png](/images/2011/04/etiquetas-grafico-dispersion-excel-1.png)

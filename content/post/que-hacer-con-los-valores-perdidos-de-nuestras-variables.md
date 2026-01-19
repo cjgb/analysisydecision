@@ -1,25 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Data Mining
-- Sin catergoría
-date: '2009-09-16T09:23:56-05:00'
-lastmod: '2025-07-13T16:04:59.770775'
+- data mining
+- sin categoría
+date: '2009-09-16'
+lastmod: '2025-07-13'
 related:
 - entrenamiento-validacion-y-test.md
 - macros-sas-hacer-0-los-valores-missing-de-un-dataset.md
 - trucos-sas-informes-de-valores-missing.md
 - truco-sas-transformaciones-de-variables-con-arrays.md
 - trucos-sas-lista-de-variables-missing.md
-slug: '%c2%bfque-hacer-con-los-valores-perdidos-de-nuestras-variables'
 tags:
-- missing
+- missing values
 - tratamiento
-- Valores perdidos
 title: ¿Qué hacer con los valores perdidos de nuestras variables?
 url: /blog/c2bfque-hacer-con-los-valores-perdidos-de-nuestras-variables/
 ---
-
 Creo que casi todos los que han hecho modelos matemáticos alguna vez en su vida se han encontrado con la pregunta que titula este breve artículo. Aunque más que artículo es una reflexión y sobre todo espero que al final sea un pequeño foro de ideas y de métodos con los que hacer frente a este problema.
 
 Lo primero que me planteraría yo es: ¿por qué perdemos datos? Podemos tener una imperfección a la hora de recoger la información y podría ayudarnos a mejorar el proceso. También un valor perdido puede ser un valor en si mismo. No es lo mismo tener un consumo de 0 euros con un teléfono móvil que no tener teléfono móvil, sin embargo si sabemos que tenemos teléfono móvil un valor perdido es un 0 ya que no aparece el consumo en nuestros sistemas; en la telefonía este es un caso prototípico de valor perdido. Otro ejemplo es la medición de un paciente que ha abandonado el estudio, en este caso el dato recogido es nulo, y debemos evaluar si tener en cuenta ese registro para nuestro estudio. El primer paso ante un análisis de los valores perdidos es definir «valor perdido».

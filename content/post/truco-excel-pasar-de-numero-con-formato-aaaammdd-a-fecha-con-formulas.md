@@ -1,26 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Excel
-- Formación
-- Trucos
-date: '2014-02-25T11:14:30-05:00'
-lastmod: '2025-07-13T16:07:24.135884'
+- excel
+- formación
+- trucos
+date: '2014-02-25'
+lastmod: '2025-07-13'
 related:
 - trucos-excel-tranformar-un-caracter-a-fecha.md
 - macros-sas-transformar-un-numerico-a-fecha.md
 - truco-python-restar-meses-con-formato-yyyymm.md
 - trucos-sas-pasar-fecha-a-caracter-en-sas.md
 - trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados.md
-slug: truco-excel-pasar-de-numero-con-formato-aaaammdd-a-fecha-con-formulas
 tags:
-- ENTERO
-- FECHA
-- RESIDUO
+- entero
+- fecha
+- residuo
 title: Truco Excel. Pasar de número con formato AAAAMMDD a fecha con fórmulas
 url: /blog/truco-excel-pasar-de-numero-con-formato-aaaammdd-a-fecha-con-formulas/
 ---
-
 ![](/images/2014/02/transformar_fecha_excel.png)
 
 Tenía que transformar un número en formato AAAAMMDD a una fecha en Excel. Tenía que concatenar varias funciones y he pensado que a lo mejor a alguno de los lectores del blog podría interesarle. Se trata de utilizar la función de Excel FECHA con RESIDUO y ENTERO pero con cierto talento. Partimos del una fecha 20140225 y realizamos la siguiente sucesión de fórmulas:

@@ -1,23 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Python
-- Trucos
-date: '2018-05-18T03:43:45-05:00'
-lastmod: '2025-07-13T16:07:44.488848'
+- formación
+- python
+- trucos
+date: '2018-05-18'
+lastmod: '2025-07-13'
 related:
 - macros-sas-agrupando-variables-categoricas.md
 - data-management-basico-con-pandas.md
 - creacion-de-ranking-con-r.md
 - trucos-sas-variables-dummy-de-una-variable-continua.md
 - truco-sas-categorizar-variables-continuas.md
-slug: truco-python-agrupar-variable-en-funcion-de-la-frecuencia
-tags: []
+tags:
+- sin etiqueta
 title: Truco Python. Agrupar variable en función de la frecuencia
 url: /blog/truco-python-agrupar-variable-en-funcion-de-la-frecuencia/
 ---
-
 Me ha surgido la necesidad de crear una nueva variable en un data frame a partir de la frecuencia de otra, es decir, quedarme con los valores más frecuentes y aplicar una categoría resto para aquellos valores que no estén en los más frecuentes. Para realizar esto se me ha ocurrido la siguiente función en Python:
 
 ```r

@@ -1,22 +1,20 @@
 ---
 author: rvaquerizo
 categories:
-- R
-date: '2014-09-26T16:15:35-05:00'
-lastmod: '2025-07-13T15:53:32.415495'
+- r
+date: '2014-09-26'
+lastmod: '2025-07-13'
 related:
 - monografico-paquete-de-r-nnet-para-modelos-de-redes-neuronales.md
 - monografico-arboles-de-clasificacion-con-rpart.md
 - monografico-un-poco-de-proc-logistic.md
 - los-pilares-de-mi-simulacion-de-la-extension-del-covid19.md
 - arboles-de-decision-con-sas-base-con-r-por-supuesto.md
-slug: 6-grados-de-separacion-una-simulacion-poco-seria-con-r
 tags:
 - simulación
 title: ¿6 grados de separación? Una simulación poco seria con R
 url: /blog/6-grados-de-separacion-una-simulacion-poco-seria-con-r/
 ---
-
 Me pregunto si puedo demostrar la [teoría de los seis grados de separación](http://es.wikipedia.org/wiki/Seis_grados_de_separaci%C3%B3n). Tengo muy oxidados los bucles con R. Ganas de probar Amazon Web Services.Pues manos a la obra. ¿Es posible con R establecer que una persona esté enlazada con otra en menos de 6 pasos? Hoy no voy a probrar Amazon Web Services, me voy a limitar a mostraros que se me ha ocurrido para demostrar esta teoría.
 
 Dentro de una población un individuo manda una carta. Creamos una red de cartas y buscamos en que punto de esa red le devuelven la carta. No me atrevo a determinar el número de amigos que puede tener un individuo. Tampoco tengo tiempo para realizar una simulación con los 5.000 millones de habitantes del planeta. Así que os planteo una simulación muy poco seria con R. Muy sencillo:

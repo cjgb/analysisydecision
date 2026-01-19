@@ -1,27 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- Consultoría
-- Formación
-- Opinión
-- R
-date: '2019-08-26T10:47:45-05:00'
-lastmod: '2025-07-13T16:00:33.674980'
+- consultoría
+- formación
+- opinión
+- r
+date: '2019-08-26'
+lastmod: '2025-07-13'
 related:
 - stadistical-data-warehouse-del-european-central-bank-con-r-y-los-depositos-a-perdidas.md
 - leer-y-representar-datos-de-google-trends-con-r.md
 - evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso.md
 - analisis-de-textos-con-r.md
 - beatifulsoup-web-scraping-con-python-o-como-las-redes-sociales-estan-cambiando-mi-forma-de-escribir.md
-slug: los-principales-problemas-de-los-espanoles-animaciones-con-r-y-gganimate
 tags:
 - gganimate
 - ggplot2
-- XML
+- xml
 title: Los principales problemas de los españoles. Animaciones con R y gganimate
 url: /blog/los-principales-problemas-de-los-espanoles-animaciones-con-r-y-gganimate/
 ---
-
 [![](/images/2019/08/Problemas_españoles.gif)](/images/2019/08/Problemas_españoles.gif)
 
 La realización de gráficos animados con R, gganimate y ggplot2 es algo que quiero empezar a trabajar en mis visualizaciones de datos, una buena forma de llamar la atención sobre nuestros gráficos. Para ilustrar el ejemplo he recogido los datos que publica mensualmente el CIS con las 3 principales preocupaciones de los españoles que podéis encontrar en [este enlace](http://www.cis.es/cis/export/sites/default/-Archivos/Indicadores/documentos_html/TresProblemas.html), por cierto, este enlace tiene toda la pinta de ser una salida en SAS, no me parece muy apropiado pero no diré nada porque imagino que serán lectores del blog (ya podíais hacer una salida más acorde con los tiempos). El caso es que la primera parte de nuestro trabajo será el «scrapeado» de la web. Scrapear verbo regular de la primera conjugación:

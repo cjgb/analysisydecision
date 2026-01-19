@@ -1,24 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-- Trucos
-date: '2010-10-07T11:37:31-05:00'
-lastmod: '2025-07-13T16:00:45.884153'
+- formación
+- sas
+- trucos
+date: '2010-10-07'
+lastmod: '2025-07-13'
 related:
 - trucos-sas-identificar-registros-duplicados.md
 - macros-faciles-de-sas-determinar-si-existe-una-variable-en-un-dataset.md
 - macro-sas-variables-de-un-dataset-en-una-macro-variable.md
 - macros-sas-macro-split-para-partir-un-conjunto-de-datos.md
 - trucos-sas-union-de-multiples-tablas-sas-con-un-nombre-parecido.md
-slug: macros-faciles-de-sas-busca-duplicados
 tags:
-- macros SAS
+- macros sas
 title: Macros (fáciles) de SAS. Busca duplicados
 url: /blog/macros-faciles-de-sas-busca-duplicados/
 ---
-
 Una macro muy sencilla que ha aparecido en un programa de funcionalidades y que busca registros duplicados en tablas SAS. Es muy sencilla y a alguien puede serle útil y para eso estamos, para compartir conocimientos aunque sean sencillos. Pocos somos los que compartimos nuestro conocimiento y encima poniendo nuestro dinero, en fin, que me distraigo del tema.
 
 ```r

@@ -1,25 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Excel
-- Formación
-- Trucos
-date: '2011-04-21T11:56:10-05:00'
-lastmod: '2025-07-13T16:09:20.090698'
+- excel
+- formación
+- trucos
+date: '2011-04-21'
+lastmod: '2025-07-13'
 related:
 - trucos-excel-repetir-filas-con-desref.md
 - trucos-excel-transponer-con-la-funcion-desref.md
 - truco-excel-transponer-una-fila-en-varias-columnas-con-desref.md
 - desref-para-trasponer-en-excel-varias-columnas.md
 - truco-excel-repetir-un-campo-a-partir-de-otro-que-define-el-numero-de-repeticiones.md
-slug: trucos-excel-repetir-filas-o-columnas-con-la-funcion-desref
 tags:
-- DESREF
+- desref
 - funciones excel
 title: Trucos Excel. Repetir filas o columnas con la función DESREF
 url: /blog/trucos-excel-repetir-filas-o-columnas-con-la-funcion-desref/
 ---
-
 La **función DESREF** va a ser la protagonista de 2 trucos de Excel. Vamos a **repetir filas o columnas** con esta función. En nuestro caso la función va a devolver el valor de una celda referenciada del modo _DESREF( <Celda inicial anclada>;<Filas por debajo de la referenciada>;<Columnas a la derecha de la fila referenciada>)_. Para nuestro caso el funcionamiento de la función DESREF será:
 
 ![ejemplo-de-uso-desref-2.png](/images/2011/04/ejemplo-de-uso-desref-2.png)

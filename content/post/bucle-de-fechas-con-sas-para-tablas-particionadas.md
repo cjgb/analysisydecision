@@ -1,24 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Business Intelligence
-- SAS
-- Trucos
-date: '2016-12-20T03:06:02-05:00'
-lastmod: '2025-07-13T15:54:32.137898'
+- business intelligence
+- sas
+- trucos
+date: '2016-12-20'
+lastmod: '2025-07-13'
 related:
 - trucos-sas-operar-con-fechas-yyyymm-tipicas-de-particiones-oracle.md
 - macros-sas-primer-y-ultimo-dia-del-mes-de-una-fecha-sas.md
 - trucos-sas-numero-de-dias-de-un-mes.md
 - macros-sas-transformar-un-numerico-a-fecha.md
 - trabajo-con-fechas-sas-funciones-fecha.md
-slug: bucle-de-fechas-con-sas-para-tablas-particionadas
 tags:
 - fechas sas
 title: Bucle de fechas con SAS para tablas particionadas
 url: /blog/bucle-de-fechas-con-sas-para-tablas-particionadas/
 ---
-
 Partimos de un mes inicial hasta un mes final es necesario crear una tabla SAS con dos variables, el inicio del mes y el final del mes. Trabajo con fechas en SAS que todos sabemos es una tarea un «poco ardua». El título de la entrada también es un poco peculiar pero es la respuesta a la duda que planteaba un lector:
 
 _Cogemos dos fechas en formato yyyymmaa_

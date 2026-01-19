@@ -1,25 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Inteligencia Artificial
-- Monográficos
-- Opinión
-- R
-date: '2020-05-27T04:58:52-05:00'
-lastmod: '2025-07-13T15:59:35.140003'
+- inteligencia artificial
+- monográficos
+- opinión
+- r
+date: '2020-05-27'
+lastmod: '2025-07-13'
 related:
 - el-debate-politico-o-como-analizar-textos-con-wps.md
 - noticias-del-congreso-de-usuarios-de-r.md
 - de-actuario-a-cientifico-de-datos.md
 - analisis-de-textos-con-r.md
 - el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v.md
-slug: latent-semantic-analysis-y-la-importancia-de-las-matematicas
 tags:
-- Latent semantic analysis
+- latent semantic analysis
 title: Latent semantic analysis y la importancia de las matemáticas
 url: /blog/latent-semantic-analysis-y-la-importancia-de-las-matematicas/
 ---
-
 Vivimos “días extraños”, tan extraños que en España se están planteando prescindir de la asignatura de matemáticas en la enseñanza obligatoria. Es evidente que las personas que gobiernan hoy (25/05/2020) España habrían suspendido matemáticas. Sin embargo, es curioso que haya pocos matemáticos ejerciendo cargos políticos, ¿puede ser que los matemáticos no tengan esa vocación por mejorar la vida de los demás? En fin, esta crítica a la ignorancia numérica y al egoísmo matemático me sirve de “extraña introducción” al Latent semantic analysis (LSA) como siempre los [aspectos teóricos los podéis encontrar en otros sitios](https://www.sciencedirect.com/topics/computer-science/latent-semantic-analysis). Y todo este conjunto de frases inconexas hilan con la entrada en el blog de mi amigo [J.L. Cañadas](https://twitter.com/joscani) en [muestrear no es pecado](https://muestrear-no-es-pecado.netlify.app/2020/05/24/factoriales/) porque, reducción de dimensionalidad, el lenguaje y la importancia de las matemáticas es en realidad el Latent Semantic Analysis.
 
 Si preguntas a un estadístico ¿qué es la reducción de dimensionalidad? Te contará lo que dice Cañadas, «analizar la varianza total de los datos y obtener las combinaciones lineales mejores en el sentido de máxima varianza» esto es lo mismo que preguntar a una persona que se ha leído un libro, «hazme un resumen en un párrafo». En ese caso estás buscando una combinación de ideas que te permitan resumir un texto en el menor espacio posible, evidentemente asumes que te dejas cosas, estás asumiendo que las cosas varían, metes la menor variabilidad posible en un párrafo asumiendo toda la variación del texto. Entonces, todo ese follón de la reducción de dimensionalidad es algo parecido a un resumen objetivo de un texto algo que realiza cualquier persona cuando te describe un libro, un artículo o una anécdota. Las matemáticas pueden estructurar el conocimiento cognitivo que permite sintetizar un texto.

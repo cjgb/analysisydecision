@@ -1,22 +1,21 @@
 ---
 author: svalle
 categories:
-- SAS
-- Trucos
-date: '2008-03-04T06:18:48-05:00'
-lastmod: '2025-07-13T16:08:06.698077'
+- sas
+- trucos
+date: '2008-03-04'
+lastmod: '2025-07-13'
 related:
 - trucos-sas-porque-hay-que-usar-objetos-hash.md
 - laboratorio-de-codigo-sas-comparativa-entre-if-y-where.md
 - laboratorio-de-codigo-sas-ordenaciones-con-hash-vs-proc-sort.md
 - truco-sas-transponer-tablas-con-proc-transpose-data-o-proc-sql.md
 - laboratorio-de-codigo-sas-vistas-proc-means-vs-proc-sql.md
-slug: truco-sas-cruce-con-formatos
-tags: []
+tags:
+- sin etiqueta
 title: Truco SAS. Cruce con proc format
 url: /blog/truco-sas-cruce-con-formatos/
 ---
-
 Veremos un ejemplo de ahorro de tiempo haciendo un cruce con formatos.
 Parece curioso que los formatos ahorren tiempo frente al sort/merge y sql, ya que basicamente no están hecho para esa finalidad, pero realmente podemos ahorrarnos más del 50% del tiempo.
 Además lo más costoso de este método es la carga del formato, pero una vez que lo tenemos cargado podemos hacer las selecciones de todos los grandes volumenes de datos que necesitemos, con el sort/merge, tendríamos que ordenar el conjunto de datos sas ‘grande’ otra vez si no lo teniamos ordenado.

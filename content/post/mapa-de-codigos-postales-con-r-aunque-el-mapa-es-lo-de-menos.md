@@ -1,27 +1,26 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Mapas
-- Monográficos
-- R
-date: '2019-08-12T07:56:40-05:00'
-lastmod: '2025-07-13T16:01:46.837307'
+- formación
+- mapas
+- monográficos
+- r
+date: '2019-08-12'
+lastmod: '2025-07-13'
 related:
 - mapas-municipales-de-espana-con-excel-y-qgis.md
 - mapas-estaticos-de-peru-con-r-y-python-a-nivel-de-distrito.md
 - libreria-mapspain-en-rstats-mapas-estaticos-de-espana.md
 - mapas-con-spatial-data-de-r.md
 - mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel.md
-slug: mapa-de-codigos-postales-con-r-aunque-el-mapa-es-lo-de-menos
 tags:
 - codigos postales
 - spatial data
 - tmap
+- mapas
 title: Mapa de códigos postales con R. Aunque el mapa es lo de menos
 url: /blog/mapa-de-codigos-postales-con-r-aunque-el-mapa-es-lo-de-menos/
 ---
-
 [![](/images/2019/08/codigos_postales_navarra.png)](/images/2019/08/codigos_postales_navarra.png)
 
 Entrada para facilitar la realización de mapas de códigos postales de España con R. Todo parte del trabajo de [Íñigo Flores](https://github.com/inigoflores/ds-codigos-postales) al que [ya mencionamos en otra entrada](https://analisisydecision.es/archivos-shape-y-geojason-para-crear-un-mapa-de-espana-por-codigos-postales/). Íñigo descargó de Cartociudad y recopiló los objetos shape file para realizar estos gráficos y los subió a su repositorio, están desactualizados pero puede ser suficiente para la realización de mapas de códigos postales. Íñigo subió en formato .zip todos los archivos necesarios provincia a provincia como lo tenía Cartociudad. Podemos clonarnos el repositorio o leer directamente de github, en cualquier caso necesitamos una función en R que nos permita leer archivos comprimidos en formato zip y cuando lea el zip seleccionar que expresamente lea el archivo shp que contiene el spatial data.

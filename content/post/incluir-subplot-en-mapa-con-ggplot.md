@@ -1,26 +1,26 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Gráficos
-- Mapas
-- Monográficos
-- R
-- Trucos
-date: '2021-02-08T07:40:22-05:00'
-lastmod: '2025-07-13T15:58:36.643076'
+- formación
+- gráficos
+- mapas
+- monográficos
+- r
+- trucos
+date: '2021-02-08'
+lastmod: '2025-07-13'
 related:
 - libreria-mapspain-en-rstats-mapas-estaticos-de-espana.md
 - mi-breve-seguimiento-del-coronavirus-con-r.md
 - anadiendo-graficos-de-tarta-a-nuestros-mapas-de-ggplot-con-scatterpie.md
 - mapa-de-rstats-animado-con-el-porcentaje-de-vacunacion-en-espana.md
 - mover-parte-de-un-shapefile-con-r-mapa-de-la-tasa-de-casos-de-coronavirus-por-habitante-en-espana.md
-slug: incluir-subplot-en-mapa-con-ggplot
-tags: []
+tags:
+- mapas
+- r
 title: Incluir subplot en mapa con ggplot
 url: /blog/incluir-subplot-en-mapa-con-ggplot/
 ---
-
 [![](/images/2021/02/mapa_subplot_ggplot3.png)](/images/2021/02/mapa_subplot_ggplot3.png)
 
 Se ha trabajado un mapa de España con ggplot al que podemos añadir subplot en función de unas coordenadas, en este caso es un mapa de España que incluye gráficos de líneas para cada Comunidad Autónoma, vamos a representar el exceso de mortalidad que está suponiendo la pandemia por COVID, un dato que se puede seguir con [MoMo del ISCIII ](https://momo.isciii.es/public/momo/dashboard/momo_dashboard.html). Los que seguidores el blog ya conocen una entrada en la que [se escribió sobre la inclusión de pie chart en mapas con R](https://analisisydecision.es/anadiendo-graficos-de-tarta-a-nuestros-mapas-de-ggplot-con-scatterpie/) esta entrada supone ir un paso más allá.

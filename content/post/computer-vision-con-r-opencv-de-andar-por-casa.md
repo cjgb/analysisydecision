@@ -1,26 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Big Data
-- Formación
-- Inteligencia Artificial
-- Monográficos
-- R
-date: '2020-11-27T05:47:45-05:00'
-lastmod: '2025-07-13T15:55:11.525489'
+- big data
+- formación
+- inteligencia artificial
+- monográficos
+- r
+date: '2020-11-27'
+lastmod: '2025-07-13'
 related:
 - tratamiento-y-procesado-de-imagenes-con-r-y-magick.md
 - inteligencia-arficial-frente-a-un-juego-de-ninos-la-particula-tonta-de-nicolas.md
 - resolucion-del-juego-de-modelos-con-r.md
 - truco-r-insertar-imagen-en-un-grafico.md
 - machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algoritmos-de-clasificacion.md
-slug: computer-vision-con-r-opencv-de-andar-por-casa
 tags:
-- openCV
+- opencv
 title: Computer Vision con R. OpenCV de andar por casa
 url: /blog/computer-vision-con-r-opencv-de-andar-por-casa/
 ---
-
 Trabajando con Computer Vision aprecio que estamos muy limitados por las máquinas que usamos, o tiene mucho sentido montar GPUs en casa del tamaño del aire acondicionado y por supuesto no tiene sentido el consumo energético que implica. Aquí estoy yo montando una GPU para el análisis de imágenes.
 
 [![](/images/2020/11/openCV_1.png)](/images/2020/11/openCV_1.png)

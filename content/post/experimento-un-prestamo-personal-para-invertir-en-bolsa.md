@@ -1,25 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Banca
-- Formación
-date: '2009-02-09T08:12:29-05:00'
-lastmod: '2025-07-13T15:57:46.407255'
+- banca
+- formación
+date: '2009-02-09'
+lastmod: '2025-07-13'
 related:
 - me-preocupa-el-pequeno-ahorrador-ii.md
 - lecciones-de-economia-de-un-ignorante-la-caixa-a-colocar-preferentes.md
 - lecciones-de-economia-de-un-ignorante-la-prima-de-riesgo-y-la-madre-que-la-pario.md
 - lecciones-de-economia-de-un-ignorante-no-me-dan-hipoteca.md
 - a-mi-me-preocupa-el-pequeno-ahorrador.md
-slug: experimento-un-prestamo-personal-para-invertir-en-bolsa
 tags:
-- ''
 - bolsa
 - inversión renta variable
 title: Experimento. Un préstamo personal para invertir en Bolsa.
 url: /blog/experimento-un-prestamo-personal-para-invertir-en-bolsa/
 ---
-
 ¿Pedir un préstamo para invertir en bolsa? Si. Vamos a crear este experimento. Evidentemente todo se quedará en eso, un experimento, porque no será este que escribe el que hará semejante (¿)locura(?). Los mercados están en mínimos históricos, en concreto el IBEX 35 a fecha 09.02.2008 13:48 horas está a 8.492,40 La evolución en el último año ha sido:
 
 ![bolsa20090209.bmp](/images/2009/02/bolsa20090209.bmp)

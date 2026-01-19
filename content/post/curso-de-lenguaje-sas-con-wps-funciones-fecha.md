@@ -1,25 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Monográficos
-- WPS
-date: '2011-01-23T08:59:27-05:00'
-lastmod: '2025-07-13T15:55:46.885252'
+- formación
+- monográficos
+- wps
+date: '2011-01-23'
+lastmod: '2025-07-13'
 related:
 - trabajo-con-fechas-sas-funciones-fecha.md
 - monografico-funciones-intnx-e-intck-para-fechas-en-sas.md
 - trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados.md
 - trabajo-con-fechas-sas-introduccion.md
 - trucos-sas-numero-de-dias-de-un-mes.md
-slug: curso-de-lenguaje-sas-con-wps-funciones-fecha
 tags:
-- ''
-- lenguaje SAS
+- lenguaje sas
 title: Curso de lenguaje SAS con WPS. Funciones fecha
 url: /blog/curso-de-lenguaje-sas-con-wps-funciones-fecha/
 ---
-
 Las fechas con SAS no están muy bien resueltas, con WPS pasa lo mismo. Era necesario un capítulo especial para hablar sobre fechas en WPS. [En este blog ya se habló del tema](https://analisisydecision.es/trabajo-con-fechas-sas-funciones-fecha/). Y ahora, con WPS, la entrada será análoga: **SAS = WPS**. . Las funciones las vamos a dividir en 4 grupos:
 
 • Funciones de extracción de fecha

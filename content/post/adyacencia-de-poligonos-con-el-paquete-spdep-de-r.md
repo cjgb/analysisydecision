@@ -1,29 +1,27 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Mapas
-- Monográficos
-- R
-- Seguros
-date: '2016-05-29T13:42:45-05:00'
-lastmod: '2025-07-13T15:53:41.700577'
+- formación
+- mapas
+- monográficos
+- r
+- seguros
+date: '2016-05-29'
+lastmod: '2025-07-13'
 related:
 - como-obtener-los-centroides-de-municipios-con-sas-mapas-con-sgplot.md
 - identificar-los-municipios-costeros-y-limitrofes-de-espana-con-r.md
 - mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel.md
 - representar-poligonos-de-voronoi-dentro-de-un-poligono.md
 - libreria-mapspain-en-rstats-mapas-estaticos-de-espana.md
-slug: adyacencia-de-poligonos-con-el-paquete-spdep-de-r
 tags:
 - geolocalizacion
-- Mapa
+- mapas
 - spdep
-- zonificacion
+- zonificación
 title: Adyacencia de polígonos con el paquete spdep de R
 url: /blog/adyacencia-de-poligonos-con-el-paquete-spdep-de-r/
 ---
-
 Cuando trabajamos con **zonificación** o **geolocalización** la adyacencia entre los elementos del estudio es relevante. En este caso quería trabajar con la adyacencia entre los polígonos que componen un archivo de datos espaciales shapefile y para entender mejor como podemos obtener la adyancecia entre polígonos creo que lo mejor es hacer un ejemplo con un mapa, en este caso un mapa de municipios de Barcelona. El primer paso es disponer del objeto con los datos espaciales, [de esto ya he escrito mucho en el blog](https://analisisydecision.es/mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel/) y por eso no me detengo mucho:
 
 ```r

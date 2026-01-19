@@ -1,26 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Monográficos
-- SAS
-- Trucos
-date: '2011-05-16T15:16:24-05:00'
-lastmod: '2025-07-13T16:00:49.968527'
+- formación
+- monográficos
+- sas
+- trucos
+date: '2011-05-16'
+lastmod: '2025-07-13'
 related:
 - macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
 - monograficos-call-symput-imprescindible.md
 - trucos-sas-calcular-percentiles-como-excel-o-r.md
 - trucos-sas-variables-dummy-de-una-variable-continua.md
 - trucos-sas-medir-la-importancia-de-las-variables-en-nuestro-modelo-de-regresion-logistica.md
-slug: macros-faciles-de-sas-eliminar-outliers-en-una-variable
 tags:
 - outliers
 - proc univariate
 title: Macros (fáciles) de SAS. Eliminar outliers en una variable
 url: /blog/macros-faciles-de-sas-eliminar-outliers-en-una-variable/
 ---
-
 Hace tiempo ya os propuse una[ chapuza para eliminar outliers de forma multivariante](https://analisisydecision.es/trucos-sas-eliminacion-de-outliers-2/). Por supuesto quedaba**eliminar outliers en una variable**. Recortar los valores extremos en aquellas variables cuantitativas que deseemos. Para ello os propongo una macro que no considero muy compleja y que os analizaré con mayor detalle, pero lo primero la macro al completo:
 
 ```r

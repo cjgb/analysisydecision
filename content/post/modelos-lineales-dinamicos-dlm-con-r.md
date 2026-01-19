@@ -1,28 +1,26 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Modelos
-- Monográficos
-- R
-date: '2014-09-07T05:42:00-05:00'
-lastmod: '2025-07-13T16:02:39.848628'
+- formación
+- modelos
+- monográficos
+- r
+date: '2014-09-07'
+lastmod: '2025-07-13'
 related:
 - manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-15-modelos-glm-regresion-logistica-y-regresion-de-poisson.md
 - manual-curso-introduccion-de-r-capitulo-10-funciones-graficas-en-regresion-lineal.md
 - interpretacion-de-los-parametros-de-un-modelo-glm.md
 - modelos-gam-dejando-satisfechos-a-los-equipos-de-negocio.md
-slug: modelos-lineales-dinamicos-dlm-con-r
 tags:
 - dlm
-- dlmFilter
-- dlmModPoly
-- dlmSmooth
+- dlmfilter
+- dlmmodpoly
+- dlmsmooth
 title: Modelos lineales dinámicos (DLM) con R
 url: /blog/modelos-lineales-dinamicos-dlm-con-r/
 ---
-
 [![](/images/2014/08/DLM_1.png)](/images/2014/08/DLM_1.png)
 
 Otro de los modelos que está tocando estudiar este verano son los Dinamic Linear Models (DLM). Para estudiar este tipo de modelos[ es imprescindible leer este documento](http://www.jstatsoft.org/v36/i12/paper "Este enlace externo se abrirá en una nueva ventana"). Estos métodos parten de una idea: «la vida no es fácil cuando tienes que hacer estimaciones sobre una serie temporal». Una serie temporal es un vector de datos aleatorios, una sucesión de observaciones de la forma Yt con t=1,2,.. Si sobre esta sucesión tenemos una característica que puede influir estamos ante un modelo de espacio estado. Estos modelos tienen una cadena de Markov (<http://es.wikipedia.org/wiki/Cadena_de_M%C3%A1rkov>) porque esa característica que afecta a la serie es una cadena de Markov y eso nos permite que los Yt sean independientes ya que dependen sólo de esa característica. El más importante modelo de espacio estado es el **modelo lineal dinámico**.

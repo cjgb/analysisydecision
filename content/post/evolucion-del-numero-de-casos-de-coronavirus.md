@@ -1,22 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- R
-date: '2020-03-12T09:31:02-05:00'
-lastmod: '2025-07-13T15:57:42.336575'
+- formación
+- r
+date: '2020-03-12'
+lastmod: '2025-07-13'
 related:
 - mi-breve-seguimiento-del-coronavirus-con-r.md
 - estimacion-de-la-evolucion-de-casos-del-coronavirus-en-espana.md
 - seguir-los-datos-del-coronavirus-en-espana-con-rstats.md
 - tablas-elegantes-en-rstats-y-formattable.md
 - etiquetas-en-scatter-plot-muertes-covid-por-millon-de-habitantes-vs-gasto-en-salud.md
-slug: evolucion-del-numero-de-casos-de-coronavirus
-tags: []
+tags:
+- sin etiqueta
 title: Evolución del número de casos de coronavirus
 url: /blog/evolucion-del-numero-de-casos-de-coronavirus/
 ---
-
 Seguimos a vueltas con la (ya) pandemia y R y hoy quería traeros unos buenos ejemplos de uso de la librería dplyr para preparar datos. Se trata de ver una evolución del número de casos diarios para saber en qué punto tanto España como Italia pueden frenar el crecimiento de los casos de coronavirus, se trata de crear este gráfico:
 
 [![](/images/2020/03/coronavirus5.png)](/images/2020/03/coronavirus5.png)

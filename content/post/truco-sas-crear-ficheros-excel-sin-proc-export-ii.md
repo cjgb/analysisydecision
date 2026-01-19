@@ -1,22 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- SAS
-- Trucos
-date: '2008-04-07T07:36:34-05:00'
-lastmod: '2025-07-13T16:08:03.604613'
+- sas
+- trucos
+date: '2008-04-07'
+lastmod: '2025-07-13'
 related:
 - truco-sas-sas-y-dde-aliados-de-excel.md
 - truco-sas-crear-ficheros-excel-sin-proc-export-i.md
 - macros-sas-informe-de-un-dataset-en-excel.md
 - truco-sas-unir-todos-los-excel-en-uno-solo.md
 - truco-sas-leer-datos-de-excel-con-sas-con-dde.md
-slug: truco-sas-crear-ficheros-excel-sin-proc-export-ii
-tags: []
+tags:
+- sin etiqueta
 title: Truco SAS. Crear ficheros Excel sin PROC EXPORT (II)
 url: /blog/truco-sas-crear-ficheros-excel-sin-proc-export-ii/
 ---
-
 Con [anterioridad ](https://analisisydecision.es/truco-sas-crear-ficheros-excel-sin-proc-export-i/)hemos visto el manejo del ODS y como nos sirve para generar archivos HTML que podemos usar con Excel sin necesidad de emplear el PROC EXPORT. Pero el lenguaje SAS empleado era complicado y requería muchas líneas de código. Pues esto podemos evitarlo si creamos nuestra propia macro para exportar nuestras tablas SAS a tablas Excel.
 
 «Simplemente» hemos de parametrizar el código que vimos en la [primera parte del truco SAS](https://analisisydecision.es/truco-sas-crear-ficheros-excel-sin-proc-export-i/). Pero realizaremos diversas modificaciones para que nuestro código sea más práctico:

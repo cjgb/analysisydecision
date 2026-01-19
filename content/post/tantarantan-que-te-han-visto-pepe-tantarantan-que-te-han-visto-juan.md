@@ -1,23 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Banca
-- Sin catergoría
-date: '2009-02-02T08:31:06-05:00'
-lastmod: '2025-07-13T16:06:28.945582'
+- banca
+- sin categoría
+date: '2009-02-02'
+lastmod: '2025-07-13'
 related:
 - bajar-los-tipos-a-la-japonesa-al-0.md
 - a-mi-me-preocupa-el-pequeno-ahorrador.md
 - amanece-que-no-es-poco.md
 - la-nueva-burbuja-de-los-bancos.md
 - lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
-slug: tantarantan-que-te-han-visto-pepe-tantarantan-que-te-han-visto-juan
 tags:
-- Bajar los impuestos
+- bajar los impuestos
 title: Tantarantán que te han visto Pepe, tantarantán que te han visto Juán
 url: /blog/tantarantan-que-te-han-visto-pepe-tantarantan-que-te-han-visto-juan/
 ---
-
 Unos dicen:
 
 [¡Ojo con el endeudamiento!](http://www.cotizalia.com/cache/2009/02/02/noticias_52_miguel_martin_califica.html)

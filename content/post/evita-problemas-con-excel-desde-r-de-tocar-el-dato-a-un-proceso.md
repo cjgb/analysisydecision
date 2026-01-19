@@ -1,23 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Excel
-- Formación
-- R
-date: '2020-10-09T06:10:39-05:00'
-lastmod: '2025-07-13T15:57:40.990333'
+- excel
+- formación
+- r
+date: '2020-10-09'
+lastmod: '2025-07-13'
 related:
 - trucos-simples-para-rstats.md
 - los-principales-problemas-de-los-espanoles-animaciones-con-r-y-gganimate.md
 - porque-me-gusta-r.md
 - macros-sas-dataset-a-data-frame-r.md
 - estadistica-para-cientificos-de-datos-con-r-introduccion.md
-slug: evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso
-tags: []
+tags:
+- sin etiqueta
 title: Evita problemas con Excel desde R. De tocar el dato a un proceso
 url: /blog/evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso/
 ---
-
 En estos días hemos vivido una situación con Excel y los datos de COVID de UK peculiar. Hemos aparecido todos en las redes sociales para reírnos de Excel y de los que usan Excel. De nuevo partidarios de Matlab, R, Python,… ¡a la gresca! [Mi opinión la podéis leer en Twitter](https://twitter.com/r_vaquerizo) y creo que sobre este tema puedo opinar. En mi vida profesional me he especializado en cambiar equipos de negocio, por ese motivo tanto ir y venir de compañía. Uno de esos cambios consiste en transformar super usuarios de Excel a usuarios de herramientas más apropiadas para la gestión de la información.
 
 Mi carrera en el sector de la gestión de la información comenzó introduciendo SAS allí donde Business Objects y Access ya eran insuficientes. Continué con SAS durante muchos años, siempre con guiños al software libre porque R me permitía llegar allá donde SAS n€c€sitaba otromódulo. En los últimos años estoy alternando el uso de Python con R. Sin embargo, mis ponencias y mis presentaciones de servicios están incluyendo el siguiente gráfico:

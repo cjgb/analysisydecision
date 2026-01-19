@@ -1,23 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- R
-date: '2019-10-14T11:19:56-05:00'
-lastmod: '2025-07-13T16:04:13.690368'
+- formación
+- r
+date: '2019-10-14'
+lastmod: '2025-07-13'
 related:
 - de-sql-server-a-python-pandas-dataframe.md
 - manual-curso-introduccion-de-r-capitulo-5-lectura-avanzada-de-datos.md
 - montemos-un-sistema-de-informacion-en-nuestro-equipo-iii.md
 - manual-curso-introduccion-de-r-capitulo-4-contribuciones-a-r-paquetes.md
 - monografico-paquete-sqldf-si-sabes-sql-sabes-r.md
-slug: parametros-en-nuestra-consulta-sql-server-desde-r-truco-r
 tags:
-- SQL SERVER
+- sql server
+- bases de datos
+- r
 title: Parámetros en nuestra consulta SQL Server desde R. Truco R
 url: /blog/parametros-en-nuestra-consulta-sql-server-desde-r-truco-r/
 ---
-
 Me han preguntado hoy como parametrizar una consulta de Sql Server desde R y la verdad es que es algo que me parecía muy sencillo y no me había planteado compartirlo. En mi caso suelo emplear la librería RODBC para acceder a Sql Server porque realizo las consultas vía ODBC, por este motivo lo primero debéis tener es configurado el origen de datos ODBC e instalada la librería RODBC en R. Para acceder vía R a los datos de Sql Server lo primero es crear la conexión a la BBDD:
 
 ```r

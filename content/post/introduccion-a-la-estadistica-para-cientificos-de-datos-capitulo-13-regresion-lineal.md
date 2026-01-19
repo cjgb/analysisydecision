@@ -1,24 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Libro Estadística
-- R
-date: '2023-02-19T15:16:18-05:00'
-lastmod: '2025-07-13T15:58:51.531552'
+- formación
+- libro estadística
+- r
+date: '2023-02-19'
+lastmod: '2025-07-13'
 related:
 - primeros-pasos-con-regresion-no-lineal-nls-con-r.md
 - manual-curso-introduccion-de-r-capitulo-14-introduccion-al-calculo-matricial-con-analisis-de-componentes-principales.md
 - los-parametros-del-modelo-glm-como-relatividades-como-recargos-o-descuentos.md
 - regresion-con-redes-neuronales-en-r.md
 - manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
-slug: introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-13-regresion-lineal
-tags: []
+tags:
+- sin etiqueta
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 13. Regresión
   lineal
 url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-13-regresion-lineal/
 ---
-
 En el capítulo 11 dedicado al análisis bivariable se indicó que el inicio de la relación entre dos variables era la correlación, pues la regresión lineal es el principio de la modelización estadística. Evidentemente no es lo mismo pero establecer una analogía entre ambos conceptos permite entender los objetivos de la regresión lineal:
 
 [![](/images/2023/02/wp_editor_md_7b9c707bc0b1203c627b7794f374e005.jpg)](/images/2023/02/wp_editor_md_7b9c707bc0b1203c627b7794f374e005.jpg)

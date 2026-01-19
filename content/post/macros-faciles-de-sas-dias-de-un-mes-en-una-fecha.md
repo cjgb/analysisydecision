@@ -1,23 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-- Trucos
-date: '2011-05-29T15:20:03-05:00'
-lastmod: '2025-07-13T16:00:48.585088'
+- formación
+- sas
+- trucos
+date: '2011-05-29'
+lastmod: '2025-07-13'
 related:
 - trucos-sas-numero-de-dias-de-un-mes.md
 - macros-sas-transformar-un-numerico-a-fecha.md
 - macros-sas-primer-y-ultimo-dia-del-mes-de-una-fecha-sas.md
 - truco-sas-macro-numero-de-dias-de-un-ano.md
 - bucle-de-fechas-con-sas-para-tablas-particionadas.md
-slug: macros-faciles-de-sas-dias-de-un-mes-en-una-fecha
-tags: []
+tags:
+- sin etiqueta
 title: Macros (fáciles) de SAS. Días de un mes en una fecha
 url: /blog/macros-faciles-de-sas-dias-de-un-mes-en-una-fecha/
 ---
-
 Macro de SAS fácil y rápida que nos permite saber **el número de días que tiene el mes de una fecha de SAS**. La tenía para la automatización de un código que con una media y daba guerra cuando se trataba de un año bisiesto. 3 líneas de código:
 
 `%macro dias(fec);`

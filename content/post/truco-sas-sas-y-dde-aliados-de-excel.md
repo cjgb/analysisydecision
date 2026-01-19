@@ -1,22 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- SAS
-- Trucos
-date: '2008-04-08T08:34:29-05:00'
-lastmod: '2025-07-13T16:08:33.263572'
+- sas
+- trucos
+date: '2008-04-08'
+lastmod: '2025-07-13'
 related:
 - truco-sas-leer-datos-de-excel-con-sas-con-dde.md
 - truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
 - trucos-excel-modificar-la-configuracion-regional-con-visual-basic.md
 - trucos-excel-y-sas-complemento-para-cambiar-la-configuracion-regional.md
 - importar-a-sas-desde-otras-aplicaciones.md
-slug: truco-sas-sas-y-dde-aliados-de-excel
-tags: []
+tags:
+- sin etiqueta
 title: Truco SAS. SAS y DDE, otra forma de exportar a Excel
 url: /blog/truco-sas-sas-y-dde-aliados-de-excel/
 ---
-
 Otro elemento con el que contamos para crear archivos Excel desde SAS es el [DDE](http://es.wikipedia.org/wiki/DDE), una tecnología que nos permite comunicar Windows con SAS. Mediante esta comunicación podemos leer un fichero SAS y escribir en una tabla de Excel. Con el siguiente artículo os voy a introducir a otra metodología que no sólo sirve para crear ficheros Excel desde SAS si no que además nos permitirá ejecutar macros, crear gráficos,…
 
 Estudiemos el ejemplo más sencillo que **parte siempre de un fichero Excel existente** :

@@ -1,25 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- SAS
-- Trucos
-date: '2008-10-27T08:46:15-05:00'
-lastmod: '2025-07-13T16:08:12.605726'
+- sas
+- trucos
+date: '2008-10-27'
+lastmod: '2025-07-13'
 related:
 - macros-sas-contar-las-palabras-de-una-macro-variable.md
 - macros-sas-limpiar-una-cadena-de-caracteres.md
 - macros-sas-calular-la-longitud-de-un-numero.md
 - curso-de-lenguaje-sas-con-wps-funciones-en-wps.md
 - dividir-en-palabras-un-texto-con-sas.md
-slug: truco-sas-funcion-para-contar-caracteres
 tags:
 - contar caracteres
-- funiones texto
-- SAS
+- funciones texto
+- sas
 title: Truco SAS. Función para contar caracteres
 url: /blog/truco-sas-funcion-para-contar-caracteres/
 ---
-
 Si deseamos contar cuantas veces aparece un caracter dentro de una cadena en SAS nos encontramos que no existe ninguna función de texto en SAS. Para ello podemos utilizar otras funciones de texto en SAS. La idea es determinar la longitud de la cadena con el caracter en cuestión y restarle la longitud de la cadena sin el caracter. Es decir, ¿cuántas A hay en la frase «Menuda crisis financiera»? Longitud con A y sin espacios= 22, longitud sin A y sin espacios=19, luego 22-19=3 aes. Para este ejemplo no se tienen en cuenta los espacios en blanco, veamos el programa en SAS:
 
 **data _null_;v=«MEnUDA CRISIS FINaNCIERA»;**

@@ -1,23 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-- Trucos
-date: '2008-11-27T08:01:37-05:00'
-lastmod: '2025-07-13T16:01:02.245806'
+- formación
+- sas
+- trucos
+date: '2008-11-27'
+lastmod: '2025-07-13'
 related:
 - truco-sas-transformaciones-de-variables-con-arrays.md
 - trucos-sas-informes-de-valores-missing.md
 - trucos-sas-lista-de-variables-missing.md
 - macro-sas-crear-variables-dummy-desde-una-variable-categorica.md
 - macros-faciles-de-sas-determinar-si-existe-una-variable-en-un-dataset.md
-slug: macros-sas-hacer-0-los-valores-missing-de-un-dataset
-tags: []
+tags:
+- sin etiqueta
 title: Macros SAS. Hacer 0 los valores missing de un dataset
 url: /blog/macros-sas-hacer-0-los-valores-missing-de-un-dataset/
 ---
-
 La siguiente macro de SAS nos permite transformar los valores perdidos (missing) en valor 0 para todas las variables de un dataset. Para todas, para todas las numéricas. Esto es muy importante porque en ocasiones es necesario distinguir el valor 0 del valor missing(.). Pero puede ser muy práctica si vamos a emplear procedimientos que han de distinguir valores perdidos o, simplemente, si deseamos que nuestra tabla tenga otro aspecto.
 
 La metodología del ejemplo que copiáis y pegáis en SAS para examinar los resultados y el log es la más apropiada, o así me lo han trasmitido algunos. Como siempre, planteemos un ejemplo. Lo primero es crear un dataset con valores missing:

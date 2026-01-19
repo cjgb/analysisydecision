@@ -1,22 +1,21 @@
 ---
 author: rvaquerizo
 categories:
-- Opinión
-- R
-date: '2020-03-11T02:33:33-05:00'
-lastmod: '2025-07-13T15:57:34.223278'
+- opinión
+- r
+date: '2020-03-11'
+lastmod: '2025-07-13'
 related:
 - seguir-los-datos-del-coronavirus-en-espana-con-rstats.md
 - mi-breve-seguimiento-del-coronavirus-con-r.md
 - evolucion-del-numero-de-casos-de-coronavirus.md
 - los-pilares-de-mi-simulacion-de-la-extension-del-covid19.md
 - no-estamos-igual-que-en-la-primera-ola-de-covid.md
-slug: estimacion-de-la-evolucion-de-casos-del-coronavirus-en-espana
-tags: []
+tags:
+- sin etiqueta
 title: Estimación de la evolución de casos del coronavirus en España
 url: /blog/estimacion-de-la-evolucion-de-casos-del-coronavirus-en-espana/
 ---
-
 [Ayer escribrí sobre la obtención de los datos del coronavirus](https://analisisydecision.es/seguir-los-datos-del-coronavirus-en-espana-con-rstats/) con R y después me disponía ha escribir sobre modelos de regresión no lineal, hacer una estimación del coronavirus en España,… Pero estuve hablando con una amiga residente en Italia y allí el número de casos está dos semanas por delante de España, bueno, dos semanas exactamente no, 10 días:
 
 ```r

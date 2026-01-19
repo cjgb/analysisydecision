@@ -1,21 +1,20 @@
 ---
 author: rvaquerizo
 categories:
-- Sin catergoría
-date: '2011-07-19T10:42:46-05:00'
-lastmod: '2025-07-13T15:58:29.861869'
+- sin categoría
+date: '2011-07-19'
+lastmod: '2025-07-13'
 related:
 - revision-de-las-iii-jornadas-de-r.md
 - comienza-la-cuenta-atras-iii-jornadas-de-usuarios-de-r.md
 - noticias-del-congreso-de-usuarios-de-r.md
 - dos-vecinos-muy-proximos-de-la-blogosfera.md
 - el-ano-2010-para-analisisydecision.md
-slug: i-concurso-de-analisis-de-datos-con-r
-tags: []
+tags:
+- sin etiqueta
 title: I concurso de análisis de datos con R
 url: /blog/i-concurso-de-analisis-de-datos-con-r/
 ---
-
 A pesar de tener la primicia (estoy de vacaciones y no leo habitualmente el correo de mi trabajo) soy el último en hacerse eco de la gran noticia de las III jornadas de R: [El primer concurso de análisis de datos con R](http://www.usar.org.es/concurso_es.php). Hay en total 1.500 € en premios que reparte el patrocinador del evento [Nestoria](http://www.nestoria.com/). Nestoria es un motor de búsqueda de inmuebles que está presente en múltiples países.
 
 Mi punto de vista sobre el concurso:

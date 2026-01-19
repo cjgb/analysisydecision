@@ -1,26 +1,25 @@
 ---
 author: rvaquerizo
 categories:
-- Excel
-- Formación
-- Trucos
-date: '2009-02-27T07:00:41-05:00'
-lastmod: '2025-07-13T16:09:24.552219'
+- excel
+- formación
+- trucos
+date: '2009-02-27'
+lastmod: '2025-07-13'
 related:
 - trucos-excel-transponer-con-la-funcion-desref.md
 - desref-para-trasponer-en-excel-varias-columnas.md
 - truco-excel-transponer-una-fila-en-varias-columnas-con-desref.md
 - truco-excel-pasar-un-rango-de-varias-columnas-a-una.md
 - truco-excel-repetir-un-campo-a-partir-de-otro-que-define-el-numero-de-repeticiones.md
-slug: trucos-excel-trasponer-con-la-funcion-indirecto
 tags:
-- función excel
+- funciones excel
 - indirecto
 - trasponer
+- excel
 title: Trucos Excel. Trasponer con la función indirecto
 url: /blog/trucos-excel-trasponer-con-la-funcion-indirecto/
 ---
-
 Una de las tareas más comunes en Excel es la de transponer filas. En ocasiones hemos de transformar columnas en filas o viceversa:
 
 ![indirecto.JPG](/images/2009/02/indirecto.JPG)

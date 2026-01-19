@@ -1,24 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Monográficos
-- R
-- Trucos
-date: '2022-09-27T09:18:14-05:00'
-lastmod: '2025-07-13T15:57:28.811901'
+- formación
+- monográficos
+- r
+- trucos
+date: '2022-09-27'
+lastmod: '2025-07-13'
 related:
 - trucos-sas-envio-de-email-con-data.md
 - trucos-excel-crear-un-borrador-de-correo-con-excel.md
 - evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso.md
 - informes-con-r-en-html-comienzo-con-r2html-i.md
 - mi-curriculum-con-rmarkdown-y-pagedown.md
-slug: enviar-correos-electronicos-con-rstats-libreria-emayili
-tags: []
+tags:
+- sin etiqueta
 title: Enviar correos electrónicos con rstats. Librería emayili
 url: /blog/enviar-correos-electronicos-con-rstats-libreria-emayili/
 ---
-
 En este trabajo se va a enviar un correo electrónico automático mediante RStats, para ello se empleará la librería de R emayili. Esta librería evita el uso de Java. Además, se adjuntará un archivo Excel a un correo electrónico, ese archivo se genera mediante openxlsx que tampoco requiere Java lo que evita problemas cuando no se tiene bien configurado Java en el entorno de R (por diversos motivos). Para ilustrar el ejemplo se emplea el conocido data frame Iris y se enviarán vía email distintos subconjuntos de ese data frame.
 
 ```r

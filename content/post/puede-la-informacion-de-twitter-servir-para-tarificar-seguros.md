@@ -1,24 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Consultoría
-- Formación
-- R
-date: '2017-10-09T07:58:14-05:00'
-lastmod: '2025-07-13T16:04:55.439491'
+- consultoría
+- formación
+- r
+date: '2017-10-09'
+lastmod: '2025-07-13'
 related:
 - de-estadistico-a-minero-de-datos-a-cientifico-de-datos.md
 - twitter-con-r-el-hashtag-rstats.md
 - ayd-2300-visitas-mensuales.md
 - contenidos-para-octubre-de-ayd.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-9-analisis-exploratorio-de-datos-eda.md
-slug: puede-la-informacion-de-twitter-servir-para-tarificar-seguros
 tags:
 - twitter
 title: ¿Puede la información de Twitter servir para calcular el precio de tu seguro?
 url: /blog/puede-la-informacion-de-twitter-servir-para-tarificar-seguros/
 ---
-
 [![rvaquerizo](/images/2017/10/rvaquerizo.png)](/images/2017/10/rvaquerizo.png)
 
 Debemos de ir introduciendo el concepto de **Social Pricing** en el sector asegurador, si recordamos el año pasado [Admirall y Facebook tuvieron un tira y afloja](https://www.theguardian.com/money/2016/nov/02/facebook-admiral-car-insurance-privacy-data) por el uso de la información de Facebook para el ajuste de primas de riesgo. Facebook alegaba a la sección 3.15 de su privacidad para no permitir emplear esta información a Admirall. Probablemente es un tema más económico. El caso es que tanto Facebook, como Instagram, como Twitter, como LinkedIn, como xVideos,… tienen información muy interesante acerca de nosotros, información que se puede emplear para el cálculo de primas en el sector asegurador (por ejemplo). No voy a decir como hacer esto, este blog no es el lugar, el que quiera conocer mis ideas que se ponga en contacto conmigo. Yo soy alguien “público”, no tengo problema en dejar mis redes sociales abiertas y este caso me sirve de ejemplo para analizar que dice Twitter de mí y también sirve de ejemplo para refrescar el manejo de información con Twitter con #rstats. Esta entrada es una combinación de entradas anteriores de esta bitácora así que [recordemos como empezábamos a hacer scrapping de Twitter](https://analisisydecision.es/twitter-con-r-el-hashtag-rstats/):

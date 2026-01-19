@@ -1,26 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- SAS
-- Trucos
-date: '2010-11-08T10:49:24-05:00'
-lastmod: '2025-07-13T16:00:51.333199'
+- formación
+- sas
+- trucos
+date: '2010-11-08'
+lastmod: '2025-07-13'
 related:
 - macros-sas-limpiar-una-cadena-de-caracteres.md
 - macros-sas-pasar-de-texto-a-numerico.md
 - truco-sas-limpieza-de-tabuladores-con-expresiones-regulares.md
 - trucos-sas-eliminacion-de-espacios-en-blanco.md
 - truco-sas-macro-buscar-y-reemplazar-en-texto.md
-slug: macros-faciles-de-sas-normaliza-un-texto-rapido
 tags:
-- CALL PRXCHANGE
-- TRANSLATE
+- call prxchange
+- translate
 - tranwrd
 title: Macros (fáciles) de SAS. Normaliza un texto rápido
 url: /blog/macros-faciles-de-sas-normaliza-un-texto-rapido/
 ---
-
 ¿Tienes que normalizar un texto con SAS? Llevas 2 horas buscando funciones de texto con la ayuda y te has crispado. En una macro y de forma muy rápida os planteo un muestrario de funciones con las que podéis normalizar (**un poco**) un texto. Esto es algo que tuve que hacer la otra mañana no es muy sofisticado pero que puede seros de utilidad:
 
 ```r

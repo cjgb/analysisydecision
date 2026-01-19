@@ -1,24 +1,23 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Mapas
-- R
-date: '2021-06-10T08:19:22-05:00'
-lastmod: '2025-07-13T15:59:36.492449'
+- formación
+- mapas
+- r
+date: '2021-06-10'
+lastmod: '2025-07-13'
 related:
 - rstats-shiny-leaftlet-mapas-interactivos.md
 - anadiendo-graficos-de-tarta-a-nuestros-mapas-de-ggplot-con-scatterpie.md
 - incluir-subplot-en-mapa-con-ggplot.md
 - libreria-mapspain-en-rstats-mapas-estaticos-de-espana.md
 - mapas-estaticos-de-peru-con-r-y-python-a-nivel-de-distrito.md
-slug: leaflet-con-r-apuntes-de-mapas-de-coordenadas
 tags:
 - leaflet
+- mapas
 title: Leaflet con R. Apuntes de mapas de coordenadas
 url: /blog/leaflet-con-r-apuntes-de-mapas-de-coordenadas/
 ---
-
 Estoy desarrollando cosas muy interesantes con leaftlet en R y quería poner unos breves apuntes por si a alguien le sirvieran. En Stackoverflow y otras webs al uso tenéis mucha más ayuda y código de mayor interés pero en pocas líneas espero sentar las bases de uso de leaflet. Para ilustrar el ejemplo me he [descargado unos datos de datos.gob](https://datos.gob.es/en/catalogo?publisher_display_name=Ayuntamiento+de+Madrid&theme_id=seguridad) con las coordenadas de los parques de bomberos de Madrid Capital, la idea es representar estos puntos en un mapa. Lo primero es descargar los datos y ponerlos en una ubicación de nuestro equipo:
 
 ```r

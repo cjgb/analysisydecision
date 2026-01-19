@@ -1,23 +1,22 @@
 ---
 author: rvaquerizo
 categories:
-- Formación
-- Seguros
-date: '2010-04-19T02:36:21-05:00'
-lastmod: '2025-07-13T15:57:01.694487'
+- formación
+- seguros
+date: '2010-04-19'
+lastmod: '2025-07-13'
 related:
 - el-modelo-multivariante-en-el-sector-asegurador-introduccion-i.md
 - el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v.md
 - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
 - el-modelo-multivariante-en-el-sector-asegurador-la-variable-dependiente-iii.md
 - monografico-analisis-de-factores-con-r-una-introduccion.md
-slug: el-modelo-multivariante-en-el-sector-asegurador-univariante-vs-multivariante-ii
-tags: []
+tags:
+- sin etiqueta
 title: El modelo multivariante en el sector asegurador. Univariante vs multivariante
   (II)
 url: /blog/el-modelo-multivariante-en-el-sector-asegurador-univariante-vs-multivariante-ii/
 ---
-
 Hace mucho tiempo se empleaban resultados univariantes en la estructura de la tarifa. Los recargos y descuentos de la prima eran función de un análisis factor a factor, no se detectaban las interacciones entre ellos. **La política de tarificación no era segmentada** y no se ajustaba a la realidad y nos podíamos encontrar la situación prototípica siguiente:
 
 ![multivariante-sexo.JPG](/images/2010/04/multivariante-sexo.JPG)

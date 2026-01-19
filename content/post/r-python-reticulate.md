@@ -1,25 +1,24 @@
 ---
 author: rvaquerizo
 categories:
-- Big Data
-- Formación
-- Monográficos
-- Python
-- R
-date: '2020-11-26T08:42:40-05:00'
-lastmod: '2025-07-13T16:05:42.490387'
+- big data
+- formación
+- monográficos
+- python
+- r
+date: '2020-11-26'
+lastmod: '2025-07-13'
 related:
 - trabajando-con-r-y-julia-desde-rstudio.md
 - mapas-estaticos-de-peru-con-r-y-python-a-nivel-de-distrito.md
 - evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso.md
 - leer-fichero-de-texto-de-ancho-fijo-con-python-pandas.md
 - analisis-de-textos-con-r.md
-slug: r-python-reticulate
-tags: []
+tags:
+- sin etiqueta
 title: R + Python = reticulate
 url: /blog/r-python-reticulate/
 ---
-
 ![](https://rstudio.github.io/reticulate/images/reticulated_python.png)
 
 He sido reticente a usar reticulate con R porque no me gusta R markdown y si he trabajado con Python no he necesitado R y viceversa. Ahora tengo en mente algún juego/proyecto de esos que se quedan siempre en el tintero por falta de tiempo o interés pero me están sirviendo para elaborar unos apuntes sobre R markdow y Python que voy a sintetizaros en esta entrada por si a alguien le fuera de utilidad.
