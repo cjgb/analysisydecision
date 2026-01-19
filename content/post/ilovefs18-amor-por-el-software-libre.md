@@ -18,6 +18,6 @@ url: /blog/ilovefs18-amor-por-el-software-libre/
 
 Los días 13 y 14 de Febrero no podéis perderos en Madrid el ILOVEFS18 un evento al que si estáis por aquí no podéis faltar. Para más información tenéis el siguiente link:
 
-<http://medialab-prado.es/article/ilovefs18>
+[http://medialab-prado.es/article/ilovefs18](http://medialab-prado.es/article/ilovefs18)
 
 ¡Nos vemos!

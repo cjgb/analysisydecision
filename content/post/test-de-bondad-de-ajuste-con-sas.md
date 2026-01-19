@@ -20,7 +20,7 @@ url: /blog/test-de-bondad-de-ajuste-con-sas/
 
 Pregunta que me han hecho hoy. Cómo hacer un test de bondad de ajuste con SAS y la respuesta que he dado:
 
-```r
+```sas
 data datos_aleatorios;
 do i=1 to 200000;
 *GENERAMOS UNAS VARIABLES ALEATORIAS;

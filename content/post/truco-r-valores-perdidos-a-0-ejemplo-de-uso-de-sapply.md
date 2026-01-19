@@ -21,6 +21,7 @@ url: /blog/truco-r-valores-perdidos-a-0-ejemplo-de-uso-de-sapply/
 Muy habitual partinos la cabeza con valores perdidos en R. Los NA pueden darnos algún quebradero de cabeza. Este truco es muy sencillo, transforma valores missing a 0 y nos sirve para aplicar funciones a _data.frame_ con la función _sapply_. Veamos el sencillo ejemplo:
 
 ```r
+```r
 x=c(1,23,5,9,0,NA)
 
 y=c(5,45,NA,78,NA,34)
@@ -40,6 +41,7 @@ sum(datafy,na.rm=TRUE)/nrow(dataf)
 
 Tenemos un _data.frame_ con dos variables que contienen valores perdidos, deseamos crear una función que pase estos valores a 0 y aplicarlo al _data.frame_ de partida:
 
+```r
 ```r
 haz.cero.na=function(x){
 

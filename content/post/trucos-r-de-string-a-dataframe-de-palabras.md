@@ -22,6 +22,7 @@ url: /blog/trucos-r-de-string-a-dataframe-de-palabras/
 Manejo de textos con R en este truco. Partimos de un vector de _string_ y deseamos dividir ese _string_ en palabras y posteriormente crear un _data frame_ de una sola columna con tantos elementos como palabras tenga nuestro vector de cadenas de texto. Es decir, vamos a transformar un texto en una tabla de palabras. Veamos una posible situación:
 
 ```r
+```r
 #Este es nuestro elemento inicial
 
 texto=c("Este es el elemento ","que me gustaría"," poner en una tabla")

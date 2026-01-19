@@ -22,7 +22,7 @@ url: /blog/truco-sas-grafico-de-correlaciones/
 
 Un truco SAS interesante para **representar matrices de correlaciones**. El ejemplo es muy sencillo, pero previamente tenéis que crear el conjunto de datos SAS para ilustrar el ejemplo. Así que lo primero que hay que hacer es ir a [este enlace](http://www.ats.ucla.edu/stat/sas/modules/subset.htm) y copiar el código necesario para crear el conjunto de datos SAS auto. Una vez tenemos ese conjunto de datos de 74 observaciones y 12 variables sólo tenemos que emplear el PROC CORR con una sintaxis muy sencilla:
 
-```r
+```sas
 ods graphics on;
 
 title 'Correlaciones datos Auto';
@@ -40,6 +40,6 @@ ods graphics off;
 
 Como vemos solo hay que hacer ODS GRAPHICS y la opción plot=matrix(histogram) SAS nos presenta un análisis gráfico muy completo de las correlaciones:
 
-[![](/images/2014/05/matriz_correlaciones_sas-300x300.png)](/images/2014/05/matriz_correlaciones_sas.png)
+![matriz_correlaciones_sas](/images/2014/05/matriz_correlaciones_sas.png)
 
 Os recomiendo jugar también con plot=scater para intervalos de confianza elipsoidales. Podréis encontrar literatura y ejemplos en la web. Saludos.

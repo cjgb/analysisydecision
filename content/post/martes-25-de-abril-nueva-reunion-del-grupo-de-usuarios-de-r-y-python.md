@@ -18,6 +18,6 @@ url: /blog/martes-25-de-abril-nueva-reunion-del-grupo-de-usuarios-de-r-y-python/
 
 Interesante reunión del grupo de usuarios de R de Madrid a la que debo asistir:
 
-<http://madrid.r-es.org/43-martes-25-de-abril-2017/>
+[http://madrid.r-es.org/43-martes-25-de-abril-2017/](http://madrid.r-es.org/43-martes-de-abril-2017/)
 
 Por allí nos veremos si no pasa nada. Saludos.

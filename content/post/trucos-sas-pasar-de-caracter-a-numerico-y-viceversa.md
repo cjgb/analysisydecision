@@ -25,6 +25,7 @@ Llega un gran número de visitas a AyD buscando como transformar en SAS variable
 **Transformar de caracter a numérico:**
 
 ```r
+```sas
 data uno;
 
 char="2009";
@@ -36,11 +37,14 @@ num2=input(char,best16.);
 run;
 ```
 
-`proc contents; quit;`
+```sas
+proc contents; quit;
+```
 
 Dos formas de hacerlo, multiplicando por 1 o bien con INPUT(variable,formato). Una transformación muy habitual, de caracter a fecha SAS:
 
 ```r
+```sas
 data uno;
 
 char="10/09/2009";
@@ -50,9 +54,12 @@ fecha=input(char,ddmmyy10.);
 run;
 ```
 
-``` proc contents; quit;``Transformar de numérico a caracter: ```
+```sas
+proc contents; quit;
+```
 
 ```r
+```sas
 data dos;
 
 num=2009;
@@ -64,4 +71,4 @@ run;
 proc contents; quit;
 ```
 
-`Transformamos con PUT(variable,formato). Creo que he dejado clara la metodología de todos modos si tenéis alguna duda o sugerencia... rvaquerizo@analisisydecision.es`
+`Transformamos con PUT(variable,formato). Creo que he dejado clara la metodología de todos modos si tenéis alguna duda o sugerencia... `rvaquerizo@analisisydecision.es``

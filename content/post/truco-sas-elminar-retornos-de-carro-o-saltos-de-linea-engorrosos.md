@@ -20,7 +20,7 @@ url: /blog/truco-sas-elminar-retornos-de-carro-o-saltos-de-linea-engorrosos/
 
 Cuando tenemos saltos de línea o retornos de carro que nos dificultan las lecturas de ficheros de texto podemos leer caracter a caracter con SAS y elminar esos caracteres incómodos.
 
-```r
+```sas
 data _null_;
 length char 1.;
 infile 'C:\fichero_de_entrada.TXT'  lrecl=1 recfm=F missover dsd;

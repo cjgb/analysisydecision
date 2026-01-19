@@ -12,10 +12,10 @@ related:
   - abierto-el-plazo-para-la-matricula-en-el-master-en-big-data-y-data-science-de-la-uned.md
 tags:
   - formación
-title: 15 horas de introducción a machine learnig
+title: 15 horas de introducción a machine learning
 url: /blog/15-horas-de-introduccion-a-machine-learnig/
 ---
 
-<http://www.dataschool.io/15-hours-of-expert-machine-learning-videos/>
+[http://www.dataschool.io/15-hours-of-expert-machine-learning-videos/](http://www.dataschool.io/15-hours-of-expert-machine-learning-videos/)
 
 Imprescindible.

@@ -12,7 +12,7 @@ related:
   - nuevo-curso-de-estadistica-con-r.md
 tags:
   - jornadas de r
-title: 'Aprende #rstats de forma presencial por muy poco'
+title: Aprende rstats de forma presencial por muy poco
 url: /blog/aprende-rstats-de-forma-presencial-por-muy-poco/
 ---
 
@@ -33,8 +33,8 @@ Precio matrícula 35 €
 
 Existe la posibilidad de beca para conseguir matrículas de 10 €
 
-Puedes encontrar toda la información en la siguiente web: <https://sites.google.com/site/seminariosestadistica/>
+Puedes encontrar toda la información en la siguiente web: [https://sites.google.com/site/seminariosestadistica/](https://sites.google.com/site/seminariosestadistica/)
 
-Si tienes dudas o algún interés contacta mediante el email: seminariosbayes@gmail.com
+Si tienes dudas o algún interés contacta mediante el email: `seminariosbayes@gmail.com`
 
 Siento ponerlo un poco tarde, pero aun estáis en fechas para inscribiros.

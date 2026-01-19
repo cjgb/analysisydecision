@@ -26,4 +26,4 @@ Se abre una nueva categoría en el blog dedicada al uso de herramientas para la 
 
 Como indico en el vídeo el trabajo está basado en una entrada de un foro que a día de hoy no localizo, fue donde vi el truco y aprendí a usar la función SWITCH de DAX. Espero, como siempre, que sea de utilidad para alguno de vosotros. Por otro lado, me gustaría dedicar esta entrada al JL Cañadas del blog [Muestrear no es pecado ](https://muestrear-no-es-pecado.netlify.app/) y destacar a su vez una frase de Pablo Picasso: «Aprender a pintar como los pintores del renacimiento me llevó unos años; pintar como los niños me llevó toda la vida.»
 
-[![Imagen de previsualización de YouTube](https://img.youtube.com/vi/j9Md08vHf78/0.jpg)](http://www.youtube.com/watch?v=j9Md08vHf78)
+![Imagen de previsualización de YouTube](https://img.youtube.com/vi/j9Md08vHf78/0.jpg)

@@ -51,6 +51,7 @@ EL NÚMERO DE OBSERVACIONES;
 
 %mend;
 
+```sas
 *EJEMPLO DE USO;
 
 data uno;
@@ -70,4 +71,4 @@ run;
 
 Como vemos es un código sencillo pero muy práctico ya que nos permite obtener el número de observaciones de forma instantánea. Con él podemos validar procesos, realizar cálculos,…
 
-Como siempre para cualquier duda o cuestión rvaquerizo@analisisydecision.es
+Como siempre para cualquier duda o cuestión `rvaquerizo@analisisydecision.es`

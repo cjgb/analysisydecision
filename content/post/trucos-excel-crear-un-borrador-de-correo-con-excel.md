@@ -20,22 +20,23 @@ url: /blog/trucos-excel-crear-un-borrador-de-correo-con-excel/
 
 Inicio una serie de mensajes con trucos de Excel que considero pueden ser de utilidad para realizar tareas habituales en nuestro trabajo diario. Este primer truco Excel consiste en una macro que nos permite crear en borradores correos electrónicos. También nos permitiría enviarlos directamente, pero en ese caso habríamos de tener permisos para que otras aplicaciones accedieran a Outlook. Veamos el código que emplea:
 
-```r
+```visual-basic
 Sub Correo()
 ```
 
-```r
+```visual-basic
 Dim ol As Object, myItem As Object
 
 Dim adjunto As String
 ```
 
-```r
+```visual-basic
 Set ol = CreateObject("outlook.application")
 
 Set myItem = ol.CreateItem(olMailItem)
 ```
 
+```visual-basic
 adjunto = "C:\\temp\\fichero.xls"
 
 With myItem
@@ -50,5 +51,6 @@ End With
 Set ol = Nothing
 
 End Sub
+```
 
-Creamos un objeto Outlook y a ese objeto le añadimos título, cuerpo, destinatario, un archivo adjunto de C:/temp y lo guardamos como borrador, si tenemos los suficientes permisos podremos enviarlos con .Send Como os podéis imaginar esta es la versión menos sofisticada de la macro y a ella podemos añadir bucles, busquedas,... Espero que pueda seros de utilidad. Por supuesto si no funciona o tenéis dudas rvaquerizo@analisisydecision.es
+Creamos un objeto Outlook y a ese objeto le añadimos título, cuerpo, destinatario, un archivo adjunto de C:/temp y lo guardamos como borrador, si tenemos los suficientes permisos podremos enviarlos con .Send Como os podéis imaginar esta es la versión menos sofisticada de la macro y a ella podemos añadir bucles, busquedas,... Espero que pueda seros de utilidad. Por supuesto si no funciona o tenéis dudas `rvaquerizo@analisisydecision.es`

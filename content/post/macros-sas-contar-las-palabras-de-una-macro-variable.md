@@ -23,6 +23,7 @@ url: /blog/macros-sas-contar-las-palabras-de-una-macro-variable/
 Una macro de SAS interesante que nos permite ahorrar código. Dada una macro variable necesitamos **contar el número de palabras** que tiene esta macro variable. Para ello vamos a crear una función con código macro:
 
 ```r
+```sas
 %let texto = uno dos tres;
 
 %macro cuenta(mv);

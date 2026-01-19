@@ -21,6 +21,7 @@ url: /blog/haciendo-ventanas-con-window-en-sas/
 No es habitual emplear SAS BASE para crear menús o ventanas, aunque con el PROC PMENU se han hecho maravillas. Hoy vamos a poner un ejemplo sencillo de uso de %WINDOW para hacer el menú más simple posible con SAS BASE, nuestro objetivo es consultar los datos de un cliente sobre una tabla. Creamos unos datos aleatorios para ilustrar el ejemplo y una macro para hacer consultas:
 
 ```r
+```sas
 data aleatorio(index=(id_cliente));
 do id_cliente=1 to 11000;
 	importe=ranuni(56)*450;
@@ -39,6 +40,7 @@ quit;
 Partimos de una tabla con 2 variables id_cliente e importe y deseamos crear un menú en el que nos liste los datos para un id_cliente. Lo más sencillo que podemos hacer con SAS BASE es:
 
 ```r
+```sas
 %window consulta color=grey
   #2 @2 'Seleccionar id_cliente:'
   #3 @26 id 8 attr=underline ;

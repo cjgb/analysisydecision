@@ -20,10 +20,11 @@ url: /blog/optical-character-recognition-ocr-con-r-y-tesseract/
 
 Una pincelada sobre Optical Character Recognition con R. El paquete tesseract de R permite aplicar el [reconocimiento óptico de caracteres](https://es.wikipedia.org/wiki/Tesseract_OCR) con R de una forma bastante sencilla, es uno de los múltiples líos en los que me estoy metiendo, si llega a buen puerto pondré más. Tenemos esta imagen:
 
-[![](/images/2020/06/prueba_OCR.png)](/images/2020/06/prueba_OCR.png)
+![prueba_OCR.png](/images/2020/06/prueba_OCR.png)
 
 Necesitamos tanto el paquete tesseract como el magick y ejecutando en R:
 
+```r
 ```r
 library(tesseract)
 library(magick)
@@ -33,6 +34,7 @@ str(img)
 cat(image_ocr(img))
 ```
 
+```r
 ```r
 Tipos de uniones (join) de tablas con Python Pandas
 

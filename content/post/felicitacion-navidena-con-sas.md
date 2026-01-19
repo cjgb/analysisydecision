@@ -18,8 +18,8 @@ url: /blog/felicitacion-navidena-con-sas/
 
 Ejecutad el siguiente código en SAS local:
 
-\`\`\`data _null_;\`
-
+```sas
+data _null_;
 /\*
 LA 440
 SI 494
@@ -64,5 +64,6 @@ call sound(587,200);
 call sound(784,200);
 
 run;
+```
 
 Buen ejemplo de la función CALL SOUND (frecuencia, duracion)

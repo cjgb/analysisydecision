@@ -22,4 +22,4 @@ url: /blog/si-buscamos-sexo-no-buscamos-trabajo/
 
 Es mas que evidente la alta correlación negativa entre las búsquedas de sexo y las búsquedas de trabajo. En 2009 se espera un baby boom. En 2009 todos estaremos buscando trabajo. ¿Una incongruencia? Por cierto, se busca mucho más sexo que trabajo.
 
-Prometo un monográfico de aproximación a Google Trends.
+Prometo un monográfico de aproximación a [Google Trends](http://www.google.com/trends)

@@ -22,7 +22,7 @@ url: /blog/truco-sas-macro-numero-de-dias-de-un-ano/
 
 Macro de SAS que te dice el número de días que tiene un año.
 
-```r
+```sas
 %macro dias_anio(anio);
 
 "31DEC&anio."d-"01JAN&anio."d+1

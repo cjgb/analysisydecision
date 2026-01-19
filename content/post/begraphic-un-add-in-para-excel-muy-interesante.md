@@ -22,9 +22,9 @@ title: Begraphic un add in para Excel muy interesante
 url: /blog/begraphic-un-add-in-para-excel-muy-interesante/
 ---
 
-![](https://www.begraphic.com/sites/default/files/resize/When_Presentation_Matter-276x322.png)
+![When_Presentation_Matter](/images/2011/12/When_Presentation_Matter-276x322.png)
 
-Me he descargado de [Begraphic ](http://www.begraphic.com/)un add in gratuito en su versión _lite_ para Excel que nos permite realizar algunos gráficos interesantes como velocímetros o mapas. También tiene la posibilidad de realizar _dashboard_ en hojas Excel. Todas estas tareas las realizamos mediante menús de forma bastante sencilla. En realidad es un add in que nos permite vincular las características de _formas_ de Excel a celdas, ¿a qué os suena esto? Efectivamente, a los [mapas de Excel que publico periódicamente en este sitio](https://analisisydecision.es/?s=mapa+excel). Pero en este caso la gente de Begraphic pone a vuestra disposición en [este enlace](http://www.d-maps.com) unos cuantos mapas más.
+Me he descargado de [Begraphic](http://www.begraphic.com/)un add in gratuito en su versión _lite_ para Excel que nos permite realizar algunos gráficos interesantes como velocímetros o mapas. También tiene la posibilidad de realizar _dashboard_ en hojas Excel. Todas estas tareas las realizamos mediante menús de forma bastante sencilla. En realidad es un add in que nos permite vincular las características de _formas_ de Excel a celdas, ¿a qué os suena esto? Efectivamente, a los [mapas de Excel que publico periódicamente en este sitio](https://analisisydecision.es/?s=mapa+excel). Pero en este caso la gente de Begraphic pone a vuestra disposición en [este enlace](http://www.d-maps.com) unos cuantos mapas más.
 
 ¿A qué estás esperando para registrarte y descargarte este complemento de Excel?
 

@@ -21,6 +21,6 @@ url: /blog/what-is-r-interesantes-videos-de-revolution-computing/
 
 Serie de 4 videos de REvolution que aconsejo ver:
 
-[![Imagen de previsualización de YouTube](https://img.youtube.com/vi/M2u7kbcXI_k/0.jpg)](http://www.youtube.com/watch?v=M2u7kbcXI_k)
+![Imagen de previsualización de YouTube](https://img.youtube.com/vi/M2u7kbcXI_k/0.jpg)
 
 La verdad es que no estoy siguiendo mucho a REvolution Computing. Si os soy sincero me pone mas WPS y el bridge to R.

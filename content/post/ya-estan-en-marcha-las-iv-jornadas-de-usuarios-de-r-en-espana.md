@@ -17,7 +17,7 @@ title: Ya están en marcha las IV jornadas de usuarios de R en España
 url: /blog/ya-estan-en-marcha-las-iv-jornadas-de-usuarios-de-r-en-espana/
 ---
 
-![](https://www.r-es.org/display7)
+![R-es logo](https://www.r-es.org/display7)
 
 En esta dirección tenéis toda la información necesaria:
 

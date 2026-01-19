@@ -28,6 +28,6 @@ Hay situaciones en las que tenemos datos en pdf y los necesitamos exportar a Exc
 
 El primer paso será la instalación de R y RStudio:
 
-Una vez hemos disponemos de R y Rstudio en nuestro equipo descarga [ este programa en R que te permitirá exportar una tabla a R](/images/2020/09/leer_pdf.R) con las instrucciones que resumo a continuación:
+Una vez hemos disponemos de R y Rstudio en nuestro equipo descarga [este programa en R que te permitirá exportar una tabla a R](/images/2020/09/leer_pdf.R) con las instrucciones que resumo a continuación:
 
 Esta entrada del blog quiero que sea dinámica, me gustaría mejorar el proceso porque tiene posibilidades de dar a conocer R a personas sin conocimientos de programación. Podemos crear desde una aplicación hasta leer url. Saludos.

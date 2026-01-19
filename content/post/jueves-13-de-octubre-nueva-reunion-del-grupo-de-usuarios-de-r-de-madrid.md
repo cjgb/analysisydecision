@@ -18,6 +18,6 @@ url: /blog/jueves-13-de-octubre-nueva-reunion-del-grupo-de-usuarios-de-r-de-madr
 
 Para más información:
 
-<http://madrid.r-es.org/38-jueves-13-de-octubre-2016/>
+[http://madrid.r-es.org/38-jueves-13-de-octubre-2016/](http://madrid.r-es.org/38-jueves-13-de-octubre-2016/)
 
 Si no llueve (cosas de las motos) por allí me veréis.

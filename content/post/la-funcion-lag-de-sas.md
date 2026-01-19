@@ -22,6 +22,7 @@ url: /blog/la-funcion-lag-de-sas/
 La función LAG de SAS nos devuelve el valor de la observación _n_-n de la variable indicada. Me explico con un ejemplo:
 
 ```r
+```sas
 data lagn;
 
 do i=1 to 10;
@@ -45,10 +46,11 @@ run;
 
 Esto produce:
 
-[![lag.PNG](/images/2010/10/lag.thumbnail.PNG)](/images/2010/10/lag.PNG "lag.PNG")
+![lag.PNG](/images/2010/10/lag.PNG "lag.PNG")
 LAG(i) nos da el valor de i para la observación anterior, LAG2(i) nos da el valor de las 2 observaciones anteriores,… En el caso de encontrarnos en las primeras observaciones el valor que devuelve es el missing. Con ella podemos evitar trabajar con RETAIN a la hora de hacer sumas acumuladas:
 
 ```r
+```sas
 data lagn;
 
 set lagn;
@@ -61,6 +63,7 @@ run;
 Calcular diferencias entre observaciones:
 
 ```r
+```sas
 data lagn;
 
 set lagn;
@@ -75,6 +78,7 @@ run;
 Y por supuesto medias móviles:
 
 ```r
+```sas
 data lagn;
 
 set lagn;

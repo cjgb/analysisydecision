@@ -20,6 +20,6 @@ El Grupo de Usuarios de R de Madrid no ha renovado el patrocinio con Revolution 
 
 Para reservar sólo tienes que rellenar este formulario web:
 
-<https://docs.google.com/forms/d/e/1FAIpQLSfSC1oSx99S-1M7hPgeZJ9SAHfmF2ilV292hadH_PqnfNqM6Q/viewform>
+[https://docs.google.com/forms/d/e/1FAIpQLSfSC1oSx99S-1M7hPgeZJ9SAHfmF2ilV292hadH_PqnfNqM6Q/viewform](https://docs.google.com/forms/d/e/1FAIpQLSfSC1oSx99S-1M7hPgeZJ9SAHfmF2ilV292hadH_PqnfNqM6Q/viewform)
 
 Yo ya he reservado un par de ellas que recogeré el 16 de diciembre en la siguiente reunión del Grupo. Saludos.

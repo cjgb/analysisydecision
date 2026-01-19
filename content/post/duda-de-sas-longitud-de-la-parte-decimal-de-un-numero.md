@@ -23,6 +23,7 @@ url: /blog/duda-de-sas-longitud-de-la-parte-decimal-de-un-numero/
 Una búsqueda que me ha llegado. Longitud de la parte decimal de un número con SAS. Nos sirve para recordar (me gusta insistir en el tema) como transformamos números en caracteres con SAS. La función PUT es la que realiza esta tarea:
 
 ```r
+```sas
 data _null_;
 
 y=67.34123432;

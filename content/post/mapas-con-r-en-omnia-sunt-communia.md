@@ -18,7 +18,7 @@ title: Mapas con R en Omnia sunt Communia!
 url: /blog/mapas-con-r-en-omnia-sunt-communia/
 ---
 
-EXCEPCIONAL serie monográfica de mensajes del[ blog Omnia sunt Communia! ](http://procomun.wordpress.com/)sobre la realización de mapas con R.
+EXCEPCIONAL serie monográfica de mensajes del[blog Omnia sunt Communia!](http://procomun.wordpress.com/)sobre la realización de mapas con R.
 
 - [Parte I mapa de la distribución de votos de las elecciones 2011 en España](http://procomun.wordpress.com/2012/02/18/maps_with_r_1/). Gran trabajo con los datos de mapas municipales del INE.
 - [Parte II mapas de puntos de colores](http://procomun.wordpress.com/2012/02/20/maps_with_r_2/). Increible el mapa de densidad de población.

@@ -31,6 +31,6 @@ Para entender como funciona la función DESREF lo mejor es pensar en lo siguient
 
 En este caso se ha hecho:
 
-[![ejemplo_trasponer_desref_2](/images/2016/03/ejemplo_trasponer_desref_2-300x95.png)](/images/2016/03/ejemplo_trasponer_desref_2.png)
+![ejemplo_trasponer_desref_2](/images/2016/03/ejemplo_trasponer_desref_2.png)
 
 La fórmula lee un dato que va de 3 en 3 a la izquierda y suma +1 o +2 si es el primer o el segundo elemento que deseamos en columna. Evidentemente esta fórmula es mejorable pero es un buen ejemplo de DESREF en Excel. Saludos.

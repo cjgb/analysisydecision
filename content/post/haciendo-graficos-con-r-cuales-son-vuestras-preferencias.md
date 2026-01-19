@@ -24,6 +24,7 @@ url: /blog/haciendo-graficos-con-r-c2bfcuales-son-vuestras-preferencias/
 ![base.png](/images/2010/11/base.png)
 
 ```r
+```r
 png('C://temp//base.png',bg = "white",
 
 res = 100, width=450, height=600)
@@ -39,6 +40,7 @@ dev.off()
 
 ![lattice.png](/images/2010/11/lattice.png)
 
+```r
 ```r
 png('C://temp//lattice.png',bg = "white",
 
@@ -61,6 +63,7 @@ dev.off()
 
 ![ggplot2.png](/images/2010/11/ggplot2.png)
 
+```r
 ```r
 png('C://temp//ggplot2.png',bg = "white",
 

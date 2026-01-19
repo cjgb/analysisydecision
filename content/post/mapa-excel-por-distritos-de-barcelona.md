@@ -19,7 +19,7 @@ title: Mapa Excel por distritos de Barcelona
 url: /blog/mapa-excel-por-distritos-de-barcelona/
 ---
 
-[![](/images/2013/06/Mapa-barrios-Barcelona-Excel.png)](/images/2013/06/Mapa-barrios-Barcelona-Excel.png)
+![Mapa-barrios-Barcelona-Excel](/images/2013/06/Mapa-barrios-Barcelona-Excel.png)
 
 De nuevo agradecer a [Manel Pla](https://analisisydecision.es/creando-un-mapa-en-excel-con-archivos-svg/#comment-21293) su colaboración con la bitácora. En esta ocasión pone a nuestra disposición un mapa de Barcelona por barrios que podéis descargaros en el siguiente enlace:
 

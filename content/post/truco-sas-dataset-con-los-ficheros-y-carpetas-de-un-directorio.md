@@ -21,6 +21,7 @@ url: /blog/truco-sas-dataset-con-los-ficheros-y-carpetas-de-un-directorio/
 En ocasiones necesitamos listar los archivos de un directorio. En SAS se puede hacer así. Creamos una tabla en WORK archivos con los nombres de los archivos y subcarpetas de un directorio:
 
 ```r
+```sas
 /*PONE ARCHIVOS DE UN DIRECTORIO EN TABLA SAS*/
 %macro archivos(directorio);
 data archivos;

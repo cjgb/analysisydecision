@@ -31,11 +31,14 @@ end;
 drop i j;
 run;
 
+```sas
 proc summary data=matriz;
 var varib:;
 output out=minimos min=;
 quit;
+```
 
+```sas
 data _null_;
 set minimos;
 minimo_total = min(of varib:);

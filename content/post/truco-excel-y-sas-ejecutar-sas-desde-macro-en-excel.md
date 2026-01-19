@@ -21,7 +21,7 @@ url: /blog/truco-excel-y-sas-ejecutar-sas-desde-macro-en-excel/
 
 Un truco muy malo hoy. Se trata de crear una macro de Excel que llame a un programa SAS y que además podamos pasar un parámetro. Es un código en Visual Basic que no tiene complejidad pero que puede ser útil. El código es:
 
-```r
+```visual-basic
 Sub ejecuta_SAS()
 
 '

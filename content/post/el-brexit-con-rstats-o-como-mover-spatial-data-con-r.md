@@ -18,14 +18,15 @@ tags:
   - maptools
   - spatial data
   - mapas
-title: 'El #brexit con #rstats o como mover spatial data con R'
+title: El brexit con rstats o como mover spatial data con R
 url: /blog/el-brexit-con-rstats-o-como-mover-spatial-data-con-r/
 ---
 
-[![bye_england](/images/2016/08/bye_england.gif)](/images/2016/08/bye_england.gif)
+![bye_england](/images/2016/08/bye_england.gif)
 
 Animación con R para ilustrar el uso de la función de maptools elide de código «insultantemente» sencillo:
 
+```r
 ```r
 library(maptools)
 library(animation)

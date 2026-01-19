@@ -21,6 +21,7 @@ url: /blog/trucos-sas-calcular-una-edad/
 No penséis que restar dos fechas y obtener una diferencia en años entre ellas es un tema baladí. Ejecutad el siguiente código SAS para calcular la diferencia en años:
 
 ```r
+```sas
 data uno;
 format fecha1 ddmmyy10.;
 do fecha1= 9000 to today();
@@ -46,6 +47,7 @@ run;
 Visualizad el conjunto de datos uno, la serie de edad asusta 28,28,27,25,24,24,… Está claro que algo falla. Hace ya tiempo que hablamos de ello en este mismo blog. Los ceros y los unos con los que guardan estas máquinas las cosas a veces nos juegan estas malas pasadas. Para evitar este problema os sugiero que empleéis la función de SAS YRDIF con la base ‘AGE’. Replicamos el ejemplo:
 
 ```r
+```sas
 data uno;
 format fecha1 ddmmyy10.;
 do fecha1= 9000 to today();

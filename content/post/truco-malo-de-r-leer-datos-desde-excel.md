@@ -23,13 +23,16 @@ url: /blog/truco-malo-de-r-leer-datos-desde-excel/
 Tenemos unos datos en Excel y deseamos crear un objeto en R con ellos. La forma más sencilla es seleccionar y copiar los datos y ejecutar el siguiente código:
 
 ```r
+```r
 datos = read.delim("clipboard")
 
 str(datos)
-```
+``````
 
 Muy sencillo, pero necesitaba «fustigarme». Si deseamos llevar los datos de R a Excel (el camino contrario) hacemos:
 
-`write.table(datos,"clipboard", sep="\t",row.names=FALSE)`
+```r
+write.table(datos,"clipboard", sep="\t",row.names=FALSE)
+```
 
 Igual de sencillo. No hagáis como yo, no olvidéis este código. Saludos.

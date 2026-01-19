@@ -20,7 +20,7 @@ url: /blog/truco-sas-duplicar-registros-si-cumplen-una-condicion/
 
 Mejor que truco, tontería SAS pero sirve para entender mejor el paso DATA. Se trata de duplicar registros si cumplen una condición. Es decir, añadimos una fila en SAS si se cumple la condición:
 
-```r
+```sas
 data uno;
 
 do id_cliente=1 to 10000;

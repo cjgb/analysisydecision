@@ -18,7 +18,7 @@ url: /blog/reunion-usuarios-de-r-en-madrid-26-de-noviembre-de-2014/
 
 El 26 de noviembre será la próxima reunión del grupo de usuarios de R en Madrid. En palabras de Carlos Ortega:
 
-```r
+```text
 Estamos ultimando la agenda de la siguiente reunión del grupo de Madrid.
 Si hay alguien interesado en presentar que se ponga en contacto conmigo,
 todavía hay hueco para algo más.

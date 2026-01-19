@@ -23,6 +23,7 @@ url: /blog/truco-sas-unir-todas-las-hojas-de-un-excel-en-una/
 Empleamos LIBNAME con SAS para acceder a Excel. Es un truco con limitaciones y que se tiene que ir mejorando a futuro. Se trata de leer todas las hojas de un libro Excel y pegarlas horizontalmente en otra hoja QUE NO DEBE EXISTIR PREVIAMENTE. La macro es la siguiente, no se acompaña de un ejemplo de uso debido a su sencillez:
 
 ```r
+```sas
 %macro une_excel(ubicacion, nombre_union);
 libname selec &ubicacion.
 

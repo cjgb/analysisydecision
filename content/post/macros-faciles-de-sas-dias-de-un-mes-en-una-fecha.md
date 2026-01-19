@@ -22,17 +22,16 @@ url: /blog/macros-faciles-de-sas-dias-de-un-mes-en-una-fecha/
 
 Macro de SAS fácil y rápida que nos permite saber **el número de días que tiene el mes de una fecha de SAS**. La tenía para la automatización de un código que con una media y daba guerra cuando se trataba de un año bisiesto. 3 líneas de código:
 
-`%macro dias(fec);`
-
-```r
+```sas
+%macro dias(fec);
 ((&fec-day(&fec)+1)+31-day((&fec-day(&fec)+1)+31))-(&fec-day(&fec))
-
 %mend;
 ```
 
 El razonamiento es sencillo. Se trata de poner a día 1 la fecha que le pasamos, irnos un mes después y hacer la diferencia. Por supuesto copiáis y pegáis el ejemplo en el editor:
 
 ```r
+```sas
 data uno;
 
 y="03FEB02"d; x=%dias(y); put x=;

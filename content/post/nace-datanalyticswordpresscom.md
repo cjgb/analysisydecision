@@ -16,8 +16,8 @@ title: Nace datanalytics.wordpress.com
 url: /blog/nace-datanalyticswordpresscom/
 ---
 
-Analisis y decision se despide de Carlos J. Gil Bellosta. Nace <http://datanalytics.wordpress.com/> su propio proyecto. Desde aquí tiene todo nuestro apoyo y su correspondiente link. Han sido 23 entradas de las que no quiero destacar ninguna; aunque él sabe que hay una que es una referencia en lengua española. La colaboración entre un gestor moderno de la información (él) y un dinosaurio reaccionario (yo) ha sido muy fructifera y esperamos que en su nueva etapa en <http://datanalytics.wordpress.com/> tenga tantos éxitos como los ha tenido aquí.
+Analisis y decision se despide de Carlos J. Gil Bellosta. [http://datanalytics.wordpress.com/](http://datanalytics.wordpress.com/) su propio proyecto. Desde aquí tiene todo nuestro apoyo y su correspondiente link. Han sido 23 entradas de las que no quiero destacar ninguna; aunque él sabe que hay una que es una referencia en lengua española. La colaboración entre un gestor moderno de la información (él) y un dinosaurio reaccionario (yo) ha sido muy fructifera y esperamos que en su nueva etapa en [http://datanalytics.wordpress.com/](http://datanalytics.wordpress.com/) tenga tantos éxitos como los ha tenido aquí.
 
-De todos modos, y como él mismo ha asegurado, esto no es un -hasta siempre- es un -hasta luego-, no desaparece como colaborador. Y evidentemente habrá contínuas referencias a <http://datanalytics.wordpress.com/> en esta bitácora. De hecho en este mismo mensaje tiene hasta 3 links para ayudarle a posicionarse mejor en Google.
+De todos modos, y como él mismo ha asegurado, esto no es un -hasta siempre- es un -hasta luego-, no desaparece como colaborador. Y evidentemente habrá contínuas referencias a [http://datanalytics.wordpress.com/](http://datanalytics.wordpress.com/) en esta bitácora. De hecho en este mismo mensaje tiene hasta 3 links para ayudarle a posicionarse mejor en Google.
 
 Muchos éxitos amigo.

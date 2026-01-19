@@ -22,6 +22,6 @@ De nuevo reunión del Grupo de Usuarios de R de Madrid. La agenda será:
 - Carlos Ortega: “Calidad del Aire de Madrid”.
 - Karel Rodriguez: “Price Sensitivity Metr (PSM) in R.
 
-Para más información <http://madrid.r-es.org/jueves-14-de-enero-2016/>
+Para más información [http://madrid.r-es.org/jueves-14-de-enero-2016/](http://madrid.r-es.org/jueves-14-de-enero-2016/)
 
 Por motivos de trabajo no podré asistir a la reunión.

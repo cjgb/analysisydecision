@@ -24,7 +24,7 @@ url: /blog/truco-sas-ver-el-contenido-de-un-formato/
 
 Para ver los valores que toma un formato con SAS tenemos que emplear el PROC FORMAT. La sintaxis es muy sencilla:
 
-```r
+```sas
 proc format
 library = work.formats fmtlib;
 select &formato.

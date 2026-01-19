@@ -23,11 +23,12 @@ title: Espacios en SAS
 url: /blog/espacios-en-sas/
 ---
 
-![](/images/2014/01/Blancos-en-SAS.png)
+![Blancos-en-SAS.png](/images/2014/01/Blancos-en-SAS.png)
 
 Las funciones SAS más habituales para eliminar blancos son las que tenéis en la figura de arriba. Para llegar a ese conjunto de datos SAS hemos ejecutado el siguiente paso data:
 
 ```r
+```sas
 data ejemplo;
 
 st = "  Cuando  brilla   el sol    ";

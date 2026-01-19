@@ -27,12 +27,14 @@ Pongo a vuestra disposición un archivo Excel que nos permite la realización de
 [En este link podéis descargaros el archivo](/images/2010/11/provincias.xls "provincias.xls"). He elegido formato Excel 2003 para el archivo, de este modo lo podréis utilizar muchos de vosotros. Si alguien desea el formato 2007 que lo diga. De momento es una primera versión a la que iré añadiendo un mayor número de funcionalidades. Se trata de un gráfico en el que podemos variar el color de cada una de las provincias mediante la siguiente macro:
 
 ```r
+```visual-basic
 Sub prov()
 
 For i = 4 To 53
 ```
 
 ```r
+```visual-basic
 ca = Cells(i, 12)
 
 colorin = Cells(i, 13)

@@ -32,13 +32,15 @@ argentina=gadm
 
 plot(argentina)
 
-[![argentina_R](/images/2015/07/argentina_R.png)](/images/2015/07/argentina_R.png)
+![argentina_R](/images/2015/07/argentina_R.png)
 
 Es sencillo trabajar con el objeto y colorear en función de valores. Un ejemplo simplista:
 
+```r
 argentina$NAME_1
-datos\<-c(1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+datos<-c(1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
 
 plot(argentina,col=datos)
+```
 
 Pinta de negro el estado de Buenos Aires. A ver si dispongo de más tiempo y puedo desarrollar más esta entrada. Saludos.

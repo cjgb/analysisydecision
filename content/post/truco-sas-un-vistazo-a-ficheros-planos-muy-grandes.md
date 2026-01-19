@@ -21,6 +21,7 @@ url: /blog/truco-sas-un-vistazo-a-ficheros-planos-muy-grandes/
 Alguna vez no habéis podido abrir un fichero de texto muy grande para comprobar si tiene cabeceras o conocer el separador de campos. Es habitual emplear para esto el gran UltraEdit. Pero podemos emplear el PROC FSLIST de SAS para poder hacer esta tarea y se nos abrirá de inmediato una vista del fichero en una ventana de nuestra sesión SAS. La sintaxis muy sencilla:
 
 ```r
+```sas
 proc fslist fileref="Z:\temp\archivo_enorme.txt";
 
 quit;

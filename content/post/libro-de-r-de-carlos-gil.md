@@ -18,6 +18,6 @@ title: Libro de R de Carlos Gil
 url: /blog/libro-de-r-de-carlos-gil/
 ---
 
-Muchos de los lectores de esta bitácora conocéis <https://www.datanalytics.com/> el blog de Carlos Gil. [En él ha publicado un libro/manual de R de acceso libre](https://www.datanalytics.com/libro_r/) para todos aquellos que necesitéis una guía que abarque desde lo más básico al tratamiento de datos con R pasando por Shiny y análisis estadísticos de esos viejunos tan denostados últimamente.
+Muchos de los lectores de esta bitácora conocéis [https://www.datanalytics.com/](https://www.datanalytics.com/) el blog de Carlos Gil. [En él ha publicado un libro/manual de R de acceso libre](https://www.datanalytics.com/libro_r/) para todos aquellos que necesitéis una guía que abarque desde lo más básico al tratamiento de datos con R pasando por Shiny y análisis estadísticos de esos viejunos tan denostados últimamente.
 
-De todas formas no sé como no deja este mundillo y se dedica plenamente a su [faceta hostelera](https://martinacocina.es/). En palabras de mi hijo: «El mejor brunch de Madrid, un 10».
+De todas formas no sé como no deja este mundillo y se dedica plenamente a su [https://martinacocina.es/](https://martinacocina.es/). En palabras de mi hijo: «El mejor brunch de Madrid, un 10».

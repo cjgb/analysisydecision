@@ -18,6 +18,6 @@ url: /blog/comienza-la-cuenta-atras/
 
 ¿De dónde sacamos la pasta?
 
-<http://www.rankia.com/foros/preferentes/temas/457712-banca-necesita-4-000-millones-para-pagar-preferentes-convertibles>
+[http://www.rankia.com/foros/preferentes/temas/457712-banca-necesita-4-000-millones-para-pagar-preferentes-convertibles](http://www.rankia.com/foros/preferentes/temas/457712-banca-necesita-4-000-millones-para-pagar-preferentes-convertibles)
 
 No digáis que no avisé y eso que de momento el pequeño ahorrador no se verá afectado, veremos en 2012. Merece un análisis serio.

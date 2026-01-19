@@ -20,9 +20,9 @@ title: Newsletter de Leonardo Hansa. Aprende a programar R
 url: /blog/newsletter-de-leonardo-hansa-aprende-a-programar-r/
 ---
 
-A raiz de [un comentario en Twitter de Leo Hansa](https://twitter.com/l_hansa/status/1499647910308368385 "hola") hemos descubierto una newsletter que puede resultar de interés para todos aquellos que os estáis acercando a la programación con #rstats.
+A raiz de [un comentario en Twitter de Leo Hansa](https://twitter.com/l_hansa/status/1499647910308368385) hemos descubierto una newsletter que puede resultar de interés para todos aquellos que os estáis acercando a la programación con #rstats.
 
-[PROGRAMO PORQUE ES RESULTON](https://leonardohansa.com/ "PROGRAMO PORQUE ES RESULTON")
+[PROGRAMO PORQUE ES RESULTON](https://leonardohansa.com/)
 
 Podéis suscribiros con vuestro correo electrónico y podéis cancelar la suscripción del mismo modo.
 

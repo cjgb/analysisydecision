@@ -20,7 +20,7 @@ url: /blog/de-sql-server-a-python-pandas-dataframe/
 
 Nueva duda que me han planteado, cómo pasar la extracción de una consulta en BBDD SQL server a un dataframe de pandas. Es sencillo, pero siempre tenemos que tener configurado el origen de datos ODBC, doy por sentado que esa tarea ya está hecha. El paquete que vamos a usar es pip install pyodbc y el ejemplo de uso es el siguiente:
 
-```r
+```python
 import pyodbc
 import pandas as pd
 

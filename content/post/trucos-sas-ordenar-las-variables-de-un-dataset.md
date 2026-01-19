@@ -20,13 +20,13 @@ url: /blog/trucos-sas-ordenar-las-variables-de-un-dataset/
 
 Para cambiar el orden de las variables en un conjunto de datos SAS hemos de emplear RETAIN antes de SET. Este truco es la respuesta a una duda planteada en el blog. Un vistazo rápido al ejemplo entenderemos la sintaxis:
 
-```r
+```sas
 data datos;
 do i=1 to 20;
 importe1 = ranuni(8)*100;
 importe2 = ranuni(3)*100;
 importe3 = ranuni(1)*100;
-id = put(i,z5.);
+id = put(i,z5_);
 output;
 end;
 drop i;

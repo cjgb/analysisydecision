@@ -22,10 +22,12 @@ ERROR: url is not a valid access method. The access method names are : DDE, EMAI
 
 He encontrado una pega que no me gusta al WPS:
 
+```sas
 filename pepin url «http://news.google.es/news?q=banco santander&oe=utf-8&rls=org.mozilla:es-ES:official&client=firefox-a&um=1&ie=UTF-8&sa=N&hl=es&tab=wn»;
 
 data uno;
 infile pepin;
 run;
+```
 
 No se puede hacer en WPS. Desconozco si es necesario otro modulo, pero es un problema. Aun asi me sigue gustando mucho.

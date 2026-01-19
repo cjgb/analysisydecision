@@ -35,6 +35,7 @@ output;
 end;
 run;
 
+```sas
 data fila_nula;
 set aleatorio;
 nulo=0;

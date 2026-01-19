@@ -18,7 +18,7 @@ url: /blog/sas-te-felicita-la-navidad/
 
 Mirad para que sirve call sound:
 
-```r
+```sas
 data _null_;
 call sound(659,100);
 call sound(659,100);

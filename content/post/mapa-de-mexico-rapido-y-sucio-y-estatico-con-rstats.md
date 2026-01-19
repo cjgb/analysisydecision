@@ -12,7 +12,7 @@ related:
   - mapas-con-spatial-data-de-r.md
 tags:
   - formación
-title: 'Mapa de México rápido (y sucio) y estático con #rstats'
+title: Mapa de México rápido (y sucio) y estático con rstats
 url: /blog/mapa-de-mexico-rapido-y-sucio-y-estatico-con-rstats/
 ---
 
@@ -20,6 +20,7 @@ url: /blog/mapa-de-mexico-rapido-y-sucio-y-estatico-con-rstats/
 
 No sabía como mostraros el funcionamiento de getData del paquete raster para tener que evitaros ir a GADM y descargar los correspondientes mapas. Bueno, pues se me ha ocurrido hacer una entrada que tenga el menor número de líneas posibles y que genere un mapa. No me lo tengáis mucho en cuenta:
 
+```r
 ```r
 library(ggplot2)
 library(raster)

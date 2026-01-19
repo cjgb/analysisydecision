@@ -22,10 +22,11 @@ url: /blog/lectura-de-ficheros-sas7bdat-de-sas-directamente-con-r/
 
 Un post de **BIOSTATMATT** que nos conduce a un código en R que nos permite leer datasets de SAS directamente con R sin necesidad de tener SAS. Un problema recurrente que abordaré con más detenimiento otro día [ahora me voy a pescar]. Aquí tenéis el enlace:
 
-<http://biostatmatt.com/archives/1216>
+[http://biostatmatt.com/archives/1216](http://biostatmatt.com/archives/1216)
 
 Sólo tenéis que cargar la función**read.sas7bdat** que tenéis en [este enlace](http://biostatmatt.com/R/sas7bdat.R). Y ya podéis leer conjuntos de datos SAS. Ejemplo:
 
+```r
 ```r
 source("http://biostatmatt.com/R/sas7bdat.R")
 

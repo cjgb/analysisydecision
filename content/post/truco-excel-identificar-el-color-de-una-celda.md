@@ -20,11 +20,11 @@ title: Truco Excel. Identificar el color de una celda
 url: /blog/truco-excel-identificar-el-color-de-una-celda/
 ---
 
-[![](/images/2013/11/color_celda_excel.png)](/images/2013/11/color_celda_excel.png)
+![color_celda_excel](/images/2013/11/color_celda_excel.png)
 
 Para identificar el color de una celda en Excel podemos emplear Interior.Color del siguiente modo:
 
-```r
+```visual-basic
 Sub Macro1()
 
 For i = 3 To 6

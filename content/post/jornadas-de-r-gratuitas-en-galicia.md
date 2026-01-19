@@ -19,6 +19,6 @@ url: /blog/jornadas-de-r-gratuitas-en-galicia/
 
 Buena iniciativa en la que seguro que algún lector está interesado:
 
-<http://www.galpon.org/content/2a-xornada-dos-sabados-libres-na-altamar-estatistica-con-r-i>
+[http://www.galpon.org/content/2a-xornada-dos-sabados-libres-na-altamar-estatistica-con-r-i](http://www.galpon.org/content/2a-xornada-dos-sabados-libres-na-altamar-estatistica-con-r-i)
 
 [En este enlace](http://www.galpon.org/wiki/index.php?title=Actividades#Estat.C3.ADstica_con_R) podéis ver con más detalle el contenido del curso. Saludos.

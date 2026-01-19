@@ -38,6 +38,7 @@ e 1 1 1 0 0
 Yo planteo la siguiente metodología:
 
 ```r
+```sas
 *CONJUNTO DE DATOS DE PARTIDA;
 data original;
 input nodo1 nodo2;

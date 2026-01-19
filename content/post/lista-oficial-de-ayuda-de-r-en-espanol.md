@@ -20,7 +20,7 @@ Desde hace apenas unas semanas existe una lista de correo de ayuda en español p
 
 Para darse de alta en ella sólo hay que seguir las instrucciones contenidas en el siguiente enlace:
 
-<https://stat.ethz.ch/mailman/listinfo/r-help-es>
+[https://stat.ethz.ch/mailman/listinfo/r-help-es](https://stat.ethz.ch/mailman/listinfo/r-help-es)
 
 Los usuarios de R están más que invitados a participar en ella y ayudar a crear una verdadera comunidad de usuarios, aprovechando sinergias, compartiendo experiencias, etc.
 

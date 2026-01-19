@@ -19,12 +19,13 @@ title: Truco R. Paletas de colores en R
 url: /blog/truco-r-paletas-de-colores-en-r/
 ---
 
-[](/images/2011/01/paletas_colores_r.png "Paletas de colores en R")
+![Paletas de colores en R](/images/2011/01/paletas_colores_r.png "Paletas de colores en R")
 
 ![Paletas de colores en R](/images/2011/01/paletas_colores_r.png)
 
 En cuántas ocasiones habéis querido dar color a un gráfico y por aligerar código creáis gráficos de este tipo:
 
+```r
 ```r
 x = rpois(100,as.integer(runif(10)*1000))
 
@@ -41,6 +42,7 @@ Pues en R esta labor puede costarnos muy poco si empleamos las paletas de colore
 Ejemplos de uso:
 
 ```r
+```r
 require(graphics)
 
 barplot(sort(x),col = rainbow(x),main="Paleta rainbow")
@@ -52,6 +54,7 @@ barplot(sort(x),col = topo.colors(length(x)),main="Paleta topo")
 
 Comparad, metemos los 4 gráficos en una sóla ventana y tendremos la figura con la que iniciamos esta entrada:
 
+```r
 ```r
 png(file="C:\\temp\\paletas_colores_R.png",
 

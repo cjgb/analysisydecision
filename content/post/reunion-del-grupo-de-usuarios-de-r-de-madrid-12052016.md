@@ -16,7 +16,7 @@ title: Reunión del Grupo de Usuarios de R de Madrid 12/05/2016
 url: /blog/reunion-del-grupo-de-usuarios-de-r-de-madrid-12052016/
 ---
 
-Nueva reunión del [Grupo de Usuarios de R de Madrid ](http://madrid.r-es.org/)en MediaLab Prado. No está publicado en la web por temas de cerrar definitivamente las agendas. De momento las propuestas son:
+Nueva reunión del [Grupo de Usuarios de R de Madrid](http://madrid.r-es.org/)en MediaLab Prado. No está publicado en la web por temas de cerrar definitivamente las agendas. De momento las propuestas son:
 
 • Iñaki Úcar: «Presentación de simmer (Discrete Event Simulation in R)». Iñaki nos presentará simmer. Un paquete que ha creado para poder realizar análisis y simulaciones de eventos discretos (DES) en R. Con este paquete se pueden realizar simulaciones para el estudio de la evolución de sistemas teniendo en cuenta diferentes tipos de gestión de colas.
 

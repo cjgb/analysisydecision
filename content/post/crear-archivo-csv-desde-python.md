@@ -20,7 +20,7 @@ url: /blog/crear-archivo-csv-desde-python/
 
 Con la librería [sas7bdat de Python](https://pypi.org/project/sas7bdat/) podemos leer archivos SAS y crear directamente un data frame, es la mejor librería para hacerlo, si la tabla SAS que deseáis leer está comprimida (compress=yes) con pandas no podréis hacerlo. Pero tengo que agradecer a mi compañero Juan que me haya descubierto la función convert_file para pasar directamente el archivo SAS a csv, es más eficiente y parece que consume menos recursos del equipo. La sintaxis es muy sencilla:
 
-```r
+```python
 import pandas as pd
 from sas7bdat import SAS7BDAT
 

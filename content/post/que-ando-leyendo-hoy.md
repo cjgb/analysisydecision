@@ -18,7 +18,7 @@ url: /blog/que-ando-leyendo-hoy/
 
 Páginas muy interesantes de R:
 
-[http://www.r-bloggers.com/ ](http://www.r-bloggers.com/)
+[http://www.r-bloggers.com/](http://www.r-bloggers.com/)
 
 [Planet R](http://planetr.stderr.org/)
 

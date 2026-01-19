@@ -24,6 +24,7 @@ Un ejemplo de trabajo con datos en R. Transformamos factores de dos formas disti
 Manejo de datos con **within** :
 
 ```r
+```r
 datos library(car)
 
 datos prog id reconocimientos reconocimientos2 = recode(num_awards,"0='Sin renococimiento';1='1 reconocimiento';
@@ -35,6 +36,7 @@ else='Más de un reconocimiento'")
 
 Manejo de datos con **attach/detach** :
 
+```r
 ```r
 attach(datos)
 

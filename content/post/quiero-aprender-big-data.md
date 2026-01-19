@@ -19,10 +19,10 @@ url: /blog/quiero-aprender-big-data/
 
 Hoy me han dicho esto. Y mi respuesta ha sido un correo electrónico con estas dos imágenes. El Big Data Landscape 2013:
 
-![](https://3.bp.blogspot.com/-xwq0p0FgSK4/UQp8Aet5InI/AAAAAAAAATo/vAKlJGRzHb8/s1600/The+Big+Data+Landscape.png)
+![The Big Data Landscape 2013](https://3.bp.blogspot.com/-xwq0p0FgSK4/UQp8Aet5InI/AAAAAAAAATo/vAKlJGRzHb8/s1600/The+Big+Data+Landscape.png)
 
 Y un Big Data Landscape de 2016:
 
-![](https://mattturck.com/wp-content/uploads/2016/03/Big-Data-Landscape-2016-v18-FINAL.png)
+![Big Data Landscape 2016](https://mattturck.com/wp-content/uploads/2016/03/Big-Data-Landscape-2016-v18-FINAL.png)
 
 ¿Se puede «aprender» Big Data? Aprende que se puede hacer con los datos y aprende R. Como recomendación: di _bigdaita_ así parece que controlas.
