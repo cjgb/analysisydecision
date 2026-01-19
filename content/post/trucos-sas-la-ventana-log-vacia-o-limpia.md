@@ -15,6 +15,7 @@ related:
 tags:
   - log
   - proc printto
+  - sas procs
 title: Trucos SAS. La ventana LOG vacía o limpia
 url: /blog/trucos-sas-la-ventana-log-vacia-o-limpia/
 ---

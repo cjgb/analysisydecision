@@ -15,6 +15,7 @@ related:
 tags:
   - infile
   - proc import
+  - sas procs
 title: Ayudadme. Importar a SAS texto con comillas
 url: /blog/ayudadme-importar-a-sas-texto-con-comillas/
 ---

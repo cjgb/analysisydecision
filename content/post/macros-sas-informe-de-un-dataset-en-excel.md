@@ -15,6 +15,7 @@ tags:
   - excel
   - ods
   - proc datasets
+  - sas procs
 title: Macros SAS. Informe de un dataset en Excel
 url: /blog/macros-sas-informe-de-un-dataset-en-excel/
 ---

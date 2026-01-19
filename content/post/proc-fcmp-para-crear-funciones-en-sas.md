@@ -14,6 +14,7 @@ related:
   - trabajo-con-fechas-sas-funciones-fecha.md
 tags:
   - proc fcmp
+  - sas procs
 title: PROC FCMP para crear funciones en SAS
 url: /blog/proc-fcmp-para-crear-funciones-en-sas/
 ---

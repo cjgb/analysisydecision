@@ -18,6 +18,7 @@ related:
 tags:
   - proc logistic
   - regresión logística
+  - sas procs
 title: Monográfico. Un poco de PROC LOGISTIC
 url: /blog/monografico-un-poco-de-proc-logistic/
 ---

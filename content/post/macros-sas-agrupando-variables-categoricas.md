@@ -16,6 +16,7 @@ tags:
   - agrupar valores discretos
   - macros sas
   - proc freq
+  - sas procs
 title: Macros SAS. Agrupando variables categóricas
 url: /blog/macros-sas-agrupando-variables-categoricas/
 ---

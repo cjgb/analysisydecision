@@ -16,6 +16,7 @@ tags:
   - annotate
   - graph
   - proc ganno
+  - sas procs
 title: Un acercamiento a GRAPH. ANNOTATE macros
 url: /blog/un-acercamiento-a-graph-annotate-macros/
 ---

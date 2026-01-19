@@ -17,6 +17,7 @@ tags:
   - proc sql
   - sas
   - where
+  - sas procs
 title: Trucos SAS. Identificar registros duplicados
 url: /blog/trucos-sas-identificar-registros-duplicados/
 ---

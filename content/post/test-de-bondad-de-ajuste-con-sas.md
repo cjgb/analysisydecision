@@ -13,6 +13,7 @@ related:
   - determinar-el-mimino-tamano-muestral-para-detectar-un-cambio-en-la-fraccion-no-conforme.md
 tags:
   - proc univariate
+  - sas procs
 title: Test de bondad de ajuste con SAS
 url: /blog/test-de-bondad-de-ajuste-con-sas/
 ---

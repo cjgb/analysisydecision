@@ -15,6 +15,7 @@ related:
 tags:
   - objetos hash
   - proc sort
+  - sas procs
 title: Laboratorio de código SAS. Ordenaciones con HASH vs. PROC SORT
 url: /blog/laboratorio-de-codigo-sas-ordenaciones-con-hash-vs-proc-sort/
 ---

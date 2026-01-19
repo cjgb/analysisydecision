@@ -15,6 +15,7 @@ tags:
   - case
   - proc sql
   - sas
+  - sas procs
 title: Uso de CASE en PROC SQL
 url: /blog/uso-de-case-en-proc-sql/
 ---

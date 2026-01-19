@@ -17,6 +17,7 @@ tags:
   - odds ratio
   - proc logistic
   - wald
+  - sas procs
 title: Cuidado con el p-valor. Depende del tamaño de la muestra
 url: /blog/cuidado-con-el-p-valor-en-los-estudios-de-independencia/
 ---

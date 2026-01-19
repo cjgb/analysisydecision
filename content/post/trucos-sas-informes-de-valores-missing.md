@@ -17,6 +17,7 @@ tags:
   - proc sql
   - sas
   - missing values
+  - sas procs
 title: Trucos SAS. Informes de valores missing
 url: /blog/trucos-sas-informes-de-valores-missing/
 ---

@@ -15,6 +15,7 @@ related:
 tags:
   - knn
   - proc discrim
+  - sas procs
 title: KNN con SAS. Mejorando K-Means
 url: /blog/knn-con-sas-mejorando-k-means/
 ---

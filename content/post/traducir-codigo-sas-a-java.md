@@ -12,7 +12,9 @@ related:
   - sigo-migrando-de-sas-a-wps.md
   - wps-en-el-mercado-espanol.md
 tags:
-  - sas java wps
+  - sas
+  - java
+  - wps
 title: Traducir código SAS a Java
 url: /blog/traducir-codigo-sas-a-java/
 ---

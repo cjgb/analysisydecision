@@ -18,6 +18,7 @@ tags:
   - proc sql
   - separated by
   - union datasets
+  - sas procs
 title: Trucos SAS. Unión de múltiples tablas SAS con un nombre parecido
 url: /blog/trucos-sas-union-de-multiples-tablas-sas-con-un-nombre-parecido/
 ---

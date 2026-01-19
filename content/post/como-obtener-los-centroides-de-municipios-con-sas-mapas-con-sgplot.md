@@ -18,6 +18,7 @@ tags:
   - proc sgplot
   - shapefile
   - mapas
+  - sas procs
 title: Como obtener los centroides de municipios con SAS. Mapas con SGPLOT
 url: /blog/como-obtener-los-centroides-de-municipios-con-sas-mapas-con-sgplot/
 ---

@@ -18,6 +18,7 @@ tags:
   - proc logistic
   - regresión logística
   - regresión poisson
+  - sas procs
 title: Qué pasa si uso una regresión de poisson en vez de una regresión logística
 url: /blog/que-pasa-si-uso-una-regresion-de-poisson-en-vez-de-una-regresion-logistica/
 ---

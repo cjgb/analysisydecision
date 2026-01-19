@@ -18,6 +18,7 @@ tags:
   - retain
   - trimn
   - sas
+  - sas procs
 title: Truco SAS. Tablas de una librería en una macro variable
 url: /blog/truco-sas-tablas-de-una-libreria-en-una-macro-variable/
 ---

@@ -15,6 +15,7 @@ tags:
   - annotate
   - graph
   - proc ganno
+  - sas procs
 title: Un acercamiento a GRAPH. PROC GANNO
 url: /blog/un-acercamiento-a-graph-proc-ganno/
 ---

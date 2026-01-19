@@ -14,6 +14,7 @@ related:
 tags:
   - change
   - proc datasets
+  - sas procs
 title: Trucos SAS. Modificar el nombre de una tabla con código
 url: /blog/trucos-sas-modificar-el-nombre-de-una-tabla-con-codigo/
 ---

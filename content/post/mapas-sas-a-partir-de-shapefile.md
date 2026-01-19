@@ -17,6 +17,7 @@ tags:
   - proc gmap
   - proc mapimport
   - mapas
+  - sas procs
 title: Mapas SAS a partir de shapefile
 url: /blog/mapas-sas-a-partir-de-shapefile/
 ---

@@ -15,6 +15,7 @@ related:
 tags:
   - matriz de correlaciones
   - proc corr
+  - sas procs
 title: Truco SAS. Gráfico de correlaciones
 url: /blog/truco-sas-grafico-de-correlaciones/
 ---

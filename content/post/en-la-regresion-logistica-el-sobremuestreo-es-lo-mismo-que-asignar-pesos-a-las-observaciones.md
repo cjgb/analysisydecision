@@ -18,6 +18,7 @@ tags:
   - offset
   - proc logistic
   - sobremuestreo
+  - sas procs
 title: En la regresión logística ¿el sobremuestreo es lo mismo que asignar pesos a las observaciones?
 url: /blog/en-la-regresion-logistica-c2bfel-sobremuestreo-es-lo-mismo-que-asignar-pesos-a-las-observaciones/
 ---

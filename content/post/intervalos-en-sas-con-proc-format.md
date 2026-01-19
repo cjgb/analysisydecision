@@ -13,6 +13,7 @@ related:
   - trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados.md
 tags:
   - proc format
+  - sas procs
 title: Intervalos en SAS con PROC FORMAT
 url: /blog/intervalos-en-sas-con-proc-format/
 ---

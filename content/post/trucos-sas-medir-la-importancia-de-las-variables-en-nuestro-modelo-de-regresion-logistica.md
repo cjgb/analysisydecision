@@ -19,6 +19,7 @@ tags:
   - proc logistic
   - random forest
   - regresión logística
+  - sas procs
 title: Trucos SAS. Medir la importancia de las variables en nuestro modelo de regresión logística
 url: /blog/trucos-sas-medir-la-importancia-de-las-variables-en-nuestro-modelo-de-regresion-logistica/
 ---

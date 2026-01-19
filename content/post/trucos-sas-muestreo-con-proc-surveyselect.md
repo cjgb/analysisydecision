@@ -15,6 +15,7 @@ related:
 tags:
   - muestreo con sas
   - proc surveyselect
+  - sas procs
 title: Trucos SAS. Muestreo con PROC SURVEYSELECT
 url: /blog/trucos-sas-muestreo-con-proc-surveyselect/
 ---

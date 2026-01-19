@@ -17,6 +17,7 @@ tags:
   - noexec
   - proc sql
   - validate
+  - sas procs
 title: Trucos SAS. Validación de consultas con PROC SQL
 url: /blog/trucos-sas-validacion-de-consultas-con-proc-sql/
 ---

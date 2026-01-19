@@ -14,6 +14,7 @@ related:
   - determinar-el-mimino-tamano-muestral-para-detectar-un-cambio-en-la-fraccion-no-conforme.md
 tags:
   - proc glm
+  - sas procs
 title: Test de Levene con SAS
 url: /blog/test-de-levene-con-sas/
 ---

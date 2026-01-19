@@ -16,6 +16,7 @@ related:
 tags:
   - outliers
   - proc univariate
+  - sas procs
 title: Macros (fáciles) de SAS. Eliminar outliers en una variable
 url: /blog/macros-faciles-de-sas-eliminar-outliers-en-una-variable/
 ---

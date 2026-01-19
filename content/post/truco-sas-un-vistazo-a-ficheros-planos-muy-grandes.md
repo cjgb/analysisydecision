@@ -13,6 +13,7 @@ related:
   - truco-sas-elminar-retornos-de-carro-o-saltos-de-linea-engorrosos.md
 tags:
   - proc fslist
+  - sas procs
 title: Truco SAS. Un vistazo a ficheros planos muy grandes
 url: /blog/truco-sas-un-vistazo-a-ficheros-planos-muy-grandes/
 ---

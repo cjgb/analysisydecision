@@ -15,6 +15,7 @@ tags:
   - bootstrap
   - proc sgplot
   - remuestreo
+  - sas procs
 title: Bootstrap con SAS sin complicaciones
 url: /blog/bootstrap-con-sas-sin-complicaciones/
 ---

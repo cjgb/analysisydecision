@@ -16,6 +16,7 @@ tags:
   - legend
   - pattern
   - proc gchart
+  - sas procs
 title: Un acercamiento a GRAPH. PROC GCHART
 url: /blog/un-acercamiento-a-graph-proc-gchart/
 ---

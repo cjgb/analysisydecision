@@ -16,6 +16,7 @@ related:
 tags:
   - proc sql
   - trasponer
+  - sas procs
 title: Trucos SAS. Trasponer con SQL para torpes
 url: /blog/trucos-sas-trasponer-con-sql-para-torpes/
 ---
