@@ -11,7 +11,7 @@ related:
   - recopilacion-data-science-cheat-sheet.md
   - analisis-del-discurso-de-navidad-del-rey-de-espana-2013.md
 tags:
-  - sin etiqueta
+  - formación
 title: El mejor gestor de datos del mundo es de Cádiz
 url: /blog/el-mejor-gestor-de-datos-del-mundo-es-de-cadiz/
 ---

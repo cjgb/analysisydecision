@@ -11,7 +11,7 @@ related:
   - macros-sas-dataset-a-data-frame-r.md
   - macros-faciles-de-sas-normaliza-un-texto-rapido.md
 tags:
-  - sin etiqueta
+  - formación
 title: X command (MS-DOS prompt) desde SAS.
 url: /blog/x-command-ms-dos-prompt-desde-sas/
 ---

@@ -13,7 +13,9 @@ related:
   - truco-sas-observaciones-de-un-dataset-en-una-macro-variable.md
   - macro-facil-de-sas-longitud-de-la-parte-decimal-de-un-numero.md
 tags:
-  - sin etiqueta
+  - formación
+  - sas
+  - trucos
 title: Trucos sas. Autonumérico con PROC SQL
 url: /blog/trucos-sas-autonumerico-con-proc-sql/
 ---

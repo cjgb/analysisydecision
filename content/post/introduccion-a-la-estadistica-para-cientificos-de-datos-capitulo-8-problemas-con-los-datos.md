@@ -13,7 +13,9 @@ related:
   - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-16-modelizacion-estadistica-conociendo-los-datos.md
   - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
 tags:
-  - sin etiqueta
+  - formación
+  - libro estadística
+  - r
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 8. Problemas con los datos
 url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-8-problemas-con-los-datos/
 ---

@@ -13,7 +13,9 @@ related:
   - el-futuro-del-analisis-de-datos-pasa-por-r.md
   - 1500-visitas-mensuales.md
 tags:
-  - sin etiqueta
+  - business intelligence
+  - formación
+  - r
 title: ¿Cómo medir la presencia de R en el mercado del análisis de datos?
 url: /blog/como-medir-la-presencia-de-r-en-el-mercado-del-analisis-de-datos/
 ---

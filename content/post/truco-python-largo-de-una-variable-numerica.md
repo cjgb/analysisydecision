@@ -12,7 +12,8 @@ related:
   - truco-python-reemplazar-una-cadena-de-caracteres-en-los-nombres-de-las-columnas-de-un-data-frame.md
   - leer-fichero-de-texto-de-ancho-fijo-con-python-pandas.md
 tags:
-  - sin etiqueta
+  - python
+  - trucos
 title: Truco Python. Largo de una variable numérica
 url: /blog/truco-python-largo-de-una-variable-numerica/
 ---

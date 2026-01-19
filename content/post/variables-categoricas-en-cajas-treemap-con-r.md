@@ -15,7 +15,9 @@ related:
 title: Variables categóricas en cajas, treemap con R
 url: /blog/variables-categoricas-en-cajas-treemap-con-r/
 tags:
-  - sin etiqueta
+  - formación
+  - r
+  - seguros
 ---
 
 [![](/images/2020/09/Ejemplo_treemap_R_3.png)](/images/2020/09/Ejemplo_treemap_R_3.png)

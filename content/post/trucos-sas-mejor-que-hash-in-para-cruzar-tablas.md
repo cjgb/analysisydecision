@@ -13,7 +13,9 @@ related:
   - trucos-sas-lista-de-datasets-en-macro-variable.md
   - trucos-sas-macrovariable-a-dataset.md
 tags:
-  - sin etiqueta
+  - formación
+  - sas
+  - trucos
 title: Trucos SAS. Mejor que hash IN para cruzar tablas
 url: /blog/trucos-sas-mejor-que-hash-in-para-cruzar-tablas/
 ---

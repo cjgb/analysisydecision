@@ -14,7 +14,10 @@ related:
   - minutos-de-juego-y-puntos-es-espanyol-y-sus-finales-de-partido.md
   - incluir-subplot-en-mapa-con-ggplot.md
 tags:
-  - sin etiqueta
+  - consultoría
+  - fútbol
+  - gráficos
+  - r
 title: 'Pintando campos de fútbol con #rstats y entendiendo funciones de densidad'
 url: /blog/pintando-campos-de-futbol-con-rstats-y-entendiendo-funciones-de-densidad/
 ---

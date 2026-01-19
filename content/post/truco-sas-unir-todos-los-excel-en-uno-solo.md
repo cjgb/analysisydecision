@@ -12,7 +12,8 @@ related:
   - truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
   - trucos-excel-unir-todos-los-excel-en-uno-version-muy-mejorada.md
 tags:
-  - sin etiqueta
+  - sas
+  - trucos
 title: Truco SAS. Unir todos los Excel en uno sólo
 url: /blog/truco-sas-unir-todos-los-excel-en-uno-solo/
 ---

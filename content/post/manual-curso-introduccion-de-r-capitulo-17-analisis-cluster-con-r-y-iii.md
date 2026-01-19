@@ -13,7 +13,9 @@ related:
   - analisis-cluster-con-sas-la-importancia-de-las-semillas-en-las-k-medias.md
   - knn-con-sas-mejorando-k-means.md
 tags:
-  - sin etiqueta
+  - formación
+  - modelos
+  - r
 title: 'Manual. Curso introducción de R. Capítulo 17: Análisis Cluster con R (y III)'
 url: /blog/manual-curso-introduccion-de-r-capitulo-17-analisis-cluster-con-r-y-iii/
 ---

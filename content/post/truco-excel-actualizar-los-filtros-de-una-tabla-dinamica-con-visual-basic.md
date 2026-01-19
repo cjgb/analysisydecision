@@ -13,7 +13,9 @@ related:
   - trucos-excel-tranformar-un-caracter-a-fecha.md
   - truco-excel-unir-todos-los-libros-en-una-hoja.md
 tags:
-  - sin etiqueta
+  - excel
+  - formación
+  - trucos
 title: Truco Excel. Actualizar los filtros de una tabla dinámica con Visual basic
 url: /blog/truco-excel-actualizar-los-filtros-de-una-tabla-dinamica-con-visual-basic/
 ---

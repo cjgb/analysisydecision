@@ -12,7 +12,8 @@ related:
   - intro-rcommander-1-que-es-rcommander.md
   - manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-i.md
 tags:
-  - sin etiqueta
+  - formación
+  - r
 title: 'Manual. Curso introducción de R. Capítulo 4: Contribuciones a R (paquetes)'
 url: /blog/manual-curso-introduccion-de-r-capitulo-4-contribuciones-a-r-paquetes/
 ---

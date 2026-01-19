@@ -12,7 +12,8 @@ related:
   - maximo-por-registro-de-una-serie-de-variables-caracter-en-sas.md
   - macros-sas-agrupando-variables-categoricas.md
 tags:
-  - sin etiqueta
+  - formación
+  - sas
 title: Mínimo de una matriz de datos en SAS
 url: /blog/minimo-de-una-matriz-de-datos-en-sas/
 ---

@@ -12,7 +12,8 @@ related:
   - el-ano-2009-para-analisis-y-decision.md
   - el-ano-2010-para-analisisydecision.md
 tags:
-  - sin etiqueta
+  - business intelligence
+  - consultoría
 title: Análisis con Google Analytics
 url: /blog/contenidos-web-analisis-informacion/
 ---

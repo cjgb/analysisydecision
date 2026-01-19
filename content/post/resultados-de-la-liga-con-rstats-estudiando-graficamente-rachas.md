@@ -17,7 +17,13 @@ related:
   - pintando-campos-de-futbol-con-rstats-y-entendiendo-funciones-de-densidad.md
   - mi-breve-seguimiento-del-coronavirus-con-r.md
 tags:
-  - sin etiqueta
+  - consultoría
+  - fútbol
+  - formación
+  - gráficos
+  - monográficos
+  - r
+  - trucos
 title: Resultados de La Liga con rstats. Estudiando gráficamente rachas
 url: /blog/resultados-de-la-liga-con-rstats-estudiando-graficamente-rachas/
 ---

@@ -16,7 +16,12 @@ related:
   - monografico-analisis-de-factores-con-r-una-introduccion.md
   - monografico-regresion-logistica-con-r.md
 tags:
-  - sin etiqueta
+  - formación
+  - libro estadística
+  - machine learning
+  - modelos
+  - monográficos
+  - r
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 11. Análisis bivariable
 url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-11-analisis-bivariable/
 ---

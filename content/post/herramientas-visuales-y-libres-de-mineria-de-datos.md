@@ -11,7 +11,7 @@ related:
   - proyecto-text-mining-con-excel-i.md
   - machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algoritmos-de-clasificacion.md
 tags:
-  - sin etiqueta
+  - data mining
 title: Herramientas visuales y libres de minería de datos
 url: /blog/herramientas-visuales-y-libres-de-mineria-de-datos/
 ---

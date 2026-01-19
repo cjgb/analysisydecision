@@ -14,7 +14,10 @@ related:
   - data-mining-business-intelligence-yo-la-nube.md
   - noticia-microsoft-compra-revolution-analytics.md
 tags:
-  - sin etiqueta
+  - business intelligence
+  - consultoría
+  - data mining
+  - r
 title: Revolution Computing ahora es Revolution Analytics
 url: /blog/revolution-computing-ahora-es-revolution-analytics/
 ---

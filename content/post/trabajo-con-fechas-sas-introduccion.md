@@ -12,7 +12,8 @@ related:
   - curso-de-lenguaje-sas-con-wps-variables.md
   - trucos-sas-pasar-fecha-a-caracter-en-sas.md
 tags:
-  - sin etiqueta
+  - monográficos
+  - sas
 title: Trabajo con fechas SAS. Introducción
 url: /blog/trabajo-con-fechas-sas-introduccion/
 ---

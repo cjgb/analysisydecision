@@ -12,7 +12,8 @@ related:
   - grafico-de-correlaciones-entre-variables.md
   - truco-r-paletas-de-colores-en-r.md
 tags:
-  - sin etiqueta
+  - formación
+  - python
 title: Mosaic plot con python
 url: /blog/mosaic-plot-con-python/
 ---

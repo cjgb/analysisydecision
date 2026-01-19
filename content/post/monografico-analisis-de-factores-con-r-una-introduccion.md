@@ -14,7 +14,10 @@ related:
   - manual-curso-introduccion-de-r-capitulo-14-introduccion-al-calculo-matricial-con-analisis-de-componentes-principales.md
   - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-7-descripcion-grafica-de-variables.md
 tags:
-  - sin etiqueta
+  - formación
+  - modelos
+  - monográficos
+  - r
 title: Monográfico. Análisis de Factores con R (una introducción)
 url: /blog/monografico-analisis-de-factores-con-r-una-introduccion/
 ---

@@ -13,7 +13,9 @@ related:
   - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
   - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-16-modelizacion-estadistica-conociendo-los-datos.md
 tags:
-  - sin etiqueta
+  - formación
+  - libro estadística
+  - r
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 9. Análisis exploratorio de datos. EDA
 url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-9-analisis-exploratorio-de-datos-eda/
 ---

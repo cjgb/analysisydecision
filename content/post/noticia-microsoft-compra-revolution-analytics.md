@@ -11,7 +11,7 @@ related:
   - ibm-compra-spss.md
   - revision-de-las-iii-jornadas-de-r.md
 tags:
-  - sin etiqueta
+  - r
 title: 'NOTICIA: Microsoft compra Revolution Analytics'
 url: /blog/noticia-microsoft-compra-revolution-analytics/
 ---

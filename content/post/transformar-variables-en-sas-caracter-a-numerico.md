@@ -13,7 +13,9 @@ related:
   - trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados.md
   - importar-a-sas-desde-otras-aplicaciones.md
 tags:
-  - sin etiqueta
+  - formación
+  - monográficos
+  - sas
 title: Transformar variables en SAS. Carácter a numérico
 url: /blog/transformar-variables-en-sas-caracter-a-numerico/
 ---

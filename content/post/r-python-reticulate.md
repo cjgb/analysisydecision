@@ -15,7 +15,11 @@ related:
   - leer-fichero-de-texto-de-ancho-fijo-con-python-pandas.md
   - analisis-de-textos-con-r.md
 tags:
-  - sin etiqueta
+  - big data
+  - formación
+  - monográficos
+  - python
+  - r
 title: R + Python = reticulate
 url: /blog/r-python-reticulate/
 ---

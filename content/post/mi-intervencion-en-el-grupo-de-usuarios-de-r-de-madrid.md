@@ -11,7 +11,7 @@ related:
   - reunion-del-grupo-de-usuarios-de-r-en-madrid-el-28-de-enero.md
   - ya-estan-en-marcha-las-iv-jornadas-de-usuarios-de-r-en-espana.md
 tags:
-  - sin etiqueta
+  - formación
 title: Mi intervención en el Grupo de Usuarios de R de Madrid
 url: /blog/mi-intervencion-en-el-grupo-de-usuarios-de-r-de-madrid/
 ---

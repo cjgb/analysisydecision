@@ -11,7 +11,7 @@ related:
   - reunion-de-usuarios-de-r-de-madrid-15-de-octubre-de-2015.md
   - martes-25-de-abril-nueva-reunion-del-grupo-de-usuarios-de-r-y-python.md
 tags:
-  - sin etiqueta
+  - r
 title: Reunión del Grupo de Usuarios de R de Madrid. 14 de enero de 2016
 url: /blog/reunion-del-grupo-de-usuarios-de-r-de-madrid-14-de-enero-de-2016/
 ---

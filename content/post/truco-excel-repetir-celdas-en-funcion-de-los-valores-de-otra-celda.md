@@ -14,7 +14,10 @@ related:
   - truco-excel-producto-cartesiano-de-dos-campos.md
   - truco-excel-transponer-una-fila-en-varias-columnas-con-desref.md
 tags:
-  - sin etiqueta
+  - consultoría
+  - excel
+  - formación
+  - trucos
 title: Truco Excel. Repetir celdas en función de los valores de otra celda
 url: /blog/truco-excel-repetir-celdas-en-funcion-de-los-valores-de-otra-celda/
 ---

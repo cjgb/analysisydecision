@@ -14,7 +14,10 @@ related:
   - macros-sas-ordenar-alfabeticamente-las-variables-de-un-dataset.md
   - trucos-sas-macrovariable-a-dataset.md
 tags:
-  - sin etiqueta
+  - formación
+  - monográficos
+  - sas
+  - trucos
 title: Macro SAS. Variables de un dataset en una macro variable
 url: /blog/macro-sas-variables-de-un-dataset-en-una-macro-variable/
 ---

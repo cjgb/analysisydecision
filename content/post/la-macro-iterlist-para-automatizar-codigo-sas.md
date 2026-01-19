@@ -14,7 +14,10 @@ related:
   - macros-sas-ordenar-alfabeticamente-las-variables-de-un-dataset.md
   - macros-sas-agrupando-variables-categoricas.md
 tags:
-  - sin etiqueta
+  - formación
+  - monográficos
+  - sas
+  - trucos
 title: La macro iterlist para automatizar código SAS
 url: /blog/la-macro-iterlist-para-automatizar-codigo-sas/
 ---

@@ -13,7 +13,9 @@ related:
   - truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
   - macros-sas-dataset-a-data-frame-r.md
 tags:
-  - sin etiqueta
+  - formación
+  - sas
+  - trucos
 title: Trucos SAS. Ejecutar un código si existe una tabla o un fichero
 url: /blog/trucos-sas-ejecutar-un-codigo-si-existe-una-tabla-o-un-fichero/
 ---

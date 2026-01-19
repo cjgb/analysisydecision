@@ -16,7 +16,12 @@ related:
   - estadistica-para-cientificos-de-datos-con-r-introduccion.md
   - lectura-del-fin-de-semana.md
 tags:
-  - sin etiqueta
+  - business intelligence
+  - data mining
+  - formación
+  - machine learning
+  - python
+  - r
 title: Recopilación Data Science Cheat Sheet
 url: /blog/recopilacion-data-science-cheat-sheet/
 ---

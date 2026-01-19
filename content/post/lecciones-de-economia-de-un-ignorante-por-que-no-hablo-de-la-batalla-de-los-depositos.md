@@ -11,7 +11,7 @@ related:
   - lecciones-de-economia-de-un-ignorante-la-privatizacion-de-las-cajas-sera-una-chapuza.md
   - lecciones-de-economia-de-un-ignorante-poniendo-fecha-a-la-intervencion-de-espana.md
 tags:
-  - sin etiqueta
+  - formación
 title: Lecciones de economía de un ignorante. ¿Por qué no hablo de la batalla de los depósitos?
 url: /blog/lecciones-de-economia-de-un-ignorante-c2bfpor-que-no-hablo-de-la-batalla-de-los-depositos/
 ---

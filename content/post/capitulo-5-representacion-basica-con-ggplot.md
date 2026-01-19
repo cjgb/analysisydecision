@@ -14,7 +14,10 @@ related:
   - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-7-descripcion-grafica-de-variables.md
   - descubriendo-ggplot2-421.md
 tags:
-  - sin etiqueta
+  - formación
+  - gráficos
+  - libro estadística
+  - r
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 5. Representación gráfica básica con ggplot
 url: /blog/capitulo-5-representacion-basica-con-ggplot/
 ---

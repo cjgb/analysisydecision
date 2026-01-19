@@ -13,7 +13,9 @@ related:
   - nueva-edicion-del-curso-basico-de-r.md
   - curso-de-iniciacion-a-r-en-kschool-de-carlos-gil.md
 tags:
-  - sin etiqueta
+  - formación
+  - modelos
+  - r
 title: Lectura conjunta de “Analyzing Linguistic Data”
 url: /blog/lectura-conjunta-de-analyzing-linguistic-data/
 ---

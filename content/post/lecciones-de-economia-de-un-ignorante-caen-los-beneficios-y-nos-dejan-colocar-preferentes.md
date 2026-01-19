@@ -11,7 +11,7 @@ related:
   - lecciones-de-economia-de-un-ignorante-poniendo-fecha-a-la-intervencion-de-espana.md
   - a-mi-me-preocupa-el-pequeno-ahorrador.md
 tags:
-  - sin etiqueta
+  - banca
 title: Lecciones de economía de un ignorante. Caen los beneficios y nos dejan colocar preferentes
 url: /blog/lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes/
 ---

@@ -13,7 +13,9 @@ related:
   - mapa-de-rstats-animado-con-el-porcentaje-de-vacunacion-en-espana.md
   - libreria-mapspain-en-rstats-mapas-estaticos-de-espana.md
 tags:
-  - sin etiqueta
+  - monográficos
+  - opinión
+  - r
 title: Los pilares de mi simulación de la extensión del COVID19
 url: /blog/los-pilares-de-mi-simulacion-de-la-extension-del-covid19/
 ---

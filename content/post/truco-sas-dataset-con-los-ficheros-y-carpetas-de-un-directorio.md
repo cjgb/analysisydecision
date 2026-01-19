@@ -12,7 +12,8 @@ related:
   - macros-sas-informe-de-un-dataset-en-excel.md
   - truco-sas-un-vistazo-a-ficheros-planos-muy-grandes.md
 tags:
-  - sin etiqueta
+  - sas
+  - trucos
 title: 'Truco SAS: Dataset con los ficheros y carpetas de un directorio.'
 url: /blog/truco-sas-dataset-con-los-ficheros-y-carpetas-de-un-directorio/
 ---

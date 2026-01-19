@@ -11,7 +11,7 @@ related:
   - lecciones-de-economia-de-un-ignorante-de-donde-sacan-margen-los-bancos.md
   - lecciones-de-economia-de-un-ignorante-por-que-no-hablo-de-la-batalla-de-los-depositos.md
 tags:
-  - sin etiqueta
+  - banca
 title: Lecciones de economía de un ignorante. «la Caixa» a colocar preferentes
 url: /blog/lecciones-de-economia-de-un-ignorante-la-caixa-a-colocar-preferentes/
 ---

@@ -13,7 +13,9 @@ related:
   - trucos-sas-macrovariable-a-dataset.md
   - truco-sas-tablas-de-una-libreria-en-una-macro-variable.md
 tags:
-  - sin etiqueta
+  - formación
+  - sas
+  - trucos
 title: Trucos SAS. Lista de datasets en macro variable
 url: /blog/trucos-sas-lista-de-datasets-en-macro-variable/
 ---

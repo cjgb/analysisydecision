@@ -11,7 +11,7 @@ related:
   - trucos-r-leer-de-excel-via-rodbc.md
   - manual-curso-introduccion-de-r-capitulo-2-interfaz-y-primeras-sentencias.md
 tags:
-  - sin etiqueta
+  - r
 title: Cómo ordenar un data frame en R
 url: /blog/como-ordenar-un-data-frame-en-r/
 ---

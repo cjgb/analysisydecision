@@ -12,7 +12,8 @@ related:
   - estadistica-para-cientificos-de-datos-con-r-introduccion.md
   - evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso.md
 tags:
-  - sin etiqueta
+  - julia
+  - r
 title: Trabajando con R y Julia desde RStudio
 url: /blog/trabajando-con-r-y-julia-desde-rstudio/
 ---

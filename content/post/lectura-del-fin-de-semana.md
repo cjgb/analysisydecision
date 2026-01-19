@@ -13,7 +13,9 @@ related:
   - algunos-temas-de-interes-sobre-r.md
   - curso-basico-de-r.md
 tags:
-  - sin etiqueta
+  - formación
+  - modelos
+  - r
 title: Lectura del fin de semana
 url: /blog/lectura-del-fin-de-semana/
 ---

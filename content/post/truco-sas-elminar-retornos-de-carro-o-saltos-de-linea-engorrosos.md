@@ -12,7 +12,8 @@ related:
   - macros-faciles-de-sas-normaliza-un-texto-rapido.md
   - truco-sas-macro-buscar-y-reemplazar-en-texto.md
 tags:
-  - sin etiqueta
+  - sas
+  - trucos
 title: Truco SAS. Elminar retornos de carro o saltos de línea engorrosos
 url: /blog/truco-sas-elminar-retornos-de-carro-o-saltos-de-linea-engorrosos/
 ---

@@ -11,7 +11,7 @@ related:
   - reunion-de-usuarios-de-r-de-madrid-15-de-octubre-de-2015.md
   - primeras-jornadas-de-usuarios-de-r-en-espana-ya-es-oficial.md
 tags:
-  - sin etiqueta
+  - formación
 title: Segundo día en las III jornadas de R
 url: /blog/segundo-dia-en-las-iii-jornadas-de-r/
 ---

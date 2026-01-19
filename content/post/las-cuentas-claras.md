@@ -14,7 +14,10 @@ related:
   - truco-sas-cruce-con-formatos.md
   - trucos-sas-trasponer-con-sql-para-torpes.md
 tags:
-  - sin etiqueta
+  - data mining
+  - formación
+  - monográficos
+  - sas
 title: Las cuentas claras.
 url: /blog/las-cuentas-claras/
 ---

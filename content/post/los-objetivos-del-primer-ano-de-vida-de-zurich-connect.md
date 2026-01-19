@@ -12,7 +12,8 @@ related:
   - la-confianza-en-el-sector-financiero.md
   - los-enemigos-del-canal-tradicional-de-venta-de-seguros.md
 tags:
-  - sin etiqueta
+  - consultoría
+  - seguros
 title: Los objetivos del primer año de vida de Zurich Connect
 url: /blog/los-objetivos-del-primer-ano-de-vida-de-zurich-connect/
 ---

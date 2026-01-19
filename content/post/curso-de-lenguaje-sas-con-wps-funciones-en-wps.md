@@ -13,7 +13,9 @@ related:
   - trucos-sas-eliminacion-de-espacios-en-blanco.md
   - truco-sas-funcion-para-contar-caracteres.md
 tags:
-  - sin etiqueta
+  - formación
+  - sas
+  - wps
 title: Curso de lenguaje SAS con WPS. Funciones en WPS
 url: /blog/curso-de-lenguaje-sas-con-wps-funciones-en-wps/
 ---

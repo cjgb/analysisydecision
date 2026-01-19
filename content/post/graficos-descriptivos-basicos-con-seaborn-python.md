@@ -13,7 +13,9 @@ related:
   - un-acercamiento-a-graph-ods-graphs-proc-sgplot.md
   - graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
 tags:
-  - sin etiqueta
+  - formación
+  - gráficos
+  - python
 title: Gráficos descriptivos básicos con Seaborn Python
 url: /blog/graficos-descriptivos-basicos-con-seaborn-python/
 ---

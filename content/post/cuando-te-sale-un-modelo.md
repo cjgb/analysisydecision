@@ -11,7 +11,7 @@ related:
   - valor-atipico-o-pocos-registros-animacion-con-r.md
   - el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v.md
 tags:
-  - sin etiqueta
+  - formación
 title: Cuando te sale un modelo
 url: /blog/cuando-te-sale-un-modelo/
 ---

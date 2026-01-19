@@ -12,7 +12,8 @@ related:
   - lectura-conjunta-de-analyzing-linguistic-data.md
   - estadistica-para-cientificos-de-datos-con-r-introduccion.md
 tags:
-  - sin etiqueta
+  - formación
+  - r
 title: Nuevo curso de estadística con R
 url: /blog/nuevo-curso-de-estadistica-con-r/
 ---

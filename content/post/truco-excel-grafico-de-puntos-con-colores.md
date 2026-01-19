@@ -13,7 +13,9 @@ related:
   - truco-excel-identificar-el-color-de-una-celda.md
   - trucos-excel-mapa-de-espana-por-provincias.md
 tags:
-  - sin etiqueta
+  - excel
+  - formación
+  - trucos
 title: Truco Excel. Gráfico de puntos con colores
 url: /blog/truco-excel-grafico-de-puntos-con-colores/
 ---

@@ -13,7 +13,9 @@ related:
   - truco-excel-pasar-un-rango-de-varias-columnas-a-una.md
   - truco-excel-abrir-multiples-libros-de-excel-en-distintas-hojas-de-un-nuevo-libro.md
 tags:
-  - sin etiqueta
+  - excel
+  - formación
+  - trucos
 title: Truco Excel. Actualizar el filtro de todas las tablas dinámicas de mi libro
 url: /blog/truco-excel-actualizar-el-filtro-de-todas-las-tablas-dinamicas-de-mi-libro/
 ---

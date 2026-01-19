@@ -12,7 +12,8 @@ related:
   - ejecutar-un-codigo-al-iniciar-la-sesion-de-r.md
   - conectar-r-a-una-base-de-datos.md
 tags:
-  - sin etiqueta
+  - r
+  - trucos
 title: Trucos R. Conectar a internet por el puerto 8080
 url: /blog/trucos-r-conectar-a-internet-por-el-puerto-8080/
 ---

@@ -13,7 +13,9 @@ related:
   - truco-excel-abrir-multiples-libros-de-excel-en-distintas-hojas-de-un-nuevo-libro.md
   - trucos-sas-mas-usos-de-infile-y-pipe-directorios-en-tablas-sas.md
 tags:
-  - sin etiqueta
+  - excel
+  - formación
+  - trucos
 title: Trucos Excel. Archivos de un directorio con una macro
 url: /blog/trucos-excel-archivos-de-un-directorio-con-una-macro/
 ---

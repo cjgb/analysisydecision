@@ -11,7 +11,7 @@ related:
   - participaciones-preferentes-de-las-cajas-de-ahorro.md
   - lecciones-de-economia-de-un-ignorante-de-donde-sacan-margen-los-bancos.md
 tags:
-  - sin etiqueta
+  - banca
 title: Comienza la cuenta atrás
 url: /blog/comienza-la-cuenta-atras/
 ---

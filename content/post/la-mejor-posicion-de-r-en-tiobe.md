@@ -11,7 +11,7 @@ related:
   - como-medir-la-presencia-de-r-en-el-mercado-del-analisis-de-datos.md
   - trucos-excel-graficos-dot-plot-representando-un-ranking-graficamente.md
 tags:
-  - sin etiqueta
+  - r
 title: La mejor posición de R en tiobe
 url: /blog/la-mejor-posicion-de-r-en-tiobe/
 ---

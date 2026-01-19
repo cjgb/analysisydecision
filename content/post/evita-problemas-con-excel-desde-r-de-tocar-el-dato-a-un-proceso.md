@@ -13,7 +13,9 @@ related:
   - macros-sas-dataset-a-data-frame-r.md
   - estadistica-para-cientificos-de-datos-con-r-introduccion.md
 tags:
-  - sin etiqueta
+  - excel
+  - formación
+  - r
 title: Evita problemas con Excel desde R. De tocar el dato a un proceso
 url: /blog/evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso/
 ---

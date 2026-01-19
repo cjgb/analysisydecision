@@ -12,7 +12,8 @@ related:
   - truco-sas-cruce-con-formatos.md
   - en-merge-mejor-if-o-where.md
 tags:
-  - sin etiqueta
+  - formación
+  - sas
 title: Equivalencias entre PROC SQL y DATA en las uniones de tablas SAS
 url: /blog/proc-sql-merge-set/
 ---

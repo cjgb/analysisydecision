@@ -12,7 +12,8 @@ related:
   - truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
   - trucos-excel-y-sas-complemento-para-cambiar-la-configuracion-regional.md
 tags:
-  - sin etiqueta
+  - excel
+  - trucos
 title: Truco Excel. Obtener cambio de divisas on-line
 url: /blog/truco-excel-obtener-cambio-de-divisas-on-line/
 ---

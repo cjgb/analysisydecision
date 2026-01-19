@@ -14,7 +14,10 @@ related:
   - en-la-regresion-logistica-el-sobremuestreo-es-lo-mismo-que-asignar-pesos-a-las-observaciones.md
   - manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
 tags:
-  - sin etiqueta
+  - formación
+  - modelos
+  - sas
+  - wps
 title: Atentos a los intervalos de confianza
 url: /blog/atentos-a-los-intervalos-de-confianza/
 ---

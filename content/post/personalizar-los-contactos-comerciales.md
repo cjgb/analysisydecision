@@ -11,7 +11,7 @@ related:
   - contenidos-para-octubre-de-ayd.md
   - de-estadistico-a-minero-de-datos-a-cientifico-de-datos.md
 tags:
-  - sin etiqueta
+  - consultoría
 title: Personalizar los contactos comerciales
 url: /blog/personalizar-los-contactos-comerciales/
 ---

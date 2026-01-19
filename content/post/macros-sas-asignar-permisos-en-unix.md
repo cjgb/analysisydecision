@@ -13,7 +13,9 @@ related:
   - macros-sas-informe-de-un-dataset-en-excel.md
   - trucos-sas-macrovariable-a-dataset.md
 tags:
-  - sin etiqueta
+  - formación
+  - sas
+  - trucos
 title: Macros SAS. Asignar permisos en Unix
 url: /blog/macros-sas-asignar-permisos-en-unix/
 ---

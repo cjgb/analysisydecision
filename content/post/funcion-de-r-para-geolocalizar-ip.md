@@ -11,7 +11,7 @@ related:
   - mapas-municipales-de-argentina-con-r.md
   - mapas-estaticos-de-peru-con-r-y-python-a-nivel-de-distrito.md
 tags:
-  - sin etiqueta
+  - r
 title: Función de R para geolocalizar IP
 url: /blog/funcion-de-r-para-geolocalizar-ip/
 ---

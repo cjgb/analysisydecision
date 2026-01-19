@@ -11,7 +11,7 @@ related:
   - martes-25-de-abril-nueva-reunion-del-grupo-de-usuarios-de-r-y-python.md
   - reunion-del-grupo-de-usuarios-de-r-de-madrid-12052016.md
 tags:
-  - sin etiqueta
+  - r
 title: Reunión del Grupo de Usuarios de R de Madrid. 12 de noviembre
 url: /blog/reunion-del-grupo-de-usuarios-de-r-de-madrid-12-de-noviembre/
 ---

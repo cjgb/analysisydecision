@@ -11,7 +11,7 @@ related:
   - integracion-de-r-con-sas-spss-y-otros.md
   - sas-comienza-a-fijarse-en-r.md
 tags:
-  - sin etiqueta
+  - business intelligence
 title: Ranking IDC de Business Analytics Market
 url: /blog/ranking-idc-de-business-analytics-market/
 ---

@@ -13,7 +13,9 @@ related:
   - trucos-excel-poner-etiquetas-en-graficos-de-dispersion.md
   - trucos-excel-eliminar-referencias-del-tipo-importardatosdinamicos.md
 tags:
-  - sin etiqueta
+  - excel
+  - formación
+  - trucos
 title: Trucos Excel. Gráficos con caracteres
 url: /blog/trucos-excel-graficos-con-caracteres/
 ---

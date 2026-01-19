@@ -11,7 +11,7 @@ related:
   - acercamiento-a-wps-migrando-desde-sas.md
   - en-breve-revision-de-wps-clonico-de-sas.md
 tags:
-  - sin etiqueta
+  - business intelligence
 title: Un homenaje a mis compañeros
 url: /blog/un-homenaje-a-mis-companeros/
 ---

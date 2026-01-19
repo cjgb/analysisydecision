@@ -13,7 +13,9 @@ related:
   - truco-r-eval-parse-y-paste-para-automatizar-codigo.md
   - tablas-elegantes-en-rstats-y-formattable.md
 tags:
-  - sin etiqueta
+  - formación
+  - r
+  - trucos
 title: 'Trucos simples para #rstats'
 url: /blog/trucos-simples-para-rstats/
 ---

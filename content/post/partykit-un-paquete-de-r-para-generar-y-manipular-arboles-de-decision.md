@@ -12,7 +12,8 @@ related:
   - noticias-del-congreso-de-usuarios-de-r.md
   - reunion-del-grupo-de-usuarios-de-r-en-madrid-el-28-de-enero.md
 tags:
-  - sin etiqueta
+  - data mining
+  - r
 title: 'partykit: un paquete de R para generar y manipular árboles de decisión'
 url: /blog/partykit-un-paquete-de-r-para-generar-y-manipular-arboles-de-decision/
 ---

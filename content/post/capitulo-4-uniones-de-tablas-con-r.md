@@ -13,7 +13,9 @@ related:
   - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-3-manejo-de-datos-con-r.md
   - data-management-con-dplyr.md
 tags:
-  - sin etiqueta
+  - formación
+  - libro estadística
+  - r
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 4. Uniones de tablas con R
 url: /blog/capitulo-4-uniones-de-tablas-con-r/
 ---

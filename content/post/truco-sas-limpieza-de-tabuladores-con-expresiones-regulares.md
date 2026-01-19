@@ -11,7 +11,7 @@ related:
   - trucos-sas-eliminacion-de-espacios-en-blanco.md
   - truco-sas-limpiar-un-fichero-de-texto-con-sas.md
 tags:
-  - sin etiqueta
+  - formación
 title: Truco SAS. Limpieza de tabuladores con expresiones regulares
 url: /blog/truco-sas-limpieza-de-tabuladores-con-expresiones-regulares/
 ---

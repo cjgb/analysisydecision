@@ -13,7 +13,9 @@ related:
   - ayudadme-importar-a-sas-texto-con-comillas.md
   - importar-a-sas-desde-otras-aplicaciones.md
 tags:
-  - sin etiqueta
+  - formación
+  - sas
+  - trucos
 title: Truco SAS. Limpiar un fichero de texto con SAS
 url: /blog/truco-sas-limpiar-un-fichero-de-texto-con-sas/
 ---

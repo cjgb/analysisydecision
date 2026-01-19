@@ -13,7 +13,9 @@ related:
   - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
   - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-11-analisis-bivariable.md
 tags:
-  - sin etiqueta
+  - formación
+  - libro estadística
+  - r
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 6. Descripción numérica de variables
 url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-6-descripcion-numerica-de-variables/
 ---

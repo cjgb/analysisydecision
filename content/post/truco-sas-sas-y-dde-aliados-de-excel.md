@@ -12,7 +12,8 @@ related:
   - trucos-excel-y-sas-complemento-para-cambiar-la-configuracion-regional.md
   - importar-a-sas-desde-otras-aplicaciones.md
 tags:
-  - sin etiqueta
+  - sas
+  - trucos
 title: Truco SAS. SAS y DDE, otra forma de exportar a Excel
 url: /blog/truco-sas-sas-y-dde-aliados-de-excel/
 ---

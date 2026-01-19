@@ -12,7 +12,8 @@ related:
   - como-abrir-proyectos-de-enterprise-guide-corruptos-o-de-una-version-anterior.md
   - truco-leer-sas7bdat-sin-sas.md
 tags:
-  - sin etiqueta
+  - consultoría
+  - sas
 title: Un problema a WPS. Infile url no funciona
 url: /blog/un-problema-a-wps-infile-url-no-funciona/
 ---

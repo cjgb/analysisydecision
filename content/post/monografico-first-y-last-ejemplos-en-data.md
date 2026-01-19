@@ -13,7 +13,9 @@ related:
   - trucos-sas-variables-dummy-de-una-variable-continua.md
   - macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
 tags:
-  - sin etiqueta
+  - formación
+  - monográficos
+  - sas
 title: Monográfico. FIRST. y LAST. ejemplos en DATA
 url: /blog/monografico-first-y-last-ejemplos-en-data/
 ---

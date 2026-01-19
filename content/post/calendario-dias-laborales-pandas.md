@@ -14,7 +14,10 @@ related:
   - trucos-sas-operar-con-fechas-yyyymm-tipicas-de-particiones-oracle.md
   - bucle-de-fechas-con-sas-para-tablas-particionadas.md
 tags:
-  - sin etiqueta
+  - banca
+  - machine learning
+  - python
+  - seguros
 title: Calendario de días laborales con Pandas
 url: /blog/calendario-dias-laborales-pandas/
 ---

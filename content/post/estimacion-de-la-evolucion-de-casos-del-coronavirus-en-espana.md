@@ -12,7 +12,8 @@ related:
   - los-pilares-de-mi-simulacion-de-la-extension-del-covid19.md
   - no-estamos-igual-que-en-la-primera-ola-de-covid.md
 tags:
-  - sin etiqueta
+  - opinión
+  - r
 title: Estimación de la evolución de casos del coronavirus en España
 url: /blog/estimacion-de-la-evolucion-de-casos-del-coronavirus-en-espana/
 ---

@@ -13,7 +13,9 @@ related:
   - macros-sas-pasar-de-texto-a-numerico.md
   - transformar-variables-en-sas-caracter-a-numerico.md
 tags:
-  - sin etiqueta
+  - formación
+  - sas
+  - trucos
 title: Truco SAS. Proc format VS formato percent
 url: /blog/truco-sas-proc-format-vs-formato-percent/
 ---

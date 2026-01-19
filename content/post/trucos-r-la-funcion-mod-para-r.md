@@ -13,7 +13,9 @@ related:
   - truco-excel-nuestra-propia-funcion-excel.md
   - manual-curso-introduccion-de-r-capitulo-7-funciones-graficas-basicas-en-r.md
 tags:
-  - sin etiqueta
+  - formación
+  - r
+  - trucos
 title: Trucos R. La función mod para R
 url: /blog/trucos-r-la-funcion-mod-para-r/
 ---

@@ -11,7 +11,7 @@ related:
   - reunion-del-grupo-de-usuarios-de-r-de-madrid-14042016.md
   - reunion-del-grupo-de-usuarios-de-r-de-madrid.md
 tags:
-  - sin etiqueta
+  - formación
 title: Jueves 13 de octubre nueva reunión del Grupo de usuarios de R de Madrid
 url: /blog/jueves-13-de-octubre-nueva-reunion-del-grupo-de-usuarios-de-r-de-madrid/
 ---

@@ -12,7 +12,8 @@ related:
   - estadistica-para-cientificos-de-datos-con-r-introduccion.md
   - nueva-edicion-del-curso-basico-de-r.md
 tags:
-  - sin etiqueta
+  - formación
+  - r
 title: Libro de R de Carlos Gil
 url: /blog/libro-de-r-de-carlos-gil/
 ---

@@ -13,7 +13,9 @@ related:
   - trucos-sas-variables-dummy-de-una-variable-continua.md
   - truco-sas-categorizar-variables-continuas.md
 tags:
-  - sin etiqueta
+  - formación
+  - python
+  - trucos
 title: Truco Python. Agrupar variable en función de la frecuencia
 url: /blog/truco-python-agrupar-variable-en-funcion-de-la-frecuencia/
 ---

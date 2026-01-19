@@ -13,7 +13,9 @@ related:
   - evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso.md
   - truco-r-eval-parse-y-paste-para-automatizar-codigo.md
 tags:
-  - sin etiqueta
+  - formación
+  - r
+  - trucos
 title: Truco (malo) de R. Leer datos desde Excel
 url: /blog/truco-malo-de-r-leer-datos-desde-excel/
 ---

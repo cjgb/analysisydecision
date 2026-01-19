@@ -11,7 +11,7 @@ related:
   - trucos-excel-y-sas-complemento-para-cambiar-la-configuracion-regional.md
   - trucos-excel-tranformar-un-caracter-a-fecha.md
 tags:
-  - sin etiqueta
+  - formación
 title: Trucos Excel. Pasar de caracter a numérico con fórmulas
 url: /blog/trucos-excel-pasar-de-caracter-a-numerico-con-formulas/
 ---

@@ -13,7 +13,9 @@ related:
   - un-acercamiento-a-graph-sentencias-graficas.md
   - capitulo-5-representacion-basica-con-ggplot.md
 tags:
-  - sin etiqueta
+  - data mining
+  - formación
+  - sas
 title: Gráficos de densidades con SAS y el PROC KDE
 url: /blog/graficos-de-densidades-con-sas-y-el-proc-kde/
 ---

@@ -11,7 +11,7 @@ related:
   - a-mi-me-preocupa-el-pequeno-ahorrador.md
   - busca-la-relacion-deuda-subordinada-y-cajas-catalanas.md
 tags:
-  - sin etiqueta
+  - formación
 title: Participaciones Preferentes de las Cajas de Ahorro
 url: /blog/participaciones-preferentes-de-las-cajas-de-ahorro/
 ---

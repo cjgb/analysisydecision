@@ -13,7 +13,9 @@ related:
   - trucos-excel-repetir-filas-o-columnas-con-la-funcion-desref.md
   - trucos-excel-transponer-con-la-funcion-desref.md
 tags:
-  - sin etiqueta
+  - excel
+  - formación
+  - trucos
 title: Truco Excel. Repetir un campo a partir de otro que define el número de repeticiones
 url: /blog/truco-excel-repetir-un-campo-a-partir-de-otro-que-define-el-numero-de-repeticiones/
 ---

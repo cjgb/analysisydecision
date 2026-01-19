@@ -13,7 +13,9 @@ related:
   - macros-sas-limpiar-una-cadena-de-caracteres.md
   - truco-sas-funcion-para-contar-caracteres.md
 tags:
-  - sin etiqueta
+  - formación
+  - sas
+  - wps
 title: Dividir en palabras un texto con SAS
 url: /blog/dividir-en-palabras-un-texto-con-sas/
 ---

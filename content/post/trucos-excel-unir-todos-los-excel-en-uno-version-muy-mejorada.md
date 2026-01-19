@@ -12,7 +12,8 @@ related:
   - truco-excel-abrir-multiples-libros-de-excel-en-distintas-hojas-de-un-nuevo-libro.md
   - truco-excel-unir-todos-los-libros-en-una-hoja.md
 tags:
-  - sin etiqueta
+  - excel
+  - trucos
 title: Trucos Excel. Unir todos los excel en uno, versión muy mejorada
 url: /blog/trucos-excel-unir-todos-los-excel-en-uno-version-muy-mejorada/
 ---

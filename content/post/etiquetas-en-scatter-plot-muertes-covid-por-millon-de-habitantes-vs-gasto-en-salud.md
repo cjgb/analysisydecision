@@ -11,7 +11,7 @@ related:
   - los-pilares-de-mi-simulacion-de-la-extension-del-covid19.md
   - incluir-subplot-en-mapa-con-ggplot.md
 tags:
-  - sin etiqueta
+  - formación
 title: Etiquetas en scatter plot. Muertes covid por millón de habitantes vs gasto en salud
 url: /blog/etiquetas-en-scatter-plot-muertes-covid-por-millon-de-habitantes-vs-gasto-en-salud/
 ---

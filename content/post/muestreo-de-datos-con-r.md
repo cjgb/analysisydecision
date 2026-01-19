@@ -13,7 +13,9 @@ related:
   - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-12-muestreo-e-inferencia-estadistica.md
   - truco-sas-categorizar-variables-continuas.md
 tags:
-  - sin etiqueta
+  - formación
+  - r
+  - trucos
 title: Muestreo de datos con R
 url: /blog/muestreo-de-datos-con-r/
 ---

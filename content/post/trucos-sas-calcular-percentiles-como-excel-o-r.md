@@ -13,7 +13,9 @@ related:
   - truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
   - monograficos-call-symput-imprescindible.md
 tags:
-  - sin etiqueta
+  - formación
+  - sas
+  - trucos
 title: Trucos SAS. Calcular percentiles como Excel o R
 url: /blog/trucos-sas-calcular-percentiles-como-excel-o-r/
 ---

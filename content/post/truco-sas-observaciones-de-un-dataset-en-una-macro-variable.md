@@ -12,7 +12,8 @@ related:
   - trucos-sas-macrovariable-a-dataset.md
   - truco-sas-proc-contents.md
 tags:
-  - sin etiqueta
+  - sas
+  - trucos
 title: Truco SAS. Observaciones de un dataset en una macro variable
 url: /blog/truco-sas-observaciones-de-un-dataset-en-una-macro-variable/
 ---

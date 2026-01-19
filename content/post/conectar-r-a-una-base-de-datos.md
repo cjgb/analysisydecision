@@ -11,7 +11,7 @@ related:
   - el-futuro-del-analisis-de-datos-pasa-por-r.md
   - evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso.md
 tags:
-  - sin etiqueta
+  - formación
 title: Conectar R a una base de datos
 url: /blog/conectar-r-a-una-base-de-datos/
 ---

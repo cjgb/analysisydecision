@@ -13,7 +13,9 @@ related:
   - regresion-con-redes-neuronales-en-r.md
   - manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
 tags:
-  - sin etiqueta
+  - formación
+  - libro estadística
+  - r
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 13. Regresión lineal
 url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-13-regresion-lineal/
 ---

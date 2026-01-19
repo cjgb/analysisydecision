@@ -12,7 +12,8 @@ related:
   - truco-sas-transponer-tablas-con-proc-transpose-data-o-proc-sql.md
   - laboratorio-de-codigo-sas-vistas-proc-means-vs-proc-sql.md
 tags:
-  - sin etiqueta
+  - sas
+  - trucos
 title: Truco SAS. Cruce con proc format
 url: /blog/truco-sas-cruce-con-formatos/
 ---

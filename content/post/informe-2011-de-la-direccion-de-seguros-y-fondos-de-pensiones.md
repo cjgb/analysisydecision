@@ -11,7 +11,7 @@ related:
   - consultor-particular-de-seguros.md
   - el-seguro-de-credito-interesante-reto-tecnico.md
 tags:
-  - sin etiqueta
+  - seguros
 title: Informe 2011 de la Dirección de Seguros y Fondos de Pensiones
 url: /blog/informe-2011-de-la-direccion-de-seguros-y-fondos-de-pensiones/
 ---

@@ -16,7 +16,10 @@ related:
 title: youtube-dl para descargar videos y mplayer para pasar esos vídeos a imágenes
 url: /blog/youtube-dl-para-descargar-videos-y-mplayer-para-pasar-esos-videos-a-imagenes/
 tags:
-  - sin etiqueta
+  - big data
+  - consultoría
+  - formación
+  - monográficos
 ---
 
 Si deseamos [descargar vídeos de Youtube tenemos youtube-dl](https://youtube-dl.org/) pero podemos descargar de otras web y en esta entrada vamos a ver como. Además podemos transformar esas entradas en fotogramas, esto es útil a la hora de analizar imágenes, podríamos estudiar la presencia de una marca en un partido de fútbol, identificar las matrículas que pasan delante de determinada cámara u otros casos de uso. Y en uno de esos casos precisamente [J.L. Cañadas](https://twitter.com/joscani) del [blog hermano Muestrear no es Pecado](https://muestrear-no-es-pecado.netlify.app/) me ha descubierto la librería youtube-dl y la creación de scripts para tranformar videos en imágenes que posteriormente podemos analizar. El caso de mplayer es distinto, lo conocía, Cañadas me ha descubierto el ffmpeg que ofrece más posibilidades.

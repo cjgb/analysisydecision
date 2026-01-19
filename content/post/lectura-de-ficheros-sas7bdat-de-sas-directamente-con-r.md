@@ -13,7 +13,9 @@ related:
   - comunicar-sas-con-r-creando-ejecutables-windows.md
   - truco-sas-como-leer-pc-axis-con-sas.md
 tags:
-  - sin etiqueta
+  - r
+  - sas
+  - trucos
 title: Lectura de ficheros SAS7BDAT de SAS directamente con R
 url: /blog/lectura-de-ficheros-sas7bdat-de-sas-directamente-con-r/
 ---

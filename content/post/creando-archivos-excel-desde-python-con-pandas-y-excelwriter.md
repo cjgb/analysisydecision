@@ -13,7 +13,9 @@ related:
   - truco-excel-abrir-multiples-libros-de-excel-en-distintas-hojas-de-un-nuevo-libro.md
   - proyecto-text-mining-con-excel-iv.md
 tags:
-  - sin etiqueta
+  - excel
+  - formación
+  - python
 title: Creando archivos Excel desde Python con Pandas y ExcelWriter
 url: /blog/creando-archivos-excel-desde-python-con-pandas-y-excelwriter/
 ---

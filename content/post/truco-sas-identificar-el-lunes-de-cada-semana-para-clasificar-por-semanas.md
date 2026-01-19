@@ -11,7 +11,7 @@ related:
   - macros-faciles-de-sas-dias-de-un-mes-en-una-fecha.md
   - trabajo-con-fechas-sas-introduccion.md
 tags:
-  - sin etiqueta
+  - formación
 title: Truco SAS. Identificar el lunes de cada semana para clasificar por semanas
 url: /blog/truco-sas-identificar-el-lunes-de-cada-semana-para-clasificar-por-semanas/
 ---

@@ -11,7 +11,7 @@ related:
   - curso-de-lenguaje-sas-con-wps-lectura-de-ficheros-de-texto.md
   - curso-de-lenguaje-sas-con-wps-que-hace-el-paso-data.md
 tags:
-  - sin etiqueta
+  - formación
 title: 'Manual. Curso introducción de R. Capítulo 3: Lectura básica de datos'
 url: /blog/manual-curso-introduccion-de-r-capitulo-3-lectura-de-datos/
 ---

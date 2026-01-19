@@ -15,7 +15,11 @@ related:
   - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-9-analisis-exploratorio-de-datos-eda.md
   - entrenamiento-validacion-y-test.md
 tags:
-  - sin etiqueta
+  - consultoría
+  - formación
+  - libro estadística
+  - machine learning
+  - r
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 16. Modelización estadística. Conociendo los datos
 url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-16-modelizacion-estadistica-conociendo-los-datos/
 ---

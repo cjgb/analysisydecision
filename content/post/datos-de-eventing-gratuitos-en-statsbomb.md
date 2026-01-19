@@ -14,7 +14,10 @@ related:
   - minutos-de-juego-y-puntos-es-espanyol-y-sus-finales-de-partido.md
   - resultados-de-la-liga-con-rstats-estudiando-graficamente-rachas.md
 tags:
-  - sin etiqueta
+  - consultoría
+  - fútbol
+  - formación
+  - r
 title: Datos de eventing gratuitos en Statsbomb
 url: /blog/datos-de-eventing-gratuitos-en-statsbomb/
 ---

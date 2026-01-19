@@ -12,7 +12,8 @@ related:
   - el-modelo-multivariante-en-el-sector-asegurador-la-variable-dependiente-iii.md
   - monografico-analisis-de-factores-con-r-una-introduccion.md
 tags:
-  - sin etiqueta
+  - formación
+  - seguros
 title: El modelo multivariante en el sector asegurador. Univariante vs multivariante (II)
 url: /blog/el-modelo-multivariante-en-el-sector-asegurador-univariante-vs-multivariante-ii/
 ---

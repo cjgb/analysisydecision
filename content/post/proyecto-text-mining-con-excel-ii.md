@@ -13,7 +13,9 @@ related:
   - google-mining-analisis-de-las-paginas-indexadas-i.md
   - proyecto-text-mining-con-excel-pasa-a-ser-google-mining.md
 tags:
-  - sin etiqueta
+  - business intelligence
+  - consultoría
+  - data mining
 title: Proyecto. Text mining con Excel (II)
 url: /blog/proyecto-text-mining-con-excel-ii/
 ---

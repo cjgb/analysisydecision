@@ -13,7 +13,9 @@ related:
   - trucos-excel-trasponer-con-la-funcion-indirecto.md
   - desref-para-trasponer-en-excel-varias-columnas.md
 tags:
-  - sin etiqueta
+  - excel
+  - formación
+  - trucos
 title: De una tabla en forma de matriz a una tabla con una columna. Funciones COINCIDIR y BUSCARV en Excel
 url: /blog/de-una-tabla-en-forma-de-matriz-a-una-tabla-con-una-columna-funciones-coincidir-y-buscarv-en-excel/
 ---

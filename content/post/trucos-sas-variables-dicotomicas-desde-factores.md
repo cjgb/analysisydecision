@@ -11,7 +11,7 @@ related:
   - truco-sas-categorizar-variables-continuas.md
   - macros-sas-agrupando-variables-categoricas.md
 tags:
-  - sin etiqueta
+  - formación
 title: Trucos SAS. Variables dicotómicas desde factores
 url: /blog/trucos-sas-variables-dicotomicas-desde-factores/
 ---

@@ -15,7 +15,11 @@ related:
   - introduccion-a-la-estadistica-para-cientificos-de-datos-con-r-capitulo-2-datos.md
   - el-ano-2010-para-analisisydecision.md
 tags:
-  - sin etiqueta
+  - big data
+  - business intelligence
+  - data mining
+  - formación
+  - monográficos
 title: De estadístico a minero de datos a científico de datos…
 url: /blog/de-estadistico-a-minero-de-datos-a-cientifico-de-datos/
 ---

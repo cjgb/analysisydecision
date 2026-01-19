@@ -13,7 +13,9 @@ related:
   - manual-introduccion-a-r-s-plus.md
   - curso-de-lenguaje-sas-con-wps-introduccion.md
 tags:
-  - sin etiqueta
+  - consultoría
+  - formación
+  - r
 title: analisisydecision se une a Scout Analyst. Primer curso de Estadística para analistas
 url: /blog/analisisydecision-se-une-a-scout-analyst-primer-curso-de-estadistica-para-analistas/
 ---

@@ -14,7 +14,10 @@ related:
   - truco-excel-identificar-el-color-de-una-celda.md
   - trucos-excel-mapa-de-mexico-por-estados.md
 tags:
-  - sin etiqueta
+  - business intelligence
+  - excel
+  - formación
+  - trucos
 title: Truco Excel. Gráficos de dispersión que identifican los puntos
 url: /blog/truco-excel-graficos-de-dispersion-que-identifican-los-puntos/
 ---

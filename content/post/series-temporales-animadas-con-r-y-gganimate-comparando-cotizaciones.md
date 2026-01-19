@@ -11,7 +11,7 @@ related:
   - stadistical-data-warehouse-del-european-central-bank-con-r-y-los-depositos-a-perdidas.md
   - grafico-con-eje-secundario-en-ggplot2.md
 tags:
-  - sin etiqueta
+  - formación
 title: Series temporales animadas con R y gganimate, comparando cotizaciones
 url: /blog/series-temporales-animadas-con-r-y-gganimate-comparando-cotizaciones/
 ---

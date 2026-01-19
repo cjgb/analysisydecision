@@ -14,7 +14,10 @@ related:
   - inteligencia-arficial-frente-a-un-juego-de-ninos-la-particula-tonta-de-nicolas.md
   - truco-excel-graficos-de-dispersion-que-identifican-los-puntos.md
 tags:
-  - sin etiqueta
+  - formación
+  - power bi
+  - trucos
+  - video
 title: Medidas dinámicas con Power BI
 url: /blog/medidas-dinamicas-con-power-bi/
 ---

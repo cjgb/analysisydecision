@@ -12,7 +12,8 @@ related:
   - curso-de-lenguaje-sas-con-wps-subconjuntos-de-variables-con-drop-y-keep.md
   - macros-sas-dataset-a-data-frame-r.md
 tags:
-  - sin etiqueta
+  - consultoría
+  - formación
 title: Curso de lenguaje SAS con WPS. Que hace el paso DATA
 url: /blog/curso-de-lenguaje-sas-con-wps-que-hace-el-paso-data/
 ---

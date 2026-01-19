@@ -394,7 +394,7 @@ menu:
     * [El problema de la multicolinealidad, intuirlo y detectarlo](/blog/el-problema-de-la-multicolinealidad-intuirlo-y-detectarlo/)
     * [SQL vs Hadoop. Más que una tendencia](/blog/sql-vs-hadoop-mas-que-una-tendencia/)
   * Febrero 2014
-    * [CURSO DE ANÁLISIS ESTADÍSTICO DE DATOS ‘ÓMICOS’ CON R](/blog/curso-de-analisis-estadistico-de-datos-omicos-con-r/)
+    * [Curso de análisis estadístico de datos "ómicos" con R](/blog/curso-de-analisis-estadistico-de-datos-omicos-con-r/)
     * [Truco Excel. Pasar de número con formato AAAAMMDD a fecha con fórmulas](/blog/truco-excel-pasar-de-numero-con-formato-aaaammdd-a-fecha-con-formulas/)
     * [Consultor particular de seguros](/blog/consultor-particular-de-seguros/)
     * [Selección del mejor punto de diagnóstico en una prueba diagnóstica](/blog/seleccion-del-mejor-punto-de-diagnostico-en-una-prueba-diagnostica/)
@@ -569,7 +569,7 @@ menu:
     * [Lectura de ficheros SAS7BDAT de SAS directamente con R](/blog/lectura-de-ficheros-sas7bdat-de-sas-directamente-con-r/)
     * [Trucos Excel. Poner etiquetas en gráficos de dispersión](/blog/trucos-excel-poner-etiquetas-en-graficos-de-dispersion/)
     * [Trucos SAS. Validación de consultas con PROC SQL](/blog/trucos-sas-validacion-de-consultas-con-proc-sql/)
-    * [COMIENZA LA CUENTA ATRAS. III JORNADAS DE USUARIOS DE R](/blog/comienza-la-cuenta-atras-iii-jornadas-de-usuarios-de-r/)
+    * [Comienza la cuenta atrás. III Jornadas de usuarios de R](/blog/comienza-la-cuenta-atras-iii-jornadas-de-usuarios-de-r/)
   * Marzo 2011
     * [Trucos R. Gráficos de velocímetro con R](/blog/trucos-r-graficos-de-velocimetro-con-r/)
     * [Nuevo blog sobre medicina genómica](/blog/nuevo-blog-sobre-medicina-genomica/)

@@ -11,7 +11,7 @@ related:
   - ayd-2300-visitas-mensuales.md
   - contenidos-para-octubre-de-ayd.md
 tags:
-  - sin etiqueta
+  - formación
 title: Si buscamos sexo no buscamos trabajo
 url: /blog/si-buscamos-sexo-no-buscamos-trabajo/
 ---

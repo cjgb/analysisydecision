@@ -13,7 +13,9 @@ related:
   - desref-para-trasponer-en-excel-varias-columnas.md
   - trucos-excel-transponer-con-la-funcion-desref.md
 tags:
-  - sin etiqueta
+  - excel
+  - formación
+  - trucos
 title: Truco Excel. Pasar un rango de varias columnas a una
 url: /blog/truco-excel-pasar-un-rango-de-varias-columnas-a-una/
 ---

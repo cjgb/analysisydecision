@@ -11,7 +11,7 @@ related:
   - analisis-del-discurso-de-navidad-del-rey-de-espana-2013.md
   - tipos-de-merge-con-sas-o-wps.md
 tags:
-  - sin etiqueta
+  - formación
 title: SAS te felicita la Navidad
 url: /blog/sas-te-felicita-la-navidad/
 ---

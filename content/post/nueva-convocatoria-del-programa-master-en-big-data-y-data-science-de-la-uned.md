@@ -11,7 +11,7 @@ related:
   - el-modelo-multivariante-en-el-sector-asegurador-introduccion-i.md
   - el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v.md
 tags:
-  - sin etiqueta
+  - formación
 title: Nueva convocatoria del programa Máster en Big Data y Data Science de la UNED
 url: /blog/nueva-convocatoria-del-programa-master-en-big-data-y-data-science-de-la-uned/
 ---

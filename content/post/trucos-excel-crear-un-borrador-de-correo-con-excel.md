@@ -12,7 +12,8 @@ related:
   - trucos-excel-archivos-de-un-directorio-con-una-macro.md
   - truco-excel-insertar-imagenes-con-visual-basic.md
 tags:
-  - sin etiqueta
+  - excel
+  - trucos
 title: Trucos Excel. Crear un borrador de correo con Excel
 url: /blog/trucos-excel-crear-un-borrador-de-correo-con-excel/
 ---

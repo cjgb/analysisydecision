@@ -12,7 +12,8 @@ related:
   - manual-curso-introduccion-de-r-capitulo-2-interfaz-y-primeras-sentencias.md
   - estadistica-para-cientificos-de-datos-con-r-introduccion.md
 tags:
-  - sin etiqueta
+  - formación
+  - r
 title: 'Manual. Curso introducción de R. Capítulo 1: ¿Qué es R?'
 url: /blog/manual-curso-introducion-de-r-capitulo-1-c2bfque-es-r/
 ---

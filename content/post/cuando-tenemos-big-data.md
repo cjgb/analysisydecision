@@ -12,7 +12,8 @@ related:
   - quiero-aprender-big-data.md
   - de-estadistico-a-minero-de-datos-a-cientifico-de-datos.md
 tags:
-  - sin etiqueta
+  - big data
+  - monográficos
 title: ¿Cuándo tenemos BIG DATA?
 url: /blog/cuando-tenemos-big-data/
 ---

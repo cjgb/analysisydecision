@@ -11,7 +11,7 @@ related:
   - reunion-del-grupo-de-usuarios-de-r-de-madrid.md
   - ya-estan-en-marcha-las-iv-jornadas-de-usuarios-de-r-en-espana.md
 tags:
-  - sin etiqueta
+  - formación
 title: ILOVEFS18 Amor por el software libre
 url: /blog/ilovefs18-amor-por-el-software-libre/
 ---

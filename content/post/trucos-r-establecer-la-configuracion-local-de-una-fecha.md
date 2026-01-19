@@ -13,7 +13,9 @@ related:
   - trucos-sas-pasar-de-caracter-a-numerico-y-viceversa.md
   - truco-sas-transformar-variable-caracter-a-fecha.md
 tags:
-  - sin etiqueta
+  - formación
+  - r
+  - trucos
 title: Trucos R. Establecer la configuración local de una fecha
 url: /blog/trucos-r-establecer-la-configuracion-local-de-una-fecha/
 ---

@@ -11,7 +11,7 @@ related:
   - evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso.md
   - nuevo-curso-de-estadistica-con-r.md
 tags:
-  - sin etiqueta
+  - formación
 title: Introducción a la Estadística para Científicos de Datos con R. Capítulo 1. Introducción
 url: /blog/estadistica-para-cientificos-de-datos-con-r-introduccion/
 ---

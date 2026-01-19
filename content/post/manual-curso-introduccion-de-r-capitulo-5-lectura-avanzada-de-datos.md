@@ -12,7 +12,8 @@ related:
   - parametros-en-nuestra-consulta-sql-server-desde-r-truco-r.md
   - tres-fracasos-y-medio-con-r.md
 tags:
-  - sin etiqueta
+  - formación
+  - r
 title: 'Manual. Curso introducción de R. Capítulo 5: Lectura avanzada de datos'
 url: /blog/manual-curso-introduccion-de-r-capitulo-5-lectura-avanzada-de-datos/
 ---

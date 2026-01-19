@@ -11,7 +11,7 @@ related:
   - como-ordenar-un-data-frame-en-r.md
   - noticias-del-congreso-de-usuarios-de-r.md
 tags:
-  - sin etiqueta
+  - formación
 title: R portable para Windows
 url: /blog/r-portable-para-windows/
 ---

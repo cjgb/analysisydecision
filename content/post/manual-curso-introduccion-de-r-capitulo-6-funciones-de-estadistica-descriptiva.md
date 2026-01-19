@@ -12,7 +12,8 @@ related:
   - manual-curso-introduccion-de-r-capitulo-2-interfaz-y-primeras-sentencias.md
   - manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
 tags:
-  - sin etiqueta
+  - formación
+  - r
 title: 'Manual. Curso introducción de R. Capítulo 6: Funciones de estadística descriptiva'
 url: /blog/manual-curso-introduccion-de-r-capitulo-6-funciones-de-estadistica-descriptiva/
 ---

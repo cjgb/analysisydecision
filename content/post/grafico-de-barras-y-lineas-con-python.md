@@ -12,7 +12,8 @@ related:
   - capitulo-5-representacion-basica-con-ggplot.md
   - graficos-descriptivos-basicos-con-seaborn-python.md
 tags:
-  - sin etiqueta
+  - formación
+  - python
 title: Gráfico de barras y líneas con Python
 url: /blog/grafico-de-barras-y-lineas-con-python/
 ---

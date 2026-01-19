@@ -13,7 +13,9 @@ related:
   - truco-excel-unir-todos-los-libros-en-una-hoja.md
   - trucos-excel-trasponer-con-la-funcion-indirecto.md
 tags:
-  - sin etiqueta
+  - excel
+  - formación
+  - trucos
 title: Trucos Excel. Eliminar referencias del tipo IMPORTARDATOSDINAMICOS
 url: /blog/trucos-excel-eliminar-referencias-del-tipo-importardatosdinamicos/
 ---

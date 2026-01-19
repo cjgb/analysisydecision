@@ -12,7 +12,8 @@ related:
   - el-futuro-del-analisis-de-datos-pasa-por-r.md
   - sas-investiga-la-tecnologia-de-r.md
 tags:
-  - sin etiqueta
+  - r
+  - sas
 title: Integración de R con SAS, SPSS y otros
 url: /blog/integracion-de-r-con-sas-spss-y-otros/
 ---

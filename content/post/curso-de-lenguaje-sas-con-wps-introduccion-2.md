@@ -12,7 +12,8 @@ related:
   - wps-en-el-mercado-espanol.md
   - curso-de-lenguaje-sas-con-wps-lenguaje-sas.md
 tags:
-  - sin etiqueta
+  - consultoría
+  - formación
 title: Curso de lenguaje SAS con WPS. Introducción
 url: /blog/curso-de-lenguaje-sas-con-wps-introduccion-2/
 ---

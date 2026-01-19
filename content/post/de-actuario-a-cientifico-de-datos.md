@@ -12,7 +12,8 @@ related:
   - el-futuro-de-la-profesion.md
   - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-16-modelizacion-estadistica-conociendo-los-datos.md
 tags:
-  - sin etiqueta
+  - opinión
+  - seguros
 title: De actuario a científico de datos
 url: /blog/de-actuario-a-cientifico-de-datos/
 ---

@@ -13,7 +13,9 @@ related:
   - laboratorio-de-codigo-sas-ordenaciones-con-hash-vs-proc-sort.md
   - curso-de-lenguaje-sas-con-wps-sentencias-condicionales-if-then.md
 tags:
-  - sin etiqueta
+  - formación
+  - monográficos
+  - sas
 title: Laboratorio de código SAS. Comparativa entre IF y WHERE
 url: /blog/laboratorio-de-codigo-sas-comparativa-entre-if-y-where/
 ---

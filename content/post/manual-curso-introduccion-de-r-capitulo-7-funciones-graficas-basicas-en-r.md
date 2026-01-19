@@ -12,7 +12,8 @@ related:
   - manual-curso-introduccion-de-r-capitulo-2-interfaz-y-primeras-sentencias.md
   - trucos-r-graficos-de-velocimetro-con-r.md
 tags:
-  - sin etiqueta
+  - formación
+  - r
 title: 'Manual. Curso introducción de R. Capítulo 7: Funciones gráficas básicas en R'
 url: /blog/manual-curso-introduccion-de-r-capitulo-7-funciones-graficas-basicas-en-r/
 ---

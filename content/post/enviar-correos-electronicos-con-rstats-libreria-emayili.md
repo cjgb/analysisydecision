@@ -14,7 +14,10 @@ related:
   - informes-con-r-en-html-comienzo-con-r2html-i.md
   - mi-curriculum-con-rmarkdown-y-pagedown.md
 tags:
-  - sin etiqueta
+  - formación
+  - monográficos
+  - r
+  - trucos
 title: Enviar correos electrónicos con rstats. Librería emayili
 url: /blog/enviar-correos-electronicos-con-rstats-libreria-emayili/
 ---

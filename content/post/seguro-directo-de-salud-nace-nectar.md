@@ -11,7 +11,7 @@ related:
   - nace-verti-la-directa-de-mapfre.md
   - consultor-particular-de-seguros.md
 tags:
-  - sin etiqueta
+  - seguros
 title: Seguro directo de salud. Nace ‘Nectar’
 url: /blog/seguro-directo-de-salud-nace-nectar/
 ---

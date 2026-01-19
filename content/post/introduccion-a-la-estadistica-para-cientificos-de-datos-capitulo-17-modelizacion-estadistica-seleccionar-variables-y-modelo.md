@@ -15,7 +15,11 @@ related:
   - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-8-problemas-con-los-datos.md
   - monografico-arboles-de-clasificacion-con-rpart.md
 tags:
-  - sin etiqueta
+  - formación
+  - libro estadística
+  - modelos
+  - monográficos
+  - r
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 17. Modelización estadística. Seleccionar variables y modelo
 url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo/
 ---

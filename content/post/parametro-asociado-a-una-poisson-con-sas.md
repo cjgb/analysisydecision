@@ -12,7 +12,8 @@ related:
   - numeros-aleatorios-con-sas.md
   - atentos-a-los-intervalos-de-confianza.md
 tags:
-  - sin etiqueta
+  - modelos
+  - sas
 title: Parámetro asociado a una Poisson con SAS
 url: /blog/parametro-asociado-a-una-poisson-con-sas/
 ---

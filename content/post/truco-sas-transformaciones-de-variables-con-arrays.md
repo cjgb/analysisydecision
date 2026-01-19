@@ -13,7 +13,9 @@ related:
   - truco-sas-crear-ficheros-excel-sin-proc-export-i.md
   - maximo-por-registro-de-una-serie-de-variables-caracter-en-sas.md
 tags:
-  - sin etiqueta
+  - formación
+  - sas
+  - trucos
 title: Truco SAS. Transformaciones de variables con arrays
 url: /blog/truco-sas-transformaciones-de-variables-con-arrays/
 ---

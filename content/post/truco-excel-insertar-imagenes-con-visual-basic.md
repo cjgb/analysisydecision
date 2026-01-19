@@ -13,7 +13,9 @@ related:
   - truco-excel-pasar-un-rango-de-varias-columnas-a-una.md
   - trucos-excel-archivos-de-un-directorio-con-una-macro.md
 tags:
-  - sin etiqueta
+  - excel
+  - formación
+  - trucos
 title: Truco Excel. Insertar imágenes con Visual Basic
 url: /blog/truco-excel-insertar-imagenes-con-visual-basic/
 ---

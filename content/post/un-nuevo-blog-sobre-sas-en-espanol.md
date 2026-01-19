@@ -12,7 +12,8 @@ related:
   - sas-global-forum-2009.md
   - el-ano-2010-para-analisisydecision.md
 tags:
-  - sin etiqueta
+  - business intelligence
+  - sas
 title: Un nuevo blog sobre SAS en español
 url: /blog/un-nuevo-blog-sobre-sas-en-espanol/
 ---

@@ -12,7 +12,8 @@ related:
   - ejecutar-un-codigo-al-iniciar-la-sesion-de-r.md
   - r-python-reticulate.md
 tags:
-  - sin etiqueta
+  - formación
+  - r
 title: Corrección ortográfica en RStudio
 url: /blog/correccion-ortografica-en-rstudio/
 ---

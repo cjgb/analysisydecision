@@ -13,7 +13,9 @@ related:
   - trucos-excel-convertir-texto-en-un-resultado-o-formula.md
   - trucos-excel-repetir-filas-o-columnas-con-la-funcion-desref.md
 tags:
-  - sin etiqueta
+  - excel
+  - formación
+  - trucos
 title: Truco Excel. Nuestra propia función redondear en Excel
 url: /blog/truco-excel-nuestra-propia-funcion-excel/
 ---

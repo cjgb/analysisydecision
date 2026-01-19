@@ -12,7 +12,8 @@ related:
   - truco-sas-unir-todos-los-excel-en-uno-solo.md
   - truco-sas-leer-datos-de-excel-con-sas-con-dde.md
 tags:
-  - sin etiqueta
+  - sas
+  - trucos
 title: Truco SAS. Crear ficheros Excel sin PROC EXPORT (II)
 url: /blog/truco-sas-crear-ficheros-excel-sin-proc-export-ii/
 ---

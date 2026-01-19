@@ -11,7 +11,7 @@ related:
   - el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v.md
   - mutua-madrilena-compra-el-50-de-adeslas-seguros-generales.md
 tags:
-  - sin etiqueta
+  - consultoría
 title: 'El seguro de salud: la futura guerra'
 url: /blog/el-seguro-de-salud-la-futura-guerra/
 ---

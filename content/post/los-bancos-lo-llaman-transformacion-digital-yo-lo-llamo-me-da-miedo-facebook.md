@@ -11,7 +11,7 @@ related:
   - participaciones-preferentes-de-las-cajas-de-ahorro.md
   - amanece-que-no-es-poco.md
 tags:
-  - sin etiqueta
+  - formación
 title: Los bancos lo llaman Transformación Digital yo lo llamo me da miedo Facebook
 url: /blog/los-bancos-lo-llaman-transformacion-digital-yo-lo-llamo-me-da-miedo-facebook/
 ---

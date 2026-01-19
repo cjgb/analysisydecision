@@ -11,7 +11,7 @@ related:
   - mi-breve-seguimiento-del-coronavirus-con-r.md
   - mapa-estatico-de-espana-con-python.md
 tags:
-  - sin etiqueta
+  - formación
 title: 'Mapa del COVID-19 por Comunidades Autónomas con R (más #rstats)'
 url: /blog/mapa-del-covid-19-por-comunidades-autonomas-con-r-mas-rstats/
 ---

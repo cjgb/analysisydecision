@@ -11,7 +11,7 @@ related:
   - what-is-r-interesantes-videos-de-revolution-computing.md
   - el-ano-2009-para-analisis-y-decision.md
 tags:
-  - sin etiqueta
+  - r
 title: Los recursos más destacados de R en la web
 url: /blog/los-recursos-mas-destacados-de-r-en-la-web/
 ---

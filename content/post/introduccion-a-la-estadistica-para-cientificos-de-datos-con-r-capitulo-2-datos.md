@@ -13,7 +13,9 @@ related:
   - estadistica-para-cientificos-de-datos-con-r-introduccion.md
   - nos-hemos-terminado-de-reinventar-acabamos-con-el-data-mining-y-empezamos-con-el-big-data.md
 tags:
-  - sin etiqueta
+  - formación
+  - libro estadística
+  - r
 title: Introducción a la Estadística para Científicos de Datos con R. Capítulo 2. Datos
 url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-con-r-capitulo-2-datos/
 ---

@@ -13,7 +13,9 @@ related:
   - macros-sas-contar-las-palabras-de-una-macro-variable.md
   - macros-sas-limpiar-una-cadena-de-caracteres.md
 tags:
-  - sin etiqueta
+  - formación
+  - sas
+  - trucos
 title: Macro (fácil) de SAS. Longitud de la parte decimal de un número
 url: /blog/macro-facil-de-sas-longitud-de-la-parte-decimal-de-un-numero/
 ---

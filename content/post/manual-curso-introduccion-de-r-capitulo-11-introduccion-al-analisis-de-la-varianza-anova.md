@@ -13,7 +13,9 @@ related:
   - monografico-analisis-de-factores-con-r-una-introduccion.md
   - manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
 tags:
-  - sin etiqueta
+  - formación
+  - modelos
+  - r
 title: 'Manual. Curso introducción de R. Capítulo 11: Introducción al análisis de la varianza (ANOVA)'
 url: /blog/manual-curso-introduccion-de-r-capitulo-11-introduccion-al-analisis-de-la-varianza-anova/
 ---

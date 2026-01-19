@@ -13,7 +13,9 @@ related:
   - curso-de-iniciacion-a-r-en-kschool-de-carlos-gil.md
   - nueva-edicion-del-curso-basico-de-r.md
 tags:
-  - sin etiqueta
+  - excel
+  - formación
+  - r
 title: Newsletter de Leonardo Hansa. Aprende a programar R
 url: /blog/newsletter-de-leonardo-hansa-aprende-a-programar-r/
 ---

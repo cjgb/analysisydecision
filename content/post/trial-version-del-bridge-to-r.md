@@ -11,7 +11,7 @@ related:
   - en-breve-revision-de-wps-clonico-de-sas.md
   - what-is-r-interesantes-videos-de-revolution-computing.md
 tags:
-  - sin etiqueta
+  - business intelligence
 title: Trial version del Bridge to R
 url: /blog/trial-version-del-bridge-to-r/
 ---

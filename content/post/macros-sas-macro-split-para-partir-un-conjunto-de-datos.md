@@ -13,7 +13,9 @@ related:
   - dividir-en-palabras-un-texto-con-sas.md
   - truco-sas-observaciones-de-un-dataset-en-una-macro-variable.md
 tags:
-  - sin etiqueta
+  - formación
+  - sas
+  - wps
 title: Macros SAS. Macro split para partir un conjunto de datos
 url: /blog/macros-sas-macro-split-para-partir-un-conjunto-de-datos/
 ---

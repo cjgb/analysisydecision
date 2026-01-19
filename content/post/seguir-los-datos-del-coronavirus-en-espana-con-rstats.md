@@ -11,7 +11,7 @@ related:
   - mapa-del-covid-19-por-comunidades-autonomas-con-r-mas-rstats.md
   - mapa-de-rstats-animado-con-el-porcentaje-de-vacunacion-en-espana.md
 tags:
-  - sin etiqueta
+  - formación
 title: Seguir los datos del coronavirus en España con Rstats
 url: /blog/seguir-los-datos-del-coronavirus-en-espana-con-rstats/
 ---

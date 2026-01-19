@@ -11,7 +11,7 @@ related:
   - como-me-encuentro-hoy-con-rstats.md
   - truco-r-paletas-de-colores-en-r.md
 tags:
-  - sin etiqueta
+  - formación
 title: Analisisydecision.es os desea felices fiestas
 url: /blog/analisisydecision-es-os-desea-felices-fiestas/
 ---

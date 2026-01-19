@@ -12,7 +12,8 @@ related:
   - comunicar-sas-con-r-creando-ejecutables-windows.md
   - trucos-sas-macrovariable-a-dataset.md
 tags:
-  - sin etiqueta
+  - sas
+  - trucos
 title: Truco SAS. Uso de filename y pipe
 url: /blog/truco-sas-uso-de-filename-y-pipe/
 ---

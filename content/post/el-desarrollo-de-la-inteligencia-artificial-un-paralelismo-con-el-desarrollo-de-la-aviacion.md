@@ -12,7 +12,8 @@ related:
   - inteligencia-arficial-frente-a-un-juego-de-ninos-la-particula-tonta-de-nicolas.md
   - de-actuario-a-cientifico-de-datos.md
 tags:
-  - sin etiqueta
+  - big data
+  - opinión
 title: El desarrollo de la Inteligencia Artificial, un paralelismo con el desarrollo de la aviación
 url: /blog/el-desarrollo-de-la-inteligencia-artificial-un-paralelismo-con-el-desarrollo-de-la-aviacion/
 ---

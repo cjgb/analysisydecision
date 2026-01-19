@@ -12,7 +12,8 @@ related:
   - leer-archivos-excel-con-python.md
   - data-management-basico-con-pandas.md
 tags:
-  - sin etiqueta
+  - formación
+  - python
 title: Leer fichero de texto de ancho fijo con Python Pandas
 url: /blog/leer-fichero-de-texto-de-ancho-fijo-con-python-pandas/
 ---

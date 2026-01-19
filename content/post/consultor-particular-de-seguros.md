@@ -11,7 +11,7 @@ related:
   - internet-of-things-en-el-sector-asegurador.md
   - el-seguro-de-credito-interesante-reto-tecnico.md
 tags:
-  - sin etiqueta
+  - seguros
 title: Consultor particular de seguros
 url: /blog/consultor-particular-de-seguros/
 ---

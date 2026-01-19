@@ -12,7 +12,8 @@ related:
   - grafico-de-barras-y-lineas-con-python.md
   - el-analisis-de-supervivencia-para-segmentar-el-churn.md
 tags:
-  - sin etiqueta
+  - formación
+  - machine learning
 title: Transformaciones de variables cuantitativas en modelos binomiales
 url: /blog/transformaciones-de-variables-cuantitativas-en-modelos-binomiales/
 ---

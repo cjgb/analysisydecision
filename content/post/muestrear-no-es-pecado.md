@@ -11,7 +11,7 @@ related:
   - nuevo-curso-de-estadistica-con-r.md
   - el-mejor-gestor-de-datos-del-mundo-es-de-cadiz.md
 tags:
-  - sin etiqueta
+  - formación
 title: Muestrear no es pecado
 url: /blog/muestrear-no-es-pecado/
 ---

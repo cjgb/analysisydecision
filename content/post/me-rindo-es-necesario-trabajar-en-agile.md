@@ -13,7 +13,9 @@ related:
   - de-estadistico-a-minero-de-datos-a-cientifico-de-datos.md
   - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-16-modelizacion-estadistica-conociendo-los-datos.md
 tags:
-  - sin etiqueta
+  - consultoría
+  - monográficos
+  - opinión
 title: Me rindo, es necesario trabajar en Agile
 url: /blog/me-rindo-es-necesario-trabajar-en-agile/
 ---

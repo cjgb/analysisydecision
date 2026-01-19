@@ -12,7 +12,8 @@ related:
   - muestrear-no-es-pecado.md
   - nueva-edicion-del-curso-basico-de-r.md
 tags:
-  - sin etiqueta
+  - formación
+  - modelos
 title: La nueva web de @jjgibaja
 url: /blog/la-nueva-web-de-jjgibaja/
 ---

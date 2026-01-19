@@ -11,7 +11,7 @@ related:
   - el-ano-2009-para-analisis-y-decision.md
   - el-ano-2010-para-analisisydecision.md
 tags:
-  - sin etiqueta
+  - business intelligence
 title: 'AyD: 2.300 visitas mensuales'
 url: /blog/ayd-2300-visitas-mensuales/
 ---

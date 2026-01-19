@@ -14,7 +14,10 @@ related:
   - macros-sas-informe-de-un-dataset-en-excel.md
   - truco-sas-unir-todos-los-excel-en-uno-solo.md
 tags:
-  - sin etiqueta
+  - excel
+  - modelos
+  - sas
+  - trucos
 title: Truco (muy fácil) de SAS. Leer un rango de una hoja Excel
 url: /blog/truco-muy-facil-de-sas-leer-un-rango-de-una-hoja-excel/
 ---

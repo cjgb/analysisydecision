@@ -14,7 +14,10 @@ related:
   - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-10-probabilidad-y-distribuciones.md
   - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
 tags:
-  - sin etiqueta
+  - formación
+  - libro estadística
+  - monográficos
+  - r
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 12. Muestreo e inferencia estadística
 url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-12-muestreo-e-inferencia-estadistica/
 ---

@@ -11,7 +11,7 @@ related:
   - dos-paginas-con-recursos-para-introducirse-en-r.md
   - algunos-temas-de-interes-sobre-r.md
 tags:
-  - sin etiqueta
+  - formación
 title: Que ando leyendo hoy
 url: /blog/que-ando-leyendo-hoy/
 ---

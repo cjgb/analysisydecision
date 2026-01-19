@@ -12,7 +12,8 @@ related:
   - importar-a-sas-desde-otras-aplicaciones.md
   - curso-de-lenguaje-sas-con-wps-lectura-de-ficheros-de-texto.md
 tags:
-  - sin etiqueta
+  - formación
+  - sas
 title: Truco SAS. Transformación EBCDIC (Mainframe)
 url: /blog/truco-sas-transformacion-ebcdic-mainframe-ascii-pc-o-unix/
 ---

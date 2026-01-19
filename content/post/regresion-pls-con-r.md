@@ -13,7 +13,9 @@ related:
   - manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
   - primeros-pasos-con-regresion-no-lineal-nls-con-r.md
 tags:
-  - sin etiqueta
+  - formación
+  - modelos
+  - r
 title: Regresión PLS con R
 url: /blog/regresion-pls-con-r/
 ---

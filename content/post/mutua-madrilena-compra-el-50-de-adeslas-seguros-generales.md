@@ -11,7 +11,7 @@ related:
   - nace-verti-la-directa-de-mapfre.md
   - el-seguro-directo-de-zurich.md
 tags:
-  - sin etiqueta
+  - seguros
 title: Mutua Madrileña compra el 50% de Adeslas Seguros Generales
 url: /blog/mutua-madrilena-compra-el-50-de-adeslas-seguros-generales/
 ---

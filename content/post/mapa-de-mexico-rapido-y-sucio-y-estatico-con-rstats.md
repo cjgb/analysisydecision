@@ -11,7 +11,7 @@ related:
   - mapas-municipales-de-argentina-con-r.md
   - mapas-con-spatial-data-de-r.md
 tags:
-  - sin etiqueta
+  - formación
 title: 'Mapa de México rápido (y sucio) y estático con #rstats'
 url: /blog/mapa-de-mexico-rapido-y-sucio-y-estatico-con-rstats/
 ---

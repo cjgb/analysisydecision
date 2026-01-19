@@ -12,7 +12,8 @@ related:
   - trucos-sas-variables-dicotomicas-desde-factores.md
   - trucos-sas-operaciones-con-tablas-de-dimensiones-con-sas.md
 tags:
-  - sin etiqueta
+  - sas
+  - trucos
 title: Truco SAS. Categorizar variables continuas
 url: /blog/truco-sas-categorizar-variables-continuas/
 ---

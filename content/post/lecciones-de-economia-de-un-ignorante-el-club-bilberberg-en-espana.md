@@ -11,7 +11,7 @@ related:
   - lecciones-de-economia-de-un-ignorante-los-bancos-pierden-dinero-para-favorecer-a-unos-y-luego-los-salvamos-todos.md
   - lecciones-de-economia-de-un-ignorante-por-que-no-hablo-de-la-batalla-de-los-depositos.md
 tags:
-  - sin etiqueta
+  - formación
 title: Lecciones de economía de un ignorante. El Club Bilderberg en España
 url: /blog/lecciones-de-economia-de-un-ignorante-el-club-bilberberg-en-espana/
 ---

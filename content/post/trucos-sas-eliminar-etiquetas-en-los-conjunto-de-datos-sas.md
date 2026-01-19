@@ -13,7 +13,9 @@ related:
   - macros-sas-ordenar-alfabeticamente-las-variables-de-un-dataset.md
   - truco-sas-tablas-de-una-libreria-en-una-macro-variable.md
 tags:
-  - sin etiqueta
+  - formación
+  - sas
+  - trucos
 title: Trucos SAS. Eliminar etiquetas en los conjunto de datos SAS
 url: /blog/trucos-sas-eliminar-etiquetas-en-los-conjunto-de-datos-sas/
 ---

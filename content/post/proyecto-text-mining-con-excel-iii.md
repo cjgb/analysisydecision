@@ -12,7 +12,8 @@ related:
   - proyecto-text-mining-con-excel-pasa-a-ser-google-mining.md
   - proyecto-text-mining-con-excel-i.md
 tags:
-  - sin etiqueta
+  - consultoría
+  - data mining
 title: Proyecto. Text Mining con Excel (III)
 url: /blog/proyecto-text-mining-con-excel-iii/
 ---

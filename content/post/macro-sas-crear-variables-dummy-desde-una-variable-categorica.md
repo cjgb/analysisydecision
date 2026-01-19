@@ -14,7 +14,10 @@ related:
   - truco-sas-categorizar-variables-continuas.md
   - macro-sas-variables-de-un-dataset-en-una-macro-variable.md
 tags:
-  - sin etiqueta
+  - formación
+  - sas
+  - trucos
+  - wps
 title: Macro SAS. Crear variables dummy desde una variable categórica
 url: /blog/macro-sas-crear-variables-dummy-desde-una-variable-categorica/
 ---

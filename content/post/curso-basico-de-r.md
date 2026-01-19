@@ -12,7 +12,8 @@ related:
   - jornadas-de-r-gratuitas-en-galicia.md
   - curso-de-iniciacion-a-r-en-kschool-de-carlos-gil.md
 tags:
-  - sin etiqueta
+  - formación
+  - r
 title: Curso básico de R
 url: /blog/curso-basico-de-r/
 ---

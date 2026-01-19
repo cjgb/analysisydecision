@@ -12,7 +12,8 @@ related:
   - jornadas-de-r-gratuitas-en-galicia.md
   - determinar-la-distribucion-de-un-vector-de-datos-con-r.md
 tags:
-  - sin etiqueta
+  - formación
+  - r
 title: Manual. Curso de introducción a R (S-Plus)
 url: /blog/manual-introduccion-a-r-s-plus/
 ---

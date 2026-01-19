@@ -12,7 +12,8 @@ related:
   - truco-excel-repetir-celdas-en-funcion-de-los-valores-de-otra-celda.md
   - medias-ponderadas-en-excel-crear-tu-propia-funcion.md
 tags:
-  - sin etiqueta
+  - excel
+  - trucos
 title: Trucos Excel. Convertir texto en un resultado o fórmula
 url: /blog/trucos-excel-convertir-texto-en-un-resultado-o-formula/
 ---

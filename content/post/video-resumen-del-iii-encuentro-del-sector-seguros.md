@@ -13,7 +13,7 @@ related:
 title: Video resumen del III Encuentro del Sector Seguros
 url: /blog/video-resumen-del-iii-encuentro-del-sector-seguros/
 tags:
-  - sin etiqueta
+  - seguros
 ---
 
 [![Imagen de previsualización de YouTube](https://img.youtube.com/vi/3Dx9sf1HdO4/0.jpg)](http://www.youtube.com/watch?v=3Dx9sf1HdO4)

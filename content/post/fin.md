@@ -11,7 +11,7 @@ related:
   - contenidos-para-octubre-de-ayd.md
   - nace-analisisydecision.md
 tags:
-  - sin etiqueta
+  - formación
 title: Fin
 url: /blog/fin/
 ---

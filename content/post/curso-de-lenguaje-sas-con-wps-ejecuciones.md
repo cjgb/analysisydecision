@@ -12,7 +12,8 @@ related:
   - curso-de-lenguaje-sas-con-wps-lectura-de-ficheros-de-texto.md
   - curso-de-lenguaje-sas-con-wps-librerias-en-wps.md
 tags:
-  - sin etiqueta
+  - consultoría
+  - formación
 title: Curso de lenguaje SAS con WPS. Ejecuciones
 url: /blog/curso-de-lenguaje-sas-con-wps-ejecuciones/
 ---

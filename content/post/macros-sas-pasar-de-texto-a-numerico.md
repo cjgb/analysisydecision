@@ -12,7 +12,8 @@ related:
   - macros-faciles-de-sas-normaliza-un-texto-rapido.md
   - macro-facil-de-sas-longitud-de-la-parte-decimal-de-un-numero.md
 tags:
-  - sin etiqueta
+  - formación
+  - sas
 title: Macros SAS. Pasar de texto a numérico
 url: /blog/macros-sas-pasar-de-texto-a-numerico/
 ---

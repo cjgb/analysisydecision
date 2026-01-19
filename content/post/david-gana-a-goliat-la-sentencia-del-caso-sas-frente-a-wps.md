@@ -14,7 +14,10 @@ related:
   - traducir-codigo-sas-a-java.md
   - curso-de-lenguaje-sas-con-wps-introduccion.md
 tags:
-  - sin etiqueta
+  - business intelligence
+  - consultoría
+  - sas
+  - wps
 title: David gana a Goliat. La sentencia del caso SAS frente a WPS
 url: /blog/david-gana-a-goliat-la-sentencia-del-caso-sas-frente-a-wps/
 ---

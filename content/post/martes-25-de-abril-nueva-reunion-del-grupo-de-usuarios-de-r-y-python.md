@@ -11,7 +11,7 @@ related:
   - reunion-de-usuarios-de-r-de-madrid-15-de-octubre-de-2015.md
   - reunion-del-grupo-de-usuarios-de-r-de-madrid-12-de-noviembre.md
 tags:
-  - sin etiqueta
+  - formación
 title: Martes 25 de abril nueva reunión del grupo de usuarios de R y Python
 url: /blog/martes-25-de-abril-nueva-reunion-del-grupo-de-usuarios-de-r-y-python/
 ---

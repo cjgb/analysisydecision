@@ -12,7 +12,8 @@ related:
   - trucos-sas-eliminar-etiquetas-en-los-conjunto-de-datos-sas.md
   - truco-sas-tablas-de-una-libreria-en-una-macro-variable.md
 tags:
-  - sin etiqueta
+  - sas
+  - trucos
 title: Macros SAS. Ordenar alfabéticamente las variables de un dataset
 url: /blog/macros-sas-ordenar-alfabeticamente-las-variables-de-un-dataset/
 ---

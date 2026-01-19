@@ -14,7 +14,10 @@ related:
   - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-15-modelos-glm-regresion-logistica-y-regresion-de-poisson.md
   - manual-curso-introduccion-de-r-capitulo-18-modelos-de-regresion-de-poisson.md
 tags:
-  - sin etiqueta
+  - consultoría
+  - data mining
+  - formación
+  - r
 title: Los parámetros del modelo GLM como relatividades, como recargos o descuentos
 url: /blog/los-parametros-del-modelo-glm-como-relatividades-como-recargos-o-descuentos/
 ---

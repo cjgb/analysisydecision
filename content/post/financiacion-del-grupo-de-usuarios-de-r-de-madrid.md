@@ -11,7 +11,7 @@ related:
   - reunion-de-usuarios-de-r-de-madrid-15-de-octubre-de-2015.md
   - reunion-del-grupo-de-usuarios-de-r-de-madrid-12-de-noviembre.md
 tags:
-  - sin etiqueta
+  - formación
 title: Financiación del Grupo de Usuarios de R de Madrid
 url: /blog/financiacion-del-grupo-de-usuarios-de-r-de-madrid/
 ---

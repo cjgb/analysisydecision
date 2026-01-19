@@ -13,7 +13,9 @@ related:
   - curso-de-lenguaje-sas-con-wps-introduccion-2.md
   - porque-me-gusta-r.md
 tags:
-  - sin etiqueta
+  - consultoría
+  - formación
+  - sas
 title: Curso de lenguaje SAS con WPS
 url: /blog/curso-de-lenguaje-sas-con-wps-introduccion/
 ---

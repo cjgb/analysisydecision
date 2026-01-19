@@ -13,7 +13,9 @@ related:
   - macro-sas-numero-de-observaciones-de-un-dataset-en-una-macro.md
   - macro-facil-de-sas-longitud-de-la-parte-decimal-de-un-numero.md
 tags:
-  - sin etiqueta
+  - formación
+  - sas
+  - trucos
 title: Macros SAS. Contar las palabras de una macro variable
 url: /blog/macros-sas-contar-las-palabras-de-una-macro-variable/
 ---

@@ -13,7 +13,9 @@ related:
   - entrenamiento-validacion-y-test.md
   - analisisydecision-se-une-a-scout-analyst-primer-curso-de-estadistica-para-analistas.md
 tags:
-  - sin etiqueta
+  - formación
+  - modelos
+  - video
 title: Principales elementos en las pruebas diagnósticas
 url: /blog/principales-elementos-en-las-pruebas-diagnosticas/
 ---

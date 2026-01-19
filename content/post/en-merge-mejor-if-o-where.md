@@ -12,7 +12,8 @@ related:
   - trucos-sas-porque-hay-que-usar-objetos-hash.md
   - curso-de-lenguaje-sas-con-wps-sentencias-condicionales-if-then.md
 tags:
-  - sin etiqueta
+  - formación
+  - sas
 title: En MERGE, ¿mejor IF o WHERE?
 url: /blog/en-merge-c2bfmejor-if-o-where/
 ---

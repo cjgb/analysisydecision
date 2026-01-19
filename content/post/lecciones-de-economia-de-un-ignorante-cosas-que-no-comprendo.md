@@ -11,7 +11,7 @@ related:
   - lecciones-de-economia-de-un-ignorante-la-prima-de-riesgo-y-la-madre-que-la-pario.md
   - la-nueva-burbuja-de-los-bancos.md
 tags:
-  - sin etiqueta
+  - formación
 title: Lecciones de economía de un ignorante. Cosas que no comprendo
 url: /blog/lecciones-de-economia-de-un-ignorante-cosas-que-no-comprendo/
 ---

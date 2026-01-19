@@ -12,7 +12,8 @@ related:
   - el-futuro-de-la-profesion.md
   - busquedas-de-sql-frente-a-busquedas-de-hadoop.md
 tags:
-  - sin etiqueta
+  - big data
+  - monográficos
 title: Nos hemos terminado de reinventar. Acabamos con el Data Mining y empezamos con el Big Data
 url: /blog/nos-hemos-terminado-de-reinventar-acabamos-con-el-data-mining-y-empezamos-con-el-big-data/
 ---

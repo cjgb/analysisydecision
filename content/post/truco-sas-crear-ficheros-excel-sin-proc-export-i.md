@@ -12,7 +12,8 @@ related:
   - el-ods-de-sas-iii-documentos-html-y-pdf-desde-sas.md
   - importar-a-sas-desde-otras-aplicaciones.md
 tags:
-  - sin etiqueta
+  - sas
+  - trucos
 title: Truco SAS. Crear ficheros Excel sin PROC EXPORT (I)
 url: /blog/truco-sas-crear-ficheros-excel-sin-proc-export-i/
 ---

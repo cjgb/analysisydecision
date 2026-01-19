@@ -13,7 +13,9 @@ related:
   - truco-excel-pasar-de-numero-con-formato-aaaammdd-a-fecha-con-formulas.md
   - macros-faciles-de-sas-dias-de-un-mes-en-una-fecha.md
 tags:
-  - sin etiqueta
+  - formación
+  - python
+  - trucos
 title: Truco Python. Restar meses con formato YYYYMM
 url: /blog/truco-python-restar-meses-con-formato-yyyymm/
 ---

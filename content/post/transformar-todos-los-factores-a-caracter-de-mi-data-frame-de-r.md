@@ -11,7 +11,7 @@ related:
   - trucos-r-de-string-a-dataframe-de-palabras.md
   - truco-r-eval-parse-y-paste-para-automatizar-codigo.md
 tags:
-  - sin etiqueta
+  - formación
 title: Transformar todos los factores a carácter de mi data frame de R
 url: /blog/transformar-todos-los-factores-a-caracter-de-mi-data-frame-de-r/
 ---

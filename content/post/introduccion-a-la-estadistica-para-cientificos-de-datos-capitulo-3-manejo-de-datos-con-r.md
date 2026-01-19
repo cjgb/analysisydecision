@@ -13,7 +13,9 @@ related:
   - capitulo-4-uniones-de-tablas-con-r.md
   - primeros-pasos-con-julia-importar-un-csv-y-basicos-con-un-data-frame.md
 tags:
-  - sin etiqueta
+  - formación
+  - libro estadística
+  - r
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 3. Manejo de datos con R
 url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-3-manejo-de-datos-con-r/
 ---

@@ -16,7 +16,12 @@ related:
   - alineaciones-de-equipos-de-futbol-con-worldfootballr-de-rstats.md
   - datos-libres-de-statsbomb-independencia-estadistica-y-tandas-de-penaltis.md
 tags:
-  - sin etiqueta
+  - consultoría
+  - fútbol
+  - formación
+  - modelos
+  - opinión
+  - r
 title: Los porteros del Espanyol y la regresión binomial negativa
 url: /blog/los-porteros-del-espanyol-y-la-regresion-binomial-negativa/
 ---

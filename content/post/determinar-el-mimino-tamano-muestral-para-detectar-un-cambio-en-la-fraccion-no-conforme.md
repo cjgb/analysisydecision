@@ -12,7 +12,8 @@ related:
   - monograficos-call-symput-imprescindible.md
   - test-de-bondad-de-ajuste-con-sas.md
 tags:
-  - sin etiqueta
+  - formación
+  - sas
 title: Determinar el mímino tamaño muestral para detectar un cambio en la fracción no conforme
 url: /blog/determinar-el-mimino-tamano-muestral-para-detectar-un-cambio-en-la-fraccion-no-conforme/
 ---

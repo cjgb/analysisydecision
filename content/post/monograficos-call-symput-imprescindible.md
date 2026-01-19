@@ -13,7 +13,9 @@ related:
   - macros-sas-tramificar-en-funcion-de-una-variable-respuesta.md
   - trucos-sas-lista-de-datasets-en-macro-variable.md
 tags:
-  - sin etiqueta
+  - formación
+  - monográficos
+  - sas
 title: Monográficos. CALL SYMPUT imprescindible
 url: /blog/monograficos-call-symput-imprescindible/
 ---

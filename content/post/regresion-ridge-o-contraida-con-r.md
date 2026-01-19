@@ -14,7 +14,10 @@ related:
   - manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
   - resolucion-del-juego-de-modelos-con-r.md
 tags:
-  - sin etiqueta
+  - formación
+  - modelos
+  - monográficos
+  - r
 title: Regresión ridge o regresión contraída con R
 url: /blog/regresion-ridge-o-contraida-con-r/
 ---

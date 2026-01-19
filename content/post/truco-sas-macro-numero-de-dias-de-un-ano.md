@@ -13,7 +13,9 @@ related:
   - bucle-de-fechas-con-sas-para-tablas-particionadas.md
   - trucos-sas-pasar-fecha-a-caracter-en-sas.md
 tags:
-  - sin etiqueta
+  - sas
+  - trucos
+  - wps
 title: Truco SAS. Macro número de días de un año
 url: /blog/truco-sas-macro-numero-de-dias-de-un-ano/
 ---

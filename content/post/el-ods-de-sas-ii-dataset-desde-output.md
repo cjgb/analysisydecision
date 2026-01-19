@@ -12,7 +12,8 @@ related:
   - truco-sas-proc-contents.md
   - macros-sas-informe-de-un-dataset-en-excel.md
 tags:
-  - sin etiqueta
+  - formación
+  - sas
 title: El ODS de SAS (II). Dataset desde OUTPUT
 url: /blog/el-ods-de-sas-ii-dataset-desde-output/
 ---

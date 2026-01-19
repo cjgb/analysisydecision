@@ -11,7 +11,7 @@ related:
   - mapa-del-covid-19-por-comunidades-autonomas-con-r-mas-rstats.md
   - seguimiento-del-coronavirus-en-espana-por-comunidad-autonoma-extraer-informacion-de-un-pdf-con-r.md
 tags:
-  - sin etiqueta
+  - formación
 title: 'Gracias a okbstudio ya tenemos nuestro propio seguimiento del #COVID19 en España'
 url: /blog/gracias-a-okbstudio-ya-tenemos-nuestro-propio-seguimiento-del-covid19-en-espana/
 ---

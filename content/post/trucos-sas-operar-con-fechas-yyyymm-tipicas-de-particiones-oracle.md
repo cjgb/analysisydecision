@@ -13,7 +13,9 @@ related:
   - macros-sas-primer-y-ultimo-dia-del-mes-de-una-fecha-sas.md
   - trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados.md
 tags:
-  - sin etiqueta
+  - formación
+  - sas
+  - trucos
 title: Trucos SAS. Operar con fechas YYYYMM típicas de particiones Oracle
 url: /blog/trucos-sas-operar-con-fechas-yyyymm-tipicas-de-particiones-oracle/
 ---

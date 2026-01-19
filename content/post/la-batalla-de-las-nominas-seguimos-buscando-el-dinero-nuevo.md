@@ -12,7 +12,8 @@ related:
   - lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
   - participaciones-preferentes-de-las-cajas-de-ahorro.md
 tags:
-  - sin etiqueta
+  - banca
+  - consultoría
 title: La Batalla de las nóminas. Seguimos buscando el dinero nuevo
 url: /blog/la-batalla-de-las-nominas-seguimos-buscando-el-dinero-nuevo/
 ---

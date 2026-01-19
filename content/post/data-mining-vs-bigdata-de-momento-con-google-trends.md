@@ -11,7 +11,7 @@ related:
   - data-mining-business-intelligence-yo-la-nube.md
   - cuando-tenemos-big-data.md
 tags:
-  - sin etiqueta
+  - big data
 title: Data mining vs Bigdata. De momento con Google Trends
 url: /blog/data-mining-vs-bigdata-de-momento-con-google-trends/
 ---

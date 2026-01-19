@@ -13,7 +13,9 @@ related:
   - monografico-regresion-logistica-con-r.md
   - manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
 tags:
-  - sin etiqueta
+  - formación
+  - modelos
+  - r
 title: 'Manual. Curso introducción de R. Capítulo 18: Modelos de regresión de Poisson'
 url: /blog/manual-curso-introduccion-de-r-capitulo-18-modelos-de-regresion-de-poisson/
 ---

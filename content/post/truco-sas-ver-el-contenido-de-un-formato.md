@@ -14,7 +14,10 @@ related:
   - trucos-sas-macrovariable-a-dataset.md
   - truco-sas-proc-format-vs-formato-percent.md
 tags:
-  - sin etiqueta
+  - formación
+  - sas
+  - trucos
+  - wps
 title: Truco SAS. Ver el contenido de un formato
 url: /blog/truco-sas-ver-el-contenido-de-un-formato/
 ---

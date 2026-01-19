@@ -12,7 +12,8 @@ related:
   - truco-sas-crear-ficheros-excel-sin-proc-export-i.md
   - trucos-excel-y-sas-complemento-para-cambiar-la-configuracion-regional.md
 tags:
-  - sin etiqueta
+  - sas
+  - trucos
 title: Truco SAS. Leer datos de Excel con SAS vía DDE
 url: /blog/truco-sas-leer-datos-de-excel-con-sas-con-dde/
 ---

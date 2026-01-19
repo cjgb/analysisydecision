@@ -13,7 +13,9 @@ related:
   - truco-sas-macro-numero-de-dias-de-un-ano.md
   - bucle-de-fechas-con-sas-para-tablas-particionadas.md
 tags:
-  - sin etiqueta
+  - formación
+  - sas
+  - trucos
 title: Macros (fáciles) de SAS. Días de un mes en una fecha
 url: /blog/macros-faciles-de-sas-dias-de-un-mes-en-una-fecha/
 ---

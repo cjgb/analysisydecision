@@ -11,7 +11,7 @@ related:
   - nuevo-curso-de-estadistica-con-r.md
   - nos-hemos-terminado-de-reinventar-acabamos-con-el-data-mining-y-empezamos-con-el-big-data.md
 tags:
-  - sin etiqueta
+  - formación
 title: Nueva edición del Programa en Big Data y Data Science de la UNED
 url: /blog/nueva-edicion-del-programa-en-big-data-y-data-science-de-la-uned/
 ---

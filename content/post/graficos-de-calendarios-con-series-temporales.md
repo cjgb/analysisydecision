@@ -15,7 +15,11 @@ related:
   - incluir-subplot-en-mapa-con-ggplot.md
   - graficos-de-burbuja-con-r.md
 tags:
-  - sin etiqueta
+  - business intelligence
+  - consultoría
+  - formación
+  - monográficos
+  - r
 title: Gráficos de calendarios con series temporales
 url: /blog/graficos-de-calendarios-con-series-temporales/
 ---

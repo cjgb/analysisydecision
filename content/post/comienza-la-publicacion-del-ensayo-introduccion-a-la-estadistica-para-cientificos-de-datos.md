@@ -13,7 +13,9 @@ related:
   - evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso.md
   - el-ano-2010-para-analisisydecision.md
 tags:
-  - sin etiqueta
+  - formación
+  - libro estadística
+  - r
 title: Comienza la publicación del ensayo Introducción a la Estadística para Científicos de Datos con R
 url: /blog/comienza-la-publicacion-del-ensayo-introduccion-a-la-estadistica-para-cientificos-de-datos/
 ---

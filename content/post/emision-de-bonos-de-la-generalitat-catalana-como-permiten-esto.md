@@ -11,7 +11,7 @@ related:
   - tantarantan-que-te-han-visto-pepe-tantarantan-que-te-han-visto-juan.md
   - participaciones-preferentes-de-las-cajas-de-ahorro.md
 tags:
-  - sin etiqueta
+  - formación
 title: Emisión de bonos de la Generalitat Catalana. ¿Cómo permiten esto?
 url: /blog/emision-de-bonos-de-la-generalitat-catalana-c2bfcomo-permiten-esto/
 ---

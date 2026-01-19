@@ -13,7 +13,9 @@ related:
   - truco-excel-repetir-un-campo-a-partir-de-otro-que-define-el-numero-de-repeticiones.md
   - truco-excel-pasar-un-rango-de-varias-columnas-a-una.md
 tags:
-  - sin etiqueta
+  - excel
+  - formación
+  - trucos
 title: Truco Excel. Producto cartesiano de dos campos
 url: /blog/truco-excel-producto-cartesiano-de-dos-campos/
 ---

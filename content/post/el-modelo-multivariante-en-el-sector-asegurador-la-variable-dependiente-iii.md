@@ -12,7 +12,8 @@ related:
   - el-modelo-multivariante-en-el-sector-asegurador-univariante-vs-multivariante-ii.md
   - los-parametros-del-modelo-glm-como-relatividades-como-recargos-o-descuentos.md
 tags:
-  - sin etiqueta
+  - formación
+  - seguros
 title: El modelo multivariante en el sector asegurador. La variable dependiente (III)
 url: /blog/el-modelo-multivariante-en-el-sector-asegurador-la-variable-dependiente-iii/
 ---

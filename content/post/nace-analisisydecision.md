@@ -12,7 +12,8 @@ related:
   - proyecto-text-mining-con-excel-i.md
   - proyecto-text-mining-con-excel-pasa-a-ser-google-mining.md
 tags:
-  - sin etiqueta
+  - consultoría
+  - formación
 title: Nace análisis y decisión AyD
 url: /blog/nace-analisisydecision/
 ---

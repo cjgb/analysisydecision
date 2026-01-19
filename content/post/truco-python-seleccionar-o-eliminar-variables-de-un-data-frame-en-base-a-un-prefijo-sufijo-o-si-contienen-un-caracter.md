@@ -14,7 +14,10 @@ related:
   - curso-de-lenguaje-sas-con-wps-subconjuntos-de-variables-con-drop-y-keep.md
   - truco-python-reemplazar-una-cadena-de-caracteres-en-los-nombres-de-las-columnas-de-un-data-frame.md
 tags:
-  - sin etiqueta
+  - formación
+  - machine learning
+  - python
+  - trucos
 title: Truco Python. Seleccionar o eliminar variables de un data frame en base a un prefijo, sufijo o si contienen un caracter
 url: /blog/truco-python-seleccionar-o-eliminar-variables-de-un-data-frame-en-base-a-un-prefijo-sufijo-o-si-contienen-un-caracter/
 ---

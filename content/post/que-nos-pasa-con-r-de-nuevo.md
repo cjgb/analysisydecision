@@ -14,7 +14,10 @@ related:
   - la-mejor-posicion-de-r-en-tiobe.md
   - cuando-paralelizar-procesos-con-r-era-otra-cosa.md
 tags:
-  - sin etiqueta
+  - big data
+  - machine learning
+  - opinión
+  - r
 title: ¿Qué nos pasa con R? (de nuevo)
 url: /blog/que-nos-pasa-con-r-de-nuevo/
 ---

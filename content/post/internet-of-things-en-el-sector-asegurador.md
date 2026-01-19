@@ -11,7 +11,7 @@ related:
   - el-modelo-multivariante-en-el-sector-asegurador-introduccion-i.md
   - modelos-tweedie-con-h2o-mutualizar-siniestralidad-en-base-a-factores-de-riesgo.md
 tags:
-  - sin etiqueta
+  - seguros
 title: Internet of things en el sector asegurador
 url: /blog/internet-of-things-en-el-sector-asegurador/
 ---

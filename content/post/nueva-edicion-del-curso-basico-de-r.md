@@ -12,7 +12,8 @@ related:
   - curso-de-iniciacion-a-r-en-kschool-de-carlos-gil.md
   - lectura-conjunta-de-analyzing-linguistic-data.md
 tags:
-  - sin etiqueta
+  - formación
+  - r
 title: Nueva edición del Curso Básico de R
 url: /blog/nueva-edicion-del-curso-basico-de-r/
 ---

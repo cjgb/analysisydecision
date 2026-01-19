@@ -15,7 +15,11 @@ related:
   - machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algoritmos-de-clasificacion.md
   - trucos-r-llevar-a-sas-las-reglas-de-un-arbol-de-decision.md
 tags:
-  - sin etiqueta
+  - inteligencia artificial
+  - machine learning
+  - modelos
+  - monográficos
+  - r
 title: Inteligencia Arficial frente a un juego de niños. La partícula tonta de Nicolás
 url: /blog/inteligencia-arficial-frente-a-un-juego-de-ninos-la-particula-tonta-de-nicolas/
 ---

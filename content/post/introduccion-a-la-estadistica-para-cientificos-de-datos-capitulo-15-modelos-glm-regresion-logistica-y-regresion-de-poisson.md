@@ -17,7 +17,13 @@ related:
   - manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
   - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-11-analisis-bivariable.md
 tags:
-  - sin etiqueta
+  - formación
+  - libro estadística
+  - machine learning
+  - modelos
+  - monográficos
+  - r
+  - seguros
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 15. Modelos GLM. Regresión logística y regresión de poisson
 url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-15-modelos-glm-regresion-logistica-y-regresion-de-poisson/
 ---

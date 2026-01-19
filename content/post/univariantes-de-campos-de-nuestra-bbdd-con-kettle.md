@@ -14,7 +14,10 @@ related:
   - montemos-un-sistema-de-informacion-en-nuestro-equipo-i.md
   - trucos-sas-trasponer-con-sql-para-torpes.md
 tags:
-  - sin etiqueta
+  - business intelligence
+  - consultoría
+  - formación
+  - monográficos
 title: Univariantes de campos de nuestra BBDD con kettle
 url: /blog/univariantes-de-campos-de-nuestra-bbdd-con-kettle/
 ---

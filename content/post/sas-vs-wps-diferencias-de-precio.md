@@ -12,7 +12,8 @@ related:
   - nuevo-entorno-para-la-gestion-de-la-informacion.md
   - acercamiento-a-wps-migrando-desde-sas.md
 tags:
-  - sin etiqueta
+  - business intelligence
+  - wps
 title: SAS vs WPS. Diferencias de precio
 url: /blog/sas-vs-wps-diferencias-de-precio/
 ---

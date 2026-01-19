@@ -12,7 +12,8 @@ related:
   - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-6-descripcion-numerica-de-variables.md
   - el-analisis-de-supervivencia-para-segmentar-el-churn.md
 tags:
-  - sin etiqueta
+  - business intelligence
+  - consultoría
 title: Life Time Value. Los costes de adquisición ideales e irreales
 url: /blog/life-time-value-los-costes-de-adquisicion-ideales-e-irreales/
 ---

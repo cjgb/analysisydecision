@@ -12,7 +12,8 @@ related:
   - proyecto-text-mining-con-excel-i.md
   - truco-excel-unir-todos-los-libros-en-una-hoja.md
 tags:
-  - sin etiqueta
+  - consultoría
+  - data mining
 title: Proyecto. Text Mining con Excel (IV)
 url: /blog/proyecto-text-mining-con-excel-iv/
 ---

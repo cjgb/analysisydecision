@@ -12,7 +12,8 @@ related:
   - importar-a-sas-desde-otras-aplicaciones.md
   - acercamiento-a-wps-migrando-desde-sas.md
 tags:
-  - sin etiqueta
+  - sas
+  - trucos
 title: ¿Truco? Leer .sas7bdat sin SAS
 url: /blog/c2bftruco-leer-sas7bdat-sin-sas/
 ---

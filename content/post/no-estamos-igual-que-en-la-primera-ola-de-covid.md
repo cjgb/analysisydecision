@@ -12,7 +12,8 @@ related:
   - mi-breve-seguimiento-del-coronavirus-con-r.md
   - etiquetas-en-scatter-plot-muertes-covid-por-millon-de-habitantes-vs-gasto-en-salud.md
 tags:
-  - sin etiqueta
+  - gráficos
+  - r
 title: No estamos igual que en la primera ola de COVID
 url: /blog/no-estamos-igual-que-en-la-primera-ola-de-covid/
 ---

@@ -12,7 +12,8 @@ related:
   - truco-excel-y-sas-ejecutar-sas-desde-macro-en-excel.md
   - intro-rcommander-1-que-es-rcommander.md
 tags:
-  - sin etiqueta
+  - r
+  - trucos
 title: Ejecutar un código al iniciar la sesión de R
 url: /blog/ejecutar-un-codigo-al-iniciar-la-sesion-de-r/
 ---

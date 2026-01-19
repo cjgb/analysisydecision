@@ -13,7 +13,9 @@ related:
   - trucos-excel-convertir-texto-en-un-resultado-o-formula.md
   - trucos-sas-calcular-percentiles-como-excel-o-r.md
 tags:
-  - sin etiqueta
+  - excel
+  - formación
+  - trucos
 title: Medias ponderadas en Excel. Crear tu propia función
 url: /blog/medias-ponderadas-en-excel-crear-tu-propia-funcion/
 ---

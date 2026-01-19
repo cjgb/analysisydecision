@@ -11,7 +11,7 @@ related:
   - mapa-de-espana-por-provincias-en-html.md
   - cartografia-digitalizada-de-espana-por-seccion-censal.md
 tags:
-  - sin etiqueta
+  - formación
 title: Archivos shape y geojason para crear un mapa de España por códigos postales
 url: /blog/archivos-shape-y-geojason-para-crear-un-mapa-de-espana-por-codigos-postales/
 ---

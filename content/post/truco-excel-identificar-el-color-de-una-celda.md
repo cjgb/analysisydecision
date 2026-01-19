@@ -13,7 +13,9 @@ related:
   - truco-excel-graficos-de-dispersion-que-identifican-los-puntos.md
   - trucos-excel-mapa-de-espana-por-provincias.md
 tags:
-  - sin etiqueta
+  - excel
+  - formación
+  - trucos
 title: Truco Excel. Identificar el color de una celda
 url: /blog/truco-excel-identificar-el-color-de-una-celda/
 ---

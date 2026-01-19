@@ -13,7 +13,9 @@ related:
   - principales-elementos-en-las-pruebas-diagnosticas.md
   - el-sobremuestreo-mejora-mi-estimacion.md
 tags:
-  - sin etiqueta
+  - formación
+  - modelos
+  - video
 title: La importancia del valor predictivo positivo en las pruebas diagnósticas
 url: /blog/la-importancia-del-valor-predictivo-positivo-en-las-pruebas-diagnosticas/
 ---

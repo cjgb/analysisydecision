@@ -12,7 +12,8 @@ related:
   - truco-excel-unir-todos-los-libros-en-una-hoja.md
   - truco-excel-application-getopenfilename-el-explorador-de-archivos-sencillo-en-macro.md
 tags:
-  - sin etiqueta
+  - excel
+  - trucos
 title: Truco Excel. Calculadora desde la barra de herramientas de acceso rápido
 url: /blog/truco-excel-calculadora-desde-la-barra-de-herramientas-de-acceso-rapido/
 ---

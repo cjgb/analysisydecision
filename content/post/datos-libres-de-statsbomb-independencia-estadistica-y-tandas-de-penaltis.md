@@ -12,7 +12,8 @@ related:
   - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-10-probabilidad-y-distribuciones.md
   - pintando-campos-de-futbol-con-rstats-y-entendiendo-funciones-de-densidad.md
 tags:
-  - sin etiqueta
+  - fútbol
+  - formación
 title: Datos libres de StatsBomb. Independencia estadística y tandas de penaltis
 url: /blog/datos-libres-de-statsbomb-independencia-estadistica-y-tandas-de-penaltis/
 ---

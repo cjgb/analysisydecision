@@ -13,7 +13,9 @@ related:
   - proc-sql-merge-set.md
   - trucos-sas-operaciones-con-tablas-de-dimensiones-con-sas.md
 tags:
-  - sin etiqueta
+  - formación
+  - sas
+  - trucos
 title: Truco SAS. Transponer tablas con PROC TRANSPOSE, DATA o PROC SQL
 url: /blog/truco-sas-transponer-tablas-con-proc-transpose-data-o-proc-sql/
 ---

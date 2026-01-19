@@ -13,7 +13,9 @@ related:
   - descubriendo-ggplot2-421.md
   - ejemplo-de-web-scraping-con-r-la-formacion-de-los-diputados-del-congreso.md
 tags:
-  - sin etiqueta
+  - formación
+  - monográficos
+  - r
 title: 'Longitud de las frases del Quijote con #rstats'
 url: /blog/longitud-de-las-frases-del-quijote-con-rstats/
 ---

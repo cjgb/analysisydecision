@@ -11,7 +11,7 @@ related:
   - mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel.md
   - mapas-municipales-de-espana-con-excel-y-qgis.md
 tags:
-  - sin etiqueta
+  - formación
 title: Mapa estático de España con Python
 url: /blog/mapa-estatico-de-espana-con-python/
 ---

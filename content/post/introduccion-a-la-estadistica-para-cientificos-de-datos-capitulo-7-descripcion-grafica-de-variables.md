@@ -13,7 +13,9 @@ related:
   - graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
   - graficos-descriptivos-basicos-con-seaborn-python.md
 tags:
-  - sin etiqueta
+  - formación
+  - libro estadística
+  - r
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 7. Descripción gráfica de datos
 url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-7-descripcion-grafica-de-variables/
 ---

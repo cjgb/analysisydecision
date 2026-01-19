@@ -12,7 +12,8 @@ related:
   - revolution-computing-ahora-es-revolution-analytics.md
   - el-ano-2009-para-analisis-y-decision.md
 tags:
-  - sin etiqueta
+  - business intelligence
+  - r
 title: ¿Qué compañía está entre las 12 ‘Companies to Watch’ in 2010?
 url: /blog/c2bfque-compania-esta-entre-las-12-companies-to-watch-in-2010/
 ---

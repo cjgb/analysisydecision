@@ -14,7 +14,10 @@ related:
   - pintando-campos-de-futbol-con-rstats-y-entendiendo-funciones-de-densidad.md
   - datos-de-eventing-gratuitos-en-statsbomb.md
 tags:
-  - sin etiqueta
+  - consultoría
+  - fútbol
+  - opinión
+  - r
 title: Minutos de juego y puntos. El Espanyol, sus finales de partido y mis enfados
 url: /blog/minutos-de-juego-y-puntos-es-espanyol-y-sus-finales-de-partido/
 ---

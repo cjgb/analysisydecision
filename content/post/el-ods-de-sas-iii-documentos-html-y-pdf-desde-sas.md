@@ -12,7 +12,8 @@ related:
   - truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
   - macros-sas-informe-de-un-dataset-en-excel.md
 tags:
-  - sin etiqueta
+  - formación
+  - sas
 title: El ODS de SAS (III). Documentos HTML y PDF desde SAS
 url: /blog/el-ods-de-sas-iii-documentos-html-y-pdf-desde-sas/
 ---

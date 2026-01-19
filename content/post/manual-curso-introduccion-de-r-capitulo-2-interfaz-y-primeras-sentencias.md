@@ -12,7 +12,8 @@ related:
   - truco-r-eval-parse-y-paste-para-automatizar-codigo.md
   - manual-curso-introduccion-de-r-capitulo-5-lectura-avanzada-de-datos.md
 tags:
-  - sin etiqueta
+  - formación
+  - r
 title: 'Manual. Curso introducción de R. Capítulo 2: Interfaz y primeras sentencias'
 url: /blog/manual-curso-introduccion-de-r-capitulo-2-interfaz-y-primeras-sentencias/
 ---

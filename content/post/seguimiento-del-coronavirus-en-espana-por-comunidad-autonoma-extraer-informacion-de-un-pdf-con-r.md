@@ -12,7 +12,8 @@ related:
   - seguir-los-datos-del-coronavirus-en-espana-con-rstats.md
   - mi-breve-seguimiento-del-coronavirus-con-r.md
 tags:
-  - sin etiqueta
+  - formación
+  - r
 title: Seguimiento del coronavirus en España por Comunidad Autónoma. Extraer información de un PDF con R
 url: /blog/seguimiento-del-coronavirus-en-espana-por-comunidad-autonoma-extraer-informacion-de-un-pdf-con-r/
 ---

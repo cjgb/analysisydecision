@@ -13,7 +13,9 @@ related:
   - acercamiento-a-wps-migrando-desde-sas.md
   - comparativa-de-precio-wps-vs-sas.md
 tags:
-  - sin etiqueta
+  - consultoría
+  - sas
+  - wps
 title: Sentencia del Tribunal de Justicia de la UE sobre el caso WPS y SAS
 url: /blog/sentencia-del-tribunal-de-justicia-de-la-ue-sobre-el-caso-wps-y-sas/
 ---

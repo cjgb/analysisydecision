@@ -12,7 +12,8 @@ related:
   - manual-curso-introduccion-de-r-capitulo-13-analisis-de-la-varianza-disenos-anidados.md
   - manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
 tags:
-  - sin etiqueta
+  - formación
+  - r
 title: 'Manual. Curso introducción de R. Capítulo 8: Inferencia estadística'
 url: /blog/manual-curso-introduccion-de-r-capitulo-8-inferencia-estadistica/
 ---

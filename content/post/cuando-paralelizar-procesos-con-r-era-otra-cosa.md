@@ -12,7 +12,8 @@ related:
   - revision-de-las-iii-jornadas-de-r.md
   - conectar-r-a-una-base-de-datos.md
 tags:
-  - sin etiqueta
+  - big data
+  - r
 title: Cuando paralelizar procesos con R era otra cosa
 url: /blog/cuando-paralelizar-procesos-con-r-era-otra-cosa/
 ---

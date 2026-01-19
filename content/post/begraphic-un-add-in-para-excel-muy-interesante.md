@@ -14,7 +14,10 @@ related:
   - mapa-de-catalunya-en-excel-por-comarcas.md
   - mapas-de-la-provincia-de-madrid-con-bdt.md
 tags:
-  - sin etiqueta
+  - business intelligence
+  - consultoría
+  - excel
+  - formación
 title: Begraphic un add in para Excel muy interesante
 url: /blog/begraphic-un-add-in-para-excel-muy-interesante/
 ---

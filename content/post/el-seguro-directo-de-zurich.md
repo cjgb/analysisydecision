@@ -12,7 +12,8 @@ related:
   - consultor-particular-de-seguros.md
   - mutua-madrilena-compra-el-50-de-adeslas-seguros-generales.md
 tags:
-  - sin etiqueta
+  - consultoría
+  - seguros
 title: El seguro directo de Zurich
 url: /blog/el-seguro-directo-de-zurich/
 ---

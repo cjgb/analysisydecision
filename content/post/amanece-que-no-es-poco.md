@@ -12,7 +12,8 @@ related:
   - la-confianza-en-el-sector-financiero.md
   - lecciones-de-economia-de-un-ignorante-solucion-trabajar-mas-y-cobrar-menos.md
 tags:
-  - sin etiqueta
+  - banca
+  - consultoría
 title: Amanece que no es poco
 url: /blog/amanece-que-no-es-poco/
 ---

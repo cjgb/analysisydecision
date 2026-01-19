@@ -11,7 +11,7 @@ related:
   - i-jornadas-de-usuarios-de-r-en-espana.md
   - primeras-jornadas-de-usuarios-de-r-en-espana-ya-es-oficial.md
 tags:
-  - sin etiqueta
+  - formación
 title: ¡Por fin en las III jornadas de R!
 url: /blog/c2a1por-fin-en-las-iii-jornadas-de-r/
 ---

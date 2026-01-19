@@ -13,7 +13,9 @@ related:
   - descubriendo-ggplot2-421.md
   - informes-con-r-en-html-comienzo-con-r2html-i.md
 tags:
-  - sin etiqueta
+  - formación
+  - r
+  - trucos
 title: Mosaic plot con R
 url: /blog/mosaic-plot-con-r/
 ---

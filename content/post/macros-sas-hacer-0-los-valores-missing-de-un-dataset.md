@@ -13,7 +13,9 @@ related:
   - macro-sas-crear-variables-dummy-desde-una-variable-categorica.md
   - macros-faciles-de-sas-determinar-si-existe-una-variable-en-un-dataset.md
 tags:
-  - sin etiqueta
+  - formación
+  - sas
+  - trucos
 title: Macros SAS. Hacer 0 los valores missing de un dataset
 url: /blog/macros-sas-hacer-0-los-valores-missing-de-un-dataset/
 ---

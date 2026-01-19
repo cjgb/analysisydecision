@@ -11,7 +11,7 @@ related:
   - data-mining-business-intelligence-yo-la-nube.md
   - proyectos-de-nosql-en-espana.md
 tags:
-  - sin etiqueta
+  - big data
 title: Búsquedas de SQL frente a búsquedas de Hadoop
 url: /blog/busquedas-de-sql-frente-a-busquedas-de-hadoop/
 ---

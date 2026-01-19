@@ -12,7 +12,8 @@ related:
   - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-16-modelizacion-estadistica-conociendo-los-datos.md
   - contenidos-web-analisis-informacion.md
 tags:
-  - sin etiqueta
+  - consultoría
+  - data mining
 title: Minería de datos, una herramienta clave en consultoría
 url: /blog/mineria-de-datos-una-herramienta-clave-en-consultoria/
 ---

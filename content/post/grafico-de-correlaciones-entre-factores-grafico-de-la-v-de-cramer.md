@@ -13,7 +13,9 @@ related:
   - graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
   - monografico-analisis-de-factores-con-r-una-introduccion.md
 tags:
-  - sin etiqueta
+  - formación
+  - modelos
+  - r
 title: Gráfico de correlaciones entre factores. Gráfico de la V de Cramer
 url: /blog/grafico-de-correlaciones-entre-factores-grafico-de-la-v-de-cramer/
 ---

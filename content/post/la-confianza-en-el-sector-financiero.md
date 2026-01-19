@@ -11,7 +11,7 @@ related:
   - a-mi-me-preocupa-el-pequeno-ahorrador.md
   - una-fabulilla-sobre-prim-con-multiples-moralejas.md
 tags:
-  - sin etiqueta
+  - banca
 title: La confianza en el sector financiero
 url: /blog/la-confianza-en-el-sector-financiero/
 ---

@@ -14,7 +14,10 @@ related:
   - manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
   - sobremuestreo-y-pesos-a-las-observaciones-ahora-con-r.md
 tags:
-  - sin etiqueta
+  - business intelligence
+  - consultoría
+  - power bi
+  - r
 title: Trabajar con los datos de Power BI desde R para hacer un modelo de regresión lineal
 url: /blog/trabajar-con-los-datos-de-power-bi-desde-r-para-hacer-un-modelo-de-regresion-lineal/
 ---

@@ -11,7 +11,7 @@ related:
   - reunion-del-grupo-de-usuarios-de-r-de-madrid.md
   - reunion-del-grupo-de-usuarios-de-r-de-madrid-12-de-noviembre.md
 tags:
-  - sin etiqueta
+  - r
 title: Reunión del Grupo de Usuarios de R de Madrid 14/04/2016
 url: /blog/reunion-del-grupo-de-usuarios-de-r-de-madrid-14042016/
 ---

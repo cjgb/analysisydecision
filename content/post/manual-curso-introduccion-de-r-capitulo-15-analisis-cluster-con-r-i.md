@@ -13,7 +13,9 @@ related:
   - arboles-de-decision-con-sas-base-con-r-por-supuesto.md
   - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-9-analisis-exploratorio-de-datos-eda.md
 tags:
-  - sin etiqueta
+  - formación
+  - modelos
+  - r
 title: 'Manual. Curso introducción de R. Capítulo 15: Análisis Cluster con R (I)'
 url: /blog/manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-i/
 ---

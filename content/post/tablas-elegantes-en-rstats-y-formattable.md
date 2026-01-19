@@ -13,7 +13,9 @@ related:
   - evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso.md
   - trucos-simples-para-rstats.md
 tags:
-  - sin etiqueta
+  - business intelligence
+  - formación
+  - r
 title: 'Tablas elegantes en #rstats y formattable'
 url: /blog/tablas-elegantes-en-rstats-y-formattable/
 ---

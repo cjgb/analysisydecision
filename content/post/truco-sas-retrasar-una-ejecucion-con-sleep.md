@@ -13,7 +13,9 @@ related:
   - truco-sas-sysecho-para-controlar-las-ejecuciones-en-enterprise-guide.md
   - trucos-sas-ejecutar-un-codigo-si-existe-una-tabla-o-un-fichero.md
 tags:
-  - sin etiqueta
+  - modelos
+  - sas
+  - trucos
 title: Truco SAS. Retrasar una ejecución con SLEEP
 url: /blog/truco-sas-retrasar-una-ejecucion-con-sleep/
 ---

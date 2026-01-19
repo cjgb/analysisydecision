@@ -13,7 +13,9 @@ related:
   - truco-excel-graficos-de-dispersion-que-identifican-los-puntos.md
   - trucos-excel-mapa-de-espana-por-provincias.md
 tags:
-  - sin etiqueta
+  - excel
+  - formación
+  - trucos
 title: Truco Excel. Formatos condicionales para crear rango de colores
 url: /blog/truco-excel-formatos-condicionales-para-crear-rango-de-colores/
 ---

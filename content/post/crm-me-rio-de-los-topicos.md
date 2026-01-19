@@ -12,7 +12,8 @@ related:
   - el-ano-2010-para-analisisydecision.md
   - el-ano-2009-para-analisis-y-decision.md
 tags:
-  - sin etiqueta
+  - business intelligence
+  - consultoría
 title: CRM. ¡Me río de los tópicos!
 url: /blog/crm-c2a1me-rio-de-los-topicos/
 ---

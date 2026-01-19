@@ -13,7 +13,9 @@ related:
   - descubriendo-ggplot2-421.md
   - grafico-de-barras-y-lineas-con-python.md
 tags:
-  - sin etiqueta
+  - formación
+  - gráficos
+  - julia
 title: Gráficos Básicos con Julia
 url: /blog/graficos-basicos-con-julia/
 ---

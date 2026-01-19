@@ -11,7 +11,7 @@ related:
   - descubriendo-ggplot2-421.md
   - truco-r-paletas-de-colores-en-r.md
 tags:
-  - sin etiqueta
+  - r
 title: 'Como me encuentro hoy, con #rstats'
 url: /blog/como-me-encuentro-hoy-con-rstats/
 ---

@@ -12,7 +12,8 @@ related:
   - mineria-de-datos-una-herramienta-clave-en-consultoria.md
   - el-data-mining-no-es-la-caja-negra-que-selecciona-clientes.md
 tags:
-  - sin etiqueta
+  - business intelligence
+  - consultoría
 title: Camping o Campain. ¿Es lo mismo una campaña que una tienda de campaña?
 url: /blog/camping-o-campain-c2bfes-lo-mismo-una-campana-que-una-tienda-de-campana/
 ---

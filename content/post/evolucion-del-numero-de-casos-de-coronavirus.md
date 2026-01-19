@@ -12,7 +12,8 @@ related:
   - tablas-elegantes-en-rstats-y-formattable.md
   - etiquetas-en-scatter-plot-muertes-covid-por-millon-de-habitantes-vs-gasto-en-salud.md
 tags:
-  - sin etiqueta
+  - formación
+  - r
 title: Evolución del número de casos de coronavirus
 url: /blog/evolucion-del-numero-de-casos-de-coronavirus/
 ---

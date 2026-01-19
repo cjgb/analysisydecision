@@ -13,7 +13,9 @@ related:
   - lecciones-de-economia-de-un-ignorante-llegamos-a-solvencia-ii.md
   - lecciones-de-economia-de-un-ignorante-la-caixa-a-colocar-preferentes.md
 tags:
-  - sin etiqueta
+  - banca
+  - formación
+  - monográficos
 title: Lecciones de economía de un ignorante. La prima de riesgo (y la madre que la parió)
 url: /blog/lecciones-de-economia-de-un-ignorante-la-prima-de-riesgo-y-la-madre-que-la-pario/
 ---

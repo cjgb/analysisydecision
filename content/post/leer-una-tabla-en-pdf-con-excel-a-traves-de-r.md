@@ -15,7 +15,11 @@ related:
   - evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso.md
   - truco-sas-crear-ficheros-excel-sin-proc-export-ii.md
 tags:
-  - sin etiqueta
+  - excel
+  - formación
+  - monográficos
+  - r
+  - trucos
 title: Leer una tabla en PDF con Excel (a través de R)
 url: /blog/leer-una-tabla-en-pdf-con-excel-a-traves-de-r/
 ---

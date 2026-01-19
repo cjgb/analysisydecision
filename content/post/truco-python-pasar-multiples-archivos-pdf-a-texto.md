@@ -12,7 +12,8 @@ related:
   - truco-sas-dataset-con-los-ficheros-y-carpetas-de-un-directorio.md
   - lectura-de-archivos-csv-con-python-y-pandas.md
 tags:
-  - sin etiqueta
+  - python
+  - trucos
 title: Truco Python. Pasar múltiples archivos pdf a texto
 url: /blog/truco-python-pasar-multiples-archivos-pdf-a-texto/
 ---

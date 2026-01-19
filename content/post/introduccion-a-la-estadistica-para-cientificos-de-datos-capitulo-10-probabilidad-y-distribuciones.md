@@ -14,7 +14,10 @@ related:
   - manual-curso-introduccion-de-r-capitulo-8-inferencia-estadistica.md
   - manual-curso-introduccion-de-r-capitulo-11-introduccion-al-analisis-de-la-varianza-anova.md
 tags:
-  - sin etiqueta
+  - formación
+  - libro estadística
+  - monográficos
+  - r
 title: Introducción a la Estadística para Científicos de Datos. Capítulo 10. Probabilidad y distribuciones
 url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-10-probabilidad-y-distribuciones/
 ---

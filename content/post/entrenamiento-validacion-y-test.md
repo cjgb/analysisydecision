@@ -13,7 +13,9 @@ related:
   - monografico-paquete-de-r-nnet-para-modelos-de-redes-neuronales.md
   - el-analisis-de-supervivencia-para-segmentar-el-churn.md
 tags:
-  - sin etiqueta
+  - data mining
+  - formación
+  - modelos
 title: Entrenamiento, validación y test
 url: /blog/entrenamiento-validacion-y-test/
 ---
