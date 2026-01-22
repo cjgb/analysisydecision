@@ -18,7 +18,7 @@ title: Estimación de la evolución de casos del coronavirus en España
 url: /blog/estimacion-de-la-evolucion-de-casos-del-coronavirus-en-espana/
 ---
 
-[Ayer escribrí sobre la obtención de los datos del coronavirus](https://analisisydecision.es/seguir-los-datos-del-coronavirus-en-espana-con-rstats/) con R y después me disponía ha escribir sobre modelos de regresión no lineal, hacer una estimación del coronavirus en España,… Pero estuve hablando con una amiga residente en Italia y allí el número de casos está dos semanas por delante de España, bueno, dos semanas exactamente no, 10 días:
+[Ayer escribí sobre la obtención de los datos del coronavirus](https://analisisydecision.es/seguir-los-datos-del-coronavirus-en-espana-con-rstats/) con R y después me disponía ha escribir sobre modelos de regresión no lineal, hacer una estimación del coronavirus en España,… Pero estuve hablando con una amiga residente en Italia y allí el número de casos está dos semanas por delante de España, bueno, dos semanas exactamente no, 10 días:
 
 ```r
 library(lubridate)
@@ -44,7 +44,7 @@ p <- ggplot(esp_ita, aes(x=fecha)) +
 p
 ```
 
-[![](/images/2020/03/coronavirus2.png)](/images/2020/03/coronavirus2.png)
+![Gráfico de la evolución de casos de coronavirus](/images/2020/03/coronavirus2.png)
 
 A la vista de las dos evoluciones hace pensar que el número de casos en España siga la misma evolución que sigue en Italia, por eso en este caso en vez de manejar fechas vamos a manejar días de evolución y al dato de España vamos a quitarle 10 días:
 
@@ -67,6 +67,6 @@ p <- ggplot(esp_ita, aes(x=fecha)) +
 p
 ```
 
-[![](/images/2020/03/coronavirus3.png)](/images/2020/03/coronavirus3.png)
+![Gráfico de la evolución de casos de coronavirus con 10 días de decalaje](/images/2020/03/coronavirus3.png)
 
 Mi estimación para los próximos 10 días sobre la evolución del coronavirus en España está clara, ahora solo queda que no salga el ejército a la calle como en Milán.

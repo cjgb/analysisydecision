@@ -20,9 +20,9 @@ title: Trucos SAS. Muestreo con PROC SURVEYSELECT
 url: /blog/trucos-sas-muestreo-con-proc-surveyselect/
 ---
 
-Hace varios días planteamos algún truco SAS para la realización de muestras aleatorias. Hoy planteo otro truco para lo mismo pero empleando el procedimiento de SAS SURVEYSELECT. Este procedimiento lo tenemos en el módulo STAT y tiene una sintaxis muy sencilla. Además nos permite realizar [muestreos estratificados ](http://www.bioestadistica.uma.es/libro/node89.htm)de forma muy sencilla, mediante pasos data el muestreo estratificado se complica. Como es habitual vemos varios ejemplos partiendo de una tabla SAS aleatoria:
+Hace varios días planteamos algún truco SAS para la realización de muestras aleatorias. Hoy planteo otro truco para lo mismo pero empleando el procedimiento de `SAS SURVEYSELECT`. Este procedimiento lo tenemos en el módulo `STAT` y tiene una sintaxis muy sencilla. Además nos permite realizar [muestreos estratificados ](http://www.bioestadistica.uma.es/libro/node89.htm)de forma muy sencilla, mediante pasos data el muestreo estratificado se complica. Como es habitual vemos varios ejemplos partiendo de una tabla SAS aleatoria:
 
-```r
+```sas
 data ejemplo;
 
  do id=1 to 10000;
@@ -48,7 +48,7 @@ quit;
 
 Tenemos un datasets con 10.000 observaciones que tiene un id, un importe y una oficina. El primer paso es crear una muestra aleatoria simple de tamaño 300, las sentencias adecuadas con el PROC SURVEYSELECT son:
 
-```r
+```sas
 *MUESTRA ALEATORIA SIMPLE;
 
 PROC SURVEYSELECT DATA=EJEMPLO
@@ -58,9 +58,9 @@ PROC SURVEYSELECT DATA=EJEMPLO
 RUN;
 ```
 
-Vemos que en method especificamos que tipo de muestreo deseamos, SRS es aleatorio simple sin reemplazamiento. Si deseamos muestreo aleatorio simple con reemplazamiento el código a ejecutar sería:
+Vemos que en method especificamos que tipo de muestreo deseamos, `SRS`. Si deseamos muestreo aleatorio simple con reemplazamiento el código a ejecutar sería:
 
-```r
+```sas
 *MUESTRA ALEATORIA CON REEMPLAZAMIENTO;
 
 PROC SURVEYSELECT DATA=EJEMPLO
@@ -72,9 +72,9 @@ PROC SURVEYSELECT DATA=EJEMPLO
 RUN;
 ```
 
-El método es URS y con la opción OUTHITS indicamos que cree una variable en el dataset de salida que nos indique el número de veces que aparece esa observación en la muestra, interesante opción para asignar pesos. Por otro lado si necesitamos realizar un muestreo estratificado por alguna variable discreta tenemos que emplear el siguiente código:
+El método es `URS` indicamos que cree una variable en el dataset de salida que nos indique el número de veces que aparece esa observación en la muestra, interesante opción para asignar pesos. Por otro lado si necesitamos realizar un muestreo estratificado por alguna variable discreta tenemos que emplear el siguiente código:
 
-```r
+```sas
 *MUESTREO ESTRATIFICADO ALEATORIO SIMPLE
 
  SIN REEMPLAZAMIENTO;
@@ -94,9 +94,9 @@ PROC SURVEYSELECT DATA=aleat3
 RUN;
 ```
 
-Realizamos una ordenación previa por la variable que hace de estrato, indicamos el método y en el número de observaciones ponemos el número que deseamos por estrato, con esto tendremos nº estratos\*N observaciones en el dataset de salida. Para indicarle cual es la variable por la que se realiza el muestreo estratificado tenemos la instrucción STRATA. De especial interés pueden ser las variables que se añaden al dataset de salida _SelectionProb_ y _SamplingWeight_ que nos indican la probabilidad de obtención de la observación y el peso que ésta tiene. Si deseamos muestreo estratificado con reemplazamiento podemos hacer:
+Realizamos una ordenación previa por la variable que hace de estrato, indicamos el método y en el número de observaciones ponemos el número que deseamos por estrato, con esto tendremos nº estratos\*N observaciones en el dataset de salida. Para indicarle cual es la variable por la que se realiza el muestreo estratificado tenemos la instrucción `STRATA` pueden ser las variables que se añaden al dataset de salida `SelectionProb` y `SamplingWeight` que nos indican la probabilidad de obtención de la observación y el peso que ésta tiene. Si deseamos muestreo estratificado con reemplazamiento podemos hacer:
 
-```r
+```sas
 *MUESTREO ESTRATIFICADO CON REEMPLAZAMIENTO;
 
 PROC SORT DATA=WORK.EJEMPLO

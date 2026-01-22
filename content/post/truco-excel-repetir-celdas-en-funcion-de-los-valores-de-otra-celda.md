@@ -22,25 +22,25 @@ title: Truco Excel. Repetir celdas en función de los valores de otra celda
 url: /blog/truco-excel-repetir-celdas-en-funcion-de-los-valores-de-otra-celda/
 ---
 
-En alguna ocasión me habéis planteado como repetir celdas en Excel en función del valor de una celda, es decir, repetir una celda tantas veces como nos indica otra celda. Disponía de una versión con fórmulas más complejas que programar el proceso en visual basic, si alguien está interesado cuelgo un ejemplo en Excel sin describir el funcionamiento porque es muy complejo, quizá en el futuro retome esas fórmulas e intente simplificar el proceso. Hoy os traigo esta tarea de repetir celdas en Excel en base a otra celda pero insertando y usando fórmulas sencillas. Para el ejemplo partiríamos de esta situación:
+En alguna ocasión me habéis planteado como repetir celdas en `Excel` en función del valor de una celda, es decir, repetir una celda tantas veces como nos indica otra celda. Disponía de una versión con fórmulas más complejas que programar el proceso en `visual basic`, si alguien está interesado cuelgo un ejemplo en `Excel` sin describir el funcionamiento porque es muy complejo, quizá en el futuro retome esas fórmulas e intente simplificar el proceso. Hoy os traigo esta tarea de repetir celdas en `Excel` en base a otra celda pero insertando y usando fórmulas sencillas. Para el ejemplo partiríamos de esta situación:
 
-[![](/images/2021/02/repetir_columna_excel.png)](/images/2021/02/repetir_columna_excel.png)
+![Repetir Columna Excel](/images/2021/02/repetir_columna_excel.png)
 
-Hay que repetir V1 tantas veces como nos indica V2. El primer paso sería añadir una columna a la izquierda y crear una suma acumulada de este modo:
+Hay que repetir `V1` tantas veces como nos indica `V2`. El primer paso sería añadir una columna a la izquierda y crear una suma acumulada de este modo:
 
-[![](/images/2021/02/repetir_columna_excel2.png)](/images/2021/02/repetir_columna_excel2.png)
+![Repetir Columna Excel 2](/images/2021/02/repetir_columna_excel2.png)
 
 En el ejemplo deberíamos tener 16 registros, el resultado de la suma acumulada de todas las repeticiones, luego necesitamos 16 celdas numeradas donde pondremos los 16 registros, para ilustrar:
 
-[![](/images/2021/02/repetir_columna_excel3.png)](/images/2021/02/repetir_columna_excel3.png)
+![Repetir Columna Excel 3](/images/2021/02/repetir_columna_excel3.png)
 
-Ahora aplicamos BUSCARV en los 16 registros pero ponemos la coincidencia aproximada a 1, a VERDADERO y de ese modo BUSCARV no solo encontrará los valores exactos también encontrará los valores superiores y nos ofrecerá la celda que necesitamos:
+Ahora aplicamos `BUSCARV` en los 16 registros pero ponemos la coincidencia aproximada a `1`, a `VERDADERO` y de ese modo `BUSCARV` no solo encontrará los valores exactos también encontrará los valores superiores y nos ofrecerá la celda que necesitamos:
 
-[![](/images/2021/02/repetir_columna_excel4.png)](/images/2021/02/repetir_columna_excel4.png)
+![Repetir Columna Excel 4](/images/2021/02/repetir_columna_excel4.png)
 
 El resultado final realiza la tarea requerida:
 
-[![](/images/2021/02/repetir_columna_excel5.png)](/images/2021/02/repetir_columna_excel5.png)
+![Repetir Columna Excel 5](/images/2021/02/repetir_columna_excel5.png)
 
 No es porque lo haya hecho yo, pero no puede ser más sencillo y estar más claramente ilustrado, en cualquier caso si tenéis dudas escribid un comentario y en cuanto sea posible lo contesto, pero vamos…
 Saludos.

@@ -8,7 +8,7 @@ date: '2011-03-20'
 lastmod: '2025-07-13'
 related:
   - truco-r-paletas-de-colores-en-r.md
-  - graficos-de-barras-y-lineas-en-dos-ejes-con-r.md
+  - graficos-de-barras-y-linas-en-dos-ejes-con-r.md
   - trucos-r-el-paquete-classint-para-clasificar-variables-continuas.md
   - graficos-dinamicos-en-r-con-la-funcion-text.md
   - graficos-de-burbuja-con-r.md
@@ -22,11 +22,11 @@ title: Trucos R. Gráficos de velocímetro con R
 url: /blog/trucos-r-graficos-de-velocimetro-con-r/
 ---
 
-Hoy toca homenaje a 2 lectores del blog. Es la primera versión de un gráfico en forma de velocímetro con R. Cuando disponga de más tiempo modificaré la versión para darle mayor vistosidad. Como es habitual el truco nos servirá para trabajar con un interesante paquete de R como _RColorBrewer_. [Un paquete que me descubrió un lector](https://analisisydecision.es/truco-r-paletas-de-colores-en-r/). El resultado final no es muy espectacular (de momento):
+Hoy toca homenaje a 2 lectores del blog. Es la primera versión de un gráfico en forma de velocímetro con `R`. Cuando disponga de más tiempo modificaré la versión para darle mayor vistosidad. Como es habitual el truco nos servirá para trabajar con un interesante paquete de `R` como `RColorBrewer`. [Un paquete que me descubrió un lector](https://analisisydecision.es/truco-r-paletas-de-colores-en-r/). El resultado final no es muy espectacular (de momento):
 
 ![velocimetro_r.png](/images/2011/03/velocimetro_r.png)
 
-De momento la versión más sencilla. Veamos el código R que representa el semicírculo y posteriormente lo analizaremos. Me gustaría que también lo ejecutéis vosotros para comentarme posibles incidencias. Se genera el gráfico como PNG en C:\\temp:
+De momento la versión más sencilla. Veamos el código `R` que representa el semicírculo y posteriormente lo analizaremos. Me gustaría que también lo ejecutéis vosotros para comentarme posibles incidencias. Se genera el gráfico como `PNG` en `C:\temp`:
 
 ```r
 #Datos a graficar
@@ -70,7 +70,7 @@ col=colorRampPalette(brewer.pal(9,"RdYlGn"))(length(x)))
 lines(x,sqrt(0.5-x**2),type="h",lwd=12,col="white")
 ```
 
-La librería _RColorBrewer_ nos permite emplear distintas paletas de colores que podemos ver con la función **_display.brewer.all()_** en este caso se empleamos los 9 colores de rojo a verde con _RdYlGn_ al lado tenemos que poner un número que nos permite crear la escala de colores. Con _lines_ y _type=»h»_ creamos barras verticales con la forma circular. Para que nos quede una rosquilla no se me ha ocurrido nada mejor que superponer una línea de barras verticales en blanco. Evidentemente se puede mejorar.
+La librería `RColorBrewer` nos permite emplear distintas paletas de colores que podemos ver con la función `display.brewer.all()` en este caso se empleamos los 9 colores de rojo a verde con `RdYlGn` al lado tenemos que poner un número que nos permite crear la escala de colores. Con `lines` y `type="h"` creamos barras verticales con la forma circular. Para que nos quede una rosquilla no se me ha ocurrido nada mejor que superponer una línea de barras verticales en blanco. Evidentemente se puede mejorar.
 
 Ahora tenemos que pintar la línea. De momento grafico lo más sencillo, porcentajes que vayan de 0 a 100:
 
@@ -92,4 +92,5 @@ points(0,.03,lwd=10,col="gainsboro")
 dev.off()
 ```
 
-La línea parte del punto (0,0.03) y va hasta una posición entre el 0 y la longitud del vector que representa el semicírculo. En este caso el 1% será la posición 200 del semicírculo. No puede ser más sencillo. Como último paso pinto un punto con función estética. Como ya os comenté esta es una versión beta del gráfico. Será interesante poner escalas, números, una aguja y representar muchos gráficos de forma ordenada. También estoy abierto a otras sugerencias, de hecho este gráfico es una ídea que me dieron dos lectores.
+La línea parte del punto `(0,0.03)` y va hasta una posición entre el `0` y la `longitud` del vector que representa el semicírculo. En este caso el 1% será la posición `200` del semicírculo. No puede ser más sencillo. Como último paso pinto un punto con función estética. Como ya os comenté esta es una versión beta del gráfico. Será interesante poner escalas, números, una aguja y representar muchos gráficos de forma ordenada. También estoy abierto a otras sugerencias, de hecho este gráfico es una ídea que me dieron dos lectores.
+

@@ -17,9 +17,9 @@ title: Máximo por registro de una serie de variables carácter en SAS
 url: /blog/maximo-por-registro-de-una-serie-de-variables-caracter-en-sas/
 ---
 
-Un lector del blog preguntaba como obtener el valor máximo dentro de un registro, por fila, de una sucesión de variables caracter; evidentemente la función max no servía porque es específica para variables numéricas. La duda la planteaba del siguiente modo:
+Un lector del blog preguntaba como obtener el valor `máximo` dentro de un registro, por fila, de una sucesión de variables caracter; evidentemente la función `max` no servía porque es específica para variables numéricas. La duda la planteaba del siguiente modo:
 
-```r
+```text
 Pero tengo una duda que no soy capaz de sacar y no veo ninguna cosa parecida para poder sacarlo, a ver si me puedes ayudar, o si no, pues me dices que no y no hay ningún problema.
 
 Tengo un data de este estilo:
@@ -34,13 +34,13 @@ Ana             A            A            B         B
 Pepe           H            M            C        M
 Juan           A             A            A         A
 
-Como son letras, no me funciona el max en el proc sql y tampoco sé ninguna función que pueda pasarme las letras a numéricas.
-Está claro que la única manera que se me ocurre es transformando las letras a números con un case, hacer el máximo y después transformarlo otra vez a letras, pero es por si sabes alguna manera mejor de hacerlo.
+Como son letras, no me funciona el `max` en el `proc sql` y tampoco sé ninguna función que pueda pasarme las letras a numéricas.
+Está claro que la única manera que se me ocurre es transformando las letras a números con un `case`, hacer el máximo y después transformarlo otra vez a letras, pero es por si sabes alguna manera mejor de hacerlo.
 ```
 
-La solución que le planteo se realiza con un array donde seleccionamos sólo las variables clave:
+La solución que le planteo se realiza con un `array` donde seleccionamos sólo las variables clave:
 
-[sourcecode language=»SAS»]
+```sas
 Data datos;
 input Nombre Clave1 Clave2 Clave3;
 datalines;
@@ -51,12 +51,13 @@ Juan A A A
 
 data datos;
 set datos;
-array cl (\*) clave:;
-maximo=cl(1);
-do i=1 to dim(cl);
-if cl(i)>maximo then maximo=cl(i);
+array cl (*) clave:;
+`maximo`=`cl(1)`;
+do i=1 to `dim(cl)`;
+if `cl(i)`>`maximo` then `maximo`=`cl(i)`;
 end;
-drop i;
-run;[/sourcecode]
+`drop i`;
+run;
+```
 
-Inicializamos el máximo al primer elemento del array y vamos recorriendo las variables, si una es mayor que la otra se modifica el máximo. Espero que le sirva a algún otro lector. Saludos.
+Inicializamos el `máximo` al primer elemento del `array` y vamos recorriendo las variables, si una es mayor que la otra se modifica el `máximo`. Espero que le sirva a algún otro lector. Saludos.

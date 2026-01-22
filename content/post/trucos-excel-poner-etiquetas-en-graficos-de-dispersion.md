@@ -39,18 +39,15 @@ Por más vueltas que le he dado al tema no he encontrado la forma de añadir las
 Ahora hay **dos puntos importantes** :
 
 - Excel respeta el orden de las series en el gráfico
-- Podemos poner lo que necesitemos en la propiedad \_DataLabel.Text
-  \_
+- Podemos poner lo que necesitemos en la propiedad `_DataLabel.Text`
 
 Con esto hacemos la siguiente macro de Excel:
 
-```r
+```vb
 Sub etiquetas()
 
 '
-
 ' Macro realizada por www.analisisydecision.es
-
 '
 
 Dim texto As String

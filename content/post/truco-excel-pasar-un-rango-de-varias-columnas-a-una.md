@@ -22,7 +22,7 @@ url: /blog/truco-excel-pasar-un-rango-de-varias-columnas-a-una/
 
 Macro de Excel que nos permite pasar de varias columnas a una sola. De momento no es una función, es un código que sorprende por su sencillez:
 
-```r
+```vba
 Sub rango_columnas()
 
 Dim rango As Variant
@@ -48,14 +48,14 @@ End Sub
 
 Este código lo ponéis tal cual en vuestro Excel y os ilustro a continuación sobre su funcionamiento. Lo primero es seleccionar el rango de columnas que deseamos transponer:
 
-[![varias_columnas_a_una_excel1](/images/2016/10/varias_columnas_a_una_excel1.png)](/images/2016/10/varias_columnas_a_una_excel1.png)
+![Selecting a range of columns in Excel](/images/2016/10/varias_columnas_a_una_excel1.png)
 
-Ahora sólo ejecutamos la macro rango_columnas:
+Ahora sólo ejecutamos la macro `rango_columnas`:
 
-[![varias_columnas_a_una_excel2](/images/2016/10/varias_columnas_a_una_excel2.png)](/images/2016/10/varias_columnas_a_una_excel2.png)
+![Running the macro rango_columnas](/images/2016/10/varias_columnas_a_una_excel2.png)
 
 Y aparece justo al lado del rango que deseamos transponer a una sola columna:
 
-[![varias_columnas_a_una_excel3](/images/2016/10/varias_columnas_a_una_excel3.png)](/images/2016/10/varias_columnas_a_una_excel3.png)
+![Result of transposing to a single column](/images/2016/10/varias_columnas_a_una_excel3.png)
 
-En este caso el resultado lo obtenemos en la columna F. Jugando con los índices i y j de nuestra macro podremos modificar la forma de la transposición. Me parece una macro útil y por eso lo comparto con vosotros. Saludos.
+En este caso el resultado lo obtenemos en la columna F. Jugando con los índices `i` y `j` de nuestra macro podremos modificar la forma de la transposición. Me parece una macro útil y por eso lo comparto con vosotros. Saludos.

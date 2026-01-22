@@ -20,9 +20,9 @@ title: Trucos SAS. Operaciones con tablas de dimensiones con SAS
 url: /blog/trucos-sas-operaciones-con-tablas-de-dimensiones-con-sas/
 ---
 
-Algunos llaman a las tablas de dimensiones tablas de lookup, yo me niego. Con SAS ya hemos visto como crear cruces de tablas de dimensiones con tablas de hechos a través de formatos, bajo mi punto de vista el método más eficiente. Pero hoy quería traeros un ejemplo de cruce de tabla pequeña con tabla grande a través de arrays multidimensionales con SAS. Se trata de guardar los valores de la tabla “pequeña” en un array temporal multidimensional cuando leemos la tabla grande. Para ilustrar esta tarea he preparado un ejemplo:
+Algunos llaman a las tablas de dimensiones tablas de lookup, yo me niego. Con `SAS` ya hemos visto como crear cruces de tablas de dimensiones con tablas de hechos a través de formatos, bajo mi punto de vista el método más eficiente. Pero hoy quería traeros un ejemplo de cruce de tabla pequeña con tabla grande a través de `arrays multidimensionales` con `SAS`. Se trata de guardar los valores de la tabla “pequeña” en un array temporal multidimensional cuando leemos la tabla grande. Para ilustrar esta tarea he preparado un ejemplo:
 
-```r
+```sas
 data aleatorio;
 
 do i =1 to 2000;
@@ -36,7 +36,7 @@ output; end;
 run;
 ```
 
-```r
+```sas
 proc summary data=aleatorio nway;
 
 class grupo;
@@ -46,9 +46,9 @@ output out=medias (keep=grupo importe) mean(importe)=;
 quit;
 ```
 
-Generamos un conjunto de datos SAS aleatorio con una variable grupo y una variable importe, calculamos la media del importe por grupo y deseamos medir registro a registro la diferencia con respecto a la media del grupo. Para estos casos podemos trabajar con formatos o, por ejemplo, con macro variables:
+Generamos un conjunto de datos `SAS` aleatorio con una variable `grupo` y una variable `importe`, calculamos la media del importe por grupo y deseamos medir registro a registro la diferencia con respecto a la media del grupo. Para estos casos podemos trabajar con formatos o, por ejemplo, con macro variables:
 
-```r
+```sas
 data _null_;
 
 set medias;
@@ -64,7 +64,7 @@ if grupo = 4 then call symput('med4',importe);
 run;
 ```
 
-```r
+```sas
 data aleatorio;
 
 set aleatorio;
@@ -80,9 +80,9 @@ if grupo = 4 then dif = importe/&med4.-1;
 run;
 ```
 
-Estoy de acuerdo en que este código se puede hacer más eficiente pero sigue siendo algo engorroso. Bien, hoy quería plantearos otra forma de hacerlo a través de arrays multidimensionales. Planteo el código, lo ejecutáis y comentamos:
+Estoy de acuerdo en que este código se puede hacer más eficiente pero sigue siendo algo engorroso. Bien, hoy quería plantearos otra forma de hacerlo a través de `arrays multidimensionales`. Planteo el código, lo ejecutáis y comentamos:
 
-```r
+```sas
 data aleatorio;
 
 array med(4,2) _temporary_;
@@ -102,4 +102,4 @@ dif = importe/med(grupo,2)-1;
 run;
 ```
 
-Se trata de recorrer nuestra tabla de dimensiones, en este caso la tabla con las medias y meter su contenido en un array temporal de 2 dimensiones que denomino med, este array tiene 4 filas y 2 columnas, la dimensión de nuestra tabla de dimensiones. Posteriormente leo la tabla de hechos y empleo el campo grupo para seleccionar el elemento del array que deseo. Es un código sencillo de replicar sobre todo si nuestras variables índices (en este caso la variable grupo) son números, en otro caso el código se complica ligeramente pero sigue siendo sencillo de interpretar. Estoy seguro de que este truco SAS puede resultaros útil (sobre todo a algún pésimo jugador de golf). Saludos.
+Se trata de recorrer nuestra tabla de dimensiones, en este caso la tabla con las medias y meter su contenido en un array temporal de 2 dimensiones que denomino `med`, este array tiene 4 filas y 2 columnas, la dimensión de nuestra tabla de dimensiones. Posteriormente leo la tabla de hechos y empleo el campo `grupo` para seleccionar el elemento del array que deseo. Es un código sencillo de replicar sobre todo si nuestras variables índices (en este caso la variable `grupo`) son números, en otro caso el código se complica ligeramente pero sigue siendo sencillo de interpretar. Estoy seguro de que este `truco SAS` puede resultaros útil (sobre todo a algún pésimo jugador de golf). Saludos.

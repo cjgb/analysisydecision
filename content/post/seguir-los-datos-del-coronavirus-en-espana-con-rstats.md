@@ -16,9 +16,9 @@ title: Seguir los datos del coronavirus en España con Rstats
 url: /blog/seguir-los-datos-del-coronavirus-en-espana-con-rstats/
 ---
 
-[![](/images/2020/03/coronavirus.png)](/images/2020/03/coronavirus.png)
+![Coronavirus Tracking](https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.csv)
 
-No he podido evitarlo, os traigo unas líneas de código en R para seguir la evolución del coronavirus en España (podéis filtrar cualquier país). Me hubiera gustado hacer un scraping de la página <https://www.worldometers.info/coronavirus/> sin embargo me ha parecido más sencillo leer directamente los datos del repositorio de la Universidad Jonh Hopkins (<https://github.com/CSSEGISandData/COVID-19>) creo que la actualización es diaria. También existe ya un paquete en R denominado coronavirus pero su funcionamiento deja que desear. Por mi parte os ofrezco para seguir su evolución el siguiente script:
+No he podido evitarlo, os traigo unas líneas de código en `R` para seguir la evolución del coronavirus en España (podéis filtrar cualquier país). Me hubiera gustado hacer un scraping de la página [https://www.worldometers.info/coronavirus/](https://www.worldometers.info/coronavirus/) sin embargo me ha parecido más sencillo leer directamente los datos del repositorio de la Universidad Jonh Hopkins ([https://github.com/CSSEGISandData/COVID-19](https://github.com/CSSEGISandData/COVID-19)) creo que la actualización es diaria. También existe ya un paquete en `R` denominado coronavirus pero su funcionamiento deja que desear. Por mi parte os ofrezco para seguir su evolución el siguiente script:
 
 ```r
 library(lubridate)
@@ -41,4 +41,4 @@ p <- ggplot(espania, aes(x=fecha, y=casos, group = 1)) +
 p
 ```
 
-Tendría que mejorar los ejes y el aspecto, pero no es eso lo más importante. Estaba escribiendo sobre distribuciones tweedie, ahora me siento tentado para escribir sobre modelos exponenciales y si hacéis esto mismo para los datos de Italia hace 10 días la verdad es que el gráfico es calcado.
+Tendría que mejorar los ejes y el aspecto, pero no es eso lo más importante. Estaba escribiendo sobre distribuciones `tweedie`, ahora me siento tentado para escribir sobre modelos exponenciales y si hacéis esto mismo para los datos de Italia hace 10 días la verdad es que el gráfico es calcado.

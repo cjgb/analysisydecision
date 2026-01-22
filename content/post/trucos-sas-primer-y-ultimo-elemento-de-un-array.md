@@ -19,13 +19,13 @@ title: Trucos SAS. Primer y último elemento de un array
 url: /blog/trucos-sas-primer-y-ultimo-elemento-de-un-array/
 ---
 
-Breve entrada sobre el uso de arrays en SAS. Dada una tabla SAS como esta con una variable mes1, mes2, … mesN:
+Breve entrada sobre el uso de arrays en SAS. Dada una tabla SAS como esta con una variable `mes1`, `mes2`, … `mesN`:
 
-![arrays_sas.PNG](/images/2012/05/arrays_sas.PNG)
+![SAS arrays example](/images/2012/05/arrays_sas.PNG)
 
 Necesitamos identificar el primer y el último elemento no nulo de un array y el número de elementos no nulos de ese array. Veamos el ejemplo:
 
-```r
+```sas
 data datos;
 
 input id mes1 mes2 mes3 mes4 mes5 mes6;
@@ -59,7 +59,7 @@ run;
 
 Para este proceso creamos un array que recorreremos 2 veces, una hacia delante para identificar el primer elemento y otra a hacia atrás para identificar el último elemento:
 
-```r
+```sas
 data datos;
 
 set datos;
@@ -70,16 +70,12 @@ array m(*) mes:;
 
 num=0;
 
-do i = 1 to dim(m);
+do i = 1 to dim(m)`;
 
 if m(i) ne . then do;
-
   primero=m(i);
-
   num=i;
-
   i=dim(m);
-
 end;
 
 end;
@@ -89,19 +85,13 @@ end;
 do i = dim(m) to 1 by -1;
 
 if m(i) ne . then do;
-
   ultimo=m(i);
-
   num=i-num;
-
   i=1;
-
 end;
-
 end;
 
 drop i;
-
 num=num+1;
 
 run;

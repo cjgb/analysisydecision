@@ -20,7 +20,7 @@ url: /blog/truco-sas-categorizar-variables-continuas/
 
 Si necesitamos crear grupos a partir de una variable continua podemos emplear una metodología muy sencilla para crear muestras proporcionales o muestras de un tamaño predeterminado a partir de un conjunto de datos SAS. El método de cálculo es bien sencillo. Si deseamos crear N grupos dividimos la observación entre el total y multiplicamos por los N grupos redondeando al entero más alto. Si deseamos grupos de tamaño M dividimos la observación entre M redondeando al entero más alto. En código SAS:
 
-```r
+```sas
 *DATASET ALEATORIO;
 data uno;
 	do i=1 to 2000;
@@ -42,7 +42,7 @@ run;
 
 %numobs(uno,obs_de_uno);
 
-*ESPECIFICAMOS EL NÚMERO Y EL TAMAÑO DE LOS GRUPOS;
+*ESPECIFICAMOS EL NUMERO Y EL TAMAÑO DE LOS GRUPOS;
 %let numero_de_grupos=4;
 %let tamanio_de_grupos=100;
 
@@ -54,7 +54,7 @@ data uno;
 	set uno;
 
 	*CREAMOS N GRUPOS;
-	rango1=ceil((_n_/&obs_de_uno.)*№_de_grupos.);
+	rango1=ceil((_n_/&obs_de_uno.)*numero_de_grupos.);
 
 	*CREAMOS GRUPOS DE TAMAÑO M;
 	rango2=ceil(_n_/&tamanio_de_grupos.);
@@ -65,4 +65,4 @@ proc freq data=uno; tables rango:; quit;
 
 Muy sencillo y más páctico. En el futuro crearé un proceso que divida las variables continuas en función de una variable dependiente.
 
-Para dudas o sugerencias rvaquerizo@analisisydecision.es
+Para dudas o sugerencias `rvaquerizo@analisisydecision.es`

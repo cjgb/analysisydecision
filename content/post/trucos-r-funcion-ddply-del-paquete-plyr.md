@@ -21,26 +21,26 @@ title: Trucos R. Función ddply del paquete plyr
 url: /blog/trucos-r-funcion-ddply-del-paquete-plyr/
 ---
 
-El **paquete plyr de R** tiene unas funciones que nos permiten hacer sumarizaciones de forma muy rápida y sencilla. Hoy quería trabajar con la función **ddply**. Todos esos resúmenes y agregaciones que nos cuestan mucho código con la función **ddply** pasan a ser de lo más sencillo. Al tajo, o mejor dicho, al ejemplo, como siempre, creo que ilustrar ddply es mejor que entrar en su sintaxis, para eso está la ayuda. Creamos un _data.frame_ con datos inventados que tendrá duplicados por _id_cliente_ :
+El **paquete `plyr` de `R`** tiene unas funciones que nos permiten hacer sumarizaciones de forma muy rápida y sencilla. Hoy quería trabajar con la función **`ddply`**. Todos esos resúmenes y agregaciones que nos cuestan mucho código con la función **`ddply`** pasan a ser de lo más sencillo. Al tajo, o mejor dicho, al ejemplo, como siempre, creo que ilustrar `ddply` es mejor que entrar en su sintaxis, para eso está la ayuda. Creamos un `data.frame` con datos inventados que tendrá duplicados por `id_cliente` :
 
-[source language=»R»]
-saldo1=runif(100,0,1)\*1000
-saldo2=runif(100,0,0.5)\*10000
+```r
+saldo1=runif(100,0,1)*1000
+saldo2=runif(100,0,0.5)*10000
 saldos=data.frame(cbind(saldo1,saldo2))
 #Voy a crear un id_cliente con duplicados
-saldosid_cliente=rpois(100,10000)+rpois(100,9000)
+saldos$id_cliente=rpois(100,10000)+rpois(100,9000)
 #Asignamos edad a los id_cliente
-edad=data.frame(cbind(unique(saldosid_cliente),
+edad=data.frame(cbind(unique(saldos$id_cliente),
 (rpois(length(unique(saldos$id_cliente)),40))))
 names(edad)=c("id_cliente","edad")
 #Nos evitamos una incongruencia de cliente con distinta edad
 saldos=merge(saldos,edad,by.x="id_cliente",by.y="id_cliente")
-[/source]
+```
 
-Tabla de saldos con 100 registros y por cada cliente dos saldos y la edad. La idea es hacer una tabla agregada a nivel de edad, necesitamos identificar los clientes duplicados, calcular máximos mínimos y medias. [Hace tiempo ya hice referencia al paquete sqldf](https://analisisydecision.es/monografico-paquete-sqldf-si-sabes-sql-sabes-r/). Hasta conocer ddply yo hacía:
-[source language=»R»]
+Tabla de saldos con 100 registros y por cada cliente dos saldos y la edad. La idea es hacer una tabla agregada a nivel de edad, necesitamos identificar los clientes duplicados, calcular máximos mínimos y medias. [Hace tiempo ya hice referencia al paquete `sqldf`](https://analisisydecision.es/monografico-paquete-sqldf-si-sabes-sql-sabes-r/). Hasta conocer `ddply` yo hacía:
+```r
 library(sqldf)
-sqldf(‘select edad,
+sqldf('select edad,
 count(distinct id_cliente) as cli,
 count(id_cliente) as reg,
 max(saldo1) as max1,
@@ -48,10 +48,11 @@ max(saldo2) as max2,
 avg(saldo1) as saldo1,
 avg(saldo2) as saldo2
 from saldos
-group by edad;’)[/source]
+group by edad;')
+```
 
-No es un código complejo, como siempre he dicho si sabes SQL sabes R. Pero un buen día me crucé con el paquete plyr y la función ddply:
-[source language=»R»]
+No es un código complejo, como siempre he dicho si sabes `SQL` sabes `R`. Pero un buen día me crucé con el paquete `plyr` y la función `ddply`:
+```r
 library(plyr)
 ddply(saldos,"edad",summarise,
 cli=length(unique(id_cliente)),
@@ -59,6 +60,7 @@ reg=length(id_cliente),
 max1=max(saldo1),
 max2=max(saldo2),
 saldo1=mean(saldo1),
-saldo2=mean(saldo2))[/source]
+saldo2=mean(saldo2))
+```
 
-¡Qué forma más sencilla y práctica de sumarizar datos con R! No negaréis que este código puede entenderlo hasta el novio de Falete. Una función simplemente genial.
+¡Qué forma más sencilla y práctica de sumarizar datos con `R`! No negaréis que este código puede entenderlo hasta el novio de Falete. Una función simplemente genial.

@@ -22,9 +22,9 @@ url: /blog/simulacion-estimacion-de-pi-con-el-metodo-montecarlo/
 
 La **simulación** es un campo que está tomando una gran importancia. Nos está permitiendo evaluar comportamientos extremos sin ningún tipo de riesgos. Casi nadie se imaginaba que el escenario económico actual podía cambiar con la velocidad que lo está haciendo. Imaginemos una modificación brusca de los ratios de morosidad implicará que las entidades bancarias tengan que modificar sus fondos de previsión. Esta misma morosidad puede afectar a las aseguradoras de crédito que tienen que estimar sus provisiones técnicas. Ahora mismo es necesario simular las condiciones más extremas para los datos futuros y la simulación nos permite experimentar para aproximarnos al problema.
 
-El primer acercamiento a la simulación lo vamos a realizar mediante el método Montecarlo. Se trata de estimar el valor de pi. El área de la circunferencia es A=pi\*radio\*\*2 Si la circunferencia tiene su centro en el origen y el radio es 1 (_circunferencia goniométrica_) entonces A=pi y si nos centramos en el primer cuadrante A=pi/4. Conocemos el resultado, ahora se trata de generar valores aleatorios, puntos en el cuadrante (1,1) del plano que pueden caer o no dentro del área de la circunferencia. Caerán dentro de ese área si la distancia del punto aleatorio al origen es menor que 1.
+El primer acercamiento a la simulación lo vamos a realizar mediante el método Montecarlo. Se trata de estimar el valor de pi. El área de la circunferencia es `A=pi*radio**2` Si la circunferencia tiene su centro en el origen y el radio es 1 (_circunferencia goniométrica_) entonces `A=pi` y si nos centramos en el primer cuadrante `A=pi/4`. Conocemos el resultado, ahora se trata de generar valores aleatorios, puntos en el cuadrante (1,1) del plano que pueden caer o no dentro del área de la circunferencia. Caerán dentro de ese área si la distancia del punto aleatorio al origen es menor que 1.
 
-Para este trabajo emplearemos R. Generamos un _data.frame_ con 10.000 observaciones que son nubes de puntos aleatorios (x,y) del plano:
+Para este trabajo emplearemos `R`. Generamos un `data.frame` con 10.000 observaciones que son nubes de puntos aleatorios (x,y) del plano:
 
 ```r
 x=runif(10000,0,1)
@@ -56,7 +56,7 @@ circunferencia=data.frame(cbind(x,y))
 lines(circunferencia,col="white",lwd=5)
 ```
 
-[![estima-pi.jpeg](/images/2009/10/estima-pi.thumbnail.jpeg)](https://analisisydecision.es/simulacion-estimacion-de-pi-con-el-metodo-montecarlo/224/ "estima-pi.jpeg")
+![Estimación de Pi con el método Montecarlo](/images/2009/10/estima-pi.thumbnail.jpeg)
 
 La probabilidad de caer dentro de la circunferencia del primer cuadrante será el número de casos aleatorios con distancia menor de 1 entre los casos totales generados, todos los casos aleatorios que caen dentro de la circunferencia nos darán su área:
 
@@ -64,4 +64,4 @@ La probabilidad de caer dentro de la circunferencia del primer cuadrante será e
 nrow(subset(simul,ok=="0"))/nrow(simul)
 ```
 
-Esta probabilidad al final es el área del primer cuadrante de la circunferencia por lo que si multiplicamos este dato por los 4 cuadrantes del plano que componen la circunferencia con centro en el origen y radio 1 tendremos el área A=pi. Un caso prototípico de simulación que nos permite aproximarnos a una técnica de análisis imprescindible.
+Esta probabilidad al final es el área del primer cuadrante de la circunferencia por lo que si multiplicamos este dato por los 4 cuadrantes del plano que componen la circunferencia con centro en el origen y radio 1 tendremos el área `A=pi`. Un caso prototípico de simulación que nos permite aproximarnos a una técnica de análisis imprescindible.

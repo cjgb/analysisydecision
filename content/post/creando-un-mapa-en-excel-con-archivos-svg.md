@@ -3,56 +3,36 @@ author: rvaquerizo
 categories:
   - excel
   - formación
-  - monográficos
-  - trucos
-date: '2010-09-30'
+  - javascript
+date: '2020-04-16'
 lastmod: '2025-07-13'
 related:
-  - trucos-excel-mapa-de-espana-por-comunidades-autonomas.md
+  - como-hacer-un-mapa-de-espana-por-codigos-postales-con-qgis.md
+  - cartografia-digitalizada-de-espana-por-seccion-censal.md
   - trucos-excel-mapa-de-espana-por-provincias.md
-  - mapas-municipales-de-espana-con-excel-y-qgis.md
-  - mapa-excel-de-europa.md
-  - trucos-excel-mapa-de-colombia-por-departamentos.md
+  - archivos-shape-y-geojason-para-crear-un-mapa-de-espana-por-codigos-postales.md
+  - el-brexit-con-rstats-o-como-mover-spatial-data-con-r.md
 tags:
-  - mapas
-  - españa
-  - svg
+  - excel
+  - formación
+  - javascript
 title: Creando un mapa en Excel con archivos SVG
 url: /blog/creando-un-mapa-en-excel-con-archivos-svg/
 ---
 
-Aunque me lo agradezcan poco el [mapa por comunidades de Excel](https://analisisydecision.es/trucos-excel-mapa-de-espana-por-comunidades-autonomas/) está teniendo un gran éxito. Mientras preparo un mapa por provincias en Excel he elaborado el siguiente tutorial para crear mapas en Excel a partir de archivos SVG. El punto de partida, disponer de [Inkscape ](http://inkscape.org/?lang=es)software libre para la elaboración de dibujos y Excel. Podemos buscar mapas en la wikipedia, en este caso [mapa por provincias de España](http://es.wikipedia.org/wiki/Archivo:Provincias_de_Espa%C3%B1a.svg). Se trata de utilizar ese archivo svg y crear un Excel con objetos de ms-office que provienen del archivo svg que hemos abierto con el Inkscape. Juntamos las piezas del puzle y ya podemos trabajar con el mapa.
+Voy a traeros algo que me ha llamado mucho la atención. Una solución en Excel para pintar un mapa de España con la posibilidad de resaltar Comunidades Autónomas, Provincias o incluso un nivel inferior, con el archivo del que partimos, Secciones Censales. Una solución realmente buena que además es open-source por lo que no tenemos ningún problema para emplearla o modificarla, de verdad que creo que es una de las soluciones más interesantes que me he encontrado en Excel en muchos años. La solución la encontraréis en [https://github.com/datavizforall/create-your-own-choropleth-map-in-excel](https://github.com/datavizforall/create-your-own-choropleth-map-in-excel) en el artículo [Create your own choropleth map in Excel](https://datavizforall.org/createyourownmap/)
 
-El paso 0 es abrir Excel y el svg con el Inkscape. En el Inkscape seleccionamos la provincia a copiar:
+Los mapas coropléticos son mapas temáticos en los que las unidades de la superficie se sombrean con distintos colores o tramas, según el valor de la variable que representan. La forma más sencilla de representar datos geográficos dentro de Excel es usar los mapas 3D pero de verdad, no os dejéis engañar por el nombre, no tiene mucho de cartografía y si de representación de datos con coordenadas geográficas.
 
-![paso-1.PNG](/images/2010/09/paso-1.PNG)
+En la siguiente imagen podéis ver lo que podemos hacer con la solución de la que os estoy hablando:
 
-Vemos que al seleccionar la provincia ésta se recuadra y aparecen una serie de flechas. Tras copiar nos dirigimos a Excel y pegamos tal cual:
+![excel-mapa-svg.png](/images/2020/04/excel-mapa-svg.png)
 
-![paso-2.PNG](/images/2010/09/paso-2.PNG)
+El secreto para poder trabajar con mapas en Excel es que Excel es compatible con `SVG` (`Scalable Vector Graphics`) un formato de gráficos vectoriales bidimensionales. Esto nos permite un control total sobre el color, la trama, los textos, etc. Una vez tenemos el mapa en formato `SVG` tan solo necesitamos `VBA` para acceder a él y manipularlo.
 
-Hemos pegado una imagen. Y aquí viene uno de los **puntos más importantes** , si deseamos modificar la imagen se modificará el recuadro completo, nosotros queremos modificar sólo el dibujo de la provincia y esto se consigue convirtiendo la imagen a objeto de ms-office y esto lo hacemos **desagrupando** :
+El proyecto del que os he hablado utiliza los archivos `SVG` de los siguientes repositorios:
 
-![paso-3.PNG](/images/2010/09/paso-3.PNG)
+- [https://github.com/datavizforall/topjson-maps](https://github.com/datavizforall/topjson-maps)
+- [https://github.com/datavizforall/topojson-choropleth-maps](https://github.com/datavizforall/topojson-choropleth-maps)
 
-Este es el punto clave. Excel nos hará la siguiente cuestión:
-
-![paso-4.PNG](/images/2010/09/paso-4.PNG)
-
-Decimos que si y ya tenemos un objeto de ms-office. Ahora seleccionamos sólo el dibujo de la provincia y no el «marco»:
-
-![paso-5.PNG](/images/2010/09/paso-5.PNG)
-
-Eliminamos el marco y tenemos un objeto de Office que es el contorno de la provincia al que recomiendo llamar igual que la provincia. Tenemos un _shape_ con el nombre de la provincia:
-
-![paso-6.PNG](/images/2010/09/paso-6.PNG)
-
-Ahora podemos modificar el formato de este objeto, por ejemplo el color:
-
-![paso-7.PNG](/images/2010/09/paso-7.PNG)
-
-Estos mismos pasos los hacemos sobre el total de provincias y vamos confeccionando el puzle. Es una tarea lenta pero sólo es necesario realizarla una vez:
-
-![paso-8.PNG](/images/2010/09/paso-8.PNG)
-
-Bueno, creo que con estas líneas queda claro como crear mapas con Excel. No es tarea sencilla y muy aburrida pero podemos crear todo tipo de mapas con Excel y un poco de paciencia. Espero que todos aquellos que no entendíais lo que hacía en el mapa por comunidades ahora tengáis un breve manual de creación de mapas a partir de svg. Saludos.
+Y tiene un código `VBA` muy sencillo para poder manipular los archivos `SVG`. Con ello podemos hacer el mapa de la imagen superior. Podemos colorear o no y todo ello con la velocidad del `VBA`.

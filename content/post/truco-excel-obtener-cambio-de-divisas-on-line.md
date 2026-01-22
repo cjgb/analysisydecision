@@ -18,11 +18,11 @@ title: Truco Excel. Obtener cambio de divisas on-line
 url: /blog/truco-excel-obtener-cambio-de-divisas-on-line/
 ---
 
-El siguiente truco Excel es muy sencillo. Se trata de una consulta web que nos permite obtener el cambio de divisas a Euro casi practicamente on-line. La consulta se realiza sobre la web [www.finanzas.com](http://www.finanzas.com/) sitio que además quiero recomendar, desde él sigo la imparable caida de mis valores…
+El siguiente truco `Excel` es muy sencillo. Se trata de una consulta web que nos permite obtener el cambio de divisas a Euro casi practicamente on-line. La consulta se realiza sobre la web [www.finanzas.com](http://www.finanzas.com/) sitio que además quiero recomendar, desde él sigo la imparable caida de mis valores…
 
 La consulta es la siguiente:
 
-```r
+```vba
 Sub cambio_divisas()
 
 '
@@ -100,4 +100,4 @@ Sub cambio_divisas()
 End Sub
 ```
 
-Primero cambiamos los separadores de miles y decimales, posteriormente realizamos la consulta a www.finanzas.com/divisas y ya tenemos tabulada la información. Además no sobreescribimos anteriores consultas, siempre se añadirán gracias a RefreshStyle por lo que podemos hacer un seguimiento del cambio. A mí me ha sido muy útil para seguir el efecto del precio de unos fondos de inversión.
+Primero cambiamos los separadores de miles y decimales, posteriormente realizamos la consulta a `www.finanzas.com/divisas` y ya tenemos tabulada la información. Además no sobreescribimos anteriores consultas, siempre se añadirán gracias a `RefreshStyle` por lo que podemos hacer un seguimiento del cambio. A mí me ha sido muy útil para seguir el efecto del precio de unos fondos de inversión.

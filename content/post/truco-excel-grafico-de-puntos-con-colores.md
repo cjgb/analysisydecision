@@ -16,15 +16,15 @@ tags:
   - excel
   - formación
   - trucos
-title: Truco Excel. Gráfico de puntos con colores
+title: Truco `Excel`. Gráfico de puntos con colores
 url: /blog/truco-excel-grafico-de-puntos-con-colores/
 ---
 
-[![](/images/2015/01/dispersion-con-colores-de-grupos-excel-300x237.png)](/images/2015/01/dispersion-con-colores-de-grupos-excel.png)
+![](/images/2015/01/dispersion-con-colores-de-grupos-excel-300x237.png)
 
-Un gráfico de dispersión en Excel en el que los puntos puedan ser identificados si pertenecen a un grupo. [Es una duda que plantearon hace unos días en el blog](https://analisisydecision.es/trucos-excel-poner-etiquetas-en-graficos-de-dispersion/#comment-72700). Con otras herramientas es bastante sencillo, pero en el caso de Excel la tarea no es tan evidente. Para poder hacer gráficos de este tipo he construido una macro que podéis utilizar si previamente la adaptáis a vuestros datos. El código que podéis adaptar una vez halláis creado vuestro gráfico de dispersión es:
+Un gráfico de dispersión en `Excel` en el que los puntos puedan ser identificados si pertenecen a un grupo. [Es una duda que plantearon hace unos días en el blog](https://analisisydecision.es/trucos-excel-poner-etiquetas-en-graficos-de-dispersion/#comment-72700). Con otras herramientas es bastante sencillo, pero en el caso de `Excel` la tarea no es tan evidente. Para poder hacer gráficos de este tipo he construido una macro que podéis utilizar si previamente la adaptáis a vuestros datos. El código que podéis adaptar una vez halláis creado vuestro gráfico de dispersión es:
 
-```r
+```vbnet
 Sub Macro2()
 '
 ' Macro realizada por analisisydecision.es
@@ -35,7 +35,7 @@ Dim vec As Variant
     ActiveSheet.ChartObjects("grafico").Activate
     ActiveChart.SeriesCollection(1).Select
     vec = ActiveChart.SeriesCollection(1).Values
-    numpuntos = UBound(vec)
+    numpuntos = `UBound`(vec)
 
     For i = 1 To numpuntos
     grupo = Cells(i + 2, 3)
@@ -52,4 +52,4 @@ Dim vec As Variant
 End Sub
 ```
 
-Lo primero tenemos una variable tipo variant que nos permitirá obtener el número de puntos que deseamos colorear. Seleccionamos el gráfico de dispersión y la única serie de datos es la 1, no hay más. Buscamos el número de puntos que tiene nuestra serie y hacemos un bucle que se recorre cada uno de los puntos de la serie que queremos colorear. Evidentemente necesitamos saber a que grupo pertenece cada punto. Después seleccionamos punto por punto y si pertenece a un grupo le ponemos un color con Selection.Format.Fill.ForeColor.RGB, el color le podéis buscar o elegir de la paleta de colores, [en este blog ya se ha escrito sobre saber el número de color](https://analisisydecision.es/truco-excel-identificar-el-color-de-una-celda/). Si en vez de grupos usáis formatos condicionales y otras cosas pueden quedar resultados muy buenos. Pero esto me lo guardo para otro día. Espero que os sea útil el truco. Saludos.
+Lo primero tenemos una variable tipo variant que nos permitirá obtener el número de puntos que deseamos colorear. Seleccionamos el gráfico de dispersión y la única serie de datos es la 1, no hay más. Buscamos el número de puntos que tiene nuestra serie y hacemos un bucle que se recorre cada uno de los puntos de la serie que queremos colorear. Evidentemente necesitamos saber a que grupo pertenece cada punto. Después seleccionamos punto por punto y si pertenece a un grupo le ponemos un color con `Selection.Format.Fill.ForeColor.RGB`, el color le podéis buscar o elegir de la paleta de colores, [en este blog ya se ha escrito sobre saber el número de color](https://analisisydecision.es/truco-excel-identificar-el-color-de-una-celda/). Si en vez de grupos usáis formatos condicionales y otras cosas pueden quedar resultados muy buenos. Pero esto me lo guardo para otro día. Espero que os sea útil el truco. Saludos.

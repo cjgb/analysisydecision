@@ -14,13 +14,13 @@ related:
 tags:
   - formación
   - sas
-title: Equivalencias entre PROC SQL y DATA en las uniones de tablas SAS
+title: Equivalencias entre PROC `SQL` y DATA en las uniones de tablas `SAS`
 url: /blog/proc-sql-merge-set/
 ---
 
-Muchos de los que llegan a programar con SAS son grandes expertos en SQL. Cuando dominas perfectamente un lenguaje es difícil acostumbrarse a otro. Por ello quiero plantear un artículo que estudie los tipos de uniones mediante pasos DATA y su análogo con el PROC SQL. Con ello espero que los profesionales que manejan el lenguaje SQL entiendan mejor el paso DATA. En mi línea habitual creo dos dataset y manejo ejemplos.
+Muchos de los que llegan a programar con `SAS` son grandes expertos en `SQL`. Cuando dominas perfectamente un lenguaje es difícil acostumbrarse a otro. Por ello quiero plantear un artículo que estudie los tipos de uniones mediante pasos DATA y su análogo con el `PROC SQL`. Con ello espero que los profesionales que manejan el lenguaje `SQL` entiendan mejor el paso DATA. En mi línea habitual creo dos `dataset` y manejo ejemplos.
 
-```r
+```sas
 data uno;
 
 input anio importe;
@@ -60,13 +60,13 @@ cards;
 ; run;
 ```
 
-Las formas de unir conjuntos de datos SAS son:
+Las formas de unir conjuntos de datos `SAS` son:
 
 **Uniones verticales:**
 
 _Concatenación:_
 
-```r
+```sas
 data tresA;
 
 set uno dos;
@@ -88,7 +88,7 @@ quit;
 
 _Intercalación:_
 
-```r
+```sas
 data cuatroA;
 
 set uno dos;
@@ -117,7 +117,7 @@ quit;
 \_Total:
 \_
 
-```r
+```sas
 data cincoA;
 
 merge uno dos;
@@ -149,7 +149,7 @@ _Excluyentes:_
 
 Están en ambas tablas:
 
-```r
+```sas
 data seisA;
 
 merge uno (in=en_uno) dos (in=en_dos);
@@ -187,7 +187,7 @@ quit;
 
 Están en la tabla de la izquierda:
 
-```r
+```sas
 data sieteA;
 
 merge uno (in=en_uno) dos (in=en_dos);
@@ -213,7 +213,7 @@ quit;
 
 Están en la tabla de la derecha:
 
-```r
+```sas
 data ochoA;
 
 merge uno (in=en_uno) dos (in=en_dos);
@@ -243,4 +243,4 @@ on a.anio = b.anio;
 quit;
 ```
 
-No he comentado los ejemplos porque son bastante claros. Como véis en SQL es muy importante el orden en el que se nombran las variables por eso para algunos ejemplos empleamos el CASE, si él el resultado no sería el esperado ya que nos tomaría la variable anio del primer dataset que aparece en la select, para el resto nos pondría valores perdidos, probad los ejemplos sin el case y entenderéis porque lo empleo. En el terreno profesional comentaros que se emplea mucho la INNER JOIN y la LEFT JOIN fundamentalmente cuando unimos 2 datasets con índices y deseamos prescindir de ordenaciones previas por ser muy costosas. Si trabajamos con uniones de más de 2 datasets recomiendo trabajar con MERGE. Es habitual partir de una tabla base y añadirla información de otras en un paso DATA final. Por supuesto si tenéis dudas, más sugerencias o un empleo que me permita estar más tiempo con mi familia que pronto pasará a ser numerosa estoy en rvaquerizo@analisisydecision.es
+No he comentado los ejemplos porque son bastante claros. Como veis en `SQL` es muy importante el orden en el que se nombran las variables por eso para algunos ejemplos empleamos el CASE, si él el resultado no sería el esperado ya que nos tomaría la variable anio del primer dataset que aparece en la select, para el resto nos pondría valores perdidos, probad los ejemplos sin el case y entenderéis porque lo empleo. En el terreno profesional comentaros que se emplea mucho la INNER JOIN y la LEFT JOIN fundamentalmente cuando unimos 2 `datasets` con índices y deseamos prescindir de ordenaciones previas por ser muy costosas. Si trabajamos con uniones de más de 2 `datasets` recomiendo trabajar con MERGE. Es habitual partir de una tabla base y añadirla información de otras en un paso DATA final. Por supuesto si tenéis dudas, más sugerencias o un empleo que me permita estar más tiempo con mi familia que pronto pasará a ser numerosa estoy en rvaquerizo@analisisydecision.es

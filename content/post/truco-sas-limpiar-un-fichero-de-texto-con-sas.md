@@ -31,7 +31,7 @@ El otro día me llegó al correo la siguiente cuestión acerca de caracteres ext
 
 Se me ocurrió un programa muy rápido que nos permitía leer carácter a carácter un fichero plano y eliminar aquellos caracteres que nos den problemas:
 
-```r
+```sas
 %let directorio=;
 %let archivo=;
 

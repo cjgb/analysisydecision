@@ -21,13 +21,13 @@ title: Trucos SAS. Trasponer con SQL para torpes
 url: /blog/trucos-sas-trasponer-con-sql-para-torpes/
 ---
 
-[](/images/2011/11/trasponer_sql1.png "trasponer_sql1.png")
 
-[![trasponer_sql1.png](/images/2011/11/trasponer_sql1.png)](/images/2011/11/trasponer_sql1.png "trasponer_sql1.png")
 
-Trasponer datos con SAS es un tema que genera un gran número de consultas en Google, por lo tanto genera un gran número de visitas a este blog. Ya hay un monográfico al respecto pero hoy quería volver a contar la trasposición de datos con SQL y SAS pero a un nivel más bajo para que sea lo más sencillo posible. En el ejemplo partimos de una tabla con 3 variables, un id_cliente, un campo tipo y un campo precio. Cada tipo tiene un precio y necesitamos que nuestro dataset tenga un registro por id_cliente y 3 precios, uno por cada tipo. El ejemplo en código SAS:
+![Trasponer SQL 1](/images/2011/11/trasponer_sql1.png "trasponer_sql1.png")
 
-```r
+Trasponer datos con `SAS` es un tema que genera un gran número de consultas en Google, por lo tanto genera un gran número de visitas a este blog. Ya hay un monográfico al respecto pero hoy quería volver a contar la trasposición de datos con `SQL` y `SAS` pero a un nivel más bajo para que sea lo más sencillo posible. En el ejemplo partimos de una tabla con 3 variables, un `id_cliente`, un campo `tipo` y un campo `precio`. Cada `tipo` tiene un `precio` y necesitamos que nuestro dataset tenga un registro por `id_cliente` y 3 `precios`, uno por cada `tipo`. El ejemplo en código `SAS`:
+
+```sas
 data datos;
 
 input id_cliente $ tipo precio;
@@ -61,9 +61,9 @@ D 3 420
 ;run;
 ```
 
-Esta es nuestra tabla de partida, ahora vamos a generar tres variables en función de la variable tipo:
+Esta es nuestra tabla de partida, ahora vamos a generar tres variables en función de la variable `tipo`:
 
-```r
+```sas
 data datos2;
 
 set datos;
@@ -77,11 +77,11 @@ precio_3 = (tipo = 3) * precio;
 run;
 ```
 
-[![trasponer_sql2.png](/images/2011/11/trasponer_sql2.png)](/images/2011/11/trasponer_sql2.png "trasponer_sql2.png")
+![Trasponer SQL 2](/images/2011/11/trasponer_sql2.png "trasponer_sql2.png")
 
-Si vemos la tabla resultante tiene una forma de matriz con precios y ceros en función de la variable tipo. Ahora si sumarizamos esas variables y agrupamos por el id_cliente la forma de la tabla resultante es el objetivo deseado:
+Si vemos la tabla resultante tiene una forma de matriz con precios y ceros en función de la variable `tipo`. Ahora si sumarizamos esas variables y agrupamos por el `id_cliente` la forma de la tabla resultante es el objetivo deseado:
 
-```r
+```sas
 proc sql;
 
 create table tdatos as select
@@ -101,9 +101,9 @@ group by 1;
 quit;
 ```
 
-Bien, pues esta es la “filosofía” de la trasposición con SAS en SQL. Pero esto lo podemos hacer en un solo paso:
+Bien, pues esta es la “filosofía” de la trasposición con `SAS` en `SQL`. Pero esto lo podemos hacer en un solo paso:
 
-```r
+```sas
 proc sql;
 
 create table tdatos as select
@@ -123,4 +123,4 @@ group by 1;
 quit;
 ```
 
-Y así podemos trasponer de forma sencilla en SAS sin emplear el PROC TRASPOSE que tiene alguna que otra limitación. Y por supuesto nos sirve para trasponer siempre que utilicemos SQL, con ORACLE, POSTGRES,… Creo que esta vez es muy sencillo de entender. Saludos.
+Y así podemos trasponer de forma sencilla en `SAS` sin emplear el `PROC TRANSPOSE` que tiene alguna que otra limitación. Y por supuesto nos sirve para trasponer siempre que utilicemos `SQL`, con `ORACLE`, `POSTGRES`,… Creo que esta vez es muy sencillo de entender. Saludos.

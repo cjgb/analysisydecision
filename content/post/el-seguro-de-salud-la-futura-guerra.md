@@ -16,7 +16,7 @@ title: 'El seguro de salud: la futura guerra'
 url: /blog/el-seguro-de-salud-la-futura-guerra/
 ---
 
-Acabo de darme una vuelta por ICEA y me encuentro el siguiente cuadro:
+Acabo de darme una vuelta por `ICEA` y me encuentro el siguiente cuadro:
 
 ![icea.JPG](/images/2008/06/icea.JPG)
 

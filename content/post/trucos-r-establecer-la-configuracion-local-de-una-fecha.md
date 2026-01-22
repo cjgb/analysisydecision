@@ -34,7 +34,7 @@ z
 [1] NA NA "1960-03-31" "1960-07-30"
 ```
 
-Se trata de transformar un texto a fecha en R. El formato del texto es d mes en inglés año con 4 cifras. Para transformar a fecha tenemos la función _as.Date_ que recibe como parámetros el objeto y el formato de la fecha, el más habitual sería %d/%m/%Y 10/09/1976. Para meses en formato nombre empleamos %b pero en este caso «1jan1960» nos produce un valor perdido sin embargo «31mar1960» si se transforma correctamente ¿Por qué motivo sucede esto?
+Se trata de transformar un texto a fecha en R. El formato del texto es d mes en inglés año con 4 cifras. Para transformar a fecha tenemos la función `as.Date` que recibe como parámetros el objeto y el formato de la fecha, el más habitual sería `%d/%m/%Y` `10/09/1976`. Para meses en formato nombre empleamos `%b` pero en este caso `"1jan1960"` nos produce un valor perdido sin embargo `"31mar1960"` si se transforma correctamente ¿Por qué motivo sucede esto?
 
 ```r
 Sys.setlocale("LC_TIME")
@@ -42,7 +42,7 @@ Sys.setlocale("LC_TIME")
 [1] "Spanish_Spain.1252"
 ```
 
-Nuestra configuración de fecha es spanish, luego january no es reconocido por R, tendremos que hacer:
+Nuestra configuración de fecha es spanish, luego `january` no es reconocido por R, tendremos que hacer:
 
 ```r
 x <- c("1ene1960", "2ene1960", "31mar1960", "30jul1960")

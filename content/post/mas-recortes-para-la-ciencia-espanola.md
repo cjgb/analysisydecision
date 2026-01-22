@@ -17,7 +17,7 @@ title: Más recortes para la ciencia española
 url: /blog/mas-recortes-para-la-ciencia-espanola/
 ---
 
-![](https://farm3.static.flickr.com/2488/3973473121_e76fde787c_o.jpg)
+![Image](https://farm3.static.flickr.com/2488/3973473121_e76fde787c_o.jpg)
 
 A pesar de que no hay un [movimiento tan importante como el que hubo años atrás](http://aldea-irreductible.blogspot.com/2009/10/la-ciencia-en-espana-no-necesita.html) el recorte continúa y[ estamos a niveles de 2007](http://www.elpais.com/articulo/sociedad/cientificos/denuncian/caida/continua/fondos/elpepisoc/20110218elpepisoc_6/Tes). Esta web sigue haciéndose eco de una situación que pone a España a la cola de la investigación. Y, diga lo que diga nuestra «clase política», sin investigación no hay futuro. También soy conocedor de primera mano de lo mal que lo están pasando los investigadores españoles. Y me sigue preocupando el incremento de visitas que tiene está web desde Alemania, Francia, Estados Unidos,… Al final tendremos lo que nos merecemos.
 

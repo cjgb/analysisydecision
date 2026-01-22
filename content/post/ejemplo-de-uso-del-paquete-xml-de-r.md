@@ -19,7 +19,7 @@ title: Ejemplo de uso del paquete XML de R
 url: /blog/ejemplo-de-uso-del-paquete-xml-de-r/
 ---
 
-Quería poneros unos apuntes sobre el paquete XML de R. El caso es que entre todos los fregados en los que ando metidos he retomado el tema de leer páginas web con R. Y con esto he llegado a la sentencia _install.packages(«XML»)_ y con la fiebre mundialista estoy en lo siguiente:
+Quería poneros unos apuntes sobre el paquete `XML` de R. El caso es que entre todos los fregados en los que ando metidos he retomado el tema de leer páginas web con R. Y con esto he llegado a la sentencia `install.packages("XML")` y con la fiebre mundialista estoy en lo siguiente:
 
 ```r
 pag="http://es.wikipedia.org/wiki/Anexo:Finales_de_la_Copa_Mundial_de_F%C3%BAtbol"
@@ -61,4 +61,4 @@ as.matrix(segundo,dimnames=list("finalista"))))
 pie3D(tablaveces,labels=tablaprimero,main="Finalistas")
 ```
 
-Un poco vago con el nombre de las variables. A la vista de los datos la final será Brasil – Argentina. Lo que no tengo tan claro es cúal ganará… Seguiremos trabajando con XML y con plotrix.
+Un poco vago con el nombre de las variables. A la vista de los datos la final será Brasil – Argentina. Lo que no tengo tan claro es cúal ganará… Seguiremos trabajando con `XML` y con `plotrix`.

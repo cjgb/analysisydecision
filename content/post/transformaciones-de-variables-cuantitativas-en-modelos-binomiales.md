@@ -22,7 +22,7 @@ Para mejorar la capacidad predictiva de nuestros modelos binomiales es recomenda
 
 El código empleado para hacer el video es el siguiente:
 
-```r
+```python
 from urllib import urlretrieve
 link = 'https://raw.githubusercontent.com/yhat/demo-churn-pred/master/model/churn.csv'
 urlretrieve(link, "churn.txt")
@@ -51,8 +51,6 @@ df['minutos'] = np.where(df['Day Mins'] >= 270, 270, (df['Day Mins']//10)*10)
 df['minutos'] = np.where(df['minutos'] <= 70, 70, df['minutos'])
 
 pd.crosstab(df['minutos'], columns='count')
-plt.hist(df['minutos']); plt.show();
-
 churn =  pd.DataFrame((df['churn']).groupby(df['minutos']).mean())
 clientes = pd.DataFrame((df['churn']).groupby(df['minutos']).count())
 
@@ -62,3 +60,4 @@ ax2 = ax.twinx()
 ax2.plot(churn['churn'].values, linestyle='-', linewidth=2.0,color='red')
 plt.show();
 ```
+

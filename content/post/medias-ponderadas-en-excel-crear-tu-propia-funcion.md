@@ -27,9 +27,9 @@ Hace años conocí a una persona que no sabía hacer medias ponderadas con Excel
 - Crear sumas acumuladas con un bucle en nuestra función
 - Emplear funciones propias de Excel en nuestra función de visual basic
 
-La función es sencilla y replica la forma habitual de hacer medias ponderadas en Excel con el SUMAPRODUCTO del dato del que deseamos calcular la media por el campo de ponderación dividido por la suma del campo de ponderación:
+La función es sencilla y replica la forma habitual de hacer medias ponderadas en Excel con el `SUMAPRODUCTO` del dato del que deseamos calcular la media por el campo de ponderación dividido por la suma del campo de ponderación:
 
-```r
+```vba
 Public Function MEDIAPONDERADA(Valor As Range, Ponderacion As Range)
 
  If Valor.Rows.Count <> Ponderacion.Rows.Count Then
@@ -52,4 +52,4 @@ Public Function MEDIAPONDERADA(Valor As Range, Ponderacion As Range)
 End Function
 ```
 
-Esta función la ponéis en el libro de macros personal y cuando escribáis =MEDIAPONDERADA ya la tendréis a vuestra disposición en todas las sesiones de Excel. Saludos.
+Esta función la ponéis en el libro de macros personal y cuando escribáis `=MEDIAPONDERADA` ya la tendréis a vuestra disposición en todas las sesiones de Excel. Saludos.

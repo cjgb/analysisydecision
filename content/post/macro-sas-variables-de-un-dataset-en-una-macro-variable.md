@@ -22,9 +22,9 @@ title: Macro SAS. Variables de un dataset en una macro variable
 url: /blog/macro-sas-variables-de-un-dataset-en-una-macro-variable/
 ---
 
-Hoy os presento una macro de SAS que nos permite recoger en una macro variable las variables de un conjunto de datos SAS. Tiene como particularidad que nos sirve para seleccionar aquellas variables que tienen un determinado patrón, del tipo consumo2010, consumo2011,… Es un código un poco más complejo de lo habitual pero tiene aspectos interesantes:
+Hoy os presento una `macro` de `SAS` que nos permite recoger en una `macro variable` las variables de un conjunto de `datos SAS`. Tiene como particularidad que nos sirve para seleccionar aquellas variables que tienen un determinado patrón, del tipo `consumo2010`, `consumo2011`,… Es un código un poco más complejo de lo habitual pero tiene aspectos interesantes:
 
-```r
+```sas
 options mlogic mprint;
 %macro lista_variables (ds= , nombre_mv= , patron=);
 *ES NECESARIO QUE LA MACROV FINAL SEA GLOBAL;
@@ -49,11 +49,11 @@ where libname=upcase("&libreria.") and memname=upcase("&tabla.") and
 %mend;
 ```
 
-El elemento principal de esta macro es una consulta a una de las tablas DICTIONARY de SAS. O mejor dicho, a una de las vistas que tenemos en SASHELP. Siempre he prefererido consultar las vistas de SASHELP. La vista consultada es VCOLUMN de donde extraemos la columna NAME y como condicionantes pasamos la librería en LIBNAME y el nombre de la tabla de la que deseamos obtener las variables en MEMNAME. Como particularidad podemos aplicar patrones.
+El elemento principal de esta `macro` es una consulta a una de las tablas `DICTIONARY` de `SAS`. O mejor dicho, a una de las vistas que tenemos en `SASHELP`. Siempre he prefererido consultar las vistas de `SASHELP`. La vista consultada es `VCOLUMN` de donde extraemos la columna `NAME` y como condicionantes pasamos la librería en `LIBNAME` y el nombre de la tabla de la que deseamos obtener las variables en `MEMNAME`. Como particularidad podemos aplicar patrones.
 
 Ejemplos de uso:
 
-```r
+```sas
 data importes sasuser.importes;
 drop i j;
 array importe(30) ;
@@ -65,11 +65,10 @@ grupo=ranpoi(4,5);
 output;
 end;
 run;
-*;
-%lista_variables(ds=sasuser.importes , nombre_mv=lista_var1 , patron=);
-%lista_variables(ds=importes , nombre_mv=lista_var2 , patron=importe);
-*;
-%put _user_;
 ```
 
-Creo que esta macro es muy práctica y puede automatizaros mucho código. Saludos.
+`%lista_variables(ds=sasuser.importes , nombre_mv=lista_var1 , patron=);`
+`%lista_variables(ds=importes , nombre_mv=lista_var2 , patron=importe);`
+`%put _user_;`
+
+Creo que esta `macro` es muy práctica y puede automatizaros mucho código. Saludos.

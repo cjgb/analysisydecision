@@ -18,9 +18,9 @@ title: Macros SAS. Ordenar alfabéticamente las variables de un dataset
 url: /blog/macros-sas-ordenar-alfabeticamente-las-variables-de-un-dataset/
 ---
 
-Si deseamos ordenar alfabéticamente las variables de un conjunto de datos SAS porque puede falitarnos la realización de sumatorios de importes, saldos,… y el conjunto de datos SAS está desordenado os planteo una macro bien sencilla y que trabaja con una de las vistas más útiles de la SASHELP. La macro es bien sencilla y nos permite establecer que variables deseamos que aparezcan primero, selecciona los nombres de las variables, los ordena alfabéticamente y mediante un proc append (más rápido que un paso data) crea el fichero SAS con las variables ordenadas:
+Si deseamos ordenar alfabéticamente las variables de un conjunto de datos `SAS` porque puede falitarnos la realización de sumatorios de importes, saldos,… y el conjunto de datos `SAS` está desordenado os planteo una macro bien sencilla y que trabaja con una de las vistas más útiles de la `SASHELP`. La macro es bien sencilla y nos permite establecer que variables deseamos que aparezcan primero, selecciona los nombres de las variables, los ordena alfabéticamente y mediante un `proc append` (más rápido que un paso `data`) crea el fichero `SAS` con las variables ordenadas:
 
-```r
+```sas
 %macro ordenavar(datos,prim=);
 
 *OBTENEMOS LIBRERIA;
@@ -33,33 +33,33 @@ Si deseamos ordenar alfabéticamente las variables de un conjunto de datos SAS p
 ```
 
 \*CREAMOS UNA LISTA DE VARIABLES CON LA SASHELP;
-proc sql noprint;
-select name into: lista_ordenada separated by " " from sashelp.vcolumn
-where upcase(libname) = upcase("&lib.") and
-upcase(memname) = upcase("&nom.")
-order by name;
-quit;
+`proc sql noprint;`
+`select name into: lista_ordenada separated by " " from sashelp.vcolumn`
+`where upcase(libname) = upcase("&lib.") and`
+`upcase(memname) = upcase("&nom.")`
+`order by name;`
+`quit;`
 
 \*RENOMBRAMOS EL FICHERO PARA REALIZAR LOS CAMBIOS;
-ods noresults;
-proc datasets library=&lib.
-change &nom.=aux1;
-quit;
-ods results;
+`ods noresults;`
+`proc datasets library=&lib.`
+`change &nom.=aux1;`
+`quit;`
+`ods results;`
 
 \*ORDENAMOS EL AUXILIAR Y ANEXAMOS SOBRE EL FICHERO BASE
 RETAIN ANTES DE SET NOS ORDENA LAS VARIABLES;
-data uno;retain &prim. &lista_ordenada.;set aux1(obs=0);
+`data uno;retain &prim. &lista_ordenada.;set aux1(obs=0);`
 
 \*CON EL PROC APPEND ANEXAMOS LOS DATOS CON MAYOR RAPIDEZ;
-proc append base=&datos. data=aux1; quit;
+`proc append base=&datos. data=aux1; quit;`
 
-proc delete data=aux1;run;
-%mend;
+`proc delete data=aux1;run;`
+`%mend;`
 
-Creamos un fichero auxiliar con la estructura anterior y posteriormente lo borramos. Esta macro es un buen ejemplo de uso de las vistas de la SASHELP y además plantea como emplear el proc append para modificar anexar datos con mayor rapidez. Ejemplo de uso:
+Creamos un fichero auxiliar con la estructura anterior y posteriormente lo borramos. Esta macro es un buen ejemplo de uso de las vistas de la `SASHELP` y además plantea como emplear el `proc append` para modificar anexar datos con mayor rapidez. Ejemplo de uso:
 
-```r
+```sas
 data uno;
 
 do id=1 to 20;
@@ -79,6 +79,6 @@ end;
 run;
 ```
 
-%ordenavar(work.uno,prim=id);
+`%ordenavar(work.uno,prim=id);`
 
-En el parámetro PRIM podemos especificar aquellas variables que desamos que aparezcan primero. Para cualquier duda o problema sobre el funcionamiento: rvaquerizo@analisisydecision.es
+En el parámetro `PRIM` podemos especificar aquellas variables que desamos que aparezcan primero. Para cualquier duda o problema sobre el funcionamiento: `rvaquerizo@analisisydecision.es`

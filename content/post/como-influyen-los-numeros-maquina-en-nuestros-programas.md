@@ -18,7 +18,7 @@ title: Como influyen los números máquina en nuestros programas
 url: /blog/como-influyen-los-numeros-maquina-en-nuestros-programas/
 ---
 
-Es imposible no cometer un error a la hora de ajustar un número de máquina ya que todos los números tienen un espacio asignado y números con infinitos decimales no se pueden almacenar en memoria correctamente. Este «pequeño» error puede influir en nuestra programación. Vamos a crear una función en R que nos permita ejemplificar como pueden influir los errores de aproximación de los números de máquina en la programación. La siguiente función realiza la operación aritmética 1.1/11, 3.3/33,… y, mediante la función IFELSE creamos una condición:
+Es imposible no cometer un error a la hora de ajustar un número de máquina ya que todos los números tienen un espacio asignado y números con infinitos decimales no se pueden almacenar en memoria correctamente. Este «pequeño» error puede influir en nuestra programación. Vamos a crear una función en R que nos permita ejemplificar como pueden influir los errores de aproximación de los números de máquina en la programación. La siguiente función realiza la operación aritmética `1.1/11`, `3.3/33`,… y, mediante la función `IFELSE` creamos una condición:
 
 ```r
 > valores_maquina <- function (num) {
@@ -32,7 +32,7 @@ Es imposible no cometer un error a la hora de ajustar un número de máquina ya 
 + }
 ```
 
-La función valores_maquina tiene un sólo parámetro y realiza una operación que genera el valor 0.1, con IFELSE si ese valor generado es mayor que 0.1 nos pondrá OK, si no es mayor nos pondrá MAL. En principio siempre debería poner el valor MAL ya que 0.1 < 0.1 es falso. Entonces:
+La función `valores_maquina` tiene un sólo parámetro y realiza una operación que genera el valor `0.1`, con `IFELSE` si ese valor generado es mayor que `0.1` nos pondrá `OK`, si no es mayor nos pondrá `MAL`. En principio siempre debería poner el valor `MAL` ya que `0.1 < 0.1` es falso. Entonces:
 
 ```r
 > valores_maquina(1)
@@ -78,7 +78,7 @@ La función valores_maquina tiene un sólo parámetro y realiza una operación q
 [1] "MAL"
 ```
 
-¡Aquí pasa algo! Los ceros y unos es lo que tienen… Esto es debido a los números de máquina, en la red encontraréis mucha documentación al respecto sobre este tema. Pero desde aquí recomendaros que uséis la función ROUND:
+¡Aquí pasa algo! Los ceros y unos es lo que tienen… Esto es debido a los números de máquina, en la red encontraréis mucha documentación al respecto sobre este tema. Pero desde aquí recomendaros que uséis la función `ROUND`:
 
 ```r
 > valores_maquina <- function (num) {

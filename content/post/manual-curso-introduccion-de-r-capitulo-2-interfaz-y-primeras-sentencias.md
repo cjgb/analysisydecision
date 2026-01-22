@@ -18,11 +18,11 @@ title: 'Manual. Curso introducción de R. Capítulo 2: Interfaz y primeras sente
 url: /blog/manual-curso-introduccion-de-r-capitulo-2-interfaz-y-primeras-sentencias/
 ---
 
-En esta nueva entrega del curso comenzamos a trabajar con R. Ya nos hemos descargado e instalado la herramienta y es momento de conocer a grandes rasgos como funciona R. Si abrimos una sesión nos encontramos con la siguiente pantalla:
+En esta nueva entrega del curso comenzamos a trabajar con `R`. Ya nos hemos descargado e instalado la herramienta y es momento de conocer a grandes rasgos como funciona `R`. Si abrimos una sesión nos encontramos con la siguiente pantalla:
 
-![](/images/2008/02/interfaz_r.JPG)
+![Interfaz R](/images/2008/02/interfaz_r.JPG)
 
-El interfaz de R no es visual, trabajamos sobre una línea de comandos, no hay ventanas, sólo código y una gran comunidad de programadores que crean sus funciones y sus paquetes de utilidades. Para empezar a manejar R lo principal es conocer sus elementos principales **objetos y funciones** :
+El interfaz de `R` no es visual, trabajamos sobre una línea de comandos, no hay ventanas, sólo código y una gran comunidad de programadores que crean sus funciones y sus paquetes de utilidades. Para empezar a manejar `R` lo principal es conocer sus elementos principales **`objetos` y `funciones`** :
 
 ```r
 > objeto <- c(2,3,4) # creamos un objeto vector
@@ -34,7 +34,7 @@ El interfaz de R no es visual, trabajamos sobre una línea de comandos, no hay v
 >
 ```
 
-Sobre la línea de comandos generaremos objetos y funciones, las funciones llamarán objetos. Los objetos pueden ser vectores (_c_) o matrices (_matrix)_ y dentro de las matrices tendremos estructuras más complejas que serán tablas _(data.frame_)_:_
+Sobre la línea de comandos generaremos `objetos` y `funciones`, las `funciones` llamarán `objetos`. Los `objetos` pueden ser vectores (`c`) o matrices (`matrix`) y dentro de las matrices tendremos estructuras más complejas que serán tablas (`data.frame`):
 
 ```r
 > objeto <- c(2,3,4) # creamos un objeto vector
@@ -62,6 +62,6 @@ Sobre la línea de comandos generaremos objetos y funciones, las funciones llama
 >
 ```
 
-De este modo creamos objetos en R, el data frame se crea como una combinación de una matriz con varios vectores. PAra asignar los nombres a las columnas se emplea la función _names( <vector>)_ Para visualizarlos sólo hemos de poner el nombre del objeto, si deseamos ver los objetos que hemos creado emplearemos la función _objects()_ y tendremos un listado con todos los objetos de nuestra sesión.
+De este modo creamos `objetos` en `R`, el `data frame` se crea como una combinación de una `matriz` con varios `vectores`. PAra asignar los nombres a las columnas se emplea la función `names( <vector>)` Para visualizarlos sólo hemos de poner el nombre del objeto, si deseamos ver los `objetos` que hemos creado emplearemos la función `objects()` y tendremos un listado con todos los objetos de nuestra sesión.
 
-En R no sólo podemos introducir manualmente los datos a través de vectores y matrices, podemos leer de un gran número de orígenes. Lo veremos en el siguiente capítulo de nuestro manual de R.
+En `R` no sólo podemos introducir manualmente los datos a través de vectores y matrices, podemos leer de un gran número de orígenes. Lo veremos en el siguiente capítulo de nuestro manual de `R`.

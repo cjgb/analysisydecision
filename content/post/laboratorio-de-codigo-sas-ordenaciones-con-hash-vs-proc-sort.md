@@ -20,11 +20,11 @@ title: Laboratorio de código SAS. Ordenaciones con HASH vs. PROC SORT
 url: /blog/laboratorio-de-codigo-sas-ordenaciones-con-hash-vs-proc-sort/
 ---
 
-[Hace pocas fechas vimos el código SAS empleado para la realización de ordenaciones de conjuntos de datos SAS mediante algoritmos de hash](https://analisisydecision.es/objetos-hash-para-ordenar-tablas-sas/). Ya os comuniqué que era una forma más eficiente y hoy quería demostraros tal eficiencia con un laboratorio de código SAS. La situación es la siguiente, creamos un dataset con 1.000.000 de registros, 13 variables y comparamos un PROC SORT con una ordenación mediante hash, medimos tiempos y podemos determinar qué forma de ordenación es más eficiente.
+[Hace pocas fechas vimos el código `SAS` empleado para la realización de ordenaciones de conjuntos de datos `SAS` mediante algoritmos de hash](https://analisisydecision.es/objetos-hash-para-ordenar-tablas-sas/). Ya os comuniqué que era una forma más eficiente y hoy quería demostraros tal eficiencia con un laboratorio de código `SAS`. La situación es la siguiente, creamos un `dataset` con 1.000.000 de registros, 13 variables y comparamos un `PROC SORT` con una ordenación mediante `hash`, medimos tiempos y podemos determinar qué forma de ordenación es más eficiente.
 
-Si disponéis de una versión de SAS superior al 9.1 me gustaría que ejecutarais las siguientes líneas. No es un código muy complejo pero si alguien tiene dudas en su funcionamiento o le gustaría profundizar más en lo que hace que comente el mensaje, no lo hagáis vía correo electrónico porque tengo muchos mensajes en cola y poco tiempo para responder. El código para la realización de este experimento ya lo hemos visto en mensajes anteriores y es el siguiente:
+Si disponéis de una versión de `SAS` superior al `9.1` me gustaría que ejecutarais las siguientes líneas. No es un código muy complejo pero si alguien tiene dudas en su funcionamiento o le gustaría profundizar más en lo que hace que comente el mensaje, no lo hagáis vía correo electrónico porque tengo muchos mensajes en cola y poco tiempo para responder. El código para la realización de este experimento ya lo hemos visto en mensajes anteriores y es el siguiente:
 
-```r
+```sas
 *DS DE PRUEBA PARA COMPARACION DE TIEMPOS;
 
 data uno;
@@ -140,7 +140,7 @@ run;
 proc sort data=test; by tiempo; run;
 ```
 
-Para los que me seguís habitualmente este código os resultará familiar. El código empleado para la ordenación con hash ya lo vimos en anteriores entradas, es el mismo. Pero me gustaría recalcar el uso de la opción HASHEXP en este caso 20 (2\*\*20 = 1.048.576 tablas que se reparten el objeto). Veamos el resultado:
+Para los que me seguís habitualmente este código os resultará familiar. El código empleado para la ordenación con `hash` ya lo vimos en anteriores entradas, es el mismo. Pero me gustaría recalcar el uso de la opción `HASHEXP` en este caso 20 (2\*\*20 = 1.048.576 tablas que se reparten el objeto). Veamos el resultado:
 
 ![ejecucion-hash-1.PNG](/images/2010/11/ejecucion-hash-1.PNG)
 
@@ -148,4 +148,4 @@ Las ordenaciones empleando este tipo de objetos son más rápidas. Sin embargo r
 
 ![ejecucion-hash-2.PNG](/images/2010/11/ejecucion-hash-2.PNG)
 
-Mejoramos mucho el tiempo empleado para la ordenación, esto implica que un exponente muy alto no garantiza una mayor velocidad. Así pues hemos de jugar con esta opción, si me da tiempo en estos dos días que me quedan con SAS 9.2 analizaremos como modificar los exponentes. En determinadas circunstancias incluso un PROC SORT puede ser más eficiente que HASH si no empleamos un exponente correcto. Espero que estas líneas despierten vuestra curiosidad sobre estos algoritmos y, sobre todo, permitan que vuestro trabajo diario sea más eficiente. Saludos.
+Mejoramos mucho el tiempo empleado para la ordenación, esto implica que un exponente muy alto no garantiza una mayor velocidad. Así pues hemos de jugar con esta opción, si me da tiempo en estos dos días que me quedan con `SAS` `9.2` analizaremos como modificar los exponentes. En determinadas circunstancias incluso un `PROC SORT` puede ser más eficiente que `hash` si no empleamos un exponente correcto. Espero que estas líneas despierten vuestra curiosidad sobre estos algoritmos y, sobre todo, permitan que vuestro trabajo diario sea más eficiente. Saludos.

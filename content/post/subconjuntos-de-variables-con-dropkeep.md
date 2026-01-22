@@ -17,9 +17,9 @@ title: Subconjuntos de variables con DROP/KEEP
 url: /blog/subconjuntos-de-variables-con-dropkeep/
 ---
 
-Me han llegado algunas cuestiones sobre el uso de DROP/KEEP y a raiz de ello me he decidido a hacer un mensaje sencillo para que los usuarios menos avanzados de SAS puedan entender su funcionamiento. Sé que muchos lectores son expertos programadores pero también es necesario tener un rincón con código SAS menos avanzado para aquellos que se estén acercando a esta programación. En este caso partimos de una tabla de datos aleatorios con 102 variables y 10.000 observaciones que generamos mediante el siguiente programa SAS:
+Me han llegado algunas cuestiones sobre el uso de `DROP`/`KEEP` y a raiz de ello me he decidido a hacer un mensaje sencillo para que los usuarios menos avanzados de SAS puedan entender su funcionamiento. Sé que muchos lectores son expertos programadores pero también es necesario tener un rincón con código SAS menos avanzado para aquellos que se estén acercando a esta programación. En este caso partimos de una tabla de datos aleatorios con 102 variables y 10.000 observaciones que generamos mediante el siguiente programa SAS:
 
-```r
+```sas
 data uno;
 
 array variab (100);
@@ -39,48 +39,48 @@ end;
 run;
 ```
 
-La idea es quedarnos sólo con las _variables j variab1, variab10_ hasta _variab19_ y _variab100_. Lo más habitual es emplear keep como una instrucción dentro de paso DATA:
+La idea es quedarnos sólo con las variables `j` `variab1`, `variab10` hasta `variab19` y `variab100`. Lo más habitual es emplear `keep` como una instrucción dentro de paso `DATA`:
 
-```r
+```sas
 data sub1;
 
- set uno;
+ set uno;
 
- keep j variab1 variab10--variab19 var100;
+ keep j variab1 variab10--variab19 var100;
 
 run;
 ```
 
-Con — indicamos un rango de variables dentro del dataset para ahorrarnos escribirlas todas, además añadimos las restantes variables necesarias. Pero _keep_ también puede aparecer como una opción de lectura o de escritura de un conjunto de datos SAS. Como opción de escritura:
+Con ` --` indicamos un rango de variables dentro del dataset para ahorrarnos escribirlas todas, además añadimos las restantes variables necesarias. Pero `keep` también puede aparecer como una opción de lectura o de escritura de un conjunto de datos SAS. Como opción de escritura:
 
-```r
+```sas
 data sub3 (keep=j variab1 variab10--variab19 variab100);
 
- set uno;
+ set uno;
 
 run;
 ```
 
-Esto nos permite optimizar el espacio a la hora de generar un dataset, pero como más podemos optimizar nuestra ejecución de SAS es empleando _keep_ o _drop_ como opción de lectura:
+Esto nos permite optimizar el espacio a la hora de generar un dataset, pero como más podemos optimizar nuestra ejecución de SAS es empleando `keep` o `drop` como opción de lectura:
 
-```r
+```sas
 data sub2;
 
- set uno (keep=j variab1 variab10--variab19 variab100);
+ set uno (keep=j variab1 variab10--variab19 variab100);
 
 run;
 ```
 
-Sólo leeremos de UNO las variables que nos interesan, esto puede hacer que un programa SAS sea mucho más rápido y nosotros mucho más eficientes para que nuestro responsable nos pida mucho más trabajo. Otra forma de seleccionar variables que tienen un nombre con una raiz similar es emplear en _DROP/KEEP_ el signo de puntuación : con ello indicamos a SAS que deseamos todas las variables que empiecen por un sufijo, por ejemplo:
+Sólo leeremos de `UNO` las variables que nos interesan, esto puede hacer que un programa SAS sea mucho más rápido y nosotros mucho más eficientes para que nuestro responsable nos pida mucho más trabajo. Otra forma de seleccionar variables que tienen un nombre con una raiz similar es emplear en `DROP`/`KEEP` el signo de puntuación `:` con ello indicamos a SAS que deseamos todas las variables que empiecen por un sufijo, por ejemplo:
 
-```r
+```sas
 data sub4;
 
- set uno;
+ set uno;
 
- keep j variab1:;
+ keep j variab1:;
 
 run;
 ```
 
-Esto equivale a los códigos anteriormente vistos ya que nos quedamos con todas las variables que empiezan por _variab1_. Además del — contamos con los : para ahorrarnos mucho código y ser eficientes. Y si somos más eficientes podemos trabajar más o visitar esta magnífica web. Por supuesto todo lo anterior se puede aplicar a DROP para eliminar variables. Cualquier duda o sugerencia estoy en rvaquerizo@analisisydecision.es
+Esto equivale a los códigos anteriormente vistos ya que nos quedamos con todas las variables que empiezan por `variab1`. Además del ` --` contamos con los `:` para ahorrarnos mucho código y ser eficientes. Y si somos más eficientes podemos trabajar más o visitar esta magnífica web. Por supuesto todo lo anterior se puede aplicar a `DROP` para eliminar variables. Cualquier duda o sugerencia estoy en `rvaquerizo@analisisydecision.es`

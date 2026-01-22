@@ -19,9 +19,9 @@ title: Gráficos de burbuja con R
 url: /blog/graficos-de-burbuja-con-r/
 ---
 
-El otro día en [R-bloggers leí este post](http://www.r-bloggers.com/bubble-chart-by-using-ggplot2/). Entonces busqué información sobre estos gráficos con R en español y sólo encontré ayuda para realizarlos con Excel. Es verdad que el enlace que os pongo es más que suficiente para realizar los gráficos de burbuja pero en pocas líneas puedo ilustrar mejor un ejemplo y proponeros varias formas de crearlo. La primera de ellas emplea la función symbols y genera el siguiente gráfico:
+El otro día en [R-bloggers leí este post](http://www.r-bloggers.com/bubble-chart-by-using-ggplot2/). Entonces busqué información sobre estos gráficos con `R` en español y sólo encontré ayuda para realizarlos con `Excel`. Es verdad que el enlace que os pongo es más que suficiente para realizar los gráficos de burbuja pero en pocas líneas puedo ilustrar mejor un ejemplo y proponeros varias formas de crearlo. La primera de ellas emplea la función `symbols` y genera el siguiente gráfico:
 
-[![r_bubble_plot1.png](/images/2010/12/r_bubble_plot1.thumbnail.png)](/images/2010/12/r_bubble_plot1.png "r_bubble_plot1.png")
+![R Bubble Plot 1](/images/2010/12/r_bubble_plot1.thumbnail.png "r_bubble_plot1.png")
 
 ```r
 x=c(2,4,7,12,15)
@@ -43,7 +43,7 @@ text(x,y,etiqueta)
 palette("default")
 ```
 
-Para etiquetar las variables empleao la función _text_ y \_\_ me parece interesante el uso de la función _palette_ (así tenéis un ejemplo de uso) para la leyenda he tenido que tirar de búsqueda y [encontré esta idea](http://flowingdata.com/2010/11/23/how-to-make-bubble-charts/) pero he tenido algún problema para realizarla, por ello he preferido evitarla. Y la otra forma de realizar el gráfico es emplear el _ggplot2_ con una sintaxis muy similar a la que se utilizaba en el link de Rbloggers que os ponía al principio:
+Para etiquetar las variables empleao la función `text` y __ me parece interesante el uso de la función `palette` (así tenéis un ejemplo de uso) para la leyenda he tenido que tirar de búsqueda y [encontré esta idea](http://flowingdata.com/2010/11/23/how-to-make-bubble-charts/) pero he tenido algún problema para realizarla, por ello he preferido evitarla. Y la otra forma de realizar el gráfico es emplear el `ggplot2` con una sintaxis muy similar a la que se utilizaba en el link de Rbloggers que os ponía al principio:
 
 ```r
 datos=data.frame(x,y,tamanio)
@@ -55,7 +55,7 @@ g1 + geom_point(aes(size=tamanio)) +
 geom_text (aes(label=etiqueta),hjust=1, vjust=1)
 ```
 
-[![r_bubble_plot2.png](/images/2010/12/r_bubble_plot2.thumbnail.png)](/images/2010/12/r_bubble_plot2.png "r_bubble_plot2.png")
+![R Bubble Plot 2](/images/2010/12/r_bubble_plot2.thumbnail.png "r_bubble_plot2.png")
 
 O bien podemos hacer algo que particularmente me gusta, el tamaño de la etiqueta en función del tamaño de la burbuja:
 
@@ -65,6 +65,6 @@ qplot(x,y,data=datos, size=tamanio) + scale_colour_identity() +
 geom_text (aes(label=etiqueta),hjust=1, vjust=1)
 ```
 
-[![r_bubble_plot3.png](/images/2010/12/r_bubble_plot3.thumbnail.png)](/images/2010/12/r_bubble_plot3.png "r_bubble_plot3.png")
+![R Bubble Plot 3](/images/2010/12/r_bubble_plot3.thumbnail.png "r_bubble_plot3.png")
 
-Os dejo varias posibilidades para realizar los gráficos de burbuja con R. Ya no tendréis escusas para hacer estos gráficos con Excel, a partir de ahora seguro que emplearéis R. Saludos.
+Os dejo varias posibilidades para realizar los gráficos de burbuja con `R`. Ya no tendréis escusas para hacer estos gráficos con `Excel`, a partir de ahora seguro que emplearéis `R`. Saludos.

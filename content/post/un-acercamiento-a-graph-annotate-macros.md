@@ -21,26 +21,22 @@ title: Un acercamiento a GRAPH. ANNOTATE macros
 url: /blog/un-acercamiento-a-graph-annotate-macros/
 ---
 
-No quiero entrar en muchos detalles sobre el uso de %_**ANNOMAC**_. Esta macro nos permite usar las macros de _**ANNOTATE**_. Estas macros sirven para trabajar con el PROC GANNO del que ya hicimos una [pequeña revisión](https://analisisydecision.es/un-acercamiento-a-graph-proc-ganno/). Ahora me gustaría presentaros un ejemplo de uso de estas macros y sobre todo me gustaría que analizáseis el conjunto de datos SAS generado. Pongo directamente todo el código necesario:
+No quiero entrar en muchos detalles sobre el uso de `ANNOMAC`. Esta macro nos permite usar las macros de `ANNOTATE`. Estas macros sirven para trabajar con el `PROC GANNO` del que ya hicimos una [pequeña revisión](https://analisisydecision.es/un-acercamiento-a-graph-proc-ganno/). Ahora me gustaría presentaros un ejemplo de uso de estas macros y sobre todo me gustaría que analizáseis el `dataset` `SAS` generado. Pongo directamente todo el código necesario:
 
-```r
+```sas
 *OPCIONES NECESARIAS;
 
 goptions reset=global
-
          cback='white'
-
-         colors=(blcack)
-
-		xpixels=1000 ypixels=1000;;
-```
-
+         colors=(black)
+		xpixels=1000 ypixels=1000;
 %LET pos_inicial_x=50;
 %let pos_inicial_y=99;
+```
 
-Iniciamos con opciones globales y creamos unas posiciones iniciales. Estudiemos como trabaja annomac:
+Iniciamos con `goptions` y creamos unas `posiciones iniciales`. Estudiemos como trabaja `annomac`:
 
-```r
+```sas
 %annomac;
 
 data dibujo (where=( x>0 and x<100 and y>0 and y<100));
@@ -71,7 +67,6 @@ data dibujo (where=( x>0 and x<100 and y>0 and y<100));
 	if i>=10 then para=1;
 
 	end;end;
-```
 
 %LINE(12.5,85,37.5,85, red,1, 0.1);
 %LINE(25,87,25,85, red,1, 0.1);
@@ -101,7 +96,8 @@ run;
 
 proc ganno anno=dibujo;
 run;quit;
+```
 
-El proceso realiza rectángulos con las macros annotate y lo que hacemos es movernos por el dibujo empleando coordenadas. Ejecutad el código y sobre todo abrid el dataset dibujo para analizar que es lo que necesita el PROC GANNO. También me gustaría dejaros el [siguiente link ](http://support.sas.com/documentation/cdl/en/graphref/63022/HTML/default/viewer.htm#/documentation/cdl/en/graphref/63022/HTML/default/annotate_annomac.htm)por si estáis interesados en trabajar con este procedimiento. No será el único ejemplo que pondré al respecto. No irán muy comentados pero puede ser de utilidad para vuestro trabajo.
+El proceso realiza rectángulos con las macros `annotate` y lo que hacemos es movernos por el dibujo empleando coordenadas. Ejecutad el código y sobre todo abrid el `dataset` `dibujo` para analizar que es lo que necesita el `PROC GANNO`. También me gustaría dejaros el [siguiente link ](http://support.sas.com/documentation/cdl/en/graphref/63022/HTML/default/viewer.htm#/documentation/cdl/en/graphref/63022/HTML/default/annotate_annomac.htm)por si estáis interesados en trabajar con este procedimiento. No será el único ejemplo que pondré al respecto. No irán muy comentados pero puede ser de utilidad para vuestro trabajo.
 
 Saludos.

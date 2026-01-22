@@ -17,17 +17,22 @@ title: Aprendiendo shiny con vosotros
 url: /blog/aprendiendo-shiny-con-vosotros/
 ---
 
-No queda otro remedio. Necesito actualizarme un poco y comenzar a usar [shiny](http://shiny.rstudio.com/) y espero poder llegar a publicar en el blog las aplicaciones resultantes. No sé si seré capaz pero allá vamos. Lo primero es tener [Rstudio](http://www.rstudio.com/) instalado y empezar a escribir:
+No queda otro remedio. Necesito actualizarme un poco y comenzar a usar [shiny](http://shiny.rstudio.com/) y espero poder llegar a publicar en el blog las aplicaciones resultantes. No sé si seré capaz pero allá vamos. Lo primero es tener [`Rstudio`](http://www.rstudio.com/) instalado y empezar a escribir:
 
+```r
 install.packages(«shiny»)
 system.file(«examples», package=»shiny»)
+```
 
 Ya podemos ver los ejemplos de un modo muy sencillo:
 
+```r
 runExample(«05_sliders») # slider bars
+```
 
-Aparece una app que podemos ver tanto en RStudio como en nuestro navegador. Si modificamos las barras cambian los números de la tabla de la derecha. Muy sencillo. Para comenzar a trabajar debemos conocer dos códigos de R que están guardados en su correspondiente carpeta. Son server.R y ui.R que podemos abrir en la carpeta [deWindows] C:\\Users\\fulanito\\Documents\\R\\win-library\\3.1\\shiny\\examples\\05_sliders Sin embargo nosotros vamos a copiar y pegar esta carpeta en la misma ubicación pero le damos el nombre prueba y abrimos server.R
+Aparece una app que podemos ver tanto en RStudio como en nuestro navegador. Si modificamos las barras cambian los números de la tabla de la derecha. Muy sencillo. Para comenzar a trabajar debemos conocer dos códigos de R que están guardados en su correspondiente carpeta. Son `server.R` y `ui.R` que podemos abrir en la carpeta [deWindows] `C:\Users\fulanito\Documents\R\win-library\3.1\shiny\examples\05_sliders` Sin embargo nosotros vamos a copiar y pegar esta carpeta en la misma ubicación pero le damos el nombre `prueba` y abrimos `server.R`
 
+```r
 library(shiny)
 
 # Define server logic for slider examples
@@ -61,9 +66,11 @@ stringsAsFactors=FALSE)
 outputvalues sliderValues()
 })
 })
+```
 
-Interesante el botón Run app de arriba a la derecha para ejecutar la aplicación, eso implica que estamos ante una aplicación de shiny. shinyServer define una función con una entrada y una salida. La entrada será alguno de los datos que le pasamos a la aplicación y la salida una tabla HTML. Veamos que tiene ui.R
+Interesante el botón `Run app` de arriba a la derecha para ejecutar la aplicación, eso implica que estamos ante una aplicación de `shiny`. `shinyServer` define una función con una entrada y una salida. La entrada será alguno de los datos que le pasamos a la aplicación y la salida una tabla HTML. Veamos que tiene `ui.R`
 
+```r
 library(shiny)
 
 # Define UI for slider demo application
@@ -120,5 +127,6 @@ tableOutput(«values»)
 )
 )
 ))
+```
 
-Vemos que podemos cambiar el título y creamos cada uno de los _sliders_ con la función sliderInput. Y tendremos un panel principal con la función mainPanel con una tabla que representa los valores que tenemos en los sliders. Os confieso que este código me recuerda mucho al AF de SAS y no es un código R al uso. Sobre este mismo ejemplo vamos a ir cambiando código para ir conociendo como creamos nuestras aplicaciones. Saludos.
+Vemos que podemos cambiar el título y creamos cada uno de los _sliders_ con la función `sliderInput`. Y tendremos un panel principal con la función `mainPanel` con una tabla que representa los valores que tenemos en los sliders. Os confieso que este código me recuerda mucho al `AF` de `SAS` y no es un código R al uso. Sobre este mismo ejemplo vamos a ir cambiando código para ir conociendo como creamos nuestras aplicaciones. Saludos.

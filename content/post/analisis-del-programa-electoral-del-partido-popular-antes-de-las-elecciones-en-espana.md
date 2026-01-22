@@ -23,10 +23,11 @@ title: Análisis del programa electoral del Partido Popular antes de las eleccio
 url: /blog/analisis-del-programa-electoral-del-partido-popular-antes-de-las-elecciones-en-espana/
 ---
 
-Ya empleamos R en[ alguna entrada anterior ](https://analisisydecision.es/analisis-de-textos-con-r/)para analizar textos. Ahora nos metemos con el programa electoral del Partido Popular a 20 días de las elecciones en España. En [este link](http://www.pp.es/actualidad-noticia/programa-electoral-pp_5741.html) podéis descargaros el programa del Partido Popular. Lejos de lo insustanciales que suelen ser este tipo de documentos y alguna frase mítica del tipo «Crecimiento sin empleo no es recuperación» nos limitaremos a contar las palabras que emplean en este programa.
+Ya empleamos `R` en[ alguna entrada anterior ](https://analisisydecision.es/analisis-de-textos-con-r/)para analizar textos. Ahora nos metemos con el programa electoral del Partido Popular a 20 días de las elecciones en España. En [este link](http://www.pp.es/actualidad-noticia/programa-electoral-pp_5741.html) podéis descargaros el programa del Partido Popular. Lejos de lo insustanciales que suelen ser este tipo de documentos y alguna frase mítica del tipo «Crecimiento sin empleo no es recuperación» nos limitaremos a contar las palabras que emplean en este programa.
 
-En el [link ](http://www.pp.es/actualidad-noticia/programa-electoral-pp_5741.html)donde tenemos el programa accedemos al mismo en formato PDF, seleccionamos todo el documento, lo copiamos en un archivo de texto y ya podemos trabajar con R. El código ya ha sido comentado en este blog:
+En el [link ](http://www.pp.es/actualidad-noticia/programa-electoral-pp_5741.html)donde tenemos el programa accedemos al mismo en formato `PDF`, seleccionamos todo el documento, lo copiamos en un archivo de `txt` y ya podemos trabajar con `R`. El código ya ha sido comentado en este blog:
 
+```r
 ```r
 #Análisis del programa del PP
 
@@ -52,7 +53,9 @@ texto_col = data.frame(texto_col)
 
 names(texto_col) = c("V1")
 ```
+```
 
+```r
 ```r
 #Eliminamos algunos caracteres regulares
 
@@ -72,11 +75,13 @@ head(texto_col)
 
 hist(texto_col$largo)
 ```
+```
 
-`texto_col = subset(texto_col, largo>4)`
+```r
+texto_col = subset(texto_col, largo>4)
+```\`
 
-\`\`
-
+```r
 ```r
 library(sqldf)
 
@@ -92,5 +97,6 @@ group by palabra
 
 order by  count(*) desc ;")
 ```
+```
 
-CAMBIO, POLÍTICA, SOCIEDAD y EMPLEO son las palabras más empleadas. SOCIAL aparece en la posición 50 y JÓVENES mucho más abajo. CRISIS es otra de las palabras que no son muy destacadas. Abrid R, seguid los pasos que os indico y obtendréis un análisis muy interesante. Saludos.
+`CAMBIO`, `POLÍTICA`, `SOCIEDAD` y `EMPLEO` son las palabras más empleadas. `SOCIAL` aparece en la posición 50 y `JÓVENES` mucho más abajo. `CRISIS` es otra de las palabras que no son muy destacadas. Abrid `R`, seguid los pasos que os indico y obtendréis un análisis muy interesante. Saludos.

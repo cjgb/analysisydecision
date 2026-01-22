@@ -28,4 +28,4 @@ En Daemon Quest nos dedicamos, entre otras cosas, a analizar los datos de divers
 
 ¿Son todos tus clientes iguales? Probablemente no. Entonces… ¿por qué tratarlos a todos por igual y no premiar cosas como la fidelidad o la afinidad a nuestra marca?
 
-<http://andres-padrones-garcia.neurona.com/>
+[http://andres-padrones-garcia.neurona.com/](http://andres-padrones-garcia.neurona.com/)

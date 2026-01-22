@@ -22,7 +22,7 @@ title: Trabajar con los datos de Power BI desde R para hacer un modelo de regres
 url: /blog/trabajar-con-los-datos-de-power-bi-desde-r-para-hacer-un-modelo-de-regresion-lineal/
 ---
 
-Vídeo dedicado al uso de la librería de R pbix. Responde a una duda planteada por un lector que deseaba realizar un modelo de regresión lineal con Power BI. Imagino que se podrá programar en DAX, pero es mejor llevar los datos, las tablas necesarias, de Power BI a un software específico para poder realizar el modelo como es Python o R en este caso.
+Vídeo dedicado al uso de la librería de R `pbix`. Responde a una duda planteada por un lector que deseaba realizar un modelo de regresión lineal con Power BI. Imagino que se podrá programar en `DAX`, pero es mejor llevar los datos, las tablas necesarias, de Power BI a un software específico para poder realizar el modelo como es `Python` o `R` en este caso.
 
 Desde Power BI podemos realizar scripts de R pero recomiendo este primer paso para crear y validar el modelo, posteriormente podemos poner el programa de R con nuestra regresión lineal directamente en Power BI. El código empleado es:
 
@@ -32,8 +32,8 @@ library(pbixr)
 # Puerto
 pbi_abiertos = f_get_connections()
 
-pbi_abiertospbix <- gsub(" - Power BI Desktop", "", pbi_abiertospbix_name)
-puerto_empleado <- as.numeric(pbi_abiertosports)
+pbi_abiertospbix <- gsub(" - Power BI Desktop", "", pbi_abiertos$pbix_name)
+puerto_empleado <- as.numeric(pbi_abiertos$ports)
 
 conexion <- paste0("Provider=MSOLAP.8;Data Source=localhost:", puerto_empleado, ";MDX Compatibility=1")
 
@@ -51,8 +51,8 @@ nombres <- columnas %>% filter(TableID==641&IsHidden == 'False') %>% select(Expl
 
 names(cars) = nombres
 
-carsmpg = as.numeric(sub(',','.', carsmpg))
+cars$mpg = as.numeric(sub(',','.', cars$mpg))
 
-lm(carsmpg ~ cars$hp)
+lm(cars$mpg ~ cars$hp)
 ##############################
 ```

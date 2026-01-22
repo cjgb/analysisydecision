@@ -15,15 +15,15 @@ related:
 tags:
   - join
   - pandas
-title: Tipos de uniones (join) de tablas con Python Pandas
+title: Tipos de uniones (join) de tablas con `Python Pandas`
 url: /blog/tipos-de-uniones-join-de-tablas-con-python-pandas/
 ---
 
-Recopilación de las uniones más habituales con Python Pandas en una sola entrada. No se realiza equivalencias con sql join, la intención es tener de forma resumida los códigos para realizar left join inner join y concatenación de data frames de Pandas. [Hay amplia documentación esto es una síntesis](https://pandas.pydata.org/pandas-docs/stable/user_guide/merging.html).
+Recopilación de las uniones más habituales con `Python Pandas` en una sola entrada. No se realiza equivalencias con `sql join`, la intención es tener de forma resumida los códigos para realizar `left join` `inner join` y concatenación de `data frames de Pandas`. [Hay amplia documentación esto es una síntesis](https://pandas.pydata.org/pandas-docs/stable/user_guide/merging.html).
 
 Los data frames empleados para ilustrar el ejemplo son:
 
-```r
+```python
 import pandas as pd
 import numpy as np
 ejemplo = { "variable1": [10, 20, 30, 40],
@@ -34,7 +34,7 @@ df1 = pd.DataFrame(ejemplo,index=anio)
 df1
 ```
 
-```r
+```python
 ejemplo = { "variable1": [50, 60, 70, 80],
             "variable3": [5000, 6000, 7000, 8000]
 }
@@ -45,9 +45,9 @@ df2
 
 # Uniones de data frames con índices
 
-La estructura de una join con Pandas es:
+La estructura de una join con `Pandas` es:
 
-```r
+```python
 pd.merge(left, right, how='inner', on=None, left_on=None, right_on=None,
      left_index=False, right_index=False, sort=True,
      suffixes=('_x', '_y'), copy=True, indicator=False,
@@ -56,7 +56,7 @@ pd.merge(left, right, how='inner', on=None, left_on=None, right_on=None,
 
 ## Left Join
 
-```r
+```python
 left_join = pd.merge(df1, df2, how='left', on=None, left_on=None, right_on=None,
          left_index=True, right_index=True, sort=True)
 left_join
@@ -64,7 +64,7 @@ left_join
 
 ## Outer Join
 
-```r
+```python
 outer_join = pd.merge(df1, df2, how='outer', on=None, left_on=None, right_on=None,
          left_index=True, right_index=True, sort=True)
 outer_join
@@ -72,7 +72,7 @@ outer_join
 
 ## Right Join
 
-```r
+```python
 right_join = pd.merge(df1, df2, how='right', on=None, left_on=None, right_on=None,
          left_index=True, right_index=True, sort=True)
 right_join
@@ -80,7 +80,7 @@ right_join
 
 ## Inner Join
 
-```r
+```python
 inner_join = pd.merge(df1, df2, how='inner', on=None, left_on=None, right_on=None,
          left_index=True, right_index=True, sort=True)
 inner_join
@@ -90,21 +90,21 @@ inner_join
 
 ### Concatenación simple
 
-```r
+```python
 concatenar = pd.concat([df1,df2])
 concatenar
 ```
 
-### Concatenación inner
+### `Concatenación inner`
 
-```r
+```python
 concatenar_inner = pd.concat([df1,df2],join="inner")
 concatenar_inner
 ```
 
-### Concatenación outer
+### `Concatenación outer`
 
-```r
+```python
 concatenar_outer = pd.concat([df1,df2],join="outer")
 concatenar_outer
 ```
@@ -113,7 +113,7 @@ concatenar_outer
 
 Data frames de ejemplo análogos a los anteriores.
 
-```r
+```python
 ejemplo = { "variable1": [50, 60, 70, 80],
             "variable3": [5000, 6000, 7000, 8000]
 }
@@ -122,13 +122,12 @@ df2 = pd.DataFrame(ejemplo,index=anio)
 df2
 ```
 
-0
 
-Si no tenemos índices es importante especificar en el parámetro on= la variable con la que hacemos la unión de las tablas. En este caso ponemos todas las uniones:
+Si no tenemos índices es importante especificar en el `on=` variable con la que hacemos la unión de las tablas. En este caso ponemos todas las uniones:
 
 ## Left, outer, right con campo de unión común
 
-```r
+```python
 ejemplo = { "variable1": [50, 60, 70, 80],
             "variable3": [5000, 6000, 7000, 8000]
 }
@@ -137,11 +136,10 @@ df2 = pd.DataFrame(ejemplo,index=anio)
 df2
 ```
 
-1
 
 ## Inner join con campo de unión de distinto nombre
 
-```r
+```python
 ejemplo = { "variable1": [50, 60, 70, 80],
             "variable3": [5000, 6000, 7000, 8000]
 }
@@ -150,6 +148,5 @@ df2 = pd.DataFrame(ejemplo,index=anio)
 df2
 ```
 
-2
 
 Uniones más habituales en una sola entrada y en pocas líneas de código.

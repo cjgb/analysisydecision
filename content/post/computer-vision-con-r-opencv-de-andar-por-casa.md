@@ -20,13 +20,13 @@ title: Computer Vision con R. OpenCV de andar por casa
 url: /blog/computer-vision-con-r-opencv-de-andar-por-casa/
 ---
 
-Trabajando con Computer Vision aprecio que estamos muy limitados por las máquinas que usamos, o tiene mucho sentido montar GPUs en casa del tamaño del aire acondicionado y por supuesto no tiene sentido el consumo energético que implica. Aquí estoy yo montando una GPU para el análisis de imágenes.
+Trabajando con `Computer Vision` aprecio que estamos muy limitados por las máquinas que usamos, o tiene mucho sentido montar `GPUs` en casa del tamaño del aire acondicionado y por supuesto no tiene sentido el consumo energético que implica. Aquí estoy yo montando una `GPU` para el análisis de imágenes.
 
 [![](/images/2020/11/openCV_1.png)](/images/2020/11/openCV_1.png)
 
-Este tema implica que la Computer Vision no lo podrá usar el común de los _data scientist_ , a los necesarios conocimientos técnicos y matemáticos se añade el disponer de unos recursos tecnológicos que no están al alance de cualquiera. Sin embargo, los conocimientos técnicos y matemáticos los puedes adquirir o puedes aprovecharte de los entornos colaborativos. Pero, podemos iniciarnos en el reconocimiento de imágenes con R y la librería openCV y si salen algunos temas en los que estoy enredando es posible que la reducción de dimensionalidad y la geometría nos ahorre máquinas y energía.
+Este tema implica que la `Computer Vision` no lo podrá usar el común de los `data scientist` , a los necesarios conocimientos técnicos y matemáticos se añade el disponer de unos recursos tecnológicos que no están al alance de cualquiera. Sin embargo, los conocimientos técnicos y matemáticos los puedes adquirir o puedes aprovecharte de los entornos colaborativos. Pero, podemos iniciarnos en el reconocimiento de imágenes con `R` y la librería openCV y si salen algunos temas en los que estoy enredando es posible que la reducción de dimensionalidad y la geometría nos ahorre máquinas y energía.
 
-Vamos a emplear dos ejemplos para ver las posibilidades de openCV más R. Partimos de una primera imagen en la que hay 4 personas jugando al futbol y un balón está volando en el aire. Siento no saber de donde saqué esta foto, si tiene algún tipo de derecho hacédmelo llegar.
+Vamos a emplear dos ejemplos para ver las posibilidades de openCV más `R`. Partimos de una primera imagen en la que hay 4 personas jugando al `fútbol` y un balón está volando en el aire. Siento no saber de donde saqué esta foto, si tiene algún tipo de derecho hacédmelo llegar.
 
 [![](/images/2020/11/futbol.png)](/images/2020/11/futbol.png)
 
@@ -77,4 +77,4 @@ ocv_read(ub2) %>% ocv_blur() %>% ocv_face()
 
 [![](/images/2020/11/ocv_blur.png)](/images/2020/11/ocv_blur.png)
 
-Al difuminar la imagen con ocv_blur desaparece el problema en esta foto, pero no podemos generalizar, probad a hacer lo mismo en la foto anterior. El empleo de openCV con R no es complejo pero tiene sus limitaciones si queremos sofisticar nuestros análisis. Veremos que pasa con la geometría.
+Al difuminar la imagen con ocv_blur desaparece el problema en esta foto, pero no podemos generalizar, probad a hacer lo mismo en la foto anterior. El empleo de openCV con `R` no es complejo pero tiene sus limitaciones si queremos sofisticar nuestros análisis. Veremos que pasa con la geometría.

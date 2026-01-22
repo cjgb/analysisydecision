@@ -19,9 +19,9 @@ title: Laboratorio de código SAS. Vistas + PROC MEANS vs. PROC SQL
 url: /blog/laboratorio-de-codigo-sas-vistas-proc-means-vs-proc-sql/
 ---
 
-Las vistas son muy importantes cuando trabajamos con SAS. El problema del espacio en disco se acentúa cuando trabajamos con SAS. Este problema podemos minimizarlo empleando vistas. También hay otras situaciones en las que se recomienda usar vistas, cuando realizamos agregaciones sobre campos de una tabla y a la vez realizamos una operación sobre estos campos es muy habitual emplear el PROC SQL. Ejemplo de lo que cuento:
+Las vistas son muy importantes cuando trabajamos con SAS. El problema del espacio en disco se acentúa cuando trabajamos con SAS. Este problema podemos minimizarlo empleando vistas. También hay otras situaciones en las que se recomienda usar vistas, cuando realizamos agregaciones sobre campos de una tabla y a la vez realizamos una operación sobre estos campos es muy habitual emplear el `PROC SQL`. Ejemplo de lo que cuento:
 
-```r
+```sas
 data importes;
 
 do idcliente=1 to 2000000;
@@ -45,9 +45,9 @@ from importes;
 quit;
 ```
 
-Sobre una tabla con 2.000.000 de registros hacemos la varianza de un campo importe y de la raiz cuadrada de ese mismo campo importe. Es decir, hacemos la varianza sobre la operación aritmética de un campo. Para hacer este trabajo con PROC MEANS sin tener que crear un nuevo campo en la tabla haríamos una vista y un MEANS posteriormente:
+Sobre una tabla con 2.000.000 de registros hacemos la varianza de un campo importe y de la raiz cuadrada de ese mismo campo importe. Es decir, hacemos la varianza sobre la operación aritmética de un campo. Para hacer este trabajo con `PROC MEANS` sin tener que crear un nuevo campo en la tabla haríamos una vista y un `MEANS` posteriormente:
 
-```r
+```sas
 *FORMA 2: VISTA + MEANS;
 
 data cuadrado/view=cuadrado;
@@ -67,7 +67,7 @@ quit;
 
 El código es más farragoso. ¿De verdad compensa en tiempo de ejecución la creación de vistas? Vamos a dar respuesta con la famosa macro que lanza ejecuciones y guarda tiempos. El método 1 es vista+means y el método 2 es SQL, he cambiado el orden:
 
-```r
+```sas
 %macro aniade(descripcion);
 
 data borra;

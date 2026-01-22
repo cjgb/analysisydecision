@@ -20,7 +20,7 @@ title: Gráfico de correlaciones entre factores. Gráfico de la V de Cramer
 url: /blog/grafico-de-correlaciones-entre-factores-grafico-de-la-v-de-cramer/
 ---
 
-Un gráfico muy habitual a la hora de construir modelos de riesgo para el cálculo de tarifas es el gráfico de correlaciones de la V de Cramer que nos sirve para medir la correlación entre factores, entre variables cuantitativas [hace muchos años ya escribí sobre el tema](https://analisisydecision.es/v-de-cramer-con-r-analizar-la-correlacion-de-factores/). Hoy os traigo la creación de un corrplot con R aplicado a la V de Cramer y además os descubro una función muy elegante para realizar este análisis de correlaciones entre factores, [esta función está sacada de stackoverflow](https://stackoverflow.com/questions/44070853/association-matrix-in-r) (como no) y añado un análisis gráfico que nos permite conocer algunas opciones de corrplot.
+Un gráfico muy habitual a la hora de construir modelos de riesgo para el cálculo de tarifas es el gráfico de correlaciones de la V de Cramer que nos sirve para medir la correlación entre factores, entre variables cuantitativas [hace muchos años ya escribí sobre el tema](https://analisisydecision.es/v-de-cramer-con-r-analizar-la-correlacion-de-factores/). Hoy os traigo la creación de un `corrplot` con R aplicado a la V de Cramer y además os descubro una función muy elegante para realizar este análisis de correlaciones entre factores, [esta función está sacada de stackoverflow](https://stackoverflow.com/questions/44070853/association-matrix-in-r) (como no) y añado un análisis gráfico que nos permite conocer algunas opciones de `corrplot`.
 
 ```r
 library(vcd)
@@ -61,6 +61,6 @@ remove(correlaciones)
 
 El resultado:
 
-[![](/images/2019/07/corrplot_R_V_Cramer-300x263.png)](/images/2019/07/corrplot_R_V_Cramer.png)
+![Gráfico de la V de Cramer con R](/images/2019/07/corrplot_R_V_Cramer.png)
 
-Aspectos interesantes con la función corrplot, con method = "number" sale el valor, no me gustan las bolas, aunque podéis probar con pie, mejor poned is.corr = F con type="upper" sale la parte superior de la matriz, quitamos la diagonal que es 1 con diag=F y la V de Cramer es un valor que va entre 0 y 1 con cl.lim establecemos los límites de la leyenda en el gráfico de correlaciones. A partir de aquí cada uno que establezca un umbral para determinar que dos factores están correlados, yo por ejemplo lo establezco en 0.33, saludos.
+Aspectos interesantes con la función `corrplot`, con `method = "number"` sale el valor, no me gustan las bolas, aunque podéis probar con `pie`, mejor poned `is.corr = F` con `type="upper"` sale la parte superior de la matriz, quitamos la diagonal que es 1 con `diag=F` y la V de Cramer es un valor que va entre 0 y 1 con `cl.lim` establecemos los límites de la leyenda en el gráfico de correlaciones. A partir de aquí cada uno que establezca un umbral para determinar que dos factores están correlados, yo por ejemplo lo establezco en 0.33, saludos.

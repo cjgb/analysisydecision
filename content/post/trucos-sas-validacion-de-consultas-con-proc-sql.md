@@ -22,9 +22,9 @@ title: Trucos SAS. Validación de consultas con PROC SQL
 url: /blog/trucos-sas-validacion-de-consultas-con-proc-sql/
 ---
 
-Hay ocasiones en las que lanzamos consultas a las BBDD con SAS y necesitamos saber si son correctas. Quería plantearos un truco SAS para **PROC SQL** que valida las consultas antes de ser ejecutadas. Empiezo el truco en la línea habitual, creo un dataset de ejemplo y os presento como realizar la validación, de este modo vosotros podéis copiar y pegar el código en una sesión de SAS y comprobar su funcionamiento. Datos aleatorios de partida:
+Hay ocasiones en las que lanzamos consultas a las `BBDD` con `SAS` y necesitamos saber si son correctas. Quería plantearos un truco `SAS` para `PROC SQL` que valida las consultas antes de ser ejecutadas. Empiezo el truco en la línea habitual, creo un dataset de ejemplo y os presento como realizar la validación, de este modo vosotros podéis copiar y pegar el código en una sesión de `SAS` y comprobar su funcionamiento. Datos aleatorios de partida:
 
-```r
+```sas
 data datos;
 
 array importe(5);
@@ -46,9 +46,9 @@ end;
 run;
 ```
 
-10.000 observaciones y 6 variables. Hemos de realizar una consulta sobre esta tabla y primero hemos de validarla, uno de los medios para realizar esta tarea es la opción _NOEXEC_ dentro de PROC SQL:
+10.000 observaciones y 6 variables. Hemos de realizar una consulta sobre esta tabla y primero hemos de validarla, uno de los medios para realizar esta tarea es la opción `NOEXEC` dentro de `PROC SQL`:
 
-```r
+```sas
 proc sql noexec;
 
 create table datos1 as select
@@ -66,9 +66,9 @@ where importe6 >= 5000;
 quit;
 ```
 
-_NOEXEC_ no ha ejecutado la consulta y nos devuelve un error, está escrito _fron_ en vez de _from_. Pero _**NO HAY QUE EMPLEAR PARA VALIDAR LA OPCIÓN NOEXEC**_ , lo demuestro con el siguiente código:
+`NOEXEC` no ha ejecutado la consulta y nos devuelve un error, está escrito `fron` en vez de `from`. Pero **NO HAY QUE EMPLEAR PARA VALIDAR LA OPCIÓN `NOEXEC`** , lo demuestro con el siguiente código:
 
-```r
+```sas
 proc sql noexec;
 
 create table datos1 as select
@@ -86,9 +86,9 @@ where importe6 >= 5000;
 quit;
 ```
 
-Aparentemente la consulta no tiene ningún error. Sin embargo en la cláusula _where_ tenemos _importe6_ , una variable que no existe. Es decir, _NOEXEC_ sólo nos ha validado la sintaxis, no la consulta. Así pues **nos olvidamos de NOEXEC**. Para realizar validaciones emplearemos la sentencia **VALIDATE** :
+Aparentemente la consulta no tiene ningún error. Sin embargo en la cláusula `where` tenemos `importe6` , una variable que no existe. Es decir, `NOEXEC` sólo nos ha validado la sintaxis, no la consulta. Así pues **nos olvidamos de `NOEXEC`**. Para realizar validaciones emplearemos la sentencia `VALIDATE`:
 
-```r
+```sas
 proc sql ;
 
 validate
@@ -108,4 +108,4 @@ where importe6 >= 5000;
 quit;
 ```
 
-_VALIDATE_ siempre precede a _SELECT_ y no sólo nos valida la sintaxis de nuestra consulta sino que además nos valida los campos que incluimos en ella. En el ejemplo que os he puesto lo que hacemos es comentar _CREATE TABLE_ y poner _VALIDATE_. Así podemos dejar lanzadas consultas a servidores en horario de menor concurrencia con la seguridad de que la ejecución es correcta, algo que puede provocar cierta inquietud. Saludos.
+`VALIDATE` siempre precede a `SELECT` y no sólo nos valida la sintaxis de nuestra consulta sino que además nos valida los campos que incluimos en ella. En el ejemplo que os he puesto lo que hacemos es comentar `CREATE TABLE` y poner `VALIDATE`. Así podemos dejar lanzadas consultas a servidores en horario de menor concurrencia con la seguridad de que la ejecución es correcta, algo que puede provocar cierta inquietud. Saludos.

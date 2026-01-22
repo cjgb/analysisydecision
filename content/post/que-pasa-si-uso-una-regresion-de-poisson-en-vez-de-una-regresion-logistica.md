@@ -23,11 +23,11 @@ title: Qué pasa si uso una regresión de poisson en vez de una regresión logí
 url: /blog/que-pasa-si-uso-una-regresion-de-poisson-en-vez-de-una-regresion-logistica/
 ---
 
-Para un tema de mi trabajo voy a utilizar una regresión de poisson en vez de una regresión logística, el evento es si o no y no tiene nada que ver el tiempo, ni se puede contabilizar como un número, pero a efectos prácticos es mejor para mi usar una regresión de poisson. Entonces, ¿qué pasa si hago una poisson en vez de binomial? [Como siempre si mi n es muy grande hay relación entre ambas distribuciones](https://en.wikipedia.org/wiki/Relationships_among_probability_distributions). Pero yo quiero saber si me puede clasificar mis registros igual una regresión de poisson y una binomial y se me ha ocurrido hacer un ejercicio teórico muy simple.
+Para un tema de mi trabajo voy a utilizar una regresión de `poisson` en vez de una regresión `logística`, el evento es si o no y no tiene nada que ver el tiempo, ni se puede contabilizar como un número, pero a efectos prácticos es mejor para mi usar una regresión de `poisson`. Entonces, ¿qué pasa si hago una `poisson` en vez de binomial? [Como siempre si mi n es muy grande hay relación entre ambas distribuciones](https://en.wikipedia.org/wiki/Relationships_among_probability_distributions). Pero yo quiero saber si me puede clasificar mis registros igual una regresión `logística` de `poisson` y una binomial y se me ha ocurrido hacer un ejercicio teórico muy simple.
 
 Construyo con SAS 10.000 datos aleatorios con las variables independientes x e y normalmente distribuidas y la variable dependiente z que es una función logística «perfecta» de x e y:
 
-```r
+```sas
 data logistica;
 do i=1 to 10000;
 x=rannor(8);
@@ -50,9 +50,9 @@ tables z;
 quit;
 ```
 
-Separo los datos en entrenamiento y test y vemos que un 8% aproximadamente de mis registros tienen valor 1. Sobre estos datos hago una logística y una poisson y veo los parámetros:
+Separo los datos en entrenamiento y test y vemos que un 8% aproximadamente de mis registros tienen valor 1. Sobre estos datos hago una logística y una `poisson` y veo los parámetros:
 
-```r
+```sas
 proc logistic data=entrenamiento;
 model z=x y;
 quit;
@@ -62,11 +62,11 @@ model z = x y / dist = poisson link = log scale=deviance;
 run;
 ```
 
-[![poisson_logistica_parametros](/images/2016/09/poisson_logistica_parametros.png)](/images/2016/09/poisson_logistica_parametros.png)
+![](/images/2016/09/poisson_logistica_parametros.png)
 
 Los parámetros no tienen porque parecerse claro pero si me gustaría que observarais que tienen signo contrario, un apunte. Ahora, tal cual me han salido, hacemos un scoring sobre los datos de test y dividimos en 10 tramos por esas variables de scoring:
 
-```r
+```sas
 data test;
 set test;
 prob_logistica=1/(1+exp(-(-9.5645+4.7303*x-4.8101*y)));
@@ -84,12 +84,12 @@ quit;
 
 Creo el scoring «a lo mecagüen» como le gusta decir a mi amigo Juan y en otro dataset tengo las variables prob_logistica y num_poisson resultantes del scoring divididas en 10 tramos, si hacemos una tabla de frecuencias de estas dos variables obtenemos:
 
-```r
+```sas
 proc freq;
 tables prob_logistica*num_poisson/nocol norow nopercent;
 quit;
 ```
 
-[![poisson_logistica_resultados](/images/2016/09/poisson_logistica_resultados.png)](/images/2016/09/poisson_logistica_resultados.png)
+![](/images/2016/09/poisson_logistica_resultados.png)
 
-Resulta que obtenemos prácticamente lo mismo, así que puedo usar la poisson en vez de la binomial y hablar de proporciones en vez de probabilidades, algo que explica mejor mi problema.
+Resulta que obtenemos prácticamente lo mismo, así que puedo usar la `poisson` en vez de la binomial y hablar de proporciones en vez de probabilidades, algo que explica mejor mi problema.

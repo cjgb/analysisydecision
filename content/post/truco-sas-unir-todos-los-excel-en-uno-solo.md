@@ -25,7 +25,7 @@ cada libro para ver los resultados, a mi me resulta más facil unirmelas todas y
 
 Espero que os resulte útil!
 
-```r
+```sas
 ods noresults;
 
 ods listing close;
@@ -39,7 +39,7 @@ run;
 ods html close;
 ```
 
-```r
+```sas
 ods html body="c:\temp\shoes.xls";
 
 proc print data=sashelp.shoes ;
@@ -49,7 +49,7 @@ run;
 ods html close;
 ```
 
-```r
+```sas
 %macro UNE_EXCEL(in=,out=);
 
 options noxwait;

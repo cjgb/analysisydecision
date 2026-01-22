@@ -20,7 +20,7 @@ url: /blog/macros-sas-pasar-de-texto-a-numerico/
 
 “Pasar de texto a número en SAS”. Una de las búsquedas que más recibe esta web. Ya hay monográficos, trucos, artículos,… al respecto. Pero faltaba una macro que espero os ayude. Es una macro muy básica pero que permite pasar textos con números en formato europeo o en formato americano. La macro:
 
-```r
+```sas
 %macro texto_numero(varib_ini=, varib_fin=,europeo=0);
 vaux=&varib_ini.;
 drop vaux;
@@ -36,11 +36,11 @@ vaux = tranwrd(vaux,",",".");
 %mend;
 ```
 
-Breve descipción. La variable inicial (parámetro varib_ini) será la cadena de texto que deseamos pasar a número. La variable final (parámetro varib_fin) será el nombre de la variable numérica. Si deseamos conservar el nombre tenemos que jugar con rename como opción de lectura o escritura del paso data. Estoy estudiando otra macro más avanzada para realizar este trabajo. El parámetro europeo=0 es el que nos indica si el número que transformamos tiene formato europeo o no. La macro necesita una variable auxiliar para realizar las transformaciones necesarias en el caso de ser un número en formato europeo. Una vez está el número en formato americano realizamos la transformación sobre la variable final con input, el formato que ponemos es best12.
+Breve descipción. La variable inicial (`varib_ini`) será la cadena de texto que deseamos pasar a número. La variable final (`varib_fin`) será el nombre de la variable numérica. Si deseamos conservar el nombre tenemos que jugar con `rename` como opción de lectura o escritura del paso `data`. Estoy estudiando otra macro más avanzada para realizar este trabajo. El parámetro `europeo=0` es el que nos indica si el número que transformamos tiene formato europeo o no. La macro necesita una variable auxiliar (`vaux`) para realizar las transformaciones necesarias en el caso de ser un número en formato europeo. Una vez está el número en formato americano realizamos la transformación sobre la variable final con `input`, el formato que ponemos es `best12.`.
 
 Ejemplo de uso:
 
-```r
+```sas
 data uno;
 infile datalines dlm="@";
 input dato1: 11. dato2:12.;

@@ -18,9 +18,9 @@ title: Truco SAS. Uso de filename y pipe
 url: /blog/truco-sas-uso-de-filename-y-pipe/
 ---
 
-Hoy presento una de las utilidades de FILENAME para interactuar con los _file systems_ en los que creamos tablas SAS. Consiste en emplear FILENAME con la opción PIPE. Lo que hacemos es asignar una referencia a una ejecución del sistema operativo. Por ejemplo en Windows:
+Hoy presento una de las utilidades de `FILENAME` para interactuar con los `file systems` en los que creamos tablas `SAS`. Consiste en emplear `FILENAME` con la opción `PIPE`. Lo que hacemos es asignar una referencia a una ejecución del sistema operativo. Por ejemplo en `Windows`:
 
-```r
+```sas
 filename dir pipe "dir c:\";data uno;
 
  infile dir;
@@ -30,11 +30,11 @@ filename dir pipe "dir c:\";data uno;
 run;
 ```
 
-Creamos una tabla SAS temporal que contiene el resultado de la ejecución en MS DOS de \_dir c:\_ muy simple. Pero donde de verdad puede sernos de utilidad el uso de PIPE es en ejecuciones con UNIX. A continuación planteo algunos ejemplos:
+Creamos una tabla `SAS` temporal que contiene el resultado de la ejecución en `MS DOS` de `dir c:\` muy simple. Pero donde de verdad puede sernos de utilidad el uso de `PIPE` es en ejecuciones con `UNIX`. A continuación planteo algunos ejemplos:
 
-Informe sobre estado de un filesystem del servidor:
+Informe sobre estado de un `filesystem` del servidor:
 
-```r
+```sas
 %let unidad=; *DEFINE AQUI TU FILESYSTEM;
 
 filename df pipe "df -k /&unidad.";
@@ -64,9 +64,9 @@ proc print data=uno;
 proc delete data=uno; run;
 ```
 
-Tenemos una salida que nos premite conocer el espacio libre, el espacio ocupado y el %. Por otro lado si deseamos listar aquellos ficheros que tienen un tamaño mayor a 1GB podemos hacer los comandos UNIX _ls -ltr|sort +4nr_ :
+Tenemos una salida que nos premite conocer el espacio libre, el espacio ocupado y el %. Por otro lado si deseamos listar aquellos ficheros que tienen un tamaño mayor a 1GB podemos hacer los comandos `UNIX` `ls -ltr|sort +4nr` :
 
-```r
+```sas
 filename tam pipe "ls -laR| sort +4nr";
 
 x "cd /&unidad.";
@@ -98,6 +98,6 @@ data dos;
 run;
 ```
 
-El uso del FILENAME y el PIPE puede ser tremendamente práctico para realizar pequeños informes sobre la situación de nuestro servidor y en función de estos informes podremos lanzar nuestros procesos. También podemos eliminar con SAS ficheros antiguos, identificar que usuario llena un filesystem,…
+El uso del `FILENAME` y el `PIPE` puede ser tremendamente práctico para realizar pequeños informes sobre la situación de nuestro servidor y en función de estos informes podremos lanzar nuestros procesos. También podemos eliminar con `SAS` ficheros antiguos, identificar que usuario llena un `filesystem`,…
 
-Espero que os sea de utilidad y por supuesto si teneís dudas: rvaquerizo@analisisydecision.es
+Espero que os sea de utilidad y por supuesto si teneís dudas: `rvaquerizo@analisisydecision.es`

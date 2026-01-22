@@ -19,7 +19,7 @@ title: Truco R. Insertar imagen en un gráfico
 url: /blog/truco-r-insertar-imagen-en-un-grafico/
 ---
 
-Quería pintaros mi estimación sobre el mundial de Sudáfrica con R. La he hecho con el corazón más que con la cabeza. Es evidente que no será así. Esta estimación la pinto utilizando dos paquetes de R más que interesantes. El rimage no está en CRAN, es una cosa muy rara, un paquete «propietario» pero que tiene la función read.jpeg que permite crear objetos de imagen en R. El otro paquete interesante es el TeachingDemos que nos permite añadir imágenes a los gráficos de R, me acerqué a él cuando esta web tenía un logo, ahora ya no lo tiene. También me parece que puede ser de utilidad la función download.file
+Quería pintaros mi estimación sobre el mundial de Sudáfrica con R. La he hecho con el corazón más que con la cabeza. Es evidente que no será así. Esta estimación la pinto utilizando dos paquetes de R más que interesantes. El `rimage` no está en CRAN, es una cosa muy rara, un paquete propietario pero que tiene la función `read.jpeg` que permite crear objetos de imagen en R. El otro paquete interesante es el `TeachingDemos` que nos permite añadir imágenes a los gráficos de R, me acerqué a él cuando esta web tenía un logo, ahora ya no lo tiene. También me parece que puede ser de utilidad la función `download.file`
 
 El caso es que a continuación os planteo un código de R que puede añadir mucha vistosidad a vuestros gráficos:
 

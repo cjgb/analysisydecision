@@ -19,9 +19,9 @@ title: Análisis del discurso de navidad del Rey de España 2013
 url: /blog/analisis-del-discurso-de-navidad-del-rey-de-espana-2013/
 ---
 
-[![](/images/2013/12/Discurso-del-rey-espa%C3%B1a-2013.png)](/images/2013/12/Discurso-del-rey-espa%C3%B1a-2013.png)
+![](/images/2013/12/Discurso-del-rey-espa%C3%B1a-2013.png)
 
-Me llena de orgullo y satisfacción mostraros un ejemplo de uso de la librería **wordcloud** para la realización de nubes de palabras con R. Esta entrada no es muy innovadora porque ya tenemos alguna similar en el blog. Lo primero que tenéis que hacer es descargaros el discurso del Rey y ejecutad este código:
+Me llena de orgullo y satisfacción mostraros un ejemplo de uso de la librería `wordcloud` para la realización de nubes de palabras con R. Esta entrada no es muy innovadora porque ya tenemos alguna similar en el blog. Lo primero que tenéis que hacer es descargaros el discurso del Rey y ejecutad este código:
 
 ```r
 #Lectura del archivo
@@ -64,7 +64,8 @@ max.words=Inf, random.order=FALSE,colors=pal,rot.per=.15)
 
 dev.off()
 ```
+```
 
-Interesante el uso de la librería _RColorBrewer_. Particularmente me gusta mucho el resultado que nos da _wordcloud_ para la realización de las nubes de palabras con una sintaxis sencilla. Considero imprescindible el uso de ramdom.order=FALSE. Espero que os sea de utilidad.
+Interesante el uso de la librería `RColorBrewer`. Particularmente me gusta mucho el resultado que nos da `wordcloud` para la realización de las nubes de palabras con una sintaxis sencilla. Considero imprescindible el uso de `random.order=FALSE`. Espero que os sea de utilidad.
 
-Quería aprovechar estas líneas para pedir al gabinete de prensa de la Casa del Rey que me permitieran fotografiarme con el Rey de España. **Profesionalmente me viene muy bien** (para determinados ámbitos) una fotografía estrechando la mano del Rey. Ya van unas pocas de veces que lo he pedido y siempre es imposible. Pero bien que estáis todo el día metidos en el blog cogiendo mapas y aprendiendo a usar mejor el Excel.
+Quería aprovechar estas líneas para pedir al gabinete de prensa de la Casa del Rey que me permitieran fotografiarme con el Rey de España. **Profesionalmente me viene muy bien** (para determinados ámbitos) una fotografía estrechando la mano del Rey. Ya van unas pocas de veces que lo he pedido y siempre es imposible. Pero bien que estáis todo el día metidos en el blog cogiendo mapas y aprendiendo a usar mejor el `Excel`.
