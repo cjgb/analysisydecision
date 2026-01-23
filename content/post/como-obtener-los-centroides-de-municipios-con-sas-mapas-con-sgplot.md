@@ -23,24 +23,22 @@ title: Como obtener los centroides de municipios con SAS. Mapas con SGPLOT
 url: /blog/como-obtener-los-centroides-de-municipios-con-sas-mapas-con-sgplot/
 ---
 
-[![mapa_municipios_sas2](/images/2016/11/mapa_municipios_SAS2.png)](/images/2016/11/mapa_municipios_SAS2.png)
+![mapa_municipios_sas2](/images/2016/11/mapa_municipios_SAS2.png)
 
 Un amigo y lector del blog me ha pedido un mapa de códigos postales donde poder identificar los centroides para andar calculando distancias a otros puntos. Yo ~~no~~ tengo un mapa de España por códigos postales para poder usar con fines comerciales, [pero si cuento en el blog como poder obtenerlo bajo ciertas condiciones](https://analisisydecision.es/como-hacer-un-mapa-de-espana-por-codigos-postales-con-qgis/). Lo que si puedo contar a Juan es como hacer un mapa por municipios con SAS, [aunque ya he hablado de ello](https://analisisydecision.es/mapas-sas-a-partir-de-shapefile/) hay ciertos aspectos que pueden ser interesantes. y todo empieza donde siempre <http://www.gadm.org/country> la web donde tenemos los mapas «libres» por países, seleccionáis Spain y el formato shapefile una vez descargados los mapas en vuestros equipos empezamos con el trabajo en SAS:
 
-[source languaje=»SAS»]
+```sas
 proc mapimport datafile="\\directorio\\mapa\\ESP_adm_shp.shp"
 out = work.espania;
 run;
 proc contents;quit;
-[/source]
+```
 
-[![mapa_municipios_sas1](/images/2016/11/mapa_municipios_SAS1.png)](/images/2016/11/mapa_municipios_SAS1.png)
+![mapa_municipios_sas1](/images/2016/11/mapa_municipios_SAS1.png)
 
-El procedimiento MAPIMPORT ha creado un conjunto de datos SAS donde tenemos caracterizados todos los polígonos que componen el shapefile. Entonces si tenemos que calcular el centroide de un municipio con SAS sugiero realizar un PROC SQL de la siguiente forma
+El procedimiento `MAPIMPORT` ha creado un conjunto de datos SAS donde tenemos caracterizados todos los polígonos que componen el shapefile. Entonces si tenemos que calcular el centroide de un municipio con SAS sugiero realizar un `PROC SQL` de la siguiente forma
 
-:
-
-[source languaje=»SAS»]
+```sas
 proc sql;
 create table centroides as select
 id_4,
@@ -49,13 +47,13 @@ avg(y) as centroide_y
 from espania
 group by 1;
 quit;
-[/source]
+```
 
-¡A qué molo! El centroide de cada municipio será la media de las coordenadas que lo definen y ahora viene el motivo por el cual he creado una entrada en el blog en vez de llamar por teléfono a Juanito que se ha ido muy lejos a trabajar y no me invita. Vamos a realizar el mapa de la provincia de Barcelona con SAS con el procedimiento SGPLOT que tiene una serie de matices que me hace sugerir que empleéis R para la realización de este tipo de mapas:
+¡A qué molo! El centroide de cada municipio será la media de las coordenadas que lo definen y ahora viene el motivo por el cual he creado una entrada en el blog en vez de llamar por teléfono a Juanito que se ha ido muy lejos a trabajar y no me invita. Vamos a realizar el mapa de la provincia de Barcelona con SAS con el procedimiento `SGPLOT` que tiene una serie de matices que me hace sugerir que empleéis R para la realización de este tipo de mapas:
 
-[source languaje=»SAS»]
+```sas
 
-\*Creacion de un mapa de Barcelona;
+*Creacion de un mapa de Barcelona;
 data barna;
 set espania;
 if name_2 eq "Barcelona";
@@ -77,6 +75,6 @@ yaxis display=none;
 scatter x=centroide_x y=centroide_y ;
 quit;
 
-[/source]
+```
 
-Matices y rarezas que tiene este código SAS. Necesita el orden del shapefile no puedo explicar porque, lo investigaré, pero los primeros mapas no me salieron e intuí que por ahí iban los problemas, además el left join ha necesitado un distinct algo que no entiendo muy bien ya que se puede realizar el mapa con los mismos datos sin el left join y éste no genera duplicados, esto si le he investigado y el resultado ha sido PROBLEMA 1 – RAUL 0 volveré con ello. Por otro lado tenemos el PROC SGPLOT que emplea POLYGON para la representación de los shapefile y como deseamos que nos pinte un punto para identificar los centroides usamos la sentencia SCATTER. Bueno, espero que a Juan y a otros os sirva esta entrada, imagino que sí porque ahora será capaz de representar en mapas la distancia de los centroides de un municipio a un punto determinado o incluso la adyacencia entre municipios. Saludos.
+Matices y rarezas que tiene este código SAS. Necesita el orden del shapefile no puedo explicar porque, lo investigaré, pero los primeros mapas no me salieron e intuí que por ahí iban los problemas, además el `left join` ha necesitado un `distinct` algo que no entiendo muy bien ya que se puede realizar el mapa con los mismos datos sin el `left join` y éste no genera duplicados, esto si le he investigado y el resultado ha sido PROBLEMA 1 – RAUL 0 volveré con ello. Por otro lado tenemos el `PROC SGPLOT` que emplea `POLYGON` para la representación de los shapefile y como deseamos que nos pinte un punto para identificar los centroides usamos la sentencia `SCATTER`. Bueno, espero que a Juan y a otros os sirva esta entrada, imagino que sí porque ahora será capaz de representar en mapas la distancia de los centroides de un municipio a un punto determinado o incluso la adyacencia entre municipios. Saludos.

@@ -22,10 +22,10 @@ url: /blog/cuanto-dinero-pierdo-jugando-a-la-loteria-una-simulacion-poco-seria-c
 
 Esta pantalla es muy habitual en mi televisor todos los jueves por la noche. Son los resultados de la Lotería Nacional de España, el sorteo de los jueves. Mi mujer insiste en comprar lotería para dejar de ser pobres. No es una buena opción. Aunque por lo menos ahora compramos lotería nacional. Antes jugábamos a eso de la Bonoloto, las probabilidades de que te toque son menores que la cantidad de sustancias dopantes que le encontraron al gran Alberto Contador. Eso lo entendió, pero había que jugar. ¿Y cuánto nos cuesta jugar?
 
-Pues empecemos con el número de semanas que deseamos simular, unos 5 años, unas 250 semanas y simulemos números entre 0 y 99999 y los correspondientes premios que son:
+Pues empecemos con el `numero` de semanas que deseamos simular, unos 5 años, unas 250 semanas y simulemos `numero`s entre 0 y 99999 y los correspondientes `premio`s que son:
 
-- 30.000 € al primer premio
-- 10.000 € al segundo premio
+- 30.000 € al primer `premio`
+- 10.000 € al segundo `premio`
 - Distintos importes en función de las terminaciones
 
 ```r
@@ -66,9 +66,9 @@ premio3.2 = trunc(runif(numsimul,0,9))
 premio3.3 = trunc(runif(numsimul,0,9))
 ```
 
-No es un código muy «profesional» pero si ilustrativo. Para todos aquellos que tienen miedo a programar con R, también se pueden hacer «chapuzas». No es tan difícil. Ahora que tenemos los resultados de todos los sorteos durante esos casi 5 años vamos a estudiar cuánto dinero nos ha tocado:
+No es un código muy «profesional» pero si ilustrativo. Para todos aquellos que tienen miedo a programar con `R`, también se pueden hacer «chapuzas». No es tan difícil. Ahora que tenemos los resultados de todos los sorteos durante esos casi 5 años vamos a estudiar cuánto dinero nos ha tocado:
 
-Vamos a jugar con el número 1. Las distintas terminaciones las comparamos con el resto de la división del múltiplo de 10 correspondiente. En este punto, sabiendo que jugamos el número 1 analizamos nuestros premios:
+Vamos a jugar con el `numero` 1. Las distintas terminaciones las comparamos con el resto de la división del múltiplo de 10 correspondiente. En este punto, sabiendo que jugamos el `numero` 1 analizamos nuestros `premio`s:
 
 ```r
 #Este es el número que jugamos

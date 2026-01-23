@@ -20,11 +20,11 @@ title: Trucos SAS. Operar con fechas YYYYMM típicas de particiones Oracle
 url: /blog/trucos-sas-operar-con-fechas-yyyymm-tipicas-de-particiones-oracle/
 ---
 
-Este truco va orientado a programadores SAS que estén habituados a trabajar con Oracle. El SAS Tip de hoy nos permite parametrizar a la perfección la lectura de tablas históricas particionadas. En estos casos podemos crear parámetros con macrovariables de SAS para leer las tablas Oracle sin necesidad de modificar manualmente las fechas de partición. Un ejemplo:
+Este `truco` va `orientado` a `programadores SAS` que estén `habituados` a trabajar con `Oracle`. El `SAS Tip` de hoy nos permite `parametrizar` a la perfección la `lectura` de `tablas históricas particionadas`. En estos `casos` podemos crear `parámetros` con `macrovariables` de `SAS` para leer las `tablas Oracle` sin `necesidad` de modificar `manualmente` las `fechas` de `partición`. Un `ejemplo`:
 
-1\. sin parametrizar:
+1\. sin `parametrizar`:
 
-```r
+```sas
 proc sql;
 
  create table maximo as select
@@ -40,9 +40,9 @@ proc sql;
 quit;
 ```
 
-2\. parametrizado:
+2\. `parametrizado`:
 
-```r
+```sas
 proc sql;
 
  create table maximo as select
@@ -58,38 +58,34 @@ proc sql;
 quit;
 ```
 
-Con este ejemplo queda claro nuestro objetivo. En el siguiente paso data veremos las funciones que vamos a emplear para trabajar con fechas de partición AAAAMM, las más habituales:
+Con este `ejemplo` queda `claro` nuestro `objetivo`. En el siguiente `paso data` veremos las `funciones` que vamos a emplear para trabajar con `fechas de partición AAAAMM`, las más `habituales`:
 
-``` %let mes=200808;``data _null_; ```
-
-```r
-*PREPARAMOS LA FECHA DE LA PARTICION;
-
- mes= mod(&mes.,100);
-
- anio=int(&mes/100);
-
-*USO DE FUNCIONES PUT PARA CONVERTIR A CARACTER Y MDY;
-
- fecha=put(mdy(mes,1,anio),ddmmyy10.);
-
-*LA FUNCION INTNX OPERA CON FECHAS EN FUNCION DE UNA 'BASE'
-
- EN ESTE CASO LA BASE SERA MONTH;
-
- fecha_mas_1_mes=put(intnx('MONTH',mdy(8,1,2008),1),ddmmyy10.);
+```sas
+%let mes=200808;
 ```
 
-put fecha " con un mes mas: " fecha_mas_1_mes;
-run;
+```sas
+data _null_;
+*PREPARAMOS LA FECHA DE LA PARTICION;
+mes= mod(&mes.,100);
+anio=int(&mes/100);
+*USO DE FUNCIONES PUT PARA CONVERTIR A CARACTER Y MDY;
+fecha=put(mdy(mes,1,anio),ddmmyy10.);
+*LA FUNCION INTNX OPERA CON FECHAS EN FUNCION DE UNA 'BASE'
+EN ESTE CASO LA BASE SERA MONTH;
+fecha_mas_1_mes=put(intnx('MONTH',mdy(8,1,2008),1),ddmmyy10.);
+```
 
-Si ejecutamos este código en el log obtenemos 01/08/2008 con un mes mas: 01/09/2008 Las funciones principales que empleamos son MOD, INT para identificar mes y año de la fecha en formato AAAAMM y MDY e INTNX para crear fechas y operar en meses respectivamente. Identificadas las funciones (emplead la ayuda para conocerlas mejor) en otro paso data os fijo más el objetivo:
+`put fecha " con un mes mas: " fecha_mas_1_mes;`
+`run;`
 
-```r
+Si ejecutamos este `código` en el `log` obtenemos 01/08/2008 con un `mes mas`: 01/09/2008 Las `funciones principales` que empleamos son `MOD`, `INT` para identificar `mes` y `año` de la `fecha` en `formato AAAAMM` y `MDY` e `INTNX` para crear `fechas` y operar en `meses` respectivamente. `Identificadas` las `funciones` (emplead la `ayuda` para conocerlas `mejor`) en otro `paso data` os fijo más el `objetivo`:
+
+```sas
 %let mes=200711;
 ```
 
-```r
+```sas
 data _null_;
 
 y=2;
@@ -109,9 +105,9 @@ y=2;
 run;
 ```
 
-`Operamos con la fecha AAAAMM y de ella obtenemos año y mes. Si este proceso lo pasamos a una macro podemos crear una función muy potente y práctica para trabajar con pariticiones:`
+`Operamos` con la `fecha AAAAMM` y de ella obtenemos `año` y `mes`. Si este `proceso` lo pasamos a una `macro` podemos crear una `función` muy `potente` y `práctica` para trabajar con `pariticiones`:
 
-```r
+```sas
 /*MACRO PARA OPERAR CON MESES EN FORMATO AAAAMM*/
 
 %macro operames(mesxx,operador);
@@ -123,11 +119,11 @@ run;
 %mend operames;
 ```
 
-Ejemplos de uso de esta función:
+`Ejemplos` de uso de esta `función`:
 
-\`\`\`%let mes=200808;\`
+`%let mes=200808;`
 
-```r
+```sas
 data _null_;
 
 format fecha 6.;
@@ -163,17 +159,16 @@ fecha=%operames(&mes.,-22); call symput ('mes_menos_22',compress(fecha));
 fecha=%operames(&mes.,-23); call symput ('mes_menos_23',compress(fecha));
 ```
 
-fecha=%operames(&mes.,1); call symput ('mes_mas_1',compress(fecha));
-fecha=%operames(&mes.,2); call symput ('mes_mas_2',compress(fecha));
-fecha=%operames(&mes.,3); call symput ('mes_mas_3',compress(fecha));
-fecha=%operames(&mes.,4); call symput ('mes_mas_4',compress(fecha));
-run;
+`fecha=%operames(&mes.,1); call symput ('mes_mas_1',compress(fecha));`
+`fecha=%operames(&mes.,2); call symput ('mes_mas_2',compress(fecha));`
+`fecha=%operames(&mes.,3); call symput ('mes_mas_3',compress(fecha));`
+`fecha=%operames(&mes.,4); call symput ('mes_mas_4',compress(fecha));`
+`run;`
 
-%put _user_;
+`%put _user_;`
 
-En log obtenemos:
+En `log` obtenemos:
 
-```r
 GLOBAL MES 200808
 
 GLOBAL MES_MAS_1 200809
@@ -213,13 +208,10 @@ GLOBAL MES_MENOS_21 200611
 GLOBAL MES_MENOS_22 200610
 
 GLOBAL MES_MENOS_23 200609
-```
 
-Muy útil para no tener necesidad de modificar fechas en nuestros procesos mensuales. Y podemos crear una macro que nos genere las macrovariables automaticamente, además es un buen ejemplo de bucles con macros:
+Muy útil para no tener `necesidad` de modificar `fechas` en nuestros `procesos mensuales`. Y podemos crear una `macro` que nos genere las `macrovariables automaticamente`, además es un buen `ejemplo` de `bucle`s con `macros`:
 
-\`\`
-
-```r
+```sas
 %macro doit (inicio,fin);
 
 %do i= &inicio. %to &fin.;
@@ -255,6 +247,6 @@ run;
 
 `%doit(-24,3);`
 
-Un código más avanzado para ir conociendo mejor la programación en macro.
+Un `código` más `avanzado` para ir conociendo `mejor` la `programación` en `macro`.
 
-Por supuesto para cualquier duda o sugerencia podéis poner comentarios o bien mandar un correo a rvaquerizo@analisisydecision.es
+Por supuesto para cualquier `duda` o `sugerencia` podéis poner `comentarios` o bien mandar un `correo` a `rvaquerizo@analisisydecision.es`

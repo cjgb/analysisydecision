@@ -20,19 +20,19 @@ title: Laboratorio de código SAS. Comparativa entre IF y WHERE
 url: /blog/laboratorio-de-codigo-sas-comparativa-entre-if-y-where/
 ---
 
-Inicio hoy otra serie de mensajes para analizar el uso óptimo del código SAS. La intención es comparar distintas ejecuciones y obtener un pequeño reporte con la metodología y el tiempo empleado en su ejecución. Para evitar el efecto que pueda causar la concurrencia en un servidor con SAS se realizarán múltiples ejecuciones. He intentado que el código que utilizo para comparar las ejecuciones sea lo más sencillo posible. Soy consciente que se puede usar un código más «profesional» o un código más «sencillo» pero lo que planteo a continuación me parece la mejor solución. La idea es hacer una macro que haga N ejecuciones para evitar el efecto concurrencia. Cada método tendrá una ejecución, esta ejecución se controlará con una macrovariable con la hora del sistema. Esta mv se guardará en una tabla SAS junto con un nombre que le damos al método y la ejecución realizada. Al final lo más sencillo es ordenar por el tiempo de ejecución e imprimir el resultado.
+Inicio hoy otra serie de mensajes para `analizar` el uso óptimo del código `SAS`. La intención es comparar distintas ejecuciones y obtener un pequeño reporte con la `metodología` y el `tiempo` empleado en su ejecución. Para evitar el efecto que pueda causar la concurrencia en un servidor con `SAS` se realizarán múltiples ejecuciones. He intentado que el código que utilizo para comparar las ejecuciones sea lo más sencillo posible. Soy consciente que se puede usar un código más «profesional» o un código más «sencillo» pero lo que planteo a continuación me parece la mejor solución. La idea es hacer una `macro` que haga N ejecuciones para evitar el efecto concurrencia. Cada `método` tendrá una ejecución, esta ejecución se controlará con una `macrovariable` con la `hora` del sistema. Esta `mv` se guardará en una `tabla SAS` junto con un `nombre` que le damos al `método` y la ejecución realizada. Al final lo más sencillo es ordenar por el `tiempo` de ejecución e imprimir el resultado.
 
-Para iniciar esta serie comenzamos con la comparativa entre IF y WHERE, ya hicimos algo parecido dentro de un MERGE, pero ahora vamos a hacerlo con y sin índices. Los métodos a emplear serán:
+Para iniciar esta serie comenzamos con la comparativa entre `IF` y `WHERE`, ya hicimos algo parecido dentro de un `MERGE`, pero ahora vamos a hacerlo con y sin `índices`. Los `métodos` a emplear serán:
 
-Método 1: IF
-Método 1 BIS: IF + DELETE
-Método 2: WHERE como instrucción
-Método 3: WHERE como opción de escritura
-Método 4: WHERE como opción de lectura
+`Método 1`: `IF`
+`Método 1 BIS`: `IF` + `DELETE`
+`Método 2`: `WHERE` como instrucción
+`Método 3`: `WHERE` como opción de escritura
+`Método 4`: `WHERE` como opción de lectura
 
-Partimos de una tabla SAS aleatoria con los registros que deseemos:
+Partimos de una `tabla SAS` aleatoria con los registros que deseemos:
 
-```r
+```sas
 data uno /*(INDEX=(importe))*/;
 
 do i=1 to 1000000;
@@ -46,9 +46,9 @@ end;
 run;
 ```
 
-En el bucle podemos indicar el número de observaciones, yo pruebo con 1 millón. A continuación os planteo las macros que he creado para realizar el experimento:
+En el `bucle` podemos indicar el `número` de `observaciones`, yo pruebo con 1 `millón`. A continuación os planteo las `macros` que he creado para realizar el experimento:
 
-```r
+```sas
 *ESTA MACRO HACE EL FICHERO TEST;
 
 %macro aniade(descripcion);
@@ -74,7 +74,7 @@ proc delete data=borra; run;
 %mend;
 ```
 
-```r
+```sas
 *TENEMOS 4 FORMAS DE REALIZAR EL PROCESO;
 
 %macro test(ejecuciones);
@@ -176,7 +176,7 @@ proc delete data=dos dos_prima tres cuatro cinco; run;
 
 `Ya sólo ordeno el dataset test y hago un PROC PRINT:`
 
-```r
+```sas
 proc sort data=test; by tiempo; run;
 
 proc print noobs; run;
@@ -184,50 +184,50 @@ proc print noobs; run;
 
 Los resultados obtenidos son:
 
-ejecucion | metodo | tiempo | 3 | METODO 1 | 0.46669
+`ejecucion` | `metodo` | `tiempo` | 3 | `METODO 1` | 0.46669
 ---|---|---
-2 | METODO 1 BIS | 0.47193
-1 | METODO 1 | 0.48187
-1 | METODO 1 BIS | 0.48938
-2 | METODO 1 | 0.49601
-3 | METODO 1 BIS | 0.50882
-2 | METODO 4 | 0.52143
-4 | METODO 1 | 0.53394
-3 | METODO 2 | 0.54146
-4 | METODO 1 BIS | 0.54989
-1 | METODO 2 | 0.57792
-1 | METODO 4 | 0.61899
-2 | METODO 2 | 0.64726
-3 | METODO 4 | 0.65905
-4 | METODO 2 | 0.70540
-4 | METODO 4 | 0.75455
-4 | METODO 3 | 1.01269
-1 | METODO 3 | 1.08197
-3 | METODO 3 | 1.19255
-2 | METODO 3 | 1.20838
+2 | `METODO 1 BIS` | 0.47193
+1 | `METODO 1` | 0.48187
+1 | `METODO 1 BIS` | 0.48938
+2 | `METODO 1` | 0.49601
+3 | `METODO 1 BIS` | 0.50882
+2 | `METODO 4` | 0.52143
+4 | `METODO 1` | 0.53394
+3 | `METODO 2` | 0.54146
+4 | `METODO 1 BIS` | 0.54989
+1 | `METODO 2` | 0.57792
+1 | `METODO 4` | 0.61899
+2 | `METODO 2` | 0.64726
+3 | `METODO 4` | 0.65905
+4 | `METODO 2` | 0.70540
+4 | `METODO 4` | 0.75455
+4 | `METODO 3` | 1.01269
+1 | `METODO 3` | 1.08197
+3 | `METODO 3` | 1.19255
+2 | `METODO 3` | 1.20838
 
-Se observa que el método 3 WHERE como opción de escritura es el peor de todos. Los dos métodos con IF son los que mejores resultados han obtenido. WHERE como instrucción o como opción de lectura han obtenido resultados muy parecidos. Si realizamos la ejecución con índices:
+Se observa que el `método 3 WHERE` como opción de escritura es el peor de todos. Los dos `métodos` con `IF` son los que mejores resultados han obtenido. `WHERE` como instrucción o como opción de lectura han obtenido resultados muy parecidos. Si realizamos la ejecución con `índices`:
 
-ejecucion | metodo | tiempo | 4 | METODO 1 | 0.47086
+`ejecucion` | `metodo` | `tiempo` | 4 | `METODO 1` | 0.47086
 ---|---|---
-4 | METODO 1 BIS | 0.48211
-3 | METODO 1 | 0.49148
-1 | METODO 1 | 0.50192
-2 | METODO 1 | 0.51209
-1 | METODO 1 BIS | 0.52227
-2 | METODO 1 BIS | 0.52323
-4 | METODO 2 | 0.53204
-3 | METODO 1 BIS | 0.53216
-3 | METODO 2 | 0.57371
-1 | METODO 2 | 0.57886
-4 | METODO 4 | 0.58222
-3 | METODO 4 | 0.59596
-2 | METODO 4 | 0.59631
-2 | METODO 2 | 0.59716
-1 | METODO 4 | 0.61539
-3 | METODO 3 | 0.97408
-4 | METODO 3 | 0.99680
-1 | METODO 3 | 1.01555
-2 | METODO 3 | 1.03185
+4 | `METODO 1 BIS` | 0.48211
+3 | `METODO 1` | 0.49148
+1 | `METODO 1` | 0.50192
+2 | `METODO 1` | 0.51209
+1 | `METODO 1 BIS` | 0.52227
+2 | `METODO 1 BIS` | 0.52323
+4 | `METODO 2` | 0.53204
+3 | `METODO 1 BIS` | 0.53216
+3 | `METODO 2` | 0.57371
+1 | `METODO 2` | 0.57886
+4 | `METODO 4` | 0.58222
+3 | `METODO 4` | 0.59596
+2 | `METODO 4` | 0.59631
+2 | `METODO 2` | 0.59716
+1 | `METODO 4` | 0.61539
+3 | `METODO 3` | 0.97408
+4 | `METODO 3` | 0.99680
+1 | `METODO 3` | 1.01555
+2 | `METODO 3` | 1.03185
 
-Los resultados son muy parecidos pero el método 2 parece que mejora ligeramente al método 4. Seguiremos empleando estos códigos para comparar distintas formas de ejecutar código SAS y por supuesto si tenéis dudas, sugerencias o un trabajo interesante para que no me sienta perezoso por las mañanas [rvaquerizo@analisisydecision.es](mailto:rvaquerizo@analisisydecision.es)
+Los resultados son muy parecidos pero el `método 2` parece que mejora ligeramente al `método 4`. Seguiremos empleando estos códigos para comparar distintas formas de ejecutar código `SAS` y por supuesto si tenéis dudas, sugerencias o un trabajo interesante para que no me sienta perezoso por las mañanas `rvaquerizo@analisisydecision.es`

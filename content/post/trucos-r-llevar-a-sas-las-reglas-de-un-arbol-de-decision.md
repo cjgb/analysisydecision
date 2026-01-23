@@ -19,11 +19,11 @@ tags:
   - árboles de decisión
   - party
   - rpart
-title: Trucos R. Llevar a SAS las reglas de un árbol de decisión
+title: Trucos `R`. Llevar a `SAS` las reglas de un `árbol de decisión`
 url: /blog/trucos-r-llevar-a-sas-las-reglas-de-un-arbol-de-decision/
 ---
 
-Vuelvo hoy con el uso de **rpart** para la creación de **árboles de decisión con R**. Pero hoy, además de realizar un modelo de árbol con R quiero presentaros una función que nos permite guardar las reglas generadas con nuestro modelo en un fichero de texto para su posterior utilización con SAS. Retomamos un [ejemplo visto con anterioridad en la bitácora](https://analisisydecision.es/monografico-arboles-de-clasificacion-con-rpart/) con ligeras modificaciones:
+Vuelvo hoy con el uso de `rpart` para la creación de `árboles de decisión con R`. Pero hoy, además de realizar un modelo de `árbol` con `R` quiero presentaros una función que nos permite guardar las reglas generadas con nuestro modelo en un fichero de texto para su posterior utilización con `SAS`. Retomamos un [ejemplo visto con anterioridad en bitácora](https://analisisydecision.es/monografico-arboles-de-clasificacion-con-rpart/) con ligeras modificaciones:
 
 ```r
 #Inventamos un objeto para realizar el modelo
@@ -74,14 +74,14 @@ datos_inipvi=as.factor((datos_inipotencial>=quantile(datos_inipotencial,
 
 library(rpart)
 
-arbol=rpart(as.factor(pvi)~edad+saldo_ppi+saldo_fondos,
+arbol= rpart(as.factor(pvi)~edad+saldo_ppi+saldo_fondos,
 
 data=datos_ini,method="anova",
 
 control=rpart.control(minsplit=30, cp=0.0008) )
 ```
 
-Tenemos un objeto **rpart** llamado _arbol_. En este punto necesitamos disponer de las reglas generadas por el modelo para SAS, donde el módulo específico para poder realizar determinados modelos tiene un precio muy alto. Buscando en Google encontraremos [este link](http://www.togaware.com/datamining/survivor/Convert_Tree.html). En él tenemos una genial función de R **list.rules.rpart** que nos permite identificar las reglas que ha generado el modelo. Modificamos ligeramente esta función para que nos sirva en nuestros propósitos:
+Tenemos un objeto `rpart` llamado `arbol`. En este punto necesitamos disponer de las reglas generadas por el modelo para `SAS`, donde el módulo específico para poder realizar determinados modelos tiene un precio muy alto. Buscando en Google encontraremos [este link](http://www.togaware.com/datamining/survivor/Convert_Tree.html). En él tenemos una genial función de `R` `list.rules.rpart` que nos permite identificar las reglas que ha generado el modelo. Modificamos ligeramente esta función para que nos sirva en nuestros propósitos:
 
 ```r
 #Ubicación de salida del modelo
@@ -114,9 +114,9 @@ cat(sprintf("IF ", names[i]),file=fsalida,append=T)
 
 pth <- path.rpart(model, nodes=as.numeric(names[i]), print.it=FALSE)
 
-cat(sprintf(" %s\n", unlist(pth)[-1]), sep=" AND ",file=fsalida,append=T)
+catal(sprintf(" %s\n", unlist(pth)[-1]), sep=" AND ",file=fsalida,append=T)
 
-cat(sprintf("THEN NODO= "),names[i],";\n",file=fsalida,append=T)
+catal(sprintf("THEN NODO= "),names[i],";\n",file=fsalida,append=T)
 
 }
 
@@ -129,9 +129,9 @@ cat(sprintf("THEN NODO= "),names[i],";\n",file=fsalida,append=T)
 reglas.rpart(arbol)
 ```
 
-Esta función lo que nos permite es poner el contenido del objeto _rpart_ en un archivo de texto. Cada una de las reglas comenzará con IF y finalizará con THEN NODO=x; lo que nos permitirá copiar y pegar directamente las reglas generadas en nuestro programa SAS. Ya que tenemos un archivo de texto con esta forma:
+Esta función lo que nos permite es poner el contenido del objeto `rpart` en un archivo de texto. Cada una de las reglas comenzará con `IF` y finalizará con `THEN NODO`=`x`; lo que nos permitirá copiar y pegar directamente las reglas generadas en nuestro programa `SAS`. Ya que tenemos un archivo de texto con esta forma:
 
-```r
+```
 IF saldo_fondos< 5001
 
 AND edad< 68.5
@@ -163,4 +163,4 @@ AND edad< 77.5
 THEN NODO= 26 ; ****
 ```
 
-**Podemos emplear este código en nuestro programa SAS para scorear los datos**. No hemos necesitado ningún software caro y propietario para poder realizar árboles de regresión (en este caso). He estado trabajando con _party_ para obtener lo mismo y no he obtenido resultados. Continuaré trabajando sobre ello. Sin embargo la siguiente entrada del _blog_ será similar a esta pero desde el punto de vista del profesional que trabaja con SAS. Saludos.
+**Podemos emplear este código en nuestro programa `SAS` para `scorear` los datos**. No hemos necesitado ningún software caro y propietario para poder realizar `árboles` de regresión (en este caso). He estado trabajando con `party` para obtener lo mismo y no he obtenido resultados. Continuaré trabajando sobre ello. Sin embargo la siguiente entrada del blog será similar a esta pero desde el punto de vista del profesional que trabaja con `SAS`. Saludos.

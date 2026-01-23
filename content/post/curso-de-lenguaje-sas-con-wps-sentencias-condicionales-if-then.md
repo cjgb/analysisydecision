@@ -18,22 +18,22 @@ tags:
   - if
   - output
   - then
-title: Curso de lenguaje SAS con WPS. Sentencias condicionales IF THEN
+title: Curso de lenguaje `SAS` con `WPS`. Sentencias condicionales `IF THEN`
 url: /blog/curso-de-lenguaje-sas-con-wps-sentencias-condicionales-if-then/
 ---
 
-Las sentencias**IF THEN** son básicas en la programación SAS y en todos los lenguajes. Su estructura es muy sencilla: IF \<condición> THEN \<acción>; ELSE \<acción>. Todas estas sentencias empezarán con IF y como condición podemos poner una o varias. Para crearlas tenemos los operadores de comparación:
+Las sentencias**`IF THEN`** son básicas en la programación `SAS` y en todos los lenguajes. Su estructura es muy sencilla: `IF <condición> THEN <acción>; ELSE <acción>`. Todas estas sentencias empezarán con `IF` y como `condición` podemos poner una o varias. Para crearlas tenemos los `operadores de comparación`:
 
 ![operadores-de-comparacion.png](/images/2011/02/operadores-de-comparacion.png)
-Para concatenar condiciones emplearemos los operadores lógicos:
+Para concatenar `condiciones` emplearemos los `operadores lógicos`:
 
 ![operadores-logicos.png](/images/2011/02/operadores-logicos.png)
 
-Y aplicando la lógica realizaremos las condiciones en nuestra programación con WPS. Entre las acciones que se ejecutarán cuando se cumpla la condición podemos destacar:
+Y aplicando la `lógica` realizaremos las `condiciones` en nuestra `programación` con `WPS`. Entre las `acciones` que se ejecutarán cuando se cumpla la `condición` podemos destacar:
 
-**Eliminación de observaciones:**
+**Eliminación de `observaciones`:**
 
-```r
+```sas
 data aleatorio;
 
 input id importe1 importe2 importe3 importe4 importe5;
@@ -83,11 +83,11 @@ if importe1+importe2>1000 then delete;
 run;
 ```
 
-En el ejemplo eliminamos con la instrucción **DELETE** aquellas observaciones cuya suma de importe1 e importe2 es superior a 1000.
+En el `ejemplo` eliminamos con la `instrucción DELETE` aquellas `observaciones` cuya `suma` de `importe1` e `importe2` es `superior` a `1000`.
 
-**Selección de observaciones:**
+**Selección de `observaciones`:**
 
-```r
+```sas
 data aleatorio2;
 
 set aleatorio;
@@ -97,9 +97,9 @@ if importe1+importe2>1000 then output;
 run;
 ```
 
-En este caso con **OUTPUT** indicamos a WPS que nos saque las observaciones deseadas. En este caso podemos crear una o varias tablas SAS con un mismo paso DATA:
+En este caso con `OUTPUT` indicamos a `WPS` que nos saque las `observaciones deseadas`. En este caso podemos crear una o varias `tablas SAS` con un mismo paso `DATA`:
 
-```r
+```sas
 data aleatorio_mas_1000 aleatorio_menos_1000;
 
 set aleatorio;
@@ -111,11 +111,11 @@ else output aleatorio_menos_1000;
 run;
 ```
 
-Un mismo paso data genera dos dataset. Con OUTPUT controlamos las observaciones que han de volcarse a cada conjunto de datos.
+Un mismo paso `data` genera dos `dataset`. Con `OUTPUT` controlamos las `observaciones` que han de volcarse a cada `conjunto` de `datos`.
 
-**Creación de nuevas variables en función de condiciones:**
+**Creación de nuevas `variables` en función de `condiciones`:**
 
-```r
+```sas
 data aleatorio3;
 
 set aleatorio;
@@ -127,9 +127,9 @@ else rango1=2;
 run;
 ```
 
-En este caso IF genera una nueva variable que va en función de una condición. Es muy práctico realizar sentencias IF/THEN/ELSE anidadas:
+En este caso `IF` genera una nueva `variable` que va en función de una `condición`. Es muy `práctico` realizar `sentencias IF`/`THEN`/`ELSE anidadas`:
 
-```r
+```sas
 data aleatorio4;
 
 set aleatorio;
@@ -145,11 +145,11 @@ else rango1=4;
 run;
 ```
 
-En el ejemplo hemos anidado sentencias. Hemos generado condiciones excluyentes que finalizamos con ELSE. Esto nos facilita realizar código y sobre todo controlar mejor las condiciones ya que la primera excluye a la siguiente y del mismo modo a la sucesiva. Algunos consideraréis que no es necesario escribir sobre esto, pero si os contara lo que veo…
+En el `ejemplo` hemos `anidado sentencias`. Hemos generado `condiciones excluyentes` que finalizamos con `ELSE`. Esto nos `facilita` realizar `código` y sobre todo `controlar mejor` las `condiciones` ya que la `primera excluye` a la `siguiente` y del mismo `modo` a la `sucesiva`. Algunos `considerar`éis que no es `necesario escribir` sobre esto, pero si os `contara` lo que veo…
 
-Hasta el momento una condición da lugar a una acción pero podemos generar más acciones. Para ello emplearemos «el bucle» **DO/END**. Se suele denominar bucle sin embargo consiste en crear conjuntos de instrucciones:
+Hasta el `momento` una `condición` da `lugar` a una `acción` pero podemos `generar` más `acciones`. Para ello emplearemos «el `bucle`» `DO`/`END`. Se suele `denominar bucle` sin `embargo` consiste en crear `conjuntos` de `instrucciones`:
 
-```r
+```sas
 data aleatorio5;
 
 set aleatorio;
@@ -177,4 +177,4 @@ end;
 run;
 ```
 
-Una condición da lugar a una serie de acciones, para realizar esta serie empezamos con DO, ponemos las acciones necesarias y finalizamos con END. También lo podemos hacer con ELSE. Se denomina bucle porque DO también nos permite la realización de bucles como un FOR en otros lenguajes. Esto lo veremos en próximas entregas del curso. En la siguiente entrega trabajaremos con librerías en WPS, son sustancialmente distintas a las librerías en SAS ya que podemos generar conjuntos de datos SAS o conjuntos de datos WPS.
+Una `condición` da `lugar` a una `serie` de `acciones`, para realizar esta `serie` empezamos con `DO`, ponemos las `acciones necesarias` y finalizamos con `END`. También lo podemos hacer con `ELSE`. Se denomina `bucle` porque `DO` también nos permite la `realización` de `bucles` como un `FOR` en otros `lenguajes`. Esto lo veremos en `próximas entregas` del `curso`. En la `siguiente entrega` trabajaremos con `librerías` en `WPS`, son `sustancialmente distintas` a las `librerías` en `SAS` ya que podemos `generar conjuntos` de `datos SAS` o `conjuntos` de `datos WPS`.

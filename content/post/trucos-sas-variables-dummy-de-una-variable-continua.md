@@ -15,21 +15,19 @@ related:
 tags:
   - dummy
   - variables de entrada
-title: Trucos SAS. Variables dummy de una variable continua
+title: Trucos `SAS`. Variables `dummy` de una variable continua
 url: /blog/trucos-sas-variables-dummy-de-una-variable-continua/
 ---
 
-Dumificar es crear variables dummy. Un verbo completamente inventado pero que todos los que os habéis enfrentado a la creación de una tabla de entrada para realizar modelos estadísticos vais a entender perfectamente en que consiste. Dumificar es transformar una variable continua en N variables dicotómicas. Lo entenderemos mejor con un ejemplo gráfico:
+`Dumificar` es crear variables `dummy`. Un `verbo` completamente inventado pero que todos los que os habéis enfrentado a la creación de una `tabla` de entrada para realizar `modelos estadísticos` vais a entender perfectamente en que consiste. `Dumificar` es transformar una variable continua en `N variables dicotómicas`. Lo entenderemos mejor con un ejemplo gráfico:
 
-[![dumificar.JPG](/images/2009/04/dumificar.JPG)](/images/2009/04/dumificar.JPG "dumificar.JPG")
+![dumificar.JPG](/images/2009/04/dumificar.JPG "dumificar.JPG")
 
-[](/images/2009/04/dumificar.JPG "dumificar.JPG")
+![dumificar.JPG](/images/2009/04/dumificar.JPG "dumificar.JPG")
 
-En el ejemplo partimos de 8 registros y creamos 4 variables dicotómicas en función de una variable importe. Hemos dumificado la variable importe en 4. Parece fácil de entender el concepto. Bien, pues esto es lo que planteo hacer con SAS. La metodología que voy a emplear es la de siempre, parto de un dataset aleatorio con un identificador y un campo importe que pretendemos transformar en 5 variables (0,1). Para realizar este proceso necesitamos una macro que cuenta las observaciones de un dataset, ya la planteé con anterioridad en otro artículo del blog. De todos modos os dejo completo el código que empieza:
+En el ejemplo partimos de `8 registros` y creamos `4 variables dicotómicas` en función de una variable `importe`. Hemos `dumificado` la variable `importe` en `4`. Parece fácil de entender el `concepto`. Bien, pues esto es lo que planteo hacer con `SAS`. La `metodología` que voy a emplear es la de siempre, parto de un `dataset aleatorio` con un `identificador` y un `campo importe` que pretendemos `transformar` en `5 variables` (`0`,`1`). Para realizar este proceso necesitamos una `macro` que cuenta las `observaciones` de un `dataset`, ya la planteé con anterioridad en otro `artículo` del `blog`. De todos modos os dejo completo el código que empieza:
 
-\`\`
-
-```r
+```sas
 *MACRO PARA EL NUMERO DE OBSERVACIONES SIN RECORRER;
 
 %macro numobs(ds,mv);
@@ -51,7 +49,7 @@ run;
 %mend;
 ```
 
-```r
+```sas
 *DATASET ALEATORIO QUE HAY QUE AGRUPAR EN
 
 FUNCION DE LA VARIABLE IMPORTE;
@@ -73,17 +71,17 @@ end;
 run;
 ```
 
-Vemos la macro que obtiene el número de observaciones y generamos un dataset aleatorio con 334.560 observaciones que tiene un campo importe aleatorio y un campo resp “menos aleatorio”. Al ejecutar la macro %numobs(uno,obs) tenemos la macrovariable obs y además especificamos que el número de variables de agrupación que deseamos para dumificar el campo importe será de 5. Ahora necesitaremos ordenar y categorizar las variable importe, la técnica que vamos a utilizar ya la vimos en otro artículo:
+Vemos la `macro` que obtiene el `número` de `observaciones` y generamos un `dataset aleatorio` con `334.560 observaciones` que tiene un `campo importe aleatorio` y un `campo resp` “`menos aleatorio`”. Al ejecutar la `macro %numobs`(`uno`,`obs`) tenemos la `macrovariable obs` y además especificamos que el `número` de `variables` de `agrupación` que deseamos para `dumificar` el `campo importe` será de `5`. Ahora necesitaremos ordenar y `categorizar` las `variable importe`, la `técnica` que vamos a utilizar ya la vimos en otro `artículo`:
 
-```r
+```sas
 *ORDENAMOS POR LA VARIABLE QUE DESEAMOS CATEGORIZAR;
 
 proc sort data=uno; by importe; run;
 ```
 
-`%numobs(uno,obs);`%let numero_de_grupos=5;\`\`
+`%numobs(uno,obs);`%let numero_de_grupos=5;
 
-```r
+```sas
 *CREAMOS 5 GRUPOS INICIALES EN FUNCION DE LA VARIABLE A
 
 TRAMIFICAR;
@@ -99,9 +97,9 @@ rango=ceil((_n_/&obs.)*&numero_de_grupos.);
 run;
 ```
 
-Disponemos de la variable importe y una variable que tramifica este importe en 5 grupos. Ahora hemos de transformarlo en variables (0,1) para ello vamos a crear una sentencia “GR_1=0; IF RANGO= 1 THEN GR_1=1”,…,” GR_5=0; IF RANGO= 5 THEN GR_5=1”. Esto se puede hacerse manualmente o bien podemos hacer una macro variable que la contenga. Lo hacemos con un proceso que pueda ser automático y podemos hacer tantos grupos como deseemos. Esta metodología puede resultaros interesante
+Disponemos de la variable `importe` y una variable que `tramifica` este `importe` en `5 grupos`. Ahora hemos de transformarlo en `variables` (`0`,`1`) para ello vamos a crear una `sentencia` “`GR_1=0; IF RANGO= 1 THEN GR_1=1`”,…,” `GR_5=0; IF RANGO= 5 THEN GR_5=1`”. Esto se puede hacerse `manualmente` o bien podemos hacer una `macro variable` que la contenga. Lo hacemos con un proceso que pueda ser `automático` y podemos hacer tantos `grupos` como deseemos. Esta `metodología` puede resultaros interesante
 
-```r
+```sas
 *VARIABLES DICOTOMICAS EN FUNCION DEL NUMERO DE GRUPOS INICIALES;
 
 data instruccion;
@@ -127,7 +125,7 @@ quit;
 proc delete data=instruccion;
 ```
 
-```r
+```sas
 data uno;
 
 set uno;
@@ -137,4 +135,4 @@ set uno;
 run;
 ```
 
-Muy útil, hemos construido un código reiterativo con el PROC SQL, además nos servirá para cada ocasión en la que nos enfrentemos a códigos parecidos. Ahora nuestro dataset uno aleatorio tiene unas variables grupo llamadas GR\_ que agrupan una variable cuantitativa, ahora lo interesante es agrupar esa variable cuantitativa en función de una variable respuesta; pero eso será en próximas entregas. Estoy diseñando un bucle que realice una agrupación en función de una respuesta y este proceso que hoy os muestro será el primer paso.`Por supuesto, si tenéis dudas o un trabajo bien remunerado rvaquerizo@analisisydecision.es`
+Muy útil, hemos construido un `código reiterativo` con el `PROC SQL`, además nos servirá para cada ocasión en la que nos enfrentemos a `códigos` parecidos. Ahora nuestro `dataset uno aleatorio` tiene unas `variables grupo` llamadas `GR_` que agrupan una `variable cuantitativa`, ahora lo interesante es agrupar esa `variable cuantitativa` en función de una `variable respuesta`; pero eso será en `próximas entregas`. Estoy `diseñando` un `bucle` que realice una `agrupación` en función de una `respuesta` y este proceso que hoy os muestro será el `primer paso`.`Por supuesto, si tenéis dudas o un trabajo bien remunerado `rvaquerizo@analisisydecision.es``

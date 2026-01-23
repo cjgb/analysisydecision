@@ -18,14 +18,15 @@ title: Truco SAS. SAS y DDE, otra forma de exportar a Excel
 url: /blog/truco-sas-sas-y-dde-aliados-de-excel/
 ---
 
-Otro elemento con el que contamos para crear archivos Excel desde SAS es el [DDE](http://es.wikipedia.org/wiki/DDE), una tecnología que nos permite comunicar Windows con SAS. Mediante esta comunicación podemos leer un fichero SAS y escribir en una tabla de Excel. Con el siguiente artículo os voy a introducir a otra metodología que no sólo sirve para crear ficheros Excel desde SAS si no que además nos permitirá ejecutar macros, crear gráficos,…
+Otro elemento con el que contamos para crear archivos Excel desde SAS es el [`DDE`](http://es.wikipedia.org/wiki/DDE), una tecnología que nos permite comunicar Windows con SAS. Mediante esta comunicación podemos leer un fichero SAS y escribir en una tabla de Excel. Con el siguiente artículo os voy a introducir a otra metodología que no sólo sirve para crear ficheros Excel desde SAS si no que además nos permitirá ejecutar macros, crear gráficos,…
 
 Estudiemos el ejemplo más sencillo que **parte siempre de un fichero Excel existente** :
 
-```r
+```sas
 options noxwait noxsync;x '"C:\temp\ej_dde.xls"';
 /*ESPERAMOS PARA QUE NO HAYA UN CONFLICTO*/
-data _null_;   x=sleep(2);
+data _null_; 
+  x=sleep(2);
 run;
 
 /*ASIGNAMOS UN FILENAME AL RANGO AL QUE VAMOS ESCRIBIR
@@ -49,51 +50,42 @@ data _null_;
 run;
 ```
 
-Este ejemplo genera un dataset temporal de 20 observaciones y 3 variables que escribimos en un archivo excel C:\\temp\\ej_dde.xls que existe. La secuencia para su creación es: abrimos, esperamos unos segundos, asignamos una referencia y escribimos. Hemos creado:
+Este ejemplo genera un dataset temporal de 20 observaciones y 3 variables que escribimos en un archivo excel `C:\temp\ej_dde.xls` que existe. La secuencia para su creación es: abrimos, esperamos unos segundos, asignamos una referencia y escribimos. Hemos creado:
 
 ![DDE SAS paso 1](/images/2008/04/tabla1.JPG)
 
 Es evidente que los datos no han quedado muy bien debido a la notación americana así pues deberíamos jugar con los formatos de las variables o bien con la configuración regional de Excel. En este caso vamos a trabajar con macros de Excel que modifiquen las configuraciones regionales en el momento de escribir los datos desde SAS. Además estas macros van a ser llamadas por nuestro programa SAS ya que el DDE nos permite ejecutar macros de Excel. En Visual Basic si deseamos modificar la configuración regional haremos lo siguiente:
 
-``` Sub formato_americano()``'``' formato_americano Macro ```
-
-```r
+```vb
+Sub formato_americano()
 '
-
-With Application
-
-.DecimalSeparator = "."
-
-.ThousandsSeparator = ","
-
-.UseSystemSeparators = False
-
-End With
-
+' formato_americano Macro
+'
+'
+    With Application
+        .DecimalSeparator = "."
+        .ThousandsSeparator = ","
+        .UseSystemSeparators = False
+    End With
 End Sub
 ```
 
 Del mismo modo para el formato europeo creamos otra macro:
 
-```r
+```vb
 Sub formato_europeo()
-
-' formato_americano Macro
-
 '
-
-  With Application
-
-  .UseSystemSeparators = True
-
-  End With
-
+' formato_americano Macro
+'
+    With Application
+        .UseSystemSeparators = True
+    End With
 End Sub
 ```
 
 Estas macros estarán guardadas en el archivo Excel con el que trabajemos y serán llamadas desde SAS y pegaremos nuestros datos con formato europeo sin necesitad de trabajar el fichero SAS:
 
-```r
+```sas
 /*ASIGNAMOS UN FILENAME AL RANGO AL QUE VAMOS ESCRIBIR
   ESTE FILENAME SERA DINAMICO */
 filename ejemplo
@@ -135,6 +127,6 @@ put "[File.Close()]";
 run;
 ```
 
-Nuestra tabla Excel ha mejorado mucho su aspecto. Un buen programa para comenzar a usar DDE con SAS. Podemos sofisticarlo todo lo que queramos y crear informes directamente con SAS.
+Nuestra tabla Excel ha mejorado mucho su aspecto. Un buen programa para comenzar a usar `DDE` con SAS. Podemos sofisticarlo todo lo que queramos y crear informes directamente con SAS.
 
 Saludos.

@@ -16,13 +16,13 @@ tags:
   - proc sgplot
   - remuestreo
   - sas procs
-title: Bootstrap con SAS sin complicaciones
+title: `Bootstrap` con `SAS` sin complicaciones
 url: /blog/bootstrap-con-sas-sin-complicaciones/
 ---
 
-El bootstrap es una técnica de muestreo que, a partir de la simulación, crea sucesivas muestras con reemplazamiento que teóricamente son una buena aproximación al universo muestral. [Por aquí podéis encontrar información y bibliografía al respecto](http://www-stat.stanford.edu/~ckirby/brad/). Lo que yo quería comentaros hoy es algo a lo que ya [hizo referencia la comunidad de SAS en ](http://www.lasug.org/2009/06/bootstrap-en-3-pasos.html)español. Hacer bootstrap con SAS no es complicado. Cuando buscas información ves unas macros que dan miedo y piensas “esto es un software”, sin embargo el tema no es tan difícil y con un paso DATA ya podemos poner a funcionar esta técnica. Veamos el ejemplo, partimos de un conjunto de datos SAS que obtenemos en [esta web](http://www.ats.ucla.edu/stat/sas/dae/poissonreg.htm) interesantes ejemplos verdad. Nos bajamos el archivo a una ubicación de nuestra máquina o leemos la url y comenzamos a trabajar:
+El `bootstrap` es una técnica de muestreo que, a partir de la simulación, crea sucesivas muestras con reemplazamiento que teóricamente son una buena aproximación al universo muestral. [Por aquí podéis encontrar información y bibliografía al respecto](http://www-stat.stanford.edu/~ckirby/brad/). Lo que yo quería comentaros hoy es algo a lo que ya [hizo referencia la comunidad de `SAS` en español](http://www.lasug.org/2009/06/bootstrap-en-3-pasos.html). Hacer `bootstrap` con `SAS` no es complicado. Cuando buscas información ves unas macros que dan miedo y piensas “esto es un software”, sin embargo el tema no es tan difícil y con un paso `DATA` ya podemos poner a funcionar esta técnica. Veamos el ejemplo, partimos de un conjunto de datos `SAS` que obtenemos en [esta web](http://www.ats.ucla.edu/stat/sas/dae/poissonreg.htm) interesantes ejemplos verdad. Nos bajamos el archivo a una ubicación de nuestra máquina o leemos la url y comenzamos a trabajar:
 
-```r
+```sas
 Data poissonreg;
 
   infile "c:\temp\poissonreg.csv" delimiter="," firstobs=2;
@@ -32,9 +32,9 @@ Data poissonreg;
 run;
 ```
 
-Tenemos un dataset con 7 variables, el id alumno, la escuela, el sexo, la nota en matemáticas, la nota en lenguaje, los días en clase y los días ausentes en clase. El dataset tiene 316 observaciones, se trata de crear 100 muestras de tamaño el 90% del dataset de partida y estudiar la nota media por escuela y sexo de las muestras extraídas. En total tendremos que tener 285\*100 observaciones:
+Tenemos un dataset con 7 variables, el id alumno, la escuela, el sexo, la nota en matemáticas, la nota en lenguaje, los días en clase y los días ausentes en clase. El dataset tiene 316 observaciones, se trata de crear 100 muestras de tamaño el 90% del dataset de partida y estudiar la nota media por escuela y sexo de las muestras extraídas. En total tendremos que tener 285*100 observaciones:
 
-```r
+```sas
 *PARAMETROS SENCILLOS;
 
 %let numero_muestras=100;
@@ -68,7 +68,7 @@ run;
 
 No puede ser más sencillo. Recorremos el dataset y sacamos tantas muestras como indicamos del tamaño que deseamos. Evito parametrizar el código para facilitar su comprensión. Podemos aproximarnos a los errores cometidos con las estimaciones obtenidas, de forma muy simple:
 
-```r
+```sas
 proc sql;
 
 select mean(math)
@@ -90,7 +90,7 @@ quit;
 
 Sé que esta validación no tiene mucha argumentación matemática, pero podemos ver que las medias no difieren en gran medida, sólo nos sirve de aproximación. Incluso gráficamente podemos analizar como funciona la estimación por remuestreo por alguna de las categorías presentes en nuestro estudio:
 
-```r
+```sas
 data vista/view=vista;
 
 set boot poissonreg (in=a);
@@ -124,8 +124,8 @@ lineattrs=(thickness=2) limitstat=clm;
 quit;
 ```
 
-Creamos una vista que es la unión de las estimaciones por bootstrap con los datos. Agrupamos las categorías para obtener las estimaciones por escuela y sexo. Hacemos un artificio para identificar correctamente los datos de nuestro universo. A cada estimación le asignamos una clase. El PROC SGPLOT pinta todas las estimaciones por grupo y además añadimos otra línea con los intervalos de confianza del universo muestral.
+Creamos una vista que es la unión de las estimaciones por `bootstrap` con los datos. Agrupamos las categorías para obtener las estimaciones por escuela y sexo. Hacemos un artificio para identificar correctamente los datos de nuestro universo. A cada estimación le asignamos una clase. El `PROC SGPLOT` pinta todas las estimaciones por grupo y además añadimos otra línea con los intervalos de confianza del universo muestral.
 
 ![bootstrapt.PNG](/images/2010/08/bootstrapt.PNG)
 
-Vemos que las estimaciones obtenidas por bootstrap están dentro de los intervalos de confianza. El remuestreo no es complicado con SAS, siempre es más complicado el diseño. Saludos.
+Vemos que las estimaciones obtenidas por `bootstrap` están dentro de los intervalos de confianza. El remuestreo no es complicado con `SAS`, siempre es más complicado el diseño. Saludos.

@@ -15,11 +15,11 @@ related:
 tags:
   - coronavirus
   - covid
-title: Mi breve seguimiento del coronavirus con R
+title: Mi breve seguimiento del `coronavirus` con `R`
 url: /blog/mi-breve-seguimiento-del-coronavirus-con-r/
 ---
 
-Ya comentaré con más detenimiento el código, pero es la unión de muchos de los códigos R de días anteriores, es un buen ejemplo de uso de la librería gridExtra para poner múltiples gráficos en una sola salida:
+Ya comentaré con más detenimiento el `código`, pero es la `unión` de muchos de los `códigos R` de `días anteriores`, es un `buen ejemplo` de `uso` de la `librería gridExtra` para poner `múltiples gráficos` en una sola `salida`:
 
 ```r
 library(dplyr)
@@ -68,9 +68,9 @@ total = grafica('Total')
 grid.arrange(madrid, cat, mancha, leon, pvasco, valencia, andalucia, aragon, resto, total, nrow=5,ncol=2)
 ```
 
-[![](/images/2020/04/coronavirus16.png)](/images/2020/04/coronavirus16.png)
+![coronavirus16.png](/images/2020/04/coronavirus16.png)
 
-Del mismo modo podemos hacer el número de casos:
+Del mismo modo podemos hacer el `número` de `casos`:
 
 ```r
 # Casos
@@ -114,6 +114,6 @@ total = grafica('Total')
 grid.arrange(madrid, cat, mancha, leon, pvasco, valencia, andalucia, galicia, resto, total, nrow=5,ncol=2)
 ```
 
-[![](/images/2020/04/coronavirus17.png)](/images/2020/04/coronavirus17.png)
+![coronavirus17.png](/images/2020/04/coronavirus17.png)
 
-En este caso cambiamos Aragón por Galicia. También cabe destacar que es un buen ejemplo de uso de melt para transponer columnas a filas, al hacer eso el lag lo realizamos mediante left join sumando un día y así podemos calcular la diferencia diaria con el acumulado, esperemos que este tipo de análisis tan burdos se estén llevando a cabo en otros sitios donde toman decisiones. Saludos.
+En este caso cambiamos `Aragón` por `Galicia`. También cabe destacar que es un `buen ejemplo` de `uso` de `melt` para `transponer columnas` a `filas`, al hacer eso el `lag` lo realizamos mediante `left join` `sumando` un `día` y así podemos `calcular` la `diferencia diaria` con el `acumulado`, esperemos que este `tipo` de `análisis` tan `burdos` se estén `llevando a cabo` en otros `sitios` donde `toman decisiones`. Saludos.

@@ -48,7 +48,7 @@ texto_col = data.frame(texto_col)
 names(texto_col) = c("V1")
 ```
 
-Está bien comentado en el código, pero repetimos. Leemos el archivo de texto con una sóla variable y donde el **retorno de carro** es el separador, en R el retorno de carro es **\\r**. Con _toupper_ ponemos todas las palabras en mayúsculas y a partir de ahí creamos una lista con los elementos de la tabla inicial partiendo por espacios en blanco. Se deshace la lista y se crea un _data frame_ con una variable que llamamos V1. Ahora es necesario realizar una pequeña depuración de las palabras. Mi hijo acaba de tirar una piedra al portátil así que no me entretendré mucho con esta tarea:
+Está bien comentado en el código, pero repetimos. Leemos el archivo de texto con una sóla variable y donde el **retorno de carro** es el separador, en R el retorno de carro es `\r`. Con `toupper` ponemos todas las palabras en mayúsculas y a partir de ahí creamos una lista con los elementos de la tabla inicial partiendo por espacios en blanco. Se deshace la lista y se crea un `data.frame` con una variable que llamamos `V1`. Ahora es necesario realizar una pequeña depuración de las palabras. Mi hijo acaba de tirar una piedra al portátil así que no me entretendré mucho con esta tarea:
 
 ```r
 #Eliminamos algunos caracteres regulares
@@ -70,9 +70,9 @@ head(texto_col)
 hist(texto_col$largo)
 ```
 
-Con la función sub vamos a eliminar **caracteres regulares** como espacios («(\[[:space:]\])») números («(\[[:digit:]\])») y signos de puntuación («(\[[:punct:]\])»). Con nchar creamos una variable en el _data frame_ para determinar la longitud de la palabra. Se realiza un histograma para analizar estas longitudes.
+Con la función `sub` vamos a eliminar **caracteres regulares** como espacios (`'([[:space:]])'`) números (`'([[:digit:]])'`) y signos de puntuación (`'([[:punct:]])'`). Con `nchar` creamos una variable en el `data.frame` para determinar la longitud de la palabra. Se realiza un histograma para analizar estas longitudes.
 
-Ya disponemos de un _data frame_ preparado para nuestro objetivo, ahora sólo nos queda realizar la tabla de frecuencias y para ello vamos a emplear el paquete **sqldf**(como no):
+Ya disponemos de un `data.frame` preparado para nuestro objetivo, ahora sólo nos queda realizar la tabla de frecuencias y para ello vamos a emplear el paquete `sqldf`(como no):
 
 ```r
 library(sqldf)
@@ -92,6 +92,6 @@ order by  count(*) desc ;")
 head(contador)
 ```
 
-Vemos que el código requiere de una cierta mejora, pero parece claro que les preocupaba la REFORMA CONSTITUCIONAL y la CONSTITUCION (ahora nos acordamos de ella). Esta entrada continuará con la creación de una nube de palabras que realizaremos con **ggplot2**.
+Vemos que el código requiere de una cierta mejora, pero parece claro que les preocupaba la REFORMA CONSTITUCIONAL y la CONSTITUCION (ahora nos acordamos de ella). Esta entrada continuará con la creación de una nube de palabras que realizaremos con `ggplot2`.
 
-Por cierto, este trabajo se intentó hacer con la librería **tm** y no pude con los caracteres especiales tales como ñ o tildes, ¿alguien sabe cómo solventar este problema?
+Por cierto, este trabajo se intentó hacer con la librería `tm` y no pude con los caracteres especiales tales como ñ o tildes, ¿alguien sabe cómo solventar este problema?

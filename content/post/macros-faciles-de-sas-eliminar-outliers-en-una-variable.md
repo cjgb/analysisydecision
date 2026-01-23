@@ -21,9 +21,9 @@ title: Macros (fáciles) de SAS. Eliminar outliers en una variable
 url: /blog/macros-faciles-de-sas-eliminar-outliers-en-una-variable/
 ---
 
-Hace tiempo ya os propuse una[ chapuza para eliminar outliers de forma multivariante](https://analisisydecision.es/trucos-sas-eliminacion-de-outliers-2/). Por supuesto quedaba**eliminar outliers en una variable**. Recortar los valores extremos en aquellas variables cuantitativas que deseemos. Para ello os propongo una macro que no considero muy compleja y que os analizaré con mayor detalle, pero lo primero la macro al completo:
+Hace tiempo ya os propuse una[ chapuza para eliminar `outliers` de forma `multivariante`](https://analisisydecision.es/trucos-sas-eliminacion-de-outliers-2/). Por supuesto quedaba**eliminar `outliers` en una `variable`**. Recortar los valores extremos en aquellas `variables cuantitativas` que deseemos. Para ello os propongo una `macro` que no considero muy compleja y que os `analisis`aré con mayor detalle, pero lo primero la `macro` al completo:
 
-```r
+```sas
 %macro elimina_outliers(
 
 varib,  /*VARIABLE PARA ELIMINAR EL OUTLIER*/
@@ -97,7 +97,7 @@ proc delete data=sal;run;
 
 Su ejemplo de uso correspondiente:
 
-```r
+```sas
 data ent;
 
 do i=1 to 10000;
@@ -137,9 +137,9 @@ histogram;
 quit;
 ```
 
-Tenemos 2 histogramas, uno es imposible pero el otro nos permite conocer un poco mejor la distribución de la variable importe tras recortar un 5% las observaciones tanto por arriba como por abajo. Analicemos brevemente el código utilizado en la macro:
+Tenemos 2 histogramas, uno es imposible pero el otro nos permite conocer un poco mejor la distribución de la `variable importe` tras recortar un 5% las observaciones tanto por arriba como por abajo. `Analisis`emos brevemente el código utilizado en la `macro`:
 
-```r
+```sas
 %macro elimina_outliers(
 
 varib,  /*VARIABLE PARA ELIMINAR EL OUTLIER*/
@@ -155,9 +155,9 @@ corte_superior);/*% DE CORTE SUPERIOR*/
 *******************************************************************;
 ```
 
-Los parámetros de la macro son sencillos, la variable que recortamos (VARIB), el dataset de entrada (ENTRADA), el dataset de salida (SALIDA) que puede ser el mismo, el corte inferior y el corte superior en porcentaje, si no se quiere recortar ponemos 0.
+Los parámetros de la `macro` son sencillos, la `variable` que recortamos (`VARIB`), el `dataset` de `entrada` (`ENTRADA`), el `dataset` de `salida` (`SALIDA`) que puede ser el mismo, el `corte inferior` y el `corte superior` en `porcentaje`, si no se quiere recortar ponemos 0.
 
-```r
+```sas
 *CREAMOS LOS PERCENTILES;
 
 data _null_;
@@ -179,9 +179,9 @@ call symput ('nom_lim2',compress("P_"||tranwrd("&lim2.",'.','_')));
 run;
 ```
 
-En los parámetros ponemos los porcentajes y esos porcentajes se tienen que transformar en percentiles. Después creamos los nombres para los percentiles de forma que el PROC UNIVARIATE los “entienda”, es decir, con la forma P_97.5 o P_5. Os lo pongo en 2 pasos para hacerlo lo más comprensible posible.
+En los parámetros ponemos los porcentajes y esos porcentajes se tienen que transformar en `percentiles`. Después creamos los nombres para los `percentiles` de forma que el `PROC UNIVARIATE` los “entienda”, es decir, con la forma `P_97.5` o `P_5`. Os lo pongo en 2 pasos para hacerlo lo más comprensible posible.
 
-```r
+```sas
 *EL UNIVARIATE GENERA UNA SALIDA SOLO CON LOS PERCENTILES DESEADOS;
 
 proc univariate data=&entrada. noprint;
@@ -193,9 +193,9 @@ output out=sal pctlpre=P_ pctlpts=&lim1.,&lim2.;
 quit;
 ```
 
-Esta es la parte más interesante de este proceso, el PROC UNIVARIATE va a crear un dataset con el valor de los percentiles que queremos recortar, esto se realiza en la sentencia OUTPUT con la instrucción pclpre=P\_ y pctlpts=limite_infereior,limite_superior. Los límites están en unas macrovariables y el conjunto de datos SAL contendrá los valores sobre los que recortamos la variable.
+Esta es la parte más interesante de este proceso, el `PROC UNIVARIATE` va a crear un `dataset` con el valor de los `percentiles` que queremos recortar, esto se realiza en la sentencia `OUTPUT` con la instrucción `pclpre=P_` y `pctlpts=limite_infereior,limite_superior`. Los límites están en unas `macrovariables` y el conjunto de `datos SAL` contendrá los valores sobre los que recortamos la `variable`.
 
-```r
+```sas
 *CREAMOS MV CON LOS CORTES DESEADOS;
 
 data _null_;
@@ -223,6 +223,6 @@ proc delete data=sal;run;
 %mend;
 ```
 
-Por último creamos 2 macrovariables con los valores de corte y realizamos un paso data donde filtramos por esos valores.
+Por último creamos 2 `macrovariables` con los valores de corte y realizamos un `paso data` donde filtramos por esos valores.
 
-Creo que es un código con algún aspecto interesante y que puede seros práctico a la hora de analizar de forma univariante algunas variables. Saludos.
+Creo que es un código con algún aspecto interesante y que puede seros práctico a la hora de `analisis`ar de forma `univariante` algunas `variables`. Saludos.

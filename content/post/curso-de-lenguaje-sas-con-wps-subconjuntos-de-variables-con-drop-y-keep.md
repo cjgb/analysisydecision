@@ -15,13 +15,13 @@ related:
 tags:
   - drop
   - keep
-title: Curso de lenguaje SAS con WPS. Subconjuntos de variables con DROP y KEEP
+title: Curso de lenguaje `SAS` con `WPS`. Subconjuntos de variables con `DROP` y `KEEP`
 url: /blog/curso-de-lenguaje-sas-con-wps-subconjuntos-de-variables-con-drop-y-keep/
 ---
 
-En esta entrega del curso vamos a trabajar con dos palabras fundamentales en WPS: DROP y KEEP. Drop elimina variables de un conjunto de datos y keep las mantiene. Ahora bien, estos elementos del lenguaje SAS se pueden emplear de diversas formas. Pueden ser una sentencia o pueden ser una opción de lectura y escritura del paso data. Para ilustrar este capítulo vamos a generar un dataset con datos aleatorios:
+En esta entrega del curso vamos a trabajar con dos palabras fundamentales en `WPS`: `DROP` y `KEEP`. `DROP` elimina variables de un conjunto de datos y `KEEP` las mantiene. Ahora bien, estos elementos del lenguaje `SAS` se pueden emplear de diversas formas. Pueden ser una sentencia o pueden ser una opción de lectura y escritura del paso `DATA`. Para ilustrar este capítulo vamos a generar un `dataset` con datos aleatorios:
 
-```r
+```sas
 data aleatorio;
 
 input id importe1 importe2 importe3 importe4 importe5;
@@ -61,11 +61,11 @@ cards;
 ;run;
 ```
 
-**KEEP/DROP como sentencia:**
+`KEEP`/`DROP` como sentencia:
 
-Una sentencia en WPS es una línea de código y en este caso empezará por alguna de nuestras palabras clave. A ellas le acompañarán aquellas variables que deseemos eliminar con DROP o que deseemos mantener con KEEP:
+Una sentencia en `WPS` es una línea de código y en este caso empezará por alguna de nuestras palabras clave. A ellas le acompañarán aquellas variables que deseemos eliminar con `DROP` o que deseemos mantener con `KEEP`:
 
-```r
+```sas
 data uso_keep;
 
 set aleatorio;
@@ -75,9 +75,9 @@ keep id importe1;
 run;
 ```
 
-Creamos un dataset USO_KEEP que es resultado de leer ALEATORIO. En este caso KEEP “mantiene” las variables ID e IMPORTE1. De forma análoga podemos emplear DROP como sentencia para eliminar variables:
+Creamos un `dataset` `uso_keep` que es resultado de leer `aleatorio`. En este caso `KEEP` “mantiene” las variables `id` e `importe1`. De forma análoga podemos emplear `DROP` como sentencia para eliminar variables:
 
-```r
+```sas
 data uso_drop;
 
 set aleatorio;
@@ -87,9 +87,9 @@ drop importe2 importe3 importe4 importe5;
 run;
 ```
 
-El dataset USO_DROP también es un subconjunto de ALEATORIO y hemos eliminado las variables IMPORTE2 a IMPORTE5. En este punto es interesante indicaros que podemos realizar listas de variables SAS que nos faciliten el uso de DROP o KEEP. Imaginemos que deseamos eliminar un rango de variables (como en el ejemplo anterior). La lista de variables en WPS se genera con guiones de forma VARIABLE_INICIO – VARIABLE_FIN:
+El `dataset` `uso_drop` también es un subconjunto de `aleatorio` y hemos eliminado las variables `importe2` a `importe5`. En este punto es interesante indicaros que podemos realizar listas de variables `SAS` que nos faciliten el uso de `DROP` o `KEEP`. Imaginemos que deseamos eliminar un rango de variables (como en el ejemplo anterior). La lista de variables en `WPS` se genera con guiones de forma `VARIABLE_INICIO – VARIABLE_FIN`:
 
-```r
+```sas
 data uso_drop2;
 
 set aleatorio;
@@ -99,9 +99,9 @@ drop importe2 -- importe5;
 run;
 ```
 
-Otro elemento importante para generar listas de variable son los dos puntos : con ellos podremos crear listas de variables en función de un sufijo, si deseamos quedarnos con aquellas variables que empiezan por IMP hacemos IMP: como vemos en el ejemplo:
+Otro elemento importante para generar listas de variable son los dos puntos `:` con ellos podremos crear listas de variables en función de un sufijo, si deseamos quedarnos con aquellas variables que empiezan por `IMP` hacemos `imp:` como vemos en el ejemplo:
 
-```r
+```sas
 data uso_keep2;
 
 set aleatorio;
@@ -111,13 +111,13 @@ keep imp:;
 run;
 ```
 
-Seleccionamos todas aquellas variables que empiezan por IMP:.
+Seleccionamos todas aquellas variables que empiezan por `imp:`.
 
-**DROP y KEEP como opciones de lectura y escritura:**
+`DROP` y `KEEP` como opciones de lectura y escritura:
 
-[Como ya indicamos en una entrega anterior ](https://analisisydecision.es/curso-de-lenguaje-sas-con-wps-que-hace-el-paso-data/) un paso data es una creación de una estructura de datos y posteriormente un bucle que lee y escribe datos en esa estructura. La fase de lectura y escritura podemos optimizarla empleando DROP o KEEP. Leer o escribir sólo aquellas variables que deseamos, no es necesario crear estructuras con más variables o leer todas las variables. Veamos los ejemplos:
+[Como ya indicamos en una entrega anterior ](https://analisisydecision.es/curso-de-lenguaje-sas-con-wps-que-hace-el-paso-data/) un paso `DATA` es una creación de una estructura de datos y posteriormente un bucle que lee y escribe datos en esa estructura. La fase de lectura y escritura podemos optimizarla empleando `DROP` o `KEEP`. Leer o escribir sólo aquellas variables que deseamos, no es necesario crear estructuras con más variables o leer todas las variables. Veamos los ejemplos:
 
-```r
+```sas
 data uso_keep3 (keep=id importe1);
 
 set aleatorio;
@@ -131,9 +131,9 @@ set aleatorio;
 run;
 ```
 
-Estas son opciones de escritura, están dentro de la sentencia DATA y entre paréntesis ponemos DROP o KEEP = variables que deseamos mantener o eliminar. Del mismo modo podemos emplear opciones de lectura:
+Estas son opciones de escritura, están dentro de la sentencia `DATA` y entre paréntesis ponemos `DROP` o `KEEP` = variables que deseamos mantener o eliminar. Del mismo modo podemos emplear opciones de lectura:
 
-```r
+```sas
 data uso_keep4 ;
 
 set aleatorio (keep=id importe1);
@@ -147,4 +147,4 @@ set aleatorio (drop=imp:);
 run;
 ```
 
-Por supuesto podemos emplear ambas opciones. Siempre es más óptimo emplear DROP o KEEP como opciones de lectura y escritura. Como sentencia las ejecuciones pueden ser más lentas.En la siguiente entrega vamos a realizar sentencias condicionales en SAS con IF THEN ELSE. Además veremos como generar más de un conjunto de datos WPS en un mismo paso data con la instrucción OUTPUT.
+Por supuesto podemos emplear ambas opciones. Siempre es más óptimo emplear `DROP` o `KEEP` como opciones de lectura y escritura. Como sentencia las ejecuciones pueden ser más lentas.En la siguiente entrega vamos a realizar sentencias condicionales en `SAS` con `IF THEN ELSE`. Además veremos como generar más de un conjunto de datos `WPS` en un mismo paso `DATA` con la instrucción `OUTPUT`.

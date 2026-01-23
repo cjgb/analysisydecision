@@ -14,15 +14,28 @@ related:
 tags:
   - consultoría
   - data mining
-title: Proyecto. Text Mining con Excel (III)
+title: Proyecto. `Text Mining` con `Excel` (III)
 url: /blog/proyecto-text-mining-con-excel-iii/
 ---
 
-Para hacer mi proceso de Text Mining necesito un «tablón» de entrada. Sin información bien tabulada es imposible encontrar patrones sintácticos ni palabras que me ayuden a encontrar mi oportunidad de negocio dentro de la formación en Business Intelligence. Para la realización de este tablón de entrada emplearé macros de Excel que abran resultados de búsquedas en Google y generen tantas hojas en mi archivo como páginas de búsqueda obtenga. Posteriormente estas hojas las uniré en una sóla y está será mi tablón de partida para mi trabajo.
+![pyt_3_entradas.JPG](/images/2008/05/pyt_3_entradas.JPG "pyt_3_entradas.JPG")En la anterior entrega del seguimiento de mi proyecto de minería de textos con `Excel` creé un proceso que leía búsquedas de `Google` y las almacenaba en un fichero `excel` que denominaba `base`. El problema que me encontré es que generaba un `excel` con una gran cantidad de hojas y posteriormente tenía que leerlas y extraer la información de cada una. Esta metodología no me parece eficiente, es mejor leer una búsqueda, extraer la información relevante de ella e introducirla en mi tablón de datos.
 
-Todas las web de búsquedas de Google que abrimos con Excel contienen una sóla hoja que se llama «search» para evitar problemas creo un archivo excel (_min._ xls) que a su vez abrirá las búsquedas y genero una macro con la que abro dos búsquedas y las añado a mi fichero base _min._ Veamos el código Visual Basic que he generado tras algunos retoques:
+Para extraer la información relevante de cada búsqueda he de conocer muy bien como se almacena cada página web de `Google` en `Excel`. En un primer vistazo obtengo esto:
 
-```r
+![pyt_3_entradas.JPG](/images/2008/05/pyt_3_entradas.JPG "pyt_3_entradas.JPG")
+
+Parece que todas las entradas relevantes aparecen en la columna `A`, tienen 3 filas con datos y están separadas por dos filas. Todas las entradas que considero relevantes (no tabulo los enlaces patrocinados) finalizan con las palabras «`Anotar esto`»:
+
+Los pasos a seguir en mi proceso serían:
+
+1\. Abrir la búsqueda correspondiente
+2\. Buscar la primera entrada relevante en la columna `A`
+3\. Copiar las celdas con información
+4\. Trasponer y pegar las celdas copiadas para crear una tabla de datos
+
+Para abrir las búsquedas ya creamos en su momento macros con `Excel` que las abrían. Buscar la primera entrada relevante requiere que diseñemos un nuevo proceso, con ayuda del asistente creamos la macro `busca1` que nos identifica la fila con el primer registro que consideramos relevante:
+
+```vb.net
 Sub cierra()
 
   Sheets("search").Select
@@ -34,7 +47,7 @@ Sub cierra()
 End Sub
 ```
 
-```r
+```vb.net
 Sub Abre()
 
 '
@@ -58,28 +71,23 @@ cierra
 
 End Sub
 
-He creado una macro que cierra sin guardar cambios hojas de cálculo llamadas _search_ para evitar abrir ficheros con el mismo nombre y luego he abierto dos búsquedas de Google con «formación business intelligence» y las he añadido al archivo que me sirve de base: _min.xls_ Es evidente que este código puede recibir parámetros e íncides para funcionar de forma automática.
+He creado una macro que `cierra` sin guardar `SaveChanges` hojas de cálculo llamadas `search` para evitar abrir ficheros con el mismo nombre y luego he abierto dos búsquedas de `Google` con «`formacion business intelligence`» y las he añadido al archivo que me sirve de `base`: `min.xls` Es evidente que este código puede recibir parámetros e íncides para funcionar de forma automática.
 
-En un primer acercamiento puede ser interesante crear índices para las siguientes partes de mi código:
+En un primer acercamiento puede ser interesante crear `indices` para las siguientes partes de mi código:
 
-```r
-Workbooks.Open Filename:="http://www.google.es/search?hl=es&q=formacion+business+intelligence&meta="
+`Workbooks.Open Filename:="http://www.google.es/search?hl=es&q=formacion+business+intelligence&meta="`
 
-Workbooks.Open Filename:="http://www.google.es/search?q=formacion+business+intelligence&hl=es&start=10&sa=N"
-```
+`Workbooks.Open Filename:="http://www.google.es/search?q=formacion+business+intelligence&hl=es&start=10&sa=N"`
 
-El parámetro _start=_ ha de ir creciendo de 10 en 10 porque marca el número de entrada de la búsqueda. Podemos modificar las opiones de Google, pero de momento las mantenemos. Otra parte del código que puede ser susceptible de indizar será:
+El parámetro `start=` ha de ir creciendo de `10` en `10` porque marca el número de entrada de la búsqueda. Podemos modificar las opiones de `Google`, pero de momento las mantenemos. Otra parte del código que puede ser susceptible de indizar será:
 
-```r
-After:=Workbooks("min.xls").Sheets(1)
+`After:=Workbooks("min.xls").Sheets(1)`
 
-After:=Workbooks("min.xls").Sheets(2)
-```
+`After:=Workbooks("min.xls").Sheets(2)`
 
-Indicamos el punto en el que copiamos la hoja que ha abierto la búsqueda. Siempre irá creciendo en una unidad. Con todo esto creamos el siguiente bucle:
+Indicamos el punto en el que `Copy` la hoja que ha abierto la búsqueda. Siempre irá creciendo en una unidad. Con todo esto creamos el siguiente bucle:
 
-\`\`
-
+```vb.net
 Sub cierra()
 Sheets("search").Select
 Windows("search").Activate
@@ -108,7 +116,8 @@ cierra
 Next i
 
 End Sub
+```
 
 De momento abrimos sólo algunas entradas para comprobar el correcto funcionamiento del bucle. Parece que añadimos un gran número de hojas a nuestro archivo parece importante tabular cada búsqueda que abrimos, nuestro proceso tiene que ser más «fino». Antes de leer datos hemos de tener clara la estructura de nuestro tablón de datos. El la siguiente entrega será necesario determinar el número de observaciones con las que trabajaremos y que variables hemos de preparar inicialmente.
 
-Si no se ve correctamente esta entrada o no funciona el código remitidme el problema a rvaquerizo@analisisydecision.es
+Si no se ve correctamente esta entrada o no funciona el código remitidme el problema a `rvaquerizo@analisisydecision.es`

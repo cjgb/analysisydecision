@@ -37,7 +37,7 @@ str(total_tablas)
 Nos interesa saber la población estimada y tenemos 17 elementos. Nos vamos a quedar con las estimaciones desde el siglo XVIII en adelante. Tenemos el problema con los formatos de los números:
 
 ```r
-poblacion=data.frame(total_tablas`Estimated world population at various dates (in millions) [citation needed]`)
+poblacion=data.frame(total_tablas$"Estimated world population at various dates (in millions) [citation needed]")
 
 #NOS QUEDAMOS CON LOS REGISTROS QUE NOS INTERESAN
 
@@ -47,30 +47,24 @@ poblacion=poblacion[c(16:nrow(poblacion)-1),]
 
 cambio=function(x){
 
-x=(gsub("([[:punct:]])","",x))
+x=gsub("([[:punct:]])","",x)
 
-x=(gsub("([[:alpha:]])","",x))
+x=gsub("([[:alpha:]])","",x)
 
 #AJUSTE A MEDIDA, POR NO COMPLICAR LA FUNCION
 
-x=as.numeric(gsub(" 1 ","",x))}
+x=as.numeric(gsub(" 1 ","",x))
+}
 
 #PODEMOS USAR SAPPLY:
 
-poblacionYear=cambio(poblacionYear)
-
-poblacionWorld=cambio(poblacionWorld)
-
-poblacionAfrica=cambio(poblacionAfrica)
-
-poblacionAsia=cambio(poblacionAsia)
-
-poblacionEurope=cambio(poblacionEurope)
-
-poblacionLatin.America.Note.1.=cambio(poblacionLatin.America.Note.1.)
-
-poblacionNorthern.America.Note.1.=cambio(poblacionNorthern.America.Note.1.)
-
+poblacionYear=cambio(poblacion$Year) # Changed to use original column name
+poblacionWorld=cambio(poblacion$World) # Changed to use original column name
+poblacionAfrica=cambio(poblacion$Africa) # Changed to use original column name
+poblacionAsia=cambio(poblacion$Asia) # Changed to use original column name
+poblacionEurope=cambio(poblacion$Europe) # Changed to use original column name
+poblacionLatin.America.Note.1.=cambio(poblacion$"Latin.America.Note.1.") # Changed to use original column name and quotes
+poblacionNorthern.America.Note.1.=cambio(poblacion$"Northern.America.Note.1.") # Changed to use original column name and quotes
 poblacionOceania=cambio(poblacion$Oceania)
 ```
 
@@ -129,7 +123,7 @@ mali=mali[[2]] #Nos quedamos con el segundo elemento
 
 #VECTOR DE ETIQUETAS
 
-etiquetas=gsub("Male ","",maliSubgroup)
+etiquetas=gsub("Male ","",mali$Subgroup)
 
 etiquetas=gsub("Female ","",etiquetas)
 
@@ -139,7 +133,7 @@ etiquetas=unique(etiquetas)
 
 #DATOS PARA HOMBRES
 
-xx.data=as.vector(subset(mali,substr(maliSubgroup,1,1)=="M")Value)
+xx.data=as.vector(subset(mali,substr(mali$Subgroup,1,1)=="M")$Value)
 
 xx.data=as.numeric(xx.data)
 
@@ -147,7 +141,7 @@ xx.data=(xx.data/sum(xx.data))*100
 
 #DATOS PARA MUJERES
 
-xy.data=as.vector(subset(mali,substr(maliSubgroup,1,1)=="F")$Value)
+xy.data=as.vector(subset(mali,substr(mali$Subgroup,1,1)=="F")$Value)
 
 xy.data=as.numeric(xy.data)
 

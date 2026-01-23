@@ -17,13 +17,13 @@ tags:
   - pattern
   - proc gchart
   - sas procs
-title: Un acercamiento a GRAPH. PROC GCHART
+title: Un acercamiento a `GRAPH`. `PROC GCHART`
 url: /blog/un-acercamiento-a-graph-proc-gchart/
 ---
 
-Uno de los procedimientos más importantes a la hora de graficar con SAS es el PROC GCHART. Además nos va a servir para trabajar con PATTERN y LEGEND sentencias que nos dejamos en el anterior capítulo. GCHART nos permite realizar gráficos de barras, de esos que siempre hacemos en Excel porque es mas sencillo y mas rápido. Sin embargo en muchas ocasiones necesitamos automatizar informes y estudios, para ello es recomendable emplear SAS en vez del habitual Excel por eso estas líneas que estáis leyendo. Para GCHART podemos emplear las sentencias habituales de GRAPH pero PATTERN es especialmente importante porque SAS nos deja cada barra del mismo color. Para ilustrar el capitulo simulo la cartera de una compañía de seguros, durante 2009, mensualmente, las pólizas de esta compañía pueden ser anuladas, renovadas (nuestra cartera) o nueva producción:
+Uno de los procedimientos más importantes a la hora de `graficar` con `SAS` es el `PROC GCHART`. Además nos va a servir para trabajar con `PATTERN` y `LEGEND` sentencias que nos dejamos en el `anterior capítulo`. `GCHART` nos permite realizar `gráficos` de `barras`, de esos que siempre hacemos en `Excel` porque es mas `sencillo` y mas `rápido`. Sin `embargo` en muchas `ocasiones` necesitamos `automatizar informes` y `estudios`, para ello es `recomendable emplear SAS` en vez del `habitual Excel` por eso estas `líneas` que estáis `leyendo`. Para `GCHART` podemos emplear las `sentencias habituales` de `GRAPH` pero `PATTERN` es `especialmente importante` porque `SAS` nos deja cada `barra` del `mismo color`. Para `ilustrar` el `capitulo` `simulo` la `cartera` de una `compañía` de `seguros`, durante `2009`, `mensualmente`, las `pólizas` de esta `compañía` pueden ser `anuladas`, `renovadas` (nuestra `cartera`) o `nueva producción`:
 
-```r
+```sas
 data renovaciones;
 
 do mes=200901 to 200912;
@@ -43,9 +43,9 @@ end; end; drop i;
 run;
 ```
 
-Simulo un _dataset_ que tiene dos variables: mes (numérica) y tipo (alfanumérica). Estudiamos la distribución por meses:
+`Simulo` un `dataset` que tiene dos `variables`: `mes` (`numérica`) y `tipo` (`alfanumérica`). `Estudiamos` la `distribución` por `meses`:
 
-```r
+```sas
 pattern1 color=gray ;
 
 pattern2 color=blue ;
@@ -71,13 +71,12 @@ proc greplay igout=work.gseg tc=sashelp.templt template=L2r2 NOFS ;
 treplay 1:uno 2:dos 3:tres 4:cuatro; run; quit;
 ```
 
-[](https://analisisydecision.es/un-acercamiento-a-graph-proc-gchart/ejemplo-de-uso-de-proc-gchart/ "Ejemplo de uso de PROC GCHART")
 
 ![Ejemplo de uso de PROC GCHART](/images/2010/04/graph31.thumbnail.jpg)
 
-Con pattern vamos a definir el color de cada barra, por defecto SAS asigna a todas las barras el mismo color como nos pasa en el grafico cuatro. La opción **DISCRETE** tiene su importancia si representamos valores numéricos, _uno_ crea una escala y en _dos_ ya con la opción DISCRETE no aparece escala alguna y no representamos variable continua sino discreta. OUTSIDE nos sirve para indicar si queremos ver los valores asociados a las barras. El grafico _tres_ nos divide con SUBGROUP una barra en grupos, cada barra toma los colores que le hemos indicado con PATTERN. El grafico _cuatro_ nos crea tantas barras como grupos representemos en el eje X, vemos que no ha funcionado PATTERN y que las 3 barras tienen el mismo color. Mejoremos el grafico _cuatro_ :
+Con `pattern` vamos a definir el `color` de cada `barra`, por `defecto SAS` asigna a todas las `barras` el `mismo color` como nos pasa en el `grafico` `cuatro`. La `opción DISCRETE` tiene su `importancia` si `representamos valores numéricos`, `uno` crea una `escala` y en `dos` ya con la `opción DISCRETE` no aparece `escala` alguna y no `representamos variable continua` sino `discreta`. `OUTSIDE` nos sirve para indicar si queremos ver los `valores` asociados a las `barras`. El `grafico tres` nos `divide` con `SUBGROUP` una `barra` en `grupos`, cada `barra` toma los `colores` que le hemos indicado con `PATTERN`. El `grafico cuatro` nos crea tantas `barras` como `grupos` representemos en el `eje X`, vemos que no ha funcionado `PATTERN` y que las `3 barras` tienen el `mismo color`. `Mejoremos` el `grafico cuatro`:
 
-```r
+```sas
 pattern1 color=gray ;
 
 pattern2 color=blue ;
@@ -107,19 +106,18 @@ legend=legend1 name='cinco' subgroup=tipo;
 run;quit;
 ```
 
-[](https://analisisydecision.es/un-acercamiento-a-graph-proc-gchart/ejemplo-de-uso-de-proc-gchart-2/ "Ejemplo de uso de PROC GCHART")
 
 ![Ejemplo de uso de PROC GCHART](/images/2010/04/graph32.thumbnail.jpg)
 
-Es curioso, para que funcione PATTERN con GCHART tenemos que usar SUBGROUP (¿?) empezamos a sospechar porque muchos prefieren Excel. En este caso empleamos VBAR3D para obtener barras de 3 dimensiones, con SHAPE especificamos el tipo de barra que deseamos, por defecto es BLOCK. Con NOFRAME evitamos que SAS ponga un fondo poco estético. Dejo para el final LEGEND. Las leyendas en SAS tienen que venir predefinidas con la sentencia LEGEND fuera de los procedimientos, también dan motivos para usar Excel. En LEGEND podemos modificar:
+Es `curioso`, para que funcione `PATTERN` con `GCHART` tenemos que usar `SUBGROUP` (`¿?`) empezamos a `sospechar` porque muchos prefieren `Excel`. En este caso empleamos `VBAR3D` para obtener `barras` de `3 dimensiones`, con `SHAPE` especificamos el `tipo` de `barra` que deseamos, por `defecto` es `BLOCK`. Con `NOFRAME` evitamos que `SAS` ponga un `fondo poco estético`. Dejo para el final `LEGEND`. Las `leyendas` en `SAS` tienen que venir `predefinidas` con la `sentencia LEGEND` fuera de los `procedimientos`, también dan `motivos` para usar `Excel`. En `LEGEND` podemos modificar:
 
-- across – numero de columnas
-- frame – cuadrado alrededor
-- label – Etiqueta de la leyenda
-- position – ubicación
-- shape – especificamos el tamaño y la forma
-- value – valores para las representaciones
+- `across` – `numero` de `columnas`
+- `frame` – `cuadrado` alrededor
+- `label` – `Etiqueta` de la `leyenda`
+- `position` – `ubicación`
+- `shape` – `especificamos` el `tamaño` y la `forma`
+- `value` – `valores` para las `representaciones`
 
-En el ejemplo que nos ocupa indicamos una columna con el titulo Tipo, la posición es izquierda y arriba y damos 3 valores de tamaño (height) 9. Completo ejemplo. El resultado obtenido es:
+En el `ejemplo` que nos ocupa indicamos una `columna` con el `titulo Tipo`, la `posición` es `izquierda` y `arriba` y damos `3 valores` de `tamaño` (`height`) `9`. `Completo ejemplo`. El `resultado` obtenido es:
 
-Hay que darle una vuelta a los ejes con AXIS y VALUE, os lo dejo a modo de ejercicio. Saludos.
+Hay que darle una `vuelta` a los `ejes` con `AXIS` y `VALUE`, os lo dejo a `modo` de `ejercicio`. Saludos.
