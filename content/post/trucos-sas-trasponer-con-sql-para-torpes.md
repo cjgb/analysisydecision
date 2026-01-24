@@ -21,8 +21,6 @@ title: Trucos SAS. Trasponer con SQL para torpes
 url: /blog/trucos-sas-trasponer-con-sql-para-torpes/
 ---
 
-
-
 ![Trasponer SQL 1](/images/2011/11/trasponer_sql1.png "trasponer_sql1.png")
 
 Trasponer datos con `SAS` es un tema que genera un gran número de consultas en Google, por lo tanto genera un gran número de visitas a este blog. Ya hay un monográfico al respecto pero hoy quería volver a contar la trasposición de datos con `SQL` y `SAS` pero a un nivel más bajo para que sea lo más sencillo posible. En el ejemplo partimos de una tabla con 3 variables, un `id_cliente`, un campo `tipo` y un campo `precio`. Cada `tipo` tiene un `precio` y necesitamos que nuestro dataset tenga un registro por `id_cliente` y 3 `precios`, uno por cada `tipo`. El ejemplo en código `SAS`:

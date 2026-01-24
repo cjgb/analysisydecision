@@ -62,7 +62,7 @@ r$run(port=8000)
 
 Ejecutado este código nuestra API esta funcionando en el puerto 8000 y sólo nos queda probarla y para ello yo recomiendo añadir una extensión de `RESTClient` a nuestro navegador habitual, en mi caso concreto es Chrome y he añadido una extensión `Cliente de servicios Web RESTful` y al ejecutarla tengo que modificar:
 
-![](/images/2018/11/`RESTful`_R.png)
+![](/images/2018/11/%60RESTful%60_R.png)
 
 Como cuerpo de la solicitud pasamos un json con la altura y le damos a enviar, como respuesta debemos obtener `73.2291`. Lo que hemos hecho es una solicitud curl con la sintaxis:
 

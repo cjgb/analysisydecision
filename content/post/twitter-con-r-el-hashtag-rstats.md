@@ -14,11 +14,11 @@ related:
   - trucos-simples-para-rstats.md
 tags:
   - twitter
-title: 'TwitteR con R. El hashtag `#rstats`'
+title: TwitteR con R. El hashtag `#rstats`
 url: /blog/twitter-con-r-el-hashtag-rstats/
 ---
 
-El objetivo de la entrada es empezar a analizar `tweets` con R y que mejor comienzo que usar el `#rstats` para ver usuarios que más lo utilizan. [no me gusta conjugar el verbo retwitear] El primer paso es **crear una `app` con Twitter**, para ello nos dirigimos a <[https://apps.twitter.com/](https://apps.twitter.com/)> y creamos una aplicación. Crearla es muy sencillo, sólo necesitamos una descripción y un nombre. La aplicación será la que permitirá a R interaccionar con Twitter mediante [OAuth](https://es.wikipedia.org/wiki/OAuth) y para realizar esta interacción entre la aplicación y nuestra sesión de R es imprescindible:
+El objetivo de la entrada es empezar a analizar `tweets` con R y que mejor comienzo que usar el `#rstats` para ver usuarios que más lo utilizan. [no me gusta conjugar el verbo retwitear] El primer paso es **crear una `app` con Twitter**, para ello nos dirigimos a \<[https://apps.twitter.com/](https://apps.twitter.com/)> y creamos una aplicación. Crearla es muy sencillo, sólo necesitamos una descripción y un nombre. La aplicación será la que permitirá a R interaccionar con Twitter mediante [OAuth](https://es.wikipedia.org/wiki/OAuth) y para realizar esta interacción entre la aplicación y nuestra sesión de R es imprescindible:
 
 - `Consumer key`
 - `Consumer secret`

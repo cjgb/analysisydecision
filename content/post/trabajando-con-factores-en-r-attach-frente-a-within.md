@@ -23,7 +23,7 @@ Un ejemplo de trabajo con datos en R. Transformamos factores de dos formas disti
 
 Manejo de datos con **within** :
 
-```r
+````r
 ```r
 datos library(car)
 
@@ -32,17 +32,17 @@ datos prog id reconocimientos reconocimientos2 = recode(num_awards,"0='Sin renoc
 else='Más de un reconocimiento'")
 
 })
-```
+````
 
 Manejo de datos con **attach/detach** :
 
-```r
+````r
 ```r
 attach(datos)
 
 datosmath_cat[math<50 ] <- "D" datosmath_cat[math >= 50 & math < 60] <- "C" datosmath_cat[math >= 60&math<75] <- "B" datosmath_cat[math >= 75] <- "A"
 
 datos$math_cat detach(datos)
-```
+````
 
 No voy a entrar en que es más óptimo, tarda menos y demás. En mi opinión es mejor utilizar _within_ pacece más «pulcro» y la verdad es que la función _recode_ nos facilita mucho el trabajo pero como siempre tenemos múltiples posibilidades con R, por eso es R. Saludos.

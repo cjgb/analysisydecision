@@ -22,11 +22,11 @@ tags:
   - monográficos
 ---
 
-Si deseamos [descargar vídeos de Youtube tenemos youtube-dl](https://youtube-dl.org/) pero podemos descargar de otras web y en esta entrada vamos a ver como. Además podemos transformar esas entradas en fotogramas, esto es útil a la hora de analizar imágenes, podríamos estudiar la presencia de una marca en un partido de fútbol, identificar las matrículas que pasan delante de determinada cámara u otros casos de uso. Y en uno de esos casos precisamente [J.L. Cañadas](https://twitter.com/joscani) del [blog hermano Muestrear no es Pecado](https://muestrear-no-es-pecado.netlify.app/) me ha descubierto la librería youtube-dl y la creación de scripts para tranformar videos en imágenes que posteriormente podemos analizar. El caso de mplayer es distinto, lo conocía, Cañadas me ha descubierto el ffmpeg que ofrece más posibilidades.
+Si deseamos [descargar vídeos de Youtube tenemos `youtube-dl`](https://youtube-dl.org/) pero podemos descargar de otras web y en esta entrada vamos a ver como. Además podemos transformar esas entradas en fotogramas, esto es útil a la hora de analizar imágenes, podríamos estudiar la presencia de una marca en un partido de fútbol, identificar las matrículas que pasan delante de determinada cámara u otros casos de uso. Y en uno de esos casos precisamente J.L. Cañadas del [blog hermano Muestrear no es Pecado](https://muestrear-no-es-pecado.netlify.app/) me ha descubierto la librería `youtube-dl` y la creación de scripts para transformar videos en imágenes que posteriormente podemos analizar. El caso de `mplayer` es distinto, lo conocía, Cañadas me ha descubierto el `ffmpeg` que ofrece más posibilidades.
 
 ### shell scripting
 
-El scripting no es habitual en el blog, pero en este «nuevo ecosistema del data sciense» el shell scripting ha tomado mucho más peso. Hace años fui bueno pero poco a poco entendí que esos _pipelines_ tenían que hacerse con herramientas como Kettle, Enterprise Guide, Emblem, Rate Assesor,… Ahora me toca volver a retomar estos scripts y lo primero es indicar donde instalo y ejecuto para que se pueda replicar. En este caso, al trabajar con una librería de python como es youtube-dl, empleo un terminal de Anaconda y el enviroment que uso habitualmente con R y reticulate (por si acaso necesito automatizar el script). Lo primero instalar youtube-dl:
+El `shell scripting` no es habitual en el blog, pero en este «nuevo ecosistema del `data science`» el `shell scripting` ha tomado mucho más peso. Hace años fui bueno pero poco a poco entendí que esos `pipelines` tenían que hacerse con herramientas como Kettle, Enterprise Guide, Emblem, Rate Assesor,… Ahora me toca volver a retomar estos scripts y lo primero es indicar donde instalo y ejecuto para que se pueda replicar. En este caso, al trabajar con una librería de `python` como es `youtube-dl`, empleo un terminal de Anaconda y el enviroment que uso habitualmente con `R` y `reticulate` (por si acaso necesito automatizar el script). Lo primero instalar `youtube-dl`:
 
 ```bash
 # Instalar youtube-dl
@@ -68,7 +68,7 @@ format code  extension  resolution note
 18           mp4        640x360    360p  698k , avc1.42001E, 25fps, mp4a.40.2@ 96k (44100Hz), 13.38MiB (best)
 ```
 
-Tenemos todos los formatos disponibles y tienen un _code_ , éste será necesario cuando le indiquemos a youtube-dl lo que deseamos descargar. Observad que también tenemos los archivos de audio. En este caso vamos a descargarnos el 136 video en formato mp4, si posteriormente queremos trabajar con mplayer podemos acostumbrarnos a bajarnos siempre el mp4. Entonces hacemos:
+Tenemos todos los formatos disponibles y tienen un `code` , éste será necesario cuando le indiquemos a `youtube-dl` lo que deseamos descargar. Observad que también tenemos los archivos de audio. En este caso vamos a descargarnos el `136` video en formato `mp4`, si posteriormente queremos trabajar con `mplayer` podemos acostumbrarnos a bajarnos siempre el `mp4`. Entonces hacemos:
 
 ```bash
 # Descargar
@@ -77,11 +77,11 @@ youtube-dl -f 136 https://www.youtube.com/watch?v=fhQPB8GHtqo
 
 Ya tenemos disponible el vídeo en nuestro equipo.
 
-### Descarga con youtube-dl de otras web
+### Descarga con `youtube-dl` de otras web
 
 Un paréntesis, no sólo es posible descargar de Youtube, de nuevo Cañadas se puso a curiosear y encontró lo siguiente. Imaginemos que deseamos descargarnos un vídeo de Televisión Española. Por ejemplo el [vídeo en el que se anunció que Jorge Prado iba a ser campeón del mundo de motocross en 2018](https://www.rtve.es/alacarta/videos/motociclismo/jorge-prado-campeon-del-mundo-motocross/4758017/). En ese caso abrimos la web y buscamos el link al vídeo inspeccionando los elementos de la web. En el caso de Chrome:
 
-![](/images/2021/01/Captura-de-pantalla-de-2021-01-08-14-26-50.png)
+![Screenshot of web browser inspecting elements](/images/2021/01/Captura-de-pantalla-de-2021-01-08-14-26-50.png)
 
 Copiando el elemento ya tendríamos la dirección del vídeo y sólo tenemos que saber el código y ejecutar la descarga:
 
@@ -90,18 +90,18 @@ youtube-dl --list-formats  https://www.rtve.es/alacarta/videos/motociclismo/jorg
 youtube-dl -f hls-1672 https://www.rtve.es/alacarta/videos/motociclismo/jorge-prado-campeon-del-mundo-motocross/4758017/
 ```
 
-Del mismo modo podremos descargar con youtube-dl de cualquier otra web como Vimeo o un vídeo incrustado, inspeccionar elementos y en dos líneas descargamos el video. También podemos hacer una lista y descargar los vídeos que deseamos o la música de esos vídeos.
+Del mismo modo podremos descargar con `youtube-dl` de cualquier otra web como Vimeo o un vídeo incrustado, inspeccionar elementos y en dos líneas descargamos el video. También podemos hacer una lista y descargar los vídeos que deseamos o la música de esos vídeos.
 
-### Obtener imágenes del video con mplayer
+### Obtener imágenes del video con `mplayer`
 
-Cerramos paréntesis y volvemos al primer vídeo que ya tenemos en nuestra carpeta y ahora queremos obtener una sucesión de archivos de imágenes de ese vídeo para realizar nuestro análisis de imágenes. Para ello vamos a emplear mplayer en ese mismo entorno conda donde estamos trabajando.
+Cerramos paréntesis y volvemos al primer vídeo que ya tenemos en nuestra carpeta y ahora queremos obtener una sucesión de archivos de imágenes de ese vídeo para realizar nuestro análisis de imágenes. Para ello vamos a emplear `mplayer` en ese mismo entorno `conda` donde estamos trabajando.
 
 ```bash
 mplayer -vf framestep=60 -framedrop -nosound video1.mp4 -speed 100 -vo jpeg:outdir=video1
 ```
 
-Tenemos un vídeo de 2 minutos 40 segundos resumido en 67 imágenes jpg como esta:
+Tenemos un vídeo de 2 minutos 40 segundos resumido en 67 imágenes `jpg` como esta:
 
-![](/images/2021/01/00000063.jpg)
+![Screenshot from video](/images/2021/01/00000063.jpg)
 
-En framestep = indicamos el número de frames hasta obtener la imagen, si ponemos un número bajo almacenaremos un gran número de imágenes, es necesario tenerlo en cuenta si sintetizamos un video de gran tamaño. Para no alargar más la entrada en otro momento veremos ffmpeg como opción más apropiada para sintetizar vídeos en imágenes.
+En `framestep =` indicamos el número de frames hasta obtener la imagen, si ponemos un número bajo almacenaremos un gran número de imágenes, es necesario tenerlo en cuenta si sintetizamos un video de gran tamaño. Para no alargar más la entrada en otro momento veremos `ffmpeg` como opción más apropiada para sintetizar vídeos en imágenes.

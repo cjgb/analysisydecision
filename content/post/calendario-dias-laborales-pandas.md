@@ -30,26 +30,26 @@ Sirva esta entrada para poner en valor todo aquel trabajo adicional y tiempo ded
 Pandas, como se ha visto aquí, es la librería por excelencia para el [manejo de datos](https://analisisydecision.es/data-management-basico-con-pandas/) ya que permite trabajar fácilmente con tablas numéricas y series temporales.
 Una utilidad disponible en Pandas en relación a las series temporales es crear directamente rangos de fechas con la función `pd.date_range()`, la cual utiliza los siguientes parámetros (no todos obligatorios):
 
-- **start** : Inicio del rango. Límite izquierdo para generar fechas.
-- **end** : Fin del rango. Límite derecho para generar fechas.
-- **period** : Número de periodos a generar
-- **freq** : Frecuencia de las proyecciones. Entre otros:
-  - D: Diaria (por defecto)
-  - Y: Anual
-  - M: Mensual
-- **closed** : Si queremos excluir el inicio (closed=’right’) o el final (closed=’left’)
-- **name** : Nombre del DatetimeIndex resultante (por defecto ninguno)
+- **start**: Inicio del rango. Límite izquierdo para generar fechas.
+- **end**: Fin del rango. Límite derecho para generar fechas.
+- **period**: Número de periodos a generar
+- **freq**: Frecuencia de las proyecciones. Entre otros:
+  - `D`: Diaria (por defecto)
+  - `Y`: Anual
+  - `M`: Mensual
+- **closed**: Si queremos excluir el inicio (`closed=’right’`) o el final (`closed=’left’`)
+- **name**: Nombre del `DatetimeIndex` resultante (por defecto ninguno)
 
 ## Ejemplo básico de una serie temporal
 
-```r
+```python
 import pandas as pd
 s = pd.date_range(start='2019-01-01', periods=12, freq='M')
 df = pd.DataFrame(s, columns=['Fecha'])
 print(df)
 ```
 
-```r
+```text
 Fecha
 0  2019-01-31
 1  2019-02-28
@@ -68,16 +68,16 @@ Fecha
 ## Crear una serie temporal con los últimos días laborales de cada mes
 
 En determinados ámbitos, principalmente financiero y actuarial, resulta especialmente útil manejar rangos de fechas en donde los días de la serie correspondan al primer o último día laboral del mes (por ejemplo, cuando proyectamos pagos de cupones o rentas).
-Para ello, la función `pd.date_range()` dispone de diferentes valores para el parámetro frecuencia. En el siguiente ejemplo, ‘BM’ corresponde con BusinessMonthEnd (último día laboral del mes):
+Para ello, la función `pd.date_range()` dispone de diferentes valores para el parámetro frecuencia. En el siguiente ejemplo, `‘BM’` corresponde con `BusinessMonthEnd` (último día laboral del mes):
 
-```r
+```python
 import pandas as pd
 s = pd.date_range('2019-01-01', periods=12, freq='BM')
 df = pd.DataFrame(s, columns=['Fecha'])
 print(df)
 ```
 
-```r
+```text
 Fecha
 0  2019-01-31
 1  2019-02-28
@@ -97,7 +97,7 @@ Aunque si queremos mayor exactitud, debemos tener en cuenta los días festivos (
 
 En el siguiente ejemplo introducimos una lista con un par de días festivos simplemente para ver el funcionamiento: el 31 de mayo (Día de Castilla-La Mancha) y 28 de febrero (Día de Andalucía). Posteriormente calculamos los días transcurridos entre pagos si estos se produjeran el último día de mes:
 
-```r
+```python
 import pandas as pd
 fiestas = ['2019-02-28','2019-05-31']
 es_holidays = pd.tseries.offsets.CustomBusinessMonthEnd(holidays=fiestas)
@@ -107,7 +107,7 @@ df['n_dias'] = df['Fecha'].diff().dt.days.fillna(0)
 print(df)
 ```
 
-```r
+```text
 Fecha  n_dias
 0  2019-01-31     0.0
 1  2019-02-27    27.0
@@ -131,7 +131,7 @@ Por último, existe la opción de escribir reglas para calcular los días festiv
 
 Sin embargo, en muchos otros países no existen reglas para determinar los festivos del año (como ocurre en España), sino que cada año las fiestas laborales son fijadas por normativa. No obstante, vamos a aventurarnos a crear las reglas del calendario laboral español con la premisa de que los festivos que caigan en domingo se pasan al lunes siguiente (instrucción `observance=sunday_to_monday`). Posteriormente, mostramos los días laborales de diciembre para comprobar su funcionamiento.
 
-```r
+```python
 from pandas.tseries.holiday import *
 from pandas.tseries.offsets import CustomBusinessDay
 
@@ -155,7 +155,7 @@ df = pd.DataFrame(s, columns=['Fecha'])
 print(df)
 ```
 
-```r
+```text
 Fecha
 0  2019-12-02
 1  2019-12-03
@@ -182,12 +182,12 @@ _(Se aprecia como el domingo 8 de diciembre es reemplazado por el lunes 9)_
 
 Así, una vez creado nuestro calendario de fiestas nacionales, podemos utilizarlo para conocer las fiestas de próximos años, por ejemplo para el año 2020:
 
-```r
+```python
 calendar = EsBusinessCalendar()
 print(calendar.holidays(start='2020-01-01', end='2020-12-31'))
 ```
 
-```r
+```text
 DatetimeIndex(['2020-01-01', '2020-01-06', '2020-04-10', '2020-05-01',
                '2020-08-15', '2020-10-12', '2020-11-02', '2020-12-07',
                '2020-12-08', '2020-12-25'],
@@ -196,4 +196,4 @@ DatetimeIndex(['2020-01-01', '2020-01-06', '2020-04-10', '2020-05-01',
 
 Las fiestas regionales o locales pueden ser incluidas de la misma manera, aunque hay que tener en cuenta que en ciertas comunidades es costumbre trasladar ciertas fiestas al 19 de marzo o el jueves del Corpus en vez de al siguiente lunes (en ese caso habría que crear una nueva función basada en la función de Pandas `sunday_to_monday`).
 
-Nuestro calendario puede ser utilizado también en otras librerías como Prophet. [Prophet](https://facebook.github.io/prophet/docs/quick_start.html) es una librería avanzada de _[machine learning](https://analisisydecision.es/machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algoritmos-de-clasificacion/)_ creada por Facebook, enfocada a modelos de regresión no lineales de datos a lo largo del tiempo, la cual requiere un listado de días festivos que debe ser proporcionado por el usuario.
+Nuestro calendario puede ser utilizado también en otras librerías como Prophet. [Prophet](https://facebook.github.io/prophet/docs/quick_start.html) es una librería avanzada de [machine learning](https://analisisydecision.es/machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algoritmos-de-clasificacion/) creada por Facebook, enfocada a modelos de regresión no lineales de datos a lo largo del tiempo, la cual requiere un listado de días festivos que debe ser proporcionado por el usuario.

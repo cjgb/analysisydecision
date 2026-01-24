@@ -20,7 +20,7 @@ url: /blog/macros-faciles-de-sas-busca-duplicados/
 
 Una macro muy sencilla que ha aparecido en un programa de funcionalidades y que busca registros duplicados en tablas SAS. Es muy sencilla y a alguien puede serle útil y para eso estamos, para compartir conocimientos aunque sean sencillos. Pocos somos los que compartimos nuestro conocimiento y encima poniendo nuestro dinero, en fin, que me distraigo del tema.
 
-```r
+````r
 ```sas
 %macro busca_duplicados ( dataset, campo);
 
@@ -39,6 +39,6 @@ group by 1;
 quit;
 
 %mend;
-```
+````
 
 No pongo ni ejemplo de uso, muy fácil. Pero ya verás como alguien le saca partido. Y todo esto de forma altruista, insisto, que si no me valoro yo no me valora nadie. Saludos.

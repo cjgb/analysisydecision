@@ -126,4 +126,4 @@ keep region total_ventas;
 run;
 ```
 
-`La unión de conjuntos de datos `SAS` tendremos que analizarla en capítulos posteriores, pero es imprescindible recordar que, para unir conjuntos de datos `SAS` éstos han de estar agrupados por la variable que realiza la unión. Como siempre si tenéis cualquier duda, sugerencia o trabajo a tiempo parcial que me permita jugar más tiempo con mis hijos podéis contactar conmigo en `rvaquerizo@analisisydecsision.es``
+`La unión de conjuntos de datos `SAS`tendremos que analizarla en capítulos posteriores, pero es imprescindible recordar que, para unir conjuntos de datos`SAS`éstos han de estar agrupados por la variable que realiza la unión. Como siempre si tenéis cualquier duda, sugerencia o trabajo a tiempo parcial que me permita jugar más tiempo con mis hijos podéis contactar conmigo en`rvaquerizo@analisisydecsision.es\`\`

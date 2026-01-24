@@ -30,7 +30,7 @@ El análisis de factores es una técnica de reducción de datos: menor dimensió
 
 En [este enlace](http://www.psico.uniovi.es/Dpto_Psicologia/metodos/tutor.1/indice.html) tenemos una detallada descripción de esta metodología.
 
-Para nuestro ejemplo vamos a trabajar con el mismo objeto de R [sociodemo.RData](/images/2010/01/sociodemo.RData "sociodemo.RData") que empleamos para el monográfico de introducción a la regresión logística. En este objeto disponemos de las tasas de paro desde 1996 a 2008, las tasas por edad y las tasas por sexo y la intención es reducir estás 16 variables a un subconjunto de factores lo menor posible que contengan la mayor variabilidad de los datos. Para facilitar el trabajo vamos a crear un objeto con las variables a estudiar:
+Para nuestro ejemplo vamos a trabajar con el mismo objeto de `R` `sociodemo.RData` que empleamos para el monográfico de introducción a la regresión logística. En este objeto disponemos de las tasas de paro desde 1996 a 2008, las tasas por edad y las tasas por sexo y la intención es reducir estás 16 variables a un subconjunto de factores lo menor posible que contengan la mayor variabilidad de los datos. Para facilitar el trabajo vamos a crear un objeto con las variables a estudiar:
 
 ```r
 lista=names(datos)
@@ -46,7 +46,7 @@ datos.1=subset(datos,select=lista)
 summary(datos.1)
 ```
 
-Os planteo una metodología muy sencilla para crear listas de variables con R y con esta lista ya tenemos un _data.frame_ de partida para realizar nuestro estudio. Ahora tenemos que seguir los pasos antes indicados:
+Os planteo una metodología muy sencilla para crear listas de variables con `R` y con esta lista ya tenemos un `data.frame` de partida para realizar nuestro estudio. Ahora tenemos que seguir los pasos antes indicados:
 
 1\. Estudio de la matriz de correlaciones:
 
@@ -86,7 +86,7 @@ analisis=factanal(datos.1[,-1],factors=2,rotation="none")
 print(analisis, digits=2, cutoff=.2, sort=FALSE)
 ```
 
-Efectivamente con dos factores ya superamos el 80% de la variabilidad. Los factores vienen dados por una matriz de cargas que en este caso es la que nos ofrece la salida de R:
+Efectivamente con dos factores ya superamos el 80% de la variabilidad. Los factores vienen dados por una matriz de cargas que en este caso es la que nos ofrece la salida de `R`:
 
 ```r
 Factor1 Factor2
@@ -180,4 +180,4 @@ datos.1=cbind(datos.1,analisisscores)
 summary(analisisscores)
 ```
 
-Nuestro data.frame tiene dos nuevas variables que «reducen» las anteriores y podemos emplear en nuestros modelos. ¡Seguimos divulgando R, saludos!
+Nuestro data.frame tiene dos nuevas variables que «reducen» las anteriores y podemos emplear en nuestros modelos. ¡Seguimos divulgando `R`, saludos!

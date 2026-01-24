@@ -64,7 +64,7 @@ Partimos de unidades experimentales homogéneas y queremos estudiar la influenci
 
 ![c111.JPG](/images/2008/10/c111.JPG)
 
-Para realizar el análisis de la varianza con R hemos de determinar el modelo con el que queremos trabajar. Vamos a crear un modelo probabilístico Yij=media_i+e_ij donde la media_i es una constante conocida que es la respuesta media bajo el tratamiento i y e_ij es la parte probabilísitica que cumple una serie de condiciones. Sobre este modelo realizaremos el análisis de la varianza con la función aov(Y~X) donde Y es la variable respuesta que es la variable cuantitativa asociada al experimento y X es la condición bajo la cual mido la variable respuesta, X es el factor. Como siempre veamos como trabajar con R mediante un ejemplo.
+Para realizar el análisis de la varianza con R hemos de determinar el modelo con el que queremos trabajar. Vamos a crear un modelo probabilístico $Y\_{ij}=\\text{media}_i+e_{ij}$ donde la $\\text{media}_i$ es una constante conocida que es la respuesta media bajo el tratamiento `i` y $e_{ij}$ es la parte probabilística que cumple una serie de condiciones. Sobre este modelo realizaremos el análisis de la varianza con la función `aov(Y~X)` donde `Y` es la variable respuesta que es la variable cuantitativa asociada al experimento y `X` es la condición bajo la cual mido la variable respuesta, `X` es el factor. Como siempre veamos como trabajar con R mediante un ejemplo.
 
 Ejemplo 11.1:
 
@@ -78,58 +78,45 @@ AB: 10, 5, -5, 15, 20, 20, 0, 10
 
 ```r
 > options(prompt="") #modificamos el prompt presion<-c(10, 0, 15, -20, 0, 15, -5
-
-+ ,20, 25, 33, 25, 30, 18, 27, 0, 35, 20
-
-+ ,15, 10, 25, 30, 15, 35, 25, 22, 11, 25,
-
-+ 10, 5, -5, 15, 20, 20, 0, 10 )
+,20, 25, 33, 25, 30, 18, 27, 0, 35, 20
+,15, 10, 25, 30, 15, 35, 25, 22, 11, 25,
+10, 5, -5, 15, 20, 20, 0, 10 )
 
 grupos<-c("P","P","P","P","P","P","P","A","A","A","A","A","A","A","A","A","A",
+"B","B","B","B","B","B","B","B","B","B","AB","AB","AB","AB","AB","AB","AB","AB")
+grupos<-factor(grupos) #creamos factores
 
-+ "B","B","B","B","B","B","B","B","B","B","AB","AB","AB","AB","AB","AB","AB","AB") grupos<-factor(grupos) #creamos factores
-
-$ grupos
-
-[1] P  P  P  P  P  P  P  A  A  A  A  A  A  A  A  A  A  B  B  B  B  B  B  B  B  B  B  AB AB AB AB
-
-[32] AB AB AB AB
-
-Levels: A AB B P
+grupos
+# [1] P  P  P  P  P  P  P  A  A  A  A  A  A  A  A  A  A  B  B  B  B  B  B  B  B  B  B  AB AB AB AB
+# [32] AB AB AB AB
+# Levels: A AB B P
 ```
 
-Hemos creado dos vectores presion que recoge la variable respuesta y grupos que recoge el factor, para su creación hemos de emplear la función factor con ella R reconoce el tipo de variable que contiene ese vector creando un vector de factores. Realicemos el análisis de la varianza, con él haremos el contraste de igualdad de medias para establecer si hay diferencias significativas entre las medias de los distintos grupos:
+Hemos creado dos vectores `presion` que recoge la variable respuesta y `grupos` que recoge el factor, para su creación hemos de emplear la función `factor` con ella R reconoce el tipo de variable que contiene ese vector creando un vector de factores. Realicemos el análisis de la varianza, con él haremos el contraste de igualdad de medias para establecer si hay diferencias significativas entre las medias de los distintos grupos:
 
 ```r
-unifact<-aov(presion~grupos) summary(unifact)
-
-Df  Sum Sq Mean Sq F value    Pr(>F)
-
-grupos       3 2492.61  830.87  8.5262 0.0002823 ***
-
-Residuals   31 3020.93   97.45
-
----
-
-Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+unifact<-aov(presion~grupos)
+summary(unifact)
+# Df  Sum Sq Mean Sq F value    Pr(>F)
+# grupos       3 2492.61  830.87  8.5262 0.0002823 ***
+# Residuals   31 3020.93   97.45
+# ---
+# Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 ```
 
-Se rechaza la hipótesis nula de igualdad de medias en \*\*\* que planteamos con el test F así pues hay diferencias entre los tratamientos. Para ver cual de estos tratamientos son diferentes contamos con métodos de test de recorrido estudentizado y con métodos de contrastes múltiples. Con R podemos programar el test que nos interese, pero el módulo base tiene test de recorrido estudentizado. En este caso vamos a ver el test de Tuckey que compara todas las posibles medias dos a dos y basándose en una distribución q alfa(k,n) del rango estudentizado determina una diferencia mínima significativa para que dos medias sean distintas. En R el test de Tukey se realiza con la función TuckeyHSD:
+Se rechaza la hipótesis nula de igualdad de medias en `***` que planteamos con el test F así pues hay diferencias entre los tratamientos. Para ver cual de estos tratamientos son diferentes contamos con métodos de test de recorrido estudentizado y con métodos de contrastes múltiples. Con R podemos programar el test que nos interese, pero el módulo base tiene test de recorrido estudentizado. En este caso vamos a ver el test de `Tukey` que compara todas las posibles medias dos a dos y basándose en una distribución `q alfa(k,n)` del rango estudentizado determina una diferencia mínima significativa para que dos medias sean distintas. En R el test de Tukey se realiza con la función `TukeyHSD`:
 
 ```r
-$ TukeyHSD(unifact)
-
-Tukey multiple comparisons of means
-
-95% family-wise confidence level
+TukeyHSD(unifact)
+# Tukey multiple comparisons of means
+# 95% family-wise confidence level
 ```
 
 ```r
-$ (qtukey(0.05,4,31))*sqrt(97.45/7)
-
-[1] 2.819698
+(qtukey(0.05,4,31))*sqrt(97.45/7)
+# [1] 2.819698
 ```
 
-Este es el valor referencia, valores absolutos por encima de éste ya consideramos diferencias significativas. De nuevo repetir como se halla este número: qtukey(0.05,4,31) calcula el valor de la distribución q de Tukey para 0.05 ya que estamos con una confianza del 95%, 4 niveles y 31 grados de libertad; sqrt(97.45/7) 97.5 es la estimación de la varianza (el cuadrado medio del error) que se encuentra en la tabla ANOVA y 7 el mínimo número de tratamientos que son los pacientes que tomaron placebo. El valor de de 2.82 luego sólo la diferencia entre A y B se puede considerar que no es significativa, no hay diferencias entre los pacientes que tomaban A o B, sin embargo si hay diferencias entre todos los demás.
+Este es el valor referencia, valores absolutos por encima de éste ya consideramos diferencias significativas. De nuevo repetir como se halla este número: `qtukey(0.05,4,31)` calcula el valor de la distribución `q` de Tukey para 0.05 ya que estamos con una confianza del 95%, 4 niveles y 31 grados de libertad; `sqrt(97.45/7)` 97.5 es la estimación de la varianza (el cuadrado medio del error) que se encuentra en la tabla ANOVA y 7 el mínimo número de tratamientos que son los pacientes que tomaron placebo. El valor de de 2.82 luego sólo la diferencia entre A y B se puede considerar que no es significativa, no hay diferencias entre los pacientes que tomaban A o B, sin embargo si hay diferencias entre todos los demás.
 
 En resumen se puede determinar que los pacientes que han tomado placebo o la combinación entre ambos medicamentos AB han tenido una mayor reducción de la presión diastólica desde el estado basal (inicio del tratamiento) hasta el estado al cabo de una semana de tratamiento, siendo el placebo el tratamiento que más ha hecho reducir dicha presión.

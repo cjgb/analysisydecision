@@ -67,7 +67,7 @@ Con esto nuestra `macro` de `SAS` sería:
   %mend;
 ```
 
-*EJEMPLO DE USO;
+\*EJEMPLO DE USO;
 `libname libref "/sas/datos"`;
 `%chmod(libref,*)`;
 

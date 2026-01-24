@@ -20,7 +20,7 @@ url: /blog/analisisydecision-es-os-desea-felices-fiestas/
 
 Un homenaje a R base del que nadie se acuerda. Una animación donde se usa el paquete snowflakes para hacer copos de nieve y hay algún uso interesante de la función text. En cualquier caso, lo dicho, felices fiestas en estos días extraños.
 
-```r
+````r
 ```r
 alturas <- seq(100,200, by = 3)
 posiciones <- as.integer(runif(length(alturas),5,95))
@@ -42,4 +42,4 @@ saveGIF(
     text(80,50, frase1, adj = c(1,0), cex=2, col=i)
     text(80,30, frase2, adj = c(1,0), cex=2, col=i)},
   fps= 1 , movie.name="C:/temp/animaciones/navidad.gif")
-```
+````

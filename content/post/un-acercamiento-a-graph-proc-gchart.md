@@ -71,7 +71,6 @@ proc greplay igout=work.gseg tc=sashelp.templt template=L2r2 NOFS ;
 treplay 1:uno 2:dos 3:tres 4:cuatro; run; quit;
 ```
 
-
 ![Ejemplo de uso de PROC GCHART](/images/2010/04/graph31.thumbnail.jpg)
 
 Con `pattern` vamos a definir el `color` de cada `barra`, por `defecto SAS` asigna a todas las `barras` el `mismo color` como nos pasa en el `grafico` `cuatro`. La `opción DISCRETE` tiene su `importancia` si `representamos valores numéricos`, `uno` crea una `escala` y en `dos` ya con la `opción DISCRETE` no aparece `escala` alguna y no `representamos variable continua` sino `discreta`. `OUTSIDE` nos sirve para indicar si queremos ver los `valores` asociados a las `barras`. El `grafico tres` nos `divide` con `SUBGROUP` una `barra` en `grupos`, cada `barra` toma los `colores` que le hemos indicado con `PATTERN`. El `grafico cuatro` nos crea tantas `barras` como `grupos` representemos en el `eje X`, vemos que no ha funcionado `PATTERN` y que las `3 barras` tienen el `mismo color`. `Mejoremos` el `grafico cuatro`:
@@ -105,7 +104,6 @@ legend=legend1 name='cinco' subgroup=tipo;
 
 run;quit;
 ```
-
 
 ![Ejemplo de uso de PROC GCHART](/images/2010/04/graph32.thumbnail.jpg)
 

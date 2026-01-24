@@ -22,15 +22,15 @@ title: Minutos de juego y puntos. El Espanyol, sus finales de partido y mis enfa
 url: /blog/minutos-de-juego-y-puntos-es-espanyol-y-sus-finales-de-partido/
 ---
 
-Pienso que el Espanyol este 2024 se está dejando muchos puntos al final de los partidos. Cuando el partido llega al minuto 75 pierdo años de vida. ¿Es verdad que el Espanyol se está dejando puntos en el tramo final del partido? Vamos a estudiarlo numéricamente con worldfootballR y datos de FBRef empleando funciones que ya se han trabajado con anterioridad.
+Pienso que el Espanyol este 2024 se está dejando muchos puntos al final de los partidos. Cuando el partido llega al minuto 75 pierdo años de vida. ¿Es verdad que el Espanyol se está dejando puntos en el tramo final del partido? Vamos a estudiarlo numéricamente con `worldfootballR` y datos de `FBRef` empleando funciones que ya se han trabajado con anterioridad.
 
-El primer paso será obtener todos los partidos de la Liga Hypermotion de este 2024 con **fb_mach_url**
+El primer paso será obtener todos los partidos de la Liga Hypermotion de este 2024 con `fb_match_url`
 
 ```r
-library(worldfootballR)
+library(`worldfootballR`)
 library(tidyverse)
 
-# Toda la información la extraemos de FBRef
+# Toda la información la extraemos de `FBRef`
 partidos_segunda <- data.frame(url=fb_match_urls(country = "ESP", gender = "M",
                           season_end_year = c(2024), tier = "2nd"))
 ```
@@ -41,7 +41,7 @@ De todos los partidos, se seleccionan aquellos del equipo en el que estamos inte
 equipo = 'Espanyol'
 ```
 
-Creo que existía una función que permitía obtener el reporte del partido con todos aquellos hechos más relevantes pero en el momento de escribir estas líneas no funcionaba para un equipo de segunda división o se trata de un reporte que no se puede obtener de FBRef, el caso es que se opta por emplear **fb_macth_shooting** para determinar en que minuto se produce un gol y poder ir creando un resultado de partido.
+Creo que existía una función que permitía obtener el reporte del partido con todos aquellos hechos más relevantes pero en el momento de escribir estas líneas no funcionaba para un equipo de segunda división o se trata de un reporte que no se puede obtener de `FBRef`, el caso es que se opta por emplear `fb_match_shooting` para determinar en que minuto se produce un gol y poder ir creando un resultado de partido.
 
 ```r
 partidos <- partidos_segunda %>% filter(grepl(equipo,url) >0 )
@@ -60,7 +60,7 @@ Descargados todos los tiros de los partidos en los que ha participado el Espanyo
 shots <- shots %>% arrange(Date, Minute)
 ```
 
-Se observa que _Minute_ no es numérico, tiene el tiempo añadido y su ordenación puede causar problemas, por ello se crea un campo minuto con formato numérico. Se aprovecha este paso para eliminar tildes del nombre del equipo que se está analizando ya que a futuro puede dar problemas.
+Se observa que `Minute` no es numérico, tiene el tiempo añadido y su ordenación puede causar problemas, por ello se crea un campo minuto con formato numérico. Se aprovecha este paso para eliminar tildes del nombre del equipo que se está analizando ya que a futuro puede dar problemas.
 
 ```r
 shots <- shots %>% mutate(minuto = ifelse(grepl("+",Minute)>0, substr(Minute,1,2), Mminute),
@@ -93,7 +93,7 @@ resultados <- resultados %>% left_join(goles_equipo) %>% left_join(goles_rival) 
          gol_rival = ifelse(is.na(gol_rival), 0, gol_rival))
 ```
 
-Como se aprecia en el código también se han eliminado valores perdidos en los campos de gol para facilitar la realización de una suma acumulada que se va a realizar con la función de base _ave_ , un homenaje a R base que cada vez parece usarse menos.
+Como se aprecia en el código también se han eliminado valores perdidos en los campos de gol para facilitar la realización de una suma acumulada que se va a realizar con la función de base `ave` , un homenaje a R base que cada vez parece usarse menos.
 
 ```r
 resultadosgoles_equipo <- ave(resultadosgol_equipo, resultadosDate, FUN=cumsum)
@@ -122,15 +122,15 @@ En este punto se está en disposición de graficar esos puntos medios a lo largo
 resumen %>% ggplot(aes(x=minuto, y=puntos_medios, group=1)) +
 geom_line()+
 geom_point() +
-geom_vline(xintercept = 75, color=’Red’)
+geom_vline(xintercept = 75, color='Red')
 ```
 
-[![](/images/2024/04/wp_editor_md_23267e4368cfcfcfdd1003b888f13a97.jpg)](/images/2024/04/wp_editor_md_23267e4368cfcfcfdd1003b888f13a97.jpg)
+![](/images/2024/04/wp_editor_md_23267e4368cfcfcfdd1003b888f13a97.jpg)
 
 Ahí se puede observar mi enfado en los momentos finales del partido. El Espanyol se está dejando puntos en el último tercio de los partidos a pesar de la remontada contra el Eibar que no vi porque apague el TV en el minuto 90 mientras blasfemaba y pensaba seriamente si enviar mi CV al Espanyol para ayudar al equipo a subir a primera división.
 
 Por cierto, sugiero realizar el mismo análisis para el Leganés:
 
-[![](/images/2024/04/wp_editor_md_8c62705a68a5cb1349535621a9a5b26f.jpg)](/images/2024/04/wp_editor_md_8c62705a68a5cb1349535621a9a5b26f.jpg)
+![](/images/2024/04/wp_editor_md_8c62705a68a5cb1349535621a9a5b26f.jpg)
 
 Empiezan mal pero siempre remontan, sobre todo al inicio de la segunda parte.

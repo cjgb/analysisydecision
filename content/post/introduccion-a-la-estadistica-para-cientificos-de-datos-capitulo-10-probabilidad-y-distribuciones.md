@@ -22,15 +22,15 @@ title: Introducción a la Estadística para Científicos de Datos. Capítulo 10.
 url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-10-probabilidad-y-distribuciones/
 ---
 
-En este punto es necesario realizar un paréntesis en el hilo conductor del ensayo. Hasta el momento se han descrito variables, limpiado y depurado datos y se hizo mención al rol que desempeña cada variable en el conjunto de datos. Entre esas variables hay una de ellas que juega un rol fundamental para el científico de datos, **la variable target o variable respuesta**. Si no existe esa variable el científico de datos se enfrenta a un análisis no dirigido, no conoce como es el problema que representan las variables y las observaciones. Este trabajo se centra en el caso contrario, el conjunto de datos recoge la variable target o recoge las variables en bruto necesarias para crearla y esa variable _dirige_ el tipo de análisis.
+En este punto es necesario realizar un paréntesis en el hilo conductor del ensayo. Hasta el momento se han descrito variables, limpiado y depurado datos y se hizo mención al rol que desempeña cada variable en el conjunto de datos. Entre esas variables hay una de ellas que juega un rol fundamental para el científico de datos, **la variable target o variable respuesta**. Si no existe esa variable el científico de datos se enfrenta a un análisis no dirigido, no conoce como es el problema que representan las variables y las observaciones. Este trabajo se centra en el caso contrario, el conjunto de datos recoge la variable target o recoge las variables en bruto necesarias para crearla y esa variable dirige el tipo de análisis.
 
 ¿Por qué el científico de datos ha de tener conocimientos de probabilidad y distribuciones? Porque esa variable target define un evento que puede tener una probabilidad o función de probabilidad asociada y por lo tanto tiene una distribución. Ese evento ha de presentar unos valores que, representados gráficamente, tengan una forma conocida.
 
 ¿Por qué ha de ser una forma conocida? Porque la forma de la variable, los posibles valores que toma la variable respuesta, **la distribución de la variable que da respuesta a mi problema define el tipo de análisis**. La siguiente imagen resume algunos de los problemas/análisis/distribuciones con su correspondiente variable respuesta. Son problemas habituales a los que se puede enfrentar un científico de datos. Si no hay variable respuesta el análisis no está dirigido o supervisado por ninguna variable target.
 
-[![](/images/2022/10/wp_editor_md_1b6d2058344278abb4d98fd13a03323f.jpg)](/images/2022/10/wp_editor_md_1b6d2058344278abb4d98fd13a03323f.jpg)
+![](/images/2022/10/wp_editor_md_1b6d2058344278abb4d98fd13a03323f.jpg)
 
-> Si un evento no tiene una forma o una distribución conocida el científico de datos puede transformar los valores para que lo sea. Es habitual trabajar con eventos Si/No – 1/0. Puede resultar más práctico y más sencillo analizar qué clientes tienen saldo en un fondo de inversión que analizar el propio saldo.
+> Si un evento no tiene una forma o una distribución conocida el científico de datos puede transformar los valores para que lo sea. Es habitual trabajar con eventos Si/No - `1/0`. Puede resultar más práctico y más sencillo analizar qué clientes tienen saldo en un fondo de inversión que analizar el propio saldo.
 
 ## Conceptos básicos de probabilidad
 
@@ -38,7 +38,7 @@ A continuación se enumeran una serie de conceptos importantes que irán articul
 
 Un **fenómeno aleatorio** es aquel que no se puede predecir pero que sin embargo conocemos todos los posibles resultados (Ej: Lotería, lanzar un dado,…). Este suceso es contrario a los fenómenos deterministas donde conocemos todos los factores del experimento y sabemos de antemano el resultado (Ej: experimentos en laboratorios).
 
-El **espacio muestral** es aquel conjunto que recoge todos los posibles resultados de un experimento aleatorio. (Lanzar un dado: 1,…,6). Se llama **evento** a cualquier subconjunto de este espacio muestral. (Sacar un 5 al tirar el dado). Hay eventos generados por variables aleatorias que se consideran funciones matemáticas que denotadas con letras X, Y, etc. X puede ser (por ejemplo) el número de 5’s al tirar el dado 5 veces, el número de siniestros que puede tener un riesgo en un periodo de tiempo o el pasivo estimado de un cliente fuera de nuestra entidad bancaria, en este último caso pueden interesarnos los clientes con un pasivo estimado superior a 30.000 € fuera de la entidad para que el evento sólo tenga **dos posibles valores si/no**.
+El **espacio muestral** es aquel conjunto que recoge todos los posibles resultados de un experimento aleatorio. (Lanzar un dado: 1,…,6). Se llama **evento** a cualquier subconjunto de este espacio muestral. (Sacar un 5 al tirar el dado). Hay eventos generados por variables aleatorias que se consideran funciones matemáticas que denotadas con letras X, Y, etc. `X` puede ser (por ejemplo) el número de 5’s al tirar el dado 5 veces, el número de siniestros que puede tener un riesgo en un periodo de tiempo o el pasivo estimado de un cliente fuera de nuestra entidad bancaria, en este último caso pueden interesarnos los clientes con un pasivo estimado superior a 30.000 € fuera de la entidad para que el evento sólo tenga **dos posibles valores si/no**.
 
 **Probabilidad** consiste en asignar a cada evento del espacio muestral un número entre 0 y 1 (no un porcentaje), pero más importante que su definición son las características de la probabilidad:
 
@@ -67,7 +67,7 @@ c2 = train %>% ggplot(aes(x=Age)) + geom_density() +ggtitle("Valores continuos")
 grid.arrange(c1, c2, ncol=2)
 ```
 
-[![](/images/2022/10/wp_editor_md_0b89b903d2d0e9cd56a0ba1dfe9f722b.jpg)](/images/2022/10/wp_editor_md_0b89b903d2d0e9cd56a0ba1dfe9f722b.jpg)
+![](/images/2022/10/wp_editor_md_0b89b903d2d0e9cd56a0ba1dfe9f722b.jpg)
 
 En el caso de los valores discretos la probabilidad de pertenecer a alguno de los grupos de `Vehicle_Age` será:
 
@@ -148,13 +148,13 @@ Para generar números aleatorios que permitan crear simulaciones en R siempre se
 
 ### Distribución de Bernoulli
 
-Es el principio de todo, ejemplo: se tiene una pregunta tipo test y 3 posibles respuestas, sólo una es la correcta, si fuera necesario definir esa función se podría expresar: _Bernoulli(Probabilidad=0.0.33)_ es la función más sencilla y sólo requiere un parámetro _probabilidad_de_acertar_. Sin embargo, lo más habitual cuando se realizan test es responder varias preguntas.
+Es el principio de todo, ejemplo: se tiene una pregunta tipo test y 3 posibles respuestas, sólo una es la correcta, si fuera necesario definir esa función se podría expresar: `Bernoulli(Probabilidad=0.0.33)` es la función más sencilla y sólo requiere un parámetro `probabilidad_de_acertar`. Sin embargo, lo más habitual cuando se realizan test es responder varias preguntas.
 
 ### Distribución binomial
 
-Se realizan n pruebas de Bernoulli independientes, por ejemplo 10 preguntas tipo test con tres posibles respuestas donde sólo una es la correcta y se responden de forma aleatoria. El problema parte de una distribución binomial B con parámetros n = 10 preguntas, p = 0.33 de probabilidad de acertar (1 correcta de 3) estos posibles valores arrojan una distribución B(n=10, p=0.33)
+Se realizan `n` pruebas de Bernoulli independientes, por ejemplo 10 preguntas tipo test con tres posibles respuestas donde sólo una es la correcta y se responden de forma aleatoria. El problema parte de una distribución binomial `B` con parámetros `n = 10` preguntas, `p = 0.33` de probabilidad de acertar (1 correcta de 3) estos posibles valores arrojan una distribución `B(n=10, p=0.33)`
 
-En ese punto comienzan las cuestiones a plantear sobre probabilidades. De 10 preguntas acertando en 5 se obtiene un aprobado, la función de densidad de una distribución B(10,0.33) se puede obtener en R con `dbinom(x, size, prob)` donde `x` es el evento, sacar un 5, `size` es el número de preguntas del test, en este caso 10 y `prob` es la probabilidad de éxito.
+En ese punto comienzan las cuestiones a plantear sobre probabilidades. De 10 preguntas acertando en 5 se obtiene un aprobado, la función de densidad de una distribución `B(10,0.33)` se puede obtener en R con `dbinom(x, size, prob)` donde `x` es el evento, sacar un 5, `size` es el número de preguntas del test, en este caso 10 y `prob` es la probabilidad de éxito.
 
 Si se responde al azar en el test la probabilidad de sacar un 5 es:
 
@@ -197,37 +197,35 @@ Se están planteando ejemplos con valores, pero es posible que interese conocer 
 train %>% group_by(Vehicle_Age) %>% summarise(pct= round(n()/nrow(train),3))
 ```
 
-0
-
 A partir del percentil 80 ya empezarían a aparecer aprobados, pero hasta ese punto no. Sin embargo, puede resultar más sencillo para el científico de datos **simular los resultados** de forma que sean tangibles y poder obtener de ellos las probabilidades deseadas. Para la realización de simulaciones de una función binomial se emplea `rbinom`.
 
 Un test:
 
 ```r
-train %>% group_by(Vehicle_Age) %>% summarise(pct= round(n()/nrow(train),3))
+set.seed(12)
+rbinom(1, 10, 0.33)
 ```
-
-1
 
 Mediante la función `set.seed(12)` se garantiza que el resultado de la simulación siempre es el mismo porque se establece la semilla para la obtención de números aleatorios, en este caso se suspende el único test realizado. Realizando 1000 test y calculando la media o la proporción de casos en las que se supera el 5:
 
 ```r
-train %>% group_by(Vehicle_Age) %>% summarise(pct= round(n()/nrow(train),3))
+set.seed(12)
+x <- rbinom(1000, 10, 0.33)
+mean(x >= 5)
 ```
-
-2
 
 El resultado obtenido vía simulación es similar al que devuelve la función de densidad. Estos resultados se pueden ver gráficamente:
 
 ```r
-train %>% group_by(Vehicle_Age) %>% summarise(pct= round(n()/nrow(train),3))
+set.seed(12)
+x <- rbinom(1000, 10, 0.33)
+hist(x, freq = FALSE, main = "Histograma de simulaciones binomiales", xlab = "Aciertos")
+lines(density(x), col = "blue")
 ```
 
-3
+![](/images/2022/10/wp_editor_md_1f6cf0664c9e05942c9db2996b6a0ca2.jpg)
 
-[![](/images/2022/10/wp_editor_md_1f6cf0664c9e05942c9db2996b6a0ca2.jpg)](/images/2022/10/wp_editor_md_1f6cf0664c9e05942c9db2996b6a0ca2.jpg)
-
-Es evidente que es mejor estudiar. Pero en el gráfico se observa que la media está sobre el 3 ya que en la distribución binomial tiene como media n * prob_exito y como varianza n * prob_exito * prob_fracaso.
+Es evidente que es mejor estudiar. Pero en el gráfico se observa que la media está sobre el 3 ya que en la distribución binomial tiene como media `n * prob_exito` y como varianza `n * prob_exito * prob_fracaso`.
 
 ### Distribución de Poisson
 
@@ -237,45 +235,43 @@ Los sucesos que se distribuyen según una distribución de Poisson aparecen cuan
 - Número de personas en espera.
 - Número de siniestros en un seguro de autos en un año.
 
-En esta situación se tiene una distribución de poisson con parámetro λ = media de eventos. Tiene una característica fundamental, la media es igual que la varianza. Hay un resultado interesante cuando se simulan valores que siguen una distribución de poisson porque se puede identificar el número de veces que se produce un fenómeno con una probabilidad baja de ocurrir.
+En esta situación se tiene una distribución de poisson con parámetro `$\lambda$` = media de eventos. Tiene una característica fundamental, la media es igual que la varianza. Hay un resultado interesante cuando se simulan valores que siguen una distribución de poisson porque se puede identificar el número de veces que se produce un fenómeno con una probabilidad baja de ocurrir.
 
-Para simular valores que siguen una distribución de poisson se emplea `rpois(size, lambda)` donde `lamda`es tanto la media como la desviación típica:
-
-```r
-train %>% group_by(Vehicle_Age) %>% summarise(pct= round(n()/nrow(train),3))
-```
-
-4
-
-[![](/images/2022/10/wp_editor_md_20339d9d0c86b51e68d3c8e75c8465f1.jpg)](/images/2022/10/wp_editor_md_20339d9d0c86b51e68d3c8e75c8465f1.jpg)
-
-Un λ = 0.15 hace que casi un 15% de las observaciones tengan un único evento, pero eso no exime de que se pueda producir más de uno, esta forma aparece, por ejemplo, cuando se trabajan con frecuencias siniestrales en el ámbito actuarial ya que se define como el número de eventos (siniestros) en un periodo de tiempo (365 días). Si el parámetro λ se sitúa en un valores más altos:
+Para simular valores que siguen una distribución de poisson se emplea `rpois(size, lambda)` donde `lambda` es tanto la media como la desviación típica:
 
 ```r
-train %>% group_by(Vehicle_Age) %>% summarise(pct= round(n()/nrow(train),3))
+set.seed(12)
+x <- rpois(1000, 0.15)
+hist(x, freq = FALSE, main = "Simulaciones Poisson (lambda = 0.15)", xlab = "Eventos")
 ```
 
-5
+![](/images/2022/10/wp_editor_md_20339d9d0c86b51e68d3c8e75c8465f1.jpg)
 
-[![](/images/2022/10/wp_editor_md_3bb819300e78cbc19667cda1b2e56e71.jpg)](/images/2022/10/wp_editor_md_3bb819300e78cbc19667cda1b2e56e71.jpg)
+Un `$\lambda$` = 0.15 hace que casi un 15% de las observaciones tengan un único evento, pero eso no exime de que se pueda producir más de uno, esta forma aparece, por ejemplo, cuando se trabajan con frecuencias siniestrales en el ámbito actuarial ya que se define como el número de eventos (siniestros) en un periodo de tiempo (365 días). Si el parámetro `$\lambda$` se sitúa en un valores más altos:
+
+```r
+set.seed(12)
+x <- rpois(1000, 5)
+hist(x, freq = FALSE, main = "Simulaciones Poisson (lambda = 5)", xlab = "Eventos")
+```
+
+![](/images/2022/10/wp_editor_md_3bb819300e78cbc19667cda1b2e56e71.jpg)
 
 La forma de esta distribución es prácticamente triangular una característica que se produce cuando la media es igual que la varianza. En esta distribución, ¿cuál es la probabilidad de obtener un 10?
 
 ```r
-train %>% group_by(Vehicle_Age) %>% summarise(pct= round(n()/nrow(train),3))
+dpois(10, lambda = 5)
 ```
-
-6
 
 La probabilidad es ínfima como se puede comprobar. Esta distribución además de ser utilizada en el mundo actuarial es útil cuando se buscan observaciones extremas como se ha señalado con anterioridad:
 
 ```r
-train %>% group_by(Vehicle_Age) %>% summarise(pct= round(n()/nrow(train),3))
+set.seed(12)
+x <- rpois(1000, 10)
+hist(x, freq = FALSE, main = "Simulaciones Poisson (lambda = 10)", xlab = "Eventos")
 ```
 
-7
-
-[![](/images/2022/10/wp_editor_md_64fe17be168a289da8e38c3bbd4174e6.jpg)](/images/2022/10/wp_editor_md_64fe17be168a289da8e38c3bbd4174e6.jpg)
+![](/images/2022/10/wp_editor_md_64fe17be168a289da8e38c3bbd4174e6.jpg)
 
 Si a un comercio acuden 10 clientes cada 30 minutos es posible que en algún momento se tengan hasta 20 clientes en el comercio, se plantean hipótesis en base al número de dependientes. Se aprecia que es relevante en teoría de colas o líneas de espera para dimensionar servicios de atención al cliente.
 
@@ -288,96 +284,98 @@ El resultado se distribuye de una forma uniforme cuando la probabilidad el event
 Un paseo aleatorio con `runif(size,min,max)` por fecha:
 
 ```r
-train %>% group_by(Vehicle_Age) %>% summarise(pct= round(n()/nrow(train),3))
+set.seed(12)
+x <- runif(1000, 0, 1)
+hist(x, freq = FALSE, main = "Simulaciones Uniformes", xlab = "Valores")
 ```
 
-8
-
-[![](/images/2022/10/wp_editor_md_b65de7b5fcb16303ea16e4b6bd49cfee.jpg)](/images/2022/10/wp_editor_md_b65de7b5fcb16303ea16e4b6bd49cfee.jpg)
+![](/images/2022/10/wp_editor_md_b65de7b5fcb16303ea16e4b6bd49cfee.jpg)
 
 De 0 a 1 el resultado es equiprobable, luego la probabilidad de obtener un dato mayor de 0.2 en un paseo aleatorio será 0.2.
 
 ```r
-train %>% group_by(Vehicle_Age) %>% summarise(pct= round(n()/nrow(train),3))
+punif(0.2, min = 0, max = 1, lower.tail = FALSE)
 ```
 
-9
+![](/images/2022/10/wp_editor_md_0c14e4d54a78afa14a110d42ce9ee473.jpg)
 
-[![](/images/2022/10/wp_editor_md_0c14e4d54a78afa14a110d42ce9ee473.jpg)](/images/2022/10/wp_editor_md_0c14e4d54a78afa14a110d42ce9ee473.jpg)
-
-Dada la equiprobabilidad de la distribución uniforme sería posible simular pi si se tienen puntos distribuidos aleatoriamente en el espacio de dos dimensiones.
+Dada la equiprobabilidad de la distribución uniforme sería posible simular `$\Pi$` si se tienen puntos distribuidos aleatoriamente en el espacio de dos dimensiones.
 
 ```r
-# Es necesario obtener la función de densidad
-densidad <- density(trainAge)
-
-integrate(approxfun(densidad), lower=50, upper=max(trainAge))
+set.seed(12)
+n <- 10000
+x <- runif(n, -1, 1)
+y <- runif(n, -1, 1)
+plot(x, y, pch = 20, main = "Simulación de Pi")
 ```
-
-0
 
 Todo valor que esté a una distancia mayor de 1 del centro estará fuera de la circunferencia:
 
 ```r
-# Es necesario obtener la función de densidad
-densidad <- density(trainAge)
-
-integrate(approxfun(densidad), lower=50, upper=max(trainAge))
+set.seed(12)
+n <- 10000
+x <- runif(n, -1, 1)
+y <- runif(n, -1, 1)
+distancia <- sqrt(x^2 + y^2)
+dentro_circulo <- sum(distancia <= 1)
+plot(x, y, pch = 20, col = ifelse(distancia <= 1, "blue", "red"), main = "Simulación de Pi")
 ```
 
-1
+![](/images/2022/10/wp_editor_md_1a3520acefe87bed2e4d2958b10daaf0.jpg)
 
-[![](/images/2022/10/wp_editor_md_1a3520acefe87bed2e4d2958b10daaf0.jpg)](/images/2022/10/wp_editor_md_1a3520acefe87bed2e4d2958b10daaf0.jpg)
-
-La proporción de casos que caen dentro del círculo será el área, como se trata de un círculo de radio 2 se puede despejar \\Pi como el área por 4:
+La proporción de casos que caen dentro del círculo será el área, como se trata de un círculo de radio 2 se puede despejar `$\Pi$` como el área por 4:
 
 ```r
-# Es necesario obtener la función de densidad
-densidad <- density(trainAge)
-
-integrate(approxfun(densidad), lower=50, upper=max(trainAge))
+set.seed(12)
+n <- 10000
+x <- runif(n, -1, 1)
+y <- runif(n, -1, 1)
+distancia <- sqrt(x^2 + y^2)
+dentro_circulo <- sum(distancia <= 1)
+estimacion_pi <- 4 * (dentro_circulo / n)
+estimacion_pi
 ```
-
-2
 
 Como se ha comentado, la lotería sigue una distribución uniforme. En 1000 semanas jugando, ¿puede tocar el número 10976?
 
 ```r
-# Es necesario obtener la función de densidad
-densidad <- density(trainAge)
-
-integrate(approxfun(densidad), lower=50, upper=max(trainAge))
+set.seed(12)
+sample(1:100000, 1000, replace = TRUE) == 10976
 ```
-
-3
 
 Sin embargo, ¿qué sucede con el reintegro?
 
 ```r
-# Es necesario obtener la función de densidad
-densidad <- density(trainAge)
-
-integrate(approxfun(densidad), lower=50, upper=max(trainAge))
+set.seed(12)
+numeros_loteria <- sample(1:100000, 1000, replace = TRUE)
+reintegros <- sample(0:9, 1000, replace = TRUE)
+sum(numeros_loteria == 10976 & reintegros == 6) # Assuming 6 is the winning digit
 ```
-
-4
 
 De este modo es posible medir la inversión realizada en lotería:
 
 ```r
-# Es necesario obtener la función de densidad
-densidad <- density(trainAge)
+set.seed(12)
+coste_semanal <- 3 # Coste de un boleto
+semanas <- 1000
+inversion_total <- coste_semanal * semanas
 
-integrate(approxfun(densidad), lower=50, upper=max(trainAge))
+# Probabilidad de ganar el gordo (ejemplo simplificado)
+prob_gordo <- 1/100000
+premio_gordo <- 400000 # Ejemplo de premio
+
+# Simulación de ganancias
+ganancias_simuladas <- sum(sample(c(premio_gordo, 0), semanas, replace = TRUE, prob = c(prob_gordo, 1 - prob_gordo)))
+
+rendimiento <- (ganancias_simuladas - inversion_total) / inversion_total
+rendimiento
 ```
-
-5
 
 No parece una inversión muy rentable, con datos estadísticos no es posible saber el número de la lotería a priori, pero si se puede determinar las posibilidades de obtenerlo y transformar esas posibilidades en un resultado económico.
 
 ### Distribución normal
 
-Se tiene una función continua con un punto medio muy probable y conforme se alejan los datos de ese punto medio tanto por la derecha como por la izquierda los eventos pasan a ser menos probables, en este caso se tiene una distribución normal o gaussiana. Es adecuada cuando hay muchas observaciones y cambios pequeños de forma aditiva (suman o restan), **cambios lineales**. Si los efectos son multiplicativos sería otro tipo de distribución. Su media se denomina µ y su desviación típica δ y estos serán los parámetros que definan a la distribución normal.
+Se tiene una función continua con un punto medio muy probable y conforme se alejan los datos de ese punto medio tanto por la derecha como por la izquierda los eventos pasan a ser menos probables, en este caso se tiene una distribución normal o gaussiana. Es adecuada cuando hay muchas observaciones y cambios pequeños de forma aditiva (suman o restan), **cambios lineales**. Si los efectos son multiplicativos sería otro tipo de distribución. Su media se denomina `$\mu$` y su desviación típica `$\delta$` y estos serán los parámetros que definan a la distribución normal.
 
 Tiene una serie de propiedades relevantes:
 
@@ -390,26 +388,38 @@ Tiene una serie de propiedades relevantes:
 Se simula una población de 1000 individuos con una altura media de 174 cm y una desviación de 7.6 cm, se agrupan las alturas simuladas en función del número de desviaciones y se contabilizan cuantos individuos de la población caen en cada grupo de desviaciones:
 
 ```r
-# Es necesario obtener la función de densidad
-densidad <- density(trainAge)
+set.seed(12)
+alturas <- rnorm(1000, mean = 174, sd = 7.6)
+sd_value <- sd(alturas)
+mean_value <- mean(alturas)
 
-integrate(approxfun(densidad), lower=50, upper=max(trainAge))
+# Contar individuos por desviaciones estándar
+one_sd <- sum(alturas >= (mean_value - sd_value) & alturas <= (mean_value + sd_value)) / 1000
+two_sd <- sum(alturas >= (mean_value - 2 * sd_value) & alturas <= (mean_value + 2 * sd_value)) / 1000
+three_sd <- sum(alturas >= (mean_value - 3 * sd_value) & alturas <= (mean_value + 3 * sd_value)) / 1000
+
+print(paste("1 desviación estándar:", round(one_sd * 100, 2), "%"))
+print(paste("2 desviaciones estándar:", round(two_sd * 100, 2), "%"))
+print(paste("3 desviaciones estándar:", round(three_sd * 100, 2), "%"))
 ```
-
-6
 
 En el primer grupo de desviación están aproximadamente el 68% de las personas, entre las 2 desviaciones están el 95% de las personas (aproximadamente) y en 3 desviaciones típicas deben estar el 99.7%. Gráficamente.
 
 ```r
-# Es necesario obtener la función de densidad
-densidad <- density(trainAge)
+set.seed(12)
+alturas <- rnorm(1000, mean = 174, sd = 7.6)
+sd_value <- sd(alturas)
+mean_value <- mean(alturas)
 
-integrate(approxfun(densidad), lower=50, upper=max(trainAge))
+hist(alturas, freq = FALSE, main = "Distribución de Alturas (Normal)", xlab = "Altura (cm)")
+lines(density(alturas), col = "blue")
+
+abline(v = mean_value, col = "black", lty = 2)
+abline(v = c(mean_value - sd_value, mean_value + sd_value), col = "blue", lty = 2)
+abline(v = c(mean_value - 2 * sd_value, mean_value + 2 * sd_value), col = "red", lty = 2)
 ```
 
-7
-
-[![](/images/2022/10/wp_editor_md_4880a4ccce6e811ed273b7ea4ed741c8.jpg)](/images/2022/10/wp_editor_md_4880a4ccce6e811ed273b7ea4ed741c8.jpg)
+![](/images/2022/10/wp_editor_md_4880a4ccce6e811ed273b7ea4ed741c8.jpg)
 
 Entre las barras azules hay una desviación típica de la población, entre las barras rojas hay 2 desviaciones de la población, **el 95% de la población en estudio**. Es decir, si algo se distribuye normalmente el 95% de las ocasiones su valor está entre +/- 2 desviaciones típicas, se puede construir un intervalo.
 
@@ -422,47 +432,44 @@ Es una distribución que viene definida por dos parámetros uno de forma y otro 
 La distribución gamma tiene dos casos especiales la distribución exponencial y la distribución chi cuadrado. La segunda de ellas es una de las distribuciones que se han denominado artificiales y se analizará en capítulos posteriores. Para ver como se modifica la distribución en base a su parámetro se plantea la siguiente simulación:
 
 ```r
-# Es necesario obtener la función de densidad
-densidad <- density(trainAge)
-
-integrate(approxfun(densidad), lower=50, upper=max(trainAge))
+set.seed(12)
+par(mfrow = c(1, 2))
+hist(rgamma(1000, shape = 1, rate = 1), freq = FALSE, main = "Gamma (shape=1, rate=1)", xlab = "")
+hist(rgamma(1000, shape = 5, rate = 1), freq = FALSE, main = "Gamma (shape=5, rate=1)", xlab = "")
+par(mfrow = c(1, 1))
 ```
 
-8
-
-[![](/images/2022/10/wp_editor_md_d1e80931b1957db643d6f3ae6e9741ac.jpg)](/images/2022/10/wp_editor_md_d1e80931b1957db643d6f3ae6e9741ac.jpg)
+![](/images/2022/10/wp_editor_md_d1e80931b1957db643d6f3ae6e9741ac.jpg)
 
 Se observa como el parámetro de escala afecta al valor, no a la forma que permite mover ese «pico de densidad» hacia la derecha, cuando el parámetro de forma supera el 5 hay una aproximación a la distribución normal. Como se puede ver en el código anterior para simular datos con esta distribución está la función `rgamma(size, shape, rate, scale=1/rate)`
 
-Esta distribución aparece habitualmente cuando se tienen importes. El siguiente programa carga un data frame que se denomina _moto_ y que contiene los datos de siniestralidad de una cartera de seguros de motocicletas.
+Esta distribución aparece habitualmente cuando se tienen importes. El siguiente programa carga un data frame que se denomina `moto` y que contiene los datos de siniestralidad de una cartera de seguros de motocicletas.
 
 ```r
-# Es necesario obtener la función de densidad
-densidad <- density(trainAge)
-
-integrate(approxfun(densidad), lower=50, upper=max(trainAge))
+# Suponiendo que 'moto' dataset está disponible
+# moto <- read.csv("path/to/moto.csv")
+# Si no está disponible, creamos un dummy para la demostración
+set.seed(12)
+moto <- data.frame(impsin = rgamma(1000, shape = 2, rate = 0.001))
+head(moto)
 ```
-
-9
 
 El campo `impsin` tiene el importe de los siniestros de la cartera, si se traza un gráfico de densidad:
 
 ```r
-integrate(approxfun(densidad), lower=44, upper=45)
+hist(moto$impsin, freq = FALSE, main = "Distribución del Importe Siniestral", xlab = "Importe")
+lines(density(moto$impsin), col = "blue")
 ```
 
-0
-
-[![](/images/2022/10/wp_editor_md_6fcea694bf5e30cd780b21a0bf8ec068.jpg)](/images/2022/10/wp_editor_md_6fcea694bf5e30cd780b21a0bf8ec068.jpg)
+![](/images/2022/10/wp_editor_md_6fcea694bf5e30cd780b21a0bf8ec068.jpg)
 
 Se observa como es una distribución completamente asimétrica, demasiado, ya que el importe siniestral se aleja mucho en algún caso, en estas situaciones se recomienda realizar un corte para conocer mejor la forma de la distribución:
 
 ```r
-integrate(approxfun(densidad), lower=44, upper=45)
+hist(moto$impsin[moto$impsin < 10000], freq = FALSE, main = "Distribución del Importe Siniestral (< 10000)", xlab = "Importe")
+lines(density(moto$impsin[moto$impsin < 10000]), col = "blue")
 ```
 
-1
-
-[![](/images/2022/10/wp_editor_md_a3f974dc599e3fcc00a8ca4f00ac1f6a.jpg)](/images/2022/10/wp_editor_md_a3f974dc599e3fcc00a8ca4f00ac1f6a.jpg)
+![](/images/2022/10/wp_editor_md_a3f974dc599e3fcc00a8ca4f00ac1f6a.jpg)
 
 Aunque se trabaje con un gran número de observaciones en el caso de realizar un proceso de modelización es mejor conocer que estos datos se distribuyen según una distribución gamma, no todos los eventos cuantitativos se distribuyen normalmente, esto es algo que ha te tener presente el científico de datos.

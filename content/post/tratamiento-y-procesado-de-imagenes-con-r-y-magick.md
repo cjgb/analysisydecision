@@ -90,3 +90,4 @@ image_resize(c(sean_1, sean_2, sean_3, sean_4, sean_5), '300x300!') %>%
 `image_resize` ya realiza la `homogeneización` de las `5 imágenes` de `Sir Connery`, por eso `comentaba` la `redundancia`. Ponemos un `fondo` con `image_background`, la `combinación` entre `image_morph` e `image_animate` realiza la `animación` donde hemos puesto la opción `fps` (`frames por segundo`) para que no `pasen` tan `rápido`. Desde mi `punto de vista` la forma más `sencilla` de realizar `animaciones`. Por cierto, a la hora de guardar la imagen lo hago desde el `navegador`.
 
 ```
+```

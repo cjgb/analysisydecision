@@ -23,7 +23,7 @@ url: /blog/trucos-sas-lista-de-variables-missing/
 
 Duda que me plantearon ayer por la tarde. Dada una serie de variables determinar que registro tiene todas esas variables nulas. El truco que planteo puede servir para determinar incluso cuantos valores perdidos tiene esa lista de variables, ese truco me le reservo para otro día. El código lo acompaño con un ejemplo para que se pueda ejecutar y analizar su funcionamiento:
 
-```r
+````r
 data aleatorio;
 do i=1 to 20000;
 aleat1=sqrt(rannor(45));
@@ -46,6 +46,6 @@ end;
 drop j;
 if nulo=0;
 run;
-```
+````
 
 Muy sencillo el truco. Si se encuentra alguna variable que no es nula la variable nulo ya no toma valor 0. Espero que os sea de utilidad. Saludos.

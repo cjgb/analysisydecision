@@ -22,7 +22,7 @@ url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-3-ma
 
 ## Universo tidyverse
 
-En el capítulo anterior se iniciaba el método dialéctico a utilizar en el resto del ensayo fundamentado en la idea de **transformar datos en información mediante análisis estadístico con el software R**. Los datos a explotar tienen una estructura tabular que llamamos _data frame_. Esta estructura contiene observaciones y variables sobre las que se fundamenta la labor del científico de datos ya que son ellas las que plantean y resuelven problemas. Para trabajar con data frames en R disponemos de un entorno conocido como `tidyverse` que engloba un gran número de librerías de R.
+En el capítulo anterior se iniciaba el método dialéctico a utilizar en el resto del ensayo fundamentado en la idea de **transformar datos en información mediante análisis estadístico con el software R**. Los datos a explotar tienen una estructura tabular que llamamos data frame. Esta estructura contiene observaciones y variables sobre las que se fundamenta la labor del científico de datos ya que son ellas las que plantean y resuelven problemas. Para trabajar con data frames en R disponemos de un entorno conocido como `tidyverse` que engloba un gran número de librerías de R.
 
 ![](https://pbs.twimg.com/media/D-X2bddXsAAWLE7.jpg)
 
@@ -34,9 +34,11 @@ ______________________________________________________________________
 
 Para iniciarse en el manejo de datos se destaca el uso de la librería `dplyr` que se encuentra dentro de este **universo tidyverse** y será sobre la que verse este capítulo. Como norma general cuando se trabaje con data frames y `dplyr` manipulando datos se realizarán acciones separadas con la expresión clave `%>%` ‘pipe’ de modo:
 
-`df_final <- df_inicial %>% ACCION1 %>% ACCION2 %>% … %>% ACCION_N`
+```r
+df_final <- df_inicial %>% ACCION1 %>% ACCION2 %>% ... %>% ACCION_N
+```
 
-Cada acción tiene su correspondiente _verbo_ :
+Cada acción tiene su correspondiente verbo:
 
 - Selección de columnas -> `select`
 - Selección de registros -> `filter`
@@ -56,11 +58,11 @@ data(iris)
 head(iris, 5)
 ```
 
-`library(tidyverse)` permite disponer de las librerías del universo tidyverse, los ejemplos se van a realziar con el conjunto de datos iris al que se accede con `data`, `head` nos permite ver los 5 primeros registros del data frame.
+`library(tidyverse)` permite disponer de las librerías del universo `tidyverse`, los ejemplos se van a realziar con el conjunto de datos `iris` al que se accede con `data`, `head` nos permite ver los 5 primeros registros del data frame.
 
 ## Selección de registros
 
-Al seleccionar registros se está seleccionando una muestra de observaciones en base a un criterio. El verbo de `dplyr`a emplear será `filter`.
+Al seleccionar registros se está seleccionando una muestra de observaciones en base a un criterio. El verbo de `dplyr` a emplear será `filter`.
 
 ```r
 setosa <- iris %>%
@@ -118,7 +120,7 @@ iris2 <- iris %>%
   mutate(Sepal.Length.rela = Sepal.Length/mean(Sepal.Length))
 ```
 
-Se crea una variable cualitativa mediante una condición con la función `ifelse`, también se ilustra el ejemplo con la creación de una variable numérica que es la operación matemática de dividir `Sepal.Lentgh` por su propia media.
+Se crea una variable cualitativa mediante una condición con la función `ifelse`, también se ilustra el ejemplo con la creación de una variable numérica que es la operación matemática de dividir `Sepal.Length` por su propia media.
 
 Muy habitual en el trabajo diario de un científico de datos a la hora de crear variables es la necesidad de anidar condiciones, para ello se puede emplear la función [`case_when`](https://dplyr.tidyverse.org/reference/case_when.html). Un ejemplo de uso es.
 
@@ -132,7 +134,7 @@ iris2 <- iris %>%
 table(iris2$Sepal.Length.agrupado)
 ```
 
-Las condiciones son excluyentes en función del orden y se recomienda especificar la condición final _«y si no»_ mediante `TRUE`, facilita el control de errores. A lo largo de todo el ensayo será una función que aparezca de forma recurrente.
+Las condiciones son excluyentes en función del orden y se recomienda especificar la condición final «y si no» mediante `TRUE`, facilita el control de errores. A lo largo de todo el ensayo será una función que aparezca de forma recurrente.
 
 ## Ordenar datos
 
@@ -154,7 +156,7 @@ Separando por `,` es posible poner más de una variable en la ordenación.
 
 ## Sumarizar valores
 
-En este caso se emplea una combinación de acciones, primero `group_by` indica el campo por el que se desea agrupar, el campo a sumarizar. Definido el campo, mediante `summarise` se indica la operación matemática y la variable sobre la que se realiza.
+En este caso se emplea una combinación de acciones, primero `group_by` indica el campo por el que se desea agrupar, el campo a sumarizar. Definido el campo, mediante `summarize` se indica la operación matemática y la variable sobre la que se realiza.
 
 ```r
 iris %>% group_by(Species) %>%
@@ -163,7 +165,7 @@ iris %>% group_by(Species) %>%
             rows = n())
 ```
 
-Las posibles agregaciones a realizar con summarise son amplias, se disponen de funciones de agrupación, rango o dispersión.
+Las posibles agregaciones a realizar con `summarize` son amplias, se disponen de funciones de agrupación, rango o dispersión.
 
 ## Combinación de acciones
 
@@ -174,8 +176,6 @@ setosa <- iris %>%
   filter(Species=="setosa")
 head(setosa, 5)
 ```
-
-0
 
 Siempre se respeta el orden de ejecución por lo que variables creadas o acciones utilizadas en un paso anterior pueden ser empleadas en un paso posterior.
 

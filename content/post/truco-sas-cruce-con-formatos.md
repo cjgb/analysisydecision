@@ -128,7 +128,7 @@ RUN;
 
 Por último cargamos el conjunto de datos.
 
-```sas
+````sas
 data conjunto_SMALL;
 set conjunto_LARGE (keep=contrato);
 if _n_<=100000;
@@ -169,3 +169,4 @@ TOTAL PROCESO:
 frente a los 47.13 segundos.
 
 Probad este metodo , contadnos el ahorro de tiempo y si teneís alguna otra duda.
+````

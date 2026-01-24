@@ -45,7 +45,7 @@ Es decir, podemos decir que tanto la RAE como el Quijote coinciden a la hora de 
 
 ¿Pero no sería mejor tener en cuenta el orden de aparición de las palabras para optimizar los verdes en las primeras rondas? Pues es cierto que fijar una posición (el verde) es mejor que conocer la existencia dentro de la palabra (el amarillo dorado), pero hay que tener en cuenta que también jugará a nuestro favor el sesgo que tienen las palabras (por ejemplo de finalizar en A o en O) a la hora de elegir las posibles palabras candidatas. Para responder esta pregunta, la mejor opción sería aplicar un enfoque de aprendizaje automático que me comprometo a realizarlo una vez tenga un dataframe con 100 casos de control (en unos meses al ritmo de Wordle).
 
-Una vez llegamos a este punto, pongamos a prueba nuestro script. El funcionamiento es fácil: empezar con `ACTOR-SENIL` y consultar en la RAE (con la misma función `crea_wordle`) las posibles palabras ganadoras teniendo cuenta la información recibida. En el caso de que tengamos muchas palabras candidatas, podemos limitar la búsqueda a las palabras que aparecen en el Quijote.
+Una vez llegamos a este punto, pongamos a prueba nuestro script. El funcionamiento es fácil: empezar con `ACTOR-SENIL` y consultar en la RAE (con la misma función `crea_wordle()`) las posibles palabras ganadoras teniendo cuenta la información recibida. En el caso de que tengamos muchas palabras candidatas, podemos limitar la búsqueda a las palabras que aparecen en el Quijote.
 
 ### Ejemplo 1
 
@@ -97,6 +97,7 @@ print(ganadora)
 ```text
 ['ganar']
 ```
+
 ![](/images/2022/02/actor_senil_2-250x300.png)
 
 En conclusión, y a la espera de verificar como influiría el posicionamiento, podemos decir que `ACTOR` y `SENIL` serían las mejores palabras para comenzar en el Wordle. `LICOR` y `ANTES` si hubiésemos nacido en el siglo XVII.

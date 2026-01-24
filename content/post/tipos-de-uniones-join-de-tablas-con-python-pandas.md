@@ -122,7 +122,6 @@ df2 = pd.DataFrame(ejemplo,index=anio)
 df2
 ```
 
-
 Si no tenemos índices es importante especificar en el `on=` variable con la que hacemos la unión de las tablas. En este caso ponemos todas las uniones:
 
 ## Left, outer, right con campo de unión común
@@ -136,7 +135,6 @@ df2 = pd.DataFrame(ejemplo,index=anio)
 df2
 ```
 
-
 ## Inner join con campo de unión de distinto nombre
 
 ```python
@@ -147,6 +145,5 @@ anio=["2013", "2014", "2015", "2016"]
 df2 = pd.DataFrame(ejemplo,index=anio)
 df2
 ```
-
 
 Uniones más habituales en una sola entrada y en pocas líneas de código.

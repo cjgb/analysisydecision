@@ -25,13 +25,13 @@ title: El sobremuestreo ¿mejora mi estimación?
 url: /blog/el-sobremuestreo-c2bfmejora-mi-estimacion/
 ---
 
-El **sobremuestreo**(oversampling) es una técnica de muestreo que se emplea habitualmente cuando tenemos una baja proporción de casos positivos en clasificaciones binomiales. Los modelos pueden “despreciar” los casos positivos por ser muy pocos y nuestro modelo no funcionaría. Para **incrementar el número de casos positivos** se emplea el sobremuestreo. Ejemplos habituales pueden ser los modelos de fraude, un 99% de las compras son correctas, un 1% son fraudulentas. Si realizo un modelo puedo estar seguro al 99% de que todas mis compras son correctas, en este caso hemos de realizar un sobremuestreo para incrementar nuestros casos de fraude y poder detectar los patrones.
+El `sobremuestreo` (`oversampling`) es una técnica de muestreo que se emplea habitualmente cuando tenemos una baja proporción de casos positivos en clasificaciones binomiales. Los modelos pueden "despreciar" los casos positivos por ser muy pocos y nuestro modelo no funcionaría. Para incrementar el número de casos positivos se emplea el sobremuestreo. Ejemplos habituales pueden ser los modelos de fraude, un 99% de las compras son correctas, un 1% son fraudulentas. Si realizo un modelo puedo estar seguro al 99% de que todas mis compras son correctas, en este caso hemos de realizar un sobremuestreo para incrementar nuestros casos de fraude y poder detectar los patrones.
 
 Personalmente no sabría deciros el porcentaje de casos positivos a partir del cual sería necesario llevar a cabo un proceso de remuestreo. A mi particularmente me gusta hacerlo siempre. Por lo menos realizar algunas pruebas para identificar aquellas variables que son más influyentes y comenzar a eliminar aquellas que no van a funcionar. Busco exagerar. Tampoco me quiero mojar mucho sobre la proporción de casos positivos y negativos, pero si estamos realizando un nuevo muestreo podemos emplear perfectamente un 50% para ambos, aquí si que dependemos del número de registros con el que estemos trabajando ya que al final el sobremuestreo será la repetición de los casos positivos sobre la tabla de entrada del modelo.
 
-Sin embargo, cuando ya tengo decidido como va a ser mi modelo no me gusta realizar sobremuestreo. Lo considero un paso previo (algún lector del blog considerará estas palabras incoherentes). Después de toda esta exposición teórico-práctica de malos usos de un dinosaurio en realidad lo que cabepreguntarse es\*\*¿mejora la estimación un modelo con sobremuestreo?\*\*
+Sin embargo, cuando ya tengo decidido como va a ser mi modelo no me gusta realizar sobremuestreo. Lo considero un paso previo (algún lector del blog considerará estas palabras incoherentes). Después de toda esta exposición teórico-práctica de malos usos de un dinosaurio en realidad lo que cabe preguntarse es **¿mejora la estimación un modelo con sobremuestreo?**
 
-Abrimos**R y Tinn-R** y manos a la obra. Datos simulados de una entidad bancaria que desea realizar un modelo para realizar una campaña comercial sobre renta o Pensión Vitalicia Inmediata (PVI) conocidos por todos:
+Abrimos `R` y `Tinn-R` y manos a la obra. Datos simulados de una entidad bancaria que desea realizar un modelo para realizar una campaña comercial sobre renta o Pensión Vitalicia Inmediata (PVI) conocidos por todos:
 
 ```r
 clientes=20000
@@ -54,14 +54,14 @@ datos_ini = subset(datos_ini, select = -c(potencial))
 table(datos_ini$pvi)
 ```
 
-Sólo encontramos un 2% de casos positivos de los 20.000 clientes analizados. Para nuestro pequeño estudio vamos a emplear **regresión logística y árboles de decisión** , pero lo primero que vamos a hacer es seleccionar una parte de las observaciones para validar los modelos realizados:
+Sólo encontramos un 2% de casos positivos de los 20.000 clientes analizados. Para nuestro pequeño estudio vamos a emplear `regresión logística` y `árboles de decisión`, pero lo primero que vamos a hacer es seleccionar una parte de las observaciones para validar los modelos realizados:
 
 ```r
 #Subconjunto de validacion
 validacion <- sample(1:clientes,5000)
 ```
 
-Estos 5.000 clientes no entrenarán ningún modelo sólo validarán los modelos, con y sin sobremuestreo, que realicemos. Vamos a generar la muestra con un porcentaje del 50% de casos positivos mediante la librería de R _sample_ :
+Estos 5.000 clientes no entrenarán ningún modelo sólo validarán los modelos, con y sin sobremuestreo, que realicemos. Vamos a generar la muestra con un porcentaje del 50% de casos positivos mediante la librería de `R` `sample`:
 
 ```r
 #install.packages("sampling")
@@ -71,7 +71,7 @@ selec1 <- strata( datos_ini[-validacion,], stratanames = c("pvi"),
 size = c(5000,5000), method = "srswr" )
 ```
 
-Con _strata_ realizamos el muestreo estratificado, el estrato es nuestra variable dependiente y así lo indicamos en _stratanames_ , como tenemos 2 estratos en _size_ indicamos 5000 observaciones para cada uno de ellos y el método _srswr señala_ que es muestreo con reemplazamiento (with replacement).
+Con `strata` realizamos el muestreo estratificado, el estrato es nuestra variable dependiente y así lo indicamos en `stratanames`, como tenemos 2 estratos en `size` indicamos 5000 observaciones para cada uno de ellos y el método `srswr` señala que es muestreo con reemplazamiento (with replacement).
 
 _Modelo de regresión logística:_
 
@@ -87,7 +87,7 @@ modelo.2 = glm(pvi~.,data=datos_ini[selec1,],family=binomial)
 summary(modelo.2)
 ```
 
-Ambos modelos convergen, tienen parámetros similares y las inferencias sobre ellos son iguales. ¿Qué modelo funciona mejor? La librería ROCR nos permite realizar curvas ROC muy empleadas para medir el comportamiento de los modelos realizados. No entramos en detalle sobre el código para no alargar esta entrada:
+Ambos modelos convergen, tienen parámetros similares y las inferencias sobre ellos son iguales. ¿Qué modelo funciona mejor? La librería `ROCR` nos permite realizar curvas `ROC` muy empleadas para medir el comportamiento de los modelos realizados. No entramos en detalle sobre el código para no alargar esta entrada:
 
 ```r
 #Realizamos la curva ROC para ambos modelos y comparamos
@@ -156,4 +156,4 @@ Analizamos el gráfico resultante:
 
 ![roc-arboles-rpart-sobremuestreo.png](/images/2011/11/roc-arboles-rpart-sobremuestreo.png)
 
-En este caso las curvas ROC son distintas y os dejo que saquéis vuestras propias conclusiones y las comentéis en el blog. Para evitarós problemas os dejo en [este enlace](/images/2011/11/sobremuestreo-2.r "sobremuestreo-2.r") el código empleado para este experimento. Ejecutadlo para analizar los resultados.
+En este caso las curvas `ROC` son distintas y os dejo que saquéis vuestras propias conclusiones y las comentéis en el blog. Para evitarós problemas os dejo en [este enlace](/images/2011/11/sobremuestreo-2.r "sobremuestreo-2.r") el código empleado para este experimento. Ejecutadlo para analizar los resultados.

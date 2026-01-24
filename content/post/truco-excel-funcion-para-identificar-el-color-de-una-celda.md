@@ -27,6 +27,7 @@ Function color_celda(celda As Range)
 color_celda = celda.Interior.Color
 End Function
 ```
+
 En este caso podríamos realizar funciones del tipo =SI(color_celda(A1)\<> 16777215; ACCION1; ACCION2) además podemos darle otra vuelta de tuerca y si deseamos ordenar por colores podemos hacer:
 
 ```visual-basic
@@ -34,4 +35,5 @@ Function color_orden(celda As Range)
 color_orden = celda.Interior.ColorIndex
 End Function
 ```
+
 Establecemos un orden de colores y podemos realizar más acciones. Un truco sencillo que puede ayudar a las intervenciones manuales sobre nuestros libros de Excel. Saludos.

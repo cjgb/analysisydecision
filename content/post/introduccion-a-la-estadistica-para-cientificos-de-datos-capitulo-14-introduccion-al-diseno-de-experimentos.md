@@ -20,48 +20,48 @@ title: Introducción a la Estadística para Científicos de Datos. Capítulo 14.
 url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-14-introduccion-al-diseno-de-experimentos/
 ---
 
-Otro de los temas dedicados a la Estadística que tiene que conocer el científico de datos es el diseño de experimentos. La motivación del diseño de experimentos está magistralmente ilustrada por [ Julio Mulero](https://elultimoversodefermat.wordpress.com/) en [este hilo de Twitter](https://twitter.com/juliomulero/status/1331993894721097729). Y se considera imprescindible conocer estas técnicas porque aportan una forma de trabajar, de plantear los problemas y un conocimiento de las variables que mejorará el desempeño (y los modelos) del científico de datos.
+Otro de los temas dedicados a la Estadística que tiene que conocer el científico de datos es el diseño de experimentos. La motivación del diseño de experimentos está magistralmente ilustrada por [Julio Mulero](https://elultimoversodefermat.wordpress.com/) en [este hilo de Twitter](https://twitter.com/juliomulero/status/1331993894721097729). Y se considera imprescindible conocer estas técnicas porque aportan una forma de trabajar, de plantear los problemas y un conocimiento de las variables que mejorará el desempeño (y los modelos) del científico de datos.
 
-Los modelos de diseño de experimentos son modelos estadísticos cuyo objetivo es **determinar si unos factores influyen en una variable respuesta cuantitativa** , y si influyen cuantificar esa influencia.
+Los modelos de diseño de experimentos son modelos estadísticos cuyo objetivo es **determinar si unos factores influyen en una `variable respuesta cuantitativa`** , y si influyen cuantificar esa influencia.
 
 ## Fundamentos del diseño experimental
 
 Es necesario plantear conceptos básicos (algunos ya conocidos) a tener en cuenta a la hora de realizar diseño de experimentos.
 
-**Observación experimental** : es cada medición de la variable respuesta.
+**Observación experimental**: es cada medición de la variable respuesta.
 
-**Unidad experimental** : son los objetos o los individuos sobre los que se realiza la observación experimental.
+**Unidad experimental**: son los objetos o los individuos sobre los que se realiza la observación experimental.
 
-**Tamaño del Experimento** : es el número total de unidades experimentales recogidas en el diseño.
+**Tamaño del Experimento**: es el número total de unidades experimentales recogidas en el diseño.
 
-**Variable de interés o respuesta** : es la variable cuantitativa que se desea estudiar y controlar su variabilidad, la variable dependiente.
+**Variable de interés o respuesta**: es la variable cuantitativa que se desea estudiar y controlar su variabilidad, la variable dependiente.
 
-**Factor** : son las variables cualitativas independientes que pueden influir en la variabilidad de la variable de interés. Pueden ser:
+**Factor**: son las `variables cualitativas independientes` que pueden influir en la variabilidad de la variable de interés. Pueden ser:
 
-- Factor tratamiento: es un factor del que interesa conocer su influencia en la respuesta.
-- Factor bloque: es un factor que aporta variación pero no es de interés en el experimento. Sin embargo, se quiere controlar para disminuir la variabilidad residual.
+- `Factor tratamiento`: es un factor del que interesa conocer su influencia en la respuesta.
+- `Factor bloque`: es un factor que aporta variación pero no es de interés en el experimento. Sin embargo, se quiere controlar para disminuir la variabilidad residual.
 
 Según sean elegidos por el experimentador o elegidos al azar de una amplia población se denominan factores de efectos fijos o factores de efectos aleatorios.
 
-**Niveles** : cada uno de los resultados de un factor.
+**Niveles**: cada uno de los resultados de un factor.
 
-**Tratamiento** : es una combinación específica de los niveles de los factores en estudio. Son, por tanto, las condiciones experimentales que se desean comparar en el experimento. En un diseño con un único factor son los distintos niveles del factor y en un diseño con varios factores son las posibles combinaciones de niveles de los factores.
+**Tratamiento**: es una combinación específica de los niveles de los factores en estudio. Son, por tanto, las condiciones experimentales que se desean comparar en el experimento. En un diseño con un único factor son los distintos niveles del factor y en un diseño con varios factores son las posibles combinaciones de niveles de los factores.
 
-**Interacción de factores** : existe interacción entre dos factores F_i y F_j si el efecto de algún nivel de F_i cambia al cambiar de nivel en F_j. Esta definición puede hacerse de forma simétrica y se puede generalizar a interacciones de orden tres o superior. El análisis de interacciones permitirá al científico de datos mejorar variables presentes en sus modelos y tiene un apartado específico más adelante.
+**Interacción de factores**: existe interacción entre dos factores `F_i` y `F_j` si el efecto de algún nivel de `F_i` cambia al cambiar de nivel en `F_j`. Esta definición puede hacerse de forma simétrica y se puede generalizar a interacciones de orden tres o superior. El análisis de interacciones permitirá al científico de datos mejorar variables presentes en sus modelos y tiene un apartado específico más adelante.
 
-**Ortogonalidad de factores** : dos factores F_i y F_j con i y j niveles, respectivamente, son ortogonales si en cada nivel i de F_i el número de observaciones de los j niveles de F_j están en las mismas proporciones. Esta propiedad permite separar los efectos simples de los factores en estudio.
+**Ortogonalidad de factores**: dos factores `F_i` y `F_j` con `i` y `j` niveles, respectivamente, son ortogonales si en cada nivel `i` de `F_i` el número de observaciones de los `j` niveles de `F_j` están en las mismas proporciones. Esta propiedad permite separar los efectos simples de los factores en estudio.
 
-**Diseño equilibrado o balanceado** : es el diseño en el que todos los tratamientos son asignados a un número igual de unidades experimentales.
+**Diseño equilibrado o balanceado**: es el diseño en el que todos los tratamientos son asignados a un número igual de unidades experimentales.
 
 ## Fuentes de variabilidad
 
-Este tipo de análisis se basan en la experimentación y en el análisis de resultados, se estudia si empleando un tratamiento, como una vacuna, un nuevo diseño de la web, unos nuevos precios o modificando una publicación en RRSS se producen mejoras en unas unidades experimentales que serán los elementos que participan en el test, individuos, clics, likes… Fuera de un laboratorio es complicado controlar los efectos de una vacuna o una modificación de una web. Existen fuentes variación distintas a los factores que se pretenden estudiar y estos factores exógenos al problema pueden plantear cambios significativos en la variable respuesta. Por este motivo es importante diseñar correctamente el experimento y determinar los tipos de variabilidad se pueden encontrar a la hora de realizar el experimento:
+Este tipo de análisis se basan en la experimentación y en el análisis de resultados, se estudia si empleando un tratamiento, como una vacuna, un nuevo diseño de la web, unos nuevos precios o modificando una publicación en `RRSS` se producen mejoras en unas unidades experimentales que serán los elementos que participan en el test, individuos, clics, likes… Fuera de un laboratorio es complicado controlar los efectos de una vacuna o una modificación de una web. Existen fuentes variación distintas a los factores que se pretenden estudiar y estos factores exógenos al problema pueden plantear cambios significativos en la variable respuesta. Por este motivo es importante diseñar correctamente el experimento y determinar los tipos de variabilidad se pueden encontrar a la hora de realizar el experimento:
 
-- **Variabilidad sistemática y planificada**. La establece los tratamientos y es la que se desea estudiar, tiene o no vacuna, grupo de control frente a grupo de tratamiento o la edad del individuo, aunque no interese medirla puede interesar el efecto. En una publicación en RRSS la vertiente política puede ser de interés pero aparece la hora de la publicación como fuente de variación, se tiene que tener claro que se desea medir para evitar introducir variabilidad no deseada.
+- **Variabilidad sistemática y planificada**. La establece los tratamientos y es la que se desea estudiar, tiene o no vacuna, grupo de control frente a grupo de tratamiento o la edad del individuo, aunque no interese medirla puede interesar el efecto. En una publicación en `RRSS` la vertiente política puede ser de interés pero aparece la hora de la publicación como fuente de variación, se tiene que tener claro que se desea medir para evitar introducir variabilidad no deseada.
 
-- **Variabilidad por la naturaleza**. Es un componente que a priori es aleatorio en el caso de la aplicación de la vacuna puede ser la raza o el lugar de residencia. En una publicación en RRSS pueden influir otras noticias de actualidad que inicialmente se desconocían y que han surgido en el momento de la publicación.
+- **Variabilidad por la naturaleza**. Es un componente que a priori es aleatorio en el caso de la aplicación de la vacuna puede ser la raza o el lugar de residencia. En una publicación en `RRSS` pueden influir otras noticias de actualidad que inicialmente se desconocían y que han surgido en el momento de la publicación.
 
-- **Variabilidad sistemática y no planificada**. Hay causas desconocidas que afectan a los resultados y es fundamental encontrar estas fuentes de variación de la variable respuesta. En la prueba de la vacuna pueden existir patologías previas que estén influyendo negativamente y en el caso de las RRSS variaciones en la priorización llevadas a cabo por la propia red social o publicaciones de la competencia deberían detectarse para aislar su comportamiento.
+- **Variabilidad sistemática y no planificada**. Hay causas desconocidas que afectan a los resultados y es fundamental encontrar estas fuentes de variación de la variable respuesta. En la prueba de la vacuna pueden existir patologías previas que estén influyendo negativamente y en el caso de las `RRSS` variaciones en la priorización llevadas a cabo por la propia red social o publicaciones de la competencia deberían detectarse para aislar su comportamiento.
 
 ## Planificación
 
@@ -87,31 +87,31 @@ El paradigma de esta situación se da cuando se quieren analizar procesos indust
 
 ## Diseños factoriales
 
-Los diseños factoriales son los más sencillos y van a introducir las cuestiones que se plantean resolver mediante diseño de experimentos. ¿Las medias de una variable Y son las mismas para todos los niveles de una variable X? ¿Las medias de una variable Y son las mismas para todos los niveles de unas variables X_i y X_j?
+Los diseños factoriales son los más sencillos y van a introducir las cuestiones que se plantean resolver mediante diseño de experimentos. ¿Las medias de una variable `Y` son las mismas para todos los niveles de una variable `X`? ¿Las medias de una variable `Y` son las mismas para todos los niveles de unas variables `X_i` y `X_j`?
 
-### Modelo unifactorial. A/B testing
+### Modelo unifactorial. `A/B testing`
 
-Al igual que pasaba con la regresión lineal simple el modelo con un sólo factor es el principio de todo. Como ya se ha anticipado con anterioridad el modelo matemático es del tipo respuesta = constante + tratamiento_i + error y la cuestión que se plantea con él es. ¿Para todo i de tratamiento_i son iguales las medias de respuesta?
+Al igual que pasaba con la regresión lineal simple el modelo con un sólo factor es el principio de todo. Como ya se ha anticipado con anterioridad el modelo matemático es del tipo respuesta = constante + tratamiento_i + error y la cuestión que se plantea con él es. ¿Para todo `i` de `tratamiento_i` son iguales las medias de respuesta?
 
-Un ejemplo claro de modelo unifactorial es el A/B testing, con dialéctica se puede vestir como un análisis avanzado pero es el diseño experimental más sencillo. La tasa de conversión o el número de clics en una noticia son medidas cuantitativas fundamentales tanto en el comercio electrónico como en webs de contenidos. En esa medición que suele ser % de éxito (media de una proporción) pueden influir muchos factores como son la UX, el tráfico generado, la competencia, reputación,… El objetivo es aislar esos factores y realizar una medición que nos permita decantarnos por un diseño u otro o por un contenido u otro. A este diseño experimental se le conoce como A/B testing.
+Un ejemplo claro de modelo unifactorial es el `A/B testing`, con dialéctica se puede vestir como un análisis avanzado pero es el diseño experimental más sencillo. La tasa de conversión o el número de clics en una noticia son medidas cuantitativas fundamentales tanto en el comercio electrónico como en webs de contenidos. En esa medición que suele ser % de éxito (media de una proporción) pueden influir muchos factores como son la `UX`, el tráfico generado, la competencia, reputación,… El objetivo es aislar esos factores y realizar una medición que nos permita decantarnos por un diseño u otro o por un contenido u otro. A este diseño experimental se le conoce como `A/B testing`.
 
-En el comercio electrónico el A/B testing puede consistir en la comparación de dos versiones de una web que comparten URL y se han de mostrar aleatoriamente a los usuarios de la página una u otra versión. Se podrá comparar una medida de conversión para cada situación propuesta mediante un diseño experimental pero es fundamental **aleatorizar** completamente el experimento para que la variable a medir solamente se vea influenciada por el diseño. En el caso de la selección de contenidos [ hay ejemplos como el de Facebook](https://blog.ida.cl/marketing-digital/estudio-usuarios-manipulacion-facebook/?_gl=1%2Ahzg0xo%2A_ga%2AcGJGRFBveFpTUHhQT0wyal9vY2FNTGYwLXFtV1RHU09JMVZEa2lOV2dTZ1FMYlFIUDZGYnVvdmotZ3dFN2t0Rg) que ha analizado emociones mediante esta técnica, ofreciendo a una selección de usuarios mensajes positivos y a otra selección mensajes negativos o mensajes con una ideología u otra para poder determinar las ideas políticas de los usuarios.
+En el comercio electrónico el `A/B testing` puede consistir en la comparación de dos versiones de una web que comparten `URL` y se han de mostrar aleatoriamente a los usuarios de la página una u otra versión. Se podrá comparar una medida de conversión para cada situación propuesta mediante un diseño experimental pero es fundamental **aleatorizar** completamente el experimento para que la variable a medir solamente se vea influenciada por el diseño. En el caso de la selección de contenidos [ejemplos como el de Facebook](https://blog.ida.cl/marketing-digital/estudio-usuarios-manipulacion-facebook/?_gl=1%2Ahzg0xo%2A_ga%2AcGJGRFBveFpTUHhQT0wyal9vY2FNTGYwLXFtV1RHU09JMVZEa2lOV2dTZ1FMYlFIUDZGYnVvdmotZ3dFN2t0Rg) que ha analizado emociones mediante esta técnica, ofreciendo a una selección de usuarios mensajes positivos y a otra selección mensajes negativos o mensajes con una ideología u otra para poder determinar las ideas políticas de los usuarios.
 
-La filosofía del ciclo de procesos de A/B testing es:
+La filosofía del ciclo de procesos de `A/B testing` es:
 
 > Experimentar >> Analizar estadísticamente los resultados >> Seleccionar el elemento ganador >> Proponer nuevas Ideas >> Experimentar
 
 En función del modo en que interactuan las poblaciones en análisis se tienen distintos tipos de test:
 
-- Test A/A. El mismo experimento se aplica en poblaciones distintas. Esta labor la realizará el científico de datos en múltiples ocasiones si trabaja en el ámbito del marketing, para medir una campaña comercial seleccionará un grupo de tratamiento y un grupo de control. Una campaña comercial es un experimento y ha de medirse el éxito.
+- Test `A/A`. El mismo experimento se aplica en poblaciones distintas. Esta labor la realizará el científico de datos en múltiples ocasiones si trabaja en el ámbito del marketing, para medir una campaña comercial seleccionará un grupo de tratamiento y un grupo de control. Una campaña comercial es un experimento y ha de medirse el éxito.
 
-- Test A/B. Distinto experimento, distintas poblaciones pero **situación homogénea**. Se prueba un tipo de publicación en RRSS analizando el número de likes para cada tipo de publicación. Un diseño de una web, se prueba otro diseño y se analiza el tiempo de permanencia en ella. En estos casos se contrastan diseños y es necesario velar porque los usuarios de las web y los tiempos de exposición sean similares, que exista esa igualdad de condiciones que garantice la aleatoriedad de las mediciones.
+- Test `A/B`. Distinto experimento, distintas poblaciones pero **situación homogénea**. Se prueba un tipo de publicación en `RRSS` analizando el número de `likes` para cada tipo de publicación. Un diseño de una web, se prueba otro diseño y se analiza el tiempo de permanencia en ella. En estos casos se contrastan diseños y es necesario velar porque los usuarios de la web y los tiempos de exposición sean similares, que exista esa igualdad de condiciones que garantice la aleatoriedad de las mediciones.
 
-- Test A/B/N. Similar al test A/B pero introduciendo nuevos factores, en este caso es un diseño factorial con más de un factor en análisis con las complicaciones que ello tiene como se verá posteriormente.
+- Test `A/B/N`. Similar al test `A/B` pero introduciendo nuevos factores, en este caso es un diseño factorial con más de un factor en análisis con las complicaciones que ello tiene como se verá posteriormente.
 
 **Ejemplo con R**
 
-Para ilustrar como se realiza un modelo unifactorial A/B testing se plantea testear si el diseño de una página provoca más o menos conversión de objetivos. Al científico de datos le han suministrado un conjunto de datos `ab_data.txt` y se le plantean las siguientes cuestiones:
+Para ilustrar como se realiza un modelo unifactorial `A/B testing` se plantea testear si el diseño de una página provoca más o menos conversión de objetivos. Al científico de datos le han suministrado un conjunto de datos `ab_data.txt` y se le plantean las siguientes cuestiones:
 
 - Pregunta: ¿El diseño de la web afecta en la consecución de objetivos?
 - Hipótesis: El nuevo diseño aumenta la conversión
@@ -136,13 +136,13 @@ Se dispone de 5 variables.
 - `landing_page` define el diseño de la página web, antiguo o nuevo
 - `converted` es la variable conversión, la que interesa medir
 
-Para la correcta realización de un A/B testing es necesario determinar el **mínimo número de observaciones necesarias** para que los resultados tengan validez estadística. ¿Son suficientes los registros que se disponen? Se recuerda que el científico de datos ha de tener nociones de muestreo, pueden aparecer estas situaciones. Se va a emplear la librería de R `powerMediation` para entender los elementos necesarios en la determinación del tamaño de la muestra.
+Para la correcta realización de un `A/B testing` es necesario determinar el **mínimo número de observaciones necesarias** para que los resultados tengan validez estadística. ¿Son suficientes los registros que se disponen? Se recuerda que el científico de datos ha de tener nociones de muestreo, pueden aparecer estas situaciones. Se va a emplear la librería de R `powerMediation` para entender los elementos necesarios en la determinación del tamaño de la muestra.
 
 ```r
 require(powerMediation)
 ```
 
-La función `SSizeLogicBin` permite calcular el tamaño necesario de la muestra en base a elementos tratados en el capítulo 12 dedicado al muestreo y la inferencia, a priori el científico de datos ha de fijar un p-valor y una potencia de test para una clasificación binaria (convierte o no convierte), la función requiere los siguientes parámetros:
+La función `SSizeLogisticBin` permite calcular el tamaño necesario de la muestra en base a elementos tratados en el capítulo 12 dedicado al muestreo y la inferencia, a priori el científico de datos ha de fijar un `p-valor` y una potencia de test para una clasificación binaria (convierte o no convierte), la función requiere los siguientes parámetros:
 
 ```r
 SSizeLogisticBin(p1,
@@ -152,19 +152,19 @@ SSizeLogisticBin(p1,
                 power = 0.8)
 ```
 
-Donde p1 es la probabilidad el evento cuando X = 0, cuando se está en el grupo de control, en la fórmula de la logística logit(p) = a + b X; en el ejemplo de trabajo puede ser la proporción de éxito «habitual», las conversiones lógicas con el actual diseño. Si no existe experiencia previa el científico de datos tendrá que establecer esta proporción del algún modo. En este caso se va a tomar directamente un 0.1
+Donde `p1` es la probabilidad el evento cuando `X = 0`, cuando se está en el grupo de control, en la fórmula de la logística $$logit(p) = a + b X$$; en el ejemplo de trabajo puede ser la proporción de éxito «habitual», las conversiones lógicas con el actual diseño. Si no existe experiencia previa el científico de datos tendrá que establecer esta proporción del algún modo. En este caso se va a tomar directamente un `0.1`
 
-El caso de p2 es la probabilidad del evento cuando x = 1, cuando es el grupo de tratamiento en la fórmula de la logística logit(p) = a + b X, también es desconocida pero se asume superior a p1 porque no tendría sentido el experimento. Se toma el valor 0.12 porque conviene establecer proporciones realistas y no asumir que un experimento dará unos resultados excepcionales.
+El caso de `p2` es la probabilidad del evento cuando `x = 1`, cuando es el grupo de tratamiento en la fórmula de la logística $$logit(p) = a + b X$$, también es desconocida pero se asume superior a `p1` porque no tendría sentido el experimento. Se toma el valor `0.12` porque conviene establecer proporciones realistas y no asumir que un experimento dará unos resultados excepcionales.
 
-El valor B es la proporción entre tratamiento y control. Se puede comprobar ese dato.
+El valor `B` es la proporción entre tratamiento y control. Se puede comprobar ese dato.
 
 ```r
 ab_data %>% group_by(group) %>% summarise(proporcion=n()/nrow(ab_data))
 ```
 
-La proporción es de un 50% por lo que se toma un valor de 0.5, este tipo de resultados son garantía de la correcta aleatorización que se comprobará en un paso poseterior.
+La proporción es de un `50%` por lo que se toma un valor de `0.5`, este tipo de resultados son garantía de la correcta aleatorización que se comprobará en un paso poseterior.
 
-Como p-valor y potencia se toman los valores habituales de 0.05 y 0.8 respectivamente. Ya se disponen de todos los datos necesarios y se ejecuta la función.
+Como `p-valor` y potencia se toman los valores habituales de `0.05` y `0.8` respectivamente. Ya se disponen de todos los datos necesarios y se ejecuta la función.
 
 ```r
 tamaño = SSizeLogisticBin(p1 = 0.10,
@@ -182,7 +182,7 @@ Como se ha indicado es necesario medir o analizar la aleatoriedad de los datos d
 ```r
 duplicados <- ab_data %>% group_by(user_id) %>% summarise(conteo=n()) %>%
   filter(conteo > 1)
-nrow(duplicados)
+row(duplicados)
 ```
 
 Hay registros duplicados por usuario, directamente se opta por eliminar esos registros ya que se disponen de observaciones suficientes. El ejemplo ilustra como eliminar elementos de una lista con `dplyr`
@@ -202,7 +202,7 @@ ab_data2 %>% group_by(fecha) %>% summarise(visitas = n()) %>%
   scale_x_date(date_labels = "%d/%m/%Y")
 ```
 
-[![](/images/2023/03/wp_editor_md_56407c331c5063c5b92d89fa26b855ba.jpg)](/images/2023/03/wp_editor_md_56407c331c5063c5b92d89fa26b855ba.jpg)
+![](/images/2023/03/wp_editor_md_56407c331c5063c5b92d89fa26b855ba.jpg)
 
 Hay homogeneidad en las fechas excepto en 2, el inicio y el fin del experimento. De nuevo se utiliza la estrategia del exceso de observaciones por lo que esas fechas van a ser eliminadas.
 
@@ -216,140 +216,78 @@ Las visitas son las unidades experimentales pero lo que interesa estudiar en el 
 ab_data2 %>% group_by(group,landing_page) %>% summarise(visitas=n())
 ```
 
-Ya se sabía que las proporciones estaban equilibradas y eliminando observaciones siguen siendo muy parecidas. El número de visitas recogidas para cada nivel del factor en análisis es similar, no es imprescindible pero también refleja aleatoriedad. Además, se ha de corroborar que en las fechas no existe ningún comportamiento aleatorio.
+![](/images/2023/03/wp_editor_md_cc8f427539ef3512081f1df3218c8eca.jpg)
 
-```r
-require(powerMediation)
-```
-
-0
-
-[![](/images/2023/03/wp_editor_md_cc8f427539ef3512081f1df3218c8eca.jpg)](/images/2023/03/wp_editor_md_cc8f427539ef3512081f1df3218c8eca.jpg)
-
-Hay algún comportamiento distinto en torno al día 12/01 pero no se considera suficiente para rechazar la aleatoriedad de los datos, existen test de aleatoriedad como el test de rachas pero en este caso puede servir la opinión argumentada del analista o la dificultad de volver a repetir el experimento.
+Hay algún comportamiento distinto en torno al día `12/01` pero no se considera suficiente para rechazar la aleatoriedad de los datos, existen test de aleatoriedad como el test de rachas pero en este caso puede servir la opinión argumentada del analista o la dificultad de volver a repetir el experimento.
 
 Analizada la **suficiencia y la aleatoriedad** de los datos disponibles es necesario determinar si existen diferencias significativas en la conversión de objetivos que es la variable de interés. Se plantea la siguiente cuestión ¿es la conversión distinta para los grupos de tratamiento? Se resuelve con el análisis de la varianza.
 
-```r
-require(powerMediation)
-```
+![](/images/2023/03/wp_editor_md_fb5efe34732a987015f7264669f516a8.jpg)
 
-1
+Con la función `aov` se obtiene la tabla ANOVA, la hipótesis de partida es «son iguales los grupos» se realiza el test y el `p-valor` arrojado es superior a un umbral conservador de `0.1` por lo que los datos no evidencian diferencias en la conversión de la web en función del diseño de la misma, ese diseño podría ser descartado. Del mismo modo que se realiza el análisis de la varianza se puede plantear un modelo lineal generalizado (`GLM` con sus siglas en inglés).
 
-[![](/images/2023/03/wp_editor_md_fb5efe34732a987015f7264669f516a8.jpg)](/images/2023/03/wp_editor_md_fb5efe34732a987015f7264669f516a8.jpg)
+![](/images/2023/03/wp_editor_md_a6cbb1cb2ed4d51ad4fb78ac69f38546.jpg)
 
-Con la función `aov` se obtiene la tabla ANOVA, la hipótesis de partida es «son iguales los grupos» se realiza el test y el p-valor arrojado es superior a un umbral conservador de 0.1 por lo que los datos no evidencian diferencias en la conversión de la web en función del diseño de la misma, ese diseño podría ser descartado. Del mismo modo que se realiza el análisis de la varianza se puede plantear un modelo lineal generalizado (GLM con sus siglas en inglés).
-
-```r
-require(powerMediation)
-```
-
-2
-
-[![](/images/2023/03/wp_editor_md_a6cbb1cb2ed4d51ad4fb78ac69f38546.jpg)](/images/2023/03/wp_editor_md_a6cbb1cb2ed4d51ad4fb78ac69f38546.jpg)
-
-En este caso la salida es un modelo con sus parámetros y el parámetro asociado al tipo de tratamiento tiene un p-valor análogo al obtenido con el análisis de la varianza, se puede observar que el parámetro asociado el prácticamente 0, en un modelo aditivo como el que se plantea no suma nada al cambio de la media de la conversión. Este tipo de modelos lineales se verán con posterioridad y sirven para resolver estas cuestiones.
+En este caso la salida es un modelo con sus parámetros y el parámetro asociado al tipo de tratamiento tiene un `p-valor` análogo al obtenido con el análisis de la varianza, se puede observar que el parámetro asociado el prácticamente `0`, en un modelo aditivo como el que se plantea no suma nada al cambio de la media de la conversión. Este tipo de modelos lineales se verán con posterioridad y sirven para resolver estas cuestiones.
 
 ## Modelos bifactoriales. Interacciones entre variables
 
 Cuando existen dos factores que pueden presentar una fuente de variación se tienen modelos bifactoriales. Conviene no tener muchos factores en análisis cuando se realiza un diseño de experimentos porque se complica la posibilidad de estudiar como esos factores afectan a la variable de interés. Para entender como se complica basta con ver la formulación del modelo matemático del diseño bifactorial.
 
-Y = \\nu + \\alpha_i + \\beta_j + \\alpha\\beta\_{ij} + \\epsilon
+$$Y = \\nu + \\alpha_i + \\beta_j + \\alpha\\beta\_{ij} + \\epsilon$$
 
-En la línea del modelo unifactorial, \\nu es la media global, \\alpha es la media debida al primer factor de interés, \\beta la media debida al segundo factor, ¿qué es \\alpha\\beta? Es la **interacción entre ambos factores**. Cuantos más parámetros más contrastes, más complejidad.
+En la línea del modelo unifactorial, `$\nu$` es la media global, `$\alpha$` es la media debida al primer factor de interés, `$\beta$` la media debida al segundo factor, ¿qué es `$\alpha\beta$`? Es la **interacción entre ambos factores**. Cuantos más parámetros más contrastes, más complejidad.
 
 Existe interacción cuando la asociación entre dos variables varía según los diferentes niveles de otra u
 otras variables. Con el ANOVA bifactorial es posible analizar la existencia de interacción, pero el conocimiento previo y el análisis de esta situación pueden permitir al científico de datos **crear nuevas variables** para sus modelos que mejoren sustancialmente los resultados.
 
 El paradigma de la interacción entre variables es la paradoja de Simpson que se puede ilustrar con uno de los conjuntos de datos más conocidos que hay en R, `penguins`
 
-```r
-require(powerMediation)
-```
+![](/images/2023/03/wp_editor_md_29d3b16b134630a8cb25aa8370080bfe.jpg)
 
-3
+Con `geom_smooth` se añade una función lineal que recoja la nube de puntos, el modelo de regresión lineal ya que el método es `lm`. Sin embargo, si se realiza un modelo lineal por especie.
 
-[![](/images/2023/03/wp_editor_md_29d3b16b134630a8cb25aa8370080bfe.jpg)](/images/2023/03/wp_editor_md_29d3b16b134630a8cb25aa8370080bfe.jpg)
-
-Con `geom_smooth` se añade una función lineal que recoja la nube de puntos, el modelo de regresión lineal ya que el método es lm. Sin embargo, si se realiza un modelo lineal por especie.
-
-```r
-require(powerMediation)
-```
-
-4
-
-[![](/images/2023/03/wp_editor_md_b9af074c14a08b445d261bf0d1c1211d.jpg)](/images/2023/03/wp_editor_md_b9af074c14a08b445d261bf0d1c1211d.jpg)
+![](/images/2023/03/wp_editor_md_b9af074c14a08b445d261bf0d1c1211d.jpg)
 
 El comportamiento lineal es completamente distinto por especie, hay una interacción clave por especie si se desea modelar la longitud por la profundidad porque puede llevar a conclusiones incorrectas. Más allá del ejemplo forzado es evidente que hay factores que pueden variar sustancialmente el comportamiento de otros y no es una situación fácil de identificar, como en situaciones anteriores, se recomienda que el científico de datos cree sus herramientas para estudiar las posibles interacciones.
 
 Las interacciones pueden ser de tres tipos.
 
-[![](/images/2023/03/wp_editor_md_bb17760515fa0cff070c95ca7b52876a.jpg)](/images/2023/03/wp_editor_md_bb17760515fa0cff070c95ca7b52876a.jpg)
+![](/images/2023/03/wp_editor_md_bb17760515fa0cff070c95ca7b52876a.jpg)
 
 El primer tipo es el que se ilustraba con la paradoja de Simpson, algún nivel de los factores presentes en el análisis cruza con algún nivel de otro factor en análisis. En el segundo caso uno de los niveles de un factor incrementa la variable respuesta mientras que el otro factor no varía y por último, ambos factores se modifican de forma similar pero uno de los niveles de un factor la variación es mayor.
 
 Para entender los diseños bifactoriales con R se emplea un conjunto de datos con los resultados de un experimento destinado a evaluar los efectos de una dieta.
 
-```r
-require(powerMediation)
-```
+Se tiene un experimento con `76` individuos que han sido sometidos a tres tipos de dieta distintos (`A`, `B` y `C`) para cada uno de ellos se tiene un código identificativo, el sexo del individuo, la edad, la altura, el tipo de dieta, peso inicial y peso final. Lo primero es definir la variable respuesta, será la variación de peso en función de su altura.
 
-5
-
-Se tiene un experimento con 76 individuos que han sido sometidos a tres tipos de dieta distintos (A, B y C) para cada uno de ellos se tiene un código identificativo, el sexo del individuo, la edad, la altura, el tipo de dieta, peso inicial y peso final. Lo primero es definir la variable respuesta, será la variación de peso en función de su altura.
-
-```r
-require(powerMediation)
-```
-
-6
-
-[![](/images/2023/03/wp_editor_md_5e722b5d05c5a7ae04b0bc837596f91f.jpg)](/images/2023/03/wp_editor_md_5e722b5d05c5a7ae04b0bc837596f91f.jpg)
+![](/images/2023/03/wp_editor_md_5e722b5d05c5a7ae04b0bc837596f91f.jpg)
 
 Los factores presentes en el estudio son:
 
 - La edad. No se considera una variable relevante pero puede presentar variación, se considera un factor aleatorizado por lo que no se analizará en el modelo.
 
-- El sexo. Se considera factor de tratamiento con 2 niveles.
+- El sexo. Se considera factor de tratamiento con `2` niveles.
 
-- El tipo de dieta. Evidentemente será un factor de tratamiento con 3 niveles.
+- El tipo de dieta. Evidentemente será un factor de tratamiento con `3` niveles.
 
 Como se tiene un modelo bifactorial es necesario estudiar previamente si existe interacción entre los factores presentes en el estudio.
 
-```r
-require(powerMediation)
-```
-
-7
-
-[![](/images/2023/03/wp_editor_md_0c10b6e09fe16cb116bf873b5191e9ae.jpg)](/images/2023/03/wp_editor_md_0c10b6e09fe16cb116bf873b5191e9ae.jpg)
+![](/images/2023/03/wp_editor_md_0c10b6e09fe16cb116bf873b5191e9ae.jpg)
 
 Parece evidente que hay un tipo de dieta que está funcionando mejor para el sexo femenino. Otro análisis visual para identificar interacciones es el gráfico de líneas con las medias de los efectos.
 
-```r
-require(powerMediation)
-```
-
-8
-
-[![](/images/2023/03/wp_editor_md_2a103e709bc07fe90239060a03b62093.jpg)](/images/2023/03/wp_editor_md_2a103e709bc07fe90239060a03b62093.jpg)
+![](/images/2023/03/wp_editor_md_2a103e709bc07fe90239060a03b62093.jpg)
 
 Se aprecia que los hombres han tenido una variación similar pero las mujeres tienen una alta variación para el `diet.type` C. Con estas consideraciones sobre la interacción entre los factores en estudio se plantea la tabla ANOVA.
 
-```r
-require(powerMediation)
-```
+![](/images/2023/03/wp_editor_md_af185e2311d57c68bc221c202d0e8e10.jpg)
 
-9
+En la formulación del modelo aparece la interacción como `gender*diet.type`, por defecto no se incluyen interacciones a la hora de modelar y por ello es relevante el análisis antes planteado ya que se pueden perder variables buenas para la realización de un modelo. La tabla ANOVA presenta tres fuentes de variación, la debida al sexo, la debida al tipo de dieta y la debida a la interacción entre ambas. La dieta, fijado un umbral superior a `0.001` aparece como una variable significativa, produce variación en el peso. Sin embargo, la interacción entre ambas variables con umbrales por debajo del habitual `0.05` podría ser despreciada, este hecho incide de nuevo en la importancia de los análisis previos de las interacciones.
 
-[![](/images/2023/03/wp_editor_md_af185e2311d57c68bc221c202d0e8e10.jpg)](/images/2023/03/wp_editor_md_af185e2311d57c68bc221c202d0e8e10.jpg)
+El científico de datos no se va a enfrentar a diseños complejos, pero si ha de contrastar como están funcionando sus modelos mediante pruebas piloto o experimentos. Por ello, se considera importante que maneje los conceptos básicos que se tratan en este capítulo del ensayo. Existen diseños más complejos como los anidados, cuadrados latinos, diseños por bloques, `$2^k$`,… Si se desea material de fácil comprensión y que mejora la anterior exposición se recomienda estudiar los siguientes enlaces:
 
-En la formulación del modelo aparece la interacción como `gender*diet.type`, por defecto no se incluyen interacciones a la hora de modelar y por ello es relevante el análisis antes planteado ya que se pueden perder variables buenas para la realización de un modelo. La tabla ANOVA presenta tres fuentes de variación, la debida al sexo, la debida al tipo de dieta y la debida a la interacción entre ambas. La dieta, fijado un umbral superior a 0.001 aparece como una variable significativa, produce variación en el peso. Sin embargo, la interacción entre ambas variables con umbrales por debajo del habitual 0.05 podría ser despreciada, este hecho incide de nuevo en la importancia de los análisis previos de las interacciones.
-
-El científico de datos no se va a enfrentar a diseños complejos, pero si ha de contrastar como están funcionando sus modelos mediante pruebas piloto o experimentos. Por ello, se considera importante que maneje los conceptos básicos que se tratan en este capítulo del ensayo. Existen diseños más complejos como los anidados, cuadrados latinos, diseños por bloques, 2^k,… Si se desea material de fácil comprensión y que mejora la anterior exposición se recomienda estudiar los siguientes enlaces:
-
-- [ Introducción al diseño de experimentos](https://halweb.uc3m.es/esp/Personal/personas/jmmarin/esp/Disenno/IntroDE.pdf)
-- [ Modelos unifactoriales ](http://verso.mat.uam.es/~joser.berrendero/cursos/adatos/ad2-tema1-12.pdf)
-- [ Modelos con múltiples factores ](http://verso.mat.uam.es/~joser.berrendero/cursos/adatos/ad2-tema2-12.pdf)
-- [ Design and Analysis of Experiments and Observational Studies using R ](https://designexptr.org/)
+- [Introducción al diseño de experimentos](https://halweb.uc3m.es/esp/Personal/personas/jmmarin/esp/Disenno/IntroDE.pdf)
+- [Modelos unifactoriales](http://verso.mat.uam.es/~joser.berrendero/cursos/adatos/ad2-tema1-12.pdf)
+- [Modelos con múltiples factores](http://verso.mat.uam.es/~joser.berrendero/cursos/adatos/ad2-tema2-12.pdf)
+- [Design and Analysis of Experiments and Observational Studies using R](https://designexptr.org/)

@@ -24,7 +24,7 @@ url: /blog/el-parametro-gamma-el-coste-la-complejidad-de-un-svm/
 
 ![letra_o_svm_r](/images/2016/10/Letra_O_SVM_R.png)
 
-Cuando clasificamos `datos` con `SVM` es necesario fijar un margen de separación entre observaciones, si no fijamos este `margen` nuestro `modelo` sería tan bueno tan bueno que sólo serviría para esos `datos`, estaría sobrestimando y eso es malo. El `coste C` y el `gamma` son los dos `parámetros` con los que contamos en los `SVM`. El `parámetro C` es el `peso` que le damos a cada observación a la `hora` de `clasificar` un mayor `coste` implicaría un mayor `peso` de una `observación` y el `SVM` sería más estricto ([este `link` aclara mejor las cosas](`https://www.hackerearth.com/blog/developers/simple-tutorial-svm-parameter-tuning-python-r/`)). Si tuvieramos un `modelo` que `clasificara` observaciones en el `plano` como una `letra O` podemos ver como se modifica la `estimación` en esta `secuencia` en la que se ha modificado el `parámetro C`:
+Cuando clasificamos `datos` con `SVM` es necesario fijar un margen de separación entre observaciones, si no fijamos este `margen` nuestro `modelo` sería tan bueno tan bueno que sólo serviría para esos `datos`, estaría sobrestimando y eso es malo. El `coste C` y el `gamma` son los dos `parámetros` con los que contamos en los `SVM`. El `parámetro C` es el `peso` que le damos a cada observación a la `hora` de `clasificar` un mayor `coste` implicaría un mayor `peso` de una `observación` y el `SVM` sería más estricto ([este `link` aclara mejor las cosas](%60https://www.hackerearth.com/blog/developers/simple-tutorial-svm-parameter-tuning-python-r/%60)). Si tuvieramos un `modelo` que `clasificara` observaciones en el `plano` como una `letra O` podemos ver como se modifica la `estimación` en esta `secuencia` en la que se ha modificado el `parámetro C`:
 
 ![r_svm_2](/images/2016/10/R_SVM_1.png)
 
@@ -36,7 +36,7 @@ Se puede ver como la `predicción` es más conservadora cuando ponemos `costes` 
 
 ![r_svm_4](/images/2016/10/R_SVM_4.png) ![r_svm_5](/images/2016/10/R_SVM_5.png) ![r_svm_6](/images/2016/10/R_SVM_6.png)
 
-Un menor `gamma` implica una mayor `distancia` entre las `observaciones` que separan los `subespacios` del `SVM` luego la `estimación` es más conservadora, sin embargo un mayor `parámetro` «fastidia» a la `función kernel`. [Si vemos la `definición` de esta `función kernel` se entiende mejor](`https://en.wikipedia.org/wiki/Radial_basis_function`):
+Un menor `gamma` implica una mayor `distancia` entre las `observaciones` que separan los `subespacios` del `SVM` luego la `estimación` es más conservadora, sin embargo un mayor `parámetro` «fastidia» a la `función kernel`. [Si vemos la `definición` de esta `función kernel` se entiende mejor](%60https://en.wikipedia.org/wiki/Radial_basis_function%60):
 
 ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/9b129b86be238293edd3331fac8937f0311c69a5)
 El `ejercicio teórico` es muy `radical`, pero también observamos como a mayor `gamma` las `predicciones` están menos `suavizadas`. Tenemos estos dos `parámetros` y la pregunta sería ¿cuál es la mejor elección? Dónde está el mejor `punto` para obtener un buen resultado en este `trueque` de `sesgo-varianza`. De momento no sé deciros, pero estoy con ello.

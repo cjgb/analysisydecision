@@ -20,7 +20,7 @@ url: /blog/truco-sas-observaciones-de-un-dataset-en-una-macro-variable/
 
 SAS tip sencillo para el uso de las funciones de Input Output de SAS y que puede ahorrarnos más de un paso data. Se trata de una macro que pone el número de observaciones de un dataset en una macrovariable global. Al emplear funciones de I/O su ejecución es inmediata:
 
-```r
+````r
 *MACRO PARA IDENTIFICAR EL NUMERO DE OBSERVACIONES DE UN DS;
 
 %macro numobs(ds,mv);
@@ -67,7 +67,7 @@ run;
 %numobs(uno,obs_uno);
 
 %put Observaciones de uno =&obs_uno.;
-```
+````
 
 Como vemos es un código sencillo pero muy práctico ya que nos permite obtener el número de observaciones de forma instantánea. Con él podemos validar procesos, realizar cálculos,…
 

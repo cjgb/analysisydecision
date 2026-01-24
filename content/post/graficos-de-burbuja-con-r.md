@@ -43,7 +43,7 @@ text(x,y,etiqueta)
 palette("default")
 ```
 
-Para etiquetar las variables empleao la función `text` y __ me parece interesante el uso de la función `palette` (así tenéis un ejemplo de uso) para la leyenda he tenido que tirar de búsqueda y [encontré esta idea](http://flowingdata.com/2010/11/23/how-to-make-bubble-charts/) pero he tenido algún problema para realizarla, por ello he preferido evitarla. Y la otra forma de realizar el gráfico es emplear el `ggplot2` con una sintaxis muy similar a la que se utilizaba en el link de Rbloggers que os ponía al principio:
+Para etiquetar las variables empleao la función `text` y \_\_ me parece interesante el uso de la función `palette` (así tenéis un ejemplo de uso) para la leyenda he tenido que tirar de búsqueda y [encontré esta idea](http://flowingdata.com/2010/11/23/how-to-make-bubble-charts/) pero he tenido algún problema para realizarla, por ello he preferido evitarla. Y la otra forma de realizar el gráfico es emplear el `ggplot2` con una sintaxis muy similar a la que se utilizaba en el link de Rbloggers que os ponía al principio:
 
 ```r
 datos=data.frame(x,y,tamanio)

@@ -23,7 +23,7 @@ url: /blog/macros-sas-limpiar-una-cadena-de-caracteres/
 
 Macro de SAS que he utilizado hoy para limpiar caracteres en una cadena de texto. Está muy limitada y es muy sencilla pero puede serviros:
 
-```r
+````r
 ```sas
 %macro valida(in,out);
 
@@ -50,11 +50,11 @@ end;
 &out.=tranwrd(compress(escribe),"-"," ");
 
 %mend;
-```
+````
 
 Es bastante mala y limitada, insisto. Si alguien aporta algo se agradecerá. El tema es que recorre una variable alfanumérica carácter a carácter y si no es una letra mayúscula se lo chimpunea sin ningún miramiento, aporta un poco más de talento cuando aparece un espacio en blanco. Ahí va el ejemplo de uso:
 
-```r
+````r
 ```sas
 data _null_;
 
@@ -65,6 +65,6 @@ y="ME.N9UDA@ CAGA--;DA vENIR";
 put x=;
 
 run;
-```
+````
 
 En fin, si la voy mejorando lo sigo comunicando. Por cierto, esto se puede hacer con WPS a la perfección. Si alguno de vosotros está interesado en WPS o tiene ya jornada de verano y necesitan consultoría que me escriba a `rvaquerizo@analisisydecision.es`

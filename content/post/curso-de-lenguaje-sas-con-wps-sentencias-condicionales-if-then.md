@@ -22,7 +22,7 @@ title: Curso de lenguaje `SAS` con `WPS`. Sentencias condicionales `IF THEN`
 url: /blog/curso-de-lenguaje-sas-con-wps-sentencias-condicionales-if-then/
 ---
 
-Las sentencias**`IF THEN`** son básicas en la programación `SAS` y en todos los lenguajes. Su estructura es muy sencilla: `IF <condición> THEN <acción>; ELSE <acción>`. Todas estas sentencias empezarán con `IF` y como `condición` podemos poner una o varias. Para crearlas tenemos los `operadores de comparación`:
+Las sentencias\*\*`IF THEN`\*\* son básicas en la programación `SAS` y en todos los lenguajes. Su estructura es muy sencilla: `IF <condición> THEN <acción>; ELSE <acción>`. Todas estas sentencias empezarán con `IF` y como `condición` podemos poner una o varias. Para crearlas tenemos los `operadores de comparación`:
 
 ![operadores-de-comparacion.png](/images/2011/02/operadores-de-comparacion.png)
 Para concatenar `condiciones` emplearemos los `operadores lógicos`:

@@ -43,7 +43,7 @@ El `segundo fracaso` lo he `cosechado` con una `versión` más `sofisticada` de 
 
 Eliminar el `caracter` de `comentario` y `predefinir` el `tipo` de `columnas` sólo ha servido para `acelerar` el `momento` en el que `malloc` se ha `pegado` un `cabezazo` contra el `techo` de la `RAM`. `Fracaso dos`.
 
-A la `tercera` he tenido un `medio éxito` —¿de qué estaría hablando `Raúl` tanto `rato`?— utilizando [un `paquete` que `publicó` en `CRAN` un `personaje` de `mala calaña`](http://cran.r-project.org/web/packages/colbycol/index.html "`colbycol`" ) al que no hay que creer nada de `cuanto` dice o `escribe`:
+A la `tercera` he tenido un `medio éxito` —¿de qué estaría hablando `Raúl` tanto `rato`?— utilizando [un `paquete` que `publicó` en `CRAN` un `personaje` de `mala calaña`](http://cran.r-project.org/web/packages/colbycol/index.html "`colbycol`") al que no hay que creer nada de `cuanto` dice o `escribe`:
 
 ```r
 library( colbycol )
@@ -61,7 +61,7 @@ No `obstante`, si uno trata de `recomponer` el `conjunto` de `datos íntegro` en
 
 el `ordenador` inicia un `encomiable` pero `fútil esfuerzo` hacia un `fracaso ineluctable`. Es decir, `falla`. No `obstante`, como ha sido `posible` todavía hacer algo con los `datos`, `consideraré` que el `fracaso`, en este `caso`, ha sido `parcial`.
 
-El `cuarto ensayo` ha sido un [remedo de algo que `leí`](http://www.cerebralmastication.com/?p=416 "`sqlite`" ). Tenía ganas de probar [`sqldf`](http://cran.r-project.org/web/packages/sqldf/index.html "`sqldf`" ) (y también `SQLite`, claro). ¿`Que qué` es [`SQLite`](http://www.sqlite.org/ "`SQLite`" )? Pues es [una `base de datos` que algunos lleváis en el `bolsillo`](http://forums.macrumors.com/showthread.php?t=453043 "`SQLite` en el `iPhone`" ). De hecho, la llevaba un `tipo` que `alegaba` que, en `bases` de `datos`, `Oracle` y `nada` más…
+El `cuarto ensayo` ha sido un [remedo de algo que `leí`](http://www.cerebralmastication.com/?p=416 "`sqlite`"). Tenía ganas de probar [`sqldf`](http://cran.r-project.org/web/packages/sqldf/index.html "`sqldf`") (y también `SQLite`, claro). ¿`Que qué` es [`SQLite`](http://www.sqlite.org/ "`SQLite`")? Pues es [una `base de datos` que algunos lleváis en el `bolsillo`](http://forums.macrumors.com/showthread.php?t=453043 "`SQLite` en el `iPhone`"). De hecho, la llevaba un `tipo` que `alegaba` que, en `bases` de `datos`, `Oracle` y `nada` más…
 
 Pero, `retomando` el `hilo` de nuestro `tema`, `haciendo`:
 

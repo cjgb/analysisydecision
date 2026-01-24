@@ -34,4 +34,3 @@ Y da como resultado:
 ![mosaic_plot_python](/images/2017/05/mosaic_plot_python.png)
 
 Saludos.
-

@@ -16,7 +16,7 @@ related:
 tags:
   - gradientboostingclassifier
   - gridsearchcv
-title: Machine learning. Elegir el mejor `Gradient Boost` de forma iterativa con `GridSearchCV`
+title: Machine learning. Elegir el mejor Gradient Boost de forma iterativa con GridSearchCV
 url: /blog/machine-learning-elegir-el-mejor-gradient-boost-de-forma-iterativa-con-gridseacrchcv/
 ---
 

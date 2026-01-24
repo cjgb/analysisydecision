@@ -26,11 +26,11 @@ Un post de **BIOSTATMATT** que nos conduce a un código en R que nos permite lee
 
 Sólo tenéis que cargar la función**read.sas7bdat** que tenéis en [este enlace](http://biostatmatt.com/R/sas7bdat.R). Y ya podéis leer conjuntos de datos SAS. Ejemplo:
 
-```r
+````r
 ```r
 source("http://biostatmatt.com/R/sas7bdat.R")
 
 datos = read.sas7bdat("D:\\raul\\Trabajo\\salida\\p03.sas7bdat")
-```
+````
 
 De momento lo he probado en conjuntos de datos SAS sin índices y sin comprimir, si encuentro algún problema primero se lo reporto a la gente que ha creado esta función y más tarde os lo comento.

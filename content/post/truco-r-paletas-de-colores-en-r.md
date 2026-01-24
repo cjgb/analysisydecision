@@ -25,12 +25,12 @@ url: /blog/truco-r-paletas-de-colores-en-r/
 
 En cuántas ocasiones habéis querido dar color a un gráfico y por aligerar código creáis gráficos de este tipo:
 
-```r
+````r
 ```r
 x = rpois(100,as.integer(runif(10)*1000))
 
 barplot(sort(x))
-```
+````
 
 Pues en R esta labor puede costarnos muy poco si empleamos las paletas de colores. Hoy quiero presentaros las siguientes:
 
@@ -41,7 +41,7 @@ Pues en R esta labor puede costarnos muy poco si empleamos las paletas de colore
 
 Ejemplos de uso:
 
-```r
+````r
 ```r
 require(graphics)
 
@@ -50,11 +50,11 @@ barplot(sort(x),col = rainbow(x),main="Paleta rainbow")
 barplot(sort(x),col = heat.colors(length(x)),main="Paleta heat")
 
 barplot(sort(x),col = topo.colors(length(x)),main="Paleta topo")
-```
+````
 
 Comparad, metemos los 4 gráficos en una sóla ventana y tendremos la figura con la que iniciamos esta entrada:
 
-```r
+````r
 ```r
 png(file="C:\\temp\\paletas_colores_R.png",
 
@@ -71,6 +71,6 @@ barplot(sort(x),col = heat.colors(length(x)),main="Paleta heat")
 barplot(sort(x),col = topo.colors(length(x)),main="Paleta topo")
 
 dev.off()
-```
+````
 
 Podéis hacer vuestra propia paleta de colores, pero eso lo veremos otro día, ahora mis hijos me reclaman.

@@ -14,7 +14,7 @@ related:
 tags:
   - business intelligence
   - consultoría
-title: `CRM`. ¡Me río de los tópicos!
+title: CRM. ¡Me río de los tópicos!
 url: /blog/crm-c2a1me-rio-de-los-topicos/
 ---
 
@@ -47,4 +47,4 @@ Si no aparece mi artículo en los buscadores tendré que registrarme en foros y 
 - Horas de visita
 - Ubicación de la visita
 
-En función de mis análisis, de los comentarios que reciba y de las sugerencias que me pueden enviar a [`rvaquerizo@análisisydecisión.es`](mailto:rvaquerizo@xn--anlisisydecisin-ojb23a.es) puedo ir modificando el contenido de mi web y creando nuevas entradas al blog que pueden derivar en un foro de usuarios de `CRM` diferente donde con propuestas más originales.
+En función de mis análisis, de los comentarios que reciba y de las sugerencias que me pueden enviar a `rvaquerizo@análisisydecisión.es` puedo ir modificando el contenido de mi web y creando nuevas entradas al blog que pueden derivar en un foro de usuarios de `CRM` diferente donde con propuestas más originales.

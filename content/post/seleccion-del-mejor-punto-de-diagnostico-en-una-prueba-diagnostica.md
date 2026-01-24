@@ -69,7 +69,7 @@ resultados = data.frame(resultados)
 
 Los `resultados` obtenidos con nuestra `prueba` quedan `tabulados` del siguiente `modo`:
 
-X1         X2         X3
+X1 X2 X3
 1 60 0.05882353 0.00000000
 2 65 0.08823529 0.01515152
 3 70 0.20588235 0.06060606

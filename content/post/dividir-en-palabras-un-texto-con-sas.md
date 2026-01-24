@@ -33,7 +33,7 @@ cadena1
 cadena2
 cadena3
 
-para encontrar la ` , ` utilizo `scan`, aunque podría ocupar `anypunct` para que encuentre la primera ` , ` luego la segunda ` , ` etc y cortar con `substr`, `longth` … pero bueno, ya que tengo un metodo de separar el texto de la fila como hago para que cada palabra este en una nueva fila? ojala me hayan entendido y me den una idea de como hacer eso en un `proc sql`, con una `macro` o como sea, solo una pequeña orientación me serviria mucho, gracias!!!!!
+para encontrar la `,` utilizo `scan`, aunque podría ocupar `anypunct` para que encuentre la primera `,` luego la segunda `,` etc y cortar con `substr`, `longth` … pero bueno, ya que tengo un metodo de separar el texto de la fila como hago para que cada palabra este en una nueva fila? ojala me hayan entendido y me den una idea de como hacer eso en un `proc sql`, con una `macro` o como sea, solo una pequeña orientación me serviria mucho, gracias!!!!!
 
 En realidad teníamos una entrada que podía haberte servido de referencia:
 

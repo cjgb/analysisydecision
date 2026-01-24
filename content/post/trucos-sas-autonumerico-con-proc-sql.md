@@ -22,7 +22,7 @@ url: /blog/trucos-sas-autonumerico-con-proc-sql/
 
 Rápido. Me ha llegado una consulta que me preguntaba como crear un campo autonumérico con PROC SQL. Tenemos que emplear la funciòn _monotonic():_
 
-```r
+````r
 ```sas
 data uno;
 
@@ -45,7 +45,9 @@ from uno a
 where mod(i,2)=0;
 
 quit;
-```
+````
+
 ```
 
 Equivale al __n__ de un paso data. Es una tontería pero a un lector del blog le ha venido bien. Saludos.
+```

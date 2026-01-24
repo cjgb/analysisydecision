@@ -26,7 +26,8 @@ bomberos <- read.csv("C:\\temp\\Personales\\wordpress\\211642-0-bomberos-parques
 
 bomberos <- bomberos %>% select(NOMBRE, LATITUD, LONGITUD)
 ```
-```
+
+````
 
 Nos hemos quedado sólo con las variables que nos interesa representar en el mapa de `leaflet` que vamos a crear con este sencillo código que posteriormente os resumo:
 
@@ -42,7 +43,8 @@ leaflet() %>%
   addProviderTiles(providersStamen.TonerLite,
                    options = providerTileOptions(noWrap = F)) %>%
   addMarkers(lat = bomberosLATITUD, lng = bomberosLONGITUD, label = bomberosNOMBRE, icon = icono)
-```
+````
+
 ```
 
 Por partes:
@@ -57,3 +59,4 @@ Por partes:
 Resultado más que digno con pocas líneas de código:
 
 ![](/images/2021/06/leaflet1.png)
+```

@@ -20,7 +20,7 @@ url: /blog/minimo-de-una-matriz-de-datos-en-sas/
 
 [El otro día una lectora del blog me preguntaba como obtener el mínimo de una matriz de datos de 100×1000 con SAS](https://analisisydecision.es/monografico-datos-agrupados-en-sas/#comment-76186). El ejercicio es muy práctico para ayudar a que se entienda mejor como “piensa” SAS. Probablemente esta lectora estaba pensando en complicados bucles que recorren, que almacenan, que arrastran,… con SAS las cosas no son así. El paso data es un bucle en si mismo y SAS no tiene pereza en crear tablas intermedias. Así que la mejor solución para encontrar ese mínimo sería:
 
-```r
+````r
 data matriz;
 do j=1 to 1000;
 array varib(100);
@@ -36,7 +36,7 @@ proc summary data=matriz;
 var varib:;
 output out=minimos min=;
 quit;
-```
+````
 
 ```sas
 data _null_;

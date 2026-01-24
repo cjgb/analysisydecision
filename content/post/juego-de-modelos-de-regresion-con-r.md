@@ -51,6 +51,7 @@ Los gráficos de los datos de test son:
 Los códigos R que tenéis que asociar a cada figura son:
 
 **Código 1:** Red neuronal con una sólo capa y 2 nodos:
+
 ```r
 mejor.red {
 mejor.rss for(i in 1:50){
@@ -66,33 +67,39 @@ mejor.red(2)
 ```
 
 **Código 2:** Regresión lineal
+
 ```r
 lm(dep ~ indep,entrenamiento)
 ```
 
 **Código 3** : Máquina de vector de soporte con un margen muy alto
+
 ```r
 svm(dep ~ indep ,entrenamiento, method="C-classification",
 kernel="radial",cost=100,gamma=100)
 ```
 
 **Código 4:** Árbol de regresión
+
 ```r
 rpart(dep~indep,entrenamiento)
 ```
 
 **Código 5:** Regresión `LOESS`
+
 ```r
 loess (dep ~ indep, data = entrenamiento)
 ```
 
 **Código 6:** Máquina de vector de soporte con un margen bajo
+
 ```r
 svm(dep ~ indep ,entrenamiento, method="C-classification",
 kernel="radial",cost=10,gamma=10)
 ```
 
 **Código 7:** K vecinos más cercanos `K-nn`
+
 ```r
 train.kknn(dep ~ indep, data = entrenamiento,
 k = 4, kernel = c("rectangular"))

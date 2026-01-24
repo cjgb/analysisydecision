@@ -36,22 +36,25 @@ mexico=gadm
 
 unique(mexico@data$NAME_1)
 ```
-```
+
+````
 
 Esos son los Estados mexicanos que tenemos en el mapa. Para ilustrar el ejemplo vamos a pintar el número de habitantes del estado de México. Por ello creamos un objeto sólo con el estado de México:
 
 ```r
 mexico = mexico[mexico$NAME_1=="México",]
-```
-```
+````
+
+````
 
 Ahora es necesario que nos llevemos a `Excel` el nombre de los municipios para cruzar los datos:
 
 ```r
 writeClipboard(unique(mexico@data$NAME_2))
 #Rellenamos los datos con [http://qacontent.edomex.gob.mx/coespo/numeralia/poblaciontotal/municipios_j_s/index.htm](http://qacontent.edomex.gob.mx/coespo/numeralia/poblaciontotal/municipios_j_s/index.htm)
-```
-```
+````
+
+````
 
 De la web indicada sacamos el número de habitantes y en Excel realizamos el cruce de datos.[Os adjunto en la entrada el Excel empleado.](/images/2015/03/mexico.xlsx) Hemos rellenado los datos, en ocasiones es necesario darle una vuelta al nombre de algunos municipios pero se tarda poco en el caso del estado de México. Pegas los nombres de los municipios y buscas en tus datos. Una vez hayas completado el cruce copiando los datos en `Excel` llevartelo a `R` y ejecutando el siguiente código tenemos:
 
@@ -62,9 +65,11 @@ datos = read.delim("clipboard")
 mexico=mexico[1]
 mexico@data <- datos
 spplot(mexico,col.regions=brewer.pal(5, "Blues"))
-```
+````
+
 ```
 
 Que nos pinta el mapa con el que se inicia esta entrada. Muy casero, manual, pero una vez hayáis hecho uno el resto de mapas estáticos es inmediato y los resultados pueden quedar muy bien. Seguro que es útil para los lectores de México. Saludos.
 
 
+```

@@ -35,7 +35,7 @@ Para comenzar a conocer esta función partimos del ejemplo más sencillo, hacer 
 
 Tened en cuenta para trasponer:
 
-1.  El rango que debemos recorrer para saber donde ubicar el índice
-2.  El comienzo de la trasposición para que el índice comience perfectamente
+1. El rango que debemos recorrer para saber donde ubicar el índice
+1. El comienzo de la trasposición para que el índice comience perfectamente
 
 Espero que os sea de utilidad. Si tenéis dudas o sugerencias… `rvaquerizo@analisisydecision.es`

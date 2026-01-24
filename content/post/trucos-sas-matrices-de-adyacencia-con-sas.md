@@ -37,7 +37,7 @@ e 1 1 1 0 0
 
 Yo planteo la siguiente metodología:
 
-```r
+````r
 ```sas
 *CONJUNTO DE DATOS DE PARTIDA;
 data original;
@@ -67,6 +67,6 @@ nodo1,
 from original2
 group by 1;
 quit;
-```
+````
 
 Un método muy sencillo que busca en la matriz de partida el nodo de inicio y el nodo de fin. Creo que se entiende muy bien por eso, y porque estoy casi de vacaciones, no voy a entrar en detalles. Si alguien necesita esos detalles que contacte. Saludos.

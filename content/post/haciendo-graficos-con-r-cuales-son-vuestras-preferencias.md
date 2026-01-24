@@ -23,7 +23,7 @@ url: /blog/haciendo-graficos-con-r-c2bfcuales-son-vuestras-preferencias/
 
 ![base.png](/images/2010/11/base.png)
 
-```r
+````r
 ```r
 png('C://temp//base.png',bg = "white",
 
@@ -34,13 +34,13 @@ boxplot(Petal.Length~Species, data=iris,
 main="Gráfico con Base")
 
 dev.off()
-```
+````
 
 - Con lattice:
 
 ![lattice.png](/images/2010/11/lattice.png)
 
-```r
+````r
 ```r
 png('C://temp//lattice.png',bg = "white",
 
@@ -57,13 +57,13 @@ main="Gráfico con Lattice")
 print(x)
 
 dev.off()
-```
+````
 
 - Con ggplot2:
 
 ![ggplot2.png](/images/2010/11/ggplot2.png)
 
-```r
+````r
 ```r
 png('C://temp//ggplot2.png',bg = "white",
 
@@ -78,6 +78,6 @@ x2 <- ggplot(iris,aes(Species,Petal.Length))
 x2 + geom_boxplot() + opts(title="Gráfico con ggplot2")
 
 dev.off()
-```
+````
 
 Tres muestras del mismo gráfico de cajas realizado con R. Tres sintaxis muy sencillas pero _boxplot_ es más fácil si cabe. Parece que estéticamente ganaría _ggplot2_ sin embargo todo es jugar con más opciones, pero se complicaría el código. En mi opinión creo que sale ganando _ggplot2_ pero no es tanta la diferencia.

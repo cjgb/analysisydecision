@@ -20,7 +20,7 @@ title: Leer y representar datos de Google Trends con R
 url: /blog/leer-y-representar-datos-de-google-trends-con-r/
 ---
 
-En el [blog del profesor Serrano tomé contacto con el paquete RGoogleTrends](http://www.grserrano.es/wp/2010/12/ejemplo-r-explotacion-de-google-trends-1/) para leer datosde [Google Trends](http://www.google.es/trends). Tras diversos intentos y analizando bien el paquete RGoogleTrends no he sido capaz de hacerlo funcionar. Sin embargo sólo hay que leer un csv, por esto podemos emplear _read.csv_ para descargarnos los datos de Google Trends y analizarlos con R. Además el objeto resultante nos será mucho más familiar que el generado por RGoogleTrends. Para realizar esta lectura necesitamos lo siguiente:
+En el [blog del profesor Serrano tomé contacto con el paquete `RGoogleTrends`](http://www.grserrano.es/wp/2010/12/ejemplo-r-explotacion-de-google-trends-1/) para leer datosde [Google Trends](http://www.google.es/trends). Tras diversos intentos y analizando bien el paquete `RGoogleTrends` no he sido capaz de hacerlo funcionar. Sin embargo sólo hay que leer un csv, por esto podemos emplear `read.csv` para descargarnos los datos de Google Trends y analizarlos con R. Además el objeto resultante nos será mucho más familiar que el generado por `RGoogleTrends`. Para realizar esta lectura necesitamos lo siguiente:
 
 1. Una cuenta de Google y permanecer conectado a ellas (tema de cookies)
 1. Tener explorer como navegador predeterminado (¡?, más tema de cookies)
@@ -40,7 +40,7 @@ datos1=data.frame(datos1);names(datos1)=c("v1","v2")
 datos2=data.frame(datos2);names(datos2)=c("v1","v2")
 ```
 
-Ya tenemos nuestros objetos en R. Vemos que los términos de búsqueda aparecen en el parámetro q. En este caso no hemos especificado la escala, pero descargamos datos relativos (_CSV with relative scaling_) así podremos comparar los resultados, esto tiene su importancia. Ahora hemos de trabajar con los objetos creados:
+Ya tenemos nuestros objetos en R. Vemos que los términos de búsqueda aparecen en el parámetro `q`. En este caso no hemos especificado la escala, pero descargamos datos relativos (`CSV with relative scaling`) así podremos comparar los resultados, esto tiene su importancia. Ahora hemos de trabajar con los objetos creados:
 
 ```r
 #Trabajo con datos1
@@ -68,7 +68,7 @@ modifica1rproject=as.numeric(as.character(modifica1$rproject))
 head(modifica1)
 ```
 
-Algunos aspectos interesantes. Trabajamos con la primera consulta, replicaremos el paso con la segunda consulta. Pasamos los nombres de las filas como una variable con ello creamos un _data.frame_ con dos variables _semana_ y _relatividad_. Sólo analizamos los datos de 2009, 2010 y 2011 y empleamos la librería **sqldf** con el operador **like**. Es lo que tenemos los tipos mediocres, si a los 2 minutos no te funciona el _subset_ tiramos de SQL y listo. Mediocre con recursos es menos mediocre. Por último transformamos un factor a número con _as.character_ combinado con _as.numeric_(a lo mejor se puede hacer de una forma más elegante). Lo mismo con la segunda consulta:
+Algunos aspectos interesantes. Trabajamos con la primera consulta, replicaremos el paso con la segunda consulta. Pasamos los nombres de las filas como una variable con ello creamos un `data.frame` con dos variables `semana` y `relatividad`. Sólo analizamos los datos de 2009, 2010 y 2011 y empleamos la librería `sqldf` con el operador `like`. Es lo que tenemos los tipos mediocres, si a los 2 minutos no te funciona el `subset` tiramos de `SQL` y listo. Mediocre con recursos es menos mediocre. Por último transformamos un factor a número con `as.character` combinado con `as.numeric`(a lo mejor se puede hacer de una forma más elegante). Lo mismo con la segunda consulta:
 
 ```r
 #Trabajo con datos2
@@ -114,7 +114,7 @@ library(reshape)
 compara = sort_df(compara,vars='semana')
 ```
 
-Mediante _merge_ unimos los dos objetos con las búsquedas realizadas por semana de los términos R Project y SAS Software. Hemos unido mediante el campo _semana_ que es un texto así que hemos de pasar este texto a fecha. Esta tarea la realizamos con R con la función _as.Date_ y leemos un formato en lengua inglesa (por ello necesitamos _Sys.setlocale_) del tipo %b %d %Y, importante el espacio… 10 pruebas me ha costado darme cuenta del problema del espacio. Con este proceso pasamos de _apr 10 2010_ a _2010-04-10_ y podemos realizar una ordenación para graficar la serie temporal:
+Mediante `merge` unimos los dos objetos con las búsquedas realizadas por semana de los términos R Project y SAS Software. Hemos unido mediante el campo `semana` que es un texto así que hemos de pasar este texto a fecha. Esta tarea la realizamos con R con la función `as.Date` y leemos un formato en lengua inglesa (por ello necesitamos `Sys.setlocale`) del tipo `%b %d %Y`, importante el espacio… 10 pruebas me ha costado darme cuenta del problema del espacio. Con este proceso pasamos de `apr 10 2010` a `2010-04-10` y podemos realizar una ordenación para graficar la serie temporal:
 
 ```r
 win.graph()
@@ -142,10 +142,8 @@ text(40,2,"Búsquedas R Project",col=14,cex=1.2)
 text(70,0.3,"Búsquedas SAS Software",col=12,cex=1.2)
 ```
 
-No empleo **ggplot2** porque se me ha olvidado su sintaxis ya que algún compañero y amigo de la blogosfera no realiza un manual sobre su uso. Y el resultado de nuestro trabajo queda:
+No empleo `ggplot2` porque se me ha olvidado su sintaxis ya que algún compañero y amigo de la blogosfera no realiza un manual sobre su uso. Y el resultado de nuestro trabajo queda:
 
-[](/images/2011/03/busqueda-google-trends-con-r.png "busqueda-google-trends-con-r.png")
-
-[![busqueda-google-trends-con-r.png](/images/2011/03/busqueda-google-trends-con-r.thumbnail.png)](/images/2011/03/busqueda-google-trends-con-r.png "busqueda-google-trends-con-r.png")
+![busqueda-google-trends-con-r.png](/images/2011/03/busqueda-google-trends-con-r.png "busqueda-google-trends-con-r.png")
 
 Creo que es un buen ejemplo de tratamiento de datos con R. Además de otro método de acceso a Google Trends con R. Espero que os sea de utilidad. Por cierto, ejecutadlo en vuestra consola de R y reportadme los posibles errores para seguir conociendo el acceso a Google con R. Saludos.

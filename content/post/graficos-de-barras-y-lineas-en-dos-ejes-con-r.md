@@ -20,7 +20,7 @@ tags:
   - points
   - recode
   - text
-title: `Gráficos` de `barras` y `líneas` en `dos ejes` con `R`
+title: Gráficos de barras y íneas en dos ejes con R
 url: /blog/graficos-de-barras-y-lineas-en-dos-ejes-con-r/
 ---
 

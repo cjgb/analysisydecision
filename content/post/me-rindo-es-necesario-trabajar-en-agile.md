@@ -22,7 +22,7 @@ url: /blog/me-rindo-es-necesario-trabajar-en-agile/
 
 ![Imagen de previsualización de YouTube](https://img.youtube.com/vi/cu3K1njbYqs/0.jpg)
 
-`Agile sounds good` y representa todo eso que critico. Tenía compuesta y preparada una canción que versiona el `Me cago en el amor` de `Tonino Carotone`, `Me cago en el Agile` se llamaba. **¿Por qué este cambio de opinión tan radical?** Porque no se trabaja de forma horizontal, se trabaja de forma vertical y cada uno hace la guerra por su cuenta. Me voy a mi terreno**`Agile Analytics`**
+`Agile sounds good` y representa todo eso que critico. Tenía compuesta y preparada una canción que versiona el `Me cago en el amor` de `Tonino Carotone`, `Me cago en el Agile` se llamaba. **¿Por qué este cambio de opinión tan radical?** Porque no se trabaja de forma horizontal, se trabaja de forma vertical y cada uno hace la guerra por su cuenta. Me voy a mi terreno\*\*`Agile Analytics`\*\*
 
 ![](/images/2019/12/humo.png)
 

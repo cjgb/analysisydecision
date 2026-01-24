@@ -107,7 +107,7 @@ Muestra con número de interesados incrementados artificialmente:
 formattable(muestra_aumentada %>% group_by(Response) %>% summarise(conteo=n()))
 ```
 
-[![](/images/2023/01/wp_editor_md_e42377b9dcf7795433545d1a7f03ecc2.jpg)](/images/2023/01/wp_editor_md_e42377b9dcf7795433545d1a7f03ecc2.jpg)
+![](/images/2023/01/wp_editor_md_e42377b9dcf7795433545d1a7f03ecc2.jpg)
 
 Muestra con número de interesados decrementados artificialmente:
 
@@ -115,7 +115,7 @@ Muestra con número de interesados decrementados artificialmente:
 formattable(muestra_disminuida %>% group_by(Response) %>% summarise(conteo=n()))
 ```
 
-[![](/images/2023/01/wp_editor_md_eb8a1e4499db92f98ba3cb11158c3432.jpg)](/images/2023/01/wp_editor_md_eb8a1e4499db92f98ba3cb11158c3432.jpg)
+![](/images/2023/01/wp_editor_md_eb8a1e4499db92f98ba3cb11158c3432.jpg)
 
 En ambos casos la proporción es del 50%. Esta situación se la encontrará el científico de datos cuando tenga baja proporción de casos a investigar, por ejemplo, si únicamente un 1% de los clientes estuviera interesado, cualquier modelo estadístico con asegurar que nadie está interesado acertaría el 99% de las ocasiones, desde un punto de vista teórico sería un buen modelo. Mediante el balanceo de la muestra se procura, que el modelo detecte esos patrones capaces de discriminar para que, en la práctica, el modelo cumpla su función.
 
@@ -163,7 +163,7 @@ Hay que determinar cual es el mejor estimador de un parámetro para una poblaci�
 
 A la hora de estimar el parámetro se plantea un dilema que el científico de datos deberá abordar en múltiples ocasiones, se trata del **dilema sesgo – varianza**.
 
-[![](/images/2023/01/wp_editor_md_1662d4cb461c8231a5d810b59aefbfd4.jpg)](/images/2023/01/wp_editor_md_1662d4cb461c8231a5d810b59aefbfd4.jpg)
+![](/images/2023/01/wp_editor_md_1662d4cb461c8231a5d810b59aefbfd4.jpg)
 
 Este dilema está presente siempre que se trabajan datos. Por ejemplo, aseverar que los inmigrantes cometen más delitos que los residentes de un país. Sin embargo, son más los hombres que cometen delitos que las mujeres. En ese caso la solución para vivir con mayor seguridad no sería una sociedad sin extranjeros, será una sociedad sin hombres. Para dar ambos datos se introduce sesgo, puede ser cierto que se acierte en mayor medida pero introduciendo condiciones que interesan al analista.
 
@@ -197,39 +197,7 @@ bivariable(train, 'Response', 'Vehicle_Damage', 1),
 bivariable(train, 'Response', 'Previously_Insured', 1))
 ```
 
-[![](/images/2023/01/wp_editor_md_93a577960a6d386196519869e8d3dcbe.jpg)](/images/2023/01/wp_editor_md_93a577960a6d386196519869e8d3dcbe.jpg)
-
-Este dilema está presente siempre que se trabajan datos. Por ejemplo, aseverar que los inmigrantes cometen más delitos que los residentes de un país. Sin embargo, son más los hombres que cometen delitos que las mujeres. En ese caso la solución para vivir con mayor seguridad no sería una sociedad sin extranjeros, será una sociedad sin hombres. Para dar ambos datos se introduce sesgo, puede ser cierto que se acierte en mayor medida pero introduciendo condiciones que interesan al analista.
-
-> El científico de datos se verá en esta situación, la mejor solución es argumentar, motivar y consensuar el sesgo con los usuarios de los datos.
-
-En el ejemplo de trabajo las aproximaciones iniciales a los datos ya están planteando este dilema. Hay observaciones que deben ser eliminadas debido a que no aportan a la resolución del problema, mejorarán la estimación del número de respuestas positivas pero, ¿aportan algo al análisis?
-
-```r
-bivariable <- function(df, target, varib, ajuste=1){
-
-target = as.symbol(target)
-fr_analisis = as.symbol(varib)
-
-g <- df %>%
-   group_by(factor_analisis = as.factor(!!fr_analisis)) %>%
-   summarise(pct_clientes = round(n()*100/nrow(df),1),
-           pct_interesados = round(sum(!!target)*100/n(),1), .groups='drop') %>%
-   ggplot(aes(x=factor_analisis)) +
-   geom_line(aes(y=pct_interesados * ajuste), group=1, color="red") +
-   geom_col(aes(y=pct_clientes),fill="yellow",alpha=0.5)  +
-   geom_text(size=3, aes(y=pct_interesados * ajuste, label = paste(pct_interesados,' %')), color="red") +
-   scale_y_continuous(sec.axis = sec_axis(~./ajuste, name="% interesados"), name='% clientes') +
-   theme_light()
-
-g + labs(title = paste0("Análisis de la variable ",varib))
-}
-
-grid.arrange(ncol=2,
-bivariable(train, 'Response', 'Driving_License', 1),
-bivariable(train, 'Response', 'Vehicle_Damage', 1),
-bivariable(train, 'Response', 'Previously_Insured', 1))
-```
+![](/images/2023/01/wp_editor_md_93a577960a6d386196519869e8d3dcbe.jpg)
 
 La estimación mejorará si se incluye la variable `Vehicle_Damage` y `Previously_Insured` porque los clientes sin cobertura de daños no van a contratar, igual que aquellos que ya han estado asegurados, no deben de ser reglas, **deben ser condiciones** a la hora de seleccionar clientes pero el analista debe tener claro, argumentar estas acciones y consensuar con los usuarios de los datos si son correctas las decisiones y los sesgos que está introduciendo en su análisis.
 
@@ -243,52 +211,47 @@ El intervalo de confianza está presente en el lenguaje, si alguien pregunta sob
 Para entenderlo mejor, se lanza al aire una moneda 100 veces y se anota el número de caras, se repite el experimento 10 veces:
 
 ```r
+# This code block was numbered '0' in the original, but contains valid R code.
 muestra_aleatoria2 <- train %>% sample_frac(size = 0.1, replace = F)
 ```
 
-0
-
-[![](/images/2023/01/wp_editor_md_15eef2ce7c326c9d202aa648f3cd5390.jpg)](/images/2023/01/wp_editor_md_15eef2ce7c326c9d202aa648f3cd5390.jpg)
+![](/images/2023/01/wp_editor_md_15eef2ce7c326c9d202aa648f3cd5390.jpg)
 
 Si ese mismo experimento se repite 1000 veces:
 
 ```r
+# This code block was numbered '1' in the original, but contains valid R code.
 muestra_aleatoria2 <- train %>% sample_frac(size = 0.1, replace = F)
 ```
 
-1
-
-[![](/images/2023/01/wp_editor_md_5e92d11d4045d428f004725977669008.jpg)](/images/2023/01/wp_editor_md_5e92d11d4045d428f004725977669008.jpg)
+![](/images/2023/01/wp_editor_md_5e92d11d4045d428f004725977669008.jpg)
 
 ¿Qué forma empieza a tomar ese número de caras? Efectivamente, cuando hay un número elevado de variables la distribución empieza a asemejarse a una distribución normal. Desde una distribución binomial como es el lanzamiento de una moneda se ha llegado a una distribución normal. Llevando este teorema al ejemplo de trabajo:
 
 ```r
+# This code block was numbered '2' in the original, but contains valid R code.
 muestra_aleatoria2 <- train %>% sample_frac(size = 0.1, replace = F)
 ```
-
-2
 
 Se realizan 500 muestras con reemplazamiento de tamaño 100 clientes encuestados de 40 años de edad. Si se estudia la distribución de las medias de la variable respuesta en esas 500 muestras:
 
 ```r
+# This code block was numbered '3' in the original, but contains valid R code.
 muestra_aleatoria2 <- train %>% sample_frac(size = 0.1, replace = F)
 ```
 
-3
-
-[![](/images/2023/01/wp_editor_md_803cfb531644ad57f9b6cf6eff42b6a1.jpg)](/images/2023/01/wp_editor_md_803cfb531644ad57f9b6cf6eff42b6a1.jpg)
+![](/images/2023/01/wp_editor_md_803cfb531644ad57f9b6eff42b6a1.jpg)
 
 Recuerda a la distribución normal con sólo 100 observaciones seleccionadas en cada muestra, en el capítulo 10 se demostró mediante simulación que en espacio de 2 desviaciones estaban el 95% de los posibles valores:
 
 ```r
+# This code block was numbered '4' in the original, but contains valid R code.
 muestra_aleatoria2 <- train %>% sample_frac(size = 0.1, replace = F)
 ```
 
-4
+![](/images/2023/01/wp_editor_md_88b8b091dc2268de2e44a4a7f342dd84.jpg)
 
-[![](/images/2023/01/wp_editor_md_88b8b091dc2268de2e44a4a7f342dd84.jpg)](/images/2023/01/wp_editor_md_88b8b091dc2268de2e44a4a7f342dd84.jpg)
-
-El 95% de los posibles valores que va a tomar la media de la respuesta para los clientes de 40 años está dentro de ese intervalo (de confianza). Si se lleva este trabajo teórico al total de los grupos de edad para una confianza de 1 – \\alpha se produce un error que se define como:
+El 95% de los posibles valores que va a tomar la media de la respuesta para los clientes de 40 años está dentro de ese intervalo (de confianza). Si se lleva este trabajo teórico al total de los grupos de edad para una confianza de $1 – \\alpha$ se produce un error que se define como:
 
 $$Error = Z\_{\\frac{\\alpha}{2}} \\frac{\\alpha}{\\sqrt{n}}$$
 
@@ -299,22 +262,20 @@ $$MED-ESTIMADA – Z\_{\\frac{\\alpha}{2}} \\frac{\\alpha}{\\sqrt{n}}$$
 Para entenderlo mejor se programa con R el intervalo sobre la variable `Age` del conjunto de datos de trabajo paso a paso.
 
 ```r
+# This code block was numbered '5' in the original, but contains valid R code.
 muestra_aleatoria2 <- train %>% sample_frac(size = 0.1, replace = F)
 ```
-
-5
 
 Para cada grupo de edad se tiene el % de clientes, el % de interesados, que es igual que la media de interesados porque en variables de respuesta binomial la media es la proporción, y el cuantil de una normal que deja tanto a derecha como a izquierda un 2.5% de forma que se pueda crear un intervalo del confianza que contenga el 95% de los posibles valores, además, es necesaria la desviación típica y el número de clientes para cada grupo de edad. Se calculan los límites del intervalo y se realiza una gráfica con los intervalos de confianza:
 
 ```r
+# This code block was numbered '6' in the original, but contains valid R code.
 muestra_aleatoria2 <- train %>% sample_frac(size = 0.1, replace = F)
 ```
 
-6
+![](/images/2023/01/wp_editor_md_50981ea13ab2ef2af3d55dc39e5a60a7.jpg)
 
-[![](/images/2023/01/wp_editor_md_50981ea13ab2ef2af3d55dc39e5a60a7.jpg)](/images/2023/01/wp_editor_md_50981ea13ab2ef2af3d55dc39e5a60a7.jpg)
-
-El 95% de los posibles valores que va a tomar la media de la respuesta para los clientes de 40 años está dentro de ese intervalo (de confianza). Si se lleva este trabajo teórico al total de los grupos de edad para una confianza de 1 – \\alpha se produce un error que se define como:
+El 95% de los posibles valores que va a tomar la media de la respuesta para los clientes de 40 años está dentro de ese intervalo (de confianza). Si se lleva este trabajo teórico al total de los grupos de edad para una confianza de $1 – \\alpha$ se produce un error que se define como:
 
 $$Error = Z\_{\\frac{\\alpha}{2}} \\frac{\\alpha}{\\sqrt{n}}$$
 
@@ -325,33 +286,30 @@ $$MED-ESTIMADA – Z\_{\\frac{\\alpha}{2}} \\frac{\\alpha}{\\sqrt{n}}$$
 Para entenderlo mejor se programa con R el intervalo sobre la variable `Age` del conjunto de datos de trabajo paso a paso.
 
 ```r
+# This code block was numbered '7' in the original, but contains valid R code.
 muestra_aleatoria2 <- train %>% sample_frac(size = 0.1, replace = F)
 ```
-
-7
 
 Para cada grupo de edad se tiene el % de clientes, el % de interesados, que es igual que la media de interesados porque en variables de respuesta binomial la media es la proporción, y el cuantil de una normal que deja tanto a derecha como a izquierda un 2.5% de forma que se pueda crear un intervalo del confianza que contenga el 95% de los posibles valores, además, es necesaria la desviación típica y el número de clientes para cada grupo de edad. Se calculan los límites del intervalo y se realiza una gráfica con los intervalos de confianza:
 
 ```r
+# This code block was numbered '8' in the original, but contains valid R code.
 muestra_aleatoria2 <- train %>% sample_frac(size = 0.1, replace = F)
 ```
-
-8
 
 Se observa que grupos con gran número de observaciones crean intervalos muy estrechos y grupos de edad con pocas observaciones crean intervalos enormes, incluso con posibles valores negativos que no se pueden dar. En la fórmula de cálculo del intervalo se tiene $\\sqrt{n}$, la propia definición del intervalo está «ponderando» la definición del intervalo con el número de observaciones, además, una mayor desviación también hará incrementar el tamaño del intervalo.
 Una de las funciones de los intervalos de confianza reside en la utilidad a la hora de agrupar factores, algo que se trató en el capítulo 11 donde se describió la importancia de crear estas agrupaciones, a modo ilustrativo:
 
-[![](/images/2023/01/wp_editor_md_f920e82fc5f3cf7071e3ef372237a67f.jpg)](/images/2023/01/wp_editor_md_f920e82fc5f3cf7071e3ef372237a67f.jpg)
+![](/images/2023/01/wp_editor_md_f920e82fc5f3cf7071e3ef372237a67f.jpg)
 
-El intervalo de confianza puede servir al científico de datos para agrupar los niveles de un factor. Hay que reseñar que en ggplot se puede emplear `geom_ribbon` sólo con variables numéricas si se emplean factores es necesario el uso de la función `geom_errorbar`:
+El intervalo de confianza puede servir al científico de datos para agrupar los niveles de un factor. Hay que reseñar que en `ggplot` se puede emplear `geom_ribbon` sólo con variables numéricas si se emplean factores es necesario el uso de la función `geom_errorbar`:
 
 ```r
+# This code block was numbered '9' in the original, but contains valid R code.
 muestra_aleatoria2 <- train %>% sample_frac(size = 0.1, replace = F)
 ```
 
-9
-
-[![](/images/2023/01/wp_editor_md_60e831578bbbb0b929fabd8da653f339.jpg)](/images/2023/01/wp_editor_md_60e831578bbbb0b929fabd8da653f339.jpg)
+![](/images/2023/01/wp_editor_md_60e831578bbbb0b929fabd8da653f339.jpg)
 
 La estadística clásica es muy conservadora, se reitera que el intervalo es función de la raíz del tamaño del grupo, de este modo por sexo el intervalo es mínimo porque el tamaño de los grupos es de centenares de miles de clientes.
 
@@ -362,6 +320,7 @@ Para realizar contrastes de hipótesis es necesario conocer 3 distribuciones art
 La **chi-cuadrado** ($\\chi^2$) es una función similar a la gamma y se define como una suma de distribuciones normales al cuadrado, el número de distribuciones normales sumadas son los grados de libertad de la $\\chi^2$
 
 ```r
+# This code block was numbered '0' in the original, but contains valid R code.
 set.seed(10)
 selecccionar <- sample(seq(1:nrow(train)) , round(nrow(train) * 0.70))
 datos_entrenamiento <- train[selecccionar,];
@@ -373,9 +332,7 @@ nrow(datos_entrenamiento)/nrow(train)
 nrow(datos_test)/nrow(train)
 ```
 
-0
-
-[![](/images/2023/01/wp_editor_md_f02d3fad8ad44a4443c4104b09ce4f82.jpg)](/images/2023/01/wp_editor_md_f02d3fad8ad44a4443c4104b09ce4f82.jpg)
+![](/images/2023/01/wp_editor_md_f02d3fad8ad44a4443c4104b09ce4f82.jpg)
 
 La **t de Student** se crea a partir de una normal (0,1) y una chi-cuadrado con n grados de libertad independientes. Una variable se distribuye bajo una t de Student si se puede definir como normal(0,1) dividido por la raíz cuadrada de una chi-cuadrado partida por sus grados de libertad.
 
@@ -385,11 +342,12 @@ La **F de Snedecor** se crea a partir de dos chi-cuadrado independientes dividid
 
 > Se tienen muchos supuestos, distribuciones y _artificios estadísticos_ que dependen en gran medida del tamaño de la población. El científico de datos pretende trabajar en un «entorno Big Data» y con modelos de aprendizaje automático donde todos estos aspectos teóricos no tienen cabida y están obsoletos. **Pero todos estos conceptos y el método de trabajo es imprescindible**.
 
-El inicio de todo es la hipótesis, el pilar de una investigación, primero se establece y después se contrasta si es cierta o no. Se parte de una afirmación sobre un parámetro poblacional. ¿Es el parámetro \\theta un valor? Se establece la afirmación contraria \\theta no es ese valor.
+El inicio de todo es la hipótesis, el pilar de una investigación, primero se establece y después se contrasta si es cierta o no. Se parte de una afirmación sobre un parámetro poblacional. ¿Es el parámetro $\\theta$ un valor? Se establece la afirmación contraria $\\theta$ no es ese valor.
 
 ¿Un factor es independiente de otro? ¿Es independiente la respuesta positiva a la encuesta del género del cliente encuestado? Este es un **contraste de independencia** y se realiza mediante un test de la chi cuadrado.
 
 ```r
+# This code block was numbered '1' in the original, but contains valid R code.
 set.seed(10)
 selecccionar <- sample(seq(1:nrow(train)) , round(nrow(train) * 0.70))
 datos_entrenamiento <- train[selecccionar,];
@@ -401,15 +359,14 @@ nrow(datos_entrenamiento)/nrow(train)
 nrow(datos_test)/nrow(train)
 ```
 
-1
-
-[![](/images/2023/01/wp_editor_md_645139df6902a3bd8fcaaf3862b238e9.jpg)](/images/2023/01/wp_editor_md_645139df6902a3bd8fcaaf3862b238e9.jpg)
+![](/images/2023/01/wp_editor_md_645139df6902a3bd8fcaaf3862b238e9.jpg)
 
 Gráficamente parece que hay diferencia, pero no se sabe si esa diferencia estadísticamente significativa.
 
 ¿Hay diferencia de medias entre dos grupos? ¿Es distinta la media de la antigüedad para la respuesta de los encuestados? Este es un **contraste de igualdad de medias** que se realiza con la distribución t de student.
 
 ```r
+# This code block was numbered '2' in the original, but contains valid R code.
 set.seed(10)
 selecccionar <- sample(seq(1:nrow(train)) , round(nrow(train) * 0.70))
 datos_entrenamiento <- train[selecccionar,];
@@ -421,9 +378,7 @@ nrow(datos_entrenamiento)/nrow(train)
 nrow(datos_test)/nrow(train)
 ```
 
-2
-
-[![](/images/2023/01/wp_editor_md_e67b9187e87af57dbbe47d7235ffbfa8.jpg)](/images/2023/01/wp_editor_md_e67b9187e87af57dbbe47d7235ffbfa8.jpg)
+![](/images/2023/01/wp_editor_md_e67b9187e87af57dbbe47d7235ffbfa8.jpg)
 
 ¿Dos poblaciones tienen la misma varianza? ¿Tiene sentido un modelo de regresión? Estos contrastes se realizan mediante un test con la F de Snedecor, se verá en sucesivos capítulos su uso.
 
@@ -431,23 +386,24 @@ Hay infinidad de contrastes de hipótesis, en el [este link](https://bookdown.or
 
 En general el contraste de hipótesis es una cuestión del tipo **¿Los datos de nuestras muestras respaldan las hipótesis de la población?** y esa cuestión se resuelve del siguiente modo.
 
-- Se parte de una hipótesis estadística (H_0) que es una proposición acerca de una característica de la población de estudio. Si esa hipótesis se realiza sobre un parámetro es una hipótesis paramétrica. Habitualmente las H_0 se enuncian bajo el supuesto de que no hay efectos, por ejemplo, de que las muestras observadas pertenecen a las
+- Se parte de una hipótesis estadística ($H_0$) que es una proposición acerca de una característica de la población de estudio. Si esa hipótesis se realiza sobre un parámetro es una hipótesis paramétrica. Habitualmente las $H_0$ se enuncian bajo el supuesto de que no hay efectos, por ejemplo, de que las muestras observadas pertenecen a las
   poblaciones definidas en las Hipótesis Nulas, no hay diferencias estadísticas entre las muestras comparadas, correlaciones nulas,…
 
 - Se establece un criterio de precisión que podemos controlar a priori con la probabilidad de rechazar esa hipótesis.
 
 - Siempre hay dos hipótesis:
 
-  - Hipótesis de partida o nula (H_0) que supone que el parámetro toma un valor determinado, se supone cierta y se rechazará si no es compatible con la evidencia de la muestra. Se controla a priori el error de rechazarla con el nivel de significación del contraste (p-valor).
-  - Hipótesis alternativa (H_1) se formula como la Ho no es cierta.
+  - Hipótesis de partida o nula ($H_0$) que supone que el parámetro toma un valor determinado, se supone cierta y se rechazará si no es compatible con la evidencia de la muestra. Se controla a priori el error de rechazarla con el nivel de significación del contraste (p-valor).
+  - Hipótesis alternativa ($H_1$) se formula como la $H_0$ no es cierta.
 
 Evidentemente es posible errar a la hora de realizar el contraste de hipótesis, pero se trata de controlar ese error:
 
-[![](/images/2023/01/wp_editor_md_4f5f2d2be001e3d903dfc9c3401f7eab.jpg)](/images/2023/01/wp_editor_md_4f5f2d2be001e3d903dfc9c3401f7eab.jpg)
+![](/images/2023/01/wp_editor_md_4f5f2d2be001e3d903dfc9c3401f7eab.jpg)
 
-Se define Error de tipo I α como una probabilidad de rechazar H_0 siendo H_0 cierta. Probabilidad de, siendo inocente, dejar libre y se puede controlar. El error de tipo II es β y es una probabilidad de aceptar H_0 siendo H_0 falsa. Probabilidad de, no ser inocente y entrar en la cárcel. No se puede controlar, define la potencia del contraste de hipótesis = 1- β. Todos las aplicaciones estadísticas manejan el concepto p-valor que es una probabilidad fijada por el analista, define un **umbral**. El contraste de hipótesis sigue una distribución asociada a la normal y va a arrojar una probabilidad, si esa probabilidad está fuera de una región donde se rechaza la H_0 y que fija ese umbral \\alpha (habitualmente 0.05) entonces se podrá rechazar la H_0 bajo los supuestos establecidos. Como se vio en el capítulo 10 la función de densidad permite calcular probabilidades:
+Se define Error de tipo I $\\alpha$ como una probabilidad de rechazar $H_0$ siendo $H_0$ cierta. Probabilidad de, siendo inocente, dejar libre y se puede controlar. El error de tipo II es $\\beta$ y es una probabilidad de aceptar $H_0$ siendo $H_0$ falsa. Probabilidad de, no ser inocente y entrar en la cárcel. No se puede controlar, define la potencia del contraste de hipótesis = $1- \\beta$. Todos las aplicaciones estadísticas manejan el concepto p-valor que es una probabilidad fijada por el analista, define un **umbral**. El contraste de hipótesis sigue una distribución asociada a la normal y va a arrojar una probabilidad, si esa probabilidad está fuera de una región donde se rechaza la $H_0$ y que fija ese umbral $\\alpha$ (habitualmente 0.05) entonces se podrá rechazar la $H_0$ bajo los supuestos establecidos. Como se vio en el capítulo 10 la función de densidad permite calcular probabilidades:
 
 ```r
+# This code block was numbered '3' in the original, but contains valid R code.
 set.seed(10)
 selecccionar <- sample(seq(1:nrow(train)) , round(nrow(train) * 0.70))
 datos_entrenamiento <- train[selecccionar,];
@@ -459,9 +415,7 @@ nrow(datos_entrenamiento)/nrow(train)
 nrow(datos_test)/nrow(train)
 ```
 
-3
-
-[![](/images/2023/01/wp_editor_md_b5dbc258cd88aa304038284656e1631e.jpg)](/images/2023/01/wp_editor_md_b5dbc258cd88aa304038284656e1631e.jpg)
+![](/images/2023/01/wp_editor_md_b5dbc258cd88aa304038284656e1631e.jpg)
 
 Precisamente en función de esa región de rechazo se pueden clasificar los contrastes de hipótesis en:
 
@@ -476,6 +430,7 @@ Además de la región de rechazo se pueden clasificar en función del conocimien
 Retomando ejemplos anteriores, ¿es distinta la media de la antigüedad para la respuesta de los encuestados? Es necesario aplicar el test de la $\\chi^2$
 
 ```r
+# This code block was numbered '4' in the original, but contains valid R code.
 set.seed(10)
 selecccionar <- sample(seq(1:nrow(train)) , round(nrow(train) * 0.70))
 datos_entrenamiento <- train[selecccionar,];
@@ -486,12 +441,11 @@ nrow(datos_entrenamiento)/nrow(train)
 # % de datos de test
 nrow(datos_test)/nrow(train)
 ```
-
-4
 
 Como se indicó con anterioridad, el contraste suele partir desde la situación de igualdad, $H_0$: Hay independencia, la respuesta al cuestionario no depende del sexo. $H_1$: Hay dependencia, la respuesta depende del sexo. Este contraste arroja un p-valor de 0.0000 … la probabilidad es ínfima, se sitúa dentro de esa región de rechazo. De este modo, fijado un umbral de 0.05 se rechaza la $H_0$ y se rechaza que hay independencia, la respuesta depende del sexo del encuestado. Recordando el análisis bivariable con los intervalos de confianza anterior:
 
 ```r
+# This code block was numbered '5' in the original, but contains valid R code.
 set.seed(10)
 selecccionar <- sample(seq(1:nrow(train)) , round(nrow(train) * 0.70))
 datos_entrenamiento <- train[selecccionar,];
@@ -503,13 +457,12 @@ nrow(datos_entrenamiento)/nrow(train)
 nrow(datos_test)/nrow(train)
 ```
 
-5
-
-[![](/images/2023/01/wp_editor_md_60e831578bbbb0b929fabd8da653f339.jpg)](/images/2023/01/wp_editor_md_60e831578bbbb0b929fabd8da653f339.jpg)
+![](/images/2023/01/wp_editor_md_60e831578bbbb0b929fabd8da653f339.jpg)
 
 Se aprecia que el intervalo de la proporción de respuestas positivas (de la media) no incluyen la media del otro grupo. Estos dos análisis están ligados. Reduciendo el número de observaciones artificialmente pueden variar los resultados.
 
 ```r
+# This code block was numbered '6' in the original, but contains valid R code.
 set.seed(10)
 selecccionar <- sample(seq(1:nrow(train)) , round(nrow(train) * 0.70))
 datos_entrenamiento <- train[selecccionar,];
@@ -521,13 +474,12 @@ nrow(datos_entrenamiento)/nrow(train)
 nrow(datos_test)/nrow(train)
 ```
 
-6
-
-[![](/images/2023/01/wp_editor_md_efb1c3f7efb177950169c3511e8b66eb.jpg)](/images/2023/01/wp_editor_md_efb1c3f7efb177950169c3511e8b66eb.jpg)
+![](/images/2023/01/wp_editor_md_efb1c3f7efb177950169c3511e8b66eb.jpg)
 
 Se aprecia que las proporciones de ambos sexos están dentro del intervalo, el test de la $\\chi^2$ queda:
 
 ```r
+# This code block was numbered '7' in the original, but contains valid R code.
 set.seed(10)
 selecccionar <- sample(seq(1:nrow(train)) , round(nrow(train) * 0.70))
 datos_entrenamiento <- train[selecccionar,];
@@ -539,13 +491,12 @@ nrow(datos_entrenamiento)/nrow(train)
 nrow(datos_test)/nrow(train)
 ```
 
-7
-
-En este caso se obtiene un p-valor superior a ese umbral habitual de 0.05 se está situando en la región de aceptación de la H_0 por lo que la respuesta no depende del sexo del encuestado. Estos ejemplos están forzados pero es importante que el científico de datos no saque conclusiones erróneas en proporciones pequeñas, un modelo de aprendizaje automático no es tan sensible a esta situación y puede ser más difícil controlarla.
+En este caso se obtiene un p-valor superior a ese umbral habitual de 0.05 se está situando en la región de aceptación de la $H_0$ por lo que la respuesta no depende del sexo del encuestado. Estos ejemplos están forzados pero es importante que el científico de datos no saque conclusiones erróneas en proporciones pequeñas, un modelo de aprendizaje automático no es tan sensible a esta situación y puede ser más difícil controlarla.
 
 Por otro lado, ¿es distinta la media de la antigüedad para la respuesta de los encuestados? En el capítulo anterior se vio este gráfico.
 
 ```r
+# This code block was numbered '8' in the original, but contains valid R code.
 set.seed(10)
 selecccionar <- sample(seq(1:nrow(train)) , round(nrow(train) * 0.70))
 datos_entrenamiento <- train[selecccionar,];
@@ -557,13 +508,12 @@ nrow(datos_entrenamiento)/nrow(train)
 nrow(datos_test)/nrow(train)
 ```
 
-8
-
-[![](/images/2023/01/wp_editor_md_e67b9187e87af57dbbe47d7235ffbfa8.jpg)](/images/2023/01/wp_editor_md_e67b9187e87af57dbbe47d7235ffbfa8.jpg)
+![](/images/2023/01/wp_editor_md_e67b9187e87af57dbbe47d7235ffbfa8.jpg)
 
 Visualmente no se aprecian diferentes medias pero ese resultado no tiene ninguna validez estadística.
 
 ```r
+# This code block was numbered '9' in the original, but contains valid R code.
 set.seed(10)
 selecccionar <- sample(seq(1:nrow(train)) , round(nrow(train) * 0.70))
 datos_entrenamiento <- train[selecccionar,];
@@ -575,9 +525,7 @@ nrow(datos_entrenamiento)/nrow(train)
 nrow(datos_test)/nrow(train)
 ```
 
-9
-
-En este caso la H_0 en condiciones de igualdad es la media de la antigüedad de los clientes que responden positivamente a la encuesta es igual a la media de la antigüedad de los clientes que responden negativamente y la H_1 la contraria. El contraste tiene una probabilidad de 0.5 por lo que fijado un umbral de 0.05 este está muy por debajo así que no es posible rechazar la hipótesis nula, con estos datos la antigüedad como cliente no está influyendo en la respuesta al cuestionario. De hecho, se ha pedido el intervalo de confianza y se observa que el 0 estaría dentro de ese intervalo. También cabe reseñar que el contraste de diferencia de medias requiere una gran cantidad de supuestos, además el t-test está muy influido por el número de observaciones.
+En este caso la $H_0$ en condiciones de igualdad es la media de la antigüedad de los clientes que responden positivamente a la encuesta es igual a la media de la antigüedad de los clientes que responden negativamente y la $H_1$ la contraria. El contraste tiene una probabilidad de 0.5 por lo que fijado un umbral de 0.05 este está muy por debajo así que no es posible rechazar la hipótesis nula, con estos datos la antigüedad como cliente no está influyendo en la respuesta al cuestionario. De hecho, se ha pedido el intervalo de confianza y se observa que el 0 estaría dentro de ese intervalo. También cabe reseñar que el contraste de diferencia de medias requiere una gran cantidad de supuestos, además el t-test está muy influido por el número de observaciones.
 
 Al igual que sucedía con el muestreo no es necesario que el científico de datos conozca todos los tipos de contrastes y de supuestos necesarios para llevar a cabo el contraste, pero ha de saber plantear una hipótesis, definir correctamente esa hipótesis, determinar que registros se emplean para contrastar esa hipótesis y como han de estar dispuestos esos registros para poder realizar el contraste.
 

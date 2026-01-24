@@ -24,9 +24,9 @@ url: /blog/truco-python-seleccionar-o-eliminar-variables-de-un-data-frame-en-bas
 
 A la hora de seleccionar las características de un `data frame` es posible que nos encontremos con la necesidad de seleccionar o eliminar características del `data frame` y que el nombre de esas características tenga un determinado patrón. Esta labor la podemos realizar mediante selección de elementos en listas, en esta entrada del blog vamos a tener 3 tipos de selecciones:
 
-1.  Seleccionar o eliminar aquellas variables que empiezan por un determinado prefijo
-2.  Seleccionar o eliminar aquellas variables que contienen una cadena de caracteres
-3.  Seleccionar o eliminar aquellas variables que finalizan con un sufijo
+1. Seleccionar o eliminar aquellas variables que empiezan por un determinado prefijo
+1. Seleccionar o eliminar aquellas variables que contienen una cadena de caracteres
+1. Seleccionar o eliminar aquellas variables que finalizan con un sufijo
 
 Para ilustrar este trabajo generamos un `data frame` con datos aleatorios y 10 columnas:
 

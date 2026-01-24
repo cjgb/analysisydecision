@@ -20,7 +20,7 @@ url: /blog/mapa-de-mexico-rapido-y-sucio-y-estatico-con-rstats/
 
 No sabía como mostraros el funcionamiento de getData del paquete raster para tener que evitaros ir a GADM y descargar los correspondientes mapas. Bueno, pues se me ha ocurrido hacer una entrada que tenga el menor número de líneas posibles y que genere un mapa. No me lo tengáis mucho en cuenta:
 
-```r
+````r
 ```r
 library(ggplot2)
 library(raster)
@@ -44,6 +44,6 @@ ggplot(data = mex, aes(x = long, y = lat, group = group)) +
   scale_fill_continuous(low="white",high="blue") +
   labs(title = "Quick and dirty") +
   theme_void()
-```
+````
 
 Ahí lo tenéis getData se conecta a GADM donde vía ISO 3 le decimos que mapa queremos y el nivel que queremos y pintamos un mapa de México con ggplot2 en un pis pas. Comentad si no entendéis algo, hay miles de entradas que hacen lo mismo de forma más detallada pero en menos líneas ninguna. Saludos.

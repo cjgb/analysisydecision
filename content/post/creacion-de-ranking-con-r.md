@@ -39,16 +39,19 @@ Es una agrupación de factores a la que asignamos el orden con rank, con ties.me
 library(reshape)
 dataset <-sort_df(dataset,vars=c('grupo','importes'))
 ```
+
 Otra solución posible la tenemos con plyr:
 
 ```r
 library(plyr)
 dataset <- ddply(dataset,.(grupo), transform, ranking2 = (seq_along(importes)))
 ```
+
 Si nuestra agrupación tiene más de una variable podemos hacer:
 
 ```r
 dataset$grupo2 <- rpois(10,1)
 dataset <- ddply(dataset,.(grupo,grupo2), transform, ranking3 = (seq_along(importes)))
 ```
+
 Imagino que en alguna ocasión os habéis encontrado con este problema, pues ya conocéis dos formas de solucionarlo. Saludos.

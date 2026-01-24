@@ -27,147 +27,153 @@ La idea es muy fácil: dispongo de una variable continua y una variable respuest
 
 El proceso haría un bucle de la idea anterior con tantas iteraciones como deseemos, e iría agrupando la variable en función del peso de la variable respuesta dentro de cada grupo. Muy sencillo y vais a entenderlo con el ejemplo de SAS. Como siempre parto de un dataset aleatorio con un importe y una variable respuesta:
 
-_\*DATASET ALEATORIO;_
-_data uno;_
-_do i=1 to 20000;_
-_importe=ranuni(0)\*10000;_
-_if rand(«uniform») \<.04 then resp=1;_
-_else resp=0;_
-_if resp=0 and 200 \<importe0.2);_
-_if resp=0 and 8000 \<importe0.2);_
-_output;_
-_end;_
-_run;_
+```sas
+*DATASET ALEATORIO;
+data uno;
+do i=1 to 20000;
+importe=ranuni(0)*10000;
+if rand("uniform") <.04 then resp=1;
+else resp=0;
+if resp=0 and 200 <importe<400 then resp=rand("uniform")*(0.2);
+if resp=0 and 8000 <importe<9000 then resp=rand("uniform")*(0.2);
+output;
+end;
+run;
+```
 
 Es evidente que la variable respuesta está inflada para los importes entre 200 y 400 y para los importes entre 8000 y 9000. A continuación os planteo la macro que tramifica y analizaremos sus resultados:
 
-%m _acro numobs(ds,mv);_
-_%global &mv.;_
-_data _null_;_
-_datossid=open(« &ds.»);_
-_no=attrn(datossid,’nobs’);_
-_call symput (« &mv.»,compress(no));_
-_datossid=close(datossid);_
-_run;_
-_%mend;_
+```sas
+%macro numobs(ds,mv);
+%global &mv.;
+data _null_;
+datossid=open(" &ds.");
+no=attrn(datossid,'nobs');
+call symput (" &mv.",compress(no));
+datossid=close(datossid);
+run;
+%mend;
 
-_%macro rangea (datos,cuantitativa,respuesta);`%numobs(&datos.,obs);`_
+%macro rangea (datos,cuantitativa,respuesta);%numobs(&datos.,obs);
 
-_\*CORTES QUE GENERAN GRUPOS PODEMOS SER MÁS LAXOS O NO;_
-_%let cortes=0.8 \<=relativa\<=1.2 ;_
+*CORTES QUE GENERAN GRUPOS PODEMOS SER MÁS LAXOS O NO;
+%let cortes=0.8 <=relativa<=1.2 ;
 
-_\*ESPECIFICAMOS EL NÚMERO Y EL TAMAÑO DE LOS GRUPOS INICIALES;_
-_%let numero_de_grupos=30;_
+*ESPECIFICAMOS EL NÚMERO Y EL TAMAÑO DE LOS GRUPOS INICIALES;
+%let numero_de_grupos=30;
 
-_\*ORDENAMOS POR LA VARIABLE QUE DESEAMOS CATEGORIZAR;_
-_proc sort data= &datos.; by &cuantitativa.; run;_
+*ORDENAMOS POR LA VARIABLE QUE DESEAMOS CATEGORIZAR;
+proc sort data= &datos.; by &cuantitativa.; run;
 
-_\*CREAMOS 30 GRUPOS INICIALES;_
-_data &datos.;_
-_set &datos.;_
-_\*CREAMOS N GRUPOS;_
-_rango=ceil((_n_/ &obs.)\*&numero_de_grupos.);_
-_run;_
+*CREAMOS 30 GRUPOS INICIALES;
+data &datos.;
+set &datos.;
+*CREAMOS N GRUPOS;
+rango=ceil((_n_/ &obs.)*&numero_de_grupos.);
+run;
 
-_\*CREAMOS VARIABLES DUMMY;_
-_data instruccion;_
-_do i=1 to &numero_de_grupos.;_
-_instruccion=»GR_»||compress(put(i,3.))||»=0; IF RANGO=»||put(i,3.)||» THEN GR\_»||compress(put(i,3.))||»=1″;\_
-_output;_
-_end;_
-_run;_
+*CREAMOS VARIABLES DUMMY;
+data instruccion;
+do i=1 to &numero_de_grupos.;
+instruccion="GR_"||compress(put(i,3.))||"=0; IF RANGO="||put(i,3.)||" THEN GR_"||compress(put(i,3.))||"=1";
+output;
+end;
+run;
 
-_proc sql noprint ;_
-_select instruccion into:instr separated by «;»_
-_from instruccion;_
-_quit;_
-_proc delete data=instruccion;_
+proc sql noprint ;
+select instruccion into:instr separated by ";";
+from instruccion;
+quit;
+proc delete data=instruccion;
 
-_data &datos.;_
-_set &datos.;_
-\_ &instr.;\_
-_run;_
+data &datos.;
+set &datos.;
+&instr.;
+run;
 
-_\*BUCLE QUE AGRUPA LAS DICOTOMICAS EN FUNCION DE LOGISTICA;_
+*BUCLE QUE AGRUPA LAS DICOTOMICAS EN FUNCION DE LOGISTICA;
 
-_%let ejecuta=1;_
+%let ejecuta=1;
 
-_\*PUEDES MODIFICAR EL NUMERO DE ITERACCIONES;_
-_%do i=1 %to 10;_
-_%if &i.=1 %then %do; %let fin_variables=GR_30;%end;_
+*PUEDES MODIFICAR EL NUMERO DE ITERACCIONES;
+%do i=1 %to 10;
+%if &i.=1 %then %do; %let fin_variables=GR_30;%end;
 
-_%if &ejecuta. %then %do;_
+%if &ejecuta. %then %do;
 
-_proc logistic data = &datos. noprint descending_
-_outest = paso &i. ;_
-_model &respuesta.=gr_1 — &fin_variables.;_
-_run;_
+proc logistic data = &datos. noprint descending
+outest = paso &i. ;
+model &respuesta.=gr_1 -- &fin_variables.;
+run;
 
-_proc transpose data=paso &i. out=paso&i. (where=(index(_name_,»GR»)>0) drop=_label_);_
-_quit;_
+proc transpose data=paso &i. out=paso&i. (where=(index(_name_,"GR")>0) drop=_label_);
+quit;
 
-_\*ESTA PARTE GENERA LOS NUEVOS RANGOS Y LAS NUEVAS DICOTOMICAS;_
-_data paso &i.;_
-_set paso &i. end=ultimo;_
-_\*PROBLEMA DE PESO 0;_
-\_ &respuesta.=&respuesta.+0.0000000001;\_
-_retain rango 1;_
-_anterior=lag( &respuesta.);_
-_if anterior=. then anterior= &respuesta.;_
-_relativa=anterior/ &respuesta.;_
-_junta=0;_
-_if &cortes. then junta=1;_
+*ESTA PARTE GENERA LOS NUEVOS RANGOS Y LAS NUEVAS DICOTOMICAS;
+data paso &i.;
+set paso &i. end=ultimo;
+*PROBLEMA DE PESO 0;
+&respuesta.=&respuesta.+0.0000000001;
+retain rango 1;
+anterior=lag( &respuesta.);
+if anterior=. then anterior= &respuesta.;
+relativa=anterior/ &respuesta.;
+junta=0;
+if &cortes. then junta=1;
 
-_if junta=0 then rango=rango+1;_
-_rango_ant = compress(_name_,»GR_»);\_
+if junta=0 then rango=rango+1;
+rango_ant = compress(_name_,"GR_");
 
-_instruccion=»GR_»||compress(put(rango,3.))||»=0; IF RANGO=»||rango_ant||» THEN DO; GR\_»||compress(put(rango,3.))||»=1; RANGO=»||rango||»;END;»;\_
-_if ultimo then call symput(‘fin_variables’,»GR_»||compress(put(rango,3.)));\_
-_run;_
+instruccion="GR_"||compress(put(rango,3.))||"=0; IF RANGO="||rango_ant||" THEN DO; GR_"||compress(put(rango,3.))||"=1; RANGO="||rango||";END;";
+if ultimo then call symput('fin_variables',"GR_"||compress(put(rango,3.)));
+run;
 
-_proc sql noprint ;_
-_select instruccion into:instr separated by «;»_
-_from paso &i.;_
-_quit;_
+proc sql noprint ;
+select instruccion into:instr separated by ";";
+from paso &i.;
+quit;
 
-_data &datos.;_
-_set &datos. (drop=gr:);_
-\_ &instr.;\_
-_run;_
+data &datos.;
+set &datos. (drop=gr:);
+&instr.;
+run;
 
-_\*SI YA NO HAY MODIFICACIONES NO TIENE SENTIDO SEGUIR CON EL PROCESO;_
-_proc sql noprint;_
-_select max(junta) into:ejecuta_
-_from paso &i.;_
-_quit;_
+*SI YA NO HAY MODIFICACIONES NO TIENE SENTIDO SEGUIR CON EL PROCESO;
+proc sql noprint;
+select max(junta) into:ejecuta;
+from paso &i.;
+quit;
 
-_proc delete data=paso &i.; run;_
+proc delete data=paso &i.; run;
 
-_%end;_
-_%end;_
+%end;
+%end;
 
-_data &datos.;_
-_set &datos.;_
-_drop gr:;_
-_run;_
+data &datos.;
+set &datos.;
+drop gr:;
+run;
 
-_%mend;_
+%mend;
+```
 
-_%rangea(uno,importe,resp);_
+`%rangea(uno,importe,resp);`
 
-Larga y compleja así a primera vista, pero muy sencilla de entender si se realizan ejecuciones y se comprueba su funcionamiento, recomiendo comentar el último PROC DELETE para ver como evoluciona cada paso de la iteración. Partimos de 30 grupos (suficiente de inicio) y realizamos una regresión logística de las 30 variables generadas, creamos un dataset en el que vemos si los grupos tienen similar peso. Vemos como sería la primera iteración:
+Larga y compleja así a primera vista, pero muy sencilla de entender si se realizan ejecuciones y se comprueba su funcionamiento, recomiendo comentar el último `PROC DELETE` para ver como evoluciona cada paso de la iteración. Partimos de 30 grupos (suficiente de inicio) y realizamos una regresión logística de las 30 variables generadas, creamos un dataset en el que vemos si los grupos tienen similar peso. Vemos como sería la primera iteración:
 
 ![tramos1.JPG](/images/2009/04/tramos1.JPG)
 
-Pesos dentro de nuestro criterio de corte (%let cortes=0.8\<=relativa\<=1.2) se unen gracias a que creamos una instrucción automática con PROC SQL. Así hasta 10 veces se ejecuta y al final el dataset de entrada de la macro tiene un campo rango que nos ha trameado la variable cuantiva en función de la respuesta. Si analizamos su comportamiento:
+Pesos dentro de nuestro criterio de corte (`%let cortes=0.8 <=relativa<=1.2`) se unen gracias a que creamos una instrucción automática con `PROC SQL`. Así hasta 10 veces se ejecuta y al final el dataset de entrada de la macro tiene un campo rango que nos ha trameado la variable cuantiva en función de la respuesta. Si analizamos su comportamiento:
 
-_proc sql;_
-_select rango, min(importe) as min_importe, max(importe) as max_importe,_
-_COUNT(*) AS OBS,sum(resp), sum(resp)/count(*) as peso_
-_from uno_
-_group by 1;_
-_quit;_
+```sas
+proc sql;
+select rango, min(importe) as min_importe, max(importe) as max_importe,
+COUNT(*) AS OBS,sum(resp), sum(resp)/count(*) as peso
+from uno
+group by 1;
+quit;
+```
 
 ![tramos2.JPG](/images/2009/04/tramos2.JPG)
 
-Ha encontrado perfectamente el tramo entre 8000 y 9000 y un poco peor con el tramo de 200 a 400 probablemente porque tiene menos registros. Podría hacer más uniones, pero si hace un análisis exploratorio bastante interesante. Queda pendiente estudiar que pasaría con este proceso si nos encontramos con valores muy frecuentes, por ejemplo el valor 0. Próximas entregas y como siempre dudas, sugerencias u ofertas de trabajo que me permitan ver a mis hijos desde las 4 de la tarde rvaquerizo@analisisydecision.es
+Ha encontrado perfectamente el tramo entre 8000 y 9000 y un poco peor con el tramo de 200 a 400 probablemente porque tiene menos registros. Podría hacer más uniones, pero si hace un análisis exploratorio bastante interesante. Queda pendiente estudiar que pasaría con este proceso si nos encontramos con valores muy frecuentes, por ejemplo el valor 0. Próximas entregas y como siempre dudas, sugerencias u ofertas de trabajo que me permitan ver a mis hijos desde las 4 de la tarde `rvaquerizo@analisisydecision.es`

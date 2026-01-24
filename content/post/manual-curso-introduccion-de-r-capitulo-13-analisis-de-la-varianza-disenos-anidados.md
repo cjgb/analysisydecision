@@ -127,11 +127,11 @@ summary(aov(calcio~localidad,data=estudio2))
 
 Df Sum Sq Mean Sq F value Pr(>F)
 
-localidad 1 86.113 86.113 7.6874 0.01497 *
+localidad 1 86.113 86.113 7.6874 0.01497 \*
 
 Residuals 14 156.825 11.202
 
----
+______________________________________________________________________
 
 Signif. codes: 0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 

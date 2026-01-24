@@ -38,6 +38,7 @@ saldos=merge(saldos,edad,by.x="id_cliente",by.y="id_cliente")
 ```
 
 Tabla de saldos con 100 registros y por cada cliente dos saldos y la edad. La idea es hacer una tabla agregada a nivel de edad, necesitamos identificar los clientes duplicados, calcular máximos mínimos y medias. [Hace tiempo ya hice referencia al paquete `sqldf`](https://analisisydecision.es/monografico-paquete-sqldf-si-sabes-sql-sabes-r/). Hasta conocer `ddply` yo hacía:
+
 ```r
 library(sqldf)
 sqldf('select edad,
@@ -52,6 +53,7 @@ group by edad;')
 ```
 
 No es un código complejo, como siempre he dicho si sabes `SQL` sabes `R`. Pero un buen día me crucé con el paquete `plyr` y la función `ddply`:
+
 ```r
 library(plyr)
 ddply(saldos,"edad",summarise,

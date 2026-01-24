@@ -100,7 +100,7 @@ sd(alturas) #desviación estándar
 0.1149308
 ```
 
-Si deseamos la varianza hemos de crear en `R` una función que nos calcule $(n-1)/n] · 	ext{cuasivarianza}$: 
+Si deseamos la varianza hemos de crear en `R` una función que nos calcule $(n-1)/n\] · ext{cuasivarianza}$:
 
 ```r
 varianza<-function(x) { ((length(x)-1)/length(x))*var(x) } #creamos la función varianza

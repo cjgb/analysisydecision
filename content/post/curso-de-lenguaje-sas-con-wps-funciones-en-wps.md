@@ -33,11 +33,9 @@ Poco a poco tomamos contacto con la `herramienta` y con los `conceptos`. El `int
 
 En esta entrega vamos a ver ejemplos de los dos primeros `tipos` de `funciones`. Las `funciones fecha` tendrán su `propio` `capítulo`, las `otras funciones` son referentes a `I/O`, `arrays`,… pertenecen a una `programación` más `avanzada`, irán saliendo a lo largo del `curso` algunas de esas `funciones`. `WPS` contiene una `extensa ayuda` sobre todas las `funciones` disponibles en el `WPS Core` (la `base` de `WPS`):
 
-
-
 ![](/images/2011/01/wps-ayuda.thumbnail.png)
 
-El `problema` es que no está correctamente `documentada` esta `ayuda` porque fue el único `problema` que tuvo `WPS` en el `contencioso` con `SAS` del que [ya hablamos en su `momento`](`https://analisisydecision.es/david-gana-a-goliat-la-sentencia-del-caso-sas-frente-a-wps/`). Hoy presentamos una `serie` de `funciones` de uso más `habitual`.
+El `problema` es que no está correctamente `documentada` esta `ayuda` porque fue el único `problema` que tuvo `WPS` en el `contencioso` con `SAS` del que [ya hablamos en su `momento`](%60https://analisisydecision.es/david-gana-a-goliat-la-sentencia-del-caso-sas-frente-a-wps/%60). Hoy presentamos una `serie` de `funciones` de uso más `habitual`.
 
 `Funciones numéricas`:
 
@@ -79,9 +77,9 @@ total=10
 
 NOTE: The data step took :
 
-  real time : 0.000
+real time : 0.000
 
-  cpu time : 0.000
+cpu time : 0.000
 
 `Sumar` un `valor` con `missing` produce un `missing`. Emplear `SUM` con un `valor` y un `missing` produce un `valor`, el `missing` toma `valor` 0. Es un tema importante y a tener en cuenta.
 
@@ -175,8 +173,8 @@ Funciones de texto en WPS
 
 NOTE: The data step took :
 
-  real time : 0.000
+real time : 0.000
 
-  cpu time : 0.000
+cpu time : 0.000
 
 Hay `funciones` que nos devuelven `números` y otras que nos devuelven `texto`. Por ese `motivo` trabajamos con dos `variables` `x` es `variable de texto` y `z` es `variable numérica`. Muy importante: una `variable SAS`, cuando hemos definido su `tipo` (`numérica` o `alfanumérica`) este `tipo` es `inamovible`, una `variable` no puede modificar su `tipo`. Esto es muy importante, un alto `porcentaje` de las `visitas` que vienen a este `blog` vienen por ese `motivo`. En la `siguiente entrega` veremos las `funciones fecha`, `esperadlo ansiosos`.

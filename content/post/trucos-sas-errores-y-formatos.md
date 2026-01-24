@@ -26,7 +26,7 @@ Un truco SAS que puede ayudar a todos aquellos que estén empezando a programar 
 
 Esta opción de SAS nos permite trabajar con conjuntos de datos SAS con formatos aunque no estén cargados porque no se tienen en cuenta los errores. Por otro lado podemos emplear PROC DATASETS para eliminar todos los formatos (entrada y/o salida) de un conjunto de datos SAS, el código es el siguiente:
 
-```r
+````r
 ```sas
 proc datasets lib=librer;
 
@@ -37,6 +37,6 @@ format _all_;
 informat _all_;
 
 quit;
-```
+````
 
 Eliminamos todos los formatos de un conjunto de datos SAS de forma instantánea. También podemos eliminar sólo los numéricos con _NUM_ o los alfanuméricos con _CHAR_. Espero que estas líneas os ayuden. Saludos.

@@ -27,7 +27,7 @@ Ya empleamos `R` en[ alguna entrada anterior ](https://analisisydecision.es/anal
 
 En el [link ](http://www.pp.es/actualidad-noticia/programa-electoral-pp_5741.html)donde tenemos el programa accedemos al mismo en formato `PDF`, seleccionamos todo el documento, lo copiamos en un archivo de `txt` y ya podemos trabajar con `R`. El código ya ha sido comentado en este blog:
 
-```r
+````r
 ```r
 #Análisis del programa del PP
 
@@ -52,8 +52,9 @@ texto_col = as.character(unlist(texto_split))
 texto_col = data.frame(texto_col)
 
 names(texto_col) = c("V1")
-```
-```
+````
+
+````
 
 ```r
 ```r
@@ -74,8 +75,9 @@ texto_collargo = nchar(texto_colV1)
 head(texto_col)
 
 hist(texto_col$largo)
-```
-```
+````
+
+````
 
 ```r
 texto_col = subset(texto_col, largo>4)
@@ -96,7 +98,9 @@ where largo > 4
 group by palabra
 
 order by  count(*) desc ;")
-```
+````
+
 ```
 
 `CAMBIO`, `POLÍTICA`, `SOCIEDAD` y `EMPLEO` son las palabras más empleadas. `SOCIAL` aparece en la posición 50 y `JÓVENES` mucho más abajo. `CRISIS` es otra de las palabras que no son muy destacadas. Abrid `R`, seguid los pasos que os indico y obtendréis un análisis muy interesante. Saludos.
+```

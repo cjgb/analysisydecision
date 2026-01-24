@@ -30,7 +30,7 @@ Macro de SAS fácil y rápida que nos permite saber **el número de días que ti
 
 El razonamiento es sencillo. Se trata de poner a día 1 la fecha que le pasamos, irnos un mes después y hacer la diferencia. Por supuesto copiáis y pegáis el ejemplo en el editor:
 
-```r
+````r
 ```sas
 data uno;
 
@@ -43,6 +43,6 @@ y="14MAR05"d; x=%dias(y); put x=;
 y="10APR11"d; x=%dias(y); put x=;
 
 run;
-```
+````
 
 Creo que puede ser de utilidad y también tiene algún otro aspecto interesante sobre macros y la falta de algún signo de puntuación. Saludos.

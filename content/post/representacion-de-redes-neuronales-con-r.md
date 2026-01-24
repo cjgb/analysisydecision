@@ -49,6 +49,7 @@ i10->h4 i11->h4 i12->h4
 b->o h1->o h2->o h3->o h4->o
 1.46 0.10 0.12 -1.26 0.61
 ```
+
 Eso es (mas o menos) lo que hay pintado en el dibujo de arriba. 12 nodos de entrada (input) más el sesgo (bias). Luego tenemos 4 nodos en la capa oculta (hidden), en este caso me falta el sesgo. Con `nnet` sólo podemos realizar redes con una sola capa oculta. Y por último una sola de salida (output) porque estamos realizando una regresión, no una clasificación. Con ello `nnet` siempre usa la notación `b->h1; i1->h1;…;b->o;h1.->o` para los pesos de la red neuronal. Estos pesos harán de parámetros de nuestros modelos, en nuestro caso concreto tenemos `12-4-1` `input`-`hidden`-`output` 12×4=48 (i->h) + 4 (b->h) + 4 (b->o) + 1 (b->o) = 57 pesos. Con un modelo `3-4-2` tendríamos 3×4 + 4 + 4 + 2 = 22 pesos. Pues interpretar estas salidas para ayudarnos a comprender mejor el comportamiento predictor de nuestras variables de entrada es una tarea complicada a no ser que realizáramos un gráfico. Para graficar este tipo de redes neuronales tenemos obligatoriamente que leer esto:
 
 <http://beckmw.wordpress.com/2013/11/14/visualizing-neural-networks-in-r-update/>
@@ -76,6 +77,8 @@ Tiene muchas posibilidades como podemos ver en la entrada del blog. El código e
 plot.nnet node.labs=T,var.labs=T,x.lab=NULL,y.lab=NULL,line.stag=NULL,struct=NULL,cex.val=1,
 alpha.val=1,circle.col='lightblue',pos.col='black',neg.col='grey', max.sp = F, ...){
 ```
+
 ```
 
 Como me gusta R.
+```

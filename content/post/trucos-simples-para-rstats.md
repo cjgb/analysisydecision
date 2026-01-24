@@ -16,7 +16,7 @@ tags:
   - formación
   - r
   - trucos
-title: 'Trucos simples para `rstats`'
+title: Trucos simples para `rstats`
 url: /blog/trucos-simples-para-rstats/
 ---
 

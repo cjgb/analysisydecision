@@ -18,6 +18,4 @@ title: Ejemplo de uso de PROC GCHART
 url: /blog/ejemplodeusodeprocgchart/
 ---
 
-
-
 ![Ejemplo de uso de PROC GCHART](/images/2010/04/graph31.jpg "Ejemplo de uso de PROC GCHART")

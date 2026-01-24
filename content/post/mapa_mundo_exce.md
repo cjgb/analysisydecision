@@ -41,3 +41,4 @@ Next i
 End Sub
 
 En cuanto a los datos que se representan en el mapa. Tasa de mortalidad infantil en el mundo. Los países más oscuros o bien no disponen de datos o bien no han cruzado con los datos de la `UNESCO`. Se podrá mejorar el resultado. Algo más subjetivo, no sé como consentimos este rojo predominante en África. Será que sin ese rojo yo no podría escribir cosas como esta… Saludos.
+```

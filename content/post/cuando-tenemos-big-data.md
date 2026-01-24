@@ -22,4 +22,4 @@ No es que sea yo un gurú del tema precisamente, pero considero que llevo más d
 
 Como vemos el tipo de análisis que utilizamos con el `Big Data` no dista mucho de lo que hacemos ahora mismo. Por ello las personas que se dedican actualmente a analizar la información serán las mismas que lo harán en el futuro. Pero estas personas tienen que familiarizarse con el empleo de otras tecnologías. [Algún compañero de la blogosfera ya está comenzando a definir el nuevo paradigma del gestor de la información](http://www.gutierrezandres.com/archives/3154). [En este blog ya se habló sobre el tema en 2010](https://analisisydecision.es/el-futuro-de-la-profesion/). La personas que nos dedicamos a la estadística (aunque algunos estemos muy orientados al negocio) tenemos que tener presente este cambio de conceptos y adaptarnos si no queremos quedarnos fuera. El `Big Data` es lo mismo de siempre pero de otra forma más barata y no necesariamente menos complicada.
 
-¡No seamos dinosaurios! [Aunque luego terminemos pintando todo con `Excel`]
+¡No seamos dinosaurios! \[Aunque luego terminemos pintando todo con `Excel`\]

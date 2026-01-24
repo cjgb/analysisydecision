@@ -36,4 +36,5 @@ FORMAT LUNES DDMMYY10.;
 LUNES = FECHA – (WEEKDAY(FECHA)-2);
 RUN;
 ```
+
 Un conjunto de datos SAS de ejemplo con los 100 días siguientes al 1 de septiembre de 2015 y definimos _LUNES_ como los días que nos hemos pasado del lunes menos la propia fecha. De este modo cada una de las fechas queda clasificada en su semana y la semana viene marcada por el lunes. Saludos.

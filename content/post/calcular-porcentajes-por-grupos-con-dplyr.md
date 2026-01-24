@@ -21,7 +21,7 @@ A la hora de sumarizar datos con dplyr podemos calcular porcentajes dentro de gr
 
 Conjunto de datos aleatorio de ejemplo:
 
-```r
+````r
 ```r
 library(dplyr)
 observaciones = 100
@@ -29,41 +29,41 @@ grupo_1 = rpois(observaciones, 0.5)
 grupo_2 = rpois(observaciones, 1)
 
 df = cbind.data.frame(grupo_1, grupo_2) %>% mutate(id_cliente=n())
-```
+````
 
 Sumarizamos por grupos:
 
-```r
+````r
 ```r
 df %>% group_by(grupo_1, grupo_2) %>% summarise(clientes = n())
-```
+````
 
 Contamos clientes y calculamos el porcentaje sobre el total:
 
-```r
+````r
 ```r
 df %>% group_by(grupo_1, grupo_2) %>%
   summarise(clientes = n(),
             pct_total = n()/nrow(df))
-```
+````
 
 Suelo usar `nrow` se aceptan sugencias. Calculamos el porcentaje para el subgrupo del grupo_1, primer ejemplo de uso de transmute:
 
-```r
+````r
 ```r
 df %>% group_by(grupo_1, grupo_2) %>%
   summarise(clientes = n()) %>%
   transmute(grupo_2, pct_grupo = clientes/sum(clientes))
-```
+````
 
 Vemos que clientes ha desaparecido, sólo obtenemos grupo_1, grupo_2 y pct_grupo. Si queremos el porcentaje sobre el total:
 
-```r
+````r
 ```r
 df %>% group_by(grupo_1, grupo_2) %>%
   summarise(clientes = n()) %>%
   transmute(grupo_2, pct_grupo = clientes/sum(clientes),
             pct_total = clientes/nrow(df))
-```
+````
 
 Aquí lo tengo todo recogido, para cuando no lo recuerde. Saludos.

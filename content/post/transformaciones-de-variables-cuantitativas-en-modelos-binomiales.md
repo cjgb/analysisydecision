@@ -60,4 +60,3 @@ ax2 = ax.twinx()
 ax2.plot(churn['churn'].values, linestyle='-', linewidth=2.0,color='red')
 plt.show();
 ```
-

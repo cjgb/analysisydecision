@@ -23,7 +23,7 @@ Si pintamos con `Excel` una línea con el **`Euribor a 6 meses`** y otra línea 
 
 La fuente de datos es:
 
-- [http://sdw.ecb.europa.eu/quickview.do?SERIES_KEY=143.FM.M.U2.EUR.RT.MM.EURIBOR6MD_.HSTA](http://sdw.ecb.europa.eu/quickview.do?SERIES_KEY=143.FM.M.U2.EUR.RT.MM.EURIBOR6MD_.HSTA)
+- [http://sdw.ecb.europa.eu/quickview.do?SERIES_KEY=143.FM.M.U2.EUR.RT.MM.EURIBOR6MD\_.HSTA](http://sdw.ecb.europa.eu/quickview.do?SERIES_KEY=143.FM.M.U2.EUR.RT.MM.EURIBOR6MD_.HSTA)
 - [http://sdw.ecb.europa.eu/quickview.do?SERIES_KEY=124.MIR.M.ES.B.L22.F.R.A.2250.EUR.N](http://sdw.ecb.europa.eu/quickview.do?SERIES_KEY=124.MIR.M.ES.B.L22.F.R.A.2250.EUR.N)
 
 Los datos del interés medio los suministra el `Banco de España`. Sé que **no son datos 100% comparables** pero sirve para este argumento. Hasta `2009` los intereses que daban los bancos estaban por debajo del precio del dinero. **DESPUÉS LOS BANCOS ESTÁN DANDO DINERO A PÉRDIDAS**. Por problemas de liquidez, por problemas de aprovisionamiento, batallas de pasivo, por lo que sea,… PERO ESTÁN PERDIENDO DINERO Y LO SABEN, los márgenes son negativos. En principio los beneficiados son los clientes porque están dando intereses por encima del precio del dinero. Pero la insensatez al final la pagamos todos, tanto el que se beneficia por los altos intereses (tiene dinero) como el que no se beneficia (no tiene un duro) y por si fuera poco suben comisiones, se endurecen las condiciones de crédito y demás. Luego acudimos a las subastas de liquidez y a los fondos de reestructuración de idioteces varias, mentimos en nuestras cuentas de resultados y ¡ya está!

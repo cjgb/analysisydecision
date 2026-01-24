@@ -13,7 +13,7 @@ related:
   - truco-python-seleccionar-o-eliminar-variables-de-un-data-frame-en-base-a-un-prefijo-sufijo-o-si-contienen-un-caracter.md
 tags:
   - pandas
-title: `Data Management` básico con `Pandas`
+title: Data Management básico con Pandas
 url: /blog/data-management-basico-con-pandas/
 ---
 

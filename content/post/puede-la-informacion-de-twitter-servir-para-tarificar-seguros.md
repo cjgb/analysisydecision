@@ -14,7 +14,7 @@ related:
   - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-9-analisis-exploratorio-de-datos-eda.md
 tags:
   - twitter
-title: '¿Puede la información de Twitter servir para calcular el precio de tu seguro?'
+title: ¿Puede la información de Twitter servir para calcular el precio de tu seguro?
 url: /blog/puede-la-informacion-de-twitter-servir-para-tarificar-seguros/
 ---
 

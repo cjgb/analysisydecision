@@ -49,7 +49,7 @@ summary(ejemplo1)
 
 Hemos automatizado los 20 nombres de un `data frame` con datos aleatorios con una distribución de `poisson` de media 10 creado con la función `replicate`. Ahora imaginemos que deseamos transformar en factor sólo aquellos elementos del `data frame` con un sufijo par (datos2, datos4, …). Podemos crear una función o podemos crear ejecuciones de código `R` del siguiente modo:
 
-```r
+````r
 ejecucion <- paste("ejemplo1dato",seq(2,20,by=2),"<-as.factor(ejemplo1dato",
 
 seq(2,20,by=2),")",sep="")
@@ -76,8 +76,9 @@ ejecucion
 [9] "ejemplo1dato18<-as.factor(ejemplo1dato18)"
 
 [10] "ejemplo1dato20<-as.factor(ejemplo1dato20)"
-```
-```
+````
+
+````
 
 Ahora tenemos que hacer que un objeto con instrucciones se ejecuten con `parse` y `eval` :
 
@@ -85,6 +86,6 @@ Ahora tenemos que hacer que un objeto con instrucciones se ejecuten con `parse` 
 eval(parse(text=ejecucion))
 
 summary(ejemplo1)
-```
+````
 
 Hemos transformado en factores los elementos con sufijo par. Esto puede realizarse con `sapply` pero merece la pena que le echéis un vistazo a este proceso, lo ejecutéis y aprendáis una forma de automatizar código. En breve tendréis otro ejemplo de uso de esta metodología muy parecida a la que empleamos cuando programamos en otros lenguajes con menos futuro que `R`. Saludos.

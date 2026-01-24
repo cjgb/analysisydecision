@@ -18,7 +18,7 @@ title: Truco SAS. Crear ficheros Excel sin PROC EXPORT (I)
 url: /blog/truco-sas-crear-ficheros-excel-sin-proc-export-i/
 ---
 
-No disponemos del módulo **ACCESS TO PC FILES** y necesitamos poner nuestra tabla SAS en Excel. Usaremos el **ODS** (Outpus Delivery System) de SAS. Junto con el _proc print_ crearemos un fichero HTML con extensión .XLS que podremos manejar perfectamente con Excel, insisto, no es un fichero Excel, es HTML pero que se manejará sin ningún problema en la hoja de cálculo y que podremos guardar como fichero Excel.
+No disponemos del módulo `ACCESS TO PC FILES` y necesitamos poner nuestra tabla SAS en Excel. Usaremos el `ODS` (Outpus Delivery System) de SAS. Junto con el `proc print` crearemos un fichero `HTML` con extensión `.XLS` que podremos manejar perfectamente con Excel, insisto, no es un fichero Excel, es HTML pero que se manejará sin ningún problema en la hoja de cálculo y que podremos guardar como fichero Excel.
 
 El primer paso para nuestro ejemplo será generar una tabla SAS con valores aleatorios que deseamos exportar a Excel:
 
@@ -39,7 +39,7 @@ run;
 
 Generamos un dataset aleatorio de 100 observaciones y 8 variables y si observamos el LOG:
 
-```r
+```text
 NOTA: Division por cero en línea 34 columna 12.
 
 NOTA: Division por cero en línea 34 columna 12.
@@ -54,7 +54,7 @@ NOTA: Division por cero en línea 34 columna 12.
 
 NOTA: Division por cero en línea 34 columna 12.
 
-i=101 j=5 k=4 l=2 m=9 n=0.4 uno=hola y=27.716842726 _ERROR_=1 _N_=1
+i=101 j=5 k=4 l=2 m=9 n=0.4 uno=hola y=27.716842726 `_ERROR_`=1 `n`=1
 
 NOTA: Operaciones matemáticas no realizadas en los siguientes lugares. Los resultados de las
 
@@ -73,18 +73,18 @@ tiempo real 0.01 segundos
 tiempo de cpu 0.01 segundos
 ```
 
-SAS nos advierte que hay divisiones con 0 y no se pueden realizar por lo que nuestra variable _n_ tendrá valores missing. Pues bien, el objetivo es exportar esta tabla SAS a una tabla de Excel sin disponer del módulo ACCESS TO PC FILES. Podremos exportarlo en csv y abrirlo con Excel:
+SAS nos advierte que hay divisiones con 0 y no se pueden realizar por lo que nuestra variable `n` tendrá valores missing. Pues bien, el objetivo es exportar esta tabla SAS a una tabla de Excel sin disponer del módulo ACCESS TO PC FILES. Podremos exportarlo en csv y abrirlo con Excel:
 
-```r
+```sas
 PROC EXPORT DATA= WORK.Uno
 OUTFILE= "C:\Temp\borra.csv"
 DBMS=CSV REPLACE;
 RUN;
 ```
 
-Con el proc export podemos exportar nuestra tabla SAS a un fichero separado por comas pero necesitamos importar el texto desde Excel y el manejo sería más lento. Del mismo modo sucedería si generamos un fichero de texto separado por tabuladores. Utilizando el ODS vamos a exportar nuestra tabla SAS al directorio C:\\temp\\ de forma que podamos abrirlo perfectamente con Excel:
+Con el `proc export` podemos exportar nuestra tabla SAS a un fichero separado por comas pero necesitamos importar el texto desde Excel y el manejo sería más lento. Del mismo modo sucedería si generamos un fichero de texto separado por tabuladores. Utilizando el `ODS` vamos a exportar nuestra tabla SAS al directorio C:\\temp\\ de forma que podamos abrirlo perfectamente con Excel:
 
-```r
+```sas
 title; /*ELIMINAMOS EL TITULO*/
 filename _temp_ "C:\temp\borra.xls"; /*ASIGNAMOS FILENAME TEMPORAL*/
 ods noresults; /*NO QUEREMOS OUTPUT*/
@@ -97,7 +97,7 @@ ods results;
 ods listing;
 ```
 
-En la ubicación deseada disponemos de un fichero con extensión .XLS que podemos abrir y modificar sin ningún problema con Excel. Pero si lo abrimos tenemos algunas limitaciones:
+En la ubicación deseada disponemos de un fichero con extensión `.XLS` que podemos abrir y modificar sin ningún problema con Excel. Pero si lo abrimos tenemos algunas limitaciones:
 
 i | j | k | l | m | n | uno | y | 1 | 2 | 2 | 1 | 6 | 0.50000 | hola | 19.6859
 ---|---|---|---|---|---|---|---
@@ -114,9 +114,9 @@ i | j | k | l | m | n | uno | y | 1 | 2 | 2 | 1 | 6 | 0.50000 | hola | 19.6859
 12 | 3 | 2 | 7 | 1 | 2.33333 | hola | 13.5442
 13 | 0 | 5 | 3 | 2 | . | hola | 55.2486
 
-Si nuestra conficuración regional es europea la parte decimal de nuestros valores numéricos estarán separados por un . en vez de por , además los valores missing SAS los marca como . cuando deberían estar vacíos. Hemos de modificar más opciones para generar nuestra tabla Excel:
+Si nuestra configuración regional es europea la parte decimal de nuestros valores numéricos estarán separados por un . en vez de por , además los valores missing SAS los marca como . cuando deberían estar vacíos. Hemos de modificar más opciones para generar nuestra tabla Excel:
 
-```r
+```sas
 option missing=""; /*LOS VALORES PERDIDOS NO SE MARCAN*/
 title; /*ELIMINAMOS EL TITULO*/
 filename _temp_ "C:\temp\borra.xls"; /*ASIGNAMOS FILENAME TEMPORAL*/
@@ -149,6 +149,6 @@ i | j | k | l | m | n | uno | y | 1 | 2 | 2 | 1 | 6 | 0,5 | hola | 19,7
 12 | 3 | 2 | 7 | 1 | 2,3 | hola | 13,5
 13 | 0 | 5 | 3 | 2 | | hola | 55,2
 
-El código SAS se presenta muy complejo. No compensa crearlo, pero si hacemos nuestra propia función para exportar ficheros a Excel entonces no sería necesario emplear todo el código que os he mostrado anteriormente. Pero esto lo veremos en sucesivas entregas de trucos. Quedaros bien con el uso del ODS que nos va a permitir crear hojas de cálculo con rapidez.
+El código SAS se presenta muy complejo. No compensa crearlo, pero si hacemos nuestra propia función para exportar ficheros a Excel entonces no sería necesario emplear todo el código que os he mostrado anteriormente. Pero esto lo veremos en sucesivas entregas de trucos. Quedaros bien con el uso del `ODS` que nos va a permitir crear hojas de cálculo con rapidez.
 
-Por supuesto si tenéis cualquier duda o sugerencia podéis contactar conmigo en [rvaquerizo@analisisydecision.es](mailto:rvaquerizo@analisisydecision.es)
+Por supuesto si tenéis cualquier duda o sugerencia podéis contactar conmigo en `rvaquerizo@analisisydecision.es`

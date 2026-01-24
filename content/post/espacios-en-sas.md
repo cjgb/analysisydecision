@@ -27,7 +27,7 @@ url: /blog/espacios-en-sas/
 
 Las funciones SAS más habituales para eliminar blancos son las que tenéis en la figura de arriba. Para llegar a ese conjunto de datos SAS hemos ejecutado el siguiente paso data:
 
-```r
+````r
 ```sas
 data ejemplo;
 
@@ -53,7 +53,7 @@ funcion="SRTIP+COMBBL"; st1 = strip(compbl(st));
 l_st1=length(st1); output;
 
 run;
-```
+````
 
 Distintas formas de eliminar espacios dentro de una cadena de caracteres en SAS. Partimos de la variable string » Cuando brilla el sol » y empleamos las siguientes funciones:
 

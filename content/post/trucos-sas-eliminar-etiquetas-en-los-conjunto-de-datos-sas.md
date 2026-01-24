@@ -22,7 +22,7 @@ url: /blog/trucos-sas-eliminar-etiquetas-en-los-conjunto-de-datos-sas/
 
 Hoy planteo un ejemplo de uso de las vistas de SASHELP con los nombres de las columnas de una tabla SAS. Además sirve para conocer mejor el PROC DATASETS y la creación de macro variables con el PROC SQL. Una macro que no es de mucha utilidad pero con la que podemos empezar a aproximarnos al lenguage macro de SAS:
 
-```r
+````r
 ```sas
 %macro sinetiquetas(conj);
 
@@ -57,6 +57,6 @@ label &l1.;
 quit;
 
 %mend;
-```
+````
 
 Primero buscamos con un paso data si es una tabla temporal o permanente. Creamos una macro variable con los nombres de las variables preparadas para eliminar etiquetas (var1=»). Las etiquetas las quitamos con DATASETS y MODIFY. La macro sólo necesita como parámetro la tabla sobre la que deseamos eliminar las etiquetas. A pesar de ser un truco fácil seguro que más de uno se precompila esta macro en sus sesiones SAS.

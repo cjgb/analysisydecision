@@ -36,7 +36,7 @@ url: /blog/una-fabulilla-sobre-prim-con-multiples-moralejas/
 –Tal banco (aunque, para el caso, bien pudiera haber sido una caja de ahorros o, como bien puntualizaba, la sucursal de una entidad de crédito extranjera) tenía clientes que usaban tarjetas de crédito y débito para sus habituales fines. Cada que la usaban para comprar en un comercio o similar, la tal entidad se quedaba un cacho. Pero cuando sacaban con ella dinero de un cajero, la entidad debía abonar un pico.
 –¿Y no cobraban las tan habituales comisiones?
 –No, dado que sus fines eran benéficos para con sus depositantes.
-–Permítame, si no le importa, anotar en mi PDA (o papel de apuntar) esto que me participa como ejemplo sin parangón de oxímoron.
+–Permítame, si no le importa, anotar en mi `PDA` (o papel de apuntar) esto que me participa como ejemplo sin parangón de oxímoron.
 –Tómese su tiempo y guárdelo en el sostén, que ahí quedará calentito, al socaire de las inclemencias del invierno mesetario y no se le traspapelará.
 –Mullidamente archivado queda. Prosiga.
 –Pues la tal benéfica institución financiera (me complazco, como ve, en reiterar la tan atinadamente identificada figura literaria) no sólo quería ganarse el cielo al que aspiran, cuando fenecen, las personas jurídicas sino que, además, no siendo tonta, quería retrasar el tránsito hasta el ulterioriorísimo de los anaqueles.
@@ -67,33 +67,33 @@ url: /blog/una-fabulilla-sobre-prim-con-multiples-moralejas/
 –Me hago cargo. ¿Y qué hicieron?
 –No se lo puedo contar.
 –¿Me va a dejar así, toda ganosa?
-–Si me deja sobarle la PDA, puede.
+–Si me deja sobarle la `PDA`, puede.
 –¿En la Renfe y cabe impúberes? No hay trato.
 –¿Ve?
 –¿Entonces?
-–Le hablaré de PRIM.
+–Le hablaré de `PRIM`.
 –¿El de Reus?
 –No, ése es Prim. Fíjese que yo he usado mayúsculas por doquier.
 –Ya decía yo. Ya nadie se acuerda del general.
 –Es que metió a los borbones en el tren de Irún.
 –¡Falta aún hacen gentes de su temple y calibre!
-–¿Sabe, ya que lo menciona, que tiene calle en el DF?
+–¿Sabe, ya que lo menciona, que tiene calle en el `DF`?
 –¿Donde las putillas?
 –¿Putillas? Verdaderos putones verbeneros. Pero, eso sí, aseadas: se asperjan el chumino con ladillol. Y algo de inglés hablan.
 –Es de ley, teniendo la embajada de los Estados Unidos de Norteamérica a tiro de piedra.
 –¿Conoce Vd.? Me sorprende.
 –¡Mundo tuve! Atropellaron tanto gringo rijoso cruzando Reforma que tuvieron que poner un semáforo.
-–Nos aleja tanto circunloquio del meollo de nuestra conversa. Déjeme hablarle de PRIM con mayúsculas por doquier, que del otro ya se ocuparon a trabucazos y no hay remedio.
-–Siga pues. ¿Quién es ese otro PRIM?
-–No es un quién sino un cómo. PRIM quiere decir _Patient Rule Induction Method_ …
+–Nos aleja tanto circunloquio del meollo de nuestra conversa. Déjeme hablarle de `PRIM` con mayúsculas por doquier, que del otro ya se ocuparon a trabucazos y no hay remedio.
+–Siga pues. ¿Quién es ese otro `PRIM`?
+–No es un quién sino un cómo. `PRIM` quiere decir `Patient Rule Induction Method` …
 –Madre mía, ¡en inglés y _tó_!
 –Es que nació a medio camino de Stanford, que fue México y ahora no, y Australia. Y algún nombre había que ponerle.
 –¿Y cuál es su naturaleza o condición?
 –Pues verá: se trata de un [algoritmo](http://es.wikipedia.org/wiki/Al-Juarismi "Al Juarismi") (palabra de origen árabe, para que luego digan y maldigan) de minería de datos que permite encontrar zonas del espacio muestral donde una variable objetivo tiene un comportamiento singular y sobresaliente respecto a la media.
 –Su cuento está cada vez menos claro y tendrá que dignarse a ofrecerme un ejemplo meridiano.
-–Para eso comencé mi historia hablándole de bancos y tarjetas. Digamos que tal banco tiene _x_ clientes y asociadas a cada uno de ellos, tropecientasmil variables (edad, ingresos anuales, dirección, cuotas satisfechas a la Real Asociación Colombófila de la Alpujarra, etc.). Por otro lado, una variable que mide en qué grado usa, por decir algo, su tarjeta de crédito…
+–Para eso comencé mi historia hablándole de bancos y tarjetas. Digamos que tal banco tiene `x` clientes y asociadas a cada uno de ellos, tropecientasmil variables (edad, ingresos anuales, dirección, cuotas satisfechas a la Real Asociación Colombófila de la Alpujarra, etc.). Por otro lado, una variable que mide en qué grado usa, por decir algo, su tarjeta de crédito…
 –Lo sigo con más interés que aprovechamiento y más perplejidad que ninguna de las anteriores…
-–Pues verá, mete todas esas variables a un ordenador, así, tal cual, sin mayores contemplaciones, pulsa el _pley_ , se toma unas cañas, regresa… ¿y qué se encuentra?
+–Pues verá, mete todas esas variables a un ordenador, así, tal cual, sin mayores contemplaciones, pulsa el `pley` , se toma unas cañas, regresa… ¿y qué se encuentra?
 –¡Ay, qué emoción…! ¿Qué? Dígamelo, que me reconcome la intriga…
 –Pues se encuentra unos hiperrrectangulillos.
 –¡Nunca lo hubiese imaginado! ¿De qué pasta y hechura son los tales?
@@ -102,26 +102,26 @@ url: /blog/una-fabulilla-sobre-prim-con-multiples-moralejas/
 –A ver, imagine que la tal variable objetivo es el ratio o cociente entre el dinero que sacan los clientes de los cajeros y la suma de sus compras con tarjeta…
 –Eh…
 –Es decir, pintamos una rayica (que significa dividir), ponemos arriba la plata del cajero y abajo lo que paga con la tarjetica. Y nos fijamos en si pesa más lo de arriba que lo de abajo.
-–Claro, ahora me apercibo: lo de arriba son _liabilitis_ y lo de abajo, _asets_ …
-–¡Me sorprende Vd.! Gasta un _spanglish_ tan cacofónico como impreciso. ¡Y sin saber de lo que habla, como si fuese toda una consultora _yunior_ con ambiciones!
-– _Desespabilada_ que es una. Y sin hacer la mili, ¡fíjese!
+–Claro, ahora me apercibo: lo de arriba son `liabilitis` y lo de abajo, `asets` …
+–¡Me sorprende Vd.! Gasta un `spanglish` tan cacofónico como impreciso. ¡Y sin saber de lo que habla, como si fuese toda una consultora `yunior` con ambiciones!
+– `Desespabilada` que es una. Y sin hacer la mili, ¡fíjese!
 –No es enteramente así, pero como si lo fuese. En resumen, si el cocientico es alto, el cliente es un pesado que le hace agujeros al banco (o caja de ahorros…). Si es bajo, lo contrario; y al cliente habría que darle besos en la frente.
 –Cargo me hago.
 –Entonces, un hiperrectangulillo contiene, pongamos por caso, a clientes de lo que otrora fue el Reino de Aragón, que ganan menos de 100.000 pesetillas al mes, que viven en casa alquilada y no tienen churrumbeles. Y resulta que éstos son, de entre los pesados, los que más.
 –¡Menuda cuadrilla! Seguro que [Botín](http://es.wikipedia.org/wiki/Emilio_Bot%C3%ADn "Botín") los ponía tiesos a comisiones.
 –Puf, ése (note que acentúo según la gramática vieja) les mandaba los sicilianos a casa…
 –Bueno, ¿y qué hace un banco (o caja…) benéfico con tal hiperrectangulillo?
-–Vaya por orden y no queme etapas en falso, que el diablo se nutre de ambigüedades: los consultores dan al _pley_ , sacan los rectangulillos, los imprimen en cuartillas, clavan éstas con chinchetas en una corchera y luego, en _peticomité_ , junto con los resabidillos del banco acuerdan qué hacer con los sujetos que contiene cada uno.
-–¡A los mañicos de su ejemplo les podían rifar unos botes de _malocotón_ en almíbar si usaban menos el cajero!
-–Ahí tiene Vd. toda la razón del mundo y me quita las palabras de la boca y las ideas de las intrincadas convoluciones frontales de mi cerebro. Pero bueno, tampoco me enfado con Vd. porque con lo que iba a ilustrarla es todo viejo y reconocido de casi todos: conoce, primero, a tus clientes (y ayúdate de PRIM para tal fin) y, después, mira a ver qué haces con ellos (la rifa de los que Vd. llama malocotones es una estupenda idea propia de un avezado mercadólogo).
+–Vaya por orden y no queme etapas en falso, que el diablo se nutre de ambigüedades: los consultores dan al `pley` , sacan los rectangulillos, los imprimen en cuartillas, clavan éstas con chinchetas en una corchera y luego, en `peticomité` , junto con los resabidillos del banco acuerdan qué hacer con los sujetos que contiene cada uno.
+–¡A los mañicos de su ejemplo les podían rifar unos botes de `malocotón` en almíbar si usaban menos el cajero!
+–Ahí tiene Vd. toda la razón del mundo y me quita las palabras de la boca y las ideas de las intrincadas convoluciones frontales de mi cerebro. Pero bueno, tampoco me enfado con Vd. porque con lo que iba a ilustrarla es todo viejo y reconocido de casi todos: conoce, primero, a tus clientes (y ayúdate de `PRIM` para tal fin) y, después, mira a ver qué haces con ellos (la rifa de los que Vd. llama malocotones es una estupenda idea propia de un avezado mercadólogo).
 –¿No me diga que en la tal entindad bancaria (o…) no procedieron de tal guisa?
 –Podría decirle si no fuese porque [Cide Hamete Benengelí](http://es.wikipedia.org/wiki/Cide_Hamete_Benengeli "Cide Hamete Benengelí"), de cuyos desorganizados papeles aprendí el cuentecillo que le relato, llegado al punto que contestaba su pregunta, derramó café sobre el legajo y se corrió la tinta. Es como si yo le contestase con la boca llena de polvorones: oiría ruido, se le llenaría el escote de migas, pero no se enteraría de nada. Además, gana Vd. con eso que, de confesarle la verdad, luego habría de matarla para que no divulgase el secreto.
-–Mejor, pues, permanecer sumida en la contumaz ignorancia. Pero, dígame, eso de PRIM, siendo cosa tan fina, ¿cómo es que no se conoce más y mejor y se aplica con más diligencia y oportunidad? ¿Es acaso una de esas teorías…?
+–Mejor, pues, permanecer sumida en la contumaz ignorancia. Pero, dígame, eso de `PRIM`, siendo cosa tan fina, ¿cómo es que no se conoce más y mejor y se aplica con más diligencia y oportunidad? ¿Es acaso una de esas teorías…?
 –¿Teoría? Es teoría y praxis, señora. Una praxis la mar de práctica. Tanto que puede [descargársela a su computadora](http://cran.r-project.org/web/packages/prim/index.html "PRIM") sin aflojar un ochavo.
 –Y usarse, ¿se usa?
 –¡Y tanto! Allá en París…
 –¡Tierra de masones! No me vale ejemplo alguno allende los Pirineos. ¡En París! Lo que no es tradición…
-–Pues sí, señora, sí, en París hay una empresa que gana dinero a espuertas con una variante de PRIM.
+–Pues sí, señora, sí, en París hay una empresa que gana dinero a espuertas con una variante de `PRIM`.
 –Y Vd. que parece tan gabachuzo, ¿por qué no se va con viento fresco a trabajar con ellos?
 –No me tiente, señora, no me tiente ni me salga con carpetovenicidades extemporáneas, que me lío la manta a la cabeza… ¡No estoy de humor!
 –Tampoco se me ponga así… Disculpe, pero es que cuando me acuerdo de lo que les hicieron a Daoiz y Velarde me hierve la sangre… ¡Y eso que han pasado ya 201 años y pico de aquello!
@@ -143,20 +143,20 @@ url: /blog/una-fabulilla-sobre-prim-con-multiples-moralejas/
 –No tenía conocimiento.
 –¿Se lo demuestro?
 –Venga, ¿cómo?
-–Haga el pino y yo profiero la A mayúscula.
+–Haga el pino y yo profiero la `A` mayúscula.
 –¿A la de tres?
 –A la de tres: uno…, dos…, ¡tres! AAAAAAAAA
 –Ya.
 –¿La ha oído boca abajo?
-–Talmente. Igualica que una res. ¡Alberga Vd. saberes _güikipédicos_!
+–Talmente. Igualica que una res. ¡Alberga Vd. saberes `güikipédicos`!
 –Y Vd. tiene las enaguas hechas un zarrio.
-–Es la crisis. Y Vd., poco cababallero, por mirar.
+–Es la crisis. Y Vd., poco caballero, por mirar.
 –Pues sepa Vd. que cada civilización giró la susodicha letra noventa grados hasta que la dejó boca abajo, como colgada de una viga.
 –Esta digresión erudita nos aleja del meollo de su fabulita, ¿sabe?
 –Convengo, pero en su esencia, moralejas y todo, la doy por finiquitada. ¿Cree que le aportará provecho?
 –No lo descarto, aunque su natural campo de aplicación resulta, cuando más, tangencial a mis domésticos y consuetudinarios quehaceres.
 –Ya siento haberle dado la chapa, pero, o participaba mi fabulilla o me ésta me reconcomía por los adentros.
-–No se me ponga así. ¿Quiere medio _clines_?
+–No se me ponga así. ¿Quiere medio `clines`?
 –No es para tanto; además, he de apearme: veo acercarse un revisor.
 –¿Viaja sin billete?
 –Es norma de la empresa: por recortar gastos, no paga el kilometraje.

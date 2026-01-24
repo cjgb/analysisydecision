@@ -22,7 +22,7 @@ Cuando he preguntado a algún desarrollador de los principales softwares libres 
 
 Desde hace tiempo tengo la curiosidad de hacer una prueba con un volumen de datos enorme en R, en una máquina normalita (1GB de RAM), a ver si consigue acabar el proceso y cuánto tarda. Ahora que tengo un ratillo en el curro he decidido ponerme a ello, pero me he dado cuenta de que meterle un archivo plano con un comando read podía ser un poco pesado, y me planteé conectarlo directamente a la base de datos. Pensaba que no se podía hacer, pero me encontré esto:
 
-<[http://grass.itc.it/statsgrass/r_and_dbms.html](http://grass.itc.it/statsgrass/r_and_dbms.html)>
+\<[http://grass.itc.it/statsgrass/r_and_dbms.html](http://grass.itc.it/statsgrass/r_and_dbms.html)>
 
 Cuando tenga resultados de pruebas de capacidad de R en una máquina estándar las iré posteando. Ojalá me sorprenda y nos llevemos una gran alegría los usuarios de software libre.
 

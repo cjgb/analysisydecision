@@ -23,7 +23,7 @@ url: /blog/truco-sas-proc-contents/
 
 Vamos a introducir los nombres de las variables SAS de un dataset en otro dataset. Esto puede sernos muy útil para realizar documentación, validaciones de los conjuntos de datos generados, automatización de instrucciones,… Es un truco muy sencillo y tan sólo es necesario comprender el funcionamiento del ODS de SAS explicado en otro de los mensajes de este blog. Simplemente empleamos el proc contents de SAS y almacenamos con ODS en un dataset el resultado del listado de las variables:
 
-```r
+````r
 ```sas
 *DATASET DE PARTIDA. GENERAMOS UNO ALEATORIAMENTE;
 
@@ -40,18 +40,18 @@ data uno;
  end;
 
 run;
-```
+````
 
 ```sas
 %let dt=uno;
 ```
 
-```r
+````r
 ```sas
 *NO QUEREMOS SALIDA OUTPUT;
 
 ods noresults;
-```
+````
 
 ```sas
 *CON ODS ESPECIFICAMOS EL DATASET CON LA SALIDA;

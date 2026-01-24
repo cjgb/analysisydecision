@@ -16,7 +16,7 @@ tags:
   - proc sgplot
   - remuestreo
   - sas procs
-title: `Bootstrap` con `SAS` sin complicaciones
+title: Bootstrap con SAS sin complicaciones
 url: /blog/bootstrap-con-sas-sin-complicaciones/
 ---
 
@@ -32,7 +32,7 @@ Data poissonreg;
 run;
 ```
 
-Tenemos un dataset con 7 variables, el id alumno, la escuela, el sexo, la nota en matemáticas, la nota en lenguaje, los días en clase y los días ausentes en clase. El dataset tiene 316 observaciones, se trata de crear 100 muestras de tamaño el 90% del dataset de partida y estudiar la nota media por escuela y sexo de las muestras extraídas. En total tendremos que tener 285*100 observaciones:
+Tenemos un dataset con 7 variables, el id alumno, la escuela, el sexo, la nota en matemáticas, la nota en lenguaje, los días en clase y los días ausentes en clase. El dataset tiene 316 observaciones, se trata de crear 100 muestras de tamaño el 90% del dataset de partida y estudiar la nota media por escuela y sexo de las muestras extraídas. En total tendremos que tener 285\*100 observaciones:
 
 ```sas
 *PARAMETROS SENCILLOS;

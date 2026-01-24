@@ -19,7 +19,7 @@ url: /blog/numeros-aleatorios-con-sas/
 
 En un sólo paso DATA quiero mostraros las funciones más habituales para generar números aleatorios con SAS. Una entrada para que os copiéis el código y lo analicéis con SAS. Quiero que sirva de guía para que recordéis las funciones más empleadas, además será muy útil para los que se estén iniciando en el uso de SAS:
 
-```r
+````r
 ```sas
 data aleatorios;
 drop a b raiz n p;
@@ -47,4 +47,4 @@ gamma_l = rangam(raiz,a);
 valores = rantbl(raiz,0.3,0.1,0.2,0.2,0.6);
 output;
 end;run;
-```
+````

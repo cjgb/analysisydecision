@@ -18,9 +18,9 @@ title: Primeros pasos con Julia. Importar un csv y data management básico con u
 url: /blog/primeros-pasos-con-julia-importar-un-csv-y-basicos-con-un-data-frame/
 ---
 
-Empiezo a trabajar con el `lenguaje Julia` ante la insistencia de [`JL Cañadas`](`https://muestrear-no-es-pecado.netlify.app/`). Lo primero es comentar que este `trabajo` está hecho en `Julia 1.6.2` con una `máquina Ubuntu 18`, para instalar `Julia` en `Ubuntu`:
+Empiezo a trabajar con el `lenguaje Julia` ante la insistencia de [`JL Cañadas`](%60https://muestrear-no-es-pecado.netlify.app/%60). Lo primero es comentar que este `trabajo` está hecho en `Julia 1.6.2` con una `máquina Ubuntu 18`, para instalar `Julia` en `Ubuntu`:
 
-- [`Descarga de Julia`](`https://julialang.org/downloads/`)
+- [`Descarga de Julia`](%60https://julialang.org/downloads/%60)
 - `tar -xvzf julia-1.6.2-linux-x86_64.tar.gz`
 - `sudo cp -r julia-1.6.2 /opt/`
 - `sudo ln -s /opt/julia-1.6.2/bin/julia /usr/local/bin/julia`

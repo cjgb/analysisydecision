@@ -26,7 +26,7 @@ Hoy sois vosotros los que tenéis que ayudar al dinosaurio. Ya no estoy para est
 
 Pues bien, a la hora de importar unos datos con esa estructura desde SAS no soy capaz de que Dato2 siga conservando las comillas. Con IMPORT tampoco me funciona. El código sería algo parecido a esto:
 
-```r
+````r
 ```sas
 data WORK.CODIGO                                 ;
 infile 'C:\TEMP\prueba_SAS.csv' delimiter = ';'  MISSOVER DSD
@@ -36,6 +36,6 @@ infile 'C:\TEMP\prueba_SAS.csv' delimiter = ';'  MISSOVER DSD
 input
             DATO1 DATO2;
 run;
-```
+````
 
 Es un tema que he resuelto pero desde los datos de origen. Pero tengo una duda, ¿qué debo poner en el INFILE para evitar este problema? Que nadie me responda “quitar DSD en el INFILE” que no sirve, tengo campos en blanco. O a lo mejor quitar el DSD en combinación con otra instrucción. El caso es que me atasqué y tiré por el camino más sencillo. A ver si me ayudáis, gracias.

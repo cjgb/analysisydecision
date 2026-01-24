@@ -21,7 +21,7 @@ Está a punto de acabar un partido de futbol entre la `Real Sociedad` y el `Barc
 
 Pido disculpas por la «poca profesionalidad» del código pero últimamente pico poco código en R, de todas formas es muy sencillo de entender y no voy a entrar en profundidad:
 
-``library(memisc)``
+`library(memisc)`
 
 ```r
 final_madrid<-data.frame()

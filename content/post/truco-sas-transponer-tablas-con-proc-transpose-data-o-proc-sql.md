@@ -95,4 +95,3 @@ Lo que hacemos es sumarizar por el campo del que deseamos un registro único y o
 Si ejecutáis los códigos que os propongo encontraréis que el `paso DATA` es el más eficiente, el `PROC SQL` tarda un 75% más y el `TRANSPOSE` un 250% más. Por otro lado el `TRANSPOSE` podría ser mejor en códigos automáticos ya que no necesitamos parámetros, pero si trabajamos con macros al final el `paso DATA` es más efectivo. A futuro empezaremos a parametrizar este tipo de sentencias `SAS`.
 
 Por supuesto si tenéis cualquier duda o sugerencia… `rvaquerizo@analisisydecision.es`
-

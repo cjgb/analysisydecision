@@ -19,10 +19,10 @@ url: /blog/curso-de-lenguaje-sas-con-wps-el-paso-data/
 
 El elemento estrella del código `SAS` es el paso `DATA`. Con `DATA` podemos leer y escribir conjuntos de datos `SAS`. Un conjunto de datos `SAS` es una tabla de datos que contiene información sobre las variables y los registros de la tabla. `DATA` lo que hace es crear una estructura para la tabla y posteriormente añadir datos a esta estructura, es un bucle, no necesitamos indicarle al sistema como recorrer la tabla. En `WPS` ejecutaremos nuestras sentencias en el editor a través de scripts sobre los que podemos navegar en el `Proyect Explorer`. La sintaxis de un paso `data` es imposible resumirla pero se puede estructurar del siguiente modo:
 
-1.  `DATA` <nombre conjunto de datos `SAS`> ; Crea 1 o n conjuntos de datos `SAS`
-2.  Sentencias de lectura: `SET MERGE INFILE CARDS DATALINES`…;
-3.  Sentencias de manipulación de registros o variables;
-4.  `RUN`;
+1. `DATA` \<nombre conjunto de datos `SAS`> ; Crea 1 o n conjuntos de datos `SAS`
+1. Sentencias de lectura: `SET MERGE INFILE CARDS DATALINES`…;
+1. Sentencias de manipulación de registros o variables;
+1. `RUN`;
 
 Lo primero que hace `DATA` es crear una estructura en función de los datos de lectura. Una vez creada esa estructura lee los datos de forma iterativa y cuando llega a `RUN` se vuelcan los datos a la estructura. Los primeros ejemplos que vamos a analizar son entradas manuales de datos:
 

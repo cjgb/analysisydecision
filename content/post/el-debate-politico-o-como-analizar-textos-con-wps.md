@@ -76,7 +76,7 @@ run;
 
 Este `código` no es `sencillo` pero lo puedo `resumir` en si hay un `espacio` en `blanco` o un `guión` eso `implica separación` entre `palabras`, es en ese `momento` cuando hago el `OUTPUT`, también lo tengo que hacer con la `última palabra` de la `tabla`. El `proceso` se realiza `recorriendo caracter` a `caracter`. El `resultado` es un `dataset PALABRAS` con las `29.903 palabras` que se `pronunciaron` aquel `día` en el `Congreso de los Diputados`. Ahora necesitamos `mejorar` nuestros `datos` y quiero `emplear` [una `macro` que ya ha `asomado` en el `blog` en otras `ocasiones`](https://analisisydecision.es/macros-sas-limpiar-una-cadena-de-caracteres/). Además `elimino tildes` y algunas `palabras` que `suelen usarse` mucho:
 
-```
+````
 
 Ya tenemos en nuestra `sesión` de `WPS` el `dataset PALABRAS2` con la `variable PALABRA2` con la que ya podemos hacer un `pequeño análisis` de que `asuntos` son los que más se `tratan` en las `sesiones` del `congreso`. ¿Y qué es lo primero que podemos hacer? Un `ranking` de `palabras`:
 
@@ -106,7 +106,7 @@ set cuenta;
 posicion = _n_;
 
 run;
-```
+````
 
 Ya podemos ver que los `AEROPUERTOS` despiertan el `interés` en nuestros `representantes`. Que el `PARO` o el `EMPLEO` parecen `preocupar menos`. En fin, empezamos a ver algunas `cosas`. Un `trabajo sencillo` con `WPS` nos permite realizar `análisis` muy `interesantes`. Os imagináis que `tabulamos` todas las `intervenciones` de la `actual legislatura` y `analizamos` que `palabras` son las que van `despertando mayor interés` en las `sesiones`. O por `ejemplo`, qué `palabras` son las que `rodean` a `paro`, ¿`construcción`, `jóvenes`? Qué `diputados` son los que más han `intervenido`, los que menos, la `longitud` de las `palabras` que `emplean`,… en fin `mil cosas`. No necesitamos `software específico` ni `algoritmos complejos` para realizar nuestros `procesos` de `text mining`. En poco menos de una `hora` he encontrado algunas `cosas interesantes`. Seguiré con ello.
 Si no se ve correctamente esta entrada o no funciona el código remitidme el problema a [`rvaquerizo@analisisydecision.es`](mailto:rvaquerizo@analisisydecision.es)

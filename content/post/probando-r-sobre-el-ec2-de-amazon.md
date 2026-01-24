@@ -18,17 +18,17 @@ title: Probando R sobre el EC2 de Amazon
 url: /blog/probando-r-sobre-el-ec2-de-amazon/
 ---
 
-Hacía `tiempo` que quería probarlo. Menos en las `grutas` `pobladas` de `seres` del `siglo` anterior, todo el `mundo` habla del [`EC2`](`http://aws.amazon.com/ec2/` "`EC2` de `Amazon`").
+Hacía `tiempo` que quería probarlo. Menos en las `grutas` `pobladas` de `seres` del `siglo` anterior, todo el `mundo` habla del [`EC2`](%60http://aws.amazon.com/ec2/%60 "`EC2` de `Amazon`").
 
-Entre otras muchas cosas que iré explorando más adelante, el `EC2` de `Amazon` te `alquila` un `servidor` por `horas`. También te ofrece [`espacio de disco`](`http://aws.amazon.com/s3/` "`Amazon S3`") a unos [`precios de risa`](`http://aws.amazon.com/s3/#pricing` "`Precios Amazon S3`") y otras `cosas` más que bien podrían mandar al `paro` a `departamentos` `enteros` de `IT`. Pero hoy, de `momento`, sólo me interesaba el `servidor`, `alquilar` un `servidor` por un `rato`.
+Entre otras muchas cosas que iré explorando más adelante, el `EC2` de `Amazon` te `alquila` un `servidor` por `horas`. También te ofrece [`espacio de disco`](%60http://aws.amazon.com/s3/%60 "`Amazon S3`") a unos [`precios de risa`](%60http://aws.amazon.com/s3/#pricing%60 "`Precios Amazon S3`") y otras `cosas` más que bien podrían mandar al `paro` a `departamentos` `enteros` de `IT`. Pero hoy, de `momento`, sólo me interesaba el `servidor`, `alquilar` un `servidor` por un `rato`.
 
 Tengo un pequeño `programa` en `R` que `resuelve` un `complicado` `problema` de `combinatoria`, una `especie` de `sudoku` en el que hay que `sentar` a `gente` en `sillas` de `acuerdo` con una `serie` de `normas`. No lee `datos` de `ningún sitio` y la `salida` es un `fichero` pequeño. Pero podría `freír` la `CPU` de mi `portátil` si lo `ejecutase` en `local`.
 
 Repasaré y dejaré, pues, constancia de lo hecho y conseguido:
 
-Primero me he dado de alta en el `servicio` a través de [`http://aws.amazon.com`](`http://aws.amazon.com/` "`Amazon EC2`"). He dado mis `datos`, mi `tarjeta` de `crédito`, etc. y me han llamado al `teléfono` que les he dado: la `voz` de una `señorita grabada` en [`casete`](`http://es.wikipedia.org/wiki/Casete` "`Casete`") me ha pedido un `código` que me habían pasado previamente. Se lo he dado y me ha llegado un `mensaje` de `confirmación`.
+Primero me he dado de alta en el `servicio` a través de [`http://aws.amazon.com`](%60http://aws.amazon.com/%60 "`Amazon EC2`"). He dado mis `datos`, mi `tarjeta` de `crédito`, etc. y me han llamado al `teléfono` que les he dado: la `voz` de una `señorita grabada` en [`casete`](%60http://es.wikipedia.org/wiki/Casete%60 "`Casete`") me ha pedido un `código` que me habían pasado previamente. Se lo he dado y me ha llegado un `mensaje` de `confirmación`.
 
-En mi primer `paseo` por `EC2` me he apoyado en dos `páginas`, una de [`Ubuntu`](`https://help.ubuntu.com/community/EC2StartersGuide` "`EC2 Guide for Ubuntu`") y [`otra más genérica`](`http://linuxsysadminblog.com/2009/06/howto-get-started-with-amazon-ec2-api-tools/` "`EC2 for Linux`"). Para interactuar con los `servidores` de `Amazon` hacen falta unos `certificados` de `seguridad` con `claves privada` y `pública`, etc. que esos `tutoriales` explican cómo `gestionar` mejor de lo que podría hacer yo. Pero en `esencia`, lo que hay que hacer es lo siguiente:
+En mi primer `paseo` por `EC2` me he apoyado en dos `páginas`, una de [`Ubuntu`](%60https://help.ubuntu.com/community/EC2StartersGuide%60 "`EC2 Guide for Ubuntu`") y [`otra más genérica`](%60http://linuxsysadminblog.com/2009/06/howto-get-started-with-amazon-ec2-api-tools/%60 "`EC2 for Linux`"). Para interactuar con los `servidores` de `Amazon` hacen falta unos `certificados` de `seguridad` con `claves privada` y `pública`, etc. que esos `tutoriales` explican cómo `gestionar` mejor de lo que podría hacer yo. Pero en `esencia`, lo que hay que hacer es lo siguiente:
 
 1. Descargarse los `ficheros` de los `certificados` (el `certificado` y la `clave`) de la `sección _«Security Credentials»_` de la `página` de `Amazon`.
 
@@ -84,4 +84,4 @@ Al `cabo` de 807 `segundos` (y 10 `céntimos` de `dólar`) ya tenía mis `result
 
 `Simpático`, ¿verdad?
 
-Otro día tengo que probar el `almacenamiento`, [`hadoop`](`hadoop.apache.org` "`Hadoop`"), los `web services` y alguna `cosa` más de esas por las que en España no voy a `facturar` jamás un `euro`.
+Otro día tengo que probar el `almacenamiento`, [`hadoop`](%60hadoop.apache.org%60 "`Hadoop`"), los `web services` y alguna `cosa` más de esas por las que en España no voy a `facturar` jamás un `euro`.

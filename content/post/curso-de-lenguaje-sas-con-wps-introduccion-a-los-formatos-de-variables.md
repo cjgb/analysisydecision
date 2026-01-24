@@ -21,15 +21,9 @@ url: /blog/curso-de-lenguaje-sas-con-wps-introduccion-a-los-formatos-de-variable
 
 Volvemos con el curso de lenguaje `SAS` con `WPS`. Estaba parado debido a un problema con las licencias de `WPS` desde junio de 2010 pero le retomamos con uno de los capítulos más interesantes: **formatos de variables en `SAS`**. Si tuvieramos que definirlos Son imprescindibles tanto para leer como para escribir variables. Y esa es la característica que los divide, existen formatos de entrada `INFORMAT` y formatos de salida `FORMAT`. Se dividen por categorías, entre las que destacan los formatos numéricos, formatos carácter y formatos de fecha. La sintaxis es sencilla (`IN`)`FORMAT` -variable–formato-
 
-
-
 Los formatos más importantes por tipo son:
 
-
-
 Formatos numéricos:
-
-
 
 • `BESTw.` `SAS` mejor formato
 
@@ -49,19 +43,11 @@ Formatos numéricos:
 
 • `w.d` Habitual
 
-
-
 • `Zw.d` Números empezados por 0 (08034)
-
-
 
 En el caso de las variables numéricas el formato de lectura tiene importancia a la hora de la importación de ficheros de texto y el formato de escritura es importante en exportaciones y realización de informes.
 
-
-
 Formatos fecha:
-
-
 
 • `DATE.` Día siglas de mes en inglés Año (01JAN2001)
 
@@ -71,14 +57,10 @@ Formatos fecha:
 
 En el caso de las fechas es fundamental conocer bien bien el funcionamiento de los formatos tanto de lectura, para la importación de ficheros de texto; como de escritura, para la realización de cálculos y reportes.
 
-
-
 Formatos carácter:
 
 • `CHARw.`
 
 •`w.`
-
-
 
 Como podemos ver para los formatos carácter son formatos estándar. Cuando trabajemos con variables carácter la información que requerirá más atención será su longitud.

@@ -29,9 +29,9 @@ title: Stadistical data warehouse del European Central Bank con R y los depósit
 url: /blog/stadistical-data-warehouse-del-european-central-bank-con-r-y-los-depositos-a-perdidas/
 ---
 
-Más ejemplos de uso del paquete de R **XML**. Vamos a leer datos del _data_ _warehouse_ del European Central Bank. Si dais una vuelta por la web tendréis interesantes datos económicos de los países de la Unión Europea. A modo de ejemplos vamos a leer los datos de los tipos de interés medios a 12 meses que se están dando por los bancos en España y la evolución del Euribor a 6 meses.
-– Report Tipos: <http://sdw.ecb.europa.eu/quickview.do?SERIES_KEY=124.MIR.M.ES.B.L22.F.R.A.2250.EUR.N>
-– Report Euribor: <http://sdw.ecb.europa.eu/quickview.do?SERIES_KEY=143.FM.M.U2.EUR.RT.MM.EURIBOR6MD_.HSTA>
+Más ejemplos de uso del paquete de R `XML`. Vamos a leer datos del data warehouse del European Central Bank. Si dais una vuelta por la web tendréis interesantes datos económicos de los países de la Unión Europea. A modo de ejemplos vamos a leer los datos de los tipos de interés medios a 12 meses que se están dando por los bancos en España y la evolución del Euribor a 6 meses.
+– Report Tipos: [http://sdw.ecb.europa.eu/quickview.do?SERIES_KEY=124.MIR.M.ES.B.L22.F.R.A.2250.EUR.N](http://sdw.ecb.europa.eu/quickview.do?SERIES_KEY=124.MIR.M.ES.B.L22.F.R.A.2250.EUR.N)
+– Report Euribor: [http://sdw.ecb.europa.eu/quickview.do?SERIES_KEY=143.FM.M.U2.EUR.RT.MM.EURIBOR6MD\_.HSTA](http://sdw.ecb.europa.eu/quickview.do?SERIES_KEY=143.FM.M.U2.EUR.RT.MM.EURIBOR6MD_.HSTA)
 
 Vamos a generar el siguiente gráfico comparativo:
 
@@ -81,7 +81,7 @@ names(depos)=c("mes","interes")
 head(depos)
 ```
 
-Es un **código sucio** , no me he preocupado mucho por él. Con la función _readHTMLTable_ leemos la tabla del report que nos ofrece el BCE. **_STR_** es muy importante porque nos quedaremos con la parte del objeto que nos interesa, los datos, y no siempre están en la misma posición, en alguna otra lectura me he encontrado esta problemática, en este caso seleccionamos el elemento 6. Nos quedamos con las fechas por un lado y los datos por otro, le damos el formato que mejor se adecúa y ya tenemos un objeto con mes y tipo medio. De forma análoga lo hacemos con el Euribor a 6 meses:
+Es un código sucio, no me he preocupado mucho por él. Con la función `readHTMLTable` leemos la tabla del report que nos ofrece el BCE. `str` es muy importante porque nos quedaremos con la parte del objeto que nos interesa, los datos, y no siempre están en la misma posición, en alguna otra lectura me he encontrado esta problemática, en este caso seleccionamos el elemento 6. Nos quedamos con las fechas por un lado y los datos por otro, le damos el formato que mejor se adecúa y ya tenemos un objeto con mes y tipo medio. De forma análoga lo hacemos con el Euribor a 6 meses:
 
 ```r
 pag2="http://sdw.ecb.europa.eu/quickview.do?SERIES_KEY=143.FM.M.U2.EUR.RT.MM.EURIBOR6MD_.HSTA"
@@ -117,7 +117,7 @@ names(eur6m)=c("mes","eur6m")
 head(eur6m)
 ```
 
-Si alguien quiere crear una función leeBCEdw…Ya tenemos dos objetos R uno con los tipos medios de depósitos de la banca española y otro con el evolutivo del Euribor, se me ocurre que podíamos pintar una serie comparativa de ambos datos desde 2007, un año antes de la debacle del sistema financiero. Preparamos el objeto:
+Si alguien quiere crear una función `leeBCEdw`…Ya tenemos dos objetos R uno con los tipos medios de depósitos de la banca española y otro con el evolutivo del Euribor, se me ocurre que podíamos pintar una serie comparativa de ambos datos desde 2007, un año antes de la debacle del sistema financiero. Preparamos el objeto:
 
 ```r
 #Acotamos el número de meses de la serie
@@ -131,7 +131,7 @@ eur6m=subset(eur6m, mes >= "2007")
 datos=merge(depos,eur6m,by.x="mes",by.y="mes",all.x)
 ```
 
-¡Listo! un data frame preparado para trabajar, pero el mes tiene un formato carácter y es necesario darle formato fecha para poder realizar una serie:
+¡Listo! un dataframe preparado para trabajar, pero el mes tiene un formato carácter y es necesario darle formato fecha para poder realizar una serie:
 
 ```r
 #Damos un formato apropiadao a las fechas
@@ -167,7 +167,7 @@ library(reshape)
 datos<-sort_df(datos,vars='mes')
 ```
 
-En un [mensaje anterior ya trabajamos con los formatos de las fechas y la configuración local](https://analisisydecision.es/trucos-r-establecer-la-configuracion-local-de-una-fecha/). Esa misma metodología empleamos ahora. Establecemos la fecha a _English_ con **SYS.SETLOCALE** y añadimos un 01 para crear la fecha. Particularmente prefiero los formatos de fecha del tipo AAAAMM y para ello empleamos FORMAT, creo que es un buen ejemplo de uso de fechas en R pasadas a número. Por último aprovechamos la librería **RESHAPE** para ordenar el data frame resultante que tiene muy buena pinta. Ahora toca graficar:
+En un [mensaje anterior ya trabajamos con los formatos de las fechas y la configuración local](https://analisisydecision.es/trucos-r-establecer-la-configuracion-local-de-una-fecha/). Esa misma metodología empleamos ahora. Establecemos la fecha a English con `Sys.setlocale` y añadimos un 01 para crear la fecha. Particularmente prefiero los formatos de fecha del tipo `AAAAMM` y para ello empleamos `format`, creo que es un buen ejemplo de uso de fechas en R pasadas a número. Por último aprovechamos la librería `reshape` para ordenar el dataframe resultante que tiene muy buena pinta. Ahora toca graficar:
 
 ```r
 win.graph()
@@ -199,4 +199,4 @@ text(6,1,"Euribor a 6m")
 points(c(rep(NA,10),rep(0.95,4)),type="l",lwd=3,col=12)
 ```
 
-Tenemos un buen ejemplo de creación de ejes personalizados con **AXIS**. Para personalizar los ejes yo recomiendo usar las opciones _xaxs=»r», yaxs = «r», xaxt=»n», yaxt=»n»_ en _plot_. Es curioso lo que me ha costado trabajar con la función _polygon_ para hacer una simple cajita. Pero os dejo una forma “curiosa” de crear la leyendas para que dispongáis de otros métodos de graficar con R. Ahora me queda comentar un poco el gráfico. Decidme que no estáis asustados. Hasta 2009 los bancos daban unos intereses en sus depósitos por debajo del Euribor a 6 meses pero ahora están dando **depósitos a pérdidas**. La **batalla del pasivo** está haciendo que las entidades bancarias cada vez den más depósitos con márgenes negativos. Este tema merece una lección de economía del ignorante porque en España el poder financiero controla el poder industrial y el Banco de España está dejando que la banca se harte a realizar emisiones propias…
+Tenemos un buen ejemplo de creación de ejes personalizados con `axis`. Para personalizar los ejes yo recomiendo usar las opciones `xaxs="r"`, `yaxs="r"`, `xaxt="n"`, `yaxt="n"` en `plot`. Es curioso lo que me ha costado trabajar con la función `polygon` para hacer una simple cajita. Pero os dejo una forma “curiosa” de crear la leyendas para que dispongáis de otros métodos de graficar con R. Ahora me queda comentar un poco el gráfico. Decidme que no estáis asustados. Hasta 2009 los bancos daban unos intereses en sus depósitos por debajo del Euribor a 6 meses pero ahora están dando depósitos a pérdidas. La batalla del pasivo está haciendo que las entidades bancarias cada vez den más depósitos con márgenes negativos. Este tema merece una lección de economía del ignorante porque en España el poder financiero controla el poder industrial y el Banco de España está dejando que la banca se harte a realizar emisiones propias…

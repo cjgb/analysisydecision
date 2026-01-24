@@ -93,4 +93,3 @@ dev.off()
 ```
 
 La línea parte del punto `(0,0.03)` y va hasta una posición entre el `0` y la `longitud` del vector que representa el semicírculo. En este caso el 1% será la posición `200` del semicírculo. No puede ser más sencillo. Como último paso pinto un punto con función estética. Como ya os comenté esta es una versión beta del gráfico. Será interesante poner escalas, números, una aguja y representar muchos gráficos de forma ordenada. También estoy abierto a otras sugerencias, de hecho este gráfico es una ídea que me dieron dos lectores.
-

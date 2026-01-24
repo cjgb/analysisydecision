@@ -81,3 +81,4 @@ La variable `fecha` tiene el formato `ddmmyy10.` y es el resultado de transforma
 Buen ejemplo para recordar un par de temas que provocan un gran número de visitas a esta web. Ahora os dejo deberes, tenéis que obtener el directorio en el que se aloja el fichero. No es baladí el tema. A ver si sois capaces, yo lo tengo hecho pero es muy complejo y “poco elegante”. Espero que a alguno de vosotros se os ocurra un mejor método.
 
 ```
+```

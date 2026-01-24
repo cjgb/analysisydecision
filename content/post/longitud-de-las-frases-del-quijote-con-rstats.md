@@ -16,7 +16,7 @@ tags:
   - formación
   - monográficos
   - r
-title: 'Longitud de las frases del `Quijote` con `rstats`'
+title: Longitud de las frases del `Quijote` con `rstats`
 url: /blog/longitud-de-las-frases-del-quijote-con-rstats/
 ---
 

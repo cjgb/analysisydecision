@@ -37,4 +37,5 @@ Next pt
 
 End Sub
 ```
+
 Para cada tabla dinámica (pivot table) actualiza el campo fecha, quita diciembre de 2010 y pone marzo de 2010. Es importante destacar que el filtro emplea fechas en lengua inglesa aunque vosotros en la tabla dinámica la veáis en lengua española. Esto es importante porque más de uno se ha vuelto loco con ese problema en las macros que modifican tablas dinámicas. También se puede plantear una versión que actualice todas las hojas de un libro. Espero que sea de utilidad. Saludos.

@@ -20,7 +20,7 @@ title: Introducción a la Estadística para Científicos de Datos. Capítulo 8. 
 url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-8-problemas-con-los-datos/
 ---
 
-Siguiendo con el desarrollo se ha establecido una estructura de datos, fundamentalmente se está trabajando con _data frames_ , que se componen de filas (registros) y columnas (variables). Tanto registros como variables pueden presentar problemas que dificulten la gestión de la información al científico de datos. En este capítulo se van a estudiar los problemas más comunes con los datos y se plantean posibles estrategias para resolver estos problemas. Aunque los datos pueden presentar problemas desde el punto de vista de los registros y desde el punto de vista de las variables en este caso se van a abordar **análisis de variables** que permitirán identificar tanto variables como registros que distorsionan el análisis. Para encontrar y describir estas situaciones se dispone tanto de análisis numéricos como análisis gráficos sencillos con los que se tomó contacto en los dos capítulos anteriores.
+Siguiendo con el desarrollo se ha establecido una estructura de datos, fundamentalmente se está trabajando con `data frames`, que se componen de filas (registros) y columnas (variables). Tanto registros como variables pueden presentar problemas que dificulten la gestión de la información al científico de datos. En este capítulo se van a estudiar los problemas más comunes con los datos y se plantean posibles estrategias para resolver estos problemas. Aunque los datos pueden presentar problemas desde el punto de vista de los registros y desde el punto de vista de las variables en este caso se van a abordar **análisis de variables** que permitirán identificar tanto variables como registros que distorsionan el análisis. Para encontrar y describir estas situaciones se dispone tanto de análisis numéricos como análisis gráficos sencillos con los que se tomó contacto en los dos capítulos anteriores.
 
 Para ilustrar esta situaciones se continúa con el [caso práctico de trabajo visto en el apartado 6.2 de este libro](https://analisisydecision.es/estadistica-data-scientist/descripcion-numerica-variables.html#caso-pr%C3%A1ctico.-campa%C3%B1a-de-venta-cruzada). Como en capítulos anteriores se cargan los datos:
 
@@ -49,19 +49,19 @@ ggplot(resumen, aes(x=Driving_License, y=porcen_clientes)) + geom_bar(stat="iden
   ggtitle("Distribución de variable Driving_License")
 ```
 
-La práctica totalidad de los clientes encuestados tiene carnet. Es una variable que no tiene sentido, si se va a ofrecer un seguro de automóviles será necesario que el cliente pueda optar a tener un automóvil. En esta situación se plantea una estrategia muy simple **la variable ha de ser eliminada** , bien es cierto que se puede plantear la eliminación de aquellos clientes que no tienen carnet, pero son muy pocos. Un análisis descriptivo de lo más sencillo está permitiendo detectar claros problemas de negocio.
+La práctica totalidad de los clientes encuestados tiene carnet. Es una variable que no tiene sentido, si se va a ofrecer un seguro de automóviles será necesario que el cliente pueda optar a tener un automóvil. En esta situación se plantea una estrategia muy simple **la variable ha de ser eliminada**, bien es cierto que se puede plantear la eliminación de aquellos clientes que no tienen carnet, pero son muy pocos. Un análisis descriptivo de lo más sencillo está permitiendo detectar claros problemas de negocio.
 
 > Cuando se trabaje con factores es necesario estudiar si hay algún nivel con un porcentaje desmesurado de observaciones, esa desmesura la debe establecer el científico de datos con sus análisis descriptivos, si fuera necesario fijar un umbral, por encima de un 95% de observaciones en un mismo nivel se sugiere trabajar con mayor detenimiento ese factor.
 
 ### Factores que aparecen como variables numéricas
 
-Se sigue haciendo mención en múltiples ocasiones, **el científico de datos debe conocer los datos con los que está trabajando**. Habrá situaciones en las que se enfrente a cientos (miles de variables) y tenga que decidir cuales de ellas sirven en su tarea. Esto sucede cuando los tablones de trabajo se almacenan en estructuras como _data lakes_ con un volumen ingente tanto de registros como de variables por eso el científico de datos establece como describir esas variables, si describir una variable numérica o describir un factor. En los datos de trabajo este problema se presenta en la variable `Region_code`.
+Se sigue haciendo mención en múltiples ocasiones, **el científico de datos debe conocer los datos con los que está trabajando**. Habrá situaciones en las que se enfrente a cientos (miles de variables) y tenga que decidir cuales de ellas sirven en su tarea. Esto sucede cuando los tablones de trabajo se almacenan en estructuras como `data lakes` con un volumen ingente tanto de registros como de variables por eso el científico de datos establece como describir esas variables, si describir una variable numérica o describir un factor. En los datos de trabajo este problema se presenta en la variable `Region_code`.
 
 ```r
 summary(train$Region_Code)
 ```
 
-¿Tiene sentido esta sumarización? Evidentemente no, y este es uno de los problemas más comunes que aparece en el trabajo con datos. El formato de las variables no es el adecuado, lo podremos identificar conociendo los datos o bien asignando nombres a las variables que nos permitan «intuir» el tipo, en este caso se emplea el sufijo _code_ que ya nos deja claro que tipo de variable es y como debemos tratarla
+¿Tiene sentido esta sumarización? Evidentemente no, y este es uno de los problemas más comunes que aparece en el trabajo con datos. El formato de las variables no es el adecuado, lo podremos identificar conociendo los datos o bien asignando nombres a las variables que nos permitan «intuir» el tipo, en este caso se emplea el sufijo `_code` que ya nos deja claro que tipo de variable es y como debemos tratarla
 
 ```r
 resumen <- train %>% group_by(Region_Code=as.factor(Region_Code)) %>% summarise(porcen_clientes = n()/nrow(train)) %>% arrange(desc(porcen_clientes))
@@ -87,13 +87,13 @@ train %>% group_by(Region_Code=as.factor(Region_Code)) %>%
   ggtitle("Distribución de variable Region_Code") + coord_flip()
 ```
 
-El código empleado en ggplot tiene aspectos interesantes y que permiten crear gráficos descriptivos más completos. Empezando por indicar que no se crea un data frame temporal intermedio, directamente se emplea el pipe (%>%) para realizar la representación gráfica. Por otro lado, se emplea la función `reorder(factor, orden)` para ordenar el factor en análisis en función de otro campo, en este caso se pretenden ordenar los códigos de provincia en función del porcentaje de observaciones que contiene. Por otro lado, para realizar un ranking se emplea un gráfico de barras horizontal, para rotar el gráfico se emplea `coord_flip()`, se aprecia que el eje y conserva el nombre de la variable establecida en `aes`. Este trabajo es habitual cuando se quieren representar rankings de factores.
+El código empleado en ggplot tiene aspectos interesantes y que permiten crear gráficos descriptivos más completos. Empezando por indicar que no se crea un data frame temporal intermedio, directamente se emplea el `pipe` (%>%) para realizar la representación gráfica. Por otro lado, se emplea la función `reorder(factor, orden)` para ordenar el factor en análisis en función de otro campo, en este caso se pretenden ordenar los códigos de provincia en función del porcentaje de observaciones que contiene. Por otro lado, para realizar un ranking se emplea un gráfico de barras horizontal, para rotar el gráfico se emplea `coord_flip()`, se aprecia que el eje `y` conserva el nombre de la variable establecida en `aes`. Este trabajo es habitual cuando se quieren representar rankings de factores.
 
-Cabe preguntarse ¿Es necesario agrupar esta variable? Se puede responder con otra cuestión, ¿se debe dar la misma relevancia al código 28 (Madrid) que al código postal 51 (Ceuta)? La respuesta evidente es no, pero esta respuesta **no tiene ningún sustento estadísto** , al menos de momento. Cuando aparece esta situación será de utilidad agrupar los niveles del factor, posibles estrategias para esta labor:
+Cabe preguntarse ¿Es necesario agrupar esta variable? Se puede responder con otra cuestión, ¿se debe dar la misma relevancia al código 28 (Madrid) que al código postal 51 (Ceuta)? La respuesta evidente es no, pero esta respuesta **no tiene ningún sustento estadístico**, al menos de momento. Cuando aparece esta situación será de utilidad agrupar los niveles del factor, posibles estrategias para esta labor:
 
 - Agrupar los niveles en base al peso, en este caso al % de clientes.
 - Agrupar los niveles en base a «criterios de negocio».
-- Agrupar los niveles en base a _nuestro problema_ , en este caso, agrupar los códigos de provincia en base a una variable respuesta, agrupar en base al interés por el producto de automóviles.
+- Agrupar los niveles en base a `nuestro problema`, en este caso, agrupar los códigos de provincia en base a una variable respuesta, agrupar en base al interés por el producto de automóviles.
 
 En la tercera de las estrategias se plantea estudiar una variable en función de otra lo que denominamos análisis bivariable, en estos momentos no se dispone de una herramienta para realizar este análisis por ello se sugiere la primera de las estrategias.
 
@@ -107,13 +107,13 @@ train %>% group_by(fr_zona) %>% summarise(porcen_clientes = n()/nrow(train)) %>%
   ggplot(aes(x=fr_zona, y=porcen_clientes)) + geom_bar(stat="identity")
 ```
 
-Se transforma un factor con 53 niveles en un nuevo factor reclasificado (prefijo fr\_ en la variable) que tiene 3 niveles.
+Se transforma un factor con 53 niveles en un nuevo factor reclasificado (prefijo `fr_` en la variable) que tiene 3 niveles.
 
 > Es buena práctica asignar prefijos o sufijos a variables que se codifiquen cuando se manejan datos. De este modo se puede determinar el rol que juega esa variable en el análisis planteado. A lo largo de este trabajo se insistirá en esa labor.
 
 ### Factores con valores perdidos
 
-Otro de los problemas que aparece en los datos son los **valores perdidos o _missing_**. Es una problemática común con valores numéricos pero hay matices que el científico de datos debe conocer. El valor perdido no ha de ser necesariamente un valor `NA` en R si volvemos al ejemplo de la variable `Region_Code`:
+Otro de los problemas que aparece en los datos son los **valores perdidos o `missing`**. Es una problemática común con valores numéricos pero hay matices que el científico de datos debe conocer. El valor perdido no ha de ser necesariamente un valor `NA` en R si volvemos al ejemplo de la variable `Region_Code`:
 
 ```r
 resumen <- train %>% group_by(Region_Code) %>%
@@ -165,7 +165,7 @@ En esta situación una posible estrategia es discretizar la variable prima para 
 
 ### Valores atípicos
 
-Un valor atípico es aquel que está fuera de un rango de valores donde esperamos encontrarnos un % muy alto de observaciones, estos valores se denominan **outliers** y pueden distorsionar tanto análisis numéricos como gráficos. Volviendo sobre la variable `Annual_Premium` y los gráficos boxplot vistos en el capítulo 7.
+Un valor atípico es aquel que está fuera de un rango de valores donde esperamos encontrarnos un % muy alto de observaciones, estos valores se denominan `outliers` y pueden distorsionar tanto análisis numéricos como gráficos. Volviendo sobre la variable `Annual_Premium` y los gráficos boxplot vistos en el capítulo 7.
 
 ```r
 ggplot(train , aes(y = Annual_Premium)) + geom_boxplot() + coord_flip()
@@ -195,7 +195,7 @@ ggplot(resumen, aes(x=Driving_License, y=porcen_clientes)) + geom_bar(stat="iden
 
 1
 
-Como indicaba el boxplot la variable `Annual_Premium` no tiene valores atípicos en la parte inferior de su distribución, pero en la parte superior, todo aquel valor que supere los `r round(lim2,1)` será considerado como un outlier. En este caso tenemos `r sum(train$Annual_Premium>=lim2)` observaciones cuyo valor de prima está por encima de ese umbral, tenemos `r sum(train$Annual_Premium>=lim2)` outliers. Pueden parecer muchas observaciones pero trabajamos con `r nrow(train)` observaciones lo que supone un `r round(sum(train$Annual_Premium>=lim2)/nrow(train),3) * 100`% del total de registros.
+Como indicaba el boxplot la variable `Annual_Premium` no tiene valores atípicos en la parte inferior de su distribución, pero en la parte superior, todo aquel valor que supere los `r round(lim2,1)` será considerado como un `outlier`. En este caso tenemos `r sum(train$Annual_Premium>=lim2)` observaciones cuyo valor de prima está por encima de ese umbral, tenemos `r sum(train$Annual_Premium>=lim2)` `outliers`. Pueden parecer muchas observaciones pero trabajamos con `r nrow(train)` observaciones lo que supone un `r round(sum(train$Annual_Premium>=lim2)/nrow(train),3) * 100`% del total de registros.
 
 En este caso, las estrategias para solventar este problema dependen del científico de datos, se puede optar:
 
@@ -204,7 +204,7 @@ En este caso, las estrategias para solventar este problema dependen del científ
 
 ### Variables numéricas como factores
 
-En apartados anteriores se está viendo la posibilidad de tratar variables numéricas como factores para solventar tanto la existencia de valores modales que puedan tener un _significado de negocio_ como solventar la existencia de outliers y no tener que eliminar registros. Sin embargo, hay ocasiones en las que una variable numérica puede interesarnos que sea un factor sobre todo en procesos de modelización como se verá en capítulos posteriores. Sirva como ejemplo la variable `Age`:
+En apartados anteriores se está viendo la posibilidad de tratar variables numéricas como factores para solventar tanto la existencia de valores modales que puedan tener un `significado de negocio` como solventar la existencia de outliers y no tener que eliminar registros. Sin embargo, hay ocasiones en las que una variable numérica puede interesarnos que sea un factor sobre todo en procesos de modelización como se verá en capítulos posteriores. Sirva como ejemplo la variable `Age`:
 
 ```r
 resumen <- train %>% group_by(Driving_License=as.factor(Driving_License)) %>%
@@ -220,8 +220,8 @@ La edad toma valores finitos con orden. Como variable numérica se aprecian dos 
 
 ### Valores perdidos en variables numéricas
 
-Esta problemática afecta tanto a variables numéricas como factores, las estrategias para resolver el problema son parecidas. Sin embargo, este problema tiene importancia en variables numéricas porque el científico de datos debe conocer como se preparan la información que está manejando ya que será habitual que el propio científico de datos realice ese _tablón de datos_ esa tabla que es una base de observaciones a la que se pueden ir anexando columnas, a la que se va uniendo datos en forma de nuevas variables. En ese proceso de añadir datos la forma en la que los añadamos puede hacer que un valor perdido tenga sentido.
+Esta problemática afecta tanto a variables numéricas como factores, las estrategias para resolver el problema son parecidas. Sin embargo, este problema tiene importancia en variables numéricas porque el científico de datos debe conocer como se preparan la información que está manejando ya que será habitual que el propio científico de datos realice ese `tablón de datos` esa tabla que es una base de observaciones a la que se pueden ir anexando columnas, a la que se va uniendo datos en forma de nuevas variables. En ese proceso de añadir datos la forma en la que los añadamos puede hacer que un valor perdido tenga sentido.
 
-Por ejemplo, una base de clientes de una entidad bancaria, un _tablón_ de clientes, se van uniendo nuevos datos y es necesario crear una variable que indique si el cliente presente en ese tablón tiene saldo en fondo de inversión o no tiene. El tablón de inicio tiene los clientes de trabajo, por otro lado, se extraen los clientes con fondos de inversión y se cruzan ambas tablas, al realizar el cruce es posible que, aquellos que nunca han tenido fondos de inversión, no hayan cruzado y se queden con un valor vacío, en ese caso el valor perdido tiene un sentido -> ‘El cliente no ha tenido fondos de inversión’ En esta situación no se debe establecer un saldo de 0 en fondos de inversión porque es posible que un cliente que haya tenido fondos tenga saldo 0. Se tienen 3 posibles situaciones, saldo, saldo 0 o nunca ha tenido fondos. Esa situación la describe un valor perdido, ¿tiene sentido dar un valor 0 al valor perdido?
+Por ejemplo, una base de clientes de una entidad bancaria, un `tablón` de clientes, se van uniendo nuevos datos y es necesario crear una variable que indique si el cliente presente en ese tablón tiene saldo en fondo de inversión o no tiene. El tablón de inicio tiene los clientes de trabajo, por otro lado, se extraen los clientes con fondos de inversión y se cruzan ambas tablas, al realizar el cruce es posible que, aquellos que nunca han tenido fondos de inversión, no hayan cruzado y se queden con un valor vacío, en ese caso el valor perdido tiene un sentido -> ‘El cliente no ha tenido fondos de inversión’ En esta situación no se debe establecer un saldo de 0 en fondos de inversión porque es posible que un cliente que haya tenido fondos tenga saldo 0. Se tienen 3 posibles situaciones, saldo, saldo 0 o nunca ha tenido fondos. Esa situación la describe un valor perdido, ¿tiene sentido dar un valor 0 al valor perdido?
 
 Hay que tener clara la importancia de esa variable en el análisis porque la imputación de valores perdidos en variables numéricas se puede volver un proceso muy costoso. Se pueden imputar valores medios, realizar un modelo específico para imputar valores perdidos, asignar un valor modal teniendo en cuenta la problemática que puede surgir. Un gran número de valores perdidos también es un indicador de la calidad de la información y de las variables. En los datos de trabajo no se tienen valores perdidos pero en este caso la estrategia el clara **es necesario imputar los valores perdidos** pero es el científico de datos el que debe elegir el tipo de imputación. En R hay paquetes y muchas posibilidades de imputación pero siempre bajo un criterio de negocio que ampare su decisión.

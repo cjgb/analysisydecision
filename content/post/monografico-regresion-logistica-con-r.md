@@ -24,9 +24,9 @@ url: /blog/monografico-regresion-logistica-con-r/
 ---
 
 Por fin nos metemos con la regresión logística en R. Nos meteremos con WPS (si es posible). Los modelos de regresión logística son los más utilizados en las áreas en las que el ahora escribiente ha trabajado. ¿Por qué tiene tanto «éxito»? Porque es el mejor ejemplo de modelo de variable linealmente dependiente de otras variables independientes. Pero sobre todo tiene éxito porque modelamos una probabilidad de un suceso (habitualmente dicotómico) en función de unos
-factores que pueden ser discretos o continuos. Modelizamos probabilidades, insisto; por ejemplo, si clasificamos la variable comete fraude como 1 y no comete fraude como 0 podríamos realizar un modelo de regresión lineal del tipo fraude(0,1)=:término independiente:+:parámetro:*:independiente:. Matemáticamente es posible, pero si me dices que un cliente tiene un 1,34 de «potencial» de fraude entro en estado de shock. Peeero, si p es la probabilidad de cometer fraude podemos construir esta función Ln(p/(1-p)) y sobre esta función si hacemos: Ln(p/q)=:término independiente: + :parámetro:*:independiente:. O lo que es lo mismo: prob. fraude=1/(1+e\*\*(-:término independiente:-:parámetro:\*:independiente:)). Qué bonita función y que interesante propiedad de los logaritmos que transforman sumas en productos.
+factores que pueden ser discretos o continuos. Modelizamos probabilidades, insisto; por ejemplo, si clasificamos la variable `comete fraude` como `1` y `no comete fraude` como `0` podríamos realizar un modelo de regresión lineal del tipo $\\text{fraude}(0,1)=\\text{término independiente}+\\text{parámetro}\\cdot\\text{independiente}$. Matemáticamente es posible, pero si me dices que un cliente tiene un `1,34` de «potencial» de fraude entro en estado de shock. Peeero, si `p` es la probabilidad de cometer fraude podemos construir esta función $Ln(p/(1-p))$ y sobre esta función si hacemos: $Ln(p/q)=\\text{término independiente} + \\text{parámetro}\\cdot\\text{independiente}$. O lo que es lo mismo: $\\text{prob. fraude}=1/(1+e^{-(\\text{término independiente}+\\text{parámetro}\\cdot\\text{independiente})})$. Qué bonita función y que interesante propiedad de los logaritmos que transforman sumas en productos.
 
-Ya os he contado toda la teoría que necesitáis para comenzar a trabajar. Imagino que os habéis leído 4 o 5 entradas de Google sobre el tema y estáis preparados para comenzar a trabajar con datos. En este caso vamos a emplear la regresión logística para describir. Al introduciros en este análisis he hablado de la probabilidad de presentar o no una característica. Sin embargo ahora le doy la vuelta y, sabiendo que pertenecen a un grupo quiero encontrar las interacciones entre las variables independientes. En este monográfico quiero analizar las poblaciones de España que tienen una tasa de paro para las mujeres un 90% más alta que la tasa de paro de los hombres. ¿Qué está pasando en estas poblaciones? ¿Qué factores socioecómicos son los más influyentes? ¿Cómo interactúan estos factores? Para ilustrar este ejemplo vamos a emplear los datos del anuario de «la Caixa» que os podéis bajar en [este link](http://www.anuarieco.lacaixa.comunicacions.com/java/X?cgi=caixa.le_DEM.pattern&CLEAR=YES). Seleccionamos todos los municipios y nos quedamos con las siguientes variables:
+Ya os he contado toda la teoría que necesitáis para comenzar a trabajar. Imagino que os habéis leído 4 o 5 entradas de Google sobre el tema y estáis preparados para comenzar a trabajar con datos. En este caso vamos a emplear la regresión logística para describir. Al introduciros en este análisis he hablado de la probabilidad de presentar o no una característica. Sin embargo ahora le doy la vuelta y, sabiendo que pertenecen a un grupo quiero encontrar las interacciones entre las variables independientes. En este monográfico quiero analizar las poblaciones de España que tienen una tasa de paro para las mujeres un 90% más alta que la tasa de paro de los hombres. ¿Qué está pasando en estas poblaciones? ¿Qué factores socioeconómicos son los más influyentes? ¿Cómo interactúan estos factores? Para ilustrar este ejemplo vamos a emplear los datos del anuario de «la Caixa» que os podéis bajar en [este link](http://www.anuarieco.lacaixa.comunicacions.com/java/X?cgi=caixa.le_DEM.pattern&CLEAR=YES). Seleccionamos todos los municipios y nos quedamos con las siguientes variables:
 
 - Código INE
 - Variación población 03-08 (Absoluta)
@@ -63,7 +63,7 @@ Ya os he contado toda la teoría que necesitáis para comenzar a trabajar. Imagi
 - Variación actividades comerciales minoristas 03-08 (%)
 - Variación actividades de restauración y bares 03-08 (%)
 
-Ahora tenemos que preparar el _data.frame_ para R. En mi caso prefiero modificar los nombres directamente en Excel y luego realizar la importación con Rcomander. Como sois unos tipos muy afortunados esta tarea tan aburrida ya la he realizado yo y la tenéis en el [siguiente link](/images/2010/01/sociodemo.RData "sociodemo.RData"). El objeto datos será nuestro _data.frame_ de trabajo, hacemos _str(datos)_ :
+Ahora tenemos que preparar el `data.frame` para R. En mi caso prefiero modificar los nombres directamente en Excel y luego realizar la importación con RCommander. Como sois unos tipos muy afortunados esta tarea tan aburrida ya la he realizado yo y la tenéis en el [siguiente link](/images/2010/01/sociodemo.RData "sociodemo.RData"). El objeto `datos` será nuestro `data.frame` de trabajo, hacemos `str(datos)` :
 
 ```r
 'data.frame': 3324 obs. of 35 variables:
@@ -105,31 +105,23 @@ var.mayorista : num 50 0 0 16.1 -14.3 23.3 25 87.5 0 2.8 ... var.minorista : num
 $ var.hosteleria : num -40 -10 19.3 16.1 -42.9 6.9 -40.9 -13.3 -44.4 17.5 ...
 ```
 
-Comenzamos con el «data management» expresión que debéis conocer y utilizar si trabajáis en el sector, así pareceréis más profesionales. Lo primero que quiero destacar es que estos datos tienen un total por provincia y comunidad autónoma que hemos de eliminar:
+Comenzamos con el `data management` expresión que debéis conocer y utilizar si trabajáis en el sector, así pareceréis más profesionales. Lo primero que quiero destacar es que estos datos tienen un total por provincia y comunidad autónoma que hemos de eliminar:
 
 ```r
 datos.1=subset(datos,(substr(municipio,1,10) != "Total Prov" &
-
 substr(municipio,1,10) != "Total C.A."))
-
 nrow(datos)-nrow(datos.1)
-
 summary(datos.1)
 ```
 
-Hemos eliminado las provincias y las comunidades autónomas. El campo INE tiene el código de la población, aportará mucho más un identificador de la provincia, también es necesario generar la variable dependiente:
+Hemos eliminado las provincias y las comunidades autónomas. El campo `INE` tiene el código de la población, aportará mucho más un identificador de la provincia, también es necesario generar la variable dependiente:
 
 ```r
 datos.1ine=as.factor(as.integer(datos.1ine/1000))
-
 datos.1target=as.factor(ifelse((datos.1paro.mujeres/datos.1paro.hombres-1)>=0.9,1,0))
-
 #Eliminamos las variables que generan el target
-
 datos.1=subset(datos.1,select=-c(paro.hombres,paro.mujeres))
-
 table(datos.1target)
-
 summary(datos.1)
 ```
 
@@ -137,55 +129,42 @@ Ya estamos en disposición de comenzar a dar forma a nuestro modelo:
 
 ```r
 modelo.1=glm(target~.,data=datos.1[,-1],family=binomial)
-
 summary(modelo.1)
 ```
 
-Parece que tenemos un problema con la variable _var.pob.ext_ , vamos a considerar que su aportación puede ser «prescindible». Muchas veces lo perfecto es enemigo de lo bueno y ponernos a estudiar el motivo por el cual esta variable no funciona puede ser un problema, además disponemos de la variación total de la población y la variación de la población no extranjera. Es necesario discernir entre lo que es útil y lo que es prescindible. Estamos realizando un modelo que nos ayuda a comprender, la vida de millones de pacientes no depende de nuestros datos, por ello obcecarse en el refinamiento de la información puede hacernos perder el tiempo. Espero que estas palabras las haya leído algún (i)responsable de equipos dedicado al retail y entienda que un beneficio de un 2% no puede implicar un gasto en horas del 50% (que a gusto me he quedado). En fin, eliminamos la variable y analizamos el modelo:
+Parece que tenemos un problema con la variable `var.pob.ext`, vamos a considerar que su aportación puede ser «prescindible». Muchas veces lo perfecto es enemigo de lo bueno y ponernos a estudiar el motivo por el cual esta variable no funciona puede ser un problema, además disponemos de la variación total de la población y la variación de la población no extranjera. Es necesario discernir entre lo que es útil y lo que es prescindible. Estamos realizando un modelo que nos ayuda a comprender, la vida de millones de pacientes no depende de nuestros datos, por ello obcecarse en el refinamiento de la información puede hacernos perder el tiempo. Espero que estas palabras las haya leído algún (i)responsable de equipos dedicado al retail y entienda que un beneficio de un `2%` no puede implicar un gasto en horas del `50%` (que a gusto me he quedado). En fin, eliminamos la variable y analizamos el modelo:
 
 ```r
 datos.1=subset(datos.1,select=-c(var.pob.ext))
-
 modelo.1=glm(target~.,data=datos.1[,-1],family=binomial)
-
 summary(modelo.1)
 ```
 
-Empezamos a tener datos interesantes. La probabilidad de rechazar la hipótesis nula la fijo en 0.05 y la primera en la frente; las variaciones de población son influyentes. Curiosamente la extensión también, mayor extensión mayor probabilidad de que el paro femenino casi duplique al masculino. Curiosamente los datos de paro a tener en cuenta serían desde 2006 con alguna rara excepción. En cuanto a la edad parece que la relación es menor en los rangos de edad más
-bajos y mayor en los más altos. Curioso que las variaciones de vehículos a motor y ADSL sean negativas, ¿el sueldo de la mujer va al consumo en la unidad familiar? Estudiemos como entran al modelo las variables que participan en el estudio con la función step (esta ejecución lleva un rato):
+Empezamos a tener datos interesantes. La probabilidad de rechazar la hipótesis nula la fijo en `0.05` y la primera en la frente; las variaciones de población son influyentes. Curiosamente la extensión también, mayor extensión mayor probabilidad de que el paro femenino casi duplique al masculino. Curiosamente los datos de paro a tener en cuenta serían desde 2006 con alguna rara excepción. En cuanto a la edad parece que la relación es menor en los rangos de edad más bajos y mayor en los más altos. Curioso que las variaciones de vehículos a motor y `ADSL` sean negativas, ¿el sueldo de la mujer va al consumo en la unidad familiar? Estudiemos como entran al modelo las variables que participan en el estudio con la función `step` (esta ejecución lleva un rato):
 
 ```r
 pasos.modelo.1=step(modelo.1)
-
 #Un poco redundante pero se ve mejor
-
 step(pasos.modelo.1)
-
 summary(modelo.1)
 ```
 
-Con este código podemos ver como entran las variables en el modelo. El criterio de AIC nos da una medida de cuanto perdemos si eliminamos la variable del modelo. Mide el ajuste. A modo de ejemplo se podría asegurar que las 10 variables más significativas son:
+Con este código podemos ver como entran las variables en el modelo. El criterio de `AIC` nos da una medida de cuanto perdemos si eliminamos la variable del modelo. Mide el ajuste. A modo de ejemplo se podría asegurar que las `10` variables más significativas son:
 
-```r
+```
 - paro2008 1 2026.1 2070.1
-
 - paro1998 1 2028.3 2072.3
-
 - var.pob 1 2029.8 2073.8
-
 - extension 1 2030.5 2074.5
-
 - var.pob.esp 1 2032.5 2076.5
-
 - paro2006 1 2033.3 2077.3
-
 - paro2007 1 2034.8 2078.8
-
 - var.motor 1 2037.5 2081.5
-
 - var.pob.96.01 1 2042.9 2086.9
-
 - adsl 1 2048.4 2092.4
 ```
 
-Estos datos nos pueden servir para conocer mejor la realidad, no sólo sirven para clasificar o predecir. Ha quedado un monográfico muy largo y farragoso, pero con código que os será de mucha utilidad en vuestro trabajo, como es mi intención el análisis no es lo más importante, le doy más importancia al código empleado desde el uso de _str_ (imprescindible) a _subset, glm, step_ ,… Saludos-
+Estos datos nos pueden servir para conocer mejor la realidad, no sólo sirven para clasificar o predecir. Ha quedado un monográfico muy largo y farragoso, pero con código que os será de mucha utilidad en vuestro trabajo, como es mi intención el análisis no es lo más importante, le doy más importancia al código empleado desde el uso de `str` (imprescindible) a `subset, glm, step` ,… Saludos-
+
+```
+```
