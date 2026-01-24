@@ -23,6 +23,7 @@ all_posts = os.listdir(post_dir)
 all_posts = [os.path.join(post_dir, f) for f in all_posts]
 
 def get_header(fname):
+    print(fname)
     with open(fname) as f:
         tmp = next(yaml.load_all(f, Loader=yaml.FullLoader))
         tmp['date'] = datetime.datetime.fromisoformat(tmp['date'])

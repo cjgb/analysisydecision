@@ -33,7 +33,7 @@ A la vez que estoy elaborando el `CV` estoy conociendo otras posibilidades de `m
 
 Vamos a definir esta parte como el elemento que define nuestro documento. Será con lo que comencemos y en mi `CV` es:
 
-```r
+```text
 ---
 title: "Raúl Vaquerizo"
 author: rvaquerizo

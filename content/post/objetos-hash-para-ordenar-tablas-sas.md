@@ -25,39 +25,24 @@ A partir de la versión 9.1 de `SAS` se incluyeron los **objetos `HASH`**. Hace 
 *DATASET DE PRUEBA;
 
 data uno;
-
 array v(10);
-
 do i=1 to 5000000;
-
 importe=ranuni(mod(time(),1)*1000)*10000;
-
 do j=1 to 5;
-
 v(j)=ranuni(34)*100;
-
 end;output;end;
-
 run;
 
 *REALIZAMOS LA ORDENACION CON HASH;
 
 data _null_;
-
 if 0 then set uno;
-
 declare hash obj (dataset:'uno',hashexp:20,ordered:'a') ;
-
 obj.definekey ('importe');
-
 obj.definedata(all:'YES');
-
 obj.definedone () ;
-
 obj.output(dataset:'dos');
-
 stop;
-
 run;
 ```
 
