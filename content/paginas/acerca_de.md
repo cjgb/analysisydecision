@@ -9,4 +9,4 @@ menu:
         weight: 20
 ---
 
-Se trata del antiguo y legendario blog "Análisis y Decisión" de [Raúl Vaquerizo](https://x.com/r_vaquerizo), rescatado del olvido por [Carlos J. Gil Bellosta](https://www.datanalytics.com).
+Este es el antiguo y legendario blog "Análisis y Decisión" de [Raúl Vaquerizo](https://x.com/r_vaquerizo), rescatado del olvido por [Carlos J. Gil Bellosta](https://www.datanalytics.com).
