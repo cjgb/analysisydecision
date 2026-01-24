@@ -153,4 +153,4 @@ p=intnx("year",x,-10); put p=ddmmyy10.;
 run;
 ```
 
-En la `ayuda` de `SAS` podemos encontrar más `documentación` y `ejemplos` sobre estas `funciones`. Como `norma general` tendremos: `INTCK` devuelve `valores numéricos` e `INTNX` devuelve `fechas` (que también son `valores numéricos`). Recalcar que disponemos prácticamente de las mismas `funciones` por lo que la `documentación presente` en `internet`, incluso en esta `web`, puede `usarse` con `WPS`. En la siguiente entrega crearemos `subconjuntos` de `variables` en `conjuntos` de `datos`.
+En la `ayuda` de `SAS` podemos encontrar más `documentación` y `ejemplos` sobre estas `funciones`. Como `norma general` tendremos: `INTCK` devuelve `valores numéricos` e `INTNX` devuelve `fechas` (que también son `valores numéricos`). Recalcar que disponemos prácticamente de las mismas `funciones` por lo que la `documentación presente` en internet, incluso en esta `web`, puede `usarse` con `WPS`. En la siguiente entrega crearemos `subconjuntos` de `variables` en `conjuntos` de `datos`.

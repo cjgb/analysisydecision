@@ -47,6 +47,13 @@ rssLimit = 20        # Only the last 20 posts
     Title = "Análisis y Decisión"
     Content = """
   El antiguo y legendario blog «Análisis y Decisión» de Raúl Vaquerizo, en el que tanto aprendimos, rescatado del olvido y realojado en esta su nueva y humilde casita.
+
+  Su [primera entrada](/blog/nace-analisisydecision/), de febrero de 2008, realizó la siguiente propuesta:
+
+> Nace un nuevo proyecto en la web. Profesionales con amplia experiencia en la gestión de la información se unen para compartir conocimientos.
+> Aprender y transmitir lo aprendido. Ese es el objetivo de análisis y decisión.
+
+Y nunca fue otra cosa.
   """
 
   #[[params.socialIcons]]
