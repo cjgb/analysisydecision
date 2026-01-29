@@ -38,4 +38,4 @@ tabla
 mosaic( ~Edad+Valor+Antiguedad, data=tabla)
 ```
 
-En este caso pintamos un objeto `ftable`. Podríamos pintar directamente los datos o un objeto `table` , esto es importante porque podemos cocinar nuestros datos directamente con `SAS`, `Excel`, `WPS`,… y pasarlos a R para realizar el gráfico de mosaico. Seguramente conocíais este tipo de gráficos, pero el ahora escribiente no y se ha quedado prendado de ellos.
+En este caso pintamos un objeto `ftable`. Podríamos pintar directamente los datos o un objeto `table` , esto es importante porque podemos cocinar nuestros datos directamente con `SAS`, Excel, `WPS`,… y pasarlos a R para realizar el gráfico de mosaico. Seguramente conocíais este tipo de gráficos, pero el ahora escribiente no y se ha quedado prendado de ellos.

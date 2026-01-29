@@ -4,6 +4,7 @@ categories:
   - seguros
 date: '2011-01-17'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - el-seguro-de-salud-suma-y-sigue.md
   - el-seguro-de-salud-la-futura-guerra.md

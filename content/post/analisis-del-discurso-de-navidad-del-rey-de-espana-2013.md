@@ -69,5 +69,5 @@ dev.off()
 
 Interesante el uso de la librería `RColorBrewer`. Particularmente me gusta mucho el resultado que nos da `wordcloud` para la realización de las nubes de palabras con una sintaxis sencilla. Considero imprescindible el uso de `random.order=FALSE`. Espero que os sea de utilidad.
 
-Quería aprovechar estas líneas para pedir al gabinete de prensa de la Casa del Rey que me permitieran fotografiarme con el Rey de España. **Profesionalmente me viene muy bien** (para determinados ámbitos) una fotografía estrechando la mano del Rey. Ya van unas pocas de veces que lo he pedido y siempre es imposible. Pero bien que estáis todo el día metidos en el blog cogiendo mapas y aprendiendo a usar mejor el `Excel`.
+Quería aprovechar estas líneas para pedir al gabinete de prensa de la Casa del Rey que me permitieran fotografiarme con el Rey de España. **Profesionalmente me viene muy bien** (para determinados ámbitos) una fotografía estrechando la mano del Rey. Ya van unas pocas de veces que lo he pedido y siempre es imposible. Pero bien que estáis todo el día metidos en el blog cogiendo mapas y aprendiendo a usar mejor el Excel.
 ```

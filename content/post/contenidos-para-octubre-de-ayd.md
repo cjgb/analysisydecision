@@ -55,7 +55,7 @@ En cuanto a las `Palabras clave de acceso` la he agregado y os planteo un `resum
 - `SAS` – 42 `visitas`
 - `R` – 31 `visitas`
 - `regresión lineal` – 15 `visitas`
-- `Excel` – 9 `visitas`
+- Excel – 9 `visitas`
 
 El `promedio de estancia` no tiene `sentido` en esta `dimensión`. Pero hay que hacer `mención` al gran `número` de `visitas` que vienen de `búsquedas tipo` «importar [`ACCESS a SAS`](https://analisisydecision.es/importar-a-sas-desde-otras-aplicaciones/)«. Creo que esa `labor` trae de `cabeza` a más de uno.
 
@@ -67,4 +67,4 @@ Las `ubicaciones físicas` de las `visitas` de estos 45 `días` trazan el siguie
 
 La `Ubicación de red` me está permitiendo identificar si las `visitas` son `profesionales`, `universitarias` o `personales`. Tengo `usuarios fidelizados` en algunos `bancos` y `cajas` de la `península ibérica`, algún `usuario` de `compañías` de `telecomunicaciones` mexicanas y españolas y me llama la `atención` que no he captado la `atención` en muchas `compañías` de `seguros`. Las `visitas universitarias` provienen más de `América central` y son las que mayor `tiempo` están en la `web` sin embargo no repiten. En cuanto al `promedio de estancia` son las `visitas` de los `bancos` y `cajas` españolas las que más `permanecen`, además es evidente que son `usuarios fieles` y, al menos, recibo de ellos una `visita` cada 3 `días`. A ver si contactáis por `correo` conmigo.
 
-Pues bien, con todo esto parece claro que es necesario `potenciar` los `temas estadísticos` con `R`. Comenzar el `curso introductorio` de `SAS` y plantear al menos un `artículo semanal`. `Avandono` una `posible sección` de `trucos` de `Excel` por su `mala acogida`. También veo necesario dar a conocer `aspectos` del `sector seguros` como el `cálculo` de la `prima de riesgo` o la `optimización de primas en renovación`. La `línea` parece `clara`, ahora sólo falta el `tiempo` para desarrollarla.
+Pues bien, con todo esto parece claro que es necesario `potenciar` los `temas estadísticos` con `R`. Comenzar el `curso introductorio` de `SAS` y plantear al menos un `artículo semanal`. `Avandono` una `posible sección` de `trucos` de Excel por su `mala acogida`. También veo necesario dar a conocer `aspectos` del `sector seguros` como el `cálculo` de la `prima de riesgo` o la `optimización de primas en renovación`. La `línea` parece `clara`, ahora sólo falta el `tiempo` para desarrollarla.

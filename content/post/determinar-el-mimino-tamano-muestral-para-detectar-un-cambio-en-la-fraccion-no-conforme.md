@@ -18,7 +18,7 @@ title: Determinar el mímino tamaño muestral para detectar un cambio en la frac
 url: /blog/determinar-el-mimino-tamano-muestral-para-detectar-un-cambio-en-la-fraccion-no-conforme/
 ---
 
-Este año he aprendido algo sobre metodología `6 sigma` para el control de la calidad, me gustó mucho lo que aprendí. Para la realización de algunos ejercicios cree libros `Excel` y algún proceso `SAS`. Hoy quería traeros al blog una macro de `SAS` que nos permite determinar el tamaño mínimo muestral para detectar un cambio en la fracción no conforme con una determinada probabilidad. El programa es un bucle de `SAS` que crea los límites de control para la fracción no conforme y estandariza la diferencia del límite superior con la nueva fracción no conforme. Se calcula la probabilidad que deja este dato estandarizado y el paso del bucle será el número mínimo de muestras. Es más sencillo el código que la definición:
+Este año he aprendido algo sobre metodología `6 sigma` para el control de la calidad, me gustó mucho lo que aprendí. Para la realización de algunos ejercicios cree libros Excel y algún proceso `SAS`. Hoy quería traeros al blog una macro de `SAS` que nos permite determinar el tamaño mínimo muestral para detectar un cambio en la fracción no conforme con una determinada probabilidad. El programa es un bucle de `SAS` que crea los límites de control para la fracción no conforme y estandariza la diferencia del límite superior con la nueva fracción no conforme. Se calcula la probabilidad que deja este dato estandarizado y el paso del bucle será el número mínimo de muestras. Es más sencillo el código que la definición:
 
 ```sas
 %macro determina_tamanio(p0,p1,prob);

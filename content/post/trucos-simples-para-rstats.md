@@ -22,7 +22,7 @@ url: /blog/trucos-simples-para-rstats/
 
 En [mi cuenta de `twitter`](https://twitter.com/r_vaquerizo) suelo poner algunos trucos sencillos de `R`, cosas que me surgen cuando estoy trabajando y que no me cuesta compartir en 2 minutos, por si puedo ayudar a alguien. Me acabo de dar cuenta que de verdad son útiles y que tenerlos en `twitter` desperdigados es un problema, así que he pensado en recopilarlos en una entrada del blog para que sea más sencillo buscarlos (incluso para mi). Aquí van algunos de esos trucos:
 
-Pasar los datos de un `data frame` al `clipboard`, útil cuando quieres mover datos de `R` a `Excel` sin complicaciones:
+Pasar los datos de un `data frame` al `clipboard`, útil cuando quieres mover datos de `R` a Excel sin complicaciones:
 
 ```r
 write.table(borra,"clipboard", sep="\t", dec=",", row.names = F)
@@ -110,7 +110,7 @@ write.table(colnames(DF),"clipboard", sep="\t", dec=",", row.names = F)
 
 2
 
-Función para exportar al `clipboard` `dataframes` de mayor tamaño, ideal para mover `dataframes` a `Excel` pasando de formato americano a formato europeo:
+Función para exportar al `clipboard` `dataframes` de mayor tamaño, ideal para mover `dataframes` a Excel pasando de formato americano a formato europeo:
 
 ```r
 write.table(colnames(DF),"clipboard", sep="\t", dec=",", row.names = F)

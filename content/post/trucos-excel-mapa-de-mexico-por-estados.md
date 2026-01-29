@@ -18,19 +18,19 @@ tags:
   - macros de excel
   - mapas
   - mexico
-title: Trucos `Excel`. Mapa de México por Estados
+title: Trucos Excel. Mapa de México por Estados
 url: /blog/trucos-excel-mapa-de-mexico-por-estados/
 ---
 
 ![mapa_excel_mexico1.png](/images/2012/04/mapa_excel_mexico1.png)
 
-Hoy os presento la versión inicial del\*\*`mapa de México por Estados Federales`\*\* para que le podáis usar en `Excel`, `Powerpoint`, `Word` o alguna de las herramientas habituales de ofimática. Se trata de un archivo `Excel` con `macros` que os [podéis descargar en este enlace](/images/2012/04/mapa-mexico.xlsm "mapa-mexico.xlsm"). La hoja `Mapa` contiene una serie de `shapes` que están nombrados para poder cambiar de color en función de una variable `tramo`. Este `Excel inicial` está preparado para poder pintar hasta `5 tramos`, si deseáis más `tramos` tenéis que meteros en el `código Excel` que modifica el `color` de cada uno de los `32 shapes` que componen el `mapa`, posteriormente lo repasamos de forma rápida. Por otro lado tenemos la división de los `estados`, el `nombre` de los `shapes` y los `tramos` que previamente habremos preparado. Este ejemplo no pinta nada concreto. La hoja `Mapa` además dispone de dos `botones` asociados a las dos `macros` que contiene el `Excel`. Por un lado tenemos una `macro` que nos deja los `Estados` en `blanco` y por otro tenemos la `macro` que nos pinta de cada `color` elegido el `mapa`.Un vistazo sobre estos `elementos` de la hoja `Excel`:
+Hoy os presento la versión inicial del\*\*`mapa de México por Estados Federales`\*\* para que le podáis usar en Excel, `Powerpoint`, `Word` o alguna de las herramientas habituales de ofimática. Se trata de un archivo Excel con `macros` que os [podéis descargar en este enlace](/images/2012/04/mapa-mexico.xlsm "mapa-mexico.xlsm"). La hoja `Mapa` contiene una serie de `shapes` que están nombrados para poder cambiar de color en función de una variable `tramo`. Este `Excel inicial` está preparado para poder pintar hasta `5 tramos`, si deseáis más `tramos` tenéis que meteros en el `código Excel` que modifica el `color` de cada uno de los `32 shapes` que componen el `mapa`, posteriormente lo repasamos de forma rápida. Por otro lado tenemos la división de los `estados`, el `nombre` de los `shapes` y los `tramos` que previamente habremos preparado. Este ejemplo no pinta nada concreto. La hoja `Mapa` además dispone de dos `botones` asociados a las dos `macros` que contiene el Excel. Por un lado tenemos una `macro` que nos deja los `Estados` en `blanco` y por otro tenemos la `macro` que nos pinta de cada `color` elegido el `mapa`.Un vistazo sobre estos `elementos` de la hoja Excel:
 
 ![mapa_excel_mexico2.png](/images/2012/04/mapa_excel_mexico2.png)
 
 El nombre de la columna `Estado` se puede modificar. Los nombres están sacados de `Wikipedia`, entiendo que no deberían de plantear ningún problema. Lo que no se puede modificar es la columna `name` que contiene el `nombre` asociado a la `imagen` de `windows`. Cada uno de los `elementos` del `mapa` se asocian a la `variable tramo` a través de la `columna name`. La `variable tramo` es la que nos realiza el `mapa` de `colores`, recordamos que sólo tenemos `5 tramos`. Los `botones` son los que ejecutan las `macros`.
 
-Las `macros` que lleva el `Excel` son:
+Las `macros` que lleva el Excel son:
 
 ```vb.net
 'Esta macro pone el color de todos los estados en blanco

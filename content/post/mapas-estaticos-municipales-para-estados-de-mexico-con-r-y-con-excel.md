@@ -22,7 +22,7 @@ url: /blog/mapas-estaticos-municipales-para-estados-de-mexico-con-r-y-con-excel/
 
 ![mexico_municipios_R_excel](/images/2015/03/mexico_municipios_R_excel-300x267.png)
 
-Podemos pintar mapas municipales de México con la ayuda de R y `Excel`. Esta entrada está [en la línea de otra anterior para hacer esta misma tarea con mapas de España](https://analisisydecision.es/mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel/). Disponemos de los datos en `Excel` y tenemos instalado `R` y la librería `sp`. El objeto `R` con los mapas de México lo podemos encontrar en [http://www.gadm.org/country](http://www.gadm.org/country) seleccionamos Mexico y `R Spatial Poligons Data Frame` y debemos descargarnos el objeto de nivel 2. Comenzamos el trabajo con R:
+Podemos pintar mapas municipales de México con la ayuda de R y Excel. Esta entrada está [en la línea de otra anterior para hacer esta misma tarea con mapas de España](https://analisisydecision.es/mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel/). Disponemos de los datos en Excel y tenemos instalado `R` y la librería `sp`. El objeto `R` con los mapas de México lo podemos encontrar en [http://www.gadm.org/country](http://www.gadm.org/country) seleccionamos Mexico y `R Spatial Poligons Data Frame` y debemos descargarnos el objeto de nivel 2. Comenzamos el trabajo con R:
 
 ```r
 library(sp)
@@ -47,7 +47,7 @@ mexico = mexico[mexico$NAME_1=="México",]
 
 ````
 
-Ahora es necesario que nos llevemos a `Excel` el nombre de los municipios para cruzar los datos:
+Ahora es necesario que nos llevemos a Excel el nombre de los municipios para cruzar los datos:
 
 ```r
 writeClipboard(unique(mexico@data$NAME_2))
@@ -56,7 +56,7 @@ writeClipboard(unique(mexico@data$NAME_2))
 
 ````
 
-De la web indicada sacamos el número de habitantes y en Excel realizamos el cruce de datos.[Os adjunto en la entrada el Excel empleado.](/images/2015/03/mexico.xlsx) Hemos rellenado los datos, en ocasiones es necesario darle una vuelta al nombre de algunos municipios pero se tarda poco en el caso del estado de México. Pegas los nombres de los municipios y buscas en tus datos. Una vez hayas completado el cruce copiando los datos en `Excel` llevartelo a `R` y ejecutando el siguiente código tenemos:
+De la web indicada sacamos el número de habitantes y en Excel realizamos el cruce de datos.[Os adjunto en la entrada el Excel empleado.](/images/2015/03/mexico.xlsx) Hemos rellenado los datos, en ocasiones es necesario darle una vuelta al nombre de algunos municipios pero se tarda poco en el caso del estado de México. Pegas los nombres de los municipios y buscas en tus datos. Una vez hayas completado el cruce copiando los datos en Excel llevartelo a `R` y ejecutando el siguiente código tenemos:
 
 ```r
 datos = read.delim("clipboard")

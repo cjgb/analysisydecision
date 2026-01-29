@@ -78,7 +78,7 @@ if idcliente in (&lista.);
 run;
 ```
 
-Bueno, el tiempo de ejecución de este `cruce de tablas` es de 3 segundos. Mejora a las soluciones planteadas el otro día y sobre todo es un código fácil, muy fácil. Se trata de crear listas de macrovariables y realizar un paso data con una sentencia condicional. Tiene un problema, el tamaño máximo que nos permite una macrovariable. Y en este punto continúa el truco `SAS`. ¿Cúal es el tamaño máximo que puede tener una macrovariable? `64K`, `65534 characters`. Tenemos que evitar a toda costa este error: `ERROR: The length of the value of the macro variable LISTA (70356) exceeds the maximum length (65534). The value has been truncated to 65534 characters.` Para evitar este problema podemos realizar el siguiente planteamiento: `65.000/la longitud del campo de cruce`, en el caso del ejemplo: `65.000/8 = 8.000` más o menos. Hacemos una prueba:
+Bueno, el tiempo de ejecución de este `cruce de tablas` es de 3 segundos. Mejora a las soluciones planteadas el otro día y sobre todo es un código fácil, muy fácil. Se trata de crear listas de macrovariables y realizar un paso data con una sentencia condicional. Tiene un problema, el tamaño máximo que nos permite una macrovariable. Y en este punto continúa el truco `SAS`. ¿Cuál es el tamaño máximo que puede tener una macrovariable? `64K`, `65534 characters`. Tenemos que evitar a toda costa este error: `ERROR: The length of the value of the macro variable LISTA (70356) exceeds the maximum length (65534). The value has been truncated to 65534 characters.` Para evitar este problema podemos realizar el siguiente planteamiento: `65.000/la longitud del campo de cruce`, en el caso del ejemplo: `65.000/8 = 8.000` más o menos. Hacemos una prueba:
 
 ```sas
 data pequenio;

@@ -5,6 +5,7 @@ categories:
   - r
 date: '2013-07-23'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - vi-jornadas-de-usuarios-de-r-ya-estan-en-marcha.md
   - ya-estan-en-marcha-las-iv-jornadas-de-usuarios-de-r-en-espana.md

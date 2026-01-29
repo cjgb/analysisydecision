@@ -16,13 +16,13 @@ tags:
   - excel
   - formación
   - trucos
-title: Truco `Excel`. Gráfico de puntos con colores
+title: Truco Excel. Gráfico de puntos con colores
 url: /blog/truco-excel-grafico-de-puntos-con-colores/
 ---
 
 ![](/images/2015/01/dispersion-con-colores-de-grupos-excel-300x237.png)
 
-Un gráfico de dispersión en `Excel` en el que los puntos puedan ser identificados si pertenecen a un grupo. [Es una duda que plantearon hace unos días en el blog](https://analisisydecision.es/trucos-excel-poner-etiquetas-en-graficos-de-dispersion/#comment-72700). Con otras herramientas es bastante sencillo, pero en el caso de `Excel` la tarea no es tan evidente. Para poder hacer gráficos de este tipo he construido una macro que podéis utilizar si previamente la adaptáis a vuestros datos. El código que podéis adaptar una vez halláis creado vuestro gráfico de dispersión es:
+Un gráfico de dispersión en Excel en el que los puntos puedan ser identificados si pertenecen a un grupo. [Es una duda que plantearon hace unos días en el blog](https://analisisydecision.es/trucos-excel-poner-etiquetas-en-graficos-de-dispersion/#comment-72700). Con otras herramientas es bastante sencillo, pero en el caso de Excel la tarea no es tan evidente. Para poder hacer gráficos de este tipo he construido una macro que podéis utilizar si previamente la adaptáis a vuestros datos. El código que podéis adaptar una vez halláis creado vuestro gráfico de dispersión es:
 
 ```vbnet
 Sub Macro2()

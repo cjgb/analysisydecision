@@ -21,7 +21,7 @@ title: Un acercamiento a `GRAPH`. `PROC GCHART`
 url: /blog/un-acercamiento-a-graph-proc-gchart/
 ---
 
-Uno de los procedimientos más importantes a la hora de `graficar` con `SAS` es el `PROC GCHART`. Además nos va a servir para trabajar con `PATTERN` y `LEGEND` sentencias que nos dejamos en el `anterior capítulo`. `GCHART` nos permite realizar `gráficos` de `barras`, de esos que siempre hacemos en `Excel` porque es mas `sencillo` y mas `rápido`. Sin `embargo` en muchas `ocasiones` necesitamos `automatizar informes` y `estudios`, para ello es `recomendable emplear SAS` en vez del `habitual Excel` por eso estas `líneas` que estáis `leyendo`. Para `GCHART` podemos emplear las `sentencias habituales` de `GRAPH` pero `PATTERN` es `especialmente importante` porque `SAS` nos deja cada `barra` del `mismo color`. Para `ilustrar` el `capitulo` `simulo` la `cartera` de una `compañía` de `seguros`, durante `2009`, `mensualmente`, las `pólizas` de esta `compañía` pueden ser `anuladas`, `renovadas` (nuestra `cartera`) o `nueva producción`:
+Uno de los procedimientos más importantes a la hora de `graficar` con `SAS` es el `PROC GCHART`. Además nos va a servir para trabajar con `PATTERN` y `LEGEND` sentencias que nos dejamos en el `anterior capítulo`. `GCHART` nos permite realizar `gráficos` de `barras`, de esos que siempre hacemos en Excel porque es mas `sencillo` y mas `rápido`. Sin `embargo` en muchas `ocasiones` necesitamos `automatizar informes` y `estudios`, para ello es `recomendable emplear SAS` en vez del `habitual Excel` por eso estas `líneas` que estáis `leyendo`. Para `GCHART` podemos emplear las `sentencias habituales` de `GRAPH` pero `PATTERN` es `especialmente importante` porque `SAS` nos deja cada `barra` del `mismo color`. Para `ilustrar` el `capitulo` `simulo` la `cartera` de una `compañía` de `seguros`, durante `2009`, `mensualmente`, las `pólizas` de esta `compañía` pueden ser `anuladas`, `renovadas` (nuestra `cartera`) o `nueva producción`:
 
 ```sas
 data renovaciones;
@@ -107,7 +107,7 @@ run;quit;
 
 ![Ejemplo de uso de PROC GCHART](/images/2010/04/graph32.thumbnail.jpg)
 
-Es `curioso`, para que funcione `PATTERN` con `GCHART` tenemos que usar `SUBGROUP` (`¿?`) empezamos a `sospechar` porque muchos prefieren `Excel`. En este caso empleamos `VBAR3D` para obtener `barras` de `3 dimensiones`, con `SHAPE` especificamos el `tipo` de `barra` que deseamos, por `defecto` es `BLOCK`. Con `NOFRAME` evitamos que `SAS` ponga un `fondo poco estético`. Dejo para el final `LEGEND`. Las `leyendas` en `SAS` tienen que venir `predefinidas` con la `sentencia LEGEND` fuera de los `procedimientos`, también dan `motivos` para usar `Excel`. En `LEGEND` podemos modificar:
+Es `curioso`, para que funcione `PATTERN` con `GCHART` tenemos que usar `SUBGROUP` (`¿?`) empezamos a `sospechar` porque muchos prefieren Excel. En este caso empleamos `VBAR3D` para obtener `barras` de `3 dimensiones`, con `SHAPE` especificamos el `tipo` de `barra` que deseamos, por `defecto` es `BLOCK`. Con `NOFRAME` evitamos que `SAS` ponga un `fondo poco estético`. Dejo para el final `LEGEND`. Las `leyendas` en `SAS` tienen que venir `predefinidas` con la `sentencia LEGEND` fuera de los `procedimientos`, también dan `motivos` para usar Excel. En `LEGEND` podemos modificar:
 
 - `across` – `numero` de `columnas`
 - `frame` – `cuadrado` alrededor

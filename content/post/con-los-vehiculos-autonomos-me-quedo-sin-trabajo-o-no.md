@@ -1,9 +1,9 @@
 ---
 author: rvaquerizo
 categories:
-  - formación
+  - opinión
 date: '2016-08-12'
-lastmod: '2025-07-13'
+lastmod: '2026-01-13'
 related:
   - internet-of-things-en-el-sector-asegurador.md
   - el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v.md
@@ -12,6 +12,7 @@ related:
   - el-seguro-de-salud-suma-y-sigue.md
 tags:
   - vehículo autónomo
+  - tecnología
 title: Con los vehículos autónomos me quedo sin trabajo (o no)
 url: /blog/con-los-vehiculos-autonomos-me-quedo-sin-trabajo-o-no/
 ---

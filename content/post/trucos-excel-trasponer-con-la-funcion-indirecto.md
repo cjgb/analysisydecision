@@ -21,11 +21,11 @@ title: Trucos Excel. Trasponer con la función indirecto
 url: /blog/trucos-excel-trasponer-con-la-funcion-indirecto/
 ---
 
-Una de las tareas más comunes en `Excel` es la de transponer filas. En ocasiones hemos de transformar columnas en filas o viceversa:
+Una de las tareas más comunes en Excel es la de transponer filas. En ocasiones hemos de transformar columnas en filas o viceversa:
 
 ![indirecto.JPG](/images/2009/02/indirecto.JPG)
 
-Es muy habitual copiar y pegar transponiendo pero esta labor es muy manual cuando manejamos hojas con gran cantidad de fórmulas y que pueden generar informes automáticos. Para transponer contamos con la ayuda de la función `INDIRECTO` de `excel`. En la ayuda se define como:
+Es muy habitual copiar y pegar transponiendo pero esta labor es muy manual cuando manejamos hojas con gran cantidad de fórmulas y que pueden generar informes automáticos. Para transponer contamos con la ayuda de la función `INDIRECTO` de Excel. En la ayuda se define como:
 
 "Devuelve la referencia especificada por una cadena de texto. Las referencias se evalúan de inmediato para presentar su contenido. Use `INDIRECTO` cuando desee cambiar la referencia a una celda en una fórmula sin cambiar la propia formula"
 

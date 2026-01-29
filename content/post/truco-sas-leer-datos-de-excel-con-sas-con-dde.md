@@ -18,7 +18,7 @@ title: Truco SAS. Leer datos de Excel con SAS vía DDE
 url: /blog/truco-sas-leer-datos-de-excel-con-sas-con-dde/
 ---
 
-Si no disponemos del módulo `Access to PC Files` de `SAS` no podremos importar a `SAS` datos de `Excel` sin emplear el `DDE`. En un [truco anterior ](https://analisisydecision.es/truco-sas-sas-y-dde-aliados-de-excel/)vimos como vía `DDE` exportábamos ficheros de `SAS` a `Excel`. Empleando esta misma vía vamos a importar datos. La metodología es análoga a la empleada con la exportación. Asignamos un `filename` dinámico a un rango de datos de `Excel`, y nuestro paso data lee de ese `filename`.`DDE` para crear una tabla `SAS`. Partimos del una tabla ejemplo con estos datos:
+Si no disponemos del módulo `Access to PC Files` de `SAS` no podremos importar a `SAS` datos de Excel sin emplear el `DDE`. En un [truco anterior ](https://analisisydecision.es/truco-sas-sas-y-dde-aliados-de-excel/)vimos como vía `DDE` exportábamos ficheros de `SAS` a Excel. Empleando esta misma vía vamos a importar datos. La metodología es análoga a la empleada con la exportación. Asignamos un `filename` dinámico a un rango de datos de Excel, y nuestro paso data lee de ese `filename`.`DDE` para crear una tabla `SAS`. Partimos del una tabla ejemplo con estos datos:
 
 ![null](/images/2008/04/tabla2.JPG)
 
@@ -51,6 +51,6 @@ put "[File.Close()]";
 run;
 ```
 
-Con este sistema podremos leer de tablas `Excel` y volcar su contenido a `SAS`.
+Con este sistema podremos leer de tablas Excel y volcar su contenido a `SAS`.
 
-En mi caso particular no soy muy partidario del uso del `DDE` para leer datos de Excel debido a la «rigidez» que tiene el DDE a la hora de de asignar el rango de lectura. Si leemos una tabla con la misma extructura no tendremos problema, sin embargo, si leemos datos variables el rango será siempre modificado. Yo emplearía macros que modificarnan la configuración regional y guardaran la tabla `Excel` como `csv`; posteriormente importaría los datos desde `SAS`. Todo esto se puede ejecutar perfectamente desde `SAS` y no habría problemas a la hora de automatizar el proceso. Por supuesto si tenéis dudas o sugerencias podéis contactar en [rvaquerizo@analisisydecision.es](mailto:rvaquerizo@analisisydecision.es)
+En mi caso particular no soy muy partidario del uso del `DDE` para leer datos de Excel debido a la «rigidez» que tiene el DDE a la hora de de asignar el rango de lectura. Si leemos una tabla con la misma extructura no tendremos problema, sin embargo, si leemos datos variables el rango será siempre modificado. Yo emplearía macros que modificarnan la configuración regional y guardaran la tabla Excel como `csv`; posteriormente importaría los datos desde `SAS`. Todo esto se puede ejecutar perfectamente desde `SAS` y no habría problemas a la hora de automatizar el proceso. Por supuesto si tenéis dudas o sugerencias podéis contactar en [rvaquerizo@analisisydecision.es](mailto:rvaquerizo@analisisydecision.es)

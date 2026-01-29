@@ -19,7 +19,7 @@ title: Gráficos de burbuja con R
 url: /blog/graficos-de-burbuja-con-r/
 ---
 
-El otro día en [R-bloggers leí este post](http://www.r-bloggers.com/bubble-chart-by-using-ggplot2/). Entonces busqué información sobre estos gráficos con `R` en español y sólo encontré ayuda para realizarlos con `Excel`. Es verdad que el enlace que os pongo es más que suficiente para realizar los gráficos de burbuja pero en pocas líneas puedo ilustrar mejor un ejemplo y proponeros varias formas de crearlo. La primera de ellas emplea la función `symbols` y genera el siguiente gráfico:
+El otro día en [R-bloggers leí este post](http://www.r-bloggers.com/bubble-chart-by-using-ggplot2/). Entonces busqué información sobre estos gráficos con `R` en español y sólo encontré ayuda para realizarlos con Excel. Es verdad que el enlace que os pongo es más que suficiente para realizar los gráficos de burbuja pero en pocas líneas puedo ilustrar mejor un ejemplo y proponeros varias formas de crearlo. La primera de ellas emplea la función `symbols` y genera el siguiente gráfico:
 
 ![R Bubble Plot 1](/images/2010/12/r_bubble_plot1.thumbnail.png "r_bubble_plot1.png")
 
@@ -67,4 +67,4 @@ geom_text (aes(label=etiqueta),hjust=1, vjust=1)
 
 ![R Bubble Plot 3](/images/2010/12/r_bubble_plot3.thumbnail.png "r_bubble_plot3.png")
 
-Os dejo varias posibilidades para realizar los gráficos de burbuja con `R`. Ya no tendréis escusas para hacer estos gráficos con `Excel`, a partir de ahora seguro que emplearéis `R`. Saludos.
+Os dejo varias posibilidades para realizar los gráficos de burbuja con `R`. Ya no tendréis escusas para hacer estos gráficos con Excel, a partir de ahora seguro que emplearéis `R`. Saludos.

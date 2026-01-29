@@ -22,7 +22,7 @@ title: Truco Excel. Repetir celdas en función de los valores de otra celda
 url: /blog/truco-excel-repetir-celdas-en-funcion-de-los-valores-de-otra-celda/
 ---
 
-En alguna ocasión me habéis planteado como repetir celdas en `Excel` en función del valor de una celda, es decir, repetir una celda tantas veces como nos indica otra celda. Disponía de una versión con fórmulas más complejas que programar el proceso en `visual basic`, si alguien está interesado cuelgo un ejemplo en `Excel` sin describir el funcionamiento porque es muy complejo, quizá en el futuro retome esas fórmulas e intente simplificar el proceso. Hoy os traigo esta tarea de repetir celdas en `Excel` en base a otra celda pero insertando y usando fórmulas sencillas. Para el ejemplo partiríamos de esta situación:
+En alguna ocasión me habéis planteado como repetir celdas en Excel en función del valor de una celda, es decir, repetir una celda tantas veces como nos indica otra celda. Disponía de una versión con fórmulas más complejas que programar el proceso en `visual basic`, si alguien está interesado cuelgo un ejemplo en Excel sin describir el funcionamiento porque es muy complejo, quizá en el futuro retome esas fórmulas e intente simplificar el proceso. Hoy os traigo esta tarea de repetir celdas en Excel en base a otra celda pero insertando y usando fórmulas sencillas. Para el ejemplo partiríamos de esta situación:
 
 ![Repetir Columna Excel](/images/2021/02/repetir_columna_excel.png)
 

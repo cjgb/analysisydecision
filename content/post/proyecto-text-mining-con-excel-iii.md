@@ -14,13 +14,13 @@ related:
 tags:
   - consultoría
   - data mining
-title: Proyecto. `Text Mining` con `Excel` (III)
+title: Proyecto. `Text Mining` con Excel (III)
 url: /blog/proyecto-text-mining-con-excel-iii/
 ---
 
-![pyt_3_entradas.JPG](/images/2008/05/pyt_3_entradas.JPG "pyt_3_entradas.JPG")En la anterior entrega del seguimiento de mi proyecto de minería de textos con `Excel` creé un proceso que leía búsquedas de `Google` y las almacenaba en un fichero `excel` que denominaba `base`. El problema que me encontré es que generaba un `excel` con una gran cantidad de hojas y posteriormente tenía que leerlas y extraer la información de cada una. Esta metodología no me parece eficiente, es mejor leer una búsqueda, extraer la información relevante de ella e introducirla en mi tablón de datos.
+![pyt_3_entradas.JPG](/images/2008/05/pyt_3_entradas.JPG "pyt_3_entradas.JPG")En la anterior entrega del seguimiento de mi proyecto de minería de textos con Excel creé un proceso que leía búsquedas de `Google` y las almacenaba en un fichero Excel que denominaba `base`. El problema que me encontré es que generaba un Excel con una gran cantidad de hojas y posteriormente tenía que leerlas y extraer la información de cada una. Esta metodología no me parece eficiente, es mejor leer una búsqueda, extraer la información relevante de ella e introducirla en mi tablón de datos.
 
-Para extraer la información relevante de cada búsqueda he de conocer muy bien como se almacena cada página web de `Google` en `Excel`. En un primer vistazo obtengo esto:
+Para extraer la información relevante de cada búsqueda he de conocer muy bien como se almacena cada página web de `Google` en Excel. En un primer vistazo obtengo esto:
 
 ![pyt_3_entradas.JPG](/images/2008/05/pyt_3_entradas.JPG "pyt_3_entradas.JPG")
 
@@ -33,7 +33,7 @@ Los pasos a seguir en mi proceso serían:
 3\. Copiar las celdas con información
 4\. Trasponer y pegar las celdas copiadas para crear una tabla de datos
 
-Para abrir las búsquedas ya creamos en su momento macros con `Excel` que las abrían. Buscar la primera entrada relevante requiere que diseñemos un nuevo proceso, con ayuda del asistente creamos la macro `busca1` que nos identifica la fila con el primer registro que consideramos relevante:
+Para abrir las búsquedas ya creamos en su momento macros con Excel que las abrían. Buscar la primera entrada relevante requiere que diseñemos un nuevo proceso, con ayuda del asistente creamos la macro `busca1` que nos identifica la fila con el primer registro que consideramos relevante:
 
 ```vb.net
 Sub cierra()

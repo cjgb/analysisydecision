@@ -18,7 +18,7 @@ title: El `ODS` de `SAS` (I). Elementos del `OUTPUT`
 url: /blog/el-ods-de-sas-i-elementos-del-output/
 ---
 
-Hoy comenzaré una serie de mensajes dedicados al `ODS` (`Output Delivery System`) de `SAS`. Este mecanismo de `SAS` nos permite un uso más eficiente del `OUTPUT` de nuestros pasos `PROC` además podemos crear `Excel` (como ya vimos), crear `dataset`, no generar salidas,… Antes `SAS` nos ofrecia un `texto plano` en la ventana `OUTPUT`, ahora generamos `documentos sofisticados`. En tres entregas veremos:
+Hoy comenzaré una serie de mensajes dedicados al `ODS` (`Output Delivery System`) de `SAS`. Este mecanismo de `SAS` nos permite un uso más eficiente del `OUTPUT` de nuestros pasos `PROC` además podemos crear Excel (como ya vimos), crear `dataset`, no generar salidas,… Antes `SAS` nos ofrecia un `texto plano` en la ventana `OUTPUT`, ahora generamos `documentos sofisticados`. En tres entregas veremos:
 \*Trazar el `OUTPUT` de `SAS`
 \*`Datasets` de salidas de `SAS`
 \*Documentos con nuestras salidas de `SAS`:

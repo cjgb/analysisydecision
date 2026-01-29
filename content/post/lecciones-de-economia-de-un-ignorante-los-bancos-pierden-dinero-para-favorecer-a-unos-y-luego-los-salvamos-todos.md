@@ -17,7 +17,7 @@ title: Lecciones de economía de un ignorante. Los bancos pierden dinero para fa
 url: /blog/lecciones-de-economia-de-un-ignorante-los-bancos-pierden-dinero-para-favorecer-a-unos-y-luego-los-salvamos-todos/
 ---
 
-Si pintamos con `Excel` una línea con el **`Euribor a 6 meses`** y otra línea con el **`interés medio a un año de los depósitos bancarios`**. Tenemos:
+Si pintamos con Excel una línea con el **`Euribor a 6 meses`** y otra línea con el **`interés medio a un año de los depósitos bancarios`**. Tenemos:
 
 ![Euribor frente a interés medio de depósitos a un año](/images/2012/06/euribor-frente-interes-medio-depositos-a-un-ano.PNG "euribor-frente-interes-medio-depositos-a-un-ano.PNG")
 

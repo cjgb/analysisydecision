@@ -30,6 +30,6 @@ url: /blog/intro-rcommander-1-que-es-rcommander/
 
 ![RCommander Data Selection](/images/2009/11/i_2.JPG)
 
-3\. Descárgatelo comprimido y tendrás un archivo `AE09_Datos_estadisticos_municipales-provinciales.rar` con 2 archivos `Excel` que serán los que empleemos para seguir el curso.
+3\. Descárgatelo comprimido y tendrás un archivo `AE09_Datos_estadisticos_municipales-provinciales.rar` con 2 archivos Excel que serán los que empleemos para seguir el curso.
 
 En la siguiente entrega haremos un rápido análisis del interfaz.

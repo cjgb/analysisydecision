@@ -34,7 +34,7 @@ El botón `Obtener consulta SQL` nos permite navegar de forma sencilla por los d
 
 ![Univariate Statistic Kettle](/images/2011/09/univariate_statistic_kettle.png)
 
-En este caso seleccionamos 3 campos para los que obtenemos la frecuencia, la media y la desviación típica. Por último la salida de este análisis la vamos a llevar a `Excel`, para ello tenemos el paso `Salida Excel`. Un paso muy sencillo donde tenemos una gran cantidad de posibilidades:
+En este caso seleccionamos 3 campos para los que obtenemos la frecuencia, la media y la desviación típica. Por último la salida de este análisis la vamos a llevar a Excel, para ello tenemos el paso `Salida Excel`. Un paso muy sencillo donde tenemos una gran cantidad de posibilidades:
 
 ![Salida Excel Kettle](/images/2011/09/salida_excel_kettle.png)
 

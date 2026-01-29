@@ -67,7 +67,7 @@ tables sucede;
 quit;
 ```
 
-Inicialmente necesitamos las variables presentes en el modelo y el ajuste inicial, también un `conjunto de datos SAS` con los nombres de las variables. Esto es un poco chapuza, pero si seguís el blog podéis hacer este código mucho más elegante \[no os lo voy a dar todo hecho\]:
+Inicialmente necesitamos las variables presentes en el modelo y el ajuste inicial, también un `conjunto de datos SAS` con los nombres de las variables. Esto es un poco chapuza, pero si seguís el blog podéis hacer este código mucho más elegante (no os lo voy a dar todo hecho):
 
 ```sas
 *VARIABLES QUE QUEREMOS ESTUDIAR EN EL МОДЕЛО;
@@ -99,7 +99,7 @@ unif5
 ;run;
 ```
 
-Esto es lo primero que necesitamos. Una macro con todas las variables presentes en el modelo, que también metemos en un `conjunto de datos SAS` que necesita un campo `ORDEN` y el ajuste con todas las variables. En el `ODS` pedimos crear un `conjunto de datos` con los `FITSTATISTIC` que llamamos `ajuste_total`. Tendremos un `conjunto de datos` con 3 observaciones y 3 criterios para medir la bondad del ajuste por máxima verosimilitud de nuestro modelo logístico. Los criterios son el `AIC`, el `SC` (Schwarz Criterion) y el `-2 Log L` que es el contraste del logaritmo de máxima verosimilitud (no sé como traducirlo). Ahora vamos a emplear una macro para hacer todos los modelos posibles con 9 variables, almacenamos los estadísticos de contraste y podemos ver como se “desinflan” cuando eliminamos esa variable. Para ello hacemos una macro muy simple que se puede mejorar \[tenéis que trabajar vosotros\]:
+Esto es lo primero que necesitamos. Una macro con todas las variables presentes en el modelo, que también metemos en un `conjunto de datos SAS` que necesita un campo `ORDEN` y el ajuste con todas las variables. En el `ODS` pedimos crear un `conjunto de datos` con los `FITSTATISTIC` que llamamos `ajuste_total`. Tendremos un `conjunto de datos` con 3 observaciones y 3 criterios para medir la bondad del ajuste por máxima verosimilitud de nuestro modelo logístico. Los criterios son el `AIC`, el `SC` (Schwarz Criterion) y el `-2 Log L` que es el contraste del logaritmo de máxima verosimilitud (no sé como traducirlo). Ahora vamos a emplear una macro para hacer todos los modelos posibles con 9 variables, almacenamos los estadísticos de contraste y podemos ver como se “desinflan” cuando eliminamos esa variable. Para ello hacemos una macro muy simple que se puede mejorar (tenéis que trabajar vosotros):
 
 ```sas
 %macro importance;

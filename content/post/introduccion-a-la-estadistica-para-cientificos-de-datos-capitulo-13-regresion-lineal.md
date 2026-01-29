@@ -91,7 +91,7 @@ cor(cost_living$Cost.of.Living.Index, cost_living$Rent.Index)
 
 ¿Con un coeficiente de correlación lineal superior a 0.8 no va a ser posible crear un modelo de regresión lineal? **Si es posible** , porque el científico de datos busca separar el azar de lo estadísticamente significativo, en su trabajo diario no va a realizar modelos teóricos ideales.
 
-Estimación de los parámetros del modelo. Los parámetros son esos elementos $\\beta$ presentes en la definición del modelo. Esta labor se realiza mediante mínimos cuadrados que es el proceso de modelización estadística más sencillo y para entender como funciona se parte del gráfico de pares de puntos \[`Rent.Index`, `Cost.of.Living.Index`\]
+Estimación de los parámetros del modelo. Los parámetros son esos elementos $\\beta$ presentes en la definición del modelo. Esta labor se realiza mediante mínimos cuadrados que es el proceso de modelización estadística más sencillo y para entender como funciona se parte del gráfico de pares de puntos `(Rent.Index, Cost.of.Living.Index)`.
 
 ```r
 cost_living %>% ggplot(aes(x = Rent.Index, y = Cost.of.Living.Index)) +

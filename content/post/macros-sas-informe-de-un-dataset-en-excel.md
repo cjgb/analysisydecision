@@ -22,7 +22,7 @@ url: /blog/macros-sas-informe-de-un-dataset-en-excel/
 
 ![Informe dataset](/images/2010/04/salida.JPG "Informe dataset")
 
-Tengo por ahí este programa `SAS` interesante. Es una macro que realiza un pequeño informe sobre un `dataset`. Nos ofrece la librería, las variables y el tipo, longitud, posición y formato de estas y por ultimo el numero de observaciones. Si el `dataset` que deseamos explorar es una tabla `oracle`, `informix` o `db2` hace un `count(*)` para determinar el numero de observaciones. Este breve resumen lo vuelca en una tabla temporal `SAS` que nos llevaremos a `Excel`. Con esto los parámetros que recibe la macro son el `dataset` sobre el que realizamos el resumen y la ubicación del `Excel` de salida. Hache os pongo el código:
+Tengo por ahí este programa `SAS` interesante. Es una macro que realiza un pequeño informe sobre un `dataset`. Nos ofrece la librería, las variables y el tipo, longitud, posición y formato de estas y por ultimo el numero de observaciones. Si el `dataset` que deseamos explorar es una tabla `oracle`, `informix` o `db2` hace un `count(*)` para determinar el numero de observaciones. Este breve resumen lo vuelca en una tabla temporal `SAS` que nos llevaremos a Excel. Con esto los parámetros que recibe la macro son el `dataset` sobre el que realizamos el resumen y la ubicación del Excel de salida. Hache os pongo el código:
 
 ```sas
 *MACRO QUE EXPLORA UN CONJUNTO DE DATOS Y CREA UN EXCEL EN UN DIRECTORIO CON EL

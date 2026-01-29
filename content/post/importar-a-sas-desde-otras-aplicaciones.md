@@ -21,7 +21,7 @@ title: Importar a SAS desde otras aplicaciones.
 url: /blog/importar-a-sas-desde-otras-aplicaciones/
 ---
 
-Una de las labores más comunes con `SAS` consiste en leer e importar ficheros provenientes de otras aplicaciones. Es muy habitual trabajar con tablas de `Excel`, `Access`, `Lotus`, `Business Object`, `Microstrategy`, `SQL Server`, `SAP`… Para ello `SAS` dispone de algunos módulos que no se disponen en todas las instalaciones debido a que pueden encarecer mucho la instalación final. Por este motivo voy a introduciros en una metodología muy habitual en el trabajo diario: Importación de textos delimitados con `SAS`.
+Una de las labores más comunes con `SAS` consiste en leer e importar ficheros provenientes de otras aplicaciones. Es muy habitual trabajar con tablas de Excel, `Access`, `Lotus`, `Business Object`, `Microstrategy`, `SQL Server`, `SAP`… Para ello `SAS` dispone de algunos módulos que no se disponen en todas las instalaciones debido a que pueden encarecer mucho la instalación final. Por este motivo voy a introduciros en una metodología muy habitual en el trabajo diario: Importación de textos delimitados con `SAS`.
 
 Para importar desde `SAS` ficheros de texto debemos tener en cuenta lo siguiente:
 
@@ -31,7 +31,7 @@ Para importar desde `SAS` ficheros de texto debemos tener en cuenta lo siguiente
 - Lectura de fechas
 - Saltos de línea desde `Unix`
 
-Desde `SAS` podemos leer archivos delimitados de cualquier tipo, sin embargo recomiendo trabajar con ficheros delimitados por tabuladores. De este modo cuando deseemos leer de `Excel`, `Access`, `Business Objects`,… lo primero que haremos será guardar como o exportar como archivo de texto delimitado por tabuladores, algo que contemplan todas estas aplicaciones.
+Desde `SAS` podemos leer archivos delimitados de cualquier tipo, sin embargo recomiendo trabajar con ficheros delimitados por tabuladores. De este modo cuando deseemos leer de Excel, `Access`, `Business Objects`,… lo primero que haremos será guardar como o exportar como archivo de texto delimitado por tabuladores, algo que contemplan todas estas aplicaciones.
 
 En cuanto a las cabeceras es mejor tratarlas previamente a la creación del fichero de texto. `SAS` no admite espacios, signos de puntuación, tildes,.. Por ello puede ser más óptimo modificar los nombres antes de exportar. Si no realizamos este ejercicio tendremos que importar los datos con un `paso data` y modificar todos los nombres de las variables, en ningún caso debemos emplear el `proc import` con cabeceras inapropiadas o si directamente no tiene.
 
@@ -49,11 +49,11 @@ Conociendo las limitaciones de `SAS` a la hora de importar textos planteo la met
 1. Recuperación y modificación del código `SAS` interno de importación.
 1. Importación y creación de la tabla `SAS`.
 
-Para aprender esta metodología vamos a realizar una tarea muy habitual: importar una tabla `Excel` a `SAS`. Partimos de una tabla de `Excel` que te puedes descargar [aquí](/images/2008/07/libro.xls "libro.xls").
+Para aprender esta metodología vamos a realizar una tarea muy habitual: importar una tabla Excel a `SAS`. Partimos de una tabla de Excel que te puedes descargar [aquí](/images/2008/07/libro.xls "libro.xls").
 
 Lo primero que nos encontramos son cabeceras con espacios y tildes. `SAS` dará problemas. Recordemos que podemos modificar las cabeceras antes de exportar la tabla a texto o bien podemos mantenerlas para posteriormente modificarlas con `SAS`. En este caso modificaremos con `SAS`. Así pues guardamos esta tabla como texto (delimitado por tabuladores) `*.txt` en la carpeta `C:\temp` y le damos el nombre `libro.txt`
 
-Ahora comenzamos el trabajo con `SAS`. En nuestro ejemplo partimos de una arquitectura `SAS` sin `Access to PC Files` por ello hemos creado un fichero de texto a partir de una tabla `Excel` y ahora importamos desde `SAS`. Valdría cualquier otra aplicación, lo principal es crear un fichero de texto preferiblemente delimitado por tabuladores. Aunque dispongamos de `Enterprise Guide` la importación se ha de llevar a cabo desde `SAS Base`. Con los menús hacemos `Archivo-> Importar datos->Stantdart data source` seleccionamos en el combo `Fichero delimitado por Tab`. `SAS` nos pide la ubicación, en nuestro ejemplo `C:\temp\libro.txt` Vemos que se nos marca el botón `Options` Si pulsamos sobre él podremos indicar si deseamos cabeceras o no. Aceptamos, siguiente y nos solicita el nombre de la tabla `SAS`, yo recomiendo hacer pruebas previas. Asignamos un nombre y nos solicita guardar el código, no guardamos, pulsamos Finalizar.
+Ahora comenzamos el trabajo con `SAS`. En nuestro ejemplo partimos de una arquitectura `SAS` sin `Access to PC Files` por ello hemos creado un fichero de texto a partir de una tabla Excel y ahora importamos desde `SAS`. Valdría cualquier otra aplicación, lo principal es crear un fichero de texto preferiblemente delimitado por tabuladores. Aunque dispongamos de `Enterprise Guide` la importación se ha de llevar a cabo desde `SAS Base`. Con los menús hacemos `Archivo-> Importar datos->Stantdart data source` seleccionamos en el combo `Fichero delimitado por Tab`. `SAS` nos pide la ubicación, en nuestro ejemplo `C:\temp\libro.txt` Vemos que se nos marca el botón `Options` Si pulsamos sobre él podremos indicar si deseamos cabeceras o no. Aceptamos, siguiente y nos solicita el nombre de la tabla `SAS`, yo recomiendo hacer pruebas previas. Asignamos un nombre y nos solicita guardar el código, no guardamos, pulsamos Finalizar.
 
 Analizamos el log y obtenemos múltiples errores. Además los nombres de las variables son extraños y si abrimos el fichero la variable importe tiene un formato no deseado. Hemos de modificar la entrada de datos, para ello nos ubicamos en el editor de texto y pulsamos `F4` que realiza un recall, una rellamada del último código ejecutado y obtenemos arriba del editor:
 

@@ -22,7 +22,7 @@ He intentado permanecer ajeno a los datos del coronavirus pero es imposible, sin
 
 - Importar la tabla de `worldometer` sobre datos de países.
 - Problemas con la librería `OECD`.
-- Importar `Excel` con `R`.
+- Importar Excel con `R`.
 - `Not in` con `R`.
 - Gráficos de ranking ordenados con `ggplot`.
 - Etiquetas en los `scatter plot`.
@@ -61,11 +61,11 @@ library(OECD)
 salud <- search_dataset('health', data = get_datasets(), ignore.case = TRUE)
 ```
 
-No encuentro la tabla `SH.XPD.CHEX.GD.ZS` que contiene Current health expenditure (% of GDP), el gasto en sanidad sobre % de `PIB`; tampoco he llegado a comprender bien la `API` para bajarme el `XML` o el `Json`, a los 45 minutos de lucha me rendí. Así que opte por descargar el `Excel`, tratarlo manualmente y leerlo.
+No encuentro la tabla `SH.XPD.CHEX.GD.ZS` que contiene Current health expenditure (% of GDP), el gasto en sanidad sobre % de `PIB`; tampoco he llegado a comprender bien la `API` para bajarme el `XML` o el `Json`, a los 45 minutos de lucha me rendí. Así que opte por descargar el Excel, tratarlo manualmente y leerlo.
 
 #### Importar Excel con R
 
-En este caso hay muchas entradas y muchas posibilidades pero me gustaría expresar una opinión, el mejor paquete para leer `Excel` es `readxl`, nada de `Java` por medio y la sintaxis no puede ser más sencilla:
+En este caso hay muchas entradas y muchas posibilidades pero me gustaría expresar una opinión, el mejor paquete para leer Excel es `readxl`, nada de `Java` por medio y la sintaxis no puede ser más sencilla:
 
 ```r
 ub = 'C:\\Users\\ API_SH.XPD.CHEX.GD.ZS_DS2_en_excel_v3.xls'
@@ -79,7 +79,7 @@ pib_salud <- pib_salud %>%
     TRUE ~ pais))
 ```
 
-Descargué los datos en formato `Excel` de la tabla con `ID SH.XPD.CHEX.GD.ZS` En el propio `Excel` quité lo que sobraba y así pude crear un `data frame` y adaptar los nombres con `case_when` que pueden darme problemas a la hora de cruzar con `worldometer`.
+Descargué los datos en formato Excel de la tabla con `ID SH.XPD.CHEX.GD.ZS` En el propio Excel quité lo que sobraba y así pude crear un `data frame` y adaptar los nombres con `case_when` que pueden darme problemas a la hora de cruzar con `worldometer`.
 
 #### Not in con R
 
@@ -104,10 +104,10 @@ Esta cuestión es recurrente cuando se trabaja con `ggplot`, es necesario ordena
 ```r
 pinta %>%
   mutate(País = fct_reorder(pais, muertes_habitante)) %>%
-  ggplot( aes(x=País, y=muertes_habitante)) + 
-  geom_bar(stat="identity", fill="#908785", alpha=.5, width=.4) + 
-  coord_flip() + 
-  ylab("Muertes COVID por 1m. habitantes") + 
+  ggplot( aes(x=País, y=muertes_habitante)) +
+  geom_bar(stat="identity", fill="#908785", alpha=.5, width=.4) +
+  coord_flip() +
+  ylab("Muertes COVID por 1m. habitantes") +
   theme_classic()
 ```
 
@@ -120,10 +120,10 @@ De igual manera podemos realizar el gráfico de % de gasto en salud sobre `PIB`:
 ```r
 pinta %>%
   mutate(País = fct_reorder(pais, pib_salud)) %>%
-  ggplot( aes(x=País, y=pib_salud)) + 
-  geom_bar(stat="identity", fill="#908785", alpha=.5, width=.4) + 
-  coord_flip() + 
-  ylab("% gasto en salud sobre PIB") + 
+  ggplot( aes(x=País, y=pib_salud)) +
+  geom_bar(stat="identity", fill="#908785", alpha=.5, width=.4) +
+  coord_flip() +
+  ylab("% gasto en salud sobre PIB") +
   theme_classic()
 ```
 
@@ -144,7 +144,7 @@ Sobre una base vamos añadiendo de lo más sencillo a lo más complicado. Añadi
 
 ```r
 paises <- pinta$pais
-base + geom_point() + 
+base + geom_point() +
   geom_text(aes(label = paises), size = 3, hjust = 0, nudge_x = 0.2)
 ```
 
@@ -156,13 +156,13 @@ Sin embargo, en ocasiones tenemos que complicar mucho la sintaxis para que esas 
 #install.packages("ggrepel")
 library(ggrepel)
 
-base + geom_point() + 
+base + geom_point() +
   geom_text_repel(aes(label = paises), size = 3)
 
-base + geom_point() + 
-  geom_label_repel(aes(label = paises), size = 3) + 
-  ylab("Muertes por millón de habitantes") + 
-  xlab("gasto en salud sobre % de PIB") + 
+base + geom_point() +
+  geom_label_repel(aes(label = paises), size = 3) +
+  ylab("Muertes por millón de habitantes") +
+  xlab("gasto en salud sobre % de PIB") +
   theme_classic()
 ```
 

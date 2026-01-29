@@ -18,7 +18,7 @@ title: 'Manual. Curso introducción de R. Capítulo 4: Contribuciones a R (paque
 url: /blog/manual-curso-introduccion-de-r-capitulo-4-contribuciones-a-r-paquetes/
 ---
 
-En esta nueva entrega del manual introducctorio a la programación en `R` comenzaremos a familiarizarnos con las contribuciones que se realizan en el mundo a esta herramienta. La intención es cargar un `paquete` que contenga una funcionalidad en `R` que nos permita leer orígenes de datos `ODBC` para que, en sucesivas entregas, podamos leer datos de `Access`, `Excel`,…
+En esta nueva entrega del manual introducctorio a la programación en `R` comenzaremos a familiarizarnos con las contribuciones que se realizan en el mundo a esta herramienta. La intención es cargar un `paquete` que contenga una funcionalidad en `R` que nos permita leer orígenes de datos `ODBC` para que, en sucesivas entregas, podamos leer datos de `Access`, Excel,…
 
 Los paquetes de `R` son contribuciones de programadores de todo el mundo para la creación de funcionalidades de `R` que contienen funciones que permiten que día a día `R` mejore y adquiera un mayor potencial. Estos paquetes se encuentran en el `Comprehensive R Archive Network` `CRAN` que es una red de `ftp` y servidores donde nos podemos descargar `R` o nos podemos descargar las contribuciones de los programadores de `R` de todo el mundo. En este caso para España tenemos la red [CRAN espejo España](http://cran.es.r-project.org/) En ella tenemos todos los paquetes disponibles por orden alfabético.
 

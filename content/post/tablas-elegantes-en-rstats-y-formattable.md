@@ -20,7 +20,7 @@ title: 'Tablas elegantes en #rstats y formattable'
 url: /blog/tablas-elegantes-en-rstats-y-formattable/
 ---
 
-Las salidas de la `consola de R` para muchos de nosotros son más que suficientes. Además en mi caso particular prefiero poner las cosas más elegantes en otras herramientas como `Excel`, `Qlik Sense` o `Tableau`. Pero me he dado cuenta que hay una `librería` que sí uso cuando directamente `copio` y `pego` `salidas de R` en `correos`, `presentaciones` o si empleo `markdown` (rara vez); esta `librería` es `formattable` , es posible que haya mejores `librerías` pero esta es la que yo uso desde hace un `par de años`.
+Las salidas de la `consola de R` para muchos de nosotros son más que suficientes. Además en mi caso particular prefiero poner las cosas más elegantes en otras herramientas como Excel, `Qlik Sense` o `Tableau`. Pero me he dado cuenta que hay una `librería` que sí uso cuando directamente `copio` y `pego` `salidas de R` en `correos`, `presentaciones` o si empleo `markdown` (rara vez); esta `librería` es `formattable` , es posible que haya mejores `librerías` pero esta es la que yo uso desde hace un `par de años`.
 
 Vamos a ilustrar algunos ejemplos de uso con un código ya conocido, extraemos la información de `casos de COVID` de `Datadista` y vamos a poner una `tabla` con la `evolución de casos`, `UCI`, `altas` y `fallecimientos` para el `mes de octubre` de 2020:
 

@@ -14,13 +14,13 @@ related:
   - truco-excel-pasar-un-rango-de-varias-columnas-a-una.md
 tags:
   - visual basic
-title: Truco `Excel`. Unir todos los libros en una hoja
+title: Truco Excel. Unir todos los libros en una hoja
 url: /blog/truco-excel-unir-todos-los-libros-en-una-hoja/
 ---
 
 ![unir_excel1](/images/2017/03/unir_excel1.png)
 
-Los trucos `Excel` referentes a la unión de varios libros en uno tienen mucho éxito en esta web, además era necesario crear una versión que uniera de forma horizontal. No es una unión como la pueda hacer `Power Query` de anexar tablas con cierto sentido teniendo en cuenta el nombre de las columnas y demás, se trata de unir todas las celdas de un conjunto de libros de forma horizontal en otro libro resultante como ilustra la figura de arriba. Se unirán todos los campos unos encima de otros independientemente de si se llaman igual o no, si queremos anexar tablas es recomendable usar herramientas más específicas. El funcionamiento es muy sencillo pero lo vamos a ilustrar con imágenes, el primer paso es pulsar directamente el botón y seleccionar los archivos a unir:
+Los trucos Excel referentes a la unión de varios libros en uno tienen mucho éxito en esta web, además era necesario crear una versión que uniera de forma horizontal. No es una unión como la pueda hacer `Power Query` de anexar tablas con cierto sentido teniendo en cuenta el nombre de las columnas y demás, se trata de unir todas las celdas de un conjunto de libros de forma horizontal en otro libro resultante como ilustra la figura de arriba. Se unirán todos los campos unos encima de otros independientemente de si se llaman igual o no, si queremos anexar tablas es recomendable usar herramientas más específicas. El funcionamiento es muy sencillo pero lo vamos a ilustrar con imágenes, el primer paso es pulsar directamente el botón y seleccionar los archivos a unir:
 
 ![unir_excel2](/images/2017/03/unir_excel21.png)
 
@@ -81,7 +81,7 @@ ThisWorkbook.Save
 End Sub
 ```
 
-Abrimos un `array` de libros de `Excel` y seleccionamos donde guardar, bajo mi punto de vista la parte más interesante del código es esta:
+Abrimos un `array` de libros de Excel y seleccionamos donde guardar, bajo mi punto de vista la parte más interesante del código es esta:
 
 ```vb.net
 With Range(celda)
@@ -90,8 +90,8 @@ With Range(celda)
 End With
 ```
 
-Nos permite seleccionar el `rango` a `copiar` aunque haya `registros` sin `datos` o `celdas` en `blanco`, el método que usaba habitualmente tenía este `problema`. El último paso del proceso lo que hace es situar la `celda` `seleccionada` en el último `registro` y lo hace `midiendo` la `longitud` del `rango seleccionado` con `largo = Cells(Rows.Count, 1).End(xlUp).Row` la `primera celda` sin `datos` será el `largo` más uno y ahí pegará los `datos copiados` del `siguiente libro` y de este modo realiza el `proceso iterativo`. Al final de todo se guarda el resultado y ya tenemos nuestros `datos anexados`. Para `descargaros directamente` el `Excel` que realiza la tarea pulsad en el `siguiente link`:
+Nos permite seleccionar el `rango` a `copiar` aunque haya `registros` sin `datos` o `celdas` en `blanco`, el método que usaba habitualmente tenía este `problema`. El último paso del proceso lo que hace es situar la `celda` `seleccionada` en el último `registro` y lo hace `midiendo` la `longitud` del `rango seleccionado` con `largo = Cells(Rows.Count, 1).End(xlUp).Row` la `primera celda` sin `datos` será el `largo` más uno y ahí pegará los `datos copiados` del `siguiente libro` y de este modo realiza el `proceso iterativo`. Al final de todo se guarda el resultado y ya tenemos nuestros `datos anexados`. Para `descargaros directamente` el Excel que realiza la tarea pulsad en el `siguiente link`:
 
-[Unir horizontalmente libro de `Excel` comprimido](/images/2017/03/Unificar_libros_Excel.zip)
+[Unir horizontalmente libro de Excel comprimido](/images/2017/03/Unificar_libros_Excel.zip)
 
 Espero que sea de utilidad, yo creo que si.

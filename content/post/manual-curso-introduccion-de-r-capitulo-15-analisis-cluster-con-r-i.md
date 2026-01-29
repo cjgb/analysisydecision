@@ -31,7 +31,7 @@ El propósito del análisis de conglomerados (`cluster` en terminología inglesa
   Como siempre la metodología del análisis y la programación con `R` la vamos a estudiar mediante un ejemplo.
 
 Ejemplo Cluster.1:
-Partimos de los precios de las viviendas en España desde el último trimestre de 2007 al último trimestre de 2008 por provincia y municipio, trataremos de agrupar ciudades. Los datos los tenemos en formato `Excel` y han sido descargados del [Ministerio de la Vivienda](http://www.mviv.es/es/index.php?option=com_content&task=blogsection&id=9&Itemid=35), por ello necesitamos leer los datos con el paquete `RODBC` (que no tenemos instalado):
+Partimos de los precios de las viviendas en España desde el último trimestre de 2007 al último trimestre de 2008 por provincia y municipio, trataremos de agrupar ciudades. Los datos los tenemos en formato Excel y han sido descargados del [Ministerio de la Vivienda](http://www.mviv.es/es/index.php?option=com_content&task=blogsection&id=9&Itemid=35), por ello necesitamos leer los datos con el paquete `RODBC` (que no tenemos instalado):
 
 ```r
 install.packages("ROdBC")  #instalamos el paquete si no lo tenemos
@@ -64,7 +64,7 @@ datos<-sqlFetch(tabla,"Hoja1")  #objeto que contiene los datos de la Hoja1
 odbcClose(tabla)   #cerramos la conexión con el libro Excel
 ```
 
-Un buen ejemplo para conocer como instalar paquetes en `R` con la función `install.packages`. Y un buen ejemplo para importar datos desde `Excel` a `R`. Con estos pasos ya tenemos un conjunto de datos con las siguientes variables:
+Un buen ejemplo para conocer como instalar paquetes en `R` con la función `install.packages`. Y un buen ejemplo para importar datos desde Excel a `R`. Con estos pasos ya tenemos un conjunto de datos con las siguientes variables:
 
 - `Provincia`
 - `Municipio`

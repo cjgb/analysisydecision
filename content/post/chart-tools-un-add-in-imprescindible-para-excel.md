@@ -20,11 +20,11 @@ title: Chart Tools un add in imprescindible para Excel
 url: /blog/chart-tools-un-add-in-imprescindible-para-excel/
 ---
 
-El `add-in` `jk-chart tools` de `Excel` que os podéis [descargar aquí](http://spreadsheetpage.com/index.php/file/j_walk_chart_tools_add_in/) nos ofrece una serie de funcionalidades que pueden ayudarnos a trabajar con gráficos en `Excel`. Una vez descargado y activado el `add-in` al seleccionar un gráfico podemos emplear este complemento. En la primera pestaña podemos añadir etiquetas personalizadas a nuestros gráficos de `Excel`, algo que [ya realizamos con macros](https://analisisydecision.es/trucos-excel-poner-etiquetas-en-graficos-de-dispersion/):
+El `add-in` `jk-chart tools` de Excel que os podéis [descargar aquí](http://spreadsheetpage.com/index.php/file/j_walk_chart_tools_add_in/) nos ofrece una serie de funcionalidades que pueden ayudarnos a trabajar con gráficos en Excel. Una vez descargado y activado el `add-in` al seleccionar un gráfico podemos emplear este complemento. En la primera pestaña podemos añadir etiquetas personalizadas a nuestros gráficos de Excel, algo que [ya realizamos con macros](https://analisisydecision.es/trucos-excel-poner-etiquetas-en-graficos-de-dispersion/):
 
 ![Chart Tools 1](/images/2011/10/chart-tools-1.png)
 
-Basta con seleccionar la serie y elegir el rango de datos que contiene las etiquetas. Para trabajar con etiquetas tenemos otro `add-in` de `Excel` que os recomiendo que descarguéis, el [XY Chart Labeler](http://www.appspro.com/Utilities/ChartLabeler.htm). Con `Chart Tools` además podemos cambiar el tamaño de los gráficos de una hoja. Así todos nos quedarán iguales…
+Basta con seleccionar la serie y elegir el rango de datos que contiene las etiquetas. Para trabajar con etiquetas tenemos otro `add-in` de Excel que os recomiendo que descarguéis, el [XY Chart Labeler](http://www.appspro.com/Utilities/ChartLabeler.htm). Con `Chart Tools` además podemos cambiar el tamaño de los gráficos de una hoja. Así todos nos quedarán iguales…
 
 ![Chart Tools 2](/images/2011/10/chart-tools-2.png)
 
@@ -40,4 +40,4 @@ Y por último la pestaña `Chart Report` nos permite crear un pequeño informe c
 
 ![Chart Tools 5](/images/2011/10/chart-tools-5.png)
 
-Creo que a estas alturas ya os habéis descargado este complemento en vuestro equipo y le habéis activado. En breve le usaremos para hacer algún gráfico «peculiar» con `Excel`. Saludos.
+Creo que a estas alturas ya os habéis descargado este complemento en vuestro equipo y le habéis activado. En breve le usaremos para hacer algún gráfico «peculiar» con Excel. Saludos.
