@@ -4,6 +4,7 @@ categories:
   - banca
 date: '2009-03-06'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - lecciones-de-economia-de-un-ignorante-la-crisis-ha-tocado-fondo-luego-escarbara.md
   - lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md

@@ -5,6 +5,7 @@ categories:
   - seguros
 date: '2011-12-29'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - lecciones-de-economia-de-un-ignorante-la-prima-de-riesgo-y-la-madre-que-la-pario.md
   - la-confianza-en-el-sector-financiero.md

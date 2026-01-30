@@ -4,6 +4,7 @@ categories:
   - formación
 date: '2013-12-19'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - estadistica-para-cientificos-de-datos-con-r-introduccion.md
   - muestrear-no-es-pecado.md

@@ -21,7 +21,7 @@ title: Macros SAS. Transformar un numérico a fecha
 url: /blog/macros-sas-transformar-un-numerico-a-fecha/
 ---
 
-A continuación vamos a plantear una `macro` de `SAS` bastante sencilla que nos permitirá transformar valores numéricos del tipo `20080607`, fechas en formato `AAAAMMDD` pero que son numéricas, a valores fecha en `SAS` que nos permitirán realizar operaciones. Siguiendo el sistema de todos los mensajes de AyD trabajaremos con ejemplos para estudiar su utilidad.
+A continuación vamos a plantear una `macro` de SAS bastante sencilla que nos permitirá transformar valores numéricos del tipo `20080607`, fechas en formato `AAAAMMDD` pero que son numéricas, a valores fecha en SAS que nos permitirán realizar operaciones. Siguiendo el sistema de todos los mensajes de AyD trabajaremos con ejemplos para estudiar su utilidad.
 
 Partimos de dos fechas en formato `AAAAMMDD` y desamos realizar una diferencia entre ellas:
 
@@ -51,7 +51,7 @@ data _null_;
 run;
 ```
 
-El mes es el resultado de quedarnos con el módulo 100 de `AAAAMM`, el día el módulo 100 de `AAAAMMDD` y el año es la parte entera de `AAAAMMDD` entre 10000, «muy sencillo». Ya tenemos nuestra variable numérica con valor de fecha. Nos queda transformar esta operación en una `macro` de `SAS` que podamos emplearla en nuestros programas sin necesidad de escribir toda la operación:
+El mes es el resultado de quedarnos con el módulo 100 de `AAAAMM`, el día el módulo 100 de `AAAAMMDD` y el año es la parte entera de `AAAAMMDD` entre 10000, «muy sencillo». Ya tenemos nuestra variable numérica con valor de fecha. Nos queda transformar esta operación en una `macro` de SAS que podamos emplearla en nuestros programas sin necesidad de escribir toda la operación:
 
 ```sas
 %macro numfecha(num);
@@ -73,7 +73,7 @@ data _null_;
 run;
 ```
 
-Una `macro` es «sustituir código `SAS`» por ello podemos emplear esta `macro` como una función más:
+Una `macro` es «sustituir código SAS» por ello podemos emplear esta `macro` como una función más:
 
 ```sas
 data _null_;

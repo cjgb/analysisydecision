@@ -4,6 +4,7 @@ categories:
   - banca
 date: '2009-09-07'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - a-mi-me-preocupa-el-pequeno-ahorrador.md
   - amanece-que-no-es-poco.md

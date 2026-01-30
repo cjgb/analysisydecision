@@ -4,6 +4,7 @@ categories:
   - formación
 date: '2009-02-23'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - el-futuro-de-la-profesion.md
   - lecciones-de-economia-de-un-ignorante-solucion-trabajar-mas-y-cobrar-menos.md

@@ -66,7 +66,7 @@ premio3.2 = trunc(runif(numsimul,0,9))
 premio3.3 = trunc(runif(numsimul,0,9))
 ```
 
-No es un código muy «profesional» pero si ilustrativo. Para todos aquellos que tienen miedo a programar con `R`, también se pueden hacer «chapuzas». No es tan difícil. Ahora que tenemos los resultados de todos los sorteos durante esos casi 5 años vamos a estudiar cuánto dinero nos ha tocado:
+No es un código muy «profesional» pero si ilustrativo. Para todos aquellos que tienen miedo a programar con R, también se pueden hacer «chapuzas». No es tan difícil. Ahora que tenemos los resultados de todos los sorteos durante esos casi 5 años vamos a estudiar cuánto dinero nos ha tocado:
 
 Vamos a jugar con el `numero` 1. Las distintas terminaciones las comparamos con el resto de la división del múltiplo de 10 correspondiente. En este punto, sabiendo que jugamos el `numero` 1 analizamos nuestros `premio`s:
 

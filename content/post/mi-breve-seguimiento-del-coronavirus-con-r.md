@@ -15,7 +15,7 @@ related:
 tags:
   - coronavirus
   - covid
-title: Mi breve seguimiento del `coronavirus` con `R`
+title: Mi breve seguimiento del `coronavirus` con R
 url: /blog/mi-breve-seguimiento-del-coronavirus-con-r/
 ---
 

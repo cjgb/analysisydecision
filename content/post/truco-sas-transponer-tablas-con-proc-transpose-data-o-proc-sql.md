@@ -20,7 +20,7 @@ title: Truco SAS. Transponer tablas con PROC TRANSPOSE, DATA o PROC SQL
 url: /blog/truco-sas-transponer-tablas-con-proc-transpose-data-o-proc-sql/
 ---
 
-Para transponer `datasets` disponemos en `SAS` del `PROC TRANSPOSE`. El ahora escribiente no es muy partidario de emplearlo. Prefiero otras metodologías para transponer conjuntos de datos `SAS`. Voy a trabajar con un ejemplo que os servirá para aproximaros al `TRANSPOSE` y para entender mejor las opciones de lectura de un `PASO DATA` y el funcionamiento del `PROC SQL`. La idea es, partiendo de una tabla de hechos por meses, transponer un campo `importe`. Vamos a simular una tabla con esa estructura:
+Para transponer `datasets` disponemos en SAS del `PROC TRANSPOSE`. El ahora escribiente no es muy partidario de emplearlo. Prefiero otras metodologías para transponer conjuntos de datos SAS. Voy a trabajar con un ejemplo que os servirá para aproximaros al `TRANSPOSE` y para entender mejor las opciones de lectura de un `PASO DATA` y el funcionamiento del `PROC SQL`. La idea es, partiendo de una tabla de hechos por meses, transponer un campo `importe`. Vamos a simular una tabla con esa estructura:
 
 ```sas
 data hc_mes_importe;
@@ -52,7 +52,7 @@ by idcliente;
 quit;
 ```
 
-Esta es la estructura más simple del `TRANSPOSE`. En `prefix` indicamos el prefijo que deseamos para la nueva variable. En el `dataset` de salida eliminamos la variable nombre que genera `SAS` por defecto. Evidentemente transponemos por `idcliente` y en la instrucción `ID` ponemos el campo que identifica las columnas. Esta es la sintaxis más habitual del `TRANSPOSE`, a continuación os planteo como transponer mediante un `paso DATA`:
+Esta es la estructura más simple del `TRANSPOSE`. En `prefix` indicamos el prefijo que deseamos para la nueva variable. En el `dataset` de salida eliminamos la variable nombre que genera SAS por defecto. Evidentemente transponemos por `idcliente` y en la instrucción `ID` ponemos el campo que identifica las columnas. Esta es la sintaxis más habitual del `TRANSPOSE`, a continuación os planteo como transponer mediante un `paso DATA`:
 
 ```sas
 data t_mes_importe;
@@ -92,6 +92,6 @@ quit;
 
 Lo que hacemos es sumarizar por el campo del que deseamos un registro único y operamos con los campos que vamos a transponer. Esta operación es el importe multiplicado por una condición.
 
-Si ejecutáis los códigos que os propongo encontraréis que el `paso DATA` es el más eficiente, el `PROC SQL` tarda un 75% más y el `TRANSPOSE` un 250% más. Por otro lado el `TRANSPOSE` podría ser mejor en códigos automáticos ya que no necesitamos parámetros, pero si trabajamos con macros al final el `paso DATA` es más efectivo. A futuro empezaremos a parametrizar este tipo de sentencias `SAS`.
+Si ejecutáis los códigos que os propongo encontraréis que el `paso DATA` es el más eficiente, el `PROC SQL` tarda un 75% más y el `TRANSPOSE` un 250% más. Por otro lado el `TRANSPOSE` podría ser mejor en códigos automáticos ya que no necesitamos parámetros, pero si trabajamos con macros al final el `paso DATA` es más efectivo. A futuro empezaremos a parametrizar este tipo de sentencias SAS.
 
 Por supuesto si tenéis cualquier duda o sugerencia… `rvaquerizo@analisisydecision.es`

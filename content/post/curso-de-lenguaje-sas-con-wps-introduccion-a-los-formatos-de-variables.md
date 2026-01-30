@@ -19,13 +19,13 @@ title: Curso de lenguaje SAS con WPS. Introducción a los formatos de variables
 url: /blog/curso-de-lenguaje-sas-con-wps-introduccion-a-los-formatos-de-variables/
 ---
 
-Volvemos con el curso de lenguaje `SAS` con `WPS`. Estaba parado debido a un problema con las licencias de `WPS` desde junio de 2010 pero le retomamos con uno de los capítulos más interesantes: **formatos de variables en `SAS`**. Si tuvieramos que definirlos Son imprescindibles tanto para leer como para escribir variables. Y esa es la característica que los divide, existen formatos de entrada `INFORMAT` y formatos de salida `FORMAT`. Se dividen por categorías, entre las que destacan los formatos numéricos, formatos carácter y formatos de fecha. La sintaxis es sencilla (`IN`)`FORMAT` -variable–formato-
+Volvemos con el curso de lenguaje SAS con WPS. Estaba parado debido a un problema con las licencias de WPS desde junio de 2010 pero le retomamos con uno de los capítulos más interesantes: **formatos de variables en SAS**. Si tuvieramos que definirlos Son imprescindibles tanto para leer como para escribir variables. Y esa es la característica que los divide, existen formatos de entrada `INFORMAT` y formatos de salida `FORMAT`. Se dividen por categorías, entre las que destacan los formatos numéricos, formatos carácter y formatos de fecha. La sintaxis es sencilla (`IN`)`FORMAT` -variable–formato-
 
 Los formatos más importantes por tipo son:
 
 Formatos numéricos:
 
-• `BESTw.` `SAS` mejor formato
+• `BESTw.` SAS mejor formato
 
 • `BINARYw.` Binario
 

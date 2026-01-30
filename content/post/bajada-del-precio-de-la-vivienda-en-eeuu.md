@@ -4,6 +4,7 @@ categories:
   - business intelligence
 date: '2009-03-24'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-13-regresion-lineal.md
   - bajar-los-tipos-a-la-japonesa-al-0.md
@@ -30,7 +31,7 @@ Por otro lado es `especialmente interesante` `analizar` las `fechas` en las que 
 
 `Vale`, un `poco cutre`, pero que `queréis` en los `10 minutos` que tengo para `escribir`… En este `caso` `Nueva York` encabeza la `subida` con un `buen desplome`, pero `Los Angeles` es la `estrella` de la `bajda brusca`. `Llama` la `atención` que, ni `Miami` ni `Washington` tuvieran una `fuerte subida`, pero si han tenido `desplome` `situando` los `sueldos` a la `mitad` en `8 años`. De nuevo en la `parte inferior` está `Portland` que `duplicó` sus `sueldos` y ahora está a `niveles` de `2001`, por lo menos no está por `debajo` como las otras `5 ciudades` que estoy `estudiando`.En esta `caso` el `punto` de `cambio` de la `pendiente` se `sitúa` en `torno` al `verano` de `2006`. Otro `excelente indicador` de lo que se le `venía encima` a la `economía nortearicana`.
 
-Ahora voy a hacer un `ejercicio` de `falta` de `rigor` pero que puede `resultar interesante`. Si `considero` que un `estadounidense` por `termino medio` tarda `30 años pagar` su `hipoteca` (`inventado`) podemos `dividir` el `importe` entre `30` y `calcular` el `porcentaje` que `implica` la `vivienda` sobre su `sueldo`. `Total` una `aproximación` sobre como `influye` el `precio` de la `vivienda` a la `economía doméstica` de los `estadounidenses`. Por supuesto, `gráfico rápido`:
+Ahora voy a hacer un `ejercicio` de `falta` de `rigor` pero que puede `resultar interesante`. Si `considero` que un `estadounidense` por `termino medio` tarda `30 años pagar` su `hipoteca` (`inventado`) podemos `dividir` el `importe` entre `30` y `calcular` el porcentaje que `implica` la `vivienda` sobre su `sueldo`. `Total` una `aproximación` sobre como `influye` el `precio` de la `vivienda` a la `economía doméstica` de los `estadounidenses`. Por supuesto, `gráfico rápido`:
 
 ![Relacion Salario Precio Vivienda EEUU](/images/2009/03/relacion_vivienda_salrio_eeuu.JPG "Relacion Salario Precio Vivienda EEUU")
 

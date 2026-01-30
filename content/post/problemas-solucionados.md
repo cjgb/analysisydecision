@@ -4,6 +4,7 @@ categories:
   - otros
 date: '2009-10-06'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - personalizar-los-contactos-comerciales.md
   - contenidos-para-octubre-de-ayd.md

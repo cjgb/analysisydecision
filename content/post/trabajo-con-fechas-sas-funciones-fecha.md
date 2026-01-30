@@ -19,7 +19,7 @@ title: Trabajo con `fechas SAS`. Funciones `fecha`
 url: /blog/trabajo-con-fechas-sas-funciones-fecha/
 ---
 
-En las `entregas anteriores` del `monográfico` sobre `fechas SAS` hemos `estudiado` como `almacena` `internamente` las `fechas` el `sistema` y los `formatos` más `prácticos` que disponemos para `visualizarlas`. En esta última `entrega` veremos algunas de las `funciones` de `fecha hora` de las que dispone `SAS`. Las `funciones` las vamos a `dividir` en `4 grupos`:
+En las `entregas anteriores` del `monográfico` sobre `fechas SAS` hemos `estudiado` como `almacena` `internamente` las `fechas` el `sistema` y los `formatos` más `prácticos` que disponemos para `visualizarlas`. En esta última `entrega` veremos algunas de las `funciones` de `fecha hora` de las que dispone SAS. Las `funciones` las vamos a `dividir` en `4 grupos`:
 
 - `Funciones` de `extracción` de `fecha`
 - `Funciones` de `creación` de `fecha`
@@ -150,4 +150,4 @@ m=intnx("month",x,11); put m=ddmmyy10.;
 run;
 ```
 
-En la `ayuda` de `SAS` podemos encontrar más `documentación` y `ejemplos` sobre estas `funciones`. Como `norma general` tendremos: `INTCK` devuelve `valores numéricos` e `INTNX` devuelve `fechas` (que también son `valores numéricos`).Espero que os sirva de ayuda este `monográfico` sobre las `fechas` en `SAS` y os `despeje` algunas `dudas` sobre el `funcionamiento` de las `constantes`, los `formatos` y las `funciones` y, por supuesto, si tenéis cualquier `duda`, `sugerencia` o `trabajo` bien `remunerado` `rvaquerizo@analisisydecision.es`
+En la `ayuda` de SAS podemos encontrar más `documentación` y `ejemplos` sobre estas `funciones`. Como `norma general` tendremos: `INTCK` devuelve `valores numéricos` e `INTNX` devuelve `fechas` (que también son `valores numéricos`).Espero que os sirva de ayuda este `monográfico` sobre las `fechas` en SAS y os `despeje` algunas `dudas` sobre el `funcionamiento` de las `constantes`, los `formatos` y las `funciones` y, por supuesto, si tenéis cualquier `duda`, `sugerencia` o `trabajo` bien `remunerado` `rvaquerizo@analisisydecision.es`

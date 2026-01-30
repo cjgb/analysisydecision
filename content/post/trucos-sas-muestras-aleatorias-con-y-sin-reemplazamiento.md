@@ -21,7 +21,7 @@ title: Trucos SAS. Muestras aleatorias con y sin reemplazamiento
 url: /blog/trucos-sas-muestras-aleatorias-con-y-sin-reemplazamiento/
 ---
 
-Un ejemplo típico de `SAS` pero que creo que puede ayudar a conocer algunas funciones de `SAS`. Los ejemplos que planteo a continuación crean un dataset con 10.000 observaciones y sobre él vamos a crear dos subconjuntos de datos, dos muestras aleatorias del dataset de partida, una muestra sin reemplazamiento y otra muestra con reemplazamiento. Son dos ejemplos muy sencillos. Como siempre creo un dataset de forma aleatoria que me sirve de base para plantearos el truco:
+Un ejemplo típico de SAS pero que creo que puede ayudar a conocer algunas funciones de SAS. Los ejemplos que planteo a continuación crean un dataset con 10.000 observaciones y sobre él vamos a crear dos subconjuntos de datos, dos muestras aleatorias del dataset de partida, una muestra sin reemplazamiento y otra muestra con reemplazamiento. Son dos ejemplos muy sencillos. Como siempre creo un dataset de forma aleatoria que me sirve de base para plantearos el truco:
 
 ```sas
 data ejemplo;
@@ -37,7 +37,7 @@ data ejemplo;
 run;
 ```
 
-El dataset de partida tiene 10.000 observaciones y dos variables una de ellas creada con la función `ranuni` que genera aleatorios de uniforme (0,1) con una raiz. Ahora vamos a realizar una muestra aleatoria de este conjunto de datos `SAS` de tamaño 300 sin reemplazamiento:
+El dataset de partida tiene 10.000 observaciones y dos variables una de ellas creada con la función `ranuni` que genera aleatorios de uniforme (0,1) con una raiz. Ahora vamos a realizar una muestra aleatoria de este conjunto de datos SAS de tamaño 300 sin reemplazamiento:
 
 ```sas
 *MUESTRA ALEATORIA SIN REEMPLAZAMIENTO;

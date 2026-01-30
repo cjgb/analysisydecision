@@ -19,7 +19,7 @@ url: /blog/grafico-de-correlaciones-entre-variables/
 
 ![Gráfico de correlaciones R](/images/2013/02/Grafico-correlaciones-R.png)
 
-Los gráficos de correlaciones no me gustan especialmente pero empiezo a verlos en algunas presentaciones. En `R` tenemos algunos ejemplos interesantes pero con códigos que, bajo mi prisma, son complejos. Por este motivo me he puesto manos a la obra para realizar este gráfico de correlaciones con un código lo más sencillo posible. Para ello vamos a emplear `ggplot2`:
+Los gráficos de correlaciones no me gustan especialmente pero empiezo a verlos en algunas presentaciones. En R tenemos algunos ejemplos interesantes pero con códigos que, bajo mi prisma, son complejos. Por este motivo me he puesto manos a la obra para realizar este gráfico de correlaciones con un código lo más sencillo posible. Para ello vamos a emplear `ggplot2`:
 
 ```r
 library(ggplot2)

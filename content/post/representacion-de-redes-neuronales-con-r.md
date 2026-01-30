@@ -19,7 +19,7 @@ tags:
   - plot
   - redes neuronales
   - r
-title: Representación de redes neuronales con `R`
+title: Representación de redes neuronales con R
 url: /blog/representacion-de-redes-neuronales-con-r/
 ---
 

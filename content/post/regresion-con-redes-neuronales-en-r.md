@@ -17,7 +17,7 @@ related:
 tags:
   - nnet
   - redes neuronales
-title: Regresión con redes neuronales en `R`
+title: Regresión con redes neuronales en R
 url: /blog/regresion-con-redes-neuronales-en-r/
 ---
 
@@ -69,7 +69,7 @@ main="Neural network predictions vs actual",
 xlab="Actual")
 ```
 
-Para realizar el `modelo` vamos a emplear la `librería nnet`, nuestro `modelo` tiene como `variable dependiente medv` dividida por `50` para que sea un `valor` entre `0` y `1` Como `variables independientes` tendremos las `mismas` pero `centradas` por su `media` para `evitar` que nuestra `red` tenga `pesos 0`. En la `función nnet` especificamos que deseamos `2 nodos` en la única `capa oculta` (`size`=`2`) y con `linout`=`T` la `salida` habrá de ser `lineal` y no `binomial`. Con `trace`=`F` evitamos que `R` nos presente todas las `iteraciones necesarias` para `llegar` a la `convergencia` del `modelo`. Para `estudiar` el `comportamiento predictivo` vemos la `media` de la `suma` de `cuadrados` con respecto a las `predicciones` y obtenemos un `valor` de `11.17` que `mejora` mucho la `estimación` realizada con el `modelo`.
+Para realizar el `modelo` vamos a emplear la `librería nnet`, nuestro `modelo` tiene como `variable dependiente medv` dividida por `50` para que sea un `valor` entre `0` y `1` Como `variables independientes` tendremos las `mismas` pero `centradas` por su `media` para `evitar` que nuestra `red` tenga `pesos 0`. En la `función nnet` especificamos que deseamos `2 nodos` en la única `capa oculta` (`size`=`2`) y con `linout`=`T` la `salida` habrá de ser `lineal` y no `binomial`. Con `trace`=`F` evitamos que R nos presente todas las `iteraciones necesarias` para `llegar` a la `convergencia` del `modelo`. Para `estudiar` el `comportamiento predictivo` vemos la `media` de la `suma` de `cuadrados` con respecto a las `predicciones` y obtenemos un `valor` de `11.17` que `mejora` mucho la `estimación` realizada con el `modelo`.
 
 Podríamos buscar un `mejor modelo` con un `proceso iterativo` y añadiendo más `nodos` a nuestra `capa oculta`:
 
@@ -97,7 +97,7 @@ mean((nnet.predict – BostonHousing$medv)^2)
 
 Ahora la `media` del `cuadrado` de los `errores` es `5,4`. Hay que destacar que en la `función nnet` del `proceso iterativo` hemos añadido la `opción decay` evitamos el `problema` de los `pesos` más `altos`, algo que ya se `mitiga` empleando `datos centrados`. Nuestra `red` tiene `12 nodos` de `entrada`, `4 nodos` en la `capa oculta` y un `sólo nodo` en la `salida`, sólo uno porque estamos realizando un `modelo` de `regresión`, no de `clasificación`.
 
-Si deseamos analizar el `comportamiento` de nuestras `variables independientes` en la `red neuronal` hemos de analizar los `pesos` de los `nodos`. Esta `tarea` es `complicada` si lo hacemos a través de la `salida` de `texto` de `R`, sin `embargo` existe un `código` que nos permite `visualizar objetos nnet`:
+Si deseamos analizar el `comportamiento` de nuestras `variables independientes` en la `red neuronal` hemos de analizar los `pesos` de los `nodos`. Esta `tarea` es `complicada` si lo hacemos a través de la `salida` de `texto` de R, sin `embargo` existe un `código` que nos permite `visualizar objetos nnet`:
 
 > [Visualizing `neural networks` from the `nnet package`](https://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/)
 

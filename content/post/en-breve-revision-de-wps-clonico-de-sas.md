@@ -6,6 +6,7 @@ categories:
   - sas
 date: '2010-01-11'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - comparativa-de-precio-wps-vs-sas.md
   - nuevo-entorno-para-la-gestion-de-la-informacion.md

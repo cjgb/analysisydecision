@@ -20,13 +20,13 @@ url: /blog/truco-sas-cruce-con-formatos/
 
 Veremos un ejemplo de ahorro de tiempo haciendo un cruce con `formatos`.
 Parece curioso que los `formatos` ahorren tiempo frente al `sort/merge` y `sql`, ya que basicamente no están hecho para esa finalidad, pero realmente podemos ahorrarnos más del 50% del tiempo.
-Además lo más costoso de este método es la carga del `formatos`, pero una vez que lo tenemos cargado podemos hacer las selecciones de todos los grandes volumenes de datos que necesitemos, con el `sort/merge`, tendríamos que ordenar el conjunto de datos `sas` ‘grande’ otra vez si no lo teniamos ordenado.
+Además lo más costoso de este método es la carga del `formatos`, pero una vez que lo tenemos cargado podemos hacer las selecciones de todos los grandes volumenes de datos que necesitemos, con el `sort/merge`, tendríamos que ordenar el conjunto de datos SAS ‘grande’ otra vez si no lo teniamos ordenado.
 Este método es realmente efectivo al cruzar tablas grandes frente a pequeñas.
 
 Ejemplo:
 
-Nuestro conjunto `sas` de ejemplo es una base de datos de los clientes de una compañía, que contiene el número de `contrato` y `gasto` que han tenido en un periodo.
-Tenemos otro conjunto de datos `sas` con 100.000 `contratos`, queremos seleccionar el `gasto` que han tenido estos `contratos`.
+Nuestro conjunto SAS de ejemplo es una base de datos de los clientes de una compañía, que contiene el número de `contrato` y `gasto` que han tenido en un periodo.
+Tenemos otro conjunto de datos SAS con 100.000 `contratos`, queremos seleccionar el `gasto` que han tenido estos `contratos`.
 
 Para ello tenemos que cruzar nuestra «SUPER TABLA» con nuestra «TABLA PEQUEÑA».
 

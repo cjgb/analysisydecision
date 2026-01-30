@@ -4,6 +4,7 @@ categories:
   - seguros
 date: '2013-05-15'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - lecciones-de-economia-de-un-ignorante-llegamos-a-solvencia-ii.md
   - informe-2011-de-la-direccion-de-seguros-y-fondos-de-pensiones.md

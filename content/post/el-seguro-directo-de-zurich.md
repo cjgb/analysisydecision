@@ -5,6 +5,7 @@ categories:
   - seguros
 date: '2008-06-27'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - los-objetivos-del-primer-ano-de-vida-de-zurich-connect.md
   - nace-verti-la-directa-de-mapfre.md
@@ -22,6 +23,6 @@ Acabo de leer una [noticia en PRSEGUROS](http://www.prnoticias.es/content/view/1
 
 Dentro de 12 meses recuperaré este mensaje y analizaremos el crecimiento de Zurich. Nos servirá como pulsómetro para comprobar la madurez del mercado del seguro a través de internet o teléfono.
 
-Es evidente que hay mercado y Zurich tiene un gran prestigio pero 80.000 pólizas… Deben de tener un call center muy profesional que les permite centrarse en un público con una media de edad mayor que, cada vez más, tienden a tener su seguro en compañías «menos tradicionales», sólo hay que ver su publicidad, casí todos los actores parecen sobrepasar los 40. En todo caso es una noticia que hay que seguir con especial interés.
+Es evidente que hay mercado y Zurich tiene un gran prestigio pero 80.000 pólizas… Deben de tener un call center muy profesional que les permite centrarse en un público con una media de edad mayor que, cada vez más, tienden a tener su seguro en compañías «menos tradicionales», sólo hay que ver su publicidad, casi todos los actores parecen sobrepasar los 40. En todo caso es una noticia que hay que seguir con especial interés.
 
 Importante también analizar el seguro del hogar directo. Línea Directa lo tiene, otras quieren empezar a comercializarlo, pero no hay una gran difusión.

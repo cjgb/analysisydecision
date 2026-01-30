@@ -142,7 +142,7 @@ R siempre trabaja con 3 elementos de cálculo:
 
 ### Generación de números aleatorios con R
 
-Para generar números aleatorios que permitan crear simulaciones en R siempre se emplea el prefijo `r` seguido del nombre de la distribución, estas funciones requieren el número de eventos `size` y los parámetros asociados a cada distribución. El parámetro de una distribución de probabilidad define como son los valores, cada una de ellas tiene un parámetro que puede ser una medida de posición, dispersión o de forma. A continuación se describen las principales funciones, sus parámetros asociados y se ejemplifica la obtención de probabilidades y simulación de observaciones.
+Para generar números aleatorios que permitan crear simulaciones en R siempre se emplea el prefijo R seguido del nombre de la distribución, estas funciones requieren el número de eventos `size` y los parámetros asociados a cada distribución. El parámetro de una distribución de probabilidad define como son los valores, cada una de ellas tiene un parámetro que puede ser una medida de posición, dispersión o de forma. A continuación se describen las principales funciones, sus parámetros asociados y se ejemplifica la obtención de probabilidades y simulación de observaciones.
 
 ## Distribuciones discretas
 

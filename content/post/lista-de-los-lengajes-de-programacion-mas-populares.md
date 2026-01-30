@@ -4,6 +4,7 @@ categories:
   - formación
 date: '2009-09-26'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - r-cayendo-en-la-lista-tiobe.md
   - que-nos-pasa-con-r-de-nuevo.md

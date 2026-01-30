@@ -5,6 +5,7 @@ categories:
   - consultoría
 date: '2009-03-02'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - margenes-nulos-en-los-nuevos-depositos-bancarios.md
   - a-mi-me-preocupa-el-pequeno-ahorrador.md

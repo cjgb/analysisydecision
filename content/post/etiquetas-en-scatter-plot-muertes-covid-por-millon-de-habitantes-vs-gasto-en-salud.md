@@ -18,12 +18,12 @@ url: /blog/etiquetas-en-scatter-plot-muertes-covid-por-millon-de-habitantes-vs-g
 
 ![](/images/2020/04/coronavirus15.png)
 
-He intentado permanecer ajeno a los datos del coronavirus pero es imposible, sin embargo, me gustaría aprovechar para mostrar algunos trucos con `R` y `Python`. Esta vez en una sola entrada vamos a tratar las siguientes situaciones:
+He intentado permanecer ajeno a los datos del coronavirus pero es imposible, sin embargo, me gustaría aprovechar para mostrar algunos trucos con R y `Python`. Esta vez en una sola entrada vamos a tratar las siguientes situaciones:
 
 - Importar la tabla de `worldometer` sobre datos de países.
 - Problemas con la librería `OECD`.
-- Importar Excel con `R`.
-- `Not in` con `R`.
+- Importar Excel con R.
+- `Not in` con R.
 - Gráficos de ranking ordenados con `ggplot`.
 - Etiquetas en los `scatter plot`.
 

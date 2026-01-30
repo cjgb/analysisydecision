@@ -22,7 +22,7 @@ url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-9-an
 
 Los capítulos 7 y 8 se resumen en éste mediante visualizaciones trabajadas en el capítulo 5. El **análisis EDA** (`Exploratory` `Data` `Analysis`) es el primer paso que ha de seguir un `científico de datos` y articula los temas tratados en el capítulo 2 ya que convertir datos en información implica que el `científico de datos` ha de preocuparse en saber como pueden estar estructurados sus datos, que tipo de variables los componen, el nivel al que se encuentran los registros, que problemas pueden presentar o cómo resumir información. Además, es necesario conocer los capítulos 3 y 4 para el manejo de variables y cruces de tablas y por este motivo el análisis `EDA` es la base, pero lo visto anteriormente son los cimientos.
 
-Para realizar este tipo de análisis `R` dispone de distintas `librerías`, algunas de ellas son:
+Para realizar este tipo de análisis R dispone de distintas `librerías`, algunas de ellas son:
 
 - [`ExPanDaR`](https://joachim-gassen.github.io/ExPanDaR/)
 - [`dataMaid`](https://github.com/ekstroem/dataMaid)
@@ -108,7 +108,7 @@ Hay dos columnas que se considera innecesario representar, justo los factores qu
 - `Previously_Insured` Es una variable numérica pero al tomar 2 valores se interpreta como factor.
 - `Response` Será la variable más relevante de nuestro conjunto de datos, toma valores `1/0` Si/No.
 
-A continuación se resuelven algunos de los problemas planteados. Se empieza por la variable `Vehicle_Age`, para reordenar factores en `R` se cuenta con la función `factor`, se sugiere hacer:
+A continuación se resuelven algunos de los problemas planteados. Se empieza por la variable `Vehicle_Age`, para reordenar factores en R se cuenta con la función `factor`, se sugiere hacer:
 
 ```r
 table(train$Vehicle_Age)

@@ -4,6 +4,7 @@ categories:
   - opinión
 date: '2009-08-20'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - lecciones-de-economia-de-un-ignorante-poniendo-fecha-a-la-intervencion-de-espana.md
   - lecciones-de-economia-de-un-ignorante-solucion-trabajar-mas-y-cobrar-menos.md

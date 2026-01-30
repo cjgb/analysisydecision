@@ -20,9 +20,9 @@ title: Trucos SAS. Ejecutar un código si existe una tabla o un fichero
 url: /blog/trucos-sas-ejecutar-un-codigo-si-existe-una-tabla-o-un-fichero/
 ---
 
-Esta duda me llegó hace unos días. Se trataba de ejecutar un código si existía determinado fichero o determinada tabla. Para hacer esto os planteo una posible metodología que yo utilizaba cuando programaba `SAS` en una gran entidad bancaria con `Enterprise Guide 1`, por aquellos entonces hacía maravillas con la castaña del `Guide v1`. Entre ellas unas `macros` que contenían una sentencia condicional que ejecutaba un código en función de la función (bonita expresión) `EXIST` o `FILEEXIST`. Lo que yo hacía era algo parecido a esto:
+Esta duda me llegó hace unos días. Se trataba de ejecutar un código si existía determinado fichero o determinada tabla. Para hacer esto os planteo una posible metodología que yo utilizaba cuando programaba SAS en una gran entidad bancaria con `Enterprise Guide 1`, por aquellos entonces hacía maravillas con la castaña del `Guide v1`. Entre ellas unas `macros` que contenían una sentencia condicional que ejecutaba un código en función de la función (bonita expresión) `EXIST` o `FILEEXIST`. Lo que yo hacía era algo parecido a esto:
 
-**Macro que ejecuta un código `SAS` si existe una tabla:**
+**Macro que ejecuta un código SAS si existe una tabla:**
 
 ```sas
 data uno;
@@ -35,7 +35,7 @@ end;
 
 run;
 
-*MACRO QUE SE EJECUTA SI EXISTE UNA TABLA `SAS`;
+*MACRO QUE SE EJECUTA SI EXISTE UNA TABLA SAS;
 
 `%macro proceso(tabla);`
 
@@ -102,4 +102,4 @@ run;
 `%proceso2("C:\temp\borra.csv");`
 ```
 
-Realizaba un bucle que, cada 5 minutos, rastreaba la existencia de un determinado fichero en el servidor y si aparecia ejecutaba el código. Para ello empleaba la función `FILEEXIST` de una forma análoga a la que os planteo en el ejemplo. Este bucle dará lugar a otro truco `SAS` en breve. Este truco si que es útil para todos aquellos que esperáis que os generen ficheros desde `TI` para ejecutar vuestros procesos. Saludos.
+Realizaba un bucle que, cada 5 minutos, rastreaba la existencia de un determinado fichero en el servidor y si aparecia ejecutaba el código. Para ello empleaba la función `FILEEXIST` de una forma análoga a la que os planteo en el ejemplo. Este bucle dará lugar a otro truco SAS en breve. Este truco si que es útil para todos aquellos que esperáis que os generen ficheros desde `TI` para ejecutar vuestros procesos. Saludos.

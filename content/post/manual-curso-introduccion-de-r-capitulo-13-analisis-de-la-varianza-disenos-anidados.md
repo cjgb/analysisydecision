@@ -20,7 +20,7 @@ title: 'Manual. Curso introducción de R. Capítulo 13: Análisis de la varianza
 url: /blog/manual-curso-introduccion-de-r-capitulo-13-analisis-de-la-varianza-disenos-anidados/
 ---
 
-Continuamos con ejemplos de `análisis de la varianza` con `R`. En este caso trabajaremos con `diseño de experimentos anidados`. Definimos un `factor B` está anidado a un `factor A` si para `nivel de B` tenemos un único `nivel de A` asociado, es decir, `A dos niveles`, `B tres niveles`; `A1` (`B1`, `B2`, `B3`) ; `A2`(`B1`, `B2`, `B3`). En este caso se dice que el `nivel B` está anidado a `A`. El `modelo matemático` viene expresado como:
+Continuamos con ejemplos de `análisis de la varianza` con R. En este caso trabajaremos con `diseño de experimentos anidados`. Definimos un `factor B` está anidado a un `factor A` si para `nivel de B` tenemos un único `nivel de A` asociado, es decir, `A dos niveles`, `B tres niveles`; `A1` (`B1`, `B2`, `B3`) ; `A2`(`B1`, `B2`, `B3`). En este caso se dice que el `nivel B` está anidado a `A`. El `modelo matemático` viene expresado como:
 
 ![modelo.JPG](/images/2009/01/modelo.JPG)
 
@@ -28,11 +28,11 @@ Donde `Beta-j(i)` es el `efecto anidado` del `nivel j-ésimo` anidado sobre `i`.
 
 ![anova_anidado.JPG](/images/2009/01/anova_anidado.JPG)
 
-Trabajemos con un `ejemplo` las `sentencias` adecuadas para el `análisis` con `R`:
+Trabajemos con un `ejemplo` las `sentencias` adecuadas para el `análisis` con R:
 
 `Ejemplo 13.1`:
 
-Se disponen de las `mediciones` realizadas por un `geólogo` del `nivel de calcio` en `cinco tipos` de `terreno`. Se recogen `muestras` del `contenido` en `calcio` en `cuatro localidades distintas` de forma que hay `cuatro localidades` por cada `tipo de terreno`. Introducimos los `datos` en `R`:
+Se disponen de las `mediciones` realizadas por un `geólogo` del `nivel de calcio` en `cinco tipos` de `terreno`. Se recogen `muestras` del `contenido` en `calcio` en `cuatro localidades distintas` de forma que hay `cuatro localidades` por cada `tipo de terreno`. Introducimos los `datos` en R:
 
 ```r
 options(prompt="") #modificamos el prompt
@@ -52,7 +52,7 @@ boxplot(calcio~terreno*localidad)
 
 Ya disponemos de un `DATA FRAME` de `trabajo` que nos permite realizar el `estudio`. Además hemos realizado un `gráfico` para estudiar la `medición` de `calcio` en los 16 `factores` que forman `parte` del `estudio`. El `factor localidad` está anidado con el `factor terreno` ya que cada `nivel` del `factor localidad` se combina con un único `nivel` del `factor terreno`, en este `caso` el `número` de `niveles` de `localidad anidados` en cada `nivel` de `terreno` es el mismo (`b=4`). El `modelo matemático` viene expresado por `Yijk=m+ai+bj(i)+eijk` donde `bj(i)` significa que para cada `nivel i` de `terreno` tenemos `j niveles` de `localidad` (`expresión` del `anidamiento`).
 
-La `programación` del `modelo` con `R` será:
+La `programación` del `modelo` con R será:
 
 ```r
 ejemplo.13.1<-aov(calcio~terreno+localidad%in%terreno) #in experesa el anidamiento

@@ -22,7 +22,7 @@ title: La macro iterlist para automatizar código SAS
 url: /blog/la-macro-iterlist-para-automatizar-codigo-sas/
 ---
 
-Impresionante macro de `SAS` que nos puede ahorrar picar mucho mucho código `SAS`. La macro se llama `iterlist` y la he encontrado en [este enlace](http://www.wuss.org/proceedings08/08WUSS%20Proceedings/papers/cod/cod06.pdf). Es código `SAS` muy avanzado:
+Impresionante macro de SAS que nos puede ahorrar picar mucho mucho código SAS. La macro se llama `iterlist` y la he encontrado en [este enlace](http://www.wuss.org/proceedings08/08WUSS%20Proceedings/papers/cod/cod06.pdf). Es código SAS muy avanzado:
 
 ```sas
 %macro iterlist(code =,list =);

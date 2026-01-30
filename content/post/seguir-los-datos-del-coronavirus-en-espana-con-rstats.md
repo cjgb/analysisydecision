@@ -18,7 +18,7 @@ url: /blog/seguir-los-datos-del-coronavirus-en-espana-con-rstats/
 
 ![Coronavirus Tracking](https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.csv)
 
-No he podido evitarlo, os traigo unas líneas de código en `R` para seguir la evolución del coronavirus en España (podéis filtrar cualquier país). Me hubiera gustado hacer un scraping de la página [https://www.worldometers.info/coronavirus/](https://www.worldometers.info/coronavirus/) sin embargo me ha parecido más sencillo leer directamente los datos del repositorio de la Universidad Jonh Hopkins ([https://github.com/CSSEGISandData/COVID-19](https://github.com/CSSEGISandData/COVID-19)) creo que la actualización es diaria. También existe ya un paquete en `R` denominado coronavirus pero su funcionamiento deja que desear. Por mi parte os ofrezco para seguir su evolución el siguiente script:
+No he podido evitarlo, os traigo unas líneas de código en R para seguir la evolución del coronavirus en España (podéis filtrar cualquier país). Me hubiera gustado hacer un scraping de la página [https://www.worldometers.info/coronavirus/](https://www.worldometers.info/coronavirus/) sin embargo me ha parecido más sencillo leer directamente los datos del repositorio de la Universidad Jonh Hopkins ([https://github.com/CSSEGISandData/COVID-19](https://github.com/CSSEGISandData/COVID-19)) creo que la actualización es diaria. También existe ya un paquete en R denominado coronavirus pero su funcionamiento deja que desear. Por mi parte os ofrezco para seguir su evolución el siguiente script:
 
 ```r
 library(lubridate)

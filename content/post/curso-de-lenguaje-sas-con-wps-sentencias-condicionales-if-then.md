@@ -18,18 +18,18 @@ tags:
   - if
   - output
   - then
-title: Curso de lenguaje `SAS` con `WPS`. Sentencias condicionales `IF THEN`
+title: Curso de lenguaje SAS con WPS. Sentencias condicionales `IF THEN`
 url: /blog/curso-de-lenguaje-sas-con-wps-sentencias-condicionales-if-then/
 ---
 
-Las sentencias\*\*`IF THEN`\*\* son básicas en la programación `SAS` y en todos los lenguajes. Su estructura es muy sencilla: `IF <condición> THEN <acción>; ELSE <acción>`. Todas estas sentencias empezarán con `IF` y como `condición` podemos poner una o varias. Para crearlas tenemos los `operadores de comparación`:
+Las sentencias\*\*`IF THEN`\*\* son básicas en la programación SAS y en todos los lenguajes. Su estructura es muy sencilla: `IF <condición> THEN <acción>; ELSE <acción>`. Todas estas sentencias empezarán con `IF` y como `condición` podemos poner una o varias. Para crearlas tenemos los `operadores de comparación`:
 
 ![operadores-de-comparacion.png](/images/2011/02/operadores-de-comparacion.png)
 Para concatenar `condiciones` emplearemos los `operadores lógicos`:
 
 ![operadores-logicos.png](/images/2011/02/operadores-logicos.png)
 
-Y aplicando la `lógica` realizaremos las `condiciones` en nuestra `programación` con `WPS`. Entre las `acciones` que se ejecutarán cuando se cumpla la `condición` podemos destacar:
+Y aplicando la `lógica` realizaremos las `condiciones` en nuestra `programación` con WPS. Entre las `acciones` que se ejecutarán cuando se cumpla la `condición` podemos destacar:
 
 **Eliminación de `observaciones`:**
 
@@ -97,7 +97,7 @@ if importe1+importe2>1000 then output;
 run;
 ```
 
-En este caso con `OUTPUT` indicamos a `WPS` que nos saque las `observaciones deseadas`. En este caso podemos crear una o varias `tablas SAS` con un mismo paso `DATA`:
+En este caso con `OUTPUT` indicamos a WPS que nos saque las `observaciones deseadas`. En este caso podemos crear una o varias `tablas SAS` con un mismo paso `DATA`:
 
 ```sas
 data aleatorio_mas_1000 aleatorio_menos_1000;
@@ -177,4 +177,4 @@ end;
 run;
 ```
 
-Una `condición` da `lugar` a una `serie` de `acciones`, para realizar esta `serie` empezamos con `DO`, ponemos las `acciones necesarias` y finalizamos con `END`. También lo podemos hacer con `ELSE`. Se denomina `bucle` porque `DO` también nos permite la `realización` de `bucles` como un `FOR` en otros `lenguajes`. Esto lo veremos en `próximas entregas` del `curso`. En la `siguiente entrega` trabajaremos con `librerías` en `WPS`, son `sustancialmente distintas` a las `librerías` en `SAS` ya que podemos `generar conjuntos` de `datos SAS` o `conjuntos` de `datos WPS`.
+Una `condición` da `lugar` a una `serie` de `acciones`, para realizar esta `serie` empezamos con `DO`, ponemos las `acciones necesarias` y finalizamos con `END`. También lo podemos hacer con `ELSE`. Se denomina `bucle` porque `DO` también nos permite la `realización` de `bucles` como un `FOR` en otros `lenguajes`. Esto lo veremos en `próximas entregas` del `curso`. En la `siguiente entrega` trabajaremos con `librerías` en WPS, son `sustancialmente distintas` a las `librerías` en SAS ya que podemos `generar conjuntos` de `datos SAS` o `conjuntos` de `datos WPS`.

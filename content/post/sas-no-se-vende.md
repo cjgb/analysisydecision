@@ -4,6 +4,7 @@ categories:
   - business intelligence
 date: '2009-09-07'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - ibm-compra-spss.md
   - ranking-idc-de-business-analytics-market.md

@@ -21,11 +21,11 @@ url: /blog/primeros-pasos-con-regresion-no-lineal-nls-con-r/
 
 La regresión no lineal se da cuando tenemos que estimar `Y` a partir de una función del tipo `$Y=f(X,Beta) + Error$` donde `Beta` son `Beta1`, `Beta2`,…, `Beta n`. Unos datos `X` e `Y` se relacionan mediante una función no lineal respecto a unos parámetros `Beta` desconocidos. Y cómo obtenemos estos `Beta` desconocidos, a través de mínimos cuadrados o bien con otros métodos como máxima verosimilitud. Este cálculo llevará asociada su inferencia estadística habitual. La función que asocia los pares de datos `(x1,y1)`, `(x2, y2)`,…, `(yn, xn)` será una función conocida. Por eso esta técnica es muy utilizada en ciencias químicas, geodinámica,… donde ya se conoce la relación que hay entre las variables independientes y la variable dependiente pero es necesario realizar modelos con los pares de datos disponibles de cara a obtener estimaciones.
 
-Para la realización de este monográfico con `R` vamos a emplear el [conjunto de datos Thurber](http://www.itl.nist.gov/div898/strd/nls/data/thurber.shtml) Son datos de un estudio NIST de movilidad de electrones en semiconductores la variable respuesta es la movilidad del electrón y la variable regresora es el logaritmo de la densidad. El modelo es:
+Para la realización de este monográfico con R vamos a emplear el [conjunto de datos Thurber](http://www.itl.nist.gov/div898/strd/nls/data/thurber.shtml) Son datos de un estudio NIST de movilidad de electrones en semiconductores la variable respuesta es la movilidad del electrón y la variable regresora es el logaritmo de la densidad. El modelo es:
 
 ![](https://www.itl.nist.gov/div898/strd/nls/data/LINKS/PARTS/MODELS/thurber.Gif)
 
-Nuestra variable está relacionada con su regresora por un modelo racional con siete parámetros `Beta1`, `Beta2`,…, `Beta7` y cúbicas. Comenzamos el trabajo con los datos en `R`:
+Nuestra variable está relacionada con su regresora por un modelo racional con siete parámetros `Beta1`, `Beta2`,…, `Beta7` y cúbicas. Comenzamos el trabajo con los datos en R:
 
 ```r
 y = c(80.574 ,84.248 ,87.264 ,87.195 ,89.076 ,89.608 ,89.868 ,
@@ -48,7 +48,7 @@ ylab="Mobilidad de los electrones")
 
 ![Alt text for image 1](/images/2014/08/regresion-no-lineal1-294x300.png)
 
-Metemos los datos directamente desde la web a `R`. Realizamos una representación gráfica de los datos y se aprecia la inexistencia de relación lineal. Se nos indica que existe relación entre las variables mediante la función antes indicada. Introduzcamos en `R` la función:
+Metemos los datos directamente desde la web a R. Realizamos una representación gráfica de los datos y se aprecia la inexistencia de relación lineal. Se nos indica que existe relación entre las variables mediante la función antes indicada. Introduzcamos en R la función:
 
 ```r
 foo = function(x,b1,b2,b3,b4,b5,b6,b7){
@@ -56,7 +56,7 @@ foo = function(x,b1,b2,b3,b4,b5,b6,b7){
 (1 + b5*x + b6*x^2 + b7*x^3)}
 ```
 
-El trabajo con `R` lo vamos a llevar a cabo con la función `nls` del paquete `stats`. Pero antes de crear un modelo de regresión no lineal tenemos que asignar unos valores iniciales a los parámetros `Beta` de nuestra ecuación. La regresión no lineal es un proceso iterativo. Se parte de unos parámetros `Beta` iniciales, se modeliza y mediante un proceso de optimización numérica se aproximan los parámetros seleccionados a los valores óptimos. Si empleamos el algoritmo de `Gauss-Newton` partiríamos de la mínima suma de cuadrados de los residuos (modelo lineal) y tomaríamos esta función como función a minimizar algo que es posible debido a que al menos una derivada depende de uno de los parámetros `Beta` (condición de no linealidad). El proceso busca mínimos locales de la función y que posteriormente habrá de comprobar si son mínimos globales hasta que el proceso llegara a converger (o no). Para obtener los valores iniciales es necesario conocer los datos. En nuestro caso tenemos una división y 7 parámetros. Vamos a observar la gráfica con los datos. Para `x=0` el valor de `y` ha de ser muy próximo a 1200, luego ese es un buen inicio para `b1`. No podemos tener valores negativos, luego los parámetros que multiplican tanto a `x` como a `x^3` no deberían ser los más altos. Además tenemos una división y luego los parámetros que estén en el denominador no deberían ser muy altos ya que la función ha de ser creciente. Si comenzamos a ejecutar:
+El trabajo con R lo vamos a llevar a cabo con la función `nls` del paquete `stats`. Pero antes de crear un modelo de regresión no lineal tenemos que asignar unos valores iniciales a los parámetros `Beta` de nuestra ecuación. La regresión no lineal es un proceso iterativo. Se parte de unos parámetros `Beta` iniciales, se modeliza y mediante un proceso de optimización numérica se aproximan los parámetros seleccionados a los valores óptimos. Si empleamos el algoritmo de `Gauss-Newton` partiríamos de la mínima suma de cuadrados de los residuos (modelo lineal) y tomaríamos esta función como función a minimizar algo que es posible debido a que al menos una derivada depende de uno de los parámetros `Beta` (condición de no linealidad). El proceso busca mínimos locales de la función y que posteriormente habrá de comprobar si son mínimos globales hasta que el proceso llegara a converger (o no). Para obtener los valores iniciales es necesario conocer los datos. En nuestro caso tenemos una división y 7 parámetros. Vamos a observar la gráfica con los datos. Para `x=0` el valor de `y` ha de ser muy próximo a 1200, luego ese es un buen inicio para `b1`. No podemos tener valores negativos, luego los parámetros que multiplican tanto a `x` como a `x^3` no deberían ser los más altos. Además tenemos una división y luego los parámetros que estén en el denominador no deberían ser muy altos ya que la función ha de ser creciente. Si comenzamos a ejecutar:
 
 ```r
 plot(y ~ x,xlab="Log de Densidad",
@@ -142,7 +142,7 @@ deviance(m.nls)
 [1] 5642.708
 ```
 
-También es necesario analizar si el modelo cumple las hipótesis de ser estadísticamente válido con el test `F`, homocedasticidad, distribución normal de los errores y errores independientes. El test `F` lo podemos realizar con un test `ANOVA` con el ajuste por mínimos cuadrados frente a nuestro modelo de regresión no lineal. El código `R` que podemos emplear para realizar estas tareas es:
+También es necesario analizar si el modelo cumple las hipótesis de ser estadísticamente válido con el test `F`, homocedasticidad, distribución normal de los errores y errores independientes. El test `F` lo podemos realizar con un test `ANOVA` con el ajuste por mínimos cuadrados frente a nuestro modelo de regresión no lineal. El código R que podemos emplear para realizar estas tareas es:
 
 ```r
 #Anova para contraste de falta de ajuste
@@ -168,4 +168,4 @@ levene.test(y,as.factor(x))
 confint(m.nls)
 ```
 
-No entramos en más detalles para no alargar la entrada. Pero ya disponemos de las herramientas de `R` para comenzar a trabajar con este tipo de modelos. También recomiendo ver las posibilidades de la librería `nlstools`. Saludos.
+No entramos en más detalles para no alargar la entrada. Pero ya disponemos de las herramientas de R para comenzar a trabajar con este tipo de modelos. También recomiendo ver las posibilidades de la librería `nlstools`. Saludos.

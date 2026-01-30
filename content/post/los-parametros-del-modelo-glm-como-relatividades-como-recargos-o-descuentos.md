@@ -42,7 +42,7 @@ moto <- read.fwf(con, widths = varib, header = FALSE,
                  na.strings = NULL, comment.char = "")
 ```
 
-Los datos empleados pertenecen a una cartera de motocicletas, disponemos del número de siniestros (variable `nsin`), el importe de los siniestros (`impsin`), la exposición al riesgo de ese registro y una serie de factores que creemos pueden influir en la estimación del número de siniestros o del importe de los siniestros como son la edad, la zona, el nivel de bonificación,… Vamos a partir del modelo más sencillo, un modelo de frecuencia siniestral en base a un factor edad. Si realizamos con `R` un GLM clásico haríamos:
+Los datos empleados pertenecen a una cartera de motocicletas, disponemos del número de siniestros (variable `nsin`), el importe de los siniestros (`impsin`), la exposición al riesgo de ese registro y una serie de factores que creemos pueden influir en la estimación del número de siniestros o del importe de los siniestros como son la edad, la zona, el nivel de bonificación,… Vamos a partir del modelo más sencillo, un modelo de frecuencia siniestral en base a un factor edad. Si realizamos con R un GLM clásico haríamos:
 
 ```r
 motoedad_factor <- case_when(
@@ -60,7 +60,7 @@ Hemos creado un factor edad que va desde los 18 años hasta los 60, realizamos u
 
 ## Obtención de las relatividades
 
-Reiterando, el exponencial del parámetro obtenido con la formulación del modelo es lo que denominamos relatividad y esa relatividad multiplicada por un término independiente nos daría como resultado la estimación de la proporción de siniestros, la estimación de la frecuencia siniestral para cada nivel del factor. También es relevante estudiar y comprender como `R` presenta esos parámetros, si hacemos el exponencial de los parámetros del modelo `glm.1` que hemos hecho tenemos:
+Reiterando, el exponencial del parámetro obtenido con la formulación del modelo es lo que denominamos relatividad y esa relatividad multiplicada por un término independiente nos daría como resultado la estimación de la proporción de siniestros, la estimación de la frecuencia siniestral para cada nivel del factor. También es relevante estudiar y comprender como R presenta esos parámetros, si hacemos el exponencial de los parámetros del modelo `glm.1` que hemos hecho tenemos:
 
 ```
 data.frame(exp(glm.1$coefficients))
@@ -72,11 +72,11 @@ edad_factor21              0.73651804
 ...
 ```
 
-**¿Qué está pasando con la edad 18?** Del término independiente pasa directamente a la edad 19 y de ahí hasta la edad 60, una estimación para cada nivel del factor a excepción del nivel 18. Bien, `R` considera al primer nivel del `factor` el nivel base, si lo vemos en forma de estimador un `factor` toma valor 1 si la observación está en ese nivel del factor y toma 0 si no lo está, pues si todos los estimadores presentes en el modelo toman el valor 0 el modelo estima que la proporción de siniestros en la edad 18 es de 0.02986, `R` no muestra ese estimador porque directamente no es necesario calcularlo, la edad 18 tiene una frecuencia siniestral del 3% la frecuencia del nivel base.
+**¿Qué está pasando con la edad 18?** Del término independiente pasa directamente a la edad 19 y de ahí hasta la edad 60, una estimación para cada nivel del factor a excepción del nivel 18. Bien, R considera al primer nivel del `factor` el nivel base, si lo vemos en forma de estimador un `factor` toma valor 1 si la observación está en ese nivel del factor y toma 0 si no lo está, pues si todos los estimadores presentes en el modelo toman el valor 0 el modelo estima que la proporción de siniestros en la edad 18 es de 0.02986, R no muestra ese estimador porque directamente no es necesario calcularlo, la edad 18 tiene una frecuencia siniestral del 3% la frecuencia del nivel base.
 
 El elemento neutro de una multiplicación es el 1 así que fijado este nivel como base su relatividad ha de ser 1, ya que todos los demás multiplican por 0. Para la edad 19 la estimación que arroja el modelo es `$0.0296 \cdot 0.4889 = 0.0146$` para ese nivel está aplicando un descuento y eso es lo que precisamente denominamos relatividad, el recargo o el decremento de la proporción.
 
-Si queremos obtener las relatividades con nuestro modelo `GLM` de `R` tendríamos que realizar un proceso de este modo:
+Si queremos obtener las relatividades con nuestro modelo `GLM` de R tendríamos que realizar un proceso de este modo:
 
 ```r
 factor_reclasificado <- moto %>% group_by(edad_factor) %>% summarise(exp=sum(exposicion))

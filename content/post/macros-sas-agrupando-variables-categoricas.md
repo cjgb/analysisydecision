@@ -17,11 +17,11 @@ tags:
   - macros sas
   - proc freq
   - sas procs
-title: Macros `SAS`. Agrupando variables categóricas
+title: Macros SAS. Agrupando variables categóricas
 url: /blog/macros-sas-agrupando-variables-categoricas/
 ---
 
-Agrupar variables con `SAS` es una de las tareas más habituales. Las variables continuas las agrupamos según un criterio y las discretas, en principio, ya vienen agrupadas. El problema con las variables discretas es que pueden tomar muchos valores, muchos de ellos con poco valor que habitualmente agrupamos en un rango “OTROS”. Pues bien, hoy quería mostraros una macro muy sencilla que utilizo para crear ese cajón desastre. El código tiene algún aspecto muy interesante, es el que os pongo a continuación:
+Agrupar variables con SAS es una de las tareas más habituales. Las variables continuas las agrupamos según un criterio y las discretas, en principio, ya vienen agrupadas. El problema con las variables discretas es que pueden tomar muchos valores, muchos de ellos con poco valor que habitualmente agrupamos en un rango “OTROS”. Pues bien, hoy quería mostraros una macro muy sencilla que utilizo para crear ese cajón desastre. El código tiene algún aspecto muy interesante, es el que os pongo a continuación:
 
 ```sas
 %macro agrupa_frecuencias(entrada=,/*DS DE ENTRADA*/

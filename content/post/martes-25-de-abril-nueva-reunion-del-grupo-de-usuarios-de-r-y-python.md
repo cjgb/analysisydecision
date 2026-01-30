@@ -4,6 +4,7 @@ categories:
   - formación
 date: '2017-04-23'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - reunion-del-grupo-de-usuarios-de-r-de-madrid.md
   - reunion-del-grupo-de-usuarios-de-r-de-madrid-14042016.md

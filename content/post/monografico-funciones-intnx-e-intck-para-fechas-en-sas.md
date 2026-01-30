@@ -17,11 +17,11 @@ tags:
   - sas
   - intck
   - intnx
-title: Monográfico. Funciones `INTNX` e `INTCK` para fechas en `SAS`
+title: Monográfico. Funciones `INTNX` e `INTCK` para fechas en SAS
 url: /blog/monografico-funciones-intnx-e-intck-para-fechas-en-sas/
 ---
 
-Las funciones `INTNX` e `INTCK` de `SAS` atraen muchas visitas a esta web. Aunque ya hay algún mensaje en el que muestro como funcionan creo que algunos trabajadores me agradecerán este monográfico. `INTNX` e `INTCK` son funciones para trabajar con fechas en `SAS`. `INTNX` sirve para trabajar con periodos luego el resultado que ofrece será una fecha e `INTCK` sirve para trabajar con intervalos, luego el resultado que nos ofrece será un `número` entero. Esta es la premisa fundamental. Entonces:
+Las funciones `INTNX` e `INTCK` de SAS atraen muchas visitas a esta web. Aunque ya hay algún mensaje en el que muestro como funcionan creo que algunos trabajadores me agradecerán este monográfico. `INTNX` e `INTCK` son funciones para trabajar con fechas en SAS. `INTNX` sirve para trabajar con periodos luego el resultado que ofrece será una fecha e `INTCK` sirve para trabajar con intervalos, luego el resultado que nos ofrece será un `número` entero. Esta es la premisa fundamental. Entonces:
 
 - Si queremos calcular el `número` de `meses` entre `01-01-2002` y el `02-04-2003` empleamos `INTCK` porque el resultado será `3 meses`.
 - Si queremos añadir `5 meses` al `01-01-2002` empleamos `INTNX` porque el resultado será una `fecha`.
@@ -125,4 +125,4 @@ dif=intck("year","03MAY2005"d,"03MAY2006"d); put dif;
 run;
 ```
 
-Bueno, pues hasta aquí un `monográfico` que espero ayuden a todas esas `visitas` que buscan estas dos `funciones` de `SAS`. La `opinión` de alguien harto de `picar código SAS`, hay que `conocerlas`, pero siempre que se puedan usar `operaciones aritméticas` las `usaremos`. `INTCK` da `menos guerra`, `INTNX` es más `delicada` pero muy `práctica` para `operar` con `meses típicos` de `fechas` de `partición` de `tablas`. Para `utilizarlas` siempre nos `plantearemos ejemplos` y `estudiaremos` los `resultados` obtenidos.
+Bueno, pues hasta aquí un `monográfico` que espero ayuden a todas esas `visitas` que buscan estas dos `funciones` de SAS. La `opinión` de alguien harto de `picar código SAS`, hay que `conocerlas`, pero siempre que se puedan usar `operaciones aritméticas` las `usaremos`. `INTCK` da `menos guerra`, `INTNX` es más `delicada` pero muy `práctica` para `operar` con `meses típicos` de `fechas` de `partición` de `tablas`. Para `utilizarlas` siempre nos `plantearemos ejemplos` y `estudiaremos` los `resultados` obtenidos.

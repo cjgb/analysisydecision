@@ -20,7 +20,7 @@ url: /blog/un-peligro-del-analisis-cluster/
 
 ![Cluster 1](/images/2009/04/cluster1.JPG)
 
-Quería plantearos un ejemplo de análisis `cluster` para observar **el peligro que tiene agrupar observaciones en base a grupos `homogéneos` creados con distancias `multivariantes`**. Para ilustrar el ejemplo trabajamos con `R`, creamos grupos en base a 2 variables, esto nos facilita los análisis gráficos. Simulamos el conjunto de datos con el que trabajamos:
+Quería plantearos un ejemplo de análisis `cluster` para observar **el peligro que tiene agrupar observaciones en base a grupos `homogéneos` creados con distancias `multivariantes`**. Para ilustrar el ejemplo trabajamos con R, creamos grupos en base a 2 variables, esto nos facilita los análisis gráficos. Simulamos el conjunto de datos con el que trabajamos:
 
 ```r
 #GRUPO 1

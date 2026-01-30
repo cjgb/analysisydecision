@@ -18,7 +18,7 @@ title: Entender una blockchain con R
 url: /blog/entender-una-blockchain-con-r/
 ---
 
-Una introducción de bajo nivel (sin entrar mucho en tecnología) a los `blockchain` con `R`. Es una entrada destinada a comprender que es un `blockchain` desde otro punto de vista, no sólo criptografía o criptomoneda, podemos poner información que sólo conoce el origen. ¿Os imagináis si pusieran a disposición de los científicos de datos información sobre todos los españoles identificados por `NIF` y si tiene o no coronavirus? Los científicos de datos podrían trabajar de forma anónima con esos datos y ayudar a establecer las zonas libres de covid-19, persona a persona de forma perfectamente anónima. Aunque no se descarta que algún cabestro se dedicara a desencriptar…
+Una introducción de bajo nivel (sin entrar mucho en tecnología) a los `blockchain` con R. Es una entrada destinada a comprender que es un `blockchain` desde otro punto de vista, no sólo criptografía o criptomoneda, podemos poner información que sólo conoce el origen. ¿Os imagináis si pusieran a disposición de los científicos de datos información sobre todos los españoles identificados por `NIF` y si tiene o no coronavirus? Los científicos de datos podrían trabajar de forma anónima con esos datos y ayudar a establecer las zonas libres de covid-19, persona a persona de forma perfectamente anónima. Aunque no se descarta que algún cabestro se dedicara a desencriptar…
 
 Al lío, de forma sencilla vamos a construir nuestra cadena de bloques aunque particularmente me gusta mucho el término `contabilidad distribuida`. Por ese motivo vamos a crear un apunte contable y distribuirlo dentro de una `blockchain`. No soy un experto en contabilidad pero se me ocurre crear un apunte contable del siguiente modo:
 
@@ -35,7 +35,7 @@ bloque <- list(index = 1,
                hash = NULL)
 ```
 
-En `R` el bloque es una `lista` con determinados elementos, siendo un apunte contable ponemos una fecha, una descripción, una referencia y un `debe/haber`; los elementos que necesitamos para crear los eslabones de la cadena serán la profundidad de la cadena y los `hash`, tanto previo como el de nuestro bloque. ¿Qué es un `hash`? Es un procedimiento criptográfico que transforma una información en una cadena de caracteres. Ojo con los `hash` porque una vez creados no se pueden descifrar, es decir, una vez creado el bloque este queda guardado a fuego. Esto en contabilidad es un problema porque no se puede deshacer, no nos podemos equivocar. Sin embargo, desde el punto de vista del auditor de una cuenta puede ser interesante. En `R` esa cadena de caracteres la vamos a crear a partir de la librería `digest`:
+En R el bloque es una `lista` con determinados elementos, siendo un apunte contable ponemos una fecha, una descripción, una referencia y un `debe/haber`; los elementos que necesitamos para crear los eslabones de la cadena serán la profundidad de la cadena y los `hash`, tanto previo como el de nuestro bloque. ¿Qué es un `hash`? Es un procedimiento criptográfico que transforma una información en una cadena de caracteres. Ojo con los `hash` porque una vez creados no se pueden descifrar, es decir, una vez creado el bloque este queda guardado a fuego. Esto en contabilidad es un problema porque no se puede deshacer, no nos podemos equivocar. Sin embargo, desde el punto de vista del auditor de una cuenta puede ser interesante. En R esa cadena de caracteres la vamos a crear a partir de la librería `digest`:
 
 ```r
 #Esta librería de R crea hash de objetos de R
@@ -49,7 +49,7 @@ digest("analisisydecision" ,"sha256")
 [1] "bec1a55f485045e8a1f5f774fe2a66f09cc93e046eb9fa978c97a7c061009d9c"
 ```
 
-La función `digest` transforma un elemento de `R` en una cadena de caracteres, si queréis entender mejor el concepto en [este enlace está perfectamente explicado](https://academy.bit2me.com/como-funciona-el-hash-en-bitcoin/). Viendo la estructura del bloque que deseamos enlazar vamos a crear una función que genere esa `lista`:
+La función `digest` transforma un elemento de R en una cadena de caracteres, si queréis entender mejor el concepto en [este enlace está perfectamente explicado](https://academy.bit2me.com/como-funciona-el-hash-en-bitcoin/). Viendo la estructura del bloque que deseamos enlazar vamos a crear una función que genere esa `lista`:
 
 ```r
 #Realizamos una función de R que genere objetos encriptados con la estructura del bloque deseada
@@ -117,7 +117,7 @@ une_eslabones(1695)
 
 Para unir eslabones planteo un orden, una profundidad de la cadena pero en vez de colocar los eslabones de forma consecutiva damos algo de dificultad para ir incrementando el orden, la resta del orden anterior menos el actual orden ha de ser `múltiplo de 11` y se va incrementando de `113 en 113` hasta que se cumpla la condición.
 
-Ya tenemos una función en `R` que nos genera el bloque y otra que nos genera el eslabón, ahora preparamos la función que une el bloques a la cadena a partir del eslabón:
+Ya tenemos una función en R que nos genera el bloque y otra que nos genera el eslabón, ahora preparamos la función que une el bloques a la cadena a partir del eslabón:
 
 ```r
 #Generamos bloques de forma iterativa

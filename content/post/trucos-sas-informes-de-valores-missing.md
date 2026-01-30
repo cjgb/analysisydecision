@@ -22,7 +22,7 @@ title: Trucos SAS. Informes de valores missing
 url: /blog/trucos-sas-informes-de-valores-missing/
 ---
 
-A continuación os planteo como truco `SAS` una duda que nos mandaba `LILIANA`. Ella necesitaba estudiar los valores perdidos de las tablas de una librería determinada. En este caso vamos a estudiar los `missing` de las variables numéricas de una librería, de forma análoga se puede hacer con las alfanuméricas. Como siempre vamos a trabajar con un ejemplo que parte de tablas generadas aleatoriamente. Comenzamos generando estas tablas:
+A continuación os planteo como truco SAS una duda que nos mandaba `LILIANA`. Ella necesitaba estudiar los valores perdidos de las tablas de una librería determinada. En este caso vamos a estudiar los `missing` de las variables numéricas de una librería, de forma análoga se puede hacer con las alfanuméricas. Como siempre vamos a trabajar con un ejemplo que parte de tablas generadas aleatoriamente. Comenzamos generando estas tablas:
 
 ```sas
 libname datos "c:\temp\datos";

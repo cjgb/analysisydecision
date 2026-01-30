@@ -22,11 +22,11 @@ url: /blog/anadiendo-graficos-de-tarta-a-nuestros-mapas-de-ggplot-con-scatterpie
 
 ![](/images/2020/11/piechart_mapa1.png)
 
-Los gráficos de tarta o `pie charts` [tienen algunos peligros](https://www.data-to-viz.com/caveat/pie.html) y el ahora escribiente no es muy partidario de su uso, sin embargo la librería `scatterpie` facilita mucho su realización en `R` y quería traer al blog un método más o menos sencillo para entender como hacer el gráfico y como disponer los datos.
+Los gráficos de tarta o `pie charts` [tienen algunos peligros](https://www.data-to-viz.com/caveat/pie.html) y el ahora escribiente no es muy partidario de su uso, sin embargo la librería `scatterpie` facilita mucho su realización en R y quería traer al blog un método más o menos sencillo para entender como hacer el gráfico y como disponer los datos.
 
 ## Obtención del `shp` con el mapa
 
-Se comienza por realizar un mapa sin nada con `ggplot` y `raster` que a los seguidores de los artículos de `R` del blog les será familiar:
+Se comienza por realizar un mapa sin nada con `ggplot` y `raster` que a los seguidores de los artículos de R del blog les será familiar:
 
 ```r
 library(scatterpie)
@@ -109,4 +109,4 @@ mappie <- mapa + labs(title = "No uséis bolas") +
 mappie
 ```
 
-`geom_scatterpie` necesita los datos, la posición y la `region`, el tamaño, el `r` del gráfico lo especificamos con `r` y siempre irá multiplicado por 6 (por temas de escala). En `cols` es necesario especificar las variables a representar, en este caso solo tenemos 2 `proporciones`, son pocos parámetros complejos y la solución no es mala si no fuera por que se tratan de gráficos de tarta. Saludos.
+`geom_scatterpie` necesita los datos, la posición y la `region`, el tamaño, el R del gráfico lo especificamos con R y siempre irá multiplicado por 6 (por temas de escala). En `cols` es necesario especificar las variables a representar, en este caso solo tenemos 2 `proporciones`, son pocos parámetros complejos y la solución no es mala si no fuera por que se tratan de gráficos de tarta. Saludos.

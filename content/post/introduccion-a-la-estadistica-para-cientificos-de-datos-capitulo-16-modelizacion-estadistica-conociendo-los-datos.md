@@ -26,11 +26,11 @@ url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-16-m
 
 ## Establecer un método para la modelización estadística
 
-En el capítulo 3 del ensayo se hacía mención al [universo `tidyverse`](https://www.tidyverse.org/) y las librerías de `R` que englobaba, además de esas librerías hay una publicación de Hadley Wickham y Garret Grolemund [R for data sience](https://r4ds.had.co.nz/) donde aparece la siguiente imagen:
+En el capítulo 3 del ensayo se hacía mención al [universo `tidyverse`](https://www.tidyverse.org/) y las librerías de R que englobaba, además de esas librerías hay una publicación de Hadley Wickham y Garret Grolemund [R for data sience](https://r4ds.had.co.nz/) donde aparece la siguiente imagen:
 
 ![](https://d33wubrfki0l68.cloudfront.net/571b056757d68e6df81a3e3853f54d3c76ad6efc/32d37/diagrams/data-science.png)
 
-Esa imagen describe un método para realizar `ciencia de datos` con `R`. Como en la anterior figura, este capítulo se dedicará a describir e ilustrar un método de modelización que recoge todo lo trabajado con anterioridad en el ensayo, para ello se emplea el ejemplo que ha servido de hilo conductor en otros capítulos. El ya conocido **`modelo de venta cruzada en el sector asegurador`**:
+Esa imagen describe un método para realizar `ciencia de datos` con R. Como en la anterior figura, este capítulo se dedicará a describir e ilustrar un método de modelización que recoge todo lo trabajado con anterioridad en el ensayo, para ello se emplea el ejemplo que ha servido de hilo conductor en otros capítulos. El ya conocido **`modelo de venta cruzada en el sector asegurador`**:
 
 > Las compañías de seguros que operan en múltiples ramos tienen en sus propios clientes potenciales a los que ofrecer seguros de otro ramo. Esta estrategia no es solo beneficiosa para ganar clientes, también es importante para fidelizar e incluso a la hora de seleccionar riesgos. Si un cliente tiene asegurados dos vehículos en la compañía es de suponer que sólo está conduciendo uno de ellos. Por estos motivos un cliente integral en una compañía de seguros aporta más valor.
 
@@ -277,7 +277,7 @@ sum(train$Response)/nrow(train)
 
 ![Bivariable plot with confidence intervals](/images/2023/05/wp_editor_md_876a2052825f5dd73ec608b1e553b3db.jpg)
 
-> Los códigos de `R` se van sofisticando y no se estudia su estructura Todo ese código se ha visto con anterioridad. Se insiste en la importancia que tiene para el científico de datos construirse sus funciones y sus herramientas para los análisis exploratorios iniciales.
+> Los códigos de R se van sofisticando y no se estudia su estructura Todo ese código se ha visto con anterioridad. Se insiste en la importancia que tiene para el científico de datos construirse sus funciones y sus herramientas para los análisis exploratorios iniciales.
 
 Se aprecia como la inferencia estadística hace más efectivo el trabajo del científico de datos. Se pueden crear agrupaciones en base a ese intervalo de confianza, en este caso y para simplificar, se opta por agrupar las edades superiores a `60` años.
 
@@ -349,7 +349,7 @@ Con esta variable el `target` apenas tiene variación, permanece plano en toda l
 
 ## El código de reclasificación de factores
 
-Antes de continuar y analizar las interacciones es necesario recopilar y ordenar todo el código `R` necesario para preparar los datos de cara a la modelización. Este código de reclasificación de factores debe ser parte del `modelo` y de la **`documentación que acompaña al modelo`** al igual que los gráficos descriptivos y `bivariables`. Este paso simplemente recopila los análisis previos y las clasificaciones finales elegidas para cada factor. Además ese código se empleará en los datos de origen ya que es posible replicar el proceso de muestreo.
+Antes de continuar y analizar las interacciones es necesario recopilar y ordenar todo el código R necesario para preparar los datos de cara a la modelización. Este código de reclasificación de factores debe ser parte del `modelo` y de la **`documentación que acompaña al modelo`** al igual que los gráficos descriptivos y `bivariables`. Este paso simplemente recopila los análisis previos y las clasificaciones finales elegidas para cada factor. Además ese código se empleará en los datos de origen ya que es posible replicar el proceso de muestreo.
 
 El primer paso consiste en filtrar por aquellas variables que no aportan al `modelo` o cuya aportación pueden empeorar el objetivo del proceso de modelización.
 

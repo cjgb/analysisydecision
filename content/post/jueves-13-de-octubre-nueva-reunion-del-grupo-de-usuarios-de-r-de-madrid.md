@@ -4,6 +4,7 @@ categories:
   - formación
 date: '2016-10-11'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - martes-25-de-abril-nueva-reunion-del-grupo-de-usuarios-de-r-y-python.md
   - reunion-usuarios-de-r-en-madrid-26-de-noviembre-de-2014.md

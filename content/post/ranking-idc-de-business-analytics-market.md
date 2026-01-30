@@ -4,6 +4,7 @@ categories:
   - business intelligence
 date: '2009-08-26'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - ibm-compra-spss.md
   - sas-no-se-vende.md

@@ -21,7 +21,7 @@ title: Trucos SAS. Proc format VS formato percent
 url: /blog/truco-sas-proc-format-vs-formato-percent/
 ---
 
-El formato `SAS percent` nos ofrece una apariencia poco habitual a la hora de realizar informes con `SAS`. Necesitamos emplear el `proc format` ya que `SAS` no tiene un formato de porcentajes que se adecúe a los reportes de un buen gestor de la información. Para estudiar su uso emplearemos un ejemplo:
+El formato `SAS percent` nos ofrece una apariencia poco habitual a la hora de realizar informes con SAS. Necesitamos emplear el `proc format` ya que SAS no tiene un formato de porcentajes que se adecúe a los reportes de un buen gestor de la información. Para estudiar su uso emplearemos un ejemplo:
 
 ```sas
 data uno;
@@ -47,7 +47,7 @@ La ejecución de este programa nos ofrece:
 | 8 | 75% |
 | 9 | 100% |
 
-Tenemos 3 problemas: 1. los valores negativos aparecen entre paréntesis 2. no empleamos la notación americana y nuestros decimales han de ir separados por una coma (`,`) 3. nos pone decimales en el 0. Debido a esta carencia de `SAS` necesitamos crear un formato a medida para que nuestros informes tengan un aspecto más profesional y empleen notación europea:
+Tenemos 3 problemas: 1. los valores negativos aparecen entre paréntesis 2. no empleamos la notación americana y nuestros decimales han de ir separados por una coma (`,`) 3. nos pone decimales en el 0. Debido a esta carencia de SAS necesitamos crear un formato a medida para que nuestros informes tengan un aspecto más profesional y empleen notación europea:
 
 ```sas
 proc format ;

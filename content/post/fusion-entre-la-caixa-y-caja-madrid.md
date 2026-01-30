@@ -4,6 +4,7 @@ categories:
   - banca
 date: '2009-12-17'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - lecciones-de-economia-de-un-ignorante-la-caixa-a-colocar-preferentes.md
   - busca-la-relacion-deuda-subordinada-y-cajas-catalanas.md

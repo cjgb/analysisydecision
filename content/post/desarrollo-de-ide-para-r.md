@@ -4,6 +4,7 @@ categories:
   - r
 date: '2010-03-18'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - agregador-de-noticias-de-r-en-espanol.md
   - el-ano-2010-para-analisisydecision.md

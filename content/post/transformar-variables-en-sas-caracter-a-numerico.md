@@ -20,9 +20,9 @@ title: Transformar variables en SAS. Carácter a numérico
 url: /blog/transformar-variables-en-sas-caracter-a-numerico/
 ---
 
-Muchas visitas a este sitio son búsquedas de Google que plantean la problemática que surge al transformar variables caracter a numéricas y viceversa con `SAS`. Las palabras habituales son `transformar texto a número SAS`, `como paso de variable string a numerica en sas`, `pasar de caracter a fecha en SAS`, `sas transformar fecha numerica en texto`, son todas búsquedas que han generado mucho tiempo de estancia en el sitio a pesar de que no existe un mensaje específico. En el siguiente monográfico vamos a tratar estas conversiones. De esta forma se crearán una serie de dos post que pueden ser un interesante material de consulta para profesionales y estudiantes que trabajen con `SAS`.
+Muchas visitas a este sitio son búsquedas de Google que plantean la problemática que surge al transformar variables caracter a numéricas y viceversa con SAS. Las palabras habituales son `transformar texto a número SAS`, `como paso de variable string a numerica en sas`, `pasar de caracter a fecha en SAS`, `sas transformar fecha numerica en texto`, son todas búsquedas que han generado mucho tiempo de estancia en el sitio a pesar de que no existe un mensaje específico. En el siguiente monográfico vamos a tratar estas conversiones. De esta forma se crearán una serie de dos post que pueden ser un interesante material de consulta para profesionales y estudiantes que trabajen con SAS.
 
-En esta primera entrega vamos a transformar variables de texto en variables numéricas. Como es habitual trabajaremos con ejemplos que podéis ejecutar en vuestras sesiones de `SAS` para comprobar el funcionamiento. Veamos que posibles casuísticas podemos encontrar:
+En esta primera entrega vamos a transformar variables de texto en variables numéricas. Como es habitual trabajaremos con ejemplos que podéis ejecutar en vuestras sesiones de SAS para comprobar el funcionamiento. Veamos que posibles casuísticas podemos encontrar:
 
 ```sas
 data uno;
@@ -48,9 +48,9 @@ data uno;
 run;
 ```
 
-Estas son las casuísticas más habituales. Formato europeo o americano con o sin separador de miles. Suele ser muy habitual importar una tabla de Access vía fichero de texto y necesitar transformar formatos europeos en formatos americanos que puede leer mejor `SAS`.
+Estas son las casuísticas más habituales. Formato europeo o americano con o sin separador de miles. Suele ser muy habitual importar una tabla de Access vía fichero de texto y necesitar transformar formatos europeos en formatos americanos que puede leer mejor SAS.
 
-La función estrella para esta transformación será `INPUT(variable o constante caracter, formato de entrada)`. Esta función aplica un formato de entrada a una variable o constante caracter. Es muy importante que el formato de entrada exista en `SAS`. Hay formatos en `SAS` que pueden ser de salida pero no de entrada. En ocasiones no será necesario emplear la función `INPUT`, bastará con multiplicar por 1 para transformar en numérico. Así por ejemplo si deseamos transformar las variables anteriores:
+La función estrella para esta transformación será `INPUT(variable o constante caracter, formato de entrada)`. Esta función aplica un formato de entrada a una variable o constante caracter. Es muy importante que el formato de entrada exista en SAS. Hay formatos en SAS que pueden ser de salida pero no de entrada. En ocasiones no será necesario emplear la función `INPUT`, bastará con multiplicar por 1 para transformar en numérico. Así por ejemplo si deseamos transformar las variables anteriores:
 
 ```sas
 data uno;

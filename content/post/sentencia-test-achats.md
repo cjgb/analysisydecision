@@ -5,6 +5,7 @@ categories:
   - seguros
 date: '2012-07-06'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - el-modelo-multivariante-en-el-sector-asegurador-univariante-vs-multivariante-ii.md
   - el-modelo-multivariante-en-el-sector-asegurador-introduccion-i.md

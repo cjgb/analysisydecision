@@ -20,7 +20,7 @@ title: Trucos SAS. Lista de datasets en macro variable
 url: /blog/trucos-sas-lista-de-datasets-en-macro-variable/
 ---
 
-Un uso frecuente del `proc sql` es la generación de macro variables. En este ejemplo vamos a crear una macro variable con el nombre de los `dataset` de una librería `SAS` que empiecen por un determinado sufijo. También es un ejemplo bastante práctico del uso de las vistas de `SASHELP`. Creo que es un ejemplo bastante sencillo y sobre él iremos generando nuevos trucos que espero puedan serviros. Para entender mejor el truco vamos a generar 20 ficheros “ficticios” con variables aleatorias en el directorio `c:\\temp` de nuestro PC:
+Un uso frecuente del `proc sql` es la generación de macro variables. En este ejemplo vamos a crear una macro variable con el nombre de los `dataset` de una librería SAS que empiecen por un determinado sufijo. También es un ejemplo bastante práctico del uso de las vistas de `SASHELP`. Creo que es un ejemplo bastante sencillo y sobre él iremos generando nuevos trucos que espero puedan serviros. Para entender mejor el truco vamos a generar 20 ficheros “ficticios” con variables aleatorias en el directorio `c:\\temp` de nuestro PC:
 
 ```sas
 *GENERAMOS 2 DATASETS ALEATORIOS;
@@ -74,7 +74,7 @@ temp.aleatorio17 temp.aleatorio18 temp.aleatorio19 temp.aleatorio20 ;
 run;
 ```
 
-Pero esto no es elegante porque somos profesionales que aprendemos trucos de `SAS` con Raúl. Para automatizar esto debemos hacer lo siguiente:
+Pero esto no es elegante porque somos profesionales que aprendemos trucos de SAS con Raúl. Para automatizar esto debemos hacer lo siguiente:
 
 ```sas
 *SELECCIONAMOS LOS DATASET QUE EMPIECEN POR ALEAT;

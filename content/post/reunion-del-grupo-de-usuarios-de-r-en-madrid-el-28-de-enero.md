@@ -4,6 +4,7 @@ categories:
   - r
 date: '2015-01-20'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - reunion-del-grupo-de-usuarios-de-r-de-madrid-14-de-enero-de-2016.md
   - reunion-de-usuarios-de-r-de-madrid-15-de-octubre-de-2015.md

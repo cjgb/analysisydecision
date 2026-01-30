@@ -4,6 +4,7 @@ categories:
   - banca
 date: '2010-06-11'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - me-preocupa-el-pequeno-ahorrador-ii.md
   - participaciones-preferentes-de-las-cajas-de-ahorro.md

@@ -18,7 +18,7 @@ title: Evolución del número de casos de coronavirus
 url: /blog/evolucion-del-numero-de-casos-de-coronavirus/
 ---
 
-Seguimos a vueltas con la (ya) pandemia y `R` y hoy quería traeros unos buenos ejemplos de uso de la `dplyr` para preparar datos. Se trata de ver una evolución del `número` de casos diarios para saber en qué punto tanto España como Italia pueden frenar el crecimiento de los casos de coronavirus, se trata de crear este gráfico:
+Seguimos a vueltas con la (ya) pandemia y R y hoy quería traeros unos buenos ejemplos de uso de la `dplyr` para preparar datos. Se trata de ver una evolución del `número` de casos diarios para saber en qué punto tanto España como Italia pueden frenar el crecimiento de los casos de coronavirus, se trata de crear este gráfico:
 
 ![](/images/2020/03/coronavirus5.png)
 

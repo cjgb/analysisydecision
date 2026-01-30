@@ -14,11 +14,11 @@ related:
   - trucos-sas-numero-de-dias-de-un-mes.md
 tags:
   - lenguaje sas
-title: Curso de lenguaje `SAS` con `WPS`. Funciones fecha
+title: Curso de lenguaje SAS con WPS. Funciones fecha
 url: /blog/curso-de-lenguaje-sas-con-wps-funciones-fecha/
 ---
 
-Las fechas con `SAS` no están muy bien resueltas, con `WPS` pasa lo mismo. Era necesario un `capítulo especial` para hablar sobre `fechas` en `WPS`. [En este blog ya se habló del tema](https://analisisydecision.es/trabajo-con-fechas-sas-funciones-fecha/). Y ahora, con `WPS`, la entrada será análoga: `SAS = WPS`. . Las `funciones` las vamos a `dividir` en `4 grupos`:
+Las fechas con SAS no están muy bien resueltas, con WPS pasa lo mismo. Era necesario un `capítulo especial` para hablar sobre `fechas` en WPS. [En este blog ya se habló del tema](https://analisisydecision.es/trabajo-con-fechas-sas-funciones-fecha/). Y ahora, con WPS, la entrada será análoga: `SAS = WPS`. . Las `funciones` las vamos a `dividir` en `4 grupos`:
 
 • `Funciones` de `extracción` de `fecha`
 • `Funciones` de `creación` de `fecha`
@@ -153,4 +153,4 @@ p=intnx("year",x,-10); put p=ddmmyy10.;
 run;
 ```
 
-En la `ayuda` de `SAS` podemos encontrar más `documentación` y `ejemplos` sobre estas `funciones`. Como `norma general` tendremos: `INTCK` devuelve `valores numéricos` e `INTNX` devuelve `fechas` (que también son `valores numéricos`). Recalcar que disponemos prácticamente de las mismas `funciones` por lo que la `documentación presente` en internet, incluso en esta `web`, puede `usarse` con `WPS`. En la siguiente entrega crearemos `subconjuntos` de `variables` en `conjuntos` de `datos`.
+En la `ayuda` de SAS podemos encontrar más `documentación` y `ejemplos` sobre estas `funciones`. Como `norma general` tendremos: `INTCK` devuelve `valores numéricos` e `INTNX` devuelve `fechas` (que también son `valores numéricos`). Recalcar que disponemos prácticamente de las mismas `funciones` por lo que la `documentación presente` en internet, incluso en esta `web`, puede `usarse` con WPS. En la siguiente entrega crearemos `subconjuntos` de `variables` en `conjuntos` de `datos`.

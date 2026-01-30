@@ -21,7 +21,7 @@ url: /blog/mapas-estaticos-de-peru-con-r-y-python-a-nivel-de-distrito/
 
 ![mapa_peru_distritos2.png](/images/2020/12/mapa_peru_distritos2.png)
 
-Petición de un lector de un código de ejemplo para hacer mapas de Perú con `R` y con `Python`, perfectamente reproducible si seguimos algunas entradas del blog pero que, de este modo, quedan resumidos en un solo sitio. En este caso se va a **emplear un notebook** desde `RStudio` donde tendremos chunks de `R` y `Python` en función de lo que necesitemos. Podéis copiar y pegar directamente, debe salir lo mismo.
+Petición de un lector de un código de ejemplo para hacer mapas de Perú con R y con `Python`, perfectamente reproducible si seguimos algunas entradas del blog pero que, de este modo, quedan resumidos en un solo sitio. En este caso se va a **emplear un notebook** desde `RStudio` donde tendremos chunks de R y `Python` en función de lo que necesitemos. Podéis copiar y pegar directamente, debe salir lo mismo.
 
 ### Mapa de Perú con ggplot
 
@@ -90,6 +90,6 @@ mapa = peru.plot(column="aleatorio", linewidth=0.3, cmap="Reds", scheme="quantil
 plt.show()
 ```
 
-Aquí suponemos que habéis instalado reticulate y que os funciona Python a la perfección desde RStudio. Hay un primer chunk `Crea_shp ` que va a crear el shp desde el rds que hemos descargado de `GADM` con la función de raster `shapefile`, recomiendo guardar en un directorio, por eso el `dir.create("c:/temp/mapas/Peru/")` para trabajar en Python que nos hemos bajado de GADM mediante `R`, hay un paquete en `Python` que llama a la API pero no me funcionaba. Una vez tenemos el shp tenemos que crear el `data frame` mediante `geopandas` y la función `read_file`. En este caso estamos como antes, no se buscan datos, se emplean unos datos aleatorios que posteriormente se cruzan y son los que se representarán en el mapa estático de Departamentos de `Peru` con el que comienza esta entrada.
+Aquí suponemos que habéis instalado reticulate y que os funciona Python a la perfección desde RStudio. Hay un primer chunk `Crea_shp ` que va a crear el shp desde el rds que hemos descargado de `GADM` con la función de raster `shapefile`, recomiendo guardar en un directorio, por eso el `dir.create("c:/temp/mapas/Peru/")` para trabajar en Python que nos hemos bajado de GADM mediante R, hay un paquete en `Python` que llama a la API pero no me funcionaba. Una vez tenemos el shp tenemos que crear el `data frame` mediante `geopandas` y la función `read_file`. En este caso estamos como antes, no se buscan datos, se emplean unos datos aleatorios que posteriormente se cruzan y son los que se representarán en el mapa estático de Departamentos de `Peru` con el que comienza esta entrada.
 
 **Comentario** : los mapas son feos de solemnidad, yo os digo como hacerlo, vosotros dadle formato.

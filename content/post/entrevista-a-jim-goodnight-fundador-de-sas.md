@@ -5,6 +5,7 @@ categories:
   - sas
 date: '2009-04-14'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - sas-investiga-la-tecnologia-de-r.md
   - sas-no-se-vende.md

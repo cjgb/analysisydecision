@@ -18,7 +18,7 @@ title: 'Manual. Curso introducción de R. Capítulo 8: Inferencia estadística'
 url: /blog/manual-curso-introduccion-de-r-capitulo-8-inferencia-estadistica/
 ---
 
-En esta nueva entrega del curso de `R` vamos a trabajar con algunos conceptos básicos de inferencia estadística. En primer lugar hacemos inferencia a partir de unas observaciones obtenidas a partir de la **población** a las que vamos a extraer unas propiedades que se denominan **estadísticos muestrales**. Además vamos a conocer la distribución de dichos estadísticos (generalmente distribución normal) por lo que hacemos **inferencia paramétrica**.
+En esta nueva entrega del curso de R vamos a trabajar con algunos conceptos básicos de inferencia estadística. En primer lugar hacemos inferencia a partir de unas observaciones obtenidas a partir de la **población** a las que vamos a extraer unas propiedades que se denominan **estadísticos muestrales**. Además vamos a conocer la distribución de dichos estadísticos (generalmente distribución normal) por lo que hacemos **inferencia paramétrica**.
 
 La **inferencia paramétrica** puede recogerse en una vertiente o en otra según el `parámetro` a estimar; tenemos por un lado la estadística clásica (que es en la que nos vamos a centrar) y por otro lado la estadística ballesiana.
 
@@ -54,7 +54,7 @@ Y # se distribuye como chi-cuadrado con n grados de libertad
 
 Me dejo en el tintero muchos aspectos como las distribuciones de los `estadísticos` o los métodos de construcción de contrastes e intervalos pero me podría extender mucho, y me extenderé pero hasta aquí os cuento de momento. Aun así recomendaros una bibliografía básica por si queréis profundizar más en el tema. También estoy a expensas de poder publicar archivos LaTeX para que los aspectos matemáticos queden mejor resueltos pero de momento conformaros con los ejemplos de más abajo.
 
-Bueno pues comencemos con `R`, la función que nos ofrece tanto estimaciones puntuales como intervalos de confianza como contrastes de hipótesis es:
+Bueno pues comencemos con R, la función que nos ofrece tanto estimaciones puntuales como intervalos de confianza como contrastes de hipótesis es:
 
 `t.test(x, ...)`
 
@@ -108,7 +108,7 @@ Tenemos una variable con distribución normal de media y desviación típica des
 
 ![null](https://es.geocities.com/r_vaquerizo/images/formula1.gif)
 
-La programación en `R` queda:
+La programación en R queda:
 
 ```r
 # One Sample t-test

@@ -4,6 +4,7 @@ categories:
   - r
 date: '2012-04-16'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - que-nos-pasa-con-r-de-nuevo.md
   - lista-de-los-lengajes-de-programacion-mas-populares.md

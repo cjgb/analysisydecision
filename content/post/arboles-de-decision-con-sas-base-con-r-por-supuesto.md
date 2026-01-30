@@ -25,9 +25,9 @@ title: Árboles de decisión con SAS Base (con R por supuesto)
 url: /blog/arboles-de-decision-con-sas-base-con-r-por-supuesto/
 ---
 
-**Con `SAS Base` podemos hacer árboles de decisión porque tenemos `R`**. Así de sencillo. Vamos a utilizar `SAS` para gestionar nuestros datos y `R` será la herramienta que utilicemos para la realización del modelo de árbol de decisión. Posteriormente emplearemos las reglas generadas por el modelo para etiquetar a nuestros clientes en `SAS`. Con esta entrada pretendo ilustrar una serie de ejemplos en los que comunico `SAS` con `R`. Una herramienta nos sirve para el tratamiento de datos y la otra la utilizaremos para realizar modelos que no están al alcance de `SAS`. Para realizar esta comunicación `SAS-R` os planteo la creación en `SAS` de ficheros de texto con las instrucciones en `R` y la ejecución en modo batch de `R` con ese código creado en `SAS`. Aquí tenéis punto por punto el ejemplo:
+**Con `SAS Base` podemos hacer árboles de decisión porque tenemos R**. Así de sencillo. Vamos a utilizar SAS para gestionar nuestros datos y R será la herramienta que utilicemos para la realización del modelo de árbol de decisión. Posteriormente emplearemos las reglas generadas por el modelo para etiquetar a nuestros clientes en SAS. Con esta entrada pretendo ilustrar una serie de ejemplos en los que comunico SAS con R. Una herramienta nos sirve para el tratamiento de datos y la otra la utilizaremos para realizar modelos que no están al alcance de SAS. Para realizar esta comunicación `SAS-R` os planteo la creación en SAS de ficheros de texto con las instrucciones en R y la ejecución en modo batch de R con ese código creado en SAS. Aquí tenéis punto por punto el ejemplo:
 
-El primer paso, como es habitual, es crear un conjunto de datos `SAS` con datos aleatorios que nos sirva de ejemplo:
+El primer paso, como es habitual, es crear un conjunto de datos SAS con datos aleatorios que nos sirva de ejemplo:
 
 ```sas
 *200000 DATOS ALEATORIOS;
@@ -160,7 +160,7 @@ RUN;
 
 Reservamos un 40% de las observaciones para validar el modelo. El conjunto de datos de entrenamiento lo exportamos en formato `CSV` al directorio de nuestro equipo `C:\temp`. Por defecto trabajaremos siempre con ese directorio. Recomiendo crear uno específico donde alojemos de forma ordenada códigos, datos y resultados.
 
-Ahora podemos realizar la ejecución en `R`:
+Ahora podemos realizar la ejecución en R:
 
 ```sas
 data ejecucion_R;
@@ -240,7 +240,7 @@ reglas.rpart(arbol)                                                    @
 run;
 ```
 
-Creamos un conjunto de datos `SAS` donde tenemos código `R` como observaciones. Empleamos `DATALINES4` porque tenemos un punto y coma en la entrada de datos `SAS` manual. [El código `R` escrito les será familiar a los lectores del blog](https://analisisydecision.es/trucos-r-llevar-a-sas-las-reglas-de-un-arbol-de-decision/). Ahora tenemos que exportar este código a un archivo de texto con extensión `R`:
+Creamos un conjunto de datos SAS donde tenemos código R como observaciones. Empleamos `DATALINES4` porque tenemos un punto y coma en la entrada de datos SAS manual. [El código R escrito les será familiar a los lectores del blog](https://analisisydecision.es/trucos-r-llevar-a-sas-las-reglas-de-un-arbol-de-decision/). Ahora tenemos que exportar este código a un archivo de texto con extensión R:
 
 ```sas
 *ESTABLECEMOS EL DIRECTORIO, LEEMOS Y GUARDAMOS;
@@ -256,7 +256,7 @@ put lineas;
 run;
 ```
 
-Esto se puede hacer con más elegancia, lo reconozco. Pero ‘necesito’ tener las ejecuciones en conjuntos de datos `SAS`, digamos que es una manía. El código `R` ha de ser ejecutado:
+Esto se puede hacer con más elegancia, lo reconozco. Pero ‘necesito’ tener las ejecuciones en conjuntos de datos SAS, digamos que es una manía. El código R ha de ser ejecutado:
 
 ```sas
 data _null_;
@@ -286,7 +286,7 @@ options noxwait;
 x "C:\temp\ejecucion.bat";
 ```
 
-En este punto tenemos que tener cuidado con la ubicación y la versión de `R`, hay que ejecutar el `R.exe` que llamará en modo `batch` al programa `pgm.R` que hemos generado con `SAS`. Ese código `R` ha generado un archivo de texto `reglas_arbol.txt` que contendrá las reglas resultantes del modelo y podemos emplearlo en código `SAS`:
+En este punto tenemos que tener cuidado con la ubicación y la versión de R, hay que ejecutar el `R.exe` que llamará en modo `batch` al programa `pgm.R` que hemos generado con SAS. Ese código R ha generado un archivo de texto `reglas_arbol.txt` que contendrá las reglas resultantes del modelo y podemos emplearlo en código SAS:
 
 ```sas
 *EJECUTAMOS EL CODIGO GENERADO;
@@ -316,4 +316,4 @@ group by 1;
 quit;
 ```
 
-El proceso puede parecer complejo. Imaginaos si creo parámetros, así que no me acuséis de chapuzante. El código os le podéis descargar en [este enlace](images/2011/07/arboles-regresion-con-sas-base.sas "arboles-regresion-con-sas-base.sas") para ejecutarlo directamente con `SAS`, así evitamos los problemas de `wordpress`. Como siempre lo que quiero plantearos una forma de trabajo más que interesante y que puede ahorrar muchos costes. Además ya anuncio una serie de entradas al blog de este tipo por lo que espero que os interesen.
+El proceso puede parecer complejo. Imaginaos si creo parámetros, así que no me acuséis de chapuzante. El código os le podéis descargar en [este enlace](images/2011/07/arboles-regresion-con-sas-base.sas "arboles-regresion-con-sas-base.sas") para ejecutarlo directamente con SAS, así evitamos los problemas de `wordpress`. Como siempre lo que quiero plantearos una forma de trabajo más que interesante y que puede ahorrar muchos costes. Además ya anuncio una serie de entradas al blog de este tipo por lo que espero que os interesen.

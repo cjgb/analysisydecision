@@ -17,7 +17,7 @@ title: Data management con dplyr
 url: /blog/data-management-con-dplyr/
 ---
 
-Dos años con `pandas` y `sckitlearn` y ahora vuelvo a `R`. Y en mi regreso me propuse comenzar a trabajar con `dplyr` y mi productividad se está incrementando exponencialmente, creo que dplyr es LA HERRAMIENTA para el manejo de `data frame` con `R`, ni me imagino como puede funcionar `sparlyr`… Para aquellos que estéis iniciando vuestra andadura con R o para los que no estéis acostumbrados a `dplyr` he hecho una recopilación de las tareas más habituales que hago con esta librería. Se pueden resumir:
+Dos años con `pandas` y `sckitlearn` y ahora vuelvo a R. Y en mi regreso me propuse comenzar a trabajar con `dplyr` y mi productividad se está incrementando exponencialmente, creo que dplyr es LA HERRAMIENTA para el manejo de `data frame` con R, ni me imagino como puede funcionar `sparlyr`… Para aquellos que estéis iniciando vuestra andadura con R o para los que no estéis acostumbrados a `dplyr` he hecho una recopilación de las tareas más habituales que hago con esta librería. Se pueden resumir:
 
 • Seleccionar columnas
 • Seleccionar registros

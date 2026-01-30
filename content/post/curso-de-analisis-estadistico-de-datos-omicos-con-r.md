@@ -5,6 +5,7 @@ categories:
   - r
 date: '2014-02-27'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - estadistica-para-cientificos-de-datos-con-r-introduccion.md
   - analisisydecision-se-une-a-scout-analyst-primer-curso-de-estadistica-para-analistas.md

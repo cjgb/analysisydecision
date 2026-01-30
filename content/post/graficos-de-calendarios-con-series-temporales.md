@@ -24,7 +24,7 @@ title: Gráficos de calendarios con series temporales
 url: /blog/graficos-de-calendarios-con-series-temporales/
 ---
 
-Cuando se realizan gráficos de series temporales se emplean gráficos de líneas donde el eje X contiene la fecha y el eje Y contiene el valor a representar. Hoy quiero traer al blog otra forma de representar series temporales, los gráficos de calendario y su realización con `R`. Para ilustrar el ejemplo vamos a emplear las cotizaciones históricas del índice bursátil `IBEX35`:
+Cuando se realizan gráficos de series temporales se emplean gráficos de líneas donde el eje X contiene la fecha y el eje Y contiene el valor a representar. Hoy quiero traer al blog otra forma de representar series temporales, los gráficos de calendario y su realización con R. Para ilustrar el ejemplo vamos a emplear las cotizaciones históricas del índice bursátil `IBEX35`:
 
 ```r
 require(quantmod)

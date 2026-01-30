@@ -25,7 +25,7 @@ url: /blog/en-la-regresion-logistica-c2bfel-sobremuestreo-es-lo-mismo-que-asigna
 
 Hoy vamos a volver sobre el tema del `sobremuestreo`. Respondemos a un lector, `Roberto`, que hace mucho tiempo planteó una duda al respecto. La duda se puede resumir: En un `modelo logístico`, ¿equivale entrenar un `modelo` con las observaciones `sobremuestreadas` a entrenar el `modelo` poniendo un `peso` a cada observación? Esta cuestión nunca me la había planteado. Siempre había realizado un `sobremuestreo` de las observaciones adecuando la `población` de `casos negativos` a la `población` de `casos positivos`. Si estás habituado a trabajar con `Enterprise Miner de SAS` es habitual asignar `pesos` a las observaciones para realizar el proceso de `sobremuestreo`. ¿Obtendremos distintos resultados?
 
-Vamos a estudiar un ejemplo con `SAS` y `analizar` que está pasando:
+Vamos a estudiar un ejemplo con SAS y `analizar` que está pasando:
 
 ```sas
 *REGRESION LOGISTICA PERFECTA;
@@ -165,7 +165,7 @@ weight peso;
 quit;
 ```
 
-El `peso` consiste en dividir el `porcentaje` que deseamos entre el `porcentaje` real, así de sencillo, al final la `suma` del `peso` de las observaciones será igual al `total` de las observaciones. En el `PROC LOGISTIC` añadimos la sentencia `WEIGHT` para indicar que `variable` contiene el `peso`. El resultado de este `modelo` es:
+El `peso` consiste en dividir el porcentaje que deseamos entre el porcentaje real, así de sencillo, al final la `suma` del `peso` de las observaciones será igual al `total` de las observaciones. En el `PROC LOGISTIC` añadimos la sentencia `WEIGHT` para indicar que `variable` contiene el `peso`. El resultado de este `modelo` es:
 
 ![regresion_logistica3.PNG](/images/2012/03/regresion_logistica3.PNG)
 

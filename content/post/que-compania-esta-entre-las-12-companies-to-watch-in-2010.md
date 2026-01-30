@@ -5,6 +5,7 @@ categories:
   - r
 date: '2010-02-18'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - el-ano-2010-para-analisisydecision.md
   - como-medir-la-presencia-de-r-en-el-mercado-del-analisis-de-datos.md

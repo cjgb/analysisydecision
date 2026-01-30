@@ -4,6 +4,7 @@ categories:
   - otros
 date: '2011-06-22'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - paquete-opendataes-en-ropenspain-para-acceder-a-los-datos-de-datos-gob-es-con-r.md
   - mapas-de-la-provincia-de-madrid-con-bdt.md

@@ -4,6 +4,7 @@ categories:
   - r
 date: '2015-01-23'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - revolution-computing-ahora-es-revolution-analytics.md
   - revolution-computing-ficha-al-fundador-de-spss.md

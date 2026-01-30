@@ -20,7 +20,7 @@ title: Truco Excel. Nuestra propia función redondear en Excel
 url: /blog/truco-excel-nuestra-propia-funcion-excel/
 ---
 
-Hay operaciones que pueden ser muy habituales de hacer con Excel y necesitaríamos una función propia que la realizara. A continuación vamos a plantear una situación en la que es especialmente útil crear una función específica y guardarla en el libro de macros personal para utilizarla en nuestras sesiones `SAS`. En este caso concreto vamos a crear una función que nos redondeé un número a 0 o 0.5, es decir, 6,3 valdría 6 y 6,7 valdría 6,5. Para realizarlo sin una función específica emplaríamos múltiples funciones de Excel, por ejemplo:
+Hay operaciones que pueden ser muy habituales de hacer con Excel y necesitaríamos una función propia que la realizara. A continuación vamos a plantear una situación en la que es especialmente útil crear una función específica y guardarla en el libro de macros personal para utilizarla en nuestras sesiones SAS. En este caso concreto vamos a crear una función que nos redondeé un número a 0 o 0.5, es decir, 6,3 valdría 6 y 6,7 valdría 6,5. Para realizarlo sin una función específica emplaríamos múltiples funciones de Excel, por ejemplo:
 
 ```excel
 =ENTERO(6,3)+(SI(RESIDUO(6,3;1)>=0,5;0,5;0))

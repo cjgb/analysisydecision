@@ -4,6 +4,7 @@ categories:
   - seguros
 date: '2010-06-05'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - nace-verti-la-directa-de-mapfre.md
   - seguro-directo-de-salud-nace-nectar.md

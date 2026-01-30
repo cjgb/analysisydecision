@@ -24,7 +24,7 @@ url: /blog/identificar-los-municipios-costeros-y-limitrofes-de-espana-con-r/
 
 ![municpios_limitrofes_costeros.png](/images/2020/04/municpios_limitrofes_costeros.png)
 
-Otro ejercicio con `spatial data` `R` `Rstats` y `data science` para el trabajo con objetos espaciales en el ecosistema `big data`. Empiezo con frase ilógica y ridícula para mejorar las búsquedas de Google pero el tema que traigo hoy creo que puede ser útil para aquellos que, dado un spatial data, tienen que identificar los polígonos que bordean ese objeto, en este caso vamos a identificar los municipios que bordean España, pueden ser limítrofes con Francia y Portugal o bien municipios costeros. No se plantean algoritmos complicados, como en entradas anteriores nos centramos en la extracción de mapas de `GADM`:
+Otro ejercicio con `spatial data` R `Rstats` y `data science` para el trabajo con objetos espaciales en el ecosistema `big data`. Empiezo con frase ilógica y ridícula para mejorar las búsquedas de Google pero el tema que traigo hoy creo que puede ser útil para aquellos que, dado un spatial data, tienen que identificar los polígonos que bordean ese objeto, en este caso vamos a identificar los municipios que bordean España, pueden ser limítrofes con Francia y Portugal o bien municipios costeros. No se plantean algoritmos complicados, como en entradas anteriores nos centramos en la extracción de mapas de `GADM`:
 
 ### Obtención de los mapas necesarios
 

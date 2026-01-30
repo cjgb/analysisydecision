@@ -22,9 +22,9 @@ url: /blog/la-distribucion-tweedie/
 
 ![Tweedie Distribution](/images/2012/04/tweedie.png "tweedie.png")
 
-Reconozco que hace muy poco tiempo que trabajo con las **distribuciones `tweedie`**. Un viejo dinosaurio que trabaja sobre todo con `SAS` se hace el sordo cuando le hablan de la distribución `tweedie`. Quizá sea el trabajo con `SAS` el que me ha nublado. Pero ahora que empiezo a trabajar con otras herramientas… Para comprender mejor la base teórica para este tipo de distribuciones os [enlazo a la wikipedia](http://en.wikipedia.org/wiki/Tweedie_distributions). Pero despierta mi interés debido a que se puede considerar una `gamma` con punto de masa en el 0 ¡toma aberración matemática! Aspecto interesante.
+Reconozco que hace muy poco tiempo que trabajo con las **distribuciones `tweedie`**. Un viejo dinosaurio que trabaja sobre todo con SAS se hace el sordo cuando le hablan de la distribución `tweedie`. Quizá sea el trabajo con SAS el que me ha nublado. Pero ahora que empiezo a trabajar con otras herramientas… Para comprender mejor la base teórica para este tipo de distribuciones os [enlazo a la wikipedia](http://en.wikipedia.org/wiki/Tweedie_distributions). Pero despierta mi interés debido a que se puede considerar una `gamma` con punto de masa en el 0 ¡toma aberración matemática! Aspecto interesante.
 
-Este tipo de distribución necesita 3 parámetros; `p` que nos indica el tipo de distribución en `R` se denomina `power` , `mu` que es la media y `phi` que es la desviación típica. En `R` disponemos del paquete `tweedie` para trabajar con este tipo de distribuciones, la función `rtweedie` es la que genera números aleatorios según una `tweedie` con parámetros `p`, `mu` y `phi`:
+Este tipo de distribución necesita 3 parámetros; `p` que nos indica el tipo de distribución en R se denomina `power` , `mu` que es la media y `phi` que es la desviación típica. En R disponemos del paquete `tweedie` para trabajar con este tipo de distribuciones, la función `rtweedie` es la que genera números aleatorios según una `tweedie` con parámetros `p`, `mu` y `phi`:
 
 ```r
 #install.packages("tweedie")

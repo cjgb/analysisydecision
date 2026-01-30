@@ -4,6 +4,7 @@ categories:
   - formación
 date: '2015-03-17'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - jueves-13-de-octubre-nueva-reunion-del-grupo-de-usuarios-de-r-de-madrid.md
   - reunion-del-grupo-de-usuarios-de-r-de-madrid-14-de-enero-de-2016.md

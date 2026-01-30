@@ -17,7 +17,7 @@ title: Data Management básico con Pandas
 url: /blog/data-management-basico-con-pandas/
 ---
 
-Entrada dedicada al manejo de datos más básico con `Python` y `Pandas`, [es análoga a otra ya realizada con `dplyr` para `R`](https://analisisydecision.es/data-management-con-dplyr/). Sirve para tener en un vistazo las tareas más habituales que realizamos en el día a día con `Pandas`. Para aquel que se esté introduciendo al uso de `Python` puede ser de utilidad tener todo junto y más claro, a mi personalmente me sirve para no olvidar cosas que ya no uso. En una sola entrada recogemos las dudas más básicas cuando nos estamos iniciando con `Python`. Las tareas más comunes son:
+Entrada dedicada al manejo de datos más básico con `Python` y `Pandas`, [es análoga a otra ya realizada con `dplyr` para R](https://analisisydecision.es/data-management-con-dplyr/). Sirve para tener en un vistazo las tareas más habituales que realizamos en el día a día con `Pandas`. Para aquel que se esté introduciendo al uso de `Python` puede ser de utilidad tener todo junto y más claro, a mi personalmente me sirve para no olvidar cosas que ya no uso. En una sola entrada recogemos las dudas más básicas cuando nos estamos iniciando con `Python`. Las tareas más comunes son:
 
 - Seleccionar columnas con `python pandas`
 - Eliminar columnas con `python pandas`
@@ -95,7 +95,7 @@ df['sepal_length_tipi'] = df['sepal_length']/df['sepal_length'].mean()
 df['sepal_length_tipi'].describe()
 ```
 
-En este sentido destacaría el uso de la función de `numpy where`, el famoso `np.where` que trabaja igual que el `ifelse` de `R`.
+En este sentido destacaría el uso de la función de `numpy where`, el famoso `np.where` que trabaja igual que el `ifelse` de R.
 
 ```python
 import numpy as np

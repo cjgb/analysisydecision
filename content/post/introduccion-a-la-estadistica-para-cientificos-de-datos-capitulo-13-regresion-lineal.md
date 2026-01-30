@@ -100,13 +100,13 @@ cost_living %>% ggplot(aes(x = Rent.Index, y = Cost.of.Living.Index)) +
 
 ![](/images/2023/02/wp_editor_md_76170b5018700fbb15a99a43f1fa0d96.jpg)
 
-El método de mínimos cuadrados traza una función lineal que minimiza la distancia de todos los puntos presentes en los datos a esa función. No se entra en los matices algebraicos para la obtención de la recta de regresión ya que en `R` está implementado el método mediante la función `lm`.
+El método de mínimos cuadrados traza una función lineal que minimiza la distancia de todos los puntos presentes en los datos a esa función. No se entra en los matices algebraicos para la obtención de la recta de regresión ya que en R está implementado el método mediante la función `lm`.
 
 ```r
 modelo.1 <- lm(data = cost_living, formula = Cost.of.Living.Index ~ Rent.Index)
 ```
 
-Esta función es importante para conocer como se realizan los modelos en `R`. Evidentemente es necesario indicar los `data` de entrada pero también es necesario indicar la `formula`, de ahí la importancia de conocer como será el modelo matemático. Las `formula`s siempre son de la forma variable dependiente `~` variable/s independientes, en este caso es el modelo más sencillo posible `Cost.of.Living.Index ~ Rent.Index` pero se puede complicar y permitir crear modelos más complejos. Para describir el modelo se emplea la función `summary` sobre el objeto `modelo.1` creado con la función `lm`
+Esta función es importante para conocer como se realizan los modelos en R. Evidentemente es necesario indicar los `data` de entrada pero también es necesario indicar la `formula`, de ahí la importancia de conocer como será el modelo matemático. Las `formula`s siempre son de la forma variable dependiente `~` variable/s independientes, en este caso es el modelo más sencillo posible `Cost.of.Living.Index ~ Rent.Index` pero se puede complicar y permitir crear modelos más complejos. Para describir el modelo se emplea la función `summary` sobre el objeto `modelo.1` creado con la función `lm`
 
 ```r
 summary(modelo.1)
@@ -122,7 +122,7 @@ Inferencia sobre los parámetros. En el apartado de la inferencia se parte con e
 
 Diagnóstico del modelo. Además del $R^2$ es necesario validar y diagnosticar si se cumplen todas las hipótesis del modelo lineal:
 
-- Linealidad. Para estudiar esta situación en el modelo de regresión lineal simple puede servir el gráfico de puntos visto con anterioridad. En este primer ejemplo se va a emplear directamente la recta de regresión creada con el modelo. Para representar gráficamente esa recta es necesario `predict`, saber que valores está arrojando la recta de regresión y para ello en `R` está la función `predict` sobre el objeto `modelo.1` con la variable que participa en el modelo.
+- Linealidad. Para estudiar esta situación en el modelo de regresión lineal simple puede servir el gráfico de puntos visto con anterioridad. En este primer ejemplo se va a emplear directamente la recta de regresión creada con el modelo. Para representar gráficamente esa recta es necesario `predict`, saber que valores está arrojando la recta de regresión y para ello en R está la función `predict` sobre el objeto `modelo.1` con la variable que participa en el modelo.
 
 ```r
 estimacion.modelo.1 <- predict(object = modelo.1, data = cost_living)
@@ -238,13 +238,13 @@ cost_living %>% ggplot(aes(x = Cost.of.Living.Index)) + geom_density()
 
 ![](/images/2023/02/wp_editor_md_2ac5c719b375e997873d0843df022a08.jpg)
 
-La mera tramificación de la variable, convertir una variable numérica en un factor, está salvando la linealidad pero se está trabajando con más de un parámetro, concretamente con 4 más el término independiente. Ya no se tiene una regresión linea simple ahora se tiene una **regresión lineal múltiple** y un parámetro ha pasado a crear 4, pero, ¿por qué la salida de `R` ofrece 4 parámetros cuando se ha tramificado la variable en 5 partes? Porque 4 parámetros son suficientes.
+La mera tramificación de la variable, convertir una variable numérica en un factor, está salvando la linealidad pero se está trabajando con más de un parámetro, concretamente con 4 más el término independiente. Ya no se tiene una regresión linea simple ahora se tiene una **regresión lineal múltiple** y un parámetro ha pasado a crear 4, pero, ¿por qué la salida de R ofrece 4 parámetros cuando se ha tramificado la variable en 5 partes? Porque 4 parámetros son suficientes.
 
 El modelo planteado tendría la siguiente forma:
 
 $$Y = \\beta_0 + \\beta_1 \\cdot \\text{Rent.Index}_{1 \\le 15} + \\beta_2 \\cdot \\text{Rent.Index}_{16-30} + \\beta_3 \\cdot \\text{Rent.Index}_{31-45} + \\beta_4 \\cdot \\text{Rent.Index}_{46-60} + \\beta_5 \\cdot \\text{Rent.Index}\_{\\text{mas de 60}}$$
 
-Donde cada $X_i$ es una variable que toma valores 0 y 1 en función del nivel del factor que tiene cada observación. Pero la salida de `R` es:
+Donde cada $X_i$ es una variable que toma valores 0 y 1 en función del nivel del factor que tiene cada observación. Pero la salida de R es:
 
 ```r
 cost_living %>% ggplot(aes(x = Cost.of.Living.Index)) + geom_density()
@@ -330,7 +330,7 @@ qqnorm(cost_living$Cost.of.Living.Index)
 qqline(cost_living$Cost.of.Living.Index)
 ```
 
-Ya se dispone de un modelo con todos los parámetros significativos, aunque `Local.Purchasing.Power.Index` no sería significativa si se fija un umbral más bajo de 0.002 ya que quedaría fuera de la región de aceptación. Con el primer modelo y teniendo en cuenta el anterior estudio de la correlación se torna necesario analizar la posible presencia de multicolinealidad. Hay diversos métodos para realizar esta tarea y se opta por ilustrar el ejemplo con el método `VIF` (`Variance Inflation Factor`). Si hay multicolinealidad $[X^tX]=0$ está «inflando» la varianza, ¿cuánto infla la varianza una variable dentro del modelo? Para determinar como está afectando se va a utilizar la librería de `R` `car`
+Ya se dispone de un modelo con todos los parámetros significativos, aunque `Local.Purchasing.Power.Index` no sería significativa si se fija un umbral más bajo de 0.002 ya que quedaría fuera de la región de aceptación. Con el primer modelo y teniendo en cuenta el anterior estudio de la correlación se torna necesario analizar la posible presencia de multicolinealidad. Hay diversos métodos para realizar esta tarea y se opta por ilustrar el ejemplo con el método `VIF` (`Variance Inflation Factor`). Si hay multicolinealidad $[X^tX]=0$ está «inflando» la varianza, ¿cuánto infla la varianza una variable dentro del modelo? Para determinar como está afectando se va a utilizar la librería de R `car`
 
 ```r
 qqnorm(cost_living$Cost.of.Living.Index)

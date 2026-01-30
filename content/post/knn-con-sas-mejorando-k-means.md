@@ -22,7 +22,7 @@ url: /blog/knn-con-sas-mejorando-k-means/
 
 ![Imagen de previsualización de YouTube](https://img.youtube.com/vi/UqYde-LULfs/0.jpg)
 
-La clasificación por `k vecinos más cercanos` es EL MÉTODO supervisado no paramétrico. El `KNN`, si empleamos las siglas en inglés, clasifica las observaciones en función de su probabilidad de pertenecer a uno u otro grupo, en el video que encabeza la entrada queda muy bien explicado. El caso es que tenemos la posibilidad de realizar esta clasificación con `SAS STAT` y el `PROC DISCRIM` y me parece interesante dedicarle unas líneas. [Hace años ya hablamos de segmentación con `SAS`](https://analisisydecision.es/analisis-cluster-con-sas-la-importancia-de-las-semillas-en-las-k-medias/) y vamos a emplear los mismos datos para ilustrar esta entrada. Primero generamos un conjunto de datos con datos simulados de 3 esferas que clasificamos en 3 grupos:
+La clasificación por `k vecinos más cercanos` es EL MÉTODO supervisado no paramétrico. El `KNN`, si empleamos las siglas en inglés, clasifica las observaciones en función de su probabilidad de pertenecer a uno u otro grupo, en el video que encabeza la entrada queda muy bien explicado. El caso es que tenemos la posibilidad de realizar esta clasificación con `SAS STAT` y el `PROC DISCRIM` y me parece interesante dedicarle unas líneas. [Hace años ya hablamos de segmentación con SAS](https://analisisydecision.es/analisis-cluster-con-sas-la-importancia-de-las-semillas-en-las-k-medias/) y vamos a emplear los mismos datos para ilustrar esta entrada. Primero generamos un conjunto de datos con datos simulados de 3 esferas que clasificamos en 3 grupos:
 
 ```sas
 data pelota;

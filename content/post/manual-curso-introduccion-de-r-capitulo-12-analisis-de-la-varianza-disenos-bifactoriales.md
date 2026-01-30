@@ -20,11 +20,11 @@ title: 'Manual. Curso introducción de R. Capítulo 12: Análisis de la varianza
 url: /blog/manual-curso-introduccion-de-r-capitulo-12-analisis-de-la-varianza-disenos-bifactoriales/
 ---
 
-En esta nueva entrega del manual de `R` vamos a ver un `modelo ANOVA` que analiza dos `fuentes de variación`. Si recordamos en el `capítulo 11` estudiamos la `diferencia` entre los `tratamientos` que seguían determinados `pacientes` teníamos una `variable respuesta` en función de una `variable factor`, el `diseño factorial aleatorizado`. En este `caso` vamos a tener la `variable respuesta` en función de dos `factores` y podrá existir una `interacción` entre ambos. Con lo que la `tabla ANOVA` será del siguiente modo:
+En esta nueva entrega del manual de R vamos a ver un `modelo ANOVA` que analiza dos `fuentes de variación`. Si recordamos en el `capítulo 11` estudiamos la `diferencia` entre los `tratamientos` que seguían determinados `pacientes` teníamos una `variable respuesta` en función de una `variable factor`, el `diseño factorial aleatorizado`. En este `caso` vamos a tener la `variable respuesta` en función de dos `factores` y podrá existir una `interacción` entre ambos. Con lo que la `tabla ANOVA` será del siguiente modo:
 
 ![Figura 12.1](/images/2008/10/c121.JPG)
 
-Con ello el `modelo matemático` sería: `Y_ij = media + media_i + media_j + media_ij + e_ij`. Con las `hipótesis` de `suma` de los `coeficientes asociados` `igual` a 0 y `distribución normal del error`. Trabajemos con un ejemplo para conocer las `sentencias` de `R`:
+Con ello el `modelo matemático` sería: `Y_ij = media + media_i + media_j + media_ij + e_ij`. Con las `hipótesis` de `suma` de los `coeficientes asociados` `igual` a 0 y `distribución normal del error`. Trabajemos con un ejemplo para conocer las `sentencias` de R:
 
 `Ejemplo 12.1`:
 
@@ -32,7 +32,7 @@ Se pretende medir la `eficacia` de 4 `tipos` de `taladradoras` junto con 3 `tipo
 
 ![Figura 12.2](/images/2008/10/c122.JPG)
 
-Nuestro experimento tiene como `variable respuesta` la `capacidad de penetración` y en él intervienen 2 `factores`: la `taladradora` empleada y la `broca`. Así pues tenemos un `modelo bifactorial de efectos fijos`. El `modelo matemático` es: `y_ij = media + media_i + media_j + media_ij +error_ij i en (1,2,3,4) y j en (1,2,3)`. Donde `y_ij` es el valor de la `variable respuesta` para la `taladradora i` con la `broca j`, `media` es la `media global`, `media_i` es la `media` para la `taladradora i-ésima`, `media_j` es la `media` para la `taladradora j-ésima`, `media_ij` es la `media` de la `interacción` entre los `factores` y el `error_ij` es el `error`. Las `condiciones` son que la `suma` de las `medias` sea 0 y que el `error` se distribuye normalmente con `media` 0. Introduzcamos los `datos` en `R`:
+Nuestro experimento tiene como `variable respuesta` la `capacidad de penetración` y en él intervienen 2 `factores`: la `taladradora` empleada y la `broca`. Así pues tenemos un `modelo bifactorial de efectos fijos`. El `modelo matemático` es: `y_ij = media + media_i + media_j + media_ij +error_ij i en (1,2,3,4) y j en (1,2,3)`. Donde `y_ij` es el valor de la `variable respuesta` para la `taladradora i` con la `broca j`, `media` es la `media global`, `media_i` es la `media` para la `taladradora i-ésima`, `media_j` es la `media` para la `taladradora j-ésima`, `media_ij` es la `media` de la `interacción` entre los `factores` y el `error_ij` es el `error`. Las `condiciones` son que la `suma` de las `medias` sea 0 y que el `error` se distribuye normalmente con `media` 0. Introduzcamos los `datos` en R:
 
 ```r
 datos<-c(66.15,70.62,63,71.4,75.97,68.25,73.5,78.11,71.4,71.4,78.11,66.15,
@@ -55,7 +55,7 @@ interaction.plot(broca,taladradora,datos) grid()
 
 ![c124.jpeg](/images/2008/10/c124.thumbnail.jpeg "c124.jpeg")
 
-Como se puede observar en el `gráfico` se produce `interacción` ya que se hay `cruces` entre las `mediciones` de la `penetración` por `taladradora` y `broca`. Luego el `diseño` es `bifactorial` con `interacción` entre los `factores`. Realicemos el `modelo` con `R`:
+Como se puede observar en el `gráfico` se produce `interacción` ya que se hay `cruces` entre las `mediciones` de la `penetración` por `taladradora` y `broca`. Luego el `diseño` es `bifactorial` con `interacción` entre los `factores`. Realicemos el `modelo` con R:
 
 ```r
 anova.12.1 <- aov(datos~broca*taladradora,data=estudio) #modelo con interacción

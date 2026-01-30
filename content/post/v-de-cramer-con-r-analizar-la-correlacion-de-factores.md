@@ -17,7 +17,7 @@ title: V de Cramer con R. Analizar la correlación de factores
 url: /blog/v-de-cramer-con-r-analizar-la-correlacion-de-factores/
 ---
 
-Cómo calcular la **`V de Cramer` con `R`** , una pregunta que me han hecho recientemente. Sirve para medir la asociación entre factores. Además esta entrada es útil para retomar el paquete `vcd` de `R` que nos permite analizar y _`Visualizar Categorical Data`_. Partimos de un ejemplo muy sencillo:
+Cómo calcular la **`V de Cramer` con R** , una pregunta que me han hecho recientemente. Sirve para medir la asociación entre factores. Además esta entrada es útil para retomar el paquete `vcd` de R que nos permite analizar y _`Visualizar Categorical Data`_. Partimos de un ejemplo muy sencillo:
 
 ```r
 datos = read.csv("http://www.businessandeconomics.mq.edu.au/our_departments/Applied_Finance_and_Actuarial_Studies/acst_docs/glms_for_insurance_data/data/car.csv")

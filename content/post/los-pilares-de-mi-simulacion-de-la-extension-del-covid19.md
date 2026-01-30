@@ -25,7 +25,7 @@ No debería publicar esta simulación de la extensión del COVID19 o coronavirus
 - [Datos del padrón municipal](https://www.ine.es/censos2011_datos/cen11_datos_resultados_seccen.htm)
 - [Datos de la cartografía digital por sección censal](https://analisisydecision.es/cartografia-digitalizada-de-espana-por-seccion-censal/)
 
-Y allá voy a comentaros que estoy montando. Se trata de poner a los 47 millones de españoles en una tabla, situarlos en unas coordenadas y dadas 5 personas iniciales ver como se propaga el virus municipio a municipio y, en 98 días, determinar cuantas personas pueden estar contagiadas, cuantas enfermas, cuantas sanas o cuantas desgraciadamente muertas. Esto no es que tenga lagunas, es que está inventado, pero no os creíis que las cifras oficiales son más fiables. Evidentemente, lo voy a hacer con `R` y `dplyr`. No lo subo a `git` porque el equipo que uso tiene un usuario de github que no es el adecuado, pero ya sabéis que el código está a vuestra disposición.
+Y allá voy a comentaros que estoy montando. Se trata de poner a los 47 millones de españoles en una tabla, situarlos en unas coordenadas y dadas 5 personas iniciales ver como se propaga el virus municipio a municipio y, en 98 días, determinar cuantas personas pueden estar contagiadas, cuantas enfermas, cuantas sanas o cuantas desgraciadamente muertas. Esto no es que tenga lagunas, es que está inventado, pero no os creíis que las cifras oficiales son más fiables. Evidentemente, lo voy a hacer con R y `dplyr`. No lo subo a `git` porque el equipo que uso tiene un usuario de github que no es el adecuado, pero ya sabéis que el código está a vuestra disposición.
 
 ### Creación de la tabla de personas edad
 

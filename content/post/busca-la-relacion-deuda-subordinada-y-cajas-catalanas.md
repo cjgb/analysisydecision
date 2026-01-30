@@ -4,6 +4,7 @@ categories:
   - banca
 date: '2009-02-18'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - lecciones-de-economia-de-un-ignorante-la-caixa-a-colocar-preferentes.md
   - participaciones-preferentes-de-las-cajas-de-ahorro.md

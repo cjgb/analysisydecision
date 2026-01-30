@@ -26,7 +26,7 @@ title: Trucos SAS. Eliminación de espacios en blanco
 url: /blog/trucos-sas-eliminacion-de-espacios-en-blanco/
 ---
 
-Truco `SAS` práctico para aquellos que os estáis iniciando en el uso de las **funciones de texto con `SAS`**. Se trata de **eliminar aquellos espacios en blanco que no son necesarios en una variable**. Quería plantearos las posibles soluciones que se me han ido ocurriendo. Algunas de ellas no son eficientes pero es necesario que dispongáis de todas. En la línea habitual planteo un ejemplo para que lo ejecutéis y así podáis analizar los resultados:
+Truco SAS práctico para aquellos que os estáis iniciando en el uso de las **funciones de texto con SAS**. Se trata de **eliminar aquellos espacios en blanco que no son necesarios en una variable**. Quería plantearos las posibles soluciones que se me han ido ocurriendo. Algunas de ellas no son eficientes pero es necesario que dispongáis de todas. En la línea habitual planteo un ejemplo para que lo ejecutéis y así podáis analizar los resultados:
 
 ```sas
 data ejemplo;

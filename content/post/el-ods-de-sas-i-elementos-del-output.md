@@ -14,19 +14,19 @@ related:
 tags:
   - formación
   - sas
-title: El `ODS` de `SAS` (I). Elementos del `OUTPUT`
+title: El `ODS` de SAS (I). Elementos del `OUTPUT`
 url: /blog/el-ods-de-sas-i-elementos-del-output/
 ---
 
-Hoy comenzaré una serie de mensajes dedicados al `ODS` (`Output Delivery System`) de `SAS`. Este mecanismo de `SAS` nos permite un uso más eficiente del `OUTPUT` de nuestros pasos `PROC` además podemos crear Excel (como ya vimos), crear `dataset`, no generar salidas,… Antes `SAS` nos ofrecia un `texto plano` en la ventana `OUTPUT`, ahora generamos `documentos sofisticados`. En tres entregas veremos:
-\*Trazar el `OUTPUT` de `SAS`
-\*`Datasets` de salidas de `SAS`
-\*Documentos con nuestras salidas de `SAS`:
+Hoy comenzaré una serie de mensajes dedicados al `ODS` (`Output Delivery System`) de SAS. Este mecanismo de SAS nos permite un uso más eficiente del `OUTPUT` de nuestros pasos `PROC` además podemos crear Excel (como ya vimos), crear `dataset`, no generar salidas,… Antes SAS nos ofrecia un `texto plano` en la ventana `OUTPUT`, ahora generamos `documentos sofisticados`. En tres entregas veremos:
+\*Trazar el `OUTPUT` de SAS
+\*`Datasets` de salidas de SAS
+\*Documentos con nuestras salidas de SAS:
 -`HTML`
 -`PDF`
-Como complemento a estas entregas es posible que redacte un mensaje con algunos ejemplos de uso del `PROC TEMPLATE`. En esta primera capítulo dedicado al `ODS` estudiaremos algunas salidas `SAS` y con ellas, sabremos identificar la estructura del `OUTPUT`.
+Como complemento a estas entregas es posible que redacte un mensaje con algunos ejemplos de uso del `PROC TEMPLATE`. En esta primera capítulo dedicado al `ODS` estudiaremos algunas salidas SAS y con ellas, sabremos identificar la estructura del `OUTPUT`.
 
-Si ejecutamos en `SAS` el siguiente código:
+Si ejecutamos en SAS el siguiente código:
 
 ```sas
 data uno; do i=1 to 20000;
@@ -62,7 +62,7 @@ Generamos un `dataset` aleatorio de muestra sobre el que hacemos un `univariante
 \*`Table of num_productos by num_cargos`
 \*`Statistics for Table of num_productos by num_cargos`
 
-En total tenemos `7 OUTPUT`. Bien, cada `OUTPUT` tiene una «`definición interna`» de `SAS`, para conocerla emplearemos el `ODS TRACE`:
+En total tenemos `7 OUTPUT`. Bien, cada `OUTPUT` tiene una «`definición interna`» de SAS, para conocerla emplearemos el `ODS TRACE`:
 
 ```sas
 ods trace on;
@@ -222,4 +222,4 @@ ods trace off;
 
 33 `ods trace off`;
 
-Con `ODS TRACE ON` activamos el "`Trace Record`" de `SAS`. Nos añade `7 elementos` al `OUTPUT` y para cada `elemento` tenemos el `name`, la `label` que le asigna `SAS` y el `catalogo` donde almacena cada `elemento`. Con `TRACE` empezamos a conocer mejor una salida `SAS` y sobre todo identificamos los `names` de los `elementos` que componen una salida `SAS`. Con ello y con otras herramientas de `ODS` podemos configurar mejores y más `optim`as `tablas de resultados`.
+Con `ODS TRACE ON` activamos el "`Trace Record`" de SAS. Nos añade `7 elementos` al `OUTPUT` y para cada `elemento` tenemos el `name`, la `label` que le asigna SAS y el `catalogo` donde almacena cada `elemento`. Con `TRACE` empezamos a conocer mejor una salida SAS y sobre todo identificamos los `names` de los `elementos` que componen una salida SAS. Con ello y con otras herramientas de `ODS` podemos configurar mejores y más `optim`as `tablas de resultados`.

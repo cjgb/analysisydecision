@@ -4,6 +4,7 @@ categories:
   - opinión
 date: '2008-10-20'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - lecciones-de-economia-de-un-ignorante-la-caixa-a-colocar-preferentes.md
   - una-fabulilla-sobre-prim-con-multiples-moralejas.md

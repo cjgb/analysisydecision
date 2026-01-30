@@ -5,6 +5,7 @@ categories:
   - monográficos
 date: '2011-04-21'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - lecciones-de-economia-de-un-ignorante-espana-esta-salvando-a-alemania-pero-alemania-no-esta-salvando-europa.md
   - lecciones-de-economia-de-un-ignorante-solucion-trabajar-mas-y-cobrar-menos.md

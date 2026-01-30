@@ -18,9 +18,9 @@ title: Proyecto. `Text Mining` con Excel (III)
 url: /blog/proyecto-text-mining-con-excel-iii/
 ---
 
-![pyt_3_entradas.JPG](/images/2008/05/pyt_3_entradas.JPG "pyt_3_entradas.JPG")En la anterior entrega del seguimiento de mi proyecto de minería de textos con Excel creé un proceso que leía búsquedas de `Google` y las almacenaba en un fichero Excel que denominaba `base`. El problema que me encontré es que generaba un Excel con una gran cantidad de hojas y posteriormente tenía que leerlas y extraer la información de cada una. Esta metodología no me parece eficiente, es mejor leer una búsqueda, extraer la información relevante de ella e introducirla en mi tablón de datos.
+![pyt_3_entradas.JPG](/images/2008/05/pyt_3_entradas.JPG "pyt_3_entradas.JPG")En la anterior entrega del seguimiento de mi proyecto de minería de textos con Excel creé un proceso que leía búsquedas de Google y las almacenaba en un fichero Excel que denominaba `base`. El problema que me encontré es que generaba un Excel con una gran cantidad de hojas y posteriormente tenía que leerlas y extraer la información de cada una. Esta metodología no me parece eficiente, es mejor leer una búsqueda, extraer la información relevante de ella e introducirla en mi tablón de datos.
 
-Para extraer la información relevante de cada búsqueda he de conocer muy bien como se almacena cada página web de `Google` en Excel. En un primer vistazo obtengo esto:
+Para extraer la información relevante de cada búsqueda he de conocer muy bien como se almacena cada página web de Google en Excel. En un primer vistazo obtengo esto:
 
 ![pyt_3_entradas.JPG](/images/2008/05/pyt_3_entradas.JPG "pyt_3_entradas.JPG")
 
@@ -71,7 +71,7 @@ cierra
 
 End Sub
 
-He creado una macro que `cierra` sin guardar `SaveChanges` hojas de cálculo llamadas `search` para evitar abrir ficheros con el mismo nombre y luego he abierto dos búsquedas de `Google` con «`formacion business intelligence`» y las he añadido al archivo que me sirve de `base`: `min.xls` Es evidente que este código puede recibir parámetros e íncides para funcionar de forma automática.
+He creado una macro que `cierra` sin guardar `SaveChanges` hojas de cálculo llamadas `search` para evitar abrir ficheros con el mismo nombre y luego he abierto dos búsquedas de Google con «`formacion business intelligence`» y las he añadido al archivo que me sirve de `base`: `min.xls` Es evidente que este código puede recibir parámetros e íncides para funcionar de forma automática.
 
 En un primer acercamiento puede ser interesante crear `indices` para las siguientes partes de mi código:
 
@@ -79,7 +79,7 @@ En un primer acercamiento puede ser interesante crear `indices` para las siguien
 
 `Workbooks.Open Filename:="http://www.google.es/search?q=formacion+business+intelligence&hl=es&start=10&sa=N"`
 
-El parámetro `start=` ha de ir creciendo de `10` en `10` porque marca el número de entrada de la búsqueda. Podemos modificar las opiones de `Google`, pero de momento las mantenemos. Otra parte del código que puede ser susceptible de indizar será:
+El parámetro `start=` ha de ir creciendo de `10` en `10` porque marca el número de entrada de la búsqueda. Podemos modificar las opiones de Google, pero de momento las mantenemos. Otra parte del código que puede ser susceptible de indizar será:
 
 `After:=Workbooks("min.xls").Sheets(1)`
 

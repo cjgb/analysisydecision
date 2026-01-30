@@ -4,6 +4,7 @@ categories:
   - estadística
 date: '2011-03-16'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - la-medicina-genomica-y-los-modelos-predictivos.md
   - dos-vecinos-muy-proximos-de-la-blogosfera.md

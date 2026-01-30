@@ -20,7 +20,7 @@ title: Trucos SAS. Operar con fechas YYYYMM típicas de particiones Oracle
 url: /blog/trucos-sas-operar-con-fechas-yyyymm-tipicas-de-particiones-oracle/
 ---
 
-Este `truco` va `orientado` a `programadores SAS` que estén `habituados` a trabajar con `Oracle`. El `SAS Tip` de hoy nos permite `parametrizar` a la perfección la `lectura` de `tablas históricas particionadas`. En estos `casos` podemos crear `parámetros` con `macrovariables` de `SAS` para leer las `tablas Oracle` sin `necesidad` de modificar `manualmente` las `fechas` de `partición`. Un `ejemplo`:
+Este `truco` va `orientado` a `programadores SAS` que estén `habituados` a trabajar con `Oracle`. El `SAS Tip` de hoy nos permite `parametrizar` a la perfección la `lectura` de `tablas históricas particionadas`. En estos `casos` podemos crear `parámetros` con `macrovariables` de SAS para leer las `tablas Oracle` sin `necesidad` de modificar `manualmente` las `fechas` de `partición`. Un `ejemplo`:
 
 1\. sin `parametrizar`:
 

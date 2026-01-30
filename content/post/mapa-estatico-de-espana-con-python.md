@@ -22,7 +22,7 @@ Faltaban `mapas de España con Python` en el blog y hoy ilustro como hacerlos co
 
 ### `Shapefile`
 
-El primer `paso` para la realización del `mapa` es la [obtención del `shapefile` desde `GADM`](https://gadm.org/download_country_v3.html). No he encontrado un `paquete de Python` que realice esta `tarea` como sucede con `R`. Una `vez` lo hayamos descargado empezamos creando nuestro `data frame` con la información del `shape file`:
+El primer `paso` para la realización del `mapa` es la [obtención del `shapefile` desde `GADM`](https://gadm.org/download_country_v3.html). No he encontrado un `paquete de Python` que realice esta `tarea` como sucede con R. Una `vez` lo hayamos descargado empezamos creando nuestro `data frame` con la información del `shape file`:
 
 ```python
 import geopandas as gpd

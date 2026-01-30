@@ -22,13 +22,13 @@ title: Regresión ridge o regresión contraída con R
 url: /blog/regresion-ridge-o-contraida-con-r/
 ---
 
-Por lo visto no he estudiado lo suficiente. Tengo que redimirme y estudiar este verano determinadas técnicas avanzadas de predicción. Fundamentalmente tengo que trabajar con `R` y tener determinados conocimientos teóricos sobre estas técnicas. Así que he pensado que, a la vez que estudio yo, estudian todos mis lectores. Además es probable que genere debate.
+Por lo visto no he estudiado lo suficiente. Tengo que redimirme y estudiar este verano determinadas técnicas avanzadas de predicción. Fundamentalmente tengo que trabajar con R y tener determinados conocimientos teóricos sobre estas técnicas. Así que he pensado que, a la vez que estudio yo, estudian todos mis lectores. Además es probable que genere debate.
 
 En esta primera entrega vamos a tratar la **regresión contraída o regresión ridge**. [En el blog ya hablamos del problema que suponía la multicolinealidad](https://analisisydecision.es/el-problema-de-la-multicolinealidad-intuirlo-y-detectarlo/) cuando tenemos este problema una de las posibles soluciones es la regresión contraída o regresión ridge. Como ya dijimos el modelo lineal se expresa como $Y = X \\cdot \\beta + \\text{Error}$ la estimación de nuestros parámetros $\\beta$ por mínimos cuadrados ordinarios es $\\beta = \\text{inv}(X'X) \\cdot X'Y$ **cuando $(X'X)$ no es invertible tenemos un problema**. La regresión ridge plantea una solución a este problema con unos parámetros $\\beta\_{\\text{contraidos}} = \\text{inv}(X'X + \\lambda I) \\cdot X'Y$ si $\\lambda$ es 0 estamos ante mínimos cuadrados ordinarios, en otro caso estamos ante un estimador sesgado de $\\beta$. Este estimador sesgado es solución al problema de mínimos cuadrados penalizados y lo que hace es contraer los $\\beta$ en torno a 0. En resumen, metemos sesgo pero reducimos varianza.
 
 Para llevar a buen puerto esta técnica el talento reside en encontrar ese $\\lambda$ que contrae mis estimaciones. Para encontrarlo se utiliza un criterio generalizado de validación cruzada, _generalized cross-validation_ (`GCV`). El proceso fija un rango de posibles $\\lambda$ entre `[0, c]` y calcula la validación cruzada `CV`. El $\\lambda$ óptimo es aquel que minimiza el `CV`. Con él podemos obtener la solución a los mínimos cuadrados contraídos.
 
-En cuanto al trabajo con `R` vamos a emplear documentación que podéis encontrar aquí:
+En cuanto al trabajo con R vamos a emplear documentación que podéis encontrar aquí:
 
 http://www-stat.stanford.edu/~tibs/ElemStatLearn/
 

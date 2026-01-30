@@ -18,7 +18,7 @@ title: 'Manual. Curso introducción de R. Capítulo 6: Funciones de estadística
 url: /blog/manual-curso-introduccion-de-r-capitulo-6-funciones-de-estadistica-descriptiva/
 ---
 
-En `R` trabajaremos con objetos y funciones. En capítulos anteriores hemos empezado a crear objetos, fundamentalmente vectores y matrices. En la presente entrega vamos a estudiar las funciones básicas de estadística descriptiva.
+En R trabajaremos con objetos y funciones. En capítulos anteriores hemos empezado a crear objetos, fundamentalmente vectores y matrices. En la presente entrega vamos a estudiar las funciones básicas de estadística descriptiva.
 
 Como funciones de medida de tendencia y localización tendremos:
 
@@ -100,7 +100,7 @@ sd(alturas) #desviación estándar
 0.1149308
 ```
 
-Si deseamos la varianza hemos de crear en `R` una función que nos calcule $(n-1)/n\] · ext{cuasivarianza}$:
+Si deseamos la varianza hemos de crear en R una función que nos calcule $(n-1)/n\] · ext{cuasivarianza}$:
 
 ```r
 varianza<-function(x) { ((length(x)-1)/length(x))*var(x) } #creamos la función varianza
@@ -114,7 +114,7 @@ varianza(alturas)
 0.01200826
 ```
 
-Para crear funciones en `R` empleamos `function( <parametro1>,…<parametroN>)` y para llamarla hacemos lo mismo que hacemos con las funciones habituales. Esta es la forma de programar con `R`. Del mismo modo si deseamos medir el coeficiente de curtosis (momento de orden 4) para medir la asimetría hemos de crear la función:
+Para crear funciones en R empleamos `function( <parametro1>,…<parametroN>)` y para llamarla hacemos lo mismo que hacemos con las funciones habituales. Esta es la forma de programar con R. Del mismo modo si deseamos medir el coeficiente de curtosis (momento de orden 4) para medir la asimetría hemos de crear la función:
 
 ```r
 kurtosis=function(x) {
@@ -162,4 +162,4 @@ descriptivos(alturas)
 
 Creamos la función `descriptivos` que recibirá un parámetro vector. Obtenemos algunas medidas descriptivas que almacenamos en otro vector y asignamos los nombres de los valores con la función `names` , por último simplemente vemos el vector.
 
-Comenzamos a familiarizarnos con el uso de vectores y funciones en `R`. En la siguiente entrega empezaremos a crear estructuras de datos más complejas y realizaremos operaciones con vectores para tomar contacto con los operadores matemáticos y lógicos. Por supuesto, si tenéis alguna duda o sugerencia, estoy en `rvaquerizo@analisisydecision.es`
+Comenzamos a familiarizarnos con el uso de vectores y funciones en R. En la siguiente entrega empezaremos a crear estructuras de datos más complejas y realizaremos operaciones con vectores para tomar contacto con los operadores matemáticos y lógicos. Por supuesto, si tenéis alguna duda o sugerencia, estoy en `rvaquerizo@analisisydecision.es`

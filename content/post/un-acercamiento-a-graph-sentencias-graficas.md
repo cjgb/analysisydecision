@@ -31,7 +31,7 @@ Después tenemos que conocer las sentencias de `GRAPH` para dar forma a nuestros
 `SYMBOL`
 `TITLE`, `FOOTNOTE` y `NOTE`
 
-En la ayuda y en el support de `SAS` tendréis mas información sobre ellas. Pero, como es habitual, en estas líneas vais a ver algunos ejemplos con la sintaxis más común. El dataset inicial con datos aleatorios contiene datos de altura, peso y sexo y se genera mediante el siguiente código:
+En la ayuda y en el support de SAS tendréis mas información sobre ellas. Pero, como es habitual, en estas líneas vais a ver algunos ejemplos con la sintaxis más común. El dataset inicial con datos aleatorios contiene datos de altura, peso y sexo y se genera mediante el siguiente código:
 
 ```sas
 data uno;
@@ -85,7 +85,7 @@ symbol `interpol=boxt` `co=red` `bwidth=25`;
 `run;quit;`
 ```
 
-En la sentencia `SYMBOL` podemos mejorar la apariencia de nuestros gráficos. Podemos poner líneas, símbolos, escalones,… aconsejo el estudio de la ayuda de `SAS` para ver que es lo que mejor se adecua a nuestras necesidades. En este caso empleamos `BOXT` que nos realiza un grafico de cajas. En `CO` damos el color de las líneas y con `BWIDTH` damos el acho a las cajas. De momento desconocemos que unidad de medida empleamos para dar tamaños. Con `GOPTIONS` la podemos especificar:
+En la sentencia `SYMBOL` podemos mejorar la apariencia de nuestros gráficos. Podemos poner líneas, símbolos, escalones,… aconsejo el estudio de la ayuda de SAS para ver que es lo que mejor se adecua a nuestras necesidades. En este caso empleamos `BOXT` que nos realiza un grafico de cajas. En `CO` damos el color de las líneas y con `BWIDTH` damos el acho a las cajas. De momento desconocemos que unidad de medida empleamos para dar tamaños. Con `GOPTIONS` la podemos especificar:
 
 ```sas
 goptions reset=all;
@@ -117,4 +117,4 @@ goptions `GUNIT=pct`
 `title;`
 ```
 
-En `GOPTIONS` especificamos la unidad con la que trabajamos nuestro grafico, en el caso ce `GUNIT=pct` el porcentaje total del grafico. En `HTITLE` damos tamaño al titulo y en `HTEXT` al texto. Después ponemos dos opciones que le indican al sistema que trabajamos en Windows, tened en cuenta esto para dar un tamaño adecuado a las representaciones. En `ftext=swiss` especificamos la familia de fuentes y `cback=grey` da color al fondo. Poco a poco damos mas funcionalidades y nuestros gráficos toman mejor aspecto, aunque en el caso que nos ocupa no sea un grafico muy profesional precisamente. Dejamos `LEGEND` y `PATTERN` para siguientes mensajes porque me interesa de crear algún programa más complejo que os sirva de referencia para el uso de `PATTERN` fundamentalmente. Ya os digo que paso de puntillas por la mayoría de las posibilidades de `SAS` pero me gustaría que se perdiera el miedo a usar su motor de gráficos. Es cierto que el motor de `R` es mejor y que Excel es más sencillo. También tendréis ejemplos. Saludos.
+En `GOPTIONS` especificamos la unidad con la que trabajamos nuestro grafico, en el caso ce `GUNIT=pct` el porcentaje total del grafico. En `HTITLE` damos tamaño al titulo y en `HTEXT` al texto. Después ponemos dos opciones que le indican al sistema que trabajamos en Windows, tened en cuenta esto para dar un tamaño adecuado a las representaciones. En `ftext=swiss` especificamos la familia de fuentes y `cback=grey` da color al fondo. Poco a poco damos mas funcionalidades y nuestros gráficos toman mejor aspecto, aunque en el caso que nos ocupa no sea un grafico muy profesional precisamente. Dejamos `LEGEND` y `PATTERN` para siguientes mensajes porque me interesa de crear algún programa más complejo que os sirva de referencia para el uso de `PATTERN` fundamentalmente. Ya os digo que paso de puntillas por la mayoría de las posibilidades de SAS pero me gustaría que se perdiera el miedo a usar su motor de gráficos. Es cierto que el motor de R es mejor y que Excel es más sencillo. También tendréis ejemplos. Saludos.

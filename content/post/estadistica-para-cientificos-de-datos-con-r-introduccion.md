@@ -12,7 +12,7 @@ related:
   - nuevo-curso-de-estadistica-con-r.md
 tags:
   - formación
-title: Introducción a la Estadística para Científicos de Datos con `R`. Capítulo 1. Introducción
+title: Introducción a la Estadística para Científicos de Datos con R. Capítulo 1. Introducción
 url: /blog/estadistica-para-cientificos-de-datos-con-r-introduccion/
 ---
 
@@ -47,18 +47,18 @@ Aunque se hará referencia a las publicaciones concretas, las cuentas de `Twitte
 Esta serie monográfica será similar a la `formación` que he impartido en `empresas`, `universidades` y `escuelas de negocio` desde hace algunos `años`. Los `capítulos` de los que se `compone` este `ensayo` son:
 
 - `Datos`
-- `Manejo de datos` con `R`
-- `Uniones de tablas` con `R`
+- `Manejo de datos` con R
+- `Uniones de tablas` con R
 - `Representar datos` con `ggplot`
 - `Análisis univariable`
 - `Problemas` que `plante`an las `variables`
 - …
 
-Visión completamente `práctica` y desde el `punto de vista frecuente` que será distinta a lo que se puede encontrar en otros `foros`. Cada tema tendrá una `sección descriptiva` y una `sección práctica` con `R`.
+Visión completamente `práctica` y desde el `punto de vista frecuente` que será distinta a lo que se puede encontrar en otros `foros`. Cada tema tendrá una `sección descriptiva` y una `sección práctica` con R.
 
 ## Entorno de trabajo
 
-Se asume un `conocimiento básico` de `R` y su `entorno`, aunque no es necesario ser un `usuario avanzado`. Como se hizo mención entre los `objetivos` está el `contar historias` con la `Estadística` desde otro `punto de vista` y para ello la `herramienta` con la que se va a `contar esta misma historia` es `Markdown` desde `RStudio` a través de la `librería bookdown` por este motivo es necesario disponer de [`RStudio`](https://www.rstudio.com/) e instalar las `librerías` necesarias para crear `Markdown`. Los `paquetes` que se van a emplear a lo largo del `curso` serán:
+Se asume un `conocimiento básico` de R y su `entorno`, aunque no es necesario ser un `usuario avanzado`. Como se hizo mención entre los `objetivos` está el `contar historias` con la `Estadística` desde otro `punto de vista` y para ello la `herramienta` con la que se va a `contar esta misma historia` es `Markdown` desde `RStudio` a través de la `librería bookdown` por este motivo es necesario disponer de [`RStudio`](https://www.rstudio.com/) e instalar las `librerías` necesarias para crear `Markdown`. Los `paquetes` que se van a emplear a lo largo del `curso` serán:
 
 - `readxl`
 - `tidyverse`
@@ -73,7 +73,7 @@ Se asume un `conocimiento básico` de `R` y su `entorno`, aunque no es necesario
 - `knitr`
 - `bookdown`
 
-Estas `librerías` de `R` se emplearán en `casos prácticos` pero no son necesarias:
+Estas `librerías` de R se emplearán en `casos prácticos` pero no son necesarias:
 
 - `h2o`
 - `e1071`

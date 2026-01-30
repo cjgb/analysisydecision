@@ -20,7 +20,7 @@ title: Gráficos de densidades con SAS y el PROC KDE
 url: /blog/graficos-de-densidades-con-sas-y-el-PROC KDE/
 ---
 
-![histogram1.png](/images/2010/06/histogram1.png "histogram1.png")El `PROC KDE` de `SAS` está incluido en el módulo `SAS/STAT`. Es un procedimiento que nos permite estudiar gráficamente las distribuciones de variables continuas. Lo que nos produce son gráficos de densidades. Para seguir el ejemplo nos vamos a ir a [Yahoo Finance ](http://es.finance.yahoo.com/q/hp?s=%5EIBEX)y descargarnos un evolutivo del IBEX de los últimos 3 meses (yo realizo este proceso con Excel), una vez tengamos el `dataset` creado, para el análisis de la densidad univariante podemos hacer:
+![histogram1.png](/images/2010/06/histogram1.png "histogram1.png")El `PROC KDE` de SAS está incluido en el módulo `SAS/STAT`. Es un procedimiento que nos permite estudiar gráficamente las distribuciones de variables continuas. Lo que nos produce son gráficos de densidades. Para seguir el ejemplo nos vamos a ir a [Yahoo Finance ](http://es.finance.yahoo.com/q/hp?s=%5EIBEX)y descargarnos un evolutivo del IBEX de los últimos 3 meses (yo realizo este proceso con Excel), una vez tengamos el `dataset` creado, para el análisis de la densidad univariante podemos hacer:
 
 ```sas
 ods graphics on;
@@ -44,7 +44,7 @@ Tenemos los siguientes gráficos:
 
 ![densityoverlayplot1.png](/images/2010/06/densityoverlayplot1.thumbnail.png "densityoverlayplot1.png")![histogram1.png](/images/2010/06/histogram1.thumbnail.png "histogram1.png")![histogramdensity1.png](/images/2010/06/histogramdensity1.thumbnail.png "histogramdensity1.png")
 
-`KDE` es uno de los procedimientos que trabajan con gráficos de `ODS`. Ya hemos hecho mención al cambio de filosofía de algunos procedimientos gráficos en `SAS`. Yo me atrevería a decir que los procedimientos clásicos tienen una curva de parendizaje muy complicada pero los procedimientos de `ODS` empiezan a crear gráficos más que interesantes con una sintaxis más sencilla. Para los análisis univariantes yo prefiero el `SGPLOT`. Pero si en algo destaca `KDE` es en los gráficos de densidades bivariables. Ejecutemos:
+`KDE` es uno de los procedimientos que trabajan con gráficos de `ODS`. Ya hemos hecho mención al cambio de filosofía de algunos procedimientos gráficos en SAS. Yo me atrevería a decir que los procedimientos clásicos tienen una curva de parendizaje muy complicada pero los procedimientos de `ODS` empiezan a crear gráficos más que interesantes con una sintaxis más sencilla. Para los análisis univariantes yo prefiero el `SGPLOT`. Pero si en algo destaca `KDE` es en los gráficos de densidades bivariables. Ejecutemos:
 
 ```sas
 ods graphics on;

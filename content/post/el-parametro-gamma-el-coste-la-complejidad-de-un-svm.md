@@ -41,7 +41,7 @@ Un menor `gamma` implica una mayor `distancia` entre las `observaciones` que sep
 ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/9b129b86be238293edd3331fac8937f0311c69a5)
 El `ejercicio teórico` es muy `radical`, pero también observamos como a mayor `gamma` las `predicciones` están menos `suavizadas`. Tenemos estos dos `parámetros` y la pregunta sería ¿cuál es la mejor elección? Dónde está el mejor `punto` para obtener un buen resultado en este `trueque` de `sesgo-varianza`. De momento no sé deciros, pero estoy con ello.
 
-Evidentemente todo este `ejercicio teórico` tan `radical` está hecho con `datos aleatorios` en `R`, el código empleado es:
+Evidentemente todo este `ejercicio teórico` tan `radical` está hecho con `datos aleatorios` en R, el código empleado es:
 
 ```r
 library(ggplot2)

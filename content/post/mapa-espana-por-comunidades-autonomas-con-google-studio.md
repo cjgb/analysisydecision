@@ -49,6 +49,6 @@ Ya hemos actualizado los datos por Comunidad Autónoma solo tenemos que actualiz
 
 ![](/images/2020/09/Actualizar-Data-Studio.png)
 
-Ahora ya tenemos nuestro mapa actualizado con los datos Google Sheet. Podemos editar este mapa y dar el formato deseado. Y aquí insisto en que dupliquéis la hoja y cambiéis el origen de datos con vuestra propia `Google Sheet`, como no confío mucho en vosotros velaré porque nadie «rompa» el mapa durante un tiempo. No soy capaz de hacer este proceso como una aplicación donde subís vuestros datos y se obtiene el mapa, a ver si me oyen en `Google` y me ayudan porque me está costando.
+Ahora ya tenemos nuestro mapa actualizado con los datos Google Sheet. Podemos editar este mapa y dar el formato deseado. Y aquí insisto en que dupliquéis la hoja y cambiéis el origen de datos con vuestra propia `Google Sheet`, como no confío mucho en vosotros velaré porque nadie «rompa» el mapa durante un tiempo. No soy capaz de hacer este proceso como una aplicación donde subís vuestros datos y se obtiene el mapa, a ver si me oyen en Google y me ayudan porque me está costando.
 
 Si funciona subiré más mapas con `Data Studio`. Saludos.

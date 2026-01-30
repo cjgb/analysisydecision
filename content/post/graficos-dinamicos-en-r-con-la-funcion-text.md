@@ -118,4 +118,4 @@ text(10,9.5,"a una animación",srt=i,col=`rainbow(360)`[i],`cex=3*i/360`)
 `Sys.sleep(0.01)}`
 ```
 
-Códigos divertidos y sin mucha complicación. En breve espero poder hacer verdaderos gráficos dinámicos e interactivos en `R`. Saludos.
+Códigos divertidos y sin mucha complicación. En breve espero poder hacer verdaderos gráficos dinámicos e interactivos en R. Saludos.

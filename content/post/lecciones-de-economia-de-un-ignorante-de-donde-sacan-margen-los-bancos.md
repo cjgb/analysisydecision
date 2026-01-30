@@ -4,6 +4,7 @@ categories:
   - banca
 date: '2009-12-04'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
   - lecciones-de-economia-de-un-ignorante-los-bancos-pierden-dinero-para-favorecer-a-unos-y-luego-los-salvamos-todos.md

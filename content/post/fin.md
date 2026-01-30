@@ -4,6 +4,7 @@ categories:
   - formación
 date: '2025-02-06'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - el-ano-2010-para-analisisydecision.md
   - nace-datanalyticswordpresscom.md

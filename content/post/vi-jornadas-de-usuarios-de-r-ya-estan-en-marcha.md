@@ -4,6 +4,7 @@ categories:
   - r
 date: '2014-05-07'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - ya-estan-en-marcha-las-v-jornadas-de-r.md
   - comienza-la-cuenta-atras-iii-jornadas-de-usuarios-de-r.md

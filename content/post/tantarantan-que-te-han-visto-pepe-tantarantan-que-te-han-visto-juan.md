@@ -5,6 +5,7 @@ categories:
   - opinión
 date: '2009-02-02'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - bajar-los-tipos-a-la-japonesa-al-0.md
   - a-mi-me-preocupa-el-pequeno-ahorrador.md

@@ -4,6 +4,7 @@ categories:
   - formación
 date: '2015-10-09'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - reunion-del-grupo-de-usuarios-de-r-de-madrid-12-de-noviembre.md
   - reunion-usuarios-de-r-en-madrid-26-de-noviembre-de-2014.md

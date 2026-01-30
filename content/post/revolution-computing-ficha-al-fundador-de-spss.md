@@ -4,6 +4,7 @@ categories:
   - business intelligence
 date: '2009-10-24'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - revolution-computing-ahora-es-revolution-analytics.md
   - noticia-microsoft-compra-revolution-analytics.md

@@ -4,6 +4,7 @@ categories:
   - banca
 date: '2009-12-30'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - lecciones-de-economia-de-un-ignorante-la-privatizacion-de-las-cajas-sera-una-chapuza.md
   - lecciones-de-economia-de-un-ignorante-la-caixa-a-colocar-preferentes.md

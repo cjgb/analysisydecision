@@ -129,4 +129,4 @@ tableOutput(«values»)
 ))
 ```
 
-Vemos que podemos cambiar el título y creamos cada uno de los _sliders_ con la función `sliderInput`. Y tendremos un panel principal con la función `mainPanel` con una tabla que representa los valores que tenemos en los sliders. Os confieso que este código me recuerda mucho al `AF` de `SAS` y no es un código R al uso. Sobre este mismo ejemplo vamos a ir cambiando código para ir conociendo como creamos nuestras aplicaciones. Saludos.
+Vemos que podemos cambiar el título y creamos cada uno de los _sliders_ con la función `sliderInput`. Y tendremos un panel principal con la función `mainPanel` con una tabla que representa los valores que tenemos en los sliders. Os confieso que este código me recuerda mucho al `AF` de SAS y no es un código R al uso. Sobre este mismo ejemplo vamos a ir cambiando código para ir conociendo como creamos nuestras aplicaciones. Saludos.

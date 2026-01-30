@@ -17,11 +17,11 @@ tags:
   - r
   - sql
   - sqldf
-title: Monografico. Paquete `sqldf`, si sabes `sql`, sabes `R`
+title: Monografico. Paquete `sqldf`, si sabes `sql`, sabes R
 url: /blog/monografico-paquete-sqldf-si-sabes-sql-sabes-r/
 ---
 
-El paquete `sqldf` de `R` nos permite ejecutar sentencias de [SQL](http://en.wikipedia.org/wiki/SQL). Las cláusulas, las expresiones, los predicados,… son lasalvación para muchos tipos mediocres como el ahora escribiente. `sqldf` es un módulo imprescindible, hasta el novio de Falete es capaz de programar en `SQL`. Evidentemente no voy a enseñaros a hacer `queries` , pero si quiero mostraros algunas de las posibilidades que nos ofrece este paquete de `R`. Como siempre y como caracterizan la mayoría de los mensajes del blog trabajaremos con ejemplos. El primer paso es crear un `data.frame` :
+El paquete `sqldf` de R nos permite ejecutar sentencias de [SQL](http://en.wikipedia.org/wiki/SQL). Las cláusulas, las expresiones, los predicados,… son lasalvación para muchos tipos mediocres como el ahora escribiente. `sqldf` es un módulo imprescindible, hasta el novio de Falete es capaz de programar en `SQL`. Evidentemente no voy a enseñaros a hacer `queries` , pero si quiero mostraros algunas de las posibilidades que nos ofrece este paquete de R. Como siempre y como caracterizan la mayoría de los mensajes del blog trabajaremos con ejemplos. El primer paso es crear un `data.frame` :
 
 ```r
 saldo1=runif(100,0,1)*1000
@@ -37,7 +37,7 @@ saldos$alto=as.factor(ifelse(saldo1+saldo2>=4000,1,2))
 summary(saldos)
 ```
 
-Creamos una estructura con dos variables numéricas `saldo1` y `saldo2`, una variable `id_cliente` (autonumérica) y un factor que indica si los `saldos` son altos (1) o bajos (2). El primer paso es `summary` los `saldos` por el factor `alto`. Programando en `R` un tipo mediocre como yo emplearía la función `aggregate` :
+Creamos una estructura con dos variables numéricas `saldo1` y `saldo2`, una variable `id_cliente` (autonumérica) y un factor que indica si los `saldos` son altos (1) o bajos (2). El primer paso es `summary` los `saldos` por el factor `alto`. Programando en R un tipo mediocre como yo emplearía la función `aggregate` :
 
 ```r
 d1=aggregate(saldos$saldo1,list(saldos$alto),FUN="max")
@@ -81,7 +81,7 @@ from saldos
 group by alto;')
 ```
 
-Sencillo código. Perfectamente entendible por aquellos menos avezados en `R`. Migrar de otra aplicación a `R` puede ser menos complicado de lo que nos creemos, podemos perder el miedo a una hipotética migración. Evidentemente también podemos realizar uniones (`joins`) entre tablas. Comparamos el código en `R` con el código análogo en `sqldf` y así aprendemos a usar la función `merge` :
+Sencillo código. Perfectamente entendible por aquellos menos avezados en R. Migrar de otra aplicación a R puede ser menos complicado de lo que nos creemos, podemos perder el miedo a una hipotética migración. Evidentemente también podemos realizar uniones (`joins`) entre tablas. Comparamos el código en R con el código análogo en `sqldf` y así aprendemos a usar la función `merge` :
 
 ```r
 #Creamos una muestra aleatoria de 50 registros
@@ -141,6 +141,6 @@ saldos.muestra.31=merge(saldos,muestra2,by.x="id_cliente",
 by.y="muestra",all=TRUE)
 ```
 
-No, no se me ha pasado poner el código análogo en para `sqldf`. Es que no es posible hacer `full join` o `right join` en `sqldf`, pero no me negaréis que el código en `R` es muy sencillo. Por favor corregidme si me equivoco y podemos hacer `full join` con `sqldf` y modifico el monográfico inmediatamente.
+No, no se me ha pasado poner el código análogo en para `sqldf`. Es que no es posible hacer `full join` o `right join` en `sqldf`, pero no me negaréis que el código en R es muy sencillo. Por favor corregidme si me equivoco y podemos hacer `full join` con `sqldf` y modifico el monográfico inmediatamente.
 
-¿A qué estás esperando para usar `R` en la gestión de datos? Saludos.
+¿A qué estás esperando para usar R en la gestión de datos? Saludos.

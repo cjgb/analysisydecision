@@ -4,6 +4,7 @@ categories:
   - r
 date: '2016-04-10'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - reunion-del-grupo-de-usuarios-de-r-de-madrid-14-de-enero-de-2016.md
   - martes-25-de-abril-nueva-reunion-del-grupo-de-usuarios-de-r-y-python.md

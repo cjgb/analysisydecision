@@ -233,7 +233,7 @@ formattable(train %>% group_by(Response) %>%
 
 ![](/images/2022/12/wp_editor_md_a9cb47a8f73d29a2db2164b2b1188cfc.jpg)
 
-> Se sugiere que aquellas variables del conjunto de datos que estén analizadas o clasificadas empiecen por un prefijo o se las pueda distinguir de algún modo dentro del tablón de datos, en este caso y a lo largo de todo el trabajo, se emplea el prefijo `fr_` para indicar `f`actor `r`eclasificado. Esto facilitará la automatización de análisis y los procesos de modelización como se verá con posterioridad.
+> Se sugiere que aquellas variables del conjunto de datos que estén analizadas o clasificadas empiecen por un prefijo o se las pueda distinguir de algún modo dentro del tablón de datos, en este caso y a lo largo de todo el trabajo, se emplea el prefijo `fr_` para indicar `f`actor Reclasificado. Esto facilitará la automatización de análisis y los procesos de modelización como se verá con posterioridad.
 
 Parece más alto el interés en Madrid, sin embargo, el % de interesados en Barcelona y el resto de España es similar. No es una agrupación convincente pero puede interesar a un equipo de negocio. Otro mecanismo de unión de factores puede basarse en la propia variable respuesta, que sea ese % el que agrupe la variable. A continuación se plantea una agrupación en buenos, regulares y malos, agrupación de niveles de un factor simplista basada en el % de respuesta.
 

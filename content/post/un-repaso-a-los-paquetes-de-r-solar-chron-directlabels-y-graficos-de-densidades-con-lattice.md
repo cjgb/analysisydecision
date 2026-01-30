@@ -21,7 +21,7 @@ tags:
   - lattice
   - solar
   - weekday
-title: Un repaso a los paquetes de `R` `solaR`, `chron`, `directlabels` y gráficos de densidades con `lattice`
+title: Un repaso a los paquetes de R `solaR`, `chron`, `directlabels` y gráficos de densidades con `lattice`
 url: /blog/un-repaso-a-los-paquetes-de-r-solar-chron-directlabels-y-graficos-de-densidades-con-lattice/
 ---
 
@@ -46,7 +46,7 @@ datos$finde = factor(ifelse(is.weekend(as.Date(row.names(datos),"%Y-%m-%d")),"FI
 summary(datos)
 ```
 
-Los `nombres` de `fila` de nuestro `data.frame` los transformamos en `3 factores`. Con `weekday`(es una `función` del `paquete Base`) obtenemos el `día` de la `semana` a partir de una `fecha`. La `función as.yearmon` nos crea una `variable MES-AAAA` y la `función is.weekend` toma `valores` `1` y `0` si se trata de `fin de semana`. Ahora tenemos que estudiar si se produce una `diferencia` entre las `precipitaciones` los `fines` de `semana` y entre `semana`. Esto se hace con un `análisis` de la `varianza`, pero nosotros vamos a emplear `lattice` para crear un `gráfico` de `densidades` por `meses` con `R`:
+Los `nombres` de `fila` de nuestro `data.frame` los transformamos en `3 factores`. Con `weekday`(es una `función` del `paquete Base`) obtenemos el `día` de la `semana` a partir de una `fecha`. La `función as.yearmon` nos crea una `variable MES-AAAA` y la `función is.weekend` toma `valores` `1` y `0` si se trata de `fin de semana`. Ahora tenemos que estudiar si se produce una `diferencia` entre las `precipitaciones` los `fines` de `semana` y entre `semana`. Esto se hace con un `análisis` de la `varianza`, pero nosotros vamos a emplear `lattice` para crear un `gráfico` de `densidades` por `meses` con R:
 
 ```r
 library(lattice)

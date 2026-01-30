@@ -4,6 +4,7 @@ categories:
   - business intelligence
 date: '2010-05-01'
 lastmod: '2025-07-13'
+Dulles Research
 related:
   - integracion-de-r-con-sas-spss-y-otros.md
   - paquete-sas7bdat-de-r-me-pongo-con-ello.md
@@ -16,6 +17,6 @@ title: Trial version del Bridge to R
 url: /blog/trial-version-del-bridge-to-r/
 ---
 
-Si pincháis este[link](http://minequest.com/WordPress/?p=518)podéis probrar el brige to R 60 días.
+Si pincháis este[link](http://minequest.com/WordPress/?p=518) podéis probrar el brige to R 60 días.
 
 De todos modos es probable que algún día aparezca por aquí una macro que comunique de forma más o menos sencilla WPS con R.

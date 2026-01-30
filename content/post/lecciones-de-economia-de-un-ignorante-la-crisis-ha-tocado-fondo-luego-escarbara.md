@@ -4,6 +4,7 @@ categories:
   - opinión
 date: '2009-08-13'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - la-nueva-burbuja-de-los-bancos.md
   - bajar-los-tipos-a-la-japonesa-al-0.md

@@ -5,6 +5,7 @@ categories:
   - r
 date: '2015-04-24'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - curso-basico-de-r.md
   - jornadas-de-r-gratuitas-en-galicia.md

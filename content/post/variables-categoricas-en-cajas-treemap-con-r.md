@@ -12,7 +12,7 @@ related:
   - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-17-modelizacion-estadistica-seleccionar-variables-y-modelo.md
   - introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-7-descripcion-grafica-de-variables.md
   - evaluando-la-capacidad-predictiva-de-mi-modelo-tweedie.md
-title: Variables categóricas en cajas, `treemap` con `R`
+title: Variables categóricas en cajas, `treemap` con R
 url: /blog/variables-categoricas-en-cajas-treemap-con-r/
 tags:
   - formación
@@ -22,9 +22,9 @@ tags:
 
 ![Ejemplo_treemap_R_3.png](/images/2020/09/Ejemplo_treemap_R_3.png)
 
-La `representación` de `variables categóricas` en `cajas` es uno de los `gráficos` que más utilizo, empezaron a gustarme debido al uso de `Qlik Sense` y sus `gráficos` de `cajas`, me permitían comparar `variables categóricas` en un `periodo` frente a otro. En `R` podemos usar la `librería treemap` para realizar estos `gráficos` y `comparar variables categóricas`. En este `caso interesa` comparar una `variable` dentro de dos `grupos`.
+La `representación` de `variables categóricas` en `cajas` es uno de los `gráficos` que más utilizo, empezaron a gustarme debido al uso de `Qlik Sense` y sus `gráficos` de `cajas`, me permitían comparar `variables categóricas` en un `periodo` frente a otro. En R podemos usar la `librería treemap` para realizar estos `gráficos` y `comparar variables categóricas`. En este `caso interesa` comparar una `variable` dentro de dos `grupos`.
 
-Para ilustrar el `ejemplo` nos suministran un `conjunto` de `datos` con `información` de un `seguro` de `responsabilidad civil` de `motocicletas` de una `compañía sueca`. Este `conjunto` de `datos` está en la `librería CASdatasets` de `R`:
+Para ilustrar el `ejemplo` nos suministran un `conjunto` de `datos` con `información` de un `seguro` de `responsabilidad civil` de `motocicletas` de una `compañía sueca`. Este `conjunto` de `datos` está en la `librería CASdatasets` de R:
 
 ```r
 library(tidyverse)
@@ -68,7 +68,7 @@ swmotorcycle %>% group_by(Tiene_siniestro,RiskClass) %>% summarise(Exposure1=sum
 
 ![Ejemplo_treemap_R_2.png](/images/2020/09/Ejemplo_treemap_R_2.png)
 
-Lo que hacemos es `calcular` el `agregado` de `exposición` de los `grupos`, unimos con el `agregado` de los `subgrupos` y eso nos permite `calcular` el `porcentaje` de `exposición` dentro de cada `grupo`. `Aprovechamos` y `generamos` una `variable` para la `etiqueta` del `gráfico`. En este `punto` nuestro `gráfico` puede ser más `representativo`:
+Lo que hacemos es `calcular` el `agregado` de `exposición` de los `grupos`, unimos con el `agregado` de los `subgrupos` y eso nos permite `calcular` el porcentaje de `exposición` dentro de cada `grupo`. `Aprovechamos` y `generamos` una `variable` para la `etiqueta` del `gráfico`. En este `punto` nuestro `gráfico` puede ser más `representativo`:
 
 ```r
 p <- treemap(resumen,

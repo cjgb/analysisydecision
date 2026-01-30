@@ -159,7 +159,7 @@ SELECTION=FORWARD ctable ;
 quit;
 ```
 
-Esta puede ser la sintaxis más sencilla. Especificamos qué variable(s) son grupos con `CLASS`, en nuestro caso la provincia, `SAS` automáticamente genera variables artificiales. Para hacer el modelo siempre hemos de emplear la sentencia `MODEL` var. Dependiente = var. Independientes, separado por / ponemos las opciones, en este caso selección hacia delante y `CTABLE` para ver la tabla de **sensibilidad** y **especificidad** en función del `score`. Con `OUTMODEL` creamos un conjunto de datos `SAS` que nos permite scorear otros datasets. En el caso que nos ocupa veamos las probabilidades asignadas al conjunto de datos de validación:
+Esta puede ser la sintaxis más sencilla. Especificamos qué variable(s) son grupos con `CLASS`, en nuestro caso la provincia, SAS automáticamente genera variables artificiales. Para hacer el modelo siempre hemos de emplear la sentencia `MODEL` var. Dependiente = var. Independientes, separado por / ponemos las opciones, en este caso selección hacia delante y `CTABLE` para ver la tabla de **sensibilidad** y **especificidad** en función del `score`. Con `OUTMODEL` creamos un conjunto de datos SAS que nos permite scorear otros datasets. En el caso que nos ocupa veamos las probabilidades asignadas al conjunto de datos de validación:
 
 ```sas
 proc logistic inmodel=pepin ;

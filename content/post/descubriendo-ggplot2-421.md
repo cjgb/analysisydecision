@@ -22,7 +22,7 @@ title: Descubriendo ggplot2
 url: /blog/descubriendo-ggplot2/
 ---
 
-Bye bye `plot`, bye bye `points`, bye bye `abline`…![Imagen de previsualización de YouTube](https://img.youtube.com/vi/bNcl0L7eJUY/0.jpg)Como la canción Bye bye life. He escrito en el `Tinn-R` `install.packages("ggplot2")` y estoy como un niño con zapatos nuevos. Así estoy desde que he comenzado a trabajar con el paquete `ggplot2` de R. No es que no lo conociera, es que me defiendo demasiado bien con mis `plot` y mis `points`. Había visto algún gráfico espectacular pero el código asustaba. Sin embargo este paquete es tema de conversación todas las semanas con algún usuario de `R`. Entonces me siento delante de `R` y tras escribir `library(ggplot2)`…
+Bye bye `plot`, bye bye `points`, bye bye `abline`…![Imagen de previsualización de YouTube](https://img.youtube.com/vi/bNcl0L7eJUY/0.jpg)Como la canción Bye bye life. He escrito en el `Tinn-R` `install.packages("ggplot2")` y estoy como un niño con zapatos nuevos. Así estoy desde que he comenzado a trabajar con el paquete `ggplot2` de R. No es que no lo conociera, es que me defiendo demasiado bien con mis `plot` y mis `points`. Había visto algún gráfico espectacular pero el código asustaba. Sin embargo este paquete es tema de conversación todas las semanas con algún usuario de R. Entonces me siento delante de R y tras escribir `library(ggplot2)`…
 
 ```r
 x <- abs(rnorm(20,10,2))y <- abs(rnorm(20,5,1))grupo <- rpois(20,2)datos <- data.frame(cbind(grupo,x,y))#Gráfico de dispersióng <- ggplot(datos,aes(x,y))g + geom_point()#Identificamos los puntosg + geom_point(aes(colour = grupo))

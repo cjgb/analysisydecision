@@ -26,7 +26,7 @@ Si deseamos [descargar vídeos de Youtube tenemos `youtube-dl`](https://youtube-
 
 ### shell scripting
 
-El `shell scripting` no es habitual en el blog, pero en este «nuevo ecosistema del `data science`» el `shell scripting` ha tomado mucho más peso. Hace años fui bueno pero poco a poco entendí que esos `pipelines` tenían que hacerse con herramientas como Kettle, Enterprise Guide, Emblem, Rate Assesor,… Ahora me toca volver a retomar estos scripts y lo primero es indicar donde instalo y ejecuto para que se pueda replicar. En este caso, al trabajar con una librería de `python` como es `youtube-dl`, empleo un terminal de Anaconda y el enviroment que uso habitualmente con `R` y `reticulate` (por si acaso necesito automatizar el script). Lo primero instalar `youtube-dl`:
+El `shell scripting` no es habitual en el blog, pero en este «nuevo ecosistema del `data science`» el `shell scripting` ha tomado mucho más peso. Hace años fui bueno pero poco a poco entendí que esos `pipelines` tenían que hacerse con herramientas como Kettle, Enterprise Guide, Emblem, Rate Assesor,… Ahora me toca volver a retomar estos scripts y lo primero es indicar donde instalo y ejecuto para que se pueda replicar. En este caso, al trabajar con una librería de `python` como es `youtube-dl`, empleo un terminal de Anaconda y el enviroment que uso habitualmente con R y `reticulate` (por si acaso necesito automatizar el script). Lo primero instalar `youtube-dl`:
 
 ```bash
 # Instalar youtube-dl

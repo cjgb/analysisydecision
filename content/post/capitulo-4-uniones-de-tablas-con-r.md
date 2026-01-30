@@ -35,7 +35,7 @@ df1 %>% kable()
 df2 %>% kable()
 ```
 
-Se puede observar como se han creado manualmente 2 `data frames` con lo que trabajaremos y el uso de `tidyverse` y `kable` para la visualización de tablas en `R`. Veamos los principales tipos de uniones.
+Se puede observar como se han creado manualmente 2 `data frames` con lo que trabajaremos y el uso de `tidyverse` y `kable` para la visualización de tablas en R. Veamos los principales tipos de uniones.
 
 ## Uniones verticales
 
@@ -67,7 +67,7 @@ df <- bind_rows(df1, df2)
 df %>% kable()
 ```
 
-El empleo de esta función no es sensible a la necesidad de que ambos conjuntos de datos tengan los mismos nombres de las variables, si eso no ocurre se emplean valores perdidos representados en `R` como `NA` para aquellas ocasiones en las que no coincida.
+El empleo de esta función no es sensible a la necesidad de que ambos conjuntos de datos tengan los mismos nombres de las variables, si eso no ocurre se emplean valores perdidos representados en R como `NA` para aquellas ocasiones en las que no coincida.
 
 ## Uniones horizontales o _join_
 
@@ -131,7 +131,7 @@ Se observa que no se ha unido ninguna variable, solo se ha seleccionado el regis
 
 ### Librería sqldf
 
-Como científicos de datos es **importante saber `SQL`** como lenguaje de consulta, si sabemos `SQL` tenemos la librería `sqldf` para utilizar directamente `SQL` sobre `data frames` de `R`.
+Como científicos de datos es **importante saber `SQL`** como lenguaje de consulta, si sabemos `SQL` tenemos la librería `sqldf` para utilizar directamente `SQL` sobre `data frames` de R.
 
 ```sql
 library(sqldf)

@@ -6,6 +6,7 @@ categories:
   - r
 date: '2010-01-09'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - jornadas-de-r-gratuitas-en-galicia.md
   - nueva-edicion-del-curso-basico-de-r.md

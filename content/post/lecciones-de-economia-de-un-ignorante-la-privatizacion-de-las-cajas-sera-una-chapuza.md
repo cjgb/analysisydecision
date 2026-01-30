@@ -4,6 +4,7 @@ categories:
   - formación
 date: '2010-08-02'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - lecciones-de-economia-de-un-ignorante-las-cajas-seran-bancos.md
   - lecciones-de-economia-de-un-ignorante-la-caixa-a-colocar-preferentes.md

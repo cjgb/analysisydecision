@@ -4,6 +4,7 @@ categories:
   - formación
 date: '2012-04-24'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - manual-introduccion-a-r-s-plus.md
   - intro-rcommander-1-que-es-rcommander.md

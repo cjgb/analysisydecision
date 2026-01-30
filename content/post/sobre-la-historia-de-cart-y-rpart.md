@@ -20,7 +20,7 @@ title: Sobre la historia de CART y rpart
 url: /blog/sobre-la-historia-de-cart-y-rpart/
 ---
 
-Hace unos días conversábamos Raúl y yo sobre árboles de clasificación. En particular, hablábamos de [CART](http://www.salfordsystems.com/cart.php), el algoritmo propietario de [Salford Systems](http://www.salfordsystems.com). Me intrigó saber cuál sería la diferencia entre dicho algoritmo y la alternativa existente en `R`, [`rpart`](http://cran.r-project.org/web/packages/rpart/index.html).
+Hace unos días conversábamos Raúl y yo sobre árboles de clasificación. En particular, hablábamos de [CART](http://www.salfordsystems.com/cart.php), el algoritmo propietario de [Salford Systems](http://www.salfordsystems.com). Me intrigó saber cuál sería la diferencia entre dicho algoritmo y la alternativa existente en R, [`rpart`](http://cran.r-project.org/web/packages/rpart/index.html).
 
 El autor de dicho paquete, [Terry Therneau](http://mayoresearch.mayo.edu/staff/therneau_tm.cfm), tuvo la gentileza de ofrecer una introducción histórica al particular de la que ofrezco algunos fragmentos que traduzco yo mismo a continuación:
 

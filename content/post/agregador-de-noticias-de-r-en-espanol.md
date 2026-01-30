@@ -4,6 +4,7 @@ categories:
   - r
 date: '2010-06-07'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - los-recursos-mas-destacados-de-r-en-la-web.md
   - agregador-de-noticias-de-sas.md
@@ -11,7 +12,6 @@ related:
   - nace-datanalyticswordpresscom.md
   - un-nuevo-blog-sobre-sas-en-espanol.md
 tags:
-  - agregador de noticias de r
   - r
 title: Agregador de noticias de R en español
 url: /blog/agregador-de-noticias-de-r-en-espanol/

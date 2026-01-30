@@ -17,24 +17,24 @@ tags:
   - first
   - last
   - retain
-title: Monográfico. Datos agrupados en `SAS`
+title: Monográfico. Datos agrupados en SAS
 url: /blog/monografico-datos-agrupados-en-sas/
 ---
 
-A continuación os planteo un monográfico más orientado a principiantes con `SAS`. Vamos a realizar un acercamiento a los conjuntos de datos `SAS` agrupados por variables. La premisa fundamental es: **un conjunto de datos `SAS` está agrupado por una variable si está ordenado por ella**. Para ordenar variables empleamos el `PROC SORT`:
+A continuación os planteo un monográfico más orientado a principiantes con SAS. Vamos a realizar un acercamiento a los conjuntos de datos SAS agrupados por variables. La premisa fundamental es: **un conjunto de datos SAS está agrupado por una variable si está ordenado por ella**. Para ordenar variables empleamos el `PROC SORT`:
 
 `PROC SORT` `DATA`=`<dataset>`;
 `BY` (`DESCENDING`) `<variable_ordenacion>`;
 `RUN`;
 
-**Repetimos un conjunto de datos `SAS` puede agruparse por una o varias variables si está ordenado por ellas**. Algunas de las posibilidades que nos ofrecen este tipo de conjuntos de datos son:
+**Repetimos un conjunto de datos SAS puede agruparse por una o varias variables si está ordenado por ellas**. Algunas de las posibilidades que nos ofrecen este tipo de conjuntos de datos son:
 
 • Buscar máximos y mínimos por grupos
 • Crear `ranking` por grupos
 • Realizar sumarizaciones
 • Unir conjuntos de datos
 
-Para ilustrar esto ejemplos vamos a emplear un conjunto de datos `SAS` de la librería `SASHELP` llamado `SHOES` que todos tenemos en nuestra sesión y que contiene las siguientes variables:
+Para ilustrar esto ejemplos vamos a emplear un conjunto de datos SAS de la librería `SASHELP` llamado `SHOES` que todos tenemos en nuestra sesión y que contiene las siguientes variables:
 
 # Variable
 
@@ -126,4 +126,4 @@ keep region total_ventas;
 run;
 ```
 
-`La unión de conjuntos de datos `SAS`tendremos que analizarla en capítulos posteriores, pero es imprescindible recordar que, para unir conjuntos de datos`SAS`éstos han de estar agrupados por la variable que realiza la unión. Como siempre si tenéis cualquier duda, sugerencia o trabajo a tiempo parcial que me permita jugar más tiempo con mis hijos podéis contactar conmigo en`rvaquerizo@analisisydecsision.es\`\`
+`La unión de conjuntos de datos SAStendremos que analizarla en capítulos posteriores, pero es imprescindible recordar que, para unir conjuntos de datosSASéstos han de estar agrupados por la variable que realiza la unión. Como siempre si tenéis cualquier duda, sugerencia o trabajo a tiempo parcial que me permita jugar más tiempo con mis hijos podéis contactar conmigo en`rvaquerizo@analisisydecsision.es\`\`

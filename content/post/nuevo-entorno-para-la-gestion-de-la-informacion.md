@@ -4,6 +4,7 @@ categories:
   - consultoría
 date: '2009-11-19'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - en-breve-revision-de-wps-clonico-de-sas.md
   - comparativa-de-precio-wps-vs-sas.md

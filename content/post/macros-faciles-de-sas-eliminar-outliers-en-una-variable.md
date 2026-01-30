@@ -155,7 +155,7 @@ corte_superior);/*% DE CORTE SUPERIOR*/
 *******************************************************************;
 ```
 
-Los parámetros de la `macro` son sencillos, la `variable` que recortamos (`VARIB`), el `dataset` de `entrada` (`ENTRADA`), el `dataset` de `salida` (`SALIDA`) que puede ser el mismo, el `corte inferior` y el `corte superior` en `porcentaje`, si no se quiere recortar ponemos 0.
+Los parámetros de la `macro` son sencillos, la `variable` que recortamos (`VARIB`), el `dataset` de `entrada` (`ENTRADA`), el `dataset` de `salida` (`SALIDA`) que puede ser el mismo, el `corte inferior` y el `corte superior` en porcentaje, si no se quiere recortar ponemos 0.
 
 ```sas
 *CREAMOS LOS PERCENTILES;

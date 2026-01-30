@@ -4,6 +4,7 @@ categories:
   - r
 date: '2009-07-13'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - primeras-jornadas-de-usuarios-de-r-en-espana-ya-es-oficial.md
   - comienza-la-cuenta-atras-iii-jornadas-de-usuarios-de-r.md

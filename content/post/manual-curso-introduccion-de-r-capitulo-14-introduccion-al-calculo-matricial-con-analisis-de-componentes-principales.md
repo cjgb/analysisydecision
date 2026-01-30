@@ -78,7 +78,7 @@ nombres<-c("desplazamiento","potencia","par","longitud","anchura","peso","recorr
 names(conjunto)<-nombres
 ```
 
-Hemos variado el `prompt` de la línea de comandos con la función `options` para evitar problemas a la hora de editar mensajes en el blog. Leemos el conjunto de datos colgado en una dirección web mediante la función `read.table` con la opción `url`. Empleamos la función `attach` para «atacar» un conjunto de datos y generamos un subconjunto con las 6 variables que participarán en nuestro análisis que llevaremos a cabo a partir de la matriz de correlaciones y a partir de la matriz de covarianzas. En esta entrega obtendremos las componentes principales a partir de la matriz de correlaciones y este ejemplo nos servirá para realizar una aproximación al cálculo matricial con `R`.
+Hemos variado el `prompt` de la línea de comandos con la función `options` para evitar problemas a la hora de editar mensajes en el blog. Leemos el conjunto de datos colgado en una dirección web mediante la función `read.table` con la opción `url`. Empleamos la función `attach` para «atacar» un conjunto de datos y generamos un subconjunto con las 6 variables que participarán en nuestro análisis que llevaremos a cabo a partir de la matriz de correlaciones y a partir de la matriz de covarianzas. En esta entrega obtendremos las componentes principales a partir de la matriz de correlaciones y este ejemplo nos servirá para realizar una aproximación al cálculo matricial con R.
 
 **Componentes principales a partir de la matriz de correlaciones** :
 
@@ -87,14 +87,14 @@ matriz.correlaciones<-cor(conjunto)
 matriz.correlaciones
 ```
 
-Aunque WordPress no nos facilite mucho la lectura, se aprecian unas altas correlaciones entre las variables, se detectan relaciones lineales entre variables lo que nos permite establecer patrones que unen las diferentes variables para crear unas nuevas variables que nos describan de forma más simple el conjunto de datos de coches con el que estamos trabajando. Ahora queda obtener las componentes, éstas son las combinaciones lineales de las variables que hacen máxima su varianza y esto se consigue obteniendo los autovalores y los autovectores de la matriz de correlaciones, podéis consultar en la red el razonamiento matemático, lo explican con bastante detalle. Veamos cómo obtenemos autovalores y autovectores en `R`:
+Aunque WordPress no nos facilite mucho la lectura, se aprecian unas altas correlaciones entre las variables, se detectan relaciones lineales entre variables lo que nos permite establecer patrones que unen las diferentes variables para crear unas nuevas variables que nos describan de forma más simple el conjunto de datos de coches con el que estamos trabajando. Ahora queda obtener las componentes, éstas son las combinaciones lineales de las variables que hacen máxima su varianza y esto se consigue obteniendo los autovalores y los autovectores de la matriz de correlaciones, podéis consultar en la red el razonamiento matemático, lo explican con bastante detalle. Veamos cómo obtenemos autovalores y autovectores en R:
 
 ```r
 componentesI<-eigen(matriz.correlaciones)
 componentesI
 ```
 
-Vemos que la función `eigen` nos crea un objeto con los autovalores y los autovectores. El número de autovalores no nulos proporciona la dimensión del espacio en el que se encuentran las observaciones; un autovalor nulo revelaría la existencia de una dependencia lineal entre las variables originales. Pues si `Z` es la matriz de **datos** **tipificados** y `R` es la matriz de correlaciones con pares de autovalores y autovectores `$(l_1,e_1),(l_2,e_2),	ext{…},(l_p,e_p)$` entonces la `i-ésima` componente muestral viene dada por `$y=e_i Z=e_{1i} z_1+	ext{…}+e_{pi} z_p$` donde los autovalores son una observación genérica de las variables `$Z_1,Z_2,	ext{…},Z_p$`. La varianza total es la suma de los autovalores, y la varianza que explica la `j-ésima` componente es el autovalor `j-ésimo` dividido por el número de variables:
+Vemos que la función `eigen` nos crea un objeto con los autovalores y los autovectores. El número de autovalores no nulos proporciona la dimensión del espacio en el que se encuentran las observaciones; un autovalor nulo revelaría la existencia de una dependencia lineal entre las variables originales. Pues si `Z` es la matriz de **datos** **tipificados** y R es la matriz de correlaciones con pares de autovalores y autovectores `$(l_1,e_1),(l_2,e_2),	ext{…},(l_p,e_p)$` entonces la `i-ésima` componente muestral viene dada por `$y=e_i Z=e_{1i} z_1+	ext{…}+e_{pi} z_p$` donde los autovalores son una observación genérica de las variables `$Z_1,Z_2,	ext{…},Z_p$`. La varianza total es la suma de los autovalores, y la varianza que explica la `j-ésima` componente es el autovalor `j-ésimo` dividido por el número de variables:
 
 ```r
 componentesI$values[1]/7 #Variabilidad explicada por la primera componente
@@ -123,7 +123,7 @@ conjunto.final<-cbind(conjunto,componente.datos) #unimos horizontalmente matrice
 conjunto.final
 ```
 
-Vemos que los coches menos potentes tienen un valor menor en la componente; sin embargo, recorren muchos más kilómetros que aquellos que tienen mucho más tamaño y motor. En la siguiente entrega veremos este mismo ejemplo pero a partir de la matriz de covarianzas. Comentar que en el paquete `stats` de `R` disponemos de la función `princomp` para el análisis de componentes principales. En este caso el código que habríamos de emplear sería:
+Vemos que los coches menos potentes tienen un valor menor en la componente; sin embargo, recorren muchos más kilómetros que aquellos que tienen mucho más tamaño y motor. En la siguiente entrega veremos este mismo ejemplo pero a partir de la matriz de covarianzas. Comentar que en el paquete `stats` de R disponemos de la función `princomp` para el análisis de componentes principales. En este caso el código que habríamos de emplear sería:
 
 ```r
 ejemplo.14.1 <- princomp(conjunto,cor=TRUE)

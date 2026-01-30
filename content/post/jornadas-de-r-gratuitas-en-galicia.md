@@ -5,6 +5,7 @@ categories:
   - r
 date: '2014-02-04'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - nuevo-curso-de-estadistica-con-r.md
   - aprende-rstats-de-forma-presencial-por-muy-poco.md

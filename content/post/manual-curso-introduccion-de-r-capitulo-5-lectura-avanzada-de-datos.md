@@ -14,11 +14,11 @@ related:
 tags:
   - formación
   - r
-title: 'Manual. Curso introducción de `R`. Capítulo 5: Lectura avanzada de datos'
+title: 'Manual. Curso introducción de R. Capítulo 5: Lectura avanzada de datos'
 url: /blog/manual-curso-introduccion-de-r-capitulo-5-lectura-avanzada-de-datos/
 ---
 
-En esta nueva `entrega` aprenderemos a `importar datos` a `R` desde otras `fuentes`. `Habitualmente` no `introduciremos manualmente` los `datos`, emplearemos las `posibilidades` de `lectura` que nos ofrece `R`. En este `capítulo` leeremos `ficheros` de `texto` y `ficheros Access`, para ello necesitaremos el `paquete` de `R` [`RODBC`](http://cran.cict.fr/bin/windows/contrib/2.3/RODBC_1.1-7.zip).
+En esta nueva `entrega` aprenderemos a `importar datos` a R desde otras `fuentes`. `Habitualmente` no `introduciremos manualmente` los `datos`, emplearemos las `posibilidades` de `lectura` que nos ofrece R. En este `capítulo` leeremos `ficheros` de `texto` y `ficheros Access`, para ello necesitaremos el `paquete` de R [`RODBC`](http://cran.cict.fr/bin/windows/contrib/2.3/RODBC_1.1-7.zip).
 
 Para `leer fichero` de `texto` emplearemos un `fichero` de `ejemplo GRADES.TXT` que es un `fichero` de `texto delimitado` por `espacios` y sin `cabeceras`, tiene los `siguientes campos`:
 
@@ -42,7 +42,7 @@ puntuación de laboratorio
 puntuación del examen final
 ```
 
-`Descargateló` [`aquí`](/images/2008/03/grades.TXT) y `guardaló` en `C:\WINDOWS\temp` para `seguir` el `ejemplo`. La `función` que se emplea en `R` para `leer tablas` desde `ficheros` de `texto` es `read.table`:
+`Descargateló` [`aquí`](/images/2008/03/grades.TXT) y `guardaló` en `C:\WINDOWS\temp` para `seguir` el `ejemplo`. La `función` que se emplea en R para `leer tablas` desde `ficheros` de `texto` es `read.table`:
 
 ```r
 archivo <- read.table (file= "c:\\WINDOWS\\temp\\GRADES.TXT", header=FALSE) #leemos el archivo
@@ -58,7 +58,7 @@ V1 V2 V3 V4 V5 V6 V7 V8
 3 bam m 4 39 63 84 95 95 ...
 ```
 
-Vemos que la `sintaxis` de la `función read.table` es bastante `sencilla`. `Recomiendo` `estudiar` la `documentación` que tiene `R` al `respecto` de esta `función`. El `argumento principal` de esta `función` será `file= <ubicación y nombre del fichero>`, además con `header` indicamos si es `necesario leer cabeceras`, por `defecto read.table` tiene lo tiene a `FALSE`. Para introducir las `cabeceras` al `fichero` empleamos `vectores`:
+Vemos que la `sintaxis` de la `función read.table` es bastante `sencilla`. `Recomiendo` `estudiar` la `documentación` que tiene R al `respecto` de esta `función`. El `argumento principal` de esta `función` será `file= <ubicación y nombre del fichero>`, además con `header` indicamos si es `necesario leer cabeceras`, por `defecto read.table` tiene lo tiene a `FALSE`. Para introducir las `cabeceras` al `fichero` empleamos `vectores`:
 
 ```r
 > archivo <- read.table (file="c:\\WINDOWS\\temp\\GRADES.TXT") #leemos el archivo
@@ -82,7 +82,7 @@ Vemos que la `sintaxis` de la `función read.table` es bastante `sencilla`. `Rec
 
 Empleamos la `función names` para dar `nombres` a las `variables` del `data.frame` `archivo` a partir de un `vector` que contiene `dichos nombres`.
 
-Otra `fuente` de `datos` muy `habitual` puede ser `Access`. Para `leer bases` de `datos` necesitaremos tener `instalado` el `paquete` [`RODBC`](http://cran.cict.fr/bin/windows/contrib/2.3/RODBC_1.1-7.zip). En el `capítulo anterior` se indicó como `descargar` e `intalar` este `módulo` de `R`. Para este `ejemplo` partimos de una `BBDD Access` `bd1` almacenada en `C:/WINDOWS/temp` que contiene la `siguiente tabla`:
+Otra `fuente` de `datos` muy `habitual` puede ser `Access`. Para `leer bases` de `datos` necesitaremos tener `instalado` el `paquete` [`RODBC`](http://cran.cict.fr/bin/windows/contrib/2.3/RODBC_1.1-7.zip). En el `capítulo anterior` se indicó como `descargar` e `intalar` este `módulo` de R. Para este `ejemplo` partimos de una `BBDD Access` `bd1` almacenada en `C:/WINDOWS/temp` que contiene la `siguiente tabla`:
 
 `POBLACION` | `RECLAM` | `TAM_COCHE` | `GRUPO_EDAD`
 ---|---|---|---
@@ -93,10 +93,10 @@ Otra `fuente` de `datos` muy `habitual` puede ser `Access`. Para `leer bases` de
 `500` | `73` | `medium` | `2`
 `300` | `14` | `large` | `2`
 
-Podéis crear la `BBDD` en la `ubicación C:/WINDOWS/temp copiar` y `pegar` el `ejemplo` para `estudiar` como funciona el `código`. `Comencemos` a `analizar` las `sentencias` en `R`:
+Podéis crear la `BBDD` en la `ubicación C:/WINDOWS/temp copiar` y `pegar` el `ejemplo` para `estudiar` como funciona el `código`. `Comencemos` a `analizar` las `sentencias` en R:
 
 ```r
-> setwd("c:/windows/temp") #Especificamos el directorio de trabajo. 
+> setwd("c:/windows/temp") #Especificamos el directorio de trabajo.
 
 > library(RODBC)     #Cargamos los paquetes.
 
@@ -147,4 +147,4 @@ Primero necesitamos `especificar` el `directorio` de `trabajo` con la `función 
 6 300 14 large 2
 ```
 
-Las `consultas` se realizan con la `función específica sqlQuery` donde `introduciremos` la `BBDD conectada` y la `consulta` en `SQL estándar` entre `comillas`. Con esta `sentencia` hemos creado un `objeto` de `R` que contiene una `tabla` de `Access`. Ya tenemos `conectado R` con dos de los `orígenes` de `datos` más `habituales`. En `sucesivas entregas` leeremos `datos` con `R` de `SAS` y `SPSS`.
+Las `consultas` se realizan con la `función específica sqlQuery` donde `introduciremos` la `BBDD conectada` y la `consulta` en `SQL estándar` entre `comillas`. Con esta `sentencia` hemos creado un `objeto` de R que contiene una `tabla` de `Access`. Ya tenemos `conectado R` con dos de los `orígenes` de `datos` más `habituales`. En `sucesivas entregas` leeremos `datos` con R de SAS y `SPSS`.

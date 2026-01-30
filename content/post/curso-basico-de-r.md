@@ -5,6 +5,7 @@ categories:
   - r
 date: '2012-06-05'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - nuevo-curso-de-estadistica-con-r.md
   - nueva-edicion-del-curso-basico-de-r.md

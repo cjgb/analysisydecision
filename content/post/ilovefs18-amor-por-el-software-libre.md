@@ -4,6 +4,7 @@ categories:
   - formación
 date: '2018-02-12'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - vi-jornadas-de-usuarios-de-r-ya-estan-en-marcha.md
   - martes-25-de-abril-nueva-reunion-del-grupo-de-usuarios-de-r-y-python.md

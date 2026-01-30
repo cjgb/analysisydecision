@@ -42,7 +42,7 @@ plot(indep,dep)
 
 ![redes_neuronales_tarificacion_seguros1](/images/2016/09/redes_neuronales_tarificacion_seguros1.png)
 
-Creamos unos `datos aleatorios` que serán en una `matriz` nuestros `datos inependientes` y como `variable dependiente` una `variable` que dibuja una `nube` de `puntos` que `simula` una `curva` de `observaciones`. Si realizamos un `modelo lineal` se `ajustará` una `recta` sobre los `datos`, una `red neuronal mejorará` los `resultados`. Y para `demostrarlo` vamos a `emplear` el [paquete de `R` `monmlp`](https://cran.r-project.org/web/packages/monmlp/monmlp.pdf) que realiza un `perceptrón multicapa` y nos puede servir para `conocer` otras `posibilidades` de `R`. Comenzamos con una `neurona` en la `capa oculta` de la `red`:
+Creamos unos `datos aleatorios` que serán en una `matriz` nuestros `datos inependientes` y como `variable dependiente` una `variable` que dibuja una `nube` de `puntos` que `simula` una `curva` de `observaciones`. Si realizamos un `modelo lineal` se `ajustará` una `recta` sobre los `datos`, una `red neuronal mejorará` los `resultados`. Y para `demostrarlo` vamos a `emplear` el [paquete de R `monmlp`](https://cran.r-project.org/web/packages/monmlp/monmlp.pdf) que realiza un `perceptrón multicapa` y nos puede servir para `conocer` otras `posibilidades` de R. Comenzamos con una `neurona` en la `capa oculta` de la `red`:
 
 ```r
 library(monmlp)

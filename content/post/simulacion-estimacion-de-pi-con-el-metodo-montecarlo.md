@@ -24,7 +24,7 @@ La **simulación** es un campo que está tomando una gran importancia. Nos está
 
 El primer acercamiento a la simulación lo vamos a realizar mediante el método Montecarlo. Se trata de estimar el valor de pi. El área de la circunferencia es `A=pi*radio**2` Si la circunferencia tiene su centro en el origen y el radio es 1 (_circunferencia goniométrica_) entonces `A=pi` y si nos centramos en el primer cuadrante `A=pi/4`. Conocemos el resultado, ahora se trata de generar valores aleatorios, puntos en el cuadrante (1,1) del plano que pueden caer o no dentro del área de la circunferencia. Caerán dentro de ese área si la distancia del punto aleatorio al origen es menor que 1.
 
-Para este trabajo emplearemos `R`. Generamos un `data.frame` con 10.000 observaciones que son nubes de puntos aleatorios (x,y) del plano:
+Para este trabajo emplearemos R. Generamos un `data.frame` con 10.000 observaciones que son nubes de puntos aleatorios (x,y) del plano:
 
 ```r
 x=runif(10000,0,1)

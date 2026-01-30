@@ -4,6 +4,7 @@ categories:
   - banca
 date: '2009-03-23'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - tantarantan-que-te-han-visto-pepe-tantarantan-que-te-han-visto-juan.md
   - lecciones-de-economia-de-un-ignorante-la-crisis-ha-tocado-fondo-luego-escarbara.md

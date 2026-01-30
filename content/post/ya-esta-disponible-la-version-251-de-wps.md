@@ -6,6 +6,7 @@ categories:
   - wps
 date: '2011-02-17'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - en-breve-revision-de-wps-clonico-de-sas.md
   - sas-vs-wps-diferencias-de-precio.md

@@ -28,7 +28,7 @@ Otro de los modelos que está tocando estudiar este verano son los Dynamic Linea
 
 Los modelos lineales dinámicos vienen representados por una ecuación de observación `$Yt=F’·Bt + Vt con Vt según N(0,vt)$` y una ecuación de sistema o ecuación de estado `$Bt = Gt·Bt-1 + wt con wt según N(0,wt)$`. Luego está caracterizado por `F` y `G` que son matrices conocidas, `B` es un vector de parámetros desconocidos , `Vt` es la varianza de la ecuación de observaciones y `Wt` la varianza de la ecuación del sistema, ambas conocidas. El modelo más sencillo de este tipo es el paseo aleatorio, un modelo que no presenta estacionalidad ninguna. Sin entrar mucho más en temas matemáticos si es importante comentar que esta técnica la emplearemos tanto para filtrar, suavizar y predecir.
 
-Ahora vamos a dar comienzo con el trabajo en `R` a ver si podemos analizar el número de visitas que recibe esta web desde abril de 2008 hasta julio de 2014.
+Ahora vamos a dar comienzo con el trabajo en R a ver si podemos analizar el número de visitas que recibe esta web desde abril de 2008 hasta julio de 2014.
 
 # Objeto con las visitas
 
@@ -144,4 +144,4 @@ detach(serie.filtrada)
 compara=data.frame(cbind(suavizado,filtrado))
 ```
 
-Para ver los valores de la descomposición de la varianza empleamos la función **`dlmSvd2var`**. Observando la serie vemos que la varianza de los errores para la serie filtrada es mayor que en el caso de la serie suavizada. En `t=1` la varianza para la serie de filtrado es desmesurada. Esto sucede porque la serie suavizada emplea todos los datos de la serie, sin embargo la serie filtrada para el paso `n` emplea hasta `n+1` por ello en el último paso las varianzas coinciden ya que están empleando el mismo número de observaciones, el total. Hasta aquí un breve resumen de las posibilidades que tenemos con la librería `dlm` de `R`. Espero que despierte vuestra curiosidad. En mi caso concreto ha servido de acercamiento al análisis de series temporales, mi gran laguna. Tengo que empezar a trabajar con ellas. Saludos.
+Para ver los valores de la descomposición de la varianza empleamos la función **`dlmSvd2var`**. Observando la serie vemos que la varianza de los errores para la serie filtrada es mayor que en el caso de la serie suavizada. En `t=1` la varianza para la serie de filtrado es desmesurada. Esto sucede porque la serie suavizada emplea todos los datos de la serie, sin embargo la serie filtrada para el paso `n` emplea hasta `n+1` por ello en el último paso las varianzas coinciden ya que están empleando el mismo número de observaciones, el total. Hasta aquí un breve resumen de las posibilidades que tenemos con la librería `dlm` de R. Espero que despierte vuestra curiosidad. En mi caso concreto ha servido de acercamiento al análisis de series temporales, mi gran laguna. Tengo que empezar a trabajar con ellas. Saludos.

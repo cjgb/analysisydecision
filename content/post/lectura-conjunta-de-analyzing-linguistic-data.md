@@ -6,6 +6,7 @@ categories:
   - r
 date: '2013-04-25'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - da-comienzo-la-lectura-de-the-elements-of-statistical-learning.md
   - nuevo-curso-de-estadistica-con-r.md

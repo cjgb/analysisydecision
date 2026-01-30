@@ -23,7 +23,7 @@ title: Truco R. Eval, parse y paste para automatizar código
 url: /blog/truco-r-eval-parse-y-paste-para-automatizar-codigo/
 ---
 
-La función `paste` nos permite concatenar cadenas de texto con `R`:
+La función `paste` nos permite concatenar cadenas de texto con R:
 
 `paste("Dato",rep(1:10),sep="")`
 
@@ -35,7 +35,7 @@ Y por último `eval` evalúa una expresión:
 
 `eval(parse(text="sqrt(121)"))`
 
-Interesantes funciones que nos pueden permitir automatizar códigos recursivos o códigos guardados como objetos en `R`. Imaginemos el siguiente ejemplo de `R`:
+Interesantes funciones que nos pueden permitir automatizar códigos recursivos o códigos guardados como objetos en R. Imaginemos el siguiente ejemplo de R:
 
 ```r
 ejemplo1 <- data.frame(replicate (20,rpois(20,10)))
@@ -47,7 +47,7 @@ names(ejemplo1) <- nom
 summary(ejemplo1)
 ```
 
-Hemos automatizado los 20 nombres de un `data frame` con datos aleatorios con una distribución de `poisson` de media 10 creado con la función `replicate`. Ahora imaginemos que deseamos transformar en factor sólo aquellos elementos del `data frame` con un sufijo par (datos2, datos4, …). Podemos crear una función o podemos crear ejecuciones de código `R` del siguiente modo:
+Hemos automatizado los 20 nombres de un `data frame` con datos aleatorios con una distribución de `poisson` de media 10 creado con la función `replicate`. Ahora imaginemos que deseamos transformar en factor sólo aquellos elementos del `data frame` con un sufijo par (datos2, datos4, …). Podemos crear una función o podemos crear ejecuciones de código R del siguiente modo:
 
 ````r
 ejecucion <- paste("ejemplo1dato",seq(2,20,by=2),"<-as.factor(ejemplo1dato",
@@ -88,4 +88,4 @@ eval(parse(text=ejecucion))
 summary(ejemplo1)
 ````
 
-Hemos transformado en factores los elementos con sufijo par. Esto puede realizarse con `sapply` pero merece la pena que le echéis un vistazo a este proceso, lo ejecutéis y aprendáis una forma de automatizar código. En breve tendréis otro ejemplo de uso de esta metodología muy parecida a la que empleamos cuando programamos en otros lenguajes con menos futuro que `R`. Saludos.
+Hemos transformado en factores los elementos con sufijo par. Esto puede realizarse con `sapply` pero merece la pena que le echéis un vistazo a este proceso, lo ejecutéis y aprendáis una forma de automatizar código. En breve tendréis otro ejemplo de uso de esta metodología muy parecida a la que empleamos cuando programamos en otros lenguajes con menos futuro que R. Saludos.

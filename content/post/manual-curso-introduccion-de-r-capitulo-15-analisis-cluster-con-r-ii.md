@@ -21,7 +21,7 @@ title: 'Manual. Curso introducción de R. Capítulo 16: Análisis Cluster con R 
 url: /blog/manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-ii/
 ---
 
-En esta entrega seguimos trabajando con el análisis `Cluster` viendo más posibilidades que nos ofrece `R`. Para ello vamos a realizar un estudio de agrupamiento de países europeos en función de algunos indicadores básicos:
+En esta entrega seguimos trabajando con el análisis `Cluster` viendo más posibilidades que nos ofrece R. Para ello vamos a realizar un estudio de agrupamiento de países europeos en función de algunos indicadores básicos:
 
 - Superficie
 - Población
@@ -30,7 +30,7 @@ En esta entrega seguimos trabajando con el análisis `Cluster` viendo más posib
 - Índice de desarrollo humano
 - % Población en ciudad
 
-Para este estudio contamos con [este archivo excel](/images/2009/05/paises.xls "paises.xls") . El primer paso por supuesto es crear un objeto en `R`:
+Para este estudio contamos con [este archivo excel](/images/2009/05/paises.xls "paises.xls") . El primer paso por supuesto es crear un objeto en R:
 
 ```r
 library(RODBC)
@@ -176,4 +176,4 @@ plot(cluster.2)
 
 ![cluster3.JPG](/images/2009/05/cluster3.JPG)
 
-Tenemos 2 gráficos: uno de componentes principales y otro de distancias entre los centroides de los `cluster`. Con 2 componentes ya tendríamos el 85% de la variabilidad explicada. Espero que este ejemplo os sirva de referencia para conocer las posibilidades de `R` en el análisis `cluster`. Por supuesto si tenéis cualquier duda o sugerencia `rvaquerizo@analisisydecision.es`
+Tenemos 2 gráficos: uno de componentes principales y otro de distancias entre los centroides de los `cluster`. Con 2 componentes ya tendríamos el 85% de la variabilidad explicada. Espero que este ejemplo os sirva de referencia para conocer las posibilidades de R en el análisis `cluster`. Por supuesto si tenéis cualquier duda o sugerencia `rvaquerizo@analisisydecision.es`

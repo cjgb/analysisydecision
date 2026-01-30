@@ -4,6 +4,7 @@ categories:
   - r
 date: '2012-08-07'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - ya-estan-en-marcha-las-iv-jornadas-de-usuarios-de-r-en-espana.md
   - primeras-jornadas-de-usuarios-de-r-en-espana-ya-es-oficial.md

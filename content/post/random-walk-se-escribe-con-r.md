@@ -29,7 +29,7 @@ Vamos a necesitar varios paquetes, si no me olvido de ninguno, básicamente son 
 - `quantmod`
 - `tawny`
 
-La manera de funcionar es que conectan a la fuente de datos de los portales de `Yahoo` y `Google`, y extrae los datos que le pidamos con unos 15-30 minutos de retraso respecto al tiempo real de mercado (creo que conecta con Yahoo por defecto). Sea como sea, nos indica tambien la fecha y hora de la última cotización más reciente.
+La manera de funcionar es que conectan a la fuente de datos de los portales de `Yahoo` y Google, y extrae los datos que le pidamos con unos 15-30 minutos de retraso respecto al tiempo real de mercado (creo que conecta con Yahoo por defecto). Sea como sea, nos indica tambien la fecha y hora de la última cotización más reciente.
 
 Es tan sencillo como hacer:
 
@@ -39,7 +39,7 @@ getQuote(`AAPL`)
 
 ... y nos informa de la última cotización de las acciones de APPLE.
 
-El ligero inconveniente es que siempre vamos a depender de la conectividad a `Yahoo` o `Google`, si ellos dejan de recibir datos, nosotros tambien. Un apunte importante, para las acciones americanas solo basta escribir su `ticker` (código de 3 o 4 letras que identifica a las acciones de una compañía) tal cual, pero para el resto de paises es otra historia, hemos de añadir su ‘destino’. Aquí os facilito una breve guía:
+El ligero inconveniente es que siempre vamos a depender de la conectividad a `Yahoo` o Google, si ellos dejan de recibir datos, nosotros tambien. Un apunte importante, para las acciones americanas solo basta escribir su `ticker` (código de 3 o 4 letras que identifica a las acciones de una compañía) tal cual, pero para el resto de paises es otra historia, hemos de añadir su ‘destino’. Aquí os facilito una breve guía:
 
 - `.MC` para el Mercado Continuo español.
 - `.PA` si cotiza en Paris

@@ -19,7 +19,7 @@ title: Trucos SAS. Pasar fecha a caracter en SAS
 url: /blog/trucos-sas-pasar-fecha-a-caracter-en-sas/
 ---
 
-Pasar números a carácter en `SAS` es un tema reiterativo tanto en entradas al blog como en búsquedas. Pero que se le puede dar otra vuelta de tuerca. Se trata de transformar fechas a variables alfanuméricas, pero en este caso vamos a poner las fechas en formato español. Ejecutad este ejemplo en `SAS`:
+Pasar números a carácter en SAS es un tema reiterativo tanto en entradas al blog como en búsquedas. Pero que se le puede dar otra vuelta de tuerca. Se trata de transformar fechas a variables alfanuméricas, pero en este caso vamos a poner las fechas en formato español. Ejecutad este ejemplo en SAS:
 
 ```sas
 data uno;
@@ -49,7 +49,7 @@ c9 = upcase(put(y,ESPDFWKX.));
 run;
 ```
 
-Imagino que todos tenéis el [NLS de `SAS`](http://support.sas.com/documentation/cdl/en/nlsref/61893/PDF/default/nlsref.pdf) instalado y no tenéis problemas con estos formatos. Resumamos que nos ofrece cada una de estas transformaciones:
+Imagino que todos tenéis el [NLS de SAS](http://support.sas.com/documentation/cdl/en/nlsref/61893/PDF/default/nlsref.pdf) instalado y no tenéis problemas con estos formatos. Resumamos que nos ofrece cada una de estas transformaciones:
 
 - `DDMMYY10` es el más habitual y nos genera `30/01/2011` podemos jugar con la longitud
 - `ESPDFDD` genera `30.01.2011` un formato que personalmente utilizo mucho
@@ -62,4 +62,4 @@ Imagino que todos tenéis el [NLS de `SAS`](http://support.sas.com/documentation
 - `ESPDFWDX` genera `30 DE ENERO DE 2011`
 - `ESPDFWKX` genera `DOMINGO, 30 DE ENERO DE 2011` un formato que no he usado nunca
 
-[Estos formatos `SAS` los conozco gracias a un lector del blog](https://analisisydecision.es/trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados/). Al César lo que es del César. Aquí aprendemos todos. Es interesante recogerlos todos juntos para que esta entrada quede como una referencia de la transformación de fechas en textos en `SAS`. Saludos.
+[Estos formatos SAS los conozco gracias a un lector del blog](https://analisisydecision.es/trabajo-con-fechas-sas-formatos-de-fecha-sas-mas-utilizados/). Al César lo que es del César. Aquí aprendemos todos. Es interesante recogerlos todos juntos para que esta entrada quede como una referencia de la transformación de fechas en textos en SAS. Saludos.

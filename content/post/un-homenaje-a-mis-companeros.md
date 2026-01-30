@@ -4,6 +4,7 @@ categories:
   - business intelligence
 date: '2010-04-07'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - wps-en-el-mercado-espanol.md
   - porque-me-gusta-r.md

@@ -14,7 +14,7 @@ related:
   - los-principales-problemas-de-los-espanoles-animaciones-con-r-y-gganimate.md
 tags:
   - magick
-title: Tratamiento y procesado de imágenes con `R` y `magick`
+title: Tratamiento y procesado de imágenes con R y `magick`
 url: /blog/tratamiento-y-procesado-de-imagenes-con-r-y-magick/
 ---
 
@@ -22,7 +22,7 @@ url: /blog/tratamiento-y-procesado-de-imagenes-con-r-y-magick/
 
 Estoy preparando la `batalla` entre `geometría` e `inteligencia artificial`, `batalla` que está perdida porque tengo que dar de comer a mis `chavales` y si tengo que ir a vender un producto queda más `comercial` `contar` lo que se supone que hace la `inteligencia artificial` y no `contar` lo que hacen `vectores`, `direcciones`, `puntos` en el `espacio`,… eso lo cuentan en la `educación secundaria` y no es «`disruptivo`». Sin embargo, aprovecho para `contar historia` del `abuelo`, el único `proyecto serio` basado en `inteligencia artificial` en el que he estado `involucrado` se resolvió gracias a la `geometría` y a las `mejoras` que se `propusieron` en el `reconocimiento óptico`, las `redes convolucionales` nos `provocaron` un `problema`. `Inicialmente` es `mejor plantear` una `solución sencilla`.
 
-En esta `batalla perdida` que he entablado con algún modelo de `Tensorflow` apareció el paquete `magick` de `R` para el procesamiento de imágenes con `R` y es sencillo y tiene un pequeño manual en español ([https://www.datanovia.com/en/blog/easy-image-processing-in-r-using-the-magick-package/](https://www.datanovia.com/en/blog/easy-image-processing-in-r-using-the-magick-package/)) además recientemente fue el `cumpleaños` de `Sean Connery` y voy a aprovechar para hacerle un pequeño `homenaje`.
+En esta `batalla perdida` que he entablado con algún modelo de `Tensorflow` apareció el paquete `magick` de R para el procesamiento de imágenes con R y es sencillo y tiene un pequeño manual en español ([https://www.datanovia.com/en/blog/easy-image-processing-in-r-using-the-magick-package/](https://www.datanovia.com/en/blog/easy-image-processing-in-r-using-the-magick-package/)) además recientemente fue el `cumpleaños` de `Sean Connery` y voy a aprovechar para hacerle un pequeño `homenaje`.
 
 La imagen de trabajo la saqué de este `tweet`:
 

@@ -20,7 +20,7 @@ title: Funciones de ventana, SAS y bases de datos
 url: /blog/funciones-de-ventana-sas-y-bases-de-datos/
 ---
 
-Hace unos meses padecí (eso sí, brevemente) un proyecto que consistía en la migración de cierto código en `SAS` (¡nos lo pasaron como un documento de 20 hojas de `Word`) a otro lenguaje de programación.
+Hace unos meses padecí (eso sí, brevemente) un proyecto que consistía en la migración de cierto código en SAS (¡nos lo pasaron como un documento de 20 hojas de `Word`) a otro lenguaje de programación.
 
 Esencialmente, desde la nueva plataforma habrían de lanzarse consultas a cierta base de datos (cuando el código SAS permitiese resolver los cálculos como una consulta de `SQL`) y procesarse los resultados procedimentalmente desde el nuevo lenguaje de programación cuando `SQL` ,declarativo, no fuese suficiente. Surgió el problema de que el lenguaje procedimental era incapaz de procesar bloques tan grandes de información. Pero ésa es otra historia.
 

@@ -33,7 +33,7 @@ Un modelo de regresión de Poisson mide la relación de dependencia de una varia
 | 500 | 73 | medium | 2 |
 | 300 | 14 | large | 2 |
 
-Para conectar `R` con una BBDD `Access` es necesario tener el paquete `RODBC` que seguro que disponéis. En nuestro ejemplo concreto al no disponer del paquete las instrucciones a ejecutar para disponer de un `data.frame` de trabajo son las siguientes:
+Para conectar R con una BBDD `Access` es necesario tener el paquete `RODBC` que seguro que disponéis. En nuestro ejemplo concreto al no disponer del paquete las instrucciones a ejecutar para disponer de un `data.frame` de trabajo son las siguientes:
 
 ```r
 install.packages("RODBC")
@@ -77,7 +77,7 @@ datos<-sqlQuery(bd,"SELECT * FROM tabla")
 datos=data.frame(datos)
 ```
 
-Como se puede observar la forma de ejecutar `sql` bajo `R` requiere de la creación del objeto que contiene la BBDD y posteriormente sobre ese objeto ejecutar la consulta a la tabla que contiene los datos dentro de la BBDD (en este caso `tabla`). Ya tenemos los `datos` preparados y nuestro problema es ajustar un modelo de regresión al número de reclamaciones de una compañía aseguradora que se distribuye como una Poisson en función del tamaño del coche y del grupo de edad de los asegurados. El modelo es, como hemos visto antes, $LN(p)=LN(s) + B_0 + B_1*X_1 +…+ B_n*X_n$ donde $p$ es la probabilidad de realizar una reclamación (el evento de Poisson) y $s$ es el tamaño de la población, el logaritmo del tamaño poblacional o de la exposición lo denominaremos variable `offset`; lo que traducido al caso que nos ocupa es $LN(p)=LN(POBLACION) + B_0 + B_1*RECLAM + B_2*GRUPO_EDAD$. En `R`:
+Como se puede observar la forma de ejecutar `sql` bajo R requiere de la creación del objeto que contiene la BBDD y posteriormente sobre ese objeto ejecutar la consulta a la tabla que contiene los datos dentro de la BBDD (en este caso `tabla`). Ya tenemos los `datos` preparados y nuestro problema es ajustar un modelo de regresión al número de reclamaciones de una compañía aseguradora que se distribuye como una Poisson en función del tamaño del coche y del grupo de edad de los asegurados. El modelo es, como hemos visto antes, $LN(p)=LN(s) + B_0 + B_1*X_1 +…+ B_n*X_n$ donde $p$ es la probabilidad de realizar una reclamación (el evento de Poisson) y $s$ es el tamaño de la población, el logaritmo del tamaño poblacional o de la exposición lo denominaremos variable `offset`; lo que traducido al caso que nos ocupa es $LN(p)=LN(POBLACION) + B_0 + B_1*RECLAM + B_2*GRUPO_EDAD$. En R:
 
 ```r
 datosln_pob=log(datospoblacion)  #Creamos la variable offset
@@ -106,7 +106,7 @@ Deviance Residuals:
 
 Coefficients:
 
-Estimate Std. Error z value Pr(>|z|)    
+Estimate Std. Error z value Pr(>|z|)
 
 (Intercept)          -5.7209     0.3669 -15.592  < 2e-16 ***
 
@@ -169,4 +169,4 @@ modelo.poisson$fitted.values
 35.798902  42.974556   1.226541 107.201098  67.025444  13.773459
 ```
 
-Donde de 1 a 6 tenemos las 6 posibles combinaciones de los niveles de tamaño del coche por grupo de edad. Espero que este mensaje os ayude a conocer mejor o a acercaros a los modelos de regresión de Poisson, modelos imprescindibles en la creación de tarifas en seguros por ejemplo. ¿Por qué no emplear `R` en una aseguradora?
+Donde de 1 a 6 tenemos las 6 posibles combinaciones de los niveles de tamaño del coche por grupo de edad. Espero que este mensaje os ayude a conocer mejor o a acercaros a los modelos de regresión de Poisson, modelos imprescindibles en la creación de tarifas en seguros por ejemplo. ¿Por qué no emplear R en una aseguradora?

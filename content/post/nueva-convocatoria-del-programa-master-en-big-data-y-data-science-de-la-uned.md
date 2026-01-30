@@ -4,6 +4,7 @@ categories:
   - formación
 date: '2021-07-06'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - nueva-edicion-del-programa-en-big-data-y-data-science-de-la-uned.md
   - abierto-el-plazo-para-la-matricula-en-el-master-en-big-data-y-data-science-de-la-uned.md

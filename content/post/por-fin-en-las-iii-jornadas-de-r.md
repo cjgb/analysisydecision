@@ -4,6 +4,7 @@ categories:
   - formación
 date: '2011-11-17'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - comienza-la-cuenta-atras-iii-jornadas-de-usuarios-de-r.md
   - revision-de-las-iii-jornadas-de-r.md

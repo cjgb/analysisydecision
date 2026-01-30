@@ -4,6 +4,7 @@ categories:
   - r
 date: '2011-07-19'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - revision-de-las-iii-jornadas-de-r.md
   - comienza-la-cuenta-atras-iii-jornadas-de-usuarios-de-r.md

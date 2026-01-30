@@ -38,9 +38,9 @@ points(coordinates(barcelona))
 
 ![adyacencia poligonos con R 1](/images/2016/05/adyacencia-poligonos-con-R-1.png)
 
-Leemos el `objeto` con los `datos municipales` de `España` y hacemos un `subset` para quedarnos sólo con `Barcelona` y realizamos un `mapa municipal` de la `provincia` de `Barcelona` sencillamente usando `plot`. Podemos identificar todos los `centroides` de los `polígonos` que componen este `objeto` con la `función coordinates`, ahora lo que necesitamos identificar es la `adyacencia` entre estos `puntos`, la `adyacencia` entre los `municipios` de `Barcelona`. En mi `caso` localicé el `paquete spdep` de `R`, muy `adecuado` para trabajar con `ponderaciones`.
+Leemos el `objeto` con los `datos municipales` de `España` y hacemos un `subset` para quedarnos sólo con `Barcelona` y realizamos un `mapa municipal` de la `provincia` de `Barcelona` sencillamente usando `plot`. Podemos identificar todos los `centroides` de los `polígonos` que componen este `objeto` con la `función coordinates`, ahora lo que necesitamos identificar es la `adyacencia` entre estos `puntos`, la `adyacencia` entre los `municipios` de `Barcelona`. En mi `caso` localicé el `paquete spdep` de R, muy `adecuado` para trabajar con `ponderaciones`.
 
-Os pongo `paso` por `paso` el `código` de `R` y luego comento como voy buscando `REFERENCIAS` para crear las `adyacencias`:
+Os pongo `paso` por `paso` el `código` de R y luego comento como voy buscando `REFERENCIAS` para crear las `adyacencias`:
 
 ```r
 #install.packages("spdep")

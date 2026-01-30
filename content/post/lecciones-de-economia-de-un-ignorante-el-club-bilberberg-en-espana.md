@@ -4,6 +4,7 @@ categories:
   - formación
 date: '2010-05-11'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - lecciones-de-economia-de-un-ignorante-la-crisis-ha-tocado-fondo-luego-escarbara.md
   - lecciones-de-economia-de-un-ignorante-poniendo-fecha-a-la-intervencion-de-espana.md
@@ -20,8 +21,8 @@ Resulta que el grupo de seres humanos que dirige el mundo se reune este año en 
 
 2008 – EEUU – Subprime
 2009 – Grecia – Rescate
-2010 – España -Glub
+2010 – España - Glub
 
 Por lo visto entre los asistentes españoles tenemos a la reina Sofía, no va el rey porque si aparece ni trabajan ni se reunen ni nada, se dedican a la fiesta, el jolgorio y se les olvida crear burbujas, crisis, virus de la gripe, etc. Ya sabéis, las cosas estas a las que se dedican «los que manejan el mundo». En fin, espero equivocarme pero el año que viene nos toca a nosotros la crisis gorda.
 
-De todas formas sigo opinando que la movida gorda vendrá en marzo de 2012 coincidiendo con el fin de la era [Maya ](http://es.wikipedia.org/wiki/Cultura_maya)y el fin de las Cajas de Ahorro.
+De todas formas sigo opinando que la movida gorda vendrá en marzo de 2012 coincidiendo con el [fin de la era Maya](http://es.wikipedia.org/wiki/Cultura_maya) y el fin de las Cajas de Ahorro.

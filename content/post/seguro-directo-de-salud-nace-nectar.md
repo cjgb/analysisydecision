@@ -4,6 +4,7 @@ categories:
   - seguros
 date: '2009-02-05'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - el-seguro-de-salud-suma-y-sigue.md
   - nace-pelayonex-la-directa-de-pelayo.md

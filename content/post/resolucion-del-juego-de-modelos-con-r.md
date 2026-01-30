@@ -151,4 +151,4 @@ points(test$indep,predict(modelo.7,test),col="red")
 
 ![juego_modelos8](/images/2016/05/juego_modelos8.png)
 
-Bueno aquí tenéis el ejercicio con su correspondiente código en `R`. A ver si dejo un poco de lado estas técnicas y empiezo a trabajar con las técnicas de concursos que tan poco me gustan. Saludos.
+Bueno aquí tenéis el ejercicio con su correspondiente código en R. A ver si dejo un poco de lado estas técnicas y empiezo a trabajar con las técnicas de concursos que tan poco me gustan. Saludos.

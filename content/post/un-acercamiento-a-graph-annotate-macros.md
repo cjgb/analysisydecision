@@ -21,7 +21,7 @@ title: Un acercamiento a GRAPH. ANNOTATE macros
 url: /blog/un-acercamiento-a-graph-annotate-macros/
 ---
 
-No quiero entrar en muchos detalles sobre el uso de `ANNOMAC`. Esta macro nos permite usar las macros de `ANNOTATE`. Estas macros sirven para trabajar con el `PROC GANNO` del que ya hicimos una [pequeña revisión](https://analisisydecision.es/un-acercamiento-a-graph-proc-ganno/). Ahora me gustaría presentaros un ejemplo de uso de estas macros y sobre todo me gustaría que analizáseis el `dataset` `SAS` generado. Pongo directamente todo el código necesario:
+No quiero entrar en muchos detalles sobre el uso de `ANNOMAC`. Esta macro nos permite usar las macros de `ANNOTATE`. Estas macros sirven para trabajar con el `PROC GANNO` del que ya hicimos una [pequeña revisión](https://analisisydecision.es/un-acercamiento-a-graph-proc-ganno/). Ahora me gustaría presentaros un ejemplo de uso de estas macros y sobre todo me gustaría que analizáseis el `dataset` SAS generado. Pongo directamente todo el código necesario:
 
 ```sas
 *OPCIONES NECESARIAS;

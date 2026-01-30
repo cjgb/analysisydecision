@@ -15,7 +15,7 @@ related:
 tags:
   - dummy
   - variables de entrada
-title: Trucos `SAS`. Variables `dummy` de una variable continua
+title: Trucos SAS. Variables `dummy` de una variable continua
 url: /blog/trucos-sas-variables-dummy-de-una-variable-continua/
 ---
 
@@ -25,7 +25,7 @@ url: /blog/trucos-sas-variables-dummy-de-una-variable-continua/
 
 ![dumificar.JPG](/images/2009/04/dumificar.JPG "dumificar.JPG")
 
-En el ejemplo partimos de `8 registros` y creamos `4 variables dicotómicas` en función de una variable `importe`. Hemos `dumificado` la variable `importe` en `4`. Parece fácil de entender el `concepto`. Bien, pues esto es lo que planteo hacer con `SAS`. La `metodología` que voy a emplear es la de siempre, parto de un `dataset aleatorio` con un `identificador` y un `campo importe` que pretendemos `transformar` en `5 variables` (`0`,`1`). Para realizar este proceso necesitamos una `macro` que cuenta las `observaciones` de un `dataset`, ya la planteé con anterioridad en otro `artículo` del `blog`. De todos modos os dejo completo el código que empieza:
+En el ejemplo partimos de `8 registros` y creamos `4 variables dicotómicas` en función de una variable `importe`. Hemos `dumificado` la variable `importe` en `4`. Parece fácil de entender el `concepto`. Bien, pues esto es lo que planteo hacer con SAS. La `metodología` que voy a emplear es la de siempre, parto de un `dataset aleatorio` con un `identificador` y un `campo importe` que pretendemos `transformar` en `5 variables` (`0`,`1`). Para realizar este proceso necesitamos una `macro` que cuenta las `observaciones` de un `dataset`, ya la planteé con anterioridad en otro `artículo` del `blog`. De todos modos os dejo completo el código que empieza:
 
 ```sas
 *MACRO PARA EL NUMERO DE OBSERVACIONES SIN RECORRER;

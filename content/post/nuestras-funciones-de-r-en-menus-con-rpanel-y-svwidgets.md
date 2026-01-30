@@ -22,7 +22,7 @@ title: Nuestras funciones de R en menús con rpanel y svWidgets
 url: /blog/nuestras-funciones-de-r-en-menus-con-rpanel-y-svwidgets/
 ---
 
-Hoy quería acercarme a los paquetes `rpanel` y `svWidgets` para crear ventanas y menús respectivamente. La idea es sencilla, tenemos funciones en `R` que empleamos habitualmente y con ellas vamos a**realizar un menú**. Partimos de una función muy sencilla en `R` para eliminar datos con valores `missing`. [Por cierto, que cansado estoy de escribir palabras en inglés para facilitar las búsquedas, un valor missing es un valor perdido. Tras el lapso continúo]. Mi función:
+Hoy quería acercarme a los paquetes `rpanel` y `svWidgets` para crear ventanas y menús respectivamente. La idea es sencilla, tenemos funciones en R que empleamos habitualmente y con ellas vamos a**realizar un menú**. Partimos de una función muy sencilla en R para eliminar datos con valores `missing`. [Por cierto, que cansado estoy de escribir palabras en inglés para facilitar las búsquedas, un valor missing es un valor perdido. Tras el lapso continúo]. Mi función:
 
 ```r
 #Data frame con NAs
@@ -48,7 +48,7 @@ cat("Se han eliminado ",d1-d2," de un total de ",d1," observaciones")
 nomiss(tmp)
 ```
 
-La idea es crear un menú para ejecutar mi función a través de **ventanas**. También es muy importante crear un código que me implique pocas líneas y que pueda aprobechar para otras funciones. Para la creación de ventanas vamos a emplear `rpanel` y para la creación de menús en nuestra sesión de `R` `svWidgets`. Lo primero es crear la función con las ventanas:
+La idea es crear un menú para ejecutar mi función a través de **ventanas**. También es muy importante crear un código que me implique pocas líneas y que pueda aprobechar para otras funciones. Para la creación de ventanas vamos a emplear `rpanel` y para la creación de menús en nuestra sesión de R `svWidgets`. Lo primero es crear la función con las ventanas:
 
 ```r
 library(rpanel)

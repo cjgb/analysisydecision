@@ -4,6 +4,7 @@ categories:
   - formación
 date: '2012-06-17'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - lecciones-de-economia-de-un-ignorante-poniendo-fecha-a-la-intervencion-de-espana.md
   - lecciones-de-economia-de-un-ignorante-la-prima-de-riesgo-y-la-madre-que-la-pario.md

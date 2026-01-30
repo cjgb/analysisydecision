@@ -15,7 +15,7 @@ tags:
   - ficheros grandes
   - memoria
   - r
-title: Tres fracasos y medio con `R`
+title: Tres fracasos y medio con R
 url: /blog/tres-fracasos-y-medio-con-r/
 ---
 
@@ -73,6 +73,6 @@ tmp <- file( "test_data.txt" )
 system.time( bigdata <- sqldf( "select * from tmp", dbname = tempfile(), file.format = list(header = T, row.names = F, sep = "\t")) )
 ```
 
-uno `vuelve` a `toparse` con el `consabido error`. `Efectivamente`, los `datos` se `cargan` en `SQLite` pero luego, al `tratar` de `importarlos` a `R`… `catástrofe`. Eso sí, en tan `sólo 688,20 segundos`.
+uno `vuelve` a `toparse` con el `consabido error`. `Efectivamente`, los `datos` se `cargan` en `SQLite` pero luego, al `tratar` de `importarlos` a R… `catástrofe`. Eso sí, en tan `sólo 688,20 segundos`.
 
-El `problema` de la `lectura` de `conjuntos grandes` de `datos` en `R` es `acuciante` y está —`manifiesta` y `reiteradamente`— sobre la `mesa`. Las `buenas noticias` son que `problemas` como el que `cuento`, hace `ocho años`, se tenían con `ficheros` de `10 megas`. Dentro de nada, esto que escribo hoy será una `reliquia` que se `leerá` con un `punto` de `nostalgia`.
+El `problema` de la `lectura` de `conjuntos grandes` de `datos` en R es `acuciante` y está —`manifiesta` y `reiteradamente`— sobre la `mesa`. Las `buenas noticias` son que `problemas` como el que `cuento`, hace `ocho años`, se tenían con `ficheros` de `10 megas`. Dentro de nada, esto que escribo hoy será una `reliquia` que se `leerá` con un `punto` de `nostalgia`.

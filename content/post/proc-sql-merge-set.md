@@ -14,11 +14,11 @@ related:
 tags:
   - formación
   - sas
-title: Equivalencias entre PROC `SQL` y DATA en las uniones de tablas `SAS`
+title: Equivalencias entre PROC `SQL` y DATA en las uniones de tablas SAS
 url: /blog/proc-sql-merge-set/
 ---
 
-Muchos de los que llegan a programar con `SAS` son grandes expertos en `SQL`. Cuando dominas perfectamente un lenguaje es difícil acostumbrarse a otro. Por ello quiero plantear un artículo que estudie los tipos de uniones mediante pasos DATA y su análogo con el `PROC SQL`. Con ello espero que los profesionales que manejan el lenguaje `SQL` entiendan mejor el paso DATA. En mi línea habitual creo dos `dataset` y manejo ejemplos.
+Muchos de los que llegan a programar con SAS son grandes expertos en `SQL`. Cuando dominas perfectamente un lenguaje es difícil acostumbrarse a otro. Por ello quiero plantear un artículo que estudie los tipos de uniones mediante pasos DATA y su análogo con el `PROC SQL`. Con ello espero que los profesionales que manejan el lenguaje `SQL` entiendan mejor el paso DATA. En mi línea habitual creo dos `dataset` y manejo ejemplos.
 
 ```sas
 data uno;
@@ -60,7 +60,7 @@ cards;
 ; run;
 ```
 
-Las formas de unir conjuntos de datos `SAS` son:
+Las formas de unir conjuntos de datos SAS son:
 
 **Uniones verticales:**
 

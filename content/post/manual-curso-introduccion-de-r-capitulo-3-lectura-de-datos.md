@@ -18,7 +18,7 @@ title: 'Manual. Curso introducción de R. Capítulo 3: Lectura básica de datos'
 url: /blog/manual-curso-introduccion-de-r-capitulo-3-lectura-de-datos/
 ---
 
-En el anterior capítulo creábamos vectores y matrices con las funciones `c` y `matrix` pero en `R` disponemos de otros medios para leer o introducir datos. Empezamos con la entrada manual de datos:
+En el anterior capítulo creábamos vectores y matrices con las funciones `c` y `matrix` pero en R disponemos de otros medios para leer o introducir datos. Empezamos con la entrada manual de datos:
 
 ```r
 # Entrada manual de datos
@@ -41,7 +41,7 @@ ej.3.1
 [1] 1 2 4 5 6 7
 ```
 
-Para introducir manualmente datos en `R` disponemos de la función `scan` e introduciremos los datos manualmente separando las entradas con un espacio, para finalizar empleamos intro en una línea sin datos, `R` nos indicará los registros leídos. La función `scan` también puede leer ficheros de texto planos si le pasamos el fichero como **parámetro** :
+Para introducir manualmente datos en R disponemos de la función `scan` e introduciremos los datos manualmente separando las entradas con un espacio, para finalizar empleamos intro en una línea sin datos, R nos indicará los registros leídos. La función `scan` también puede leer ficheros de texto planos si le pasamos el fichero como **parámetro** :
 
 ```r
 ej.3.2 <- scan("c:\\windows\\temp\\fichero_texto1.txt")
@@ -111,12 +111,12 @@ ej.3.3
 2          23         567          78         900
 ```
 
-En este caso disponíamos de un fichero de texto con cabeceras, por ello ha sido necesario modificar a verdadero (`TRUE`) el parámetro `header` de la función `read.table`. Para saber que parámetros tienen las distintas funciones de `R` y obtener ayuda sobre ellas en la línea de comandos debemos introducir `? <función>`:
+En este caso disponíamos de un fichero de texto con cabeceras, por ello ha sido necesario modificar a verdadero (`TRUE`) el parámetro `header` de la función `read.table`. Para saber que parámetros tienen las distintas funciones de R y obtener ayuda sobre ellas en la línea de comandos debemos introducir `? <función>`:
 
 ```r
 ?read.table
 ```
 
-En función de la configuración de la ayuda que hayamos hecho en el momento de la instalación obtendremos un `pop-up` o bien la información sobre la función en la misma pantalla de `R`.
+En función de la configuración de la ayuda que hayamos hecho en el momento de la instalación obtendremos un `pop-up` o bien la información sobre la función en la misma pantalla de R.
 
-Con estas herramientas ya estamos en disposición de crear estructuras de datos más complejas. En sucesivas entregas leeremos datos de otros orígenes (`SAS`, `ODBC`,…)
+Con estas herramientas ya estamos en disposición de crear estructuras de datos más complejas. En sucesivas entregas leeremos datos de otros orígenes (SAS, `ODBC`,…)

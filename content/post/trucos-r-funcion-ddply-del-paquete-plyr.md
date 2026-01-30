@@ -21,7 +21,7 @@ title: Trucos R. Función ddply del paquete plyr
 url: /blog/trucos-r-funcion-ddply-del-paquete-plyr/
 ---
 
-El **paquete `plyr` de `R`** tiene unas funciones que nos permiten hacer sumarizaciones de forma muy rápida y sencilla. Hoy quería trabajar con la función **`ddply`**. Todos esos resúmenes y agregaciones que nos cuestan mucho código con la función **`ddply`** pasan a ser de lo más sencillo. Al tajo, o mejor dicho, al ejemplo, como siempre, creo que ilustrar `ddply` es mejor que entrar en su sintaxis, para eso está la ayuda. Creamos un `data.frame` con datos inventados que tendrá duplicados por `id_cliente` :
+El **paquete `plyr` de R** tiene unas funciones que nos permiten hacer sumarizaciones de forma muy rápida y sencilla. Hoy quería trabajar con la función **`ddply`**. Todos esos resúmenes y agregaciones que nos cuestan mucho código con la función **`ddply`** pasan a ser de lo más sencillo. Al tajo, o mejor dicho, al ejemplo, como siempre, creo que ilustrar `ddply` es mejor que entrar en su sintaxis, para eso está la ayuda. Creamos un `data.frame` con datos inventados que tendrá duplicados por `id_cliente` :
 
 ```r
 saldo1=runif(100,0,1)*1000
@@ -52,7 +52,7 @@ from saldos
 group by edad;')
 ```
 
-No es un código complejo, como siempre he dicho si sabes `SQL` sabes `R`. Pero un buen día me crucé con el paquete `plyr` y la función `ddply`:
+No es un código complejo, como siempre he dicho si sabes `SQL` sabes R. Pero un buen día me crucé con el paquete `plyr` y la función `ddply`:
 
 ```r
 library(plyr)
@@ -65,4 +65,4 @@ saldo1=mean(saldo1),
 saldo2=mean(saldo2))
 ```
 
-¡Qué forma más sencilla y práctica de sumarizar datos con `R`! No negaréis que este código puede entenderlo hasta el novio de Falete. Una función simplemente genial.
+¡Qué forma más sencilla y práctica de sumarizar datos con R! No negaréis que este código puede entenderlo hasta el novio de Falete. Una función simplemente genial.

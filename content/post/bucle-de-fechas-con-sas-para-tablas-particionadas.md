@@ -18,7 +18,7 @@ title: Bucle de fechas con SAS para tablas particionadas
 url: /blog/bucle-de-fechas-con-sas-para-tablas-particionadas/
 ---
 
-Partimos de un mes inicial hasta un mes final es necesario crear una tabla `SAS` con dos variables, el inicio del mes y el final del mes. Trabajo con fechas en `SAS` que todos sabemos es una tarea un «poco ardua». El título de la entrada también es un poco peculiar pero es la respuesta a la duda que planteaba un lector:
+Partimos de un mes inicial hasta un mes final es necesario crear una tabla SAS con dos variables, el inicio del mes y el final del mes. Trabajo con fechas en SAS que todos sabemos es una tarea un «poco ardua». El título de la entrada también es un poco peculiar pero es la respuesta a la duda que planteaba un lector:
 
 ```text
 Cogemos dos fechas en formato `yyyymmaa`
@@ -60,4 +60,4 @@ Se me han ocurrido varias formas de hacerlo pero a continuación os planteo la s
 `end`;`run`;
 ```
 
-Lo he hecho de una forma sencilla, se trata de un `bucle DO` desde el mes inicial a el mes final, en realidad son unos 90 números sin embargo si el `módulo` del número, el mes, está entre 1 y 12 entonces identifica el primer día del mes e identifica el último día del mes transformando el número a fecha `SAS` primero, obteniendo el último día después y por último lo transforma del modo más sencillo a un número que pueda entender la partición. Es un bucle `SAS` susceptible de ser parametrizado. Saludos.
+Lo he hecho de una forma sencilla, se trata de un `bucle DO` desde el mes inicial a el mes final, en realidad son unos 90 números sin embargo si el `módulo` del número, el mes, está entre 1 y 12 entonces identifica el primer día del mes e identifica el último día del mes transformando el número a fecha SAS primero, obteniendo el último día después y por último lo transforma del modo más sencillo a un número que pueda entender la partición. Es un bucle SAS susceptible de ser parametrizado. Saludos.

@@ -31,7 +31,7 @@ Personalmente no sabría deciros el porcentaje de casos positivos a partir del c
 
 Sin embargo, cuando ya tengo decidido como va a ser mi modelo no me gusta realizar sobremuestreo. Lo considero un paso previo (algún lector del blog considerará estas palabras incoherentes). Después de toda esta exposición teórico-práctica de malos usos de un dinosaurio en realidad lo que cabe preguntarse es **¿mejora la estimación un modelo con sobremuestreo?**
 
-Abrimos `R` y `Tinn-R` y manos a la obra. Datos simulados de una entidad bancaria que desea realizar un modelo para realizar una campaña comercial sobre renta o Pensión Vitalicia Inmediata (PVI) conocidos por todos:
+Abrimos R y `Tinn-R` y manos a la obra. Datos simulados de una entidad bancaria que desea realizar un modelo para realizar una campaña comercial sobre renta o Pensión Vitalicia Inmediata (PVI) conocidos por todos:
 
 ```r
 clientes=20000
@@ -61,7 +61,7 @@ Sólo encontramos un 2% de casos positivos de los 20.000 clientes analizados. Pa
 validacion <- sample(1:clientes,5000)
 ```
 
-Estos 5.000 clientes no entrenarán ningún modelo sólo validarán los modelos, con y sin sobremuestreo, que realicemos. Vamos a generar la muestra con un porcentaje del 50% de casos positivos mediante la librería de `R` `sample`:
+Estos 5.000 clientes no entrenarán ningún modelo sólo validarán los modelos, con y sin sobremuestreo, que realicemos. Vamos a generar la muestra con un porcentaje del 50% de casos positivos mediante la librería de R `sample`:
 
 ```r
 #install.packages("sampling")

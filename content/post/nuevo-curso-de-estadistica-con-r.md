@@ -5,6 +5,7 @@ categories:
   - r
 date: '2012-10-23'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - curso-basico-de-r.md
   - nueva-edicion-del-curso-basico-de-r.md

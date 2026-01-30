@@ -4,6 +4,7 @@ categories:
   - seguros
 date: '2012-05-21'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v.md
   - el-seguro-de-salud-suma-y-sigue.md

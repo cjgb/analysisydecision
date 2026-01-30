@@ -65,7 +65,7 @@ ubicacion %>%
 
 ![alt text](/images/2023/08/wp_editor_md_95442a2273c54d1584af2fd121c8f575.jpg)
 
-Además de los `warning` de `R` empezamos a encontrarnos otros `warning` con el `resultado`, _tenemos `problemas` de `base` con `las` coordenadas_. La `librería` `ggsoccer` tiene una `base` de `coordenadas` y `Statsbomb` tiene otras, además, hasta donde yo sé, `Jordi` Alba juega por la izquierda y no por la derecha por lo que es necesario cambiar la `base` si queremos que `las` `coordenadas` queden bien y que `la` `dirección` del `campo` sea de izquierda a derecha. Y para ello tenemos que conocer `la` `base` de `Statsbomb` y puede ayudar el `punto` de `penalty`:
+Además de los `warning` de R empezamos a encontrarnos otros `warning` con el `resultado`, _tenemos `problemas` de `base` con `las` coordenadas_. La `librería` `ggsoccer` tiene una `base` de `coordenadas` y `Statsbomb` tiene otras, además, hasta donde yo sé, `Jordi` Alba juega por la izquierda y no por la derecha por lo que es necesario cambiar la `base` si queremos que `las` `coordenadas` queden bien y que `la` `dirección` del `campo` sea de izquierda a derecha. Y para ello tenemos que conocer `la` `base` de `Statsbomb` y puede ayudar el `punto` de `penalty`:
 
 ```r
 penalties <- messi_data %>% sample_frac(0.1) %>% filter(shot.type.name=='Penalty') %>%
@@ -91,7 +91,7 @@ ggplot(ubicacion, aes(x=x, y=y) ) +
 
 ![alt text](/images/2023/08/wp_editor_md_20230ada43144d74a583199d415337f6.jpg)
 
-Ya es un _heatmap_ con mejor pinta aunque muy mejorable y se parece a lo que estamos esperando de `Jordi` Alba y es que es recomendable conocer como se mueve un `jugador` a la hora de usar `ggsoccer` para ajustar bien `las` `bases`. Sé que existe la `función` `to_statsbomb` en `ggsoccer` pero prefiero que se entienda `la` `problemática` de `la` `base`. Con `direction_label` añadimos `la` `dirección` de juego, pero nos lo especifica en inglés. Para `editar` una `función` en un `paquete` de `R` existente podemos hacer:
+Ya es un _heatmap_ con mejor pinta aunque muy mejorable y se parece a lo que estamos esperando de `Jordi` Alba y es que es recomendable conocer como se mueve un `jugador` a la hora de usar `ggsoccer` para ajustar bien `las` `bases`. Sé que existe la `función` `to_statsbomb` en `ggsoccer` pero prefiero que se entienda `la` `problemática` de `la` `base`. Con `direction_label` añadimos `la` `dirección` de juego, pero nos lo especifica en inglés. Para `editar` una `función` en un `paquete` de R existente podemos hacer:
 
 ```r
 trace(direction_label, edit=TRUE)

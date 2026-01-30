@@ -18,7 +18,7 @@ title: En MERGE, ¿mejor IF o WHERE?
 url: /blog/en-merge-c2bfmejor-if-o-where/
 ---
 
-Cuando programo en `SAS` algún paso data como unión con `MERGE` a modo de filtro empleo habitualmente `IF` en vez de `WHERE`. ¿El motivo? Mejor lo vemos en ejemplos. Voy a generar dos datasets aleatorios de 2 millones de registros cada uno. Tendrán un campo autonumérico y un campo aleatorio que toma valores entre 0 y 1:
+Cuando programo en SAS algún paso data como unión con `MERGE` a modo de filtro empleo habitualmente `IF` en vez de `WHERE`. ¿El motivo? Mejor lo vemos en ejemplos. Voy a generar dos datasets aleatorios de 2 millones de registros cada uno. Tendrán un campo autonumérico y un campo aleatorio que toma valores entre 0 y 1:
 
 ```sas
 options fullstimer;
@@ -48,7 +48,7 @@ end;
 run;
 ```
 
-Empleamos la opción `fullstimer` de `SAS` que nos ofrece unas estadísticas más detalladas de cada ejecución en el log, fundamentalmente nos interesa el tiempo real de ejecución. Los datasets aleatorios tienen las mismas observaciones y una estructura muy parecida. La idea es comparar el uso de `IF` frente a `WHERE` en un `MERGE`. Realizamos uniones horizontales entre ambas tablas y filtraremos sólo las observaciones con un valor del autonumérico `i` par, lo haremos de 3 formas pofibles y analizaremos el log:
+Empleamos la opción `fullstimer` de SAS que nos ofrece unas estadísticas más detalladas de cada ejecución en el log, fundamentalmente nos interesa el tiempo real de ejecución. Los datasets aleatorios tienen las mismas observaciones y una estructura muy parecida. La idea es comparar el uso de `IF` frente a `WHERE` en un `MERGE`. Realizamos uniones horizontales entre ambas tablas y filtraremos sólo las observaciones con un valor del autonumérico `i` par, lo haremos de 3 formas pofibles y analizaremos el log:
 
 ```sas
 data tres;
@@ -132,6 +132,6 @@ if mod(i,2)=0 and aleatorido1>0.5;
 run;
 ```
 
-Si repasamos rápidamente el log de nuestra sesión `SAS` el código es perfecto, no aparece ningún error en rojo, sin embargo analizando el log más en detalle tenemos `NOTE: Variable aleatorido1 is uninitialized` Si una variable no existe no tenemos nota roja con `IF`, sin embargo con `WHERE` nos aparecerá el error. Es un inconveniente mínimo pero que en muchas líneas de código puede resultar peligroso. Por supuesto si tenéis alguna duda o un trabajo que me permita pasar más tiempo con mi familia no dudéis en contactar en `rvaquerizo@analisisydecision.es`
+Si repasamos rápidamente el log de nuestra sesión SAS el código es perfecto, no aparece ningún error en rojo, sin embargo analizando el log más en detalle tenemos `NOTE: Variable aleatorido1 is uninitialized` Si una variable no existe no tenemos nota roja con `IF`, sin embargo con `WHERE` nos aparecerá el error. Es un inconveniente mínimo pero que en muchas líneas de código puede resultar peligroso. Por supuesto si tenéis alguna duda o un trabajo que me permita pasar más tiempo con mi familia no dudéis en contactar en `rvaquerizo@analisisydecision.es`
 
 Saludos.

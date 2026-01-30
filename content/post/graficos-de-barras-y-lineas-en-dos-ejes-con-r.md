@@ -26,7 +26,7 @@ url: /blog/graficos-de-barras-y-lineas-en-dos-ejes-con-r/
 
 ![grafico_actuarial_r.png](/images/2011/09/grafico_actuarial_r.png)
 
-[Aunque no es `recomendable crear gráficos` con `2 ejes`](http://www.perceptualedge.com/articles/visual_business_intelligence/dual-scaled_axes.pdf) hoy quería `mostraros` un `gráfico` muy `común` realizado con `R`. Se trata del **`gráfico` de `barras` y `líneas` para un `factor`**. Las `barras` serán un `valor` de `exposición` del `factor` y las `líneas` pueden ser una `frecuencia siniestral` y estarán en un `eje secundario`. Con esto crearemos nuestro `gráfico` de `barras` y `líneas` en `dos ejes`. Simulamos los `datos` para `crear` el `gráfico` con `R`:
+[Aunque no es `recomendable crear gráficos` con `2 ejes`](http://www.perceptualedge.com/articles/visual_business_intelligence/dual-scaled_axes.pdf) hoy quería `mostraros` un `gráfico` muy `común` realizado con R. Se trata del **`gráfico` de `barras` y `líneas` para un `factor`**. Las `barras` serán un `valor` de `exposición` del `factor` y las `líneas` pueden ser una `frecuencia siniestral` y estarán en un `eje secundario`. Con esto crearemos nuestro `gráfico` de `barras` y `líneas` en `dos ejes`. Simulamos los `datos` para `crear` el `gráfico` con R:
 
 ```r
 #Numeros aleatorios de con una distribución gamma
@@ -54,7 +54,7 @@ lo:90='1 Menos de 90 cv';
 else='5 Mas de 200 cv'")
 ```
 
-`Particularmente`, la `función recode` me `parece` la `mejor forma` de `crear tramos` en `variables numéricas` con `R`. Ahora `simulamos` unos `datos` de `exposición` también `basándonos` en una `distribución gamma`:
+`Particularmente`, la `función recode` me `parece` la `mejor forma` de `crear tramos` en `variables numéricas` con R. Ahora `simulamos` unos `datos` de `exposición` también `basándonos` en una `distribución gamma`:
 
 ```r
 exposicion = rnorm(1000,1,0.3)
@@ -86,7 +86,7 @@ frec = cbind(frec,exposicion,siniestro)
 summary(frec)
 ```
 
-La `forma` tan `peculiar` de `crear` el `data.frame` no se debe a `malas costumbres`, no entiendo que hace `R` si `intentas` `crear` en un `sólo paso` el `data.frame` , todos sus `elementos` los `identifica` como `factores`, así pues es `mejor` `hacerlo` por `pasos`. Si alguien me puede explicar por qué sucede esto… `Calculamos` la `frecuencia` sobre el `objeto final` con `sqldf` (como no). **¡Qué grande `sqldf`!**
+La `forma` tan `peculiar` de `crear` el `data.frame` no se debe a `malas costumbres`, no entiendo que hace R si `intentas` `crear` en un `sólo paso` el `data.frame` , todos sus `elementos` los `identifica` como `factores`, así pues es `mejor` `hacerlo` por `pasos`. Si alguien me puede explicar por qué sucede esto… `Calculamos` la `frecuencia` sobre el `objeto final` con `sqldf` (como no). **¡Qué grande `sqldf`!**
 
 ```r
 library(sqldf)

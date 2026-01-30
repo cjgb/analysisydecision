@@ -27,7 +27,7 @@ El ejemplo que vamos a usar está sacado de este:
 
 <https://github.com/zangell44/survival-analysis-lifeline-basics/blob/master/customer_churn.ipynb>
 
-Tenéis la descripción de las variables, la más importante es `tenure`, tiempo en meses hasta que se produce el evento y `churn` que es el evento, la cancelación de la línea, el resto de variables son propias de la línea. En nuestro caso vamos a trabajar con `R` porque me parecen interesantes los objetos que generan algunas funciones. Leemos los datos y realizamos una pequeña transformación sobre la variable respuesta:
+Tenéis la descripción de las variables, la más importante es `tenure`, tiempo en meses hasta que se produce el evento y `churn` que es el evento, la cancelación de la línea, el resto de variables son propias de la línea. En nuestro caso vamos a trabajar con R porque me parecen interesantes los objetos que generan algunas funciones. Leemos los datos y realizamos una pequeña transformación sobre la variable respuesta:
 
 ```r
 datos <- read.csv('https://raw.githubusercontent.com/treselle-systems/customer_churn_analysis/master/WA_Fn-UseC_-Telco-Customer-Churn.csv')
@@ -35,7 +35,7 @@ datos <- read.csv('https://raw.githubusercontent.com/treselle-systems/customer_c
 datos$Churn <- as.integer(ifelse(datos$Churn=="Yes",1,0))
 ```
 
-Las librerías de `R` que vamos a usar son `survival` y `survminer`:
+Las librerías de R que vamos a usar son `survival` y `survminer`:
 
 ```r
 library(survival)

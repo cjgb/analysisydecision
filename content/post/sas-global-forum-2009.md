@@ -5,6 +5,7 @@ categories:
   - sas
 date: '2009-04-12'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - sas-investiga-la-tecnologia-de-r.md
   - un-nuevo-blog-sobre-sas-en-espanol.md

@@ -22,9 +22,9 @@ Es muy habitual trabajar con archivos `csv` pero en ocasiones disponemos de fich
 
 [Hace tiempo ya escribí sobre la lectura de archivos csv con Python y Pandas](https://analisisydecision.es/lectura-de-archivos-csv-con-python-y-pandas/) pero en esta ocasión vamos a leer archivos que no tienen un separador.
 
-Evidentemente tienen que darnos el formato del archivo, en este caso, para ilustrar el ejemplo, vamos a pasar un código en `R` a un código en `Python`.
+Evidentemente tienen que darnos el formato del archivo, en este caso, para ilustrar el ejemplo, vamos a pasar un código en R a un código en `Python`.
 
-Necesitamos leer unos datos usados en el libro _Non-Life Insurance Pricing with GLM_, con `R` teníamos el siguiente programa:
+Necesitamos leer unos datos usados en el libro _Non-Life Insurance Pricing with GLM_, con R teníamos el siguiente programa:
 
 ```r
 varib <- c(edad = 2L, sexo = 1L, zona = 1L, clase_moto = 1L, antveh = 2L,
@@ -50,7 +50,7 @@ data1.head(10)
 
 ![Lectura de texto con Python 1](/images/2020/09/lectura_txt_python1.png)
 
-El programa `R` ya nos define el formato del fichero y es necesario "traducirlo" a `Pandas`:
+El programa R ya nos define el formato del fichero y es necesario "traducirlo" a `Pandas`:
 
 ```python
 #Asignamos columnas

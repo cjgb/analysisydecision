@@ -4,6 +4,7 @@ categories:
   - formación
 date: '2020-03-26'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - seguir-los-datos-del-coronavirus-en-espana-con-rstats.md
   - estimacion-de-la-evolucion-de-casos-del-coronavirus-en-espana.md

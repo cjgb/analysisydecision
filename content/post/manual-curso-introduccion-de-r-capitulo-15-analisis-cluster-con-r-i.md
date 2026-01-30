@@ -28,7 +28,7 @@ El propósito del análisis de conglomerados (`cluster` en terminología inglesa
 - Técnicas de reconocimiento de patrones.
 - Formar grupos de `pixels` en imágenes digitalizadas enviadas por un satélite desde un planeta para identificar los terrenos.
 - …
-  Como siempre la metodología del análisis y la programación con `R` la vamos a estudiar mediante un ejemplo.
+  Como siempre la metodología del análisis y la programación con R la vamos a estudiar mediante un ejemplo.
 
 Ejemplo Cluster.1:
 Partimos de los precios de las viviendas en España desde el último trimestre de 2007 al último trimestre de 2008 por provincia y municipio, trataremos de agrupar ciudades. Los datos los tenemos en formato Excel y han sido descargados del [Ministerio de la Vivienda](http://www.mviv.es/es/index.php?option=com_content&task=blogsection&id=9&Itemid=35), por ello necesitamos leer los datos con el paquete `RODBC` (que no tenemos instalado):
@@ -64,7 +64,7 @@ datos<-sqlFetch(tabla,"Hoja1")  #objeto que contiene los datos de la Hoja1
 odbcClose(tabla)   #cerramos la conexión con el libro Excel
 ```
 
-Un buen ejemplo para conocer como instalar paquetes en `R` con la función `install.packages`. Y un buen ejemplo para importar datos desde Excel a `R`. Con estos pasos ya tenemos un conjunto de datos con las siguientes variables:
+Un buen ejemplo para conocer como instalar paquetes en R con la función `install.packages`. Y un buen ejemplo para importar datos desde Excel a R. Con estos pasos ya tenemos un conjunto de datos con las siguientes variables:
 
 - `Provincia`
 - `Municipio`
@@ -176,7 +176,7 @@ nrow(analisis.ok)/nrow(analisis) # Estudiamos cuantas obs eliminamos
 [1] 0.7031802
 ```
 
-Es cierto que son muchas y deberíamos hacer un tratamiento con ellas, pero de momento es preferible eliminarlas. Ya disponemos de un `data.frame` adecuado para calcular la matriz de distancias sobre la que realizaremos el análisis `cluster` con `R` para determinar el número de grupos que formaremos:
+Es cierto que son muchas y deberíamos hacer un tratamiento con ellas, pero de momento es preferible eliminarlas. Ya disponemos de un `data.frame` adecuado para calcular la matriz de distancias sobre la que realizaremos el análisis `cluster` con R para determinar el número de grupos que formaremos:
 
 ```r
 distancias<-dist(analisis.ok)
@@ -224,7 +224,7 @@ colnames(analisis.ok)
 [16] "dif_Tas_mas2anios_2"       "dif_Tas_mas2anios_3"       "dif_Tas_mas2anios_4"       "cluster.1.nojerar.cluster"
 ```
 
-Vemos que por defecto el nombre que le asigna a la variable es `cluster.1.nojerar.cluster`, largo y que puede ser difícil de manejar. Veamos unas instrucciones de `R` para renombrar variables en un `data.frame`:
+Vemos que por defecto el nombre que le asigna a la variable es `cluster.1.nojerar.cluster`, largo y que puede ser difícil de manejar. Veamos unas instrucciones de R para renombrar variables en un `data.frame`:
 
 ```r
 length(colnames(analisis.ok))
@@ -259,4 +259,4 @@ Con estos resultados podemos describir los 6 grupos formados:
 - `Cluster 4`: El más pequeño de todos. Tiene un descomunal aumento de las tasaciones de vivienda antigua y bajaron sus precios en T4. Puede ser donde más daño hace la crisis.
 - `Cluster 5`: Un grupo numeroso con un precio estable pero donde bajaron las tasaciones de viviendas nuevas. Son zonas donde el boom del ladrillo no fue tan intenso.
 - `Cluster 6`: El grupo que comenzó 2008 con subidas de precios en viviendas nuevas y bajada en antiguas. Tuvo muchas tasaciones de antiguas en T3 pero las nuevas bajaron. Zona de fuerte parón en la construcción pero sin parón económico.
-  Con ejemplos podríamos estudiar las conclusiones. Hasta aquí este post que no va en la línea de post cortos de AyD pero que sirve de introducción al análisis `cluster` con `R`. Vamos a trabajar al menos 3 ejemplos más porque este tipo de trabajos engloba muchos usos de funciones imprescindibles de conocer y manejar en `R`. Como siempre para dudas o sugerencias… `rvaquerizo@analisisydecision.es`
+  Con ejemplos podríamos estudiar las conclusiones. Hasta aquí este post que no va en la línea de post cortos de AyD pero que sirve de introducción al análisis `cluster` con R. Vamos a trabajar al menos 3 ejemplos más porque este tipo de trabajos engloba muchos usos de funciones imprescindibles de conocer y manejar en R. Como siempre para dudas o sugerencias… `rvaquerizo@analisisydecision.es`

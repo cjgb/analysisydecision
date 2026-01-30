@@ -4,6 +4,7 @@ categories:
   - formación
 date: '2009-05-26'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - lecciones-de-economia-de-un-ignorante-caen-los-beneficios-y-nos-dejan-colocar-preferentes.md
   - lecciones-de-economia-de-un-ignorante-la-caixa-a-colocar-preferentes.md

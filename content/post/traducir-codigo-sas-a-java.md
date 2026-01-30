@@ -5,6 +5,7 @@ categories:
   - sas
 date: '2009-11-14'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - en-breve-revision-de-wps-clonico-de-sas.md
   - acercamiento-a-wps-migrando-desde-sas.md

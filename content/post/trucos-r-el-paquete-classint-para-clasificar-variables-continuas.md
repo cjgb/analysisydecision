@@ -16,11 +16,11 @@ related:
 tags:
   - classint
   - rcolorbrewer
-title: Trucos `R`. El paquete `classInt` para clasificar variables continuas
+title: Trucos R. El paquete `classInt` para clasificar variables continuas
 url: /blog/trucos-r-el-paquete-classint-para-clasificar-variables-continuas/
 ---
 
-El paquete `classInt` de `R` últimamente está muy presente en mis programas y me gustaría dedicarle unas líneas para que podáis ver algunas de sus posibilidades a la hora de clasificar variables continuas, además estas posibilidades unidas con `RColorBrewer` nos permiten crear gráficos muy atractivos. Instalamos y clasificamos un vector de ejemplo:
+El paquete `classInt` de R últimamente está muy presente en mis programas y me gustaría dedicarle unas líneas para que podáis ver algunas de sus posibilidades a la hora de clasificar variables continuas, además estas posibilidades unidas con `RColorBrewer` nos permiten crear gráficos muy atractivos. Instalamos y clasificamos un vector de ejemplo:
 
 ```r
 aleatorio <- abs(rnorm(100,50,30))

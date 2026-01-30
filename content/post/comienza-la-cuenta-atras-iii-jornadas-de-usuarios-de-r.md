@@ -7,6 +7,7 @@ categories:
   - r
 date: '2011-04-04'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - revision-de-las-iii-jornadas-de-r.md
   - i-jornadas-de-usuarios-de-r-en-espana.md

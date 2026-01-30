@@ -4,6 +4,7 @@ categories:
   - r
 date: '2009-12-18'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - vi-jornadas-de-usuarios-de-r-ya-estan-en-marcha.md
   - mi-intervencion-en-el-grupo-de-usuarios-de-r-de-madrid.md

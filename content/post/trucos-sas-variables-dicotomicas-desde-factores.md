@@ -16,11 +16,11 @@ title: Trucos SAS. Variables dicotómicas desde factores
 url: /blog/trucos-sas-variables-dicotomicas-desde-factores/
 ---
 
-El verbo `dumificar` es una invención propia y consiste en la acción de transformar una variable en una o n `variables dicotómicas` y eso es lo que os planteo en esta entrada, dumificar variables cualitativas con `SAS`. Partimos de una variable discreta o `factor` y hemos de transformarla en n variables, tantas como valores tome el factor, que toman valores 1 o 0 en función del grupo al valor que toma. Gráficamente:
+El verbo `dumificar` es una invención propia y consiste en la acción de transformar una variable en una o n `variables dicotómicas` y eso es lo que os planteo en esta entrada, dumificar variables cualitativas con SAS. Partimos de una variable discreta o `factor` y hemos de transformarla en n variables, tantas como valores tome el factor, que toman valores 1 o 0 en función del grupo al valor que toma. Gráficamente:
 
 ![dummys-desde-factores.png](/images/2011/01/dummys-desde-factores.png "dummys-desde-factores.png")
 
-Seguro que se os ocurren mil aplicaciones y seguro que pensáis que eso ya lo hace `SAS` en determinados modelos, pero tened este código bien guardado porque en ocasiones puede serviros. El método empleado para realizar este proceso es uno que ya habéis podido ver en esta web y consiste en crear instrucciones con `SAS` desde conjuntos de datos. La macro que he creado distingue entre números y caracteres a través de la función `VTYPEX` que tendrá una entrada propia en el blog. Aquí tenéis el código:
+Seguro que se os ocurren mil aplicaciones y seguro que pensáis que eso ya lo hace SAS en determinados modelos, pero tened este código bien guardado porque en ocasiones puede serviros. El método empleado para realizar este proceso es uno que ya habéis podido ver en esta web y consiste en crear instrucciones con SAS desde conjuntos de datos. La macro que he creado distingue entre números y caracteres a través de la función `VTYPEX` que tendrá una entrada propia en el blog. Aquí tenéis el código:
 
 ```sas
 %macro dumifica(in=,out=,varib=);

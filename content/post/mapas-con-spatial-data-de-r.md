@@ -24,7 +24,7 @@ url: /blog/mapas-con-spatial-data-de-r/
 
 ![colombia13.jpg](/images/2010/10/colombia13.thumbnail.jpg)![espania1.jpg](/images/2010/10/espania1.thumbnail.jpg "espania1.jpg")![mexico1.jpg](/images/2010/10/mexico1.thumbnail.jpg "mexico1.jpg")
 
-Vamos a hacer mapas de México, España y Colombia con `R`. Y lo primero que tenemos que hacer es disponer de un objeto de `R` con los datos del mapa. Estos datos los vamos a obtener de [http://www.gadm.org/country](http://www.gadm.org/country) Seleccionamos el país y el formato que deseamos descargar. Para ilustrar nuestros ejemplos vamos a descargarnos los mapas de España, México y Colombia en formato `R data`. Vemos que tenemos distintas divisiones en función del nivel al que deseemos llegar. En este caso seleccionamos nivel 2 para España y nivel 1 para Colombia y México. Los hemos descargado a nuestro equipo, mejor descargarlo que no acceder a la web, y comprobamos que tengan extensión `Rdata` los archivos. Una vez tengamos los archivos con su formato, su extensión y demás ya podemos trabajar con ellos y vamos a trabajar con el paquete `sp` _spatial data_ :
+Vamos a hacer mapas de México, España y Colombia con R. Y lo primero que tenemos que hacer es disponer de un objeto de R con los datos del mapa. Estos datos los vamos a obtener de [http://www.gadm.org/country](http://www.gadm.org/country) Seleccionamos el país y el formato que deseamos descargar. Para ilustrar nuestros ejemplos vamos a descargarnos los mapas de España, México y Colombia en formato `R data`. Vemos que tenemos distintas divisiones en función del nivel al que deseemos llegar. En este caso seleccionamos nivel 2 para España y nivel 1 para Colombia y México. Los hemos descargado a nuestro equipo, mejor descargarlo que no acceder a la web, y comprobamos que tengan extensión `Rdata` los archivos. Una vez tengamos los archivos con su formato, su extensión y demás ya podemos trabajar con ellos y vamos a trabajar con el paquete `sp` _spatial data_ :
 
 ```r
 #install.packages("sp")
@@ -166,7 +166,7 @@ mapa@data=data.frame(valores)
 spplot(mapa,c("valores"))
 ```
 
-No es muy complicada su representación. Pero me gustaría señalar que el objeto de `R` que me he descargado tiene 51 divisiones territoriales cuando España tiene 52. No me he planteado la búsqueda de la incongruencia pero parece que el problema viene por las Islas Canarias. En este monográfico sólo me quiero aproximar a la sintaxis ya haremos representaciones “más serias”. Pero podemos analizar donde está el problema con la siguiente sintaxis:
+No es muy complicada su representación. Pero me gustaría señalar que el objeto de R que me he descargado tiene 51 divisiones territoriales cuando España tiene 52. No me he planteado la búsqueda de la incongruencia pero parece que el problema viene por las Islas Canarias. En este monográfico sólo me quiero aproximar a la sintaxis ya haremos representaciones “más serias”. Pero podemos analizar donde está el problema con la siguiente sintaxis:
 
 ```r
 plot(mapa)
@@ -177,4 +177,4 @@ labels=as.character(mapa$valores), cex=0.3)
 ```
 
 Efectivamente sólo ha representado un valor para Canarias. Tenemos que tener mucho cuidado con el uso de este objeto. Además la representación no es muy buena ya que sería más elegante recuadrar las islas y disponer de un mapa con una escala mayor.
-En fin, empezamos a aproximarnos al uso de objetos `spatial data` para la representación de mapas con `R`. Poco a poco iré introduciendo estas representaciones en los distintos mapas que realizamos. Por cierto, si alguien quiere seguir la labor y crear ejemplos de uso para Colombia y México que me lo comunique y creamos un link. Saludos.
+En fin, empezamos a aproximarnos al uso de objetos `spatial data` para la representación de mapas con R. Poco a poco iré introduciendo estas representaciones en los distintos mapas que realizamos. Por cierto, si alguien quiere seguir la labor y crear ejemplos de uso para Colombia y México que me lo comunique y creamos un link. Saludos.

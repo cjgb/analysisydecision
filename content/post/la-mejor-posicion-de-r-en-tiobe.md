@@ -4,6 +4,7 @@ categories:
   - r
 date: '2014-11-12'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - r-cayendo-en-la-lista-tiobe.md
   - que-nos-pasa-con-r-de-nuevo.md

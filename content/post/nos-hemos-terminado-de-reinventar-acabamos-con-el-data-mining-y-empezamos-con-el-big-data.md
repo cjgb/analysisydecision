@@ -5,6 +5,7 @@ categories:
   - monográficos
 date: '2013-02-23'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - cuando-tenemos-big-data.md
   - data-mining-vs-bigdata-de-momento-con-google-trends.md

@@ -47,13 +47,13 @@ El `ranking` de `visitas` y `tiempo de permanencia` por `contenido` en estos 45 
 
 ![oct3.JPG](/images/2008/09/oct3.JPG)
 
-Quitando la `página raiz`, el `podio` de `visitas` se inicia con el `mensaje` que crea un `script` que nos permite unir `hojas excel`, el `capítulo` de `R` que hace referencia a la `regresión lineal` y el uso de `DDE` con `SAS`. En cuanto al `tiempo de estancia` en el `sitio` parece que hay un `par` de `artículos` que captan `interés`. Creo que los `artículos` de `opinión` tienen que seguir apareciendo y es necesario avanzar en `aspectos estadísticos` con `R` y con `SAS`, fundamentalmente con el primero por su `caracter GNU`.
+Quitando la `página raiz`, el `podio` de `visitas` se inicia con el `mensaje` que crea un `script` que nos permite unir `hojas excel`, el `capítulo` de R que hace referencia a la `regresión lineal` y el uso de `DDE` con SAS. En cuanto al `tiempo de estancia` en el `sitio` parece que hay un `par` de `artículos` que captan `interés`. Creo que los `artículos` de `opinión` tienen que seguir apareciendo y es necesario avanzar en `aspectos estadísticos` con R y con SAS, fundamentalmente con el primero por su `caracter GNU`.
 
 En cuanto a las `Palabras clave de acceso` la he agregado y os planteo un `resumen` por `referencia`:
 
 - `Análisis de decisión` – 12 `visitas`
-- `SAS` – 42 `visitas`
-- `R` – 31 `visitas`
+- SAS – 42 `visitas`
+- R – 31 `visitas`
 - `regresión lineal` – 15 `visitas`
 - Excel – 9 `visitas`
 
@@ -67,4 +67,4 @@ Las `ubicaciones físicas` de las `visitas` de estos 45 `días` trazan el siguie
 
 La `Ubicación de red` me está permitiendo identificar si las `visitas` son `profesionales`, `universitarias` o `personales`. Tengo `usuarios fidelizados` en algunos `bancos` y `cajas` de la `península ibérica`, algún `usuario` de `compañías` de `telecomunicaciones` mexicanas y españolas y me llama la `atención` que no he captado la `atención` en muchas `compañías` de `seguros`. Las `visitas universitarias` provienen más de `América central` y son las que mayor `tiempo` están en la `web` sin embargo no repiten. En cuanto al `promedio de estancia` son las `visitas` de los `bancos` y `cajas` españolas las que más `permanecen`, además es evidente que son `usuarios fieles` y, al menos, recibo de ellos una `visita` cada 3 `días`. A ver si contactáis por `correo` conmigo.
 
-Pues bien, con todo esto parece claro que es necesario `potenciar` los `temas estadísticos` con `R`. Comenzar el `curso introductorio` de `SAS` y plantear al menos un `artículo semanal`. `Avandono` una `posible sección` de `trucos` de Excel por su `mala acogida`. También veo necesario dar a conocer `aspectos` del `sector seguros` como el `cálculo` de la `prima de riesgo` o la `optimización de primas en renovación`. La `línea` parece `clara`, ahora sólo falta el `tiempo` para desarrollarla.
+Pues bien, con todo esto parece claro que es necesario `potenciar` los `temas estadísticos` con R. Comenzar el `curso introductorio` de SAS y plantear al menos un `artículo semanal`. `Avandono` una `posible sección` de `trucos` de Excel por su `mala acogida`. También veo necesario dar a conocer `aspectos` del `sector seguros` como el `cálculo` de la `prima de riesgo` o la `optimización de primas en renovación`. La `línea` parece `clara`, ahora sólo falta el `tiempo` para desarrollarla.
