@@ -4,7 +4,7 @@ categories:
   - business intelligence
 date: '2010-05-01'
 lastmod: '2025-07-13'
-Dulles Research
+noindex: true
 related:
   - integracion-de-r-con-sas-spss-y-otros.md
   - paquete-sas7bdat-de-r-me-pongo-con-ello.md
