@@ -27,35 +27,20 @@ Trasponer datos con SAS es un tema que genera un gran número de consultas en Go
 
 ```sas
 data datos;
-
 input id_cliente $ tipo precio;
-
 datalines;
-
 A 1 100
-
 A 2 150
-
 A 3 120
-
 B 1 200
-
 B 2 250
-
 B 3 220
-
 C 1 300
-
 C 2 350
-
 C 3 320
-
 D 1 400
-
 D 2 450
-
 D 3 420
-
 ;run;
 ```
 
@@ -63,15 +48,10 @@ Esta es nuestra tabla de partida, ahora vamos a generar tres variables en funci�
 
 ```sas
 data datos2;
-
 set datos;
-
 precio_1 = (tipo = 1) * precio;
-
 precio_2 = (tipo = 2) * precio;
-
 precio_3 = (tipo = 3) * precio;
-
 run;
 ```
 
@@ -81,21 +61,13 @@ Si vemos la tabla resultante tiene una forma de matriz con precios y ceros en fu
 
 ```sas
 proc sql;
-
 create table tdatos as select
-
 id_cliente,
-
 sum(precio_1) as precio_1,
-
 sum(precio_2) as precio_2,
-
 sum(precio_3) as precio_3
-
 from datos2
-
 group by 1;
-
 quit;
 ```
 
@@ -103,21 +75,13 @@ Bien, pues esta es la “filosofía” de la trasposición con SAS en `SQL`. Per
 
 ```sas
 proc sql;
-
 create table tdatos as select
-
 id_cliente,
-
 sum((tipo=1)*precio) as precio_1,
-
 sum((tipo=2)*precio) as precio_2,
-
 sum((tipo=3)*precio) as precio_3
-
 from datos
-
 group by 1;
-
 quit;
 ```
 

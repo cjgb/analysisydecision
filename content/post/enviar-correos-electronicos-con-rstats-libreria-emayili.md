@@ -137,6 +137,3 @@ email <- envelope() %>%
 ```
 
 En este punto se siguen los pasos anteriores y se puede enviar el email que previamente hemos automatizado, configurado o parametrizado desde R.
-
-```
-```

@@ -19,9 +19,11 @@ title: El seguro de crédito interesante reto técnico
 url: /blog/el-seguro-de-credito-interesante-reto-tecnico/
 ---
 
-![seguro-de-credito.JPG](/images/2008/12/seguro-de-credito.JPG "seguro-de-credito.JPG")Dando un paseo por [www.icea.es](http://www.icea.es/) he visitado los ranking de seguros no vida de 2007 y 2008. Me ha impactado un valor. Entre las 25 entidades más potentes de 2008 hay una que hay dos que han crecido por encima del resto con respecto al año 2007:
+![seguro-de-credito.JPG](/images/2008/12/seguro-de-credito.JPG#center)
 
-![seguro-de-credito.JPG](/images/2008/12/seguro-de-credito.JPG "seguro-de-credito.JPG")
+Dando un paseo por [www.icea.es](http://www.icea.es/) he visitado los ranking de seguros no vida de 2007 y 2008. Me ha impactado un valor. Entre las 25 entidades más potentes de 2008 hay dos que han crecido por encima del resto con respecto al año 2007:
+
+![seguro-de-credito.JPG](/images/2008/12/seguro-de-credito.JPG#center)
 
 En estas líneas nos vamos a centrar en Crédito y Caución que ha incrementado sus primas en casi un 20%. El caso de Pelayo, que incorpora Munat ([leer la noticia](http://www.eleconomista.es/mercados-cotizaciones/noticias/294915/10/07/Autorizan-la-cesion-de-la-cartera-de-Munat-Seguros-a-Pelayo-Mutua.html)) necesitará también un análisis, ya que todas las compañías quieren subir en los ranking y para ello aparecerán movimientos de cesiones y compras a corto plazo.
 
