@@ -24,46 +24,27 @@ url: /blog/trucos-sas-identificar-registros-duplicados/
 
 Muy rápido, para identificar registros duplicados existen múltiples formas. Seguramente haré un monográfico sobre este tema pero de momento dejo una píldora:
 
-````r
+````sas
 data aleatorio;
-
-do i=1 to 100000;
-
-id=ranpoi(23456,56781);
-
-if ranuni(5)>=0.3 then output;
-
-end;
-
+  do i=1 to 100000;
+  id=ranpoi(23456,56781);
+  if ranuni(5)>=0.3 then output;
+  end;
 run;
 
 proc sql;
-
-create table repes (where=(rep>1)) as select
-
-id, count(id) as rep
-
-from aleatorio
-
-group by 1;
-
+  create table repes (where=(rep>1)) as select
+  id, count(id) as rep
+  from aleatorio
+  group by 1;
 quit;
 
-```sas
 proc sql;
-
 create table repes (where=(rep=1)) as select
-
-id, count(id) as rep
-
-from aleatorio
-
-group by 1;
-
+  id, count(id) as rep
+  from aleatorio
+  group by 1;
 quit;
 ````
 
-```
-
-Contamos registros y empleamos where como opción de escritura. Muy fácil y perfectamente entendible. No puedo entretenerme más que mi hija me reclama…
-```
+Contamos registros y empleamos `where` como opción de escritura. Muy fácil y perfectamente entendible. No puedo entretenerme más que mi hija me reclama…

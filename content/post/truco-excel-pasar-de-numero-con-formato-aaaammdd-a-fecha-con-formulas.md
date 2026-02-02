@@ -22,7 +22,7 @@ url: /blog/truco-excel-pasar-de-numero-con-formato-aaaammdd-a-fecha-con-formulas
 
 ![transformar_fecha_excel](/images/2014/02/transformar_fecha_excel.png)
 
-Tenía que transformar un número en formato AAAAMMDD a una fecha en Excel. Tenía que concatenar varias funciones y he pensado que a lo mejor a alguno de los lectores del blog podría interesarle. Se trata de utilizar la función de Excel FECHA con RESIDUO y ENTERO pero con cierto talento. Partimos del una fecha 20140225 y realizamos la siguiente sucesión de fórmulas:
+Tenía que transformar un número en formato `AAAAMMDD` a una fecha en Excel. Tenía que concatenar varias funciones y he pensado que a lo mejor a alguno de los lectores del blog podría interesarle. Se trata de utilizar la función de Excel `FECHA` con `RESIDUO` y `ENTERO` pero con cierto talento. Partimos de una fecha `20140225` y aplicamos la siguiente sucesión de fórmulas:
 
 - Año: `ENTERO(C6/10000)`
 - Mes: `RESIDUO(ENTERO(C6/100);100)`

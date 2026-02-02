@@ -26,7 +26,7 @@ No sabía si realizar esta `entrada` sobre `web scraping` con R o con `python`. 
 
 El `procedimiento` para el `web scraping` será el siguiente:
 
-1. Identificar en la `web` del `Congreso` como funciona el `formulario` para cambiar de `diputado`, es `sencillo` basta con ver el `link` y tenemos `fichaDiputado?idDiputado=171 &idLegislatura=12"` es evidente que vamos a crear un `bucle` con el `idDiputado`.
+1. Identificar en la `web` del `Congreso` como funciona el `formulario` para cambiar de `diputado`, es sencillo basta con ver el `link` y tenemos `fichaDiputado?idDiputado=171 &idLegislatura=12"` es evidente que vamos a crear un `bucle` con el `idDiputado`.
 1. Que `parte` corresponde con el `curriculum` de cada `personaje`, esta `parte` también es `sencilla`, véis el `código fuente` y hay un `bloque` de `contenido` identificado como
    `div id="curriculum"` esta es la `parte` que nos interesa.
 1. Tenemos que limpiar con alguna `función` de R el `HTML` y el `texto` que estamos «`escrapeando`».

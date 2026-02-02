@@ -19,32 +19,30 @@ title: Leaflet con R. Apuntes de mapas de coordenadas
 url: /blog/leaflet-con-r-apuntes-de-mapas-de-coordenadas/
 ---
 
-Estoy desarrollando cosas muy interesantes con `leaflet` en R y quería poner unos breves apuntes por si a alguien le sirvieran. En `Stackoverflow` y otras webs al uso tenéis mucha más ayuda y código de mayor interés pero en pocas líneas espero sentar las bases de uso de `leaflet`. Para ilustrar el ejemplo me he [descargado unos datos de `datos.gob`](https://datos.gob.es/en/catalogo?publisher_display_name=Ayuntamiento+de+Madrid&theme_id=seguridad) con las coordenadas de los parques de bomberos de Madrid Capital, la idea es representar estos puntos en un mapa. Lo primero es descargar los datos y ponerlos en una ubicación de nuestro equipo:
+Estoy desarrollando cosas muy interesantes con `leaflet` en R y quería poner unos breves apuntes por si a alguien le sirvieran. En Stackoverflow y otras webs al uso tenéis mucha más ayuda y código de mayor interés pero en pocas líneas espero sentar las bases de uso de `leaflet`. Para ilustrar el ejemplo me he [descargado unos datos de `datos.gob`](https://datos.gob.es/en/catalogo?publisher_display_name=Ayuntamiento+de+Madrid&theme_id=seguridad) con las coordenadas de los parques de bomberos de Madrid Capital, la idea es representar estos puntos en un mapa. Lo primero es descargar los datos y ponerlos en una ubicación de nuestro equipo:
 
 ```r
 bomberos <- read.csv("C:\\temp\\Personales\\wordpress\\211642-0-bomberos-parques.csv", sep=';')
-
 bomberos <- bomberos %>% select(NOMBRE, LATITUD, LONGITUD)
 ```
-
-````
 
 Nos hemos quedado sólo con las variables que nos interesa representar en el mapa de `leaflet` que vamos a crear con este sencillo código que posteriormente os resumo:
 
 ```r
 library(leaflet)
-
-icono <- makeIcon(iconUrl = "https://www.freeiconspng.com/uploads/burn-burning-fire-flame-heat-icon--icon-search-engine-20.png", iconWidth = 18, iconHeight = 18)
-
+icono <- makeIcon(iconUrl = "https://www.freeiconspng.com/uploads/burn-burning-fire-flame-heat-icon--icon-search-engine-20.png",
+                  iconWidth = 18, iconHeight = 18)
 leaflet() %>%
   addTiles() %>%
-  setView( lng = mean(bomberosLONGITUD) ,
-         lat = mean(bomberosLATITUD), zoom = 10) %>%
+  setView(lng = mean(bomberosLONGITUD) ,
+          lat = mean(bomberosLATITUD),
+          zoom = 10) %>%
   addProviderTiles(providersStamen.TonerLite,
                    options = providerTileOptions(noWrap = F)) %>%
-  addMarkers(lat = bomberosLATITUD, lng = bomberosLONGITUD, label = bomberosNOMBRE, icon = icono)
-````
-
+  addMarkers(lat = bomberosLATITUD,
+             lng = bomberosLONGITUD,
+             label = bomberosNOMBRE,
+             icon = icono)
 ```
 
 Por partes:
@@ -59,4 +57,3 @@ Por partes:
 Resultado más que digno con pocas líneas de código:
 
 ![](/images/2021/06/leaflet1.png)
-```

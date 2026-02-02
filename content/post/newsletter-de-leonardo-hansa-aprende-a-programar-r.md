@@ -6,6 +6,7 @@ categories:
   - r
 date: '2022-03-04'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - evita-problemas-con-excel-desde-r-de-tocar-el-dato-a-un-proceso.md
   - estadistica-para-cientificos-de-datos-con-r-introduccion.md

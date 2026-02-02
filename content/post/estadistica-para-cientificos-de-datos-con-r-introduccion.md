@@ -40,7 +40,7 @@ Aunque se hará referencia a las publicaciones concretas, las cuentas de `Twitte
 - [`JL Cañadas`](https://twitter.com/joscani)
 - [`Carlos Gil`](https://twitter.com/gilbellosta)
 - [`Picanumeros`](https://twitter.com/Picanumeros)
-- [`AnaBayes`](https://twitter.com/AnaBayes) también se hará mención a su [`blog`](http://anabelforte.com/)
+- [`AnaBayes`](https://twitter.com/AnaBayes) también se hará mención a su [blog](http://anabelforte.com/)
 - [`JulioMulero`](https://twitter.com/juliomulero)
 - [`Dados de Laplace`](https://twitter.com/DadosdeLaplace)
 

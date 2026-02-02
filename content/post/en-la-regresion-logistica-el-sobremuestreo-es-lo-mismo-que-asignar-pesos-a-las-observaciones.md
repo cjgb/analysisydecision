@@ -117,7 +117,7 @@ Con el `PROC SURVEYSELECT` en un primer paso realizamos un `muestreo` con `reemp
 
 ![regresion_logistica2.PNG](/images/2012/03/regresion_logistica2.PNG)
 
-Sólo ha variado el `término independiente` que se ha reducido a la mitad (más o menos). [A ver si alguien puede contar porqué se está produciendo este hecho]. Pero lo que más nos interesa es saber qué sucede si en vez de realizar el `sobremuestreo` asignamos `pesos` a las observaciones. ¡Ojo! No vamos a crear una `variable _offset_` en el `modelo`, vamos a asignar un `peso` a cada registro de la `tabla`, eso es un tema interesante que necesitaría otra entrada en el `blog`. El proceso de creación de esta `variable peso` es muy sencillo:
+Sólo ha variado el `término independiente` que se ha reducido a la mitad (más o menos). [A ver si alguien puede contar porqué se está produciendo este hecho]. Pero lo que más nos interesa es saber qué sucede si en vez de realizar el `sobremuestreo` asignamos `pesos` a las observaciones. ¡Ojo! No vamos a crear una `variable _offset_` en el `modelo`, vamos a asignar un `peso` a cada registro de la `tabla`, eso es un tema interesante que necesitaría otra entrada en el blog. El proceso de creación de esta `variable peso` es muy sencillo:
 
 ```sas
 *AHORA VAMOS A ASIGNAR PESOS A LAS OBSERVACIONES;

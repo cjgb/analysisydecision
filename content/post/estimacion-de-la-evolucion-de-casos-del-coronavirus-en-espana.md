@@ -34,7 +34,7 @@ names(datos) <- c("Provincia", "Pais","Latitud", "Longitud", fechas)
 
 esp_ita <- data.frame(fecha=fechas)
 esp_ita <- cbind.data.frame(esp_ita, Espania = t(datos %>% filter(Pais=="Spain") %>% select(fechas)))
-esp_ita <- cbind.data.frame(esp_ita, Italia = t(datos %>% filter(Pais=="Italy") %>% select(fechas)))
+esp_ita <- cbind.data.frame(esp_ita, Italia  = t(datos %>% filter(Pais=="Italy") %>% select(fechas)))
 
 p <- ggplot(esp_ita, aes(x=fecha)) +
   geom_line(aes(y=Espania, group = 1, color="España")) +

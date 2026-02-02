@@ -23,7 +23,7 @@ title: Adyacencia de polígonos con el paquete spdep de R
 url: /blog/adyacencia-de-poligonos-con-el-paquete-spdep-de-r/
 ---
 
-Cuando trabajamos con `zonificación` o `geolocalización` la `adyacencia` entre los `elementos` del `estudio` es `relevante`. En este `caso` quería trabajar con la `adyacencia` entre los `polígonos` que componen un `archivo` de `datos espaciales shapefile` y para entender `mejor` como podemos obtener la `adyacencia` entre `polígonos` creo que lo mejor es hacer un `ejemplo` con un `mapa`, en este `caso` un `mapa` de `municipios` de `Barcelona`. El primer `paso` es disponer del `objeto` con los `datos espaciales`, [de esto ya he escrito mucho en el `blog`](https://analisisydecision.es/mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel/) y por eso no me `detengo` mucho:
+Cuando trabajamos con `zonificación` o `geolocalización` la `adyacencia` entre los `elementos` del `estudio` es `relevante`. En este `caso` quería trabajar con la `adyacencia` entre los `polígonos` que componen un `archivo` de `datos espaciales shapefile` y para entender `mejor` como podemos obtener la `adyacencia` entre `polígonos` creo que lo mejor es hacer un `ejemplo` con un `mapa`, en este `caso` un `mapa` de `municipios` de `Barcelona`. El primer `paso` es disponer del `objeto` con los `datos espaciales`, [de esto ya he escrito mucho en el blog](https://analisisydecision.es/mapas-de-municipales-de-espana-en-r-con-la-ayuda-de-excel/) y por eso no me `detengo` mucho:
 
 ```r
 ub="./Desktop/R/mapas/ESP_adm4.rds"

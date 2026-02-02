@@ -24,7 +24,7 @@ No es la primera vez que traigo al blog la realización de polígonos de Voronoi
 
 ## Origen de los datos
 
-El pasado 25 de noviembre el [Grupo de Usuarios de R de Madrid](http://madrid.r-es.org/) trajo la presentación de [@dieghernan](https://twitter.com/dhernangomez) sobre la creación de mapas con la librería `mapSpain` que será la que nos permita crear mapas de españa a distintos niveles, entre ellos mapas a nivel provincial mediante un código en R que no puede ser más sencillo:
+El pasado 25 de noviembre el [Grupo de Usuarios de R de Madrid](http://madrid.r-es.org/) trajo la presentación de [@dieghernan](https://twitter.com/dhernangomez) sobre la creación de mapas con la librería `mapSpain` que permite crear mapas de España a distintos niveles, entre ellos mapas a nivel provincial mediante un código en R que no puede ser más sencillo:
 
 ```r
 library(tidyverse)
@@ -56,7 +56,7 @@ Cada punto marca el centro geográfico de cada provincia de España.
 
 ## Polígonos de Voronoi con sf
 
-Aplicamos `st_voronoi` de `sf` para obtener los `polígonos`, destacar la necesidad de unir cada polígono generado para crear un objeto sf con `st_union`, sin ello no funciona.
+Aplicamos `st_voronoi` de `sf` para obtener los polígonos, destacar la necesidad de unir cada polígono generado para crear un objeto sf con `st_union`, sin ello no funciona.
 
 ```r
 voronoi <- st_voronoi(st_union(st_centroid(PROVINCIAS.sf$geometry)))
@@ -65,7 +65,7 @@ ggplot() + geom_sf(data=voronoi, fill='grey80', color='blue')
 
 ![wp_editor_md_096a6b5cffb0e934cd4ca151fd6fba0e.jpg](/images/2021/11/wp_editor_md_096a6b5cffb0e934cd4ca151fd6fba0e.jpg)
 
-Lo que sucede es que nos ha generado la división en `polígonos` de Voronoi en base al espacio que han creado las coordenadas geográficas y necesitamos que esas divisiones estén dentro del territorio de España.
+Lo que sucede es que nos ha generado la división en polígonos de Voronoi en base al espacio que han creado las coordenadas geográficas y necesitamos que esas divisiones estén dentro del territorio de España.
 
 ## Los polígonos dentro del polígono
 
@@ -73,11 +73,11 @@ A continuación la motivación de la entrada. Acotamos esa representación gráf
 
 ```r
 ESPANIA.sf <- esp_get_country()
-# ggplot() + geom_sf(data=ESPANIA.sf, fill='grey80', color='blue')
-
-ggplot() + geom_sf(data= st_intersection(st_cast(voronoi), st_union(ESPANIA.sf)), fill='grey80', color='blue')
+ggplot() + geom_sf(
+  data = st_intersection(st_cast(voronoi), st_union(ESPANIA.sf)),
+  fill='grey80', color='blue')
 ```
 
 ![wp_editor_md_8ebd3e270c48ece8db61d8f45fb1bd7f.jpg](/images/2021/11/wp_editor_md_8ebd3e270c48ece8db61d8f45fb1bd7f.jpg)
 
-Ahora ya tenemos un mapa que se parece mucho a lo que deseamos, es claramente mejorable. La función de `sf` `st_intersection` hace que «crucemos» el objeto Voronoi con el objeto `ESPANIA.sf` y solo se representarán aquellos que estén dentro del polígono que intersecan ambos objetos. Por supuesto, esta es la `representación` gráfica, pero disponéis de `polígonos` con los que podréis hacer algún que otro análisis espacial.
+Ahora ya tenemos un mapa que se parece mucho a lo que deseamos, es claramente mejorable. La función de `sf` `st_intersection` hace que «crucemos» el objeto Voronoi con el objeto `ESPANIA.sf` y solo se representarán aquellos que estén dentro del polígono que intersecan ambos objetos. Por supuesto, esta es la representación gráfica, pero disponéis de polígonos con los que podréis hacer algún que otro análisis espacial.

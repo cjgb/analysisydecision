@@ -101,4 +101,4 @@ Si deseamos analizar el `comportamiento` de nuestras `variables independientes` 
 
 > [Visualizing `neural networks` from the `nnet package`](https://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/)
 
-Simplemente `asombroso` eso si que es una `entrada interesante`. En la siguiente `entrada` del `blog` `visualizaremos` la `red creada` y `estudiaremos` el `comportamiento` de las `variables regresoras`.
+Simplemente `asombroso` eso si que es una `entrada interesante`. En la siguiente `entrada` del blog `visualizaremos` la `red creada` y `estudiaremos` el `comportamiento` de las `variables regresoras`.

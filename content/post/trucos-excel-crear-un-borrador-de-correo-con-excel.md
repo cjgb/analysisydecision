@@ -22,21 +22,11 @@ Inicio una serie de mensajes con trucos de Excel que considero pueden ser de uti
 
 ```visual-basic
 Sub Correo()
-```
 
-```visual-basic
 Dim ol As Object, myItem As Object
-
 Dim adjunto As String
-```
-
-```visual-basic
 Set ol = CreateObject("outlook.application")
-
 Set myItem = ol.CreateItem(olMailItem)
-```
-
-```visual-basic
 adjunto = "C:\\temp\\fichero.xls"
 
 With myItem
@@ -53,4 +43,4 @@ Set ol = Nothing
 End Sub
 ```
 
-Creamos un objeto Outlook y a ese objeto le añadimos título, cuerpo, destinatario, un archivo adjunto de C:/temp y lo guardamos como borrador, si tenemos los suficientes permisos podremos enviarlos con .Send Como os podéis imaginar esta es la versión menos sofisticada de la macro y a ella podemos añadir bucles, busquedas,... Espero que pueda seros de utilidad. Por supuesto si no funciona o tenéis dudas `rvaquerizo@analisisydecision.es`
+Creamos un objeto Outlook y a ese objeto le añadimos título, cuerpo, destinatario, un archivo adjunto de `C:/temp` y lo guardamos como borrador, si tenemos los suficientes permisos podremos enviarlos con `.Send`. Como os podéis imaginar esta es la versión menos sofisticada de la macro y a ella podemos añadir bucles, búsquedas,... Espero que pueda seros de utilidad. Por supuesto si no funciona o tenéis dudas `rvaquerizo@analisisydecision.es`

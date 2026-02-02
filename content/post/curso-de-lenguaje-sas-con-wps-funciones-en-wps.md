@@ -177,4 +177,4 @@ real time : 0.000
 
 cpu time : 0.000
 
-Hay `funciones` que nos devuelven `números` y otras que nos devuelven `texto`. Por ese `motivo` trabajamos con dos `variables` `x` es `variable de texto` y `z` es `variable numérica`. Muy importante: una `variable SAS`, cuando hemos definido su `tipo` (`numérica` o `alfanumérica`) este `tipo` es `inamovible`, una `variable` no puede modificar su `tipo`. Esto es muy importante, un alto porcentaje de las `visitas` que vienen a este `blog` vienen por ese `motivo`. En la `siguiente entrega` veremos las `funciones fecha`, `esperadlo ansiosos`.
+Hay `funciones` que nos devuelven `números` y otras que nos devuelven `texto`. Por ese `motivo` trabajamos con dos `variables` `x` es `variable de texto` y `z` es `variable numérica`. Muy importante: una `variable SAS`, cuando hemos definido su `tipo` (`numérica` o `alfanumérica`) este `tipo` es `inamovible`, una `variable` no puede modificar su `tipo`. Esto es muy importante, un alto porcentaje de las `visitas` que vienen a este blog vienen por ese `motivo`. En la `siguiente entrega` veremos las `funciones fecha`, `esperadlo ansiosos`.

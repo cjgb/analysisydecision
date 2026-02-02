@@ -13,6 +13,7 @@ related:
   - ajuste-de-splines-con-r.md
 tags:
   - shiny
+  - r
 title: Aprendiendo shiny con vosotros
 url: /blog/aprendiendo-shiny-con-vosotros/
 ---
@@ -20,17 +21,17 @@ url: /blog/aprendiendo-shiny-con-vosotros/
 No queda otro remedio. Necesito actualizarme un poco y comenzar a usar [shiny](http://shiny.rstudio.com/) y espero poder llegar a publicar en el blog las aplicaciones resultantes. No sé si seré capaz pero allá vamos. Lo primero es tener [`Rstudio`](http://www.rstudio.com/) instalado y empezar a escribir:
 
 ```r
-install.packages(«shiny»)
-system.file(«examples», package=»shiny»)
+install.packages("shiny")
+system.file("examples", package="shiny")
 ```
 
 Ya podemos ver los ejemplos de un modo muy sencillo:
 
 ```r
-runExample(«05_sliders») # slider bars
+runExample("05_sliders") # slider bars
 ```
 
-Aparece una app que podemos ver tanto en RStudio como en nuestro navegador. Si modificamos las barras cambian los números de la tabla de la derecha. Muy sencillo. Para comenzar a trabajar debemos conocer dos códigos de R que están guardados en su correspondiente carpeta. Son `server.R` y `ui.R` que podemos abrir en la carpeta [deWindows] `C:\Users\fulanito\Documents\R\win-library\3.1\shiny\examples\05_sliders` Sin embargo nosotros vamos a copiar y pegar esta carpeta en la misma ubicación pero le damos el nombre `prueba` y abrimos `server.R`
+Aparece una app que podemos ver tanto en RStudio como en nuestro navegador. Si modificamos las barras cambian los números de la tabla de la derecha. Muy sencillo. Para comenzar a trabajar debemos conocer dos códigos de R que están guardados en su correspondiente carpeta. Son `server.R` y `ui.R` que podemos abrir en la carpeta de Windows `C:\Users\fulanito\Documents\R\win-library\3.1\shiny\examples\05_sliders`. Sin embargo nosotros vamos a copiar y pegar esta carpeta en la misma ubicación pero le damos el nombre `prueba` y abrimos `server.R`
 
 ```r
 library(shiny)

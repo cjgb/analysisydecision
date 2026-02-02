@@ -60,7 +60,7 @@ mean(iris.sepal_length)
 
 ## `Data management básico` con `Julia`
 
-Como en otras `entradas` del `blog` veremos:
+Como en otras `entradas` del blog veremos:
 
 - `Seleccionar columnas en data frames Julia`
 - `Seleccionar registros en data frames Julia`

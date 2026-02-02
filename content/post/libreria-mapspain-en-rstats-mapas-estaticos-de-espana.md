@@ -22,7 +22,7 @@ url: /blog/libreria-mapspain-en-rstats-mapas-estaticos-de-espana/
 
 ![mapspain1.png](/images/2020/12/mapspain1.png)
 
-Más `mapas estáticos` de `España` con R esta vez con la [librería `mapSpain` de `Diego Hernangomez`](https://ropenspain.github.io/mapSpain/) que `simplifica` mucho la `realización` de esta `tarea`. el `primer ejemplo` es un `mapa` del `exceso` de `mortalidad` por `comunidad Autónoma` para el `año 2020` [reaprovechando un `código` del `blog`](https://analisisydecision.es/no-estamos-igual-que-en-la-primera-ola-de-covid/):
+Más `mapas estáticos` de `España` con R esta vez con la [librería `mapSpain` de `Diego Hernangomez`](https://ropenspain.github.io/mapSpain/) que `simplifica` mucho la `realización` de esta `tarea`. el `primer ejemplo` es un `mapa` del `exceso` de `mortalidad` por `comunidad Autónoma` para el `año 2020` [reaprovechando un `código` del blog](https://analisisydecision.es/no-estamos-igual-que-en-la-primera-ola-de-covid/):
 
 ```r
 library(mapSpain)
