@@ -50,6 +50,6 @@ data ejemplo;
  %put _user_;
 ```
 
-Utilizamos las funciones I/O de SAS, en concreto ATTRN que unido a NVARS nos permite saber el número de variables que tiene un dataset, el número de variables lo ponemos en la macrovariable global &numvars..
+Utilizamos las funciones I/O de SAS, en concreto `ATTRN` que unido a `NVARS` nos permite saber el número de variables que tiene un dataset, el número de variables lo ponemos en la macrovariable global `&numvars.`.
 
 Saludos.

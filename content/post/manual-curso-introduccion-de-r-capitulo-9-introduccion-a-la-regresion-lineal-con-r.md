@@ -28,8 +28,9 @@ En este capítulo del curso de R vamos a comenzar a estudiar el análisis de reg
 1. Inferencias sobre los parámetros.
 
 1. Diagnóstico del modelo.
-   No nos vamos a detener en todos los pasos puesto que si lo hiciéramos el capítulo quedaría demasiado extenso. Vamos a analizar las posibilidades que tenemos con R y para qué nos pueden servir los modelos lineales.
-   La función que realiza los modelos lineales en R es `lm`. Pero esta función no nos ofrece ninguna salida por pantalla sino que nos crea un objeto, o mejor dicho, nosotros creamos un objeto que va a ser un modelo de regresión lineal. Este objeto puede ser referenciado por cualquier función para realizar un análisis de la varianza, un modelo autorregresivo,… La función `lm` tiene la siguiente sintaxis:
+
+No nos vamos a detener en todos los pasos puesto que si lo hiciéramos el capítulo quedaría demasiado extenso. Vamos a analizar las posibilidades que tenemos con R y para qué nos pueden servir los modelos lineales.
+La función que realiza los modelos lineales en R es `lm`. Pero esta función no nos ofrece ninguna salida por pantalla sino que nos crea un objeto, o mejor dicho, nosotros creamos un objeto que va a ser un modelo de regresión lineal. Este objeto puede ser referenciado por cualquier función para realizar un análisis de la varianza, un modelo autorregresivo,… La función `lm` tiene la siguiente sintaxis:
 
 ```r
 lm(formula, data, subset, weights, method = "qr", model = TRUE, x = FALSE, y = FALSE, qr = TRUE, contrasts = NULL, ...)
@@ -49,7 +50,7 @@ Ejemplo 9.1:
 El tiempo que tarda un sistema informático en red en ejecutar una instrucción depende del número de usuarios conectados a él. Si no hay usuarios el tiempo es 0. Tenemos los siguientes datos:
 
 **Nº usuarios** | **Tiempo de ejecución**
----|---
+---
 10 | 1
 15 | 1.2
 20 | 2
@@ -199,6 +200,11 @@ colnames(datos)
 
 Creamos un modelo en el que la nota final será nuestra variable dependiente y las notas del resto nuestras variables regresoras:
 
+```r
+modelo9.2<-lm(final~test+exam1+exam2+labo,data=datos)
+summary(modelo9.2)
+```
+
 ```text
 Coefficients:
             Estimate Std. Error t value Pr(>|t|)
@@ -219,4 +225,14 @@ Vemos que sólo se rechaza la hipótesis de nulidad del parámetro para la varia
 
 Para hacer la matriz de correlaciones empleamos la función `cor` pero sólo “atacamos” a los campos numéricos de nuestra matriz de `datos`. Si hacemos:
 
-Esto es debido a que tenemos observaciones carácter, la función `cor` nos devuelve un error. No se detectan relaciones lineales muy fuertes entre las variables. El problema de la multicolinealidad viene por alguna relación lineal entre combinaciones de variables.
+```r
+cor(datos[,4:8])
+#             test     exam1     exam2      labo     final
+# test  1.00000000 0.5098045 0.6111352 0.3207094 0.5367332
+# exam1 0.50980447 1.0000000 0.6558223 0.2529949 0.6190772
+# exam2 0.61113515 0.6558223 1.0000000 0.2974415 0.6194639
+# labo  0.32070935 0.2529949 0.2974415 1.0000000 0.3117477
+# final 0.53673318 0.6190772 0.6194639 0.3117477 1.0000000
+```
+
+No se detectan relaciones lineales muy fuertes entre las variables. El problema de la multicolinealidad viene por alguna relación lineal entre combinaciones de variables. En sucesivos capítulos continuaremos con el análisis de este modelo.

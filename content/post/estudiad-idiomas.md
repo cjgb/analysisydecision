@@ -18,7 +18,7 @@ title: Estudiad idiomas
 url: /blog/estudiad-idiomas/
 ---
 
-Análisisydecisión nació como un blog dedicado a la formación de profesionales en el mundo de la inteligencia de negocio y la minería de datos. Poco a poco se ha ido transformando y junto con las secciones dedicadas a la formación sobre aplicaciones estadísticas y metodologías hay breves artículos de opinión. Bueno pues este mensaje es ambas cosas, un artículo de opinión y una sugerencia sobre el futuro de los buenos gestores de información:
+Análisisydecisión nació como un blog dedicado a la formación de profesionales en el mundo de la inteligencia de negocio y la minería de datos. Poco a poco se ha ido transformando y, junto con las secciones dedicadas a la formación sobre aplicaciones estadísticas y metodologías, hay breves artículos de opinión. Bueno, pues este mensaje es ambas cosas: un artículo de opinión y una sugerencia sobre el futuro de los buenos gestores de información:
 
 [**Estudiad idiomas porque el panorama no puede ser peor.**](http://www.europapress.es/economia/noticia-economia-espanola-caera-23-2009-12-2010-pwc-20090222164844.html)
 

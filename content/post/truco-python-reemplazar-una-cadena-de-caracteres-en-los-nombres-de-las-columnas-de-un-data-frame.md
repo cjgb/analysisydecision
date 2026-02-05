@@ -17,14 +17,16 @@ title: Truco Python. Reemplazar una cadena de caracteres en los nombres de las c
 url: /blog/truco-python-reemplazar-una-cadena-de-caracteres-en-los-nombres-de-las-columnas-de-un-data-frame/
 ---
 
-Más largo el título de la entrada que la entrada en si misma. Tenemos un conjunto de datos que os podéis descargar [de este link que ya es conocido](http://archive.ics.uci.edu/ml/machine-learning-databases/00197/AU.zip). Os descargáis los datos y creamos un data frame que tiene 10.000 registros y 251 columnas, casi todas se llaman attx y queremos cambiar el nombre a columna_x. Mi sugerencia para hacerlo vía pandas es:
+Más largo el título de la entrada que la entrada en sí misma. Tenemos un conjunto de datos que os podéis descargar [de este link que ya es conocido](http://archive.ics.uci.edu/ml/machine-learning-databases/00197/AU.zip). Os descargáis los datos y creamos un *data frame* que tiene 10.000 registros y 251 columnas; casi todas se llaman `attx` y queremos cambiar el nombre a `columna_x`. Mi sugerencia para hacerlo vía `pandas` en `Python` es:
 
 ```python
 import pandas as pd
-df = pd.read_csv('C:\temp\wordpress\au2_10000.csv')
+
+df = pd.read_csv('C:\\temp\\wordpress\\au2_10000.csv')
 df.head()
 
-df.columns = df.columns.str.replace('att','columna_')
+# Reemplazamos 'att' por 'columna_' en los nombres de las columnas
+df.columns = df.columns.str.replace('att', 'columna_')
 df.head()
 ```
 

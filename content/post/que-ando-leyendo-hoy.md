@@ -4,6 +4,7 @@ categories:
   - formación
 date: '2010-01-02'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - los-recursos-mas-destacados-de-r-en-la-web.md
   - dos-vecinos-muy-proximos-de-la-blogosfera.md
@@ -12,14 +13,13 @@ related:
   - algunos-temas-de-interes-sobre-r.md
 tags:
   - formación
-title: Que ando leyendo hoy
+title: Qué ando leyendo hoy
 url: /blog/que-ando-leyendo-hoy/
 ---
 
 Páginas muy interesantes de R:
 
-[http://www.r-bloggers.com/](http://www.r-bloggers.com/)
+- [R-bloggers](http://www.r-bloggers.com/)
+- [Planet R](http://planetr.stderr.org/)
 
-[Planet R](http://planetr.stderr.org/)
-
-El R-bloggers es imprescindible que esté en vuestros marcadores. Incluso soy fan en Facebook.
+El `R-bloggers` es imprescindible que esté en vuestros marcadores. Incluso soy fan en Facebook.

@@ -36,7 +36,7 @@ vaux = tranwrd(vaux,",",".");
 %mend;
 ```
 
-Breve descipción. La variable inicial (`varib_ini`) será la cadena de texto que deseamos pasar a número. La variable final (`varib_fin`) será el nombre de la variable numérica. Si deseamos conservar el nombre tenemos que jugar con `rename` como opción de lectura o escritura del paso `data`. Estoy estudiando otra macro más avanzada para realizar este trabajo. El parámetro `europeo=0` es el que nos indica si el número que transformamos tiene formato europeo o no. La macro necesita una variable auxiliar (`vaux`) para realizar las transformaciones necesarias en el caso de ser un número en formato europeo. Una vez está el número en formato americano realizamos la transformación sobre la variable final con `input`, el formato que ponemos es `best12.`.
+Breve descripción. La variable inicial (`varib_ini`) será la cadena de texto que deseamos pasar a número. La variable final (`varib_fin`) será el nombre de la variable numérica. Si deseamos conservar el nombre tenemos que jugar con `rename` como opción de lectura o escritura del paso `data`. Estoy estudiando otra macro más avanzada para realizar este trabajo. El parámetro `europeo=0` es el que nos indica si el número que transformamos tiene formato europeo o no. La macro necesita una variable auxiliar (`vaux`) para realizar las transformaciones necesarias en el caso de ser un número en formato europeo. Una vez está el número en formato americano realizamos la transformación sobre la variable final con `input`, el formato que ponemos es `best12.`.
 
 Ejemplo de uso:
 

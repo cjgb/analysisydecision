@@ -20,36 +20,35 @@ title: Muestreo de datos con R
 url: /blog/muestreo-de-datos-con-r/
 ---
 
-Recientemente, hubo una entrada en este blog sobre [cómo realizar muestreos aleatorios en tablas SAS](https://analisisydecision.es/trucos-sas-muestras-aleatorias-con-y-sin-reemplazamiento/). En ésta vamos a ver cómo se procedería con R.
+Recientemente hubo una entrada in este blog sobre [cómo realizar muestreos aleatorios in tablas `SAS`](https://analisisydecision.es/trucos-sas-muestras-aleatorias-con-y-sin-reemplazamiento/). In esta vamos a ver cómo se procedería con `R`.
 
 Consideraremos el conjunto de datos `iris` —de dimensión 150 x 5— y extraeremos 60 filas con distintos procedimientos.
 
-Para el **muestreo aleatorio simple sin repetición** , basta con hacer:
+Para el **muestreo aleatorio simple sin repetición**, basta con hacer:
 
 ```r
-indices <- sample( 1:nrow( iris ), 60 )
-
-iris.muestreado <- iris[ indices, ]
+indices <- sample(1:nrow(iris), 60)
+iris.muestreado <- iris[indices, ]
 ```
 
-Para relizar un **muestreo aleatorio simple con repetición** , basta con sustituir la variable `indices` anterior por
+Para realizar un **muestreo aleatorio simple con repetición**, basta con sustituir la variable `indices` anterior por:
 
 ```r
-indices <- sample( 1:nrow( iris ), 60, replace = TRUE )
+indices <- sample(1:nrow(iris), 60, replace = TRUE)
 ```
 
-No es complicado realizar **muestreos estratificados con o sin reemplazamiento**. La manera más sencilla de obtenerlos consiste en usar el paquete `sampling`.
+No es complicado realizar **muestreos estratificados con o sin reemplazamiento**. La manera más sencilla de obtenerlos consiste in usar el paquete `sampling`.
 
 El muestreo sin reemplazamiento y estratificado respecto a `iris$Species` —que es un factor con tres niveles de 50 elementos cada uno— puede llevarse a cabo así:
 
 ```r
-library( sampling )
+library(sampling)
 
-estratos <- strata( iris, stratanames = c("Species"), size = c(20,20,20), method = "srswor" )
-
-iris.muestreado <- getdata( iris, estratos )
+estratos <- strata(iris, stratanames = c("Species"), 
+                   size = c(20, 20, 20), method = "srswor")
+iris.muestreado <- getdata(iris, estratos)
 ```
 
-Para obtener un muestreo con reemplazamiento se sustituye el método `srswor` por el `srswr`.
+Para obtener un muestreo con reemplazamiento, se sustituye el método `srswor` por el `srswr`.
 
-El interesado en utilizar técnicas de muestreo estratificado más sofisticadas no tiene sino que consultar la ayuda y ejemplos de la función `strata`.
+El interesado in utilizar técnicas de muestreo estratificado más sofisticadas no tiene sino que consultar la ayuda y ejemplos de la función `strata()`. Saludos.

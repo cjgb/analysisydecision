@@ -17,12 +17,12 @@ title: Aprendiendo shiny. server.R ui.R
 url: /blog/aprendiendo-shiny-server-r-ui-r/
 ---
 
-Sigo con `shiny` y `RStudio` aver que cosas soy capaz de hacer. Hay dos elementos básicos a la hora de crear aplicaciones con `shiny`:
+Sigo con Shiny y RStudio a ver qué cosas soy capaz de hacer. Hay dos elementos básicos a la hora de crear aplicaciones con Shiny:
 
-- `server.R` es el lugar donde definimos la función `server`. Es necesario empezar a familiarizarnos con el lenguaje de `shiny`.
-- `ui.R` es el `user interface` es el lugar donde definimos lo que vamos a ver con nuestra aplicación.
+- `server.R` es el lugar donde definimos la función `server`. Es necesario empezar a familiarizarnos con el lenguaje de Shiny.
+- `ui.R` es el user interface, el lugar donde definimos lo que vamos a ver con nuestra aplicación.
 
-El elemento fundamental de `server.R` es `shinyServer(función)` en los ejemplos que he estado viendo la función tiene una entrada y una salida. Imagino que podremos dar más complejidad a estas funciones. De momento una entrada y una salida. En `ui.R` es donde definimos la salida en `HTML` que deseamos para nuestra aplicación en [el tutorial de `shiny` podéis ver muchas posibilidades](http://shiny.rstudio.com/tutorial/lesson2/). La función principal para crear estos interfaces es `shinyUI(definición del interface)`. No parece complicado de definir el interface con unos conocimientos básicos de `HTML` y conociendo el código específico de `shiny`. Ya no programamos tanto con R, ahora programamos con `shiny`.
+El elemento fundamental de `server.R` es `shinyServer(función)`; en los ejemplos que he estado viendo, la función tiene una entrada y una salida. Imagino que podremos dar más complejidad a estas funciones. De momento, una entrada y una salida. En `ui.R` es donde definimos la salida en HTML que deseamos para nuestra aplicación; en [el tutorial de Shiny podéis ver muchas posibilidades](http://shiny.rstudio.com/tutorial/lesson2/). La función principal para crear estos interfaces es `shinyUI(definición del interface)`. No parece complicado de definir el interface con unos conocimientos básicos de HTML y conociendo el código específico de Shiny. Ya no programamos tanto con R, ahora programamos con Shiny.
 
 Sobre la misma app prueba que creamos en la anterior entrega podemos hacer:
 
@@ -83,4 +83,4 @@ tableOutput("values")
 ))
 ```
 
-El mismo ejemplo poniendo los títulos en español. Lo más simple. Seguiré contando las cosas que voy aprendiendo con shiny. Saludos.
+El mismo ejemplo poniendo los títulos en español. Lo más simple. Seguiré contando las cosas que voy aprendiendo con Shiny. Saludos.

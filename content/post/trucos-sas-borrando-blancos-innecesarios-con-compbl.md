@@ -19,24 +19,23 @@ title: Trucos SAS. Borrando blancos innecesarios con COMPBL
 url: /blog/trucos-sas-borrando-blancos-innecesarios-con-compbl/
 ---
 
-Me ha llegado hoy una duda interesante. El problema era eliminar espacios en blanco innecesarios mediante alguna función de SAS. Más concretamente teníamos algo parecido a:
-
-
-```sas
-data prueba;
-nombre="DE PEDRO                      MARTINEZ                  ESTEBAN JOSE";
-/*QUEREMOS LLEGAR A: DE PEDRO MARTINEZ ESTEBAN JOSE*/
-run;
-```
-
-Pues bien, esto se puede hacer con la función `COMPBL` que _remove blank spaces with SAS_:
+Me ha llegado hoy una duda interesante. El problema era eliminar espacios en blanco innecesarios mediante alguna función de SAS. Más concretamente, teníamos algo parecido a:
 
 ```sas
 data prueba;
-nombre="DE PEDRO                 MARTINEZ             ESTEBAN JOSE";
-nombre2=compbl(nombre);
-put nombre2;
+  nombre = "DE PEDRO                      MARTINEZ                  ESTEBAN JOSE";
+  /* QUEREMOS LLEGAR A: DE PEDRO MARTINEZ ESTEBAN JOSE */
 run;
 ```
 
-Una función fácil y práctica que seguro conocéis pero que no está mal recordar. Saludos.
+Pues bien, esto se puede hacer con la función `COMPBL`, que *removes multiple blank spaces with SAS*:
+
+```sas
+data prueba;
+  nombre = "DE PEDRO                 MARTINEZ             ESTEBAN JOSE";
+  nombre2 = compbl(nombre);
+  put nombre2;
+run;
+```
+
+Una función fácil y práctica que seguro conocéis, pero que no está mal recordar. Saludos.

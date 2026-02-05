@@ -14,19 +14,19 @@ related:
   - transformar-variables-en-sas-caracter-a-numerico.md
 tags:
   - input
-title: Truco SAS. Transformar variable caracter a fecha
+title: Truco SAS. Transformar variable carácter a fecha
 url: /blog/truco-sas-transformar-variable-caracter-a-fecha/
 ---
 
-Pregunta de una lectora, cómo pasar una variable caracter de la forma ’23/08/2015′ a una fecha SAS. Es muy sencillo y un buen ejemplo de uso de input:
+Pregunta de una lectora: ¿cómo pasar una variable carácter de la forma '23/08/2015' a una fecha SAS? Es muy sencillo y un buen ejemplo de uso de `INPUT`:
 
 ```sas
 data _null_;
-y='21/07/2014';
-x=input(y,ddmmyy10.);
-format x ddmmyy10.;
-put x=;
+    y = '21/07/2014';
+    x = input(y, ddmmyy10.);
+    format x ddmmyy10.;
+    put x=;
 run;
 ```
 
-Recordad, input de caracter a número y put viceversa. Saludos.
+Recordad: `INPUT` de carácter a número y `PUT` viceversa. Saludos.

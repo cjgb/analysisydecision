@@ -18,12 +18,11 @@ title: Lecciones de economía de un ignorante. ¿De dónde sacan margen los banc
 url: /blog/lecciones-de-economia-de-un-ignorante-c2bfde-donde-sacan-margen-los-bancos/
 ---
 
-Pereza me da hablar de lo mismo, pero estas noticias:
+Pereza me da hablar de lo mismo, pero leed estas noticias:
 
-[Cincodías](http://www.cincodias.com/articulo/mercados/garantizados-han-ejecutado-garantia-2009/20091203cdscdimer_2/cdsmer/)
+- [Los fondos garantizados han ejecutado su garantía en 2009 - Cinco Días](http://www.cincodias.com/articulo/mercados/garantizados-han-ejecutado-garantia-2009/20091203cdscdimer_2/cdsmer/)
+- [Fondos: ¿de dónde sacan margen los bancos? - Expansión](http://blogs.expansion.com/blogs/web/fondos.html?opcion=1&codPost=55734)
 
-[Jorge Zuluaga en Expansión](http://blogs.expansion.com/blogs/web/fondos.html?opcion=1&codPost=55734)
+Si hay una desbandada de clientes en los productos de «alto» margen positivo a productos con alto margen negativo (tipos de interés ridículos frente a intereses superiores al 3%), entonces: ¿estará una entidad bancaria dispuesta a perder dinero? ¿Hasta dónde podemos llegar para retener los saldos? ¿Cómo influye ésto al [coeficiente de caja](http://es.wikipedia.org/wiki/Coeficiente_de_caja)?
 
-Si hay una desbandada de clientes en los productos de «alto» margen positivo a productos con alto margen negativo (tipos ridículos intereses superiores al 3%) entonces, ¿estará una entidad bancaria dispuesta a perder dinero? ¿Hasta dónde podemos llegar para retener los saldos? ¿Cómo influye al [coeficiente de caja](http://es.wikipedia.org/wiki/Coeficiente_de_caja)?
-
-Yo sé perfectamente como se solventa esta situación, pero no quiero parecer cansino: quito de aquí para ponerlo allí.
+Yo sé perfectamente cómo se solventa esta situación, pero no quiero parecer cansino: quito de aquí para ponerlo allí. Saludos.

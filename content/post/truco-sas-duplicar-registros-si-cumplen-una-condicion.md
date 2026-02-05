@@ -18,28 +18,20 @@ title: Truco SAS. Duplicar registros si cumplen una condición
 url: /blog/truco-sas-duplicar-registros-si-cumplen-una-condicion/
 ---
 
-Mejor que truco, tontería SAS pero sirve para entender mejor el paso DATA. Se trata de duplicar registros si cumplen una condición. Es decir, añadimos una fila en SAS si se cumple la condición:
+Más que un truco, es una "tontería" SAS, pero sirve para entender mejor el paso `DATA`. Se trata de duplicar registros si cumplen una condición. Es decir, añadimos una fila en SAS si se cumple la condición:
 
 ```sas
 data uno;
-
-do id_cliente=1 to 10000;
-
-output;
-
-end;
-
+    do id_cliente = 1 to 10000;
+        output;
+    end;
 run;
 
-data uno;
-
-set uno;
-
-output;
-
-if mod(id_cliente,2)=0 then output;
-
+data uno_duplicado;
+    set uno;
+    output;
+    if mod(id_cliente, 2) = 0 then output;
 run;
 ```
 
-No puede ser más sencillo pero me llegó esta duda y me parece un buen ejemplo de uso de OUTPUT.
+No puede ser más sencillo, pero me llegó esta duda y me parece un buen ejemplo de uso de `OUTPUT`. Saludos.

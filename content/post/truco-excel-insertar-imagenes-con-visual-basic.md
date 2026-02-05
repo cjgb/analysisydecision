@@ -20,24 +20,20 @@ title: Truco Excel. Insertar imágenes con Visual Basic
 url: /blog/truco-excel-insertar-imagenes-con-visual-basic/
 ---
 
-Si deseáis insertar una imagen en Excel desde Visual Basic mediante una macro tenéis que ejecutar un código similar a este:
+Si deseáis insertar una imagen en `Excel` desde `Visual Basic` mediante una macro, tenéis que ejecutar un código similar a este:
 
-```visual-basic
+```vba
 Sub inserta_imagen(hoja)
 
-Sheets(hoja).Select
-
-ActiveSheet.Pictures.Insert("C:\grafico.png").Select
-
-With Selection.ShapeRange
-
-.Top = Range("B5").Top
-
-.Left = Range("B5").Left
-
-End With
+    Sheets(hoja).Select
+    ActiveSheet.Pictures.Insert("C:\grafico.png").Select
+    
+    With Selection.ShapeRange
+        .Top = Range("B5").Top
+        .Left = Range("B5").Left
+    End With
 
 End Sub
 ```
 
-En una hoja de vuestro libro de Excel insertáis el archivo especificado. Luego lo ubicáis donde sea necesario. En el ejemplo que os he puesto en la celda B5. Truco sencillo, saludos.
+En una hoja de vuestro libro de `Excel` insertáis el archivo especificado. Luego lo ubicáis donde sea necesario; en el ejemplo que os he puesto, en la celda `B5`. Truco sencillo. Saludos.

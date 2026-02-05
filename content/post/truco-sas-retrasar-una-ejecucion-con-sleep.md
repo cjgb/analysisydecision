@@ -20,7 +20,7 @@ title: Truco SAS. Retrasar una ejecución con SLEEP
 url: /blog/truco-sas-retrasar-una-ejecucion-con-sleep/
 ---
 
-El método más sencillo para ejecutar SAS a una hora determinada es el empleo de la función SLEEP:
+El método más sencillo para ejecutar SAS a una hora determinada es el empleo de la función `SLEEP`:
 
 ```sas
 data _null_;

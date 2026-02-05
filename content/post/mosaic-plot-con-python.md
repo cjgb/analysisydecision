@@ -14,19 +14,22 @@ related:
 tags:
   - formación
   - python
-title: Mosaic plot con python
+title: Mosaic plot con Python
 url: /blog/mosaic-plot-con-python/
 ---
 
-Entrada análoga [a otra realizada con R hace mucho tiempo](https://analisisydecision.es/mosaic-plot-con-r/) empleando R, ahora realizo esta tarea con pytho. Estos gráficos van a ser necesarios para un fregado en el que ando metido ahora y como podéis ver es una tarea muy sencilla:
+Entrada análoga [a otra realizada con R hace mucho tiempo](https://analisisydecision.es/mosaic-plot-con-r/) empleando R; ahora realizo esta tarea con Python. Estos gráficos van a ser necesarios para un fregado en el que ando metido ahora y, como podéis ver, es una tarea muy sencilla:
 
 ```python
 import pandas as pd
-df = pd.read_csv('http://www.businessandeconomics.mq.edu.au/our_departments/Applied_Finance_and_Actuarial_Studies/acst_docs/glms_for_insurance_data/data/claimslong.csv')
-
+import matplotlib.pyplot as plt
 from statsmodels.graphics.mosaicplot import mosaic
+
+url = 'http://www.businessandeconomics.mq.edu.au/our_departments/Applied_Finance_and_Actuarial_Studies/acst_docs/glms_for_insurance_data/data/claimslong.csv'
+df = pd.read_csv(url)
+
 mosaic(df, ['agecat', 'valuecat'])
-show()
+plt.show()
 ```
 
 Y da como resultado:

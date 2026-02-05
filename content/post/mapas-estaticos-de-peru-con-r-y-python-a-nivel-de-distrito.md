@@ -21,47 +21,51 @@ url: /blog/mapas-estaticos-de-peru-con-r-y-python-a-nivel-de-distrito/
 
 ![mapa_peru_distritos2.png](/images/2020/12/mapa_peru_distritos2.png)
 
-Petición de un lector de un código de ejemplo para hacer mapas de Perú con R y con `Python`, perfectamente reproducible si seguimos algunas entradas del blog pero que, de este modo, quedan resumidos en un solo sitio. En este caso se va a **emplear un notebook** desde `RStudio` donde tendremos chunks de R y `Python` en función de lo que necesitemos. Podéis copiar y pegar directamente, debe salir lo mismo.
+Petición de un lector: un código de ejemplo para hacer mapas de Perú con R y con `Python`. Estos ejemplos quedan resumidos en un solo sitio y se va a **emplear un notebook** desde `RStudio` donde tendremos bloques de R y `Python` en función de lo que necesitemos.
 
-### Mapa de Perú con ggplot
+### Mapa de Perú con R y ggplot2
 
-```python
+```r
 library(tidyverse)
 library(reticulate)
 library(raster)
 library(maptools)
 
-Peru <- getData('GADM', country='Peru', level=2)
+# Obtenemos datos de GADM
+peru_shp <- getData('GADM', country = 'Peru', level = 2)
 
-`Peruname` = PeruNAME_2
-Peru2 <- map_data(Peru)
-provincias <- data.frame(region = unique(Peru2region))
-provinciasaleatorio = `runif`(nrow(provincias), 10,30)
+# Convertimos a data frame para ggplot2
+peru_df <- fortify(peru_shp, region = "NAME_2")
 
-Peru2 <- left_join(Peru2,provincias)
+# Generamos datos aleatorios para ilustrar
+distritos <- data.frame(id = unique(peru_df$id))
+distritos$aleatorio <- runif(nrow(distritos), 10, 30)
 
-ggplot(data = Peru2, aes(x = long, y = lat, group = group)) +
+# Unimos datos con el mapa
+peru_plot <- left_join(peru_df, distritos, by = "id")
+
+# Pintamos el mapa
+ggplot(data = peru_plot, aes(x = long, y = lat, group = group)) +
   geom_polygon(aes(fill = aleatorio)) +
-  scale_fill_continuous(low="white",high="red")
+  scale_fill_continuous(low = "white", high = "red") +
+  theme_minimal()
 ```
 
-Código conocido obtenemos el mapa en formato rds de `GADM` con `nivel 2` que es nivel de Distrito(corregidme si me equivoco) para emplear `ggplot` necesitamos `name` que le creamos a partir de `NAME_2`, el nivel administrativo que queremos dar al mapa. Mediante `map_data` creamos el `data frame` que necesita `ggplot` donde el campo `region` corresponde al campo `name` del objeto rds. En este caso no busco datos, genero unos datos aleatorios a partir de los distintos `distritos`, en vuestro caso tendríais que cruzar datos, ojo, yo empleo el nombre, siempre es mejor emplear una codificación. El resultado:
+Código conocido: obtenemos el mapa de `GADM` con **nivel 2** (distritos). Mediante `fortify` (o `map_data`) creamos el *data frame* que necesita `ggplot2`. En este caso genero unos datos aleatorios; en vuestro caso tendríais que cruzar vuestros datos (siempre es mejor emplear una codificación `INE` o similar en vez del nombre). El resultado:
 
 ![mapa_peru_distritos1.png](/images/2020/12/mapa_peru_distritos1.png)
 
 ### Mapa de Perú con Python desde notebook RStudio
 
-```python
-# py_install("geopandas")
-# py_install("mapclassify")
-# py_install("pysal")
-# py_install("descartes")
+Para este bloque suponemos que habéis instalado `reticulate` y que os funciona `Python` a la perfección desde `RStudio`.
+
+Primero, preparamos el *shapefile* desde R:
+
+```r
+# raster::shapefile(peru_shp, "C:/temp/mapas/Peru/Peru.shp", overwrite = TRUE)
 ```
 
-```python
-#dir.create("c:/temp/mapas/Peru/")
-raster::shapefile(Peru, "c:/temp/mapas/Peru/Peru.shp", overwrite=T)
-```
+Ahora, el código en `Python`:
 
 ```python
 import pandas as pd
@@ -69,27 +73,25 @@ import numpy as np
 import geopandas as gpd
 import matplotlib.pyplot as plt
 
-# Ubicación shapefile
-ub_shp = 'c:/temp/mapas/Peru/Peru.shp'
+# Ubicación del shapefile generado anteriormente
+ub_shp = 'C:/temp/mapas/Peru/Peru.shp'
 
-# Creación del data frame
+# Creación del GeoDataFrame
 peru = gpd.read_file(ub_shp, encoding='utf-8')
-peru.head()
-```
 
-```python
+# Generamos datos aleatorios por departamento (NAME_1)
 estados = pd.DataFrame(peru.NAME_1.unique(), columns=['NAME_1'])
-estados['aleatorio'] = np.random.randint(1,20,size=len(estados))
-estados.head()
-```
+estados['aleatorio'] = np.random.randint(1, 20, size=len(estados))
 
-```python
-peru = peru.merge(estados, how='left')
+# Cruzamos datos
+peru_final = peru.merge(estados, on='NAME_1', how='left')
 
-mapa = peru.plot(column="aleatorio", linewidth=0.3, cmap="Reds", scheme="quantiles", k=8, alpha=0.7)
+# Pintamos el mapa
+mapa = peru_final.plot(column="aleatorio", linewidth=0.3, cmap="Reds", scheme="quantiles", k=8, alpha=0.7)
+plt.title("Mapa de Perú por Departamentos")
 plt.show()
 ```
 
-Aquí suponemos que habéis instalado reticulate y que os funciona Python a la perfección desde RStudio. Hay un primer chunk `Crea_shp ` que va a crear el shp desde el rds que hemos descargado de `GADM` con la función de raster `shapefile`, recomiendo guardar en un directorio, por eso el `dir.create("c:/temp/mapas/Peru/")` para trabajar en Python que nos hemos bajado de GADM mediante R, hay un paquete en `Python` que llama a la API pero no me funcionaba. Una vez tenemos el shp tenemos que crear el `data frame` mediante `geopandas` y la función `read_file`. En este caso estamos como antes, no se buscan datos, se emplean unos datos aleatorios que posteriormente se cruzan y son los que se representarán en el mapa estático de Departamentos de `Peru` con el que comienza esta entrada.
+Una vez tenemos el *shapefile*, creamos el *data frame* mediante `geopandas` y la función `read_file`. El proceso es análogo: se emplean datos aleatorios que posteriormente se cruzan y son los que se representan en el mapa estático de Departamentos de Perú con el que comienza esta entrada.
 
-**Comentario** : los mapas son feos de solemnidad, yo os digo como hacerlo, vosotros dadle formato.
+**Comentario**: los mapas son básicos estéticamente; yo os digo cómo hacer la estructura, vosotros dadle el formato final. Saludos.

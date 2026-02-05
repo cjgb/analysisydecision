@@ -21,10 +21,12 @@ url: /blog/mapa-de-catalunya-en-excel-por-comarcas/
 
 ![mapa-excel-catalunya-por-comarques](/images/2013/04/mapa-excel-catalunya-por-comarques.png)
 
-Nuevo mapa en Excel a la colección de esta web. Se trata de un mapa de Cataluña por comarcas que funciona a las mil maravillas y que nos ha pasado [nuestro lector Manel Pla](https://analisisydecision.es/creando-un-mapa-en-excel-con-archivos-svg/#comment-21293). Hay que reconocer que es un trabajo excelente, muy trabajado y sencillo de utilizar, incluso podéis pintar distintas medidas. Seguro será de mucha utilidad.
+Nuevo mapa en `Excel` a la colección de esta web. Se trata de un mapa de Cataluña por comarcas que funciona a las mil maravillas y que nos ha pasado [nuestro lector Manel Pla](https://analisisydecision.es/creando-un-mapa-en-excel-con-archivos-svg/#comment-21293). Hay que reconocer que es un trabajo excelente, muy trabajado y sencillo de utilizar; incluso podéis pintar distintas medidas. Seguro que será de mucha utilidad.
 
-Además de este gráfico Manel también nos ha pasado un mapa de Barcelona que colgaré en los próximos días. La verdad es que con estos lectores da gusto tener el blog.
+Además de este gráfico, Manel también nos ha pasado un mapa de Barcelona que colgaré en los próximos días. La verdad es que con estos lectores da gusto tener el blog.
 
-DESCARGAR EL EXCEL CON EL MAPA POR COMARCAS:
+DESCARGAR EL `EXCEL` CON EL MAPA POR COMARCAS:
 
-[Mapa Catalunya per comarques](/images/2013/04/Mapa-Catalunya-per-comarques.xlsm)
+[Mapa Catalunya per comarques (XLSM)](/images/2013/04/Mapa-Catalunya-per-comarques.xlsm)
+
+Saludos.

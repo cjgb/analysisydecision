@@ -18,22 +18,22 @@ title: Test de bondad de ajuste con SAS
 url: /blog/test-de-bondad-de-ajuste-con-sas/
 ---
 
-Pregunta que me han hecho hoy. Cómo hacer un test de bondad de ajuste con SAS y la respuesta que he dado:
+Pregunta que me han hecho hoy: cómo hacer un test de bondad de ajuste con SAS. Aquí la respuesta que he dado:
 
 ```sas
 data datos_aleatorios;
-do i=1 to 200000;
-*GENERAMOS UNAS VARIABLES ALEATORIAS;
-variable_gamma = rangam(89,450);
-variable_exponencial = ranexp(23)*100+0.17045;
-output;
-end;
+    do i = 1 to 200000;
+        * GENERAMOS UNAS VARIABLES ALEATORIAS;
+        variable_gamma = rangam(89, 450);
+        variable_exponencial = ranexp(23) * 100 + 0.17045;
+        output;
+    end;
 run;
 
-*ods select ParameterEstimates GoodnessOfFit ;
+* ods select ParameterEstimates GoodnessOfFit;
 proc univariate data=datos_aleatorios;
-   var var:;
-   histogram /   gamma;
+   var variable_:;
+   histogram / gamma;
 run;
 ```
 

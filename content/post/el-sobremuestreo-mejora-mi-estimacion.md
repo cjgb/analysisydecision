@@ -25,135 +25,124 @@ title: El sobremuestreo ¿mejora mi estimación?
 url: /blog/el-sobremuestreo-c2bfmejora-mi-estimacion/
 ---
 
-El `sobremuestreo` (`oversampling`) es una técnica de muestreo que se emplea habitualmente cuando tenemos una baja proporción de casos positivos en clasificaciones binomiales. Los modelos pueden "despreciar" los casos positivos por ser muy pocos y nuestro modelo no funcionaría. Para incrementar el número de casos positivos se emplea el sobremuestreo. Ejemplos habituales pueden ser los modelos de fraude, un 99% de las compras son correctas, un 1% son fraudulentas. Si realizo un modelo puedo estar seguro al 99% de que todas mis compras son correctas, en este caso hemos de realizar un sobremuestreo para incrementar nuestros casos de fraude y poder detectar los patrones.
+El **sobremuestreo** (*oversampling*) es una técnica de muestreo que se emplea habitualmente cuando tenemos una baja proporción de casos positivos en clasificaciones binomiales. Los modelos pueden "despreciar" los casos positivos por ser muy pocos y nuestro modelo no funcionaría. Para incrementar el número de casos positivos se emplea el sobremuestreo. 
 
-Personalmente no sabría deciros el porcentaje de casos positivos a partir del cual sería necesario llevar a cabo un proceso de remuestreo. A mi particularmente me gusta hacerlo siempre. Por lo menos realizar algunas pruebas para identificar aquellas variables que son más influyentes y comenzar a eliminar aquellas que no van a funcionar. Busco exagerar. Tampoco me quiero mojar mucho sobre la proporción de casos positivos y negativos, pero si estamos realizando un nuevo muestreo podemos emplear perfectamente un 50% para ambos, aquí si que dependemos del número de registros con el que estemos trabajando ya que al final el sobremuestreo será la repetición de los casos positivos sobre la tabla de entrada del modelo.
+Ejemplos habituales pueden ser los modelos de fraude: un 99% de las compras son correctas y un 1% son fraudulentas. Si realizo un modelo sin tratar este desequilibrio, el algoritmo puede estar seguro al 99% de que todas las compras son correctas, ignorando el fraude. En este caso hemos de realizar un sobremuestreo para incrementar nuestros casos de fraude y poder detectar los patrones.
 
-Sin embargo, cuando ya tengo decidido como va a ser mi modelo no me gusta realizar sobremuestreo. Lo considero un paso previo (algún lector del blog considerará estas palabras incoherentes). Después de toda esta exposición teórico-práctica de malos usos de un dinosaurio en realidad lo que cabe preguntarse es **¿mejora la estimación un modelo con sobremuestreo?**
+A mí particularmente me gusta realizar algunas pruebas exagerando la proporción para identificar aquellas variables que son más influyentes. No me quiero mojar mucho sobre la proporción ideal de casos positivos y negativos, pero si estamos realizando un nuevo muestreo podemos emplear perfectamente un 50% para ambos.
 
-Abrimos R y `Tinn-R` y manos a la obra. Datos simulados de una entidad bancaria que desea realizar un modelo para realizar una campaña comercial sobre renta o Pensión Vitalicia Inmediata (PVI) conocidos por todos:
+Sin embargo, cabe preguntarse: **¿mejora realmente la estimación un modelo con sobremuestreo?**
+
+Abrimos R y manos a la obra. Generamos datos simulados de una entidad bancaria que desea realizar un modelo para una campaña comercial sobre Pensiones Vitalicias Inmediatas (PVI):
 
 ```r
-clientes=20000
-saldo_vista=runif(clientes,0,1)*10000
-saldo_ppi=(runif(clientes,0.1,0.6)*rpois(clientes,2))*60000
-saldo_fondos=(runif(clientes,0.1,0.9)*(rpois(clientes,1)-0.5>0))*30000
-edad=rpois(clientes,60)
-datos_ini<-data.frame(cbind(saldo_vista,saldo_ppi,saldo_fondos,edad))
-datos_inisaldo_ppi=(edad<65)*datos_inisaldo_ppi
-#Creamos la variable objetivo a partir de un potencial
-datos_inipotencial= runif(clientes,0,1)
-datos_inipotencial= datos_inipotencial + log(edad)/2 + runif(1,0,0.03)*(saldo_vista>5000)+runif(1,0,0.09)*(saldo_fondos>5000)+runif(1,0,0.07)*(saldo_ppi>10000)
+clientes <- 20000
+saldo_vista <- runif(clientes, 0, 1) * 10000
+saldo_ppi <- (runif(clientes, 0.1, 0.6) * rpois(clientes, 2)) * 60000
+saldo_fondos <- (runif(clientes, 0.1, 0.9) * (rpois(clientes, 1) - 0.5 > 0)) * 30000
+edad <- rpois(clientes, 60)
 
-summary(datos_ini)
-datos_inipvi=as.factor((datos_inipotencial>=quantile(datos_inipotencial,
-0.98))*1)
-#Eliminamos la columna que genera nuestra variable dependiente
-datos_ini = subset(datos_ini, select = -c(potencial))
-#Realizamos una tabla de frecuencias
+datos_ini <- data.frame(saldo_vista, saldo_ppi, saldo_fondos, edad)
+datos_ini$saldo_ppi <- (datos_ini$edad < 65) * datos_ini$saldo_ppi
+
+# Creamos la variable objetivo a partir de un potencial teórico
+potencial <- runif(clientes, 0, 1) + log(datos_ini$edad)/2 + 
+             0.03 * (datos_ini$saldo_vista > 5000) + 
+             0.09 * (datos_ini$saldo_fondos > 5000) + 
+             0.07 * (datos_ini$saldo_ppi > 10000)
+
+datos_ini$pvi <- as.factor((potencial >= quantile(potencial, 0.98)) * 1)
+
+# Tabla de frecuencias: sólo un 2% de casos positivos
 table(datos_ini$pvi)
 ```
 
-Sólo encontramos un 2% de casos positivos de los 20.000 clientes analizados. Para nuestro pequeño estudio vamos a emplear `regresión logística` y `árboles de decisión`, pero lo primero que vamos a hacer es seleccionar una parte de las observaciones para validar los modelos realizados:
+Para nuestro estudio vamos a emplear **regresión logística** y **árboles de decisión**, pero lo primero es seleccionar una parte de las observaciones para validar los modelos:
 
 ```r
-#Subconjunto de validacion
-validacion <- sample(1:clientes,5000)
+# Subconjunto de validación
+set.seed(123)
+validacion <- sample(1:clientes, 5000)
+entreno_full <- datos_ini[-validacion, ]
 ```
 
-Estos 5.000 clientes no entrenarán ningún modelo sólo validarán los modelos, con y sin sobremuestreo, que realicemos. Vamos a generar la muestra con un porcentaje del 50% de casos positivos mediante la librería de R `sample`:
+Vamos a generar una muestra con un 50% de casos positivos mediante la librería `sampling`:
 
 ```r
-#install.packages("sampling")
-library( sampling )
-#Muestra estratificada aleatoria con reemplazamiento de tamaño 10000
-selec1 <- strata( datos_ini[-validacion,], stratanames = c("pvi"),
-size = c(5000,5000), method = "srswr" )
+# install.packages("sampling")
+library(sampling)
+
+# Muestra estratificada aleatoria con reemplazamiento
+selec1 <- strata(entreno_full, stratanames = c("pvi"), 
+                 size = c(5000, 5000), method = "srswr")
+
+entreno_over <- entreno_full[selec1$ID_unit, ]
 ```
 
-Con `strata` realizamos el muestreo estratificado, el estrato es nuestra variable dependiente y así lo indicamos en `stratanames`, como tenemos 2 estratos en `size` indicamos 5000 observaciones para cada uno de ellos y el método `srswr` señala que es muestreo con reemplazamiento (with replacement).
-
-_Modelo de regresión logística:_
+### Modelo de regresión logística
 
 ```r
-#Modelo sin sobremuestreo
-modelo.1 = glm(pvi~.,data=datos_ini[-validacion,],family=binomial)
-summary(modelo.1)
+# Modelo sin sobremuestreo
+modelo.1 <- glm(pvi ~ ., data = entreno_full, family = binomial)
 
-#Modelo con sobremuestreo
-#Nos quedamos con el elemento ID_unit
-selec1 <- selec1$ID_unit
-modelo.2 = glm(pvi~.,data=datos_ini[selec1,],family=binomial)
-summary(modelo.2)
+# Modelo con sobremuestreo
+modelo.2 <- glm(pvi ~ ., data = entreno_over, family = binomial)
 ```
 
-Ambos modelos convergen, tienen parámetros similares y las inferencias sobre ellos son iguales. ¿Qué modelo funciona mejor? La librería `ROCR` nos permite realizar curvas `ROC` muy empleadas para medir el comportamiento de los modelos realizados. No entramos en detalle sobre el código para no alargar esta entrada:
+¿Qué modelo funciona mejor? La librería `ROCR` nos permite realizar curvas `ROC` para medir el comportamiento:
 
 ```r
-#Realizamos la curva ROC para ambos modelos y comparamos
-#install.packages("ROCR")
 library(ROCR)
 
-#Objeto que contiene la validación del modelo sin sobremuestreo
-valida.1 <- datos_ini[validacion,]
-valida.1pred <- predict(modelo.1,newdata=valida.1,type="response")
-pred.1 <- prediction(valida.1pred,valida.1pvi)
-perf.1 <- performance(pred.1,"tpr", "fpr")
-#Validación con sobremuestreo
-valida.2 <- datos_ini[validacion,]
-valida.2pred <- predict(modelo.2,newdata=valida.2,type="response")
+# Validación del modelo sin sobremuestreo
+valida_data <- datos_ini[validacion, ]
+pred1_val <- predict(modelo.1, newdata = valida_data, type = "response")
+pred_obj1 <- prediction(pred1_val, valida_data$pvi)
+perf1 <- performance(pred_obj1, "tpr", "fpr")
 
-pred.2 <- prediction(valida.2pred,valida.2pvi)
-perf.2 <- performance(pred.2,"tpr", "fpr")
-#Pintamos ambas curvas ROC
-plot(perf.2,colorize = FALSE)
-par(new=TRUE)
-plot(c(0,1),c(0,1),type='l',col = "red",
-lwd=2, ann=FALSE)
-par(new=TRUE)
-plot(perf.1,colorize = TRUE)
+# Validación del modelo con sobremuestreo
+pred2_val <- predict(modelo.2, newdata = valida_data, type = "response")
+pred_obj2 <- prediction(pred2_val, valida_data$pvi)
+perf2 <- performance(pred_obj2, "tpr", "fpr")
+
+# Pintamos ambas curvas ROC
+plot(perf1, col = "blue", main = "Curvas ROC: Logística")
+plot(perf2, col = "black", add = TRUE, lty = 2)
+abline(a = 0, b = 1, col = "red")
+legend("bottomright", legend = c("Sin sobremuestreo", "Con sobremuestreo"), 
+       col = c("blue", "black"), lty = c(1, 2))
 ```
 
 ![roc-logistica-sobremuestreo.png](/images/2011/11/roc-logistica-sobremuestreo.png)
 
-La línea negra es el modelo con sobremuestreo y presenta una ligera (muy ligera mejora con respecto al modelo sin sobremuestreo). Para la regresión logística y en este ejemplo el modelo con sobremuestreo no mejora al modelo sin sobremuestreo.
+En este ejemplo, para la regresión logística, el modelo con sobremuestreo apenas mejora al modelo sin sobremuestreo.
 
-_Modelos con árboles de decisión:_
+### Modelos con árboles de decisión
 
 ```r
 library(rpart)
-#Modelo sin sobremuestreo
-arbol.1=rpart(as.factor(pvi)~edad+saldo_ppi+saldo_fondos,
-data=datos_ini[-validacion,],method="anova",
-control=rpart.control(minsplit=20, cp=0.001) )
 
-#Modelo con sobremuestreo
-arbol.2=rpart(as.factor(pvi)~edad+saldo_ppi+saldo_fondos,
-data=datos_ini[selec1,],method="anova",
-control=rpart.control(minsplit=20, cp=0.001) )
+# Modelo sin sobremuestreo
+arbol.1 <- rpart(pvi ~ edad + saldo_ppi + saldo_fondos, 
+                 data = entreno_full, method = "class")
 
-#Validacion  sin sobremuestreo
-valida.arbol.1 <- datos_ini[validacion,]
-valida.arbol.1pred <- predict(arbol.1,newdata=valida.arbol.1)
-pred.1 <- prediction(valida.arbol.1pred,valida.arbol.1pvi)
-perf.1 <- performance(pred.1,"tpr", "fpr")
+# Modelo con sobremuestreo
+arbol.2 <- rpart(pvi ~ edad + saldo_ppi + saldo_fondos, 
+                 data = entreno_over, method = "class")
 
-#Validacion con sobremuestreo
-valida.arbol.2 <- datos_ini[validacion,]
-valida.arbol.2pred <- predict(arbol.2,newdata=valida.arbol.2)
-pred.2 <- prediction(valida.arbol.2pred,valida.arbol.2pvi)
-perf.2 <- performance(pred.2,"tpr", "fpr")
-#Pintamos ambas curvas ROC
-plot(perf.2,colorize = FALSE)
-par(new=TRUE)
-plot(c(0,1),c(0,1),type='l',col = "red",
-lwd=2,ann=FALSE)
-par(new=TRUE)
-plot(perf.1,colorize = TRUE)
+# Repetimos validación con ROCR (usando la probabilidad de la clase '1')
+pred1_arbol <- predict(arbol.1, newdata = valida_data, type = "prob")[, 2]
+pred2_arbol <- predict(arbol.2, newdata = valida_data, type = "prob")[, 2]
+
+perf1_arbol <- performance(prediction(pred1_arbol, valida_data$pvi), "tpr", "fpr")
+perf2_arbol <- performance(prediction(pred2_arbol, valida_data$pvi), "tpr", "fpr")
+
+plot(perf1_arbol, col = "blue", main = "Curvas ROC: Árboles")
+plot(perf2_arbol, col = "black", add = TRUE, lty = 2)
 ```
-
-Analizamos el gráfico resultante:
 
 ![roc-arboles-rpart-sobremuestreo.png](/images/2011/11/roc-arboles-rpart-sobremuestreo.png)
 
-En este caso las curvas `ROC` son distintas y os dejo que saquéis vuestras propias conclusiones y las comentéis en el blog. Para evitarós problemas os dejo en [este enlace](/images/2011/11/sobremuestreo-2.r "sobremuestreo-2.r") el código empleado para este experimento. Ejecutadlo para analizar los resultados.
+En este caso, las curvas `ROC` son distintas y el comportamiento del árbol varía sustancialmente. Os dejo que saquéis vuestras propias conclusiones. 
+
+Para evitaros problemas, os dejo en [este enlace](/images/2011/11/sobremuestreo-2.r "sobremuestreo-2.r") el código empleado para este experimento. Saludos.

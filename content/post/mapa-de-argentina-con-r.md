@@ -19,28 +19,30 @@ title: Mapa de Argentina con R
 url: /blog/mapa-de-argentina-con-r/
 ---
 
-Un lector necesita realizar un mapa de Argentina con R. El primer paso es descargar el mapa en formato R de la página web de siempre: <http://www.gadm.org/country> seleccionamos Argentina y el formato en R. Podéis descargar en otros formatos y trabajar con R, pero eso lo contaré otro día. Para ilustrar el ejemplo me he descargado el mapa de nivel 2, es decir, a nivel de Estado argentino. Una vez descargado el mapa empleamos el código de siempre:
+Un lector necesita realizar un mapa de Argentina con `R`. El primer paso es descargar el mapa in formato `R` de la página web de siempre: <http://www.gadm.org/country>; seleccionamos Argentina y el formato in `R`. Podéis descargar in otros formatos y trabajar con `R`, pero eso lo contaré otro día. Para ilustrar el ejemplo, me he descargado el mapa de nivel 2, es decir, a nivel de Estado argentino. Una vez descargado el mapa, empleamos el código de siempre:
 
+```r
 library(sp)
 library(RColorBrewer)
 
-ub_argentina=»C:\\\\TEMP\\\\00 raul\\\\MAPA\\\\ARG_adm1.RData»
+ub_argentina <- "C:\\TEMP\\00 raul\\MAPA\\ARG_adm1.RData"
 
-#Creamos los objetos de R
+# Creamos los objetos de R
 load(ub_argentina)
-argentina=gadm
+argentina <- gadm
 
 plot(argentina)
+```
 
 ![argentina_R](/images/2015/07/argentina_R.png)
 
-Es sencillo trabajar con el objeto y colorear en función de valores. Un ejemplo simplista:
+Es sencillo trabajar con el objeto y colorear in función de valores. Un ejemplo simplista:
 
 ```r
 argentina$NAME_1
-datos<-c(1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+datos <- c(1, rep(0, 26))
 
-plot(argentina,col=datos)
+plot(argentina, col = datos)
 ```
 
 Pinta de negro el estado de Buenos Aires. A ver si dispongo de más tiempo y puedo desarrollar más esta entrada. Saludos.

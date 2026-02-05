@@ -15,139 +15,123 @@ tags:
   - fechas sas
   - formatos sas
   - funciones sas
-title: Trabajo con `fechas SAS`. Funciones `fecha`
+title: Trabajo con fechas SAS. Funciones fecha
 url: /blog/trabajo-con-fechas-sas-funciones-fecha/
 ---
 
-En las `entregas anteriores` del `monográfico` sobre `fechas SAS` hemos `estudiado` como `almacena` `internamente` las `fechas` el `sistema` y los `formatos` más `prácticos` que disponemos para `visualizarlas`. En esta última `entrega` veremos algunas de las `funciones` de `fecha hora` de las que dispone SAS. Las `funciones` las vamos a `dividir` en `4 grupos`:
+En las entregas anteriores del monográfico sobre fechas SAS hemos estudiado cómo almacena internamente las fechas el sistema y los formatos más prácticos de los que disponemos para visualizarlas. En esta última entrega, veremos algunas de las funciones de fecha y hora de las que dispone SAS.
 
-- `Funciones` de `extracción` de `fecha`
-- `Funciones` de `creación` de `fecha`
-- `Funciones` de `duración`
-- `Funciones` de `intervalo`
+Las funciones las vamos a dividir en cuatro grupos:
+- Funciones de **extracción** de fecha.
+- Funciones de **creación** de fecha.
+- Funciones de **duración**.
+- Funciones de **intervalo**.
 
-Las `funciones` de **`extracción`** de `fecha` nos `permiter` «`extraer`» `información` de `variables` de `fecha`/`hora`, veamos un `ejemplo` para `extraer` la `fecha` y la `hora` de una `variable fecha`/`hora`:
+### Funciones de extracción de fecha
 
-```sas
-data _null_;
-
-x="11NOV2008:03:15:00"dt;
-
-*EXTRAEMOS LA FECHA DE UNA VARIABLE FECHA/HORA;
-
-y=datepart(x); format y ddmmyy10.; put y=;
-
-*EXTRAEMOS LA HORA DE UNA VARIABLE FECHA/HORA;
-
-z=timepart(x); format z time10.; put z=;
-
-run;
-```
-
-A partir de una `variable fecha` podemos obtener el `día` (`función DAY`), el `mes` (`función MONTH`) o el `año` (`función YEAR`), por `ejemplo`:
+Nos permiten «extraer» información de variables de fecha/hora. Veamos un ejemplo para extraer la fecha y la hora de una variable fecha-hora (`datetime`):
 
 ```sas
 data _null_;
-
-y=today();
-
-format y ddmmyy10.; put y=;
-
-*DIA;dia=day(y);
-
-*MES;mes=month(y);
-
-*AÑO;anio=year(y);
-
-put dia "/" mes "/" anio;
-
+    x = "11NOV2008:03:15:00"dt;
+    
+    * EXTRAEMOS LA FECHA DE UNA VARIABLE FECHA-HORA;
+    y = datepart(x); 
+    format y ddmmyy10.; put y=;
+    
+    * EXTRAEMOS LA HORA DE UNA VARIABLE FECHA-HORA;
+    z = timepart(x); 
+    format z time10.; put z=;
 run;
 ```
 
-Y a partir de una `variable hora` podemos obtener la `hora` (`función HOUR`) el `minuto` (`función MINUTE`) y el `segundo` (`función SECOND`):
+A partir de una variable fecha, podemos obtener el día (`DAY()`), el mes (`MONTH()`) o el año (`YEAR()`):
 
 ```sas
 data _null_;
-
-y=time();
-
-format y time10.; put y=;
-
-*HORA;hora=hour(y);
-
-*MINUTO;minuto=minute(y);
-
-*SEGUNDO;segundo=round(second(y));
-
-put hora ":" minuto ":" segundo;
-
+    y = today();
+    format y ddmmyy10.;
+    
+    dia = day(y);
+    mes = month(y);
+    anio = year(y);
+    
+    put dia= mes= anio=;
 run;
 ```
 
-El `número` de `segundos` nos lo pone con `decimales`, por ello se puede emplear la `función ROUND` para `redondear` el `valor` y `evitar` los `decimales`.
-
-Las `funciones` de **`creación`** de `fecha` nos permiten `generar fechas SAS` a desde `datos numéricos`. Como siempre, `estudiemos` algunos `ejemplos`:
+Y a partir de una variable hora, podemos obtener la hora (`HOUR()`), el minuto (`MINUTE()`) y el segundo (`SECOND()`):
 
 ```sas
 data _null_;
-
-dia=1;
-
-mes=1;
-
-anio=1960;
-
-*CREACION DE VARIABLE FECHA;
-
-y=mdy(mes,dia,anio); put y=;
-
-*CREACION DE VARIABLE FECHA/HORA;
-
-z=dhms(y,0,0,0); put z=;
-
-*CREACION DE VARIABLES HORA;
-
-x=hms(1,0,0); put x=;
-
+    y = time();
+    format y time10.;
+    
+    hora = hour(y);
+    minuto = minute(y);
+    segundo = round(second(y));
+    
+    put hora= ":" minuto= ":" segundo=;
 run;
 ```
 
-La `función MDY` genera `variables fecha` y le pasamos como `parámetros Mes Día` y `Year`. Para `DHMS` que nos genera `varaibles fecha`/`hora` los `parámetros` son `fecha` (en un `valor` que puede `leer SAS`) `Hora Minuto` y `Segundo`. Por último `HMS` recibe `Hora Minuto` y `Segundo`. Las `funciones` de **`duración`** son `DATDIF` y `YRDIF`:
+### Funciones de creación de fecha
+
+Nos permiten generar fechas SAS a partir de datos numéricos:
 
 ```sas
 data _null_;
-x="01JAN1960"D;
-y=today();
-z=datdif(x,y,"ACT/ACT"); put z=;
-m=datdif(x,y,"30/360"); put m=;
-n=y-x; put n=;
-o=yrdif(x,y,"ACT/ACT"); put o=;
-p=yrdif(x,y,"30/360"); put p=;
+    dia = 1;
+    mes = 1;
+    anio = 1960;
+    
+    * CREACIÓN DE VARIABLE FECHA;
+    y = mdy(mes, dia, anio); put y=;
+    
+    * CREACIÓN DE VARIABLE FECHA-HORA;
+    z = dhms(y, 0, 0, 0); put z=;
+    
+    * CREACIÓN DE VARIABLE HORA;
+    x = hms(1, 0, 0); put x=;
 run;
 ```
 
-Observamos que estas `funciones` reciben `3 parámetros`, `fecha inicial`, `fecha final` y la `base`. La `Base` nos define en que forma deseamos calcular la `diferencia`, en `años` de `365-366 días` o en `años` con `meses` de `30 días` de `duración`. Si empleamos como `base` «`ACTUALLY`/`ACTUALLY`» la `diferencia` equivale a la `resta` de `ambas fechas`. Las `bases` las podemos `combinar` de forma «`ACT`/`360`» o «`360`/`ACT`».Las `funciones` de **`intervalo`** que vamos a estudiar serán `INTCK` e `INTNX`. La `primera` de ellas nos `determina` el `intervalo` entre dos `fechas` en función de una `base`, la `segunda determina` una `fecha` en función de un `intervalo` y una `base`, es decir, con `INTCK` obtenemos un `número` (ej: `número` de `meses` entre `01/02/2008` y `05/02/2008`) y con `INTNX` obtenemos una `fecha` (ej: `01/01/2007` más `30 meses`). En un `ejemplo` se comprenderá mejor:
+`MDY` genera fechas y le pasamos como parámetros **Mes**, **Día** y **Año**. `DHMS` genera fecha-hora y requiere **fecha**, **hora**, **minuto** y **segundo**. `HMS` recibe **hora**, **minuto** y **segundo**.
+
+### Funciones de duración
+
+Destacan `DATDIF` y `YRDIF`:
 
 ```sas
 data _null_;
-
- x="01JAN2008"d;
-
- y=today();
-
-z=intck("week",x,y); put z=;
-
- k=intck("month",x,y); put k=;
-
- l=intck("hour",x,y); put l=;
-
-m=intnx("month",x,11); put m=ddmmyy10.;
-
- n=intnx("day",x,10); put n=ddmmyy10.;
-
- p=intnx("year",x,-10); put p=ddmmyy10.;
-
+    x = "01JAN1960"d;
+    y = today();
+    
+    z = datdif(x, y, "ACT/ACT"); put "Días (ACT/ACT): " z;
+    m = datdif(x, y, "30/360");  put "Días (30/360):  " m;
+    
+    o = yrdif(x, y, "ACT/ACT");  put "Años (ACT/ACT): " o;
+    p = yrdif(x, y, "30/360");   put "Años (30/360):  " p;
 run;
 ```
 
-En la `ayuda` de SAS podemos encontrar más `documentación` y `ejemplos` sobre estas `funciones`. Como `norma general` tendremos: `INTCK` devuelve `valores numéricos` e `INTNX` devuelve `fechas` (que también son `valores numéricos`).Espero que os sirva de ayuda este `monográfico` sobre las `fechas` en SAS y os `despeje` algunas `dudas` sobre el `funcionamiento` de las `constantes`, los `formatos` y las `funciones` y, por supuesto, si tenéis cualquier `duda`, `sugerencia` o `trabajo` bien `remunerado` `rvaquerizo@analisisydecision.es`
+Estas funciones reciben la **fecha inicial**, la **fecha final** y la **base**. La base define cómo calcular la diferencia (en años de 365-366 días o en meses comerciales de 30 días).
+
+### Funciones de intervalo
+
+Estudiamos `INTCK` e `INTNX`. La primera determina el intervalo entre dos fechas; la segunda determina una fecha a partir de un intervalo y una base. Con `INTCK` obtenemos un número (ej: meses entre dos fechas) y con `INTNX` obtenemos una fecha (ej: sumar 30 meses a una fecha).
+
+```sas
+data _null_;
+    x = "01JAN2008"d;
+    y = today();
+    
+    z = intck("week", x, y);  put "Semanas: " z;
+    k = intck("month", x, y); put "Meses:   " k;
+    
+    m = intnx("month", x, 11); put "Fecha + 11 meses: " m ddmmyy10.;
+    n = intnx("day", x, 10);   put "Fecha + 10 días:  " n ddmmyy10.;
+run;
+```
+
+En la ayuda de SAS podéis encontrar más documentación. Como norma general: `INTCK` devuelve valores numéricos (conteo de intervalos) e `INTNX` devuelve fechas. Espero que este monográfico os despeje dudas. Saludos.

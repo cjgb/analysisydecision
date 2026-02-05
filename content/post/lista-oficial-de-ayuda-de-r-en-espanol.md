@@ -17,7 +17,7 @@ title: Lista oficial de ayuda de R en español
 url: /blog/lista-oficial-de-ayuda-de-r-en-espanol/
 ---
 
-Desde hace apenas unas semanas existe una lista de correo de ayuda en español para R. Está gestionada desde los servidores de CRAN.
+Desde hace apenas unas semanas existe una lista de correo de ayuda en español para R. Está gestionada desde los servidores del CRAN.
 
 Para darse de alta en ella sólo hay que seguir las instrucciones contenidas en el siguiente enlace:
 
@@ -25,4 +25,4 @@ Para darse de alta en ella sólo hay que seguir las instrucciones contenidas en 
 
 Los usuarios de R están más que invitados a participar en ella y ayudar a crear una verdadera comunidad de usuarios, aprovechando sinergias, compartiendo experiencias, etc.
 
-Además, se anunciará próximamente a través de esta lista la convocartoria de las primeras jornadas de R en España.
+Además, se anunciará próximamente a través de esta lista la convocatoria de las primeras jornadas de R en España.

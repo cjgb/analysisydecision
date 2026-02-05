@@ -14,10 +14,10 @@ related:
 tags:
   - consultoría
   - formación
-title: Nace análisis y decisión AyD
+title: Nace Análisis y Decisión (AyD)
 url: /blog/nace-analisisydecision/
 ---
 
 Nace un nuevo proyecto en la web. Profesionales con amplia experiencia en la gestión de la información se unen para compartir conocimientos.
 
-Aprender y transmitir lo aprendido. Ese es el objetivo de análisis y decisión.
+Aprender y transmitir lo aprendido: ése es el objetivo de **Análisis y Decisión**. Saludos.

@@ -18,8 +18,8 @@ title: Dos páginas con recursos para introducirse en R
 url: /blog/dos-paginas-con-recursos-para-introducirse-en-r/
 ---
 
-En la lista de ayuda de R se han anunciado recientemente dos páginas más con recursos para aprender R. Específicamente, se trata de páginas que contienen _webminars_. Aunque también tratan otros asuntos de manera menos peliculera.
+En la lista de ayuda de `R` se han anunciado recientemente dos páginas más con recursos para aprender `R`. Específicamente, se trata de páginas que contienen *webinars*. Aunque también tratan otros asuntos de manera menos peliculera.
 
-Son [éste](http://www.fort.usgs.gov/brdscience/LearnR.htm "Recursos para aprender R") y [éste](http://processtrends.com/Learn_R_Toolkit.htm "Recursos para aprender R") otro.
+Son [este](http://www.fort.usgs.gov/brdscience/LearnR.htm "Recursos para aprender R") y [este](http://processtrends.com/Learn_R_Toolkit.htm "Recursos para aprender R") otro.
 
-Espero resulten de provecho.
+Espero que resulten de provecho.

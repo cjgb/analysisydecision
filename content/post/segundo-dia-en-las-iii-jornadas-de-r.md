@@ -16,6 +16,6 @@ title: Segundo día en las III jornadas de R
 url: /blog/segundo-dia-en-las-iii-jornadas-de-r/
 ---
 
-Comenzamos el segundo día de las jornadas. Esto promete, el paquete brew para la automatización de informes. Una aplicación muy clara hacía el mundo empresarial.
+Comenzamos el segundo día de las jornadas. Esto promete: el paquete `brew` para la automatización de informes. Una aplicación muy clara hacia el mundo empresarial.
 
 Por cierto, la organización un 10.

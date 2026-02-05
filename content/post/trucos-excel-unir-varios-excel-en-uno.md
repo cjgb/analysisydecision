@@ -5,6 +5,7 @@ categories:
   - formación
   - monográficos
   - trucos
+  - vba
 date: '2011-09-21'
 lastmod: '2025-07-13'
 related:
@@ -21,86 +22,66 @@ title: Trucos Excel. Unir varios Excel en uno
 url: /blog/trucos-excel-unir-varios-excel-en-uno/
 ---
 
-Tenía pendiente revisar [una de las entradas más visitadas del blog](https://analisisydecision.es/truco-sas-unir-todos-los-excel-en-uno-solo/). Trata la problemática de **unir varios Excel en uno sólo**. En el caso concreto servía para unir varios Excel generados por SAS a través de una macro en SAS. En la entrada de hoy quiero trabajar con un ejemplo que os podéis [ descargar aquí en formato `rar`](/images/2011/09/unir_excel1.rar "unir_excel1.rar"). De los archivos que comparto el más interesante el que llamamos [unir_varios_excel.xlsm](/images/2011/09/unir_varios_excel1.xlsm "unir_varios_excel1.xlsm") se trata de un archivo Excel para macros que contiene un par de macros más que interesantes. Un pantallazo de este libro de Excel:
+Tenía pendiente revisar [una de las entradas más visitadas del blog](https://analisisydecision.es/truco-sas-unir-todos-los-excel-en-uno-solo/). Trata la problemática de **unir varios `Excel` en uno solo**. En el caso concreto, servía para unir varios `Excel` generados por SAS a través de una macro en SAS. En la entrada de hoy, quiero trabajar con un ejemplo que os podéis [descargar aquí en formato RAR](/images/2011/09/unir_excel1.rar "unir_excel1.rar").
+
+De los archivos que comparto, el más interesante es el que llamamos [unir_varios_excel.xlsm](/images/2011/09/unir_varios_excel1.xlsm "unir_varios_excel1.xlsm"): se trata de un archivo `Excel` para macros que contiene un par de macros más que interesantes. Un pantallazo de este libro de `Excel`:
 
 ![unir_excel.png](/images/2011/09/unir_excel.png)
 
-Tiene una macro `limpia` para limpiar la colunma de archivos. Una macro `ficheros` que se llama con el botón `Listar Libros` y nos permite listar los ficheros de un determinado directorio con una determinada extensión. Estos parámetros los podemos modificar en las casillas `C1` y `C2`. Se trata de una macro que [ya hemos visto con anterioridad](https://analisisydecision.es/trucos-excel-archivos-de-un-directorio-con-una-macro/) por lo que no entraremos en profundidad con ella. La macro más interesante es la que he llamado `Une` y será la que nos permita **unir la primera hoja de todos los Excel de un directorio en un libro final** cuyo `nombre_final` le indicamos en la celda `C3`. Este libro final se guardará en el mismo directorio donde están todos los archivos Excel que deseamos unir. Por supuesto es importante tener todos los Excel en el mismo directorio, el `unir_varios_excel` no es necesario que esté en ese directorio. El contenido de esta macro os le muestro y resumo a continuación:
+Tiene una macro `limpia` para limpiar la columna de archivos. Una macro `ficheros` que se llama con el botón **Listar Libros** y nos permite listar los ficheros de un determinado directorio con una determinada extensión. Estos parámetros los podemos modificar en las casillas `C1` y `C2`. Se trata de una macro que [ya hemos visto con anterioridad](https://analisisydecision.es/trucos-excel-archivos-de-un-directorio-con-una-macro/), por lo que no entraremos en profundidad con ella.
 
-```vb.net
+La macro más interesante es la que he llamado `Une`, y será la que nos permita **unir la primera hoja de todos los `Excel` de un directorio en un libro final** cuyo `nombre_final` le indicamos en la celda `C3`. Este libro final se guardará en el mismo directorio donde están todos los archivos `Excel` que deseamos unir. Por supuesto, es importante tener todos los `Excel` en el mismo directorio; el archivo `unir_varios_excel.xlsm` no es necesario que esté en ese directorio. El contenido de esta macro os lo muestro y resumo a continuación:
+
+```vba
 Sub Une()
+    ' Macro realizada por www.analisisydecision.es
+    Dim nombre As String, libro As String, nombre_final As String, libro_final As String
+    Dim XL As Object
+    Dim para As Integer, i As Integer
 
-Dim nombre, libro, nombre_final, libro_final As String
+    ' Objeto Excel
+    Set XL = CreateObject("Excel.Application")
+    XL.Visible = True
 
-'Objeto Excel
+    para = 0
+    i = 0
 
-Set XL = CreateObject("Excel.Application")
+    ' Creamos el libro resultante
+    nombre_final = Cells(3, 3).Value & "." & Cells(2, 3).Value
+    libro_final = Cells(1, 3).Value & "\" & nombre_final
 
-XL.Visible = True
+    While (para = 0)
+        nombre = Cells(5 + i, 1).Value
+        libro = Cells(1, 3).Value & "\" & nombre
 
-para = 0
+        If nombre <> "" Then
+            If i = 0 Then
+                XL.Workbooks.Open libro
+                XL.ActiveWorkbook.SaveAs libro_final, -4143
+            Else
+                XL.Workbooks.Open libro
+                ' Pegamos la primera hoja del libro i al libro final
+                XL.Workbooks(nombre).Sheets(1).Copy After:=XL.Workbooks(nombre_final).Sheets(XL.Workbooks(nombre_final).Sheets.Count)
+                XL.Workbooks(nombre).Close SaveChanges:=False
+            End If
+            i = i + 1
+        Else
+            para = 1
+            XL.Workbooks(nombre_final).Close SaveChanges:=True
+        End If
+    Wend
 
-i = 0
-
-'Creamos el libro resultante
-
-nombre_final = Cells(3, 3) & "." & Cells(2, 3)
-
-libro_final = Cells(1, 3) & "\" & nombre_final
-```
-
-```vb.net
-While (para = 0)
-
-nombre = Cells(5 + i, 1)
-
-libro = Cells(1, 3) & "\" & nombre
-```
-
-```vb.net
-If nombre <> "" Then
-
-XL.Workbooks.Open libro
-
-If i = 0 Then XL.ActiveWorkbook.SaveAs libro_final, -4143
-
-If i <> 0 Then
-
-XL.Workbooks.Open libro
-
-XL.Workbooks(nombre).Sheets(1).Copy , XL.Workbooks(nombre_final).Sheets(i)
-
-XL.Workbooks(nombre).Close
-
-End If
-
-i = i + 1
-
-End If
-
-If nombre = "" Then
-
-para = 1
-
-XL.Workbooks(nombre_final).Close True
-
-End If
-
-Wend
-```
-
-```vb.net
-XL.Quit
-
+    XL.Quit
+    Set XL = Nothing
 End Sub
 ```
 
-Creamos un objeto `XL` como **aplicación de Excel**. Y sobre un Excel que llamamos como `nombre_final` vamos a hacer un bucle donde la primera iteración será crear ese archivo `nombre_final` a partir del primero de los Excel que deseamos unir. En las sucesivas iteraciones del bucle seleccionaremos la `primera hoja` de los libros que queremos unir y se la pegamos a las hojas de nuestro archivo resultante. Tampoco es un bucle complicado o especialmente talentoso, si os plantea alguna duda escribid un comentario. Al final se cierra nuestro resultado y el objeto Excel con el que trabajamos.
+Creamos un objeto `XL` como **aplicación de `Excel`**. Y sobre un `Excel` que llamamos como `nombre_final` vamos a hacer un bucle donde la primera iteración será crear ese archivo `nombre_final` a partir del primero de los `Excel` que deseamos unir. En las sucesivas iteraciones del bucle, seleccionaremos la primera hoja de los libros que queremos unir y se la pegamos a las hojas de nuestro archivo resultante. Tampoco es un bucle complicado o especialmente talentoso; si os plantea alguna duda, escribid un comentario. Al final se cierra nuestro resultado y el objeto `Excel` con el que trabajamos.
 
-Al ser esta una primera versión que espero vaya mejorando por mi parte y por parte de las personas que deseen colaborar tiene algunas limitaciones:
+Al ser ésta una primera versión, que espero vaya mejorando por mi parte y por parte de las personas que deseen colaborar, tiene algunas limitaciones:
 
-- Sólo une la **primera hoja** de los libros que deseamos unir
-- Cuando el **Excel resultante ya está creado** nos pide si deseamos sobreescribirlo
-- He detectado un **problema en Excel 2010** con el resultado cuando tratamos de guardarlo como `xlsx`
+- Sólo une la **primera hoja** de los libros que deseamos unir.
+- Cuando el **`Excel` resultante ya está creado**, nos pide si deseamos sobreescribirlo.
+- He detectado un **problema en `Excel` 2010** con el resultado cuando tratamos de guardarlo como `.xlsx`.
 
-Poco a poco iremos puliendo estos defectos y seguramente podamos crear una aplicación en `VB` para unir archivos Excel más completa. Espero que os sea de utilidad, un saludo.
+Poco a poco iremos puliendo estos defectos y seguramente podamos crear una aplicación en `Visual Basic` para unir archivos `Excel` más completa. Espero que os sea de utilidad. Saludos.

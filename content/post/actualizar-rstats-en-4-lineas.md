@@ -16,13 +16,13 @@ title: Actualizar nuestra versión de R en 4 líneas
 url: /blog/actualizar-rstats-en-4-lineas/
 ---
 
-Con este código actualizamos R en nuestro MAC OSx en 4 líneas:
+Con este código actualizamos `R` en nuestro `macOS` en 4 líneas:
 
 ```r
 require(devtools)
-install_github(‘andreacirilloac/updateR’)
+install_github('andreacirilloac/updateR')
 library(updateR)
 updateR(admin_password = "XXXxxx111")
 ```
 
-Sólo tenemos que poner la clave de nuestro usuario administrador.
+Solo tenemos que poner la clave de nuestro usuario administrador.

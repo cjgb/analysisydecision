@@ -20,69 +20,57 @@ title: Sobremuestreo y pesos a las observaciones. Ahora con R
 url: /blog/sobremuestreo-y-pesos-a-las-observaciones-ahora-con-r/
 ---
 
-De nuevo volvemos a la entrada de ayer para replicar el código SAS utilizado en R. Se trata de realizar 3 modelos de regresión logística con R para estudiar como influyen en los parámetros el uso de un conjunto de datos con sobremuestreo o el uso de un conjunto de datos donde asignamos pesos a las observaciones. El programa es sencillo pero tiene un uso interesante de la librería de `R sampling`. Aquí tenéis el código:
+De nuevo volvemos a la entrada de ayer para replicar el código SAS utilizado en R. Se trata de realizar tres modelos de regresión logística con R para estudiar cómo influyen en los parámetros el uso de un conjunto de datos con sobremuestreo o el uso de un conjunto de datos donde asignamos pesos a las observaciones. El programa es sencillo pero tiene un uso interesante de la librería `sampling`. Aquí tenéis el código:
 
 ```r
-#Regresión logística perfecta
+# Regresión logística perfecta
+num <- 100000
+x <- rnorm(num)
+y <- rnorm(num)
+p <- 1 / (1 + exp(-(-5.5 + 2.55 * x - 1.2 * y)))
+z <- rbinom(num, 1, p)
 
-num = 100000
-
-x = rnorm(num); y=rnorm(num)
-
-p=1/(1+exp(-(-5.5+2.55*x-1.2*y)))
-
-z=rbinom(num,1,p)
-
-datos_ini=data.frame(cbind(x,y,z))
-
+datos_ini <- data.frame(x, y, z)
 table(datos_ini$z)
-```
 
-```r
-modelo.1 = glm(z~x+y,data=datos_ini,family=binomial)
-
+# Modelo base
+modelo.1 <- glm(z ~ x + y, data = datos_ini, family = binomial)
 summary(modelo.1)
 ```
 
-El mismo modelo que planteamos con SAS en la anterior entrada nos permite realizar una regresión logística perfecta. Veamos como se plantea la realización del sobremuestreo con R:
+El mismo modelo que planteamos con SAS en la anterior entrada nos permite realizar una regresión logística perfecta. Veamos cómo se plantea la realización del sobremuestreo con R:
 
 ```r
-#Realizamos el sobremuestreo con la librería sampling
+# Realizamos el sobremuestreo con la librería sampling
+library(sampling)
 
-library( sampling )
+selec <- strata(datos_ini,
+                stratanames = c("z"),
+                size = c(5000, 5000), 
+                method = "srswr")
 
-selec <- strata( datos_ini,
-stratanames = c("z"),
-size = c(50000,50000), method = "srswr" )
 table(selec$z)
-```
 
-```r
-modelo.2 = glm(z~x+y,data=datos_ini[selec$ID_unit,],
-
-family=binomial)
-
+# Modelo con sobremuestreo
+modelo.2 <- glm(z ~ x + y, data = datos_ini[selec$ID_unit, ], 
+                family = binomial)
 summary(modelo.2)
 ```
 
-Habrá que volver sobre el tema del muestreo para analizar las posibilidades de la librería `sampling`, en este caso realizamos muestreo estratificado con la función `strata` y muestreo aleatorio con reemplazamiento. Replicamos el proceso asignando pesos:
+Habrá que volver sobre el tema del muestreo para analizar las posibilidades de la librería `sampling`; en este caso, realizamos muestreo estratificado con la función `strata` y muestreo aleatorio con reemplazamiento. Replicamos el proceso asignando pesos:
 
 ```r
-#Realizamos el proceso asignando pesos
+# Realizamos el proceso asignando pesos
+pct <- sum(datos_ini$z) / num
+datos_ini$peso <- ifelse(datos_ini$z == 1, 0.5 / pct, 0.5 / (1 - pct))
 
-pct=sum(datos_ini$z)/num
+# Comprobamos la suma de pesos por grupo
+tapply(datos_ini$peso, datos_ini$z, sum)
 
-datos_ini$peso = ifelse(datos_ini$z==1, 0.5/pct, 0.5/(1-pct))
-
-tapply(datos_ini$peso,datos_ini$z,sum)
-```
-
-```r
-modelo.3 = glm(z~x+y,data=datos_ini,
-
-family=binomial, weights=peso)
-
+# Modelo con pesos
+modelo.3 <- glm(z ~ x + y, data = datos_ini, 
+                family = binomial, weights = peso)
 summary(modelo.3)
 ```
 
-Y obtenemos los mismos resultados (que sorpresa). Saludos.
+Y obtenemos los mismos resultados (qué sorpresa). Saludos.

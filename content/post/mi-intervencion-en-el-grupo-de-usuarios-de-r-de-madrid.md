@@ -19,4 +19,4 @@ url: /blog/mi-intervencion-en-el-grupo-de-usuarios-de-r-de-madrid/
 
 [http://www.vimeo.com/121220862](http://www.vimeo.com/121220862)
 
-Tenía pendiente colgar el video. Yo no soporto verme, sería por eso. Saludos.
+Tenía pendiente colgar el vídeo. Yo no soporto verme, sería por eso. Saludos.

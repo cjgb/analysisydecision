@@ -16,10 +16,10 @@ title: Si buscamos sexo no buscamos trabajo
 url: /blog/si-buscamos-sexo-no-buscamos-trabajo/
 ---
 
-«Internáuticamente» hablando cuando buscamos sexo no buscamos trabajo, no lo digo yo, lo dice [Google Trends](http://www.google.com/trends). Observemos que ocurre si comparamos las búsquedas de la palabra sexo frente a trabajo:
+«Internáuticamente» hablando, cuando buscamos sexo no buscamos trabajo; no lo digo yo, lo dice [Google Trends](http://www.google.com/trends). Observemos qué ocurre si comparamos las búsquedas de la palabra "sexo" frente a "trabajo":
 
 ![sexo-versus-trabajo.JPG](/images/2009/01/sexo-versus-trabajo.JPG)
 
-Es mas que evidente la alta correlación negativa entre las búsquedas de sexo y las búsquedas de trabajo. En 2009 se espera un baby boom. En 2009 todos estaremos buscando trabajo. ¿Una incongruencia? Por cierto, se busca mucho más sexo que trabajo.
+Es más que evidente la alta correlación negativa entre las búsquedas de sexo y las búsquedas de trabajo. En 2009 se espera un *baby boom*. En 2009 todos estaremos buscando trabajo. ¿Una incongruencia? Por cierto, se busca mucho más sexo que trabajo.
 
-Prometo un monográfico de aproximación a [Google Trends](http://www.google.com/trends)
+Prometo un monográfico de aproximación a [Google Trends](http://www.google.com/trends). Saludos.

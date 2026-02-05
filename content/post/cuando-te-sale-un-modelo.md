@@ -18,4 +18,4 @@ url: /blog/cuando-te-sale-un-modelo/
 
 ![2016-09-30-gif-00004605](/images/2016/09/2016-09-30-GIF-00004605..gif)
 
-Modelo lineal siempre…
+Modelo lineal siempre… Saludos.

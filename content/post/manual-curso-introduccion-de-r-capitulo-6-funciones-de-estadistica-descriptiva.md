@@ -18,12 +18,12 @@ title: 'Manual. Curso introducción de R. Capítulo 6: Funciones de estadística
 url: /blog/manual-curso-introduccion-de-r-capitulo-6-funciones-de-estadistica-descriptiva/
 ---
 
-En R trabajaremos con objetos y funciones. En capítulos anteriores hemos empezado a crear objetos, fundamentalmente vectores y matrices. En la presente entrega vamos a estudiar las funciones básicas de estadística descriptiva.
+In `R` trabajaremos con objetos y funciones. In capítulos anteriores hemos empezado a crear objetos, fundamentalmente vectores y matrices. In la presente entrega, vamos a estudiar las funciones básicas de estadística descriptiva.
 
-Como funciones de medida de tendencia y localización tendremos:
+Como funciones de medida de tendencia y localización, tendremos:
 
 ```r
-alturas<- scan() #creamos el objeto alturas con 11 observaciones
+alturas <- scan() # creamos el objeto alturas con 11 observaciones
 ```
 
 ```
@@ -66,7 +66,7 @@ max(alturas)
 ```
 
 ```r
-quantile(alturas) #cuartiles
+quantile(alturas) # cuartiles
 ```
 
 ```
@@ -75,17 +75,19 @@ quantile(alturas) #cuartiles
 ```
 
 ```r
-IQR(alturas) #rango intercuartílico
+# rango intercuartílico
+IQR(alturas)
 ```
 
 ```
 0.17
 ```
 
-Como funciones de medida de dispersión tenemos:
+Como funciones de medida de dispersión, tenemos:
 
 ```r
-var(alturas) #cuasivarianza
+# cuasivarianza
+var(alturas)
 ```
 
 ```
@@ -93,20 +95,22 @@ var(alturas) #cuasivarianza
 ```
 
 ```r
-sd(alturas) #desviación estándar
+# desviación estándar
+sd(alturas)
 ```
 
 ```
 0.1149308
 ```
 
-Si deseamos la varianza hemos de crear en R una función que nos calcule $(n-1)/n\] · ext{cuasivarianza}$:
+Si deseamos la varianza, hemos de crear in `R` una función que nos calcule $\frac{n-1}{n} \cdot \text{cuasivarianza}$:
 
 ```r
-varianza<-function(x) { ((length(x)-1)/length(x))*var(x) } #creamos la función varianza
-```
+# creamos la función varianza
+varianza <- function(x) { 
+  ((length(x) - 1) / length(x)) * var(x) 
+}
 
-```r
 varianza(alturas)
 ```
 
@@ -114,19 +118,15 @@ varianza(alturas)
 0.01200826
 ```
 
-Para crear funciones en R empleamos `function( <parametro1>,…<parametroN>)` y para llamarla hacemos lo mismo que hacemos con las funciones habituales. Esta es la forma de programar con R. Del mismo modo si deseamos medir el coeficiente de curtosis (momento de orden 4) para medir la asimetría hemos de crear la función:
+Para crear funciones in `R`, empleamos `function(<parametro1>, ..., <parametroN>)` y, para llamarla, hacemos lo mismo que hacemos con las funciones habituales. Esta es la forma de programar con `R`. Del mismo modo, si deseamos medir el coeficiente de curtosis (momento de orden 4) para medir la asimetría, hemos de crear la función:
 
 ```r
-kurtosis=function(x) {
+kurtosis <- function(x) {
+  m4 <- mean((x - mean(x))^4)
+  kurt <- m4 / (sd(x)^4) - 3
+  return(kurt)
+}
 
-m4=mean((x-mean(x))^4)
-
-kurt=m4/(sd(x)^4)-3
-
-kurt}
-```
-
-```r
 kurtosis(alturas)
 ```
 
@@ -134,32 +134,28 @@ kurtosis(alturas)
 -0.9660813
 ```
 
-Con todo lo visto anteriormente podemos crear una función que nos haga un pequeño análisis descriptivo de un vector:
+Con todo lo visto anteriormente, podemos crear una función que nos haga un pequeño análisis descriptivo de un vector:
 
 ```r
-descriptivos<-function(x){
+descriptivos <- function(x) {
+  desc <- c(mean(x), varianza(x), min(x), max(x), quantile(x), kurtosis(x))
+  nom <- c("Media", "Varianza", "Mínimo", "Máximo", 
+           "Cuantil 0", "Cuantil 25", "Cuantil 50", "Cuantil 75", "Cuantil 100", 
+           "Kurtosis")
+  names(desc) <- nom
+  return(desc)
+}
 
-
-desc<-c(mean(x),varianza(x),min(x),max(x),quantile(x),kurtosis(x))
-
-nom<-c("Media","Varianza","Mínimo","Máximo","Cuantil 0","Cuantil 25","Cuantil 50","Cuantil 75",
-
-"Cuantil 100", "Kurtosis")
-
-names(desc)<-nom
-
-desc}
-```
-
-```r
 descriptivos(alturas)
 ```
 
 ```
- Media  Varianza   Mínimo   Máximo Cuantil 0 Cuantil 25 Cuantil 50 Cuantil 75 Cuantil 100  Kurtosis
-1.77090909 0.01200826 1.54000000 1.90000000 1.54000000 1.71000000 1.76000000 1.88000000 1.90000000 -0.96608127
+      Media    Varianza      Mínimo      Máximo   Cuantil 0  Cuantil 25 
+ 1.77090909  0.01200826  1.54000000  1.90000000  1.54000000  1.71000000 
+ Cuantil 50  Cuantil 75 Cuantil 100    Kurtosis 
+ 1.76000000  1.88000000  1.90000000 -0.96608127 
 ```
 
-Creamos la función `descriptivos` que recibirá un parámetro vector. Obtenemos algunas medidas descriptivas que almacenamos en otro vector y asignamos los nombres de los valores con la función `names` , por último simplemente vemos el vector.
+Creamos la función `descriptivos` que recibirá un parámetro vector. Obtenemos algunas medidas descriptivas que almacenamos in otro vector y asignamos los nombres de los valores con la función `names()`; por último, simplemente vemos el vector.
 
-Comenzamos a familiarizarnos con el uso de vectores y funciones en R. En la siguiente entrega empezaremos a crear estructuras de datos más complejas y realizaremos operaciones con vectores para tomar contacto con los operadores matemáticos y lógicos. Por supuesto, si tenéis alguna duda o sugerencia, estoy en `rvaquerizo@analisisydecision.es`
+Comenzamos a familiarizarnos con el uso de vectores y funciones in `R`. In la siguiente entrega, empezaremos a crear estructuras de datos más complejas y realizaremos operaciones con vectores para tomar contacto con los operadores matemáticos y lógicos. Por supuesto, si tenéis alguna duda o sugerencia, estoy in `rvaquerizo@analisisydecision.es`. Saludos.

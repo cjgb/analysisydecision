@@ -17,6 +17,6 @@ title: Calendario de Solvencia II (o Solvencia ¡!)
 url: /blog/calendario-de-solvencia-ii-o-solvencia/
 ---
 
-El 2 de octubre tuvimos propuesta de Directiva Quick-fix II con las fechas de entrada en funcionamiento de Solvencia II. Esto se votó a toda prisa el viernes 21 de noviembre y a grandes rasgos se decide que sea 01/01/2016 el gran momento. Ya hay texto , hay directrices de EIOPA y parece que todo está en marcha. Ya veremos que pasa con las garantías a largo plazo (que grande el seguro de decesos). A ver si ya termina de cerrarse el desarrollo normativo.
+El 2 de octubre tuvimos propuesta de Directiva *Quick-fix* II con las fechas de entrada en funcionamiento de Solvencia II. Esto se votó a toda prisa el viernes 21 de noviembre y, a grandes rasgos, se decide que sea el 01/01/2016 el gran momento.
 
-Parece que Solvencia II va a resolverse antes que el Baremo de Autos.
+Ya hay texto, hay directrices de `EIOPA` y parece que todo está en marcha. Ya veremos qué pasa con las garantías a largo plazo (qué grande el seguro de decesos). A ver si ya termina de cerrarse el desarrollo normativo. Parece que Solvencia II va a resolverse antes que el Baremo de Autos. Saludos.

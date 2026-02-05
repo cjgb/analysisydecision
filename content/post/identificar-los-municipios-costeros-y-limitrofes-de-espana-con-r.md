@@ -18,13 +18,13 @@ tags:
   - maps
   - raster
   - sp
-title: Identificar los municipios costeros y limítrofes de España con R.
+title: Identificar los municipios costeros y limítrofes de España con R
 url: /blog/identificar-los-municipios-costeros-y-limitrofes-de-espana-con-r/
 ---
 
 ![municpios_limitrofes_costeros.png](/images/2020/04/municpios_limitrofes_costeros.png)
 
-Otro ejercicio con `spatial data` R `Rstats` y `data science` para el trabajo con objetos espaciales en el ecosistema `big data`. Empiezo con frase ilógica y ridícula para mejorar las búsquedas de Google pero el tema que traigo hoy creo que puede ser útil para aquellos que, dado un spatial data, tienen que identificar los polígonos que bordean ese objeto, en este caso vamos a identificar los municipios que bordean España, pueden ser limítrofes con Francia y Portugal o bien municipios costeros. No se plantean algoritmos complicados, como en entradas anteriores nos centramos en la extracción de mapas de `GADM`:
+Otro ejercicio con *spatial data*, R y *data science* para el trabajo con objetos espaciales. El tema que traigo hoy puede ser útil para aquellos que, dado un *spatial data*, tienen que identificar los polígonos que bordean ese objeto; en este caso vamos a identificar los municipios que bordean España (ya sean limítrofes con Francia y Portugal o municipios costeros). No se plantean algoritmos complicados; como en entradas anteriores, nos centramos en la extracción de mapas de `GADM`.
 
 ### Obtención de los mapas necesarios
 
@@ -35,44 +35,56 @@ library(maps)
 library(tidyverse)
 library(sqldf)
 
-Espania <- getData('GADM', country='Spain', level=0)
-Espania$name = Espania$NAME_1
-Espania2 <- getData('GADM', country='Spain', level=4)
-Espania2$name = Espania$NAME_1
+# Obtenemos el mapa de España (level 0: contorno nacional)
+Espania <- getData('GADM', country = 'Spain', level = 0)
+
+# Obtenemos el mapa municipal (level 4)
+Espania2 <- getData('GADM', country = 'Spain', level = 4)
 ```
 
-Por un lado obtenemos el mapa de España sin división territorial que en `GADM` es el `level 0` y por otro lado el municipal que es `level 4`. Un tipo brillante sería capaz de encontrar un algoritmo que identificara que polígonos no tienen adyacencia, pero un tipo mediocre pensaría "si cruzo el borde con los municipios, los objetos que crucen son el exterior"
+Por un lado obtenemos el contorno nacional (`level 0`) y, por otro, la división municipal (`level 4`). Un tipo brillante sería capaz de encontrar un algoritmo que identificara qué polígonos no tienen adyacencia por algún lado, pero una aproximación más sencilla es: «si cruzo el borde con los municipios, los polígonos que coincidan son el exterior».
 
 ### Municipios del contorno
 
 ```r
-contorno <- map_data(Espania) %>% mutate(lat2=round(lat,1), long2=round(long,1)) %>% select(long2,lat2)
+# Extraemos puntos del contorno redondeando coordenadas para facilitar el cruce
+contorno_puntos <- fortify(Espania) %>% 
+  mutate(lat2 = round(lat, 1), long2 = round(long, 1)) %>% 
+  select(long2, lat2)
 
-municipios <- map_data(Espania2) %>% mutate(lat2=round(lat,1), long2=round(long,1))  %>% select(long2,lat2,region)
+# Extraemos puntos de los municipios con el mismo redondeo
+municipios_puntos <- fortify(Espania2) %>% 
+  mutate(lat2 = round(lat, 1), long2 = round(long, 1)) %>% 
+  select(long2, lat2, id) # 'id' identifica al municipio
 
-contorno <- inner_join(municipios, contorno)
+# Cruce para identificar puntos coincidentes
+coincidencias <- inner_join(municipios_puntos, contorno_puntos, by = c("long2", "lat2"))
 ```
 
-En este punto hay aspectos claramente mejorables, el cruce se realiza por latitud y longitud,
-
-difícilmente encajarán al `decimal` los dos objetos espaciales así que se opta por redondear a un `decimal` tanto la longitud como la latitud, y esto provoca, como os podéis imaginar, duplicados y un objeto con un tamaño que tiembla el misterio. Por ello es necesario seleccionar registros únicos por longitud, latitud y el campo `region` que es el que nos identifica el municipio:
+En este punto hay aspectos mejorables: el cruce se realiza por latitud y longitud. Difícilmente encajarán al decimal los dos objetos espaciales, así que se opta por redondear a un decimal tanto la longitud como la latitud. Ésto provoca duplicados y un objeto de gran tamaño. Por ello es necesario seleccionar registros únicos por municipio:
 
 ```r
-contorno <- sqldf("select distinct * from contorno")
-
-contorno2 <- contorno %>% group_by(region) %>% filter(row_number()==n()) %>% mutate(exterior=1) %>%
-  as_tibble() %>% select(region,exterior)
+# Identificamos municipios que tienen puntos en el contorno
+contorno_final <- coincidencias %>% 
+  distinct(id) %>% 
+  mutate(exterior = 1)
 ```
 
-Lo pongo en dos objetos para que lo veáis mejor y una advertencia sobre este paso, tarda unos minutos porque elimina duplicados de un "`quasi-producto-cartesiano`". Pero resulta que `contorno2` tiene los municipios que bordean el objeto España:
+Lo pongo en dos objetos para que lo veáis mejor. Advertencia: este paso puede tardar un poco dependiendo del volumen de puntos. Ahora `contorno_final` tiene los identificadores de los municipios que bordean España.
+
+### Representación final
 
 ```r
-municipios <- map_data(Espania2)
-municipios <- left_join(municipios,contorno2)
+# Unimos con los datos del mapa completo
+Espania2_df <- fortify(Espania2)
+municipios_mapa <- left_join(Espania2_df, contorno_final, by = "id")
 
-`ggplot`(data = municipios, aes(x = long, y = lat, group = group)) +
-  `fill` +
-  scale_fill_continuous(low="`white` y `red`")
+# Pintamos el mapa
+ggplot(data = municipios_mapa, aes(x = long, y = lat, group = group)) +
+  geom_polygon(aes(fill = as.factor(exterior))) +
+  scale_fill_manual(values = c("1" = "red"), na.value = "white") +
+  theme_minimal() +
+  labs(title = "Municipios costeros y limítrofes de España")
 ```
 
-Y así tenéis el mapa resultante. Con poco talento podréis obtener los municipios limítrofes con Francia y los municipios limítrofes con Portugal. Otro día lo pondré, estoy reduciendo los tiempos de lectura del blog y no debo venirme arriba. Saludos.
+Y así tenéis el mapa resultante. Con poco esfuerzo podréis separar los municipios limítrofes con Francia de los de Portugal o los costeros basándoos en sus coordenadas. Saludos.

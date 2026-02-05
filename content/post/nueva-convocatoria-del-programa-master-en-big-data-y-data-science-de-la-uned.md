@@ -21,4 +21,4 @@ Está abierta la convocatoria para 2022 del programa modular en Big Data y Data 
 
 [https://www.masterbigdataonline.com/](https://www.masterbigdataonline.com/)
 
-Por supuesto, además de recomendar el propio programa os recomiendo el módulo específico de seguros donde trabajamos como un modelo no sólo crea segmentos, explica un problema y sus parámetros nos sirven para crear precios en entornos regulados.
+Por supuesto, además de recomendar el propio programa, os recomiendo el módulo específico de seguros, donde trabajamos cómo un modelo no sólo crea segmentos, sino que explica un problema y sus parámetros nos sirven para crear precios en entornos regulados.

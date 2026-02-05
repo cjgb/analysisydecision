@@ -25,4 +25,4 @@ Y un Big Data Landscape de 2016:
 
 ![Big Data Landscape 2016](https://mattturck.com/wp-content/uploads/2016/03/Big-Data-Landscape-2016-v18-FINAL.png)
 
-¿Se puede «aprender» Big Data? Aprende que se puede hacer con los datos y aprende R. Como recomendación: di _bigdaita_ así parece que controlas.
+¿Se puede "aprender" `Big Data`? Aprende qué se puede hacer con los datos y aprende R. Como recomendación: di *bigdaita*, así parece que controlas.

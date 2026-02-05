@@ -16,38 +16,27 @@ tags:
   - formación
   - sas
   - trucos
-title: Trucos sas. Autonumérico con PROC SQL
+title: Trucos SAS. Autonumérico con PROC SQL
 url: /blog/trucos-sas-autonumerico-con-proc-sql/
 ---
 
-Rápido. Me ha llegado una consulta que me preguntaba como crear un campo autonumérico con PROC SQL. Tenemos que emplear la funciòn _monotonic():_
+Rápido: me ha llegado una consulta que me preguntaba cómo crear un campo autonumérico con `PROC SQL`. Tenemos que emplear la función `MONOTONIC()`:
 
-````r
 ```sas
 data uno;
-
-do i=1 to 100;
-
-output; end;
-
+  do i = 1 to 100;
+    output; 
+  end;
 run;
 
 proc sql;
-
-create table uno as select
-
-monotonic() as obs,
-
-a.*
-
-from uno a
-
-where mod(i,2)=0;
-
+  create table dos as 
+  select
+    monotonic() as obs,
+    a.*
+  from uno a
+  where mod(i, 2) = 0;
 quit;
-````
-
 ```
 
-Equivale al __n__ de un paso data. Es una tontería pero a un lector del blog le ha venido bien. Saludos.
-```
+Equivale al `_N_` de un paso DATA. Es una tontería, pero a un lector del blog le ha venido bien. Saludos.

@@ -16,6 +16,6 @@ title: Porque no escribo nada
 url: /blog/porque-no-escribo-nada/
 ---
 
-[![herramienta_r.PNG](/images/2012/03/herramienta_r.PNG)](/images/2012/03/herramienta_r.PNG "herramienta_r.PNG")
+![herramienta_r.PNG](/images/2012/03/herramienta_r.PNG)
 
-En las III jornadas de R alguien dijo «Hacen falta ideólogos». Pues ahí estamos trabajando, en ideas.
+En las III jornadas de `R` alguien dijo: «Hacen falta ideólogos». Pues ahí estamos trabajando, en ideas.

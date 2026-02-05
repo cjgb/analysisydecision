@@ -14,233 +14,150 @@ related:
 tags:
   - formación
   - sas
-title: Equivalencias entre PROC `SQL` y DATA en las uniones de tablas SAS
+title: Equivalencias entre PROC SQL y DATA en las uniones de tablas SAS
 url: /blog/proc-sql-merge-set/
 ---
 
-Muchos de los que llegan a programar con SAS son grandes expertos en `SQL`. Cuando dominas perfectamente un lenguaje es difícil acostumbrarse a otro. Por ello quiero plantear un artículo que estudie los tipos de uniones mediante pasos DATA y su análogo con el `PROC SQL`. Con ello espero que los profesionales que manejan el lenguaje `SQL` entiendan mejor el paso DATA. En mi línea habitual creo dos `dataset` y manejo ejemplos.
+Muchos de los que llegan a programar con SAS son grandes expertos en `SQL`. Cuando dominas perfectamente un lenguaje, es difícil acostumbrarse a otro. Por ello, quiero plantear un artículo que estudie los tipos de uniones mediante pasos `DATA` y su análogo con el `PROC SQL`. Con ello espero que los profesionales que manejan el lenguaje `SQL` entiendan mejor el paso `DATA`. En mi línea habitual, creo dos *datasets* y manejo ejemplos.
 
 ```sas
 data uno;
-
-input anio importe;
-
-cards;
-
+    input anio importe;
+    cards;
 2000 100
-
 2001 200
-
 2002 300
-
 2003 350
-
 2004 375
-
 2005 450
-
-; run;
+;
+run;
 
 data dos;
-
-input anio importe2;
-
-cards;
-
+    input anio importe2;
+    cards;
 2003 550
-
 2004 775
-
 2005 650
-
 2006 900
-
 2007 450
-
-; run;
+;
+run;
 ```
 
 Las formas de unir conjuntos de datos SAS son:
 
-**Uniones verticales:**
+### Uniones verticales
 
-_Concatenación:_
+**Concatenación:**
 
 ```sas
 data tresA;
-
-set uno dos;
-
+    set uno dos;
 run;
 
 proc sql;
-
-create table tresB as
-
-select * from uno
-
-outer union corr
-
-select * from dos;
-
+    create table tresB as
+    select * from uno
+    outer union corr
+    select * from dos;
 quit;
 ```
 
-_Intercalación:_
+**Intercalación:**
 
 ```sas
 data cuatroA;
-
-set uno dos;
-
-by anio;
-
+    set uno dos;
+    by anio;
 run;
 
 proc sql;
-
-create table cuatroB as
-
-select * from uno
-
-outer union corr
-
-select * from dos
-
-order by anio;
-
+    create table cuatroB as
+    select * from uno
+    outer union corr
+    select * from dos
+    order by anio;
 quit;
 ```
 
-**Uniones horizontales:**
+### Uniones horizontales
 
-\_Total:
-\_
+**Total (Full Join):**
 
 ```sas
 data cincoA;
-
-merge uno dos;
-
-by anio;
-
+    merge uno dos;
+    by anio;
 run;
 
 proc sql;
-
-create table cincoB as select
-
-case
-
-when a.anio is null then b.anio
-
-else a.anio end as anio,
-
-*
-
-from uno a full join dos b
-
-on a.anio = b.anio;
-
+    create table cincoB as 
+    select coalesce(a.anio, b.anio) as anio,
+           a.importe,
+           b.importe2
+    from uno a full join dos b
+    on a.anio = b.anio;
 quit;
 ```
 
-_Excluyentes:_
+**Excluyentes:**
 
-Están en ambas tablas:
+*Están en ambas tablas (Inner Join):*
 
 ```sas
 data seisA;
-
-merge uno (in=en_uno) dos (in=en_dos);
-
-by anio;
-
-if en_uno and en_dos;
-
+    merge uno (in=en_uno) dos (in=en_dos);
+    by anio;
+    if en_uno and en_dos;
 run;
 
 proc sql;
-
-create table seisB as select
-
-*
-
-from uno a, dos b
-
-where a.anio = b.anio;
-
-quit;
-
-proc sql;
-
-create table seisC as select
-
-*
-
-from uno a inner join dos b
-
-on a.anio = b.anio;
-
+    create table seisB as 
+    select a.anio, a.importe, b.importe2
+    from uno a inner join dos b
+    on a.anio = b.anio;
 quit;
 ```
 
-Están en la tabla de la izquierda:
+*Están en la tabla de la izquierda (Left Join):*
 
 ```sas
 data sieteA;
-
-merge uno (in=en_uno) dos (in=en_dos);
-
-by anio;
-
-if en_uno;
-
+    merge uno (in=en_uno) dos (in=en_dos);
+    by anio;
+    if en_uno;
 run;
 
 proc sql;
-
-create table sieteB as select
-
-*
-
-from uno a left join dos b
-
-on a.anio = b.anio;
-
+    create table sieteB as 
+    select a.anio, a.importe, b.importe2
+    from uno a left join dos b
+    on a.anio = b.anio;
 quit;
 ```
 
-Están en la tabla de la derecha:
+*Están en la tabla de la derecha (Right Join):*
 
 ```sas
 data ochoA;
-
-merge uno (in=en_uno) dos (in=en_dos);
-
-by anio;
-
-if en_dos;
-
+    merge uno (in=en_uno) dos (in=en_dos);
+    by anio;
+    if en_dos;
 run;
 
 proc sql;
-
-create table ochoB as select
-
-case
-
-when a.anio is null then b.anio
-
-else a.anio end as anio,
-
-*
-
-from uno a right join dos b
-
-on a.anio = b.anio;
-
+    create table ochoB as 
+    select coalesce(a.anio, b.anio) as anio,
+           a.importe,
+           b.importe2
+    from uno a right join dos b
+    on a.anio = b.anio;
 quit;
 ```
 
-No he comentado los ejemplos porque son bastante claros. Como veis en `SQL` es muy importante el orden en el que se nombran las variables por eso para algunos ejemplos empleamos el CASE, si él el resultado no sería el esperado ya que nos tomaría la variable anio del primer dataset que aparece en la select, para el resto nos pondría valores perdidos, probad los ejemplos sin el case y entenderéis porque lo empleo. En el terreno profesional comentaros que se emplea mucho la INNER JOIN y la LEFT JOIN fundamentalmente cuando unimos 2 `datasets` con índices y deseamos prescindir de ordenaciones previas por ser muy costosas. Si trabajamos con uniones de más de 2 `datasets` recomiendo trabajar con MERGE. Es habitual partir de una tabla base y añadirla información de otras en un paso DATA final. Por supuesto si tenéis dudas, más sugerencias o un empleo que me permita estar más tiempo con mi familia que pronto pasará a ser numerosa estoy en rvaquerizo@analisisydecision.es
+No he comentado los ejemplos porque son bastante claros. Como veis, en `SQL` es muy importante el orden en el que se nombran las variables; por eso para algunos ejemplos empleamos `COALESCE` o `CASE`. Sin ello, el resultado no sería el esperado, ya que nos tomaría la variable `anio` del primer *dataset* que aparece en la `SELECT`; para el resto, nos pondría valores perdidos.
+
+En el terreno profesional, se emplea mucho la `INNER JOIN` y la `LEFT JOIN`, fundamentalmente cuando unimos dos *datasets* con índices y deseamos prescindir de ordenaciones previas por ser muy costosas. Si trabajamos con uniones de más de dos *datasets*, recomiendo trabajar con `MERGE`. Es habitual partir de una tabla base y añadirle información de otras en un paso `DATA` final. 
+
+Por supuesto, si tenéis dudas o más sugerencias… `rvaquerizo@analisisydecision.es`. Saludos.

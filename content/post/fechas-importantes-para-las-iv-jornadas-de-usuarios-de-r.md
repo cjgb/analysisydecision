@@ -19,9 +19,9 @@ url: /blog/fechas-importantes-para-las-iv-jornadas-de-usuarios-de-r/
 
 Hay que tener en cuenta las siguientes fechas para todos aquellos que deseéis participar:
 
-- 16 de septiembre de 2012 Fecha límite para el envío de abstracts
-- 21 de octubre de 2012 Fecha límite para la aceptación de abstracts
+- **16 de septiembre de 2012**: Fecha límite para el envío de *abstracts*.
+- **21 de octubre de 2012**: Fecha límite para la aceptación de *abstracts*.
 
-Las IV Jornadas de Usuarios de R tendrán lugar en el [CREAL](http://www.creal.cat/es_index.html) los días 15 y 16 de noviembre de 2012. Hay en marcha una competición de análisis de datos con R, cuando tenga conocimiento de las bases y las fechas os las comunico.
+Las IV Jornadas de Usuarios de R tendrán lugar en el [CREAL](http://www.creal.cat/es_index.html) los días 15 y 16 de noviembre de 2012. Hay en marcha una competición de análisis de datos con R; cuando tenga conocimiento de las bases y las fechas, os las comunico.
 
 Ahora queda saber cómo voy a ir yo…

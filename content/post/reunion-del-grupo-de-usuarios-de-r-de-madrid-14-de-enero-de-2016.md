@@ -19,10 +19,10 @@ url: /blog/reunion-del-grupo-de-usuarios-de-r-de-madrid-14-de-enero-de-2016/
 
 De nuevo reunión del Grupo de Usuarios de R de Madrid. La agenda será:
 
-- Francisco Rodriguez: “Introducción a las Redes Neuronales con R”.
-- Carlos Ortega: “Calidad del Aire de Madrid”.
-- Karel Rodriguez: “Price Sensitivity Metr (PSM) in R.
+- **Francisco Rodríguez**: "Introducción a las redes neuronales con R".
+- **Carlos Ortega**: "Calidad del aire de Madrid".
+- **Karel Rodríguez**: "Price Sensitivity Meter (PSM) in R".
 
-Para más información [http://madrid.r-es.org/jueves-14-de-enero-2016/](http://madrid.r-es.org/jueves-14-de-enero-2016/)
+Para más información: [http://madrid.r-es.org/jueves-14-de-enero-2016/](http://madrid.r-es.org/jueves-14-de-enero-2016/)
 
-Por motivos de trabajo no podré asistir a la reunión.
+Por motivos de trabajo, no podré asistir a la reunión.

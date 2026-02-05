@@ -22,29 +22,29 @@ url: /blog/truco-sas-limpiar-un-fichero-de-texto-con-sas/
 
 El otro día me llegó al correo la siguiente cuestión acerca de caracteres extraños en un fichero de texto y la importación a SAS:
 
-> > > Tengo un problema a la hora de importar a SAS un fichero txt.
-> > > El caso es que tiene en algunos registros el carácter «flechita».
-> > > Ejemplo: Calle Paseo de la Castellana «flechita» 60.
-> > > Cuando lo importo como carácter para al llegar a la flechita.
-> > > No se sí podrás ayudarme.
-> > > Muchas gracias por adelantado.
+> Tengo un problema a la hora de importar a SAS un fichero `.txt`.
+> El caso es que tiene en algunos registros el carácter "flechita".
+> Ejemplo: Calle Paseo de la Castellana "flechita" 60.
+> Cuando lo importo como carácter, para al llegar a la flechita.
+> No sé si podrás ayudarme.
+> Muchas gracias por adelantado.
 
-Se me ocurrió un programa muy rápido que nos permitía leer carácter a carácter un fichero plano y eliminar aquellos caracteres que nos den problemas:
+Se me ocurrió un programa muy rápido que nos permite leer carácter a carácter un fichero plano y eliminar aquellos caracteres que nos den problemas:
 
 ```sas
-%let directorio=;
-%let archivo=;
+%let directorio = ;
+%let archivo = ;
 
 data _null_;
-  length char 1.;
-  infile "&directorio.\archivo..txt" lrecl=1 recfm=F missover dsd;
-  file "&directorio.\archivo._modificado.txt" lrecl=1 recfm=F;
-  input charASCII.;
-  if char not in  ('A','B','C','D','E','F','G','H','I','J','K',
- 'L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','Ñ',
- '1','2','3','4','5','6','7','8','9','0') then char=" ";
-  put char;
+    length char $1.;
+    infile "&directorio.\&archivo..txt" lrecl=1 recfm=F missover dsd;
+    file "&directorio.\&archivo._modificado.txt" lrecl=1 recfm=F;
+    input char $char1.;
+    if char not in ('A','B','C','D','E','F','G','H','I','J','K',
+                    'L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','Ñ',
+                    '1','2','3','4','5','6','7','8','9','0') then char = " ";
+    put char $char1.;
 run;
 ```
 
-Necesita un directorio, un archivo con extensión TXT y nos creará ese archivo con el sufijo \_modificado y limpio de caracteres extraños, en este caso sólo con letras y números, ojo que podéis necesitar signos de puntuación. Creo que es muy sencillo y bastante práctico. Espero que os sea de utilidad, a la lectora que planteó la duda si lo fue. Saludos.
+Necesita un directorio, un archivo con extensión `.txt` y nos creará ese archivo con el sufijo `_modificado` y limpio de caracteres extraños (en este caso sólo con letras y números; ojo, que podéis necesitar signos de puntuación). Creo que es muy sencillo y bastante práctico. Espero que os sea de utilidad; a la lectora que planteó la duda sí lo fue. Saludos.

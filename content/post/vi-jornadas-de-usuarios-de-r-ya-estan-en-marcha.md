@@ -19,6 +19,6 @@ tags:
 
 ![R logo](https://cran.r-project.org/Rlogo.jpg)
 
-Buena noticia. [http://r-es.org/VI+Jornadas](http://r-es.org/VI+Jornadas). Este año serán en Santiago de Compostela los días 23 y 24 de octubre y serán retrasmitidas por video streaming. Miguel Ángel Rodríguez Muiños debe tener mucha culpa de que este año se vayan a tierras gallegas donde hace mucho tiempo son referencia en formación sobre el uso de software libre.
+Buena noticia: [http://r-es.org/VI+Jornadas](http://r-es.org/VI+Jornadas). Este año serán en Santiago de Compostela los días 23 y 24 de octubre y serán retransmitidas por *video streaming*. Miguel Ángel Rodríguez Muiños debe tener mucha culpa de que este año se vayan a tierras gallegas, donde hace mucho tiempo son referencia en formación sobre el uso de software libre.
 
 A que voy…

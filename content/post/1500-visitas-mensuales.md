@@ -4,6 +4,7 @@ categories:
   - business intelligence
 date: '2009-05-25'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - ayd-2300-visitas-mensuales.md
   - contenidos-para-octubre-de-ayd.md

@@ -21,4 +21,4 @@ Aquí tenéis toda la información acerca de la siguiente reunión del grupo de 
 
 [http://madrid.r-es.org/miercoles-28-de-enero-2015/](http://madrid.r-es.org/miercoles-28-de-enero-2015/)
 
-Estaba previsto que hablara yo mismo sobre R y SAS más concretamente realizar árboles de decisión con R pero al final no he podido por un problema. Pero en siguientes reuniones estaré ya que me gustaría iniciar una serie de monográficos que he llamado R y otros.
+Estaba previsto que hablara yo mismo sobre R y SAS (más concretamente, realizar árboles de decisión con R), pero al final no he podido por un problema. Pero en siguientes reuniones estaré, ya que me gustaría iniciar una serie de monográficos que he llamado "R y otros".

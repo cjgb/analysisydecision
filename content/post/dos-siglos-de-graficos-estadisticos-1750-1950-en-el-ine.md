@@ -19,4 +19,4 @@ url: /blog/dos-siglos-de-graficos-estadisticos-1750-1950-en-el-ine/
 
 ![Imagen de previsualización de YouTube](https://img.youtube.com/vi/X3qf6glt7B0/0.jpg)
 
-Visita virtual a la exposición del INE Dos siglos de gráficos estadísticos, 1750 – 1950. Si tenéis ocasión no os la perdáis.
+Visita virtual a la exposición del `INE`: «Dos siglos de gráficos estadísticos, 1750-1950». Si tenéis ocasión, no os la perdáis.

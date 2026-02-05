@@ -163,7 +163,7 @@ Larga y compleja así a primera vista, pero muy sencilla de entender si se reali
 
 ![tramos1.JPG](/images/2009/04/tramos1.JPG)
 
-Pesos dentro de nuestro criterio de corte (`%let cortes=0.8 <=relativa<=1.2`) se unen gracias a que creamos una instrucción automática con `PROC SQL`. Así hasta 10 veces se ejecuta y al final el dataset de entrada de la macro tiene un campo rango que nos ha trameado la variable cuantiva en función de la respuesta. Si analizamos su comportamiento:
+Pesos dentro de nuestro criterio de corte (`%let cortes=0.8 <=relativa<=1.2`) se unen gracias a que creamos una instrucción automática con `PROC SQL`. Así hasta 10 veces se ejecuta y al final el dataset de entrada de la macro tiene un campo rango que nos ha trameado la variable cuantitativa en función de la respuesta. Si analizamos su comportamiento:
 
 ```sas
 proc sql;
@@ -176,4 +176,4 @@ quit;
 
 ![tramos2.JPG](/images/2009/04/tramos2.JPG)
 
-Ha encontrado perfectamente el tramo entre 8000 y 9000 y un poco peor con el tramo de 200 a 400 probablemente porque tiene menos registros. Podría hacer más uniones, pero si hace un análisis exploratorio bastante interesante. Queda pendiente estudiar que pasaría con este proceso si nos encontramos con valores muy frecuentes, por ejemplo el valor 0. Próximas entregas y como siempre dudas, sugerencias u ofertas de trabajo que me permitan ver a mis hijos desde las 4 de la tarde `rvaquerizo@analisisydecision.es`
+Ha encontrado perfectamente el tramo entre 8000 y 9000 y un poco peor con el tramo de 200 a 400 probablemente porque tiene menos registros. Podría hacer más uniones, pero sí hace un análisis exploratorio bastante interesante. Queda pendiente estudiar que pasaría con este proceso si nos encontramos con valores muy frecuentes, por ejemplo el valor 0. Próximas entregas y como siempre dudas, sugerencias u ofertas de trabajo que me permitan ver a mis hijos desde las 4 de la tarde `rvaquerizo@analisisydecision.es`

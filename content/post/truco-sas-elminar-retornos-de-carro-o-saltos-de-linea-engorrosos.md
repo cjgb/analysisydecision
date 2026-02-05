@@ -14,21 +14,21 @@ related:
 tags:
   - sas
   - trucos
-title: Truco SAS. Elminar retornos de carro o saltos de línea engorrosos
+title: Truco SAS. Eliminar retornos de carro o saltos de línea engorrosos
 url: /blog/truco-sas-elminar-retornos-de-carro-o-saltos-de-linea-engorrosos/
 ---
 
-Cuando tenemos saltos de línea o retornos de carro que nos dificultan las lecturas de ficheros de texto podemos leer caracter a caracter con SAS y elminar esos caracteres incómodos.
+Cuando tenemos saltos de línea o retornos de carro que nos dificultan las lecturas de ficheros de texto, podemos leer carácter a carácter con SAS y eliminar esos caracteres incómodos.
 
 ```sas
 data _null_;
-length char 1.;
-infile 'C:\fichero_de_entrada.TXT'  lrecl=1 recfm=F missover dsd;
-file 'C:\fichero_de_entrada_depurado.TXT'  lrecl=1 recfm=F;
-input charASCII.;
-if rank(char) = 13 /*SI ES WIN PONER EL 13*/ then char= "";
-put char;
+    length char $1.;
+    infile 'C:\fichero_de_entrada.TXT' lrecl=1 recfm=F missover dsd;
+    file 'C:\fichero_de_entrada_depurado.TXT' lrecl=1 recfm=F;
+    input char $char1.;
+    if rank(char) = 13 /* SI ES WINDOWS PONER EL 13 */ then char = " ";
+    put char $char1.;
 run;
 ```
 
-Recomiendo no sobreescribir el fichero de texto y crear otro «depurado». Tendréis este problema cuando vuestro programa SAS os lea menos observaciones de las esperadas. Esto suele pasar cuando trabajamos con archivos de distintos sistemas operativos, como por ejemplo cuando leemos un archivo de texto unix con una máquina windows. Saludo.
+Recomiendo no sobrescribir el fichero de texto y crear otro "depurado". Tendréis este problema cuando vuestro programa SAS os lea menos observaciones de las esperadas. Esto suele pasar cuando trabajamos con archivos de distintos sistemas operativos; como por ejemplo cuando leemos un archivo de texto Unix con una máquina Windows. Saludos.

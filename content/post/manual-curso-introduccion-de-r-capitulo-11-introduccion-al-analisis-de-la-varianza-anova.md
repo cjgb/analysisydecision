@@ -64,7 +64,7 @@ Partimos de unidades experimentales homogéneas y queremos estudiar la influenci
 
 ![c111.JPG](/images/2008/10/c111.JPG)
 
-Para realizar el análisis de la varianza con R hemos de determinar el modelo con el que queremos trabajar. Vamos a crear un modelo probabilístico $Y\_{ij}=\\text{media}_i+e_{ij}$ donde la $\\text{media}_i$ es una constante conocida que es la respuesta media bajo el tratamiento `i` y $e_{ij}$ es la parte probabilística que cumple una serie de condiciones. Sobre este modelo realizaremos el análisis de la varianza con la función `aov(Y~X)` donde `Y` es la variable respuesta que es la variable cuantitativa asociada al experimento y `X` es la condición bajo la cual mido la variable respuesta, `X` es el factor. Como siempre veamos como trabajar con R mediante un ejemplo.
+Para realizar el análisis de la varianza con R hemos de determinar el modelo con el que queremos trabajar. Vamos a crear un modelo probabilístico $Y_{ij}=\text{media}_i+e_{ij}$ donde la $\text{media}_i$ es una constante conocida que es la respuesta media bajo el tratamiento `i` y $e_{ij}$ es la parte probabilística que cumple una serie de condiciones. Sobre este modelo realizaremos el análisis de la varianza con la función `aov(Y~X)` donde `Y` es la variable respuesta que es la variable cuantitativa asociada al experimento y `X` es la condición bajo la cual mido la variable respuesta, `X` es el factor. Como siempre veamos como trabajar con R mediante un ejemplo.
 
 Ejemplo 11.1:
 
@@ -104,7 +104,7 @@ summary(unifact)
 # Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 ```
 
-Se rechaza la hipótesis nula de igualdad de medias en `***` que planteamos con el test F así pues hay diferencias entre los tratamientos. Para ver cual de estos tratamientos son diferentes contamos con métodos de test de recorrido estudentizado y con métodos de contrastes múltiples. Con R podemos programar el test que nos interese, pero el módulo base tiene test de recorrido estudentizado. En este caso vamos a ver el test de `Tukey` que compara todas las posibles medias dos a dos y basándose en una distribución `q alfa(k,n)` del rango estudentizado determina una diferencia mínima significativa para que dos medias sean distintas. En R el test de Tukey se realiza con la función `TukeyHSD`:
+Se rechaza la hipótesis nula de igualdad de medias en `***` que planteamos con el test F así pues hay diferencias entre los tratamientos. Para ver cual de estos tratamientos son diferentes contamos con métodos de test de recorrido estudentizado y con métodos de contrastes múltiples. Con R podemos programar el test que nos interese, pero el módulo base tiene test de recorrido estudentizado. En este caso vamos a ver el test de `Tukey` que compara todas las posibles medias dos a dos y basándose en una distribución $q_\alpha(k,n)$ del rango estudentizado determina una diferencia mínima significativa para que dos medias sean distintas. En R el test de Tukey se realiza con la función `TukeyHSD`:
 
 ```r
 TukeyHSD(unifact)

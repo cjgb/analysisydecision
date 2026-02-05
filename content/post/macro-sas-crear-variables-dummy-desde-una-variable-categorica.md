@@ -22,54 +22,53 @@ title: Macro SAS. Crear variables dummy desde una variable categórica
 url: /blog/macro-sas-crear-variables-dummy-desde-una-variable-categorica/
 ---
 
-[En alguna ocasión ya he conjugado el verbo dumificar](https://analisisydecision.es/trucos-sas-variables-dummy-de-una-variable-continua/) y preparando una segmentación he creado una macro SAS que genera variables `dummy` a partir de variables categóricas, es decir, si la variable A toma valores 1, 2 y 3 tendría que generar A_1 con valor 1 si A toma 1 y con valor 0 en caso contrario, A_2 tiene valor 1 si A es igual a 2 y A_3 tiene valor 1 si A es igual a 3, no es complicado de comprender, pasamos de una variable con 3 niveles a 3 variables con valores 0 o 1. Para esto podemos emplear `arrays` o la siguiente macro:
+[En alguna ocasión ya he conjugado el verbo dumificar](https://analisisydecision.es/trucos-sas-variables-dummy-de-una-variable-continua/) y, preparando una segmentación, he creado una macro SAS que genera variables `dummy` a partir de variables categóricas.
+
+Es decir, si la variable `A` toma valores 1, 2 y 3, tendría que generar `A_1` con valor 1 si `A` toma 1 y con valor 0 en caso contrario; `A_2` tiene valor 1 si `A` es igual a 2, y `A_3` tiene valor 1 si `A` es igual a 3. No es complicado de comprender: pasamos de una variable con tres niveles a tres variables con valores 0 o 1. Para ésto podemos emplear `array` o la siguiente macro:
 
 ```sas
 %macro dumificar(varib, grupos, mv);
-%global &mv.;
-data instruccion;
-do i=1 to &grupos.;
+    %global &mv.;
+    data instruccion;
+        do i = 1 to &grupos.;
+            instruccion = "&varib._" || compress(put(i, 3.)) || 
+                          " = 0; if &varib. = " || put(i, 3.) || 
+                          " then &varib._" || compress(put(i, 3.)) || " = 1";
+            output;
+        end;
+    run;
 
-instruccion=" &varib._"||compress(put(i,3.))||
-"=0; IF &varib.="||put(i,3.)||" THEN &varib._"||compress(put(i,3.))||"=1";
+    proc sql noprint;
+        select instruccion into :&mv. separated by "; "
+        from instruccion;
+    quit;
 
-output;
-end;
-run;
-
-proc sql noprint ;
-select instruccion into: &mv. separated by ";";
-from instruccion;
-quit;
-proc delete data=instruccion;quit;
+    proc delete data=instruccion; 
+    run;
 %mend;
 ```
 
-La intención es crear de forma automática un código del tipo `_VARIABLE_1=0; IF VARIABLE = 2 THEN VARIABLE_1=1;` La macro tiene 3 parámetros, `VARIB` que es la variable que deseamos `dumificar`, `GRUPOS` que es el número de grupos de la variable que vamos a transformar en `dummies` y `MV` que es el nombre de la `macrovariable` que tiene el código SAS que generamos de forma automática. A modo de ejemplo de uso:
+La intención es crear de forma automática un código del tipo `VARIABLE_1 = 0; if VARIABLE = 1 then VARIABLE_1 = 1;`. La macro tiene tres parámetros: `varib` (la variable que deseamos dumificar), `grupos` (el número de grupos de la variable que vamos a transformar en *dummies*) y `mv` (el nombre de la macrovariable que contendrá el código SAS generado de forma automática). A modo de ejemplo de uso:
 
 ```sas
 data aleatorios;
-do i=1 to 1000 ;
-datoA = min(ranpoi(2,4),9);
-if datoA <= 3 then datoB = ranpoi(89,2);
-else if datoA <= 5 then datoB = min(ranpoi(89,6),6);
-else datoB = min(ranpoi(89,2),3);
-output;
-end;
-drop i;
+    do i = 1 to 1000;
+        datoA = min(ranpoi(2, 4), 9);
+        if datoA <= 3 then datoB = ranpoi(89, 2);
+        else if datoA <= 5 then datoB = min(ranpoi(89, 6), 6);
+        else datoB = min(ranpoi(89, 2), 3);
+        output;
+    end;
+    drop i;
 run;
-```
 
-```sas
 %dumificar(datoA, 9, dumifica_datoA);
 %dumificar(datoB, 8, dumifica_datoB);
-```
 
-```sas
-data aleatorios;
-set aleatorios;
-&dumifica_datoA.;
-&dumifica_datoB.;
+data aleatorios_final;
+    set aleatorios;
+    &dumifica_datoA.;
+    &dumifica_datoB.;
 run;
 ```
 

@@ -20,20 +20,20 @@ title: Truco Excel. Función para identificar el color de una celda
 url: /blog/truco-excel-funcion-para-identificar-el-color-de-una-celda/
 ---
 
-[En alguna entrada anterior ya vimos como identificar el color de una celda con Excel](https://analisisydecision.es/truco-excel-identificar-el-color-de-una-celda/). Recientemente me trasladaron una duda, se trataba de realizar una acción determinada si el color de la celda era distinto. Algo muy habitual cuando realizas alguna validación visual y marcas celdas con otro color. La solución es sencilla, se trata de crear nuestra propia función que identifique el color de la celda:
+[En alguna entrada anterior ya vimos cómo identificar el color de una celda con Excel](https://analisisydecision.es/truco-excel-identificar-el-color-de-una-celda/). Recientemente me trasladaron una duda: se trataba de realizar una acción determinada si el color de la celda era distinto. Algo muy habitual cuando realizas alguna validación visual y marcas celdas con otro color. La solución es sencilla: se trata de crear nuestra propia función que identifique el color de la celda:
 
-```visual-basic
+```vba
 Function color_celda(celda As Range)
-color_celda = celda.Interior.Color
+    color_celda = celda.Interior.Color
 End Function
 ```
 
-En este caso podríamos realizar funciones del tipo =SI(color_celda(A1)\<> 16777215; ACCION1; ACCION2) además podemos darle otra vuelta de tuerca y si deseamos ordenar por colores podemos hacer:
+En este caso podríamos realizar funciones del tipo `=SI(color_celda(A1) <> 16777215; ACCION1; ACCION2)`; además, podemos darle otra vuelta de tuerca y, si deseamos ordenar por colores, podemos hacer:
 
-```visual-basic
+```vba
 Function color_orden(celda As Range)
-color_orden = celda.Interior.ColorIndex
+    color_orden = celda.Interior.ColorIndex
 End Function
 ```
 
-Establecemos un orden de colores y podemos realizar más acciones. Un truco sencillo que puede ayudar a las intervenciones manuales sobre nuestros libros de Excel. Saludos.
+Establecemos un orden de colores y podemos realizar más acciones. Un truco sencillo que puede ayudar a las intervenciones manuales sobre nuestros libros de `Excel`. Saludos.

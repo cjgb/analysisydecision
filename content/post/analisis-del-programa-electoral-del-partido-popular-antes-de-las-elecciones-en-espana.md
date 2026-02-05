@@ -19,62 +19,47 @@ title: Análisis del programa electoral del Partido Popular antes de las eleccio
 url: /blog/analisis-del-programa-electoral-del-partido-popular-antes-de-las-elecciones-en-espana/
 ---
 
-Ya empleamos R en[ alguna entrada anterior ](https://analisisydecision.es/analisis-de-textos-con-r/)para analizar textos. Ahora nos metemos con el programa electoral del Partido Popular a 20 días de las elecciones en España. En [este link](http://www.pp.es/actualidad-noticia/programa-electoral-pp_5741.html) podéis descargaros el programa del Partido Popular. Lejos de lo insustanciales que suelen ser este tipo de documentos y alguna frase mítica del tipo «Crecimiento sin empleo no es recuperación» nos limitaremos a contar las palabras que emplean en este programa.
+Ya empleamos R en [alguna entrada anterior](https://analisisydecision.es/analisis-de-textos-con-r/) para analizar textos. Ahora nos metemos con el programa electoral del Partido Popular a 20 días de las elecciones en España. En [este enlace](http://www.pp.es/actualidad-noticia/programa-electoral-pp_5741.html) podéis descargaros el programa. Lejos de lo insustanciales que suelen ser este tipo de documentos y alguna frase mítica del tipo «Crecimiento sin empleo no es recuperación», nos limitaremos a contar las palabras que emplean en este programa mediante técnicas de `Text Mining`.
 
-En el [link ](http://www.pp.es/actualidad-noticia/programa-electoral-pp_5741.html)donde tenemos el programa accedemos al mismo en formato `PDF`, seleccionamos todo el documento, lo copiamos en un archivo de `txt` y ya podemos trabajar con R. El código ya ha sido comentado en este blog:
-
-```r
-#Análisis del programa del PP
-#Leemos el fichero de una ubicación de nuestro equipo
-
-ubicacion="D:\\raul\\wordpress\\text minning R\\programa_PP.txt"
-texto = read.table (ubicacion,sep="\r")
-
-#Dejamos todas las palabras en mayúsculas
-
-texto = toupper(texto$V1)
-
-#El texto lo transformamos en una lista separada por espacios
-
-texto_split = strsplit(texto, split=" ")
-
-#Deshacemos esa lista y tenemos el data.frame
-
-texto_col = as.character(unlist(texto_split))
-texto_col = data.frame(texto_col)
-names(texto_col) = c("V1")
-```
+Accedemos al programa en formato `PDF`, seleccionamos todo el documento, lo copiamos en un archivo `.txt` y ya podemos trabajar con R. El código empleado es similar al ya comentado en este blog:
 
 ```r
-#Eliminamos algunos caracteres regulares
+# Análisis del programa del PP
+# Leemos el fichero de una ubicación local
+ubicacion <- "D:\\raul\\wordpress\\text minning R\\programa_PP.txt"
+texto_raw <- read.table(ubicacion, sep = "\r")
 
-texto_colV1 = sub("([[:space:]])","",texto_colV1)
-texto_colV1 = sub("([[:digit:]])","",texto_colV1)
-texto_colV1 = sub("([[:punct:]])","",texto_colV1)
+# Dejamos todas las palabras en mayúsculas
+texto <- toupper(texto_raw$V1)
 
-#Creo una variable longitud de la palabra
+# El texto lo transformamos en una lista separada por espacios
+texto_split <- strsplit(texto, split = " ")
 
-texto_collargo = nchar(texto_colV1)
+# Deshacemos esa lista y creamos un data.frame de palabras
+texto_col <- as.character(unlist(texto_split))
+texto_col_df <- data.frame(V1 = texto_col)
 
-#Controles que utilizo
+# Limpiamos caracteres especiales usando expresiones regulares
+texto_col_df$V1 <- gsub("([[:space:]])", "", texto_col_df$V1)
+texto_col_df$V1 <- gsub("([[:digit:]])", "", texto_col_df$V1)
+texto_col_df$V1 <- gsub("([[:punct:]])", "", texto_col_df$V1)
 
-head(texto_col)
-hist(texto_col$largo)
-````
+# Calculamos la longitud de cada palabra
+texto_col_df$largo <- nchar(texto_col_df$V1)
 
-```r
-texto_col = subset(texto_col, largo>4)
-```
+# Filtramos palabras con más de 4 caracteres
+texto_filtrado <- subset(texto_col_df, largo > 4)
 
-```r
+# Realizamos el conteo de frecuencias con sqldf
 library(sqldf)
-contador = sqldf("
-select V1 as palabra,count(*) as frec
-from texto_col
-where largo > 4
-group by palabra
-order by  count(*) desc ;")
-````
+contador <- sqldf("
+  SELECT V1 AS palabra, COUNT(*) AS frec
+  FROM texto_filtrado
+  GROUP BY palabra
+  ORDER BY COUNT(*) DESC
+")
 
+head(contador, 20)
+```
 
 `CAMBIO`, `POLÍTICA`, `SOCIEDAD` y `EMPLEO` son las palabras más empleadas. `SOCIAL` aparece en la posición 50 y `JÓVENES` mucho más abajo. `CRISIS` es otra de las palabras que no son muy destacadas. Abrid R, seguid los pasos que os indico y obtendréis un análisis muy interesante. Saludos.

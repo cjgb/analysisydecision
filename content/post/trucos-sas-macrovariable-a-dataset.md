@@ -20,49 +20,33 @@ title: Trucos SAS. Macrovariable a dataset
 url: /blog/trucos-sas-macrovariable-a-dataset/
 ---
 
-En alguna ocasión he necesitado pasar el contenido de una macrovariable a un dataset SAS. Con el tiempo he ido refinando el código empleado para hacer esta tarea y, como es habitual, lo comparto con vosotros para que os ayude en vuestro trabajo diario en grandes bancos, aseguradoras, compañías energéticas y de telecomunicaciones en las que seguro que podéis encontrar un hueco para que podamos desarrollar proyectos de calidad (¡ejem!). Tras la publicidad veamos el ejemplo:
+En alguna ocasión he necesitado pasar el contenido de una macrovariable a un *dataset* SAS. Con el tiempo he ido refinando el código empleado para hacer esta tarea y, como es habitual, lo comparto con vosotros para que os ayude en vuestro trabajo diario en grandes bancos, aseguradoras, compañías energéticas y de telecomunicaciones en las que seguro que podéis encontrar un hueco para que podamos desarrollar proyectos de calidad (¡ejem!).
 
-````r
+Tras la publicidad, veamos el ejemplo:
+
 ```sas
-*MACRO VARIABLE LISTA. TENED CUIDADO CON
+* MACRO VARIABLE LISTA. TENED CUIDADO CON
+  LOS ESPACIOS EN BLANCO INNECESARIOS;
+%let meses = enero febrero marzo abril mayo junio julio agosto;
 
-LOS ESPACIOS EN BLANCO INNECESARIOS;
-
-%let meses=enero febrero marzo
-
-abril mayo junio julio agosto;
-
-*ASIGNAMOS UN FILEREF TEMPORAL;
-
+* ASIGNAMOS UN FILEREF TEMPORAL;
 filename w temp;
 
-*METEMOS EN EL FILEREF LA INSTRUCCION;
-
+* METEMOS EN EL FILEREF LA INSTRUCCION;
 data _null_;
-
-f="&meses.";
-
-blancos=length(f)-length(compress(f));
-
-put blancos;
-
-do i=1 to blancos + 1;
-
-file w;
-
-put 'v'i'=scan("&meses.",' i '," ");';
-
-end;
-
+    f = "&meses.";
+    /* Calculamos el número de palabras en base a los espacios */
+    blancos = length(f) - length(compress(f));
+    do i = 1 to blancos + 1;
+        file w;
+        put 'v' i '=scan("&meses.",' i '," ");';
+    end;
 run;
 
-*LLAMAMOS AL FILEREF;
-
-data f;
-
-%inc w/source2;
-
+* LLAMAMOS AL FILEREF;
+data meses_dataset;
+    %inc w / source2;
 run;
-````
+```
 
-Una metodología muy practica que ya [nos contó Dani Fernandez hace unos meses](https://analisisydecision.es/trucos-sas-union-de-multiples-tablas-sas-con-un-nombre-parecido/). Es una forma muy sencilla de automatizar codigo que se repite. En este ejemplo concreto tenéis que tener mucho cuidado con los espacios en blanco sobrantes porque puede dar algún problema. Por supuesto dudas, sugerencias o trabajo a media jornada `rvaquerizo@analisisydecision.es`
+Una metodología muy práctica que ya [nos contó Dani Fernández hace unos meses](https://analisisydecision.es/trucos-sas-union-de-multiples-tablas-sas-con-un-nombre-parecido/). Es una forma muy sencilla de automatizar código que se repite. En este ejemplo concreto tenéis que tener mucho cuidado con los espacios en blanco sobrantes porque puede dar algún problema. Por supuesto: dudas, sugerencias o trabajo a media jornada: `rvaquerizo@analisisydecision.es`. Saludos.

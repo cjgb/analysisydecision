@@ -22,18 +22,18 @@ url: /blog/truco-excel-identificar-el-color-de-una-celda/
 
 ![color_celda_excel](/images/2013/11/color_celda_excel.png)
 
-Para identificar el color de una celda en Excel podemos emplear Interior.Color del siguiente modo:
+Para identificar el color de una celda en `Excel`, podemos emplear `Interior.Color` del siguiente modo:
 
-```visual-basic
+```vba
 Sub Macro1()
+    Dim i As Long
+    Dim dato As Long
 
-For i = 3 To 6
-
-dato = Cells(i, 2).Interior.Color
-Cells(i, 3) = dato
-Next i
-
+    For i = 3 To 6
+        dato = Cells(i, 2).Interior.Color
+        Cells(i, 3).Value = dato
+    Next i
 End Sub
 ```
 
-No funciona con formatos condicionales, si deseáis utilizar los colores de los formatos condicionales habréis de idear cómo hacerlo o bien esperar a que tenga tiempo a redactar como lo hago yo, pero que nadie se espere un programa en VB brillante, que no fui capaz de hacerlo. Saludos.
+No funciona con formatos condicionales; si deseáis utilizar los colores de los formatos condicionales, habréis de idear cómo hacerlo o bien esperar a que tenga tiempo a redactar cómo lo hago yo; pero que nadie se espere un programa en `Visual Basic` brillante, que no fui capaz de hacerlo. Saludos.

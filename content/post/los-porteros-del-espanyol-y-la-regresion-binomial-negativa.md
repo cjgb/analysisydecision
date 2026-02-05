@@ -115,10 +115,10 @@ Eliminamos los penalties.
 
 ```r
 shots_final <- shots_final %>% filter(!grepl("(pen)",Player))
-table(shots_finalPlayer_Name,shots_finalOutcome)
+table(shots_final$Player_Name,shots_final$Outcome)
 ```
 
-A continuación creamos una suma de tiros acumulada que se resetea cuando el Español encaja un gol, de ese modo se podrá determinar cuantos tiros le hacen al portero que jugaba en ese partido. Para ello empleamos la librería `hutilscpp` y la función `cumsum_reset` que sirve para realizar sumas acumuladas de valores booleanos.
+A continuación creamos una suma de tiros acumulada que se resetea cuando el Espanyol encaja un gol, de ese modo se podrá determinar cuantos tiros le hacen al portero que jugaba en ese partido. Para ello empleamos la librería `hutilscpp` y la función `cumsum_reset` que sirve para realizar sumas acumuladas de valores booleanos.
 
 ```r
 library(hutilscpp)
@@ -148,9 +148,9 @@ La librería `MASS` tiene la funcion `glm.nb` que permite hacer modelos de regre
 
 ![](/images/2023/12/wp_editor_md_89889edf5a158ad02d6e2d0b84872049.jpg)
 
-En este segundo modelo el parámetro asociado al portero si tiene una validez estadística, el `p-valor` asociado al contraste de hipótesis «el parámetro suma 0» es muy próximo a 0 luego son distintas las rachas de tiros hasta gol entre Diego López y los porteros de la temporada 22/23.
+En este segundo modelo el parámetro asociado al portero sí tiene una validez estadística, el `p-valor` asociado al contraste de hipótesis «el parámetro suma 0» es muy próximo a 0 luego son distintas las rachas de tiros hasta gol entre Diego López y los porteros de la temporada 22/23.
 
-Ahora interpretemos los resultados del modelo. Al igual que la `regresión de poisson` se trata de un modelo lineal generalizado cuya función de enlace es logarítmica por lo que haciendo el exponencial de los parámetros facilitaremos la interpretación como «efectos multiplicativos». Haciendo el exponencial de los parámetros tenemos.
+Ahora interpretemos los resultados del modelo. Al igual que la `regresión de Poisson` se trata de un modelo lineal generalizado cuya función de enlace es logarítmica por lo que haciendo el exponencial de los parámetros facilitaremos la interpretación como «efectos multiplicativos». Haciendo el exponencial de los parámetros tenemos.
 
 ![](/images/2023/12/wp_editor_md_9b5747a0dfd07678ebb15dce76f96c60.jpg)
 

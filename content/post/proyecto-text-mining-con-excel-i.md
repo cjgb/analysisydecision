@@ -14,20 +14,20 @@ related:
 tags:
   - consultoría
   - data mining
-title: Proyecto. Text mining con Excel (I)
+title: Proyecto. Text Mining con Excel (I)
 url: /blog/proyecto-text-mining-con-excel-i/
 ---
 
-¿Minería de textos con Excel? ¿Se puede hacer text mining con una hoja de cálculo? La respuesta a estas dos preguntas será SÍ. Desde hoy paro mis mensajes de formación en R y en SAS y me pongo con un proyecto que lleva días rondando por mi cabeza. Voy a crear una herramienta capaz de identificar **oportunidades en internet**. Y lo voy a hacer con muy pocos medios, nada de SAS, nada de R, nada de WEKA, sólo con la herramienta de ofimática más habitual: Excel.
+¿Minería de textos con `Excel`? ¿Se puede hacer *text mining* con una hoja de cálculo? La respuesta a estas dos preguntas será SÍ. Desde hoy paro mis mensajes de formación en R y en SAS y me pongo con un proyecto que lleva días rondando por mi cabeza. Voy a crear una herramienta capaz de identificar **oportunidades en internet**. Y lo voy a hacer con muy pocos medios: nada de SAS, nada de R, nada de `WEKA`, sólo con la herramienta de ofimática más habitual: `Excel`.
 
 Lo primero que tengo que hacer es buscarme un sistema con información sobre oportunidades para explotarlo. ¿Cuál es el sistema de información más grande y con mayores posibilidades de encontrar una oportunidad?
 
-GOOGLE
+**GOOGLE**
 
-Allí es donde tengo toda la información que necesito. _Solo_ tengo que leerla y tabularla, después explotarla y sacar mis conclusiones.
+Allí es donde tengo toda la información que necesito. *Sólo* tengo que leerla y tabularla, después explotarla y sacar mis conclusiones.
 
-También es importante tener claro que tipo de oportunidad busco. Es decir, Google por si mismo no nos ofrece nada hasta que no realizamos una búsqueda. Por ello tengo que tener claro que busco inicialmente, posteriormente mi búsqueda puede modificarse. Análisis y Decisión nació porque detecté una la necesidad de formar profesionales dedicados al Business Intelligence, en este caso será mi punto de partida.
+También es importante tener claro qué tipo de oportunidad busco. Es decir, `Google` por sí mismo no nos ofrece nada hasta que no realizamos una búsqueda. Por ello tengo que tener claro qué busco inicialmente; posteriormente mi búsqueda puede modificarse. Análisis y Decisión nació porque detecté la necesidad de formar profesionales dedicados al *Business Intelligence*; en este caso será mi punto de partida.
 
-El inicio de este proyecto es: [http://www.google.es/search?hl=es&q=formacion+business+intelligence&meta](http://www.google.es/search?hl=es&q=formacion+business+intelligence&meta)=
+El inicio de este proyecto es: [http://www.google.es/search?hl=es&q=formacion+business+intelligence&meta=](http://www.google.es/search?hl=es&q=formacion+business+intelligence&meta=)
 
-Y la herramienta con la que extraeré la información será Excel.
+Y la herramienta con la que extraeré la información será `Excel`. Saludos.

@@ -18,4 +18,4 @@ url: /blog/busquedas-de-sql-frente-a-busquedas-de-hadoop/
 
 ![busqueda-sql-hadoop](/images/2013/04/busqueda-sql-hadoop.png)
 
-Ese gráfico está sacado de Google Trends. Representa la comparativa entre las búsquedas SQL y Hadoop en Google. La caída del SQL frente al ligero ascenso del Hadoop. ¿Llegarán a converger estás dos líneas? Seguramente no. Hadoop parará su ascenso, pero SQL no parará su descenso. A qué esperas para dejar de ser un dinosaurio.
+Ese gráfico está sacado de *Google Trends*. Representa la comparativa entre las búsquedas de `SQL` y `Hadoop` en Google. La caída del `SQL` frente al ligero ascenso del `Hadoop`. ¿Llegarán a converger estas dos líneas? Seguramente no. `Hadoop` parará su ascenso, pero `SQL` no parará su descenso. ¿A qué esperas para dejar de ser un dinosaurio?

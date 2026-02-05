@@ -1,9 +1,9 @@
 ---
 author: rvaquerizo
 categories:
-  - formación
+  - formation
   - r
-  - trucos
+  - tricks
 date: '2019-02-11'
 lastmod: '2025-07-13'
 related:
@@ -13,157 +13,146 @@ related:
   - truco-r-eval-parse-y-paste-para-automatizar-codigo.md
   - tablas-elegantes-en-rstats-y-formattable.md
 tags:
-  - formación
+  - formation
   - r
-  - trucos
-title: Trucos simples para `rstats`
+  - tricks
+title: Simple tricks for `rstats`
 url: /blog/trucos-simples-para-rstats/
 ---
 
-En [mi cuenta de `twitter`](https://twitter.com/r_vaquerizo) suelo poner algunos trucos sencillos de R, cosas que me surgen cuando estoy trabajando y que no me cuesta compartir en 2 minutos, por si puedo ayudar a alguien. Me acabo de dar cuenta que de verdad son útiles y que tenerlos en `twitter` desperdigados es un problema, así que he pensado en recopilarlos en una entrada del blog para que sea más sencillo buscarlos (incluso para mi). Aquí van algunos de esos trucos:
+In [my Twitter account](https://twitter.com/r_vaquerizo), I usually post some simple R tricks, things that come up when I'm working and don't cost much to share in 2 minutes, in case I can help someone. I just realized that they are really useful and that having them scattered on Twitter is a problem, so I thought I'd collect them in a blog post to make them easier to find (even for me). Here are some of those tricks:
 
-Pasar los datos de un `data frame` al `clipboard`, útil cuando quieres mover datos de R a Excel sin complicaciones:
+Pass data from a `data.frame` to the clipboard, useful when you want to move data from R to Excel without complications:
 
 ```r
-write.table(borra,"clipboard", sep="\t", dec=",", row.names = F)
+write.table(borra, "clipboard", sep = "\t", dec = ",", row.names = F)
 ```
 
-Pasar el nombre de los campos de un `data frame` al `clipboard` (hila con el anterior), útil cuando trabajas con un editor de texto o alguna hoja de cálculo para automatizar código:
+Pass the field names of a `data.frame` to the clipboard (connects with the previous one), useful when you work with a text editor or a spreadsheet to automate code:
 
 ```r
-write.table(colnames(DF),"clipboard", sep="\t", dec=",", row.names = F)
+write.table(colnames(DF), "clipboard", sep = "\t", dec = ",", row.names = F)
 ```
 
-Poner formato `00000` propio códigos postales:
+Set format `00000` for postal codes:
 
 ```r
-cp <- c(8080,29001)
+cp <- c(8080, 29001)
 cp <- sprintf("%05d", cp)
 ```
 
-El mejor `subset` para `H2O`:
+The best `subset` for H2O:
 
 ```r
-df.hex[df.hex$campo > 0,]
+df.hex[df.hex$campo > 0, ]
 ```
 
-Texto a fecha en R:
+Text to date in R:
 
 ```r
-dffecha= as.Date (dffecha, "%d/%m/%Y")
+dffecha = as.Date(dffecha, "%d/%m/%Y")
 ```
 
-Identificar registros repetidos en un `data frame` , crea un `data frame` con los registros duplicados en una línea de código de `dplyr` :
+Identify repeated records in a `data.frame`; creates a `data.frame` with duplicate records in one line of `dplyr` code:
 
 ```r
-repetidos <- df %>% group_by(campo_ID) %>%
- summarise(repetido = n()) %>% filter(repetido>1)
+repetidos <- df %>%
+  group_by(campo_ID) %>%
+  summarise(repetido = n()) %>%
+  filter(repetido > 1)
 ```
 
-Mi preferida y el motivo de la entrada, tramificar una variable cuantitativa en `n grupos`:
+My favorite and the reason for the post, binning a quantitative variable into $n$ groups:
 
 ```r
 grupos = 10
-df <- df %>% arrange(campo) %>%
-mutate(campo_tramos= as.factor(ceiling((row_number()/n())*grupos)))
+df <- df %>%
+  arrange(campo) %>%
+  mutate(campo_tramos = as.factor(ceiling((row_number() / n()) * grupos)))
 ```
 
-Transformar nulos a `0` en `20 caracteres`:
+Transform nulls to `0` in 20 characters:
 
 ```r
 df[is.na(df$V1)] <- 0
 ```
 
-Transformar números separados por coma en formato texto a formato numérico:
+Transform numbers separated by a comma in text format to numeric format:
 
 ```r
-dfnumero <- as.numeric(sub(",",".",dftexto))
+dfnumero <- as.numeric(sub(",", ".", dftexto))
 ```
 
-Todos los factores de mi `data frame` de R a carácter para evitar algún lío, uso de `lapply`:
+All factors of my R `data.frame` to character to avoid some trouble, using `lapply`:
 
 ```r
-df <- data.frame(lapply(df, as.character), stringsAsFactors=FALSE)
+df <- data.frame(lapply(df, as.character), stringsAsFactors = FALSE)
 ```
 
-Crear una secuencia de fechas en R y dar formato a la secuencia de fechas en R:
+Create a sequence of dates in R and format the sequence of dates in R:
 
 ```r
-write.table(colnames(DF),"clipboard", sep="\t", dec=",", row.names = F)
+secuencia <- seq(as.Date("2016/1/1"), by = "month", length.out = 12)
+format(secuencia, "%Y%m")
 ```
 
-0
-
-Función para quedarnos sólo los números por los que comienza una cadena de textos de una cadena de textos en R:
+Function to get only the numbers that start a text string in R:
 
 ```r
-write.table(colnames(DF),"clipboard", sep="\t", dec=",", row.names = F)
+library(readr)
+parse_number("1234abcd")
 ```
 
-1
-
-Uso de `tidyr` para extraer de un `string` sólo los números. Ojo que hay ocasiones en las que es necesario tener talento para hacer esta tarea:
+Using `tidyr` to extract only numbers from a string. Note that sometimes you need talent to do this task:
 
 ```r
-write.table(colnames(DF),"clipboard", sep="\t", dec=",", row.names = F)
+library(tidyr)
+extract_numeric("abcd1234efgh")
 ```
 
-2
-
-Función para exportar al `clipboard` `dataframes` de mayor tamaño, ideal para mover `dataframes` a Excel pasando de formato americano a formato europeo:
+Function to export larger `dataframes` to the clipboard, ideal for moving `dataframes` to Excel, converting from American to European format:
 
 ```r
-write.table(colnames(DF),"clipboard", sep="\t", dec=",", row.names = F)
+write_excel <- function(x, row.names = FALSE, col.names = TRUE, ...) {
+  write.table(x, "clipboard-16384", sep = "\t", dec = ",", row.names = row.names, col.names = col.names, ...)
+}
 ```
 
-3
-
-Secuencia de fechas con R:
+Sequence of dates with R:
 
 ```r
-write.table(colnames(DF),"clipboard", sep="\t", dec=",", row.names = F)
+seq(as.Date("2018-01-01"), as.Date("2018-12-31"), by = "days")
 ```
 
-4
-
-Función para quedarnos solo con números dentro de una cadena de textos en R, hay muchas, yo uso esta:
+Function to get only numbers within a text string in R; there are many, I use this one:
 
 ```r
-write.table(colnames(DF),"clipboard", sep="\t", dec=",", row.names = F)
+gsub("[^0-9]", "", "abc123def")
 ```
 
-5
-
-El `not in` en R:
+The `not in` in R:
 
 ```r
-write.table(colnames(DF),"clipboard", sep="\t", dec=",", row.names = F)
+`%nin%` <- Negate(`%in%`)
 ```
 
-6
-
-Permitir a `RStudio` sacar todas las columnas del `data frame`:
+Allow RStudio to display all columns of the `data.frame`:
 
 ```r
-write.table(colnames(DF),"clipboard", sep="\t", dec=",", row.names = F)
+options(max.print = 10000)
 ```
 
-7
-
-Reemplaza una variable con un valor nulo a un `0` con el `ifelse`:
+Replace a variable with a null value to `0` using `ifelse`:
 
 ```r
-write.table(colnames(DF),"clipboard", sep="\t", dec=",", row.names = F)
+df$var <- ifelse(is.na(df$var), 0, df$var)
 ```
 
-8
-
-Operar con meses en formato `YYYYMM`, los típicos de las particiones, un truco que es probable que exista:
+Operate with months in `YYYYMM` format, the typical ones for partitions, a trick that probably already exists:
 
 ```r
-write.table(colnames(DF),"clipboard", sep="\t", dec=",", row.names = F)
+mes <- 201812
+mes_sig <- as.numeric(format(as.Date(paste0(mes, "01"), "%Y%m%d") + 31, "%Y%m"))
 ```
 
-9
-
-Espero que esta entrada pueda seguir creciendo, son tonterías (mis tonterías) y las tengo centralizadas en una sola entrada.
+I hope this post can continue to grow, they are trifles (my trifles) and I have them centralized in a single post.

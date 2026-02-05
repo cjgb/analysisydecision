@@ -19,8 +19,8 @@ title: La nueva web de jjgibaja
 url: /blog/la-nueva-web-de-jjgibaja/
 ---
 
-Estaba preparando una entrada con el recopilatorio de los videos de Gibaja pero es mucho mejor lo que ha hecho su autor:
+Estaba preparando una entrada con el recopilatorio de los vídeos de Gibaja, pero es mucho mejor lo que ha hecho su autor:
 
 [http://jjgibaja.net/](http://jjgibaja.net/)
 
-Una web donde se recopilan todos los videos que ha realizado. Son muy didácticos e incluso entretenidos. Gran trabajo.
+Una web donde se recopilan todos los vídeos que ha realizado. Son muy didácticos e incluso entretenidos. Gran trabajo.

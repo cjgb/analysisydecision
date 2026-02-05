@@ -21,50 +21,58 @@ title: Trucos SAS. Proc format VS formato percent
 url: /blog/truco-sas-proc-format-vs-formato-percent/
 ---
 
-El formato `SAS percent` nos ofrece una apariencia poco habitual a la hora de realizar informes con SAS. Necesitamos emplear el `proc format` ya que SAS no tiene un formato de porcentajes que se adecúe a los reportes de un buen gestor de la información. Para estudiar su uso emplearemos un ejemplo:
+El formato `PERCENT.` de SAS nos ofrece una apariencia poco habitual a la hora de realizar informes. Necesitamos emplear el `PROC FORMAT`, ya que SAS no tiene un formato de porcentajes estándar que se adecúe perfectamente a los reportes de un buen gestor de la información europeo. Para estudiar su uso, emplearemos un ejemplo:
 
 ```sas
 data uno;
-format valor percent.3;
-do valor=-1 to 1 by 0.25;
-output;
-end;
+    format valor percent8.2;
+    do valor = -1 to 1 by 0.25;
+        output;
+    end;
 run;
-proc print data=uno; run;
+
+proc print data=uno; 
+run;
 ```
 
-La ejecución de este programa nos ofrece:
+La ejecución de este programa nos ofrece algo parecido a ésto:
 
 | Obs | valor |
 |---|---|
-| 1 | (100%) |
-| 2 | ( 75%) |
-| 3 | ( 50%) |
-| 4 | ( 25%) |
-| 5 | .00% |
-| 6 | 25% |
-| 7 | 50% |
-| 8 | 75% |
-| 9 | 100% |
+| 1 | (100.00%) |
+| 2 | (75.00%) |
+| 3 | (50.00%) |
+| 4 | (25.00%) |
+| 5 | 0.00% |
+| 6 | 25.00% |
+| 7 | 50.00% |
+| 8 | 75.00% |
+| 9 | 100.00% |
 
-Tenemos 3 problemas: 1. los valores negativos aparecen entre paréntesis 2. no empleamos la notación americana y nuestros decimales han de ir separados por una coma (`,`) 3. nos pone decimales en el 0. Debido a esta carencia de SAS necesitamos crear un formato a medida para que nuestros informes tengan un aspecto más profesional y empleen notación europea:
+Tenemos tres problemas: 
+1. Los valores negativos aparecen entre paréntesis.
+2. No empleamos la notación americana, y nuestros decimales han de ir separados por una coma (`,`).
+3. Nos pone decimales innecesarios en el cero. 
+
+Debido a estas carencias de SAS, necesitamos crear un formato a medida para que nuestros informes tengan un aspecto más profesional y empleen notación europea:
 
 ```sas
-proc format ;
-picture porcen
-low-0='0009,0%' (PREFIX="-" MULTIPLIER=1000)
-0='9%'
-0-high='0009,0%'(MULTIPLIER=1000);
+proc format;
+    picture porcen
+        low-0  = '0009,0%' (prefix="-" multiplier=1000)
+        0      = '9%'
+        0-high = '0009,0%' (multiplier=1000);
 run;
 
-data uno;
-do valor=-1 to 1 by 0.25;
-output;
-end;
-format valor porcen.;
+data dos;
+    do valor = -1 to 1 by 0.25;
+        output;
+    end;
+    format valor porcen.;
 run;
 
-proc print; run;
+proc print data=dos; 
+run;
 ```
 
 El resultado obtenido tras esta ejecución:
@@ -81,6 +89,14 @@ El resultado obtenido tras esta ejecución:
 | 8 | 75,0% |
 | 9 | 100,0% |
 
-En el `proc format` hemos empleado la instrucción `picture`, con ella formateamos cualquier número. Para ello hemos de jugar con las opciones en cada rango del formato. En nuestro ejemplo tenemos 3 rangos, números negativos, 0 y números positivos.En nuestro primer rango del formato `low-0` especificamos con `'0009,0%'` que los valores menores que 0 tengan 5 posiciones de las cuales la última será un %, tendremos un decimal separado con `,`. Por otro lado añadimos opciones entre paréntesis para mejorar la apariencia de nuestro valor. Con `PREFIX="-"` especificamos que caracter queremos que preceda a nuestro formato, en este caso, para valores negativos, tendremos un -. Con `MULTIPLIER=1000` hacemos que nuestros números sean multiplicados para tener la apariencia de -100,0 [= -1] Se multiplican por 1000 debido a que hemos reservado 3 posiciones para la parte entera del número y una posición para la parte decimal, las otras dos posiciónes son para el – y el %.
+En el `PROC FORMAT` hemos empleado la instrucción `PICTURE`; con ella formateamos cualquier número. Para ello, hemos de jugar con las opciones en cada rango del formato. En nuestro ejemplo tenemos tres rangos: números negativos, cero y números positivos.
 
-El segundo rango de nuestro formato es el número 0, a él simplemente le asignamos una posición al número y además es necesario que aparezca el %, no queremos parte decimal.Para el tercer y último rango, los números positivos, `0-high` empleamos las mismas opciones que en la parte negativa pero no ponemos un prefijo. También multiplicamos por `1000` para tener la apariencia `100,0` [=1].IMPORTANTE: Si tenemos porcentajes mayores de `1000%` tendremos problemas con este formato, puede que no sea muy habitual pero es necesario tenerlo en cuenta y sería necesario modificar el formato.
+En nuestro primer rango del formato, `low-0`, especificamos con `'0009,0%'` que los valores menores que 0 tengan cinco posiciones, de las cuales la última será un `%`; tendremos un decimal separado con `,`. Por otro lado, añadimos opciones entre paréntesis para mejorar la apariencia de nuestro valor. Con `PREFIX="-"` especificamos qué carácter queremos que preceda a nuestro formato; en este caso, para valores negativos, tendremos un "-". 
+
+Con `MULTIPLIER=1000` hacemos que nuestros números sean multiplicados para tener la apariencia de -100,0 (= -1). Se multiplican por 1000 debido a que hemos reservado tres posiciones para la parte entera del número y una posición para la parte decimal; las otras dos posiciones son para el "-" y el "%".
+
+El segundo rango de nuestro formato es el número 0; a él simplemente le asignamos una posición al número y además es necesario que aparezca el `%`; no queremos parte decimal.
+
+Para el tercer y último rango (los números positivos), `0-high`, empleamos las mismas opciones que en la parte negativa, pero no ponemos un prefijo. También multiplicamos por 1000 para tener la apariencia `100,0` (= 1). 
+
+**IMPORTANTE**: si tenemos porcentajes mayores del 1000%, tendremos problemas con este formato; puede que no sea muy habitual, pero es necesario tenerlo en cuenta y sería necesario modificar el tamaño del *template* en el `PICTURE`. Saludos.

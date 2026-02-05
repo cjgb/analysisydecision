@@ -17,4 +17,4 @@ title: ¡Por fin en las III jornadas de R!
 url: /blog/c2a1por-fin-en-las-iii-jornadas-de-r/
 ---
 
-Ya estamos en las III jornadas. Están a punto de comenzar. [Continúo en twitter](http://twitter.com/#!/r_vaquerizo). De momento la respuesta de la gente es muy positiva, la sala se está llenando (mucho).
+Ya estamos en las III Jornadas. Están a punto de comenzar. [Continúo en Twitter](http://twitter.com/#!/r_vaquerizo). De momento la respuesta de la gente es muy positiva; la sala se está llenando (mucho).

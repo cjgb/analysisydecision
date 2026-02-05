@@ -18,4 +18,4 @@ url: /blog/data-mining-vs-bigdata-de-momento-con-google-trends/
 
 ![](/images/2014/09/data-mining-vs-bigdata.png)
 
-Bigdata por aquí bigdata por allá y resulta que en **Google sigue habiendo muchas más búsquedas sobre data mining**. Este dato tiene importancia porque el bigdata no tiene sentido sin el data mining. Incluso podríamos prescindir del bigdata porque lo importante es lo que queremos hacer no como lo queramos hacer. Saludos.
+*Big Data* por aquí, *Big Data* por allá, y resulta que en **Google sigue habiendo muchas más búsquedas sobre *Data Mining***. Este dato tiene importancia porque el *Big Data* no tiene sentido sin el *Data Mining*. Incluso podríamos prescindir del *Big Data* porque lo importante es lo que queremos hacer, no cómo lo queramos hacer. Saludos.

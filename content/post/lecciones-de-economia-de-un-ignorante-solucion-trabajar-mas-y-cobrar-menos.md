@@ -16,24 +16,28 @@ title: 'Lecciones de economía de un ignorante: Solución: ¡TRABAJAR MÁS Y COB
 url: /blog/lecciones-de-economia-de-un-ignorante-solucion-c2a1trabajar-mas-y-cobrar-menos/
 ---
 
-Mi buen amigo **David** lleva varios días realizando un interesante análisis de la situación económica actual. Hoy quiero concentrar en pocas líneas este análisis. La hecatombe bancaria se produce debido al **incremento de la morosidad** , sin embargo esta es una situación que ya hemos vivido:
+Mi buen amigo **David** lleva varios días realizando un interesante análisis de la situación económica actual. Hoy quiero concentrar en pocas líneas este análisis. La hecatombe bancaria se produce debido al **incremento de la morosidad**; sin embargo, ésta es una situación que ya hemos vivido:
 
 ![morosidad_el_pais.PNG](/images/2012/06/morosidad_el_pais.PNG)
 
 Fuente: [Morosidad - El País](http://economia.elpais.com/economia/2012/06/18/actualidad/1340008960_456853.html)
 
-Mi amigo David se pregunta "¿Qué paso para que a partir del 93 un indicador de situaciones de crisis como la morosidad bajara de forma tan espectacular como subió?" La respuesta en:
+David se pregunta: "¿Qué pasó para que a partir del 93 un indicador de situaciones de crisis como la morosidad bajara de forma tan espectacular como subió?". La respuesta en:
 
 [Crisis económica de 1993 en España - Wikipedia](http://es.wikipedia.org/wiki/Crisis_econ%C3%B3mica_de_1993_en_Espa%C3%B1a)
 
-"...el 13 de mayo de 1993, el Gobierno español se vio obligado a devaluar de nuevo la peseta, esta vez en un 8%. Fue la tercera devaluación en 9 meses. Las anteriores se habían producido el 16 de septiembre de 1992, en un 5% y el 21 de noviembre siguiente en un 6%". En 1994 año el desempleo alcanzó su máximo, un 24,1%,8 a partir de entonces el empleo comenzó su recuperación...." En este punto David pide que vuelva Solchaga, espero que fuera ironía.
+> "...el 13 de mayo de 1993, el Gobierno español se vio obligado a devaluar de nuevo la peseta, esta vez en un 8%. Fue la tercera devaluación en nueve meses. Las anteriores se habían producido el 16 de septiembre de 1992 (un 5%) y el 21 de noviembre siguiente (un 6%). En 1994 el desempleo alcanzó su máximo (un 24,1%); a partir de entonces, el empleo comenzó su recuperación...". 
 
-Ya no tenemos pesetillas como en 1993 así que es necesaria una "devaluación interna", es decir, **¡TRABAJAR MÁS Y COBRAR MENOS!** Y no os perdáis su comentario acerca de esto: "Una devaluación clásica es un ajuste que pagan en todo el país equitativamente. Una devaluación interna la pagan... Sí, lo habéis adivinando, los que tienen una nómina que recortar que aceptaremos encantados porque los mercados indican que es la única forma de salir de la crisis".
+En este punto, David pide que vuelva Solchaga; espero que fuera ironía.
 
-En este punto es cuando me levanto de la silla y no me queda más remedio que aplaudir tan sagaz análisis. Tenemos que aguantar los comentarios de tapa y botellín a los tertulianos radiofónicos, y cobrarán por ello, como los políticos. Hay que cobrar por hacer algo.
+Ya no tenemos pesetillas como en 1993, así que es necesaria una "devaluación interna"; es decir: **¡TRABAJAR MÁS Y COBRAR MENOS!** Y no os perdáis su comentario acerca de ésto:
 
-Y ya para rematar tenemos que hoy, 28/06/2012, sigue subiendo la prima de riesgo y la banca española ve "probable" la ruptura del euro (¿valdrán los duros con la cara de Franco?) pero la única solución la tiene **Miguel Marín** el presidente de la patronal bancaria (AEB) en respuesta al Nobel **Paul Krugman.** Ha señalado que el problema de España no son sus bancos, sino su economía. "Y el problema de la economía es que hemos perdido competitividad, por lo que ha advertido de que no hay más remedio que reducir salarios. "El problema de fondo es que los sueldos tienen que bajar durante cinco o 10 años":
+> "Una devaluación clásica es un ajuste que pagan en todo el país equitativamente. Una devaluación interna la pagan... Sí, lo habéis adivinado: los que tienen una nómina que recortar, que aceptaremos encantados porque los mercados indican que es la única forma de salir de la crisis".
+
+En este punto es cuando me levanto de la silla y no me queda más remedio que aplaudir tan sagaz análisis. Tenemos que aguantar los comentarios de tapa y botellín de los tertulianos radiofónicos, y cobrarán por ello, como los políticos. Hay que cobrar por hacer algo.
+
+Y ya para rematar tenemos que hoy, 28/06/2012, sigue subiendo la prima de riesgo y la banca española ve "probable" la ruptura del euro (¿valdrán los duros con la cara de Franco?). Pero la única solución la tiene **Miguel Martín**, el presidente de la patronal bancaria (`AEB`), en respuesta al Nobel **Paul Krugman**. Ha señalado que el problema de España no son sus bancos, sino su economía: "Y el problema de la economía es que hemos perdido competitividad, por lo que ha advertido de que no hay más remedio que reducir salarios. El problema de fondo es que los sueldos tienen que bajar durante cinco o diez años".
 
 [Los sueldos tienen que bajar de 5 a 10 años - El País](http://economia.elpais.com/economia/2012/06/28/actualidad/1340873871_287353.html)
 
-Simplemente espectacular. Chapó.
+Simplemente espectacular. *Chapeau*. Saludos.

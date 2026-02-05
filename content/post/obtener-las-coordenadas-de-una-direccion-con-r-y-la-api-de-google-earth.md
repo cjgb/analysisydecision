@@ -18,24 +18,27 @@ title: Obtener las coordenadas de una dirección con R y la API de Google Earth
 url: /blog/obtener-las-coordenadas-de-una-direccion-con-r-y-la-api-de-google-earth/
 ---
 
-Obtener coordenadas desde la `API` de `Google Maps` a partir de una dirección consiste en realizar la petición a la `API` y obtener un `json` pero tenemos la suerte de contar con R y ese proceso le podemos hacer de forma más sencilla e incluso le podemos tabular. En realidad son 4 líneas de código pero es posible que a alguien le sean de utilidad. Lo primero es disponer de un proyecto en la [Google Cloud Plattform](https://console.cloud.google.com/) si ya lo tenemos lo que necesitamos es autorizar a este proyecto a acceder a la `API` de `Google Maps`, [para ello yo he usado este enlace](https://www.loopeando.com/google-maps-platform-rejected-your-request-an-internal-error-was-found-for-this-api/) y he habilitado la `Geocoding API`, la que vamos a usar para la consulta de la dirección.
+Obtener coordenadas desde la `API` de `Google Maps` a partir de una dirección consiste in realizar la petición a la `API` y obtener un `JSON`; pero tenemos la suerte de contar con `R` y ese proceso lo podemos hacer de forma más sencilla e incluso lo podemos tabular. In realidad son cuatro líneas de código, pero es posible que a alguien le sean de utilidad. Lo primero es disponer de un proyecto in la [Google Cloud Platform](https://console.cloud.google.com/); si ya lo tenemos, lo que necesitamos es autorizar a este proyecto a acceder a la `API` de `Google Maps`. [Para ello, yo he usado este enlace](https://www.loopeando.com/google-maps-platform-rejected-your-request-an-internal-error-was-found-for-this-api/) y he habilitado la `Geocoding API`, la que vamos a usar para la consulta de la dirección.
 
-En este punto disponemos de un proyecto habilitado para conectar a la `API` que nos va a facilitar las coordenadas, necesitamos nuestra `API Key` que podemos ver en credenciales. Nuestras líneas con R se van a limitar:
+In este punto disponemos de un proyecto habilitado para conectar a la `API` que nos va a facilitar las coordenadas; necesitamos nuestra `API Key`, que podemos ver in credenciales. Nuestras líneas con `R` se van a limitar a:
 
 ```r
-# install.packagest('ggmap')
+# install.packages('ggmap')
 library(ggmap)
-register_google("[API key]")
+register_google(key = "[API key]")
 
-coordenadas <- geocode("Calle Murga 15 El Molar Madrid", output = "latlona", source = "google")
+coordenadas <- geocode("Calle Murga 15 El Molar Madrid", 
+                       output = "latlona", source = "google")
 ```
 
-Así de sencillo y en este punto os podéis imaginar, podemos pasar una lista o un `data frame` y realizar un bucle para obtener las coordenadas y que éstas se guarden en un `data frame`. Dando una vuelta de tuerca podemos obtener el código postal:
+Así de sencillo y, in este punto, os podéis imaginar: podemos pasar una lista o un `data.frame` y realizar un bucle para obtener las coordenadas y que estas se guarden in un `data.frame`. Dando una vuelta de tuerca, podemos obtener el código postal:
 
 ```r
-coordenadas <- geocode("Paseo Castellana 259 Madrid", output = "more", source = "google")
-coordenadascodpostal = regmatches(coordenadasaddress,
-                                   gregexpr('(?<!\\d)\\d{5}(?:[ -]\\d{4})?\\b', coordenadas$address, perl=T))
+coordenadas <- geocode("Paseo Castellana 259 Madrid", 
+                       output = "more", source = "google")
+coordenadas$codpostal <- regmatches(coordenadas$address, 
+                                    gregexpr('(?<!\\d)\\d{5}(?:[ -]\\d{4})?\\b', 
+                                             coordenadas$address, perl = TRUE))
 ```
 
-Una tontería pero que puede ser útil para algunos. Saludos.
+Una tontería, pero que puede ser útil para algunos. Saludos.

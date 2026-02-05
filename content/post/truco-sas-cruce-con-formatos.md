@@ -14,159 +14,101 @@ related:
 tags:
   - sas
   - trucos
-title: Truco SAS. Cruce con proc format
+title: Truco SAS. Cruce con PROC FORMAT
 url: /blog/truco-sas-cruce-con-formatos/
 ---
 
-Veremos un ejemplo de ahorro de tiempo haciendo un cruce con `formatos`.
-Parece curioso que los `formatos` ahorren tiempo frente al `sort/merge` y `sql`, ya que basicamente no están hecho para esa finalidad, pero realmente podemos ahorrarnos más del 50% del tiempo.
-Además lo más costoso de este método es la carga del `formatos`, pero una vez que lo tenemos cargado podemos hacer las selecciones de todos los grandes volumenes de datos que necesitemos, con el `sort/merge`, tendríamos que ordenar el conjunto de datos SAS ‘grande’ otra vez si no lo teniamos ordenado.
-Este método es realmente efectivo al cruzar tablas grandes frente a pequeñas.
+Veremos un ejemplo de ahorro de tiempo haciendo un cruce con **formatos**.
 
-Ejemplo:
+Parece curioso que los formatos ahorren tiempo frente al `SORT/MERGE` y `SQL`, ya que básicamente no están hechos para esa finalidad, pero realmente podemos ahorrarnos más del 50% del tiempo. 
 
-Nuestro conjunto SAS de ejemplo es una base de datos de los clientes de una compañía, que contiene el número de `contrato` y `gasto` que han tenido en un periodo.
-Tenemos otro conjunto de datos SAS con 100.000 `contratos`, queremos seleccionar el `gasto` que han tenido estos `contratos`.
+Lo más costoso de este método es la carga del formato, pero una vez que lo tenemos cargado, podemos hacer las selecciones de todos los grandes volúmenes de datos que necesitemos. Con el `SORT/MERGE`, tendríamos que ordenar el conjunto de datos SAS "grande" cada vez si no lo teníamos ya ordenado. Este método es realmente efectivo al cruzar tablas grandes frente a pequeñas.
 
-Para ello tenemos que cruzar nuestra «SUPER TABLA» con nuestra «TABLA PEQUEÑA».
+### Ejemplo
 
-Tabla de ejemplo:
+Nuestro conjunto SAS de ejemplo es una base de datos de los clientes de una compañía, que contiene el número de `contrato` y `gasto` que han tenido en un periodo. Tenemos otro conjunto de datos SAS con 100.000 contratos; queremos seleccionar el gasto que han tenido estos contratos.
+
+Para ello, tenemos que cruzar nuestra «SÚPER TABLA» con nuestra «TABLA PEQUEÑA».
+
+#### Tabla de ejemplo:
 
 ```sas
 data conjunto_LARGE;
-do i=1 to 50000000;
-contrato=input(left(i), $10.);
-gasto=ranuni(12345)*100;
-output;
-end;
-drop i;
+    do i = 1 to 10000000;
+        contrato = put(i, z10.);
+        gasto = ranuni(12345) * 100;
+        output;
+    end;
+    drop i;
 run;
-```
 
-```sas
 data conjunto_SMALL;
-set conjunto_LARGE (keep=contrato);
-if _n_<=100000;
+    set conjunto_LARGE (keep=contrato obs=100000);
 run;
 ```
 
-Procedimiento 1. `SORT / MERGE`.
+#### Procedimiento 1: `SORT / MERGE`
 
-Con el `Sort/ Merge` tenemos que ordenar los dos conjuntos de datos.
-
-```sas
-PROC SORT DATA=conjunto_LARGE;
-BY CONTRATO;
-RUN;
-```
-
-```
-NOTA: Se han leído 10000000 observaciones del conj. datos WORK.CONJUNTO_LARGE.
-NOTA: El conj. datos WORK.CONJUNTO_LARGE tiene 10000000 observaciones
-NOTA: PROCEDIMIENTO SORT utilizado (Tiempo de proceso total):
-tiempo real 35.82 segundos
-tiempo de cpu 13.07 segundos
-```
+Con el `SORT / MERGE` tenemos que ordenar los dos conjuntos de datos.
 
 ```sas
-PROC SORT DATA=conjunto_SMALL;
-BY CONTRATO;
-RUN;
-```
-
-```
-NOTA: Se han leído 100000 observaciones del conj. datos WORK.CONJUNTO_SMALL.
-NOTA: El conj. datos WORK.CONJUNTO_SMALL tiene 100000 observaciones .
-NOTA: PROCEDIMIENTO SORT utilizado (Tiempo de proceso total):
-tiempo real 0.25 segundos
-tiempo de cpu 0.06 segundos
-```
-
-```sas
-DATA SELECCION;
-MERGE CONJUNTO_LARGE CONJUNTO_SMALL (IN=B);
-BY CONTRATO;
-IF B;
-RUN;
-```
-
-Ordenar conjunto grande: 35.82 segundos
-Ordenar conjunto pequeño: 0.25 segundos
-Merge: 11.06 segundos
-Total: 47.13
-Con `Formatos`
-
-1\. En primer lugar tengo que cargar los `contratos` de mi conjunto de datos pequeños a un `formatos`.
-
-```sas
-DATA CRUZO;
-SET CONJUNTO_SMALL;
-RENAME CONTRATO=START;
-LABEL='*';
-FMTNAME='$CONTRATO';
-RUN;
-NOTA: Se han leído 100000 observaciones del conj. datos WORK.CONJUNTO_SMALL.
-NOTA: El conj. datos WORK.CRUZO tiene 100000 observaciones y 3 variables.
-NOTA: Sentencia DATA utilizado (Tiempo de proceso total):
-tiempo real 0.17 segundos
-tiempo de cpu 0.04 segundos
-```
-
-La variable clave con la que vamos a cruzar la tenemos
-
-que renombrar a «`START`» como «`LABEL`» podemos poner la etiqueta que queramos,
-
-y por último tenemos que dar un nombre al `formatos` con «`FMTNAME`».
-
-A continuación ordenamos el conjunto de datos y utilizamos la opción de `PROC SORT` `NODUPKEY` para asegurarnos de que en el caso de que haya duplicados los eliminaremos.
-
-```sas
-PROC SORT DATA=CRUZO NODUPKEY;
-BY START;
-RUN;
-```
-
-Por último cargamos el conjunto de datos.
-
-````sas
-data conjunto_SMALL;
-set conjunto_LARGE (keep=contrato);
-if _n_<=100000;
+proc sort data=conjunto_LARGE;
+    by contrato;
 run;
 
-```sas
-data conjunto_SMALL;
-set conjunto_LARGE (keep=contrato);
-if _n_<=100000;
+proc sort data=conjunto_SMALL;
+    by contrato;
 run;
 
+data seleccion;
+    merge conjunto_LARGE (in=a) conjunto_SMALL (in=b);
+    by contrato;
+    if a and b;
+run;
+```
+
+**Tiempos aproximados:**
+- Ordenar conjunto grande: 35.82 segundos.
+- Ordenar conjunto pequeño: 0.25 segundos.
+- Merge: 11.06 segundos.
+- **Total: 47.13 segundos.**
+
+#### Procedimiento 2: Cruce con formatos
+
+1. En primer lugar, tengo que cargar los contratos de mi conjunto de datos pequeño a un formato.
+
 ```sas
-data conjunto_SMALL;
-set conjunto_LARGE (keep=contrato);
-if _n_<=100000;
+data cruzo;
+    set conjunto_SMALL;
+    rename contrato = start;
+    label = '*';
+    fmtname = '$CONTRATO';
 run;
 
-```sas
-data conjunto_SMALL;
-set conjunto_LARGE (keep=contrato);
-if _n_<=100000;
+proc sort data=cruzo nodupkey;
+    by start;
 run;
 
-```sas
-data conjunto_SMALL;
-set conjunto_LARGE (keep=contrato);
-if _n_<=100000;
+proc format cntlin=cruzo;
 run;
+```
 
-Carga del `formatos`:
-0.26 segundos
-Cruce con `formatos`:
-8.53 segundos
-TOTAL PROCESO:
+La variable clave con la que vamos a cruzar la tenemos que renombrar a `START`. En `LABEL` podemos poner la etiqueta que queramos (por ejemplo, '*') y, por último, tenemos que dar un nombre al formato con `FMTNAME`.
 
-8.79 SEGUNDOS
+2. Realizamos el cruce en el paso `DATA`:
 
-frente a los 47.13 segundos.
+```sas
+data seleccion_formato;
+    set conjunto_LARGE;
+    if put(contrato, $contrato.) = '*';
+run;
+```
 
-Probad este metodo , contadnos el ahorro de tiempo y si teneís alguna otra duda.
-````
+**Tiempos aproximados:**
+- Carga del formato: 0.26 segundos.
+- Cruce con formato: 8.53 segundos.
+- **Total: 8.79 segundos.**
+
+Frente a los 47.13 segundos del método tradicional.
+
+Probad este método, contadnos el ahorro de tiempo y si tenéis alguna otra duda. Saludos.

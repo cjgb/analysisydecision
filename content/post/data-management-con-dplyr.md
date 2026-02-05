@@ -17,118 +17,107 @@ title: Data management con dplyr
 url: /blog/data-management-con-dplyr/
 ---
 
-Dos años con `pandas` y `sckitlearn` y ahora vuelvo a R. Y en mi regreso me propuse comenzar a trabajar con `dplyr` y mi productividad se está incrementando exponencialmente, creo que dplyr es LA HERRAMIENTA para el manejo de `data frame` con R, ni me imagino como puede funcionar `sparlyr`… Para aquellos que estéis iniciando vuestra andadura con R o para los que no estéis acostumbrados a `dplyr` he hecho una recopilación de las tareas más habituales que hago con esta librería. Se pueden resumir:
+Dos años con `pandas` y `scikit-learn` y ahora vuelvo a `R`. Y in mi regreso me propuse comenzar a trabajar con `dplyr` y mi productividad se está incrementando exponencialmente; creo que `dplyr` es LA HERRAMIENTA para el manejo de `data.frames` con `R`, ni me imagino cómo puede funcionar `sparklyr`… Para aquellos que estéis iniciando vuestra andadura con `R` o para los que no estéis acostumbrados a `dplyr`, he hecho una recopilación de las tareas más habituales que hago con esta librería. Se pueden resumir in:
 
-• Seleccionar columnas
-• Seleccionar registros
-• Crear nuevas variables
-• Sumarizar datos
-• Ordenar datos
-• Uniones de datos
+- Seleccionar columnas.
+- Seleccionar registros.
+- Crear nuevas variables.
+- Sumarizar datos.
+- Ordenar datos.
+- Uniones de datos.
 
-Como es habitual trabajamos con ejemplos data(iris); library(dplyr):
+Como es habitual, trabajamos con ejemplos (`data(iris)`, `library(dplyr)`):
 
 Seleccionar columnas `select()`:
 
 ```r
 two.columns <- iris %>%
-select(Sepal.Length,Sepal.Width)
+  select(Sepal.Length, Sepal.Width)
 
-columns = c("Sepal.Length","Sepal.Width")
+columns <- c("Sepal.Length", "Sepal.Width")
 two.columns <- iris %>%
-select(columns)
+  select(all_of(columns))
 ```
-
-````
 
 Seleccionar registros `filter()`:
 
 ```r
 setosa <- iris %>%
-filter(Species=="setosa")
+  filter(Species == "setosa")
 
-species_to_select = c("setosa","virginica")
+species_to_select <- c("setosa", "virginica")
 species <- iris %>%
-filter(Species %in% species_to_select)
-table(species$Species)
-````
+  filter(Species %in% species_to_select)
 
-````
+table(species$Species)
+```
 
 Crear nuevas variables `mutate()`:
 
 ```r
 iris2 <- iris %>%
-mutate(Sepal.Length.6 = ifelse(Sepal.Length >=6, "GE 6", "LT 6")) %>%
-mutate(Sepal.Length.rela = Sepal.Length/mean(Sepal.Length))
-````
+  mutate(Sepal.Length.6 = ifelse(Sepal.Length >= 6, "GE 6", "LT 6")) %>%
+  mutate(Sepal.Length.rela = Sepal.Length / mean(Sepal.Length))
+```
 
-````
-
-Sumarizar `group_by()` `summarize()`:
+Sumarizar `group_by()`, `summarize()`:
 
 ```r
-iris %>% group_by(Species) %>%
-summarize(mean.Sepal.Length = mean(Sepal.Length),
-sd.Sepal.Length = sd(Sepal.Length),
-rows = n())
-````
-
-````
+iris %>%
+  group_by(Species) %>%
+  summarize(mean.Sepal.Length = mean(Sepal.Length),
+            sd.Sepal.Length = sd(Sepal.Length),
+            rows = n())
+```
 
 Ordenar datos `arrange()`:
 
 ```r
 order1 <- iris %>%
-arrange(Sepal.Length)
+  arrange(Sepal.Length)
 
 order2 <- iris %>%
-arrange(desc(Sepal.Length))
-````
+  arrange(desc(Sepal.Length))
 
-````r
-iris %>% group_by(Species) %>%
-summarize(mean.Sepal.Length = mean(Sepal.Length),
-sd.Sepal.Length = sd(Sepal.Length),
-rows = n())
-``` %>%
-arrange(mean.Sepal.Length)
-````
+# Combinación
+iris %>%
+  group_by(Species) %>%
+  summarize(mean.Sepal.Length = mean(Sepal.Length),
+            sd.Sepal.Length = sd(Sepal.Length),
+            rows = n()) %>%
+  arrange(mean.Sepal.Length)
+```
 
 Uniones de datos:
 
-`Inner_join()`:
+`inner_join()`:
 
 ```r
 iris2 <- iris %>%
-mutate(id = row_number())
+  mutate(id = row_number())
 
 iris3 <- iris2 %>%
-filter(Species=="setosa") %>%
-mutate(Sepal.Length.6 = ifelse(Sepal.Length >=6, "GE 6", "LT 6")) %>%
-mutate(Sepal.Length.rela = Sepal.Length/mean(Sepal.Length)) %>%
-select(id,Sepal.Length.6,Sepal.Length.rela)
+  filter(Species == "setosa") %>%
+  mutate(Sepal.Length.6 = ifelse(Sepal.Length >= 6, "GE 6", "LT 6")) %>%
+  mutate(Sepal.Length.rela = Sepal.Length / mean(Sepal.Length)) %>%
+  select(id, Sepal.Length.6, Sepal.Length.rela)
 
-iris4 <- iris2 %>% inner_join(iris3, by=c("id"))
+iris4 <- iris2 %>%
+  inner_join(iris3, by = c("id"))
 ```
 
-````
-
-`Left_join()`:
+`left_join()`:
 
 ```r
-iris5 <- iris2 %>% left_join(iris3, by=c("id"))
-````
-
-````
+iris5 <- iris2 %>%
+  left_join(iris3, by = c("id"))
+```
 
 `anti_join()`:
 
 ```r
-iris6 <- iris2 %>% anti_join(iris3)
-````
-
+iris6 <- iris2 %>%
+  anti_join(iris3, by = c("id"))
 ```
 
-Aquí tenéis una muestra de las posibilidades de dplyr y como se pueden combinar entre ellas. Creo que la sintaxis es bastante sencilla y se aprende con facilidad, si a mi no me esta costando mucho…
-```
+Aquí tenéis una muestra de las posibilidades de `dplyr` y cómo se pueden combinar entre ellas. Creo que la sintaxis es bastante sencilla y se aprende con facilidad; si a mí no me está costando mucho… Saludos.

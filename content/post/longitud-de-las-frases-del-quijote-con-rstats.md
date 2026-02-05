@@ -40,57 +40,61 @@ quijote <- quijote %>%
          inicio = grepl("EN UN LUGAR DE LA MANCHA",linea)>0)
 ```
 
-Leemos directamente un `txt` desde `Gutemberg` y prefiero transformarlo en `data frame` para usar `dplyr`. Todas las palabras las pongo en `toupper` e identifico donde empieza el `Quijote`, para evitar `prólogos` y demás. Ya tengo unos datos con los que poder trabajar:
+Leemos directamente un `.txt` desde Proyecto Gutemberg y prefiero transformarlo in `data.frame` para usar `dplyr`. Todas las palabras las pongo in `toupper()` e identifico dónde empieza el «Quijote», para evitar prólogos y demás. Ya tengo unos datos con los que poder trabajar:
 
 ```r
-#Marcamos lo que vamos a leer
+# Marcamos lo que vamos a leer
 desde <- which(quijote$inicio)
 hasta <- nrow(quijote)
 
-#Texto de trabajo
-texto <- quijote[desde:hasta,1]
+# Texto de trabajo
+texto <- quijote[desde:hasta, 1]
 
-#El texto lo transformamos en una lista separada por espacios
-texto_split = strsplit(texto, split=" ")
+# El texto lo transformamos in una lista separada por espacios
+texto_split <- strsplit(as.character(texto), split = " ")
 
-#Deshacemos esa lista y tenemos el data.frame
-texto_col = as.character(unlist(texto_split))
-texto_col = data.frame(texto_col)
-names(texto_col) = 'palabra'
+# Deshacemos esa lista y tenemos el data.frame
+texto_col <- as.character(unlist(texto_split))
+texto_col <- data.frame(texto_col)
+names(texto_col) <- 'palabra'
 ```
 
-En este caso los datos los quiero de tal forma que disponga de un `data frame` con una sola variable que sea cada `palabra` del `Quijote`. Ahora voy a medir las frases identificando donde hay `puntos` en esas `palabras`:
+In este caso los datos los quiero de tal forma que disponga de un `data.frame` con una sola variable que sea cada palabra del «Quijote». Ahora voy a medir las frases identificando dónde hay puntos in esas palabras:
 
 ```r
-#Identificamos donde tenemos puntos y un autonumérico del registro
-texto_col <- texto_col %>% filter(!is.na(palabra)) %>%
-  mutate(punto = ifelse(grepl('.',palabra,fixed=T),"FIN","NO"),
+# Identificamos dónde tenemos puntos y un autonumérico del registro
+texto_col <- texto_col %>%
+  filter(!is.na(texto_col)) %>%
+  mutate(punto = ifelse(grepl('.', texto_col, fixed = TRUE), "FIN", "NO"),
          posicion = row_number())
 ```
 
-¿Qué se me ha ocurrido? Trabajar con `autonuméricos`, tengo identificados los `puntos`, ahora tengo que fijar una `posicion` `inicial` y una `posicion` `final`:
+¿Qué se me ha ocurrido? Trabajar con autonuméricos; tengo identificados los puntos, ahora tengo que fijar una posición inicial y una posición final:
 
 ```r
-#Si unimos las posiciones con puntos con lag podemos calcular la longitud
-pos_puntos1 <- filter(texto_col,punto=="FIN") %>%
-  select(posicion) %>% mutate(id = row_number())
+# Si unimos las posiciones con puntos con lag podemos calcular la longitud
+pos_puntos1 <- filter(texto_col, punto == "FIN") %>%
+  select(posicion) %>%
+  mutate(id = row_number())
 
-pos_puntos2 <- pos_puntos1 %>% mutate(id = id + 1) %>%
+pos_puntos2 <- pos_puntos1 %>%
+  mutate(id = id + 1) %>%
   rename(posicion_final = posicion)
 
-pos_puntos <- left_join(pos_puntos1,pos_puntos2) %>%
+pos_puntos <- left_join(pos_puntos1, pos_puntos2, by = "id") %>%
   mutate(longitud = ifelse(is.na(posicion_final), posicion, posicion - posicion_final))
 ```
 
-Como no soy un tipo muy brillante opto por una opción sencilla de `cruz`ar una `tabla` consigo misma, como me ponen los productos `cartesianos` “con talento”. La idea es `select`ar solo los `registros` que marcan el final de la frase, un `autonumérico` me marca cual es cada frase, ahora si hago una `left join` por el `id` de la frase y el `id` + 1 de la frase creo una especie de `lag`. La `longitud` de la frase será donde está el `punto` menos donde estaba el final de la anterior frase. Creo que me he explicado de pena, pero si veis el `data frame final` lo entenderéis mejor. Ahora ya pinto un `histograma`:
+Como no soy un tipo muy brillante, opto por una opción sencilla de cruzar una tabla consigo misma, como me ponen los productos cartesianos «con talento». La idea es seleccionar solo los registros que marcan el final de la frase; un autonumérico me marca cuál es cada frase. Ahora, si hago una `left_join()` por el `id` de la frase y el `id + 1` de la frase, creo una especie de `lag`. La longitud de la frase será dónde está el punto menos dónde estaba el final de la anterior frase. Creo que me he explicado de pena, pero si veis el `data.frame` final lo entenderéis mejor. Ahora ya pinto un histograma:
 
 ```r
-#GRaficamos la longitud
+# Graficamos la longitud
 plot_ly(data = pos_puntos, x = ~longitud, type = "histogram") %>%
   layout(title = "Longitud de las frases del Quijote",
-         xaxis = list(title = "Longitud"), yaxis = list(title = ""))
+         xaxis = list(title = "Longitud"),
+         yaxis = list(title = ""))
 ```
 
-Y queda una `gamma` perfecta, yo diría que hasta bonita. Ahora quedaría identificar los parámetros de esta `gamma` y compararlos con otros libros, e incluso comparar lenguas. Pero esas tareas se las dejo a los “buenos”.
+Y queda una Gamma perfecta; yo diría que hasta bonita. Ahora quedaría identificar los parámetros de esta Gamma y compararlos con otros libros e incluso comparar lenguas. Pero esas tareas se las dejo a los «buenos». Saludos.
 
 ![frases_quijote_rstats.png](/images/2019/02/frases_quijote_rstats.png)

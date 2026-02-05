@@ -18,6 +18,6 @@ title: Truco SAS. Identificar el proceso en Unix con SYSJOBID
 url: /blog/truco-sas-identificar-el-proceso-en-unix-con-sysjobid/
 ---
 
-Un truco SAS muy rápido y que a algún compañero le ha venido muy bien y por eso lo pongo. La macro variable _& sysjobid_ nos idenfica el job de Unix que está corriendo en ese momento. Es una macro del sistema y se haya en el diccionario de macros de SAS. Tenemos una vista en SASHELP VMACRO de cuales son estas macros AUTOMATIC. Curiosead SASHELP, tiene algunas vistas muy interesantes, creo que ya he comentado algo sonbre ellas.
+Un truco SAS muy rápido y que a algún compañero le ha venido muy bien y por eso lo pongo. La macrovariable `&SYSJOBID` nos identifica el *job* de `UNIX` que está corriendo en ese momento. Es una macro del sistema y se halla en el diccionario de macros de SAS. Tenemos una vista en `SASHELP.VMACRO` de cuáles son estas macros `AUTOMATIC`. Curiosead `SASHELP`, tiene algunas vistas muy interesantes; creo que ya he comentado algo sobre ellas.
 
-Vuelvo con _& sysjobid._ sólo con poner PUT &SYSJODID. podremos ver en el log el ID del proceso Unix que se está ejecutando. De este modo podremos identificarlo para hacerle un kill -9 en la máquina Unix para parar un proceso colgado. También nos permite identificar que proceso no vamos a matar. Este truco que parece una tontería nos ha librado a muchos de muchos disgustos.
+Vuelvo con `&SYSJOBID.`: solo con poner `PUT &SYSJOBID.` podremos ver en el *log* el ID del proceso `UNIX` que se está ejecutando. De este modo podremos identificarlo para hacerle un `kill -9` en la máquina `UNIX` para parar un proceso colgado. También nos permite identificar qué proceso no vamos a matar. Este truco, que parece una tontería, nos ha librado a muchos de muchos disgustos.

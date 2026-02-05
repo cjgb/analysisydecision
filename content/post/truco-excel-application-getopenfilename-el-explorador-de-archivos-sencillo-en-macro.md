@@ -21,18 +21,18 @@ title: Truco Excel. Application GetOpenFilename el explorador de archivos sencil
 url: /blog/truco-excel-application-getopenfilename-el-explorador-de-archivos-sencillo-en-macro/
 ---
 
-Application.GetOpenFilename y como parámetros el texto y el tipo de archivo. Un truco excel para meter en una macro el explorador de archivos más sencillo. Por ejemplo para obtener los archivos de Word de un directorio podremos hacer:
+`Application.GetOpenFilename` y como parámetros el texto y el tipo de archivo. Un truco de `Excel` para meter en una macro el explorador de archivos más sencillo. Por ejemplo, para obtener los archivos de `Word` de un directorio podremos hacer:
 
-```visual-basic
+```vba
 Sub obtiene_documento()
+    Dim documento As Variant
 
-Dim documento As String
+    documento = Application.GetOpenFilename("Archivos Word (*.doc*), *.doc*")
 
-documento = Application.GetOpenFilename("Archivos Word (*.doc*), *.doc*")
-
-Cells(1, 1) = documento
-
+    If documento <> False Then
+        Cells(1, 1).Value = documento
+    End If
 End Sub
 ```
 
-Si ejecutamos esta macro se abrirá un explorador de windows y podremos seleccionar archivos del tipo *.doc*. Nuestra selección la escribimos en la celda (1,1). Para múltiples selecciones… Otro día haremos un «importador masivo» de datos en excel. El más sencillo explorador de windows en una macro de Excel. Saludos.
+Si ejecutamos esta macro, se abrirá un explorador de `Windows` y podremos seleccionar archivos del tipo `.doc`. Nuestra selección la escribimos en la celda `(1,1)`. Para múltiples selecciones… Otro día haremos un "importador masivo" de datos en `Excel`. El más sencillo explorador de `Windows` en una macro de `Excel`. Saludos.

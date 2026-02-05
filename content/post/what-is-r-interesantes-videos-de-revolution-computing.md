@@ -15,12 +15,12 @@ related:
 tags:
   - revolution computing
   - what is r
-title: What is R? Interesantes videos de REvolution Computing
+title: What is R? Interesantes vídeos de REvolution Computing
 url: /blog/what-is-r-interesantes-videos-de-revolution-computing/
 ---
 
-Serie de 4 videos de REvolution que aconsejo ver:
+Serie de cuatro vídeos de `REvolution Computing` que aconsejo ver:
 
 ![Imagen de previsualización de YouTube](https://img.youtube.com/vi/M2u7kbcXI_k/0.jpg)
 
-La verdad es que no estoy siguiendo mucho a REvolution Computing. Si os soy sincero me pone mas WPS y el bridge to R.
+La verdad es que no estoy siguiendo mucho a `REvolution Computing`. Si os soy sincero, me pone más `WPS` y el `bridge to R`. Saludos.

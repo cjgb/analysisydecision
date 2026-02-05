@@ -68,7 +68,7 @@ format code  extension  resolution note
 18           mp4        640x360    360p  698k , avc1.42001E, 25fps, mp4a.40.2@ 96k (44100Hz), 13.38MiB (best)
 ```
 
-Tenemos todos los formatos disponibles y tienen un `code` , éste será necesario cuando le indiquemos a `youtube-dl` lo que deseamos descargar. Observad que también tenemos los archivos de audio. En este caso vamos a descargarnos el `136` video en formato `mp4`, si posteriormente queremos trabajar con `mplayer` podemos acostumbrarnos a bajarnos siempre el `mp4`. Entonces hacemos:
+Tenemos todos los formatos disponibles y tienen un `code` , éste será necesario cuando le indiquemos a `youtube-dl` lo que deseamos descargar. Observad que también tenemos los archivos de audio. En este caso vamos a descargarnos el 136 video en formato `mp4`, si posteriormente queremos trabajar con `mplayer` podemos acostumbrarnos a bajarnos siempre el `mp4`. Entonces hacemos:
 
 ```bash
 # Descargar
@@ -104,4 +104,4 @@ Tenemos un vídeo de 2 minutos 40 segundos resumido en 67 imágenes `jpg` como e
 
 ![Screenshot from video](/images/2021/01/00000063.jpg)
 
-En `framestep =` indicamos el número de frames hasta obtener la imagen, si ponemos un número bajo almacenaremos un gran número de imágenes, es necesario tenerlo en cuenta si sintetizamos un video de gran tamaño. Para no alargar más la entrada en otro momento veremos `ffmpeg` como opción más apropiada para sintetizar vídeos en imágenes.
+En `framestep` indicamos el número de _frames_ hasta obtener la imagen, si ponemos un número bajo almacenaremos un gran número de imágenes, es necesario tenerlo en cuenta si sintetizamos un video de gran tamaño. Para no alargar más la entrada en otro momento veremos `ffmpeg` como opción más apropiada para sintetizar vídeos en imágenes.

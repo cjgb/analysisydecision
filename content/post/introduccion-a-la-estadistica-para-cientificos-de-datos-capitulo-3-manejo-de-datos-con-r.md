@@ -22,17 +22,13 @@ url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-3-ma
 
 ## Universo tidyverse
 
-En el capítulo anterior se iniciaba el método dialéctico a utilizar en el resto del ensayo fundamentado en la idea de **transformar datos en información mediante análisis estadístico con el software R**. Los datos a explotar tienen una estructura tabular que llamamos data frame. Esta estructura contiene observaciones y variables sobre las que se fundamenta la labor del científico de datos ya que son ellas las que plantean y resuelven problemas. Para trabajar con data frames en R disponemos de un entorno conocido como `tidyverse` que engloba un gran número de librerías de R.
+En el capítulo anterior se iniciaba el método dialéctico a utilizar in el resto del ensayo, fundamentado in la idea de **transformar datos in información mediante análisis estadístico con el *software* `R`**. Los datos a explotar tienen una estructura tabular que llamamos `data.frame`. Esta estructura contiene observaciones y variables sobre las que se fundamenta la labor del científico de datos, ya que son ellas las que plantean y resuelven problemas. Para trabajar con `data.frames` in `R`, disponemos de un entorno conocido como `tidyverse` que engloba un gran número de librerías.
 
 ![](https://pbs.twimg.com/media/D-X2bddXsAAWLE7.jpg)
 
-______________________________________________________________________
+> **Nota**: In la instalación de paquetes, `R` emplea `install.packages("librería")` y solo será necesario ejecutarlo una vez. ([Referencia](https://r-coder.com/install-r-packages))
 
-[**Nota** : En la instalación de paquetes R emplea `install.packages("librería")` y sólo será necesario ejecutarlo una vez.](https://r-coder.com/install-r-packages)
-
-______________________________________________________________________
-
-Para iniciarse en el manejo de datos se destaca el uso de la librería `dplyr` que se encuentra dentro de este **universo tidyverse** y será sobre la que verse este capítulo. Como norma general cuando se trabaje con data frames y `dplyr` manipulando datos se realizarán acciones separadas con la expresión clave `%>%` ‘pipe’ de modo:
+Para iniciarse in el manejo de datos, se destaca el uso de la librería `dplyr`, que se encuentra dentro de este **universo `tidyverse`** y será sobre la que verse este capítulo. Como norma general, cuando se trabaje con `data.frames` y `dplyr` manipulando datos, se realizarán acciones separadas con la expresión clave `%>%` (*pipe*) de este modo:
 
 ```r
 df_final <- df_inicial %>% ACCION1 %>% ACCION2 %>% ... %>% ACCION_N
@@ -40,16 +36,16 @@ df_final <- df_inicial %>% ACCION1 %>% ACCION2 %>% ... %>% ACCION_N
 
 Cada acción tiene su correspondiente verbo:
 
-- Selección de columnas -> `select`
-- Selección de registros -> `filter`
-- Creación/modificación de variables -> `mutate`
-- Sumarizar por variables valores -> `group_by %>% summarize`
-- Ordenar dataframes -> `arrange`
+- Selección de columnas: `select()`.
+- Selección de registros: `filter()`.
+- Creación/modificación de variables: `mutate()`.
+- Sumarizar valores por variables: `group_by() %>% summarize()`.
+- Ordenar *dataframes*: `arrange()`.
 
-Estos 5 elementos deben servir al científico de datos para realizar el 80% del manejo de datos habitual con R. Por ese motivo se va a ilustrar su uso mediante ejemplos:
+Estos 5 elementos deben servir al científico de datos para realizar el 80% del manejo de datos habitual con `R`. Por ese motivo, se va a ilustrar su uso mediante ejemplos:
 
 ```r
-# Recordar que sólo es necesario instalar los paquetes una vez
+# Recordar que solo es necesario instalar los paquetes una vez
 # install.packages('tidyverse')
 library(tidyverse)
 
@@ -58,87 +54,84 @@ data(iris)
 head(iris, 5)
 ```
 
-`library(tidyverse)` permite disponer de las librerías del universo `tidyverse`, los ejemplos se van a realziar con el conjunto de datos `iris` al que se accede con `data`, `head` nos permite ver los 5 primeros registros del data frame.
+`library(tidyverse)` permite disponer de las librerías del universo `tidyverse`. Los ejemplos se van a realizar con el conjunto de datos `iris`, al que se accede con `data()`; `head()` nos permite ver los 5 primeros registros del `data.frame`.
 
 ## Selección de registros
 
-Al seleccionar registros se está seleccionando una muestra de observaciones en base a un criterio. El verbo de `dplyr` a emplear será `filter`.
+Al seleccionar registros, se está seleccionando una muestra de observaciones in base a un criterio. El verbo de `dplyr` a emplear será `filter()`.
 
 ```r
 setosa <- iris %>%
-  filter(Species=="setosa")
+  filter(Species == "setosa")
 head(setosa, 5)
 ```
 
-Puede ser útil emplear una lista para una condición. En ese caso se ha de realizar.
+Puede ser útil emplear una lista para una condición. In ese caso, se ha de realizar:
 
 ```r
-species_to_select = c("setosa","virginica")
+species_to_select <- c("setosa", "virginica")
 species <- iris %>%
   filter(Species %in% species_to_select)
 
 table(species$Species)
 ```
 
-La función `table` realizar tablas de frecuencia (cuenta registros), en este caso se tienen los tres posibles valores que toma la variable `Species` con el número de registros que tiene cada elemento de la variable, el número de registros que tiene cada nivel del factor, hay un factor que no tiene registros, no desaparece el nivel, simplemente aparece con 0 observaciones.
+La función `table()` realiza tablas de frecuencia (cuenta registros); in este caso, se tienen los tres posibles valores que toma la variable `Species` con el número de registros que tiene cada elemento de la variable (el número de registros que tiene cada nivel del factor). Si un factor no tiene registros, no desaparece el nivel: simplemente aparece con 0 observaciones.
 
-______________________________________________________________________
-
-**Nota** : Cuando se trabajen con datos es recomendable emplear sumarizaciones, visualizaciones o salidas de tablas para contrastar que todo el trabajo que se está realizando sea correcto. Esas acciones evitarán posteriores errores.
-
-______________________________________________________________________
+> **Nota**: Cuando se trabaje con datos, es recomendable emplear sumarizaciones, visualizaciones o salidas de tablas para contrastar que todo el trabajo que se está realizando sea correcto. Esas acciones evitarán posteriores errores.
 
 ## Selección de columnas
 
-Para esta tarea se emplea el verbo `select` que aparece en otros paquetes de R, cuando una función se emplea por más de un paquete se recomienda emplear la estructura `librería::función` en este caso `dplyr::select` y de ese modo se indica a R que la función `select` es específicamente de la librería `dplyr`. Hecho el apunte se presentan los ejemplos.
+Para esta tarea se emplea el verbo `select()`, que aparece in otros paquetes de `R`. Cuando una función se emplea por más de un paquete, se recomienda emplear la estructura `librería::función`, in este caso `dplyr::select()`, y de ese modo se indica a `R` que la función `select()` es específicamente de la librería `dplyr`. Hecho el apunte, se presentan los ejemplos:
 
 ```r
 # Librería para mejorar las visualizaciones de tablas
 library(DT)
 
 two.columns <- iris %>%
-  select(Sepal.Length,Sepal.Width)
+  select(Sepal.Length, Sepal.Width)
 datatable(two.columns)
 ```
 
-En el ejemplo anterior se introduce el uso de la librería `DT` para mejorar la visualización del data frame resultante de la selección. Del mismo modo que ocurría con las observaciones es posible realizar una selección mediante lista de variables:
+In el ejemplo anterior se introduce el uso de la librería `DT` para mejorar la visualización del `data.frame` resultante de la selección. Del mismo modo que ocurría con las observaciones, es posible realizar una selección mediante una lista de variables:
 
 ```r
-columns = c('Sepal.Length','Sepal.Width')
+columns <- c('Sepal.Length', 'Sepal.Width')
 
 two.columns <- iris %>%
-  dplyr::select(columns)
+  dplyr::select(all_of(columns))
 ```
 
 ## Creación o actualización de variables
 
-El verbo para generar nuevas variables es `mutate`.
+El verbo para generar nuevas variables es `mutate()`.
 
 ```r
 iris2 <- iris %>%
-  mutate(Sepal.Length.6 = ifelse(Sepal.Length >=6, 'GE 6', 'LT 6')) %>%
-  mutate(Sepal.Length.rela = Sepal.Length/mean(Sepal.Length))
+  mutate(Sepal.Length.6 = ifelse(Sepal.Length >= 6, 'GE 6', 'LT 6')) %>%
+  mutate(Sepal.Length.rela = Sepal.Length / mean(Sepal.Length))
 ```
 
-Se crea una variable cualitativa mediante una condición con la función `ifelse`, también se ilustra el ejemplo con la creación de una variable numérica que es la operación matemática de dividir `Sepal.Length` por su propia media.
+Se crea una variable cualitativa mediante una condición con la función `ifelse()`; también se ilustra el ejemplo con la creación de una variable numérica que es la operación matemática de dividir `Sepal.Length` por su propia media.
 
-Muy habitual en el trabajo diario de un científico de datos a la hora de crear variables es la necesidad de anidar condiciones, para ello se puede emplear la función [`case_when`](https://dplyr.tidyverse.org/reference/case_when.html). Un ejemplo de uso es.
+Muy habitual in el trabajo diario de un científico de datos a la hora de crear variables es la necesidad de anidar condiciones; para ello se puede emplear la función [`case_when()`](https://dplyr.tidyverse.org/reference/case_when.html). Un ejemplo de uso es:
 
 ```r
 iris2 <- iris %>%
   mutate(Sepal.Length.agrupado = case_when(
     Sepal.Length <= 5 ~ '1. Menor de 5',
     Sepal.Length <= 6 ~ '2. Entre 5 y 6',
-    TRUE ~ '3. Mayor de 6'))
+    TRUE ~ '3. Mayor de 6'
+  ))
 
 table(iris2$Sepal.Length.agrupado)
 ```
 
-Las condiciones son excluyentes en función del orden y se recomienda especificar la condición final «y si no» mediante `TRUE`, facilita el control de errores. A lo largo de todo el ensayo será una función que aparezca de forma recurrente.
+Las condiciones son excluyentes in función del orden y se recomienda especificar la condición final «y si no» mediante `TRUE`: facilita el control de errores. A lo largo de todo el ensayo será una función que aparezca de forma recurrente.
 
 ## Ordenar datos
 
-Las ordenaciones requieren siempre de `arrange`. Ordenación ascendente:
+Las ordenaciones requieren siempre de `arrange()`. Ordenación ascendente:
 
 ```r
 order1 <- iris %>%
@@ -152,35 +145,35 @@ order2 <- iris %>%
   arrange(desc(Sepal.Length))
 ```
 
-Separando por `,` es posible poner más de una variable en la ordenación.
+Separando por coma es posible poner más de una variable in la ordenación.
 
 ## Sumarizar valores
 
-En este caso se emplea una combinación de acciones, primero `group_by` indica el campo por el que se desea agrupar, el campo a sumarizar. Definido el campo, mediante `summarize` se indica la operación matemática y la variable sobre la que se realiza.
+In este caso, se emplea una combinación de acciones: primero `group_by()` indica el campo por el que se desea agrupar (el campo a sumarizar). Definido el campo, mediante `summarize()` se indica la operación matemática y la variable sobre la que se realiza.
 
 ```r
-iris %>% group_by(Species) %>%
+iris %>%
+  group_by(Species) %>%
   summarize(mean.Sepal.Length = mean(Sepal.Length),
             sd.Sepal.Length = sd(Sepal.Length),
             rows = n())
 ```
 
-Las posibles agregaciones a realizar con `summarize` son amplias, se disponen de funciones de agrupación, rango o dispersión.
+Las posibles agregaciones a realizar con `summarize()` son amplias: se disponen de funciones de agrupación, rango o dispersión.
 
 ## Combinación de acciones
 
-Se realizan combinaciones de acciones con `dplyr` por lo que es posible que, separando por el pipe `%>%`, podamos combinar distintas acciones.
+Se realizan combinaciones de acciones con `dplyr`, por lo que es posible que, separando por el *pipe* `%>%`, podamos combinar distintas acciones:
 
 ```r
-setosa <- iris %>%
-  filter(Species=="setosa")
-head(setosa, 5)
+setosa_v2 <- iris %>%
+  filter(Species == "setosa") %>%
+  select(Sepal.Length, Sepal.Width) %>%
+  arrange(Sepal.Length)
+
+head(setosa_v2, 5)
 ```
 
-Siempre se respeta el orden de ejecución por lo que variables creadas o acciones utilizadas en un paso anterior pueden ser empleadas en un paso posterior.
+Siempre se respeta el orden de ejecución, por lo que variables creadas o acciones utilizadas in un paso anterior pueden ser empleadas in un paso posterior.
 
-______________________________________________________________________
-
-[**Nota** : desde la versión 4.1.0 es posible emplear como pipe `|>`. El autor de este libro tiene configurado su equipo con el anterior y se siente más cómodo con él, pero cualquiera de las opciones es válida.](https://www.r-bloggers.com/2021/05/the-new-r-pipe/)
-
-______________________________________________________________________
+> **Nota**: Desde la versión 4.1.0 de `R`, es posible emplear como *pipe* `|>`. El autor de este libro tiene configurado su equipo con el anterior y se siente más cómodo con él, pero cualquiera de las opciones es válida. ([Referencia](https://www.r-bloggers.com/2021/05/the-new-r-pipe/))

@@ -24,77 +24,64 @@ url: /blog/el-parametro-gamma-el-coste-la-complejidad-de-un-svm/
 
 ![letra_o_svm_r](/images/2016/10/Letra_O_SVM_R.png)
 
-Cuando clasificamos `datos` con `SVM` es necesario fijar un margen de separación entre observaciones, si no fijamos este `margen` nuestro `modelo` sería tan bueno tan bueno que sólo serviría para esos `datos`, estaría sobrestimando y eso es malo. El `coste C` y el `gamma` son los dos `parámetros` con los que contamos en los `SVM`. El `parámetro C` es el `peso` que le damos a cada observación a la `hora` de `clasificar` un mayor `coste` implicaría un mayor `peso` de una `observación` y el `SVM` sería más estricto ([este `link` aclara mejor las cosas](%60https://www.hackerearth.com/blog/developers/simple-tutorial-svm-parameter-tuning-python-r/%60)). Si tuvieramos un `modelo` que `clasificara` observaciones en el `plano` como una `letra O` podemos ver como se modifica la `estimación` en esta `secuencia` en la que se ha modificado el `parámetro C`:
+Cuando clasificamos datos con **SVM** (*Support Vector Machines*), es necesario fijar un margen de separación entre observaciones. Si no fijamos este margen adecuadamente, nuestro modelo podría estar sobrestimando (*overfitting*), lo que significa que funcionaría muy bien con los datos de entrenamiento pero fallaría con datos nuevos. 
 
-![r_svm_2](/images/2016/10/R_SVM_1.png)
+El **coste `C`** y el **parámetro `gamma`** son los dos elementos fundamentales con los que contamos en los SVM. El parámetro `C` es el peso que le damos a cada observación a la hora de clasificar: un mayor coste implicaría un mayor peso de cada observación individual y el SVM sería más estricto. Si tuviéramos un modelo que clasificara observaciones en el plano formando una letra "O", podemos ver cómo se modifica la estimación al variar el coste:
 
+![r_svm_1](/images/2016/10/R_SVM_1.png)
 ![r_svm_2](/images/2016/10/R_SVM_2.png)
-
 ![r_svm_3](/images/2016/10/R_SVM_3.png)
 
-Se puede ver como la `predicción` es más conservadora cuando ponemos `costes` más bajos, pero no es el único `parámetro` que tenemos para `suavizar` la `sobrestimación` también tenemos el `parámetro gamma` que le da otra `vuelta de tuerca` a la relación entre las `observaciones` ya no es una relación entre `puntos` del `espacio`, ahora esta relación es una `función kernel`, lo que nos facilita encontrar los `subespacios` que puedan diferenciar los `puntos` en el `espacio` y también nos permite añadir mayor `complejidad` a la `hora` de separar `observaciones`. Veamos el ejemplo anterior pero modificando el `parámetro Gamma` y dejando fijo el `C`:
+Se puede ver cómo la predicción es más conservadora cuando ponemos costes más bajos. Pero no es el único parámetro que tenemos para suavizar el modelo; también tenemos el parámetro `gamma`. Este parámetro define la influencia de un solo ejemplo de entrenamiento: valores bajos significan "lejos" y valores altos significan "cerca". Con una **función kernel radial**, `gamma` determina la complejidad del límite de decisión.
 
-![r_svm_4](/images/2016/10/R_SVM_4.png) ![r_svm_5](/images/2016/10/R_SVM_5.png) ![r_svm_6](/images/2016/10/R_SVM_6.png)
+Veamos el ejemplo anterior modificando el parámetro `gamma` y dejando fijo el coste `C`:
 
-Un menor `gamma` implica una mayor `distancia` entre las `observaciones` que separan los `subespacios` del `SVM` luego la `estimación` es más conservadora, sin embargo un mayor `parámetro` «fastidia» a la `función kernel`. [Si vemos la `definición` de esta `función kernel` se entiende mejor](%60https://en.wikipedia.org/wiki/Radial_basis_function%60):
+![r_svm_4](/images/2016/10/R_SVM_4.png)
+![r_svm_5](/images/2016/10/R_SVM_5.png)
+![r_svm_6](/images/2016/10/R_SVM_6.png)
 
-![](https://wikimedia.org/api/rest_v1/media/math/render/svg/9b129b86be238293edd3331fac8937f0311c69a5)
-El `ejercicio teórico` es muy `radical`, pero también observamos como a mayor `gamma` las `predicciones` están menos `suavizadas`. Tenemos estos dos `parámetros` y la pregunta sería ¿cuál es la mejor elección? Dónde está el mejor `punto` para obtener un buen resultado en este `trueque` de `sesgo-varianza`. De momento no sé deciros, pero estoy con ello.
+Un menor `gamma` implica una mayor suavidad en los subespacios del SVM, mientras que un mayor `gamma` añade complejidad y hace que el modelo se ajuste más a los puntos individuales. La función kernel habitual (RBF) se define como:
 
-Evidentemente todo este `ejercicio teórico` tan `radical` está hecho con `datos aleatorios` en R, el código empleado es:
+$$K(x, x') = \exp(-\gamma ||x - x'||^2)$$
+
+A mayor `gamma`, las predicciones están menos suavizadas. El reto está en encontrar el punto óptimo en el intercambio entre **sesgo y varianza**.
+
+Todo este ejercicio está realizado con datos aleatorios en R empleando la librería `e1071`:
 
 ```r
 library(ggplot2)
 library(e1071)
 
-#Datos iniciales
-long = 20000
-x <- runif(long,1,100)
-y <- runif(long,1,100)
-datos <- data.frame(x,y)
-#La mitad entrenamiento la mitad test
-indices <- sample(1:long,long/2)
-entrenamiento <- datos[indices,]
-test <- datos[-indices,]
+# Datos iniciales
+long <- 20000
+x <- runif(long, 1, 100)
+y <- runif(long, 1, 100)
+datos <- data.frame(x, y)
 
-#letra O
-O <- ifelse((entrenamientox-50)^2/20^2 + (entrenamientoy-50)^2/40^2 >1 , 1,0)
-O <- ifelse((entrenamientox-50)^2/30^2 + (entrenamientoy-50)^2/50^2 >1 , 0,O)
+# Letra O en el entrenamiento
+indices <- sample(1:long, long/2)
+entrenamiento <- datos[indices, ]
+test <- datos[-indices, ]
 
-g.train <- ggplot(entrenamiento,aes(entrenamientox,entrenamientoy)) + geom_point()
-g.train + geom_point(aes(colour = O)) + labs(title=»DATOS DE ENTRENAMIENTO PARA LA LETRA O»)
+entrenamiento$O <- as.factor(ifelse((entrenamiento$x-50)^2/20^2 + (entrenamiento$y-50)^2/40^2 > 1, 1, 0))
+entrenamiento$O <- as.factor(ifelse((entrenamiento$x-50)^2/30^2 + (entrenamiento$y-50)^2/50^2 > 1, 0, as.numeric(as.character(entrenamiento$O))))
 
-#Gráfico de test
-g.test <- ggplot(test,aes(x, y)) + geom_point()
+# Gráfico de entrenamiento
+ggplot(entrenamiento, aes(x, y, colour = O)) + 
+  geom_point() + 
+  labs(title = "DATOS DE ENTRENAMIENTO PARA LA LETRA O")
 
-svm.O=svm(O ~ x + y,entrenamiento,method=»C-classification»,
-kernel=»radial»,cost=10,gamma=1)
-g.test + geom_point(aes(colour = predict(svm.O,test))) +
-labs(title=»SVM LETRA O Coste 10 Gamma 1″)
+# Modelos SVM con diferentes parámetros
+# Ejemplo con Coste 10 y Gamma 1
+svm.O <- svm(O ~ x + y, data = entrenamiento, method = "C-classification", 
+             kernel = "radial", cost = 10, gamma = 1)
 
-svm.O=svm(O ~ x + y,entrenamiento,method=»C-classification»,
-kernel=»radial»,cost=100,gamma=1)
-g.test + geom_point(aes(colour = predict(svm.O,test))) +
-labs(title=»SVM LETRA O Coste 100 Gamma 1″)
+# Predicción sobre el test
+test$pred <- predict(svm.O, test)
 
-svm.O=svm(O ~ x + y,entrenamiento,method=»C-classification»,
-kernel=»radial»,cost=1000,gamma=1)
-g.test + geom_point(aes(colour = predict(svm.O,test))) +
-labs(title=»SVM LETRA O Coste 1000 Gamma 1″)
-
-##########################################################################
-svm.O=svm(O ~ x + y,entrenamiento,method=»C-classification»,
-kernel=»radial»,cost=1,gamma=1)
-g.test + geom_point(aes(colour = predict(svm.O,test))) +
-labs(title=»SVM LETRA O Coste 1 Gamma 1″)
-
-svm.O=svm(O ~ x + y,entrenamiento,method=»C-classification»,
-kernel=»radial»,cost=1,gamma=10)
-g.test + geom_point(aes(colour = predict(svm.O,test))) +
-labs(title=»SVM LETRA O Coste 1 Gamma 10″)
-
-svm.O=svm(O ~ x + y,entrenamiento,method=»C-classification»,
-kernel=»radial»,cost=1,gamma=100)
-g.test + geom_point(aes(colour = predict(svm.O,test))) +
-labs(title=»SVM LETRA O Coste 1 Gamma 100″)
+ggplot(test, aes(x, y, colour = pred)) + 
+  geom_point() + 
+  labs(title = "SVM LETRA O Coste 10 Gamma 1")
 ```
+
+Espero que estos ejemplos visuales ayuden a comprender el impacto de los hiperparámetros en los modelos SVM. Saludos.

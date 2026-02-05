@@ -26,6 +26,6 @@ title: Recopilación Data Science Cheat Sheet
 url: /blog/recopilacion-data-science-cheat-sheet/
 ---
 
-No sé como me llegado esta recopilación de Cheat Sheet para el Data Science pero viendo el trabajo que realizan algunas personas aun es posible creer en la humanidad. Disfrutad del link y ya estamos todos siguiendo el git de este gran tipo:
+No sé cómo me ha llegado esta recopilación de *Cheat Sheets* para la Ciencia de Datos, pero viendo el trabajo que realizan algunas personas aún es posible creer en la humanidad. Disfrutad del enlace y ya estamos todos siguiendo el `git` de este gran tipo:
 
-[https://github.com/abhat222/Data-Science–Cheat-Sheet](https://github.com/abhat222/Data-Science--Cheat-Sheet)
+[https://github.com/abhat222/Data-Science--Cheat-Sheet](https://github.com/abhat222/Data-Science--Cheat-Sheet)

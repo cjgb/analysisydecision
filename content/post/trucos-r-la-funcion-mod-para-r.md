@@ -20,26 +20,24 @@ title: Trucos R. La función mod para R
 url: /blog/trucos-r-la-funcion-mod-para-r/
 ---
 
-Buscando algunas cosas sobre R he encontrado esta función que hice hace mucho tiempo. De hecho puedo decir que de las primeras que hice allá en 2001 (creo) cuando empecé a conocer esto de R. Por aquellos entonces aseguré que el futuro pasaba por R y 9 años después sigo diciendo lo mismo, el tiempo me dará la razón, lo que no me imaginaba que hacía falta tanto tiempo. En fin, historias del dinosaurio. Vamos con la función «histórica». Al no disponer de la función _mod_ en R la programé:
+Buscando algunas cosas sobre R, he encontrado esta función que hice hace mucho tiempo. De hecho, puedo decir que es de las primeras que hice, allá por 2001 (creo), cuando empecé a conocer esto de R. Por aquel entonces aseguré que el futuro pasaba por R y, nueve años después, sigo diciendo lo mismo; el tiempo me dará la razón; lo que no me imaginaba es que hiciera falta tanto tiempo. En fin, historias del dinosaurio.
 
-````r
+Vamos con la función "histórica". Al no disponer de la función `mod` en R, la programé:
+
 ```r
-mod=function(x,y){
+mod <- function(x, y) {
+  (abs(x / y) %% 1) * y * sign(x)
+}
+```
 
-(abs(x/y)%%1)*y*sign(x)}
-````
+Función sencilla, pero que tiene un aspecto interesante: el `%%`. Probad lo siguiente:
 
-Función sencilla pero que tiene un aspecto interesante el %%. Probad lo siguiente:
-
-````r
 ```r
-(65/3)%%1
+(65 / 3) %% 1
+# [1] 0.6666667
 
-[1] 0.6666667
+-(65 / 3) %% 1
+# [1] 0.3333333
+```
 
--(65/3)%%1
-
-[1] 0.3333333
-````
-
-Al aparecer la función no entendí porque hacía _abs_ y después _sign_. Pero veo que es debido a las peculiadirades de _%%_. Me parecía curioso. Saludos.
+Al aparecer la función no entendí por qué hacía `abs` y después `sign`. Pero veo que es debido a las peculiaridades de `%%`. Me parecía curioso. Saludos.

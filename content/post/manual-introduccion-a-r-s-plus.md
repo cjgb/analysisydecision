@@ -20,8 +20,8 @@ url: /blog/manual-introduccion-a-r-s-plus/
 
 En las próximas fechas iré colgando un manual introductorio de R. Con él quiero dar a conocer una potente y excepcional herramienta para la estadística cuya difusión es libre.
 
-En este pequeño curso o manual de R iré contando desde la instalación como la familiarización con el entorno de la herramienta, también realizaré ejemplos de regresión lineal, análisis de agrupamiento, muestreo y remuestreo, técnicas de análisis de la varianza,… En función del interés que despierten los distintos mensajes que exponga variaré el contenido.
+En este pequeño curso o manual de R, iré contando desde la instalación hasta la familiarización con el entorno de la herramienta; también realizaré ejemplos de regresión lineal, análisis de agrupamiento, muestreo y remuestreo, técnicas de análisis de la varianza… En función del interés que despierten los distintos mensajes que exponga, variaré el contenido.
 
-Si deseáis descargar R lo podéis hacer en [http://cran.r-project.org/bin/windows/](http://cran.r-project.org/bin/windows/)
+Si deseáis descargar R, lo podéis hacer en [http://cran.r-project.org/bin/windows/](http://cran.r-project.org/bin/windows/).
 
-¡En breve nos pondremos a trabajar con una de las mejores herramientas para la estadística!
+¡En breve nos pondremos a trabajar con una de las mejores herramientas para la estadística! Saludos.

@@ -18,10 +18,10 @@ title: Truco Python. Largo de una variable numérica
 url: /blog/truco-python-largo-de-una-variable-numerica/
 ---
 
-Hoy he tenido que determinar la longitud de una variable numérica de un data frame en python y tras pegarme unos minutos con len he encontrado la fórmula con str.len() el ejemplo es:
+Hoy he tenido que determinar la longitud de una variable numérica de un *data frame* en `Python` y, tras pegarme unos minutos con `len()`, he encontrado la fórmula con `str.len()`. El ejemplo es:
 
 ```python
 df['largo_numero'] = df['variable_numerica'].astype(str).str.len()
 ```
 
-Me ha parecido interesante traerlo.
+Previamente transformamos a `str` mediante `astype(str)` y posteriormente aplicamos la función `len`. Me ha parecido interesante traerlo. Saludos.

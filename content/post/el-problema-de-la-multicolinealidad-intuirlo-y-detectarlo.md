@@ -19,31 +19,31 @@ title: El problema de la multicolinealidad, intuirlo y detectarlo
 url: /blog/el-problema-de-la-multicolinealidad-intuirlo-y-detectarlo/
 ---
 
-El **modelo lineal** se puede escribir de forma matricial como $Y = X \\cdot \\text{Beta} + \\text{Error}$. Donde `Y` es el vector con nuestra variable dependiente, `X` la matriz con las variables regresoras, `Beta` el vector de parámetros y el `error` esa parte aleatoria que tiene que tener todo modelo. La matriz con nuestras variables regresoras `X` ha de tener rango completo es decir, todas sus columnas tienen que ser linealmente independientes. Eso nos garantiza que a la hora de estimar por mínimos cuadrados ordinarios $X'X$ es invertible. Si no es invertible la estimación por mínimos cuadrados ordinarios “se vuelve inestable” ya que $X'X=0$ y $1/X'X$ será muy complicado de calcular ya que los `Beta` son $\\text{inversa}(X'X) \\cdot X'Y$; por ello los resultados que arroja el modelo tienen una alta variabilidad. Cuando esto nos pasa tenemos colinealidad.
+El **modelo lineal** se puede escribir de forma matricial como $Y = X \cdot \text{Beta} + \text{Error}$. Donde $Y$ es el vector con nuestra variable dependiente, $X$ la matriz con las variables regresoras, $\text{Beta}$ el vector de parámetros y el «error» esa parte aleatoria que tiene que tener todo modelo. La matriz con nuestras variables regresoras $X$ ha de tener rango completo; es decir, todas sus columnas tienen que ser linealmente independientes. Eso nos garantiza que, a la hora de estimar por mínimos cuadrados ordinarios, $X'X$ es invertible. Si no es invertible, la estimación por mínimos cuadrados ordinarios «se vuelve inestable» ya que $X'X = 0$ y $1/X'X$ será muy complicado de calcular, ya que los $\text{Beta}$ son $\text{inversa}(X'X) \cdot X'Y$; por ello, los resultados que arroja el modelo tienen una alta variabilidad. Cuando esto nos pasa, tenemos colinealidad.
 
-Hay varias formas de intuir si hay relación lineal entre nuestras variables independientes. La primera es analizar el coeficiente de correlación. Si tenemos variables altamente correladas es muy probable que el modelo pueda tener colinealidad entre esas variables. Otro de los síntomas se produce cuando nuestro modelo tiene un alto coeficiente de correlación y muchas variables no son significativas. En estos casos es muy probable la existencia de colinealidad.
+Hay varias formas de intuir si hay relación lineal entre nuestras variables independientes. La primera es analizar el coeficiente de correlación. Si tenemos variables altamente correladas, es muy probable que el modelo pueda tener colinealidad entre esas variables. Otro de los síntomas se produce cuando nuestro modelo tiene un alto coeficiente de correlación y muchas variables no son significativas. En estos casos es muy probable la existencia de colinealidad.
 
 Cuando hemos intuido que tenemos multicolinealidad pero hemos de detectarla, disponemos de tres métodos:
 
-- **Determinante de la matriz de correlaciones**. Si hay dos variables que son linealmente dependientes el determinante de la matriz de correlaciones será muy parecido a 0. Lo ideal si no hay correlación entre las variables dependientes es una matriz de correlaciones con unos en su diagonal y valores muy próximos a 0 en el resto de valores.
-- **El coeficiente entre el autovalor más grande de $X'X$ entre el autovalor más pequeño no nulo de $X'X$** . Si la raíz de esta división es superior a 10 podríamos tener multicolinealidad, si es superior a 30 hay multicolinealidad. Y esto por qué, pues porque si hay mucha diferencia entre estos autovalores esto implica una mayor inestabilidad en la matriz invertida.
-- **El `VIF`** , el `variance inflation factor`. ¿Cuánto se me “hincha” la varianza si elimino esa variable del modelo? ¿Cuánta inestabilidad aporta a mi modelo? Yo recomiendo emplear este método. Y va a ser sobre el que vamos a trabajar.
+- **Determinante de la matriz de correlaciones**. Si hay dos variables que son linealmente dependientes, el determinante de la matriz de correlaciones será muy parecido a 0. Lo ideal, si no hay correlación entre las variables dependientes, es una matriz de correlaciones con unos en su diagonal y valores muy próximos a 0 en el resto de valores.
+- **El coeficiente entre el autovalor más grande de $X'X$ y el autovalor más pequeño no nulo de $X'X$**. Si la raíz de esta división es superior a 10, podríamos tener multicolinealidad; si es superior a 30, hay multicolinealidad. ¿Y esto por qué? Pues porque si hay mucha diferencia entre estos autovalores, esto implica una mayor inestabilidad en la matriz invertida.
+- **El `VIF`**, el *variance inflation factor*. ¿Cuánto se me «hincha» la varianza si elimino esa variable del modelo? ¿Cuánta inestabilidad aporta a mi modelo? Yo recomiendo emplear este método, y va a ser sobre el que vamos a trabajar.
 
-Para ilustrar el problema vamos a trabajar con R:
+Para ilustrar el problema, vamos a trabajar con `R`:
 
 ```r
-#install.packages("car")
+# install.packages("car")
 library(car)
 head(mtcars)
 ?mtcars
-#Matriz de correlaciones
-cor(mtcars[,-1])
+# Matriz de correlaciones
+cor(mtcars[, -1])
 ```
 
-Un clásico, el data `mtcars`, no hace falta presentación. Ya con la matriz de correlaciones podemos pensar que habrá problemas:
+Un clásico, el *dataset* `mtcars`; no hace falta presentación. Ya con la matriz de correlaciones podemos pensar que habrá problemas:
 
 ```text
-cyl       disp         hp        drat         wt        qsec         vs
+              cyl       disp         hp        drat         wt        qsec         vs
 cyl   1.0000000  0.9020329  0.8324475 -0.69993811  0.7824958 -0.59124207 -0.8108118
 disp  0.9020329  1.0000000  0.7909486 -0.71021393  0.8879799 -0.43369788 -0.7104159
 hp    0.8324475  0.7909486  1.0000000 -0.44875912  0.6587479 -0.70822339 -0.7230967
@@ -96,7 +96,7 @@ Multiple R-squared: 0.8549, Adjusted R-squared: 0.8125
 F-statistic: 20.19 on 7 and 24 DF,  p-value: 1.284e-08
 ```
 
-Un gran modelo con un R cuadrado de 0.8125 donde sólo tenemos una variable significativa si fijamos un nivel de 0.05, eso es un contrasentido. Otro síntoma claro de la existencia de multicolinealidad. Pero es necesario comprobar esta primera impresión y para ello vamos a utilizar la función `vif()` del paquete `car`:
+Un gran modelo con un $R^2$ de 0.8125 donde solo tenemos una variable significativa si fijamos un nivel de 0.05; eso es un contrasentido. Otro síntoma claro de la existencia de multicolinealidad. Pero es necesario comprobar esta primera impresión y, para ello, vamos a utilizar la función `vif()` del paquete `car`:
 
 ```r
 vif(modelo)
@@ -107,4 +107,4 @@ vif(modelo)
 14.224688  8.996796 21.277170  5.295516  3.234394 10.061251  6.373673
 ```
 
-Es evidente que hay multicolinealidad, tenemos factores que hinchan mucho la variabilidad en nuestro modelo. ¿Fijar un valor para el `VIF`? Yo entiendo que a partir de 4 merece la pena pararse a ver que pasa, he leído por ahí que a partir de 5 hay que disparar las alarmas. Un valor de 14 o 10 es para asustarse. ¿Cómo solucionamos esto? Directamente os digo, no debemos eliminar variables, nuestro modelo es muy bueno. Se trata de que le demos estabilidad a los parámetros resultantes. Podemos introducirles un sesgo para hacerlos más pequeños y que tengan más estabilidad… En otra entrada. Saludos.
+Es evidente que hay multicolinealidad: tenemos factores que hinchan mucho la variabilidad en nuestro modelo. ¿Fijar un valor para el `VIF`? Yo entiendo que, a partir de 4, merece la pena pararse a ver qué pasa; he leído por ahí que a partir de 5 hay que disparar las alarmas. Un valor de 14 o 10 es para asustarse. ¿Cómo solucionamos esto? Directamente os digo: no debemos eliminar variables, nuestro modelo es muy bueno. Se trata de que le demos estabilidad a los parámetros resultantes. Podemos introducirles un sesgo para hacerlos más pequeños y que tengan más estabilidad… en otra entrada. Saludos.

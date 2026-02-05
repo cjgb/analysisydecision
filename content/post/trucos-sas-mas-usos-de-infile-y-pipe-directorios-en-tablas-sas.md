@@ -22,63 +22,49 @@ title: Trucos SAS. Más usos de INFILE y PIPE directorios en tablas SAS
 url: /blog/trucos-sas-mas-usos-de-infile-y-pipe-directorios-en-tablas-sas/
 ---
 
-Puede interesarnos tener **directorios y subdirectorios en tablas SAS**. Es decir, tabular el resultado de un `lm` en Unix o poner en una tabla el resultado de un `dir` de MS DOS / Windows. Ya tengo ejemplos publicados a este respecto:
+Puede interesarnos tener **directorios y subdirectorios en tablas SAS**. Es decir, tabular el resultado de un `ls` en `Unix` o poner en una tabla el resultado de un `dir` de `MS-DOS` / `Windows`. Ya tengo ejemplos publicados a este respecto:
 
 - [Truco SAS. Uso de FILENAME y PIPE](https://analisisydecision.es/truco-sas-uso-de-filename-y-pipe/)
 - [Macros SAS: Asignar permisos en Unix](https://analisisydecision.es/macros-sas-asignar-permisos-en-unix/)
 
-Pero no está mal volver a poner un truco para analizar las posibilidades del **`INFILE` + `PIPE`**. Vamos a hacer un `DIR` de todo nuestro `C:\` y sacar los archivos de mayor tamaño.
+Pero no está mal volver a poner un truco para analizar las posibilidades del **`INFILE` + `PIPE`**. Vamos a hacer un `DIR` de todo nuestro `H:\` y sacar los archivos de mayor tamaño:
 
 ```sas
-*ESTA ES LA INSTRUCCION DIR QUE EMPLEAMOS,
-
-SUBDIRECTORIOS, AUTORES, ... (?dir);
-
+* ESTA ES LA INSTRUCCIÓN DIR QUE EMPLEAMOS: 
+  SUBDIRECTORIOS, AUTORES…;
 filename df pipe "dir H:\ /S /O S /Q";
 
-*CREAMOS UNA TABLA SAS CON EL RESULTADO DE
-
-LA INSTRUCCIÓN MS DOS;
-
-data ZZZ_ZZZ;
-
-infile df pad;
-
-input todo $300.;
-
-if _n_=1 then delete;
+* CREAMOS UNA TABLA SAS CON EL RESULTADO DE LA INSTRUCCIÓN MS-DOS;
+data zzz_zzz;
+    infile df pad;
+    input todo $300.;
+    if _n_ = 1 then delete;
 run;
 ```
 
-Tenemos una tabla SAS con el resultado de nuestro `dir` en una variable de texto `todo` de 300 bytes . Podemos extraer la información que deseamos trabajando con funciones de texto de SAS:
+Tenemos una tabla SAS con el resultado de nuestro `dir` en una variable de texto `todo` de 300 *bytes*. Podemos extraer la información que deseamos trabajando con funciones de texto de SAS:
 
 ```sas
 data archivos;
-
-keep fecha archivo GIGAS autor;
-
-set zzz_zzz;
-
-format fecha ddmmyy10.;
-
-fecha=input(substr(todo,1,10),ddmmyy10.);
-
-GIGAS=compress(scan(todo,3," "),".")*1;
-
-GIGAS=GIGAS/(1024**3);
-
-autor=scan(todo,4," ");
-
-archivo=substr(todo,60,100);
-
-if fecha=. then delete;
-
-if GIGAS=. then delete;
+    set zzz_zzz;
+    format fecha ddmmyy10.;
+    
+    fecha = input(substr(todo, 1, 10), ddmmyy10.);
+    gigas = compress(scan(todo, 3, " "), ".") * 1;
+    gigas = gigas / (1024**3);
+    autor = scan(todo, 4, " ");
+    archivo = substr(todo, 60, 100);
+    
+    if fecha = . then delete;
+    if gigas = . then delete;
+    keep fecha archivo gigas autor;
 run;
 ```
 
-La variable `fecha` tiene el formato `ddmmyy10.` y es el resultado de transformar parte de nuestra variable de texto `todo` a número y con `input` darle el formato de entrada adecuado, perfecto ejemplo de transformación de texto a fecha con SAS. El tamaño es la 3 parte de la cadena de texto que se obtiene con un `dir` , pero como lo tenemos en bytes lo transformamos a gigas. Para extraer parte de una cadena de texto con SAS empleamos la función `SCAN` , otro buen ejemplo es el autor que lo podemos encontrar en la cuarta posición. Recordamos: `SCAN(todo,4," ")` -> busca en `todo` la cadena de texto que esté en cuarta posición cuando el delimitador es " " un espacio en blanco. Por último tenemos el nombre del archivo que es la última parte de la cadena `todo` que genera el `dir` de MS-DOS.
-Buen ejemplo para recordar un par de temas que provocan un gran número de visitas a esta web. Ahora os dejo deberes, tenéis que obtener el directorio en el que se aloja el fichero. No es baladí el tema. A ver si sois capaces, yo lo tengo hecho pero es muy complejo y “poco elegante”. Espero que a alguno de vosotros se os ocurra un mejor método.
+La variable `fecha` tiene el formato `ddmmyy10.` y es el resultado de transformar parte de nuestra variable de texto `todo` a número y, con `INPUT`, darle el formato de entrada adecuado (un perfecto ejemplo de transformación de texto a fecha con SAS). 
 
-```
+El tamaño es la tercera parte de la cadena de texto que se obtiene con un `dir`, pero como lo tenemos en *bytes*, lo transformamos a gigas. Para extraer parte de una cadena de texto con SAS, empleamos la función `SCAN`; otro buen ejemplo es el autor, que lo podemos encontrar en la cuarta posición. Recordamos: `SCAN(todo, 4, " ")` busca en `todo` la cadena de texto que esté en cuarta posición cuando el delimitador es un espacio en blanco. Por último, tenemos el nombre del archivo, que es la última parte de la cadena `todo` que genera el `dir` de `MS-DOS`.
+
+Buen ejemplo para recordar un par de temas que provocan un gran número de visitas a esta web. Ahora os dejo deberes: tenéis que obtener el directorio en el que se aloja el fichero. No es baladí el tema. A ver si sois capaces; yo lo tengo hecho, pero es muy complejo y "poco elegante". Espero que a alguno de vosotros se os ocurra un mejor método. Saludos.
+
 ```

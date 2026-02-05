@@ -24,8 +24,10 @@ Meritoria iniciativa de:
 - [jjgibaja.net](http://jjgibaja.net/)
 - [datanalytics.com/blog](http://www.datanalytics.com/blog/)
 
-O lo que es lo mismo Juan José Gibaja y Carlos J. Gil Bellosta.
+O, lo que es lo mismo, Juan José Gibaja y Carlos J. Gil Bellosta.
 
-Me hago eco de la noticia un poco tarde. Es curioso como hay personas que comparten de forma altruista su conocimiento, aunque me creáis exagerado, es el camino para que todos seamos un poco mejores, el conocimiento ~~no el derecho.~~ Ya escribiré sobre el tema si tengo tiempo.
+Me hago eco de la noticia un poco tarde. Es curioso cómo hay personas que comparten de forma altruista su conocimiento; aunque me creáis exagerado, es el camino para que todos seamos un poco mejores: el conocimiento ~~no el derecho~~. Ya escribiré sobre el tema si tengo tiempo.
 
 Acceded al curso aquí —> [http://cursorbasico.usar.org.es/](http://cursorbasico.usar.org.es/)
+
+Saludos.

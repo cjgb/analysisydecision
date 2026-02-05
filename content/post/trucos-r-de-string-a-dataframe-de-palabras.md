@@ -19,21 +19,17 @@ title: Trucos R. De string a data.frame de palabras
 url: /blog/trucos-r-de-string-a-dataframe-de-palabras/
 ---
 
-Manejo de textos con R en este truco. Partimos de un vector de _string_ y deseamos dividir ese _string_ en palabras y posteriormente crear un _data frame_ de una sola columna con tantos elementos como palabras tenga nuestro vector de cadenas de texto. Es decir, vamos a transformar un texto en una tabla de palabras. Veamos una posible situación:
+Manejo de textos con R en este truco. Partimos de un vector de `string` y deseamos dividir ese `string` en palabras y, posteriormente, crear un `data.frame` de una sola columna con tantos elementos como palabras tenga nuestro vector de cadenas de texto. Es decir, vamos a transformar un texto en una tabla de palabras. Veamos una posible situación:
 
-````r
 ```r
-#Este es nuestro elemento inicial
+# Este es nuestro elemento inicial
+texto <- c("Este es el elemento ", "que me gustaría", " poner en una tabla")
 
-texto=c("Este es el elemento ","que me gustaría"," poner en una tabla")
+# Tenemos que generar un data frame con las palabras
+# que componen este vector
+texto_split <- strsplit(texto, split = " ")
 
-#Tenemos que generar un data frame con con las palabras
+texto_columnas <- data.frame(palabra = unlist(texto_split))
+```
 
-#que componen este vector
-
-texto_split = strsplit(texto, split=" ")
-
-texto_columnas = data.frame(unlist(texto_split))
-````
-
-Un código sencillo donde destaca el uso de la función _strsplit_ para crear una lista de palabras con los elementos del vector inicial. Es importante el uso de _unlist_ para realizar el proceso correctamente. Con estas 3 líneas podemos hacer cosas muy interesantes los lectores habituales ya sabrán por donde voy y como obtener los debates del Congreso de los Diputados. Saludos.
+Un código sencillo donde destaca el uso de la función `strsplit` para crear una lista de palabras con los elementos del vector inicial. Es importante el uso de `unlist` para realizar el proceso correctamente. Con estas tres líneas podemos hacer cosas muy interesantes; los lectores habituales ya sabrán por dónde voy y cómo obtener los debates del Congreso de los Diputados. Saludos.

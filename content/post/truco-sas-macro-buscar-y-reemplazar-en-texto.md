@@ -20,9 +20,9 @@ title: Truco SAS. Macro buscar y reemplazar en texto
 url: /blog/truco-sas-macro-buscar-y-reemplazar-en-texto/
 ---
 
-A veces hay problemas a la hora de importar un fichero de texto a SAS. Por ejemplo el fichero proviene de Access y tiene los números con formato europeo. El siguiente programa hace un buscar y reemplazar pero con SAS. Partimos de un fichero de texto ubicado en `c:\\temp\\pepin.txt` así:
+A veces hay problemas a la hora de importar un fichero de texto a SAS. Por ejemplo, el fichero proviene de `Access` y tiene los números con formato europeo. El siguiente programa hace un buscar y reemplazar pero con SAS. Partimos de un fichero de texto ubicado en `C:\temp\pepin.txt` así:
 
-```
+```text
 4.497,31 2.776,50
 2.555,46 6.782,73
 3.752,77 8.791,32
@@ -46,36 +46,24 @@ A veces hay problemas a la hora de importar un fichero de texto a SAS. Por ejemp
 Y ejecutamos el siguiente código SAS:
 
 ```sas
-```
-
-```r
-%macro reemplazar(ubicacion,fich);
-
-data _null_;
-
-  length char 1.;
-
-  infile "&ubicacion./&fich." lrecl=1 recfm=F missover dsd;
-
-  file "&ubicacion./DEP_&fich." lrecl=1 recfm=F;
-
-  input char`ASCII.`;
-
-  if `char ="."` then `delete`;
-
-  else if `char=","` then `char="."`;/*LINEAS A VARIAR*/
-
-  put char;
-
-run;
-
+%macro reemplazar(ubicacion, fich);
+    data _null_;
+        length char $1.;
+        infile "&ubicacion./&fich." lrecl=1 recfm=F missover dsd;
+        file "&ubicacion./DEP_&fich." lrecl=1 recfm=F;
+        input char $char1.;
+        if char = "." then delete;
+        else if char = "," then char = "."; /* LINEAS A VARIAR */
+        put char;
+    run;
 %mend;
+
+%reemplazar(C:\temp, pepin.txt);
 ```
 
-`%reemplazar(c:\\temp,pepin.txt)`;
+Tras ejecutar este código, en `C:\temp` tenemos `DEP_pepin.txt` con la siguiente información:
 
-Tras ejecutar este código en `c:\\temp` tenemos `DEP_pepin.txt` con la siguiente información:
-
+```text
 4497.31 2776.50
 2555.46 6782.73
 3752.77 8791.32
@@ -94,7 +82,8 @@ Tras ejecutar este código en `c:\\temp` tenemos `DEP_pepin.txt` con la siguient
 2339.50 9234.67
 6268.95 1531.50
 4406.24 5395.50
+```
 
 Esto es mucho más fácil de leer para SAS.
 
-Muy práctico pero ¡OJO QUE SE CEPILLA COMAS Y PUNTOS EN VARIABLES DE TEXTO! Por supuesto para cualquier duda o mejora: `rvaquerizo@analisisydecision.es`
+Muy práctico, pero ¡OJO QUE SE CEPILLA COMAS Y PUNTOS EN VARIABLES DE TEXTO! Por supuesto, para cualquier duda o mejora: `rvaquerizo@analisisydecision.es`.

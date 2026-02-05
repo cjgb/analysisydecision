@@ -4,6 +4,7 @@ categories:
   - formación
 date: '2020-03-10'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - estimacion-de-la-evolucion-de-casos-del-coronavirus-en-espana.md
   - mi-breve-seguimiento-del-coronavirus-con-r.md
@@ -16,29 +17,36 @@ title: Seguir los datos del coronavirus en España con Rstats
 url: /blog/seguir-los-datos-del-coronavirus-en-espana-con-rstats/
 ---
 
-![Coronavirus Tracking](https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.csv)
+No he podido evitarlo: os traigo unas líneas de código en R para seguir la evolución del coronavirus en España (podéis filtrar cualquier país). Me hubiera gustado hacer un *scraping* de la página [Worldometers](https://www.worldometers.info/coronavirus/), sin embargo me ha parecido más sencillo leer directamente los datos del repositorio de la Universidad Johns Hopkins ([https://github.com/CSSEGISandData/COVID-19](https://github.com/CSSEGISandData/COVID-19)), cuya actualización es diaria. También existe ya un paquete en R denominado `coronavirus`, pero su funcionamiento a veces es irregular. 
 
-No he podido evitarlo, os traigo unas líneas de código en R para seguir la evolución del coronavirus en España (podéis filtrar cualquier país). Me hubiera gustado hacer un scraping de la página [https://www.worldometers.info/coronavirus/](https://www.worldometers.info/coronavirus/) sin embargo me ha parecido más sencillo leer directamente los datos del repositorio de la Universidad Jonh Hopkins ([https://github.com/CSSEGISandData/COVID-19](https://github.com/CSSEGISandData/COVID-19)) creo que la actualización es diaria. También existe ya un paquete en R denominado coronavirus pero su funcionamiento deja que desear. Por mi parte os ofrezco para seguir su evolución el siguiente script:
+Por mi parte, os ofrezco el siguiente *script* para seguir su evolución:
 
 ```r
+library(tidyverse)
 library(lubridate)
-library(ggplot2)
-datos <- read.csv2("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.csv",
-                 sep=',')
 
-fechas <- seq(as.Date("2020/01/22"), as.Date(today()-1), "days")
-fechas <- as.character.Date(fechas)
-names(datos) <- c("Provincia", "Pais","Latitud", "Longitud", fechas)
+# Lectura directa desde el repositorio de la Universidad Johns Hopkins
+url_datos <- "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv"
+datos <- read.csv(url_datos, check.names = FALSE)
 
-espania <- datos %>% filter(Pais=="Spain") %>% select(fechas)
-espania <- data.frame(t(espania))
-espania$fecha <- row.names(espania)
-names(espania) <- c("casos", "fecha")
+# Filtramos por España
+espania <- datos %>% 
+  filter(`Country/Region` == "Spain") %>% 
+  select(-`Province/State`, -`Country/Region`, -Lat, -Long)
 
-p <- ggplot(espania, aes(x=fecha, y=casos, group = 1)) +
-  geom_line() +
-  xlab("")
-p
+# Transponemos para tener formato de serie temporal
+espania_long <- data.frame(
+  fecha = mdy(colnames(espania)),
+  casos = as.numeric(t(espania))
+)
+
+# Graficamos con ggplot2
+ggplot(espania_long, aes(x = fecha, y = casos)) +
+  geom_line(color = "red", size = 1) +
+  labs(title = "Evolución de casos confirmados de COVID-19 en España",
+       x = "Fecha",
+       y = "Número de casos") +
+  theme_minimal()
 ```
 
-Tendría que mejorar los ejes y el aspecto, pero no es eso lo más importante. Estaba escribiendo sobre distribuciones `tweedie`, ahora me siento tentado para escribir sobre modelos exponenciales y si hacéis esto mismo para los datos de Italia hace 10 días la verdad es que el gráfico es calcado.
+Tendría que mejorar los ejes y el aspecto, pero no es eso lo más importante. Estaba escribiendo sobre distribuciones `tweedie`, ahora me siento tentado para escribir sobre modelos exponenciales y, si hacéis ésto mismo para los datos de Italia de hace unos días, la verdad es que el gráfico es calcado. Saludos.

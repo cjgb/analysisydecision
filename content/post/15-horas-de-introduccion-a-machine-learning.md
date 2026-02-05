@@ -4,6 +4,7 @@ categories:
   - formación
 date: '2014-09-25'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - lectura-del-fin-de-semana.md
   - curso-de-iniciacion-a-r-en-kschool-de-carlos-gil.md

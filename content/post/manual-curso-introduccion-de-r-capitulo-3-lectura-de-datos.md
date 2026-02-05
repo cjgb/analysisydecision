@@ -18,7 +18,7 @@ title: 'Manual. Curso introducción de R. Capítulo 3: Lectura básica de datos'
 url: /blog/manual-curso-introduccion-de-r-capitulo-3-lectura-de-datos/
 ---
 
-En el anterior capítulo creábamos vectores y matrices con las funciones `c` y `matrix` pero en R disponemos de otros medios para leer o introducir datos. Empezamos con la entrada manual de datos:
+In el anterior capítulo creábamos vectores y matrices con las funciones `c()` y `matrix()`, pero in `R` disponemos de otros medios para leer o introducir datos. Empezamos con la entrada manual de datos:
 
 ```r
 # Entrada manual de datos
@@ -41,7 +41,7 @@ ej.3.1
 [1] 1 2 4 5 6 7
 ```
 
-Para introducir manualmente datos en R disponemos de la función `scan` e introduciremos los datos manualmente separando las entradas con un espacio, para finalizar empleamos intro en una línea sin datos, R nos indicará los registros leídos. La función `scan` también puede leer ficheros de texto planos si le pasamos el fichero como **parámetro** :
+Para introducir manualmente datos in `R`, disponemos de la función `scan()` e introduciremos los datos manualmente separando las entradas con un espacio; para finalizar, empleamos *Intro* in una línea sin datos. `R` nos indicará los registros leídos. La función `scan()` también puede leer ficheros de texto planos si le pasamos el fichero como parámetro:
 
 ```r
 ej.3.2 <- scan("c:\\windows\\temp\\fichero_texto1.txt")
@@ -59,15 +59,14 @@ ej.3.2
 [1] 123 456 765 345 23 567 78 900
 ```
 
-Como vemos es necesario separar los directorios con `\` en vez de `\`. El proceso ha leído 8 registros de un fichero plano `fichero_texto1.txt` que tiene la siguiente estructura:
+Como vemos, es necesario separar los directorios con `\\`. El proceso ha leído 8 registros de un fichero plano `fichero_texto1.txt` que tiene la siguiente estructura:
 
-```r
+```text
 123 456 765 345
-
 23 567 78 900
 ```
 
-Es un fichero con 2 registros y 4 columnas, sin embargo `scan` interpreta que es un fichero sin saltos de línea. Por ello para leer ficheros de texto es más recomendable emplear la función `read.table` :
+Es un fichero con dos registros y cuatro columnas; sin embargo, `scan()` interpreta que es un fichero sin saltos de línea. Por ello, para leer ficheros de texto es más recomendable emplear la función `read.table()`:
 
 ```r
 ej.3.3 <- read.table("c:\\windows\\temp\\fichero_texto1.txt")
@@ -76,7 +75,7 @@ ej.3.3 <- read.table("c:\\windows\\temp\\fichero_texto1.txt")
 ```
 Warning message:
 In read.table("c:\\windows\\temp\\fichero_texto1.txt") :
- línea final incompleta encontrada por readTableHeader en 'c:\windows\temp\fichero_texto1.txt'
+ línea final incompleta encontrada por readTableHeader in 'c:\windows\temp\fichero_texto1.txt'
 ```
 
 ```r
@@ -89,16 +88,16 @@ ej.3.3
 2  23 567  78 900
 ```
 
-Ahora hemos leído 2 registros y 4 variables y hemos creado una tabla con la estructura del fichero de texto. Si el fichero de texto tuviera los nombres de los campos que leemos habríamos de trabajar con los **parámetros opcionales** de la función `scan` :
+Ahora hemos leído dos registros y cuatro variables, y hemos creado una tabla con la estructura del fichero de texto. Si el fichero de texto tuviera los nombres de los campos que leemos, habríamos de trabajar con los parámetros opcionales de la función `read.table()`:
 
 ```r
-ej.3.3 <- read.table("c:\\windows\\temp\\fichero_texto1.txt",header=TRUE)
+ej.3.3 <- read.table("c:\\windows\\temp\\fichero_texto1.txt", header = TRUE)
 ```
 
 ```
 Warning message:
 In read.table("c:\\windows\\temp\\fichero_texto1.txt", header = TRUE) :
- línea final incompleta encontrada por readTableHeader en 'c:\windows\temp\fichero_texto1.txt'
+ línea final incompleta encontrada por readTableHeader in 'c:\windows\temp\fichero_texto1.txt'
 ```
 
 ```r
@@ -111,12 +110,12 @@ ej.3.3
 2          23         567          78         900
 ```
 
-En este caso disponíamos de un fichero de texto con cabeceras, por ello ha sido necesario modificar a verdadero (`TRUE`) el parámetro `header` de la función `read.table`. Para saber que parámetros tienen las distintas funciones de R y obtener ayuda sobre ellas en la línea de comandos debemos introducir `? <función>`:
+In este caso disponíamos de un fichero de texto con cabeceras; por ello, ha sido necesario modificar a verdadero (`TRUE`) el parámetro `header` de la función `read.table()`. Para saber qué parámetros tienen las distintas funciones de `R` y obtener ayuda sobre ellas, in la línea de comandos debemos introducir `? <función>`:
 
 ```r
 ?read.table
 ```
 
-En función de la configuración de la ayuda que hayamos hecho en el momento de la instalación obtendremos un `pop-up` o bien la información sobre la función en la misma pantalla de R.
+In función de la configuración de la ayuda que hayamos hecho in el momento de la instalación, obtendremos un *pop-up* o bien la información sobre la función in la misma pantalla de `R`.
 
-Con estas herramientas ya estamos en disposición de crear estructuras de datos más complejas. En sucesivas entregas leeremos datos de otros orígenes (SAS, `ODBC`,…)
+Con estas herramientas, ya estamos in disposición de crear estructuras de datos más complejas. In sucesivas entregas leeremos datos de otros orígenes (`SAS`, `ODBC`…). Saludos.

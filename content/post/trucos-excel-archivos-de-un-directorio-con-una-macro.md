@@ -20,48 +20,33 @@ title: Trucos Excel. Archivos de un directorio con una macro
 url: /blog/trucos-excel-archivos-de-un-directorio-con-una-macro/
 ---
 
-Puede resultarnos útil tener todos los archivos de un directorio en una tabla de excel. Si estamos documentando un proceso, si nos dan un gran número de ficheros y tenemos que realizar procesos repetitivos sobre ellos, si queremos tener inventariados nuestros programas,… Para esto os planteo una macro bien sencilla que recorre un directorio y nos escribe los elementos que encuentra en él. El código visual basic para la macro en Excel no puede ser más sencillo:
+Puede resultarnos útil tener todos los archivos de un directorio en una tabla de `Excel`. Si estamos documentando un proceso, si nos dan un gran número de ficheros y tenemos que realizar procesos repetitivos sobre ellos, si queremos tener inventariados nuestros programas… Para esto os planteo una macro bien sencilla que recorre un directorio y nos escribe los elementos que encuentra en él. El código `Visual Basic` para la macro en `Excel` no puede ser más sencillo:
 
 ```vba
 Sub explora()
+    ' Macro para poner los archivos de un directorio en una hoja Excel
+    Dim directorio As String, fichero As String, tipo_fichero As String
+    Dim i As Long
 
-'Macro para poner los archivos de un directorio en una hoja Excel
+    directorio = "C:\temp"
 
-Dim directorio, nombre_completo, tipo_fichero As String
+    ' Si deseamos especificar el tipo de fichero
+    tipo_fichero = "*"
 
-Dim tam As Long
+    ' Construimos el patrón de búsqueda
+    directorioPattern = directorio & "\*. " & tipo_fichero
 
-directorio = "C:\temp"
+    ' Recorre el directorio hasta que no hay elementos
+    fichero = Dir(directorioPattern)
 
-'Si deseamos especificar el tipo de fichero
-
-tipo_fichero = "*"
-
-'ChDir directorio
-
-directorio = directorio & "\*." & tipo_fichero
-
-'Recorre el directorio hasta que no hay elementos
-
-fichero = Dir(directorio, vb)
-
-i = 1
-
-Do While fichero <> ""
-
-'Pone en un excel vacío los elementos que encuentra
-
-Cells(i, 1) = fichero
-
-i = i + 1
-
-fichero = Dir
-
-Loop
-
-'
-
+    i = 1
+    Do While fichero <> ""
+        ' Pone en una hoja de Excel los elementos que encuentra
+        Cells(i, 1).Value = fichero
+        i = i + 1
+        fichero = Dir
+    Loop
 End Sub
 ```
 
-El «talento» está en el uso de `Dir` y en la realización del bucle. Como añadido tenemos una variable `tipo_fichero` que nos permite acotar la extensión de los ficheros a listar. Un truco sencillo y que puede ayudarnos a automatizar mucho código. Yo la cree porque un proceso de SQL SERVER me devolvía un gran número de ficheros de texto distintos cada vez y necesitaba automatizar su lectura. Espero que os sea de utilidad. Saludos.
+El "talento" está en el uso de `Dir` y en la realización del bucle. Como añadido, tenemos una variable `tipo_fichero` que nos permite acotar la extensión de los ficheros a listar. Un truco sencillo y que puede ayudarnos a automatizar mucho código. Yo la creé porque un proceso de `SQL SERVER` me devolvía un gran número de ficheros de texto distintos cada vez y necesitaba automatizar su lectura. Espero que os sea de utilidad. Saludos.

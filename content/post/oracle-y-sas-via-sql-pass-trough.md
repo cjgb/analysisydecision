@@ -15,38 +15,31 @@ related:
 tags:
   - oracle y sas
   - pass thru
-title: Oracle y SAS vía SQL pass trough
+title: Oracle y SAS vía SQL pass-through
 url: /blog/oracle-y-sas-via-sql-pass-trough/
 ---
 
-Para trabajar directamente con el motor de BBDD SAS cuenta con «Pass through». SAS crea una conexión al gestor de BBDD y desde ese momento podemos ejecutar sentencias de SQL directamente. Para seguir con la línea de trabajo habitual emplearemos ejemplos para conocer su funcionamiento. Los ejemplos que vamos a emplear serán sobre una BBDD Oracle ya que es muy común trabajar en entornos SAS con acceso a algún datamart de Oracle. Evidentemente la utilidad `pass through` o `passthru` convive perfectamente con
-las librerías dinámicas de SAS a Oracle. Los ejemplos que vamos a ver serán:
+Para trabajar directamente con el motor de BBDD, SAS cuenta con "Pass-through". SAS crea una conexión al gestor de BBDD y desde ese momento podemos ejecutar sentencias de SQL directamente. Para seguir con la línea de trabajo habitual emplearemos ejemplos para conocer su funcionamiento. Los ejemplos que vamos a emplear serán sobre una BBDD Oracle ya que es muy común trabajar en entornos SAS con acceso a algún *datamart* de Oracle. Evidentemente la utilidad `pass-through` o `passthru` convive perfectamente con las librerías dinámicas de SAS a Oracle. Los ejemplos que vamos a ver serán:
 
 - Bajada de tabla Oracle a SAS vía `passthru`. Usuario de consulta.
 - Subida de tabla SAS a un esquema Oracle. Usuario propietario asigna permisos.
 - Oracle como motor de consulta desde SAS. Usuario propietario crea tabla.
 - Borrar tabla Oracle. Usuario propietario hace `DROP`.
 
-Estos 4 ejemplos pueden ayudarnos a conocer mejor como funciona la utilidad `passthru` y sobre todo estoy seguro que pueden ser de utilidad para muchos profesionales que tengan que migrar procesos en `PL/SQL` a SAS. Lo primero que vamos a hacer es definir un usuario de consulta, un usuario propietario y un usuario de carga que tendrán sus respectivos roles en la BBDD Oracle (`*con_role`, `*car_role` y `*own_role`). Emplearemos un lenguaje SAS muy genérico:
+Estos cuatro ejemplos pueden ayudarnos a conocer mejor cómo funciona la utilidad `passthru` y sobre todo estoy seguro que pueden ser de utilidad para muchos profesionales que tengan que migrar procesos en `PL/SQL` a SAS. Lo primero que vamos a hacer es definir un usuario de consulta, un usuario propietario y un usuario de carga que tendrán sus respectivos roles en la BBDD Oracle (`_CON_ROLE`, `_CAR_ROLE` y `_OWN_ROLE`). Emplearemos un lenguaje SAS muy genérico:
 
 ```sas
-*DECLARAMOS LOS USUARIOS PROPIETARIOS;
+* DECLARAMOS LOS USUARIOS PROPIETARIOS;
+%let usuario_propietario = *******;
+%let contrasenia_propietario = ********;
 
-%let usuario_propietario=*******;
+* DECLARAMOS LOS USUARIOS DE CONSULTA;
+%let usuario_consulta = *****;
+%let contrasenia_consulta = ********;
 
-%let contrasenia_propietario=********;
-
-*DECLARAMOS LOS USUARIOS DE CONSULTA;
-
-%let usuario_consulta=*****;
-
-%let contrasenia_consulta=********;
-
-*DECLARAMOS LOS USUARIOS DE CARGA;
-
-%let usuario_carga=*****;
-
-%let contrasenia_carga=********;
+* DECLARAMOS LOS USUARIOS DE CARGA;
+%let usuario_carga = *****;
+%let contrasenia_carga = ********;
 ```
 
 **Bajada de tabla Oracle a SAS vía `passthru`:**
@@ -66,7 +59,7 @@ disconnect from mycon;
 quit;
 ```
 
-Lo primero que hacemos es crear una conexión al path de Oracle. La tabla SAS es una selección del total de columnas de la `select` que enviamos al motor de BBDD. Esta `select` será en el lenguaje de la conexión. En este caso como la conexión es Oracle emplearemos `PL/SQL`. Si la conexión fuera a `SQL Server` emplearíamos ese lenguaje. Con la macrovariable `&sqlxmsg` indicamos que en el log deseamos ver los mensajes del motor de la BBDD, muy importante para chequear errores.
+Lo primero que hacemos es crear una conexión al `path` de Oracle. La tabla SAS es una selección del total de columnas de la `select` que enviamos al motor de BBDD. Esta `select` será en el lenguaje de la conexión. En este caso como la conexión es Oracle emplearemos `PL/SQL`. Si la conexión fuera a `SQL Server` emplearíamos ese lenguaje. Con la macrovariable `&sqlxmsg` indicamos que en el log deseamos ver los mensajes del motor de la BBDD, muy importante para chequear errores.
 
 **Subida de tabla SAS a un esquema Oracle:**
 
@@ -74,27 +67,27 @@ Lo primero que hacemos es crear una conexión al path de Oracle. La tabla SAS es
 libname ORASAS oracle user=&usuario_propietario pass=&contrasenia_propietario
   path= 'PATH' schema=ESQUEMA dbindex=yes;
 
-*SUBIDA MEDIANTE PASO DATA;
+* SUBIDA MEDIANTE PASO DATA;
 data ORASAS.TABLA_ORACLE;
   set LIBSAS.TABLA_SAS;
 run;
 
-*DESASIGNAMOS LA LIBERIA;
+* DESASIGNAMOS LA LIBRERIA;
 libname ORASAS clear;
 
-*ASIGNAMOS PERMISOS A LOS ROLES PARA LOS USUARIOS DE CARGA Y CONSULTA;
+* ASIGNAMOS PERMISOS A LOS ROLES PARA LOS USUARIOS DE CARGA Y CONSULTA;
 proc sql;
   connect to oracle as mycon (user=&usuario_propietario.
   password=&contrasenia_propietario. path='PATH');
   execute(GRANT DELETE, INSERT, SELECT, UPDATE ON TABLA_ORACLE TO _CON_ROLE) by mycon;
   execute(GRANT DELETE, INSERT, SELECT, UPDATE ON TABLA_ORACLE TO _CAR_ROLE) by mycon;
-  EXECUTE(COMMIT)by mycon;
+  execute(COMMIT) by mycon;
 %put &sqlxmsg;
   disconnect from mycon;
 quit;
 ```
 
-Creamos una librería dinámica a Oracle (la forma habitual de obtener tablas de la `DBMS`) pero hemos de crearla con el usuario propietario y sobre el esquema en el que tenemos permisos. Subir la tabla es tan fácil como hacer un paso `data`. Después como buena práctica desasignamos la librería dinámica (creada con el usuario propietario) y asignamos permisos a los roles de consulta y/o de carga para que puedan acceder a las tablas. El usuario de consulta hará consultas y el propietario, dará permisos, hará cargas (no empleamos usuario de carga), borrará tablas,… Esta metodología será más apropiada a la hora de trabajar con la BBDD.
+Creamos una librería dinámica a Oracle (la forma habitual de obtener tablas de la `DBMS`) pero hemos de crearla con el usuario propietario y sobre el esquema en el que tenemos permisos. Subir la tabla es tan fácil como hacer un paso `data`. Después como buena práctica desasignamos la librería dinámica (creada con el usuario propietario) y asignamos permisos a los roles de consulta y/o de carga para que puedan acceder a las tablas. El usuario de consulta hará consultas y el propietario dará permisos, hará cargas (no empleamos usuario de carga), borrará tablas… Esta metodología será más apropiada a la hora de trabajar con la BBDD.
 
 **Oracle como motor de consulta desde SAS:**
 
@@ -102,60 +95,60 @@ Creamos una librería dinámica a Oracle (la forma habitual de obtener tablas de
 proc sql;
   connect to oracle as mycon (user=&usuario_propietario
   password=&contrasenia_propietario path='PATH');
-  CREATE TABLE ESQUEMA1.TABLA_DESTINO AS SELECT * FROM CONNECTION TO MYCON(
-    SELECT CAMPO1 AS CAMPO1, CAMPO2 AS CAMPO2,...
-    FROM ESQUEMA2.TABLA_ORACLE
-    WHERE ... );
+  create table ESQUEMA1.TABLA_DESTINO as select * from connection to mycon(
+    select CAMPO1 as CAMPO1, CAMPO2 as CAMPO2,...
+    from ESQUEMA2.TABLA_ORACLE
+    where ... );
 disconnect from mycon;
-QUIT;
+quit;
 
-*ASIGNAMOS PERMISOS;
+* ASIGNAMOS PERMISOS;
 proc sql;
   connect to oracle as mycon (user=&usuario_propietario.
   password=&contrasenia_propietario. path='PATH');
   execute(GRANT DELETE, INSERT, SELECT, UPDATE ON ESQUEMA1.TABLA_DESTINO TO _CON_ROLE) by mycon;
   execute(GRANT DELETE, INSERT, SELECT, UPDATE ON ESQUEMA1.TABLA_DESTINO TO _CAR_ROLE) by mycon;
-  EXECUTE(COMMIT)by mycon;
+  execute(COMMIT) by mycon;
 %put &sqlxmsg;
   disconnect from mycon;
 quit;
 ```
 
-En este ejemplo se realiza una consulta y se crea una tabla en el esquema en el que asumimos que somos propietarios, pero podemos hacer la consulta sobre el mismo esquema de la instancia Oracle sobre la que trabajamos, posteriormente asignamos permisos a los usuarios de carga y consulta. Otra forma de realizar este proceso es crear la estructura y posteriormente cargar los datos, algunos profesionales consideran que es la forma óptima de trabajo:
+En este ejemplo se realiza una consulta y se crea una tabla en el esquema en el que asumimos que somos propietarios, pero podemos hacer la consulta sobre el mismo esquema de la instancia Oracle sobre la que trabajamos; posteriormente asignamos permisos a los usuarios de carga y consulta. Otra forma de realizar este proceso es crear la estructura y posteriormente cargar los datos; algunos profesionales consideran que es la forma óptima de trabajo:
 
 ```sas
 proc sql;
   connect to oracle as mycon (user=&usuario_propietario
   password=&contrasenia_propietario path='PATH');
-  CREATE TABLE TABLA_DESTINO AS SELECT * FROM CONNECTION TO MYCON(
-    SELECT CAMPO1 AS CAMPO1, CAMPO2 AS CAMPO2,...
-    FROM ESQUEMA.TABLA_ORACLE
-    WHERE ... AND ROWNUM<1 );
+  create table TABLA_DESTINO as select * from connection to mycon(
+    select CAMPO1 as CAMPO1, CAMPO2 as CAMPO2,...
+    from ESQUEMA.TABLA_ORACLE
+    where ... and ROWNUM < 1 );
 disconnect from mycon;
-QUIT;
+quit;
 
-*ASIGNAMOS PERMISOS A LOS ROLES DE USUARIOS DE CARGA Y CONSULTA;
+* ASIGNAMOS PERMISOS A LOS ROLES DE USUARIOS DE CARGA Y CONSULTA;
 proc sql;
   connect to oracle as mycon (user=&usuario_propietario password=&contrasenia_propietario path='PATH');
-  execute(GRANT SELECT, update, insert, delete ON TABLA_DESTINO TO _car_ROLE) by mycon;
-  execute(GRANT SELECT, update, insert, delete ON TABLA_DESTINO TO _con_ROLE) by mycon;
-  EXECUTE(COMMIT)by mycon;
+  execute(GRANT SELECT, update, insert, delete on TABLA_DESTINO to _CAR_ROLE) by mycon;
+  execute(GRANT SELECT, update, insert, delete on TABLA_DESTINO to _CON_ROLE) by mycon;
+  execute(COMMIT) by mycon;
 disconnect from mycon;
-QUIT;
+quit;
 
-*CARGAMOS LA TABLA CON EL USUARIO DE CARGA;
+* CARGAMOS LA TABLA CON EL USUARIO DE CARGA;
 proc sql;
   connect to oracle as mycon (user=&usuario_carga
   password=&contrasenia_carga. path='PATH');
-  EXECUTE(INSERT INTO TABLA_DESTINO
-    SELECT CAMPO1 AS CAMPO1, CAMPO2 AS CAMPO2,...
-    FROM ESQUEMA.TABLA_ORACLE
-    WHERE ...)BY MYCON;
+  execute(insert into TABLA_DESTINO
+    select CAMPO1 as CAMPO1, CAMPO2 as CAMPO2,...
+    from ESQUEMA.TABLA_ORACLE
+    where ...) by mycon;
 disconnect from mycon;
-QUIT;
+quit;
 ```
 
-Esta metodología es más óptima pero mucho más compleja como puede comprobarse. Esto puede ser de gran utilidad para realizar consultas con el motor de Oracle y beneficiarnos de sus particiones e índices. Además no gastamos espacio de temporal con SAS e incluso si tenemos un buen `tablespace` las consultas irán mejor.
+Esta metodología es más óptima pero mucho más compleja como puede comprobarse. Esto puede ser de gran utilidad para realizar consultas con el motor de Oracle y beneficiarnos de sus particiones e índices. Además no gastamos espacio de temporal con SAS e incluso, si tenemos un buen `tablespace`, las consultas irán mejor.
 
 **Borrar tabla Oracle**
 
@@ -170,4 +163,4 @@ disconnect from mycon;
 quit;
 ```
 
-Un buen ejemplo de ejecución de `PL` bajo SAS. Recordad que el código que ponemos desde el `;` de la `connect` es el código que emplea el motor de BBDD. Espero que estos ejemplos genéricos os sean de utilidad sobre todo para aquellos que tenéis que migrar procesos a SAS. Por supuesto si tenéis dudas o un trabajo excelentemente remunerado… `rvaquerizo@analisisydecision.es`
+Un buen ejemplo de ejecución de `PL/SQL` bajo SAS. Recordad que el código que ponemos desde el `;` de la `connect` es el código que emplea el motor de BBDD. Espero que estos ejemplos genéricos os sean de utilidad, sobre todo para aquellos que tenéis que migrar procesos a SAS. Por supuesto, si tenéis dudas o un trabajo excelentemente remunerado… `rvaquerizo@analisisydecision.es`

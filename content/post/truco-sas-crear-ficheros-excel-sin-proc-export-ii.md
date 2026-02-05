@@ -18,86 +18,138 @@ title: Truco SAS. Crear ficheros Excel sin PROC EXPORT (II)
 url: /blog/truco-sas-crear-ficheros-excel-sin-proc-export-ii/
 ---
 
-Con [anterioridad ](https://analisisydecision.es/truco-sas-crear-ficheros-excel-sin-proc-export-i/)hemos visto el manejo del ODS y como nos sirve para generar archivos HTML que podemos usar con Excel sin necesidad de emplear el PROC EXPORT. Pero el lenguaje SAS empleado era complicado y requería muchas líneas de código. Pues esto podemos evitarlo si creamos nuestra propia macro para exportar nuestras tablas SAS a tablas Excel.
+Con [anterioridad](https://analisisydecision.es/truco-sas-crear-ficheros-excel-sin-proc-export-i/) hemos visto el manejo del `ODS` y cómo nos sirve para generar archivos `HTML` que podemos usar con `Excel` sin necesidad de emplear el `PROC EXPORT`. Pero el lenguaje SAS empleado era complicado y requería muchas líneas de código. Pues esto podemos evitarlo si creamos nuestra propia macro para exportar nuestras tablas SAS a tablas `Excel`.
+
+
 
 «Simplemente» hemos de parametrizar el código que vimos en la [primera parte del truco SAS](https://analisisydecision.es/truco-sas-crear-ficheros-excel-sin-proc-export-i/). Pero realizaremos diversas modificaciones para que nuestro código sea más práctico:
 
-```r
-%macro excel(ubicacion,dataset);option missing="";
 
-title;
 
-/*ELIMINAMOS LA LIBRERIA SAS DEL NOMBRE*/
+```sas
 
- %let aux1=%scan("&dataset.",2,".");
+%macro excel(ubicacion, dataset);
 
-/*LAS VARIABLES NUMERICAS IRAN CON FORMATO EUROPEO*/
+  options missing = "";
 
- proc contents data=&dataset.
+  title;
 
- 			  out=_temporal_ (where=(type=1) keep=name type) noprint ;
 
- run;
 
-/*CREAMOS UNA INSTRUCCION PARA DAR EL FORMATO EUROPEO*/
+  /* ELIMINAMOS LA LIBRERIA SAS DEL NOMBRE */
 
- proc sql noprint;
+  %let aux1 = %scan("&dataset.", 2, ".");
 
- 	select "format "||compress(name)||" commax12.6" into:_instruccion separated by "; "
 
- 	from _temporal_;
 
- quit;
+  /* LAS VARIABLES NUMERICAS IRAN CON FORMATO EUROPEO */
 
-proc delete data=_temporal_; run;
+  proc contents data = &dataset.
 
-/*EMPLEAMOS EL PROC PRINT JUNTO CON ODS*/
+                out = _temporal_ (where = (type = 1) keep = name type) noprint;
 
- filename _temp_ "&ubicacion.\&aux1..xls";
+  run;
 
-title ;
 
- ods noresults;
 
- ods listing close;
+  /* CREAMOS UNA INSTRUCCION PARA DAR EL FORMATO EUROPEO */
 
- ods html file=_temp_ rs=none style=minimal;
+  proc sql noprint;
 
- 	proc print data=&dataset. noobs;
+    select "format " || compress(name) || " commax12.6" into :_instruccion separated by "; "
 
- 	&_instruccion.;
+    from _temporal_;
 
- 	run;
+  quit;
 
- ods html close;
 
- ods results;
 
- ods listing;
+  proc delete data = _temporal_;
 
-option missing=".";
+  run;
+
+
+
+  /* EMPLEAMOS EL PROC PRINT JUNTO CON ODS */
+
+  filename _temp_ "&ubicacion.\&aux1..xls";
+
+
+
+  title;
+
+  ods noresults;
+
+  ods listing close;
+
+  ods html file = _temp_ rs = none style = minimal;
+
+
+
+  proc print data = &dataset. noobs;
+
+    &_instruccion.;
+
+  run;
+
+
+
+  ods html close;
+
+  ods results;
+
+  ods listing;
+
+
+
+  options missing = ".";
 
 %mend excel;
+
 ```
 
-Con esta macro ya disponemos de una función que nos exporta nuestras tablas SAS a Excel. Por ejemplo:
 
-```r
+
+Con esta macro ya disponemos de una función que nos exporta nuestras tablas SAS a `Excel`. Por ejemplo:
+
+
+
+```sas
+
 data uno;
- do i=1 to 100;
-  j=ranpoi(23,3);
-  k=ranpoi(123,3);
-  l=ranpoi(2,3);
-  m=ranpoi(3,3);
-  n=l/j;
-  uno="hola";
-  y=ranuni(89)*100;
- output;
- end;
+
+  do i = 1 to 100;
+
+    j = ranpoi(23, 3);
+
+    k = ranpoi(123, 3);
+
+    l = ranpoi(2, 3);
+
+    m = ranpoi(3, 3);
+
+    n = l / j;
+
+    uno = "hola";
+
+    y = ranuni(89) * 100;
+
+    output;
+
+  end;
+
 run;
-%excel(C:\,work.uno);
+
+
+
+%excel(C:\, work.uno);
+
 ```
 
-Interesante macro la que os planteo, puede sernos de gran utilidad a la hora de realizar validaciones de ficheros, tabular información, análisis exploratorios,… La interactuación entre SAS y Office nos facilitará nuestro trabajo.
 
-Si tenéis más dudas o sugerencias… [rvaquerizo@analisisydecision.es](mailto:rvaquerizo@analisisydecision.es)
+
+Interesante macro la que os planteo; puede sernos de gran utilidad a la hora de realizar validaciones de ficheros, tabular información, análisis exploratorios… La interacción entre SAS y Office nos facilitará nuestro trabajo.
+
+
+
+Si tenéis más dudas o sugerencias… `rvaquerizo@analisisydecision.es`

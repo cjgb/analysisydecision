@@ -18,7 +18,7 @@ title: Ya están en marcha las V Jornadas de R
 url: /blog/ya-estan-en-marcha-las-v-jornadas-de-r/
 ---
 
-Una noticia por todos conocida. Ya están en marcha las V Jornadas de R. Esta vez son en Zaragoza el 12 y 13 de diciembre. En el siguiente enlace tenéis toda la información:
+Una noticia por todos conocida: ya están en marcha las V Jornadas de R. Esta vez son en Zaragoza, el 12 y 13 de diciembre. En el siguiente enlace tenéis toda la información:
 
 [http://r-es.org/V+Jornadas](http://r-es.org/V+Jornadas)
 

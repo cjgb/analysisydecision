@@ -19,47 +19,28 @@ title: Trucos Excel. Múltiples campos calculados en una tabla dinámica
 url: /blog/trucos-excel-multiples-campos-calculados-en-una-tabla-dinamica/
 ---
 
-Truco Excel muy rápido y que os permite crear múltiples campos calculados en una tabla dinámica de Excel. Imaginemos que tenemos una tabla dinámica con un campo que es la suma de la exposición al riesgo y por otro lado tenemos el número de siniestros. Estos dos campos los tenemos para 30 coberturas. Si queremos crear un campo calculado que sea la frecuencia siniestral (número de siniestros/exposición) para esos 30 campos tenemos que irnos a herramientas de tabla dinámica, fórmulas, definir el nuevo campo,… O bien podemos hacer emplear la siguiente macro:
+Truco de `Excel` muy rápido que os permite crear múltiples campos calculados en una tabla dinámica. Imaginemos que tenemos una tabla dinámica con un campo que es la suma de la exposición al riesgo y, por otro lado, tenemos el número de siniestros. Estos dos campos los tenemos para 30 coberturas. Si queremos crear un campo calculado que sea la frecuencia siniestral (número de siniestros / exposición) para esos 30 campos, tenemos que irnos a herramientas de tabla dinámica, fórmulas, definir el nuevo campo… O bien podemos emplear la siguiente macro:
 
-````r
-```visual-basic
-Sub calculados()
+```vba
+Sub CreaCamposCalculados()
+    Dim pt As PivotTable
+    Dim i As Integer
+    Dim nombreCampo As String
+    Dim formulaCampo As String
 
-'
+    ' Referencia a la primera tabla dinámica de la hoja activa
+    Set pt = ActiveSheet.PivotTables(1)
 
-'Ponemos la ubicación del ejecutable de SAS
-
-ubicacion_SAS = "C:\SAS\sas.exe"
-
-'
-
-'Programa que deseamos ejecutar de SAS
-
-programa_SAS = "'C:\ejecucion_excel.sas'"
-
-'
-
-'Podemos pasar parámetros como macros por ejemplo que aparecen en una celda de Excel
-
-'Podemos poner todo el código SAS que queramos
-
-parametro = "'%let nobs = " & Cells(1, 1) & " ;'"
-
-'
-
-'En una cadena ponemos toda la ejecución
-
-ejecucion = ubicacion_SAS & " " & programa_SAS & " -initstmt " & parametro
-
-'
-
-'Shell ejecuta la cadena anterior
-
-ejecuta = Shell(ejecucion, 1)
-
-'
-
+    ' Bucle para crear múltiples campos calculados (ejemplo para 3 coberturas)
+    For i = 1 To 3
+        nombreCampo = "Frecuencia_Cobertura_" & i
+        ' La fórmula usa los nombres de los campos existentes
+        formulaCampo = "='Siniestros_" & i & "' / 'Exposicion_" & i & "'"
+        
+        pt.CalculatedFields.Add nombreCampo, formulaCampo
+        pt.PivotFields(nombreCampo).Orientation = xlDataField
+    Next i
 End Sub
-````
+```
 
-Macro sencilla y que puede ahorraros muchos pasos con las fórmulas de las tablas dinámicas. Espero que sea de utilidad. Saludos.
+Macro sencilla que puede ahorraros muchos pasos con las fórmulas de las tablas dinámicas. Espero que sea de utilidad. Saludos.

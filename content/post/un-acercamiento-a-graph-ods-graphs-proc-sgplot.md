@@ -24,194 +24,123 @@ url: /blog/un-acercamiento-a-graph-ods-graphs-proc-sgplot/
 
 ![REGRESION CON SGPLOT](/images/2010/05/sgplot59.thumbnail.png "REGRESION CON SGPLOT")![GRAFICO BARRAS LINEAS SGPLOT](/images/2010/05/sgplot180.thumbnail.png "GRAFICO BARRAS LINEAS SGPLOT")![BARRAS HORIZONTALES SGPLOT](/images/2010/05/sgplot40.thumbnail.png "BARRAS HORIZONTALES SGPLOT")
 
-No todos los procedimientos gráficos de SAS son tan malos y tan complejos. Hay una serie de procedimientos como el PROC SGPLOT que nos permiten realizar gráficos muy vistosos y con una sintaxis más sencilla. Estos procedimientos son los que vamos a denominar ODS GRAPHS. Como siempre, en estas líneas, sólo os voy a acercar a algunas de las posibilidades que ofrece el PROC SGPLOT (a futuro veremos más) y despertar vuestra curiosidad. Hay documentación muy completa en la red al respecto, además, y sin que sirva de precedente, la ayuda de SAS es muy correcta.
+No todos los procedimientos gráficos de SAS son tan malos y tan complejos. Hay una serie de procedimientos como el `PROC SGPLOT` que nos permiten realizar gráficos muy vistosos y con una sintaxis más sencilla. Estos procedimientos son los que vamos a denominar **ODS GRAPHS**. Como siempre, en estas líneas, sólo os voy a acercar a algunas de las posibilidades que ofrece el `PROC SGPLOT` (a futuro veremos más) y despertar vuestra curiosidad. Hay documentación muy completa en la red al respecto; además, y sin que sirva de precedente, la ayuda de SAS es muy correcta.
 
-El punto de partida habitual, un dataset de ejemplo:
+El punto de partida habitual, un *dataset* de ejemplo:
 
-```r
+```sas
 data aleatorio;
-
-do i=1 to 2000;
-
-if ranuni(6)>.6 then do;
-
-altura=10*rannor(5)+174;
-
-peso=5*rannor(4)+70;
-
-sexo="Hombre";
-
-end;
-
-else do;
-
-altura=10*rannor(5)+168;
-
-peso=5*rannor(4)+60;
-
-sexo="Mujer";
-
-end;
-
-output;
-
-end;
-
+    do i = 1 to 2000;
+        if ranuni(6) > 0.6 then do;
+            altura = 10 * rannor(5) + 174;
+            peso = 5 * rannor(4) + 70;
+            sexo = "Hombre";
+        end;
+        else do;
+            altura = 10 * rannor(5) + 168;
+            peso = 5 * rannor(4) + 60;
+            sexo = "Mujer";
+        end;
+        output;
+    end;
 run;
 ```
 
-Ejemplo rebuscado; peso, altura y sexo. Algunos posibilidades:
+Ejemplo rebuscado: peso, altura y sexo. Algunas posibilidades:
 
-Gráficos de cajas, imprescindibles:
+### Gráficos de cajas, imprescindibles:
 
-```r
-odshtml style=minimal;
-
-title "Cajas horizontales con línea de referencia";
-
-proc sgplot data=aleatorio;
-
-  hbox peso / category=sexo ;
-
-  refline 65/axis=x;
-
-run; quit;
-
-*;
+```sas
+ods html style=minimal;
 
 title "Cajas horizontales con línea de referencia";
-
 proc sgplot data=aleatorio;
+    hbox peso / category=sexo;
+    refline 65 / axis=x;
+run;
 
-  vbox peso / category=sexo ;
-
-  refline 65/axis=y;
-
-run; quit;
+title "Cajas verticales con línea de referencia";
+proc sgplot data=aleatorio;
+    vbox peso / category=sexo;
+    refline 65 / axis=y;
+run;
+od s html close;
 ```
 
-Código sencillo para unos gráficos vistosos y muy prácticos, no perdáis de vista el uso de ODS. Veamos histogramas:
+Código sencillo para unos gráficos vistosos y muy prácticos; no perdáis de vista el uso de `ODS`. Veamos histogramas:
 
-```r
-odshtml style=statistical;
+```sas
+od s html style=statistical;
 
 title "Histograma de altura con densidades";
-
 proc sgplot data=aleatorio;
-
-histogram altura/nooutline scale=count;
-
-density altura;
-
-density altura/type=kernel ;
-
-run;quit;
+    histogram altura / nooutline scale=count;
+    density altura;
+    density altura / type=kernel;
+run;
+od s html close;
 ```
 
-Importante el uso de densidades, en mi caso particular un gráfico muy habitual. Barras verticales y horizontales:
+Importante el uso de densidades; en mi caso particular, un gráfico muy habitual. Barras verticales y horizontales:
 
-```r
-odshtml file="h-barras.html" path="C:\temp";
-
+```sas
+od s html file="h-barras.html" path="C:\temp";
 proc sgplot data=aleatorio;
-
-hbar sexo/response=altura stat=mean datalabel;
-
-quit;
-
-*;
+    hbar sexo / response=altura stat=mean datalabel;
+run;
+od s html close;
 
 proc format;
-
-value alt
-
-low-180="Bajos"
-
-180-high="Altos";
-
-quit;
-
-*;
-
-odshtml file="v-barras.html" path="C:\temp";
-
-proc sgplot data=aleatorio;
-
-format altura alt.;
-
-vbar sexo/response=peso stat=sum datalabel group=altura;
-
-quit;
-```
-
-Guardamos los resultados como html, las agrupaciones son bastante útiles en este tipo de gráficos. Código muy sencillo (insisto) han hecho algo bien. Dispersiones con SCATTER :
-
-```r
-title "Dispersones con elipse";
-
-proc sgplot data=aleatorio;
-
-scatter x=peso y=altura;
-
-ellipse x=peso y=altura/;
-
+    value alt low-180 = "Bajos"
+              180-high = "Altos";
 run;
 
-*;
+od s html file="v-barras.html" path="C:\temp";
+proc sgplot data=aleatorio;
+    format altura alt.;
+    vbar sexo / response=peso stat=sum datalabel group=altura;
+run;
+od s html close;
+```
+
+Guardamos los resultados como HTML; las agrupaciones son bastante útiles en este tipo de gráficos. Código muy sencillo (insisto); han hecho algo bien. Dispersiones con `SCATTER`:
+
+```sas
+title "Dispersiones con elipse";
+proc sgplot data=aleatorio;
+    scatter x=peso y=altura;
+    ellipse x=peso y=altura;
+run;
 
 title "Ajuste de recta de regresión";
-
 proc sgplot data=aleatorio;
-
-scatter x=peso y=altura/group=sexo;
-
-reg x=peso y=altura/group=sexo cli clm;
-
+    scatter x=peso y=altura / group=sexo;
+    reg x=peso y=altura / group=sexo cli clm;
 run;
-
-*;
 
 title "Ajuste por regresión local";
-
 proc sgplot data=aleatorio;
-
-scatter x=peso y=altura/group=sexo;
-
-loess x=peso y=altura/group=sexo;
-
+    scatter x=peso y=altura / group=sexo;
+    loess x=peso y=altura / group=sexo;
 run;
 ```
 
-Añadimos al gráfico una predicción por elipse. También podemos hacer ajustes por regresión, espectaculares los intervalos de confianza que obtenemos. Podemos añadir una predicción por LOESS aunque en este ejemplo no tiene mucho sentido. SCATTER podría tener una entrada para él sólo. Ahora un gráfico de barras y líneas:
+Añadimos al gráfico una predicción por elipse. También podemos hacer ajustes por regresión; espectaculares los intervalos de confianza que obtenemos. Podemos añadir una predicción por `LOESS`, aunque en este ejemplo no tiene mucho sentido. `SCATTER` podría tener una entrada para él solo. Ahora un gráfico de barras y líneas:
 
-```r
+```sas
 proc format;
-
-value alt
-
-low-160="Bajos"
-
-160-180="Medios"
-
-180-high="Altos";
-
-quit;
+    value alt_cat low-160 = "Bajos"
+                  160-180 = "Medios"
+                  180-high = "Altos";
+run;
 
 title "Líneas y barras por categorías";
-
 proc sgplot data=aleatorio;
-
-format altura alt.;
-
-vline altura/response=peso stat=mean y2axis;
-
-vbar altura/ transparency=0.3;
-
-xaxis offsetmax=0.1 offsetmin=0.1;
-
+    format altura alt_cat.;
+    vline altura / response=peso stat=mean y2axis;
+    vbar altura / transparency=0.3;
+    xaxis offsetmax=0.1 offsetmin=0.1;
 run;
 ```
 
-Alguno está pensando en mandar muy lejos el PROC GBARLINE. Yo tengo una entrada preparada al 80% y nunca verá la luz. Me dejo muchos gráficos y muchas posibilidades. Aunque estoy convencido que he cumplido mi objetivo con este mensaje, acercaros a uno de los pocos procedimientos gráficos de SAS que merecen la pena, así poco a poco váis dejando Excel. Por supuesto si tenéis dudas o sugerencias… rvaquerizo@analisisydecision.es
-
-Saludos.
+Alguno está pensando en mandar muy lejos el `PROC GBARLINE`. Yo tengo una entrada preparada al 80% y nunca verá la luz. Me dejo muchos gráficos y muchas posibilidades. Aunque estoy convencido de que he cumplido mi objetivo con este mensaje: acercaros a uno de los pocos procedimientos gráficos de SAS que merecen la pena; así, poco a poco, vais dejando `Excel`. Por supuesto, si tenéis dudas o sugerencias… `rvaquerizo@analisisydecision.es`. Saludos.

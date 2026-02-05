@@ -4,6 +4,7 @@ categories:
   - opinión
 date: '2011-02-28'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - bajar-los-tipos-a-la-japonesa-al-0.md
   - internet-of-things-en-el-sector-asegurador.md
@@ -26,4 +27,4 @@ Así a simple vista dependemos del Canal de Suez y del Norte de África en más 
 
 ![importacion-por-paises-en-tabla.png](/images/2011/02/importacion-por-paises-en-tabla.png)
 
-¡Un momento! ¡Mirad los países! **¿Soy yo el único que se ha dado cuenta de que sólo un 15% del petroleo que importamos viene de países con democracia?** Entonces, ¿qué narices queremos? Un dictador sólo garantiza estabilidad unos 30 años, lo malo es que podemos preguntarnos: **¿Cuántos años de estabilidad garantiza la democracia?** Esto acaba de empezar, hay que plantearse el modelo productivo.
+¡Un momento! ¡Mirad los países! ¿Soy yo el único que se ha dado cuenta de que sólo un 15% del petroleo que importamos viene de países con democracia? Entonces, ¿qué narices queremos? Un dictador sólo garantiza estabilidad unos 30 años, lo malo es que podemos preguntarnos: ¿Cuántos años de estabilidad garantiza la democracia? Esto acaba de empezar, hay que plantearse el modelo productivo.

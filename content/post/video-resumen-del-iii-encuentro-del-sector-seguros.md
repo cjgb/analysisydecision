@@ -19,4 +19,4 @@ tags:
 
 ![Imagen de previsualización de YouTube](https://img.youtube.com/vi/3Dx9sf1HdO4/0.jpg)
 
-Interesante video que resume el III Encuentro del Sector Seguros en España. Pocos de los entrevistados usan el tiempo futuro y probablemente lo hagan por precaución. Me gusta que se hable de la solvencia, resultados técnicos, gestión de riesgos o suficiencia de prima. También se habla de low cost pero se trata como algo coyuntural. Me sorprende que no se hable de la sostenibilidad de las pensiones.
+Interesante vídeo que resume el III Encuentro del Sector Seguros en España. Pocos de los entrevistados usan el tiempo futuro y probablemente lo hagan por precaución. Me gusta que se hable de la solvencia, resultados técnicos, gestión de riesgos o suficiencia de prima. También se habla de *low cost*, pero se trata como algo coyuntural. Me sorprende que no se hable de la sostenibilidad de las pensiones.

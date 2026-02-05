@@ -18,7 +18,7 @@ title: Tipos de merge con SAS o WPS
 url: /blog/tipos-de-merge-con-sas-o-wps/
 ---
 
-Una chuleta con los tipos de merge que se pueden hacer en un paso data con SAS:
+Una chuleta con los tipos de `MERGE` que se pueden hacer en un paso `DATA` con SAS:
 
 ![tipos de merge en SAS](/images/2014/12/tipos-de-merge-en-SAS.png)
 

@@ -18,7 +18,7 @@ title: R cayendo en la lista TIOBE
 url: /blog/r-cayendo-en-la-lista-tiobe/
 ---
 
-No me ha gustado esta sorpresa en la **lista TIOBE de abril de 2012** :
+No me ha gustado esta sorpresa en la **lista TIOBE de abril de 2012**:
 
 ![lista_tiobe_r.PNG](/images/2012/04/lista_tiobe_r.PNG)
 

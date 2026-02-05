@@ -16,22 +16,23 @@ title: Truco SAS. Limpieza de tabuladores con expresiones regulares
 url: /blog/truco-sas-limpieza-de-tabuladores-con-expresiones-regulares/
 ---
 
-Un lector necesita eliminar tabuladores de una cadena de texto y no le están funcionando las funciones habituales, sugiero emplear expresiones regulares, en mi entorno de SAS si está funcionando:
+Un lector necesita eliminar tabuladores de una cadena de texto y no le están funcionando las funciones habituales; sugiero emplear expresiones regulares. En mi entorno de SAS sí está funcionando:
 
 ```sas
 data ejemplo;
-input frase 50.;
-cards;
+    length frase $50.;
+    input frase $50.;
+    cards;
 Hola este es un ejemplo""""""
 Hola es te es un ejemplo_________
 Hola este es un ejemplo++++++++
 ;
 run;
 
-data ejemplo;
-set ejemplo;
-call prxchange(prxparse('s/([A-ZÑa-zñ 0-9]*)([^A-Za-zÑñ 0-9]*)/1/'),-1,frase);
+data ejemplo_limpio;
+    set ejemplo;
+    call prxchange(prxparse('s/([A-ZÑa-zñ 0-9]*)([^A-Za-zÑñ 0-9]*)/$1/'), -1, frase);
 run;
 ```
 
-Como se ve en el ejemplo también se carga los caracteres especiales, tened en cuenta eso. Saludos.
+Como se ve en el ejemplo, también se carga los caracteres especiales; tened en cuenta eso. Saludos.

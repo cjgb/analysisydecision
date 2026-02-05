@@ -24,4 +24,4 @@ Hace tiempo que quería publicar una entrada en respuesta a [estos comentarios e
 
 ![busquedas_google.png](/images/2012/04/busquedas_google.png)
 
-En rojo tenemos Data Mining, en azul tenemos Business Intelligence, en naranja Cloud Computing y en verde NOSQL. A la vista de este gráfico cabe preguntarse **¿es R en la nube el futuro de la profesión?**
+En rojo tenemos *Data Mining*, en azul tenemos *Business Intelligence*, en naranja *Cloud Computing* y en verde `NOSQL`. A la vista de este gráfico cabe preguntarse: **¿es `R` en la nube el futuro de la profesión?**

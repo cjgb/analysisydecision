@@ -20,7 +20,7 @@ title: Gráficos descriptivos básicos con Seaborn Python
 url: /blog/graficos-descriptivos-basicos-con-seaborn-python/
 ---
 
-Revisión de los gráficos más habituales que realizaremos en labores descriptivas de variables con Python, se emplea seaborn para ilustrar estos ejemplos. El tipo de gráfico dependerá del tipo de variable que deseamos describir e incluso del número de variables que deseamos describir Como aproximación inicial describiremos variables cuantitativas o variables cualitativas análisis univariables o análisis bivariables. Se trabaja con el conjunto de datos iris:
+Revisión de los gráficos más habituales que realizaremos en labores descriptivas de variables con `Python`; se emplea `Seaborn` para ilustrar estos ejemplos. El tipo de gráfico dependerá del tipo de variable que deseamos describir e incluso del número de variables que deseamos describir. Como aproximación inicial, describiremos variables cuantitativas o variables cualitativas, análisis univariables o análisis bivariables. Se trabaja con el conjunto de datos `iris`:
 
 ```python
 import seaborn as sns
@@ -29,9 +29,9 @@ import numpy as np
 import io
 import requests
 
-url='https://raw.githubusercontent.com/uiuc-cse/data-fa14/gh-pages/data/iris.csv'
-s=requests.get(url).content
-df=pd.read_csv(io.StringIO(s.decode('utf-8')))
+url = 'https://raw.githubusercontent.com/uiuc-cse/data-fa14/gh-pages/data/iris.csv'
+s = requests.get(url).content
+df = pd.read_csv(io.StringIO(s.decode('utf-8')))
 df.head()
 ```
 
@@ -39,73 +39,72 @@ df.head()
 
 ### Variables cuantitativas
 
-Cuando describimos variables cuantitativas lo principal es conocer su forma, sobre que valores se hallan los datos y como son de dispersos y para ello el gráfico estrella es el histograma:
+Cuando describimos variables cuantitativas, lo principal es conocer su forma, sobre qué valores se hallan los datos y cómo son de dispersos; para ello, el gráfico estrella es el histograma:
 
 ```python
 sns.histplot(data=df, x="sepal_width")
 ```
 
-![](/images/2021/07/histograma-seaborn.png)
+![histograma-seaborn.png](/images/2021/07/histograma-seaborn.png)
 
-Si queremos ver la distribución como una línea continua disponemos de los gráficos de densidad:
-
-```python
-sns.kdeplot(df['sepal_width'], bw=0.5)
-```
-
-![](/images/2021/07/densidad-seaborn.png)
-
-Como sugerencia unir ambos gráficos con distplot:
+Si queremos ver la distribución como una línea continua, disponemos de los gráficos de densidad:
 
 ```python
-sns.distplot(df['sepal_width'])
+sns.kdeplot(df['sepal_width'], bw_adjust=0.5)
 ```
 
-![](/images/2021/07/histograma-densidad.png)
+![densidad-seaborn.png](/images/2021/07/densidad-seaborn.png)
 
-El otro gráfico que destacaría sería el gráfico de cajas y bigotes que llamaremos boxplot y que es así de sencillo con seaborn:
+Como sugerencia, unir ambos gráficos con `histplot` (que sustituye al antiguo `distplot`):
+
+```python
+sns.histplot(df['sepal_width'], kde=True)
+```
+
+![histograma-densidad.png](/images/2021/07/histograma-densidad.png)
+
+El otro gráfico que destacaría sería el gráfico de cajas y bigotes, que llamaremos `boxplot`, y que es así de sencillo con `Seaborn`:
 
 ```python
 sns.boxplot(x="sepal_length", data=df)
 ```
 
-Este gráfico nos dice mucho de una variable, esa caja nos indica donde están el 75% que es lo que definimos como rango intercuartílico, hay una línea que nos indica la mediana y esos «bigotes» nos dan una medida de lo dispersos que se encuentran los datos, e incluso si hay observaciones que están 1,5 veces por encima del rango intercuartílico las da más importancia marcándolas con puntos y que se pueden denominar datos extremos.
+Este gráfico nos dice mucho de una variable: esa caja nos indica dónde está el 75% (que es lo que definimos como rango intercuartílico), hay una línea que nos indica la mediana y esos «bigotes» nos dan una medida de lo dispersos que se encuentran los datos; e incluso si hay observaciones que están 1,5 veces por encima del rango intercuartílico, les da más importancia marcándolas con puntos, que se pueden denominar «datos extremos».
 
 ### Variables cualitativas
 
-Para describir variables cualitativas el gráfico más habitual es el gráfico de barras donde contamos observaciones, en seaborn tenemos countplot:
+Para describir variables cualitativas, el gráfico más habitual es el gráfico de barras donde contamos observaciones; en `Seaborn` tenemos `countplot`:
 
 ```python
 sns.countplot(x='species', data=df)
 ```
 
-![](/images/2021/07/grafico-barras-seaborn.png)
+![grafico-barras-seaborn.png](/images/2021/07/grafico-barras-seaborn.png)
 
-Sin embargo, se sugiere que este tipo de gráficos se haga después de realizar una tabla de agregación, en este caso con `pandas`, los tiempos de ejecución siempre son menores:
+Sin embargo, se sugiere que este tipo de gráficos se haga después de realizar una tabla de agregación; en este caso con `pandas`, los tiempos de ejecución siempre son menores:
 
 ```python
-agr = df[['sepal_length','species']].groupby('species').count()
-agr = agr.reset_index()
+agr = df[['sepal_length', 'species']].groupby('species').count().reset_index()
 sns.barplot(x='species', y='sepal_length', data=agr)
 ```
 
-![](/images/2021/07/grafico-barras-seaborn-pandas.png)
+![grafico-barras-seaborn-pandas.png](/images/2021/07/grafico-barras-seaborn-pandas.png)
 
-Con seaborn no se pueden hacer gráficos de tarta, así que no describiremos variables cualitativas de ese modo.
+Con `Seaborn` no se pueden hacer gráficos de tarta, así que no describiremos variables cualitativas de ese modo.
 
 ## Análisis bivariable
 
-Disponemos de los gráficos básicos para describir una variable, pero habitualmente necesitaremos describir una variable en función de otra y así tenemos gráficos bivariables con las posibles combinaciones entre los tipos de las variables a describir.
+Disponemos de los gráficos básicos para describir una variable, pero habitualmente necesitaremos describir una variable en función de otra, y así tenemos gráficos bivariables con las posibles combinaciones entre los tipos de las variables a describir.
 
-**Dos variables cuantitativas**
+### Dos variables cuantitativas
 
-En este caso tenemos el el habitual gráfico de puntos.
+En este caso tenemos el habitual gráfico de puntos:
 
 ```python
 sns.scatterplot(data=df, x="sepal_length", y="sepal_width")
 ```
 
-![](/images/2021/07/grafico-puntos-seaborn.png)
+![grafico-puntos-seaborn.png](/images/2021/07/grafico-puntos-seaborn.png)
 
 Al que podemos añadir una variable cualitativa para identificar segmentos:
 
@@ -113,19 +112,19 @@ Al que podemos añadir una variable cualitativa para identificar segmentos:
 sns.scatterplot(data=df, x="sepal_length", y="sepal_width", hue="species")
 ```
 
-![](/images/2021/07/grafico-puntos-segmentos-seaborn.png)
+![grafico-puntos-segmentos-seaborn.png](/images/2021/07/grafico-puntos-segmentos-seaborn.png)
 
-Se aprecia como `hue` sirve para generar ese segmento. En otros gráficos que hemos trabajado, como los gráficos de densidades, en vez de hue directamente se trabaja con data frames separados, como en el ejemplo siguiente, que compara los gráficos de densidades de una variable en función de otra cuantitativa:
+Se aprecia cómo `hue` sirve para generar ese segmento. En otros gráficos que hemos trabajado, como los gráficos de densidades, en vez de `hue` directamente se trabaja con `data.frames` separados, como en el ejemplo siguiente, que compara los gráficos de densidades de una variable en función de otra cuantitativa:
 
 ```python
-df1 = df[df['species']=="setosa"]
-df2 = df[df['species']=="versicolor"]
+df1 = df[df['species'] == "setosa"]
+df2 = df[df['species'] == "versicolor"]
 
-sns.kdeplot(df1['sepal_length'], bw=0.5)
-sns.kdeplot(df2['sepal_length'], bw=0.5)
+sns.kdeplot(df1['sepal_length'], bw_adjust=0.5)
+sns.kdeplot(df2['sepal_length'], bw_adjust=0.5)
 ```
 
-![](/images/2021/07/compara-densidades-seaborn.png)
+![compara-densidades-seaborn.png](/images/2021/07/compara-densidades-seaborn.png)
 
 También se pueden realizar gráficos de densidades bivariables:
 
@@ -133,32 +132,29 @@ También se pueden realizar gráficos de densidades bivariables:
 sns.kdeplot(data=df, x="sepal_length", y="sepal_width")
 ```
 
-![](/images/2021/07/dendidad-bivariable-kde-seaborn.png)
+![densidad-bivariable-kde-seaborn.png](/images/2021/07/dendidad-bivariable-kde-seaborn.png)
 
-**Dos variables cualitativas**
+### Dos variables cualitativas
 
-En este caso es necesario emplear otras posibilidades de los gráficos de barras como añadir una nueva barra:
+En este caso es necesario emplear otras posibilidades de los gráficos de barras, como añadir una nueva barra:
 
 ```python
 sns.countplot(data=df, x="species")
 ```
 
-![](/images/2021/07/grafico-barras-seaborn-2.png)
+![grafico-barras-seaborn-2.png](/images/2021/07/grafico-barras-seaborn-2.png)
 
-Para columnas agrupadas no se recomienda el uso de seaborn, se complica el código. Pero se puede realizar con `Pandas`:
+Para columnas agrupadas no se recomienda el uso de `Seaborn`, se complica el código. Pero se puede realizar con `pandas`:
 
 ```python
-# La generación de gráficos de barras apiladas o agrupadas
-# con dos variables cualitativas se puede realizar con pandas
-# como se sugiere en el texto.
 # pd.crosstab(df['species'], df['binned_variable']).plot.bar(stacked=True)
 ```
 
-![](/images/2021/07/seaborn-columnas-apiladas.png)
+![seaborn-columnas-apiladas.png](/images/2021/07/seaborn-columnas-apiladas.png)
 
-**Una variable cuantitativa frente a una variable cualitativa**
+### Una variable cuantitativa frente a una variable cualitativa
 
-Por último una mezcla entre ambos tipos de variables, con anterioridad se vio algún ejemplo, pero son imprescindibles los gráficos de densidades frente a variables cualitativas:
+Por último, una mezcla entre ambos tipos de variables; con anterioridad se vio algún ejemplo, pero son imprescindibles los gráficos de densidades frente a variables cualitativas:
 
 ```python
 sns.kdeplot(data=df, x="sepal_width", hue="species")
@@ -168,4 +164,4 @@ sns.kdeplot(data=df, x="sepal_width", hue="species")
 sns.boxplot(data=df, x="species", y="sepal_width")
 ```
 
-Una entrada sencilla que sirve para ilustrar en pocas líneas el 80% de los gráficos que realiza un científico de datos en su vida profesional. Se ha querido emplear seaborn por tener un factor diferenciador, esta librería destaca en sus gráficos de densidades, hay otros análisis donde matplotlib es más habitual.
+Una entrada sencilla que sirve para ilustrar en pocas líneas el 80% de los gráficos que realiza un científico de datos en su vida profesional. Se ha querido emplear `Seaborn` por tener un factor diferenciador: esta librería destaca en sus gráficos de densidades; hay otros análisis donde `matplotlib` es más habitual.

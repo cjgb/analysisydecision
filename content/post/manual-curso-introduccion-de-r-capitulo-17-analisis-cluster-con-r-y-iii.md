@@ -50,7 +50,7 @@ nombres<-c("nombre","inter_hidratos","kcal","proteinas","grasas")
 names(frutas)<-nombres
 ```
 
-Lo leemos sin cabeceras y como separador indicamos el tabulador con el parámetro de `read.table sep="\t"`. Ya disponemos del objeto para el análisis. Como vimos en capítulos anteriores el primer paso es crear la matriz de distancias, realizar el cluster con ella y seleccionar el número de grupos. Para crear la matriz de distancias entre observaciones hemos de especificar un método de cálculo, en este punto vamos a aprovechar para comparar 4 métodos de obtención de distancias:
+Lo leemos sin cabeceras y como separador indicamos el tabulador con el parámetro de `read.table` `sep="\t"`. Ya disponemos del objeto para el análisis. Como vimos en capítulos anteriores el primer paso es crear la matriz de distancias, realizar el cluster con ella y seleccionar el número de grupos. Para crear la matriz de distancias entre observaciones hemos de especificar un método de cálculo, en este punto vamos a aprovechar para comparar 4 métodos de obtención de distancias:
 
 ```r
 distancias1<-dist(frutas,method="manhattan")
@@ -117,7 +117,7 @@ Viendo las 4 siluetas parece más adecuado elegir los `k=4` grupos porque son m�
 ```r
 cluster.final<-kmeans(distancias2,3)
 
-cluster.finalsize #Obtenemos el tamaño de los cluster
+cluster.final$size #Obtenemos el tamaño de los cluster
 ```
 
 ```
@@ -127,7 +127,7 @@ cluster.finalsize #Obtenemos el tamaño de los cluster
 ```r
 cluster.final<-kmeans(distancias2,4)
 
-cluster.finalsize #Obtenemos el tamaño de los cluster
+cluster.final$size #Obtenemos el tamaño de los cluster
 ```
 
 ```
@@ -149,11 +149,11 @@ Nos quedamos con 4 grupos aunque vemos que uno de ellos tiene sólo dos frutas. 
 ```r
 cluster.final<-kmeans(distancias2,4)
 
-груpos<-data.frame(frutas)
+grupos<-data.frame(frutas)
 
 clus<-as.factor(cluster.final$cluster)
 
-груpos<-cbind(data.frame(frutas),clus)
+grupos<-cbind(data.frame(frutas),clus)
 ```
 
 Para estudiar como se forman los cluster directamente sobre los datos es necesaria una ordenación de los datos. Para ordenar `data.frame` vamos a emplear el módulo `reshape` que incluye la función `sort_df`:
@@ -167,9 +167,9 @@ Vemos que también se ha instalado el paquete `plyr` porque es necesario para el
 ```r
 library(reshape)
 
-груpos<-sort_df(груpos,vars='clus')
+grupos<-sort_df(grupos,vars='clus')
 
-груpos
+grupos
 ```
 
 ```

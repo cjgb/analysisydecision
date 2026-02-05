@@ -22,37 +22,40 @@ title: Trabajar con los datos de Power BI desde R para hacer un modelo de regres
 url: /blog/trabajar-con-los-datos-de-power-bi-desde-r-para-hacer-un-modelo-de-regresion-lineal/
 ---
 
-Vídeo dedicado al uso de la librería de R `pbix`. Responde a una duda planteada por un lector que deseaba realizar un modelo de regresión lineal con Power BI. Imagino que se podrá programar en `DAX`, pero es mejor llevar los datos, las tablas necesarias, de Power BI a un software específico para poder realizar el modelo como es `Python` o R en este caso.
+Vídeo dedicado al uso de la librería de R `pbixr`. Responde a una duda planteada por un lector que deseaba realizar un modelo de regresión lineal con Power BI. Imagino que se podrá programar en DAX, pero es mejor llevar los datos (las tablas necesarias) de Power BI a un software específico para poder realizar el modelo, como es Python o R en este caso.
 
-Desde Power BI podemos realizar scripts de R pero recomiendo este primer paso para crear y validar el modelo, posteriormente podemos poner el programa de R con nuestra regresión lineal directamente en Power BI. El código empleado es:
+Desde Power BI podemos realizar scripts de R, pero recomiendo este primer paso para crear y validar el modelo; posteriormente podemos poner el programa de R con nuestra regresión lineal directamente en Power BI. El código empleado es:
 
 ```r
 library(pbixr)
+library(dplyr)
 
 # Puerto
-pbi_abiertos = f_get_connections()
+pbi_abiertos <- f_get_connections()
 
-pbi_abiertospbix <- gsub(" - Power BI Desktop", "", pbi_abiertos$pbix_name)
+pbi_name <- gsub(" - Power BI Desktop", "", pbi_abiertos$pbix_name)
 puerto_empleado <- as.numeric(pbi_abiertos$ports)
 
 conexion <- paste0("Provider=MSOLAP.8;Data Source=localhost:", puerto_empleado, ";MDX Compatibility=1")
 
-consulta = "select * from `SYSTEM.TMSCHEMA_TABLES"
+consulta <- "select * from $SYSTEM.TMSCHEMA_TABLES"
 tablas <- f_query_datamodel(consulta, conexion)
 
 consulta2 <- "evaluate cars"
 cars <- f_query_datamodel(consulta2, conexion)
 
-consulta = "select * from `SYSTEM.TMSCHEMA_COLUMNS"
+consulta <- "select * from $SYSTEM.TMSCHEMA_COLUMNS"
 columnas <- f_query_datamodel(consulta, conexion)
 
-nombres <- columnas %>% filter(TableID==641&IsHidden == 'False') %>% select(ExplicitName) %>%
-  t() %>% as.vector()
+nombres <- columnas %>% 
+  filter(TableID == 641 & IsHidden == 'FALSE') %>% 
+  select(ExplicitName) %>%
+  t() %>% 
+  as.vector()
 
-names(cars) = nombres
+names(cars) <- nombres
 
-cars$mpg = as.numeric(sub(',','.', cars$mpg))
+cars$mpg <- as.numeric(sub(',', '.', cars$mpg))
 
-lm(cars$mpg ~ cars$hp)
-##############################
+lm(mpg ~ hp, data = cars)
 ```

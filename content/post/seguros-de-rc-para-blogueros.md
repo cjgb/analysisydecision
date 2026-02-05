@@ -18,4 +18,4 @@ url: /blog/seguros-de-rc-para-blogueros/
 
 [En el blog de seguros de Alain Puyo.](http://www.alainpuyo.com/seguros-para-blogs-polemicos-cinco-dias-23-09-09/)
 
-¿Cuánto tardarán en llegar a España este tipo de denuncias?
+¿Cuánto tardarán in llegar a España este tipo de denuncias? Saludos.

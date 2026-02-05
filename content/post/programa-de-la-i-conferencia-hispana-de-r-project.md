@@ -17,10 +17,10 @@ title: Programa de la I Conferencia Hispana de R-Project.
 url: /blog/programa-de-la-i-conferencia-hispana-de-r-project/
 ---
 
-Aunque los contenidos no estén cerrados al 100% ya tenemos el programa de la I Conferencia Hispana de R en Murcia:
+Aunque los contenidos no estén cerrados al $100\%$, ya tenemos el programa de la I Conferencia Hispana de R en Murcia:
 
 [http://ereros.org/ponencias/index.html](http://ereros.org/ponencias/index.html)
 
-Considero la asistencia casi obligada. Debido a que mi familia se ha incrementado el pasado día 11 yo no andaré por allí pero pongo falta a los que no vayan.
+Considero la asistencia casi obligada. Debido a que mi familia se ha incrementado el pasado día 11, yo no andaré por allí, pero pongo falta a los que no vayan.
 
 Saludos.

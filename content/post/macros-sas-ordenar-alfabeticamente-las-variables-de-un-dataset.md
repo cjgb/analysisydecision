@@ -18,67 +18,69 @@ title: Macros SAS. Ordenar alfabéticamente las variables de un dataset
 url: /blog/macros-sas-ordenar-alfabeticamente-las-variables-de-un-dataset/
 ---
 
-Si deseamos ordenar alfabéticamente las variables de un conjunto de datos SAS porque puede falitarnos la realización de sumatorios de importes, saldos,… y el conjunto de datos SAS está desordenado os planteo una macro bien sencilla y que trabaja con una de las vistas más útiles de la `SASHELP`. La macro es bien sencilla y nos permite establecer que variables deseamos que aparezcan primero, selecciona los nombres de las variables, los ordena alfabéticamente y mediante un `proc append` (más rápido que un paso `data`) crea el fichero SAS con las variables ordenadas:
+Si deseamos ordenar alfabéticamente las variables de un conjunto de datos SAS para facilitar la realización de sumatorios masivos (importes, saldos…) y el *dataset* está desordenado, os planteo una macro sencilla que trabaja con una de las vistas más útiles de `SASHELP`. 
+
+La macro permite establecer qué variables deseamos que aparezcan primero, selecciona el resto de nombres, los ordena alfabéticamente y, mediante un `PROC APPEND` (más rápido que un paso `DATA`), crea el fichero SAS con las variables ordenadas:
 
 ```sas
-%macro ordenavar(datos,prim=);
+%macro ordenavar(datos, prim=);
+    * OBTENEMOS LIBRERÍA Y NOMBRE;
+    data _null_;
+        if index("&datos.", ".") = 0 then do;
+            call symput('lib', 'WORK');
+            call symput('nom', upcase("&datos."));
+        end;
+        else do;
+            call symput('lib', upcase(scan("&datos.", 1, ".")));
+            call symput('nom', upcase(scan("&datos.", 2, ".")));
+        end;
+    run;
 
-*OBTENEMOS LIBRERIA;
+    * CREAMOS UNA LISTA DE VARIABLES CON LA SASHELP;
+    proc sql noprint;
+        select name into :lista_ordenada separated by " " 
+        from sashelp.vcolumn
+        where upcase(libname) = "&lib." 
+          and upcase(memname) = "&nom."
+        order by name;
+    quit;
 
-%let lib=%scan("&datos.",1,".");
+    * RENOMBRAMOS EL FICHERO PARA REALIZAR LOS CAMBIOS;
+    proc datasets library=&lib. nolist;
+        change &nom. = aux_ordena;
+    quit;
 
-*OBTENEMOS NOMBRE;
+    * CREAMOS LA ESTRUCTURA ORDENADA (RETAIN ANTES DE SET);
+    data &datos.;
+        retain &prim. &lista_ordenada.;
+        set &lib..aux_ordena (obs=0);
+    run;
 
-%let nom=%scan("&datos.",2,".");
+    * CON EL PROC APPEND ANEXAMOS LOS DATOS;
+    proc append base=&datos. data=&lib..aux_ordena force; 
+    run;
+
+    proc delete data=&lib..aux_ordena; 
+    run;
+%mend;
 ```
 
-\*CREAMOS UNA LISTA DE VARIABLES CON LA SASHELP;
-`proc sql noprint;`
-`select name into: lista_ordenada separated by " " from sashelp.vcolumn`
-`where upcase(libname) = upcase("&lib.") and`
-`upcase(memname) = upcase("&nom.")`
-`order by name;`
-`quit;`
+Esta macro es un buen ejemplo de uso de las vistas de `SASHELP` y además plantea cómo emplear el `PROC APPEND` para anexar datos con mayor rapidez.
 
-\*RENOMBRAMOS EL FICHERO PARA REALIZAR LOS CAMBIOS;
-`ods noresults;`
-`proc datasets library=&lib.`
-`change &nom.=aux1;`
-`quit;`
-`ods results;`
-
-\*ORDENAMOS EL AUXILIAR Y ANEXAMOS SOBRE EL FICHERO BASE
-RETAIN ANTES DE SET NOS ORDENA LAS VARIABLES;
-`data uno;retain &prim. &lista_ordenada.;set aux1(obs=0);`
-
-\*CON EL PROC APPEND ANEXAMOS LOS DATOS CON MAYOR RAPIDEZ;
-`proc append base=&datos. data=aux1; quit;`
-
-`proc delete data=aux1;run;`
-`%mend;`
-
-Creamos un fichero auxiliar con la estructura anterior y posteriormente lo borramos. Esta macro es un buen ejemplo de uso de las vistas de la `SASHELP` y además plantea como emplear el `proc append` para modificar anexar datos con mayor rapidez. Ejemplo de uso:
+### Ejemplo de uso
 
 ```sas
 data uno;
-
-do id=1 to 20;
-
-y=ranpoi(34,3);
-
-a=ranpoi(34,7);
-
-v=ranpoi(34,1);
-
-s=ranpoi(34,89);
-
-output;
-
-end;
-
+    do id = 1 to 20;
+        y = ranpoi(34, 3);
+        a = ranpoi(34, 7);
+        v = ranpoi(34, 1);
+        s = ranpoi(34, 89);
+        output;
+    end;
 run;
+
+%ordenavar(work.uno, prim=id);
 ```
 
-`%ordenavar(work.uno,prim=id);`
-
-En el parámetro `PRIM` podemos especificar aquellas variables que desamos que aparezcan primero. Para cualquier duda o problema sobre el funcionamiento: `rvaquerizo@analisisydecision.es`
+En el parámetro `PRIM` podemos especificar aquellas variables que deseamos que aparezcan primero. Para cualquier duda o problema sobre el funcionamiento: `rvaquerizo@analisisydecision.es`. Saludos.

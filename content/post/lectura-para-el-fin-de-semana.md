@@ -21,6 +21,6 @@ title: Lectura para el fin de semana
 url: /blog/lectura-para-el-fin-de-semana/
 ---
 
-Cada vez me caen mejor estos de [Minequest](http://www.minequest.com/) y llevo un tiempo siguiendo el blog de [Adventures in Consulting](http://minequest.com/WordPress/).
+Cada vez me caen mejor estos de [MineQuest](http://www.minequest.com/) y llevo un tiempo siguiendo el blog de [Adventures in Consulting](http://minequest.com/WordPress/).
 
 Me voy a dar de comer a mi león.

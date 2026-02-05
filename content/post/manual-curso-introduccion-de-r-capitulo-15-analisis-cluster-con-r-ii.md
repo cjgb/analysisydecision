@@ -21,16 +21,16 @@ title: 'Manual. Curso introducción de R. Capítulo 16: Análisis Cluster con R 
 url: /blog/manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-ii/
 ---
 
-En esta entrega seguimos trabajando con el análisis `Cluster` viendo más posibilidades que nos ofrece R. Para ello vamos a realizar un estudio de agrupamiento de países europeos en función de algunos indicadores básicos:
+En esta entrega seguimos trabajando con el análisis cluster, viendo más posibilidades que nos ofrece R. Para ello vamos a realizar un estudio de agrupamiento de países europeos en función de algunos indicadores básicos:
 
 - Superficie
 - Población
-- PIB (en mil de $)
+- PIB (en miles de $)
 - Esperanza de vida
 - Índice de desarrollo humano
 - % Población en ciudad
 
-Para este estudio contamos con [este archivo excel](/images/2009/05/paises.xls "paises.xls") . El primer paso por supuesto es crear un objeto en R:
+Para este estudio contamos con [este archivo Excel](/images/2009/05/paises.xls "paises.xls"). El primer paso, por supuesto, es crear un objeto en R:
 
 ```r
 library(RODBC)
@@ -52,7 +52,7 @@ datosdensi<-datospob/datos$sup
 detach(datos)
 ```
 
-Ya tenemos el objeto `datos` sobre el que realizaremos el análisis. Para evitar que tamaños de población o superficies muy grandes distorsionen el análisis hemos creado una nueva variable `densi` que nos mide la densidad de población Es necesario computar una matriz de distancias pero en este caso el agrupamiento se llevará a cabo con las medidas de disimilitud con base en la distancia euclidea. Es decir, lo contrario a una medida de similitud:
+Ya tenemos el objeto `datos` sobre el que realizaremos el análisis. Para evitar que tamaños de población o superficies muy grandes distorsionen el análisis, hemos creado una nueva variable `densi` que nos mide la densidad de población. Es necesario computar una matriz de distancias, pero en este caso el agrupamiento se llevará a cabo con las medidas de disimilitud con base en la distancia euclídea. Es decir, lo contrario a una medida de similitud:
 
 ```r
 library(cluster)
@@ -62,7 +62,7 @@ datos.estudio<-cbind(datosdensi,datospib,datosIDH,datosEspe_vida,datos$Pob_ciuda
 disimilar<-daisy(datos.estudio)
 ```
 
-Necesitamos la librería `cluster` para emplear la función `daisy` que es la que nos calcula la matriz de disimilitudes. Con esta matriz ya podemos emplear la función `hclust` y crear un gráfico para estudiar como se agrupan los países en estudio:
+Necesitamos la librería `cluster` para emplear la función `daisy`, que es la que nos calcula la matriz de disimilitudes. Con esta matriz ya podemos emplear la función `hclust` y crear un gráfico para estudiar cómo se agrupan los países en estudio:
 
 ```r
 cluster.1<-hclust(disimilar)
@@ -72,7 +72,7 @@ plot(cluster.1)
 
 ![cluster2.JPG](/images/2009/05/cluster2.JPG)
 
-Parece que tenemos 4 grupos muy claros, uno de ellos con sólo un elemento. Vamos a emplear una técnica por medios divisorios (Partitioning methods en terminología anglosajona) que sitúa cada observación en los alguno de los `cluster` de forma que se minimizara la suma de las disimilaridades:
+Parece que tenemos 4 grupos muy claros, uno de ellos con sólo un elemento. Vamos a emplear una técnica por medios divisorios (*Partitioning methods* en terminología anglosajona) que sitúa cada observación en alguno de los clusters de forma que se minimice la suma de las disimilaridades:
 
 ```r
 cluster.2<-pam(datos.estudio,4)
@@ -118,7 +118,7 @@ size max_diss  av_diss diameter separation
 [4,]    1    0.000    0.000    0.000 14336.8688
 ```
 
-Se observa que el `cluster` identificado como 1 tiene los valores más bajos a excepción de la población rural que se sitúa en la media global. El `cluster` 2 tiene un PIB alto al igual que el ídice de desarrollo humano, la más alta esperanza de vida y uno de los menores porcentajes de personas en ciudades. El grupo 3 es parecido al grupo 1 pero su PIB no es muy bajo, aunque por debajo de la media, un 40% de su población vive en el medio rural. El grupo 4 recoge a un país muy potente y muy poblado donde nadie reside en el medio rural. Vemos como quedan los grupos:
+Se observa que el cluster identificado como 1 tiene los valores más bajos, a excepción de la población rural que se sitúa en la media global. El cluster 2 tiene un PIB alto, al igual que el índice de desarrollo humano, la más alta esperanza de vida y uno de los menores porcentajes de personas en ciudades. El grupo 3 es parecido al grupo 1 pero su PIB no es muy bajo, aunque por debajo de la media; un 40% de su población vive en el medio rural. El grupo 4 recoge a un país muy potente y muy poblado donde nadie reside en el medio rural. Veamos cómo quedan los grupos:
 
 ```r
 grupos<-data.frame(datospais)
@@ -166,7 +166,7 @@ datos.pais cluster.2.clustering
 36         Ucrania                    1
 ```
 
-Parece claro que el grupo 1 engloba a los países del este, el grupo 2 forma la Europa más desarrollada, el grupo 3 la Europa en vías de desarrollo y el grupo 4 es Luxemburgo. Veamos gráficamente como se agrupan:
+Parece claro que el grupo 1 engloba a los países del este, el grupo 2 forma la Europa más desarrollada, el grupo 3 la Europa en vías de desarrollo y el grupo 4 es Luxemburgo. Veamos gráficamente cómo se agrupan:
 
 ```r
 par(mfrow=c(2,1)) # 2x1 casillas gráficas
@@ -176,4 +176,4 @@ plot(cluster.2)
 
 ![cluster3.JPG](/images/2009/05/cluster3.JPG)
 
-Tenemos 2 gráficos: uno de componentes principales y otro de distancias entre los centroides de los `cluster`. Con 2 componentes ya tendríamos el 85% de la variabilidad explicada. Espero que este ejemplo os sirva de referencia para conocer las posibilidades de R en el análisis `cluster`. Por supuesto si tenéis cualquier duda o sugerencia `rvaquerizo@analisisydecision.es`
+Tenemos 2 gráficos: uno de componentes principales y otro de distancias entre los centroides de los clusters. Con 2 componentes ya tendríamos el 85% de la variabilidad explicada. Espero que este ejemplo os sirva de referencia para conocer las posibilidades de R en el análisis cluster. Por supuesto, si tenéis cualquier duda o sugerencia: `rvaquerizo@analisisydecision.es`.

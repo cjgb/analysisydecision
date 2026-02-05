@@ -19,30 +19,30 @@ title: Trabajando con factores en R. Attach frente a within
 url: /blog/trabajando-con-factores-en-r-attach-frente-a-within/
 ---
 
-Un ejemplo de trabajo con datos en R. Transformamos factores de dos formas distintas. Por un lado empleamos _within_ con _recode_ de la librería _car_ y por otro lado empleamos el mítico _attach_.
+Un ejemplo de trabajo con datos en R. Transformamos factores de dos formas distintas. Por un lado empleamos `within` con `recode` de la librería `car` y, por otro lado, empleamos el mítico `attach`.
 
-Manejo de datos con **within** :
+Manejo de datos con `within`:
 
-````r
 ```r
-datos library(car)
+library(car)
 
-datos prog id reconocimientos reconocimientos2 = recode(num_awards,"0='Sin renococimiento';1='1 reconocimiento';
-
-else='Más de un reconocimiento'")
-
+# Supongamos que tenemos un data frame llamado datos
+datos <- within(datos, {
+  reconocimientos2 <- recode(num_awards, "0='Sin reconocimiento'; 1='1 reconocimiento'; else='Más de un reconocimiento'")
 })
-````
+```
 
-Manejo de datos con **attach/detach** :
+Manejo de datos con `attach` / `detach`:
 
-````r
 ```r
 attach(datos)
 
-datosmath_cat[math<50 ] <- "D" datosmath_cat[math >= 50 & math < 60] <- "C" datosmath_cat[math >= 60&math<75] <- "B" datosmath_cat[math >= 75] <- "A"
+datos$math_cat[math < 50] <- "D"
+datos$math_cat[math >= 50 & math < 60] <- "C"
+datos$math_cat[math >= 60 & math < 75] <- "B"
+datos$math_cat[math >= 75] <- "A"
 
-datos$math_cat detach(datos)
-````
+detach(datos)
+```
 
-No voy a entrar en que es más óptimo, tarda menos y demás. En mi opinión es mejor utilizar _within_ pacece más «pulcro» y la verdad es que la función _recode_ nos facilita mucho el trabajo pero como siempre tenemos múltiples posibilidades con R, por eso es R. Saludos.
+No voy a entrar en qué es más óptimo, tarda menos y demás. En mi opinión es mejor utilizar `within`; parece más "pulcro" y la verdad es que la función `recode` nos facilita mucho el trabajo; pero, como siempre, tenemos múltiples posibilidades con R, por eso es R. Saludos.

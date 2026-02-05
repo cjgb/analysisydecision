@@ -18,7 +18,7 @@ url: /blog/mapa-del-covid-19-por-comunidades-autonomas-con-r-mas-rstats/
 
 ![](/images/2020/03/coronavirus7.png)
 
-Estoy muy activo en twitter con el #covid-19 estos días y eso está dando lugar a algunas entradas en el blog. Sin embargo, he parado esa actividad porque **el número de casos no me parece el indicador adecuado para medir la verdadera incidencia de la pandemia**. Empiezo a tener posibles casos entre personas conocidas y no se realiza ningún test, permanecen en casa y son casos no informados. Sin embargo, quería que esta entrada sirviera de homenaje a la gente de [Datadista](https://datadista.com/) que está recogiendo datos y realizan un seguimiento del número de camas ocupadas, uno de los mejores indicadores. Además sigo mi labor formativa con `rstats`, hoy toca:
+Estoy muy activo en Twitter con el `#covid-19` estos días y eso está dando lugar a algunas entradas en el blog. Sin embargo, he parado esa actividad porque **el número de casos no me parece el indicador adecuado para medir la verdadera incidencia de la pandemia**. Empiezo a tener posibles casos entre personas conocidas y no se realiza ningún test, permanecen en casa y son casos no informados. Sin embargo, quería que esta entrada sirviera de homenaje a la gente de [Datadista](https://datadista.com/) que está recogiendo datos y realizan un seguimiento del número de camas ocupadas, uno de los mejores indicadores. Además sigo mi labor formativa con `rstats`, hoy toca:
 
 - Mapa rápido y guarro de España con `GADM`
 - Homogeneización de textos con `dplyr` y `tm`
@@ -35,7 +35,7 @@ Datadista pone a nuestra disposición datos actualizados por Comunidad Autónoma
 ## Mapa por Comunidad Autónoma con datos de Datadista
 
 ```r
-#Situación por Comunidad Autónoma
+# Situación por Comunidad Autónoma
 library(gganimate)
 library(maptools)
 library(raster)
@@ -44,40 +44,39 @@ library(tidyverse)
 
 datadista = "https://raw.githubusercontent.com/datadista/datasets/master/COVID%2019/ccaa_covid19_casos.csv"
 
-tabla_ccaa <- read.csv2(datadista, sep=',',encoding = 'UTF-8', check.names=FALSE)
+tabla_ccaa <- read.csv2(datadista, sep=',', encoding = 'UTF-8', check.names=FALSE)
 
 Espania <- getData('GADM', country='Spain', level=1)
-Espanianame = EspaniaNAME_1
-ccaa <- map_data(Espania)
+ccaa <- fortify(Espania, region = "NAME_1")
 
-pinta <- tabla_ccaa[,c(2,length(tabla_ccaa))]
-names(pinta)=c("region","casos")
+pinta <- tabla_ccaa[,c(2, length(tabla_ccaa))]
+names(pinta)=c("region", "casos")
 
-unique(ccaaregion)
-unique(pintaregion)
+unique(ccaa$id)
+unique(pinta$region)
 
-ccaa <- ccaa %>% mutate(region=case_when(
-  region == "Región de Murcia" ~ "Murcia",
-  region == "Principado de Asturias" ~ "Asturias",
-  region == "Comunidad de Madrid" ~ "Madrid",
-  region == "Comunidad Foral de Navarra" ~ "Navarra",
-  region == "Comunidad Valenciana" ~ "C. Valenciana",
-  region == "Islas Canarias" ~ "Canarias",
-  region == "Islas Baleares" ~ "Baleares",
-  TRUE ~ region))
+ccaa <- ccaa %>% mutate(id=case_when(
+  id == "Región de Murcia" ~ "Murcia",
+  id == "Principado de Asturias" ~ "Asturias",
+  id == "Comunidad de Madrid" ~ "Madrid",
+  id == "Comunidad Foral de Navarra" ~ "Navarra",
+  id == "Comunidad Valenciana" ~ "C. Valenciana",
+  id == "Islas Canarias" ~ "Canarias",
+  id == "Islas Baleares" ~ "Baleares",
+  TRUE ~ id))
 
-ccaa <- left_join(ccaa,pinta)
+ccaa <- left_join(ccaa, pinta, by = c("id" = "region"))
 
 ggplot(data = ccaa, aes(x = long, y = lat, group = group)) +
   geom_polygon(aes(fill = casos)) +
-  scale_fill_continuous(low="white",high="red") +
+  scale_fill_continuous(low="white", high="red") +
   labs(title = "Mapa del COVID-19 por Comunidad Autónoma") +
   theme(panel.background =
-          element_rect(fill='#838596',colour='#838596'),
+          element_rect(fill='#838596', colour='#838596'),
         panel.grid.major = element_blank(),
         panel.grid.minor = element_blank()) +
-  theme(axis.line=element_blank(),axis.text.x=element_blank(),
-        axis.text.y=element_blank(),axis.ticks=element_blank(),
+  theme(axis.line=element_blank(), axis.text.x=element_blank(),
+        axis.text.y=element_blank(), axis.ticks=element_blank(),
         axis.title.x=element_blank(),
         axis.title.y=element_blank())
 ```
@@ -92,27 +91,27 @@ El código empieza del siguiente modo:
 library(rvest)
 library(xml2)
 library(tm)
-numerea <- function(x) {as.numeric(sub(",",".",x)) }
+numerea <- function(x) { as.numeric(sub(",", ".", x)) }
 
 url = 'https://datosmacro.expansion.com/demografia/poblacion/espana-comunidades-autonomas'
 ```
 
-Si vais a la `url` indicada tenemos que extraer la tabla específica con el número de habitantes y para eso necesitamos saber en que lugar del código HTML se encuentra. En mi caso empleo Google Chrome, imagino que será análogo con otros navegadores. Hacemos lo siguiente:
+Si vais a la `url` indicada tenemos que extraer la tabla específica con el número de habitantes y para eso necesitamos saber en qué lugar del código HTML se encuentra. En mi caso empleo Google Chrome, imagino que será análogo con otros navegadores. Hacemos lo siguiente:
 
 ![](/images/2020/03/scraping_datosmacro.png)
 
-Nos ubicamos sobre la tabla que deseamos scrapear (verbo regular de la primera conjugación) damos a inspeccionar y nos aparece la codificación, dentro de la codificación si pulsamos se marcará la tabla y Copy + Copy `XPath` y con ello ya podemos crear un `data frame` con la tabla HTML:
+Nos ubicamos sobre la tabla que deseamos scrapear (verbo regular de la primera conjugación) damos a inspeccionar y nos aparece la codificación; dentro de la codificación, si pulsamos, se marcará la tabla y Copy + Copy `XPath` y con ello ya podemos crear un `data frame` con la tabla HTML:
 
 ```r
-poblacion <- url %>%
-  html() %>%
+poblacion_html <- read_html(url)
+poblacion <- poblacion_html %>%
   html_nodes(xpath='//*[@id="tb1"]') %>%
   html_table()
 poblacion <- poblacion[[1]]
 
 poblacion <- poblacion [,-4] %>% mutate(CCAA = removePunctuation(CCAA),
-                                        CCAA = substr(CCAA,1,nchar(CCAA)-1),
-                                        habitantes=numerea(removePunctuation(Población))) %>%
+                                        CCAA = substr(CCAA, 1, nchar(CCAA)-1),
+                                        habitantes = numerea(removePunctuation(Población))) %>%
   rename(region=CCAA) %>%
   select(region, habitantes) %>% mutate(region=case_when(
     region == "Comunidad Valenciana" ~ "C. Valenciana",
@@ -122,29 +121,29 @@ poblacion <- poblacion [,-4] %>% mutate(CCAA = removePunctuation(CCAA),
   ))
 ```
 
-en `html_nodes` hemos puesto el `XPath` y ya sabe que parte tiene que leer, como se genera una lista nos quedamos con el primer elemento de la lista y posteriormente se realiza la homogeneización de los nombres de las comunidades, eliminación de signos de puntuación con `removePunctuation()` (que ha cambiado mi vida porque odio `regex`). Esta tabla puede ser cruzada con los datos de Datadista y crear un número de casos entre habitantes x 1000:
+En `html_nodes` hemos puesto el `XPath` y ya sabe qué parte tiene que leer; como se genera una lista nos quedamos con el primer elemento de la lista y posteriormente se realiza la homogeneización de los nombres de las comunidades, eliminación de signos de puntuación con `removePunctuation()` (que ha cambiado mi vida porque odio `regex`). Esta tabla puede ser cruzada con los datos de Datadista y crear un número de casos entre habitantes x 1000:
 
 ```r
-unique(poblacionregion)
-unique(ccaaregion)
+unique(poblacion$region)
+unique(ccaa$id)
 
-ccaa <- left_join(ccaa,poblacion)
-ccaatasa_COVID <- (ccaacasos/ccaa$habitantes)*1000
+ccaa <- left_join(ccaa, poblacion, by = c("id" = "region"))
+ccaa$tasa_COVID <- (ccaa$casos / ccaa$habitantes) * 1000
 
 ggplot(data = ccaa, aes(x = long, y = lat, group = group)) +
   geom_polygon(aes(fill = tasa_COVID)) +
-  scale_fill_continuous(low="white",high="red") +
+  scale_fill_continuous(low="white", high="red") +
   labs(title = "Mapa del COVID-19 por Comunidad Autónoma") +
   theme(panel.background =
-          element_rect(fill='#838596',colour='#838596'),
+          element_rect(fill='#838596', colour='#838596'),
         panel.grid.major = element_blank(),
         panel.grid.minor = element_blank()) +
-  theme(axis.line=element_blank(),axis.text.x=element_blank(),
-        axis.text.y=element_blank(),axis.ticks=element_blank(),
+  theme(axis.line=element_blank(), axis.text.x=element_blank(),
+        axis.text.y=element_blank(), axis.ticks=element_blank(),
         axis.title.x=element_blank(),
         axis.title.y=element_blank())
 ```
 
-Y el resultado sigue siendo alarmante en Madrid pero la tonalidad del rojo cambia mucho en otras zonas de España, la importancia relativizar un dato.
+Y el resultado sigue siendo alarmante en Madrid pero la tonalidad del rojo cambia mucho en otras zonas de España, la importancia de relativizar un dato.
 
 ![](/images/2020/03/coronavirus8.png)

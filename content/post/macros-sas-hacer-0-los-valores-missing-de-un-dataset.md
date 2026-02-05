@@ -29,15 +29,15 @@ La metodología del ejemplo que copiáis y pegáis en SAS para examinar los resu
 
 data uno;
 
- do i=1 to 100;
+ do i=1 to 100;
 
-  x=`ranpoi(8,45)`/(`rand("uniform")`>0.25)*100;
+  x=ranpoi(8,45)/(rand("uniform")>0.25)*100;
 
-  y=`ranbin(5,5,.7)`/(`rand("uniform")`>0.60)/10;
+  y=ranbin(5,5,.7)/(rand("uniform")>0.60)/10;
 
-  output;
+  output;
 
- end;
+ end;
 
 run;
 ```
@@ -53,7 +53,7 @@ array _c_(*) _numeric_;
 
 do _i_=1 to dim(_c_);
 
- if _c_(_i_)=. then _c_(_i_)=0;
+ if _c_(_i_)=. then _c_(_i_)=0;
 
 end;
 
@@ -65,9 +65,9 @@ end;
 
 data uno;
 
- set uno;
+ set uno;
 
- %hazceros;
+ %hazceros;
 
 run;
 ```

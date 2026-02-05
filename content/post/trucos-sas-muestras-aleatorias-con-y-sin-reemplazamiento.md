@@ -21,96 +21,86 @@ title: Trucos SAS. Muestras aleatorias con y sin reemplazamiento
 url: /blog/trucos-sas-muestras-aleatorias-con-y-sin-reemplazamiento/
 ---
 
-Un ejemplo típico de SAS pero que creo que puede ayudar a conocer algunas funciones de SAS. Los ejemplos que planteo a continuación crean un dataset con 10.000 observaciones y sobre él vamos a crear dos subconjuntos de datos, dos muestras aleatorias del dataset de partida, una muestra sin reemplazamiento y otra muestra con reemplazamiento. Son dos ejemplos muy sencillos. Como siempre creo un dataset de forma aleatoria que me sirve de base para plantearos el truco:
+Un ejemplo típico de SAS, pero que creo que puede ayudar a conocer algunas funciones interesantes. Los ejemplos que planteo a continuación crean un *dataset* con 10.000 observaciones y, sobre él, vamos a crear dos subconjuntos de datos: dos muestras aleatorias del *dataset* de partida, una muestra sin reemplazamiento y otra muestra con reemplazamiento. 
+
+Como siempre, creo un *dataset* de forma aleatoria que me sirve de base para plantearos el truco:
 
 ```sas
 data ejemplo;
-
- do id=1 to 10000;
-
- importe=ranuni(8)*1000;
-
- output;
-
- end;
-
+    do id = 1 to 10000;
+        importe = ranuni(8) * 1000;
+        output;
+    end;
 run;
 ```
 
-El dataset de partida tiene 10.000 observaciones y dos variables una de ellas creada con la función `ranuni` que genera aleatorios de uniforme (0,1) con una raiz. Ahora vamos a realizar una muestra aleatoria de este conjunto de datos SAS de tamaño 300 sin reemplazamiento:
+El *dataset* de partida tiene 10.000 observaciones y dos variables; una de ellas creada con la función `RANUNI()`, que genera aleatorios de una distribución uniforme (0,1) con una semilla. 
+
+### Muestra aleatoria sin reemplazamiento
+
+Vamos a realizar una muestra aleatoria de este conjunto de datos SAS de tamaño 300:
 
 ```sas
-*MUESTRA ALEATORIA SIN REEMPLAZAMIENTO;
+* MUESTRA ALEATORIA SIN REEMPLAZAMIENTO;
+%let tamanio = 300;
 
-%let tamanio=300;
+data aleat1_prep;
+    set ejemplo;
+    aleat = rand("uniform");
+run;
+
+proc sort data=aleat1_prep; 
+    by aleat; 
+run;
+
 data aleat1;
-set ejemplo;
-aleat=rand("uniform");
-run;
-
-proc sort data=aleat1; by aleat; run;
-
-data aleat1;
-set aleat1;
-if _n_>&tamanio. then stop;
-drop aleat;
+    set aleat1_prep;
+    if _n_ > &tamanio. then stop;
+    drop aleat;
 run;
 ```
 
-Creamos una variable aleatoria con la función `rand` que no necesita raiz para generar números aleatorios en este caso uniform (0,1), ordenamos por ella y seleccionamos una muestra que nos define la macrovariable `tamanio`. Ahora la muestra aleatoria será con reemplazamiento:
+Creamos una variable aleatoria con la función `RAND()`, que no necesita semilla explícita (usa la del sistema si no se indica) para generar números aleatorios (en este caso, una uniforme (0,1)), ordenamos por ella y seleccionamos las primeras observaciones definidas por la macrovariable `tamanio`. 
+
+### Muestra aleatoria con reemplazamiento
 
 ```sas
-%let tamanio=300;
-```
+%let tamanio = 300;
 
-```sas
-data aleat2;
-
- set ejemplo;
-
- select=_n_;
-
-run;
-```
-
-```sas
-*NUMERO DE OBSERVACIONES DEL DATASET DE PARTIDA
-LONGITUD DEL NUMERO;
+* IDENTIFICAMOS EL NÚMERO DE OBSERVACIONES;
 proc sql noprint;
-select compress(put(count(*),best32.)) into:num_obs
-from ejemplo;
+    select count(*) into :num_obs from ejemplo;
 quit;
-```
 
-```sas
-data select;
-retain para;
-select=0;
-para=0;
-do while (para<&tamanio.);
-select=ceil(rand("uniform")*10**length(compress("&num_obs"))-1);
-if 1<=select<=&num_obs. then do;
-para=para+1;
-output;
-end;
-end;
-drop para;
+* GENERAMOS 300 ÍNDICES ALEATORIOS;
+data select_indices;
+    do i = 1 to &tamanio.;
+        select = ceil(rand("uniform") * &num_obs.);
+        output;
+    end;
+    drop i;
 run;
-```
 
-```sas
-proc sort data=select; by select; run;
-```
+* ORDENAMOS ÍNDICES PARA EL MERGE;
+proc sort data=select_indices; 
+    by select; 
+run;
 
-```sas
+* AÑADIMOS ÍNDICE A LA TABLA ORIGINAL;
+data ejemplo_idx;
+    set ejemplo;
+    select = _n_;
+run;
+
+* CRUCE PARA OBTENER LA MUESTRA CON REEMPLAZAMIENTO;
 data aleat2;
-merge aleat2 select (in=a);
-by select;
-if a;
-drop select;
+    merge select_indices (in=a) ejemplo_idx;
+    by select;
+    if a;
+    drop select;
 run;
 ```
 
-Vemos que la metodología es distinta. En este caso creamos una tabla con 300 registros que contiene 300 números aleatorios entre 1 y el número de observaciones del dataset de partida que calculamos mediante un `proc sql`. Puede resultar interesante como se emplea la función `length` para identificar las cifras de un número. Como este número aleatorio puede repetirse obtenemos el reemplazamiento deseado posteriormente hacemos el cruce con `merge` y ya tenemos nuestra muestra aleatoria. El ejemplo es sencillo pero a los menos expertos puede ayudarles a conocer los bucles con `while`
+Vemos que la metodología es distinta. En este caso, creamos una tabla con 300 registros que contiene 300 números aleatorios entre 1 y el número total de observaciones del *dataset* de partida. Como estos números aleatorios pueden repetirse, obtenemos el reemplazamiento deseado. Posteriormente hacemos el cruce con `MERGE` y ya tenemos nuestra muestra.
 
-Sé de más de uno al que le será muy útil este truco. Por supuesto, si tenéis dudas, sugerencias o un trabajo bien retribuido… `rvaquerizo@analisisydecision.es`
+Sé de más de uno al que le será muy útil este truco. Por supuesto, si tenéis dudas o sugerencias… `rvaquerizo@analisisydecision.es`. Saludos.
