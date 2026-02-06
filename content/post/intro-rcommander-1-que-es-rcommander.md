@@ -5,6 +5,7 @@ categories:
   - r
 date: '2009-11-15'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - manual-introduccion-a-r-s-plus.md
   - manual-curso-introducion-de-r-capitulo-1-que-es-r.md

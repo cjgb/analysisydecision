@@ -5,6 +5,7 @@ categories:
   - r
 date: '2020-12-02'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - estimacion-de-la-evolucion-de-casos-del-coronavirus-en-espana.md
   - los-pilares-de-mi-simulacion-de-la-extension-del-covid19.md

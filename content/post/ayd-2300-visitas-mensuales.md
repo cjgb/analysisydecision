@@ -4,6 +4,7 @@ categories:
   - business intelligence
 date: '2009-11-08'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - 1500-visitas-mensuales.md
   - contenidos-para-octubre-de-ayd.md

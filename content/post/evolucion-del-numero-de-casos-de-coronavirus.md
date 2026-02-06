@@ -5,6 +5,7 @@ categories:
   - r
 date: '2020-03-12'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - mi-breve-seguimiento-del-coronavirus-con-r.md
   - estimacion-de-la-evolucion-de-casos-del-coronavirus-en-espana.md

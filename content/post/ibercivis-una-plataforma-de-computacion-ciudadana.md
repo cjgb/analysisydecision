@@ -4,6 +4,7 @@ categories:
   - data mining
 date: '2009-12-17'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - introduccion-a-la-estadistica-para-cientificos-de-datos-con-r-capitulo-2-datos.md
   - noticias-del-congreso-de-usuarios-de-r.md

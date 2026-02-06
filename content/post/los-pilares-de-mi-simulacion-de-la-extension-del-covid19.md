@@ -6,6 +6,7 @@ categories:
   - r
 date: '2020-03-23'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - mapa-del-covid-19-por-comunidades-autonomas-con-r-mas-rstats.md
   - mi-breve-seguimiento-del-coronavirus-con-r.md
@@ -16,6 +17,7 @@ tags:
   - monográficos
   - opinión
   - r
+  - covid
 title: Los pilares de mi simulación de la extensión del COVID19
 url: "/blog/los-pilares-de-mi-simulacion-de-la-extension-del-covid19/"
 ---

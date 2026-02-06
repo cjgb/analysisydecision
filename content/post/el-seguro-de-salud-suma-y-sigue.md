@@ -5,6 +5,7 @@ categories:
   - seguros
 date: '2013-04-18'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - el-seguro-de-salud-la-futura-guerra.md
   - el-modelo-multivariante-en-el-sector-asegurador-los-modelos-por-coberturas-v.md

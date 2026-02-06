@@ -149,4 +149,3 @@ Por cierto, sugiero realizar el mismo análisis para el Leganés:
 
 Empiezan mal pero siempre remontan, sobre todo al inicio de la segunda parte.
 
-```
