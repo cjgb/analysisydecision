@@ -13,11 +13,12 @@ related:
   - analisis-del-discurso-de-navidad-del-rey-de-espana-2013.md
 tags:
   - formación
+  - r
 title: El mejor gestor de datos del mundo es de Cádiz
 url: /blog/el-mejor-gestor-de-datos-del-mundo-es-de-cadiz/
 ---
 
-Me ha gustado esta noticia de Elconfidencial.com: [http://www.elconfidencial.com/tecnologia/2013-12-19/un-matematico-andaluz-desconocido-es-el-mejor-cientifico-de-datos-del-mundo_67675/](http://www.elconfidencial.com/tecnologia/2013-12-19/un-matematico-andaluz-desconocido-es-el-mejor-cientifico-de-datos-del-mundo_67675/). Resulta que José Antonio Guerrero es el número uno en Kaggle. Mirad que paso rato yo por Kaggle y no me había dado cuenta nunca de esto. He de confesaros que esta noticia me ha emocionado.
+Me ha gustado [esta noticia de ElConfidencial.com](http://www.elconfidencial.com/tecnologia/2013-12-19/un-matematico-andaluz-desconocido-es-el-mejor-cientifico-de-datos-del-mundo_67675/). Resulta que José Antonio Guerrero es el número uno en Kaggle. Mirad que paso rato yo por Kaggle y no me había dado cuenta nunca de esto. He de confesaros que esta noticia me ha emocionado.
 
 Por cierto, si visitáis el perfil de José Antonio, entre sus *skills* está R y en la foto está trabajando con Excel.
 

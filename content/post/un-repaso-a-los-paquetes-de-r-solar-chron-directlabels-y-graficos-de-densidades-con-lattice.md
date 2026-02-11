@@ -69,7 +69,7 @@ Echamos de menos un etiquetado para el gráfico de densidades que hemos creado c
 library(directlabels)
 
 densidades <- densityplot(~ lluvias | mes, data = datos, groups = finde,
-                          layout = c(3, 4), xlab = "Lluvias", bw = 2, 
+                          layout = c(3, 4), xlab = "Lluvias", bw = 2,
                           plot.points = FALSE)
 direct.label(densidades)
 ```
@@ -78,4 +78,4 @@ El resultado es:
 
 ![lluvias-2.png](/images/2011/05/lluvias-2.thumbnail.png "lluvias-2.png")
 
-Este gráfico es claramente mejorable; además incluye un error, pero mi hijo acaba de entrar por la puerta lleno de tierra con una espátula y… In fin, los resultados obtenidos son interesantes. Como ejercicio os dejo lo siguiente: réplica del gráfico con `ggplot2` y análisis de la varianza. Saludos.
+Este gráfico es claramente mejorable; además incluye un error, pero mi hijo acaba de entrar por la puerta lleno de tierra con una espátula y… En fin, los resultados obtenidos son interesantes. Como ejercicio os dejo lo siguiente: réplica del gráfico con `ggplot2` y análisis de la varianza. Saludos.
