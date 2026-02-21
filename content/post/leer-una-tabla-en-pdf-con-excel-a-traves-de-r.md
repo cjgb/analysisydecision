@@ -28,6 +28,10 @@ Hay situaciones en las que tenemos datos in `PDF` y los necesitamos exportar a `
 
 El primer paso será la instalación de `R` y `RStudio`:
 
+{{< youtube jdyOTxXyIn4 >}}
+
 Una vez que disponemos de `R` y `RStudio` en nuestro equipo, descarga [este programa in `R` que te permitirá exportar una tabla a `R`](/images/2020/09/leer_pdf.R) con las instrucciones que resumo a continuación:
+
+{{< youtube 89VBd-GPlGM >}}
 
 Esta entrada del blog quiero que sea dinámica; me gustaría mejorar el proceso porque tiene posibilidades de dar a conocer `R` a personas sin conocimientos de programación. Podemos crear desde una aplicación hasta leer URL. Saludos.
