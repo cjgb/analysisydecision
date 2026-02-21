@@ -2,12 +2,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
 {{- /* Custom robots logic, @gilbellosta, 2026-01-21 */ -}}
 {{- $robotsValue := "follow, noindex" -}}
-{{- if eq .Section "paginas" -}}
+{{- if .IsHome -}}
   {{- $robotsValue = "follow, index" -}}
-{{- else if eq .Section "post" -}}
+{{- else if eq .Section "paginas" -}}
+  {{- $robotsValue = "follow, index" -}}
+{{- else if eq .Section "posts" -}}
   {{- if .Params.noindex -}}
     {{- $robotsValue = "follow, noindex" -}}
   {{- else -}}

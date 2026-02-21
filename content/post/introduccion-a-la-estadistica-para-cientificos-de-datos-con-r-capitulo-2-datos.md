@@ -37,7 +37,7 @@ El científico de datos accederá a datos informatizados y, atendiendo a su orig
 
 ### Datos internos
 
-Son los datos que recoge la propia organización fruto de su actividad; ejemplos in esta línea son:
+Son los datos que recoge la propia organización fruto de su actividad; ejemplos en esta línea son:
 
 - Información sociodemográfica.
 - Información sobre la operativa del cliente.
@@ -47,7 +47,7 @@ Son los datos que recoge la propia organización fruto de su actividad; ejemplos
 - Datos de la red comercial.
 - …
 
-La lista es larga y depende del tipo de actividad realizada. In este ámbito se está mejorando con la inclusión de sistemas informacionales y la puesta in valor del uso de los datos; in este sentido, es necesario señalar la importancia que toman in las organizaciones los equipos humanos de Tecnologías de la Información. Los datos internos pueden estar organizados o no, pero son propiedad de la organización que pretende explotarlos.
+La lista es larga y depende del tipo de actividad realizada. In este ámbito se está mejorando con la inclusión de sistemas informacionales y la puesta en valor del uso de los datos; en este sentido, es necesario señalar la importancia que toman en las organizaciones los equipos humanos de Tecnologías de la Información. Los datos internos pueden estar organizados o no, pero son propiedad de la organización que pretende explotarlos.
 
 ### Datos externos
 
@@ -68,21 +68,21 @@ Es un tema complejo, pero el científico de datos debe conocer los entornos que 
 
 ### Sistemas operacionales
 
-Son los sistemas con los que se gestiona una organización y con los que trabajan aquellos a quienes, in muchas ocasiones, no les preocupa lo más mínimo la ciencia de datos. Aquí existen sistemas como *mainframes*, `AS400` o `CRM`; estos sistemas tienen información exhaustiva sobre operaciones y sobre la actividad, pero esa información no está (estaba) pensada para explotarse: muchos carecen de visión cliente y están más orientados a productos y a la propia actividad empresarial. Pueden suministrar información in tiempo real, pero el modo in el que se almacenan estos datos puede dificultar su explotación estadística.
+Son los sistemas con los que se gestiona una organización y con los que trabajan aquellos a quienes, in muchas ocasiones, no les preocupa lo más mínimo la ciencia de datos. Aquí existen sistemas como *mainframes*, `AS400` o `CRM`; estos sistemas tienen información exhaustiva sobre operaciones y sobre la actividad, pero esa información no está (estaba) pensada para explotarse: muchos carecen de visión cliente y están más orientados a productos y a la propia actividad empresarial. Pueden suministrar información in tiempo real, pero el modo en el que se almacenan estos datos puede dificultar su explotación estadística.
 
 ### Sistemas informacionales tradicionales
 
-Al albor de la importancia de los datos nacieron los primeros sistemas informacionales como el *data warehouse*; lo principal in ellos es la estructura y la distinción entre productos, contratos y clientes. Estos sistemas empiezan a tener campos (variables) pensados para su explotación estadística y la modelización. Además, toma relevancia la tabulación de los datos con una visión histórica. Estos sistemas informacionales son caros, requieren recursos para su actualización y provienen de procesos intermedios que, in ocasiones, no recogen toda la problemática del operacional; pero gracias a ellos las organizaciones han empezado a conocer la importancia de gestionar los datos, la importancia de la **inteligencia de negocio** o `business intelligence`.
+Al albor de la importancia de los datos nacieron los primeros sistemas informacionales como el *data warehouse*; lo principal in ellos es la estructura y la distinción entre productos, contratos y clientes. Estos sistemas empiezan a tener campos (variables) pensados para su explotación estadística y la modelización. Además, toma relevancia la tabulación de los datos con una visión histórica. Estos sistemas informacionales son caros, requieren recursos para su actualización y provienen de procesos intermedios que, en ocasiones, no recogen toda la problemática del operacional; pero gracias a ellos las organizaciones han empezado a conocer la importancia de gestionar los datos, la importancia de la **inteligencia de negocio** o `business intelligence`.
 
 ### Data Lake
 
-Es el «nuevo» paradigma al amparo de la aparición de equipos informáticos más potentes; se accede de un modo muy rápido y permite disponer de un gran volumen sin estructura, por lo que la información puede ser muy exhaustiva. Es más complejo distinguir la visión cliente y esa falta de estructura hace que el acceso a estos sistemas requiera de *software* y *hardware* específico, además de equipos humanos más especializados. No están pensados para el análisis estadístico tradicional, pero es factible. Hay una menor integridad in la información disponible, pero se puede acceder y explotar un volumen de información que antes era más complicado, por lo que se abren nuevas formas de explotación estadística de datos.
+Es el «nuevo» paradigma al amparo de la aparición de equipos informáticos más potentes; se accede de un modo muy rápido y permite disponer de un gran volumen sin estructura, por lo que la información puede ser muy exhaustiva. Es más complejo distinguir la visión cliente y esa falta de estructura hace que el acceso a estos sistemas requiera de *software* y *hardware* específico, además de equipos humanos más especializados. No están pensados para el análisis estadístico tradicional, pero es factible. Hay una menor integridad en la información disponible, pero se puede acceder y explotar un volumen de información que antes era más complicado, por lo que se abren nuevas formas de explotación estadística de datos.
 
 In este trabajo no se va a tratar el acceso a estos sistemas; la información vendrá tabulada directamente, pero es necesario reiterar: **el científico de datos tiene que tener claro dónde están los datos y cómo acceder a ellos**.
 
 ## Todo es álgebra lineal
 
-Esta figura es clave y aparecerá in más ocasiones para señalar la importancia de las estructuras algebraicas in el análisis y la modelización estadística.
+Esta figura es clave y aparecerá in más ocasiones para señalar la importancia de las estructuras algebraicas en el análisis y la modelización estadística.
 
 ![](/images/2022/01/wp_editor_md_59a02373276548b97331c8b1ed415c3f.jpg)
 
@@ -93,11 +93,11 @@ Es relevante disponer de ese conocimiento matemático porque **todo el trabajo q
 - **Gradientes**: Análisis multivariable basado in modelos de aprendizaje automático; tenemos funciones multivariables que nos permiten derivar matrices de forma parcial para buscar máximos y mínimos locales; permiten realizar modelos de `machine learning`.
 - **Tensores matemáticos**: Aprendizaje profundo con redes neuronales que imitan el comportamiento humano: inteligencia artificial.
 
-Es evidente el paralelismo entre la evolución matemática y la evolución informática. Mayor capacidad de computación ha implicado poder manejar estructuras algebraicas más complejas, y esto ha permitido una evolución in el análisis estadístico.
+Es evidente el paralelismo entre la evolución matemática y la evolución informática. Mayor capacidad de computación ha implicado poder manejar estructuras algebraicas más complejas, y esto ha permitido una evolución en el análisis estadístico.
 
 ## Cómo se disponen los datos
 
-Para poder llevar a cabo un análisis estadístico, los datos no solo han de estar disponibles, además deben de tener una lógica y una estructura para ser utilizados. Habitualmente, los datos estarán dispuestos in **tablas** donde, de forma horizontal, tenemos registros y de forma vertical tenemos columnas. Existen diversas «dialécticas» in ciencia de datos para hacer referencia a esas columnas y a esos registros; in general, dependerá del *software* que empleemos in nuestro trabajo. In este ensayo se va a emplear `R` y la librería `tidyverse`; de este modo, la estructura de datos principal será el `data.frame`.
+Para poder llevar a cabo un análisis estadístico, los datos no solo han de estar disponibles, además deben de tener una lógica y una estructura para ser utilizados. Habitualmente, los datos estarán dispuestos in **tablas** donde, de forma horizontal, tenemos registros y de forma vertical tenemos columnas. Existen diversas «dialécticas» in ciencia de datos para hacer referencia a esas columnas y a esos registros; in general, dependerá del *software* que empleemos en nuestro trabajo. In este ensayo se va a emplear `R` y la librería `tidyverse`; de este modo, la estructura de datos principal será el `data.frame`.
 
 ```r
 library(tidyverse)
@@ -107,7 +107,7 @@ str(iris)
 head(iris, 5)
 ```
 
-La función `str()` nos permite describir las características de un objeto de `R`; in este caso se trata de un `data.frame` donde cada fila será un registro (una observación), que podrá ser un individuo, un contrato, una compañía, una especie de flor, un pingüino… depende de la **población** que esté in estudio. De esa población se pueden extraer subconjuntos de registros que llamaremos **muestras**, que deberían ser representativos de la población y permitirían, con menos medios, estudiar los problemas que deseamos analizar in la población. Esta muestra permitiría **inferir** aspectos de interés in la población.
+La función `str()` nos permite describir las características de un objeto de `R`; en este caso se trata de un `data.frame` donde cada fila será un registro (una observación), que podrá ser un individuo, un contrato, una compañía, una especie de flor, un pingüino… depende de la **población** que esté en estudio. De esa población se pueden extraer subconjuntos de registros que llamaremos **muestras**, que deberían ser representativos de la población y permitirían, con menos medios, estudiar los problemas que deseamos analizar en la población. Esta muestra permitiría **inferir** aspectos de interés en la población.
 
 Cada columna del `data.frame` será denominada **variable**, que define una característica de la observación; esta característica puede ser cualitativa (`factor`) o cuantitativa (número). El estudio de esas características será el que nos lleve a describir o estimar el problema al que nos enfrentamos.
 
@@ -121,13 +121,13 @@ Son numéricas y pueden tener un número muy grande (in algunos casos infinito) 
 
 Los problemas que plantean estas variables son:
 
-- Aparición de valores modales que desvirtúan la forma o la distribución de los valores; como, por ejemplo, el valor 0 in una variable que recoja el saldo in fondos de inversión. ¿Eliminamos una variable porque el 80% de las veces toma un valor 0?
-- Valores atípicos o *outliers* también pueden desvirtuar los análisis estadísticos. Si una observación tiene una variable numérica que toma un valor anormalmente alto o bajo, ¿debemos incluirla in el análisis?
-- Valores perdidos o valores *missing* in las variables cuantitativas suponen un problema; debemos tener clara nuestra estrategia con los valores perdidos antes de analizar la información que nos suministran los datos. ¿Qué hacemos con esas observaciones que no tienen datos para determinadas variables? ¿Tiene sentido que no tengan datos?
+- Aparición de valores modales que desvirtúan la forma o la distribución de los valores; como, por ejemplo, el valor 0 en una variable que recoja el saldo in fondos de inversión. ¿Eliminamos una variable porque el 80% de las veces toma un valor 0?
+- Valores atípicos o *outliers* también pueden desvirtuar los análisis estadísticos. Si una observación tiene una variable numérica que toma un valor anormalmente alto o bajo, ¿debemos incluirla en el análisis?
+- Valores perdidos o valores *missing* en las variables cuantitativas suponen un problema; debemos tener clara nuestra estrategia con los valores perdidos antes de analizar la información que nos suministran los datos. ¿Qué hacemos con esas observaciones que no tienen datos para determinadas variables? ¿Tiene sentido que no tengan datos?
 
 ### Variables cualitativas. Factores
 
-Toman un número finito (in ocasiones muy extenso) de valores y describen una cualidad. In el conjunto de datos pueden ser tanto numéricas como cadenas de caracteres; da igual el formato, pero es necesario saber que representa una cualidad. Esta cualidad puede estar ordenada, como puede ser un *ranking* «bueno/medio/malo», o simplemente describir un valor como es el sexo «Femenino/Masculino». Siguiendo con la dialéctica de `R`, a estas variables las vamos a denominar `factores` y a cada valor que pueda tomar el `factor` le denominamos `nivel`. Para describir estas variables emplearemos tablas de frecuencia donde se pueden contar el total de observaciones para cada `nivel` del `factor` o bien relativizar esas cantidades y calcular frecuencias como porcentajes sobre el total de observaciones. Gráficamente se sugiere usar gráficos de barras o de tarta que se verán posteriormente.
+Toman un número finito (en ocasiones muy extenso) de valores y describen una cualidad. In el conjunto de datos pueden ser tanto numéricas como cadenas de caracteres; da igual el formato, pero es necesario saber que representa una cualidad. Esta cualidad puede estar ordenada, como puede ser un *ranking* «bueno/medio/malo», o simplemente describir un valor como es el sexo «Femenino/Masculino». Siguiendo con la dialéctica de `R`, a estas variables las vamos a denominar `factores` y a cada valor que pueda tomar el `factor` le denominamos `nivel`. Para describir estas variables emplearemos tablas de frecuencia donde se pueden contar el total de observaciones para cada `nivel` del `factor` o bien relativizar esas cantidades y calcular frecuencias como porcentajes sobre el total de observaciones. Gráficamente se sugiere usar gráficos de barras o de tarta que se verán posteriormente.
 
 Los problemas que presentan son análogos a los vistos con las variables cuantitativas:
 

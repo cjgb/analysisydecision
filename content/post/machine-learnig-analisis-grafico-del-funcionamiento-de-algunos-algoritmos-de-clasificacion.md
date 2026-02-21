@@ -28,7 +28,7 @@ url: /blog/machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algori
 
 ![Letra_O](/images/2017/05/Letra_O.png)
 
-De forma gráfica os voy a presentar algunas técnicas de clasificación supervisada de las más empleadas in `Machine Learning` y podremos ver cómo se comportan de forma gráfica in el plano. Como siempre, prefiero ilustrarlo a entrar in temas teóricos y, para esta tarea, se me ha ocurrido pintar una letra O y comenzar a trabajar con `Python`, así de simple. Lo primero es tener los datos; evidentemente serán puntos aleatorios in el plano donde pintamos una variable dependiente con forma de O:
+De forma gráfica os voy a presentar algunas técnicas de clasificación supervisada de las más empleadas in `Machine Learning` y podremos ver cómo se comportan de forma gráfica en el plano. Como siempre, prefiero ilustrarlo a entrar in temas teóricos y, para esta tarea, se me ha ocurrido pintar una letra O y comenzar a trabajar con `Python`, así de simple. Lo primero es tener los datos; evidentemente serán puntos aleatorios en el plano donde pintamos una variable dependiente con forma de O:
 
 ```python
 import numpy as np
@@ -46,19 +46,19 @@ plt.scatter(df.X, df.Y, c=dependiente, marker=".")
 plt.show()
 ```
 
-Se crea un `data.frame` con 10.000 registros y dos variables aleatorias con valores entre 0 y 100 (X e Y). Soy consciente de la forma in la que se obtiene la variable dependiente (no entiendo cómo funciona `np.where()` con condiciones múltiples) y por ello toman valor 1 aquellas observaciones del plano que están entre las dos elipses que pinto dentro del plano. Con todo esto tenemos unos datos como ilustra el *scatter plot* con el que se inicia esta entrada. El siguiente paso será dividir los datos in validación y test mediante `train_test_split()`:
+Se crea un `data.frame` con 10.000 registros y dos variables aleatorias con valores entre 0 y 100 (X e Y). Soy consciente de la forma en la que se obtiene la variable dependiente (no entiendo cómo funciona `np.where()` con condiciones múltiples) y por ello toman valor 1 aquellas observaciones del plano que están entre las dos elipses que pinto dentro del plano. Con todo esto tenemos unos datos como ilustra el *scatter plot* con el que se inicia esta entrada. El siguiente paso será dividir los datos en validación y test mediante `train_test_split()`:
 
 ```python
-# Dividimos in validacion y test
+# Dividimos en validacion y test
 from sklearn.model_selection import train_test_split
 
-X_train, X_test, y_train, y_test = train_test_split(df, dependiente, 
+X_train, X_test, y_train, y_test = train_test_split(df, dependiente,
                                                     stratify=dependiente,
-                                                    test_size=0.5, 
+                                                    test_size=0.5,
                                                     random_state=123)
 ```
 
-Ahora vamos a estudiar gráficamente cómo se comportan algunos algoritmos de `Machine Learning` para clasificar la letra O in el espacio. Empezamos por los árboles de decisión:
+Ahora vamos a estudiar gráficamente cómo se comportan algunos algoritmos de `Machine Learning` para clasificar la letra O en el espacio. Empezamos por los árboles de decisión:
 
 ```python
 from sklearn.tree import DecisionTreeClassifier
@@ -73,7 +73,7 @@ plt.show()
 
 ![arbol_clasificacion_python](/images/2017/05/arbol_clasificacion_python.png)
 
-No se selecciona un árbol muy complejo: solo 7 nodos y con un mínimo de 50 observaciones por nodo; con estas consideraciones, el árbol lo que hace es crear 4 bloques in el plano: al algoritmo le cuesta trazar las zonas no lineales. Con unas características parecidas, empleamos clasificación por `Random Forest`; donde antes había un árbol, ahora tenemos un bosque:
+No se selecciona un árbol muy complejo: solo 7 nodos y con un mínimo de 50 observaciones por nodo; con estas consideraciones, el árbol lo que hace es crear 4 bloques en el plano: al algoritmo le cuesta trazar las zonas no lineales. Con unas características parecidas, empleamos clasificación por `Random Forest`; donde antes había un árbol, ahora tenemos un bosque:
 
 ```python
 from sklearn.ensemble import RandomForestClassifier
@@ -88,7 +88,7 @@ plt.show()
 
 ![random_forest_clasificacion](/images/2017/05/random_forest_clasificacion.png)
 
-Con una complejidad parecida ya no hay bloques; ahora tenemos «pequeños cuadrados» que son capaces de trazar las zonas no lineales pero no todas: necesita una mayor complejidad para poder clasificar mejor la letra O. Una técnica de clasificación que nos va a funcionar muy bien son los $k$ vecinos más cercanos (AKA `k-NN`), donde los puntos in el espacio no van a suponer un problema para esta técnica:
+Con una complejidad parecida ya no hay bloques; ahora tenemos «pequeños cuadrados» que son capaces de trazar las zonas no lineales pero no todas: necesita una mayor complejidad para poder clasificar mejor la letra O. Una técnica de clasificación que nos va a funcionar muy bien son los $k$ vecinos más cercanos (AKA `k-NN`), donde los puntos en el espacio no van a suponer un problema para esta técnica:
 
 ```python
 from sklearn.neighbors import KNeighborsClassifier
@@ -102,7 +102,7 @@ plt.show()
 
 ![knn_clasificacion_python](/images/2017/05/knn_clasificacion_python.png)
 
-Ahí lo tenemos: lo clava solo con 3 vecinos y eligiendo de forma automática el algoritmo de clasificación; los datos de test quedan perfectamente clasificados, punto a punto el algoritmo lo clava a excepción de algún punto in el borde. Una situación parecida debemos encontrarnos para las máquinas de vectores de soporte, conocidas como `SVM`, una técnica de clasificación que me gusta:
+Ahí lo tenemos: lo clava solo con 3 vecinos y eligiendo de forma automática el algoritmo de clasificación; los datos de test quedan perfectamente clasificados, punto a punto el algoritmo lo clava a excepción de algún punto en el borde. Una situación parecida debemos encontrarnos para las máquinas de vectores de soporte, conocidas como `SVM`, una técnica de clasificación que me gusta:
 
 ```python
 from sklearn.svm import SVC
@@ -122,7 +122,7 @@ Excepcional comportamiento clasificatorio; comentar que `Python` sorprende grata
 ```python
 from sklearn.neural_network import MLPClassifier
 
-mlp_1 = MLPClassifier(solver='lbfgs', alpha=1e-5, hidden_layer_sizes=(30, 30, 30), 
+mlp_1 = MLPClassifier(solver='lbfgs', alpha=1e-5, hidden_layer_sizes=(30, 30, 30),
                       random_state=1, learning_rate_init=0.001, max_iter=200)
 mlp_1.fit(X_train, y_train)
 predichos = mlp_1.predict(X_test)
@@ -146,7 +146,7 @@ plt.show()
 
 ![perceptron_probabilidades_python](/images/2017/05/perceptron_probabilidades_python.png)
 
-El resultado es interesante, puesto que las probabilidades que arroja la predicción son muy conservadoras a excepción de aquellos lugares in el plano donde tiene una alta certeza de encontrar un 1. Hasta aquí no os he contado nada que no se pueda encontrar navegando un poco por la red; sin embargo, in una sola entrada tenemos un pequeño manual de `sklearn` donde analizamos:
+El resultado es interesante, puesto que las probabilidades que arroja la predicción son muy conservadoras a excepción de aquellos lugares en el plano donde tiene una alta certeza de encontrar un 1. Hasta aquí no os he contado nada que no se pueda encontrar navegando un poco por la red; sin embargo, en una sola entrada tenemos un pequeño manual de `sklearn` donde analizamos:
 
 - `DecisionTreeClassifier`
 - `RandomForestClassifier`

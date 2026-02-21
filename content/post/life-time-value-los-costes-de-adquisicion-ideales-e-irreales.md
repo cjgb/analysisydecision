@@ -18,7 +18,7 @@ title: Life Time Value. Los costes de adquisición ideales e irreales
 url: /blog/life-time-value-los-costes-de-adquisicion-ideales-e-irreales/
 ---
 
-Me acabo de leer este mensaje sobre lo que aporta el `Life Time Value` (`LTV`). Y me parece demasiado «ideal» in la adquisición de clientes:
+Me acabo de leer este mensaje sobre lo que aporta el `Life Time Value` (`LTV`). Y me parece demasiado «ideal» en la adquisición de clientes:
 
 [http://www.kaushik.net/avinash/2010/04/analytics-tip-calculate-ltv-customer-lifetime-value.html](http://www.kaushik.net/avinash/2010/04/analytics-tip-calculate-ltv-customer-lifetime-value.html)
 

@@ -47,4 +47,4 @@ Una vez realizada esta tarea, recomiendo dejar de seleccionar elementos del mapa
 
 ![Mapa con Canarias movidas](/images/2016/12/mover_QGIS_7.png)
 
-Ahora solo me quedaría ser capaz de poner un cuadro a las Islas, pero eso ya se me escapa porque mis conocimientos de `QGIS` son muy limitados; pero es una herramienta libre que debemos tener instalada in nuestro equipo. Espero que se haya entendido esta guía para burros que he elaborado; in cualquier caso, si hay algún punto, algún problema o se puede hacer de otra forma más eficiente, lo podéis comentar in la entrada y lo modifico. Saludos.
+Ahora solo me quedaría ser capaz de poner un cuadro a las Islas, pero eso ya se me escapa porque mis conocimientos de `QGIS` son muy limitados; pero es una herramienta libre que debemos tener instalada en nuestro equipo. Espero que se haya entendido esta guía para burros que he elaborado; in cualquier caso, si hay algún punto, algún problema o se puede hacer de otra forma más eficiente, lo podéis comentar en la entrada y lo modifico. Saludos.

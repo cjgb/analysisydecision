@@ -31,7 +31,7 @@ Después tenemos que conocer las sentencias de `GRAPH` para dar forma a nuestros
 - `SYMBOL`
 - `TITLE`, `FOOTNOTE` y `NOTE`
 
-In la ayuda y in el soporte de `SAS` tendréis más información sobre ellas. Pero, como es habitual, in estas líneas vais a ver algunos ejemplos con la sintaxis más común. El *dataset* inicial con datos aleatorios contiene datos de altura, peso y sexo, y se genera mediante el siguiente código:
+In la ayuda y en el soporte de `SAS` tendréis más información sobre ellas. Pero, como es habitual, en estas líneas vais a ver algunos ejemplos con la sintaxis más común. El *dataset* inicial con datos aleatorios contiene datos de altura, peso y sexo, y se genera mediante el siguiente código:
 
 ```sas
 data uno;
@@ -100,4 +100,4 @@ quit;
 title;
 ```
 
-In `GOPTIONS` especificamos la unidad con la que trabajamos nuestro gráfico (in el caso de `GUNIT=pct`, el porcentaje total del gráfico). In `HTITLE` damos tamaño al título y in `HTEXT` al texto. Después ponemos dos opciones que le indican al sistema que trabajamos in Windows; tened in cuenta esto para dar un tamaño adecuado a las representaciones. In `ftext=swiss` especificamos la familia de fuentes y `cback=grey` da color al fondo. Poco a poco damos más funcionalidades y nuestros gráficos toman mejor aspecto, aunque in el caso que nos ocupa no sea un gráfico muy profesional precisamente. De dejamos `LEGEND` y `PATTERN` para siguientes mensajes porque me interesa crear algún programa más complejo que os sirva de referencia para el uso de `PATTERN`, fundamentalmente. Ya os digo que paso de puntillas por la mayoría de las posibilidades de `SAS`, pero me gustaría que se perdiera el miedo a usar su motor de gráficos. Es cierto que el motor de `R` es mejor y que `Excel` es más sencillo. También tendréis ejemplos. Saludos.
+In `GOPTIONS` especificamos la unidad con la que trabajamos nuestro gráfico (in el caso de `GUNIT=pct`, el porcentaje total del gráfico). In `HTITLE` damos tamaño al título y in `HTEXT` al texto. Después ponemos dos opciones que le indican al sistema que trabajamos in Windows; tened in cuenta esto para dar un tamaño adecuado a las representaciones. In `ftext=swiss` especificamos la familia de fuentes y `cback=grey` da color al fondo. Poco a poco damos más funcionalidades y nuestros gráficos toman mejor aspecto, aunque en el caso que nos ocupa no sea un gráfico muy profesional precisamente. De dejamos `LEGEND` y `PATTERN` para siguientes mensajes porque me interesa crear algún programa más complejo que os sirva de referencia para el uso de `PATTERN`, fundamentalmente. Ya os digo que paso de puntillas por la mayoría de las posibilidades de `SAS`, pero me gustaría que se perdiera el miedo a usar su motor de gráficos. Es cierto que el motor de `R` es mejor y que `Excel` es más sencillo. También tendréis ejemplos. Saludos.

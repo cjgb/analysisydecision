@@ -18,6 +18,6 @@ url: /blog/moviendonos-a-una-velocidad-exponencial/
 
 [Impresionante vídeo sacado de GurusBlog.](http://www.gurusblog.com/archives/moviendonos-a-una-velocidad-exponencial/08/03/2009/)
 
-El futuro cambia de forma exponencial. La formación debería estar in la base de este cambio. ¿Se adaptará la educación universitaria a estos cambios?
+El futuro cambia de forma exponencial. La formación debería estar en la base de este cambio. ¿Se adaptará la educación universitaria a estos cambios?
 
 Al final, a algunos se nos tachará de reaccionarios porque no actualizamos la versión de `WordPress`. Y es que, si una cosa funciona… ¡Viva el `Mainframe` de `IBM`! ¡Viva el `COBOL`! Saludos.

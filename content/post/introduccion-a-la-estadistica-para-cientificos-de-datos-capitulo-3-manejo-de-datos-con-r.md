@@ -22,13 +22,13 @@ url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-3-ma
 
 ## Universo tidyverse
 
-En el capítulo anterior se iniciaba el método dialéctico a utilizar in el resto del ensayo, fundamentado in la idea de **transformar datos in información mediante análisis estadístico con el *software* `R`**. Los datos a explotar tienen una estructura tabular que llamamos `data.frame`. Esta estructura contiene observaciones y variables sobre las que se fundamenta la labor del científico de datos, ya que son ellas las que plantean y resuelven problemas. Para trabajar con `data.frames` in `R`, disponemos de un entorno conocido como `tidyverse` que engloba un gran número de librerías.
+En el capítulo anterior se iniciaba el método dialéctico a utilizar en el resto del ensayo, fundamentado en la idea de **transformar datos in información mediante análisis estadístico con el *software* `R`**. Los datos a explotar tienen una estructura tabular que llamamos `data.frame`. Esta estructura contiene observaciones y variables sobre las que se fundamenta la labor del científico de datos, ya que son ellas las que plantean y resuelven problemas. Para trabajar con `data.frames` in `R`, disponemos de un entorno conocido como `tidyverse` que engloba un gran número de librerías.
 
 ![](https://pbs.twimg.com/media/D-X2bddXsAAWLE7.jpg)
 
 > **Nota**: In la instalación de paquetes, `R` emplea `install.packages("librería")` y solo será necesario ejecutarlo una vez. ([Referencia](https://r-coder.com/install-r-packages))
 
-Para iniciarse in el manejo de datos, se destaca el uso de la librería `dplyr`, que se encuentra dentro de este **universo `tidyverse`** y será sobre la que verse este capítulo. Como norma general, cuando se trabaje con `data.frames` y `dplyr` manipulando datos, se realizarán acciones separadas con la expresión clave `%>%` (*pipe*) de este modo:
+Para iniciarse en el manejo de datos, se destaca el uso de la librería `dplyr`, que se encuentra dentro de este **universo `tidyverse`** y será sobre la que verse este capítulo. Como norma general, cuando se trabaje con `data.frames` y `dplyr` manipulando datos, se realizarán acciones separadas con la expresión clave `%>%` (*pipe*) de este modo:
 
 ```r
 df_final <- df_inicial %>% ACCION1 %>% ACCION2 %>% ... %>% ACCION_N
@@ -76,13 +76,13 @@ species <- iris %>%
 table(species$Species)
 ```
 
-La función `table()` realiza tablas de frecuencia (cuenta registros); in este caso, se tienen los tres posibles valores que toma la variable `Species` con el número de registros que tiene cada elemento de la variable (el número de registros que tiene cada nivel del factor). Si un factor no tiene registros, no desaparece el nivel: simplemente aparece con 0 observaciones.
+La función `table()` realiza tablas de frecuencia (cuenta registros); en este caso, se tienen los tres posibles valores que toma la variable `Species` con el número de registros que tiene cada elemento de la variable (el número de registros que tiene cada nivel del factor). Si un factor no tiene registros, no desaparece el nivel: simplemente aparece con 0 observaciones.
 
 > **Nota**: Cuando se trabaje con datos, es recomendable emplear sumarizaciones, visualizaciones o salidas de tablas para contrastar que todo el trabajo que se está realizando sea correcto. Esas acciones evitarán posteriores errores.
 
 ## Selección de columnas
 
-Para esta tarea se emplea el verbo `select()`, que aparece in otros paquetes de `R`. Cuando una función se emplea por más de un paquete, se recomienda emplear la estructura `librería::función`, in este caso `dplyr::select()`, y de ese modo se indica a `R` que la función `select()` es específicamente de la librería `dplyr`. Hecho el apunte, se presentan los ejemplos:
+Para esta tarea se emplea el verbo `select()`, que aparece in otros paquetes de `R`. Cuando una función se emplea por más de un paquete, se recomienda emplear la estructura `librería::función`, en este caso `dplyr::select()`, y de ese modo se indica a `R` que la función `select()` es específicamente de la librería `dplyr`. Hecho el apunte, se presentan los ejemplos:
 
 ```r
 # Librería para mejorar las visualizaciones de tablas
@@ -114,7 +114,7 @@ iris2 <- iris %>%
 
 Se crea una variable cualitativa mediante una condición con la función `ifelse()`; también se ilustra el ejemplo con la creación de una variable numérica que es la operación matemática de dividir `Sepal.Length` por su propia media.
 
-Muy habitual in el trabajo diario de un científico de datos a la hora de crear variables es la necesidad de anidar condiciones; para ello se puede emplear la función [`case_when()`](https://dplyr.tidyverse.org/reference/case_when.html). Un ejemplo de uso es:
+Muy habitual en el trabajo diario de un científico de datos a la hora de crear variables es la necesidad de anidar condiciones; para ello se puede emplear la función [`case_when()`](https://dplyr.tidyverse.org/reference/case_when.html). Un ejemplo de uso es:
 
 ```r
 iris2 <- iris %>%
@@ -145,7 +145,7 @@ order2 <- iris %>%
   arrange(desc(Sepal.Length))
 ```
 
-Separando por coma es posible poner más de una variable in la ordenación.
+Separando por coma es posible poner más de una variable en la ordenación.
 
 ## Sumarizar valores
 

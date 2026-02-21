@@ -19,7 +19,7 @@ title: Laboratorio de código SAS. Vistas + PROC MEANS vs. PROC SQL
 url: /blog/laboratorio-de-codigo-sas-vistas-proc-means-vs-proc-sql/
 ---
 
-Las vistas son muy importantes cuando trabajamos con `SAS`. El problema del espacio in disco se acentúa cuando trabajamos con `SAS`; este problema podemos minimizarlo empleando vistas. También hay otras situaciones in las que se recomienda usar vistas: cuando realizamos agregaciones sobre campos de una tabla y, a la vez, realizamos una operación sobre estos campos, es muy habitual emplear el `PROC SQL`. Ejemplo de lo que cuento:
+Las vistas son muy importantes cuando trabajamos con `SAS`. El problema del espacio in disco se acentúa cuando trabajamos con `SAS`; este problema podemos minimizarlo empleando vistas. También hay otras situaciones en las que se recomienda usar vistas: cuando realizamos agregaciones sobre campos de una tabla y, a la vez, realizamos una operación sobre estos campos, es muy habitual emplear el `PROC SQL`. Ejemplo de lo que cuento:
 
 ```sas
 data importes;
@@ -36,7 +36,7 @@ proc sql;
 quit;
 ```
 
-Sobre una tabla con 2.000.000 de registros, hacemos la varianza de un campo `importe` y de la raíz cuadrada de ese mismo campo `importe`. Es decir, hacemos la varianza sobre la operación aritmética de un campo. Para hacer este trabajo con `PROC MEANS` sin tener que crear un nuevo campo in la tabla, haríamos una vista y un `MEANS` posteriormente:
+Sobre una tabla con 2.000.000 de registros, hacemos la varianza de un campo `importe` y de la raíz cuadrada de ese mismo campo `importe`. Es decir, hacemos la varianza sobre la operación aritmética de un campo. Para hacer este trabajo con `PROC MEANS` sin tener que crear un nuevo campo en la tabla, haríamos una vista y un `MEANS` posteriormente:
 
 ```sas
 * FORMA 2: VISTA + MEANS;
@@ -65,7 +65,7 @@ El código es más farragoso. ¿De verdad compensa in tiempo de ejecución la cr
     set test borra;
   run;
 
-  proc delete data=borra; 
+  proc delete data=borra;
   run;
 %mend;
 
@@ -92,7 +92,7 @@ El código es más farragoso. ¿De verdad compensa in tiempo de ejecución la cr
         tiempo = time() - &inicio.;
         output;
       run;
-    %end; 
+    %end;
     %else %do;
       %aniade(METODO 1);
     %end;
@@ -113,8 +113,8 @@ El código es más farragoso. ¿De verdad compensa in tiempo de ejecución la cr
 %test(10);
 
 * ORDENAMOS POR TIEMPO;
-proc sort data=test; 
-  by tiempo; 
+proc sort data=test;
+  by tiempo;
 run;
 ```
 

@@ -24,4 +24,4 @@ A pesar de que no hay un [movimiento tan importante como el que hubo años atrá
 
 En fin, mi capacidad mediática es nula; ya os contaré mi intento de ver al Rey, pero al final llego a 300 opiniones diarias y algunas de ellas están sufriendo estos recortes. Sirve para expresar mi solidaridad y para volver a remover alguna conciencia. La ciencia española necesita porcentajes positivos, no negativos.
 
-Y por último, unos aportes personales. Necesitamos más científicos in la élite política y menos registradores de la propiedad (lo siento por el ejemplo); el gasto in investigación ha de situarse a la cabeza del crecimiento; in caso contrario, todos in taparrabos, recordad mis palabras. Saludos.
+Y por último, unos aportes personales. Necesitamos más científicos en la élite política y menos registradores de la propiedad (lo siento por el ejemplo); el gasto in investigación ha de situarse a la cabeza del crecimiento; in caso contrario, todos in taparrabos, recordad mis palabras. Saludos.

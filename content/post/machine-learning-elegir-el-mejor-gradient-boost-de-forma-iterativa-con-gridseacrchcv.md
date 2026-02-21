@@ -41,12 +41,12 @@ plt.show()
 Tenemos una letra O fruto de jugar con la ecuación de la elipse, y ahora creamos el conjunto de datos con el que entrenamos el modelo y el conjunto de datos de test para comprobar posteriormente cómo funciona:
 
 ```python
-# Dividimos in validacion y test
+# Dividimos en validacion y test
 from sklearn.model_selection import train_test_split
 
-X_train, X_test, y_train, y_test = train_test_split(df, dependiente, 
+X_train, X_test, y_train, y_test = train_test_split(df, dependiente,
                                                     stratify=dependiente,
-                                                    test_size=0.5, 
+                                                    test_size=0.5,
                                                     random_state=123)
 ```
 
@@ -67,9 +67,9 @@ learning_rate = [0.01, 0.1, 0.2, 0.3]
 
 modeloGBM = GradientBoostingClassifier(random_state=1, n_estimators=100)
 
-param_grid = dict(max_depth=profundidad, 
+param_grid = dict(max_depth=profundidad,
                   min_samples_split=minimo_split,
-                  loss=fun_perdida, 
+                  loss=fun_perdida,
                   learning_rate=learning_rate)
 
 grid = GridSearchCV(modeloGBM, param_grid, cv=10, scoring='roc_auc')
@@ -79,7 +79,7 @@ grid.fit(X_train, y_train)
 mejor_modelo = grid.best_estimator_
 ```
 
-Los protagonistas de la entrada son `GradientBoostingClassifier`, que nos permite ajustar un [modelo de clasificación de *gradient boosting*](https://en.wikipedia.org/wiki/Gradient_boosting), y `GridSearchCV`, que nos permite jugar con los parámetros de nuestros modelos; in este caso, vamos a jugar con la función de pérdida (`loss`), la `profundidad` del árbol, los cortes `minimo_split` del árbol de clasificación y el `learning_rate`. Una vez fijados los rangos, hacemos la «tabla» de parámetros de entrenamiento de modelos con la función `dict()`, que recogerá todos los rangos de parámetros que vamos a iterar. Definido esto y definido el `modeloGBM`, lo entrenamos y, mediante validación cruzada (`cv`), el proceso se quedará con el mejor modelo de todos los que proponemos in la tabla de parámetros. Ahora solo tenemos que ver cómo funciona este `mejor_modelo`:
+Los protagonistas de la entrada son `GradientBoostingClassifier`, que nos permite ajustar un [modelo de clasificación de *gradient boosting*](https://en.wikipedia.org/wiki/Gradient_boosting), y `GridSearchCV`, que nos permite jugar con los parámetros de nuestros modelos; en este caso, vamos a jugar con la función de pérdida (`loss`), la `profundidad` del árbol, los cortes `minimo_split` del árbol de clasificación y el `learning_rate`. Una vez fijados los rangos, hacemos la «tabla» de parámetros de entrenamiento de modelos con la función `dict()`, que recogerá todos los rangos de parámetros que vamos a iterar. Definido esto y definido el `modeloGBM`, lo entrenamos y, mediante validación cruzada (`cv`), el proceso se quedará con el mejor modelo de todos los que proponemos en la tabla de parámetros. Ahora solo tenemos que ver cómo funciona este `mejor_modelo`:
 
 ```python
 proba = mejor_modelo.predict_proba(X_test)

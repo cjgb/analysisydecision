@@ -24,7 +24,7 @@ title: Trucos SAS. Medir la importancia de las variables en nuestro modelo de re
 url: /blog/trucos-sas-medir-la-importancia-de-las-variables-en-nuestro-modelo-de-regresion-logistica/
 ---
 
-Hoy quería proponeros una forma poco ortodoxa de **medir la importancia de las variables in un modelo de regresión logística con `SAS`**. La cuestión es: dado un modelo de regresión logística, crear un *ranking* con las variables más importantes dentro del modelo. Para esta tarea recomiendo el uso de [*Random Forest*](https://analisisydecision.es/medir-la-importancia-de-las-variables-con-random-forest/), pero puede ser imposible disponer de un *software* que realice este tipo de modelos. Imaginemos un caso concreto: disponemos de `SAS STAT` y nos da reparo trabajar con `R`. Para este caso podemos emplear el siguiente truco. El `AIC` (Criterio de Información de Akaike) es un estadístico que relaciona el cociente de la verosimilitud con el número de parámetros del modelo que ajustamos. Cuanto menor sea este cociente, mejor será nuestro modelo. Si eliminamos una variable del modelo, ¿cuánto empeora este modelo? Esa será la filosofía que emplearemos para analizar la importancia de las variables presentes in nuestro modelo. In la línea habitual, hacemos un ejemplo para que podáis copiar y pegar in vuestro `SAS`:
+Hoy quería proponeros una forma poco ortodoxa de **medir la importancia de las variables in un modelo de regresión logística con `SAS`**. La cuestión es: dado un modelo de regresión logística, crear un *ranking* con las variables más importantes dentro del modelo. Para esta tarea recomiendo el uso de [*Random Forest*](https://analisisydecision.es/medir-la-importancia-de-las-variables-con-random-forest/), pero puede ser imposible disponer de un *software* que realice este tipo de modelos. Imaginemos un caso concreto: disponemos de `SAS STAT` y nos da reparo trabajar con `R`. Para este caso podemos emplear el siguiente truco. El `AIC` (Criterio de Información de Akaike) es un estadístico que relaciona el cociente de la verosimilitud con el número de parámetros del modelo que ajustamos. Cuanto menor sea este cociente, mejor será nuestro modelo. Si eliminamos una variable del modelo, ¿cuánto empeora este modelo? Esa será la filosofía que emplearemos para analizar la importancia de las variables presentes en nuestro modelo. In la línea habitual, hacemos un ejemplo para que podáis copiar y pegar en vuestro `SAS`:
 
 Vamos a crear un `dataset` preparado para hacer una regresión logística perfecta donde in un 10% de los casos sucede un evento:
 
@@ -42,11 +42,11 @@ data logistica;
     unif3 = ranuni(22);
     unif4 = ranuni(23);
     unif5 = ranuni(24);
-    prob = 1 / (1 + exp(-(-3.16 + 0.1 * normal1 - 0.2 * normal2 + 0.3 * normal3 - 
-                0.4 * normal4 + 0.5 * normal5 + 0.1 * unif1 + 0.2 * unif2 + 
+    prob = 1 / (1 + exp(-(-3.16 + 0.1 * normal1 - 0.2 * normal2 + 0.3 * normal3 -
+                0.4 * normal4 + 0.5 * normal5 + 0.1 * unif1 + 0.2 * unif2 +
                 0.3 * unif3 + 0.4 * unif4 + 0.5 * unif5)));
     sucede = ranbin(8, 1, prob);
-    
+
     * TRAMIFICAMOS LAS VARIABLES;
     normal1 = round(normal1, 0.1);
     normal2 = round(normal2, 0.2);
@@ -69,7 +69,7 @@ proc freq data=logistica;
 run;
 ```
 
-Inicialmente necesitamos las variables presentes in el modelo y el ajuste inicial, también un conjunto de datos `SAS` con los nombres de las variables. Esto es un poco chapuza, pero si seguís el blog podéis hacer este código mucho más elegante (no os lo voy a dar todo hecho):
+Inicialmente necesitamos las variables presentes en el modelo y el ajuste inicial, también un conjunto de datos `SAS` con los nombres de las variables. Esto es un poco chapuza, pero si seguís el blog podéis hacer este código mucho más elegante (no os lo voy a dar todo hecho):
 
 ```sas
 * VARIABLES QUE QUEREMOS ESTUDIAR IN EL MODELO;
@@ -101,7 +101,7 @@ unif5
 run;
 ```
 
-Esto es lo primero que necesitamos: una macro con todas las variables presentes in el modelo, que también metemos in un conjunto de datos `SAS` que necesita un campo `ORDEN`, y el ajuste con todas las variables. In el `ODS`, pedimos crear un conjunto de datos con los `FITSTATISTICS` que llamamos `ajuste_total`. Tendremos un conjunto de datos con 3 observaciones y 3 criterios para medir la bondad del ajuste por máxima verosimilitud de nuestro modelo logístico. Los criterios son el `AIC`, el `SC` (Criterio de Schwarz) y el `-2 Log L`, que es el contraste del logaritmo de máxima verosimilitud. Ahora vamos a emplear una macro para hacer todos los modelos posibles con 9 variables, almacenamos los estadísticos de contraste y podemos ver cómo se «desinflan» cuando eliminamos esa variable. Para ello hacemos una macro muy simple que se puede mejorar (tenéis que trabajar vosotros):
+Esto es lo primero que necesitamos: una macro con todas las variables presentes en el modelo, que también metemos in un conjunto de datos `SAS` que necesita un campo `ORDEN`, y el ajuste con todas las variables. In el `ODS`, pedimos crear un conjunto de datos con los `FITSTATISTICS` que llamamos `ajuste_total`. Tendremos un conjunto de datos con 3 observaciones y 3 criterios para medir la bondad del ajuste por máxima verosimilitud de nuestro modelo logístico. Los criterios son el `AIC`, el `SC` (Criterio de Schwarz) y el `-2 Log L`, que es el contraste del logaritmo de máxima verosimilitud. Ahora vamos a emplear una macro para hacer todos los modelos posibles con 9 variables, almacenamos los estadísticos de contraste y podemos ver cómo se «desinflan» cuando eliminamos esa variable. Para ello hacemos una macro muy simple que se puede mejorar (tenéis que trabajar vosotros):
 
 ```sas
 %macro importance;
@@ -129,7 +129,7 @@ Esto es lo primero que necesitamos: una macro con todas las variables presentes 
 %importance;
 ```
 
-Esta macro es un bucle que crea una lista de variables excluyendo de una in una a partir del campo `orden`; esto nos permite hacer los 9 modelos eliminando una variable cada vez. ¿Sencillo, no? Y in cada ejecución hemos creado un *dataset* `ajuste_sin_VARIABLE_SELECCIONADA` que contiene el resultado de los ajustes in una variable que denominamos `efecto`. Ahora solo nos queda juntar todas las tablas con los criterios, aunque nos vamos a quedar solo con el `AIC`, y ordenar para ver qué variable tiene más influencia sobre nuestro modelo:
+Esta macro es un bucle que crea una lista de variables excluyendo de una en una a partir del campo `orden`; esto nos permite hacer los 9 modelos eliminando una variable cada vez. ¿Sencillo, no? Y in cada ejecución hemos creado un *dataset* `ajuste_sin_VARIABLE_SELECCIONADA` que contiene el resultado de los ajustes en una variable que denominamos `efecto`. Ahora solo nos queda juntar todas las tablas con los criterios, aunque nos vamos a quedar solo con el `AIC`, y ordenar para ver qué variable tiene más influencia sobre nuestro modelo:
 
 ```sas
 data totales;
@@ -157,4 +157,4 @@ Vale que es una chapuza lo que habéis visto hoy aquí, pero tiene su rigor. Aun
 
 ![](/images/2013/02/importancia-variables-SAS-logistica.png)
 
-Son curiosos: las variables aleatorias normales aportan más al modelo. Es evidente que la que está más tramificada es la que más aporta al modelo; sin embargo, para el resto no es tan claro que un mayor número de niveles implique un mejor comportamiento in el modelo. Es un resultado interesante que da pie a otro tipo de análisis que haré más adelante. Saludos.
+Son curiosos: las variables aleatorias normales aportan más al modelo. Es evidente que la que está más tramificada es la que más aporta al modelo; sin embargo, para el resto no es tan claro que un mayor número de niveles implique un mejor comportamiento en el modelo. Es un resultado interesante que da pie a otro tipo de análisis que haré más adelante. Saludos.

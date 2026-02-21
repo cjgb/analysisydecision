@@ -25,7 +25,7 @@ title: Un repaso a los paquetes de R `solaR`, `chron`, `directlabels` y gráfico
 url: /blog/un-repaso-a-los-paquetes-de-r-solar-chron-directlabels-y-graficos-de-densidades-con-lattice/
 ---
 
-Y además vamos a analizar si de verdad llueve más los fines de semana in Madrid. Hace tiempo que me gustaría estudiar la influencia de la contaminación in algunos fenómenos atmosféricos. Por supuesto, no tengo tiempo para elaborar un estudio de ese tipo. La base de este estudio iba a ser el [paquete `solaR`](http://procomun.wordpress.com/software/solar/). Por otro lado, quería elaborar un monográfico sobre el [paquete `chron`](http://cran.r-project.org/web/packages/chron/chron.pdf), que contiene funciones muy interesantes para el manejo de fechas. Sin tiempo es imposible, por ello nos vamos a acercar a estos dos paquetes con un ejemplo y, de propina, os presento [`directlabels`](http://directlabels.r-forge.r-project.org/docs/index.html), otro paquete muy interesante para añadir etiquetas a nuestros gráficos.
+Y además vamos a analizar si de verdad llueve más los fines de semana en Madrid. Hace tiempo que me gustaría estudiar la influencia de la contaminación en algunos fenómenos atmosféricos. Por supuesto, no tengo tiempo para elaborar un estudio de ese tipo. La base de este estudio iba a ser el [paquete `solaR`](http://procomun.wordpress.com/software/solar/). Por otro lado, quería elaborar un monográfico sobre el [paquete `chron`](http://cran.r-project.org/web/packages/chron/chron.pdf), que contiene funciones muy interesantes para el manejo de fechas. Sin tiempo es imposible, por ello nos vamos a acercar a estos dos paquetes con un ejemplo y, de propina, os presento [`directlabels`](http://directlabels.r-forge.r-project.org/docs/index.html), otro paquete muy interesante para añadir etiquetas a nuestros gráficos.
 
 Nuestro trabajo va a comenzar con la descarga de datos agroclimáticos con `solaR`. Este paquete nos permite conectarnos con el `SIAR` ([descripción](http://www.mappinginteractivo.com/plantilla-ante.asp?id_articulo=177)), Sistema de Información Agroclimática para el Regadío:
 
@@ -36,7 +36,7 @@ siar <- readMAPA(prov = 19, est = 9, start = '01/01/2000', end = '22/05/2011')
 datos <- data.frame(lluvias = siar@data$Precipitacion)
 ```
 
-La función `readMAPA()`, como Dora la Exploradora, se conecta a [`MAPA`](http://www.mapa.es/siar/Informacion.asp) y nos permite descargarnos una gran cantidad de datos. Por cierto, para ver `MAPA` usad `IE`. Esta función requiere la provincia (`prov`), la estación (`est`), fecha inicial y fecha final de la extracción. La estación más cercana a mi hogar está in Marchamalo, Guadalajara. Para saber las estaciones, usad los datos de la consulta que lanzáis in la web. Para el ejemplo, solo nos quedamos con las precipitaciones y creamos un `data.frame` con lluvias y fechas como nombres de filas. Ahora hemos de trabajar con las fechas y para ello empleamos `chron`:
+La función `readMAPA()`, como Dora la Exploradora, se conecta a [`MAPA`](http://www.mapa.es/siar/Informacion.asp) y nos permite descargarnos una gran cantidad de datos. Por cierto, para ver `MAPA` usad `IE`. Esta función requiere la provincia (`prov`), la estación (`est`), fecha inicial y fecha final de la extracción. La estación más cercana a mi hogar está en Marchamalo, Guadalajara. Para saber las estaciones, usad los datos de la consulta que lanzáis en la web. Para el ejemplo, solo nos quedamos con las precipitaciones y creamos un `data.frame` con lluvias y fechas como nombres de filas. Ahora hemos de trabajar con las fechas y para ello empleamos `chron`:
 
 ```r
 library(chron)
@@ -49,7 +49,7 @@ datos$finde <- factor(ifelse(is.weekend(fechas), "FINDE", "RESTO"))
 summary(datos)
 ```
 
-Los nombres de fila de nuestro `data.frame` los transformamos in tres factores. Con `weekdays()` (es una función del paquete `base`) obtenemos el día de la semana a partir de una fecha. La función `as.yearmon()` nos crea una variable `MES-AAAA` y la función `is.weekend()` toma valores 1 y 0 si se trata de fin de semana. Ahora tenemos que estudiar si se produce una diferencia entre las precipitaciones los fines de semana y entre semana. Esto se hace con un análisis de la varianza, pero nosotros vamos a emplear `lattice` para crear un gráfico de densidades por meses con `R`:
+Los nombres de fila de nuestro `data.frame` los transformamos en tres factores. Con `weekdays()` (es una función del paquete `base`) obtenemos el día de la semana a partir de una fecha. La función `as.yearmon()` nos crea una variable `MES-AAAA` y la función `is.weekend()` toma valores 1 y 0 si se trata de fin de semana. Ahora tenemos que estudiar si se produce una diferencia entre las precipitaciones los fines de semana y entre semana. Esto se hace con un análisis de la varianza, pero nosotros vamos a emplear `lattice` para crear un gráfico de densidades por meses con `R`:
 
 ```r
 library(lattice)

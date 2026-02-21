@@ -24,7 +24,7 @@ In el [blog del profesor Serrano tomé contacto con el paquete `RGoogleTrends`](
 
 1. Una cuenta de Google y permanecer conectado a ellas (tema de *cookies*).
 2. Tener Explorer como navegador predeterminado (¿?, más tema de *cookies*).
-3. Poder conectar `R` con internet; in vuestro puesto de trabajo a lo mejor necesitáis [recordar esta entrada](https://analisisydecision.es/trucos-r-conectar-a-internet-por-el-puerto-8080/).
+3. Poder conectar `R` con internet; en vuestro puesto de trabajo a lo mejor necesitáis [recordar esta entrada](https://analisisydecision.es/trucos-r-conectar-a-internet-por-el-puerto-8080/).
 
 Pues con estas condiciones ya podemos descargar datos de `Google Trends`. In este ejemplo vamos a analizar las búsquedas de los términos «SAS software» y «r-project»:
 
@@ -40,7 +40,7 @@ datos2 <- data.frame(datos2)
 names(datos2) <- c("v1", "v2")
 ```
 
-Ya tenemos nuestros objetos in `R`. Vemos que los términos de búsqueda aparecen in el parámetro `q`. In este caso no hemos especificado la escala, pero descargamos datos relativos (*CSV with relative scaling*); así podremos comparar los resultados, esto tiene su importancia. Ahora hemos de trabajar con los objetos creados:
+Ya tenemos nuestros objetos in `R`. Vemos que los términos de búsqueda aparecen en el parámetro `q`. In este caso no hemos especificado la escala, pero descargamos datos relativos (*CSV with relative scaling*); así podremos comparar los resultados, esto tiene su importancia. Ahora hemos de trabajar con los objetos creados:
 
 ```r
 # Trabajo con datos1
@@ -116,4 +116,4 @@ No empleo `ggplot2` porque se me ha olvidado su sintaxis ya que algún compañer
 
 ![busqueda-google-trends-con-r.png](/images/2011/03/busqueda-google-trends-con-r.png "busqueda-google-trends-con-r.png")
 
-Creo que es un buen ejemplo de tratamiento de datos con `R`. Además de otro método de acceso a `Google Trends` con `R`. Espero que os sea de utilidad. Por cierto, ejecutadlo in vuestra consola de `R` y reportadme los posibles errores para seguir conociendo el acceso a Google con `R`. Saludos.
+Creo que es un buen ejemplo de tratamiento de datos con `R`. Además de otro método de acceso a `Google Trends` con `R`. Espero que os sea de utilidad. Por cierto, ejecutadlo en vuestra consola de `R` y reportadme los posibles errores para seguir conociendo el acceso a Google con `R`. Saludos.

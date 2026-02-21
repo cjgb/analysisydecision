@@ -20,7 +20,7 @@ title: Lectura de archivos csv con Python y Pandas
 url: /blog/lectura-de-archivos-csv-con-python-y-pandas/
 ---
 
-A continuación os planteo un acercamiento básico a la lectura de archivos `CSV` con `Python` y algunos trucos para facilitar la vida cuando realizamos importaciones basados in la experiencia, como son leer los primeros registros del `CSV` o realizar una lectura de observaciones aleatoria por si el archivo es muy voluminoso. Para realizar las importaciones vamos a emplear `Pandas` y la función `read_csv` con sus infinitas opciones:
+A continuación os planteo un acercamiento básico a la lectura de archivos `CSV` con `Python` y algunos trucos para facilitar la vida cuando realizamos importaciones basados en la experiencia, como son leer los primeros registros del `CSV` o realizar una lectura de observaciones aleatoria por si el archivo es muy voluminoso. Para realizar las importaciones vamos a emplear `Pandas` y la función `read_csv` con sus infinitas opciones:
 
 ```python
 pd.read_csv(filepath_or_buffer, sep=',', delimiter=None, header='infer', names=None, index_col=None, usecols=None, squeeze=False, prefix=None, mangle_dupe_cols=True, dtype=None, engine=None, converters=None, true_values=None, false_values=None, skipinitialspace=False, skiprows=None, nrows=None, na_values=None, keep_default_na=True, na_filter=True, verbose=False, skip_blank_lines=True, parse_dates=False, infer_datetime_format=False, keep_date_col=False, date_parser=None, dayfirst=False, iterator=False, chunksize=None, compression='infer', thousands=None, decimal=b'.', lineterminator=None, quotechar='"', quoting=0, escapechar=None, comment=None, encoding=None, dialect=None, tupleize_cols=None, error_bad_lines=True, warn_bad_lines=True, skipfooter=0, doublequote=True, delim_whitespace=False, low_memory=True, memory_map=False, float_precision=None)
@@ -68,19 +68,19 @@ Con `nrows = 200` leemos las primeras 200 líneas y podemos comprobar si lo esta
 meses = ['may', 'jul']
 df = pd.DataFrame()
 
-for trozo in pd.read_csv(path + 'bank-additional-full.csv', sep=';', 
+for trozo in pd.read_csv(path + 'bank-additional-full.csv', sep=';',
                          chunksize=1000):
     df = pd.concat([df, trozo[trozo['month'].isin(meses)]])
 
 df.month.value_counts()
 ```
 
-Con `chunksize` estamos leyendo el archivo `CSV` in trozos (*chunks*) de 1000 in 1000 y nos quedamos solo con aquellos que cumplan un determinado requisito; in este caso, que el campo `month` sea `may` o `jul`. E incluso podéis leer el `CSV` extrayendo una muestra aleatoria mientras leéis el fichero por partes y no sobrepasar la memoria:
+Con `chunksize` estamos leyendo el archivo `CSV` in trozos (*chunks*) de 1000 in 1000 y nos quedamos solo con aquellos que cumplan un determinado requisito; en este caso, que el campo `month` sea `may` o `jul`. E incluso podéis leer el `CSV` extrayendo una muestra aleatoria mientras leéis el fichero por partes y no sobrepasar la memoria:
 
 ```python
 df2 = pd.DataFrame()
 
-for trozo in pd.read_csv(path + 'bank-additional-full.csv', sep=';', 
+for trozo in pd.read_csv(path + 'bank-additional-full.csv', sep=';',
                          chunksize=1000):
     df2 = pd.concat([df2, trozo.sample(frac=0.25)])
 

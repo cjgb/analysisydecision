@@ -16,7 +16,7 @@ tags:
   - etiquetas
   - gráficos
   - excel
-title: Chart Tools un add in imprescindible para Excel
+title: Chart Tools un add-in imprescindible para Excel
 url: /blog/chart-tools-un-add-in-imprescindible-para-excel/
 ---
 

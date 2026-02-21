@@ -24,31 +24,31 @@ Debido a problemas con un servidor hace años descubrí [la macro Split](http://
 
 ```sas
 %macro split(in=, out=, ndsn=2);
-data %do i = 1 %to &ndsn.; &out.&i. %end; ;
-retain x;
-set &in. nobs=nobs;
-if _n_ eq 1
-then do;
-if mod(nobs,&ndsn.) eq 0
-then x=int(nobs/&ndsn.);
-else x=int(nobs/&ndsn.)+1;
-end;
-if _n_ le x then output &out.1;
-%do i = 2 %to &ndsn.;
-else if _n_ le (&i.*x)
-then output &out.&i.;
-%end;
-run;
+  data %do i = 1 %to &ndsn.; &out.&i. %end; ;
+    retain x;
+    set &in. nobs=nobs;
+    if _n_ eq 1
+    then do;
+      if mod(nobs,&ndsn.) eq 0
+      then x=int(nobs/&ndsn.);
+      else x=int(nobs/&ndsn.)+1;
+    end;
+    if _n_ le x then output &out.1;
+    %do i = 2 %to &ndsn.;
+      else if _n_ le (&i.*x)
+      then output &out.&i.;
+    %end;
+  run;
 %mend split;
 ```
 
-Un bucle que en función de un contador mete las observaciones donde correspondan, en mi opinión no es un código muy complejo. Como siempre un ejemplo de uso:
+Un bucle que, en función de un contador, mete las observaciones donde correspondan, en mi opinión no es un código muy complejo. Como siempre un ejemplo de uso:
 
 ```sas
 data uno;
-do i=1 to 2000000;
-output;
-end;
+  do i=1 to 2000000;
+  output;
+  end;
 run;
 
 %split(in=uno, out=partido, ndsn=4);

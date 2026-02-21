@@ -50,7 +50,7 @@ hasta <- nrow(quijote)
 # Texto de trabajo
 texto <- quijote[desde:hasta, 1]
 
-# El texto lo transformamos in una lista separada por espacios
+# El texto lo transformamos en una lista separada por espacios
 texto_split <- strsplit(as.character(texto), split = " ")
 
 # Deshacemos esa lista y tenemos el data.frame

@@ -53,7 +53,7 @@ Los grupos parecen claros:
 
 ![Linealidad Cluster 1](/images/2012/07/linealidad_cluster1.png)
 
-Cabe preguntarse: ¿qué sucede si segmentamos in base a centroides? Para responder a esta pregunta, hacemos un análisis no jerárquico; empleamos el algoritmo de las `k-medias`, del que [ya se ha hablado in este blog in alguna ocasión](https://analisisydecision.es/manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-i/):
+Cabe preguntarse: ¿qué sucede si segmentamos in base a centroides? Para responder a esta pregunta, hacemos un análisis no jerárquico; empleamos el algoritmo de las `k-medias`, del que [ya se ha hablado en este blog in alguna ocasión](https://analisisydecision.es/manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-i/):
 
 ```r
 distancias <- dist(total)

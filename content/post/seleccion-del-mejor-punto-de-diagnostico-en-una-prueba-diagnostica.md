@@ -24,7 +24,7 @@ La pasada semana, in un examen, me preguntaron cuál era el mejor punto para una
 
 La curva `ROC` es una representación gráfica de la sensibilidad y $1 - \text{especificidad}$. `ROC` es el acrónimo de *Receiver Operating Characteristic*. Es un método para valorar cómo está funcionando nuestro método diagnóstico, cuánto mejor es si lo comparamos con el azar. El azar diría que tenemos las mismas probabilidades de tener cualquier tipo de diagnóstico; es decir, pintamos una línea recta del punto $(0,0)$ al punto $(1,1)$: eso es el puro azar. In la red tenéis mucha literatura al respecto de divulgadores mejores que yo.
 
-Ejemplo que habíamos comentado: evaluación del volumen corpuscular medio (`VCM`) in el diagnóstico de anemia ferropénica. Se usa como «patrón de oro» la existencia de depósitos de hierro in la médula ósea. Introducimos los datos mediante la lectura más sencilla (no son muchos):
+Ejemplo que habíamos comentado: evaluación del volumen corpuscular medio (`VCM`) en el diagnóstico de anemia ferropénica. Se usa como «patrón de oro» la existencia de depósitos de hierro en la médula ósea. Introducimos los datos mediante la lectura más sencilla (no son muchos):
 
 ```r
 sin_fe <- scan()
@@ -58,13 +58,13 @@ resultados <- data.frame()
 
 for (i in puntos) {
   tabla_2.2 <- table(ifelse(datos$medida >= i, 1, 0), datos$Fe)
-  
+
   # Manejo de casos donde la tabla no es 2x2
   sensibilidad <- tabla_2.2[1, 1] / sum(datos$Fe == 0)
   especificidad <- tabla_2.2[2, 2] / sum(datos$Fe == 1)
-  
-  resultados <- rbind(resultados, data.frame(corte = i, 
-                                             sensibilidad = sensibilidad, 
+
+  resultados <- rbind(resultados, data.frame(corte = i,
+                                             sensibilidad = sensibilidad,
                                              uno_menos_especificidad = 1 - especificidad))
 }
 ```
@@ -85,7 +85,7 @@ Los resultados obtenidos con nuestra prueba quedan tabulados del siguiente modo:
 ```r
 library(ggplot2)
 
-ggplot(resultados, aes(x = uno_menos_especificidad, y = sensibilidad)) + 
+ggplot(resultados, aes(x = uno_menos_especificidad, y = sensibilidad)) +
   geom_line() +
   geom_abline(intercept = 0, slope = 1, colour = "red") + # Corrected escaping for "red"
   theme_minimal()
@@ -95,7 +95,7 @@ La primera variable son los puntos de corte seleccionados, la segunda la sensibi
 
 ![](/images/2014/02/prueba_diagnostica_roc_sensibilidad_especificidad_2.png)
 
-Pintamos la curva `ROC` para los puntos de corte establecidos. Y ahora viene el punto in el que me redimo de la contestación del examen que hice, que seguro que suspenderé porque mis problemas de memoria son bastante graves. El **punto de corte óptimo** es aquel donde es máxima la diferencia $\text{sensibilidad} - (1 - \text{especificidad})$. Es decir, donde menos errores cometemos a la hora de hacer el diagnóstico y donde menos etiquetamos de forma incorrecta a los que no tienen la enfermedad; donde mejor separamos. Aquí ya me equivoqué in el examen, pero además es muy importante determinar para qué estamos empleando nuestro análisis. Todo lo que está escrito arriba no sirve de nada si no sabemos el objeto del análisis.
+Pintamos la curva `ROC` para los puntos de corte establecidos. Y ahora viene el punto en el que me redimo de la contestación del examen que hice, que seguro que suspenderé porque mis problemas de memoria son bastante graves. El **punto de corte óptimo** es aquel donde es máxima la diferencia $\text{sensibilidad} - (1 - \text{especificidad})$. Es decir, donde menos errores cometemos a la hora de hacer el diagnóstico y donde menos etiquetamos de forma incorrecta a los que no tienen la enfermedad; donde mejor separamos. Aquí ya me equivoqué en el examen, pero además es muy importante determinar para qué estamos empleando nuestro análisis. Todo lo que está escrito arriba no sirve de nada si no sabemos el objeto del análisis.
 
 ¿Para qué estamos haciendo la prueba? Si estamos identificando aquellos pacientes que tienen un cáncer, me importa menos la especificidad; si etiqueto falsos positivos, me da lo mismo: es más importante identificar aquellos pacientes que tienen cáncer. In otro sector, si estoy haciendo un modelo de fraude, ojo con los falsos positivos: puedo estar perdiendo una oportunidad de negocio por etiquetar como operaciones fraudulentas aquellas que no lo son. Elegir el punto de corte no es un problema de optimización; no me habléis de «punto óptimo», habladme del **mejor punto** para nuestros objetivos.
 

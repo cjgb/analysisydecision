@@ -18,7 +18,7 @@ title: Leer archivos Excel con Python
 url: /blog/leer-archivos-excel-con-python/
 ---
 
-Entrada sobre la importación de `Excel` con `Python`, un aporte que sirve para mi documentación y que es posible que sea de ayuda para muchos que se estén iniciando in el uso de `Python` y `Pandas`, aunque in este caso para la lectura del `Excel` usaremos tanto `Pandas` como la librería `xlrd`.
+Entrada sobre la importación de `Excel` con `Python`, un aporte que sirve para mi documentación y que es posible que sea de ayuda para muchos que se estén iniciando en el uso de `Python` y `Pandas`, aunque en este caso para la lectura del `Excel` usaremos tanto `Pandas` como la librería `xlrd`.
 
 #### Lectura de Excel con Pandas
 
@@ -33,7 +33,7 @@ df = pd.read_excel(archivo, sheet_name='Hoja1')
 df.describe()
 ```
 
-La función `read_excel()` será suficiente in el 80% de las ocasiones que realicemos esta tarea. Como es habitual in la ayuda, tenéis perfectamente descritas sus posibilidades.
+La función `read_excel()` será suficiente en el 80% de las ocasiones que realicemos esta tarea. Como es habitual en la ayuda, tenéis perfectamente descritas sus posibilidades.
 
 #### Lectura de Excel con xlrd
 

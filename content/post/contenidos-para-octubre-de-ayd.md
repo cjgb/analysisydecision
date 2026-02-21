@@ -42,13 +42,13 @@ No esperaba tener un 4% de las visitas fidelizadas, pero 14 visitas diarias in m
 
 Son claros los mínimos de visitas de los fines de semana. Puede indicarnos que el grueso de las visitas son desde el trabajo o universidades. Si dejamos de lado los fines de semana, el sitio recibe unos 20 visitantes diarios; conozcamos cómo son para ajustar mejor los contenidos próximos.
 
-El *ranking* de visitas y tiempo de permanencia por contenido in estos 45 días es:
+El *ranking* de visitas y tiempo de permanencia por contenido en estos 45 días es:
 
 ![oct21.JPG](/images/2008/09/oct21.JPG)
 
 ![oct3.JPG](/images/2008/09/oct3.JPG)
 
-Quitando la página raíz, el podio de visitas se inicia con el mensaje que crea un *script* que nos permite unir hojas de `Excel`, el capítulo de `R` que hace referencia a la regresión lineal y el uso de `DDE` con `SAS`. In cuanto al tiempo de estancia in el sitio, parece que hay un par de artículos que captan interés. Creo que los artículos de opinión tienen que seguir apareciendo y es necesario avanzar in aspectos estadísticos con `R` y con `SAS`, fundamentalmente con el primero por su carácter `GNU`.
+Quitando la página raíz, el podio de visitas se inicia con el mensaje que crea un *script* que nos permite unir hojas de `Excel`, el capítulo de `R` que hace referencia a la regresión lineal y el uso de `DDE` con `SAS`. In cuanto al tiempo de estancia en el sitio, parece que hay un par de artículos que captan interés. Creo que los artículos de opinión tienen que seguir apareciendo y es necesario avanzar in aspectos estadísticos con `R` y con `SAS`, fundamentalmente con el primero por su carácter `GNU`.
 
 In cuanto a las palabras clave de acceso, las he agregado y os planteo un resumen por referencia:
 
@@ -58,7 +58,7 @@ In cuanto a las palabras clave de acceso, las he agregado y os planteo un resume
 - Regresión lineal: 15 visitas.
 - `Excel`: 9 visitas.
 
-El promedio de estancia no tiene sentido in esta dimensión. Pero hay que hacer mención al gran número de visitas que vienen de búsquedas tipo «importar `ACCESS` a `SAS`». Creo que esa labor trae de cabeza a más de uno.
+El promedio de estancia no tiene sentido en esta dimensión. Pero hay que hacer mención al gran número de visitas que vienen de búsquedas tipo «importar `ACCESS` a `SAS`». Creo que esa labor trae de cabeza a más de uno.
 
 Las ubicaciones físicas de las visitas de estos 45 días trazan el siguiente mapa:
 
@@ -66,6 +66,6 @@ Las ubicaciones físicas de las visitas de estos 45 días trazan el siguiente ma
 
 Madrid y Barcelona in España, y México fuera de ella, son las que tienen más usuarios de `AyD`. In un futuro quiero plantear unos mensajes piloto in lengua inglesa y realizar un seguimiento de las búsquedas para analizar cuántas visitas podrían generar; pero, de momento, los mensajes seguirán in español.
 
-La ubicación de red me está permitiendo identificar si las visitas son profesionales, universitarias o personales. Tengo usuarios fidelizados en algunos bancos y cajas de la península ibérica, algún usuario de compañías de telecomunicaciones mexicanas y españolas, y me llama la atención que no he captado la atención in muchas compañías de seguros. Las visitas universitarias provienen más de América Central y son las que mayor tiempo están in la web; sin embargo, no repiten. In cuanto al promedio de estancia, son las visitas de los bancos y cajas españolas las que más permanecen; además, es evidente que son usuarios fieles y, al menos, recibo de ellos una visita cada 3 días. A ver si contactáis por correo conmigo.
+La ubicación de red me está permitiendo identificar si las visitas son profesionales, universitarias o personales. Tengo usuarios fidelizados en algunos bancos y cajas de la península ibérica, algún usuario de compañías de telecomunicaciones mexicanas y españolas, y me llama la atención que no he captado la atención in muchas compañías de seguros. Las visitas universitarias provienen más de América Central y son las que mayor tiempo están en la web; sin embargo, no repiten. In cuanto al promedio de estancia, son las visitas de los bancos y cajas españolas las que más permanecen; además, es evidente que son usuarios fieles y, al menos, recibo de ellos una visita cada 3 días. A ver si contactáis por correo conmigo.
 
 Pues bien, con todo esto parece claro que es necesario potenciar los temas estadísticos con `R`. Comenzar el curso introductorio de `SAS` y plantear al menos un artículo semanal. Abandono una posible sección de trucos de `Excel` por su mala acogida. También veo necesario dar a conocer aspectos del sector seguros, como el cálculo de la prima de riesgo o la optimización de primas in renovación. La línea parece clara; ahora solo falta el tiempo para desarrollarla. Saludos.

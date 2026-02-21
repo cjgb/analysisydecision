@@ -22,24 +22,24 @@ url: /blog/introduccion-a-la-estadistica-para-cientificos-de-datos-capitulo-6-de
 
 # Descripción numérica de variables
 
-Se comienza con la recopilación de datos, la tabulación de los mismos y el establecimiento de la tipología y el rol que juegan estos in el conjunto de datos. Establecido ese marco, es necesario describir los datos; recordemos que, por sí mismos, los datos no dicen nada, no resuelven nada. Esa información la suministra un análisis.
+Se comienza con la recopilación de datos, la tabulación de los mismos y el establecimiento de la tipología y el rol que juegan estos en el conjunto de datos. Establecido ese marco, es necesario describir los datos; recordemos que, por sí mismos, los datos no dicen nada, no resuelven nada. Esa información la suministra un análisis.
 
 ## Transformar datos in información
 
 ![Imagen descriptiva](/images/2022/02/wp_editor_md_85a35fda93dad6ff4d9f2b8908d1149c.jpg)
 
-Recordando lo tratado in el capítulo 2, el álgebra lineal define el análisis estadístico; la estructura más sencilla es el vector, donde aplicaría el análisis univariable: **el inicio de todo**. Si se dispone de más de una variable, ya podemos disponer esa serie de datos in forma matricial; buscar estructuras dentro de esas matrices nos produce el análisis multivariable. Conforme ha mejorado la capacidad de computación, se han podido crear sistemas estadísticos capaces de aprender de los propios datos; al conjunto de análisis basados in estos sistemas se le denomina *machine learning*. Actualmente se está avanzando más: hay entornos más sofisticados capaces de trabajar con tensores matemáticos, estructuras algebraicas multidimensionales que permiten implementar algoritmos que imitan los procesos de aprendizaje humano; este conjunto de técnicas y algoritmos se recogen dentro del ámbito de la inteligencia artificial.
+Recordando lo tratado en el capítulo 2, el álgebra lineal define el análisis estadístico; la estructura más sencilla es el vector, donde aplicaría el análisis univariable: **el inicio de todo**. Si se dispone de más de una variable, ya podemos disponer esa serie de datos in forma matricial; buscar estructuras dentro de esas matrices nos produce el análisis multivariable. Conforme ha mejorado la capacidad de computación, se han podido crear sistemas estadísticos capaces de aprender de los propios datos; al conjunto de análisis basados en estos sistemas se le denomina *machine learning*. Actualmente se está avanzando más: hay entornos más sofisticados capaces de trabajar con tensores matemáticos, estructuras algebraicas multidimensionales que permiten implementar algoritmos que imitan los procesos de aprendizaje humano; este conjunto de técnicas y algoritmos se recogen dentro del ámbito de la inteligencia artificial.
 
-El presente trabajo se centra in el análisis univariable y servirá de introducción al análisis multivariable. Este capítulo, para ilustrar cómo realizar el análisis univariable, empleará un caso práctico orientado al *marketing* analítico.
+El presente trabajo se centra en el análisis univariable y servirá de introducción al análisis multivariable. Este capítulo, para ilustrar cómo realizar el análisis univariable, empleará un caso práctico orientado al *marketing* analítico.
 
 ## Caso práctico. Campaña de venta cruzada
 
-Dentro del mundo del *marketing*, es muy habitual emplear análisis estadísticos para mejorar los resultados de las acciones comerciales. In este caso, una aseguradora española que opera in el ramo de salud desea realizar una campaña de venta cruzada a sus clientes y ofrecer un producto de Autos. El ejemplo [se obtiene de una competición de Kaggle](https://www.kaggle.com/anmolkumar/health-insurance-cross-sell-prediction); se recomienda descargar y guardar in el equipo local los datos para poder replicar el código, aunque los datos estarán subidos al repositorio.
+Dentro del mundo del *marketing*, es muy habitual emplear análisis estadísticos para mejorar los resultados de las acciones comerciales. In este caso, una aseguradora española que opera en el ramo de salud desea realizar una campaña de venta cruzada a sus clientes y ofrecer un producto de Autos. El ejemplo [se obtiene de una competición de Kaggle](https://www.kaggle.com/anmolkumar/health-insurance-cross-sell-prediction); se recomienda descargar y guardar en el equipo local los datos para poder replicar el código, aunque los datos estarán subidos al repositorio.
 
 El análisis univariable nos sirve cuando tenemos cuestiones del tipo:
 
 - Estudiar la calidad de la información.
-- Descripción inicial de las variables presentes in el conjunto de datos. In el caso práctico, nos permite conocer la cartera de clientes encuestados.
+- Descripción inicial de las variables presentes en el conjunto de datos. In el caso práctico, nos permite conocer la cartera de clientes encuestados.
 - Identificar qué características de nuestros datos pueden ser eficaces cuando tenemos que plantear análisis. Qué características de nuestra cartera pueden ser relevantes para ofrecer una acción comercial.
 
 Todas estas cuestiones están vinculadas a la estadística y, in primer término, a la estadística sobre una sola variable. Comencemos el trabajo con el caso práctico.
@@ -61,19 +61,19 @@ Del conjunto de datos de trabajo `train.csv` nos han pasado la siguiente informa
 
 Se comienza el proceso de análisis.
 
-## El rol de las variables in el conjunto de datos
+## El rol de las variables en el conjunto de datos
 
-Como se comentó in el capítulo 2, dentro de los datos cada variable tiene una función distinta, y esta función define lo que se desea hacer con los datos. In este caso, se dispone de un conjunto de datos suministrado por una aseguradora para ofrecer un seguro de automóviles a sus asegurados de salud. La variable más relevante será nuestra variable respuesta o `target`; por la propia definición de los datos es sencillo: ese papel lo realiza el campo `Response`. Para identificar cada registro, cada cliente, se dispone de un campo `id`: el rol de esta variable será directamente el de ID. El resto de variables se consideran variables de entrada, variables `input`.
+Como se comentó en el capítulo 2, dentro de los datos cada variable tiene una función distinta, y esta función define lo que se desea hacer con los datos. In este caso, se dispone de un conjunto de datos suministrado por una aseguradora para ofrecer un seguro de automóviles a sus asegurados de salud. La variable más relevante será nuestra variable respuesta o `target`; por la propia definición de los datos es sencillo: ese papel lo realiza el campo `Response`. Para identificar cada registro, cada cliente, se dispone de un campo `id`: el rol de esta variable será directamente el de ID. El resto de variables se consideran variables de entrada, variables `input`.
 
-Es práctica habitual cuando se trabaja con datos nombrar los campos de las tablas de tal forma que sea más sencillo identificar cuál es el papel de cada variable in el conjunto de datos. In el caso concreto que se está estudiando, recordad: `Response` es `target` e `id` es `ID`. El nombre del resto de las variables solo las define y todas ellas serán variables de entrada o variables `input`. Puede ser recomendable incluir in el nombre de la variable, además de una breve descripción, un prefijo que nos defina el rol dentro del conjunto de datos. In este caso práctico se tiene un número bajo de variables, pero es posible encontrarse situaciones in las que sea necesario analizar cientos de variables y esas prácticas facilitan los análisis.
+Es práctica habitual cuando se trabaja con datos nombrar los campos de las tablas de tal forma que sea más sencillo identificar cuál es el papel de cada variable en el conjunto de datos. In el caso concreto que se está estudiando, recordad: `Response` es `target` e `id` es `ID`. El nombre del resto de las variables solo las define y todas ellas serán variables de entrada o variables `input`. Puede ser recomendable incluir en el nombre de la variable, además de una breve descripción, un prefijo que nos defina el rol dentro del conjunto de datos. In este caso práctico se tiene un número bajo de variables, pero es posible encontrarse situaciones en las que sea necesario analizar cientos de variables y esas prácticas facilitan los análisis.
 
-Conocida la función de cada variable in el conjunto de datos, se comienza a describir los elementos del conjunto de datos.
+Conocida la función de cada variable en el conjunto de datos, se comienza a describir los elementos del conjunto de datos.
 
 ## Análisis descriptivos de los datos
 
-Recuperando, de nuevo, el capítulo 2, allí se dividieron las variables in dos tipos: variables cuantitativas y variables cualitativas, que llamamos factores. In base a esta división se planteaba una posible descripción numérica y una posible descripción gráfica para variables de entrada o `input`; aquellas variables ID o variables in bruto (`raw`) no tiene sentido que se estudien porque no deberían aportar nada in nuestro análisis.
+Recuperando, de nuevo, el capítulo 2, allí se dividieron las variables in dos tipos: variables cuantitativas y variables cualitativas, que llamamos factores. In base a esta división se planteaba una posible descripción numérica y una posible descripción gráfica para variables de entrada o `input`; aquellas variables ID o variables in bruto (`raw`) no tiene sentido que se estudien porque no deberían aportar nada en nuestro análisis.
 
-Con estas premisas, el primer paso es determinar qué tipo de variable es cada una de las que tenemos in el conjunto de datos. Se comienza el trabajo con datos:
+Con estas premisas, el primer paso es determinar qué tipo de variable es cada una de las que tenemos en el conjunto de datos. Se comienza el trabajo con datos:
 
 ```r
 library(tidyverse)
@@ -81,7 +81,7 @@ train <- read_csv("./data/train.csv")
 head(train, 5)
 ```
 
-El conjunto de datos de trabajo es un archivo `CSV` que se llama `train.csv` y que previamente se ha descargado; la función `read_csv` permite importar ese `CSV` y crear un `data.frame` in la sesión de trabajo de `R`. Mediante la función `str()` es posible ver el tipo de variables que tiene el `data.frame`:
+El conjunto de datos de trabajo es un archivo `CSV` que se llama `train.csv` y que previamente se ha descargado; la función `read_csv` permite importar ese `CSV` y crear un `data.frame` en la sesión de trabajo de `R`. Mediante la función `str()` es posible ver el tipo de variables que tiene el `data.frame`:
 
 ```r
 str(train)
@@ -96,7 +96,7 @@ No todas las variables numéricas serán variables cuantitativas, pero sí todas
 
 > **Nota**: Nunca se debe tratar una cualidad como un número. Si el sexo viene codificado 1-mujer, 2-hombre, no debemos tratar esa variable como cuantitativa.
 
-### Descriptivos in variables cualitativas (factores)
+### Descriptivos en variables cualitativas (factores)
 
 In los datos hay variables que se pueden cuantificar y otras que definen cualidades de los datos. Una cualidad puede ser una característica (género, canal de venta…) o puede tener un orden, como es una variable cualitativa ordinal (antigüedad de cliente, nivel de satisfacción…). In ambos casos, para describir su comportamiento de forma numérica se emplearán tablas de frecuencias. Estas tablas presentan cada valor de la variable cualitativa o, lo que es lo mismo, cada nivel del factor, y contabilizan los registros que tienen esa característica. A la hora de contabilizar, se tienen las **frecuencias absolutas**, que contabilizan el número de registros para cada nivel del factor, o las **frecuencias relativas**, que contabilizan el porcentaje de individuos in cada nivel del factor y permiten *relativizar* esa cantidad.
 
@@ -127,12 +127,12 @@ train %>%
   knitr::kable()
 ```
 
-Por defecto, `R` siempre presenta in las tablas de frecuencias el orden lexicográfico, no el orden lógico que tiene la variable; in este caso se tienen vehículos `< 1 Year`, `1-2 Year` y `> 2 Years`, pero no es el orden que presenta el factor: es necesaria una ordenación.
+Por defecto, `R` siempre presenta en las tablas de frecuencias el orden lexicográfico, no el orden lógico que tiene la variable; en este caso se tienen vehículos `< 1 Year`, `1-2 Year` y `> 2 Years`, pero no es el orden que presenta el factor: es necesaria una ordenación.
 
 Creación y ordenación del factor:
 
 ```r
-train$Vehicle_Age <- factor(train$Vehicle_Age, 
+train$Vehicle_Age <- factor(train$Vehicle_Age,
                             levels = c('< 1 Year', '1-2 Year', '> 2 Years'))
 table(train$Vehicle_Age)
 ```
@@ -151,9 +151,9 @@ train <- train %>%
 table(train$fr_vehicle_age)
 ```
 
-Usando cualquiera de los dos métodos para clasificar correctamente factores ordinales, sí es recomendable emplear un sufijo para determinar aquellas variables que han de ser analizadas; in este caso, se emplea `fr_` indicando «factor reclasificado». Práctica muy útil cuando se manejen grandes cantidades de variables para poder distinguir variables `input` de variables `raw` (in bruto).
+Usando cualquiera de los dos métodos para clasificar correctamente factores ordinales, sí es recomendable emplear un sufijo para determinar aquellas variables que han de ser analizadas; en este caso, se emplea `fr_` indicando «factor reclasificado». Práctica muy útil cuando se manejen grandes cantidades de variables para poder distinguir variables `input` de variables `raw` (in bruto).
 
-### Descriptivos in variables cuantitativas
+### Descriptivos en variables cuantitativas
 
 Las variables cuantitativas pueden tomar valores finitos (ejemplo: la edad, antigüedad de cliente…) o valores infinitos (ejemplo: prima de un seguro, salario…), pero in ambas situaciones se emplearán los mismos análisis descriptivos:
 
@@ -200,11 +200,11 @@ train %>%
   knitr::kable()
 ```
 
-Los valores de las variables se sitúan in el entorno de la media, pero este valor está muy influenciado por la escala: al definirse como la suma de los valores dividida entre el número de registros, si uno de esos valores es muy alto, es posible que la media tienda a perder representatividad solo por un dato atípico.
+Los valores de las variables se sitúan en el entorno de la media, pero este valor está muy influenciado por la escala: al definirse como la suma de los valores dividida entre el número de registros, si uno de esos valores es muy alto, es posible que la media tienda a perder representatividad solo por un dato atípico.
 
 ##### Mediana de una variable
 
-Si se ordenan los datos de la variable in estudio de menor a mayor y establecemos un corte justo a la mitad, tenemos otra medida de posición que nos permite conocer el punto que divide esa variable al 50% in valores inferiores y al 50% in valores superiores; esta medida es conocida como **mediana**.
+Si se ordenan los datos de la variable en estudio de menor a mayor y establecemos un corte justo a la mitad, tenemos otra medida de posición que nos permite conocer el punto que divide esa variable al 50% en valores inferiores y al 50% en valores superiores; esta medida es conocida como **mediana**.
 
 ```r
 median(train$Age)
@@ -220,7 +220,7 @@ Además de esa separación 50/50, para conocer cómo es una variable numéricame
 quantile(train$Age, probs = c(0.05, 0.25, 0.5, 0.75, 0.95))
 ```
 
-Para obtener el percentil aparece la función `quantile()` (cuantil in español). Estos valores tienen unos puntos que caracterizan los datos: el percentil 0 es el mínimo, el percentil 100 es el máximo y, por supuesto, el percentil 50 es la mediana. La variable `Age` es cuantitativa ordinal; in este caso se tienen **valores finitos** entre 20 y 85. Si se replica el código para la variable de prima:
+Para obtener el percentil aparece la función `quantile()` (cuantil in español). Estos valores tienen unos puntos que caracterizan los datos: el percentil 0 es el mínimo, el percentil 100 es el máximo y, por supuesto, el percentil 50 es la mediana. La variable `Age` es cuantitativa ordinal; en este caso se tienen **valores finitos** entre 20 y 85. Si se replica el código para la variable de prima:
 
 ```r
 quantile(train$Annual_Premium)
@@ -230,7 +230,7 @@ In este caso la variable toma muchos valores (**infinitos**), entre 2630 y 54016
 
 ##### Moda
 
-Otra medida importante para conocer cómo se posicionan los valores de una variable es la **moda**: se define como el valor más repetido. Puede parecer más relevante para variables cuantitativas finitas; sin embargo, puede ser importante in variables cuantitativas infinitas porque hay valores que se repiten in la distribución y pueden representar un comportamiento. In `R` podemos crear nuestra propia función:
+Otra medida importante para conocer cómo se posicionan los valores de una variable es la **moda**: se define como el valor más repetido. Puede parecer más relevante para variables cuantitativas finitas; sin embargo, puede ser importante en variables cuantitativas infinitas porque hay valores que se repiten en la distribución y pueden representar un comportamiento. In `R` podemos crear nuestra propia función:
 
 ```r
 Mode <- function(x) {
@@ -242,7 +242,7 @@ Mode(train$Age)
 Mode(train$Annual_Premium)
 ```
 
-In los datos de trabajo, hay un valor in la prima muy repetido que es el importe mínimo.
+In los datos de trabajo, hay un valor en la prima muy repetido que es el importe mínimo.
 
 #### Medidas de dispersión
 
@@ -276,11 +276,11 @@ La varianza no tiene una unidad de medida intuitiva; para ello contamos con la *
 sd(train$Age)
 ```
 
-La desviación típica es la raíz cuadrada de la varianza y está expresada in las mismas unidades que la variable, lo que facilita su interpretación.
+La desviación típica es la raíz cuadrada de la varianza y está expresada en las mismas unidades que la variable, lo que facilita su interpretación.
 
 ##### Coeficiente de variación
 
-Se define como la relación entre la desviación típica y la media, y habitualmente se expresa in porcentaje. Es una medida de dispersión muy relevante porque no tiene unidades; es decir, no es lo mismo una dispersión de 200 g in una población de ranas que 200 g in una población de caballos, pero sí podemos establecer una dispersión que sea el $x\%$ de la media.
+Se define como la relación entre la desviación típica y la media, y habitualmente se expresa in porcentaje. Es una medida de dispersión muy relevante porque no tiene unidades; es decir, no es lo mismo una dispersión de 200 g en una población de ranas que 200 g en una población de caballos, pero sí podemos establecer una dispersión que sea el $x\%$ de la media.
 
 ```r
 sd(train$Age) / mean(train$Age) * 100

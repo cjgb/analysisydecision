@@ -64,4 +64,4 @@ Sub cambio_divisas()
 End Sub
 ```
 
-Primero cambiamos los separadores de miles y decimales; posteriormente realizamos la consulta a `www.finanzas.com/divisas` y ya tenemos tabulada la información. Además, no sobrescribimos anteriores consultas; siempre se añadirán gracias a `RefreshStyle`, por lo que podemos hacer un seguimiento del cambio. A mí me ha sido muy útil para seguir el efecto del precio de unos fondos de inversión. Saludos.
+Primero cambiamos los separadores de miles y decimales; posteriormente realizamos la consulta a `www.finanzas.com/divisas` y ya tenemos tabulada la información. Además, no sobrescribimos anteriores consultas; siempre se añadirán gracias a `RefreshStyle`, por lo que podemos hacer un seguimiento del cambio. Me ha sido muy útil para seguir el efecto del precio de unos fondos de inversión. Saludos.

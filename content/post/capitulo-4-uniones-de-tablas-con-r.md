@@ -20,7 +20,7 @@ title: Introducción a la Estadística para Científicos de Datos. Capítulo 4. 
 url: /blog/capitulo-4-uniones-de-tablas-con-r/
 ---
 
-Además de manejar los datos de un `data.frame`, in ocasiones es necesario realizar uniones entre conjuntos de datos para crear o añadir nuevas variables a un `data.frame` que es una base de observaciones inicial. Se pueden establecer dos tipos de uniones fundamentales: uniones verticales de tablas y uniones horizontales. Las uniones verticales serán las concatenaciones de `data.frames` (poner una estructura de datos encima de otra) y las uniones horizontales serán las que se denominarán *join*.
+Además de manejar los datos de un `data.frame`, en ocasiones es necesario realizar uniones entre conjuntos de datos para crear o añadir nuevas variables a un `data.frame` que es una base de observaciones inicial. Se pueden establecer dos tipos de uniones fundamentales: uniones verticales de tablas y uniones horizontales. Las uniones verticales serán las concatenaciones de `data.frames` (poner una estructura de datos encima de otra) y las uniones horizontales serán las que se denominarán *join*.
 
 Se emplea una estructura de datos sencilla para ejemplificar el funcionamiento:
 
@@ -28,11 +28,11 @@ Se emplea una estructura de datos sencilla para ejemplificar el funcionamiento:
 library(kableExtra)
 library(tidyverse)
 
-df1 <- data.frame(anio = c(2018, 2019, 2020, 2021), 
-                  variable1 = c(10, 20, 30, 40), 
+df1 <- data.frame(anio = c(2018, 2019, 2020, 2021),
+                  variable1 = c(10, 20, 30, 40),
                   variable2 = c(1000, 2000, 3000, 4000))
-df2 <- data.frame(anio = c(2017, 2018, 2019, 2020), 
-                  variable1 = c(50, 60, 70, 80), 
+df2 <- data.frame(anio = c(2017, 2018, 2019, 2020),
+                  variable1 = c(50, 60, 70, 80),
                   variable3 = c(5000, 6000, 7000, 8000))
 
 df1 %>% kable()
@@ -70,7 +70,7 @@ df <- bind_rows(df1, df2)
 df %>% kable()
 ```
 
-El empleo de esta función no es sensible a la necesidad de que ambos conjuntos de datos tengan los mismos nombres de variables; si eso no ocurre, se emplean valores perdidos representados in `R` como `NA` para aquellas ocasiones in las que no coincida.
+El empleo de esta función no es sensible a la necesidad de que ambos conjuntos de datos tengan los mismos nombres de variables; si eso no ocurre, se emplean valores perdidos representados in `R` como `NA` para aquellas ocasiones en las que no coincida.
 
 ## Uniones horizontales o *join*
 
@@ -78,18 +78,18 @@ Esta conocida figura recoge in `SQL` todos los tipos de *join*:
 
 ![](https://ingenieriadesoftware.es/wp-content/uploads/2018/07/sqljoin.jpeg)
 
-No se considera ver todos los ejemplos; se estudiarán las uniones más habituales in el trabajo diario.
+No se considera ver todos los ejemplos; se estudiarán las uniones más habituales en el trabajo diario.
 
 ### Inner join
 
 Es la intersección de dos conjuntos de datos. Usamos la función `inner_join()` de `dplyr`.
 
 ```r
-df1 <- data.frame(anio = c(2018, 2019, 2020, 2021), 
-                  variable1 = c(10, 20, 30, 40), 
+df1 <- data.frame(anio = c(2018, 2019, 2020, 2021),
+                  variable1 = c(10, 20, 30, 40),
                   variable2 = c(1000, 2000, 3000, 4000))
-df2 <- data.frame(anio = c(2017, 2018, 2019, 2020), 
-                  variable1 = c(50, 60, 70, 80), 
+df2 <- data.frame(anio = c(2017, 2018, 2019, 2020),
+                  variable1 = c(50, 60, 70, 80),
                   variable3 = c(5000, 6000, 7000, 8000))
 
 df <- inner_join(df1, df2, by = 'anio')
@@ -106,11 +106,11 @@ df <- inner_join(df1, df2, by = 'anio')
 df %>% kable()
 ```
 
-Se ha eliminado la `variable1` del `df2` como paso previo; es la que ambos conjuntos de datos tienen in común. Se realiza la unión y, in este caso, se ha buscado la «unión natural» por el campo in común que es `anio`. In el trabajo diario del científico de datos, es necesario realizar múltiples uniones de conjuntos de datos por un campo identificativo (roles de las variables); es buena práctica que este campo identificativo tenga el mismo nombre para todos los conjuntos de datos de trabajo.
+Se ha eliminado la `variable1` del `df2` como paso previo; es la que ambos conjuntos de datos tienen in común. Se realiza la unión y, en este caso, se ha buscado la «unión natural» por el campo in común que es `anio`. In el trabajo diario del científico de datos, es necesario realizar múltiples uniones de conjuntos de datos por un campo identificativo (roles de las variables); es buena práctica que este campo identificativo tenga el mismo nombre para todos los conjuntos de datos de trabajo.
 
 ### Left join
 
-Quizá una de las uniones más habituales in el trabajo diario de un científico de datos. Se parte de un conjunto de datos de base y se le añaden nuevas variables por la derecha respetando las observaciones de la izquierda. La función de `dplyr` usada es `left_join()`.
+Quizá una de las uniones más habituales en el trabajo diario de un científico de datos. Se parte de un conjunto de datos de base y se le añaden nuevas variables por la derecha respetando las observaciones de la izquierda. La función de `dplyr` usada es `left_join()`.
 
 ```r
 df1 <- data.frame(anio = c(2018, 2019, 2020, 2021), variable1 = c(10, 20, 30, 40))
@@ -143,11 +143,11 @@ Como científicos de datos, es **importante saber `SQL`** como lenguaje de consu
 ```r
 library(sqldf)
 
-df1 <- data.frame(anio = c(2018, 2019, 2020, 2021), 
-                  variable1 = c(10, 20, 30, 40), 
+df1 <- data.frame(anio = c(2018, 2019, 2020, 2021),
+                  variable1 = c(10, 20, 30, 40),
                   variable2 = c(1000, 2000, 3000, 4000))
-df2 <- data.frame(anio = c(2017, 2018, 2019, 2020), 
-                  variable1 = c(50, 60, 70, 80), 
+df2 <- data.frame(anio = c(2017, 2018, 2019, 2020),
+                  variable1 = c(50, 60, 70, 80),
                   variable3 = c(5000, 6000, 7000, 8000))
 
 # Inner Join
@@ -167,13 +167,13 @@ df_anti <- sqldf("select * from df1 where anio not in (select anio from df2)")
 df_anti %>% kable()
 ```
 
-## Duplicidades in las uniones de tablas
+## Duplicidades en las uniones de tablas
 
 Otra situación habitual que se va a encontrar el científico de datos es la aparición de registros duplicados; es necesario controlar su existencia porque pueden distorsionar el resultado de un análisis.
 
 ```r
 df1 <- data.frame(anio = c(2018, 2019, 2020, 2021), variable1 = c(10, 20, 30, 40))
-df2 <- data.frame(anio = c(2017, 2018, 2019, 2020, 2020), 
+df2 <- data.frame(anio = c(2017, 2018, 2019, 2020, 2020),
                   variable3 = c(5000, 6000, 7000, 8000, 1000))
 
 df <- df1 %>% left_join(df2, by = 'anio')

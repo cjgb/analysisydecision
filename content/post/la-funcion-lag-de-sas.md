@@ -39,7 +39,7 @@ Esto produce:
 
 ![lag.PNG](/images/2010/10/lag.PNG "lag.PNG")
 
-`LAG(i)` nos da el valor de `i` para la observación anterior, `LAG2(i)` nos da el valor de las 2 observaciones anteriores… In el caso de encontrarnos in las primeras observaciones, el valor que devuelve es el *missing*. Con ella podemos evitar trabajar con `RETAIN` a la hora de hacer sumas acumuladas:
+`LAG(i)` nos da el valor de `i` para la observación anterior, `LAG2(i)` nos da el valor de las 2 observaciones anteriores… In el caso de encontrarnos en las primeras observaciones, el valor que devuelve es el *missing*. Con ella podemos evitar trabajar con `RETAIN` a la hora de hacer sumas acumuladas:
 
 ```sas
 data lagn;

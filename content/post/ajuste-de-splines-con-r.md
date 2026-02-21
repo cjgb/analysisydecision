@@ -27,10 +27,10 @@ Disponemos de una serie de datos, probablemente una serie de parámetros de un m
 
 ```r
 puntos <- c(2.1017, 1.4464, 1.4951, 1.4068, 1.3682, 1.2061, 1.1787, 1.1191, 1.0766,
-            1.0274, 1.0077, 0.9911, 0.9525, 0.8762, 0.9327, 0.8982, 0.8896, 0.8895, 
-            0.9036, 0.8791, 0.8807, 0.9061, 0.8941, 0.9064, 0.9022, 0.8821, 0.8806, 
-            0.9252, 0.9311, 0.9012, 0.9457, 0.9095, 0.9389, 0.9047, 0.8975, 0.9431, 
-            0.9236, 0.9143, 0.9294, 0.8885, 0.9417, 0.9189, 0.9510, 0.8897, 0.8780, 
+            1.0274, 1.0077, 0.9911, 0.9525, 0.8762, 0.9327, 0.8982, 0.8896, 0.8895,
+            0.9036, 0.8791, 0.8807, 0.9061, 0.8941, 0.9064, 0.9022, 0.8821, 0.8806,
+            0.9252, 0.9311, 0.9012, 0.9457, 0.9095, 0.9389, 0.9047, 0.8975, 0.9431,
+            0.9236, 0.9143, 0.9294, 0.8885, 0.9417, 0.9189, 0.9510, 0.8897, 0.8780,
             0.8484, 0.8823, 1.0000)
 
 pesos <- c(rep(0.01, 47), 1.00)
@@ -47,7 +47,7 @@ lines(residuals(suavizado.datos), col = "blue")
 
 ![spline_R2](/images/2017/01/spline_R2.png)
 
-Simplificando mucho, tenemos la serie de puntos y, mediante la función `smooth.spline()`, podemos ajustar una `spline` in base a unos pesos y in base a un *smoothing parameter* (`spar`). Por este motivo quiero usar `R` in vez de mi viejo `Excel`: quiero ponderar el ajuste y jugar con el parámetro de suavizado, que habitualmente toma valores entre 0 y 1. In este ejemplo también se genera un gráfico de residuos que nos permite ver qué error cometemos con el ajuste. Los pesos me interesan porque hago «análisis caseros» de este tipo:
+Simplificando mucho, tenemos la serie de puntos y, mediante la función `smooth.spline()`, podemos ajustar una `spline` in base a unos pesos y in base a un *smoothing parameter* (`spar`). Por este motivo quiero usar `R` en vez de mi viejo `Excel`: quiero ponderar el ajuste y jugar con el parámetro de suavizado, que habitualmente toma valores entre 0 y 1. In este ejemplo también se genera un gráfico de residuos que nos permite ver qué error cometemos con el ajuste. Los pesos me interesan porque hago «análisis caseros» de este tipo:
 
 ```r
 # In cierto modo obligamos que pase por determinados puntos
@@ -64,4 +64,4 @@ lines(residuals(suavizado.datos), col = "blue")
 
 ![spline_R3](/images/2017/01/spline_R3.png)
 
-Se puede observar que la curva se ha modificado ligeramente. El análisis no tiene mucho rigor estadístico, pero se trata de ajustar la curva a un criterio comercial. Y esto es lo que creo que sería interesante montar in una aplicación `Shiny`; si alguien que lee esto quiere ayudarme a crearla, ya sabe dónde estoy. La *app* de `Shiny` nos pediría los datos a suavizar y pintaría un gráfico. También considero importante poner los pesos para «forzar in cierto modo» que la curva pase por los puntos que a mí me interese y, por último, poder seleccionar el parámetro de suavizado; esas son las palancas que tendría que mover para poder crear la `spline` y, por último, sería necesario obtener los parámetros resultantes. A ver si puedo montarlo y subirlo para poder realizar este tipo de ajustes sin necesidad de mi viejo `Excel`. Saludos.
+Se puede observar que la curva se ha modificado ligeramente. El análisis no tiene mucho rigor estadístico, pero se trata de ajustar la curva a un criterio comercial. Y esto es lo que creo que sería interesante montar en una aplicación `Shiny`; si alguien que lee esto quiere ayudarme a crearla, ya sabe dónde estoy. La *app* de `Shiny` nos pediría los datos a suavizar y pintaría un gráfico. También considero importante poner los pesos para «forzar in cierto modo» que la curva pase por los puntos que a mí me interese y, por último, poder seleccionar el parámetro de suavizado; esas son las palancas que tendría que mover para poder crear la `spline` y, por último, sería necesario obtener los parámetros resultantes. A ver si puedo montarlo y subirlo para poder realizar este tipo de ajustes sin necesidad de mi viejo `Excel`. Saludos.

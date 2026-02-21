@@ -19,7 +19,7 @@ title: Trucos Excel. Múltiples campos calculados en una tabla dinámica
 url: /blog/trucos-excel-multiples-campos-calculados-en-una-tabla-dinamica/
 ---
 
-Truco de `Excel` muy rápido que os permite crear múltiples campos calculados en una tabla dinámica. Imaginemos que tenemos una tabla dinámica con un campo que es la suma de la exposición al riesgo y, por otro lado, tenemos el número de siniestros. Estos dos campos los tenemos para 30 coberturas. Si queremos crear un campo calculado que sea la frecuencia siniestral (número de siniestros / exposición) para esos 30 campos, tenemos que irnos a herramientas de tabla dinámica, fórmulas, definir el nuevo campo… O bien podemos emplear la siguiente macro:
+Truco de `Excel` muy rápido que os permite crear múltiples campos calculados en una tabla dinámica. Imaginemos que tenemos una tabla dinámica con un campo que es la suma de la exposición al riesgo y, por otro lado, tenemos el número de siniestros. Estos dos campos los tenemos para 30 coberturas. Si queremos crear un campo calculado que sea la frecuencia siniestral (número de siniestros / exposición) para esos 30 campos, tenemos que ir a herramientas de tabla dinámica, fórmulas, definir el nuevo campo… O bien podemos emplear la siguiente macro:
 
 ```vba
 Sub CreaCamposCalculados()
@@ -36,7 +36,7 @@ Sub CreaCamposCalculados()
         nombreCampo = "Frecuencia_Cobertura_" & i
         ' La fórmula usa los nombres de los campos existentes
         formulaCampo = "='Siniestros_" & i & "' / 'Exposicion_" & i & "'"
-        
+
         pt.CalculatedFields.Add nombreCampo, formulaCampo
         pt.PivotFields(nombreCampo).Orientation = xlDataField
     Next i

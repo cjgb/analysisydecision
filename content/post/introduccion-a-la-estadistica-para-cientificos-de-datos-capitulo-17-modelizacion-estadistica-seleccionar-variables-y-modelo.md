@@ -28,7 +28,7 @@ El capítulo anterior comenzó con esta imagen:
 
 ![](/images/2023/05/wp_editor_md_27b9a01430023cb93f618c4fef0f4448.jpg)
 
-Se trataba de establecer un marco de trabajo, un guion para el científico de datos con los pasos a seguir in el proceso de modelización estadística. Se trabajó la primera parte de ese marco: el conocimiento de los datos, el inicio del proceso de modelización. Este capítulo será el siguiente paso, ilustrando cómo seleccionar variables a partir de los parámetros del modelo y proponer una selección del modelo final midiendo su capacidad predictiva. Es necesario comenzar justo donde finalizó el paso anterior.
+Se trataba de establecer un marco de trabajo, un guion para el científico de datos con los pasos a seguir en el proceso de modelización estadística. Se trabajó la primera parte de ese marco: el conocimiento de los datos, el inicio del proceso de modelización. Este capítulo será el siguiente paso, ilustrando cómo seleccionar variables a partir de los parámetros del modelo y proponer una selección del modelo final midiendo su capacidad predictiva. Es necesario comenzar justo donde finalizó el paso anterior.
 
 ```r
 library(tidyverse)
@@ -67,7 +67,7 @@ fr_zona <- train2 %>%
 fr_canal <- train2 %>%
   group_by(Policy_Sales_Channel) %>%
   summarise(clientes = round(n() * 100 / nrow(train2), 1),
-            pct_interesados = round(sum(Response) * 100 / n(), 1), 
+            pct_interesados = round(sum(Response) * 100 / n(), 1),
             .groups = 'drop') %>%
   arrange(desc(pct_interesados)) %>%
   mutate(fr_canal = case_when(
@@ -108,7 +108,7 @@ train2 <- train2 %>%
 datatable(head(train2))
 ```
 
-Se replica de nuevo el filtrado de datos eliminando a los clientes que no han estado asegurados, cuya respuesta siempre es `0` y no tienen interés in comunicaciones comerciales; por el mismo motivo, se eliminan a los clientes con garantía de daños, creando el objeto `train2`. Se aplica el código inicial de la reclasificación de factores a la que se llegó de forma univariable. A continuación, se crean los conjuntos de datos de entrenamiento y de test; in este caso no se balanceará la muestra debido a que se dispone de un 21.5% de respuestas positivas y, por ese motivo, no es necesario disponer de un conjunto de validación.
+Se replica de nuevo el filtrado de datos eliminando a los clientes que no han estado asegurados, cuya respuesta siempre es `0` y no tienen interés in comunicaciones comerciales; por el mismo motivo, se eliminan a los clientes con garantía de daños, creando el objeto `train2`. Se aplica el código inicial de la reclasificación de factores a la que se llegó de forma univariable. A continuación, se crean los conjuntos de datos de entrenamiento y de test; en este caso no se balanceará la muestra debido a que se dispone de un 21.5% de respuestas positivas y, por ese motivo, no es necesario disponer de un conjunto de validación.
 
 ```r
 set.seed(12)
@@ -123,17 +123,17 @@ test <- train2[-indices, ]
 nrow(test) / nrow(train2)
 ```
 
-El % de observaciones seleccionadas difiere con lo planteado in el capítulo anterior debido a que se seleccionan un 70% de observaciones para entrenar el modelo y el 30% para testear; in la fase previa, de cara a agilizar los procesos, se seleccionaba un 50% de las observaciones.
+El % de observaciones seleccionadas difiere con lo planteado en el capítulo anterior debido a que se seleccionan un 70% de observaciones para entrenar el modelo y el 30% para testear; en la fase previa, de cara a agilizar los procesos, se seleccionaba un 50% de las observaciones.
 
 > Para comenzar a conocer los datos y la reclasificación de factores, se recomienda trabajar con subconjuntos de datos de menor tamaño debido a la continua interacción con los datos que requiere esa fase.
 
-Conocidos los factores a emplear y con los conjuntos de datos preparados, ya se está in disposición de realizar el primer modelo. Y lo primero es tener claro el objetivo de ese modelo: se pretende **identificar y caracterizar** qué clientes de la cartera de salud pueden estar interesados in un seguro de automóviles. El problema de negocio lo describe la variable `Response`, que toma valores `1` (está interesado) y `0` (no está interesado); es un problema de **clasificación binomial**. In el capítulo 15 se presentaron los modelos `GLM` y, entre ellos, estaba la **regresión logística**, que será la técnica elegida para realizar el modelo, ya que permite asignar una probabilidad de estar interesado in el seguro de automóviles cliente a cliente in base a unas características y permite describir cómo son esos clientes a través de los parámetros que ofrece el modelo. Este tipo de modelos se conocen como modelos de propensión a la compra.
+Conocidos los factores a emplear y con los conjuntos de datos preparados, ya se está in disposición de realizar el primer modelo. Y lo primero es tener claro el objetivo de ese modelo: se pretende **identificar y caracterizar** qué clientes de la cartera de salud pueden estar interesados in un seguro de automóviles. El problema de negocio lo describe la variable `Response`, que toma valores `1` (está interesado) y `0` (no está interesado); es un problema de **clasificación binomial**. In el capítulo 15 se presentaron los modelos `GLM` y, entre ellos, estaba la **regresión logística**, que será la técnica elegida para realizar el modelo, ya que permite asignar una probabilidad de estar interesado en el seguro de automóviles cliente a cliente in base a unas características y permite describir cómo son esos clientes a través de los parámetros que ofrece el modelo. Este tipo de modelos se conocen como modelos de propensión a la compra.
 
 ## Selección de variables
 
-In realidad ya se ha hecho un filtrado previo de variables basado in la aproximación inicial a los datos y basado in criterios de negocio. Se han creado una serie de factores reclasificados in función de análisis gráficos bivariables donde se estudiaba la variable `target` frente a un factor. Pero todos esos análisis implican **la acción de una sola variable**; el modelo es una estructura algebraica multivariable que va a tener in cuenta todas las variables y cómo estas discriminan la variable `target`.
+In realidad ya se ha hecho un filtrado previo de variables basado en la aproximación inicial a los datos y basado in criterios de negocio. Se han creado una serie de factores reclasificados in función de análisis gráficos bivariables donde se estudiaba la variable `target` frente a un factor. Pero todos esos análisis implican **la acción de una sola variable**; el modelo es una estructura algebraica multivariable que va a tener in cuenta todas las variables y cómo estas discriminan la variable `target`.
 
-In el capítulo 13, dedicado a la regresión lineal, se identificó un problema que tienen los modelos de regresión lineal múltiple: **la multicolinealidad**. Los `GLM`, como modelos con resolución lineal, también adolecen de este problema. Por este motivo, el primer criterio para seleccionar variables será el análisis de la correlación de factores que se llevará a cabo mediante la `V de Cramer`, vista in el apartado 5 del capítulo 11 del ensayo.
+In el capítulo 13, dedicado a la regresión lineal, se identificó un problema que tienen los modelos de regresión lineal múltiple: **la multicolinealidad**. Los `GLM`, como modelos con resolución lineal, también adolecen de este problema. Por este motivo, el primer criterio para seleccionar variables será el análisis de la correlación de factores que se llevará a cabo mediante la `V de Cramer`, vista en el apartado 5 del capítulo 11 del ensayo.
 
 Para llevar a cabo el análisis de correlaciones vía `V de Cramer` se van a emplear las librerías `vcd` y `corrplot` solo con los factores reclasificados.
 
@@ -146,7 +146,7 @@ predictoras <- colnames(entrenamiento)
 predictoras <- predictoras[substr(predictoras, 1, 3) == "fr_"]
 ```
 
-De nuevo, reiterar la importancia de que las variables participantes in la modelización tengan una característica común para automatizar código; in este caso, todas comienzan con el prefijo `fr_`. A continuación se presenta un bucle [obtenido in StackOverflow que permite crear la matriz de correlaciones](https://stackoverflow.com/questions/44070853/association-matrix-in-r).
+De nuevo, reiterar la importancia de que las variables participantes en la modelización tengan una característica común para automatizar código; en este caso, todas comienzan con el prefijo `fr_`. A continuación se presenta un bucle [obtenido in StackOverflow que permite crear la matriz de correlaciones](https://stackoverflow.com/questions/44070853/association-matrix-in-r).
 
 ```r
 correlaciones <- entrenamiento %>%
@@ -215,7 +215,7 @@ entrenamiento %>%
 
 Son los encuestados jóvenes los que concentran los vehículos nuevos; los encuestados con vehículos nuevos son los que se concentran in los canales con menor interés. Parece existir sesgo con la selección de clientes a los que se realiza el cuestionario y, por ese motivo, se opta por mantener las variables esperando que el propio modelo elimine alguna de ellas. Pero se reitera la importancia que tiene la comunicación con el equipo que ha generado los datos y con los usuarios finales de los modelos, ya que se toman decisiones que han de estar consensuadas y el modelo está adoleciendo de problemas.
 
-Se aprecia que el propio proceso de modelización hace que el científico de datos vuelva una y otra vez a la reclasificación de factores y al análisis bivariable. Analizada la correlación de factores, se comienza el trabajo con el modelo. Para realizar modelos de regresión logística se emplea la función `glm()` vista in el capítulo 15; el código ya es conocido.
+Se aprecia que el propio proceso de modelización hace que el científico de datos vuelva una y otra vez a la reclasificación de factores y al análisis bivariable. Analizada la correlación de factores, se comienza el trabajo con el modelo. Para realizar modelos de regresión logística se emplea la función `glm()` vista en el capítulo 15; el código ya es conocido.
 
 ```r
 predictoras <- colnames(entrenamiento)
@@ -225,13 +225,13 @@ formula_modelo <- as.formula(paste0('Response ~ ', paste(predictoras, collapse =
 modelo.1 <- glm(formula = formula_modelo, data = entrenamiento, family = 'binomial')
 ```
 
-Recordar que `glm()` requiere un `data.frame`, una fórmula y especificar la familia de la función de enlace que permite modelizar ese tipo de datos. Para evitar escribir todas las variables presentes in la fórmula, se emplea otra de las posibilidades que ofrece emplear un método de identificación de variables. El `summary()` del modelo permite estudiar el test $\beta_i = 0$ asociado a cada parámetro del modelo.
+Recordar que `glm()` requiere un `data.frame`, una fórmula y especificar la familia de la función de enlace que permite modelizar ese tipo de datos. Para evitar escribir todas las variables presentes en la fórmula, se emplea otra de las posibilidades que ofrece emplear un método de identificación de variables. El `summary()` del modelo permite estudiar el test $\beta_i = 0$ asociado a cada parámetro del modelo.
 
 ```r
 summary(modelo.1)
 ```
 
-El trabajo previo in las variables ha permitido que el modelo arroje unos resultados esperados. La única variable que no está aportando al modelo es la antigüedad como cliente: solo un nivel y con un p-valor asociado por encima del 0.05 parece ofrecer un parámetro capaz de discriminar a los clientes interesados. Este hecho ya se intuía in los análisis univariables previos debido a su comportamiento completamente azaroso. Con tantas observaciones y un efecto tan pequeño, se puede eliminar esa variable.
+El trabajo previo en las variables ha permitido que el modelo arroje unos resultados esperados. La única variable que no está aportando al modelo es la antigüedad como cliente: solo un nivel y con un p-valor asociado por encima del 0.05 parece ofrecer un parámetro capaz de discriminar a los clientes interesados. Este hecho ya se intuía in los análisis univariables previos debido a su comportamiento completamente azaroso. Con tantas observaciones y un efecto tan pequeño, se puede eliminar esa variable.
 
 ```r
 predictoras <- predictoras[predictoras != "fr_antiguedad"]
@@ -245,9 +245,9 @@ In este caso, el test $\beta_i = 0$ se rechaza in todos los niveles de los facto
 
 ## Selección del modelo
 
-Se selecciona este `modelo.2` como el modelo final y sus parámetros están describiendo a los clientes con mayor interés. Como se aprecia in la salida anterior, los clientes con vehículos antiguos muestran más interés, ya que el parámetro asociado es positivo (in un modelo aditivo «suma probabilidad»); incluso se podría plantear transformar este factor de 3 niveles in un factor de 2 niveles. También aporta probabilidad si el cliente es hombre, pero aporta menos, ya que el parámetro es más próximo a 0. In el canal y la zona, todos los parámetros restan probabilidad al nivel que no aparece, el nivel base, que es «alto interés» (se recuerda que, si no se modifica previamente, el orden de los niveles se establece por orden lexicográfico). Por edad, lo que se esperaba: un comportamiento que no es lineal y que in el rango de 31 a 35 años es donde mayor probabilidad y mayor interés demuestran los encuestados por el seguro de automóviles. In cuanto a la prima se produce un hecho curioso: los dos parámetros son significativos, pero su capacidad de discriminar es mínima, ya que el valor que tienen se podría unir in un único nivel.
+Se selecciona este `modelo.2` como el modelo final y sus parámetros están describiendo a los clientes con mayor interés. Como se aprecia en la salida anterior, los clientes con vehículos antiguos muestran más interés, ya que el parámetro asociado es positivo (in un modelo aditivo «suma probabilidad»); incluso se podría plantear transformar este factor de 3 niveles in un factor de 2 niveles. También aporta probabilidad si el cliente es hombre, pero aporta menos, ya que el parámetro es más próximo a 0. In el canal y la zona, todos los parámetros restan probabilidad al nivel que no aparece, el nivel base, que es «alto interés» (se recuerda que, si no se modifica previamente, el orden de los niveles se establece por orden lexicográfico). Por edad, lo que se esperaba: un comportamiento que no es lineal y que en el rango de 31 a 35 años es donde mayor probabilidad y mayor interés demuestran los encuestados por el seguro de automóviles. In cuanto a la prima se produce un hecho curioso: los dos parámetros son significativos, pero su capacidad de discriminar es mínima, ya que el valor que tienen se podría unir in un único nivel.
 
-Cuanto más trabajados estén los niveles de los factores in la fase de conocimiento, menos problemas tendrá el científico de datos in esta fase; aun así, se va a optar por agrupar la prima in dos niveles ($\le 3000$ y $> 3000$ €) para dar mayor sencillez al modelo.
+Cuanto más trabajados estén los niveles de los factores en la fase de conocimiento, menos problemas tendrá el científico de datos en esta fase; aun así, se va a optar por agrupar la prima in dos niveles ($\le 3000$ y $> 3000$ €) para dar mayor sencillez al modelo.
 
 ```r
 # Reclasificación de prima in entrenamiento y test
@@ -261,13 +261,13 @@ modelo.3 <- glm(formula = formula_modelo, data = entrenamiento, family = 'binomi
 summary(modelo.3)
 ```
 
-¿Qué sucede si durante el proceso de modelización se vuelve a reclasificar un factor? Que será necesario incluirlo in el código de creación de los niveles de los factores. Y, por supuesto, sería necesario volver a ejecutar entrenamiento y test. Sin embargo, in este caso se opta por ejecutar la reclasificación sobre el conjunto de datos de entrenamiento. Pero estas situaciones se deben manejar con cuidado porque el código y el proceso de generación de los datos para la tabla de modelización final **son parte de la documentación** que el científico de datos tiene que entregar cuando realice un modelo.
+¿Qué sucede si durante el proceso de modelización se vuelve a reclasificar un factor? Que será necesario incluirlo en el código de creación de los niveles de los factores. Y, por supuesto, sería necesario volver a ejecutar entrenamiento y test. Sin embargo, en este caso se opta por ejecutar la reclasificación sobre el conjunto de datos de entrenamiento. Pero estas situaciones se deben manejar con cuidado porque el código y el proceso de generación de los datos para la tabla de modelización final **son parte de la documentación** que el científico de datos tiene que entregar cuando realice un modelo.
 
 El llamado `modelo.3` será un candidato a ser el modelo final; para seleccionar el modelo que habría de ser puesto in producción, además del comportamiento de los parámetros y del código necesario para productivizarlo, es evidente que es necesario estudiar su capacidad predictiva.
 
 ## La capacidad predictiva del modelo
 
-Para medir la capacidad predictiva del modelo, se determina in cuántas ocasiones acierta y cuántas ocasiones falla el modelo. Para esta labor se reservó un conjunto de datos que permite testear este comportamiento. In esta ocasión, in vez de medir la capacidad predictiva de una forma más ortodoxa a través de matrices de confusión y curvas `ROC`, se va a estudiar cuánto mejora el modelo a un comportamiento azaroso. El objetivo del problema que está sirviendo de hilo conductor del ensayo es identificar qué características y qué **clientes son más propensos a contratar un producto** y, por ello, se va a estudiar cuánto mejora una posible selección de clientes a una selección al azar.
+Para medir la capacidad predictiva del modelo, se determina in cuántas ocasiones acierta y cuántas ocasiones falla el modelo. Para esta labor se reservó un conjunto de datos que permite testear este comportamiento. In esta ocasión, en vez de medir la capacidad predictiva de una forma más ortodoxa a través de matrices de confusión y curvas `ROC`, se va a estudiar cuánto mejora el modelo a un comportamiento azaroso. El objetivo del problema que está sirviendo de hilo conductor del ensayo es identificar qué características y qué **clientes son más propensos a contratar un producto** y, por ello, se va a estudiar cuánto mejora una posible selección de clientes a una selección al azar.
 
 Para entender mejor qué se pretende: seleccionando al azar el 10% de los clientes, ¿cuántos clientes interesados se espera encontrar?
 
@@ -276,13 +276,13 @@ test %>%
   summarise(pct_interesados = mean(Response))
 ```
 
-El % es análogo porque es una selección al azar del 10% de las observaciones, ya que a todos los clientes les da la misma probabilidad independientemente de si están interesados in el seguro de automóviles o no. Pero el científico de datos ha creado una estructura matemática que permite establecer una probabilidad de ese interés in el seguro de autos in base a unas características de los clientes. De esta manera, el primer paso es añadir esa probabilidad a los datos de test del modelo candidato a ser el final.
+El % es análogo porque es una selección al azar del 10% de las observaciones, ya que a todos los clientes les da la misma probabilidad independientemente de si están interesados en el seguro de automóviles o no. Pero el científico de datos ha creado una estructura matemática que permite establecer una probabilidad de ese interés en el seguro de autos in base a unas características de los clientes. De esta manera, el primer paso es añadir esa probabilidad a los datos de test del modelo candidato a ser el final.
 
 ```r
 test$probabilidad_modelo.3 <- predict(modelo.3, test, type = "response")
 ```
 
-Este proceso de emplear la estructura matemática de un modelo a un conjunto de datos es lo que se denomina **escorear un modelo** (*scoring*) y permite obtener un `output` registro a registro con el resultado del modelo, in este caso la probabilidad de mostrar interés in el seguro de automóviles. Ahora, ordenando el conjunto de datos por esa probabilidad de mayor a menor, si el modelo tiene un correcto funcionamiento, al seleccionar el 10% de las primeras observaciones el % de interesados hace superar a ese 21% de partida.
+Este proceso de emplear la estructura matemática de un modelo a un conjunto de datos es lo que se denomina **escorear un modelo** (*scoring*) y permite obtener un `output` registro a registro con el resultado del modelo, en este caso la probabilidad de mostrar interés en el seguro de automóviles. Ahora, ordenando el conjunto de datos por esa probabilidad de mayor a menor, si el modelo tiene un correcto funcionamiento, al seleccionar el 10% de las primeras observaciones el % de interesados hace superar a ese 21% de partida.
 
 ```r
 test <- test %>%
@@ -298,7 +298,7 @@ porcen_interesados_global <- mean(test$Response)
 porcen_mas_interesados; porcen_interesados_global
 ```
 
-Se observa que el modelo estaría seleccionando un 36% de interesados frente al 21.5% global, por lo que el 10% de las observaciones están mejorando aproximadamente in 1.75 veces a una selección al azar; a ese dato se le va a denominar **ganancia** y se va a considerar un buen modelo si el 10% de las observaciones que el modelo identifica con mayor probabilidad supera in 2.5 veces al azar. In la situación que se está trabajando no es el caso: 1.75 está lejos del 2.5 exigido. Pero, in este caso, superar in 2.5 veces al azar implicaría seleccionar un 66% de interesados in el 10% de observaciones; es decir, el modelo sería excelente (demasiado bueno) y, si esto se produce, el científico de datos debe desconfiar in ese resultado, ya que puede existir alguna variable que esté distorsionando los resultados.
+Se observa que el modelo estaría seleccionando un 36% de interesados frente al 21.5% global, por lo que el 10% de las observaciones están mejorando aproximadamente in 1.75 veces a una selección al azar; a ese dato se le va a denominar **ganancia** y se va a considerar un buen modelo si el 10% de las observaciones que el modelo identifica con mayor probabilidad supera in 2.5 veces al azar. In la situación que se está trabajando no es el caso: 1.75 está lejos del 2.5 exigido. Pero, en este caso, superar in 2.5 veces al azar implicaría seleccionar un 66% de interesados en el 10% de observaciones; es decir, el modelo sería excelente (demasiado bueno) y, si esto se produce, el científico de datos debe desconfiar in ese resultado, ya que puede existir alguna variable que esté distorsionando los resultados.
 
 Ordenadas las observaciones por la probabilidad que asigna el modelo, se puede obtener el % de interesados y representar gráficamente una curva de ganancia con respecto al azar.
 
@@ -314,13 +314,13 @@ ganancia <- test %>%
   mutate(ganancia = percentil_interesados / porcen_interesados_global)
 
 ganancia %>%
-  ggplot(aes(x = as.factor(percentil_modelo), y = ganancia, group = 1)) + 
-  geom_line(color = "red") + 
+  ggplot(aes(x = as.factor(percentil_modelo), y = ganancia, group = 1)) +
+  geom_line(color = "red") +
   geom_hline(yintercept = 1, color = 'blue') +
   labs(x = "Percentil de probabilidad", y = "Ganancia sobre el azar")
 ```
 
-Se aprecia cómo los percentiles con mayor probabilidad están ganando al azar, pero in el mejor percentil se llega a mejorar in dos veces a una selección de clientes sin emplear el modelo. Otra forma de ver esta ganancia se consigue acumulando el número de respuestas positivas in función del percentil de probabilidad del modelo.
+Se aprecia cómo los percentiles con mayor probabilidad están ganando al azar, pero en el mejor percentil se llega a mejorar in dos veces a una selección de clientes sin emplear el modelo. Otra forma de ver esta ganancia se consigue acumulando el número de respuestas positivas in función del percentil de probabilidad del modelo.
 
 ```r
 ganancia_acum <- test %>%
@@ -333,7 +333,7 @@ ganancia_acum <- test %>%
          pct_esperado_interesados = percentil_modelo / grupos)
 ```
 
-Antes de realizar el gráfico, se describe la tabla generada. Se contabilizan las respuestas positivas; estas suponen un % sobre el total que se va acumulando hasta llegar al 100%. Por otro lado, in una selección al azar, donde todas las observaciones tienen la misma probabilidad de ser seleccionadas, se esperaría seleccionar el 10% de las observaciones in el primer percentil, el 20% in el segundo percentil y así hasta llegar al 100%; este campo se denomina `pct_esperado_interesados` y se crea artificialmente. Estos datos se representan gráficamente:
+Antes de realizar el gráfico, se describe la tabla generada. Se contabilizan las respuestas positivas; estas suponen un % sobre el total que se va acumulando hasta llegar al 100%. Por otro lado, en una selección al azar, donde todas las observaciones tienen la misma probabilidad de ser seleccionadas, se esperaría seleccionar el 10% de las observaciones en el primer percentil, el 20% en el segundo percentil y así hasta llegar al 100%; este campo se denomina `pct_esperado_interesados` y se crea artificialmente. Estos datos se representan gráficamente:
 
 ```r
 ganancia_acum %>%
@@ -372,10 +372,10 @@ El proceso de modelización no acaba con la realización del modelo; como se ha 
 
 - **Descriptivo de los datos**: Origen y tratamiento inicial de los datos, además de la aproximación univariable con los principales estadísticos.
 - **Depuración inicial de los datos**: In el ejemplo de trabajo se está trabajando con pocas variables, pero es posible que se trabajen con miles de ellas y se realizan aproximaciones iniciales para incluir y descartar. In el ejemplo ha aparecido algún caso donde las variables no aportaban nada o directamente aportaban ruido y han sido descartadas. Los criterios de inclusión y descarte pueden ser tanto estadísticos como de puro negocio; el número de empleados de una empresa no parece una variable relevante si se trabaja con personas físicas (por ejemplo).
-- **Selección de parámetros/variables incluidas in el modelo**: Una vez determinado qué variables pasan al proceso de modelización, ese proceso iterativo ya determina qué variables son candidatas a formar parte del modelo. Para ello se pueden emplear tácticas univariables como multivariables con métodos automáticos de selección. Si el científico de datos va a emplear técnicas de modelización lineales, puede ser interesante analizar las posibles interacciones entre las variables.
+- **Selección de parámetros/variables incluidas en el modelo**: Una vez determinado qué variables pasan al proceso de modelización, ese proceso iterativo ya determina qué variables son candidatas a formar parte del modelo. Para ello se pueden emplear tácticas univariables como multivariables con métodos automáticos de selección. Si el científico de datos va a emplear técnicas de modelización lineales, puede ser interesante analizar las posibles interacciones entre las variables.
 - **Comportamiento univariable frente a la variable respuesta de las variables seleccionadas para la modelización**: Esta parte de la documentación es relevante para que los equipos usuarios de los datos entiendan cómo van a funcionar esas variables. Es cierto que un modelo matemático es una estructura compleja capaz de ir más allá del comportamiento univariable, pero este análisis ya permite conocer la motivación que ha tenido el modelo para incluir esa variable y pueden servir para identificar indicadores de negocio.
 - **Código empleado para la obtención de los datos y la creación de las variables de entrada**: In el ejemplo tratado se han empleado modelos lineales y tenía especial importancia la descripción de los parámetros ofrecidos por el modelo, por lo que era imprescindible la reclasificación de factores. Pero, incluso las técnicas de aprendizaje automático más sofisticadas mejoran con la transformación de las variables de entrada, y todo ese código generado también forma parte de la documentación. No será necesario incluir todo el código con los análisis iniciales.
-- **Conjunto de datos de entrenamiento, test y validación**: Si es posible almacenar esta información, se recomienda conservarla, ya que posteriormente puede haber modificaciones in la propia estructura de los datos (una fecha pasa de almacenarse in meses a almacenarse in años, por ejemplo) y posteriores desajustes de modelo puedan justificarse de ese modo. Además, el trabajo de los científicos de datos ha de ser auditado periódicamente.
-- **Resultados de los modelos**: Bien mediante curva de ganancia, curva `ROC` o el método que se utilice in el equipo. Esto permite comparar los resultados esperados con la calibración periódica del modelo, comparando lo que se espera del modelo frente a lo que se está obteniendo in la realidad.
+- **Conjunto de datos de entrenamiento, test y validación**: Si es posible almacenar esta información, se recomienda conservarla, ya que posteriormente puede haber modificaciones en la propia estructura de los datos (una fecha pasa de almacenarse in meses a almacenarse in años, por ejemplo) y posteriores desajustes de modelo puedan justificarse de ese modo. Además, el trabajo de los científicos de datos ha de ser auditado periódicamente.
+- **Resultados de los modelos**: Bien mediante curva de ganancia, curva `ROC` o el método que se utilice en el equipo. Esto permite comparar los resultados esperados con la calibración periódica del modelo, comparando lo que se espera del modelo frente a lo que se está obteniendo en la realidad.
 
 Los elementos señalados con anterioridad son un mínimo exigible para entregar un modelo matemático; además, el científico de datos, si trabaja de este modo, ha de elaborar una historia con los datos y con todos los pasos que le han llevado a crear ese modelo. Saludos.
