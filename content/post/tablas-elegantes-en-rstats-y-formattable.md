@@ -42,7 +42,7 @@ data$`Altas nuevas` <- c(NA, diff(data$altas))
 data$`Fallecimientos nuevos` <- c(NA, diff(data$fallecimientos))
 data$`UCI nuevas` <- c(NA, diff(data$ingresos_uci))
 
-data_filtered <- data %>% 
+data_filtered <- data %>%
   filter(month(Fecha) == 10 & `Casos nuevos` > 0) %>%
   select(Fecha, `Casos nuevos`, `Altas nuevas`, `Fallecimientos nuevos`, `UCI nuevas`)
 
@@ -72,7 +72,7 @@ Algo que queda muy elegante son las celdas con flechas y colores en el caso de m
 
 ```r
 data$`Incremento de casos` <- c(NA, diff(data$`Casos nuevos`))
-data_filtered_inc <- data %>% 
+data_filtered_inc <- data %>%
   filter(month(Fecha) == 10 & `Casos nuevos` > 0) %>%
   select(Fecha, `Casos nuevos`, `Incremento de casos`)
 
@@ -86,6 +86,6 @@ formattable(data_filtered_inc, align = c("r"),
                  `Incremento de casos` = reduccion_formato))
 ```
 
-Para el ejemplo solo sacamos casos diarios e incrementos; en el caso que se produzca una reducción pondremos una flecha hacia abajo y el color verde como algo positivo. Si se produce un incremento de casos, pondremos una flecha roja hacia arriba.
+Para el ejemplo solo sacamos casos diarios e incrementos; en el caso de que se produzca una reducción pondremos una flecha hacia abajo y el color verde como algo positivo. Si se produce un incremento de casos, pondremos una flecha roja hacia arriba.
 
 Estaréis pensando: vaya "castaña" de datos que ha seleccionado para ilustrar los ejemplos; no tienen sentido los fines de semana, no son diarios… En este caso sólo se está ilustrando un ejemplo de uso; imaginad que hay que pilotar una pandemia con esta información. Saludos.

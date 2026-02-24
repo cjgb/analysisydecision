@@ -18,7 +18,7 @@ title: Truco SAS. Observaciones de un dataset en una macro variable
 url: /blog/truco-sas-observaciones-de-un-dataset-en-una-macro-variable/
 ---
 
-SAS *tip* sencillo para el uso de las funciones de I/O de SAS, y que puede ahorrarnos más de un paso `DATA`. Se trata de una macro que pone el número de observaciones de un *dataset* en una macrovariable global. Al emplear funciones de I/O, su ejecución es inmediata:
+Truco SAS sencillo sobre las funciones de I/O de SAS que puede ahorrarnos más de un paso `DATA`. Se trata de una macro que pone el número de observaciones de un *dataset* en una _macrovariable_ global. Al emplear funciones de I/O, su ejecución es inmediata:
 
 ```sas
 /* MACRO PARA IDENTIFICAR EL NÚMERO DE OBSERVACIONES DE UN DS */

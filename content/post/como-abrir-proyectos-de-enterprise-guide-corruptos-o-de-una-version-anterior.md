@@ -6,6 +6,7 @@ categories:
   - sas
 date: '2010-09-03'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - truco-leer-sas7bdat-sin-sas.md
   - ayudadme-importar-a-sas-texto-con-comillas.md
@@ -15,7 +16,7 @@ related:
 tags:
   - corruptos
   - enterprise guide
-title: Como abrir proyectos de Enterprise Guide corruptos o de una versión anterior
+title: Cómo abrir proyectos de Enterprise Guide corruptos o de una versión anterior
 url: /blog/como-abrir-proyectos-de-enterprise-guide-corruptos-o-de-una-version-anterior/
 ---
 

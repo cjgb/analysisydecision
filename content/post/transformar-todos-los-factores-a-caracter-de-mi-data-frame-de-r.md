@@ -3,7 +3,8 @@ author: rvaquerizo
 categories:
   - formación
 date: '2020-03-21'
-lastmod: '2025-07-13'
+lastmod: '2026-02-24'
+noindex: true
 related:
   - trabajando-con-factores-en-r-attach-frente-a-within.md
   - recodificar-el-valor-de-un-factor-en-r.md

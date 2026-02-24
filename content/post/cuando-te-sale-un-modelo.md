@@ -4,6 +4,7 @@ categories:
   - formación
 date: '2016-09-30'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - juego-de-modelos-de-regresion-con-r.md
   - manual-curso-introduccion-de-r-capitulo-9-introduccion-a-la-regresion-lineal-con-r.md
