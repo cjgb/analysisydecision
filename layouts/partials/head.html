@@ -8,7 +8,7 @@
   {{- $robotsValue = "follow, index" -}}
 {{- else if eq .Section "paginas" -}}
   {{- $robotsValue = "follow, index" -}}
-{{- else if eq .Section "posts" -}}
+{{- else if eq .Section "post" -}}
   {{- if .Params.noindex -}}
     {{- $robotsValue = "follow, noindex" -}}
   {{- else -}}
