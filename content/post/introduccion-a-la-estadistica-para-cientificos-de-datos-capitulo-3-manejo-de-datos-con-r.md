@@ -58,7 +58,7 @@ head(iris, 5)
 
 ## Selección de registros
 
-Al seleccionar registros, se está seleccionando una muestra de observaciones in base a un criterio. El verbo de `dplyr` a emplear será `filter()`.
+Al seleccionar registros, se está seleccionando una muestra de observaciones en base a un criterio. El verbo de `dplyr` a emplear será `filter()`.
 
 ```r
 setosa <- iris %>%
@@ -66,7 +66,7 @@ setosa <- iris %>%
 head(setosa, 5)
 ```
 
-Puede ser útil emplear una lista para una condición. In ese caso, se ha de realizar:
+Puede ser útil emplear una lista para una condición. En ese caso, se ha de realizar:
 
 ```r
 species_to_select <- c("setosa", "virginica")

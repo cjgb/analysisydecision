@@ -47,10 +47,10 @@ lines(residuals(suavizado.datos), col = "blue")
 
 ![spline_R2](/images/2017/01/spline_R2.png)
 
-Simplificando mucho, tenemos la serie de puntos y, mediante la función `smooth.spline()`, podemos ajustar una `spline` in base a unos pesos y in base a un *smoothing parameter* (`spar`). Por este motivo quiero usar `R` en vez de mi viejo `Excel`: quiero ponderar el ajuste y jugar con el parámetro de suavizado, que habitualmente toma valores entre 0 y 1. In este ejemplo también se genera un gráfico de residuos que nos permite ver qué error cometemos con el ajuste. Los pesos me interesan porque hago «análisis caseros» de este tipo:
+Simplificando mucho, tenemos la serie de puntos y, mediante la función `smooth.spline()`, podemos ajustar una `spline` en base a unos pesos y en base a un *smoothing parameter* (`spar`). Por este motivo quiero usar `R` en vez de mi viejo `Excel`: quiero ponderar el ajuste y jugar con el parámetro de suavizado, que habitualmente toma valores entre 0 y 1. En este ejemplo también se genera un gráfico de residuos que nos permite ver qué error cometemos con el ajuste. Los pesos me interesan porque hago «análisis caseros» de este tipo:
 
 ```r
-# In cierto modo obligamos que pase por determinados puntos
+# En cierto modo obligamos que pase por determinados puntos
 pesos[1] <- 2
 pesos[15] <- 1
 

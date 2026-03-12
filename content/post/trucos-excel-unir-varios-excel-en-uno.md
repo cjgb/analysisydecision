@@ -28,7 +28,7 @@ De los archivos que comparto, el más interesante es el que llamamos [unir_vario
 
 ![unir_excel.png](/images/2011/09/unir_excel.png)
 
-Tiene una macro `limpia` para limpiar la columna de archivos. Una macro `ficheros` que se llama con el botón **Listar Libros** y nos permite listar los ficheros de un determinado directorio con una determinada extensión. Estos parámetros los podemos modificar en las casillas `C1` y `C2`. Se trata de una macro que [ya hemos visto con anterioridad](https://analisisydecision.es/trucos-excel-archivos-de-un-directorio-con-una-macro/), por lo que no entraremos en profundidad con ella.
+Tiene una macro `limpia` para limpiar la columna de archivos. Una macro `ficheros` que se llama con el botón **Listar Libros** y nos permite listar los ficheros de un determinado directorio con una determinada extensión. Estos parámetros los podemos modificar en las casillas `C1` y `C2`. Se trata de una macro que [ya hemos visto con anterioridad](https://analisisydecision.es/trucos-excel-archivos-de-un-directorio-con-una-macro/), por lo que no entraremos en profundidad en ella.
 
 La macro más interesante es la que he llamado `Une`, y será la que nos permita **unir la primera hoja de todos los `Excel` de un directorio en un libro final** cuyo `nombre_final` le indicamos en la celda `C3`. Este libro final se guardará en el mismo directorio donde están todos los archivos `Excel` que deseamos unir. Por supuesto, es importante tener todos los `Excel` en el mismo directorio; el archivo `unir_varios_excel.xlsm` no es necesario que esté en ese directorio. El contenido de esta macro os lo muestro y resumo a continuación:
 

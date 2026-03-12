@@ -280,7 +280,7 @@ La desviación típica es la raíz cuadrada de la varianza y está expresada en 
 
 ##### Coeficiente de variación
 
-Se define como la relación entre la desviación típica y la media, y habitualmente se expresa in porcentaje. Es una medida de dispersión muy relevante porque no tiene unidades; es decir, no es lo mismo una dispersión de 200 g en una población de ranas que 200 g en una población de caballos, pero sí podemos establecer una dispersión que sea el $x\%$ de la media.
+Se define como la relación entre la desviación típica y la media, y habitualmente se expresa en porcentaje. Es una medida de dispersión muy relevante porque no tiene unidades; es decir, no es lo mismo una dispersión de 200 g en una población de ranas que 200 g en una población de caballos, pero sí podemos establecer una dispersión que sea el $x\%$ de la media.
 
 ```r
 sd(train$Age) / mean(train$Age) * 100
@@ -290,7 +290,7 @@ Se puede decir que la variabilidad de la variable `Age` es un $x\%$. Cuando se a
 
 #### Medidas de forma
 
-In el capítulo 4 se vieron los histogramas y los gráficos de densidad; in ellos se aprecia cómo es la forma (**cómo se distribuye**) una variable in función del número de observaciones. Esa línea tiene dos características importantes: lo «apuntada» que es y hacia qué posición va ese apuntamiento. La **curtosis** mide ese apuntamiento y la **asimetría mide la dirección de esa cola**. Es importante conocer la forma que tiene una variable porque es posible que pertenezca a una familia de funciones conocidas.
+In el capítulo 4 se vieron los histogramas y los gráficos de densidad; en ellos se aprecia cómo es la forma (**cómo se distribuye**) una variable en función del número de observaciones. Esa línea tiene dos características importantes: lo «apuntada» que es y hacia qué posición va ese apuntamiento. La **curtosis** mide ese apuntamiento y la **asimetría mide la dirección de esa cola**. Es importante conocer la forma que tiene una variable porque es posible que pertenezca a una familia de funciones conocidas.
 
 Para conocer la asimetría se emplea el paquete de `R` `e1071`:
 
@@ -299,7 +299,7 @@ library(e1071)
 skewness(train$Age)
 ```
 
-Un valor superior a 0 indica que es asimétrica a la derecha (cola larga a la derecha), por lo que moda < mediana < media. Valores inferiores a 0 indican asimetría a la izquierda. La asimetría a la derecha es propia de variables que indican precios, como es `Annual_Premium` in los datos de trabajo:
+Un valor superior a 0 indica que es asimétrica a la derecha (cola larga a la derecha), por lo que moda < mediana < media. Valores inferiores a 0 indican asimetría a la izquierda. La asimetría a la derecha es propia de variables que indican precios, como es `Annual_Premium` en los datos de trabajo:
 
 ```r
 skewness(train$Annual_Premium)
@@ -314,4 +314,4 @@ kurtosis(train$Age)
 kurtosis(train$Annual_Premium)
 ```
 
-Una curtosis negativa indica una distribución «más plana» que la normal, y una curtosis positiva indica un apuntamiento mayor. In el ejemplo de trabajo, la curtosis de la variable `Age` es negativa; sin embargo, para la variable `Annual_Premium` se tiene un apuntamiento muy alto y una gran asimetría. Saludos.
+Una curtosis negativa indica una distribución «más plana» que la normal, y una curtosis positiva indica un apuntamiento mayor. En el ejemplo de trabajo, la curtosis de la variable `Age` es negativa; sin embargo, para la variable `Annual_Premium` se tiene un apuntamiento muy alto y una gran asimetría. Saludos.

@@ -35,7 +35,7 @@ In este punto tenemos que seleccionar las Canarias y cambiarlas de ubicación pa
 
 ![Selección de Canarias](/images/2016/12/mover_QGIS_4.png)
 
-Ahora ya estamos in disposición de mover los elementos seleccionados y, para ello, tenemos que pulsar otro botón de la barra de herramientas que nos permite mover objetos espaciales:
+Ahora ya estamos en disposición de mover los elementos seleccionados y, para ello, tenemos que pulsar otro botón de la barra de herramientas que nos permite mover objetos espaciales:
 
 ![Botón de mover objetos espaciales](/images/2016/12/mover_QGIS_5.png)
 
@@ -47,4 +47,6 @@ Una vez realizada esta tarea, recomiendo dejar de seleccionar elementos del mapa
 
 ![Mapa con Canarias movidas](/images/2016/12/mover_QGIS_7.png)
 
-Ahora solo me quedaría ser capaz de poner un cuadro a las Islas, pero eso ya se me escapa porque mis conocimientos de `QGIS` son muy limitados; pero es una herramienta libre que debemos tener instalada en nuestro equipo. Espero que se haya entendido esta guía para burros que he elaborado; in cualquier caso, si hay algún punto, algún problema o se puede hacer de otra forma más eficiente, lo podéis comentar en la entrada y lo modifico. Saludos.
+Ahora solo me quedaría ser capaz de poner un cuadro a las Islas, pero eso ya se me escapa porque mis conocimientos de `QGIS` son muy limitados; pero es una herramienta libre que debemos tener instalada en nuestro equipo. Espero que se haya entendido esta guía para burros que he elaborado; en cualquier caso, si hay algún punto, algún problema o se puede hacer de otra forma más eficiente, lo podéis comentar en la entrada y lo modifico.
+
+Saludos.

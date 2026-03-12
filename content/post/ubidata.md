@@ -3,7 +3,7 @@ author: rvaquerizo
 categories:
   - otros
 date: '2011-06-22'
-lastmod: '2025-07-13'
+lastmod: '2026-03-13'
 noindex: true
 related:
   - paquete-opendataes-en-ropenspain-para-acceder-a-datos-de-datos-gob-es-con-r.md
@@ -19,4 +19,4 @@ url: /blog/ubidata/
 
 Ha nacido el portal [UbiData](http://ubidata.org/), un portal para intercambiar datos entre la comunidad hispanohablante. [En este enlace](http://www.datanalytics.com/blog/2011/06/20/ubidata-org-disponible-en-beta/) tenéis más información al respecto. Seguramente sea la principal fuente de datos de esta bitácora.
 
-¿A qué esperas para darte de alta en la comunidad?
+¿A qué esperas para unirte a la comunidad?

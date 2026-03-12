@@ -135,11 +135,11 @@ Los problemas que presentan son análogos a los vistos con las variables cuantit
 - Valores *missing*: si el valor no está disponible, ¿podemos crear otro `nivel` que sea «N/D»?
 - Gran número de niveles de un `factor`. In ocasiones tendremos `factores` con miles de `niveles` (como un código postal); es evidente que tenemos que agrupar los `niveles` de un `factor`. ¿Qué estrategias de agrupamiento podemos seguir?
 
-## El rol de las variables in los datos
+## El rol de las variables en los datos
 
 Una vez es conocido cómo se estructuran los datos y cómo se puede aproximar a ellos el científico de datos, es necesario remarcar que las variables no tienen todas el mismo rol: in un conjunto de datos, cada variable juega un papel distinto. Hay variables que identifican registros, hay fechas, medidas, campos calculados, `factores` reclasificados… Se tiene claro que todas estas variables siempre serán `factores` o variables cuantitativas (pueden almacenarse como una cadena de caracteres o como un número), pero dentro del conjunto de datos hay que tener muy claro qué función desempeñan.
 
-Una clasificación global del rol de las variables in los datos es:
+Una clasificación global del rol de las variables en los datos es:
 
 - **Variable `target`**: Es la variable más importante porque describe el objetivo sobre el que realizamos el análisis. Es la variable encargada de dar respuesta al problema que planteamos a los datos.
 - **Variable `input`**: Esta variable servirá para «explicar» el comportamiento de nuestra variable `target`.

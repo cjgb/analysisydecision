@@ -115,11 +115,11 @@ set.seed(12)
 indices <- sample(seq(1:nrow(train2)), round(nrow(train2) * 0.70))
 
 entrenamiento <- train2[indices, ]
-# % de observaciones in entrenamiento
+# % de observaciones en entrenamiento
 nrow(entrenamiento) / nrow(train2)
 
 test <- train2[-indices, ]
-# % de observaciones in test
+# % de observaciones en test
 nrow(test) / nrow(train2)
 ```
 
@@ -127,11 +127,11 @@ El % de observaciones seleccionadas difiere con lo planteado en el capítulo ant
 
 > Para comenzar a conocer los datos y la reclasificación de factores, se recomienda trabajar con subconjuntos de datos de menor tamaño debido a la continua interacción con los datos que requiere esa fase.
 
-Conocidos los factores a emplear y con los conjuntos de datos preparados, ya se está in disposición de realizar el primer modelo. Y lo primero es tener claro el objetivo de ese modelo: se pretende **identificar y caracterizar** qué clientes de la cartera de salud pueden estar interesados in un seguro de automóviles. El problema de negocio lo describe la variable `Response`, que toma valores `1` (está interesado) y `0` (no está interesado); es un problema de **clasificación binomial**. In el capítulo 15 se presentaron los modelos `GLM` y, entre ellos, estaba la **regresión logística**, que será la técnica elegida para realizar el modelo, ya que permite asignar una probabilidad de estar interesado en el seguro de automóviles cliente a cliente in base a unas características y permite describir cómo son esos clientes a través de los parámetros que ofrece el modelo. Este tipo de modelos se conocen como modelos de propensión a la compra.
+Conocidos los factores a emplear y con los conjuntos de datos preparados, ya se está en disposición de realizar el primer modelo. Y lo primero es tener claro el objetivo de ese modelo: se pretende **identificar y caracterizar** qué clientes de la cartera de salud pueden estar interesados en un seguro de automóviles. El problema de negocio lo describe la variable `Response`, que toma valores `1` (está interesado) y `0` (no está interesado); es un problema de **clasificación binomial**. En el capítulo 15 se presentaron los modelos `GLM` y, entre ellos, estaba la **regresión logística**, que será la técnica elegida para realizar el modelo, ya que permite asignar una probabilidad de estar interesado en el seguro de automóviles cliente a cliente en base a unas características y permite describir cómo son esos clientes a través de los parámetros que ofrece el modelo. Este tipo de modelos se conocen como modelos de propensión a la compra.
 
 ## Selección de variables
 
-In realidad ya se ha hecho un filtrado previo de variables basado en la aproximación inicial a los datos y basado in criterios de negocio. Se han creado una serie de factores reclasificados in función de análisis gráficos bivariables donde se estudiaba la variable `target` frente a un factor. Pero todos esos análisis implican **la acción de una sola variable**; el modelo es una estructura algebraica multivariable que va a tener in cuenta todas las variables y cómo estas discriminan la variable `target`.
+In realidad ya se ha hecho un filtrado previo de variables basado en la aproximación inicial a los datos y basado en criterios de negocio. Se han creado una serie de factores reclasificados en función de análisis gráficos bivariables donde se estudiaba la variable `target` frente a un factor. Pero todos esos análisis implican **la acción de una sola variable**; el modelo es una estructura algebraica multivariable que va a tener en cuenta todas las variables y cómo estas discriminan la variable `target`.
 
 In el capítulo 13, dedicado a la regresión lineal, se identificó un problema que tienen los modelos de regresión lineal múltiple: **la multicolinealidad**. Los `GLM`, como modelos con resolución lineal, también adolecen de este problema. Por este motivo, el primer criterio para seleccionar variables será el análisis de la correlación de factores que se llevará a cabo mediante la `V de Cramer`, vista en el apartado 5 del capítulo 11 del ensayo.
 
@@ -146,7 +146,7 @@ predictoras <- colnames(entrenamiento)
 predictoras <- predictoras[substr(predictoras, 1, 3) == "fr_"]
 ```
 
-De nuevo, reiterar la importancia de que las variables participantes en la modelización tengan una característica común para automatizar código; en este caso, todas comienzan con el prefijo `fr_`. A continuación se presenta un bucle [obtenido in StackOverflow que permite crear la matriz de correlaciones](https://stackoverflow.com/questions/44070853/association-matrix-in-r).
+De nuevo, reiterar la importancia de que las variables participantes en la modelización tengan una característica común para automatizar código; en este caso, todas comienzan con el prefijo `fr_`. A continuación se presenta un bucle [obtenido en StackOverflow que permite crear la matriz de correlaciones](https://stackoverflow.com/questions/44070853/association-matrix-in-r).
 
 ```r
 correlaciones <- entrenamiento %>%
@@ -171,13 +171,13 @@ calculate_cramer <- function(m, df) {
 cor_matrix <- calculate_cramer(empty_m, correlaciones)
 remove(correlaciones)
 
-# Ya se está in disposición de hacer el gráfico
+# Ya se está en disposición de hacer el gráfico
 corrplot(cor_matrix, method = "circle", addCoef.col = 'black')
 ```
 
 ![](/images/2023/08/wp_editor_md_2b6cd22115a4f5ec2463508d66ed31b5.jpg)
 
-¿Qué valor de la `V de Cramer` es umbral para determinar que dos factores están correlacionados? A partir de 0.4 ya se tiene sospecha; por encima de 0.6 hay una clara relación. In este caso, `Edad`, `canal` y `antigüedad del vehículo` parece que están correlacionados. ¿Se deben eliminar 2 de esas 3 variables? De nuevo hay que apelar a los análisis planteados durante todo el ensayo y a la comunicación con los equipos de negocio para entender por qué se está produciendo este hecho. Para entender mejor el problema, se procede a tabular el cruce de esos factores.
+¿Qué valor de la `V de Cramer` es umbral para determinar que dos factores están correlacionados? A partir de 0.4 ya se tiene sospecha; por encima de 0.6 hay una clara relación. En este caso, `Edad`, `canal` y `antigüedad del vehículo` parece que están correlacionados. ¿Se deben eliminar 2 de esas 3 variables? De nuevo hay que apelar a los análisis planteados durante todo el ensayo y a la comunicación con los equipos de negocio para entender por qué se está produciendo este hecho. Para entender mejor el problema, se procede a tabular el cruce de esos factores.
 
 Se comienza con el cruce de edad y canal:
 
@@ -189,7 +189,7 @@ entrenamiento %>%
   datatable(options = list(dom = 't'))
 ```
 
-Se pone de manifiesto la necesidad de agrupar canales con algún sentido de negocio; la agrupación in niveles de interés está provocando la correlación.
+Se pone de manifiesto la necesidad de agrupar canales con algún sentido de negocio; la agrupación en niveles de interés está provocando la correlación.
 
 ¿Qué puede estar pasando con canal y la antigüedad del vehículo?
 
@@ -213,7 +213,7 @@ entrenamiento %>%
   datatable(options = list(dom = 't'))
 ```
 
-Son los encuestados jóvenes los que concentran los vehículos nuevos; los encuestados con vehículos nuevos son los que se concentran in los canales con menor interés. Parece existir sesgo con la selección de clientes a los que se realiza el cuestionario y, por ese motivo, se opta por mantener las variables esperando que el propio modelo elimine alguna de ellas. Pero se reitera la importancia que tiene la comunicación con el equipo que ha generado los datos y con los usuarios finales de los modelos, ya que se toman decisiones que han de estar consensuadas y el modelo está adoleciendo de problemas.
+Son los encuestados jóvenes los que concentran los vehículos nuevos; los encuestados con vehículos nuevos son los que se concentran en los canales con menor interés. Parece existir sesgo con la selección de clientes a los que se realiza el cuestionario y, por ese motivo, se opta por mantener las variables esperando que el propio modelo elimine alguna de ellas. Pero se reitera la importancia que tiene la comunicación con el equipo que ha generado los datos y con los usuarios finales de los modelos, ya que se toman decisiones que han de estar consensuadas y el modelo está adoleciendo de problemas.
 
 Se aprecia que el propio proceso de modelización hace que el científico de datos vuelva una y otra vez a la reclasificación de factores y al análisis bivariable. Analizada la correlación de factores, se comienza el trabajo con el modelo. Para realizar modelos de regresión logística se emplea la función `glm()` vista en el capítulo 15; el código ya es conocido.
 
@@ -231,7 +231,7 @@ Recordar que `glm()` requiere un `data.frame`, una fórmula y especificar la fam
 summary(modelo.1)
 ```
 
-El trabajo previo en las variables ha permitido que el modelo arroje unos resultados esperados. La única variable que no está aportando al modelo es la antigüedad como cliente: solo un nivel y con un p-valor asociado por encima del 0.05 parece ofrecer un parámetro capaz de discriminar a los clientes interesados. Este hecho ya se intuía in los análisis univariables previos debido a su comportamiento completamente azaroso. Con tantas observaciones y un efecto tan pequeño, se puede eliminar esa variable.
+El trabajo previo en las variables ha permitido que el modelo arroje unos resultados esperados. La única variable que no está aportando al modelo es la antigüedad como cliente: solo un nivel y con un p-valor asociado por encima del 0.05 parece ofrecer un parámetro capaz de discriminar a los clientes interesados. Este hecho ya se intuía en los análisis univariables previos debido a su comportamiento completamente azaroso. Con tantas observaciones y un efecto tan pequeño, se puede eliminar esa variable.
 
 ```r
 predictoras <- predictoras[predictoras != "fr_antiguedad"]
@@ -241,7 +241,7 @@ modelo.2 <- glm(formula = formula_modelo, data = entrenamiento, family = 'binomi
 summary(modelo.2)
 ```
 
-In este caso, el test $\beta_i = 0$ se rechaza in todos los niveles de los factores seleccionados. Esto lo ha facilitado el trabajo previo in los factores. Este `modelo.2` sería el modelo final; in cualquier caso, se podrían emplear técnicas de selección de variables vistas in capítulos anteriores para contrastar si este trabajo manual tiene el mismo resultado. In el caso de tener cientos de variables, este proceso sería más complicado y optar por métodos de selección automáticos puede ahorrar mucho tiempo y esfuerzo.
+In este caso, el test $\beta_i = 0$ se rechaza in todos los niveles de los factores seleccionados. Esto lo ha facilitado el trabajo previo en los factores. Este `modelo.2` sería el modelo final; in cualquier caso, se podrían emplear técnicas de selección de variables vistas in capítulos anteriores para contrastar si este trabajo manual tiene el mismo resultado. In el caso de tener cientos de variables, este proceso sería más complicado y optar por métodos de selección automáticos puede ahorrar mucho tiempo y esfuerzo.
 
 ## Selección del modelo
 
