@@ -6,6 +6,7 @@ categories:
   - r
 date: '2022-01-01'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - estadistica-para-cientificos-de-datos-con-r-introduccion.md
   - video-introduccion-a-bookdown.md
