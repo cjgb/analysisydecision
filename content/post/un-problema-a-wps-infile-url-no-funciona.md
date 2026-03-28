@@ -5,6 +5,7 @@ categories:
   - sas
 date: '2010-02-07'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - curso-de-lenguaje-sas-con-wps-lectura-de-ficheros-de-texto.md
   - acercamiento-a-wps-migrando-desde-sas.md

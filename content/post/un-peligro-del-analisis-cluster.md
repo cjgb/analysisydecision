@@ -20,7 +20,7 @@ url: /blog/un-peligro-del-analisis-cluster/
 
 ![Cluster 1](/images/2009/04/cluster1.JPG)
 
-Quería plantearos un ejemplo de análisis `cluster` para observar **el peligro que tiene agrupar observaciones in base a grupos homogéneos creados con distancias multivariantes**. Para ilustrar el ejemplo, trabajamos con `R`; creamos grupos in base a dos variables, lo que nos facilita los análisis gráficos. Simulamos el conjunto de datos con el que trabajamos:
+Quería plantearos un ejemplo de análisis `cluster` para observar **el peligro que tiene agrupar observaciones en base a grupos homogéneos creados con distancias multivariantes**. Para ilustrar el ejemplo, trabajamos con `R`; creamos grupos en base a dos variables, lo que nos facilita los análisis gráficos. Simulamos el conjunto de datos con el que trabajamos:
 
 ```r
 # GRUPO 1
@@ -53,7 +53,7 @@ Los grupos parecen claros:
 
 ![Linealidad Cluster 1](/images/2012/07/linealidad_cluster1.png)
 
-Cabe preguntarse: ¿qué sucede si segmentamos in base a centroides? Para responder a esta pregunta, hacemos un análisis no jerárquico; empleamos el algoritmo de las `k-medias`, del que [ya se ha hablado en este blog en alguna ocasión](https://analisisydecision.es/manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-i/):
+Cabe preguntarse: ¿qué sucede si segmentamos en base a centroides? Para responder a esta pregunta, hacemos un análisis no jerárquico; empleamos el algoritmo de las `k-medias`, del que [ya se ha hablado en este blog en alguna ocasión](https://analisisydecision.es/manual-curso-introduccion-de-r-capitulo-15-analisis-cluster-con-r-i/):
 
 ```r
 distancias <- dist(total)
@@ -65,6 +65,6 @@ plot(total$x, total$y, col = c(1, 2, 3)[total$grupo_nuevo])
 
 ![Linealidad Cluster 2](/images/2012/07/linealidad_cluster2.png)
 
-Necesitamos un objeto con las distancias y, sobre él, utilizamos la función `kmeans()`, que es la más popular y sencilla. El objeto resultante de la realización del modelo tiene una variable `cluster` que añadimos a nuestros datos y, tras graficar, vemos que es evidente que no ha funcionado muy correctamente: nos ha creado los tres grupos homogéneos in base a la distancia entre observaciones, pero no son los segmentos deseados… **Mucho cuidado cuando utilicemos este tipo de técnicas**.
+Necesitamos un objeto con las distancias y, sobre él, utilizamos la función `kmeans()`, que es la más popular y sencilla. El objeto resultante de la realización del modelo tiene una variable `cluster` que añadimos a nuestros datos y, tras graficar, vemos que es evidente que no ha funcionado muy correctamente: nos ha creado los tres grupos homogéneos en base a la distancia entre observaciones, pero no son los segmentos deseados… **Mucho cuidado cuando utilicemos este tipo de técnicas**.
 
-¿Cómo podemos realizar una segmentación más apropiada para estos datos? ¿Qué técnica podemos utilizar? La respuesta, in breve. Espero que esto sirva para desordenar alguna conciencia. Saludos.
+¿Cómo podemos realizar una segmentación más apropiada para estos datos? ¿Qué técnica podemos utilizar? La respuesta, en breve. Espero que esto sirva para desordenar alguna conciencia. Saludos.

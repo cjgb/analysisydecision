@@ -48,25 +48,25 @@ Por un lado obtenemos el contorno nacional (`level 0`) y, por otro, la división
 
 ```r
 # Extraemos puntos del contorno redondeando coordenadas para facilitar el cruce
-contorno_puntos <- fortify(Espania) %>% 
-  mutate(lat2 = round(lat, 1), long2 = round(long, 1)) %>% 
+contorno_puntos <- fortify(Espania) %>%
+  mutate(lat2 = round(lat, 1), long2 = round(long, 1)) %>%
   select(long2, lat2)
 
 # Extraemos puntos de los municipios con el mismo redondeo
-municipios_puntos <- fortify(Espania2) %>% 
-  mutate(lat2 = round(lat, 1), long2 = round(long, 1)) %>% 
+municipios_puntos <- fortify(Espania2) %>%
+  mutate(lat2 = round(lat, 1), long2 = round(long, 1)) %>%
   select(long2, lat2, id) # 'id' identifica al municipio
 
 # Cruce para identificar puntos coincidentes
 coincidencias <- inner_join(municipios_puntos, contorno_puntos, by = c("long2", "lat2"))
 ```
 
-En este punto hay aspectos mejorables: el cruce se realiza por latitud y longitud. Difícilmente encajarán al decimal los dos objetos espaciales, así que se opta por redondear a un decimal tanto la longitud como la latitud. Ésto provoca duplicados y un objeto de gran tamaño. Por ello es necesario seleccionar registros únicos por municipio:
+En este punto hay aspectos mejorables: el cruce se realiza por latitud y longitud. Difícilmente encajarán al decimal los dos objetos espaciales, así que se opta por redondear a un decimal tanto la longitud como la latitud. Esto provoca duplicados y un objeto de gran tamaño. Por ello es necesario seleccionar registros únicos por municipio:
 
 ```r
 # Identificamos municipios que tienen puntos en el contorno
-contorno_final <- coincidencias %>% 
-  distinct(id) %>% 
+contorno_final <- coincidencias %>%
+  distinct(id) %>%
   mutate(exterior = 1)
 ```
 

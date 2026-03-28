@@ -131,7 +131,7 @@ url: /blog/una-fabulilla-sobre-prim-con-multiples-moralejas/
 —¿Encriptada? \
 —Sí, en [párrafos llenos de texto y en inglés](http://www-stat.stanford.edu/~jhf/ftp/prim.pdf "PRIM"). \
 —¿Sólo se encuentra en ese enlace? \
-—¡Qué va! De hecho, la idea aparece explicada de manera sustancialmente más accesible en la [biblia de la minería de datos](http://www-stat.stanford.edu/~tibs/ElemStatLearn/ "Elements of Statistical Learning"). Pero igualmente encriptada por el mismo y arcano  \procedimiento.
+—¡Qué va! De hecho, la idea aparece explicada de manera sustancialmente más accesible en la [biblia de la minería de datos](http://www-stat.stanford.edu/~tibs/ElemStatLearn/ "Elements of Statistical Learning"). Pero igualmente encriptada por el mismo y arcano procedimiento. \
 —¿Llama usted encriptar a escribir de manera ordenada y lógica? \
 —¿Con letras? Sí. La gente ya ha perdido la capacidad de leer texto y le abruma el negro sobre el blanco. Si quiere que algo no se sepa, escríbalo con buena sintaxis, cuidada ortografía y lógicamente riguroso discurso. \
 —Usted, tan avanzado en unas cosas, parece un carca en otras. \

@@ -4,6 +4,7 @@ categories:
   - opinión
 date: '2010-03-30'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - puede-la-informacion-de-twitter-servir-para-tarificar-seguros.md
   - facebook-y-su-facebookgate-son-buenas-noticias-para-el-data-scientist.md

@@ -6,6 +6,7 @@ categories:
   - r
 date: '2013-01-14'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - r-cayendo-en-la-lista-tiobe.md
   - integracion-de-r-con-sas-spss-y-otros.md

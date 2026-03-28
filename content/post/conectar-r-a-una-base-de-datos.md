@@ -4,6 +4,7 @@ categories:
   - formación
 date: '2008-07-22'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - tres-fracasos-y-medio-con-r.md
   - porque-me-gusta-r.md

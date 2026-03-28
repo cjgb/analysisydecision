@@ -6,6 +6,7 @@ categories:
   - trucos
 date: '2012-02-26'
 lastmod: '2025-07-13'
+noindex: true
 related:
   - truco-excel-abrir-multiples-libros-de-excel-en-distintas-hojas-de-un-nuevo-libro.md
   - trucos-excel-archivos-de-un-directorio-con-una-macro.md

@@ -276,7 +276,7 @@ test %>%
   summarise(pct_interesados = mean(Response))
 ```
 
-El % es análogo porque es una selección al azar del 10% de las observaciones, ya que a todos los clientes les da la misma probabilidad independientemente de si están interesados en el seguro de automóviles o no. Pero el científico de datos ha creado una estructura matemática que permite establecer una probabilidad de ese interés en el seguro de autos in base a unas características de los clientes. De esta manera, el primer paso es añadir esa probabilidad a los datos de test del modelo candidato a ser el final.
+El % es análogo porque es una selección al azar del 10% de las observaciones, ya que a todos los clientes les da la misma probabilidad independientemente de si están interesados en el seguro de automóviles o no. Pero el científico de datos ha creado una estructura matemática que permite establecer una probabilidad de ese interés en el seguro de autos en base a unas características de los clientes. De esta manera, el primer paso es añadir esa probabilidad a los datos de test del modelo candidato a ser el final.
 
 ```r
 test$probabilidad_modelo.3 <- predict(modelo.3, test, type = "response")
@@ -364,7 +364,7 @@ Este gráfico puede ser familiar para el científico de datos porque se asemeja 
 - [Material de bioestadística del Hospital Ramón y Cajal](http://www.hrc.es/bioest/roc_1.html)
 - [Datanalytics with R](https://bookdown.org/brianmachut/uofm_analytics_r_hw_sol_2/logreg.html)
 
-Los modelos que realice el científico de datos han de contar una historia acerca de los datos, y los equipos de negocio que empleen los datos es posible que no comprendan qué es una curva `ROC`; sin embargo, in modelos de propensión a la compra es más sencillo transmitir la idea de cuánto se mejora con respecto a una selección al azar para elaborar casos de negocio in base a hipótesis planteadas durante el proceso de modelización.
+Los modelos que realice el científico de datos han de contar una historia acerca de los datos, y los equipos de negocio que empleen los datos es posible que no comprendan qué es una curva `ROC`; sin embargo, in modelos de propensión a la compra es más sencillo transmitir la idea de cuánto se mejora con respecto a una selección al azar para elaborar casos de negocio en base a hipótesis planteadas durante el proceso de modelización.
 
 ## Resultados finales
 

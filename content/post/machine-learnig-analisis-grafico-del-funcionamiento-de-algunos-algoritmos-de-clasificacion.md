@@ -28,7 +28,7 @@ url: /blog/machine-learnig-analisis-grafico-del-funcionamiento-de-algunos-algori
 
 ![Letra_O](/images/2017/05/Letra_O.png)
 
-De forma gráfica os voy a presentar algunas técnicas de clasificación supervisada de las más empleadas in `Machine Learning` y podremos ver cómo se comportan de forma gráfica en el plano. Como siempre, prefiero ilustrarlo a entrar in temas teóricos y, para esta tarea, se me ha ocurrido pintar una letra O y comenzar a trabajar con `Python`, así de simple. Lo primero es tener los datos; evidentemente serán puntos aleatorios en el plano donde pintamos una variable dependiente con forma de O:
+De forma gráfica os voy a presentar algunas técnicas de clasificación supervisada de las más empleadas en `Machine Learning` y podremos ver cómo se comportan de forma gráfica en el plano. Como siempre, prefiero ilustrarlo a entrar en temas teóricos y, para esta tarea, se me ha ocurrido pintar una letra O y comenzar a trabajar con `Python`, así de simple. Lo primero es tener los datos; evidentemente serán puntos aleatorios en el plano donde pintamos una variable dependiente con forma de O:
 
 ```python
 import numpy as np
@@ -133,7 +133,7 @@ plt.show()
 
 ![perceptron_python](/images/2017/05/perceptron_python.png)
 
-Observamos cómo una red neuronal con 3 capas con 30 unidades ocultas (un perceptrón muy complejo) no puede clasificar con precisión la letra O. In este caso es muy interesante hacer el *scatter plot* con colores donde graduamos la probabilidad que asigna el modelo, no solo graficar la predicción:
+Observamos cómo una red neuronal con 3 capas con 30 unidades ocultas (un perceptrón muy complejo) no puede clasificar con precisión la letra O. En este caso es muy interesante hacer el *scatter plot* con colores donde graduamos la probabilidad que asigna el modelo, no solo graficar la predicción:
 
 ```python
 proba = mlp_1.predict_proba(X_test)
